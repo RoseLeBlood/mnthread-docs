@@ -111,42 +111,58 @@ $(document).ready(function(){initNavTree('mn__tasklets_8hpp_source.html',''); in
 <div class="title">mn_tasklets.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MINLIB_ESP32_TASKLETS_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_TASKLETS_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;mn_autolock.hpp&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;mn_error.hpp&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;mn_sleep.hpp&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;mn_micros.hpp&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;mn_convar.hpp&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classbasic__tasklet.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__tasklet.html">basic_tasklet</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__tasklet.html#abbc9451d854d5462072bfb33bb28ef06">create</a>(uint32_t parameter, TickType_t timeout = portMAX_DELAY);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__tasklet.html#a597a926d1cdf5e0ca4663fc68cd632a3">destroy</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346">   48</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346">on_tasklet</a>(uint32_t arg);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42">runtaskletstub</a>(<span class="keywordtype">void</span>* parm, uint32_t parameter);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classbasic__tasklet.html#a15d1eacef53a12ebb3d53ec1b761c21e">   59</a></span>&#160;    <a class="code" href="classbinary__semaphore.html">semaphore_t</a>     <a class="code" href="classbasic__tasklet.html#a15d1eacef53a12ebb3d53ec1b761c21e">m_ssLock</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__tasklet.html">tasklet_t</a> = <a class="code" href="classbasic__tasklet.html">basic_tasklet</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify  </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by  </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * the Free Software Foundation, version 3.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef MINLIB_ESP32_TASKLETS_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_TASKLETS_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;mn_autolock.hpp&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;mn_error.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;mn_sleep.hpp&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;mn_micros.hpp&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;mn_convar.hpp&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classbasic__tasklet.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__tasklet.html">basic_tasklet</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__tasklet.html#abbc9451d854d5462072bfb33bb28ef06">create</a>(uint32_t parameter, TickType_t timeout = portMAX_DELAY);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__tasklet.html#a597a926d1cdf5e0ca4663fc68cd632a3">destroy</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346">   64</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346">on_tasklet</a>(uint32_t arg);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42">runtaskletstub</a>(<span class="keywordtype">void</span>* parm, uint32_t parameter);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classbasic__tasklet.html#af46ec17c3dd392678aebd09d0f29b216">   75</a></span>&#160;    <a class="code" href="classbasic__counting__semaphore.html">counting_semaphore_t</a>   <a class="code" href="classbasic__tasklet.html#af46ec17c3dd392678aebd09d0f29b216">m_ssLock</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__tasklet.html">tasklet_t</a> = <a class="code" href="classbasic__tasklet.html">basic_tasklet</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassbinary__semaphore_html"><div class="ttname"><a href="classbinary__semaphore.html">binary_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_spinlock.hpp:30</div></div>
+<div class="ttc" id="aclassbasic__tasklet_html_af46ec17c3dd392678aebd09d0f29b216"><div class="ttname"><a href="classbasic__tasklet.html#af46ec17c3dd392678aebd09d0f29b216">basic_tasklet::m_ssLock</a></div><div class="ttdeci">counting_semaphore_t m_ssLock</div><div class="ttdef"><b>Definition:</b> mn_tasklets.hpp:75</div></div>
 <div class="ttc" id="aclassbasic__tasklet_html_a3c6e9a2baf4c11b03e2ce270b02f8346"><div class="ttname"><a href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346">basic_tasklet::on_tasklet</a></div><div class="ttdeci">virtual int on_tasklet(uint32_t arg)</div></div>
-<div class="ttc" id="aclassbasic__tasklet_html_abbc9451d854d5462072bfb33bb28ef06"><div class="ttname"><a href="classbasic__tasklet.html#abbc9451d854d5462072bfb33bb28ef06">basic_tasklet::create</a></div><div class="ttdeci">virtual int create(uint32_t parameter, TickType_t timeout=portMAX_DELAY)</div><div class="ttdef"><b>Definition:</b> mn_tasklets.cpp:8</div></div>
-<div class="ttc" id="aclassbasic__tasklet_html_a15d1eacef53a12ebb3d53ec1b761c21e"><div class="ttname"><a href="classbasic__tasklet.html#a15d1eacef53a12ebb3d53ec1b761c21e">basic_tasklet::m_ssLock</a></div><div class="ttdeci">semaphore_t m_ssLock</div><div class="ttdef"><b>Definition:</b> mn_tasklets.hpp:59</div></div>
-<div class="ttc" id="aclassbasic__tasklet_html_ae56d66fe8376f223b35262d3d2ca7f42"><div class="ttname"><a href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42">basic_tasklet::runtaskletstub</a></div><div class="ttdeci">static void runtaskletstub(void *parm, uint32_t parameter)</div><div class="ttdef"><b>Definition:</b> mn_tasklets.cpp:41</div></div>
-<div class="ttc" id="aclassbasic__tasklet_html_a597a926d1cdf5e0ca4663fc68cd632a3"><div class="ttname"><a href="classbasic__tasklet.html#a597a926d1cdf5e0ca4663fc68cd632a3">basic_tasklet::destroy</a></div><div class="ttdeci">virtual int destroy()</div><div class="ttdef"><b>Definition:</b> mn_tasklets.cpp:35</div></div>
-<div class="ttc" id="aclassbasic__tasklet_html"><div class="ttname"><a href="classbasic__tasklet.html">basic_tasklet</a></div><div class="ttdef"><b>Definition:</b> mn_tasklets.hpp:22</div></div>
+<div class="ttc" id="aclassbasic__counting__semaphore_html"><div class="ttname"><a href="classbasic__counting__semaphore.html">basic_counting_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_spinlock.hpp:81</div></div>
+<div class="ttc" id="aclassbasic__tasklet_html_abbc9451d854d5462072bfb33bb28ef06"><div class="ttname"><a href="classbasic__tasklet.html#abbc9451d854d5462072bfb33bb28ef06">basic_tasklet::create</a></div><div class="ttdeci">virtual int create(uint32_t parameter, TickType_t timeout=portMAX_DELAY)</div><div class="ttdef"><b>Definition:</b> mn_tasklets.cpp:24</div></div>
+<div class="ttc" id="aclassbasic__tasklet_html_ae56d66fe8376f223b35262d3d2ca7f42"><div class="ttname"><a href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42">basic_tasklet::runtaskletstub</a></div><div class="ttdeci">static void runtaskletstub(void *parm, uint32_t parameter)</div><div class="ttdef"><b>Definition:</b> mn_tasklets.cpp:57</div></div>
+<div class="ttc" id="aclassbasic__tasklet_html_a597a926d1cdf5e0ca4663fc68cd632a3"><div class="ttname"><a href="classbasic__tasklet.html#a597a926d1cdf5e0ca4663fc68cd632a3">basic_tasklet::destroy</a></div><div class="ttdeci">virtual int destroy()</div><div class="ttdef"><b>Definition:</b> mn_tasklets.cpp:51</div></div>
+<div class="ttc" id="aclassbasic__tasklet_html"><div class="ttname"><a href="classbasic__tasklet.html">basic_tasklet</a></div><div class="ttdef"><b>Definition:</b> mn_tasklets.hpp:38</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

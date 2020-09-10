@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['runtaskletstub_97',['runtaskletstub',['../classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42',1,'basic_tasklet']]]
+  ['nsleep_172',['nsleep',['../classbasic__thread.html#a1e654bd99bbc3bece13da735e4f03d2d',1,'basic_thread']]]
 ];

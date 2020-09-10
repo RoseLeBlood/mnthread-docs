@@ -123,10 +123,10 @@ $(document).ready(function(){initNavTree('classbasic__tasklet.html',''); initRes
 Zusammengehörigkeiten von basic_tasklet:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet__coll__graph.png" border="0" usemap="#abasic__tasklet_coll__map" alt="Collaboration graph"/></div>
-<map name="basic__tasklet_coll__map" id="abasic__tasklet_coll__map">
-<area shape="rect" title=" " alt="" coords="23,171,131,197"/>
-<area shape="rect" href="classbinary__semaphore.html" title=" " alt="" coords="5,81,148,108"/>
-<area shape="rect" href="classbasic__spinlock.html" title=" " alt="" coords="18,5,135,32"/>
+<map name="basic__tasklet_coll__map" id="basic__tasklet_coll__map">
+<area shape="rect" title=" " alt="" coords="51,171,159,197"/>
+<area shape="rect" href="classbasic__counting__semaphore.html" title=" " alt="" coords="5,81,204,108"/>
+<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="37,5,173,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">Legende</a>]</span></center></div>
 <table class="memberdecls">
@@ -149,8 +149,8 @@ Geschützte, statische Methoden</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Geschützte Attribute</h2></td></tr>
-<tr class="memitem:a15d1eacef53a12ebb3d53ec1b761c21e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbinary__semaphore.html">semaphore_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__tasklet.html#a15d1eacef53a12ebb3d53ec1b761c21e">m_ssLock</a></td></tr>
-<tr class="separator:a15d1eacef53a12ebb3d53ec1b761c21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46ec17c3dd392678aebd09d0f29b216"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__counting__semaphore.html">counting_semaphore_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__tasklet.html#af46ec17c3dd392678aebd09d0f29b216">m_ssLock</a></td></tr>
+<tr class="separator:af46ec17c3dd392678aebd09d0f29b216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><p>A FreeRTOS wrapper for its concept of a Pended Function. In Linux, one permutation of this would be a Tasklet, or bottom half processing from an ISR.</p>
@@ -202,10 +202,13 @@ Geschützte Attribute</h2></td></tr>
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph.png" border="0" usemap="#aclassbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph" alt=""/></div>
-<map name="classbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph" id="aclassbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,163,32"/>
-<area shape="rect" href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42" title=" " alt="" coords="211,5,421,32"/>
-<area shape="rect" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346" title=" " alt="" coords="469,5,653,32"/>
+<map name="classbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph" id="classbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph">
+<area shape="rect" title=" " alt="" coords="5,97,163,123"/>
+<area shape="rect" href="classbasic__counting__semaphore.html#a0f933048f021dfbc4e6bcad39dfbd3ff" title=" " alt="" coords="217,5,415,47"/>
+<area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="469,71,656,98"/>
+<area shape="rect" href="classbasic__semaphore.html#ad9e109f5a87d768334cb49ff7712e2a5" title=" " alt="" coords="231,122,401,149"/>
+<area shape="rect" href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42" title=" " alt="" coords="211,173,421,199"/>
+<area shape="rect" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346" title=" " alt="" coords="471,173,655,199"/>
 </map>
 </div>
 
@@ -234,6 +237,16 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </table>
 </div><div class="memdoc">
 <p>Destroy the Tasklet </p><dl class="section return"><dt>Rückgabe</dt><dd>ERR_TASKLET_OK Destroyed without any errors </dd></dl>
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph.png" border="0" usemap="#aclassbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph" alt=""/></div>
+<map name="classbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph" id="aclassbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,171,69"/>
+<area shape="rect" href="classbasic__counting__semaphore.html#a230ade7eeca9d645e1b17a4ee3c26d21" title=" " alt="" coords="219,5,417,47"/>
+<area shape="rect" href="classbasic__semaphore.html#ad9e109f5a87d768334cb49ff7712e2a5" title=" " alt="" coords="233,71,403,98"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -271,7 +284,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph.png" border="0" usemap="#aclassbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph" alt=""/></div>
-<map name="classbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph" id="aclassbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph">
+<map name="classbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph" id="classbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph">
 <area shape="rect" title=" " alt="" coords="469,5,653,32"/>
 <area shape="rect" href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42" title=" " alt="" coords="211,5,421,32"/>
 <area shape="rect" href="classbasic__tasklet.html#abbc9451d854d5462072bfb33bb28ef06" title=" " alt="" coords="5,5,163,32"/>
@@ -318,16 +331,17 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph.png" border="0" usemap="#aclassbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph" alt=""/></div>
-<map name="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph" id="aclassbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,216,32"/>
-<area shape="rect" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346" title=" " alt="" coords="264,5,448,32"/>
+<map name="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph" id="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,216,57"/>
+<area shape="rect" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346" title=" " alt="" coords="265,5,449,32"/>
+<area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="264,56,451,83"/>
 </map>
 </div>
 <div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph.png" border="0" usemap="#aclassbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph" alt=""/></div>
-<map name="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph" id="aclassbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph">
+<map name="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph" id="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph">
 <area shape="rect" title=" " alt="" coords="211,5,421,32"/>
 <area shape="rect" href="classbasic__tasklet.html#abbc9451d854d5462072bfb33bb28ef06" title=" " alt="" coords="5,5,163,32"/>
 </map>
@@ -336,8 +350,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div>
 </div>
 <h2 class="groupheader">Dokumentation der Datenelemente</h2>
-<a id="a15d1eacef53a12ebb3d53ec1b761c21e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15d1eacef53a12ebb3d53ec1b761c21e">&#9670;&nbsp;</a></span>m_ssLock</h2>
+<a id="af46ec17c3dd392678aebd09d0f29b216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af46ec17c3dd392678aebd09d0f29b216">&#9670;&nbsp;</a></span>m_ssLock</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +360,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbinary__semaphore.html">semaphore_t</a> basic_tasklet::m_ssLock</td>
+          <td class="memname"><a class="el" href="classbasic__counting__semaphore.html">counting_semaphore_t</a> basic_tasklet::m_ssLock</td>
         </tr>
       </table>
   </td>

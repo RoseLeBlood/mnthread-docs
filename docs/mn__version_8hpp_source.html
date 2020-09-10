@@ -111,48 +111,64 @@ $(document).ready(function(){initNavTree('mn__version_8hpp_source.html',''); ini
 <div class="title">mn_version.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _MINLIB_VERSION_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _MINLIB_VERSION_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classlibmn_version.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibmn_version.html">libmnVersion</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classlibmn_version.html">libmnVersion</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ~<a class="code" href="classlibmn_version.html">libmnVersion</a>();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588">get_major_version</a>()<span class="keyword"> const                               </span>{ <span class="keywordflow">return</span> m_major; }</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00">get_minor_version</a>()<span class="keyword"> const                               </span>{ <span class="keywordflow">return</span> m_minor; }</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classlibmn_version.html#ae8d0c432c0265e513b1527670a79b4b2">   29</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classlibmn_version.html#ae8d0c432c0265e513b1527670a79b4b2">get_debug_version</a>()<span class="keyword"> const                               </span>{ <span class="keywordflow">return</span> m_debug; }</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classlibmn_version.html#a4a9007372ecae9a485eb61d102b659bb">   34</a></span>&#160;    std::string <a class="code" href="classlibmn_version.html#a4a9007372ecae9a485eb61d102b659bb">get_license</a>()<span class="keyword"> const                             </span>{ <span class="keywordflow">return</span> m_license; }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::string <a class="code" href="classlibmn_version.html#ac34880e7e7d55107161f97183d36b3b5">to_string</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classlibmn_version.html#ab64dde06d24c3af970bd17c6da90796c">   46</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classlibmn_version.html">libmnVersion</a>&amp; <a class="code" href="classlibmn_version.html#ab64dde06d24c3af970bd17c6da90796c">instance</a>() {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span>(m_pInstance == NULL) m_pInstance = <span class="keyword">new</span> <a class="code" href="classlibmn_version.html">libmnVersion</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> *m_pInstance;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <a class="code" href="classlibmn_version.html">libmnVersion</a>* m_pInstance;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::string m_license;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> m_major, m_minor, m_debug;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::string m_extras;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">using</span> <a class="code" href="classlibmn_version.html">mnversion_t</a> = <a class="code" href="classlibmn_version.html">libmnVersion</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify  </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by  </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * the Free Software Foundation, version 3.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef _MINLIB_VERSION_H_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define _MINLIB_VERSION_H_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classlibmn_version.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlibmn_version.html">libmnVersion</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classlibmn_version.html">libmnVersion</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ~<a class="code" href="classlibmn_version.html">libmnVersion</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588">get_major_version</a>()<span class="keyword"> const                               </span>{ <span class="keywordflow">return</span> m_major; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00">get_minor_version</a>()<span class="keyword"> const                               </span>{ <span class="keywordflow">return</span> m_minor; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classlibmn_version.html#ae8d0c432c0265e513b1527670a79b4b2">   45</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classlibmn_version.html#ae8d0c432c0265e513b1527670a79b4b2">get_debug_version</a>()<span class="keyword"> const                               </span>{ <span class="keywordflow">return</span> m_debug; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlibmn_version.html#a4a9007372ecae9a485eb61d102b659bb">   50</a></span>&#160;    std::string <a class="code" href="classlibmn_version.html#a4a9007372ecae9a485eb61d102b659bb">get_license</a>()<span class="keyword"> const                             </span>{ <span class="keywordflow">return</span> m_license; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::string <a class="code" href="classlibmn_version.html#ac34880e7e7d55107161f97183d36b3b5">to_string</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classlibmn_version.html#ab64dde06d24c3af970bd17c6da90796c">   62</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classlibmn_version.html">libmnVersion</a>&amp; <a class="code" href="classlibmn_version.html#ab64dde06d24c3af970bd17c6da90796c">instance</a>() {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span>(m_pInstance == NULL) m_pInstance = <span class="keyword">new</span> <a class="code" href="classlibmn_version.html">libmnVersion</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> *m_pInstance;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <a class="code" href="classlibmn_version.html">libmnVersion</a>* m_pInstance;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string m_license;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> m_major, m_minor, m_debug;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::string m_extras;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">using</span> <a class="code" href="classlibmn_version.html">mnversion_t</a> = <a class="code" href="classlibmn_version.html">libmnVersion</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasslibmn_version_html_ab64dde06d24c3af970bd17c6da90796c"><div class="ttname"><a href="classlibmn_version.html#ab64dde06d24c3af970bd17c6da90796c">libmnVersion::instance</a></div><div class="ttdeci">static libmnVersion &amp; instance()</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:46</div></div>
-<div class="ttc" id="aclasslibmn_version_html"><div class="ttname"><a href="classlibmn_version.html">libmnVersion</a></div><div class="ttdef"><b>Definition:</b> mn_version.hpp:9</div></div>
-<div class="ttc" id="aclasslibmn_version_html_a1ab51114f35d50ef7e19bac35edd4588"><div class="ttname"><a href="classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588">libmnVersion::get_major_version</a></div><div class="ttdeci">int get_major_version() const</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:19</div></div>
-<div class="ttc" id="aclasslibmn_version_html_a5762c3c11feced0ef3b5015b85b74d00"><div class="ttname"><a href="classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00">libmnVersion::get_minor_version</a></div><div class="ttdeci">int get_minor_version() const</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:24</div></div>
-<div class="ttc" id="aclasslibmn_version_html_a4a9007372ecae9a485eb61d102b659bb"><div class="ttname"><a href="classlibmn_version.html#a4a9007372ecae9a485eb61d102b659bb">libmnVersion::get_license</a></div><div class="ttdeci">std::string get_license() const</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:34</div></div>
-<div class="ttc" id="aclasslibmn_version_html_ac34880e7e7d55107161f97183d36b3b5"><div class="ttname"><a href="classlibmn_version.html#ac34880e7e7d55107161f97183d36b3b5">libmnVersion::to_string</a></div><div class="ttdeci">std::string to_string() const</div><div class="ttdef"><b>Definition:</b> mn_version.cpp:27</div></div>
-<div class="ttc" id="aclasslibmn_version_html_ae8d0c432c0265e513b1527670a79b4b2"><div class="ttname"><a href="classlibmn_version.html#ae8d0c432c0265e513b1527670a79b4b2">libmnVersion::get_debug_version</a></div><div class="ttdeci">int get_debug_version() const</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:29</div></div>
+<div class="ttc" id="aclasslibmn_version_html_ab64dde06d24c3af970bd17c6da90796c"><div class="ttname"><a href="classlibmn_version.html#ab64dde06d24c3af970bd17c6da90796c">libmnVersion::instance</a></div><div class="ttdeci">static libmnVersion &amp; instance()</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:62</div></div>
+<div class="ttc" id="aclasslibmn_version_html"><div class="ttname"><a href="classlibmn_version.html">libmnVersion</a></div><div class="ttdef"><b>Definition:</b> mn_version.hpp:25</div></div>
+<div class="ttc" id="aclasslibmn_version_html_a1ab51114f35d50ef7e19bac35edd4588"><div class="ttname"><a href="classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588">libmnVersion::get_major_version</a></div><div class="ttdeci">int get_major_version() const</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:35</div></div>
+<div class="ttc" id="aclasslibmn_version_html_a5762c3c11feced0ef3b5015b85b74d00"><div class="ttname"><a href="classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00">libmnVersion::get_minor_version</a></div><div class="ttdeci">int get_minor_version() const</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:40</div></div>
+<div class="ttc" id="aclasslibmn_version_html_a4a9007372ecae9a485eb61d102b659bb"><div class="ttname"><a href="classlibmn_version.html#a4a9007372ecae9a485eb61d102b659bb">libmnVersion::get_license</a></div><div class="ttdeci">std::string get_license() const</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:50</div></div>
+<div class="ttc" id="aclasslibmn_version_html_ac34880e7e7d55107161f97183d36b3b5"><div class="ttname"><a href="classlibmn_version.html#ac34880e7e7d55107161f97183d36b3b5">libmnVersion::to_string</a></div><div class="ttdeci">std::string to_string() const</div><div class="ttdef"><b>Definition:</b> mn_version.cpp:43</div></div>
+<div class="ttc" id="aclasslibmn_version_html_ae8d0c432c0265e513b1527670a79b4b2"><div class="ttname"><a href="classlibmn_version.html#ae8d0c432c0265e513b1527670a79b4b2">libmnVersion::get_debug_version</a></div><div class="ttdeci">int get_debug_version() const</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:45</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

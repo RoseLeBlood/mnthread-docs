@@ -13,12 +13,14 @@ var hierarchy =
       [ "basic_deque", "classbasic__deque.html", null ]
     ] ],
     [ "basic_scheduler_lock", "classbasic__scheduler__lock.html", null ],
-    [ "basic_spinlock", "classbasic__spinlock.html", [
-      [ "binary_semaphore", "classbinary__semaphore.html", null ]
+    [ "basic_semaphore", "classbasic__semaphore.html", [
+      [ "basic_binary_semaphore", "classbasic__binary__semaphore.html", null ],
+      [ "basic_counting_semaphore", "classbasic__counting__semaphore.html", null ]
     ] ],
     [ "basic_tasklet", "classbasic__tasklet.html", null ],
     [ "basic_thread", "classbasic__thread.html", [
-      [ "basic_convar_thread", "classbasic__convar__thread.html", null ]
+      [ "basic_convar_thread", "classbasic__convar__thread.html", null ],
+      [ "hello_world_task", "classhello__world__task.html", null ]
     ] ],
     [ "libmnVersion", "classlibmn_version.html", null ]
 ];

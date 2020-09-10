@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['unlock_101',['unlock',['../classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640',1,'basic_mutex::unlock()'],['../classrecursive__mutex.html#aa4d5bcce538269f718fc9d4f6cb8e472',1,'recursive_mutex::unlock()']]]
+  ['resume_180',['resume',['../classbasic__thread.html#a8d3cdaac3ad97960619d29473b23ad47',1,'basic_thread::resume()'],['../classbasic__thread.html#a7a787f9ac02f9074552d3fd5504d6d4d',1,'basic_thread::resume(basic_thread *t)']]],
+  ['resume_5fscheduler_181',['resume_scheduler',['../classbasic__critical.html#a93a824e8b785e09d066c2b340210144d',1,'basic_critical']]],
+  ['runtaskletstub_182',['runtaskletstub',['../classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42',1,'basic_tasklet']]],
+  ['runtaskstub_183',['runtaskstub',['../classbasic__thread.html#a994fecb7d772942db9573ed031c43bed',1,'basic_thread']]]
 ];

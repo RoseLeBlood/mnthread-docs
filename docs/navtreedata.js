@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
-    [ "Mini Thread 1.41", "index.html", [
+    [ "Mini Thread 1.5x", "index.html", [
       [ "Introduction", "index.html#autotoc_md1", null ],
       [ "License", "index.html#autotoc_md2", null ],
       [ "Contact", "index.html#autotoc_md3", null ],

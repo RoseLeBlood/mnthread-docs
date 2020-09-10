@@ -114,28 +114,185 @@ $(document).ready(function(){initNavTree('classbasic__critical.html',''); initRe
 <div class="title">basic_critical Klassenreferenz</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__critical_8hpp_source.html">mn_critical.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Öffentliche, statische Methoden</h2></td></tr>
-<tr class="memitem:a1e913c5e607f50eb9209a94a4a833ea0"><td class="memItemLeft" align="right" valign="top"><a id="a1e913c5e607f50eb9209a94a4a833ea0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>enter</b> (portMUX_TYPE handle)</td></tr>
+<tr class="memitem:a1e913c5e607f50eb9209a94a4a833ea0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__critical.html#a1e913c5e607f50eb9209a94a4a833ea0">enter</a> (portMUX_TYPE handle)</td></tr>
 <tr class="separator:a1e913c5e607f50eb9209a94a4a833ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa98e95d9f1f1584eb9966ffd5fcb86c"><td class="memItemLeft" align="right" valign="top"><a id="afa98e95d9f1f1584eb9966ffd5fcb86c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>exit</b> (portMUX_TYPE handle)</td></tr>
+<tr class="memitem:afa98e95d9f1f1584eb9966ffd5fcb86c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__critical.html#afa98e95d9f1f1584eb9966ffd5fcb86c">exit</a> (portMUX_TYPE handle)</td></tr>
 <tr class="separator:afa98e95d9f1f1584eb9966ffd5fcb86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686b7795f4afa7a056648b021ceb1968"><td class="memItemLeft" align="right" valign="top"><a id="a686b7795f4afa7a056648b021ceb1968"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>disable_interrupts</b> ()</td></tr>
+<tr class="memitem:a686b7795f4afa7a056648b021ceb1968"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__critical.html#a686b7795f4afa7a056648b021ceb1968">disable_interrupts</a> ()</td></tr>
 <tr class="separator:a686b7795f4afa7a056648b021ceb1968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2b221433b461c16ab4ad77ec1ad14a2"><td class="memItemLeft" align="right" valign="top"><a id="af2b221433b461c16ab4ad77ec1ad14a2"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>enable_interrupts</b> ()</td></tr>
+<tr class="memitem:af2b221433b461c16ab4ad77ec1ad14a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__critical.html#af2b221433b461c16ab4ad77ec1ad14a2">enable_interrupts</a> ()</td></tr>
 <tr class="separator:af2b221433b461c16ab4ad77ec1ad14a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa34ce4d2463f97510899085b14db148"><td class="memItemLeft" align="right" valign="top"><a id="aaa34ce4d2463f97510899085b14db148"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>stop_scheduler</b> ()</td></tr>
+<tr class="memitem:aaa34ce4d2463f97510899085b14db148"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__critical.html#aaa34ce4d2463f97510899085b14db148">stop_scheduler</a> ()</td></tr>
 <tr class="separator:aaa34ce4d2463f97510899085b14db148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a824e8b785e09d066c2b340210144d"><td class="memItemLeft" align="right" valign="top"><a id="a93a824e8b785e09d066c2b340210144d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>resume_scheduler</b> ()</td></tr>
+<tr class="memitem:a93a824e8b785e09d066c2b340210144d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__critical.html#a93a824e8b785e09d066c2b340210144d">resume_scheduler</a> ()</td></tr>
 <tr class="separator:a93a824e8b785e09d066c2b340210144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Wrapper class around various critical section type synchronization mechanisms within FreeRTOS. </p>
+</div><h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="a686b7795f4afa7a056648b021ceb1968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686b7795f4afa7a056648b021ceb1968">&#9670;&nbsp;</a></span>disable_interrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basic_critical::disable_interrupts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Disable all maskable interrupts. </p>
+
+</div>
+</div>
+<a id="af2b221433b461c16ab4ad77ec1ad14a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b221433b461c16ab4ad77ec1ad14a2">&#9670;&nbsp;</a></span>enable_interrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basic_critical::enable_interrupts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable all maskable interrupts. </p>
+
+</div>
+</div>
+<a id="a1e913c5e607f50eb9209a94a4a833ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e913c5e607f50eb9209a94a4a833ea0">&#9670;&nbsp;</a></span>enter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basic_critical::enter </td>
+          <td>(</td>
+          <td class="paramtype">portMUX_TYPE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Disable context switches as well as maskable interrupts. </p>
+
+</div>
+</div>
+<a id="afa98e95d9f1f1584eb9966ffd5fcb86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa98e95d9f1f1584eb9966ffd5fcb86c">&#9670;&nbsp;</a></span>exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basic_critical::exit </td>
+          <td>(</td>
+          <td class="paramtype">portMUX_TYPE&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Re-enable context switches. </p>
+
+</div>
+</div>
+<a id="a93a824e8b785e09d066c2b340210144d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a824e8b785e09d066c2b340210144d">&#9670;&nbsp;</a></span>resume_scheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basic_critical::resume_scheduler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Re-enable the scheduler. </p>
+
+</div>
+</div>
+<a id="aaa34ce4d2463f97510899085b14db148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa34ce4d2463f97510899085b14db148">&#9670;&nbsp;</a></span>stop_scheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basic_critical::stop_scheduler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Suspend the scheduler without disabling interrupts. </p>
+
+</div>
+</div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
 <li>/home/ambersophia/Dokumente/git/mnthread/include/<a class="el" href="mn__critical_8hpp_source.html">mn_critical.hpp</a></li>
 <li>/home/ambersophia/Dokumente/git/mnthread/src/mn_critical.cpp</li>

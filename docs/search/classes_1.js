@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['libmnversion_68',['libmnVersion',['../classlibmn_version.html',1,'']]]
+  ['hello_5fworld_5ftask_124',['hello_world_task',['../classhello__world__task.html',1,'']]]
 ];

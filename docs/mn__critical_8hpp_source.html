@@ -111,61 +111,83 @@ $(document).ready(function(){initNavTree('mn__critical_8hpp_source.html',''); in
 <div class="title">mn_critical.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _MINLIB_CRITICAL_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _MINLIB_CRITICAL_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;mn_mutex.hpp&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;freertos/FreeRTOS.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;freertos/task.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classbasic__critical.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__critical.html">basic_critical</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> enter(portMUX_TYPE handle);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> exit(portMUX_TYPE handle);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> disable_interrupts();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> enable_interrupts();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> stop_scheduler();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> resume_scheduler();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This program is free software: you can redistribute it and/or modify  </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by  </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * the Free Software Foundation, version 3.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This program is distributed in the hope that it will be useful, but </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef _MINLIB_CRITICAL_H_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define _MINLIB_CRITICAL_H_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classbasic__critical__lock.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__critical__lock.html">basic_critical_lock</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classbasic__critical__lock.html">basic_critical_lock</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;mn_mutex.hpp&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;freertos/FreeRTOS.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;freertos/task.h&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> lock() { basic_critical::enter(m_pHandle);  }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unlock() { basic_critical::exit(m_pHandle);  }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    portMUX_TYPE m_pHandle;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classbasic__interrupts__lock.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a> { </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> lock() { basic_critical::disable_interrupts();  }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unlock() { basic_critical::enable_interrupts();  }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classbasic__scheduler__lock.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__scheduler__lock.html">basic_scheduler_lock</a> { </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> lock() { basic_critical::stop_scheduler();  }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unlock() { basic_critical::resume_scheduler();  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__critical.html">critical_t</a> = <a class="code" href="classbasic__critical.html">basic_critical</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__critical__lock.html">critical_lock_t</a> = <a class="code" href="classbasic__critical__lock.html">basic_critical_lock</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__interrupts__lock.html">interrupts_lock_t</a> = <a class="code" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__scheduler__lock.html">sheduler_lock_t</a> = <a class="code" href="classbasic__scheduler__lock.html">basic_scheduler_lock</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classbasic__critical.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__critical.html">basic_critical</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__critical.html#a1e913c5e607f50eb9209a94a4a833ea0">enter</a>(portMUX_TYPE handle);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__critical.html#afa98e95d9f1f1584eb9966ffd5fcb86c">exit</a>(portMUX_TYPE handle);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__critical.html#a686b7795f4afa7a056648b021ceb1968">disable_interrupts</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__critical.html#af2b221433b461c16ab4ad77ec1ad14a2">enable_interrupts</a>();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__critical.html#aaa34ce4d2463f97510899085b14db148">stop_scheduler</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__critical.html#a93a824e8b785e09d066c2b340210144d">resume_scheduler</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classbasic__critical__lock.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__critical__lock.html">basic_critical_lock</a> {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classbasic__critical__lock.html">basic_critical_lock</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> lock() { <a class="code" href="classbasic__critical.html#a1e913c5e607f50eb9209a94a4a833ea0">basic_critical::enter</a>(m_pHandle);  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unlock() { <a class="code" href="classbasic__critical.html#afa98e95d9f1f1584eb9966ffd5fcb86c">basic_critical::exit</a>(m_pHandle);  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    portMUX_TYPE m_pHandle;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classbasic__interrupts__lock.html">   74</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a> { </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> lock() { <a class="code" href="classbasic__critical.html#a686b7795f4afa7a056648b021ceb1968">basic_critical::disable_interrupts</a>();  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unlock() { <a class="code" href="classbasic__critical.html#af2b221433b461c16ab4ad77ec1ad14a2">basic_critical::enable_interrupts</a>();  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classbasic__scheduler__lock.html">   83</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__scheduler__lock.html">basic_scheduler_lock</a> { </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> lock() { <a class="code" href="classbasic__critical.html#aaa34ce4d2463f97510899085b14db148">basic_critical::stop_scheduler</a>();  }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> unlock() { <a class="code" href="classbasic__critical.html#a93a824e8b785e09d066c2b340210144d">basic_critical::resume_scheduler</a>();  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__critical.html">critical_t</a> = <a class="code" href="classbasic__critical.html">basic_critical</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__critical__lock.html">critical_lock_t</a> = <a class="code" href="classbasic__critical__lock.html">basic_critical_lock</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__interrupts__lock.html">interrupts_lock_t</a> = <a class="code" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__scheduler__lock.html">sheduler_lock_t</a> = <a class="code" href="classbasic__scheduler__lock.html">basic_scheduler_lock</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassbasic__scheduler__lock_html"><div class="ttname"><a href="classbasic__scheduler__lock.html">basic_scheduler_lock</a></div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:36</div></div>
-<div class="ttc" id="aclassbasic__interrupts__lock_html"><div class="ttname"><a href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:30</div></div>
-<div class="ttc" id="aclassbasic__critical_html"><div class="ttname"><a href="classbasic__critical.html">basic_critical</a></div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:8</div></div>
-<div class="ttc" id="aclassbasic__critical__lock_html"><div class="ttname"><a href="classbasic__critical__lock.html">basic_critical_lock</a></div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:20</div></div>
+<div class="ttc" id="aclassbasic__critical_html_af2b221433b461c16ab4ad77ec1ad14a2"><div class="ttname"><a href="classbasic__critical.html#af2b221433b461c16ab4ad77ec1ad14a2">basic_critical::enable_interrupts</a></div><div class="ttdeci">static void enable_interrupts()</div><div class="ttdef"><b>Definition:</b> mn_critical.cpp:37</div></div>
+<div class="ttc" id="aclassbasic__critical_html_aaa34ce4d2463f97510899085b14db148"><div class="ttname"><a href="classbasic__critical.html#aaa34ce4d2463f97510899085b14db148">basic_critical::stop_scheduler</a></div><div class="ttdeci">static void stop_scheduler()</div><div class="ttdef"><b>Definition:</b> mn_critical.cpp:41</div></div>
+<div class="ttc" id="aclassbasic__critical_html_a93a824e8b785e09d066c2b340210144d"><div class="ttname"><a href="classbasic__critical.html#a93a824e8b785e09d066c2b340210144d">basic_critical::resume_scheduler</a></div><div class="ttdeci">static void resume_scheduler()</div><div class="ttdef"><b>Definition:</b> mn_critical.cpp:44</div></div>
+<div class="ttc" id="aclassbasic__critical_html_a686b7795f4afa7a056648b021ceb1968"><div class="ttname"><a href="classbasic__critical.html#a686b7795f4afa7a056648b021ceb1968">basic_critical::disable_interrupts</a></div><div class="ttdeci">static void disable_interrupts()</div><div class="ttdef"><b>Definition:</b> mn_critical.cpp:34</div></div>
+<div class="ttc" id="aclassbasic__critical_html_afa98e95d9f1f1584eb9966ffd5fcb86c"><div class="ttname"><a href="classbasic__critical.html#afa98e95d9f1f1584eb9966ffd5fcb86c">basic_critical::exit</a></div><div class="ttdeci">static void exit(portMUX_TYPE handle)</div><div class="ttdef"><b>Definition:</b> mn_critical.cpp:27</div></div>
+<div class="ttc" id="aclassbasic__scheduler__lock_html"><div class="ttname"><a href="classbasic__scheduler__lock.html">basic_scheduler_lock</a></div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:83</div></div>
+<div class="ttc" id="aclassbasic__interrupts__lock_html"><div class="ttname"><a href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:74</div></div>
+<div class="ttc" id="aclassbasic__critical_html"><div class="ttname"><a href="classbasic__critical.html">basic_critical</a></div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:28</div></div>
+<div class="ttc" id="aclassbasic__critical__lock_html"><div class="ttname"><a href="classbasic__critical__lock.html">basic_critical_lock</a></div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:61</div></div>
+<div class="ttc" id="aclassbasic__critical_html_a1e913c5e607f50eb9209a94a4a833ea0"><div class="ttname"><a href="classbasic__critical.html#a1e913c5e607f50eb9209a94a4a833ea0">basic_critical::enter</a></div><div class="ttdeci">static void enter(portMUX_TYPE handle)</div><div class="ttdef"><b>Definition:</b> mn_critical.cpp:20</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

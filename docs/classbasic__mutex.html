@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('classbasic__mutex.html',''); initResiz
 Klassendiagramm für basic_mutex:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex__inherit__graph.png" border="0" usemap="#abasic__mutex_inherit__map" alt="Inheritance graph"/></div>
-<map name="basic__mutex_inherit__map" id="abasic__mutex_inherit__map">
+<map name="basic__mutex_inherit__map" id="basic__mutex_inherit__map">
 <area shape="rect" title=" " alt="" coords="18,5,123,32"/>
 <area shape="rect" href="classrecursive__mutex.html" title=" " alt="" coords="5,80,136,107"/>
 </map>
@@ -197,14 +197,14 @@ Geschützte Attribute</h2></td></tr>
 </div><div class="memdoc">
 <p>Create the Mutex</p>
 <dl class="section return"><dt>Rückgabe</dt><dd>'ERR_MUTEX_OK' the mutex are created, 'ERR_MUTEX_ALREADYINIT' the mutex are already created and 'ERR_MUTEX_CANTCREATEMUTEX' on error.</dd></dl>
-<dl class="section note"><dt>Zu beachten</dt><dd>When in config "MN_THREAD_CONFIG_MUTEX_CLASS" with MN_THREAD_CONFIG_BINSPHORE then create the mutex with 'xSemaphoreCreateBinary' (esp32 online guids basic) and with 'MN_THREAD_CONFIG_MUTEX_CLASS' create the mutex with 'xSemaphoreCreateMutex' </dd></dl>
+<dl class="section note"><dt>Zu beachten</dt><dd>When in config "MN_THREAD_CONFIG_MUTEX_CLASS" with MN_THREAD_CONFIG_BINARY_SEMAPHORE then create the mutex with 'xSemaphoreCreateBinary' (esp32 online guids basic) and with 'MN_THREAD_CONFIG_MUTEX_CLASS' create the mutex with 'xSemaphoreCreateMutex' </dd></dl>
 
 <p>Erneute Implementation in <a class="el" href="classrecursive__mutex.html#a543d78a0c3d5dec676b7851db635e15a">recursive_mutex</a>.</p>
 <div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph.png" border="0" usemap="#aclassbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph" alt=""/></div>
-<map name="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph" id="aclassbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph">
+<map name="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph" id="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,160,32"/>
 <area shape="rect" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640" title=" " alt="" coords="208,5,364,32"/>
 </map>
@@ -213,9 +213,10 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph.png" border="0" usemap="#aclassbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph" alt=""/></div>
-<map name="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph" id="aclassbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph">
-<area shape="rect" title=" " alt="" coords="244,13,399,39"/>
+<map name="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph" id="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph">
+<area shape="rect" title=" " alt="" coords="244,42,399,69"/>
 <area shape="rect" href="classbasic__condition__variable.html#a548ce610d0abfc8c50d9c77d47d189c7" title=" " alt="" coords="5,5,196,47"/>
+<area shape="rect" href="classbasic__thread.html#ae11808eb6dc9407f5c9da55a0ee27a15" title=" " alt="" coords="23,71,178,98"/>
 </map>
 </div>
 
@@ -245,6 +246,15 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><div class="memdoc">
 <p>Destroyed the Mutex</p>
 <dl class="section return"><dt>Rückgabe</dt><dd>'ERR_MUTEX_OK' the mutex are destroyed or ERR_MUTEX_NOTINIT when mutex not created </dd></dl>
+<div class="dynheader">
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__mutex_a0c3098b8b10490ef173c6977a4b82b13_icgraph.png" border="0" usemap="#aclassbasic__mutex_a0c3098b8b10490ef173c6977a4b82b13_icgraph" alt=""/></div>
+<map name="classbasic__mutex_a0c3098b8b10490ef173c6977a4b82b13_icgraph" id="aclassbasic__mutex_a0c3098b8b10490ef173c6977a4b82b13_icgraph">
+<area shape="rect" title=" " alt="" coords="212,13,375,39"/>
+<area shape="rect" href="classbasic__thread.html#a0dc0c074a6b81520bf6c52ab82682cce" title=" " alt="" coords="5,5,164,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -339,9 +349,13 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph.png" border="0" usemap="#aclassbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph" alt=""/></div>
-<map name="classbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph" id="aclassbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph">
-<area shape="rect" title=" " alt="" coords="219,5,359,32"/>
-<area shape="rect" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203" title=" " alt="" coords="5,5,171,32"/>
+<map name="classbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph" id="classbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph">
+<area shape="rect" title=" " alt="" coords="447,82,587,108"/>
+<area shape="rect" href="classbasic__thread.html#ae11808eb6dc9407f5c9da55a0ee27a15" title=" " alt="" coords="5,31,160,58"/>
+<area shape="rect" href="classbasic__thread.html#ac98c71fadf905a66274275c3611bb587" title=" " alt="" coords="237,31,370,58"/>
+<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="208,82,399,108"/>
+<area shape="rect" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203" title=" " alt="" coords="221,132,386,159"/>
+<area shape="rect" href="classbasic__convar__thread.html#a0d77030b8f009dd539a97ac7e64e272b" title=" " alt="" coords="225,184,381,225"/>
 </map>
 </div>
 
@@ -376,7 +390,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph.png" border="0" usemap="#aclassbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph" alt=""/></div>
-<map name="classbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph" id="aclassbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph">
+<map name="classbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph" id="classbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,171,32"/>
 <area shape="rect" href="classbasic__mutex.html#a2279bd8e9c34fa47a7cc4066488e2e79" title=" " alt="" coords="219,5,359,32"/>
 </map>
@@ -414,10 +428,15 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph.png" border="0" usemap="#aclassbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph" alt=""/></div>
-<map name="classbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph" id="aclassbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph">
-<area shape="rect" title=" " alt="" coords="447,13,603,39"/>
-<area shape="rect" href="classbasic__mutex.html#a9012d8b56fc21f0370c9f36f9e6e20c6" title=" " alt="" coords="244,13,399,39"/>
-<area shape="rect" href="classbasic__condition__variable.html#a548ce610d0abfc8c50d9c77d47d189c7" title=" " alt="" coords="5,5,196,47"/>
+<map name="classbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph" id="classbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph">
+<area shape="rect" title=" " alt="" coords="651,198,807,225"/>
+<area shape="rect" href="classbasic__mutex.html#a9012d8b56fc21f0370c9f36f9e6e20c6" title=" " alt="" coords="447,71,602,98"/>
+<area shape="rect" href="classbasic__thread.html#ae11808eb6dc9407f5c9da55a0ee27a15" title=" " alt="" coords="5,122,160,149"/>
+<area shape="rect" href="classbasic__thread.html#ac98c71fadf905a66274275c3611bb587" title=" " alt="" coords="458,173,591,199"/>
+<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="208,223,399,250"/>
+<area shape="rect" href="classbasic__thread.html#a6892127bdbb965b071e0bb752a54c794" title=" " alt="" coords="447,275,602,316"/>
+<area shape="rect" href="classbasic__convar__thread.html#a0d77030b8f009dd539a97ac7e64e272b" title=" " alt="" coords="447,340,603,381"/>
+<area shape="rect" href="classbasic__condition__variable.html#a548ce610d0abfc8c50d9c77d47d189c7" title=" " alt="" coords="208,5,399,47"/>
 </map>
 </div>
 
