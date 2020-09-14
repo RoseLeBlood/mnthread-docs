@@ -167,8 +167,6 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Recursive usage Mutex.</p>
 <p>By default calls to Lock these objects block forever, but this can be changed by simply passing in a argument to the <a class="el" href="classrecursive__mutex.html#a923456ed7a0b03fd45ccb608c61e44d6">lock()</a> method. These objects are recursively acquirable. Calling <a class="el" href="classrecursive__mutex.html#a923456ed7a0b03fd45ccb608c61e44d6">lock()</a> twice from the same Thread (i.e. task) works fine. The caller just needs to be sure to call <a class="el" href="classrecursive__mutex.html#a5ed84c06d86fc9ba4e998b0fc5bde897">unlock()</a> as many times as <a class="el" href="classrecursive__mutex.html#a923456ed7a0b03fd45ccb608c61e44d6">lock()</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Recursive mutexes use more resources than standard mutexes. You should be sure that you actually need this type of synchronization before using it. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__recursive__mutex_8hpp_source.html#l00035">35</a> of file <a class="el" href="mn__recursive__mutex_8hpp_source.html">mn_recursive_mutex.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1a208c1e6122fda628bdba8e3230edef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a208c1e6122fda628bdba8e3230edef">&#9670;&nbsp;</a></span>recursive_mutex()</h2>
@@ -184,8 +182,6 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mn__recursive__mutex_8cpp_source.html#l00033">33</a> of file <a class="el" href="mn__recursive__mutex_8cpp_source.html">mn_recursive_mutex.cpp</a>.</p>
 
 </div>
 </div>
@@ -217,8 +213,6 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>create the mutex with 'xSemaphoreCreateRecursiveMutex' </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classbasic__mutex.html#a9012d8b56fc21f0370c9f36f9e6e20c6">basic_mutex</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="mn__recursive__mutex_8cpp_source.html#l00038">38</a> of file <a class="el" href="mn__recursive__mutex_8cpp_source.html">mn_recursive_mutex.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -266,8 +260,6 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classbasic__mutex.html#a2279bd8e9c34fa47a7cc4066488e2e79">basic_mutex</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mn__recursive__mutex_8cpp_source.html#l00052">52</a> of file <a class="el" href="mn__recursive__mutex_8cpp_source.html">mn_recursive_mutex.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a5ed84c06d86fc9ba4e998b0fc5bde897"></a>
@@ -297,8 +289,6 @@ Here is the call graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>use 'xSemaphoreGiveRecursiveFromISR' in ISR context or 'xSemaphoreGiveRecursive' in all other </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="mn__recursive__mutex_8cpp_source.html#l00062">62</a> of file <a class="el" href="mn__recursive__mutex_8cpp_source.html">mn_recursive_mutex.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -313,7 +303,7 @@ Here is the caller graph for this function:</div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="mn__recursive__mutex_8hpp_source.html">mn_recursive_mutex.hpp</a></li>
-<li><a class="el" href="mn__recursive__mutex_8cpp_source.html">mn_recursive_mutex.cpp</a></li>
+<li><a class="el" href="mn__recursive__mutex_8cpp.html">mn_recursive_mutex.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

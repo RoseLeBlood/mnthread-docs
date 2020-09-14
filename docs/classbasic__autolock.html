@@ -146,8 +146,6 @@ Private Attributes</h2></td></tr>
 class basic_autolock&lt; LOCK &gt;</h3>
 
 <p>Synchronization helper class that leverages the C++ language to help prevent deadlocks. This is a C++11 feature that allows LockObject Locking and Unlocking to behave following an RAII style. The constructor of this helper object locks the LockObject. The destructor unlocks the LockObject. </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__autolock_8hpp_source.html#l00036">36</a> of file <a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aea4fc713418e790a4d78386291417fbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea4fc713418e790a4d78386291417fbd">&#9670;&nbsp;</a></span>basic_autolock() <span class="overload">[1/2]</span></h2>
@@ -177,8 +175,6 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <p>Create a <a class="el" href="classbasic__autolock.html">basic_autolock</a> with a specific LockType.</p>
 <dl class="section post"><dt>Postcondition</dt><dd>The LockObject will be locked. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mn__autolock_8hpp_source.html#l00044">44</a> of file <a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>.</p>
-
 </div>
 </div>
 <a id="a5ad7493ed31a3a231446881d33c3b909"></a>
@@ -207,8 +203,6 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 </div><div class="memdoc">
 <p>Destroy a <a class="el" href="classbasic__autolock.html">basic_autolock</a>.</p>
 <dl class="section post"><dt>Postcondition</dt><dd>The LockObject will be unlocked. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__autolock_8hpp_source.html#l00052">52</a> of file <a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>.</p>
 
 </div>
 </div>
@@ -264,8 +258,6 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Reference to the LockObject we locked, so it can be unlocked in the destructor. </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__autolock_8hpp_source.html#l00065">65</a> of file <a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>.</p>
 
 </div>
 </div>

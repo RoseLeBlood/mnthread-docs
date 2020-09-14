@@ -148,8 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a25fd43e035a0a5a6c15a24c4f2c6ffde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1253a64632eda8c010f1a53820c03a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#af1253a64632eda8c010f1a53820c03a0">destroy</a> ()</td></tr>
 <tr class="separator:af1253a64632eda8c010f1a53820c03a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b5826b30efdc7f5ad0811ef1da9ec7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#ad9b5826b30efdc7f5ad0811ef1da9ec7">send_to</a> (<a class="el" href="mn__workqueue__item_8hpp.html#abbd4bf0b4bc3bc8ae1d8d9543203b2bb">work_queue_item_t</a> *work)</td></tr>
-<tr class="separator:ad9b5826b30efdc7f5ad0811ef1da9ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac227e71e1a038c7c06e7346828e52444"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#ac227e71e1a038c7c06e7346828e52444">send</a> (<a class="el" href="mn__workqueue__item_8hpp.html#abbd4bf0b4bc3bc8ae1d8d9543203b2bb">work_queue_item_t</a> *work)</td></tr>
+<tr class="separator:ac227e71e1a038c7c06e7346828e52444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -162,8 +162,6 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is the "engine" for <a class="el" href="classwork__queue__item.html">work_queue_item</a>. Create one or more <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> to accept <a class="el" href="classwork__queue__item.html">work_queue_item</a>. <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> pull <a class="el" href="classwork__queue__item.html">work_queue_item</a> off of a FIFO queue and run them sequentially. </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__workqueue_8hpp_source.html#l00030">30</a> of file <a class="el" href="mn__workqueue_8hpp_source.html">mn_workqueue.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4e7a1fadd965d9f2543049f69c40eec3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e7a1fadd965d9f2543049f69c40eec3">&#9670;&nbsp;</a></span>basic_work_queue()</h2>
@@ -272,14 +270,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9b5826b30efdc7f5ad0811ef1da9ec7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9b5826b30efdc7f5ad0811ef1da9ec7">&#9670;&nbsp;</a></span>send_to()</h2>
+<a id="ac227e71e1a038c7c06e7346828e52444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac227e71e1a038c7c06e7346828e52444">&#9670;&nbsp;</a></span>send()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int basic_work_queue::send_to </td>
+          <td class="memname">int basic_work_queue::send </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mn__workqueue__item_8hpp.html#abbd4bf0b4bc3bc8ae1d8d9543203b2bb">work_queue_item_t</a> *&#160;</td>
           <td class="paramname"><em>work</em></td><td>)</td>
@@ -290,12 +288,13 @@ Private Attributes</h2></td></tr>
 <p>Send a work_queue_item_t off to be executed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">work</td><td>Pointer to a work_queue_item_t. </td></tr>
+    <tr><td class="paramname">work</td><td>Pointer to a work_queue_item_t. //</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if it was queued, false otherwise. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>This function may block if the work_queue_t is presently full. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function may block if the work_queue_t is presently full.</dd></dl>
+<p>TODO: ADD create function <a class="el" href="classwork__queue__item.html">work_queue_item</a> </p>
 
 </div>
 </div>
@@ -321,8 +320,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Semaphore to support deconstruction without race conditions. </p>
 
-<p class="definition">Definition at line <a class="el" href="mn__workqueue_8hpp_source.html#l00103">103</a> of file <a class="el" href="mn__workqueue_8hpp_source.html">mn_workqueue.hpp</a>.</p>
-
 </div>
 </div>
 <a id="a6d566cc3d231ab0eee786bf27663bb52"></a>
@@ -346,8 +343,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Pointer to our WorkerThread. </p>
 
-<p class="definition">Definition at line <a class="el" href="mn__workqueue_8hpp_source.html#l00093">93</a> of file <a class="el" href="mn__workqueue_8hpp_source.html">mn_workqueue.hpp</a>.</p>
-
 </div>
 </div>
 <a id="a971787e938c770160c460b2ea1a3d395"></a>
@@ -370,8 +365,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Pointer to our work queue itself. </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__workqueue_8hpp_source.html#l00098">98</a> of file <a class="el" href="mn__workqueue_8hpp_source.html">mn_workqueue.hpp</a>.</p>
 
 </div>
 </div>

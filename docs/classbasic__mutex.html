@@ -153,8 +153,6 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base wrapper class around FreeRTOS's implementation of mutexes. These objects are not recursively acquirable. Calling <a class="el" href="classbasic__mutex.html#a2279bd8e9c34fa47a7cc4066488e2e79">lock()</a> twice from the same Thread (i.e. task) will deadlock. </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8hpp_source.html#l00029">29</a> of file <a class="el" href="mn__mutex_8hpp_source.html">mn_mutex.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acc3a5577a5cdf41e7344fd7ecbeab740"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc3a5577a5cdf41e7344fd7ecbeab740">&#9670;&nbsp;</a></span>basic_mutex()</h2>
@@ -171,8 +169,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The Ctor </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8cpp_source.html#l00027">27</a> of file <a class="el" href="mn__mutex_8cpp_source.html">mn_mutex.cpp</a>.</p>
 
 </div>
 </div>
@@ -204,8 +200,6 @@ Protected Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>When in config "MN_THREAD_CONFIG_MUTEX_CLASS" with MN_THREAD_CONFIG_BINARY_SEMAPHORE then create the mutex with 'xSemaphoreCreateBinary' (esp32 online guids basic) and with 'MN_THREAD_CONFIG_MUTEX_CLASS' create the mutex with 'xSemaphoreCreateMutex' </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classrecursive__mutex.html#ac6c274b2545f2344263436168cefd0ea">recursive_mutex</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8cpp_source.html#l00029">29</a> of file <a class="el" href="mn__mutex_8cpp_source.html">mn_mutex.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -252,8 +246,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Destroyed the Mutex</p>
 <dl class="section return"><dt>Returns</dt><dd>'ERR_MUTEX_OK' the mutex are destroyed or ERR_MUTEX_NOTINIT when mutex not created </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8cpp_source.html#l00046">46</a> of file <a class="el" href="mn__mutex_8cpp_source.html">mn_mutex.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -291,8 +283,6 @@ Here is the caller graph for this function:</div>
 <p>Get the FreeRTOS handle</p>
 <dl class="section return"><dt>Returns</dt><dd>the FreeRTOS handle </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8hpp_source.html#l00093">93</a> of file <a class="el" href="mn__mutex_8hpp_source.html">mn_mutex.hpp</a>.</p>
-
 </div>
 </div>
 <a id="a46c1532e5c6a6c61be4fd2317a5e36cb"></a>
@@ -319,8 +309,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Is the mutex created (initialized) ?</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the mutex created (initialized) and false when not </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8hpp_source.html#l00086">86</a> of file <a class="el" href="mn__mutex_8hpp_source.html">mn_mutex.hpp</a>.</p>
 
 </div>
 </div>
@@ -357,8 +345,6 @@ Here is the caller graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>ERR_MUTEX_OK if the Lock was acquired, ERR_MUTEX_LOCK if it timed out. or ERR_MUTEX_NOTINIT when mutex not created </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classrecursive__mutex.html#a923456ed7a0b03fd45ccb608c61e44d6">recursive_mutex</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8cpp_source.html#l00054">54</a> of file <a class="el" href="mn__mutex_8cpp_source.html">mn_mutex.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -401,8 +387,6 @@ Here is the caller graph for this function:</div>
 <p>Try to lock the mutex</p>
 <dl class="section note"><dt>Note</dt><dd>call lock with timeout from 0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the Lock was acquired, false when not </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8cpp_source.html#l00087">87</a> of file <a class="el" href="mn__mutex_8cpp_source.html">mn_mutex.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -441,8 +425,6 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>ERR_MUTEX_OK if the Lock was released, ERR_MUTEX_UNLOCK if it failed. or ERR_MUTEX_NOTINIT when mutex not created </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classrecursive__mutex.html#a5ed84c06d86fc9ba4e998b0fc5bde897">recursive_mutex</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8cpp_source.html#l00071">71</a> of file <a class="el" href="mn__mutex_8cpp_source.html">mn_mutex.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -483,13 +465,11 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>FreeRTOS semaphore handle. </p>
 
-<p class="definition">Definition at line <a class="el" href="mn__mutex_8hpp_source.html#l00098">98</a> of file <a class="el" href="mn__mutex_8hpp_source.html">mn_mutex.hpp</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="mn__mutex_8hpp_source.html">mn_mutex.hpp</a></li>
-<li><a class="el" href="mn__mutex_8cpp_source.html">mn_mutex.cpp</a></li>
+<li><a class="el" href="mn__mutex_8cpp.html">mn_mutex.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -155,8 +155,6 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A FreeRTOS wrapper for its concept of a Pended Function. In Linux, one permutation of this would be a Tasklet, or bottom half processing from an ISR.</p>
 <p>This is an abstract base class. To use this, you need to subclass it. All of your Tasklets should be derived from the <a class="el" href="classbasic__tasklet.html">basic_tasklet</a> class. Then implement the virtual on_tasklet function. </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__tasklets_8hpp_source.html#l00038">38</a> of file <a class="el" href="mn__tasklets_8hpp_source.html">mn_tasklets.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abbc9451d854d5462072bfb33bb28ef06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbc9451d854d5462072bfb33bb28ef06">&#9670;&nbsp;</a></span>create()</h2>
@@ -200,8 +198,6 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ERR_TASKLET_OK This command will be sent to the timer daemon, ERR_TASKLET_CANTSTART It will not (i.e. timeout) and ERR_TASKLET_CANTINITLOCKT The Locking Object can't create - tasklet not run </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__tasklets_8cpp_source.html#l00024">24</a> of file <a class="el" href="mn__tasklets_8cpp_source.html">mn_tasklets.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -241,8 +237,6 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Destroy the Tasklet </p><dl class="section return"><dt>Returns</dt><dd>ERR_TASKLET_OK Destroyed without any errors </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__tasklets_8cpp_source.html#l00051">51</a> of file <a class="el" href="mn__tasklets_8cpp_source.html">mn_tasklets.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -333,8 +327,6 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Adapter function that allows you to write a class specific <a class="el" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346">on_tasklet()</a> function that interfaces with FreeRTOS. </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__tasklets_8cpp_source.html#l00057">57</a> of file <a class="el" href="mn__tasklets_8cpp_source.html">mn_tasklets.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -379,13 +371,11 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Protect against accidental deletion before we were executed. </p>
 
-<p class="definition">Definition at line <a class="el" href="mn__tasklets_8hpp_source.html#l00075">75</a> of file <a class="el" href="mn__tasklets_8hpp_source.html">mn_tasklets.hpp</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="mn__tasklets_8hpp_source.html">mn_tasklets.hpp</a></li>
-<li><a class="el" href="mn__tasklets_8cpp_source.html">mn_tasklets.cpp</a></li>
+<li><a class="el" href="mn__tasklets_8cpp.html">mn_tasklets.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

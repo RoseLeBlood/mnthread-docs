@@ -168,8 +168,6 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Queue class wrapper for FreeRTOS queues </p><dl class="section note"><dt>Note</dt><dd>can use at the ISR Context, too. This wrapper switch automatic </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8hpp_source.html#l00024">24</a> of file <a class="el" href="mn__queue_8hpp_source.html">mn_queue.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adefd73c1a9998631fe62aac76070ae72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adefd73c1a9998631fe62aac76070ae72">&#9670;&nbsp;</a></span>basic_queue()</h2>
@@ -205,8 +203,6 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00023">23</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
-
 </div>
 </div>
 <a id="af08d269fb09048b65e7b06067fdecb10"></a>
@@ -233,8 +229,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>dtor </p>
 
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00027">27</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -253,8 +247,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Remove all objects from the queue. </p>
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00108">108</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
 
 </div>
 </div>
@@ -283,8 +275,6 @@ Protected Attributes</h2></td></tr>
 <p>Create the queue</p>
 <dl class="section return"><dt>Returns</dt><dd>'ERR_QUEUE_OK': the queue was created 'ERR_QUEUE_ALREADYINIT': the queue is allready created 'ERR_QUEUE_CANTCREATE': queue can not created</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>FreeRTOS queues use a memcpy / fixed size scheme for queues. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00031">31</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
 
 </div>
 </div>
@@ -331,8 +321,6 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>'ERR_QUEUE_OK' the item was removed, 'ERR_QUEUE_REMOVE' on an error and 'ERR_QUEUE_NOTCREATED' when the queue not created </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00065">65</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1b5fb3fcfc16ecae56157ab8a7f12010"></a>
@@ -359,8 +347,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Destroy the Queue</p>
 <dl class="section return"><dt>Returns</dt><dd>'ERR_QUEUE_OK' the queue was destroyed 'ERR_QUEUE_NOTCREATED' the queue is not created </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00038">38</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
 
 </div>
 </div>
@@ -409,8 +395,6 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classbasic__binaryqueue.html#a02c01496cfc33b8e8dc6fb99b5c399e0">basic_binaryqueue</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00047">47</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aafa7e8c391fca993e02ee8fd049380fe"></a>
@@ -437,8 +421,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>get the FreeRTOS queue handle </p><dl class="section return"><dt>Returns</dt><dd>the FreeRTOS handle </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mn__queue_8hpp_source.html#l00124">124</a> of file <a class="el" href="mn__queue_8hpp_source.html">mn_queue.hpp</a>.</p>
-
 </div>
 </div>
 <a id="adc11bc2d754a65a6c6584c8af31fe42c"></a>
@@ -456,8 +438,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>How many empty spaves are currently left in the queue. </p><dl class="section return"><dt>Returns</dt><dd>the number of remaining spaces. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00119">119</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -485,8 +465,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>How many items are currently in the queue. </p><dl class="section return"><dt>Returns</dt><dd>the number of items in the queue. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00114">114</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -514,8 +492,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Is the queue empty? </p><dl class="section return"><dt>Returns</dt><dd>true the queue is empty and false when not </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00097">97</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -543,8 +519,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Is the queue full? </p><dl class="section return"><dt>Returns</dt><dd>true the queue is full and false when not </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00102">102</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -600,8 +574,6 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>'ERR_QUEUE_OK' if an item was copied, 'ERR_QUEUE_PEEK' on error and 'ERR_QUEUE_NOTCREATED' when the queue not created </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mn__queue_8cpp_source.html#l00083">83</a> of file <a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -625,8 +597,6 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mn__queue_8hpp_source.html#l00132">132</a> of file <a class="el" href="mn__queue_8hpp_source.html">mn_queue.hpp</a>.</p>
-
 </div>
 </div>
 <a id="aec4a375ef5b49d5e5f0f4eb4aeef8324"></a>
@@ -648,8 +618,6 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="mn__queue_8hpp_source.html#l00131">131</a> of file <a class="el" href="mn__queue_8hpp_source.html">mn_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -674,13 +642,11 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>FreeRTOS queue handle. </p>
 
-<p class="definition">Definition at line <a class="el" href="mn__queue_8hpp_source.html#l00129">129</a> of file <a class="el" href="mn__queue_8hpp_source.html">mn_queue.hpp</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="mn__queue_8hpp_source.html">mn_queue.hpp</a></li>
-<li><a class="el" href="mn__queue_8cpp_source.html">mn_queue.cpp</a></li>
+<li><a class="el" href="mn__queue_8cpp.html">mn_queue.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
