@@ -1,20 +1,13 @@
 var searchData=
 [
-  ['basic_5fautolock_1',['basic_autolock',['../classbasic__autolock.html',1,'basic_autolock&lt; LOCK &gt;'],['../classbasic__autolock.html#aea4fc713418e790a4d78386291417fbd',1,'basic_autolock::basic_autolock(LOCK &amp;m)'],['../classbasic__autolock.html#a4aac086ccd0f9868785e0af42f15e11b',1,'basic_autolock::basic_autolock(const basic_autolock &amp;)=delete']]],
-  ['basic_5fbinary_5fsemaphore_2',['basic_binary_semaphore',['../classbasic__binary__semaphore.html',1,'']]],
-  ['basic_5fbinaryqueue_3',['basic_binaryqueue',['../classbasic__binaryqueue.html',1,'basic_binaryqueue'],['../classbasic__binaryqueue.html#a3d73296d7b9e777c543a2d12bdbd9988',1,'basic_binaryqueue::basic_binaryqueue()']]],
-  ['basic_5fcondition_5fvariable_4',['basic_condition_variable',['../classbasic__condition__variable.html',1,'basic_condition_variable'],['../classbasic__convar__thread.html#abd554e19ee20edfd76cf26b8a398d8dd',1,'basic_convar_thread::basic_condition_variable()'],['../classbasic__condition__variable.html#a548ce610d0abfc8c50d9c77d47d189c7',1,'basic_condition_variable::basic_condition_variable()']]],
-  ['basic_5fconvar_5fthread_5',['basic_convar_thread',['../classbasic__convar__thread.html',1,'basic_convar_thread'],['../classbasic__condition__variable.html#a9646fb01072644d86893043da0c69279',1,'basic_condition_variable::basic_convar_thread()'],['../classbasic__convar__thread.html#aabe739ccbb0107ed59eb8c1bb180dfed',1,'basic_convar_thread::basic_convar_thread()']]],
-  ['basic_5fcounting_5fsemaphore_6',['basic_counting_semaphore',['../classbasic__counting__semaphore.html',1,'basic_counting_semaphore'],['../classbasic__counting__semaphore.html#a0d699d8ee0a35976c4338e9789baa17f',1,'basic_counting_semaphore::basic_counting_semaphore()']]],
-  ['basic_5fcritical_7',['basic_critical',['../classbasic__critical.html',1,'']]],
-  ['basic_5fcritical_5flock_8',['basic_critical_lock',['../classbasic__critical__lock.html',1,'']]],
-  ['basic_5fdeque_9',['basic_deque',['../classbasic__deque.html',1,'basic_deque'],['../classbasic__deque.html#ac76a6e291eda0652f102558cc1c1db49',1,'basic_deque::basic_deque()']]],
-  ['basic_5finterrupts_5flock_10',['basic_interrupts_lock',['../classbasic__interrupts__lock.html',1,'']]],
-  ['basic_5fmutex_11',['basic_mutex',['../classbasic__mutex.html',1,'basic_mutex'],['../classbasic__mutex.html#acc3a5577a5cdf41e7344fd7ecbeab740',1,'basic_mutex::basic_mutex()']]],
-  ['basic_5fqueue_12',['basic_queue',['../classbasic__queue.html',1,'basic_queue'],['../classbasic__queue.html#adefd73c1a9998631fe62aac76070ae72',1,'basic_queue::basic_queue()']]],
-  ['basic_5fscheduler_5flock_13',['basic_scheduler_lock',['../classbasic__scheduler__lock.html',1,'']]],
-  ['basic_5fsemaphore_14',['basic_semaphore',['../classbasic__semaphore.html',1,'']]],
-  ['basic_5ftasklet_15',['basic_tasklet',['../classbasic__tasklet.html',1,'']]],
-  ['basic_5fthread_16',['basic_thread',['../classbasic__thread.html',1,'basic_thread'],['../classbasic__thread.html#a3cc90ba34d8227c08388d9525ffb058f',1,'basic_thread::basic_thread()']]],
-  ['broadcast_17',['broadcast',['../classbasic__condition__variable.html#aa9bde6c1ea2d925a16ed75613c9a0e64',1,'basic_condition_variable']]]
+  ['add_5fchild_5fthread_1',['add_child_thread',['../classbasic__thread.html#a2d9b6b578226c07be702abef8f62e8d9',1,'basic_thread']]],
+  ['app_5fmain_2',['app_main',['../basic_8cpp.html#abce06be17fc37d675118a678a8100a36',1,'basic.cpp']]],
+  ['auto_5fcritical_5ft_3',['auto_critical_t',['../mn__autolock_8hpp.html#a36b9b53cc20896d8f638306bcd85301b',1,'mn_autolock.hpp']]],
+  ['auto_5finterrupt_5ft_4',['auto_interrupt_t',['../mn__autolock_8hpp.html#a45d3ff90e64bc627b8228ab2c7f8c93e',1,'mn_autolock.hpp']]],
+  ['auto_5fschedular_5ft_5',['auto_schedular_t',['../mn__autolock_8hpp.html#a6e052de7c5c70fe28ba49f71372ca17c',1,'mn_autolock.hpp']]],
+  ['autobinsemp_5ft_6',['autobinsemp_t',['../mn__autolock_8hpp.html#a68592369b8b17bf26fc9d9b4e9c85e8c',1,'mn_autolock.hpp']]],
+  ['autocsemp_5ft_7',['autocsemp_t',['../mn__autolock_8hpp.html#a13fc09e856ce8493d7c2587058ff5831',1,'mn_autolock.hpp']]],
+  ['autolock_5ft_8',['autolock_t',['../mn__autolock_8hpp.html#a9ebd3bed7bb52b462f82e23bd8e740fa',1,'mn_autolock.hpp']]],
+  ['automutx_5ft_9',['automutx_t',['../mn__autolock_8hpp.html#aaa15c6409f6cc14789ae3f623bf79fbb',1,'mn_autolock.hpp']]],
+  ['autoremutx_5ft_10',['autoremutx_t',['../mn__autolock_8hpp.html#ada4f72ea86a4fb0d781d9d83e8cecac0',1,'mn_autolock.hpp']]]
 ];

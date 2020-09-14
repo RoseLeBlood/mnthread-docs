@@ -1,5 +1,23 @@
 var searchData=
 [
-  ['handle_46',['handle',['../classbasic__thread.html#aabd87d33af088165ae38faa4355f6fce',1,'basic_thread']]],
-  ['hello_5fworld_5ftask_47',['hello_world_task',['../classhello__world__task.html',1,'']]]
+  ['get_5fchild_75',['get_child',['../classbasic__thread.html#a99e5cabdf18f1cf86906a40950407d5d',1,'basic_thread']]],
+  ['get_5fcount_76',['get_count',['../classbasic__counting__semaphore.html#a2e576fbf089732f9995742bd2c10bc16',1,'basic_counting_semaphore']]],
+  ['get_5fdebug_5fversion_77',['get_debug_version',['../classlibmn_version.html#ae8d0c432c0265e513b1527670a79b4b2',1,'libmnVersion']]],
+  ['get_5ffree_5fafter_78',['get_free_after',['../classwork__queue__item.html#abc04018d2f00c88aa6f89913895608d3',1,'work_queue_item']]],
+  ['get_5fhandle_79',['get_handle',['../classbasic__mutex.html#a0d266035e046f89e3e461bf454da0cf7',1,'basic_mutex::get_handle()'],['../classbasic__semaphore.html#a3f687583c39b52b9c34a73a842d80efd',1,'basic_semaphore::get_handle()'],['../classbasic__thread.html#a180cf5749a77184a8b68f00f2cdb0da0',1,'basic_thread::get_handle()'],['../classbasic__queue.html#aafa7e8c391fca993e02ee8fd049380fe',1,'basic_queue::get_handle()']]],
+  ['get_5fid_80',['get_id',['../classbasic__thread.html#a2fc99d7a5f71f1574487991e3d8fcf0b',1,'basic_thread']]],
+  ['get_5fleft_81',['get_left',['../classbasic__queue.html#adc11bc2d754a65a6c6584c8af31fe42c',1,'basic_queue']]],
+  ['get_5flicense_82',['get_license',['../classlibmn_version.html#a4a9007372ecae9a485eb61d102b659bb',1,'libmnVersion']]],
+  ['get_5fmajor_5fversion_83',['get_major_version',['../classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588',1,'libmnVersion']]],
+  ['get_5fminor_5fversion_84',['get_minor_version',['../classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00',1,'libmnVersion']]],
+  ['get_5fname_85',['get_name',['../classbasic__thread.html#ad8b56d04447494b87740dcaef3704326',1,'basic_thread']]],
+  ['get_5fnew_5fid_86',['get_new_id',['../classbasic__thread.html#a0d7ed0c9eb4244d07e3459b999b54a4e',1,'basic_thread']]],
+  ['get_5fnum_5fitems_87',['get_num_items',['../classbasic__queue.html#acccc78eb8dbbd0e358bafc9e3558ac91',1,'basic_queue']]],
+  ['get_5fon_5fcore_88',['get_on_core',['../classbasic__thread.html#aba78de9128e383b6c3b176b095a095b9',1,'basic_thread']]],
+  ['get_5fpriority_89',['get_priority',['../classbasic__thread.html#af296af43b945ae7fbba348c954c13ede',1,'basic_thread']]],
+  ['get_5freturn_5fvalue_90',['get_return_value',['../classbasic__thread.html#ad92019e1f0d21c14533691ec43ad812c',1,'basic_thread']]],
+  ['get_5froot_91',['get_root',['../classbasic__thread.html#a724713206bc964671f6cda1ef5d87dbb',1,'basic_thread']]],
+  ['get_5fstackdepth_92',['get_stackdepth',['../classbasic__thread.html#a936dfd442e37ee55a08c9a66ee726cf9',1,'basic_thread']]],
+  ['get_5fticks_93',['get_ticks',['../mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451',1,'get_ticks():&#160;mn_micros.cpp'],['../mn__micros_8cpp.html#afdf0a92b2d187681014a7ba7aa672451',1,'get_ticks():&#160;mn_micros.cpp']]],
+  ['get_5ftime_5fsince_5fstart_94',['get_time_since_start',['../classbasic__thread.html#a777cf001325de4fe95feff9f5009c8c7',1,'basic_thread']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['peek_179',['peek',['../classbasic__queue.html#aba1d590a28e393c8d3cad0ad9fe15bf3',1,'basic_queue']]]
+  ['nsleep_382',['nsleep',['../classbasic__thread.html#a1e654bd99bbc3bece13da735e4f03d2d',1,'basic_thread']]]
 ];

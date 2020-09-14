@@ -1,7 +1,6 @@
 var hierarchy =
 [
     [ "basic_autolock< LOCK >", "classbasic__autolock.html", null ],
-    [ "basic_condition_variable", "classbasic__condition__variable.html", null ],
     [ "basic_critical", "classbasic__critical.html", null ],
     [ "basic_critical_lock", "classbasic__critical__lock.html", null ],
     [ "basic_interrupts_lock", "classbasic__interrupts__lock.html", null ],
@@ -19,8 +18,10 @@ var hierarchy =
     ] ],
     [ "basic_tasklet", "classbasic__tasklet.html", null ],
     [ "basic_thread", "classbasic__thread.html", [
-      [ "basic_convar_thread", "classbasic__convar__thread.html", null ],
+      [ "basic_work_queue::work_queue_thread", "classbasic__work__queue_1_1work__queue__thread.html", null ],
       [ "hello_world_task", "classhello__world__task.html", null ]
     ] ],
-    [ "libmnVersion", "classlibmn_version.html", null ]
+    [ "basic_work_queue", "classbasic__work__queue.html", null ],
+    [ "libmnVersion", "classlibmn_version.html", null ],
+    [ "work_queue_item", "classwork__queue__item.html", null ]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7ebasic_5fautolock_199',['~basic_autolock',['../classbasic__autolock.html#a5ad7493ed31a3a231446881d33c3b909',1,'basic_autolock']]],
-  ['_7ebasic_5fqueue_200',['~basic_queue',['../classbasic__queue.html#af08d269fb09048b65e7b06067fdecb10',1,'basic_queue']]],
-  ['_7ebasic_5fthread_201',['~basic_thread',['../classbasic__thread.html#a0dc0c074a6b81520bf6c52ab82682cce',1,'basic_thread']]]
+  ['work_5fqueue_5fitem_409',['work_queue_item',['../classwork__queue__item.html#af9502a7ffaf81c398dbec76cfb5f60dc',1,'work_queue_item']]],
+  ['work_5fqueue_5fthread_410',['work_queue_thread',['../classbasic__work__queue_1_1work__queue__thread.html#ab07f803770b6906b05b5e3b8beca65de',1,'basic_work_queue::work_queue_thread']]]
 ];

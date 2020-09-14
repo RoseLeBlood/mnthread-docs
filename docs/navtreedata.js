@@ -34,27 +34,35 @@ var NAVTREE =
     ] ],
     [ "ChangeLog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", null ],
     [ "LICENSE", "md__home_ambersophia__dokumente_git_mnthread__l_i_c_e_n_s_e.html", null ],
-    [ "Klassen", "annotated.html", [
-      [ "Auflistung der Klassen", "annotated.html", "annotated_dup" ],
-      [ "Klassen-Verzeichnis", "classes.html", null ],
-      [ "Klassenhierarchie", "hierarchy.html", "hierarchy" ],
-      [ "Klassen-Elemente", "functions.html", [
-        [ "Alle", "functions.html", null ],
-        [ "Funktionen", "functions_func.html", null ],
-        [ "Variablen", "functions_vars.html", null ],
-        [ "Verwandte Funktionen", "functions_rela.html", null ]
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ],
-    [ "Dateien", "files.html", [
-      [ "Auflistung der Dateien", "files.html", "files_dup" ]
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"mn__convar_8cpp.html"
 ];
 
-var SYNCONMSG = 'Klicken um Panelsynchronisation auszuschalten';
-var SYNCOFFMSG = 'Klicken um Panelsynchronisation einzuschalten';
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['on_5fcleanup_173',['on_cleanup',['../classbasic__thread.html#a3a2b65a713e1715b1c86a7c3a768f82f',1,'basic_thread']]],
-  ['on_5fcreate_174',['on_create',['../classbasic__convar__thread.html#adc972840041c4ef2d13beb4e5a3b6264',1,'basic_convar_thread::on_create()'],['../classbasic__thread.html#a02630d21acacff51a7aa247907392742',1,'basic_thread::on_create()']]],
-  ['on_5fkill_175',['on_kill',['../classbasic__convar__thread.html#a528b7cac40f927137d1cae6d4eb4e416',1,'basic_convar_thread::on_kill()'],['../classbasic__thread.html#ac2492f6dc8efb29bb14f2c7b5628af06',1,'basic_thread::on_kill()']]],
-  ['on_5fsignal_176',['on_signal',['../classbasic__convar__thread.html#ae31c9faf754c81d3db4ba21fd49ffb22',1,'basic_convar_thread']]],
-  ['on_5ftasklet_177',['on_tasklet',['../classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346',1,'basic_tasklet']]],
-  ['on_5fthread_178',['on_thread',['../classhello__world__task.html#a6b16ff0c92b7e6a8b01e19cc694ce3da',1,'hello_world_task::on_thread()'],['../classbasic__thread.html#ae8daf57059f92ab2013a5dc154ae0e88',1,'basic_thread::on_thread()']]]
+  ['micros_376',['micros',['../mn__micros_8hpp.html#a8b24cbb7c3486e1bfa05c86db83ecb01',1,'micros():&#160;mn_micros.cpp'],['../mn__micros_8cpp.html#af74f583a5fd5c67d9d8b4f347ab1143d',1,'micros():&#160;mn_micros.cpp']]],
+  ['millis_377',['millis',['../mn__micros_8hpp.html#a6ff7f2532a22366f0013bc41397129fd',1,'millis():&#160;mn_micros.cpp'],['../mn__micros_8cpp.html#a6ff7f2532a22366f0013bc41397129fd',1,'millis():&#160;mn_micros.cpp']]],
+  ['mn_5fnsleep_378',['mn_nsleep',['../mn__sleep_8hpp.html#a19ff28b418993d1050ddc0586816cc3f',1,'mn_nsleep(const struct timespec *req, struct timespec *rem):&#160;mn_sleep.cpp'],['../mn__sleep_8cpp.html#ab26c416c6e54031c3e6a8745c9a921e2',1,'mn_nsleep(const struct timespec *req, struct timespec *rem):&#160;mn_sleep.cpp']]],
+  ['mn_5fsleep_379',['mn_sleep',['../mn__sleep_8hpp.html#af0d0f7ac576d81be775cefe3f68de20b',1,'mn_sleep(unsigned int secs):&#160;mn_sleep.cpp'],['../mn__sleep_8cpp.html#af0d0f7ac576d81be775cefe3f68de20b',1,'mn_sleep(unsigned int secs):&#160;mn_sleep.cpp']]],
+  ['mn_5fusleep_380',['mn_usleep',['../mn__sleep_8hpp.html#a636c9a0076d940e5bd54cf8a8aaa9065',1,'mn_usleep(useconds_t usec):&#160;mn_sleep.cpp'],['../mn__sleep_8cpp.html#a636c9a0076d940e5bd54cf8a8aaa9065',1,'mn_usleep(useconds_t usec):&#160;mn_sleep.cpp']]],
+  ['ms_5fto_5fticks_381',['ms_to_ticks',['../mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72',1,'ms_to_ticks(unsigned int ms):&#160;mn_micros.cpp'],['../mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72',1,'ms_to_ticks(unsigned int ms):&#160;mn_micros.cpp']]]
 ];
