@@ -1,7 +1,7 @@
-<!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- For Mobile Devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('classbasic__tasklet.html',''); initRes
 Collaboration diagram for basic_tasklet:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet__coll__graph.png" border="0" usemap="#abasic__tasklet_coll__map" alt="Collaboration graph"/></div>
-<map name="basic__tasklet_coll__map" id="abasic__tasklet_coll__map">
+<map name="basic__tasklet_coll__map" id="basic__tasklet_coll__map">
 <area shape="rect" title=" " alt="" coords="51,171,159,197"/>
 <area shape="rect" href="classbasic__counting__semaphore.html" title=" " alt="" coords="5,81,204,108"/>
 <area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="37,5,173,32"/>
@@ -149,11 +149,17 @@ Static Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af46ec17c3dd392678aebd09d0f29b216"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__spinlock_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__tasklet.html#af46ec17c3dd392678aebd09d0f29b216">m_ssLock</a></td></tr>
+<tr class="memitem:af46ec17c3dd392678aebd09d0f29b216"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__tasklet.html#af46ec17c3dd392678aebd09d0f29b216">m_ssLock</a></td></tr>
 <tr class="separator:af46ec17c3dd392678aebd09d0f29b216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A FreeRTOS wrapper for its concept of a Pended Function. In Linux, one permutation of this would be a Tasklet, or bottom half processing from an ISR.</p>
+<div class="textblock"><p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2018 Amber-Sophia Schroeck</p>
+<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
+ it under the terms of the GNU Lesser General Public License as published by <br  />
+ the Free Software Foundation, version 3, or (at your option) any later version.</p>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. <br  />
+ A FreeRTOS wrapper for its concept of a Pended Function. In Linux, one permutation of this would be a Tasklet, or bottom half processing from an ISR.</p>
 <p>This is an abstract base class. To use this, you need to subclass it. All of your Tasklets should be derived from the <a class="el" href="classbasic__tasklet.html">basic_tasklet</a> class. Then implement the virtual on_tasklet function. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abbc9451d854d5462072bfb33bb28ef06"></a>
@@ -197,12 +203,19 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>ERR_TASKLET_OK This command will be sent to the timer daemon, ERR_TASKLET_CANTSTART It will not (i.e. timeout) and ERR_TASKLET_CANTINITLOCKT The Locking Object can't create - tasklet not run </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ERR_TASKLET_OK This command will be sent to the timer daemon, ERR_TASKLET_CANTSTART It will not (i.e. timeout) and ERR_TASKLET_CANTINITLOCKT The Locking Object can't create - tasklet not run</dd></dl>
+<p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2018 Amber-Sophia Schroeck</p>
+<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
+ it under the terms of the GNU Lesser General Public License as published by <br  />
+ the Free Software Foundation, version 3, or (at your option) any later version.</p>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. <br  />
+ </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph.png" border="0" usemap="#aclassbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph" alt=""/></div>
-<map name="classbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph" id="aclassbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph">
+<map name="classbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph" id="classbasic__tasklet_abbc9451d854d5462072bfb33bb28ef06_cgraph">
 <area shape="rect" title=" " alt="" coords="5,97,163,123"/>
 <area shape="rect" href="classbasic__counting__semaphore.html#a0f933048f021dfbc4e6bcad39dfbd3ff" title=" " alt="" coords="217,5,415,47"/>
 <area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="469,71,656,98"/>
@@ -241,7 +254,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph.png" border="0" usemap="#aclassbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph" alt=""/></div>
-<map name="classbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph" id="aclassbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph">
+<map name="classbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph" id="classbasic__tasklet_a597a926d1cdf5e0ca4663fc68cd632a3_cgraph">
 <area shape="rect" title=" " alt="" coords="5,42,171,69"/>
 <area shape="rect" href="classbasic__counting__semaphore.html#a230ade7eeca9d645e1b17a4ee3c26d21" title=" " alt="" coords="219,5,417,47"/>
 <area shape="rect" href="classbasic__semaphore.html#ad9e109f5a87d768334cb49ff7712e2a5" title=" " alt="" coords="233,71,403,98"/>
@@ -284,7 +297,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph.png" border="0" usemap="#aclassbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph" alt=""/></div>
-<map name="classbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph" id="aclassbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph">
+<map name="classbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph" id="classbasic__tasklet_a3c6e9a2baf4c11b03e2ce270b02f8346_icgraph">
 <area shape="rect" title=" " alt="" coords="469,5,653,32"/>
 <area shape="rect" href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42" title=" " alt="" coords="211,5,421,32"/>
 <area shape="rect" href="classbasic__tasklet.html#abbc9451d854d5462072bfb33bb28ef06" title=" " alt="" coords="5,5,163,32"/>
@@ -331,7 +344,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph.png" border="0" usemap="#aclassbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph" alt=""/></div>
-<map name="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph" id="aclassbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph">
+<map name="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph" id="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,216,57"/>
 <area shape="rect" href="classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346" title=" " alt="" coords="265,5,449,32"/>
 <area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="264,56,451,83"/>
@@ -341,7 +354,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph.png" border="0" usemap="#aclassbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph" alt=""/></div>
-<map name="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph" id="aclassbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph">
+<map name="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph" id="classbasic__tasklet_ae56d66fe8376f223b35262d3d2ca7f42_icgraph">
 <area shape="rect" title=" " alt="" coords="211,5,421,32"/>
 <area shape="rect" href="classbasic__tasklet.html#abbc9451d854d5462072bfb33bb28ef06" title=" " alt="" coords="5,5,163,32"/>
 </map>
@@ -360,7 +373,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mn__spinlock_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a> basic_tasklet::m_ssLock</td>
+          <td class="memname"><a class="el" href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a> basic_tasklet::m_ssLock</td>
         </tr>
       </table>
   </td>

@@ -1,7 +1,7 @@
-<!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- For Mobile Devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -121,9 +121,10 @@ $(document).ready(function(){initNavTree('classbasic__autolock.html',''); initRe
 Collaboration diagram for basic_autolock&lt; LOCK &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__autolock__coll__graph.png" border="0" usemap="#abasic__autolock_3_01_l_o_c_k_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="basic__autolock_3_01_l_o_c_k_01_4_coll__map" id="abasic__autolock_3_01_l_o_c_k_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="5,95,189,121"/>
-<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="45,5,150,32"/>
+<map name="basic__autolock_3_01_l_o_c_k_01_4_coll__map" id="basic__autolock_3_01_l_o_c_k_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="5,171,189,197"/>
+<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="45,81,150,108"/>
+<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="29,5,165,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -145,7 +146,13 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;class LOCK = basic_mutex&gt;<br />
 class basic_autolock&lt; LOCK &gt;</h3>
 
-<p>Synchronization helper class that leverages the C++ language to help prevent deadlocks. This is a C++11 feature that allows LockObject Locking and Unlocking to behave following an RAII style. The constructor of this helper object locks the LockObject. The destructor unlocks the LockObject. </p>
+<p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2018 Amber-Sophia Schroeck</p>
+<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
+ it under the terms of the GNU Lesser General Public License as published by <br  />
+ the Free Software Foundation, version 3, or (at your option) any later version.</p>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. <br  />
+ Synchronization helper class that leverages the C++ language to help prevent deadlocks. This is a C++11 feature that allows LockObject Locking and Unlocking to behave following an RAII style. The constructor of this helper object locks the LockObject. The destructor unlocks the LockObject. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aea4fc713418e790a4d78386291417fbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea4fc713418e790a4d78386291417fbd">&#9670;&nbsp;</a></span>basic_autolock() <span class="overload">[1/2]</span></h2>

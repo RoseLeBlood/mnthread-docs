@@ -1,11 +1,10 @@
 var classbasic__thread =
 [
-    [ "LockType_t", "classbasic__thread.html#a643d375adc47837257344e9757eb6c04", null ],
     [ "basic_thread", "classbasic__thread.html#adc8832b37b0895307b0e73d0e5212005", null ],
     [ "basic_thread", "classbasic__thread.html#a3cc90ba34d8227c08388d9525ffb058f", null ],
     [ "~basic_thread", "classbasic__thread.html#a0dc0c074a6b81520bf6c52ab82682cce", null ],
     [ "add_child_thread", "classbasic__thread.html#a2d9b6b578226c07be702abef8f62e8d9", null ],
-    [ "create", "classbasic__thread.html#ae11808eb6dc9407f5c9da55a0ee27a15", null ],
+    [ "create", "classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6", null ],
     [ "get_child", "classbasic__thread.html#a99e5cabdf18f1cf86906a40950407d5d", null ],
     [ "get_handle", "classbasic__thread.html#a180cf5749a77184a8b68f00f2cdb0da0", null ],
     [ "get_id", "classbasic__thread.html#a2fc99d7a5f71f1574487991e3d8fcf0b", null ],

@@ -1,7 +1,7 @@
-<!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- For Mobile Devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -116,18 +116,18 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp.html',''); initResiz
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__mutex_8hpp_source.html">mn_mutex.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mn__spinlock_8hpp_source.html">mn_spinlock.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__semaphore_8hpp_source.html">mn_semaphore.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__critical_8hpp_source.html">mn_critical.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__recursive__mutex_8hpp_source.html">mn_recursive_mutex.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mn_autolock.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="mn__autolock_8hpp__incl.png" border="0" usemap="#amn__autolock_8hpp" alt=""/></div>
-<map name="mn__autolock_8hpp" id="amn__autolock_8hpp">
+<map name="mn__autolock_8hpp" id="mn__autolock_8hpp">
 <area shape="rect" title=" " alt="" coords="302,5,437,32"/>
 <area shape="rect" href="mn__config_8hpp.html" title=" " alt="" coords="197,229,315,256"/>
 <area shape="rect" href="mn__mutex_8hpp.html" title=" " alt="" coords="309,155,429,181"/>
-<area shape="rect" href="mn__spinlock_8hpp.html" title=" " alt="" coords="407,229,539,256"/>
+<area shape="rect" href="mn__semaphore_8hpp.html" title=" " alt="" coords="407,229,558,256"/>
 <area shape="rect" href="mn__critical_8hpp.html" title=" " alt="" coords="79,80,201,107"/>
 <area shape="rect" href="mn__recursive__mutex_8hpp.html" title=" " alt="" coords="276,80,463,107"/>
 <area shape="rect" title=" " alt="" coords="151,304,302,331"/>
@@ -139,18 +139,19 @@ Include dependency graph for mn_autolock.hpp:</div>
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="mn__autolock_8hpp__dep__incl.png" border="0" usemap="#amn__autolock_8hppdep" alt=""/></div>
-<map name="mn__autolock_8hppdep" id="amn__autolock_8hppdep">
-<area shape="rect" title=" " alt="" coords="200,5,335,32"/>
-<area shape="rect" href="libmn_8hpp.html" title=" " alt="" coords="159,155,245,181"/>
-<area shape="rect" href="mn__tasklets_8hpp.html" title=" " alt="" coords="37,80,167,107"/>
-<area shape="rect" href="mn__thread_8hpp.html" title=" " alt="" coords="291,80,411,107"/>
-<area shape="rect" href="mn__autolock_8cpp.html" title=" " alt="" coords="435,80,569,107"/>
-<area shape="rect" href="basic_8cpp.html" title=" " alt="" coords="106,229,189,256"/>
-<area shape="rect" href="libmn_8cpp.html" title=" " alt="" coords="213,229,300,256"/>
+<map name="mn__autolock_8hppdep" id="mn__autolock_8hppdep">
+<area shape="rect" title=" " alt="" coords="285,5,420,32"/>
+<area shape="rect" href="mn__base_8hpp.html" title=" " alt="" coords="159,155,269,181"/>
+<area shape="rect" href="mn__tasklets_8hpp.html" title=" " alt="" coords="46,80,177,107"/>
+<area shape="rect" href="mn__thread_8hpp.html" title=" " alt="" coords="293,80,413,107"/>
+<area shape="rect" href="mn__blocking__queue_8hpp.html" title=" " alt="" coords="437,80,617,107"/>
+<area shape="rect" href="mn__autolock_8cpp.html" title=" " alt="" coords="642,80,775,107"/>
+<area shape="rect" href="mn__base_8cpp.html" title=" " alt="" coords="160,229,268,256"/>
 <area shape="rect" href="mn__tasklets_8cpp.html" title=" " alt="" coords="5,155,135,181"/>
-<area shape="rect" href="mn__thread_8cpp.html" title=" " alt="" coords="492,155,611,181"/>
-<area shape="rect" href="mn__workqueue_8cpp.html" title=" " alt="" coords="634,155,783,181"/>
-<area shape="rect" href="mn__workqueue__thread_8cpp.html" title=" " alt="" coords="269,155,468,181"/>
+<area shape="rect" href="mn__thread_8cpp.html" title=" " alt="" coords="293,155,412,181"/>
+<area shape="rect" href="mn__workqueue_8cpp.html" title=" " alt="" coords="435,155,585,181"/>
+<area shape="rect" href="mn__workqueue__thread_8cpp.html" title=" " alt="" coords="609,155,808,181"/>
+<area shape="rect" href="mn__blocking__queue_8cpp.html" title=" " alt="" coords="833,155,1011,181"/>
 </map>
 </div>
 </div>
@@ -163,9 +164,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a13fc09e856ce8493d7c2587058ff5831"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a13fc09e856ce8493d7c2587058ff5831">autocsemp_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__spinlock_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a> &gt;</td></tr>
+<tr class="memitem:a13fc09e856ce8493d7c2587058ff5831"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a13fc09e856ce8493d7c2587058ff5831">autocsemp_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a> &gt;</td></tr>
 <tr class="separator:a13fc09e856ce8493d7c2587058ff5831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68592369b8b17bf26fc9d9b4e9c85e8c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a68592369b8b17bf26fc9d9b4e9c85e8c">autobinsemp_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__spinlock_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a> &gt;</td></tr>
+<tr class="memitem:a68592369b8b17bf26fc9d9b4e9c85e8c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a68592369b8b17bf26fc9d9b4e9c85e8c">autobinsemp_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a> &gt;</td></tr>
 <tr class="separator:a68592369b8b17bf26fc9d9b4e9c85e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa15c6409f6cc14789ae3f623bf79fbb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#aaa15c6409f6cc14789ae3f623bf79fbb">automutx_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a> &gt;</td></tr>
 <tr class="separator:aaa15c6409f6cc14789ae3f623bf79fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,8 +178,10 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6e052de7c5c70fe28ba49f71372ca17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada4f72ea86a4fb0d781d9d83e8cecac0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#ada4f72ea86a4fb0d781d9d83e8cecac0">autoremutx_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__recursive__mutex_8hpp.html#a84d2861dec617ce59f255ec231804faa">remutex_t</a> &gt;</td></tr>
 <tr class="separator:ada4f72ea86a4fb0d781d9d83e8cecac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ebd3bed7bb52b462f82e23bd8e740fa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a9ebd3bed7bb52b462f82e23bd8e740fa">autolock_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a> &gt;</td></tr>
-<tr class="separator:a9ebd3bed7bb52b462f82e23bd8e740fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b8829e7928234229aee06f6781ca6f3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">LockType_t</a> = <a class="el" href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a></td></tr>
+<tr class="separator:a2b8829e7928234229aee06f6781ca6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53eeba9f0f1c7ce32281d401d4d94a75"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a53eeba9f0f1c7ce32281d401d4d94a75">autolock_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">LockType_t</a> &gt;</td></tr>
+<tr class="separator:a53eeba9f0f1c7ce32281d401d4d94a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a36b9b53cc20896d8f638306bcd85301b"></a>
@@ -237,7 +240,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="mn__autolock_8hpp.html#a68592369b8b17bf26fc9d9b4e9c85e8c">autobinsemp_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__spinlock_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a>&gt;</td>
+          <td class="memname">using <a class="el" href="mn__autolock_8hpp.html#a68592369b8b17bf26fc9d9b4e9c85e8c">autobinsemp_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -252,7 +255,7 @@ Typedefs</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="mn__autolock_8hpp.html#a13fc09e856ce8493d7c2587058ff5831">autocsemp_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__spinlock_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a>&gt;</td>
+          <td class="memname">using <a class="el" href="mn__autolock_8hpp.html#a13fc09e856ce8493d7c2587058ff5831">autocsemp_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -260,14 +263,14 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a9ebd3bed7bb52b462f82e23bd8e740fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ebd3bed7bb52b462f82e23bd8e740fa">&#9670;&nbsp;</a></span>autolock_t</h2>
+<a id="a53eeba9f0f1c7ce32281d401d4d94a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53eeba9f0f1c7ce32281d401d4d94a75">&#9670;&nbsp;</a></span>autolock_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="mn__autolock_8hpp.html#a9ebd3bed7bb52b462f82e23bd8e740fa">autolock_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a>&gt;</td>
+          <td class="memname">using <a class="el" href="mn__autolock_8hpp.html#a53eeba9f0f1c7ce32281d401d4d94a75">autolock_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">LockType_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -301,6 +304,20 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A autolock type for remutex_t objects </p>
+
+</div>
+</div>
+<a id="a2b8829e7928234229aee06f6781ca6f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b8829e7928234229aee06f6781ca6f3">&#9670;&nbsp;</a></span>LockType_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">LockType_t</a> =  <a class="el" href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

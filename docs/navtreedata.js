@@ -25,14 +25,12 @@
 var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
-    [ "Mini Thread 1.5x", "index.html", [
-      [ "Introduction", "index.html#autotoc_md1", null ],
-      [ "License", "index.html#autotoc_md2", null ],
-      [ "Contact", "index.html#autotoc_md3", null ],
-      [ "ChangeLog", "index.html#autotoc_md4", null ],
-      [ "Examples & Documentation", "index.html#autotoc_md5", null ]
+    [ "Mini Thread 1.60 alpha", "index.html", [
+      [ "Simple Example", "index.html#autotoc_md3", null ],
+      [ "TODO's for Version 2.0", "index.html#autotoc_md4", null ],
+      [ "ChangeLog", "index.html#autotoc_md5", null ]
     ] ],
-    [ "ChangeLog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", null ],
+    [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", null ],
     [ "LICENSE", "md__home_ambersophia__dokumente_git_mnthread__l_i_c_e_n_s_e.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -41,8 +39,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -61,7 +58,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"mn__convar__thread_8cpp.html"
+"mn__blocking__queue_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

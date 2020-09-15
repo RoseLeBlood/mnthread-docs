@@ -1,14 +1,14 @@
-<!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- For Mobile Devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.20"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Mini Thread: ChangeLog</title>
+        <title>Mini Thread: Changelog</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -108,20 +108,29 @@ $(document).ready(function(){initNavTree('md__home_ambersophia__dokumente_git_mn
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">ChangeLog </div>  </div>
+<div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><pre class="fragment">                          mini Thread ChangeLog
-</pre><p> Version 1.60 September 2020:</p><ul>
+<div class="textblock"><p>Version 1.60 September 2020: (unstable nightly)</p><ul>
 <li>add Work queue support (<a class="el" href="classbasic__work__queue.html">basic_work_queue</a>) Create one or more <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> to accept <a class="el" href="classwork__queue__item.html">work_queue_item</a>. <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> pull <a class="el" href="classwork__queue__item.html">work_queue_item</a> off of a FIFO queue and run them sequentially. <br  />
 </li>
 <li>add New Config Options to mn_conig.hpp<ul>
 <li>MN_THREAD_CONFIG_WORK_QUEUE_MAX_WORK_ITEMS: How many work items to queue in the work queue engine default is 8</li>
 <li>MN_THREAD_CONFIG_WORK_QUEUE_STACK_SIZE: Default Stak size for the work queue thread. defaultis (configMINIMAL_STACK_SIZE * 2)</li>
 <li>MN_THREAD_CONFIG_WORK_QUEUE_PRIORITY Default Priority for the work queue thread. default is (tskIDLE_PRIORITY + 1)</li>
+<li>MN_THREAD_CONFIG_DEFAULT_CORE Default Core to run a new Task (default MN_THREAD_CONFIG_CORE_NO)</li>
+<li>MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE On whith core run all Workques an default cas be override in the create function (default MN_THREAD_CONFIG_CORE2_TWO)</li>
+<li>MN_THREAD_CONFIG_LOCK_TYPE This Property change now the Autolock type and the basic LockType_t (default MN_THREAD_CONFIG_BINARY_SEMAPHORE)</li>
 </ul>
 </li>
+<li>remane LIB_CPU_0 -&gt; MN_THREAD_CONFIG_CORE2_ONE and LIBMN_CPU_1 -&gt; MN_THREAD_CONFIG_CORE2_TWO</li>
+<li>rename libmn_panic to mn_panic</li>
 <li>add default informations to the config file</li>
+<li>remove config option MN_THREAD_CONFIG_MUTEX_CLASS. MN_THREAD_CONFIG_MUTEX_CLASS</li>
+<li>rename libmn.hpp to <a class="el" href="mn__base_8hpp.html">mn_base.hpp</a> and add missing headers</li>
+<li>rename mn_spinlock.hpp =&gt; <a class="el" href="mn__semaphore_8hpp.html">mn_semaphore.hpp</a> and mn_spinlock.cpp =&gt; <a class="el" href="mn__semaphore_8cpp.html">mn_semaphore.cpp</a></li>
+<li><a class="el" href="classbasic__mutex.html">basic_mutex</a> extends <a class="el" href="classbasic__semaphore.html">basic_semaphore</a></li>
+<li>add a blocking queue, start emply a Threahpool and memory mamagment classes</li>
 </ul>
 <p>Version 1.54 September 2020: (unstable)</p><ul>
 <li>Documentation ready</li>
@@ -183,7 +192,7 @@ $(document).ready(function(){initNavTree('md__home_ambersophia__dokumente_git_mn
 <li>add logical mutext handle to <a class="el" href="classbasic__thread.html">basic_thread</a></li>
 <li>rename function "delay" to "sleep" in <a class="el" href="classbasic__thread.html">basic_thread</a></li>
 <li>add function "nsleep" and "usleep" to <a class="el" href="classbasic__thread.html">basic_thread</a></li>
-<li>add "hild_thread" and "parent_thread" to <a class="el" href="classbasic__thread.html">basic_thread</a></li>
+<li>add "child_thread" and "parent_thread" to <a class="el" href="classbasic__thread.html">basic_thread</a></li>
 <li>add function "get_root();" "get_child();" "add_child_thread(basic_thread* thread);"</li>
 </ul>
 <p>Version 0.8.3 November 2018: (non-stable)</p><ul>

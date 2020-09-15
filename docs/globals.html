@@ -1,7 +1,7 @@
-<!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- For Mobile Devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -117,9 +117,6 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 
 
 <h3><a id="index_a"></a>- a -</h3><ul>
-<li>app_main()
-: <a class="el" href="basic_8cpp.html#abce06be17fc37d675118a678a8100a36">basic.cpp</a>
-</li>
 <li>auto_critical_t
 : <a class="el" href="mn__autolock_8hpp.html#a36b9b53cc20896d8f638306bcd85301b">mn_autolock.hpp</a>
 </li>
@@ -136,7 +133,7 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 : <a class="el" href="mn__autolock_8hpp.html#a13fc09e856ce8493d7c2587058ff5831">mn_autolock.hpp</a>
 </li>
 <li>autolock_t
-: <a class="el" href="mn__autolock_8hpp.html#a9ebd3bed7bb52b462f82e23bd8e740fa">mn_autolock.hpp</a>
+: <a class="el" href="mn__autolock_8hpp.html#a53eeba9f0f1c7ce32281d401d4d94a75">mn_autolock.hpp</a>
 </li>
 <li>automutx_t
 : <a class="el" href="mn__autolock_8hpp.html#aaa15c6409f6cc14789ae3f623bf79fbb">mn_autolock.hpp</a>
@@ -149,7 +146,7 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>binary_semaphore_t
-: <a class="el" href="mn__spinlock_8hpp.html#adb77a9b18988a479e7f15534053c27d4">mn_spinlock.hpp</a>
+: <a class="el" href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">mn_semaphore.hpp</a>
 </li>
 <li>binaryqueue_t
 : <a class="el" href="mn__binaryqueue_8hpp.html#ae6975bc3859d577bfe0b7f34cd4ee02d">mn_binaryqueue.hpp</a>
@@ -159,7 +156,7 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>counting_semaphore_t
-: <a class="el" href="mn__spinlock_8hpp.html#a6145ebc3b28f55822453c88028580a8b">mn_spinlock.hpp</a>
+: <a class="el" href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">mn_semaphore.hpp</a>
 </li>
 <li>critical_lock_t
 : <a class="el" href="mn__critical_8hpp.html#a49de65e5f1e5aeb2dda447bcd1daa5a2">mn_critical.hpp</a>
@@ -204,6 +201,9 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 </li>
 <li>ERR_QUEUE_CANTCREATE
 : <a class="el" href="mn__error_8hpp.html#ab1045e34ac77341783dcc481b43b3028">mn_error.hpp</a>
+</li>
+<li>ERR_QUEUE_CANTCREATE_LOCK
+: <a class="el" href="mn__error_8hpp.html#afbb70eb355bc9d1837f20bc1a0e39119">mn_error.hpp</a>
 </li>
 <li>ERR_QUEUE_NOTCREATED
 : <a class="el" href="mn__error_8hpp.html#a57f290df55d868683884923cde9f50a2">mn_error.hpp</a>
@@ -265,6 +265,27 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 <li>ERR_THREAD_THREADFUNCNOTSET
 : <a class="el" href="mn__error_8hpp.html#a5827d20bdf6a8ba505fce47e2ed1b3be">mn_error.hpp</a>
 </li>
+<li>ERR_TIMER_AKTIVATE
+: <a class="el" href="mn__error_8hpp.html#a3d0009417f610adae8bf73ea2fa999e7">mn_error.hpp</a>
+</li>
+<li>ERR_TIMER_ALREADYINIT
+: <a class="el" href="mn__error_8hpp.html#a61e0410f62f4a270ca74fd864ca3587e">mn_error.hpp</a>
+</li>
+<li>ERR_TIMER_CANTCREATE
+: <a class="el" href="mn__error_8hpp.html#a6f3ef462e3ebac3e4e9b1e88b01b10f6">mn_error.hpp</a>
+</li>
+<li>ERR_TIMER_INAKTIVATE
+: <a class="el" href="mn__error_8hpp.html#a7c3d904fd6a2c8e87c7918849a896d5d">mn_error.hpp</a>
+</li>
+<li>ERR_TIMER_NOTCREATED
+: <a class="el" href="mn__error_8hpp.html#afb218939e10dc094d9b5212436d72373">mn_error.hpp</a>
+</li>
+<li>ERR_TIMER_OK
+: <a class="el" href="mn__error_8hpp.html#a82accb44697ef01392e85fa23c55c4a8">mn_error.hpp</a>
+</li>
+<li>ERR_TIMER_RESET
+: <a class="el" href="mn__error_8hpp.html#a62a427b8fb9802290df178ab2dd18d19">mn_error.hpp</a>
+</li>
 </ul>
 
 
@@ -284,15 +305,8 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
-<li>LIBMN_CPU_1
-: <a class="el" href="libmn_8hpp.html#abd5d255a740b3e0b139454951239f3e0">libmn.hpp</a>
-</li>
-<li>LIBMN_CPU_2
-: <a class="el" href="libmn_8hpp.html#a2995c12d8819deb3ee744f8ec2990a70">libmn.hpp</a>
-</li>
-<li>libmn_panic()
-: <a class="el" href="libmn_8hpp.html#ac7579a7a42935a688244cdff4992ca47">libmn.hpp</a>
-, <a class="el" href="libmn_8cpp.html#ac7579a7a42935a688244cdff4992ca47">libmn.cpp</a>
+<li>LockType_t
+: <a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">mn_autolock.hpp</a>
 </li>
 </ul>
 
@@ -313,12 +327,13 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 : <a class="el" href="mn__sleep_8hpp.html#a19ff28b418993d1050ddc0586816cc3f">mn_sleep.hpp</a>
 , <a class="el" href="mn__sleep_8cpp.html#ab26c416c6e54031c3e6a8745c9a921e2">mn_sleep.cpp</a>
 </li>
+<li>mn_panic()
+: <a class="el" href="mn__base_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_base.hpp</a>
+, <a class="el" href="mn__base_8cpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_base.cpp</a>
+</li>
 <li>mn_sleep()
 : <a class="el" href="mn__sleep_8hpp.html#af0d0f7ac576d81be775cefe3f68de20b">mn_sleep.hpp</a>
 , <a class="el" href="mn__sleep_8cpp.html#af0d0f7ac576d81be775cefe3f68de20b">mn_sleep.cpp</a>
-</li>
-<li>MN_THREAD_CONFIG_AUTOLOCK
-: <a class="el" href="mn__config_8hpp.html#acc023a537aa3c926bc759134d003a726">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_BINARY_SEMAPHORE
 : <a class="el" href="mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">mn_config.hpp</a>
@@ -326,23 +341,38 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 <li>MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT
 : <a class="el" href="mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">mn_config.hpp</a>
 </li>
+<li>MN_THREAD_CONFIG_CORE2_TWO
+: <a class="el" href="mn__config_8hpp.html#a089f43bdf30e8dcbfc3f519efeb9f1c8">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CORE_NO
+: <a class="el" href="mn__config_8hpp.html#a5c0541c2efc1f68eba874e77bc58c872">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CORE_ONE
+: <a class="el" href="mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950">mn_config.hpp</a>
+</li>
 <li>MN_THREAD_CONFIG_COUNTING_SEMAPHORE
 : <a class="el" href="mn__config_8hpp.html#a907c3e321e76f37f9043d251b2f06aa4">mn_config.hpp</a>
 </li>
+<li>MN_THREAD_CONFIG_DEFAULT_CORE
+: <a class="el" href="mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE
+: <a class="el" href="mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_LOCK_TYPE
+: <a class="el" href="mn__config_8hpp.html#af75f0ad7789180411059976192486e4e">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_MAX_CPUS
+: <a class="el" href="mn__config_8hpp.html#adad34838c0bba340b33cc8eff6affb38">mn_config.hpp</a>
+</li>
 <li>MN_THREAD_CONFIG_MUTEX
 : <a class="el" href="mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">mn_config.hpp</a>
-</li>
-<li>MN_THREAD_CONFIG_MUTEX_CLASS
-: <a class="el" href="mn__config_8hpp.html#ad237e7b013b1bee31c53896275052551">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_NO
 : <a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_RECURSIVE_MUTEX
 : <a class="el" href="mn__config_8hpp.html#aa5a1390a78543d9807e3dc1f9c650f4a">mn_config.hpp</a>
-</li>
-<li>MN_THREAD_CONFIG_THREAD_LOCK
-: <a class="el" href="mn__config_8hpp.html#a2914a9866ba58fd138c36ed7b414fc05">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORK_QUEUE_MAX_WORK_ITEMS
 : <a class="el" href="mn__config_8hpp.html#a3629ce1a8c0802db4ca243e1ee467a2d">mn_config.hpp</a>
@@ -376,6 +406,9 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 : <a class="el" href="mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72">mn_micros.hpp</a>
 , <a class="el" href="mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72">mn_micros.cpp</a>
 </li>
+<li>mtimer_t
+: <a class="el" href="mn__timer_8hpp.html#a567a0c8e494139b02f8978ad610ab3dd">mn_timer.hpp</a>
+</li>
 <li>mutex_t
 : <a class="el" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mn_mutex.hpp</a>
 </li>
@@ -385,9 +418,6 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 <h3><a id="index_n"></a>- n -</h3><ul>
 <li>NO_ERROR
 : <a class="el" href="mn__error_8hpp.html#a258bb72419ef143530a2f8f55e7d57af">mn_error.hpp</a>
-</li>
-<li>NUMBER_OF_TEST_THREADS
-: <a class="el" href="basic_8cpp.html#ab9d89b0904c632aa43ea96b006aa937b">basic.cpp</a>
 </li>
 </ul>
 
@@ -420,9 +450,6 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>tasklet_t
 : <a class="el" href="mn__tasklets_8hpp.html#a775e9f6a736ed5297af061e3714ddeae">mn_tasklets.hpp</a>
-</li>
-<li>tasks
-: <a class="el" href="basic_8cpp.html#a320fdcefb5adf866857db7c065c63b5a">basic.cpp</a>
 </li>
 <li>thread_t
 : <a class="el" href="mn__thread_8hpp.html#a188e0393c136dab96253afea9c1b7b92">mn_thread.hpp</a>

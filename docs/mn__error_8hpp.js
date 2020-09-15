@@ -9,6 +9,7 @@ var mn__error_8hpp =
     [ "ERR_QUEUE_ADD", "mn__error_8hpp.html#a253469b31028e86682a3e5e924c474b3", null ],
     [ "ERR_QUEUE_ALREADYINIT", "mn__error_8hpp.html#af041803ef5a4d75e3834085b28dbaa5a", null ],
     [ "ERR_QUEUE_CANTCREATE", "mn__error_8hpp.html#ab1045e34ac77341783dcc481b43b3028", null ],
+    [ "ERR_QUEUE_CANTCREATE_LOCK", "mn__error_8hpp.html#afbb70eb355bc9d1837f20bc1a0e39119", null ],
     [ "ERR_QUEUE_NOTCREATED", "mn__error_8hpp.html#a57f290df55d868683884923cde9f50a2", null ],
     [ "ERR_QUEUE_OK", "mn__error_8hpp.html#ac29241cdee998f1f86737da1b56850cf", null ],
     [ "ERR_QUEUE_PEEK", "mn__error_8hpp.html#a3d1868659f933d3490decc0294e68edf", null ],
@@ -29,5 +30,12 @@ var mn__error_8hpp =
     [ "ERR_THREAD_NOTRUNNING", "mn__error_8hpp.html#a72e64442ab495143481ea62510ab70e3", null ],
     [ "ERR_THREAD_OK", "mn__error_8hpp.html#aaed729ff0b5735a05735088a6962bb9f", null ],
     [ "ERR_THREAD_THREADFUNCNOTSET", "mn__error_8hpp.html#a5827d20bdf6a8ba505fce47e2ed1b3be", null ],
+    [ "ERR_TIMER_AKTIVATE", "mn__error_8hpp.html#a3d0009417f610adae8bf73ea2fa999e7", null ],
+    [ "ERR_TIMER_ALREADYINIT", "mn__error_8hpp.html#a61e0410f62f4a270ca74fd864ca3587e", null ],
+    [ "ERR_TIMER_CANTCREATE", "mn__error_8hpp.html#a6f3ef462e3ebac3e4e9b1e88b01b10f6", null ],
+    [ "ERR_TIMER_INAKTIVATE", "mn__error_8hpp.html#a7c3d904fd6a2c8e87c7918849a896d5d", null ],
+    [ "ERR_TIMER_NOTCREATED", "mn__error_8hpp.html#afb218939e10dc094d9b5212436d72373", null ],
+    [ "ERR_TIMER_OK", "mn__error_8hpp.html#a82accb44697ef01392e85fa23c55c4a8", null ],
+    [ "ERR_TIMER_RESET", "mn__error_8hpp.html#a62a427b8fb9802290df178ab2dd18d19", null ],
     [ "NO_ERROR", "mn__error_8hpp.html#a258bb72419ef143530a2f8f55e7d57af", null ]
 ];
