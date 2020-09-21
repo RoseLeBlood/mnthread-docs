@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
-    [ "Mini Thread 1.60 alpha", "index.html", [
+    [ "Mini Thread 1.61 (2.0.0 preview)", "index.html", [
       [ "Simple Example", "index.html#autotoc_md3", null ],
       [ "TODO's for Version 2.0", "index.html#autotoc_md4", null ],
       [ "ChangeLog", "index.html#autotoc_md5", null ]
@@ -37,9 +37,10 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
@@ -58,7 +59,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"mn__blocking__queue_8cpp.html"
+"functions_h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['work_5fqueue_5fitem_5ft_528',['work_queue_item_t',['../mn__workqueue__item_8hpp.html#abbd4bf0b4bc3bc8ae1d8d9543203b2bb',1,'mn_workqueue_item.hpp']]],
-  ['work_5fqueue_5ft_529',['work_queue_t',['../mn__workqueue_8hpp.html#a5d2a07486d474e37bef639b0f1ca3a4e',1,'mn_workqueue.hpp']]]
+  ['tasklet_5ft_589',['tasklet_t',['../mn__tasklets_8hpp.html#a775e9f6a736ed5297af061e3714ddeae',1,'mn_tasklets.hpp']]],
+  ['thread_5ft_590',['thread_t',['../mn__thread_8hpp.html#a188e0393c136dab96253afea9c1b7b92',1,'mn_thread.hpp']]]
 ];

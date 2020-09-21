@@ -1,15 +1,26 @@
 var classbasic__work__queue =
 [
-    [ "work_queue_thread", "classbasic__work__queue_1_1work__queue__thread.html", "classbasic__work__queue_1_1work__queue__thread" ],
-    [ "basic_work_queue", "classbasic__work__queue.html#a308533d4bfb77cfb2f19bc10395d8cea", null ],
+    [ "basic_work_queue", "classbasic__work__queue.html#aeca7f4226f7e573376a3fb7ae81eb1da", null ],
     [ "~basic_work_queue", "classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145", null ],
     [ "create", "classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0", null ],
     [ "destroy", "classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e", null ],
-    [ "queue", "classbasic__work__queue.html#a8347fa1a405b3756a27f1b83781a3d63", null ],
+    [ "get_next_item", "classbasic__work__queue.html#a1808f1f7048374015ea2309cfc9c4f8c", null ],
+    [ "get_num_items_error", "classbasic__work__queue.html#a90ca48af3cd0bcbdbff732ed4d9bc9ae", null ],
+    [ "get_num_items_worked", "classbasic__work__queue.html#a37cdd77452de770de198118c8803d370", null ],
+    [ "is_ready", "classbasic__work__queue.html#adf6fa8f4d9523211118291a79874c0a7", null ],
+    [ "on_create", "classbasic__work__queue.html#ad3907201f0ee806cab91fdb8f1683c06", null ],
+    [ "on_destroy", "classbasic__work__queue.html#a1ee5f2b2d6226e40772304226d020133", null ],
+    [ "queue", "classbasic__work__queue.html#a2893c69cf58efa717186838082aaa247", null ],
+    [ "running", "classbasic__work__queue.html#a65b3393ceb232d9c4ac9975181172da6", null ],
+    [ "work_queue_thread", "classbasic__work__queue.html#ac7bd8d9889246d4c720c06f2f4ef8ac2", null ],
     [ "m_bMutexInit", "classbasic__work__queue.html#ad396b26a58a825c433869eba976adc92", null ],
-    [ "m_pComplete", "classbasic__work__queue.html#afdb81684a8482b15c8ed07863dc919aa", null ],
-    [ "m_pRunningSem", "classbasic__work__queue.html#ad249302d66a67f548c4bddfa71230d4b", null ],
-    [ "m_pWorker", "classbasic__work__queue.html#a6d566cc3d231ab0eee786bf27663bb52", null ],
+    [ "m_bRunning", "classbasic__work__queue.html#ae1938194d42292114e62db58e5a9c3eb", null ],
     [ "m_pWorkItemQueue", "classbasic__work__queue.html#a971787e938c770160c460b2ea1a3d395", null ],
-    [ "m_running", "classbasic__work__queue.html#aa48466ae68ec0eacbafe6067cb402cee", null ]
+    [ "m_ThreadJob", "classbasic__work__queue.html#afb3ce0dfb1fbd8730d9bcbd22114d56e", null ],
+    [ "m_ThreadStatus", "classbasic__work__queue.html#a93e2cb1b7be1553089532b65c656499c", null ],
+    [ "m_uiErrorsNumWorks", "classbasic__work__queue.html#a875d1d0afb73747583e2a399790b1107", null ],
+    [ "m_uiMaxWorkItems", "classbasic__work__queue.html#ad0e38bd07d8df773962f59cafff2cf48", null ],
+    [ "m_uiNumWorks", "classbasic__work__queue.html#a4c011ea5a747db3a76075f7a742debfa", null ],
+    [ "m_uiPriority", "classbasic__work__queue.html#aed722d95af01b6758378495c8353d931", null ],
+    [ "m_usStackDepth", "classbasic__work__queue.html#a8a77dcb50b9566cc3690a9547c761b41", null ]
 ];

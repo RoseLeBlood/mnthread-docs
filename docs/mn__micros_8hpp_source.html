@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.6x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -111,41 +111,60 @@ $(document).ready(function(){initNavTree('mn__micros_8hpp_source.html',''); init
 <div class="title">mn_micros.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mn__micros_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef _MNTHREAD_MICROS_H_</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define _MNTHREAD_MICROS_H_</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="mn__micros_8hpp.html#a8b24cbb7c3486e1bfa05c86db83ecb01">micros</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="mn__micros_8hpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451">get_ticks</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#a2a3ed6286aa98d795df3035274ec9e58">ticks_to_ms</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ticks);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#ad6abbe9b7d00cca6e5d54a4596ea2b44">seconds_to_ticks</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="mn__micros_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify  </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by  </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.  </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MNTHREAD_MICROS_H_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MNTHREAD_MICROS_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="mn__micros_8hpp.html#a8b24cbb7c3486e1bfa05c86db83ecb01">micros</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="mn__micros_8hpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451">get_ticks</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#a2a3ed6286aa98d795df3035274ec9e58">ticks_to_ms</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ticks);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#ad6abbe9b7d00cca6e5d54a4596ea2b44">seconds_to_ticks</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="amn__micros_8hpp_html_a8b24cbb7c3486e1bfa05c86db83ecb01"><div class="ttname"><a href="mn__micros_8hpp.html#a8b24cbb7c3486e1bfa05c86db83ecb01">micros</a></div><div class="ttdeci">unsigned long micros()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:34</div></div>
-<div class="ttc" id="amn__micros_8cpp_html_af74f583a5fd5c67d9d8b4f347ab1143d"><div class="ttname"><a href="mn__micros_8cpp.html#af74f583a5fd5c67d9d8b4f347ab1143d">micros</a></div><div class="ttdeci">unsigned long IRAM_ATTR micros()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:34</div></div>
-<div class="ttc" id="amn__micros_8cpp_html_a2bd5b9348154dbb586c0c9c2a9fca07b"><div class="ttname"><a href="mn__micros_8cpp.html#a2bd5b9348154dbb586c0c9c2a9fca07b">microsMux</a></div><div class="ttdeci">portMUX_TYPE microsMux</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:32</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_afe01282e038ec57df55905e1ecceff72"><div class="ttname"><a href="mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a></div><div class="ttdeci">unsigned int ms_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:66</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_a2a3ed6286aa98d795df3035274ec9e58"><div class="ttname"><a href="mn__micros_8hpp.html#a2a3ed6286aa98d795df3035274ec9e58">ticks_to_ms</a></div><div class="ttdeci">unsigned int ticks_to_ms(unsigned int ticks)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:63</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_afdf0a92b2d187681014a7ba7aa672451"><div class="ttname"><a href="mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451">get_ticks</a></div><div class="ttdeci">unsigned int get_ticks()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:55</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_a6ff7f2532a22366f0013bc41397129fd"><div class="ttname"><a href="mn__micros_8hpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a></div><div class="ttdeci">unsigned long millis()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:47</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_ad6abbe9b7d00cca6e5d54a4596ea2b44"><div class="ttname"><a href="mn__micros_8hpp.html#ad6abbe9b7d00cca6e5d54a4596ea2b44">seconds_to_ticks</a></div><div class="ttdeci">unsigned int seconds_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:69</div></div>
-<div class="ttc" id="amn__micros_8cpp_html_a6ff7f2532a22366f0013bc41397129fd"><div class="ttname"><a href="mn__micros_8cpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a></div><div class="ttdeci">unsigned long millis()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:47</div></div>
-<div class="ttc" id="amn__micros_8cpp_html_a894568cb5a61a0b2e9902b900b4d159e"><div class="ttname"><a href="mn__micros_8cpp.html#a894568cb5a61a0b2e9902b900b4d159e">seconds_to_ticks</a></div><div class="ttdeci">unsigned int seconds_to_ticks(unsigned int sec)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:69</div></div>
-<div class="ttc" id="amn__micros_8cpp_html_afe01282e038ec57df55905e1ecceff72"><div class="ttname"><a href="mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a></div><div class="ttdeci">unsigned int ms_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:66</div></div>
+<div class="ttc" id="amn__micros_8hpp_html_a8b24cbb7c3486e1bfa05c86db83ecb01"><div class="ttname"><a href="mn__micros_8hpp.html#a8b24cbb7c3486e1bfa05c86db83ecb01">micros</a></div><div class="ttdeci">unsigned long micros()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:35</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_af74f583a5fd5c67d9d8b4f347ab1143d"><div class="ttname"><a href="mn__micros_8cpp.html#af74f583a5fd5c67d9d8b4f347ab1143d">micros</a></div><div class="ttdeci">unsigned long IRAM_ATTR micros()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:35</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_a2bd5b9348154dbb586c0c9c2a9fca07b"><div class="ttname"><a href="mn__micros_8cpp.html#a2bd5b9348154dbb586c0c9c2a9fca07b">microsMux</a></div><div class="ttdeci">portMUX_TYPE microsMux</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:33</div></div>
+<div class="ttc" id="amn__micros_8hpp_html_afe01282e038ec57df55905e1ecceff72"><div class="ttname"><a href="mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a></div><div class="ttdeci">unsigned int ms_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:67</div></div>
+<div class="ttc" id="amn__micros_8hpp_html_a2a3ed6286aa98d795df3035274ec9e58"><div class="ttname"><a href="mn__micros_8hpp.html#a2a3ed6286aa98d795df3035274ec9e58">ticks_to_ms</a></div><div class="ttdeci">unsigned int ticks_to_ms(unsigned int ticks)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:64</div></div>
+<div class="ttc" id="amn__micros_8hpp_html_afdf0a92b2d187681014a7ba7aa672451"><div class="ttname"><a href="mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451">get_ticks</a></div><div class="ttdeci">unsigned int get_ticks()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:56</div></div>
+<div class="ttc" id="amn__micros_8hpp_html_a6ff7f2532a22366f0013bc41397129fd"><div class="ttname"><a href="mn__micros_8hpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a></div><div class="ttdeci">unsigned long millis()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:48</div></div>
+<div class="ttc" id="amn__micros_8hpp_html_ad6abbe9b7d00cca6e5d54a4596ea2b44"><div class="ttname"><a href="mn__micros_8hpp.html#ad6abbe9b7d00cca6e5d54a4596ea2b44">seconds_to_ticks</a></div><div class="ttdeci">unsigned int seconds_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:70</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_a6ff7f2532a22366f0013bc41397129fd"><div class="ttname"><a href="mn__micros_8cpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a></div><div class="ttdeci">unsigned long millis()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:48</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_a894568cb5a61a0b2e9902b900b4d159e"><div class="ttname"><a href="mn__micros_8cpp.html#a894568cb5a61a0b2e9902b900b4d159e">seconds_to_ticks</a></div><div class="ttdeci">unsigned int seconds_to_ticks(unsigned int sec)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:70</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_afe01282e038ec57df55905e1ecceff72"><div class="ttname"><a href="mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a></div><div class="ttdeci">unsigned int ms_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:67</div></div>
 <div class="ttc" id="amn__micros_8hpp_html"><div class="ttname"><a href="mn__micros_8hpp.html">mn_micros.hpp</a></div></div>
-<div class="ttc" id="amn__micros_8cpp_html_afdf0a92b2d187681014a7ba7aa672451"><div class="ttname"><a href="mn__micros_8cpp.html#afdf0a92b2d187681014a7ba7aa672451">get_ticks</a></div><div class="ttdeci">unsigned int get_ticks()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:55</div></div>
-<div class="ttc" id="amn__micros_8cpp_html_a2a3ed6286aa98d795df3035274ec9e58"><div class="ttname"><a href="mn__micros_8cpp.html#a2a3ed6286aa98d795df3035274ec9e58">ticks_to_ms</a></div><div class="ttdeci">unsigned int ticks_to_ms(unsigned int ticks)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:63</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_afdf0a92b2d187681014a7ba7aa672451"><div class="ttname"><a href="mn__micros_8cpp.html#afdf0a92b2d187681014a7ba7aa672451">get_ticks</a></div><div class="ttdeci">unsigned int get_ticks()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:56</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_a2a3ed6286aa98d795df3035274ec9e58"><div class="ttname"><a href="mn__micros_8cpp.html#a2a3ed6286aa98d795df3035274ec9e58">ticks_to_ms</a></div><div class="ttdeci">unsigned int ticks_to_ms(unsigned int ticks)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:64</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

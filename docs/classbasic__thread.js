@@ -9,7 +9,6 @@ var classbasic__thread =
     [ "get_handle", "classbasic__thread.html#a180cf5749a77184a8b68f00f2cdb0da0", null ],
     [ "get_id", "classbasic__thread.html#a2fc99d7a5f71f1574487991e3d8fcf0b", null ],
     [ "get_name", "classbasic__thread.html#ad8b56d04447494b87740dcaef3704326", null ],
-    [ "get_new_id", "classbasic__thread.html#a0d7ed0c9eb4244d07e3459b999b54a4e", null ],
     [ "get_on_core", "classbasic__thread.html#aba78de9128e383b6c3b176b095a095b9", null ],
     [ "get_priority", "classbasic__thread.html#af296af43b945ae7fbba348c954c13ede", null ],
     [ "get_return_value", "classbasic__thread.html#ad92019e1f0d21c14533691ec43ad812c", null ],

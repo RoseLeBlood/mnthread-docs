@@ -19,10 +19,14 @@ var hierarchy =
     ] ],
     [ "basic_tasklet", "classbasic__tasklet.html", null ],
     [ "basic_thread", "classbasic__thread.html", [
-      [ "basic_work_queue::work_queue_thread", "classbasic__work__queue_1_1work__queue__thread.html", null ]
+      [ "foreign_thread", "classforeign__thread.html", null ],
+      [ "work_queue_thread", "classwork__queue__thread.html", null ]
     ] ],
     [ "basic_timer", "classbasic__timer.html", null ],
-    [ "basic_work_queue", "classbasic__work__queue.html", null ],
+    [ "basic_work_queue", "classbasic__work__queue.html", [
+      [ "basic_work_queue_multi", "classbasic__work__queue__multi.html", null ],
+      [ "basic_work_queue_single", "classbasic__work__queue__single.html", null ]
+    ] ],
     [ "libmnVersion", "classlibmn_version.html", null ],
     [ "work_queue_item", "classwork__queue__item.html", null ]
 ];

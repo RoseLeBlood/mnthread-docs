@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.6x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -221,6 +221,24 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <li>ERR_TIMER_RESET
 : <a class="el" href="mn__error_8hpp.html#a62a427b8fb9802290df178ab2dd18d19">mn_error.hpp</a>
 </li>
+<li>ERR_WORKQUEUE_ADD
+: <a class="el" href="mn__error_8hpp.html#ac199596cfafe0638580bc99de02165a9">mn_error.hpp</a>
+</li>
+<li>ERR_WORKQUEUE_ALREADYINIT
+: <a class="el" href="mn__error_8hpp.html#a45412705c8c8f74865659248093cde48">mn_error.hpp</a>
+</li>
+<li>ERR_WORKQUEUE_CANTCREATE
+: <a class="el" href="mn__error_8hpp.html#ac6350d9f63323833d25f755da952a7d0">mn_error.hpp</a>
+</li>
+<li>ERR_WORKQUEUE_CANTINITMUTEX
+: <a class="el" href="mn__error_8hpp.html#a6ef0dc7809a4f0ecf0dc6641f4cc5e6b">mn_error.hpp</a>
+</li>
+<li>ERR_WORKQUEUE_OK
+: <a class="el" href="mn__error_8hpp.html#a9e351ff9072292afb8102b778ad6e7f6">mn_error.hpp</a>
+</li>
+<li>ERR_WORKQUEUE_WARNING
+: <a class="el" href="mn__error_8hpp.html#abf3da728851d5fbebc409133b774fecd">mn_error.hpp</a>
+</li>
 </ul>
 
 
@@ -231,17 +249,23 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <li>MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT
 : <a class="el" href="mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">mn_config.hpp</a>
 </li>
-<li>MN_THREAD_CONFIG_CORE2_TWO
-: <a class="el" href="mn__config_8hpp.html#a089f43bdf30e8dcbfc3f519efeb9f1c8">mn_config.hpp</a>
-</li>
-<li>MN_THREAD_CONFIG_CORE_NO
-: <a class="el" href="mn__config_8hpp.html#a5c0541c2efc1f68eba874e77bc58c872">mn_config.hpp</a>
+<li>MN_THREAD_CONFIG_CORE_IFNO
+: <a class="el" href="mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_ONE
 : <a class="el" href="mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950">mn_config.hpp</a>
 </li>
+<li>MN_THREAD_CONFIG_CORE_TWO
+: <a class="el" href="mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">mn_config.hpp</a>
+</li>
 <li>MN_THREAD_CONFIG_COUNTING_SEMAPHORE
 : <a class="el" href="mn__config_8hpp.html#a907c3e321e76f37f9043d251b2f06aa4">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CSEMAPHORE_MAX_COUNT
+: <a class="el" href="mn__config_8hpp.html#aed1554026e4fad333e7d50835e5c7b08">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CSEMAPHORE_MIN_COUNT
+: <a class="el" href="mn__config_8hpp.html#a0e59cd4828b0ff11f8fe0b81185a1e03">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_DEFAULT_CORE
 : <a class="el" href="mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">mn_config.hpp</a>
@@ -264,14 +288,41 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <li>MN_THREAD_CONFIG_RECURSIVE_MUTEX
 : <a class="el" href="mn__config_8hpp.html#aa5a1390a78543d9807e3dc1f9c650f4a">mn_config.hpp</a>
 </li>
-<li>MN_THREAD_CONFIG_WORK_QUEUE_MAX_WORK_ITEMS
-: <a class="el" href="mn__config_8hpp.html#a3629ce1a8c0802db4ca243e1ee467a2d">mn_config.hpp</a>
+<li>MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT
+: <a class="el" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">mn_config.hpp</a>
 </li>
-<li>MN_THREAD_CONFIG_WORK_QUEUE_PRIORITY
-: <a class="el" href="mn__config_8hpp.html#a45161e19efb897e10e2e9ad8b4ad5433">mn_config.hpp</a>
+<li>MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT
+: <a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">mn_config.hpp</a>
 </li>
-<li>MN_THREAD_CONFIG_WORK_QUEUE_STACK_SIZE
-: <a class="el" href="mn__config_8hpp.html#a38998f0ceaf4f185be63b1acd0328253">mn_config.hpp</a>
+<li>MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT
+: <a class="el" href="mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_TIMEOUT_TASKLET_DEFAULT
+: <a class="el" href="mn__config_8hpp.html#aa85e816c724b0e2568706d9b97d7a105">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_WORKQUEUE_GETNEXTITEM_TIMEOUT
+: <a class="el" href="mn__config_8hpp.html#a060f30c571d899925211c1f3ac054816">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_WORKQUEUE_MULTI_MAXITEMS
+: <a class="el" href="mn__config_8hpp.html#a7c285196ad60ff04d1bebd556eaa48c5">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_WORKQUEUE_MULTI_PRIORITY
+: <a class="el" href="mn__config_8hpp.html#ab4c34b9df0f9532a460738584f538e2a">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_WORKQUEUE_MULTI_STACKSIZE
+: <a class="el" href="mn__config_8hpp.html#a771ac26a0445c8ded5d5d2658b83265a">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_WORKQUEUE_MULTI_WORKER
+: <a class="el" href="mn__config_8hpp.html#a3135a204d86e78dc51aa638712a82bcb">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_MAXITEMS
+: <a class="el" href="mn__config_8hpp.html#ae2cd1bd439df99613159cc6012920f16">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_PRIORITY
+: <a class="el" href="mn__config_8hpp.html#a4872c5fc30c3382fe645408bf9501abf">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_STACKSIZE
+: <a class="el" href="mn__config_8hpp.html#ab0e9e87c8fd8cede584d680bcea94b8a">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_YES
 : <a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">mn_config.hpp</a>
@@ -298,6 +349,9 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

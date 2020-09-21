@@ -37,5 +37,11 @@ var mn__error_8hpp =
     [ "ERR_TIMER_NOTCREATED", "mn__error_8hpp.html#afb218939e10dc094d9b5212436d72373", null ],
     [ "ERR_TIMER_OK", "mn__error_8hpp.html#a82accb44697ef01392e85fa23c55c4a8", null ],
     [ "ERR_TIMER_RESET", "mn__error_8hpp.html#a62a427b8fb9802290df178ab2dd18d19", null ],
+    [ "ERR_WORKQUEUE_ADD", "mn__error_8hpp.html#ac199596cfafe0638580bc99de02165a9", null ],
+    [ "ERR_WORKQUEUE_ALREADYINIT", "mn__error_8hpp.html#a45412705c8c8f74865659248093cde48", null ],
+    [ "ERR_WORKQUEUE_CANTCREATE", "mn__error_8hpp.html#ac6350d9f63323833d25f755da952a7d0", null ],
+    [ "ERR_WORKQUEUE_CANTINITMUTEX", "mn__error_8hpp.html#a6ef0dc7809a4f0ecf0dc6641f4cc5e6b", null ],
+    [ "ERR_WORKQUEUE_OK", "mn__error_8hpp.html#a9e351ff9072292afb8102b778ad6e7f6", null ],
+    [ "ERR_WORKQUEUE_WARNING", "mn__error_8hpp.html#abf3da728851d5fbebc409133b774fecd", null ],
     [ "NO_ERROR", "mn__error_8hpp.html#a258bb72419ef143530a2f8f55e7d57af", null ]
 ];

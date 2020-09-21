@@ -37,15 +37,24 @@ var files_dup =
     [ "mn_sleep.hpp", "mn__sleep_8hpp.html", "mn__sleep_8hpp" ],
     [ "mn_tasklets.cpp", "mn__tasklets_8cpp.html", null ],
     [ "mn_tasklets.hpp", "mn__tasklets_8hpp.html", "mn__tasklets_8hpp" ],
-    [ "mn_thread.cpp", "mn__thread_8cpp.html", "mn__thread_8cpp" ],
+    [ "mn_thread.cpp", "mn__thread_8cpp.html", null ],
     [ "mn_thread.hpp", "mn__thread_8hpp.html", "mn__thread_8hpp" ],
     [ "mn_timer.cpp", "mn__timer_8cpp.html", null ],
     [ "mn_timer.hpp", "mn__timer_8hpp.html", "mn__timer_8hpp" ],
     [ "mn_version.cpp", "mn__version_8cpp.html", null ],
     [ "mn_version.hpp", "mn__version_8hpp.html", "mn__version_8hpp" ],
     [ "mn_workqueue.cpp", "mn__workqueue_8cpp.html", null ],
-    [ "mn_workqueue.hpp", "mn__workqueue_8hpp.html", "mn__workqueue_8hpp" ],
+    [ "mn_workqueue.hpp", "mn__workqueue_8hpp.html", [
+      [ "basic_work_queue", "classbasic__work__queue.html", "classbasic__work__queue" ]
+    ] ],
     [ "mn_workqueue_item.cpp", "mn__workqueue__item_8cpp.html", null ],
     [ "mn_workqueue_item.hpp", "mn__workqueue__item_8hpp.html", "mn__workqueue__item_8hpp" ],
-    [ "mn_workqueue_thread.cpp", "mn__workqueue__thread_8cpp.html", null ]
+    [ "mn_workqueue_multi.cpp", "mn__workqueue__multi_8cpp.html", null ],
+    [ "mn_workqueue_multi.hpp", "mn__workqueue__multi_8hpp.html", "mn__workqueue__multi_8hpp" ],
+    [ "mn_workqueue_single.cpp", "mn__workqueue__single_8cpp.html", null ],
+    [ "mn_workqueue_single.hpp", "mn__workqueue__single_8hpp.html", "mn__workqueue__single_8hpp" ],
+    [ "mn_workqueue_thread.cpp", "mn__workqueue__thread_8cpp.html", null ],
+    [ "mn_workqueue_thread.hpp", "mn__workqueue__thread_8hpp.html", [
+      [ "work_queue_thread", "classwork__queue__thread.html", "classwork__queue__thread" ]
+    ] ]
 ];

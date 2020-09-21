@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.6x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -126,12 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5b25e8d91194045ce9017ad519bd9d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d4994d802bcd635bf16fe0c7126274"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwork__queue__item.html#a37d4994d802bcd635bf16fe0c7126274">can_delete</a> ()</td></tr>
 <tr class="separator:a37d4994d802bcd635bf16fe0c7126274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed9ba74ffed0b0ee39df30c740fe19fc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwork__queue__item.html#aed9ba74ffed0b0ee39df30c740fe19fc">on_work</a> ()=0</td></tr>
-<tr class="separator:aed9ba74ffed0b0ee39df30c740fe19fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a950fce6a58024b2cb1b3a43ceba3881a"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwork__queue__item.html#a950fce6a58024b2cb1b3a43ceba3881a">create</a> ()</td></tr>
-<tr class="separator:a950fce6a58024b2cb1b3a43ceba3881a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad00ecaee081b7c741232b7e3566d9d0e"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwork__queue__item.html#ad00ecaee081b7c741232b7e3566d9d0e">destroy</a> ()</td></tr>
-<tr class="separator:ad00ecaee081b7c741232b7e3566d9d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803873775a01721e810efd13960e9861"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwork__queue__item.html#a803873775a01721e810efd13960e9861">on_work</a> ()=0</td></tr>
+<tr class="separator:a803873775a01721e810efd13960e9861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -139,8 +135,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab07590978cd31a3082abec767f0b28b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class encapsulates the idea of a discrete, non-repeating task. Create a <a class="el" href="classwork__queue__item.html">work_queue_item</a> when there is something you need to do on a different Thread, but doesn't have to happen periodically. This is a great construct for one off fire and forget tasks.</p>
-<p>This is an abstract base class. To use this, you need to subclass it. All of your <a class="el" href="classwork__queue__item.html">work_queue_item</a> should be derived from this class. Then implement the virtual on_work function. </p>
+<div class="textblock"><p>This is an abstract base class. To use this, you need to subclass it. All of your <a class="el" href="classwork__queue__item.html">work_queue_item</a> should be derived from this class. Then implement the virtual on_work function. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a92a5212c08779400881d592e98881421"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92a5212c08779400881d592e98881421">&#9670;&nbsp;</a></span>work_queue_item()</h2>
@@ -172,7 +167,7 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Only set deleteAffter = true if: 1) You dynamically allocated it (i.e. used "new") 2) After you call <a class="el" href="classwork__queue__item.html#aed9ba74ffed0b0ee39df30c740fe19fc">on_work()</a> you promise never to touch this object again. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Only set deleteAffter = true if: 1) You dynamically allocated it (i.e. used "new") 2) After you call <a class="el" href="classwork__queue__item.html#a803873775a01721e810efd13960e9861">on_work()</a> you promise never to touch this object again. </dd></dl>
 
 </div>
 </div>
@@ -230,16 +225,16 @@ Private Attributes</h2></td></tr>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classwork__queue__item_a37d4994d802bcd635bf16fe0c7126274_icgraph.png" border="0" usemap="#aclasswork__queue__item_a37d4994d802bcd635bf16fe0c7126274_icgraph" alt=""/></div>
-<map name="classwork__queue__item_a37d4994d802bcd635bf16fe0c7126274_icgraph" id="classwork__queue__item_a37d4994d802bcd635bf16fe0c7126274_icgraph">
-<area shape="rect" title=" " alt="" coords="244,5,413,47"/>
-<area shape="rect" href="classbasic__work__queue_1_1work__queue__thread.html#a345434487084d5f21a2ef67e8e1eef09" title=" " alt="" coords="5,5,196,47"/>
+<map name="classwork__queue__item_a37d4994d802bcd635bf16fe0c7126274_icgraph" id="aclasswork__queue__item_a37d4994d802bcd635bf16fe0c7126274_icgraph">
+<area shape="rect" title=" " alt="" coords="212,5,381,47"/>
+<area shape="rect" href="classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763" title=" " alt="" coords="5,5,164,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a950fce6a58024b2cb1b3a43ceba3881a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a950fce6a58024b2cb1b3a43ceba3881a">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a803873775a01721e810efd13960e9861"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803873775a01721e810efd13960e9861">&#9670;&nbsp;</a></span>on_work()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,75 +243,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int work_queue_item::create </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classwork__queue__item_a950fce6a58024b2cb1b3a43ceba3881a_icgraph.png" border="0" usemap="#aclasswork__queue__item_a950fce6a58024b2cb1b3a43ceba3881a_icgraph" alt=""/></div>
-<map name="classwork__queue__item_a950fce6a58024b2cb1b3a43ceba3881a_icgraph" id="classwork__queue__item_a950fce6a58024b2cb1b3a43ceba3881a_icgraph">
-<area shape="rect" title=" " alt="" coords="244,5,431,32"/>
-<area shape="rect" href="classbasic__work__queue.html#a8347fa1a405b3756a27f1b83781a3d63" title=" " alt="" coords="5,5,196,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad00ecaee081b7c741232b7e3566d9d0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad00ecaee081b7c741232b7e3566d9d0e">&#9670;&nbsp;</a></span>destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int work_queue_item::destroy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classwork__queue__item_ad00ecaee081b7c741232b7e3566d9d0e_icgraph.png" border="0" usemap="#aclasswork__queue__item_ad00ecaee081b7c741232b7e3566d9d0e_icgraph" alt=""/></div>
-<map name="classwork__queue__item_ad00ecaee081b7c741232b7e3566d9d0e_icgraph" id="classwork__queue__item_ad00ecaee081b7c741232b7e3566d9d0e_icgraph">
-<area shape="rect" title=" " alt="" coords="244,13,439,39"/>
-<area shape="rect" href="classbasic__work__queue_1_1work__queue__thread.html#a345434487084d5f21a2ef67e8e1eef09" title=" " alt="" coords="5,5,196,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aed9ba74ffed0b0ee39df30c740fe19fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed9ba74ffed0b0ee39df30c740fe19fc">&#9670;&nbsp;</a></span>on_work()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void work_queue_item::on_work </td>
+          <td class="memname">virtual bool work_queue_item::on_work </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -332,10 +259,10 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classwork__queue__item_aed9ba74ffed0b0ee39df30c740fe19fc_icgraph.png" border="0" usemap="#aclasswork__queue__item_aed9ba74ffed0b0ee39df30c740fe19fc_icgraph" alt=""/></div>
-<map name="classwork__queue__item_aed9ba74ffed0b0ee39df30c740fe19fc_icgraph" id="classwork__queue__item_aed9ba74ffed0b0ee39df30c740fe19fc_icgraph">
-<area shape="rect" title=" " alt="" coords="244,13,445,39"/>
-<area shape="rect" href="classbasic__work__queue_1_1work__queue__thread.html#a345434487084d5f21a2ef67e8e1eef09" title=" " alt="" coords="5,5,196,47"/>
+<div class="center"><img src="classwork__queue__item_a803873775a01721e810efd13960e9861_icgraph.png" border="0" usemap="#aclasswork__queue__item_a803873775a01721e810efd13960e9861_icgraph" alt=""/></div>
+<map name="classwork__queue__item_a803873775a01721e810efd13960e9861_icgraph" id="aclasswork__queue__item_a803873775a01721e810efd13960e9861_icgraph">
+<area shape="rect" title=" " alt="" coords="212,13,413,39"/>
+<area shape="rect" href="classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763" title=" " alt="" coords="5,5,164,47"/>
 </map>
 </div>
 
@@ -372,6 +299,9 @@ Here is the caller graph for this function:</div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

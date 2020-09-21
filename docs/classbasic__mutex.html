@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.6x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('classbasic__mutex.html',''); initResiz
 Inheritance diagram for basic_mutex:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex__inherit__graph.png" border="0" usemap="#abasic__mutex_inherit__map" alt="Inheritance graph"/></div>
-<map name="basic__mutex_inherit__map" id="basic__mutex_inherit__map">
+<map name="basic__mutex_inherit__map" id="abasic__mutex_inherit__map">
 <area shape="rect" title=" " alt="" coords="21,80,126,107"/>
 <area shape="rect" href="classrecursive__mutex.html" title=" " alt="" coords="8,155,139,181"/>
 <area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="5,5,141,32"/>
@@ -130,7 +130,7 @@ Inheritance diagram for basic_mutex:</div>
 Collaboration diagram for basic_mutex:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex__coll__graph.png" border="0" usemap="#abasic__mutex_coll__map" alt="Collaboration graph"/></div>
-<map name="basic__mutex_coll__map" id="basic__mutex_coll__map">
+<map name="basic__mutex_coll__map" id="abasic__mutex_coll__map">
 <area shape="rect" title=" " alt="" coords="21,80,126,107"/>
 <area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="5,5,141,32"/>
 </map>
@@ -144,8 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9012d8b56fc21f0370c9f36f9e6e20c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c3098b8b10490ef173c6977a4b82b13"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__mutex.html#a0c3098b8b10490ef173c6977a4b82b13">destroy</a> ()</td></tr>
 <tr class="separator:a0c3098b8b10490ef173c6977a4b82b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2279bd8e9c34fa47a7cc4066488e2e79"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__mutex.html#a2279bd8e9c34fa47a7cc4066488e2e79">lock</a> (unsigned int timeout=(unsigned int) 0xffffffffUL)</td></tr>
-<tr class="separator:a2279bd8e9c34fa47a7cc4066488e2e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5694cab5206c23953513bf494a79a50b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">lock</a> (unsigned int timeout=<a class="el" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a>)</td></tr>
+<tr class="separator:a5694cab5206c23953513bf494a79a50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece9c3fbd550415f12b9090c0f61d640"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">unlock</a> ()</td></tr>
 <tr class="separator:aece9c3fbd550415f12b9090c0f61d640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f62edd6b2ea82c3caa8c04d4067f203"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203">try_lock</a> ()</td></tr>
@@ -165,13 +165,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a0826c0763db2dcf57b3970474b11fddd inherit pro_attribs_classbasic__semaphore"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2018 Amber-Sophia Schroeck</p>
-<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
- it under the terms of the GNU Lesser General Public License as published by <br  />
- the Free Software Foundation, version 3, or (at your option) any later version.</p>
-<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. <br  />
- Base wrapper class around FreeRTOS's implementation of mutexes. These objects are not recursively acquirable. Calling <a class="el" href="classbasic__mutex.html#a2279bd8e9c34fa47a7cc4066488e2e79">lock()</a> twice from the same Thread (i.e. task) will deadlock. </p>
+<div class="textblock"><p>Base wrapper class around FreeRTOS's implementation of mutexes. These objects are not recursively acquirable. Calling <a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">lock()</a> twice from the same Thread (i.e. task) will deadlock. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acc3a5577a5cdf41e7344fd7ecbeab740"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc3a5577a5cdf41e7344fd7ecbeab740">&#9670;&nbsp;</a></span>basic_mutex()</h2>
@@ -187,14 +181,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The Ctor</p>
-<p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2018 Amber-Sophia Schroeck</p>
-<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
- it under the terms of the GNU Lesser General Public License as published by <br  />
- the Free Software Foundation, version 3, or (at your option) any later version.</p>
-<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. <br  />
- </p>
+<p>The Ctor </p>
 
 </div>
 </div>
@@ -230,9 +217,18 @@ Additional Inherited Members</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph.png" border="0" usemap="#aclassbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph" alt=""/></div>
-<map name="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph" id="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph">
+<map name="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph" id="aclassbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,160,32"/>
 <area shape="rect" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640" title=" " alt="" coords="208,5,364,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph.png" border="0" usemap="#aclassbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph" alt=""/></div>
+<map name="classbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph" id="aclassbasic__mutex_a9012d8b56fc21f0370c9f36f9e6e20c6_icgraph">
+<area shape="rect" title=" " alt="" coords="244,5,399,32"/>
+<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,5,196,32"/>
 </map>
 </div>
 
@@ -262,11 +258,21 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Destroyed the Mutex</p>
 <dl class="section return"><dt>Returns</dt><dd>'ERR_MUTEX_OK' the mutex are destroyed or ERR_MUTEX_NOTINIT when mutex not created </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__mutex_a0c3098b8b10490ef173c6977a4b82b13_icgraph.png" border="0" usemap="#aclassbasic__mutex_a0c3098b8b10490ef173c6977a4b82b13_icgraph" alt=""/></div>
+<map name="classbasic__mutex_a0c3098b8b10490ef173c6977a4b82b13_icgraph" id="aclassbasic__mutex_a0c3098b8b10490ef173c6977a4b82b13_icgraph">
+<area shape="rect" title=" " alt="" coords="453,13,616,39"/>
+<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="207,13,405,39"/>
+<area shape="rect" href="classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145" title=" " alt="" coords="5,5,159,47"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="a2279bd8e9c34fa47a7cc4066488e2e79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2279bd8e9c34fa47a7cc4066488e2e79">&#9670;&nbsp;</a></span>lock()</h2>
+<a id="a5694cab5206c23953513bf494a79a50b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5694cab5206c23953513bf494a79a50b">&#9670;&nbsp;</a></span>lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +284,7 @@ Here is the call graph for this function:</div>
           <td class="memname">int basic_mutex::lock </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code>(unsigned&#160;int)&#160;0xffffffffUL</code></td><td>)</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -297,16 +303,20 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ERR_MUTEX_OK if the Lock was acquired, ERR_MUTEX_LOCK if it timed out. or ERR_MUTEX_NOTINIT when mutex not created </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classbasic__semaphore.html#ad9e109f5a87d768334cb49ff7712e2a5">basic_semaphore</a>.</p>
+<p>Reimplemented from <a class="el" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7">basic_semaphore</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classrecursive__mutex.html#a923456ed7a0b03fd45ccb608c61e44d6">recursive_mutex</a>.</p>
+<p>Reimplemented in <a class="el" href="classrecursive__mutex.html#a360b1b4749cf2ef0f7662beb1cf7cf97">recursive_mutex</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph.png" border="0" usemap="#aclassbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph" alt=""/></div>
-<map name="classbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph" id="classbasic__mutex_a2279bd8e9c34fa47a7cc4066488e2e79_icgraph">
-<area shape="rect" title=" " alt="" coords="219,5,359,32"/>
-<area shape="rect" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203" title=" " alt="" coords="5,5,171,32"/>
+<div class="center"><img src="classbasic__mutex_a5694cab5206c23953513bf494a79a50b_icgraph.png" border="0" usemap="#aclassbasic__mutex_a5694cab5206c23953513bf494a79a50b_icgraph" alt=""/></div>
+<map name="classbasic__mutex_a5694cab5206c23953513bf494a79a50b_icgraph" id="aclassbasic__mutex_a5694cab5206c23953513bf494a79a50b_icgraph">
+<area shape="rect" title=" " alt="" coords="453,85,593,112"/>
+<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="211,5,401,32"/>
+<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="207,56,405,83"/>
+<area shape="rect" href="classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763" title=" " alt="" coords="227,107,385,149"/>
+<area shape="rect" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203" title=" " alt="" coords="223,173,389,200"/>
+<area shape="rect" href="classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145" title=" " alt="" coords="5,49,159,90"/>
 </map>
 </div>
 
@@ -343,9 +353,9 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph.png" border="0" usemap="#aclassbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph" alt=""/></div>
-<map name="classbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph" id="classbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph">
+<map name="classbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph" id="aclassbasic__mutex_a0f62edd6b2ea82c3caa8c04d4067f203_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,171,32"/>
-<area shape="rect" href="classbasic__mutex.html#a2279bd8e9c34fa47a7cc4066488e2e79" title=" " alt="" coords="219,5,359,32"/>
+<area shape="rect" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b" title=" " alt="" coords="219,5,359,32"/>
 </map>
 </div>
 
@@ -383,9 +393,13 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph.png" border="0" usemap="#aclassbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph" alt=""/></div>
-<map name="classbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph" id="classbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph">
-<area shape="rect" title=" " alt="" coords="208,5,364,32"/>
-<area shape="rect" href="classbasic__mutex.html#a9012d8b56fc21f0370c9f36f9e6e20c6" title=" " alt="" coords="5,5,160,32"/>
+<map name="classbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph" id="aclassbasic__mutex_aece9c3fbd550415f12b9090c0f61d640_icgraph">
+<area shape="rect" title=" " alt="" coords="491,81,647,108"/>
+<area shape="rect" href="classbasic__mutex.html#a9012d8b56fc21f0370c9f36f9e6e20c6" title=" " alt="" coords="266,5,421,32"/>
+<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,27,196,53"/>
+<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="244,107,443,133"/>
+<area shape="rect" href="classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763" title=" " alt="" coords="264,158,423,199"/>
+<area shape="rect" href="classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145" title=" " alt="" coords="24,99,177,141"/>
 </map>
 </div>
 
@@ -400,6 +414,9 @@ Here is the caller graph for this function:</div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

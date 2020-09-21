@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.6x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -113,7 +113,6 @@ $(document).ready(function(){initNavTree('classbasic__thread.html',''); initResi
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="classbasic__thread-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">basic_thread Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -125,16 +124,17 @@ $(document).ready(function(){initNavTree('classbasic__thread.html',''); initResi
 Inheritance diagram for basic_thread:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread__inherit__graph.png" border="0" usemap="#abasic__thread_inherit__map" alt="Inheritance graph"/></div>
-<map name="basic__thread_inherit__map" id="basic__thread_inherit__map">
-<area shape="rect" title=" " alt="" coords="44,5,149,32"/>
-<area shape="rect" href="classbasic__work__queue_1_1work__queue__thread.html" title=" " alt="" coords="5,80,188,121"/>
+<map name="basic__thread_inherit__map" id="abasic__thread_inherit__map">
+<area shape="rect" title=" " alt="" coords="90,5,195,32"/>
+<area shape="rect" href="classforeign__thread.html" title=" " alt="" coords="5,80,123,107"/>
+<area shape="rect" href="classwork__queue__thread.html" title=" " alt="" coords="147,80,298,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for basic_thread:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread__coll__graph.png" border="0" usemap="#abasic__thread_coll__map" alt="Collaboration graph"/></div>
-<map name="basic__thread_coll__map" id="basic__thread_coll__map">
+<map name="basic__thread_coll__map" id="abasic__thread_coll__map">
 <area shape="rect" title=" " alt="" coords="45,216,150,243"/>
 <area shape="rect" href="classbasic__binary__semaphore.html" title=" " alt="" coords="5,81,189,108"/>
 <area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="29,5,165,32"/>
@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3cc90ba34d8227c08388d9525ffb058f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc0c074a6b81520bf6c52ab82682cce"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__thread.html#a0dc0c074a6b81520bf6c52ab82682cce">~basic_thread</a> ()</td></tr>
 <tr class="separator:a0dc0c074a6b81520bf6c52ab82682cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6015c1f41f5ae5025a05e9d293d6a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6">create</a> (int uiCore=<a class="el" href="mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">MN_THREAD_CONFIG_DEFAULT_CORE</a>)</td></tr>
+<tr class="memitem:a3e6015c1f41f5ae5025a05e9d293d6a6"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6">create</a> (int uiCore=<a class="el" href="mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">MN_THREAD_CONFIG_DEFAULT_CORE</a>)</td></tr>
 <tr class="separator:a3e6015c1f41f5ae5025a05e9d293d6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98c71fadf905a66274275c3611bb587"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__thread.html#ac98c71fadf905a66274275c3611bb587">kill</a> ()</td></tr>
 <tr class="separator:ac98c71fadf905a66274275c3611bb587"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,20 +253,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a599ae568d039f0453c66e396e2f794a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc192bd3896dba07b4966e2766dae750"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__thread.html">basic_thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__thread.html#acc192bd3896dba07b4966e2766dae750">m_pParent</a></td></tr>
 <tr class="separator:acc192bd3896dba07b4966e2766dae750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a0d7ed0c9eb4244d07e3459b999b54a4e"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__thread.html#a0d7ed0c9eb4244d07e3459b999b54a4e">get_new_id</a> ()</td></tr>
-<tr class="separator:a0d7ed0c9eb4244d07e3459b999b54a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2018 Amber-Sophia Schroeck</p>
-<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
- it under the terms of the GNU Lesser General Public License as published by <br  />
- the Free Software Foundation, version 3, or (at your option) any later version.</p>
-<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. <br  />
- Wrapper class around FreeRTOS's implementation of a task.</p>
+<div class="textblock"><p>Wrapper class around FreeRTOS's implementation of a task.</p>
 <p>This is an abstract base class. To use this, you need to subclass it. All of your threads should be derived from the <a class="el" href="classbasic__thread.html">basic_thread</a> class. Then implement the virtual on_thread function. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adc8832b37b0895307b0e73d0e5212005"></a>
@@ -325,22 +314,15 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor to create a named thread.</p>
+<p>Constructor for this thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">strName</td><td>Name of the thread. Only useful for debugging. </td></tr>
     <tr><td class="paramname">uiPriority</td><td>FreeRTOS priority of this Thread. </td></tr>
-    <tr><td class="paramname">usStackDepth</td><td>Number of "words" allocated for the Thread stack. default configMINIMAL_STACK_SIZE</td></tr>
+    <tr><td class="paramname">usStackDepth</td><td>Number of "words" allocated for the Thread stack. default configMINIMAL_STACK_SIZE </td></tr>
   </table>
   </dd>
 </dl>
-<p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2018 Amber-Sophia Schroeck</p>
-<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
- it under the terms of the GNU Lesser General Public License as published by <br  />
- the Free Software Foundation, version 3, or (at your option) any later version.</p>
-<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. <br  />
- </p>
 
 </div>
 </div>
@@ -371,7 +353,7 @@ Static Private Member Functions</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a0dc0c074a6b81520bf6c52ab82682cce_cgraph.png" border="0" usemap="#aclassbasic__thread_a0dc0c074a6b81520bf6c52ab82682cce_cgraph" alt=""/></div>
-<map name="classbasic__thread_a0dc0c074a6b81520bf6c52ab82682cce_cgraph" id="classbasic__thread_a0dc0c074a6b81520bf6c52ab82682cce_cgraph">
+<map name="classbasic__thread_a0dc0c074a6b81520bf6c52ab82682cce_cgraph" id="aclassbasic__thread_a0dc0c074a6b81520bf6c52ab82682cce_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,164,47"/>
 <area shape="rect" href="classbasic__binary__semaphore.html#a2bdec98ca27c68bc58743db846fe031c" title=" " alt="" coords="212,5,396,47"/>
 </map>
@@ -402,7 +384,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_cgraph.png" border="0" usemap="#aclassbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_cgraph" alt=""/></div>
-<map name="classbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_cgraph" id="classbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_cgraph">
+<map name="classbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_cgraph" id="aclassbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_cgraph">
 <area shape="rect" title=" " alt="" coords="5,29,180,71"/>
 </map>
 </div>
@@ -410,7 +392,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_icgraph.png" border="0" usemap="#aclassbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_icgraph" alt=""/></div>
-<map name="classbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_icgraph" id="classbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_icgraph">
+<map name="classbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_icgraph" id="aclassbasic__thread_a2d9b6b578226c07be702abef8f62e8d9_icgraph">
 <area shape="rect" title=" " alt="" coords="5,29,180,71"/>
 </map>
 </div>
@@ -422,6 +404,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int basic_thread::create </td>
@@ -431,40 +416,47 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Create and starts the thread.</p>
 <p>This is the API call that actually starts the thread running. It creates a backing FreeRTOS task. By separating object creation from starting the Thread, it solves the pure virtual fuction call failure case. Call after creating the Task the function on_create</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uiCore</td><td>on which core run this thread (i. e. task ), -1 then create with 'xTaskCreate' and all other use 'xTaskCreatePinnedToCore'</td></tr>
+    <tr><td class="paramname">uiCore</td><td>on which core run this thread (i. e. task ), -1 for current core</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ERR_THREAD_OK The task are creating, 'ERR_THREAD_CANTINITMUTEX' on error creating the using LockObjets, the task is not created, 'ERR_THREAD_ALREADYRUNNING' the Task is allready running and 'ERR_THREAD_CANTSTARTTHREAD' can't create the task </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classforeign__thread.html#a29332b358b593b2b4b70919d716487a8">foreign_thread</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_cgraph.png" border="0" usemap="#aclassbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_cgraph" alt=""/></div>
-<map name="classbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_cgraph" id="classbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,147,160,174"/>
+<map name="classbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_cgraph" id="aclassbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,122,160,149"/>
 <area shape="rect" href="classbasic__binary__semaphore.html#adeb909ebfc1b7014556736c2da911016" title=" " alt="" coords="211,5,395,47"/>
-<area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="681,135,868,162"/>
-<area shape="rect" href="classbasic__thread.html#a0d7ed0c9eb4244d07e3459b999b54a4e" title=" " alt="" coords="210,122,397,149"/>
-<area shape="rect" href="classbasic__semaphore.html#ad9e109f5a87d768334cb49ff7712e2a5" title=" " alt="" coords="455,147,625,174"/>
-<area shape="rect" href="classbasic__thread.html#a02630d21acacff51a7aa247907392742" title=" " alt="" coords="215,223,392,250"/>
-<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="208,274,399,301"/>
-<area shape="rect" href="classbasic__thread.html#a3a2b65a713e1715b1c86a7c3a768f82f" title=" " alt="" coords="447,249,633,275"/>
-<area shape="rect" href="classbasic__thread.html#ae8daf57059f92ab2013a5dc154ae0e88" title=" " alt="" coords="451,299,629,326"/>
-<area shape="rect" href="classbasic__thread.html#a6892127bdbb965b071e0bb752a54c794" title=" " alt="" coords="463,351,617,392"/>
+<area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="681,122,868,149"/>
+<area shape="rect" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7" title=" " alt="" coords="455,122,625,149"/>
+<area shape="rect" href="classbasic__thread.html#a02630d21acacff51a7aa247907392742" title=" " alt="" coords="215,173,392,199"/>
+<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="208,223,399,250"/>
+<area shape="rect" href="classbasic__thread.html#a3a2b65a713e1715b1c86a7c3a768f82f" title=" " alt="" coords="447,223,633,250"/>
+<area shape="rect" href="classbasic__thread.html#ae8daf57059f92ab2013a5dc154ae0e88" title=" " alt="" coords="451,274,629,301"/>
+<area shape="rect" href="classbasic__thread.html#a6892127bdbb965b071e0bb752a54c794" title=" " alt="" coords="463,325,617,367"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_icgraph.png" border="0" usemap="#aclassbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_icgraph" alt=""/></div>
-<map name="classbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_icgraph" id="classbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_icgraph">
-<area shape="rect" title=" " alt="" coords="244,5,399,32"/>
-<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,5,196,32"/>
+<map name="classbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_icgraph" id="aclassbasic__thread_a3e6015c1f41f5ae5025a05e9d293d6a6_icgraph">
+<area shape="rect" title=" " alt="" coords="241,46,396,73"/>
+<area shape="rect" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189" title=" " alt="" coords="8,5,191,47"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24" title=" " alt="" coords="5,71,193,112"/>
 </map>
 </div>
 
@@ -522,8 +514,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the mini thread id of this thread (i. e. task)</p>
-<dl class="section return"><dt>Returns</dt><dd>The mini thread id </dd></dl>
+<p>Get the FreeRTOS Thread Numberid of this thread (i. e. task)</p>
+<dl class="section return"><dt>Returns</dt><dd>The FreeRTOS Thread (i. e. task) Number </dd></dl>
 
 </div>
 </div>
@@ -543,43 +535,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Get the debug name of this thread (i. e. task)</p>
 <dl class="section return"><dt>Returns</dt><dd>The name of this thread (i. e. task) </dd></dl>
-
-</div>
-</div>
-<a id="a0d7ed0c9eb4244d07e3459b999b54a4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7ed0c9eb4244d07e3459b999b54a4e">&#9670;&nbsp;</a></span>get_new_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t basic_thread::get_new_id </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get a new mini thread id</p>
-<dl class="section return"><dt>Returns</dt><dd>A new mini thread id </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classbasic__thread_a0d7ed0c9eb4244d07e3459b999b54a4e_icgraph.png" border="0" usemap="#aclassbasic__thread_a0d7ed0c9eb4244d07e3459b999b54a4e_icgraph" alt=""/></div>
-<map name="classbasic__thread_a0d7ed0c9eb4244d07e3459b999b54a4e_icgraph" id="classbasic__thread_a0d7ed0c9eb4244d07e3459b999b54a4e_icgraph">
-<area shape="rect" title=" " alt="" coords="447,5,633,32"/>
-<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="244,5,399,32"/>
-<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,5,196,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -637,15 +592,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Get the return value of this thread (i. e. task) - after run</p>
 <dl class="section return"><dt>Returns</dt><dd>The return value </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classbasic__thread_ad92019e1f0d21c14533691ec43ad812c_icgraph.png" border="0" usemap="#aclassbasic__thread_ad92019e1f0d21c14533691ec43ad812c_icgraph" alt=""/></div>
-<map name="classbasic__thread_ad92019e1f0d21c14533691ec43ad812c_icgraph" id="classbasic__thread_ad92019e1f0d21c14533691ec43ad812c_icgraph">
-<area shape="rect" title=" " alt="" coords="283,5,463,47"/>
-<area shape="rect" href="classbasic__work__queue_1_1work__queue__thread.html#a14083776ceef8c2f5cbe6a72216fdae9" title=" " alt="" coords="5,5,235,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -669,7 +615,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a724713206bc964671f6cda1ef5d87dbb_cgraph.png" border="0" usemap="#aclassbasic__thread_a724713206bc964671f6cda1ef5d87dbb_cgraph" alt=""/></div>
-<map name="classbasic__thread_a724713206bc964671f6cda1ef5d87dbb_cgraph" id="classbasic__thread_a724713206bc964671f6cda1ef5d87dbb_cgraph">
+<map name="classbasic__thread_a724713206bc964671f6cda1ef5d87dbb_cgraph" id="aclassbasic__thread_a724713206bc964671f6cda1ef5d87dbb_cgraph">
 <area shape="rect" title=" " alt="" coords="5,29,172,56"/>
 </map>
 </div>
@@ -677,7 +623,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a724713206bc964671f6cda1ef5d87dbb_icgraph.png" border="0" usemap="#aclassbasic__thread_a724713206bc964671f6cda1ef5d87dbb_icgraph" alt=""/></div>
-<map name="classbasic__thread_a724713206bc964671f6cda1ef5d87dbb_icgraph" id="classbasic__thread_a724713206bc964671f6cda1ef5d87dbb_icgraph">
+<map name="classbasic__thread_a724713206bc964671f6cda1ef5d87dbb_icgraph" id="aclassbasic__thread_a724713206bc964671f6cda1ef5d87dbb_icgraph">
 <area shape="rect" title=" " alt="" coords="5,29,172,56"/>
 </map>
 </div>
@@ -761,9 +707,9 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_ac98c71fadf905a66274275c3611bb587_cgraph.png" border="0" usemap="#aclassbasic__thread_ac98c71fadf905a66274275c3611bb587_cgraph" alt=""/></div>
-<map name="classbasic__thread_ac98c71fadf905a66274275c3611bb587_cgraph" id="classbasic__thread_ac98c71fadf905a66274275c3611bb587_cgraph">
+<map name="classbasic__thread_ac98c71fadf905a66274275c3611bb587_cgraph" id="aclassbasic__thread_ac98c71fadf905a66274275c3611bb587_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,139,83"/>
-<area shape="rect" href="classbasic__semaphore.html#ad9e109f5a87d768334cb49ff7712e2a5" title=" " alt="" coords="195,5,365,32"/>
+<area shape="rect" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7" title=" " alt="" coords="195,5,365,32"/>
 <area shape="rect" href="classbasic__thread.html#ac2492f6dc8efb29bb14f2c7b5628af06" title=" " alt="" coords="202,56,358,83"/>
 <area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="187,107,373,133"/>
 </map>
@@ -772,9 +718,9 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_ac98c71fadf905a66274275c3611bb587_icgraph.png" border="0" usemap="#aclassbasic__thread_ac98c71fadf905a66274275c3611bb587_icgraph" alt=""/></div>
-<map name="classbasic__thread_ac98c71fadf905a66274275c3611bb587_icgraph" id="classbasic__thread_ac98c71fadf905a66274275c3611bb587_icgraph">
-<area shape="rect" title=" " alt="" coords="252,5,385,32"/>
-<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="5,5,204,32"/>
+<map name="classbasic__thread_ac98c71fadf905a66274275c3611bb587_icgraph" id="aclassbasic__thread_ac98c71fadf905a66274275c3611bb587_icgraph">
+<area shape="rect" title=" " alt="" coords="241,13,375,39"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aa66502a9beda3ccee722c773e9f317b9" title=" " alt="" coords="5,5,193,47"/>
 </map>
 </div>
 
@@ -807,9 +753,9 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a9a2288cb25b0faf148b799e7f4f67624_cgraph.png" border="0" usemap="#aclassbasic__thread_a9a2288cb25b0faf148b799e7f4f67624_cgraph" alt=""/></div>
-<map name="classbasic__thread_a9a2288cb25b0faf148b799e7f4f67624_cgraph" id="classbasic__thread_a9a2288cb25b0faf148b799e7f4f67624_cgraph">
+<map name="classbasic__thread_a9a2288cb25b0faf148b799e7f4f67624_cgraph" id="aclassbasic__thread_a9a2288cb25b0faf148b799e7f4f67624_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,145,32"/>
-<area shape="rect" href="classbasic__semaphore.html#ad9e109f5a87d768334cb49ff7712e2a5" title=" " alt="" coords="193,5,364,32"/>
+<area shape="rect" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7" title=" " alt="" coords="193,5,364,32"/>
 </map>
 </div>
 
@@ -853,7 +799,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a1e654bd99bbc3bece13da735e4f03d2d_cgraph.png" border="0" usemap="#aclassbasic__thread_a1e654bd99bbc3bece13da735e4f03d2d_cgraph" alt=""/></div>
-<map name="classbasic__thread_a1e654bd99bbc3bece13da735e4f03d2d_cgraph" id="classbasic__thread_a1e654bd99bbc3bece13da735e4f03d2d_cgraph">
+<map name="classbasic__thread_a1e654bd99bbc3bece13da735e4f03d2d_cgraph" id="aclassbasic__thread_a1e654bd99bbc3bece13da735e4f03d2d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,161,32"/>
 <area shape="rect" href="mn__sleep_8hpp.html#a19ff28b418993d1050ddc0586816cc3f" title=" " alt="" coords="209,5,303,32"/>
 </map>
@@ -890,11 +836,12 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a3a2b65a713e1715b1c86a7c3a768f82f_icgraph.png" border="0" usemap="#aclassbasic__thread_a3a2b65a713e1715b1c86a7c3a768f82f_icgraph" alt=""/></div>
-<map name="classbasic__thread_a3a2b65a713e1715b1c86a7c3a768f82f_icgraph" id="classbasic__thread_a3a2b65a713e1715b1c86a7c3a768f82f_icgraph">
-<area shape="rect" title=" " alt="" coords="685,5,872,32"/>
-<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="447,5,637,32"/>
-<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="244,5,399,32"/>
-<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,5,196,32"/>
+<map name="classbasic__thread_a3a2b65a713e1715b1c86a7c3a768f82f_icgraph" id="aclassbasic__thread_a3a2b65a713e1715b1c86a7c3a768f82f_icgraph">
+<area shape="rect" title=" " alt="" coords="683,46,869,73"/>
+<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="444,46,635,73"/>
+<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="241,46,396,73"/>
+<area shape="rect" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189" title=" " alt="" coords="8,5,191,47"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24" title=" " alt="" coords="5,71,193,112"/>
 </map>
 </div>
 
@@ -927,10 +874,11 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a02630d21acacff51a7aa247907392742_icgraph.png" border="0" usemap="#aclassbasic__thread_a02630d21acacff51a7aa247907392742_icgraph" alt=""/></div>
-<map name="classbasic__thread_a02630d21acacff51a7aa247907392742_icgraph" id="classbasic__thread_a02630d21acacff51a7aa247907392742_icgraph">
-<area shape="rect" title=" " alt="" coords="447,5,624,32"/>
-<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="244,5,399,32"/>
-<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,5,196,32"/>
+<map name="classbasic__thread_a02630d21acacff51a7aa247907392742_icgraph" id="aclassbasic__thread_a02630d21acacff51a7aa247907392742_icgraph">
+<area shape="rect" title=" " alt="" coords="444,46,621,73"/>
+<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="241,46,396,73"/>
+<area shape="rect" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189" title=" " alt="" coords="8,5,191,47"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24" title=" " alt="" coords="5,71,193,112"/>
 </map>
 </div>
 
@@ -963,10 +911,10 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_ac2492f6dc8efb29bb14f2c7b5628af06_icgraph.png" border="0" usemap="#aclassbasic__thread_ac2492f6dc8efb29bb14f2c7b5628af06_icgraph" alt=""/></div>
-<map name="classbasic__thread_ac2492f6dc8efb29bb14f2c7b5628af06_icgraph" id="classbasic__thread_ac2492f6dc8efb29bb14f2c7b5628af06_icgraph">
-<area shape="rect" title=" " alt="" coords="433,5,589,32"/>
-<area shape="rect" href="classbasic__thread.html#ac98c71fadf905a66274275c3611bb587" title=" " alt="" coords="252,5,385,32"/>
-<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="5,5,204,32"/>
+<map name="classbasic__thread_ac2492f6dc8efb29bb14f2c7b5628af06_icgraph" id="aclassbasic__thread_ac2492f6dc8efb29bb14f2c7b5628af06_icgraph">
+<area shape="rect" title=" " alt="" coords="423,13,579,39"/>
+<area shape="rect" href="classbasic__thread.html#ac98c71fadf905a66274275c3611bb587" title=" " alt="" coords="241,13,375,39"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aa66502a9beda3ccee722c773e9f317b9" title=" " alt="" coords="5,5,193,47"/>
 </map>
 </div>
 
@@ -997,17 +945,18 @@ Here is the caller graph for this function:</div>
 <p>Implementation of your actual thread code. You must override this function.</p>
 <dl class="section return"><dt>Returns</dt><dd>Your return your task function, get with <a class="el" href="classbasic__thread.html#ad92019e1f0d21c14533691ec43ad812c">get_return_value()</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classbasic__work__queue_1_1work__queue__thread.html#a345434487084d5f21a2ef67e8e1eef09">basic_work_queue::work_queue_thread</a>.</p>
+<p>Implemented in <a class="el" href="classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763">work_queue_thread</a>, and <a class="el" href="classforeign__thread.html#ab72f892bee8bd17562b6009a9aa6e407">foreign_thread</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_ae8daf57059f92ab2013a5dc154ae0e88_icgraph.png" border="0" usemap="#aclassbasic__thread_ae8daf57059f92ab2013a5dc154ae0e88_icgraph" alt=""/></div>
-<map name="classbasic__thread_ae8daf57059f92ab2013a5dc154ae0e88_icgraph" id="classbasic__thread_ae8daf57059f92ab2013a5dc154ae0e88_icgraph">
-<area shape="rect" title=" " alt="" coords="685,42,864,69"/>
-<area shape="rect" href="classbasic__work__queue_1_1work__queue__thread.html#a345434487084d5f21a2ef67e8e1eef09" title=" " alt="" coords="447,5,637,47"/>
-<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="447,71,637,98"/>
-<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="244,71,399,98"/>
-<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,71,196,98"/>
+<map name="classbasic__thread_ae8daf57059f92ab2013a5dc154ae0e88_icgraph" id="aclassbasic__thread_ae8daf57059f92ab2013a5dc154ae0e88_icgraph">
+<area shape="rect" title=" " alt="" coords="683,42,861,69"/>
+<area shape="rect" href="classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763" title=" " alt="" coords="460,5,619,47"/>
+<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="444,71,635,98"/>
+<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="241,71,396,98"/>
+<area shape="rect" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189" title=" " alt="" coords="8,31,191,72"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24" title=" " alt="" coords="5,96,193,137"/>
 </map>
 </div>
 
@@ -1032,7 +981,7 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a8d3cdaac3ad97960619d29473b23ad47_icgraph.png" border="0" usemap="#aclassbasic__thread_a8d3cdaac3ad97960619d29473b23ad47_icgraph" alt=""/></div>
-<map name="classbasic__thread_a8d3cdaac3ad97960619d29473b23ad47_icgraph" id="classbasic__thread_a8d3cdaac3ad97960619d29473b23ad47_icgraph">
+<map name="classbasic__thread_a8d3cdaac3ad97960619d29473b23ad47_icgraph" id="aclassbasic__thread_a8d3cdaac3ad97960619d29473b23ad47_icgraph">
 <area shape="rect" title=" " alt="" coords="216,5,379,32"/>
 <area shape="rect" href="classbasic__thread.html#a7a787f9ac02f9074552d3fd5504d6d4d" title=" " alt="" coords="5,5,168,32"/>
 </map>
@@ -1074,7 +1023,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a7a787f9ac02f9074552d3fd5504d6d4d_cgraph.png" border="0" usemap="#aclassbasic__thread_a7a787f9ac02f9074552d3fd5504d6d4d_cgraph" alt=""/></div>
-<map name="classbasic__thread_a7a787f9ac02f9074552d3fd5504d6d4d_cgraph" id="classbasic__thread_a7a787f9ac02f9074552d3fd5504d6d4d_cgraph">
+<map name="classbasic__thread_a7a787f9ac02f9074552d3fd5504d6d4d_cgraph" id="aclassbasic__thread_a7a787f9ac02f9074552d3fd5504d6d4d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,168,32"/>
 <area shape="rect" href="classbasic__thread.html#a8d3cdaac3ad97960619d29473b23ad47" title=" " alt="" coords="216,5,379,32"/>
 </map>
@@ -1110,9 +1059,9 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a994fecb7d772942db9573ed031c43bed_cgraph.png" border="0" usemap="#aclassbasic__thread_a994fecb7d772942db9573ed031c43bed_cgraph" alt=""/></div>
-<map name="classbasic__thread_a994fecb7d772942db9573ed031c43bed_cgraph" id="classbasic__thread_a994fecb7d772942db9573ed031c43bed_cgraph">
+<map name="classbasic__thread_a994fecb7d772942db9573ed031c43bed_cgraph" id="aclassbasic__thread_a994fecb7d772942db9573ed031c43bed_cgraph">
 <area shape="rect" title=" " alt="" coords="5,107,196,133"/>
-<area shape="rect" href="classbasic__semaphore.html#ad9e109f5a87d768334cb49ff7712e2a5" title=" " alt="" coords="252,5,423,32"/>
+<area shape="rect" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7" title=" " alt="" coords="252,5,423,32"/>
 <area shape="rect" href="classbasic__thread.html#a3a2b65a713e1715b1c86a7c3a768f82f" title=" " alt="" coords="244,56,431,83"/>
 <area shape="rect" href="classbasic__thread.html#ae8daf57059f92ab2013a5dc154ae0e88" title=" " alt="" coords="248,107,427,133"/>
 <area shape="rect" href="classbasic__thread.html#a6892127bdbb965b071e0bb752a54c794" title=" " alt="" coords="260,158,415,199"/>
@@ -1123,10 +1072,11 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a994fecb7d772942db9573ed031c43bed_icgraph.png" border="0" usemap="#aclassbasic__thread_a994fecb7d772942db9573ed031c43bed_icgraph" alt=""/></div>
-<map name="classbasic__thread_a994fecb7d772942db9573ed031c43bed_icgraph" id="classbasic__thread_a994fecb7d772942db9573ed031c43bed_icgraph">
-<area shape="rect" title=" " alt="" coords="447,5,637,32"/>
-<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="244,5,399,32"/>
-<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,5,196,32"/>
+<map name="classbasic__thread_a994fecb7d772942db9573ed031c43bed_icgraph" id="aclassbasic__thread_a994fecb7d772942db9573ed031c43bed_icgraph">
+<area shape="rect" title=" " alt="" coords="444,46,635,73"/>
+<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="241,46,396,73"/>
+<area shape="rect" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189" title=" " alt="" coords="8,5,191,47"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24" title=" " alt="" coords="5,71,193,112"/>
 </map>
 </div>
 
@@ -1191,7 +1141,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a6341bd2c7ece9f691af8a61b122a72b7_cgraph.png" border="0" usemap="#aclassbasic__thread_a6341bd2c7ece9f691af8a61b122a72b7_cgraph" alt=""/></div>
-<map name="classbasic__thread_a6341bd2c7ece9f691af8a61b122a72b7_cgraph" id="classbasic__thread_a6341bd2c7ece9f691af8a61b122a72b7_cgraph">
+<map name="classbasic__thread_a6341bd2c7ece9f691af8a61b122a72b7_cgraph" id="aclassbasic__thread_a6341bd2c7ece9f691af8a61b122a72b7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,153,32"/>
 <area shape="rect" href="mn__sleep_8hpp.html#af0d0f7ac576d81be775cefe3f68de20b" title=" " alt="" coords="201,5,287,32"/>
 </map>
@@ -1219,7 +1169,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a1dd5d2e2d2884bbf199726b3d252e6fb_icgraph.png" border="0" usemap="#aclassbasic__thread_a1dd5d2e2d2884bbf199726b3d252e6fb_icgraph" alt=""/></div>
-<map name="classbasic__thread_a1dd5d2e2d2884bbf199726b3d252e6fb_icgraph" id="classbasic__thread_a1dd5d2e2d2884bbf199726b3d252e6fb_icgraph">
+<map name="classbasic__thread_a1dd5d2e2d2884bbf199726b3d252e6fb_icgraph" id="aclassbasic__thread_a1dd5d2e2d2884bbf199726b3d252e6fb_icgraph">
 <area shape="rect" title=" " alt="" coords="220,5,387,32"/>
 <area shape="rect" href="classbasic__thread.html#a03886abbdec8e0c769460b810d430da8" title=" " alt="" coords="5,5,172,32"/>
 </map>
@@ -1262,7 +1212,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a03886abbdec8e0c769460b810d430da8_cgraph.png" border="0" usemap="#aclassbasic__thread_a03886abbdec8e0c769460b810d430da8_cgraph" alt=""/></div>
-<map name="classbasic__thread_a03886abbdec8e0c769460b810d430da8_cgraph" id="classbasic__thread_a03886abbdec8e0c769460b810d430da8_cgraph">
+<map name="classbasic__thread_a03886abbdec8e0c769460b810d430da8_cgraph" id="aclassbasic__thread_a03886abbdec8e0c769460b810d430da8_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,172,32"/>
 <area shape="rect" href="classbasic__thread.html#a1dd5d2e2d2884bbf199726b3d252e6fb" title=" " alt="" coords="220,5,387,32"/>
 </map>
@@ -1297,7 +1247,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a6892127bdbb965b071e0bb752a54c794_cgraph.png" border="0" usemap="#aclassbasic__thread_a6892127bdbb965b071e0bb752a54c794_cgraph" alt=""/></div>
-<map name="classbasic__thread_a6892127bdbb965b071e0bb752a54c794_cgraph" id="classbasic__thread_a6892127bdbb965b071e0bb752a54c794_cgraph">
+<map name="classbasic__thread_a6892127bdbb965b071e0bb752a54c794_cgraph" id="aclassbasic__thread_a6892127bdbb965b071e0bb752a54c794_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,160,47"/>
 <area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="208,13,395,39"/>
 </map>
@@ -1306,11 +1256,12 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_a6892127bdbb965b071e0bb752a54c794_icgraph.png" border="0" usemap="#aclassbasic__thread_a6892127bdbb965b071e0bb752a54c794_icgraph" alt=""/></div>
-<map name="classbasic__thread_a6892127bdbb965b071e0bb752a54c794_icgraph" id="classbasic__thread_a6892127bdbb965b071e0bb752a54c794_icgraph">
-<area shape="rect" title=" " alt="" coords="685,5,840,47"/>
-<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="447,13,637,39"/>
-<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="244,13,399,39"/>
-<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,13,196,39"/>
+<map name="classbasic__thread_a6892127bdbb965b071e0bb752a54c794_icgraph" id="aclassbasic__thread_a6892127bdbb965b071e0bb752a54c794_icgraph">
+<area shape="rect" title=" " alt="" coords="683,39,837,80"/>
+<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="444,46,635,73"/>
+<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="241,46,396,73"/>
+<area shape="rect" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189" title=" " alt="" coords="8,5,191,47"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24" title=" " alt="" coords="5,71,193,112"/>
 </map>
 </div>
 
@@ -1343,7 +1294,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_aec2288dc0524ec937d6752390af015f6_cgraph.png" border="0" usemap="#aclassbasic__thread_aec2288dc0524ec937d6752390af015f6_cgraph" alt=""/></div>
-<map name="classbasic__thread_aec2288dc0524ec937d6752390af015f6_cgraph" id="classbasic__thread_aec2288dc0524ec937d6752390af015f6_cgraph">
+<map name="classbasic__thread_aec2288dc0524ec937d6752390af015f6_cgraph" id="aclassbasic__thread_aec2288dc0524ec937d6752390af015f6_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,161,32"/>
 <area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="209,5,396,32"/>
 </map>
@@ -1385,7 +1336,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__thread_ad849d8111d36883315a41002f2582008_cgraph.png" border="0" usemap="#aclassbasic__thread_ad849d8111d36883315a41002f2582008_cgraph" alt=""/></div>
-<map name="classbasic__thread_ad849d8111d36883315a41002f2582008_cgraph" id="classbasic__thread_ad849d8111d36883315a41002f2582008_cgraph">
+<map name="classbasic__thread_ad849d8111d36883315a41002f2582008_cgraph" id="aclassbasic__thread_ad849d8111d36883315a41002f2582008_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,161,32"/>
 <area shape="rect" href="mn__sleep_8hpp.html#a636c9a0076d940e5bd54cf8a8aaa9065" title=" " alt="" coords="209,5,303,32"/>
 </map>
@@ -1599,7 +1550,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The mini Thread ID </p>
+<p>The FreeRTOS Thread Number </p>
 
 </div>
 </div>
@@ -1645,7 +1596,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The parent task pointer of this tas </p>
+<p>The parent task pointer of this task </p>
 
 </div>
 </div>
@@ -1773,6 +1724,9 @@ Here is the call graph for this function:</div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

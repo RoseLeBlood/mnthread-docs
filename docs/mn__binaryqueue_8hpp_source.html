@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.6x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -111,39 +111,58 @@ $(document).ready(function(){initNavTree('mn__binaryqueue_8hpp_source.html','');
 <div class="title">mn_binaryqueue.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mn__binaryqueue_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef MINLIB_ESP32_BINQUEUE_</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_BINQUEUE_</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__queue_8hpp.html">mn_queue.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classbasic__binaryqueue.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__binaryqueue.html">basic_binaryqueue</a> : <span class="keyword">public</span> <a class="code" href="classbasic__queue.html">basic_queue</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classbasic__binaryqueue.html#a3d73296d7b9e777c543a2d12bdbd9988">   34</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classbasic__binaryqueue.html#a3d73296d7b9e777c543a2d12bdbd9988">basic_binaryqueue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> itemSize) </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                : <a class="code" href="classbasic__queue.html">basic_queue</a>(1, itemSize) { }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__binaryqueue.html#a02c01496cfc33b8e8dc6fb99b5c399e0">enqueue</a>(<span class="keywordtype">void</span> *item,  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = -1);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="mn__binaryqueue_8hpp.html#ae6975bc3859d577bfe0b7f34cd4ee02d">   49</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__binaryqueue.html">binaryqueue_t</a> = <a class="code" href="classbasic__binaryqueue.html">basic_binaryqueue</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
+<a href="mn__binaryqueue_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2020 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify  </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by  </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.  </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef MINLIB_ESP32_BINQUEUE_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_BINQUEUE_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__queue_8hpp.html">mn_queue.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classbasic__binaryqueue.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__binaryqueue.html">basic_binaryqueue</a> : <span class="keyword">public</span> <a class="code" href="classbasic__queue.html">basic_queue</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classbasic__binaryqueue.html#a3d73296d7b9e777c543a2d12bdbd9988">   35</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classbasic__binaryqueue.html#a3d73296d7b9e777c543a2d12bdbd9988">basic_binaryqueue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> itemSize) </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                : <a class="code" href="classbasic__queue.html">basic_queue</a>(1, itemSize) { }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__binaryqueue.html#a02c01496cfc33b8e8dc6fb99b5c399e0">enqueue</a>(<span class="keywordtype">void</span> *item,  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = -1);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="mn__binaryqueue_8hpp.html#ae6975bc3859d577bfe0b7f34cd4ee02d">   50</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__binaryqueue.html">binaryqueue_t</a> = <a class="code" href="classbasic__binaryqueue.html">basic_binaryqueue</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassbasic__binaryqueue_html_a3d73296d7b9e777c543a2d12bdbd9988"><div class="ttname"><a href="classbasic__binaryqueue.html#a3d73296d7b9e777c543a2d12bdbd9988">basic_binaryqueue::basic_binaryqueue</a></div><div class="ttdeci">basic_binaryqueue(unsigned int itemSize)</div><div class="ttdef"><b>Definition:</b> mn_binaryqueue.hpp:34</div></div>
-<div class="ttc" id="amn__error_8hpp_html_ac29241cdee998f1f86737da1b56850cf"><div class="ttname"><a href="mn__error_8hpp.html#ac29241cdee998f1f86737da1b56850cf">ERR_QUEUE_OK</a></div><div class="ttdeci">#define ERR_QUEUE_OK</div><div class="ttdef"><b>Definition:</b> mn_error.hpp:129</div></div>
-<div class="ttc" id="aclassbasic__binaryqueue_html_a02c01496cfc33b8e8dc6fb99b5c399e0"><div class="ttname"><a href="classbasic__binaryqueue.html#a02c01496cfc33b8e8dc6fb99b5c399e0">basic_binaryqueue::enqueue</a></div><div class="ttdeci">virtual int enqueue(void *item, unsigned int timeout=-1)</div><div class="ttdef"><b>Definition:</b> mn_binaryqueue.cpp:23</div></div>
-<div class="ttc" id="aclassbasic__queue_html_a5688f667306ac809556849bab7f6a587"><div class="ttname"><a href="classbasic__queue.html#a5688f667306ac809556849bab7f6a587">basic_queue::m_pHandle</a></div><div class="ttdeci">QueueHandle_t m_pHandle</div><div class="ttdef"><b>Definition:</b> mn_queue.hpp:129</div></div>
-<div class="ttc" id="amn__error_8hpp_html_a57f290df55d868683884923cde9f50a2"><div class="ttname"><a href="mn__error_8hpp.html#a57f290df55d868683884923cde9f50a2">ERR_QUEUE_NOTCREATED</a></div><div class="ttdeci">#define ERR_QUEUE_NOTCREATED</div><div class="ttdef"><b>Definition:</b> mn_error.hpp:141</div></div>
+<div class="ttc" id="aclassbasic__binaryqueue_html_a3d73296d7b9e777c543a2d12bdbd9988"><div class="ttname"><a href="classbasic__binaryqueue.html#a3d73296d7b9e777c543a2d12bdbd9988">basic_binaryqueue::basic_binaryqueue</a></div><div class="ttdeci">basic_binaryqueue(unsigned int itemSize)</div><div class="ttdef"><b>Definition:</b> mn_binaryqueue.hpp:35</div></div>
+<div class="ttc" id="amn__error_8hpp_html_ac29241cdee998f1f86737da1b56850cf"><div class="ttname"><a href="mn__error_8hpp.html#ac29241cdee998f1f86737da1b56850cf">ERR_QUEUE_OK</a></div><div class="ttdeci">#define ERR_QUEUE_OK</div><div class="ttdef"><b>Definition:</b> mn_error.hpp:130</div></div>
+<div class="ttc" id="aclassbasic__binaryqueue_html_a02c01496cfc33b8e8dc6fb99b5c399e0"><div class="ttname"><a href="classbasic__binaryqueue.html#a02c01496cfc33b8e8dc6fb99b5c399e0">basic_binaryqueue::enqueue</a></div><div class="ttdeci">virtual int enqueue(void *item, unsigned int timeout=-1)</div><div class="ttdef"><b>Definition:</b> mn_binaryqueue.cpp:24</div></div>
+<div class="ttc" id="amn__error_8hpp_html_a57f290df55d868683884923cde9f50a2"><div class="ttname"><a href="mn__error_8hpp.html#a57f290df55d868683884923cde9f50a2">ERR_QUEUE_NOTCREATED</a></div><div class="ttdeci">#define ERR_QUEUE_NOTCREATED</div><div class="ttdef"><b>Definition:</b> mn_error.hpp:142</div></div>
 <div class="ttc" id="amn__error_8hpp_html"><div class="ttname"><a href="mn__error_8hpp.html">mn_error.hpp</a></div></div>
-<div class="ttc" id="aclassbasic__queue_html"><div class="ttname"><a href="classbasic__queue.html">basic_queue</a></div><div class="ttdef"><b>Definition:</b> mn_queue.hpp:24</div></div>
+<div class="ttc" id="aclassbasic__queue_html_a806eceeb823892fc4c1ef7aa2ec0ed3d"><div class="ttname"><a href="classbasic__queue.html#a806eceeb823892fc4c1ef7aa2ec0ed3d">basic_queue::m_pHandle</a></div><div class="ttdeci">void * m_pHandle</div><div class="ttdef"><b>Definition:</b> mn_queue.hpp:132</div></div>
+<div class="ttc" id="aclassbasic__queue_html"><div class="ttname"><a href="classbasic__queue.html">basic_queue</a></div><div class="ttdef"><b>Definition:</b> mn_queue.hpp:27</div></div>
 <div class="ttc" id="amn__binaryqueue_8hpp_html"><div class="ttname"><a href="mn__binaryqueue_8hpp.html">mn_binaryqueue.hpp</a></div></div>
-<div class="ttc" id="aclassbasic__binaryqueue_html"><div class="ttname"><a href="classbasic__binaryqueue.html">basic_binaryqueue</a></div><div class="ttdef"><b>Definition:</b> mn_binaryqueue.hpp:27</div></div>
+<div class="ttc" id="aclassbasic__binaryqueue_html"><div class="ttname"><a href="classbasic__binaryqueue.html">basic_binaryqueue</a></div><div class="ttdef"><b>Definition:</b> mn_binaryqueue.hpp:28</div></div>
 <div class="ttc" id="amn__queue_8hpp_html"><div class="ttname"><a href="mn__queue_8hpp.html">mn_queue.hpp</a></div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

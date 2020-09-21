@@ -17,7 +17,11 @@ var annotated_dup =
     [ "basic_thread", "classbasic__thread.html", "classbasic__thread" ],
     [ "basic_timer", "classbasic__timer.html", "classbasic__timer" ],
     [ "basic_work_queue", "classbasic__work__queue.html", "classbasic__work__queue" ],
+    [ "basic_work_queue_multi", "classbasic__work__queue__multi.html", "classbasic__work__queue__multi" ],
+    [ "basic_work_queue_single", "classbasic__work__queue__single.html", "classbasic__work__queue__single" ],
+    [ "foreign_thread", "classforeign__thread.html", "classforeign__thread" ],
     [ "libmnVersion", "classlibmn_version.html", "classlibmn_version" ],
     [ "recursive_mutex", "classrecursive__mutex.html", "classrecursive__mutex" ],
-    [ "work_queue_item", "classwork__queue__item.html", "classwork__queue__item" ]
+    [ "work_queue_item", "classwork__queue__item.html", "classwork__queue__item" ],
+    [ "work_queue_thread", "classwork__queue__thread.html", "classwork__queue__thread" ]
 ];

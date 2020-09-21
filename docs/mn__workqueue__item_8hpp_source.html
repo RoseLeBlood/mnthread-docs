@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.6x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -130,41 +130,38 @@ $(document).ready(function(){initNavTree('mn__workqueue__item_8hpp_source.html',
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef MINLIB_ESP32_WORK_ITEM_QUEUE_</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_WORK_ITEM_QUEUE_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classwork__queue__item.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwork__queue__item.html">work_queue_item</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#a92a5212c08779400881d592e98881421">   44</a></span>&#160;    <a class="code" href="classwork__queue__item.html#a92a5212c08779400881d592e98881421">work_queue_item</a>(<span class="keywordtype">bool</span> deleteAffter = <span class="keyword">false</span>) </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        : <a class="code" href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">m_bCanDelete</a>(deleteAffter) { }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#a5b25e8d91194045ce9017ad519bd9d79">   50</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classwork__queue__item.html#a5b25e8d91194045ce9017ad519bd9d79">~work_queue_item</a>() { }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#a37d4994d802bcd635bf16fe0c7126274">   56</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwork__queue__item.html#a37d4994d802bcd635bf16fe0c7126274">can_delete</a>() { <span class="keywordflow">return</span> <a class="code" href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">m_bCanDelete</a>; }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#aed9ba74ffed0b0ee39df30c740fe19fc">   62</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classwork__queue__item.html#aed9ba74ffed0b0ee39df30c740fe19fc">on_work</a>() = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classwork__queue__item.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwork__queue__item.html">work_queue_item</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#a92a5212c08779400881d592e98881421">   39</a></span>&#160;    <a class="code" href="classwork__queue__item.html#a92a5212c08779400881d592e98881421">work_queue_item</a>(<span class="keywordtype">bool</span> deleteAffter = <span class="keyword">false</span>) </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        : <a class="code" href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">m_bCanDelete</a>(deleteAffter) { }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#a5b25e8d91194045ce9017ad519bd9d79">   45</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classwork__queue__item.html#a5b25e8d91194045ce9017ad519bd9d79">~work_queue_item</a>() { }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#a37d4994d802bcd635bf16fe0c7126274">   51</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classwork__queue__item.html#a37d4994d802bcd635bf16fe0c7126274">can_delete</a>() { <span class="keywordflow">return</span> <a class="code" href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">m_bCanDelete</a>; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#a803873775a01721e810efd13960e9861">   57</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classwork__queue__item.html#a803873775a01721e810efd13960e9861">on_work</a>() = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">   59</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">m_bCanDelete</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="mn__workqueue__item_8hpp.html#abbd4bf0b4bc3bc8ae1d8d9543203b2bb">   62</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classwork__queue__item.html">work_queue_item_t</a> = <a class="code" href="classwork__queue__item.html">work_queue_item</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//TODO: ADD this two functions - destroy ready</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#a950fce6a58024b2cb1b3a43ceba3881a">   65</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classwork__queue__item.html#a950fce6a58024b2cb1b3a43ceba3881a">create</a>() { <span class="keywordflow">return</span> 0; }</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#ad00ecaee081b7c741232b7e3566d9d0e">   66</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classwork__queue__item.html#ad00ecaee081b7c741232b7e3566d9d0e">destroy</a>() { <span class="keywordflow">return</span> 0; }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">   68</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">m_bCanDelete</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="mn__workqueue__item_8hpp.html#abbd4bf0b4bc3bc8ae1d8d9543203b2bb">   71</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classwork__queue__item.html">work_queue_item_t</a> = <a class="code" href="classwork__queue__item.html">work_queue_item</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswork__queue__item_html_a5b25e8d91194045ce9017ad519bd9d79"><div class="ttname"><a href="classwork__queue__item.html#a5b25e8d91194045ce9017ad519bd9d79">work_queue_item::~work_queue_item</a></div><div class="ttdeci">virtual ~work_queue_item()</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:50</div></div>
-<div class="ttc" id="aclasswork__queue__item_html_a37d4994d802bcd635bf16fe0c7126274"><div class="ttname"><a href="classwork__queue__item.html#a37d4994d802bcd635bf16fe0c7126274">work_queue_item::can_delete</a></div><div class="ttdeci">bool can_delete()</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:56</div></div>
-<div class="ttc" id="aclasswork__queue__item_html_ad00ecaee081b7c741232b7e3566d9d0e"><div class="ttname"><a href="classwork__queue__item.html#ad00ecaee081b7c741232b7e3566d9d0e">work_queue_item::destroy</a></div><div class="ttdeci">virtual int destroy()</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:66</div></div>
-<div class="ttc" id="aclasswork__queue__item_html_a950fce6a58024b2cb1b3a43ceba3881a"><div class="ttname"><a href="classwork__queue__item.html#a950fce6a58024b2cb1b3a43ceba3881a">work_queue_item::create</a></div><div class="ttdeci">virtual int create()</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:65</div></div>
+<div class="ttc" id="aclasswork__queue__item_html_a803873775a01721e810efd13960e9861"><div class="ttname"><a href="classwork__queue__item.html#a803873775a01721e810efd13960e9861">work_queue_item::on_work</a></div><div class="ttdeci">virtual bool on_work()=0</div></div>
+<div class="ttc" id="aclasswork__queue__item_html_a5b25e8d91194045ce9017ad519bd9d79"><div class="ttname"><a href="classwork__queue__item.html#a5b25e8d91194045ce9017ad519bd9d79">work_queue_item::~work_queue_item</a></div><div class="ttdeci">virtual ~work_queue_item()</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:45</div></div>
+<div class="ttc" id="aclasswork__queue__item_html_a37d4994d802bcd635bf16fe0c7126274"><div class="ttname"><a href="classwork__queue__item.html#a37d4994d802bcd635bf16fe0c7126274">work_queue_item::can_delete</a></div><div class="ttdeci">bool can_delete()</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:51</div></div>
 <div class="ttc" id="amn__workqueue__item_8hpp_html"><div class="ttname"><a href="mn__workqueue__item_8hpp.html">mn_workqueue_item.hpp</a></div></div>
-<div class="ttc" id="aclasswork__queue__item_html"><div class="ttname"><a href="classwork__queue__item.html">work_queue_item</a></div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:31</div></div>
-<div class="ttc" id="aclasswork__queue__item_html_ab07590978cd31a3082abec767f0b28b1"><div class="ttname"><a href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">work_queue_item::m_bCanDelete</a></div><div class="ttdeci">const bool m_bCanDelete</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:68</div></div>
-<div class="ttc" id="aclasswork__queue__item_html_a92a5212c08779400881d592e98881421"><div class="ttname"><a href="classwork__queue__item.html#a92a5212c08779400881d592e98881421">work_queue_item::work_queue_item</a></div><div class="ttdeci">work_queue_item(bool deleteAffter=false)</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:44</div></div>
-<div class="ttc" id="aclasswork__queue__item_html_aed9ba74ffed0b0ee39df30c740fe19fc"><div class="ttname"><a href="classwork__queue__item.html#aed9ba74ffed0b0ee39df30c740fe19fc">work_queue_item::on_work</a></div><div class="ttdeci">virtual void on_work()=0</div></div>
+<div class="ttc" id="aclasswork__queue__item_html"><div class="ttname"><a href="classwork__queue__item.html">work_queue_item</a></div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:26</div></div>
+<div class="ttc" id="aclasswork__queue__item_html_ab07590978cd31a3082abec767f0b28b1"><div class="ttname"><a href="classwork__queue__item.html#ab07590978cd31a3082abec767f0b28b1">work_queue_item::m_bCanDelete</a></div><div class="ttdeci">const bool m_bCanDelete</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:59</div></div>
+<div class="ttc" id="aclasswork__queue__item_html_a92a5212c08779400881d592e98881421"><div class="ttname"><a href="classwork__queue__item.html#a92a5212c08779400881d592e98881421">work_queue_item::work_queue_item</a></div><div class="ttdeci">work_queue_item(bool deleteAffter=false)</div><div class="ttdef"><b>Definition:</b> mn_workqueue_item.hpp:39</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>
