@@ -1,27 +1,5 @@
 var searchData=
 [
-  ['get_5fchild_94',['get_child',['../classbasic__thread.html#a99e5cabdf18f1cf86906a40950407d5d',1,'basic_thread']]],
-  ['get_5fcount_95',['get_count',['../classbasic__counting__semaphore.html#a2e576fbf089732f9995742bd2c10bc16',1,'basic_counting_semaphore']]],
-  ['get_5fdebug_5fversion_96',['get_debug_version',['../classlibmn_version.html#ae8d0c432c0265e513b1527670a79b4b2',1,'libmnVersion']]],
-  ['get_5fhandle_97',['get_handle',['../classbasic__semaphore.html#a3f687583c39b52b9c34a73a842d80efd',1,'basic_semaphore::get_handle()'],['../classbasic__thread.html#a180cf5749a77184a8b68f00f2cdb0da0',1,'basic_thread::get_handle()'],['../classbasic__timer.html#a566e91d9f873327f9f4ca41e039d4047',1,'basic_timer::get_handle()'],['../classbasic__queue.html#a7ef4d9158810353334a2fd3dcf1b1751',1,'basic_queue::get_handle()']]],
-  ['get_5fid_98',['get_id',['../classbasic__thread.html#a2fc99d7a5f71f1574487991e3d8fcf0b',1,'basic_thread']]],
-  ['get_5fleft_99',['get_left',['../classbasic__blocking__queue.html#aba4653d120eac4f4ddfdfed511f7ca91',1,'basic_blocking_queue::get_left()'],['../classbasic__queue.html#adc11bc2d754a65a6c6584c8af31fe42c',1,'basic_queue::get_left()']]],
-  ['get_5flicense_100',['get_license',['../classlibmn_version.html#a4a9007372ecae9a485eb61d102b659bb',1,'libmnVersion']]],
-  ['get_5fmajor_5fversion_101',['get_major_version',['../classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588',1,'libmnVersion']]],
-  ['get_5fminor_5fversion_102',['get_minor_version',['../classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00',1,'libmnVersion']]],
-  ['get_5fname_103',['get_name',['../classbasic__thread.html#ad8b56d04447494b87740dcaef3704326',1,'basic_thread::get_name()'],['../classbasic__timer.html#a0281675d18c6e8b618f6a6a37e128f55',1,'basic_timer::get_name()']]],
-  ['get_5fnext_5fitem_104',['get_next_item',['../classbasic__work__queue.html#a1808f1f7048374015ea2309cfc9c4f8c',1,'basic_work_queue']]],
-  ['get_5fnum_5fitems_105',['get_num_items',['../classbasic__blocking__queue.html#a3916f7752c99d8b1b95493f38733f07d',1,'basic_blocking_queue::get_num_items()'],['../classbasic__queue.html#acccc78eb8dbbd0e358bafc9e3558ac91',1,'basic_queue::get_num_items()']]],
-  ['get_5fnum_5fitems_5ferror_106',['get_num_items_error',['../classbasic__work__queue.html#a90ca48af3cd0bcbdbff732ed4d9bc9ae',1,'basic_work_queue']]],
-  ['get_5fnum_5fitems_5fworked_107',['get_num_items_worked',['../classbasic__work__queue.html#a37cdd77452de770de198118c8803d370',1,'basic_work_queue']]],
-  ['get_5fnum_5fmax_5fworker_108',['get_num_max_worker',['../classbasic__work__queue__multi.html#a97c717fe45a4feedb6382fd1c7d38605',1,'basic_work_queue_multi']]],
-  ['get_5fnum_5fworker_109',['get_num_worker',['../classbasic__work__queue__multi.html#a92e83587a88cc3f258dfbebb1bb20f80',1,'basic_work_queue_multi']]],
-  ['get_5fon_5fcore_110',['get_on_core',['../classbasic__thread.html#aba78de9128e383b6c3b176b095a095b9',1,'basic_thread']]],
-  ['get_5fperiod_111',['get_period',['../classbasic__timer.html#a014471c0d70be6eade9ad21571b6a7ee',1,'basic_timer']]],
-  ['get_5fpriority_112',['get_priority',['../classbasic__thread.html#af296af43b945ae7fbba348c954c13ede',1,'basic_thread']]],
-  ['get_5freturn_5fvalue_113',['get_return_value',['../classbasic__thread.html#ad92019e1f0d21c14533691ec43ad812c',1,'basic_thread']]],
-  ['get_5froot_114',['get_root',['../classbasic__thread.html#a724713206bc964671f6cda1ef5d87dbb',1,'basic_thread']]],
-  ['get_5fstackdepth_115',['get_stackdepth',['../classbasic__thread.html#a936dfd442e37ee55a08c9a66ee726cf9',1,'basic_thread']]],
-  ['get_5fticks_116',['get_ticks',['../mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451',1,'get_ticks():&#160;mn_micros.cpp'],['../mn__micros_8cpp.html#afdf0a92b2d187681014a7ba7aa672451',1,'get_ticks():&#160;mn_micros.cpp']]],
-  ['get_5ftime_5fsince_5fstart_117',['get_time_since_start',['../classbasic__thread.html#a777cf001325de4fe95feff9f5009c8c7',1,'basic_thread']]]
+  ['foreign_5ftask_101',['foreign_task',['../classforeign__task.html',1,'foreign_task'],['../classforeign__task.html#a8b1307bb63074d9ca19cdbc31d873601',1,'foreign_task::foreign_task()'],['../classforeign__task.html#a01d88d78e4769b985ea8d8f7fe2014f9',1,'foreign_task::foreign_task(void *t)']]],
+  ['foreign_5ftask_5ft_102',['foreign_task_t',['../mn__foreign__task_8hpp.html#af270ea4631f129877a799787a834c653',1,'mn_foreign_task.hpp']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['foreign_5fthread_5ft_578',['foreign_thread_t',['../mn__thread_8hpp.html#a083416583a6f8eb8414ac2ab729e5fea',1,'mn_thread.hpp']]]
+  ['event_5fgroup_5ft_669',['event_group_t',['../mn__eventgroup_8hpp.html#a80cc926f701a2e3c3dbdea720595a136',1,'mn_eventgroup.hpp']]]
 ];

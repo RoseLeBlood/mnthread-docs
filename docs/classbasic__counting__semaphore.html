@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 2.xbeta</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -116,23 +116,25 @@ $(document).ready(function(){initNavTree('classbasic__counting__semaphore.html',
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="mn__semaphore_8hpp_source.html">mn_semaphore.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mn__counting__semaphore_8hpp_source.html">mn_counting_semaphore.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for basic_counting_semaphore:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__counting__semaphore__inherit__graph.png" border="0" usemap="#abasic__counting__semaphore_inherit__map" alt="Inheritance graph"/></div>
-<map name="basic__counting__semaphore_inherit__map" id="abasic__counting__semaphore_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,204,107"/>
-<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="37,5,173,32"/>
+<map name="basic__counting__semaphore_inherit__map" id="basic__counting__semaphore_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,155,204,181"/>
+<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="37,80,173,107"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="55,5,154,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for basic_counting_semaphore:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__counting__semaphore__coll__graph.png" border="0" usemap="#abasic__counting__semaphore_coll__map" alt="Collaboration graph"/></div>
-<map name="basic__counting__semaphore_coll__map" id="abasic__counting__semaphore_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,204,107"/>
-<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="37,5,173,32"/>
+<map name="basic__counting__semaphore_coll__map" id="basic__counting__semaphore_coll__map">
+<area shape="rect" title=" " alt="" coords="5,155,204,181"/>
+<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="37,80,173,107"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="55,5,154,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -140,6 +142,8 @@ Collaboration diagram for basic_counting_semaphore:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a71785d3fd74ae1a9b7bb6744d5d57b87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__counting__semaphore.html#a71785d3fd74ae1a9b7bb6744d5d57b87">basic_counting_semaphore</a> (int count=<a class="el" href="mn__config_8hpp.html#a0e59cd4828b0ff11f8fe0b81185a1e03">MN_THREAD_CONFIG_CSEMAPHORE_MIN_COUNT</a>, int maxcount=<a class="el" href="mn__config_8hpp.html#aed1554026e4fad333e7d50835e5c7b08">MN_THREAD_CONFIG_CSEMAPHORE_MAX_COUNT</a>)</td></tr>
 <tr class="separator:a71785d3fd74ae1a9b7bb6744d5d57b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd621761da321fb4072a6bad100c8488"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__counting__semaphore.html#abd621761da321fb4072a6bad100c8488">~basic_counting_semaphore</a> ()</td></tr>
+<tr class="separator:abd621761da321fb4072a6bad100c8488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f933048f021dfbc4e6bcad39dfbd3ff"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__counting__semaphore.html#a0f933048f021dfbc4e6bcad39dfbd3ff">create</a> ()</td></tr>
 <tr class="separator:a0f933048f021dfbc4e6bcad39dfbd3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230ade7eeca9d645e1b17a4ee3c26d21"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__counting__semaphore.html#a230ade7eeca9d645e1b17a4ee3c26d21">destroy</a> ()</td></tr>
@@ -211,6 +215,40 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abd621761da321fb4072a6bad100c8488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd621761da321fb4072a6bad100c8488">&#9670;&nbsp;</a></span>~basic_counting_semaphore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual basic_counting_semaphore::~basic_counting_semaphore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__counting__semaphore_abd621761da321fb4072a6bad100c8488_cgraph.png" border="0" usemap="#aclassbasic__counting__semaphore_abd621761da321fb4072a6bad100c8488_cgraph" alt=""/></div>
+<map name="classbasic__counting__semaphore_abd621761da321fb4072a6bad100c8488_cgraph" id="classbasic__counting__semaphore_abd621761da321fb4072a6bad100c8488_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,224,47"/>
+<area shape="rect" href="classbasic__counting__semaphore.html#a230ade7eeca9d645e1b17a4ee3c26d21" title=" " alt="" coords="272,5,471,47"/>
+</map>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0f933048f021dfbc4e6bcad39dfbd3ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f933048f021dfbc4e6bcad39dfbd3ff">&#9670;&nbsp;</a></span>create()</h2>
@@ -241,7 +279,7 @@ Protected Attributes</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_cgraph.png" border="0" usemap="#aclassbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_cgraph" alt=""/></div>
-<map name="classbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_cgraph" id="aclassbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_cgraph">
+<map name="classbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_cgraph" id="classbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,204,47"/>
 <area shape="rect" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572" title=" " alt="" coords="252,13,439,39"/>
 </map>
@@ -250,9 +288,9 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_icgraph.png" border="0" usemap="#aclassbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_icgraph" alt=""/></div>
-<map name="classbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_icgraph" id="aclassbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_icgraph">
+<map name="classbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_icgraph" id="classbasic__counting__semaphore_a0f933048f021dfbc4e6bcad39dfbd3ff_icgraph">
 <area shape="rect" title=" " alt="" coords="211,5,409,47"/>
-<area shape="rect" href="classbasic__tasklet.html#af5adf1c78656ba1410b2d6ca23b01aeb" title=" " alt="" coords="5,13,163,39"/>
+<area shape="rect" href="classbasic__tasklet.html#add637f5d08f5280e4634adb73eac831a" title=" " alt="" coords="5,13,163,39"/>
 </map>
 </div>
 
@@ -286,9 +324,10 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__counting__semaphore_a230ade7eeca9d645e1b17a4ee3c26d21_icgraph.png" border="0" usemap="#aclassbasic__counting__semaphore_a230ade7eeca9d645e1b17a4ee3c26d21_icgraph" alt=""/></div>
-<map name="classbasic__counting__semaphore_a230ade7eeca9d645e1b17a4ee3c26d21_icgraph" id="aclassbasic__counting__semaphore_a230ade7eeca9d645e1b17a4ee3c26d21_icgraph">
-<area shape="rect" title=" " alt="" coords="219,5,417,47"/>
-<area shape="rect" href="classbasic__tasklet.html#a597a926d1cdf5e0ca4663fc68cd632a3" title=" " alt="" coords="5,13,171,39"/>
+<map name="classbasic__counting__semaphore_a230ade7eeca9d645e1b17a4ee3c26d21_icgraph" id="classbasic__counting__semaphore_a230ade7eeca9d645e1b17a4ee3c26d21_icgraph">
+<area shape="rect" title=" " alt="" coords="272,27,471,69"/>
+<area shape="rect" href="classbasic__tasklet.html#a597a926d1cdf5e0ca4663fc68cd632a3" title=" " alt="" coords="32,5,197,32"/>
+<area shape="rect" href="classbasic__counting__semaphore.html#abd621761da321fb4072a6bad100c8488" title=" " alt="" coords="5,57,224,98"/>
 </map>
 </div>
 
@@ -427,8 +466,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="mn__semaphore_8hpp_source.html">mn_semaphore.hpp</a></li>
-<li><a class="el" href="mn__semaphore_8cpp.html">mn_semaphore.cpp</a></li>
+<li><a class="el" href="mn__counting__semaphore_8hpp_source.html">mn_counting_semaphore.hpp</a></li>
+<li><a class="el" href="mn__counting__semaphore_8cpp.html">mn_counting_semaphore.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

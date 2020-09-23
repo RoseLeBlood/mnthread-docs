@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 2.xbeta</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -109,7 +109,29 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <div class="contents">
 &#160;
 
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>configMAX_PRIORITIES
+: <a class="el" href="mn__config_8hpp.html#a9a78f5ac61e6cb172dadf2a51f11db38">mn_config.hpp</a>
+</li>
+<li>configUSE_DAEMON_TASK_STARTUP_HOOK
+: <a class="el" href="mini_thread_8hpp.html#a0415288d8efe664e0b05a7b53fbfaa33">miniThread.hpp</a>
+</li>
+<li>configUSE_IDLE_HOOK
+: <a class="el" href="mini_thread_8hpp.html#ac637ae45863c19fa2e919db0ed49301f">miniThread.hpp</a>
+</li>
+</ul>
+
+
 <h3><a id="index_e"></a>- e -</h3><ul>
+<li>ERR_COROUTINE_CANTINITLOCKT
+: <a class="el" href="mn__error_8hpp.html#aa2aeebdae9b43ae3862a3dfa4754a2e9">mn_error.hpp</a>
+</li>
+<li>ERR_COROUTINE_CANTSTART
+: <a class="el" href="mn__error_8hpp.html#af65e1da350f31d8d62411a531d0bdedb">mn_error.hpp</a>
+</li>
+<li>ERR_COROUTINE_OK
+: <a class="el" href="mn__error_8hpp.html#a01ef91c04a8837e390ba61cfcbcb5e67">mn_error.hpp</a>
+</li>
 <li>ERR_MUTEX_ALREADYINIT
 : <a class="el" href="mn__error_8hpp.html#aeb7067b3ec064fc42de24371a450e6a7">mn_error.hpp</a>
 </li>
@@ -173,32 +195,23 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <li>ERR_SPINLOCK_UNLOCK
 : <a class="el" href="mn__error_8hpp.html#ae7ba92083392b127975d0f7513708bba">mn_error.hpp</a>
 </li>
-<li>ERR_TASKLET_CANTINITLOCKT
-: <a class="el" href="mn__error_8hpp.html#a2d335ad000c589903d5e4f178b146ddd">mn_error.hpp</a>
+<li>ERR_TASK_ALREADYRUNNING
+: <a class="el" href="mn__error_8hpp.html#a5fb2a002ca4d32f8292ce17825863cd4">mn_error.hpp</a>
 </li>
-<li>ERR_TASKLET_CANTSTART
-: <a class="el" href="mn__error_8hpp.html#ae1573ce7958dbf25d6f772f5177c166d">mn_error.hpp</a>
+<li>ERR_TASK_CANTINITMUTEX
+: <a class="el" href="mn__error_8hpp.html#adb41539745f5c3a67b95861101178e88">mn_error.hpp</a>
 </li>
-<li>ERR_TASKLET_OK
-: <a class="el" href="mn__error_8hpp.html#a6fff0d789f08c739275fbb5d9bb9e0df">mn_error.hpp</a>
+<li>ERR_TASK_CANTSTARTTHREAD
+: <a class="el" href="mn__error_8hpp.html#af9ccdb4cde6b9e7e4ab585125a0ff79f">mn_error.hpp</a>
 </li>
-<li>ERR_THREAD_ALREADYRUNNING
-: <a class="el" href="mn__error_8hpp.html#a6830b3a25434326844fcee01455a2f16">mn_error.hpp</a>
+<li>ERR_TASK_NOTRUNNING
+: <a class="el" href="mn__error_8hpp.html#a7efeb331a9e03ae29f5ed8b678029743">mn_error.hpp</a>
 </li>
-<li>ERR_THREAD_CANTINITMUTEX
-: <a class="el" href="mn__error_8hpp.html#a534be1c190ba0b40ac0571fe7e2d0ad4">mn_error.hpp</a>
+<li>ERR_TASK_OK
+: <a class="el" href="mn__error_8hpp.html#a5e3857adb7ccf8294c875ffb92cc295e">mn_error.hpp</a>
 </li>
-<li>ERR_THREAD_CANTSTARTTHREAD
-: <a class="el" href="mn__error_8hpp.html#aa5c68d0caf5dc200e8bcb5891bbacff8">mn_error.hpp</a>
-</li>
-<li>ERR_THREAD_NOTRUNNING
-: <a class="el" href="mn__error_8hpp.html#a72e64442ab495143481ea62510ab70e3">mn_error.hpp</a>
-</li>
-<li>ERR_THREAD_OK
-: <a class="el" href="mn__error_8hpp.html#aaed729ff0b5735a05735088a6962bb9f">mn_error.hpp</a>
-</li>
-<li>ERR_THREAD_THREADFUNCNOTSET
-: <a class="el" href="mn__error_8hpp.html#a5827d20bdf6a8ba505fce47e2ed1b3be">mn_error.hpp</a>
+<li>ERR_TASK_THREADFUNCNOTSET
+: <a class="el" href="mn__error_8hpp.html#a31aa26654f76340ce65e68f3cbe13a14">mn_error.hpp</a>
 </li>
 <li>ERR_TIMER_AKTIVATE
 : <a class="el" href="mn__error_8hpp.html#a3d0009417f610adae8bf73ea2fa999e7">mn_error.hpp</a>
@@ -252,8 +265,29 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <li>MN_THREAD_CONFIG_CORE_IFNO
 : <a class="el" href="mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">mn_config.hpp</a>
 </li>
+<li>MN_THREAD_CONFIG_CORE_MAX
+: <a class="el" href="mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9">mn_config.hpp</a>
+</li>
 <li>MN_THREAD_CONFIG_CORE_ONE
 : <a class="el" href="mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CORE_PRIORITY_CRITICAL
+: <a class="el" href="mn__config_8hpp.html#a352db8489e062b0e9c1365d39bb17b0d">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CORE_PRIORITY_HALFCRT
+: <a class="el" href="mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CORE_PRIORITY_IDLE
+: <a class="el" href="mn__config_8hpp.html#a8812f52f98bf4791aa3a286ca1c13729">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CORE_PRIORITY_LOW
+: <a class="el" href="mn__config_8hpp.html#ac0f4e60713fea12bce98c76d447ffde5">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CORE_PRIORITY_NORM
+: <a class="el" href="mn__config_8hpp.html#a41d75da3e2ca5e0d23942201e6c46f52">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_CORE_PRIORITY_URGENT
+: <a class="el" href="mn__config_8hpp.html#ad05a7d79e49329dacb1f4a5464d0240b">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_TWO
 : <a class="el" href="mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">mn_config.hpp</a>
@@ -273,11 +307,11 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <li>MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE
 : <a class="el" href="mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64">mn_config.hpp</a>
 </li>
+<li>MN_THREAD_CONFIG_FOREIGIN_TASK_SUPPORT
+: <a class="el" href="mn__config_8hpp.html#afc2d0635c2fb68699d6d3262441b71c2">mn_config.hpp</a>
+</li>
 <li>MN_THREAD_CONFIG_LOCK_TYPE
 : <a class="el" href="mn__config_8hpp.html#af75f0ad7789180411059976192486e4e">mn_config.hpp</a>
-</li>
-<li>MN_THREAD_CONFIG_MAX_CPUS
-: <a class="el" href="mn__config_8hpp.html#adad34838c0bba340b33cc8eff6affb38">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_MUTEX
 : <a class="el" href="mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">mn_config.hpp</a>
@@ -288,6 +322,9 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 <li>MN_THREAD_CONFIG_RECURSIVE_MUTEX
 : <a class="el" href="mn__config_8hpp.html#aa5a1390a78543d9807e3dc1f9c650f4a">mn_config.hpp</a>
 </li>
+<li>MN_THREAD_CONFIG_TIMEOUT_COROUTINE_DEFAULT
+: <a class="el" href="mn__config_8hpp.html#afa89a82b841c0c8e4c5eb3c9dd60c20d">mn_config.hpp</a>
+</li>
 <li>MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT
 : <a class="el" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">mn_config.hpp</a>
 </li>
@@ -296,9 +333,6 @@ $(document).ready(function(){initNavTree('globals_defs.html',''); initResizable(
 </li>
 <li>MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT
 : <a class="el" href="mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2">mn_config.hpp</a>
-</li>
-<li>MN_THREAD_CONFIG_TIMEOUT_TASKLET_DEFAULT
-: <a class="el" href="mn__config_8hpp.html#aa85e816c724b0e2568706d9b97d7a105">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_GETNEXTITEM_TIMEOUT
 : <a class="el" href="mn__config_8hpp.html#a060f30c571d899925211c1f3ac054816">mn_config.hpp</a>

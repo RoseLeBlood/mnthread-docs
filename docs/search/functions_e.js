@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queue_484',['queue',['../classbasic__work__queue.html#a2893c69cf58efa717186838082aaa247',1,'basic_work_queue']]]
+  ['peek_564',['peek',['../classbasic__queue.html#a9252e9c080cbaeb4e3d4408491924a5a',1,'basic_queue']]]
 ];

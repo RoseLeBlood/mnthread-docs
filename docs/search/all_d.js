@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['on_5fcleanup_272',['on_cleanup',['../classbasic__thread.html#a3a2b65a713e1715b1c86a7c3a768f82f',1,'basic_thread']]],
-  ['on_5fcreate_273',['on_create',['../classbasic__thread.html#a02630d21acacff51a7aa247907392742',1,'basic_thread::on_create()'],['../classbasic__work__queue.html#ad3907201f0ee806cab91fdb8f1683c06',1,'basic_work_queue::on_create()'],['../classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189',1,'basic_work_queue_multi::on_create()'],['../classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24',1,'basic_work_queue_single::on_create()']]],
-  ['on_5fdestroy_274',['on_destroy',['../classbasic__work__queue.html#a1ee5f2b2d6226e40772304226d020133',1,'basic_work_queue::on_destroy()'],['../classbasic__work__queue__multi.html#ac23390b4532dbd63f397d1b479524ed7',1,'basic_work_queue_multi::on_destroy()'],['../classbasic__work__queue__single.html#aa66502a9beda3ccee722c773e9f317b9',1,'basic_work_queue_single::on_destroy()']]],
-  ['on_5fkill_275',['on_kill',['../classbasic__thread.html#ac2492f6dc8efb29bb14f2c7b5628af06',1,'basic_thread']]],
-  ['on_5ftasklet_276',['on_tasklet',['../classbasic__tasklet.html#a3c6e9a2baf4c11b03e2ce270b02f8346',1,'basic_tasklet']]],
-  ['on_5fthread_277',['on_thread',['../classbasic__thread.html#ae8daf57059f92ab2013a5dc154ae0e88',1,'basic_thread::on_thread()'],['../classforeign__thread.html#ab72f892bee8bd17562b6009a9aa6e407',1,'foreign_thread::on_thread()'],['../classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763',1,'work_queue_thread::on_thread()']]],
-  ['on_5ftimer_278',['on_timer',['../classbasic__timer.html#a419287e0654292a4a38b46f3a9b1b0d3',1,'basic_timer']]],
-  ['on_5fwork_279',['on_work',['../classwork__queue__item.html#a803873775a01721e810efd13960e9861',1,'work_queue_item']]]
+  ['no_5faction_300',['no_action',['../classtask__utils.html#a3ad11431d8cf2bb0a3234625c77ae5e4a8072f986487e10b4dcad2ff689d29150',1,'task_utils']]],
+  ['no_5ferror_301',['NO_ERROR',['../mn__error_8hpp.html#a258bb72419ef143530a2f8f55e7d57af',1,'mn_error.hpp']]],
+  ['notify_302',['notify',['../classtask__utils.html#a91745adf24cac7afa6d31045f18722d4',1,'task_utils']]],
+  ['notify_5fgive_303',['notify_give',['../classtask__utils.html#a8c3cf854f51ac4cc278bc25f8328bd5e',1,'task_utils']]],
+  ['notify_5ftake_304',['notify_take',['../classtask__utils.html#a2294cc067296f8b919203a05992b92ce',1,'task_utils']]],
+  ['notify_5fwait_305',['notify_wait',['../classtask__utils.html#a92c9da2bc6029148323e8c8049170352',1,'task_utils']]],
+  ['nsleep_306',['nsleep',['../classbasic__task.html#adb483556de0f92f83e351884cadc2221',1,'basic_task']]]
 ];

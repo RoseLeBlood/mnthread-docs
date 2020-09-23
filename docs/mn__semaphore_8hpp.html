@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 2.xbeta</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -107,107 +107,57 @@ $(document).ready(function(){initNavTree('mn__semaphore_8hpp.html',''); initResi
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">mn_semaphore.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__error_8hpp_source.html">mn_error.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__counting__semaphore_8hpp_source.html">mn_counting_semaphore.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__binary__semaphore_8hpp_source.html">mn_binary_semaphore.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mn_semaphore.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="mn__semaphore_8hpp__incl.png" border="0" usemap="#amn__semaphore_8hpp" alt=""/></div>
-<map name="mn__semaphore_8hpp" id="amn__semaphore_8hpp">
-<area shape="rect" title=" " alt="" coords="52,5,203,32"/>
-<area shape="rect" href="mn__error_8hpp.html" title=" " alt="" coords="5,80,113,107"/>
-<area shape="rect" href="mn__config_8hpp.html" title=" " alt="" coords="138,80,255,107"/>
-<area shape="rect" title=" " alt="" coords="121,155,272,181"/>
+<map name="mn__semaphore_8hpp" id="mn__semaphore_8hpp">
+<area shape="rect" title=" " alt="" coords="152,5,303,32"/>
+<area shape="rect" href="mn__counting__semaphore_8hpp.html" title=" " alt="" coords="5,80,220,107"/>
+<area shape="rect" href="mn__binary__semaphore_8hpp.html" title=" " alt="" coords="244,80,443,107"/>
+<area shape="rect" href="mn__basic__semaphore_8hpp.html" title=" " alt="" coords="131,155,323,181"/>
+<area shape="rect" href="mn__error_8hpp.html" title=" " alt="" coords="36,229,144,256"/>
+<area shape="rect" href="mn__config_8hpp.html" title=" " alt="" coords="169,229,286,256"/>
+<area shape="rect" href="mn__lock_8hpp.html" title=" " alt="" coords="309,229,415,256"/>
+<area shape="rect" title=" " alt="" coords="152,304,303,331"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="mn__semaphore_8hpp__dep__incl.png" border="0" usemap="#amn__semaphore_8hppdep" alt=""/></div>
-<map name="mn__semaphore_8hppdep" id="amn__semaphore_8hppdep">
-<area shape="rect" title=" " alt="" coords="1062,5,1213,32"/>
-<area shape="rect" href="mn__autolock_8hpp.html" title=" " alt="" coords="873,229,1007,256"/>
-<area shape="rect" href="mn__mutex_8hpp.html" title=" " alt="" coords="880,80,1000,107"/>
-<area shape="rect" href="mn__semaphore_8cpp.html" title=" " alt="" coords="1175,80,1326,107"/>
-<area shape="rect" href="mn__base_8hpp.html" title=" " alt="" coords="837,528,947,555"/>
-<area shape="rect" href="mn__tasklets_8hpp.html" title=" " alt="" coords="875,304,1005,331"/>
-<area shape="rect" href="mn__thread_8hpp.html" title=" " alt="" coords="293,304,413,331"/>
-<area shape="rect" href="mn__blocking__queue_8hpp.html" title=" " alt="" coords="1030,304,1210,331"/>
-<area shape="rect" href="mn__autolock_8cpp.html" title=" " alt="" coords="1235,304,1368,331"/>
-<area shape="rect" href="mn__base_8cpp.html" title=" " alt="" coords="838,603,946,629"/>
-<area shape="rect" href="mn__tasklets_8cpp.html" title=" " alt="" coords="875,379,1005,405"/>
-<area shape="rect" href="mn__workqueue__thread_8hpp.html" title=" " alt="" coords="322,379,521,405"/>
-<area shape="rect" href="mn__workqueue_8cpp.html" title=" " alt="" coords="5,528,155,555"/>
-<area shape="rect" href="mn__workqueue__thread_8cpp.html" title=" " alt="" coords="179,528,378,555"/>
-<area shape="rect" href="mn__thread_8cpp.html" title=" " alt="" coords="78,379,197,405"/>
-<area shape="rect" href="mn__workqueue_8hpp.html" title=" " alt="" coords="414,453,565,480"/>
-<area shape="rect" href="mn__workqueue__multi_8hpp.html" title=" " alt="" coords="402,528,593,555"/>
-<area shape="rect" href="mn__workqueue__single_8hpp.html" title=" " alt="" coords="617,528,813,555"/>
-<area shape="rect" href="mn__workqueue__multi_8cpp.html" title=" " alt="" coords="402,603,593,629"/>
-<area shape="rect" href="mn__workqueue__single_8cpp.html" title=" " alt="" coords="617,603,812,629"/>
-<area shape="rect" href="mn__blocking__queue_8cpp.html" title=" " alt="" coords="1031,379,1209,405"/>
-<area shape="rect" href="mn__critical_8hpp.html" title=" " alt="" coords="977,155,1100,181"/>
-<area shape="rect" href="mn__recursive__mutex_8hpp.html" title=" " alt="" coords="572,155,759,181"/>
-<area shape="rect" href="mn__mutex_8cpp.html" title=" " alt="" coords="783,155,902,181"/>
-<area shape="rect" href="mn__critical_8cpp.html" title=" " alt="" coords="1031,229,1153,256"/>
-<area shape="rect" href="mn__recursive__mutex_8cpp.html" title=" " alt="" coords="572,229,759,256"/>
+<map name="mn__semaphore_8hppdep" id="mn__semaphore_8hppdep">
+<area shape="rect" title=" " alt="" coords="802,5,953,32"/>
+<area shape="rect" href="mn__autolock_8hpp.html" title=" " alt="" coords="810,80,945,107"/>
+<area shape="rect" href="mini_thread_8hpp.html" title=" " alt="" coords="895,379,1019,405"/>
+<area shape="rect" href="mn__task_8hpp.html" title=" " alt="" coords="477,155,584,181"/>
+<area shape="rect" href="mn__task__utils_8hpp.html" title=" " alt="" coords="5,229,147,256"/>
+<area shape="rect" href="mn__tasklet_8hpp.html" title=" " alt="" coords="915,155,1037,181"/>
+<area shape="rect" href="mn__autolock_8cpp.html" title=" " alt="" coords="1061,155,1195,181"/>
+<area shape="rect" href="mini_thread_8cpp.html" title=" " alt="" coords="896,453,1019,480"/>
+<area shape="rect" href="mn__foreign__task_8hpp.html" title=" " alt="" coords="353,229,511,256"/>
+<area shape="rect" href="mn__workqueue__task_8hpp.html" title=" " alt="" coords="535,229,721,256"/>
+<area shape="rect" href="mn__workqueue_8cpp.html" title=" " alt="" coords="721,379,871,405"/>
+<area shape="rect" href="mn__workqueue__task_8cpp.html" title=" " alt="" coords="77,379,261,405"/>
+<area shape="rect" href="mn__task_8cpp.html" title=" " alt="" coords="171,229,277,256"/>
+<area shape="rect" href="mn__foreign__task_8cpp.html" title=" " alt="" coords="353,304,511,331"/>
+<area shape="rect" href="mn__task__utils_8cpp.html" title=" " alt="" coords="6,304,146,331"/>
+<area shape="rect" href="mn__workqueue_8hpp.html" title=" " alt="" coords="587,304,738,331"/>
+<area shape="rect" href="mn__workqueue__multi_8hpp.html" title=" " alt="" coords="506,379,697,405"/>
+<area shape="rect" href="mn__workqueue__single_8hpp.html" title=" " alt="" coords="286,379,482,405"/>
+<area shape="rect" href="mn__workqueue__multi_8cpp.html" title=" " alt="" coords="506,453,697,480"/>
+<area shape="rect" href="mn__workqueue__single_8cpp.html" title=" " alt="" coords="287,453,481,480"/>
+<area shape="rect" href="mn__tasklet_8cpp.html" title=" " alt="" coords="995,229,1117,256"/>
 </map>
 </div>
 </div>
 <p><a href="mn__semaphore_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html">basic_semaphore</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__counting__semaphore.html">basic_counting_semaphore</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__binary__semaphore.html">basic_binary_semaphore</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a6145ebc3b28f55822453c88028580a8b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a> = <a class="el" href="classbasic__counting__semaphore.html">basic_counting_semaphore</a></td></tr>
-<tr class="separator:a6145ebc3b28f55822453c88028580a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb77a9b18988a479e7f15534053c27d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a> = <a class="el" href="classbasic__binary__semaphore.html">basic_binary_semaphore</a></td></tr>
-<tr class="separator:adb77a9b18988a479e7f15534053c27d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="adb77a9b18988a479e7f15534053c27d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb77a9b18988a479e7f15534053c27d4">&#9670;&nbsp;</a></span>binary_semaphore_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a> =  <a class="el" href="classbasic__binary__semaphore.html">basic_binary_semaphore</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6145ebc3b28f55822453c88028580a8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6145ebc3b28f55822453c88028580a8b">&#9670;&nbsp;</a></span>counting_semaphore_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a> =  <a class="el" href="classbasic__counting__semaphore.html">basic_counting_semaphore</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

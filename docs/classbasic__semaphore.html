@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 2.xbeta</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -116,17 +116,27 @@ $(document).ready(function(){initNavTree('classbasic__semaphore.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="mn__semaphore_8hpp_source.html">mn_semaphore.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mn__basic__semaphore_8hpp_source.html">mn_basic_semaphore.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for basic_semaphore:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__semaphore__inherit__graph.png" border="0" usemap="#abasic__semaphore_inherit__map" alt="Inheritance graph"/></div>
-<map name="basic__semaphore_inherit__map" id="abasic__semaphore_inherit__map">
-<area shape="rect" title=" " alt="" coords="245,5,381,32"/>
-<area shape="rect" href="classbasic__binary__semaphore.html" title=" " alt="" coords="5,80,189,107"/>
-<area shape="rect" href="classbasic__counting__semaphore.html" title=" " alt="" coords="214,80,413,107"/>
-<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="437,80,542,107"/>
-<area shape="rect" href="classrecursive__mutex.html" title=" " alt="" coords="424,155,555,181"/>
+<map name="basic__semaphore_inherit__map" id="basic__semaphore_inherit__map">
+<area shape="rect" title=" " alt="" coords="245,80,381,107"/>
+<area shape="rect" href="classbasic__binary__semaphore.html" title=" " alt="" coords="5,155,189,181"/>
+<area shape="rect" href="classbasic__counting__semaphore.html" title=" " alt="" coords="214,155,413,181"/>
+<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="437,155,542,181"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="264,5,363,32"/>
+<area shape="rect" href="classrecursive__mutex.html" title=" " alt="" coords="424,229,555,256"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for basic_semaphore:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__semaphore__coll__graph.png" border="0" usemap="#abasic__semaphore_coll__map" alt="Collaboration graph"/></div>
+<map name="basic__semaphore_coll__map" id="basic__semaphore_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,141,107"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="24,5,123,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -203,6 +213,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool basic_semaphore::is_initialized </td>
@@ -211,18 +224,16 @@ Protected Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Is the spinlock created (initialized) ?</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the spinlock created (initialized) and false when not </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classbasic__semaphore_a1a9e38a47ec2ddc9ae27ea909fbfd572_icgraph.png" border="0" usemap="#aclassbasic__semaphore_a1a9e38a47ec2ddc9ae27ea909fbfd572_icgraph" alt=""/></div>
-<map name="classbasic__semaphore_a1a9e38a47ec2ddc9ae27ea909fbfd572_icgraph" id="aclassbasic__semaphore_a1a9e38a47ec2ddc9ae27ea909fbfd572_icgraph">
-<area shape="rect" title=" " alt="" coords="219,5,373,47"/>
-<area shape="rect" href="classbasic__blocking__queue.html#a00fe5f9c9e48c8eef116b59402d3d092" title=" " alt="" coords="5,5,171,47"/>
-</map>
-</div>
+
+<p>Implements <a class="el" href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809">ILockObject</a>.</p>
 
 </div>
 </div>
@@ -260,25 +271,27 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ERR_SPINLOCK_OK if the Semaphore was acquired, ERR_SPINLOCK_LOCK if it timed out. </dd></dl>
 
+<p>Implements <a class="el" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">ILockObject</a>.</p>
+
 <p>Reimplemented in <a class="el" href="classrecursive__mutex.html#a360b1b4749cf2ef0f7662beb1cf7cf97">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">basic_mutex</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph.png" border="0" usemap="#aclassbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph" alt=""/></div>
-<map name="classbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph" id="aclassbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph">
-<area shape="rect" title=" " alt="" coords="721,216,892,243"/>
-<area shape="rect" href="classforeign__thread.html#a29332b358b593b2b4b70919d716487a8" title=" " alt="" coords="492,5,659,32"/>
-<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="258,165,413,192"/>
-<area shape="rect" href="classbasic__tasklet.html#af5adf1c78656ba1410b2d6ca23b01aeb" title=" " alt="" coords="497,107,654,133"/>
-<area shape="rect" href="classbasic__tasklet.html#a597a926d1cdf5e0ca4663fc68cd632a3" title=" " alt="" coords="493,157,658,184"/>
-<area shape="rect" href="classbasic__blocking__queue.html#a00fe5f9c9e48c8eef116b59402d3d092" title=" " alt="" coords="493,209,658,250"/>
-<area shape="rect" href="classbasic__thread.html#ac98c71fadf905a66274275c3611bb587" title=" " alt="" coords="509,376,642,403"/>
-<area shape="rect" href="classbasic__thread.html#a9a2288cb25b0faf148b799e7f4f67624" title=" " alt="" coords="505,325,645,352"/>
-<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="480,56,671,83"/>
-<area shape="rect" href="classbasic__semaphore.html#a01f89c73a8652de925fdd22361590d46" title=" " alt="" coords="477,427,673,453"/>
-<area shape="rect" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189" title=" " alt="" coords="8,125,191,166"/>
-<area shape="rect" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24" title=" " alt="" coords="5,190,193,231"/>
-<area shape="rect" href="classbasic__work__queue__single.html#aa66502a9beda3ccee722c773e9f317b9" title=" " alt="" coords="241,369,429,410"/>
+<map name="classbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph" id="classbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph">
+<area shape="rect" title=" " alt="" coords="735,198,905,225"/>
+<area shape="rect" href="classforeign__task.html#a9639d66feb16b76fd4442f0df48da9b4" title=" " alt="" coords="501,5,676,47"/>
+<area shape="rect" href="classbasic__task.html#aa198d7c55f5323f151445d1f8be6078c" title=" " alt="" coords="277,147,417,174"/>
+<area shape="rect" href="classbasic__tasklet.html#add637f5d08f5280e4634adb73eac831a" title=" " alt="" coords="510,122,667,149"/>
+<area shape="rect" href="classbasic__tasklet.html#a597a926d1cdf5e0ca4663fc68cd632a3" title=" " alt="" coords="506,173,671,199"/>
+<area shape="rect" href="classbasic__task.html#a51d2205ce6fedd999494fbd672ca3911" title=" " alt="" coords="529,325,648,351"/>
+<area shape="rect" href="classbasic__task.html#aff94f682176acc56cac5b8489c9540a0" title=" " alt="" coords="525,274,652,301"/>
+<area shape="rect" href="classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020" title=" " alt="" coords="501,223,677,250"/>
+<area shape="rect" href="classbasic__semaphore.html#a01f89c73a8652de925fdd22361590d46" title=" " alt="" coords="491,375,687,402"/>
+<area shape="rect" href="classforeign__task.html#a918ae59c4eca2b3c2fe58e57ce8ed8f5" title=" " alt="" coords="252,13,443,39"/>
+<area shape="rect" href="classforeign__task.html#a9b858481c508b10da507a956be426e6a" title=" " alt="" coords="5,13,204,39"/>
+<area shape="rect" href="classbasic__work__queue__single.html#a9b69f915e0738a47005608405dad5a4b" title=" " alt="" coords="11,140,199,181"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aa40935e0d456eab9afb534a77c655627" title=" " alt="" coords="253,317,441,359"/>
 </map>
 </div>
 
@@ -310,12 +323,14 @@ Here is the caller graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>call lock with timeout from 0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the Lock was acquired, false when not </dd></dl>
 
+<p>Reimplemented from <a class="el" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">ILockObject</a>.</p>
+
 <p>Reimplemented in <a class="el" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203">basic_mutex</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__semaphore_a01f89c73a8652de925fdd22361590d46_cgraph.png" border="0" usemap="#aclassbasic__semaphore_a01f89c73a8652de925fdd22361590d46_cgraph" alt=""/></div>
-<map name="classbasic__semaphore_a01f89c73a8652de925fdd22361590d46_cgraph" id="aclassbasic__semaphore_a01f89c73a8652de925fdd22361590d46_cgraph">
+<map name="classbasic__semaphore_a01f89c73a8652de925fdd22361590d46_cgraph" id="classbasic__semaphore_a01f89c73a8652de925fdd22361590d46_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,201,32"/>
 <area shape="rect" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7" title=" " alt="" coords="249,5,420,32"/>
 </map>
@@ -348,28 +363,29 @@ Here is the call graph for this function:</div>
 <p>Release (give) a semaphore.</p>
 <dl class="section return"><dt>Returns</dt><dd>ERR_SPINLOCK_OK if the Semaphore was released, ERR_SPINLOCK_UNLOCK if it failed. </dd></dl>
 
+<p>Implements <a class="el" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">ILockObject</a>.</p>
+
 <p>Reimplemented in <a class="el" href="classrecursive__mutex.html#a5ed84c06d86fc9ba4e998b0fc5bde897">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph.png" border="0" usemap="#aclassbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph" alt=""/></div>
-<map name="classbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph" id="aclassbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph">
-<area shape="rect" title=" " alt="" coords="941,289,1128,316"/>
-<area shape="rect" href="classbasic__counting__semaphore.html#a0f933048f021dfbc4e6bcad39dfbd3ff" title=" " alt="" coords="689,99,887,141"/>
-<area shape="rect" href="classbasic__tasklet.html#af5adf1c78656ba1410b2d6ca23b01aeb" title=" " alt="" coords="461,48,618,75"/>
-<area shape="rect" href="classbasic__binary__semaphore.html#adeb909ebfc1b7014556736c2da911016" title=" " alt="" coords="696,347,880,389"/>
-<area shape="rect" href="classforeign__thread.html#a29332b358b593b2b4b70919d716487a8" title=" " alt="" coords="456,401,623,428"/>
-<area shape="rect" href="classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6" title=" " alt="" coords="241,351,396,377"/>
-<area shape="rect" href="classbasic__blocking__queue.html#a00fe5f9c9e48c8eef116b59402d3d092" title=" " alt="" coords="705,282,871,323"/>
-<area shape="rect" href="classbasic__thread.html#ac98c71fadf905a66274275c3611bb587" title=" " alt="" coords="721,464,855,491"/>
-<area shape="rect" href="classbasic__tasklet.html#ae56d66fe8376f223b35262d3d2ca7f42" title=" " alt="" coords="683,48,893,75"/>
-<area shape="rect" href="classbasic__thread.html#a994fecb7d772942db9573ed031c43bed" title=" " alt="" coords="444,231,635,257"/>
-<area shape="rect" href="classbasic__thread.html#a6892127bdbb965b071e0bb752a54c794" title=" " alt="" coords="711,165,865,206"/>
-<area shape="rect" href="classbasic__thread.html#aec2288dc0524ec937d6752390af015f6" title=" " alt="" coords="710,569,866,596"/>
-<area shape="rect" href="classbasic__blocking__queue.html#a01d2a5709b71b5f0f63c63d97debfd88" title=" " alt="" coords="457,285,622,326"/>
-<area shape="rect" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189" title=" " alt="" coords="8,310,191,351"/>
-<area shape="rect" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24" title=" " alt="" coords="5,375,193,417"/>
-<area shape="rect" href="classbasic__work__queue__single.html#aa66502a9beda3ccee722c773e9f317b9" title=" " alt="" coords="445,453,633,494"/>
+<map name="classbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph" id="classbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph">
+<area shape="rect" title=" " alt="" coords="973,270,1160,297"/>
+<area shape="rect" href="classforeign__task.html#a9639d66feb16b76fd4442f0df48da9b4" title=" " alt="" coords="497,5,672,47"/>
+<area shape="rect" href="classbasic__binary__semaphore.html#adeb909ebfc1b7014556736c2da911016" title=" " alt="" coords="734,61,918,103"/>
+<area shape="rect" href="classbasic__task.html#aa198d7c55f5323f151445d1f8be6078c" title=" " alt="" coords="277,127,417,154"/>
+<area shape="rect" href="classbasic__counting__semaphore.html#a0f933048f021dfbc4e6bcad39dfbd3ff" title=" " alt="" coords="727,179,925,220"/>
+<area shape="rect" href="classbasic__tasklet.html#add637f5d08f5280e4634adb73eac831a" title=" " alt="" coords="506,245,663,271"/>
+<area shape="rect" href="classbasic__task.html#a51d2205ce6fedd999494fbd672ca3911" title=" " alt="" coords="767,346,885,373"/>
+<area shape="rect" href="classbasic__tasklet.html#afbc143bdcd04b147b79e5630279cbd66" title=" " alt="" coords="729,295,923,322"/>
+<area shape="rect" href="classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020" title=" " alt="" coords="497,401,673,427"/>
+<area shape="rect" href="classbasic__task.html#a3e43614e2593a6fc0c2e5e73b051e818" title=" " alt="" coords="736,447,916,474"/>
+<area shape="rect" href="classbasic__task.html#a74e823792ba482d30c3297b1c5439fdd" title=" " alt="" coords="755,498,897,525"/>
+<area shape="rect" href="classforeign__task.html#a918ae59c4eca2b3c2fe58e57ce8ed8f5" title=" " alt="" coords="252,13,443,39"/>
+<area shape="rect" href="classforeign__task.html#a9b858481c508b10da507a956be426e6a" title=" " alt="" coords="5,13,204,39"/>
+<area shape="rect" href="classbasic__work__queue__single.html#a9b69f915e0738a47005608405dad5a4b" title=" " alt="" coords="11,120,199,161"/>
+<area shape="rect" href="classbasic__work__queue__single.html#aa40935e0d456eab9afb534a77c655627" title=" " alt="" coords="491,335,679,376"/>
 </map>
 </div>
 
@@ -400,8 +416,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="mn__semaphore_8hpp_source.html">mn_semaphore.hpp</a></li>
-<li><a class="el" href="mn__semaphore_8cpp.html">mn_semaphore.cpp</a></li>
+<li><a class="el" href="mn__basic__semaphore_8hpp_source.html">mn_basic_semaphore.hpp</a></li>
+<li><a class="el" href="mn__basic__semaphore_8cpp.html">mn_basic_semaphore.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

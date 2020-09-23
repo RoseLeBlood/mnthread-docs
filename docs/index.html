@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 2.xbeta</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -121,23 +121,23 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </ul>
 <p>For more detailed information about the library, please refer to the library documentation (<a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a>) and Examples you find in the extra repository: <a href="https://github.com/RoseLeBlood/mnthread-examples">mnthread-examples</a></p>
 <p>The license that applies to the library is the LGPL.The license texts of these licenses can be found in the files <a class="el" href="md__home_ambersophia__dokumente_git_mnthread__l_i_c_e_n_s_e.html">LICENSE</a> of the source code archive.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Simple Example</h1>
 <div class="fragment"><div class="line"><span class="comment">//simple_example.cpp</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="mn__base_8hpp.html">mn_base.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="mini_thread_8hpp.html">miniThread.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define NUMBER_OF_TEST_THREADS      2</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">class </span>hello_world_task : <span class="keyword">public</span> <a class="code" href="classbasic__thread.html">basic_thread</a> {</div>
+<div class="line"><span class="keyword">class </span>hello_world_task : <span class="keyword">public</span> <a class="code" href="classbasic__task.html">basic_task</a> {</div>
 <div class="line"><span class="keyword">public</span>:</div>
-<div class="line">    hello_world_task() : <a class="code" href="classbasic__thread.html">basic_thread</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
+<div class="line">    hello_world_task() : <a class="code" href="classbasic__task.html">basic_task</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span>*  <a class="code" href="classbasic__thread.html#ae8daf57059f92ab2013a5dc154ae0e88">on_thread</a>()<span class="keyword"> override </span>{ </div>
-<div class="line">        <a class="code" href="classbasic__thread.html#ae8daf57059f92ab2013a5dc154ae0e88">basic_thread::on_thread</a>(); </div>
+<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span>*  <a class="code" href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9">on_task</a>()<span class="keyword"> override </span>{ </div>
+<div class="line">        basic_thread::on_task(); </div>
 <div class="line">        </div>
-<div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classbasic__thread.html#a2fc99d7a5f71f1574487991e3d8fcf0b">get_id</a>();</div>
-<div class="line">        <span class="keywordtype">int</span> core = <a class="code" href="classbasic__thread.html#aba78de9128e383b6c3b176b095a095b9">get_on_core</a>();</div>
+<div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classbasic__task.html#aeb34fa159de4292b4a2234863c106c3e">get_id</a>();</div>
+<div class="line">        <span class="keywordtype">int</span> core = <a class="code" href="classbasic__task.html#a3cc1be96e00f9b1b3a4c5163350d9bed">get_on_core</a>();</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">for</span>(;;) {</div>
 <div class="line">            printf(<span class="stringliteral">&quot;[%d @ %d] Hello World!!\n&quot;</span>, <span class="keywordtype">id</span>, core );</div>
@@ -153,24 +153,45 @@ Simple Example</h1>
 <div class="line">        tasks[i].create( i % 2 );</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <a class="code" href="mn__base_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a>();</div>
+<div class="line">    <a class="code" href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a>();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md20"></a>
 TODO's for Version 2.0</h1>
 <ul>
-<li>[ ] Add event group class</li>
-<li>[ ] Add timer and other usefull FreeRTOS Wrapper (50%)</li>
+<li>[X] Add event group class</li>
+<li>[X] Add timer and other usefull FreeRTOS Wrapper (50%)</li>
 <li>[X] Completed the documentation</li>
 <li>[ ] Write more examles (after 1.9 complited )</li>
 <li>[X] add a Workqueues</li>
+<li>[ ] add Memory Manager class</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 ChangeLog</h1>
-<p>Version 1.71 September 2020: (stable 2.0beta)</p><ul>
+<h1><a class="anchor" id="autotoc_md22"></a>
+Version 1.9.0 September 2020: (stable 2.0beta)</h1>
+<ul>
+<li>add a eventgroup wrapper</li>
+<li>rename basic_thread to <a class="el" href="classbasic__task.html">basic_task</a> and the other threads to task - with error codes and rename on_thread to on_task</li>
+<li>add in confg:<ul>
+<li>MN_THREAD_CONFIG_CORE_MAX (portNUM_PROCESSORS - 1)</li>
+<li>add prority enum to task</li>
+</ul>
+</li>
+<li>rename mn_base.hpp to <a class="el" href="mini_thread_8hpp.html">miniThread.hpp</a></li>
+<li>remove bugs and errors</li>
+<li>Strip semaphore classes</li>
+<li>add <a class="el" href="classtask__utils.html">task_utils</a> class for notify</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md23"></a>
+Version 1.71 September 2020: (unstable 2.0beta)</h1>
+<ul>
 <li>add single and multi threaded worcking queues (<a class="el" href="classbasic__work__queue__single.html">basic_work_queue_single</a> &amp; <a class="el" href="classbasic__work__queue__multi.html">basic_work_queue_multi</a>) (TODO Optional add a Workqueues ) and add configand error defines, with doku</li>
+<li>remove bugs and errors</li>
 <li>This is the preview version of 2.0.0</li>
 </ul>
-<p>Version 1.60 September 2020: (unstable nightly)</p><ul>
+<h1><a class="anchor" id="autotoc_md24"></a>
+Version 1.60 September 2020: (unstable nightly)</h1>
+<ul>
 <li>add Work queue support (<a class="el" href="classbasic__work__queue.html">basic_work_queue</a>) <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> pull <a class="el" href="classwork__queue__item.html">work_queue_item</a> off of a FIFO queue and run them sequentially. <br  />
 </li>
 <li>add New Config Options to mn_conig.hpp<ul>
@@ -186,33 +207,30 @@ ChangeLog</h1>
 <li>rename libmn_panic to mn_panic</li>
 <li>add default informations to the config file</li>
 <li>remove config option MN_THREAD_CONFIG_MUTEX_CLASS. MN_THREAD_CONFIG_MUTEX_CLASS</li>
-<li>rename libmn.hpp to <a class="el" href="mn__base_8hpp.html">mn_base.hpp</a> and add missing headers</li>
-<li>rename mn_spinlock.hpp =&gt; <a class="el" href="mn__semaphore_8hpp.html">mn_semaphore.hpp</a> and mn_spinlock.cpp =&gt; <a class="el" href="mn__semaphore_8cpp.html">mn_semaphore.cpp</a></li>
+<li>rename libmn.hpp to mn_base.hpp and add missing headers</li>
+<li>rename mn_spinlock.hpp =&gt; <a class="el" href="mn__semaphore_8hpp.html">mn_semaphore.hpp</a> and mn_spinlock.cpp =&gt; mn_semaphore.cpp</li>
 <li><a class="el" href="classbasic__mutex.html">basic_mutex</a> extends <a class="el" href="classbasic__semaphore.html">basic_semaphore</a></li>
-<li>add <a class="el" href="classforeign__thread.html">foreign_thread</a> for mini Thread foregin thread and current Thread handling</li>
+<li>add foreign_thread for mini Thread foregin thread and current Thread handling</li>
 </ul>
-<p>Version 1.54 September 2020: (unstable)</p><ul>
+<h1><a class="anchor" id="autotoc_md25"></a>
+Version 1.54 September 2020: (unstable)</h1>
+<ul>
 <li>Documentation ready</li>
 <li>add Licence text to source files</li>
 <li>remove semaphore_t and spinlock_t</li>
 <li>add counting_semaphore_t (autocsemp_t) and binary_semaphore_t (autobinsemp_t) <br  />
  please update code semaphore_t = counting_semaphore_t, spinlock_t = binary_semaphore_t</li>
 </ul>
-<p>Version 1.53 September 2020:</p><ul>
-<li>add eaxample</li>
-<li>add Documentation add (<a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a>)</li>
-<li>rename Project from mnthread to Mini Thread</li>
-</ul>
 <p>For more see <a class="el" href="md__home_ambersophia__dokumente_git_mnthread__change_log.html">ChangeLog</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassbasic__thread_html_a2fc99d7a5f71f1574487991e3d8fcf0b"><div class="ttname"><a href="classbasic__thread.html#a2fc99d7a5f71f1574487991e3d8fcf0b">basic_thread::get_id</a></div><div class="ttdeci">uint32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_thread.cpp:156</div></div>
-<div class="ttc" id="amn__base_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mn__base_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> mn_base.cpp:21</div></div>
-<div class="ttc" id="aclassbasic__thread_html_aba78de9128e383b6c3b176b095a095b9"><div class="ttname"><a href="classbasic__thread.html#aba78de9128e383b6c3b176b095a095b9">basic_thread::get_on_core</a></div><div class="ttdeci">uint32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_thread.cpp:160</div></div>
-<div class="ttc" id="aclassbasic__thread_html"><div class="ttname"><a href="classbasic__thread.html">basic_thread</a></div><div class="ttdef"><b>Definition:</b> mn_thread.hpp:38</div></div>
-<div class="ttc" id="amn__base_8hpp_html"><div class="ttname"><a href="mn__base_8hpp.html">mn_base.hpp</a></div></div>
-<div class="ttc" id="aclassbasic__thread_html_ae8daf57059f92ab2013a5dc154ae0e88"><div class="ttname"><a href="classbasic__thread.html#ae8daf57059f92ab2013a5dc154ae0e88">basic_thread::on_thread</a></div><div class="ttdeci">virtual void * on_thread()=0</div></div>
+<div class="ttc" id="aclassbasic__task_html_a3cc1be96e00f9b1b3a4c5163350d9bed"><div class="ttname"><a href="classbasic__task.html#a3cc1be96e00f9b1b3a4c5163350d9bed">basic_task::get_on_core</a></div><div class="ttdeci">uint32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:151</div></div>
+<div class="ttc" id="amini_thread_8hpp_html"><div class="ttname"><a href="mini_thread_8hpp.html">miniThread.hpp</a></div></div>
+<div class="ttc" id="aclassbasic__task_html_aeb34fa159de4292b4a2234863c106c3e"><div class="ttname"><a href="classbasic__task.html#aeb34fa159de4292b4a2234863c106c3e">basic_task::get_id</a></div><div class="ttdeci">uint32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:147</div></div>
+<div class="ttc" id="aclassbasic__task_html_abbae529ca159f9c3a5ebd6c951ba44c9"><div class="ttname"><a href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9">basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()=0</div></div>
+<div class="ttc" id="amini_thread_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> miniThread.cpp:21</div></div>
+<div class="ttc" id="aclassbasic__task_html"><div class="ttname"><a href="classbasic__task.html">basic_task</a></div><div class="ttdef"><b>Definition:</b> mn_task.hpp:39</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

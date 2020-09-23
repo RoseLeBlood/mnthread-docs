@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['locktype_5ft_580',['LockType_t',['../mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3',1,'mn_autolock.hpp']]]
+  ['interrupts_5flock_5ft_671',['interrupts_lock_t',['../mn__critical_8hpp.html#a8df6b2274ed7a2f0960ff6cac2942428',1,'mn_critical.hpp']]]
 ];

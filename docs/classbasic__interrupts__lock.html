@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 2.xbeta</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -116,19 +116,44 @@ $(document).ready(function(){initNavTree('classbasic__interrupts__lock.html','')
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="mn__critical_8hpp_source.html">mn_critical.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for basic_interrupts_lock:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__interrupts__lock__inherit__graph.png" border="0" usemap="#abasic__interrupts__lock_inherit__map" alt="Inheritance graph"/></div>
+<map name="basic__interrupts__lock_inherit__map" id="basic__interrupts__lock_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,165,107"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="36,5,135,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for basic_interrupts_lock:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__interrupts__lock__coll__graph.png" border="0" usemap="#abasic__interrupts__lock_coll__map" alt="Collaboration graph"/></div>
+<map name="basic__interrupts__lock_coll__map" id="basic__interrupts__lock_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,165,107"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="36,5,135,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa82f9639087dae0d1c6cada07c19fc9f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__interrupts__lock.html#aa82f9639087dae0d1c6cada07c19fc9f">lock</a> ()</td></tr>
-<tr class="separator:aa82f9639087dae0d1c6cada07c19fc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd3ff586b3a8aad4d51a46ce6b6c1beb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__interrupts__lock.html#abd3ff586b3a8aad4d51a46ce6b6c1beb">unlock</a> ()</td></tr>
-<tr class="separator:abd3ff586b3a8aad4d51a46ce6b6c1beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971e278dc1173200c13cbeecffce9162"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__interrupts__lock.html#a971e278dc1173200c13cbeecffce9162">lock</a> ()</td></tr>
+<tr class="separator:a971e278dc1173200c13cbeecffce9162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5333f45b86b0c114d096cbc58a5b4a7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__interrupts__lock.html#ab5333f45b86b0c114d096cbc58a5b4a7">unlock</a> ()</td></tr>
+<tr class="separator:ab5333f45b86b0c114d096cbc58a5b4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074bb5229eb359de289e037de663dbcd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__interrupts__lock.html#a074bb5229eb359de289e037de663dbcd">is_initialized</a> () const</td></tr>
+<tr class="separator:a074bb5229eb359de289e037de663dbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_lock_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_lock_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_lock_object.html">ILockObject</a></td></tr>
+<tr class="memitem:aba2228daa52411a90ea87075c69f5870 inherit pub_methods_class_i_lock_object"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">lock</a> (unsigned int timeout)=0</td></tr>
+<tr class="separator:aba2228daa52411a90ea87075c69f5870 inherit pub_methods_class_i_lock_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea7dd35cae90d7f44db21352f9a7cef inherit pub_methods_class_i_lock_object"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">try_lock</a> ()</td></tr>
+<tr class="separator:afea7dd35cae90d7f44db21352f9a7cef inherit pub_methods_class_i_lock_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class to use the interrupts lock with autolock guard see auto_interrupt_t </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa82f9639087dae0d1c6cada07c19fc9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa82f9639087dae0d1c6cada07c19fc9f">&#9670;&nbsp;</a></span>lock()</h2>
+<a id="a074bb5229eb359de289e037de663dbcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074bb5229eb359de289e037de663dbcd">&#9670;&nbsp;</a></span>is_initialized()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +162,36 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void basic_interrupts_lock::lock </td>
+          <td class="memname">virtual bool basic_interrupts_lock::is_initialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Is the <a class="el" href="class_i_lock_object.html">ILockObject</a> created (initialized) ?</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="class_i_lock_object.html">ILockObject</a> created (initialized) and false when not </dd></dl>
+
+<p>Implements <a class="el" href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809">ILockObject</a>.</p>
+
+</div>
+</div>
+<a id="a971e278dc1173200c13cbeecffce9162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a971e278dc1173200c13cbeecffce9162">&#9670;&nbsp;</a></span>lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int basic_interrupts_lock::lock </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -152,8 +206,8 @@ Public Member Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classbasic__interrupts__lock_aa82f9639087dae0d1c6cada07c19fc9f_cgraph.png" border="0" usemap="#aclassbasic__interrupts__lock_aa82f9639087dae0d1c6cada07c19fc9f_cgraph" alt=""/></div>
-<map name="classbasic__interrupts__lock_aa82f9639087dae0d1c6cada07c19fc9f_cgraph" id="aclassbasic__interrupts__lock_aa82f9639087dae0d1c6cada07c19fc9f_cgraph">
+<div class="center"><img src="classbasic__interrupts__lock_a971e278dc1173200c13cbeecffce9162_cgraph.png" border="0" usemap="#aclassbasic__interrupts__lock_a971e278dc1173200c13cbeecffce9162_cgraph" alt=""/></div>
+<map name="classbasic__interrupts__lock_a971e278dc1173200c13cbeecffce9162_cgraph" id="classbasic__interrupts__lock_a971e278dc1173200c13cbeecffce9162_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,165,47"/>
 <area shape="rect" href="classbasic__critical.html#a686b7795f4afa7a056648b021ceb1968" title=" " alt="" coords="213,5,376,47"/>
 </map>
@@ -161,8 +215,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="abd3ff586b3a8aad4d51a46ce6b6c1beb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd3ff586b3a8aad4d51a46ce6b6c1beb">&#9670;&nbsp;</a></span>unlock()</h2>
+<a id="ab5333f45b86b0c114d096cbc58a5b4a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5333f45b86b0c114d096cbc58a5b4a7">&#9670;&nbsp;</a></span>unlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +225,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void basic_interrupts_lock::unlock </td>
+          <td class="memname">virtual int basic_interrupts_lock::unlock </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -183,11 +237,14 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Release (give) a semaphore. </p>
+
+<p>Implements <a class="el" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">ILockObject</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classbasic__interrupts__lock_abd3ff586b3a8aad4d51a46ce6b6c1beb_cgraph.png" border="0" usemap="#aclassbasic__interrupts__lock_abd3ff586b3a8aad4d51a46ce6b6c1beb_cgraph" alt=""/></div>
-<map name="classbasic__interrupts__lock_abd3ff586b3a8aad4d51a46ce6b6c1beb_cgraph" id="aclassbasic__interrupts__lock_abd3ff586b3a8aad4d51a46ce6b6c1beb_cgraph">
+<div class="center"><img src="classbasic__interrupts__lock_ab5333f45b86b0c114d096cbc58a5b4a7_cgraph.png" border="0" usemap="#aclassbasic__interrupts__lock_ab5333f45b86b0c114d096cbc58a5b4a7_cgraph" alt=""/></div>
+<map name="classbasic__interrupts__lock_ab5333f45b86b0c114d096cbc58a5b4a7_cgraph" id="classbasic__interrupts__lock_ab5333f45b86b0c114d096cbc58a5b4a7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,165,47"/>
 <area shape="rect" href="classbasic__critical.html#af2b221433b461c16ab4ad77ec1ad14a2" title=" " alt="" coords="213,5,372,47"/>
 </map>

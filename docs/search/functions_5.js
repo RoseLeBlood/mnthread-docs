@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['foreign_5fthread_431',['foreign_thread',['../classforeign__thread.html#acd1c299d8ca4d20692322e6c81e3fa7e',1,'foreign_thread::foreign_thread()'],['../classforeign__thread.html#a0db7978a7d78dbb11c8934a9823f9c80',1,'foreign_thread::foreign_thread(void *t)']]]
+  ['enable_5finterrupts_501',['enable_interrupts',['../classbasic__critical.html#af2b221433b461c16ab4ad77ec1ad14a2',1,'basic_critical']]],
+  ['enqueue_502',['enqueue',['../classbasic__binaryqueue.html#a02c01496cfc33b8e8dc6fb99b5c399e0',1,'basic_binaryqueue::enqueue()'],['../classbasic__queue.html#ab700b16ef67d559bf9f0fd2bed473429',1,'basic_queue::enqueue()']]],
+  ['enqueue_5ffront_503',['enqueue_front',['../classbasic__deque.html#a326d96ff223811224ba983e0153ca607',1,'basic_deque']]],
+  ['enter_504',['enter',['../classbasic__critical.html#a1e913c5e607f50eb9209a94a4a833ea0',1,'basic_critical']]],
+  ['exit_505',['exit',['../classbasic__critical.html#afa98e95d9f1f1584eb9966ffd5fcb86c',1,'basic_critical']]]
 ];

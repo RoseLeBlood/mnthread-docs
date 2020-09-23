@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 2.xbeta</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -175,9 +175,9 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp_source.html',''); in
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_MUTEX</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">using</span> <a class="code" href="classbasic__binary__semaphore.html">LockType_t</a> = <a class="code" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#elif MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_BINARY_SEMAPHORE</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">  118</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classbasic__binary__semaphore.html">LockType_t</a> = <a class="code" href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">  118</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classbasic__binary__semaphore.html">LockType_t</a> = <a class="code" href="mn__binary__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#elif MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_COUNTING_SEMAPHORE</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">using</span> <a class="code" href="classbasic__binary__semaphore.html">LockType_t</a> = <a class="code" href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">using</span> <a class="code" href="classbasic__binary__semaphore.html">LockType_t</a> = <a class="code" href="mn__counting__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
 <div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="mn__autolock_8hpp.html#a53eeba9f0f1c7ce32281d401d4d94a75">  123</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__autolock.html">autolock_t</a> = <a class="code" href="classbasic__autolock.html">basic_autolock&lt;LockType_t&gt;</a>;</div>
@@ -186,19 +186,19 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp_source.html',''); in
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="amn__critical_8hpp_html"><div class="ttname"><a href="mn__critical_8hpp.html">mn_critical.hpp</a></div></div>
-<div class="ttc" id="amn__semaphore_8hpp_html_adb77a9b18988a479e7f15534053c27d4"><div class="ttname"><a href="mn__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a></div><div class="ttdeci">basic_binary_semaphore binary_semaphore_t</div><div class="ttdef"><b>Definition:</b> mn_semaphore.hpp:164</div></div>
 <div class="ttc" id="aclassbasic__autolock_html_a5ad7493ed31a3a231446881d33c3b909"><div class="ttname"><a href="classbasic__autolock.html#a5ad7493ed31a3a231446881d33c3b909">basic_autolock::~basic_autolock</a></div><div class="ttdeci">~basic_autolock()</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:52</div></div>
 <div class="ttc" id="aclassbasic__autolock_html_affca5bf226e5bab848bb79f77a47e81f"><div class="ttname"><a href="classbasic__autolock.html#affca5bf226e5bab848bb79f77a47e81f">basic_autolock::m_ref_lock</a></div><div class="ttdeci">LOCK &amp; m_ref_lock</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:65</div></div>
-<div class="ttc" id="aclassbasic__binary__semaphore_html"><div class="ttname"><a href="classbasic__binary__semaphore.html">basic_binary_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_semaphore.hpp:138</div></div>
+<div class="ttc" id="aclassbasic__binary__semaphore_html"><div class="ttname"><a href="classbasic__binary__semaphore.html">basic_binary_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_binary_semaphore.hpp:23</div></div>
 <div class="ttc" id="amn__recursive__mutex_8hpp_html"><div class="ttname"><a href="mn__recursive__mutex_8hpp.html">mn_recursive_mutex.hpp</a></div></div>
 <div class="ttc" id="amn__semaphore_8hpp_html"><div class="ttname"><a href="mn__semaphore_8hpp.html">mn_semaphore.hpp</a></div></div>
 <div class="ttc" id="amn__mutex_8hpp_html"><div class="ttname"><a href="mn__mutex_8hpp.html">mn_mutex.hpp</a></div></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
-<div class="ttc" id="amn__semaphore_8hpp_html_a6145ebc3b28f55822453c88028580a8b"><div class="ttname"><a href="mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a></div><div class="ttdeci">basic_counting_semaphore counting_semaphore_t</div><div class="ttdef"><b>Definition:</b> mn_semaphore.hpp:163</div></div>
+<div class="ttc" id="amn__counting__semaphore_8hpp_html_a6145ebc3b28f55822453c88028580a8b"><div class="ttname"><a href="mn__counting__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b">counting_semaphore_t</a></div><div class="ttdeci">basic_counting_semaphore counting_semaphore_t</div><div class="ttdef"><b>Definition:</b> mn_counting_semaphore.hpp:79</div></div>
+<div class="ttc" id="amn__binary__semaphore_8hpp_html_adb77a9b18988a479e7f15534053c27d4"><div class="ttname"><a href="mn__binary__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a></div><div class="ttdeci">basic_binary_semaphore binary_semaphore_t</div><div class="ttdef"><b>Definition:</b> mn_binary_semaphore.hpp:47</div></div>
 <div class="ttc" id="aclassbasic__autolock_html_aea4fc713418e790a4d78386291417fbd"><div class="ttname"><a href="classbasic__autolock.html#aea4fc713418e790a4d78386291417fbd">basic_autolock::basic_autolock</a></div><div class="ttdeci">basic_autolock(LOCK &amp;m)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:44</div></div>
 <div class="ttc" id="aclassbasic__autolock_html_a4aac086ccd0f9868785e0af42f15e11b"><div class="ttname"><a href="classbasic__autolock.html#a4aac086ccd0f9868785e0af42f15e11b">basic_autolock::basic_autolock</a></div><div class="ttdeci">basic_autolock(const basic_autolock &amp;)=delete</div></div>
 <div class="ttc" id="amn__autolock_8hpp_html"><div class="ttname"><a href="mn__autolock_8hpp.html">mn_autolock.hpp</a></div></div>
-<div class="ttc" id="amn__mutex_8hpp_html_ae94b3ff09eca976047fe23d9051c46fa"><div class="ttname"><a href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a></div><div class="ttdeci">basic_mutex mutex_t</div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:83</div></div>
+<div class="ttc" id="amn__mutex_8hpp_html_ae94b3ff09eca976047fe23d9051c46fa"><div class="ttname"><a href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a></div><div class="ttdeci">basic_mutex mutex_t</div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:86</div></div>
 <div class="ttc" id="aclassbasic__autolock_html"><div class="ttname"><a href="classbasic__autolock.html">basic_autolock</a></div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:37</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

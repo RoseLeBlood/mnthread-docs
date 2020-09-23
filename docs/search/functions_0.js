@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['active_403',['active',['../classbasic__timer.html#a22537e056987156990fd85e928dce649',1,'basic_timer']]],
-  ['add_5fchild_5fthread_404',['add_child_thread',['../classbasic__thread.html#a2d9b6b578226c07be702abef8f62e8d9',1,'basic_thread']]]
+  ['_5f_5finternal_5fcreate_5fusings_5ftypes_474',['__internal_create_usings_types',['../classforeign__task.html#a9639d66feb16b76fd4442f0df48da9b4',1,'foreign_task']]]
 ];

@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['queue_281',['queue',['../classbasic__work__queue.html#a2893c69cf58efa717186838082aaa247',1,'basic_work_queue']]],
-  ['queue_5ft_282',['queue_t',['../mn__queue_8hpp.html#a27023a8e82e9c0994a1587b8de80613b',1,'mn_queue.hpp']]]
+  ['peek_315',['peek',['../classbasic__queue.html#a9252e9c080cbaeb4e3d4408491924a5a',1,'basic_queue']]],
+  ['priority_316',['priority',['../classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db',1,'basic_task']]],
+  ['prioritycritical_317',['PriorityCritical',['../classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba27aec4e8c8d79efebc32815e904d9efa',1,'basic_task']]],
+  ['priorityhalfcritical_318',['PriorityHalfCritical',['../classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba96418e4d6f309855ea7e34cce01f420d',1,'basic_task']]],
+  ['priorityidle_319',['PriorityIdle',['../classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba1fc391ba1271a61a60a4d9736dd68797',1,'basic_task']]],
+  ['prioritylow_320',['PriorityLow',['../classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dbade8060934d22a5f3dc50d0e5e77f672f',1,'basic_task']]],
+  ['prioritynormal_321',['PriorityNormal',['../classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba91dec2766fd6eeccd15a046567bb65ec',1,'basic_task']]],
+  ['priorityurgent_322',['PriorityUrgent',['../classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba49e0851c93729159d60d43816a08328b',1,'basic_task']]]
 ];

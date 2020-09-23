@@ -35,7 +35,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">Mini Thread 1.7x</a>
+                    <a href="index.html" class="navbar-brand">Mini Thread 2.xbeta</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <!-- Left -->
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('classbasic__work__queue.html',''); ini
 Inheritance diagram for basic_work_queue:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue__inherit__graph.png" border="0" usemap="#abasic__work__queue_inherit__map" alt="Inheritance graph"/></div>
-<map name="basic__work__queue_inherit__map" id="abasic__work__queue_inherit__map">
+<map name="basic__work__queue_inherit__map" id="basic__work__queue_inherit__map">
 <area shape="rect" title=" " alt="" coords="129,5,272,32"/>
 <area shape="rect" href="classbasic__work__queue__multi.html" title=" " alt="" coords="5,80,188,107"/>
 <area shape="rect" href="classbasic__work__queue__single.html" title=" " alt="" coords="212,80,400,107"/>
@@ -133,18 +133,19 @@ Inheritance diagram for basic_work_queue:</div>
 Collaboration diagram for basic_work_queue:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue__coll__graph.png" border="0" usemap="#abasic__work__queue_coll__map" alt="Collaboration graph"/></div>
-<map name="basic__work__queue_coll__map" id="abasic__work__queue_coll__map">
-<area shape="rect" title=" " alt="" coords="70,185,213,212"/>
-<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="21,81,126,108"/>
-<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="5,5,141,32"/>
-<area shape="rect" href="classbasic__queue.html" title=" " alt="" coords="159,81,262,108"/>
+<map name="basic__work__queue_coll__map" id="basic__work__queue_coll__map">
+<area shape="rect" title=" " alt="" coords="70,261,213,288"/>
+<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="21,157,126,184"/>
+<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="5,81,141,108"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="24,5,123,32"/>
+<area shape="rect" href="classbasic__queue.html" title=" " alt="" coords="159,157,262,184"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeca7f4226f7e573376a3fb7ae81eb1da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#aeca7f4226f7e573376a3fb7ae81eb1da">basic_work_queue</a> (unsigned int uiPriority, uint16_t usStackDepth, uint8_t uiMaxWorkItems)</td></tr>
-<tr class="separator:aeca7f4226f7e573376a3fb7ae81eb1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051b2af665036b9702c104b5d8b8801e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a051b2af665036b9702c104b5d8b8801e">basic_work_queue</a> (<a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a> uiPriority, uint16_t usStackDepth, uint8_t uiMaxWorkItems)</td></tr>
+<tr class="separator:a051b2af665036b9702c104b5d8b8801e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57cb8afe3a604954432e99fe63c63145"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145">~basic_work_queue</a> ()</td></tr>
 <tr class="separator:a57cb8afe3a604954432e99fe63c63145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbc4257c8c917d020578b3133320cfc0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0">create</a> (int iCore=<a class="el" href="mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64">MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE</a>)</td></tr>
@@ -166,10 +167,10 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1808f1f7048374015ea2309cfc9c4f8c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwork__queue__item.html">work_queue_item</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a1808f1f7048374015ea2309cfc9c4f8c">get_next_item</a> (unsigned int timeout)</td></tr>
 <tr class="separator:a1808f1f7048374015ea2309cfc9c4f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3907201f0ee806cab91fdb8f1683c06"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#ad3907201f0ee806cab91fdb8f1683c06">on_create</a> (int iCore)=0</td></tr>
-<tr class="separator:ad3907201f0ee806cab91fdb8f1683c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ee5f2b2d6226e40772304226d020133"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a1ee5f2b2d6226e40772304226d020133">on_destroy</a> ()=0</td></tr>
-<tr class="separator:a1ee5f2b2d6226e40772304226d020133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39465b0d41ca0921e200637a3566a974"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a39465b0d41ca0921e200637a3566a974">create_engine</a> (int iCore)=0</td></tr>
+<tr class="separator:a39465b0d41ca0921e200637a3566a974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf282dfc3ef2b9ce7cb012897bdb271"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a4cf282dfc3ef2b9ce7cb012897bdb271">destroy_engine</a> ()=0</td></tr>
+<tr class="separator:a4cf282dfc3ef2b9ce7cb012897bdb271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -179,8 +180,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a93e2cb1b7be1553089532b65c656499c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb3ce0dfb1fbd8730d9bcbd22114d56e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#afb3ce0dfb1fbd8730d9bcbd22114d56e">m_ThreadJob</a></td></tr>
 <tr class="separator:afb3ce0dfb1fbd8730d9bcbd22114d56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed722d95af01b6758378495c8353d931"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#aed722d95af01b6758378495c8353d931">m_uiPriority</a></td></tr>
-<tr class="separator:aed722d95af01b6758378495c8353d931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c0a8f50ad5168431d53d41b65b2501"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a72c0a8f50ad5168431d53d41b65b2501">m_uiPriority</a></td></tr>
+<tr class="separator:a72c0a8f50ad5168431d53d41b65b2501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a77dcb50b9566cc3690a9547c761b41"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a8a77dcb50b9566cc3690a9547c761b41">m_usStackDepth</a></td></tr>
 <tr class="separator:a8a77dcb50b9566cc3690a9547c761b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0e38bd07d8df773962f59cafff2cf48"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#ad0e38bd07d8df773962f59cafff2cf48">m_uiMaxWorkItems</a></td></tr>
@@ -196,15 +197,15 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac7bd8d9889246d4c720c06f2f4ef8ac2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#ac7bd8d9889246d4c720c06f2f4ef8ac2">work_queue_thread</a></td></tr>
-<tr class="separator:ac7bd8d9889246d4c720c06f2f4ef8ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30898e8e19a81bf45c4a22cd80491d88"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__work__queue.html#a30898e8e19a81bf45c4a22cd80491d88">work_queue_task</a></td></tr>
+<tr class="separator:a30898e8e19a81bf45c4a22cd80491d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This abstract class is the base "engine" class for all work_queues. <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> pull <a class="el" href="classwork__queue__item.html">work_queue_item</a> off of a FIFO queue and run them sequentially.</p>
-<p>This is an abstract base class. To use this, you need to subclass it. All of your <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> should be derived from the <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> class. Then implement the virtual on_create and on_destroy functions. </p>
+<p>This is an abstract base class. To use this, you need to subclass it. All of your <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> should be derived from the <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> class. Then implement the virtual create_engine and destroy_engine functions. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aeca7f4226f7e573376a3fb7ae81eb1da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeca7f4226f7e573376a3fb7ae81eb1da">&#9670;&nbsp;</a></span>basic_work_queue()</h2>
+<a id="a051b2af665036b9702c104b5d8b8801e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a051b2af665036b9702c104b5d8b8801e">&#9670;&nbsp;</a></span>basic_work_queue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +213,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">basic_work_queue::basic_work_queue </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype"><a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a>&#160;</td>
           <td class="paramname"><em>uiPriority</em>, </td>
         </tr>
         <tr>
@@ -236,9 +237,9 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <p>Our constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Name</td><td>Name of the thread internal to the WorkQueue. </td></tr>
-    <tr><td class="paramname">uiPriority</td><td>FreeRTOS priority of this Thread. </td></tr>
-    <tr><td class="paramname">usStackDepth</td><td>Number of "words" allocated for the Thread stack. </td></tr>
+    <tr><td class="paramname">Name</td><td>Name of the task internal to the WorkQueue. </td></tr>
+    <tr><td class="paramname">uiPriority</td><td>FreeRTOS priority of this WorkQueue task. </td></tr>
+    <tr><td class="paramname">usStackDepth</td><td>Number of "words" allocated for the WorkQueue task stack. </td></tr>
   </table>
   </dd>
 </dl>
@@ -272,13 +273,13 @@ Friends</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_a57cb8afe3a604954432e99fe63c63145_cgraph.png" border="0" usemap="#aclassbasic__work__queue_a57cb8afe3a604954432e99fe63c63145_cgraph" alt=""/></div>
-<map name="classbasic__work__queue_a57cb8afe3a604954432e99fe63c63145_cgraph" id="aclassbasic__work__queue_a57cb8afe3a604954432e99fe63c63145_cgraph">
-<area shape="rect" title=" " alt="" coords="5,78,159,119"/>
-<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="207,85,405,112"/>
-<area shape="rect" href="classbasic__mutex.html#a0c3098b8b10490ef173c6977a4b82b13" title=" " alt="" coords="455,5,618,32"/>
-<area shape="rect" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b" title=" " alt="" coords="467,56,607,83"/>
-<area shape="rect" href="classbasic__work__queue.html#a1ee5f2b2d6226e40772304226d020133" title=" " alt="" coords="453,107,620,149"/>
-<area shape="rect" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640" title=" " alt="" coords="459,173,615,200"/>
+<map name="classbasic__work__queue_a57cb8afe3a604954432e99fe63c63145_cgraph" id="classbasic__work__queue_a57cb8afe3a604954432e99fe63c63145_cgraph">
+<area shape="rect" title=" " alt="" coords="5,86,159,127"/>
+<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="207,93,405,120"/>
+<area shape="rect" href="classbasic__mutex.html#a0c3098b8b10490ef173c6977a4b82b13" title=" " alt="" coords="471,5,634,32"/>
+<area shape="rect" href="classbasic__work__queue.html#a4cf282dfc3ef2b9ce7cb012897bdb271" title=" " alt="" coords="453,57,652,98"/>
+<area shape="rect" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b" title=" " alt="" coords="483,123,623,149"/>
+<area shape="rect" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640" title=" " alt="" coords="475,173,631,200"/>
 </map>
 </div>
 
@@ -315,12 +316,67 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_cgraph.png" border="0" usemap="#aclassbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_cgraph" alt=""/></div>
-<map name="classbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_cgraph" id="aclassbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,196,108"/>
-<area shape="rect" href="classbasic__mutex.html#a9012d8b56fc21f0370c9f36f9e6e20c6" title=" " alt="" coords="250,5,405,32"/>
-<area shape="rect" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640" title=" " alt="" coords="459,31,615,57"/>
-<area shape="rect" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b" title=" " alt="" coords="257,107,397,133"/>
-<area shape="rect" href="classbasic__work__queue.html#ad3907201f0ee806cab91fdb8f1683c06" title=" " alt="" coords="244,158,411,199"/>
+<map name="classbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_cgraph" id="classbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,85,196,112"/>
+<area shape="rect" href="classbasic__mutex.html#a9012d8b56fc21f0370c9f36f9e6e20c6" title=" " alt="" coords="262,5,417,32"/>
+<area shape="rect" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640" title=" " alt="" coords="483,31,639,57"/>
+<area shape="rect" href="classbasic__work__queue.html#a39465b0d41ca0921e200637a3566a974" title=" " alt="" coords="244,107,435,149"/>
+<area shape="rect" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b" title=" " alt="" coords="269,173,409,200"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_icgraph.png" border="0" usemap="#aclassbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_icgraph" alt=""/></div>
+<map name="classbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_icgraph" id="classbasic__work__queue_adbc4257c8c917d020578b3133320cfc0_icgraph">
+<area shape="rect" title=" " alt="" coords="236,13,427,39"/>
+<area shape="rect" href="classbasic__work__queue__multi.html#adfef8319e7be599b75e55eb6bc6744a8" title=" " alt="" coords="5,5,188,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39465b0d41ca0921e200637a3566a974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39465b0d41ca0921e200637a3566a974">&#9670;&nbsp;</a></span>create_engine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int basic_work_queue::create_engine </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iCore</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Implementation of your actual create code. You must override this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iCore</td><td>uiCore on which core run this thread (i. e. task ), -1 for current core</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Don't forget to set the running flag to true </dd></dl>
+
+<p>Implemented in <a class="el" href="classbasic__work__queue__single.html#a9b69f915e0738a47005608405dad5a4b">basic_work_queue_single</a>, and <a class="el" href="classbasic__work__queue__multi.html#adfef8319e7be599b75e55eb6bc6744a8">basic_work_queue_multi</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__work__queue_a39465b0d41ca0921e200637a3566a974_icgraph.png" border="0" usemap="#aclassbasic__work__queue_a39465b0d41ca0921e200637a3566a974_icgraph" alt=""/></div>
+<map name="classbasic__work__queue_a39465b0d41ca0921e200637a3566a974_icgraph" id="classbasic__work__queue_a39465b0d41ca0921e200637a3566a974_icgraph">
+<area shape="rect" title=" " alt="" coords="475,5,665,47"/>
+<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="236,13,427,39"/>
+<area shape="rect" href="classbasic__work__queue__multi.html#adfef8319e7be599b75e55eb6bc6744a8" title=" " alt="" coords="5,5,188,47"/>
 </map>
 </div>
 
@@ -353,20 +409,58 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_cgraph.png" border="0" usemap="#aclassbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_cgraph" alt=""/></div>
-<map name="classbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_cgraph" id="aclassbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,85,204,112"/>
-<area shape="rect" href="classbasic__mutex.html#a0c3098b8b10490ef173c6977a4b82b13" title=" " alt="" coords="254,5,417,32"/>
-<area shape="rect" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b" title=" " alt="" coords="265,56,405,83"/>
-<area shape="rect" href="classbasic__work__queue.html#a1ee5f2b2d6226e40772304226d020133" title=" " alt="" coords="252,107,419,149"/>
-<area shape="rect" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640" title=" " alt="" coords="257,173,413,200"/>
+<map name="classbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_cgraph" id="classbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,93,204,120"/>
+<area shape="rect" href="classbasic__mutex.html#a0c3098b8b10490ef173c6977a4b82b13" title=" " alt="" coords="270,5,433,32"/>
+<area shape="rect" href="classbasic__work__queue.html#a4cf282dfc3ef2b9ce7cb012897bdb271" title=" " alt="" coords="252,57,451,98"/>
+<area shape="rect" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b" title=" " alt="" coords="281,123,421,149"/>
+<area shape="rect" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640" title=" " alt="" coords="273,173,429,200"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_icgraph.png" border="0" usemap="#aclassbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_icgraph" alt=""/></div>
-<map name="classbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_icgraph" id="aclassbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_icgraph">
+<map name="classbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_icgraph" id="classbasic__work__queue_af71f5cc64f41ae3c3ffc2355b92d172e_icgraph">
 <area shape="rect" title=" " alt="" coords="207,13,405,39"/>
+<area shape="rect" href="classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145" title=" " alt="" coords="5,5,159,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4cf282dfc3ef2b9ce7cb012897bdb271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cf282dfc3ef2b9ce7cb012897bdb271">&#9670;&nbsp;</a></span>destroy_engine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void basic_work_queue::destroy_engine </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Implementation of your actual destroy code. You must override this function. </p>
+
+<p>Implemented in <a class="el" href="classbasic__work__queue__single.html#aa40935e0d456eab9afb534a77c655627">basic_work_queue_single</a>, and <a class="el" href="classbasic__work__queue__multi.html#a5ccda5ea45e098ccf2bbe6bf64e78adb">basic_work_queue_multi</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__work__queue_a4cf282dfc3ef2b9ce7cb012897bdb271_icgraph.png" border="0" usemap="#aclassbasic__work__queue_a4cf282dfc3ef2b9ce7cb012897bdb271_icgraph" alt=""/></div>
+<map name="classbasic__work__queue_a4cf282dfc3ef2b9ce7cb012897bdb271_icgraph" id="classbasic__work__queue_a4cf282dfc3ef2b9ce7cb012897bdb271_icgraph">
+<area shape="rect" title=" " alt="" coords="453,5,652,47"/>
+<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="207,13,405,39"/>
 <area shape="rect" href="classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145" title=" " alt="" coords="5,5,159,47"/>
 </map>
 </div>
@@ -408,7 +502,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_cgraph.png" border="0" usemap="#aclassbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_cgraph" alt=""/></div>
-<map name="classbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_cgraph" id="aclassbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_cgraph">
+<map name="classbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_cgraph" id="classbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_cgraph">
 <area shape="rect" title=" " alt="" coords="5,23,176,65"/>
 <area shape="rect" href="classbasic__queue.html#a99b8b55ad93e78257df2d5743deccbf4" title=" " alt="" coords="226,5,393,32"/>
 <area shape="rect" href="classbasic__queue.html#a83448696c9dfc5f55635cff57352f0a2" title=" " alt="" coords="224,56,395,83"/>
@@ -419,9 +513,9 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_icgraph.png" border="0" usemap="#aclassbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_icgraph" alt=""/></div>
-<map name="classbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_icgraph" id="aclassbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_icgraph">
-<area shape="rect" title=" " alt="" coords="212,5,383,47"/>
-<area shape="rect" href="classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763" title=" " alt="" coords="5,5,164,47"/>
+<map name="classbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_icgraph" id="classbasic__work__queue_a1808f1f7048374015ea2309cfc9c4f8c_icgraph">
+<area shape="rect" title=" " alt="" coords="248,5,419,47"/>
+<area shape="rect" href="classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9" title=" " alt="" coords="5,13,200,39"/>
 </map>
 </div>
 
@@ -483,93 +577,10 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_adf6fa8f4d9523211118291a79874c0a7_cgraph.png" border="0" usemap="#aclassbasic__work__queue_adf6fa8f4d9523211118291a79874c0a7_cgraph" alt=""/></div>
-<map name="classbasic__work__queue_adf6fa8f4d9523211118291a79874c0a7_cgraph" id="aclassbasic__work__queue_adf6fa8f4d9523211118291a79874c0a7_cgraph">
+<map name="classbasic__work__queue_adf6fa8f4d9523211118291a79874c0a7_cgraph" id="classbasic__work__queue_adf6fa8f4d9523211118291a79874c0a7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,167,47"/>
 <area shape="rect" href="classbasic__queue.html#a83448696c9dfc5f55635cff57352f0a2" title=" " alt="" coords="215,13,385,39"/>
 <area shape="rect" href="classbasic__queue.html#acccc78eb8dbbd0e358bafc9e3558ac91" title=" " alt="" coords="433,5,601,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad3907201f0ee806cab91fdb8f1683c06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3907201f0ee806cab91fdb8f1683c06">&#9670;&nbsp;</a></span>on_create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int basic_work_queue::on_create </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>iCore</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Implementation of your actual create code. You must override this function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">iCore</td><td>uiCore on which core run this thread (i. e. task ), -1 for current core</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>Don't forget to set the running flag to true </dd></dl>
-
-<p>Implemented in <a class="el" href="classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24">basic_work_queue_single</a>, and <a class="el" href="classbasic__work__queue__multi.html#abf0ba46bd2b20276d6a2a56688342189">basic_work_queue_multi</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classbasic__work__queue_ad3907201f0ee806cab91fdb8f1683c06_icgraph.png" border="0" usemap="#aclassbasic__work__queue_ad3907201f0ee806cab91fdb8f1683c06_icgraph" alt=""/></div>
-<map name="classbasic__work__queue_ad3907201f0ee806cab91fdb8f1683c06_icgraph" id="aclassbasic__work__queue_ad3907201f0ee806cab91fdb8f1683c06_icgraph">
-<area shape="rect" title=" " alt="" coords="244,5,411,47"/>
-<area shape="rect" href="classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0" title=" " alt="" coords="5,13,196,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a1ee5f2b2d6226e40772304226d020133"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ee5f2b2d6226e40772304226d020133">&#9670;&nbsp;</a></span>on_destroy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void basic_work_queue::on_destroy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Implementation of your actual destroy code. You must override this function. </p>
-
-<p>Implemented in <a class="el" href="classbasic__work__queue__single.html#aa66502a9beda3ccee722c773e9f317b9">basic_work_queue_single</a>, and <a class="el" href="classbasic__work__queue__multi.html#ac23390b4532dbd63f397d1b479524ed7">basic_work_queue_multi</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classbasic__work__queue_a1ee5f2b2d6226e40772304226d020133_icgraph.png" border="0" usemap="#aclassbasic__work__queue_a1ee5f2b2d6226e40772304226d020133_icgraph" alt=""/></div>
-<map name="classbasic__work__queue_a1ee5f2b2d6226e40772304226d020133_icgraph" id="aclassbasic__work__queue_a1ee5f2b2d6226e40772304226d020133_icgraph">
-<area shape="rect" title=" " alt="" coords="453,5,620,47"/>
-<area shape="rect" href="classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e" title=" " alt="" coords="207,13,405,39"/>
-<area shape="rect" href="classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145" title=" " alt="" coords="5,5,159,47"/>
 </map>
 </div>
 
@@ -621,7 +632,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_a2893c69cf58efa717186838082aaa247_cgraph.png" border="0" usemap="#aclassbasic__work__queue_a2893c69cf58efa717186838082aaa247_cgraph" alt=""/></div>
-<map name="classbasic__work__queue_a2893c69cf58efa717186838082aaa247_cgraph" id="aclassbasic__work__queue_a2893c69cf58efa717186838082aaa247_cgraph">
+<map name="classbasic__work__queue_a2893c69cf58efa717186838082aaa247_cgraph" id="classbasic__work__queue_a2893c69cf58efa717186838082aaa247_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,196,32"/>
 <area shape="rect" href="classbasic__queue.html#ab700b16ef67d559bf9f0fd2bed473429" title=" " alt="" coords="244,5,411,32"/>
 </map>
@@ -657,17 +668,17 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__work__queue_a65b3393ceb232d9c4ac9975181172da6_icgraph.png" border="0" usemap="#aclassbasic__work__queue_a65b3393ceb232d9c4ac9975181172da6_icgraph" alt=""/></div>
-<map name="classbasic__work__queue_a65b3393ceb232d9c4ac9975181172da6_icgraph" id="aclassbasic__work__queue_a65b3393ceb232d9c4ac9975181172da6_icgraph">
-<area shape="rect" title=" " alt="" coords="212,13,411,39"/>
-<area shape="rect" href="classwork__queue__thread.html#abd6662f62ba1e80c36bd9df836f6c763" title=" " alt="" coords="5,5,164,47"/>
+<map name="classbasic__work__queue_a65b3393ceb232d9c4ac9975181172da6_icgraph" id="classbasic__work__queue_a65b3393ceb232d9c4ac9975181172da6_icgraph">
+<area shape="rect" title=" " alt="" coords="248,5,447,32"/>
+<area shape="rect" href="classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9" title=" " alt="" coords="5,5,200,32"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="ac7bd8d9889246d4c720c06f2f4ef8ac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7bd8d9889246d4c720c06f2f4ef8ac2">&#9670;&nbsp;</a></span>work_queue_thread</h2>
+<a id="a30898e8e19a81bf45c4a22cd80491d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30898e8e19a81bf45c4a22cd80491d88">&#9670;&nbsp;</a></span>work_queue_task</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -676,7 +687,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classwork__queue__thread.html">work_queue_thread</a></td>
+          <td class="memname">friend class <a class="el" href="classwork__queue__task.html">work_queue_task</a></td>
         </tr>
       </table>
   </td>
@@ -872,8 +883,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aed722d95af01b6758378495c8353d931"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed722d95af01b6758378495c8353d931">&#9670;&nbsp;</a></span>m_uiPriority</h2>
+<a id="a72c0a8f50ad5168431d53d41b65b2501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72c0a8f50ad5168431d53d41b65b2501">&#9670;&nbsp;</a></span>m_uiPriority</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -882,7 +893,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t basic_work_queue::m_uiPriority</td>
+          <td class="memname"><a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a> basic_work_queue::m_uiPriority</td>
         </tr>
       </table>
   </td>

@@ -1,18 +1,18 @@
 var classbasic__work__queue =
 [
-    [ "basic_work_queue", "classbasic__work__queue.html#aeca7f4226f7e573376a3fb7ae81eb1da", null ],
+    [ "basic_work_queue", "classbasic__work__queue.html#a051b2af665036b9702c104b5d8b8801e", null ],
     [ "~basic_work_queue", "classbasic__work__queue.html#a57cb8afe3a604954432e99fe63c63145", null ],
     [ "create", "classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0", null ],
+    [ "create_engine", "classbasic__work__queue.html#a39465b0d41ca0921e200637a3566a974", null ],
     [ "destroy", "classbasic__work__queue.html#af71f5cc64f41ae3c3ffc2355b92d172e", null ],
+    [ "destroy_engine", "classbasic__work__queue.html#a4cf282dfc3ef2b9ce7cb012897bdb271", null ],
     [ "get_next_item", "classbasic__work__queue.html#a1808f1f7048374015ea2309cfc9c4f8c", null ],
     [ "get_num_items_error", "classbasic__work__queue.html#a90ca48af3cd0bcbdbff732ed4d9bc9ae", null ],
     [ "get_num_items_worked", "classbasic__work__queue.html#a37cdd77452de770de198118c8803d370", null ],
     [ "is_ready", "classbasic__work__queue.html#adf6fa8f4d9523211118291a79874c0a7", null ],
-    [ "on_create", "classbasic__work__queue.html#ad3907201f0ee806cab91fdb8f1683c06", null ],
-    [ "on_destroy", "classbasic__work__queue.html#a1ee5f2b2d6226e40772304226d020133", null ],
     [ "queue", "classbasic__work__queue.html#a2893c69cf58efa717186838082aaa247", null ],
     [ "running", "classbasic__work__queue.html#a65b3393ceb232d9c4ac9975181172da6", null ],
-    [ "work_queue_thread", "classbasic__work__queue.html#ac7bd8d9889246d4c720c06f2f4ef8ac2", null ],
+    [ "work_queue_task", "classbasic__work__queue.html#a30898e8e19a81bf45c4a22cd80491d88", null ],
     [ "m_bMutexInit", "classbasic__work__queue.html#ad396b26a58a825c433869eba976adc92", null ],
     [ "m_bRunning", "classbasic__work__queue.html#ae1938194d42292114e62db58e5a9c3eb", null ],
     [ "m_pWorkItemQueue", "classbasic__work__queue.html#a971787e938c770160c460b2ea1a3d395", null ],
@@ -21,6 +21,6 @@ var classbasic__work__queue =
     [ "m_uiErrorsNumWorks", "classbasic__work__queue.html#a875d1d0afb73747583e2a399790b1107", null ],
     [ "m_uiMaxWorkItems", "classbasic__work__queue.html#ad0e38bd07d8df773962f59cafff2cf48", null ],
     [ "m_uiNumWorks", "classbasic__work__queue.html#a4c011ea5a747db3a76075f7a742debfa", null ],
-    [ "m_uiPriority", "classbasic__work__queue.html#aed722d95af01b6758378495c8353d931", null ],
+    [ "m_uiPriority", "classbasic__work__queue.html#a72c0a8f50ad5168431d53d41b65b2501", null ],
     [ "m_usStackDepth", "classbasic__work__queue.html#a8a77dcb50b9566cc3690a9547c761b41", null ]
 ];

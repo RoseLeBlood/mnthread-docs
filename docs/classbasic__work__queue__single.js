@@ -1,8 +1,8 @@
 var classbasic__work__queue__single =
 [
-    [ "basic_work_queue_single", "classbasic__work__queue__single.html#a9411560d4466623ca6f94036dfe1858f", null ],
+    [ "basic_work_queue_single", "classbasic__work__queue__single.html#a43dfa467f29d1ebf69134ac5337975f6", null ],
     [ "~basic_work_queue_single", "classbasic__work__queue__single.html#a5e8213d7a983f1ff7bbbd0995cce1c6b", null ],
-    [ "on_create", "classbasic__work__queue__single.html#aece50904adec52ee25cb784acb581b24", null ],
-    [ "on_destroy", "classbasic__work__queue__single.html#aa66502a9beda3ccee722c773e9f317b9", null ],
-    [ "m_pWorker", "classbasic__work__queue__single.html#a6517b9a860ab8b012ccf1bda5c6e142e", null ]
+    [ "create_engine", "classbasic__work__queue__single.html#a9b69f915e0738a47005608405dad5a4b", null ],
+    [ "destroy_engine", "classbasic__work__queue__single.html#aa40935e0d456eab9afb534a77c655627", null ],
+    [ "m_pWorker", "classbasic__work__queue__single.html#ad2dc599485b3e10c4ea54cdd3d343065", null ]
 ];

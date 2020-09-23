@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['seconds_5fto_5fticks_493',['seconds_to_ticks',['../mn__micros_8hpp.html#ad6abbe9b7d00cca6e5d54a4596ea2b44',1,'seconds_to_ticks(unsigned int ms):&#160;mn_micros.cpp'],['../mn__micros_8cpp.html#a894568cb5a61a0b2e9902b900b4d159e',1,'seconds_to_ticks(unsigned int sec):&#160;mn_micros.cpp']]],
-  ['set_5finitial_5fcount_494',['set_initial_count',['../classbasic__counting__semaphore.html#a58b492e8d8f0c3718ce5c765c2865278',1,'basic_counting_semaphore']]],
-  ['set_5fmax_5fcount_495',['set_max_count',['../classbasic__counting__semaphore.html#a067b3d9069e57dfcc11f78b36ef212ed',1,'basic_counting_semaphore']]],
-  ['set_5fperiod_496',['set_period',['../classbasic__timer.html#a967b5d33276759732ee0ef468b04e653',1,'basic_timer']]],
-  ['setpriority_497',['setPriority',['../classbasic__thread.html#af0d163f7f919c9cc5c22892679e9544a',1,'basic_thread']]],
-  ['sleep_498',['sleep',['../classbasic__thread.html#a6341bd2c7ece9f691af8a61b122a72b7',1,'basic_thread']]],
-  ['stop_5fscheduler_499',['stop_scheduler',['../classbasic__critical.html#aaa34ce4d2463f97510899085b14db148',1,'basic_critical']]],
-  ['suspend_500',['suspend',['../classbasic__thread.html#a1dd5d2e2d2884bbf199726b3d252e6fb',1,'basic_thread::suspend()'],['../classbasic__thread.html#a03886abbdec8e0c769460b810d430da8',1,'basic_thread::suspend(basic_thread *t)']]]
+  ['recursive_5fmutex_566',['recursive_mutex',['../classrecursive__mutex.html#a1a208c1e6122fda628bdba8e3230edef',1,'recursive_mutex']]],
+  ['reset_567',['reset',['../classbasic__timer.html#a19709a0934e3bc4d4f2aa3b83d655914',1,'basic_timer']]],
+  ['resume_568',['resume',['../classbasic__task.html#ad38fa5e405a600b37d7d3c56b4a28b77',1,'basic_task::resume()'],['../classbasic__task.html#a0a483fb512b759774200fbd607ca46eb',1,'basic_task::resume(basic_task *t)']]],
+  ['resume_5fscheduler_569',['resume_scheduler',['../classbasic__critical.html#a93a824e8b785e09d066c2b340210144d',1,'basic_critical']]],
+  ['runcorostub_570',['runcorostub',['../classbasic__tasklet.html#afbc143bdcd04b147b79e5630279cbd66',1,'basic_tasklet']]],
+  ['running_571',['running',['../classbasic__work__queue.html#a65b3393ceb232d9c4ac9975181172da6',1,'basic_work_queue']]],
+  ['runtaskstub_572',['runtaskstub',['../classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020',1,'basic_task']]],
+  ['runtimerstub_573',['runtimerstub',['../classbasic__timer.html#ac9e7275da649a9552857b765799ea69c',1,'basic_timer']]]
 ];

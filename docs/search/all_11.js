@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['seconds_5fto_5fticks_293',['seconds_to_ticks',['../mn__micros_8hpp.html#ad6abbe9b7d00cca6e5d54a4596ea2b44',1,'seconds_to_ticks(unsigned int ms):&#160;mn_micros.cpp'],['../mn__micros_8cpp.html#a894568cb5a61a0b2e9902b900b4d159e',1,'seconds_to_ticks(unsigned int sec):&#160;mn_micros.cpp']]],
-  ['set_5finitial_5fcount_294',['set_initial_count',['../classbasic__counting__semaphore.html#a58b492e8d8f0c3718ce5c765c2865278',1,'basic_counting_semaphore']]],
-  ['set_5fmax_5fcount_295',['set_max_count',['../classbasic__counting__semaphore.html#a067b3d9069e57dfcc11f78b36ef212ed',1,'basic_counting_semaphore']]],
-  ['set_5fperiod_296',['set_period',['../classbasic__timer.html#a967b5d33276759732ee0ef468b04e653',1,'basic_timer']]],
-  ['setpriority_297',['setPriority',['../classbasic__thread.html#af0d163f7f919c9cc5c22892679e9544a',1,'basic_thread']]],
-  ['sheduler_5flock_5ft_298',['sheduler_lock_t',['../mn__critical_8hpp.html#a4b9b5e17646370caa4005a3c6495b5b9',1,'mn_critical.hpp']]],
-  ['single_5fengine_5fworkqueue_5ft_299',['single_engine_workqueue_t',['../mn__workqueue__single_8hpp.html#ab8ae11224d98dcfe741c17eee067d884',1,'mn_workqueue_single.hpp']]],
-  ['sleep_300',['sleep',['../classbasic__thread.html#a6341bd2c7ece9f691af8a61b122a72b7',1,'basic_thread']]],
-  ['stop_5fscheduler_301',['stop_scheduler',['../classbasic__critical.html#aaa34ce4d2463f97510899085b14db148',1,'basic_critical']]],
-  ['suspend_302',['suspend',['../classbasic__thread.html#a1dd5d2e2d2884bbf199726b3d252e6fb',1,'basic_thread::suspend()'],['../classbasic__thread.html#a03886abbdec8e0c769460b810d430da8',1,'basic_thread::suspend(basic_thread *t)']]]
+  ['readme_2emd_325',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['recursive_5fmutex_326',['recursive_mutex',['../classrecursive__mutex.html',1,'recursive_mutex'],['../classrecursive__mutex.html#a1a208c1e6122fda628bdba8e3230edef',1,'recursive_mutex::recursive_mutex()']]],
+  ['remutex_5ft_327',['remutex_t',['../mn__recursive__mutex_8hpp.html#a84d2861dec617ce59f255ec231804faa',1,'mn_recursive_mutex.hpp']]],
+  ['reset_328',['reset',['../classbasic__timer.html#a19709a0934e3bc4d4f2aa3b83d655914',1,'basic_timer']]],
+  ['resume_329',['resume',['../classbasic__task.html#ad38fa5e405a600b37d7d3c56b4a28b77',1,'basic_task::resume()'],['../classbasic__task.html#a0a483fb512b759774200fbd607ca46eb',1,'basic_task::resume(basic_task *t)']]],
+  ['resume_5fscheduler_330',['resume_scheduler',['../classbasic__critical.html#a93a824e8b785e09d066c2b340210144d',1,'basic_critical']]],
+  ['runcorostub_331',['runcorostub',['../classbasic__tasklet.html#afbc143bdcd04b147b79e5630279cbd66',1,'basic_tasklet']]],
+  ['running_332',['running',['../classbasic__work__queue.html#a65b3393ceb232d9c4ac9975181172da6',1,'basic_work_queue']]],
+  ['runtaskstub_333',['runtaskstub',['../classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020',1,'basic_task']]],
+  ['runtimerstub_334',['runtimerstub',['../classbasic__timer.html#ac9e7275da649a9552857b765799ea69c',1,'basic_timer']]]
 ];

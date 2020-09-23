@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['work_5fqueue_5fthread_592',['work_queue_thread',['../classbasic__work__queue.html#ac7bd8d9889246d4c720c06f2f4ef8ac2',1,'basic_work_queue']]]
+  ['work_5fqueue_5ftask_700',['work_queue_task',['../classbasic__work__queue.html#a30898e8e19a81bf45c4a22cd80491d88',1,'basic_work_queue']]]
 ];

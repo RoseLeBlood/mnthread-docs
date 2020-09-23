@@ -1,11 +1,24 @@
 var searchData=
 [
-  ['can_5fdelete_31',['can_delete',['../classwork__queue__item.html#a37d4994d802bcd635bf16fe0c7126274',1,'work_queue_item']]],
-  ['changelog_2emd_32',['ChangeLog.md',['../_change_log_8md.html',1,'']]],
-  ['clear_33',['clear',['../classbasic__blocking__queue.html#ac591d63b18c4d69ac3e6217f23521449',1,'basic_blocking_queue::clear()'],['../classbasic__queue.html#accb6761ca56187d84f96bf8f485614c6',1,'basic_queue::clear()']]],
-  ['counting_5fsemaphore_5ft_34',['counting_semaphore_t',['../mn__semaphore_8hpp.html#a6145ebc3b28f55822453c88028580a8b',1,'mn_semaphore.hpp']]],
-  ['create_35',['create',['../classbasic__mutex.html#a9012d8b56fc21f0370c9f36f9e6e20c6',1,'basic_mutex::create()'],['../classrecursive__mutex.html#ac6c274b2545f2344263436168cefd0ea',1,'recursive_mutex::create()'],['../classbasic__counting__semaphore.html#a0f933048f021dfbc4e6bcad39dfbd3ff',1,'basic_counting_semaphore::create()'],['../classbasic__binary__semaphore.html#adeb909ebfc1b7014556736c2da911016',1,'basic_binary_semaphore::create()'],['../classbasic__tasklet.html#af5adf1c78656ba1410b2d6ca23b01aeb',1,'basic_tasklet::create()'],['../classbasic__thread.html#a3e6015c1f41f5ae5025a05e9d293d6a6',1,'basic_thread::create()'],['../classforeign__thread.html#a29332b358b593b2b4b70919d716487a8',1,'foreign_thread::create()'],['../classbasic__timer.html#a7db3a5c1cff6049de411f00630dde69f',1,'basic_timer::create()'],['../classbasic__blocking__queue.html#a01d2a5709b71b5f0f63c63d97debfd88',1,'basic_blocking_queue::create()'],['../classbasic__queue.html#a77b73b001e620c27e33ed28e87ae7d59',1,'basic_queue::create()'],['../classbasic__work__queue.html#adbc4257c8c917d020578b3133320cfc0',1,'basic_work_queue::create()']]],
-  ['critical_5flock_5ft_36',['critical_lock_t',['../mn__critical_8hpp.html#a49de65e5f1e5aeb2dda447bcd1daa5a2',1,'mn_critical.hpp']]],
-  ['critical_5ft_37',['critical_t',['../mn__critical_8hpp.html#a3a0f9da8825f3ff52f60f0984e53180f',1,'mn_critical.hpp']]],
-  ['changelog_38',['Changelog',['../md__home_ambersophia__dokumente_git_mnthread__change_log.html',1,'']]]
+  ['basic_5fautolock_12',['basic_autolock',['../classbasic__autolock.html',1,'basic_autolock&lt; LOCK &gt;'],['../classbasic__autolock.html#aea4fc713418e790a4d78386291417fbd',1,'basic_autolock::basic_autolock(LOCK &amp;m)'],['../classbasic__autolock.html#a4aac086ccd0f9868785e0af42f15e11b',1,'basic_autolock::basic_autolock(const basic_autolock &amp;)=delete']]],
+  ['basic_5fbinary_5fsemaphore_13',['basic_binary_semaphore',['../classbasic__binary__semaphore.html',1,'basic_binary_semaphore'],['../classbasic__binary__semaphore.html#a5faa66db7e0d437259a578dfe418f324',1,'basic_binary_semaphore::basic_binary_semaphore()']]],
+  ['basic_5fbinaryqueue_14',['basic_binaryqueue',['../classbasic__binaryqueue.html',1,'basic_binaryqueue'],['../classbasic__binaryqueue.html#a3d73296d7b9e777c543a2d12bdbd9988',1,'basic_binaryqueue::basic_binaryqueue()']]],
+  ['basic_5fcounting_5fsemaphore_15',['basic_counting_semaphore',['../classbasic__counting__semaphore.html',1,'basic_counting_semaphore'],['../classbasic__counting__semaphore.html#a71785d3fd74ae1a9b7bb6744d5d57b87',1,'basic_counting_semaphore::basic_counting_semaphore()']]],
+  ['basic_5fcritical_16',['basic_critical',['../classbasic__critical.html',1,'']]],
+  ['basic_5fcritical_5flock_17',['basic_critical_lock',['../classbasic__critical__lock.html',1,'basic_critical_lock'],['../classbasic__critical__lock.html#adbf08b0b59c7545b4abe1c36014d1aca',1,'basic_critical_lock::basic_critical_lock()']]],
+  ['basic_5fdeque_18',['basic_deque',['../classbasic__deque.html',1,'basic_deque'],['../classbasic__deque.html#ac76a6e291eda0652f102558cc1c1db49',1,'basic_deque::basic_deque()']]],
+  ['basic_5fevent_5fgroup_19',['basic_event_group',['../classbasic__event__group.html',1,'basic_event_group'],['../classbasic__event__group.html#a855c2fd719bcfa5a557007846c0862c0',1,'basic_event_group::basic_event_group()'],['../classbasic__event__group.html#a9a902405d57923f38b6d330206b85b7d',1,'basic_event_group::basic_event_group(EventGroupHandle_t handle)']]],
+  ['basic_5finterrupts_5flock_20',['basic_interrupts_lock',['../classbasic__interrupts__lock.html',1,'']]],
+  ['basic_5fmutex_21',['basic_mutex',['../classbasic__mutex.html',1,'basic_mutex'],['../classbasic__mutex.html#acc3a5577a5cdf41e7344fd7ecbeab740',1,'basic_mutex::basic_mutex()']]],
+  ['basic_5fqueue_22',['basic_queue',['../classbasic__queue.html',1,'basic_queue'],['../classbasic__queue.html#adefd73c1a9998631fe62aac76070ae72',1,'basic_queue::basic_queue()']]],
+  ['basic_5fscheduler_5flock_23',['basic_scheduler_lock',['../classbasic__scheduler__lock.html',1,'']]],
+  ['basic_5fsemaphore_24',['basic_semaphore',['../classbasic__semaphore.html',1,'basic_semaphore'],['../classbasic__semaphore.html#a44d78db5e0248847bda2e8ae7dbc556d',1,'basic_semaphore::basic_semaphore()']]],
+  ['basic_5ftask_25',['basic_task',['../classbasic__task.html',1,'basic_task'],['../classbasic__task.html#a4871a116a5e13cc5e489226b8b10ab24',1,'basic_task::basic_task()'],['../classbasic__task.html#a5f8ec7c2f8e063a310565909cf2e44aa',1,'basic_task::basic_task(char const *strName, basic_task::priority uiPriority, unsigned short usStackDepth=configMINIMAL_STACK_SIZE)']]],
+  ['basic_5ftasklet_26',['basic_tasklet',['../classbasic__tasklet.html',1,'']]],
+  ['basic_5ftimer_27',['basic_timer',['../classbasic__timer.html',1,'basic_timer'],['../classbasic__timer.html#a898ff7329857cdf3b62a7b4957dae3c5',1,'basic_timer::basic_timer()']]],
+  ['basic_5fwork_5fqueue_28',['basic_work_queue',['../classbasic__work__queue.html',1,'basic_work_queue'],['../classbasic__work__queue.html#a051b2af665036b9702c104b5d8b8801e',1,'basic_work_queue::basic_work_queue()']]],
+  ['basic_5fwork_5fqueue_5fmulti_29',['basic_work_queue_multi',['../classbasic__work__queue__multi.html',1,'basic_work_queue_multi'],['../classbasic__work__queue__multi.html#a33ea125bbcba22ced1e521b2d6b4e54c',1,'basic_work_queue_multi::basic_work_queue_multi()']]],
+  ['basic_5fwork_5fqueue_5fsingle_30',['basic_work_queue_single',['../classbasic__work__queue__single.html',1,'basic_work_queue_single'],['../classbasic__work__queue__single.html#a43dfa467f29d1ebf69134ac5337975f6',1,'basic_work_queue_single::basic_work_queue_single()']]],
+  ['binary_5fsemaphore_5ft_31',['binary_semaphore_t',['../mn__binary__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4',1,'mn_binary_semaphore.hpp']]],
+  ['binaryqueue_5ft_32',['binaryqueue_t',['../mn__binaryqueue_8hpp.html#ae6975bc3859d577bfe0b7f34cd4ee02d',1,'mn_binaryqueue.hpp']]]
 ];
