@@ -286,17 +286,19 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba1fc391ba1271a61a60a4d9736dd68797"></a>PriorityIdle&#160;</td><td class="fielddoc"><p>no Real Time operation - idle task </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba1fc391ba1271a61a60a4d9736dd68797"></a>PriorityIdle&#160;</td><td class="fielddoc"><p>Priority for no real time operations - idle task </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dbade8060934d22a5f3dc50d0e5e77f672f"></a>PriorityLow&#160;</td><td class="fielddoc"><p>No critical operation </p>
+<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dbade8060934d22a5f3dc50d0e5e77f672f"></a>PriorityLow&#160;</td><td class="fielddoc"><p>Priority for low operation <br  />
+ </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba91dec2766fd6eeccd15a046567bb65ec"></a>PriorityNormal&#160;</td><td class="fielddoc"><p>Normal user programm </p>
+<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba91dec2766fd6eeccd15a046567bb65ec"></a>PriorityNormal&#160;</td><td class="fielddoc"><p>Priority for tasks for normal operatins - user interfaces for example </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba96418e4d6f309855ea7e34cce01f420d"></a>PriorityHalfCritical&#160;</td><td class="fielddoc"><p>Half critical, this task have deadlines - not a lot of processings </p>
+<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba96418e4d6f309855ea7e34cce01f420d"></a>PriorityHalfCritical&#160;</td><td class="fielddoc"><p>Priority for tasks with normal deadlines and not a lot of processings </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba49e0851c93729159d60d43816a08328b"></a>PriorityUrgent&#160;</td><td class="fielddoc"><p>Urgent critical, this task have short deadlines and a lot of processings </p>
+<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba49e0851c93729159d60d43816a08328b"></a>PriorityUrgent&#160;</td><td class="fielddoc"><p>priority for tasks with short deadlines and a lot of processings </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba27aec4e8c8d79efebc32815e904d9efa"></a>PriorityCritical&#160;</td><td class="fielddoc"><p>Critical, the highest priority </p>
+<tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba27aec4e8c8d79efebc32815e904d9efa"></a>PriorityCritical&#160;</td><td class="fielddoc"><p>Priority for critical tasks - the highest priority <br  />
+ </p>
 </td></tr>
 </table>
 
@@ -333,6 +335,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">basic_task::basic_task </td>
@@ -358,6 +363,11 @@ Protected Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Constructor for this task.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -545,10 +555,10 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph.png" border="0" usemap="#aclassbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph" alt=""/></div>
-<map name="classbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph" id="classbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph">
-<area shape="rect" title=" " alt="" coords="219,31,389,57"/>
-<area shape="rect" href="classtask__utils.html#a91745adf24cac7afa6d31045f18722d4" title=" " alt="" coords="23,5,153,32"/>
-<area shape="rect" href="classtask__utils.html#a8c3cf854f51ac4cc278bc25f8328bd5e" title=" " alt="" coords="5,56,171,83"/>
+<map name="classbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph" id="aclassbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph">
+<area shape="rect" title=" " alt="" coords="184,35,355,61"/>
+<area shape="rect" href="classtask__utils.html#a91745adf24cac7afa6d31045f18722d4" title=" " alt="" coords="5,5,136,32"/>
+<area shape="rect" href="classtask__utils.html#adf087a38d85753ea6999287139efc4a4" title=" " alt="" coords="5,57,136,98"/>
 </map>
 </div>
 

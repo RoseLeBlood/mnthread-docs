@@ -29,11 +29,30 @@ var files_dup =
     [ "mn_eventgroup.hpp", "mn__eventgroup_8hpp.html", "mn__eventgroup_8hpp" ],
     [ "mn_foreign_task.cpp", "mn__foreign__task_8cpp.html", null ],
     [ "mn_foreign_task.hpp", "mn__foreign__task_8hpp.html", "mn__foreign__task_8hpp" ],
+    [ "mn_free_list_mempool.cpp", "mn__free__list__mempool_8cpp.html", null ],
+    [ "mn_free_list_mempool.hpp", "mn__free__list__mempool_8hpp.html", [
+      [ "basic_free_list_mempool", "classbasic__free__list__mempool.html", "classbasic__free__list__mempool" ],
+      [ "memObject", "classbasic__free__list__mempool.html#structbasic__free__list__mempool_1_1mem_object", null ],
+      [ "memObject.__unnamed__", "classbasic__free__list__mempool.html#unionbasic__free__list__mempool_1_1mem_object_8____unnamed____", [
+        [ "raw_memObject", "classbasic__free__list__mempool.html#a3dcab710a13eef11be91dd98322abc2e", null ]
+      ] ],
+      [ "memObject.__unnamed__.__unnamed__", "classbasic__free__list__mempool.html#structbasic__free__list__mempool_1_1mem_object_8____unnamed_____8____unnamed____", [
+        [ "blockAvaible", "classbasic__free__list__mempool.html#a1a5a2885b47ff9e2206d4d208d3a0554", null ],
+        [ "guardEnd", "classbasic__free__list__mempool.html#aae69384044540c454a8d1c5c39093d45", null ],
+        [ "guardStart", "classbasic__free__list__mempool.html#a2ec2d39167982d03fbcb342752f5f14a", null ],
+        [ "memBlock", "classbasic__free__list__mempool.html#ac0bc9c54d15f14fab484c887e3ea00d3", null ],
+        [ "sizeofBlock", "classbasic__free__list__mempool.html#aadce36f957f8d6d5defa3a941dbc9fe2", null ]
+      ] ]
+    ] ],
     [ "mn_lock.hpp", "mn__lock_8hpp.html", [
       [ "ILockObject", "class_i_lock_object.html", "class_i_lock_object" ]
     ] ],
     [ "mn_memory.cpp", "mn__memory_8cpp.html", null ],
     [ "mn_memory.hpp", "mn__memory_8hpp.html", null ],
+    [ "mn_mempool.hpp", "mn__mempool_8hpp.html", [
+      [ "IMemPool", "class_i_mem_pool.html", "class_i_mem_pool" ]
+    ] ],
+    [ "mn_mempool_object.hpp", "mn__mempool__object_8hpp.html", "mn__mempool__object_8hpp" ],
     [ "mn_micros.cpp", "mn__micros_8cpp.html", "mn__micros_8cpp" ],
     [ "mn_micros.hpp", "mn__micros_8hpp.html", "mn__micros_8hpp" ],
     [ "mn_mutex.cpp", "mn__mutex_8cpp.html", null ],

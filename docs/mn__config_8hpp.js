@@ -1,8 +1,10 @@
 var mn__config_8hpp =
 [
     [ "configMAX_PRIORITIES", "mn__config_8hpp.html#a9a78f5ac61e6cb172dadf2a51f11db38", null ],
+    [ "MN_THREAD_BETA_MAJOR_VERSION", "mn__config_8hpp.html#ac6cfeea38445d3d7feba1e9be92aed9b", null ],
+    [ "MN_THREAD_BETA_MINOR_VERSION", "mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e", null ],
+    [ "MN_THREAD_BETA_VERSION_STRING", "mn__config_8hpp.html#a1d73a768413a6a1c5590b7733c78a43d", null ],
     [ "MN_THREAD_CONFIG_BINARY_SEMAPHORE", "mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115", null ],
-    [ "MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT", "mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b", null ],
     [ "MN_THREAD_CONFIG_CORE_IFNO", "mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee", null ],
     [ "MN_THREAD_CONFIG_CORE_MAX", "mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9", null ],
     [ "MN_THREAD_CONFIG_CORE_ONE", "mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950", null ],
@@ -22,7 +24,9 @@ var mn__config_8hpp =
     [ "MN_THREAD_CONFIG_LOCK_TYPE", "mn__config_8hpp.html#af75f0ad7789180411059976192486e4e", null ],
     [ "MN_THREAD_CONFIG_MUTEX", "mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c", null ],
     [ "MN_THREAD_CONFIG_NO", "mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c", null ],
+    [ "MN_THREAD_CONFIG_PREVIEW_FUTURE", "mn__config_8hpp.html#a9d7f3f8fbd6ff30ad21aabae00922caa", null ],
     [ "MN_THREAD_CONFIG_RECURSIVE_MUTEX", "mn__config_8hpp.html#aa5a1390a78543d9807e3dc1f9c650f4a", null ],
+    [ "MN_THREAD_CONFIG_RECURSIVE_MUTEX_CHEAKING", "mn__config_8hpp.html#a088badaa2d25119018451eb7a7068bf6", null ],
     [ "MN_THREAD_CONFIG_TIMEOUT_COROUTINE_DEFAULT", "mn__config_8hpp.html#afa89a82b841c0c8e4c5eb3c9dd60c20d", null ],
     [ "MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT", "mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4", null ],
     [ "MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT", "mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725", null ],
@@ -39,7 +43,5 @@ var mn__config_8hpp =
     [ "MN_THREAD_DEBUG_VERSION", "mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c", null ],
     [ "MN_THREAD_MAJOR_VERSION", "mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90", null ],
     [ "MN_THREAD_MINOR_VERSION", "mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0", null ],
-    [ "tt", "mn__config_8hpp.html#a32bf0e6fcff51e53bd74e70ba1d622b2", [
-      [ "test", "mn__config_8hpp.html#a32bf0e6fcff51e53bd74e70ba1d622b2aae2f19441a178e2c152715fa0c180253", null ]
-    ] ]
+    [ "MN_THREAD_VERSION_STRING", "mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab", null ]
 ];

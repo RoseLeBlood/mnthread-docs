@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
-    [ "Mini Thread 1.61 (2.0.0 preview)", "index.html", [
+    [ "Mini Thread 1.90-beta2.0 (2.0.0 preview)", "index.html", [
       [ "Simple Example", "index.html#autotoc_md19", null ],
       [ "TODO's for Version 2.0", "index.html#autotoc_md20", null ],
       [ "ChangeLog", "index.html#autotoc_md21", null ],
@@ -73,8 +73,6 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -84,8 +82,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classrecursive__mutex.html",
-"mn__micros_8cpp.html#a2bd5b9348154dbb586c0c9c2a9fca07b"
+"classbasic__work__queue__multi.html#a97c717fe45a4feedb6382fd1c7d38605",
+"mn__error_8hpp.html#a7efeb331a9e03ae29f5ed8b678029743"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
