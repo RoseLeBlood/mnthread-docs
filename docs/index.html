@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </ul>
 <p>For more detailed information about the library, please refer to the library documentation (<a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a>) and Examples you find in the extra repository: <a href="https://github.com/RoseLeBlood/mnthread-examples">mnthread-examples</a></p>
 <p>The license that applies to the library is the LGPL.The license texts of these licenses can be found in the files <a class="el" href="md__home_ambersophia__dokumente_git_mnthread__l_i_c_e_n_s_e.html">LICENSE</a> of the source code archive.</p>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Simple Example</h1>
 <div class="fragment"><div class="line"><span class="comment">//simple_example.cpp</span></div>
 <div class="line"> </div>
@@ -155,19 +155,38 @@ Simple Example</h1>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a>();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md20"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md22"></a>
 TODO's for Version 2.0</h1>
 <ul>
 <li>[X] Add event group class</li>
-<li>[X] Add timer and other usefull FreeRTOS Wrapper (50%)</li>
-<li>[X] Completed the documentation</li>
-<li>[ ] Write more examles (after 1.9 complited )</li>
-<li>[X] add a Workqueues</li>
-<li>[ ] add Memory Manager class</li>
+<li>[X] Add timer, events and other usefull FreeRTOS Wrapper<ul>
+<li>[X] timer</li>
+<li>[ ] events</li>
+<li>[ ] coroutine</li>
+<li>[ ] MPU tasks???</li>
+<li>[ ] ...</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md21"></a>
+</li>
+<li>[X] Completed the documentation</li>
+<li>[ ] Write more examles (after 1.9 ready )</li>
+<li>[X] add a Workqueues</li>
+<li>[X] add Memory Manager class</li>
+<li>[ ] uxTaskGetStackHighWaterMark add to task class<ul>
+<li>[ ] get stackpointer and other things</li>
+</ul>
+</li>
+<li>[ ] task Local Storage</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md23"></a>
+New Value Added</h2>
+<ul>
+<li>In Timers, add OnStop / OnStart / mutex sync with these methods?</li>
+<li>Priority queues</li>
+<li>Tick Hooks - option to round robin hooks, one per tick</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md24"></a>
 ChangeLog</h1>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md25"></a>
 Version 1.9.0 September 2020: (stable 2.0beta)</h1>
 <ul>
 <li>add a eventgroup wrapper</li>
@@ -182,14 +201,14 @@ Version 1.9.0 September 2020: (stable 2.0beta)</h1>
 <li>Strip semaphore classes</li>
 <li>add <a class="el" href="classtask__utils.html">task_utils</a> class for notify</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<h1><a class="anchor" id="autotoc_md26"></a>
 Version 1.71 September 2020: (unstable 2.0beta)</h1>
 <ul>
 <li>add single and multi threaded worcking queues (<a class="el" href="classbasic__work__queue__single.html">basic_work_queue_single</a> &amp; <a class="el" href="classbasic__work__queue__multi.html">basic_work_queue_multi</a>) (TODO Optional add a Workqueues ) and add configand error defines, with doku</li>
 <li>remove bugs and errors</li>
 <li>This is the preview version of 2.0.0</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 Version 1.60 September 2020: (unstable nightly)</h1>
 <ul>
 <li>add Work queue support (<a class="el" href="classbasic__work__queue.html">basic_work_queue</a>) <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> pull <a class="el" href="classwork__queue__item.html">work_queue_item</a> off of a FIFO queue and run them sequentially. <br  />
@@ -212,7 +231,7 @@ Version 1.60 September 2020: (unstable nightly)</h1>
 <li><a class="el" href="classbasic__mutex.html">basic_mutex</a> extends <a class="el" href="classbasic__semaphore.html">basic_semaphore</a></li>
 <li>add foreign_thread for mini Thread foregin thread and current Thread handling</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md25"></a>
+<h1><a class="anchor" id="autotoc_md28"></a>
 Version 1.54 September 2020: (unstable)</h1>
 <ul>
 <li>Documentation ready</li>
@@ -225,11 +244,11 @@ Version 1.54 September 2020: (unstable)</h1>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassbasic__task_html_a3cc1be96e00f9b1b3a4c5163350d9bed"><div class="ttname"><a href="classbasic__task.html#a3cc1be96e00f9b1b3a4c5163350d9bed">basic_task::get_on_core</a></div><div class="ttdeci">uint32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:151</div></div>
+<div class="ttc" id="aclassbasic__task_html_a3cc1be96e00f9b1b3a4c5163350d9bed"><div class="ttname"><a href="classbasic__task.html#a3cc1be96e00f9b1b3a4c5163350d9bed">basic_task::get_on_core</a></div><div class="ttdeci">uint32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:187</div></div>
 <div class="ttc" id="amini_thread_8hpp_html"><div class="ttname"><a href="mini_thread_8hpp.html">miniThread.hpp</a></div></div>
-<div class="ttc" id="aclassbasic__task_html_aeb34fa159de4292b4a2234863c106c3e"><div class="ttname"><a href="classbasic__task.html#aeb34fa159de4292b4a2234863c106c3e">basic_task::get_id</a></div><div class="ttdeci">uint32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:147</div></div>
+<div class="ttc" id="aclassbasic__task_html_aeb34fa159de4292b4a2234863c106c3e"><div class="ttname"><a href="classbasic__task.html#aeb34fa159de4292b4a2234863c106c3e">basic_task::get_id</a></div><div class="ttdeci">uint32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:179</div></div>
 <div class="ttc" id="aclassbasic__task_html_abbae529ca159f9c3a5ebd6c951ba44c9"><div class="ttname"><a href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9">basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()=0</div></div>
-<div class="ttc" id="amini_thread_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> miniThread.cpp:21</div></div>
+<div class="ttc" id="amini_thread_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> miniThread.cpp:24</div></div>
 <div class="ttc" id="aclassbasic__task_html"><div class="ttname"><a href="classbasic__task.html">basic_task</a></div><div class="ttdef"><b>Definition:</b> mn_task.hpp:39</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

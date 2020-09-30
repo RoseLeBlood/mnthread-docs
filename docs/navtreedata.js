@@ -26,31 +26,34 @@ var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
     [ "Mini Thread 1.90-beta2.0 (2.0.0 preview)", "index.html", [
-      [ "Simple Example", "index.html#autotoc_md19", null ],
-      [ "TODO's for Version 2.0", "index.html#autotoc_md20", null ],
-      [ "ChangeLog", "index.html#autotoc_md21", null ],
-      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "index.html#autotoc_md22", null ],
-      [ "Version 1.71 September 2020: (unstable 2.0beta)", "index.html#autotoc_md23", null ],
-      [ "Version 1.60 September 2020: (unstable nightly)", "index.html#autotoc_md24", null ],
-      [ "Version 1.54 September 2020: (unstable)", "index.html#autotoc_md25", null ]
+      [ "Simple Example", "index.html#autotoc_md21", null ],
+      [ "TODO's for Version 2.0", "index.html#autotoc_md22", [
+        [ "New Value Added", "index.html#autotoc_md23", null ]
+      ] ],
+      [ "ChangeLog", "index.html#autotoc_md24", null ],
+      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "index.html#autotoc_md25", null ],
+      [ "Version 1.71 September 2020: (unstable 2.0beta)", "index.html#autotoc_md26", null ],
+      [ "Version 1.60 September 2020: (unstable nightly)", "index.html#autotoc_md27", null ],
+      [ "Version 1.54 September 2020: (unstable)", "index.html#autotoc_md28", null ]
     ] ],
     [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", [
-      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
-      [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md2", null ],
-      [ "Version 1.60 September 2020: (unstable nightly)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md3", null ],
-      [ "Version 1.54 September 2020: (unstable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md4", null ],
-      [ "Version 1.53 September 2020:", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md5", null ],
-      [ "Version 1.43 September 2020:  (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md6", null ],
-      [ "Version 1.42 August 2020: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md7", null ],
-      [ "Version 1.4 August 2020: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md8", null ],
-      [ "Version 1.2 August 2020: (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md9", null ],
-      [ "Version 1.0.62 Mai 2020:  (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md10", null ],
-      [ "Version 1.0.60 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md11", null ],
-      [ "Version 1.0.5 November 2018: (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md12", null ],
-      [ "Version 0.9.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md13", null ],
-      [ "Version 0.8.31 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md14", null ],
-      [ "Version 0.8.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md15", null ],
-      [ "Version 0.8.2, November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md16", null ]
+      [ "Version 1.9.1 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
+      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md2", null ],
+      [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md3", null ],
+      [ "Version 1.60 September 2020: (unstable nightly)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md4", null ],
+      [ "Version 1.54 September 2020: (unstable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md5", null ],
+      [ "Version 1.53 September 2020:", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md6", null ],
+      [ "Version 1.43 September 2020:  (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md7", null ],
+      [ "Version 1.42 August 2020: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md8", null ],
+      [ "Version 1.4 August 2020: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md9", null ],
+      [ "Version 1.2 August 2020: (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md10", null ],
+      [ "Version 1.0.62 Mai 2020:  (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md11", null ],
+      [ "Version 1.0.60 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md12", null ],
+      [ "Version 1.0.5 November 2018: (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md13", null ],
+      [ "Version 0.9.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md14", null ],
+      [ "Version 0.8.31 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md15", null ],
+      [ "Version 0.8.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md16", null ],
+      [ "Version 0.8.2, November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md17", null ]
     ] ],
     [ "LICENSE", "md__home_ambersophia__dokumente_git_mnthread__l_i_c_e_n_s_e.html", null ],
     [ "Classes", "annotated.html", [
@@ -59,8 +62,9 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
@@ -82,8 +86,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classbasic__work__queue__multi.html#a97c717fe45a4feedb6382fd1c7d38605",
-"mn__error_8hpp.html#a7efeb331a9e03ae29f5ed8b678029743"
+"classbasic__timer.html#a0281675d18c6e8b618f6a6a37e128f55",
+"mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b",
+"mn__workqueue__multi_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

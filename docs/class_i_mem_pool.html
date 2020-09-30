@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('class_i_mem_pool.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_i_mem_pool-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IMemPool Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -121,23 +122,70 @@ Inheritance diagram for IMemPool:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_mem_pool__inherit__graph.png" border="0" usemap="#a_i_mem_pool_inherit__map" alt="Inheritance graph"/></div>
 <map name="_i_mem_pool_inherit__map" id="a_i_mem_pool_inherit__map">
-<area shape="rect" title=" " alt="" coords="55,5,141,32"/>
-<area shape="rect" href="classbasic__free__list__mempool.html" title=" " alt="" coords="5,80,191,107"/>
+<area shape="rect" title=" " alt="" coords="154,5,241,32"/>
+<area shape="rect" href="classbasic__bitmap__mempool.html" title=" " alt="" coords="5,80,184,107"/>
+<area shape="rect" href="classbasic__free__list__mempool.html" title=" " alt="" coords="209,80,394,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4e555bc95004c586457b8eb44fee17cd"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_mem_pool.html#a4e555bc95004c586457b8eb44fee17cd">allocate</a> (unsigned int size)=0</td></tr>
-<tr class="separator:a4e555bc95004c586457b8eb44fee17cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0686319f9a0ef2d29826993f151536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_mem_pool.html#aeb0686319f9a0ef2d29826993f151536">IMemPool</a> (unsigned int nItemSize, unsigned int nElements)</td></tr>
+<tr class="separator:aeb0686319f9a0ef2d29826993f151536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec78d882bf806196a3a99b0f1846ba28"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_mem_pool.html#aec78d882bf806196a3a99b0f1846ba28">allocate</a> ()=0</td></tr>
+<tr class="separator:aec78d882bf806196a3a99b0f1846ba28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ffdadcfe73dfee1dadd9f568009c26"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_mem_pool.html#ad8ffdadcfe73dfee1dadd9f568009c26">free</a> (void *mem)=0</td></tr>
 <tr class="separator:ad8ffdadcfe73dfee1dadd9f568009c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab51ade67c0bda598e7a9f9420193ca1d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_mem_pool.html#ab51ade67c0bda598e7a9f9420193ca1d">m_uiItemSize</a></td></tr>
+<tr class="separator:ab51ade67c0bda598e7a9f9420193ca1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24961bab9c31e006bdc29e4124272407"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_mem_pool.html#a24961bab9c31e006bdc29e4124272407">m_uiElements</a></td></tr>
+<tr class="separator:a24961bab9c31e006bdc29e4124272407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface for all mempools in this library This is an abstract base class. To use this, you need to subclass it. All of your MemPools should be derived from the <a class="el" href="class_i_lock_object.html">ILockObject</a> class. Then implement the virtual lock, unlock and is_initialized functions. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4e555bc95004c586457b8eb44fee17cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e555bc95004c586457b8eb44fee17cd">&#9670;&nbsp;</a></span>allocate()</h2>
+<div class="textblock"><p>Interface for all mempools in this library This is an abstract base class. To use this, you need to subclass it. All of your MemPools should be derived from the <a class="el" href="class_i_lock_object.html">ILockObject</a> class. Then implement the virtual allocate and free functions. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aeb0686319f9a0ef2d29826993f151536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0686319f9a0ef2d29826993f151536">&#9670;&nbsp;</a></span>IMemPool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMemPool::IMemPool </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nItemSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nElements</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec78d882bf806196a3a99b0f1846ba28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec78d882bf806196a3a99b0f1846ba28">&#9670;&nbsp;</a></span>allocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,8 +196,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void* IMemPool::allocate </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -161,7 +208,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Allocate an item from the pool. </p><dl class="section return"><dt>Returns</dt><dd>Pointer of the memory or NULL if the pool is empty. </dd></dl>
 
-<p>Implemented in <a class="el" href="classbasic__free__list__mempool.html#a4612921648e21c5cc0cded510f0dfec0">basic_free_list_mempool</a>.</p>
+<p>Implemented in <a class="el" href="classbasic__free__list__mempool.html#a62f21826aa781d3522b5e062b3961b2e">basic_free_list_mempool</a>.</p>
 
 </div>
 </div>
@@ -193,6 +240,51 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if The item back to it's pool, false If not </dd></dl>
 
 <p>Implemented in <a class="el" href="classbasic__free__list__mempool.html#ada345cf489f3e821a5ba53f344442929">basic_free_list_mempool</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a24961bab9c31e006bdc29e4124272407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24961bab9c31e006bdc29e4124272407">&#9670;&nbsp;</a></span>m_uiElements</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int IMemPool::m_uiElements</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab51ade67c0bda598e7a9f9420193ca1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51ade67c0bda598e7a9f9420193ca1d">&#9670;&nbsp;</a></span>m_uiItemSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int IMemPool::m_uiItemSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

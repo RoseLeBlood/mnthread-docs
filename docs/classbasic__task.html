@@ -156,13 +156,27 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ae231306af1c1b0a9aead2fe7842e58db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23e8cb172e37ec41a5ee7dfe65b1cab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1cab">state</a> { <br />
+&#160;&#160;<a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1caba060308af23f7ac539f364a91b999d8ac">StateRunning</a> = 0, 
+<a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1caba224e452dcecb7b9f1e91634586de3d02">StateReady</a>, 
+<a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1cabada48af50a37ad410979bba693247efca">StateBlocked</a>, 
+<a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1caba4bd17819273e412e99886e6089a72265">StateSuspended</a>, 
+<br />
+&#160;&#160;<a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1caba2bca1037a89b6cc0a1b0db72382f54b7">StateDeleted</a>
+<br />
+ }</td></tr>
+<tr class="separator:ab23e8cb172e37ec41a5ee7dfe65b1cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4871a116a5e13cc5e489226b8b10ab24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a4871a116a5e13cc5e489226b8b10ab24">basic_task</a> ()</td></tr>
 <tr class="separator:a4871a116a5e13cc5e489226b8b10ab24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f8ec7c2f8e063a310565909cf2e44aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a5f8ec7c2f8e063a310565909cf2e44aa">basic_task</a> (char const *strName, <a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a> uiPriority, unsigned short usStackDepth=configMINIMAL_STACK_SIZE)</td></tr>
-<tr class="separator:a5f8ec7c2f8e063a310565909cf2e44aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201aed0109c90e93695741b9232d4fec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a201aed0109c90e93695741b9232d4fec">basic_task</a> (char const *strName, <a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a> uiPriority=<a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba91dec2766fd6eeccd15a046567bb65ec">PriorityNormal</a>, unsigned short usStackDepth=<a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</a>)</td></tr>
+<tr class="separator:a201aed0109c90e93695741b9232d4fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085ff3080f9325e84dafec324e29dc4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a085ff3080f9325e84dafec324e29dc4b">basic_task</a> (const <a class="el" href="classbasic__task.html">basic_task</a> &amp;)=delete</td></tr>
+<tr class="separator:a085ff3080f9325e84dafec324e29dc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02bd9410257823449bdd180df8b1647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__task.html">basic_task</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ac02bd9410257823449bdd180df8b1647">operator=</a> (const <a class="el" href="classbasic__task.html">basic_task</a> &amp;)=delete</td></tr>
+<tr class="separator:ac02bd9410257823449bdd180df8b1647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e9e8d31cf0b760d963fe617e271bc45"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a7e9e8d31cf0b760d963fe617e271bc45">~basic_task</a> ()</td></tr>
 <tr class="separator:a7e9e8d31cf0b760d963fe617e271bc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa198d7c55f5323f151445d1f8be6078c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#aa198d7c55f5323f151445d1f8be6078c">create</a> (int uiCore=<a class="el" href="mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">MN_THREAD_CONFIG_DEFAULT_CORE</a>)</td></tr>
@@ -205,6 +219,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae164356297bfa6e080d24c40470e5469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2eb5ce0a5dbaec7207a97123247cbc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__task.html">basic_task</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ac2eb5ce0a5dbaec7207a97123247cbc6">get_child</a> ()</td></tr>
 <tr class="separator:ac2eb5ce0a5dbaec7207a97123247cbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf061ac6881695e0a89b70e686be7622"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1cab">state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#acf061ac6881695e0a89b70e686be7622">get_state</a> ()</td></tr>
+<tr class="separator:acf061ac6881695e0a89b70e686be7622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0111d42a4358b1151ccce8eabcf6d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#aaa0111d42a4358b1151ccce8eabcf6d8">add_child_task</a> (<a class="el" href="classbasic__task.html">basic_task</a> *task)</td></tr>
 <tr class="separator:aaa0111d42a4358b1151ccce8eabcf6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -226,6 +242,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:aff94f682176acc56cac5b8489c9540a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e823792ba482d30c3297b1c5439fdd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a74e823792ba482d30c3297b1c5439fdd">unlock</a> (<a class="el" href="classbasic__task.html">basic_task</a> *t)</td></tr>
 <tr class="separator:a74e823792ba482d30c3297b1c5439fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2583004c12f7d14b96b1bb6f971f217a"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a2583004c12f7d14b96b1bb6f971f217a">get_tasks</a> ()</td></tr>
+<tr class="separator:a2583004c12f7d14b96b1bb6f971f217a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -285,6 +303,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Task priority </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae231306af1c1b0a9aead2fe7842e58dba1fc391ba1271a61a60a4d9736dd68797"></a>PriorityIdle&#160;</td><td class="fielddoc"><p>Priority for no real time operations - idle task </p>
 </td></tr>
@@ -304,9 +323,36 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab23e8cb172e37ec41a5ee7dfe65b1cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab23e8cb172e37ec41a5ee7dfe65b1cab">&#9670;&nbsp;</a></span>state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1cab">basic_task::state</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Task states returned by get_state. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab23e8cb172e37ec41a5ee7dfe65b1caba060308af23f7ac539f364a91b999d8ac"></a>StateRunning&#160;</td><td class="fielddoc"><p>A task is querying the state of itself, so must be running. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab23e8cb172e37ec41a5ee7dfe65b1caba224e452dcecb7b9f1e91634586de3d02"></a>StateReady&#160;</td><td class="fielddoc"><p>The task being queried is in a read or pending ready list. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab23e8cb172e37ec41a5ee7dfe65b1cabada48af50a37ad410979bba693247efca"></a>StateBlocked&#160;</td><td class="fielddoc"><p>The task being queried is in the Blocked state. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab23e8cb172e37ec41a5ee7dfe65b1caba4bd17819273e412e99886e6089a72265"></a>StateSuspended&#160;</td><td class="fielddoc"><p>The task being queried is in the Suspended state, or is in the Blocked state with an infinite time out. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ab23e8cb172e37ec41a5ee7dfe65b1caba2bca1037a89b6cc0a1b0db72382f54b7"></a>StateDeleted&#160;</td><td class="fielddoc"><p>The task being queried has been deleted, but its TCB has not yet been freed. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4871a116a5e13cc5e489226b8b10ab24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4871a116a5e13cc5e489226b8b10ab24">&#9670;&nbsp;</a></span>basic_task() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4871a116a5e13cc5e489226b8b10ab24">&#9670;&nbsp;</a></span>basic_task() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,11 +373,12 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Basic Constructor for this task. The priority is PriorityNormal and use 2048 for the stack size </p>
 
 </div>
 </div>
-<a id="a5f8ec7c2f8e063a310565909cf2e44aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f8ec7c2f8e063a310565909cf2e44aa">&#9670;&nbsp;</a></span>basic_task() <span class="overload">[2/2]</span></h2>
+<a id="a201aed0109c90e93695741b9232d4fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201aed0109c90e93695741b9232d4fec">&#9670;&nbsp;</a></span>basic_task() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,13 +396,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a>&#160;</td>
-          <td class="paramname"><em>uiPriority</em>, </td>
+          <td class="paramname"><em>uiPriority</em> = <code><a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba91dec2766fd6eeccd15a046567bb65ec">PriorityNormal</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned short&#160;</td>
-          <td class="paramname"><em>usStackDepth</em> = <code>configMINIMAL_STACK_SIZE</code>&#160;</td>
+          <td class="paramname"><em>usStackDepth</em> = <code><a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -374,10 +421,36 @@ Protected Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">strName</td><td>Name of the Task. Only useful for debugging. </td></tr>
     <tr><td class="paramname">uiPriority</td><td>FreeRTOS priority of this Task. </td></tr>
-    <tr><td class="paramname">usStackDepth</td><td>Number of "words" allocated for the Task stack. default configMINIMAL_STACK_SIZE </td></tr>
+    <tr><td class="paramname">usStackDepth</td><td>Number of "words" allocated for the Task stack. default 2048 </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a085ff3080f9325e84dafec324e29dc4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085ff3080f9325e84dafec324e29dc4b">&#9670;&nbsp;</a></span>basic_task() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">basic_task::basic_task </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbasic__task.html">basic_task</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -555,7 +628,7 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph.png" border="0" usemap="#aclassbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph" alt=""/></div>
-<map name="classbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph" id="aclassbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph">
+<map name="classbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph" id="classbasic__task_aeef4ab01e82599388fbbe5bf5369243c_icgraph">
 <area shape="rect" title=" " alt="" coords="184,35,355,61"/>
 <area shape="rect" href="classtask__utils.html#a91745adf24cac7afa6d31045f18722d4" title=" " alt="" coords="5,5,136,32"/>
 <area shape="rect" href="classtask__utils.html#adf087a38d85753ea6999287139efc4a4" title=" " alt="" coords="5,57,136,98"/>
@@ -578,8 +651,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the FreeRTOS task Numberid of this task <br  />
-</p>
+<p>Get the FreeRTOS task Numberid of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The FreeRTOS task Number </dd></dl>
 
 </div>
@@ -598,10 +670,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the debug name of this task <br  />
-</p>
-<dl class="section return"><dt>Returns</dt><dd>The name of this task <br  />
- </dd></dl>
+<p>Get the debug name of this task</p>
+<dl class="section return"><dt>Returns</dt><dd>The name of this task </dd></dl>
 
 </div>
 </div>
@@ -638,8 +708,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the priority of this task <br  />
-</p>
+<p>Get the priority of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The priority </dd></dl>
 
 </div>
@@ -712,9 +781,54 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the stack depth of this task <br  />
-</p>
+<p>Get the stack depth of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The stack depth </dd></dl>
+
+</div>
+</div>
+<a id="acf061ac6881695e0a89b70e686be7622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf061ac6881695e0a89b70e686be7622">&#9670;&nbsp;</a></span>get_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1cab">basic_task::state</a> basic_task::get_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the state of the task</p>
+<dl class="section return"><dt>Returns</dt><dd>The state of the task at the time the function was called. </dd></dl>
+
+</div>
+</div>
+<a id="a2583004c12f7d14b96b1bb6f971f217a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2583004c12f7d14b96b1bb6f971f217a">&#9670;&nbsp;</a></span>get_tasks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t basic_task::get_tasks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get current number of tasks</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of tasks that the real time kernel is currently managing. This includes all ready, blocked and suspended tasks. A task that has been deleted but not yet freed by the idle task will also be included in the count. </dd></dl>
 
 </div>
 </div>
@@ -732,10 +846,8 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the time since start of this task <br  />
-</p>
-<dl class="section return"><dt>Returns</dt><dd>The time since start of this task <br  />
- </dd></dl>
+<p>Get the time since start of this task</p>
+<dl class="section return"><dt>Returns</dt><dd>The time since start of this task </dd></dl>
 
 </div>
 </div>
@@ -1027,6 +1139,32 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classbasic__work__queue__single.html#a9b69f915e0738a47005608405dad5a4b" title=" " alt="" coords="5,49,193,90"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ac02bd9410257823449bdd180df8b1647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02bd9410257823449bdd180df8b1647">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbasic__task.html">basic_task</a>&amp; basic_task::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbasic__task.html">basic_task</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

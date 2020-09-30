@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('mn__foreign__task_8hpp.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">mn_foreign_task.hpp File Reference</div>  </div>
@@ -134,7 +135,7 @@ Include dependency graph for mn_foreign_task.hpp:</div>
 <area shape="rect" href="mn__semaphore_8hpp.html" title=" " alt="" coords="152,229,303,256"/>
 <area shape="rect" href="mn__critical_8hpp.html" title=" " alt="" coords="589,229,712,256"/>
 <area shape="rect" href="mn__recursive__mutex_8hpp.html" title=" " alt="" coords="378,229,565,256"/>
-<area shape="rect" title=" " alt="" coords="293,528,389,555"/>
+<area shape="rect" title=" " alt="" coords="299,528,383,555"/>
 <area shape="rect" href="mn__basic__semaphore_8hpp.html" title=" " alt="" coords="270,379,462,405"/>
 <area shape="rect" href="mn__lock_8hpp.html" title=" " alt="" coords="423,453,528,480"/>
 <area shape="rect" href="mn__counting__semaphore_8hpp.html" title=" " alt="" coords="251,304,466,331"/>
@@ -162,11 +163,53 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classforeign__task.html">foreign_task</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a3653d88626e8d401c6c29cd45238399f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__foreign__task_8hpp.html#a3653d88626e8d401c6c29cd45238399f">FT_IDLE_TASK</a>&#160;&#160;&#160;<a class="el" href="classforeign__task.html#a9b858481c508b10da507a956be426e6a">foreign_task::get_idle_task</a>()</td></tr>
+<tr class="separator:a3653d88626e8d401c6c29cd45238399f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec286fc1322d6b700f1d86c91d63bfd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__foreign__task_8hpp.html#aec286fc1322d6b700f1d86c91d63bfd0">FT_IDLE_TASK_ON</a>(CPUID)&#160;&#160;&#160;<a class="el" href="classforeign__task.html#a9b858481c508b10da507a956be426e6a">foreign_task::get_idle_task</a>(CPUID)</td></tr>
+<tr class="separator:aec286fc1322d6b700f1d86c91d63bfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:af270ea4631f129877a799787a834c653"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__foreign__task_8hpp.html#af270ea4631f129877a799787a834c653">foreign_task_t</a> = <a class="el" href="classforeign__task.html">foreign_task</a></td></tr>
 <tr class="separator:af270ea4631f129877a799787a834c653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3653d88626e8d401c6c29cd45238399f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3653d88626e8d401c6c29cd45238399f">&#9670;&nbsp;</a></span>FT_IDLE_TASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_IDLE_TASK&#160;&#160;&#160;<a class="el" href="classforeign__task.html#a9b858481c508b10da507a956be426e6a">foreign_task::get_idle_task</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the idle task for the current CPU. </p>
+
+</div>
+</div>
+<a id="aec286fc1322d6b700f1d86c91d63bfd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec286fc1322d6b700f1d86c91d63bfd0">&#9670;&nbsp;</a></span>FT_IDLE_TASK_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_IDLE_TASK_ON</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CPUID</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="classforeign__task.html#a9b858481c508b10da507a956be426e6a">foreign_task::get_idle_task</a>(CPUID)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the idle task for the given CPU. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="af270ea4631f129877a799787a834c653"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af270ea4631f129877a799787a834c653">&#9670;&nbsp;</a></span>foreign_task_t</h2>

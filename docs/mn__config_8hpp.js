@@ -22,6 +22,8 @@ var mn__config_8hpp =
     [ "MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE", "mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64", null ],
     [ "MN_THREAD_CONFIG_FOREIGIN_TASK_SUPPORT", "mn__config_8hpp.html#afc2d0635c2fb68699d6d3262441b71c2", null ],
     [ "MN_THREAD_CONFIG_LOCK_TYPE", "mn__config_8hpp.html#af75f0ad7789180411059976192486e4e", null ],
+    [ "MN_THREAD_CONFIG_MINIMAL_STACK_SIZE", "mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f", null ],
+    [ "MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES", "mn__config_8hpp.html#ab6a2073609e7b98ce87f87cd1a7b677c", null ],
     [ "MN_THREAD_CONFIG_MUTEX", "mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c", null ],
     [ "MN_THREAD_CONFIG_NO", "mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c", null ],
     [ "MN_THREAD_CONFIG_PREVIEW_FUTURE", "mn__config_8hpp.html#a9d7f3f8fbd6ff30ad21aabae00922caa", null ],
