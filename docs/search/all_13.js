@@ -1,12 +1,5 @@
 var searchData=
 [
-  ['task_5fmessage_477',['task_message',['../structbasic__message__task_1_1task__message.html',1,'basic_message_task::task_message'],['../structbasic__message__task_1_1task__message.html#af5818424269f51b8306506f0584b33b7',1,'basic_message_task::task_message::task_message()']]],
-  ['task_5fstarted_478',['task_started',['../classbasic__task.html#a3e43614e2593a6fc0c2e5e73b051e818',1,'basic_task']]],
-  ['task_5ft_479',['task_t',['../mn__task_8hpp.html#a53bf3b71ff2994678a06a3b9fe21b162',1,'mn_task.hpp']]],
-  ['task_5futils_480',['task_utils',['../classtask__utils.html',1,'']]],
-  ['task_5futils_5ft_481',['task_utils_t',['../mn__task__utils_8hpp.html#a1041c680042fab71640e5cb701488b69',1,'mn_task_utils.hpp']]],
-  ['tasklet_5ft_482',['tasklet_t',['../mn__tasklet_8hpp.html#a775e9f6a736ed5297af061e3714ddeae',1,'mn_tasklet.hpp']]],
-  ['ticks_5fto_5fms_483',['ticks_to_ms',['../mn__micros_8hpp.html#a2a3ed6286aa98d795df3035274ec9e58',1,'ticks_to_ms(unsigned int ticks):&#160;mn_micros.cpp'],['../mn__micros_8cpp.html#a2a3ed6286aa98d795df3035274ec9e58',1,'ticks_to_ms(unsigned int ticks):&#160;mn_micros.cpp']]],
-  ['to_5fstring_484',['to_string',['../classlibmn_version.html#ac34880e7e7d55107161f97183d36b3b5',1,'libmnVersion']]],
-  ['try_5flock_485',['try_lock',['../classbasic__semaphore.html#a01f89c73a8652de925fdd22361590d46',1,'basic_semaphore::try_lock()'],['../class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef',1,'ILockObject::try_lock()'],['../classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203',1,'basic_mutex::try_lock()']]]
+  ['unlock_419',['unlock',['../classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572',1,'basic_semaphore::unlock()'],['../classbasic__critical__lock.html#a40fb4da5aea428fd108ca84ef168eb23',1,'basic_critical_lock::unlock()'],['../classbasic__interrupts__lock.html#ab5333f45b86b0c114d096cbc58a5b4a7',1,'basic_interrupts_lock::unlock()'],['../classbasic__scheduler__lock.html#a9b4591a48e2cf9e81c1ba043fa77c24d',1,'basic_scheduler_lock::unlock()'],['../class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5',1,'ILockObject::unlock()'],['../classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640',1,'basic_mutex::unlock()'],['../classrecursive__mutex.html#a5ed84c06d86fc9ba4e998b0fc5bde897',1,'recursive_mutex::unlock()'],['../classbasic__task.html#a9c13309a3050dae486b2eeffed58b27c',1,'basic_task::unlock()']]],
+  ['usleep_420',['usleep',['../classbasic__task.html#a2229a31fb96085bcd202e585705bc0fc',1,'basic_task']]]
 ];

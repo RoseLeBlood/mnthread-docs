@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['task_5fmessage_542',['task_message',['../structbasic__message__task_1_1task__message.html',1,'basic_message_task']]],
-  ['task_5futils_543',['task_utils',['../classtask__utils.html',1,'']]]
+  ['work_5fqueue_5fitem_466',['work_queue_item',['../classwork__queue__item.html',1,'']]],
+  ['work_5fqueue_5ftask_467',['work_queue_task',['../classwork__queue__task.html',1,'']]]
 ];

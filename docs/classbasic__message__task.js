@@ -22,6 +22,6 @@ var classbasic__message__task =
     [ "post_msg", "classbasic__message__task.html#a387e7465d211a0cfe1dd89e7df794375", null ],
     [ "post_msg", "classbasic__message__task.html#a81f6714fe0805c51347429fff953741f", null ],
     [ "m_cvMessage", "classbasic__message__task.html#a1300555f0d8755f649d4901adcbd2c67", null ],
-    [ "m_ltMessageQueueLock", "classbasic__message__task.html#a0dc74b96e3983d6be001b4fb6e6dbec5", null ],
+    [ "m_ltMessageQueueLock", "classbasic__message__task.html#a1060d2be1b8df4ce8d7d8f51693beae1", null ],
     [ "m_qeMessageQueue", "classbasic__message__task.html#a6209130e9d6923e893165a92901cc4e7", null ]
 ];

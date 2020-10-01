@@ -4,18 +4,14 @@ var files_dup =
     [ "miniThread.cpp", "mini_thread_8cpp.html", "mini_thread_8cpp" ],
     [ "miniThread.hpp", "mini_thread_8hpp.html", "mini_thread_8hpp" ],
     [ "mn_autolock.cpp", "mn__autolock_8cpp.html", null ],
-    [ "mn_autolock.hpp", "mn__autolock_8hpp.html", "mn__autolock_8hpp" ],
+    [ "mn_autolock.hpp", "mn__autolock_8hpp.html", null ],
     [ "mn_basic_semaphore.cpp", "mn__basic__semaphore_8cpp.html", null ],
-    [ "mn_basic_semaphore.hpp", "mn__basic__semaphore_8hpp.html", [
-      [ "basic_semaphore", "classbasic__semaphore.html", "classbasic__semaphore" ]
-    ] ],
+    [ "mn_basic_semaphore.hpp", "mn__basic__semaphore_8hpp.html", "mn__basic__semaphore_8hpp" ],
     [ "mn_binary_semaphore.cpp", "mn__binary__semaphore_8cpp.html", null ],
     [ "mn_binary_semaphore.hpp", "mn__binary__semaphore_8hpp.html", "mn__binary__semaphore_8hpp" ],
     [ "mn_binaryqueue.cpp", "mn__binaryqueue_8cpp.html", null ],
     [ "mn_binaryqueue.hpp", "mn__binaryqueue_8hpp.html", "mn__binaryqueue_8hpp" ],
-    [ "mn_bit_map_mempool.hpp", "mn__bit__map__mempool_8hpp.html", [
-      [ "basic_bitmap_mempool", "classbasic__bitmap__mempool.html", null ]
-    ] ],
+    [ "mn_bit_map_mempool.hpp", "mn__bit__map__mempool_8hpp.html", null ],
     [ "mn_config.hpp", "mn__config_8hpp.html", "mn__config_8hpp" ],
     [ "mn_config_preview.hpp", "mn__config__preview_8hpp.html", "mn__config__preview_8hpp" ],
     [ "mn_convar.cpp", "mn__convar_8cpp.html", null ],
@@ -35,15 +31,17 @@ var files_dup =
     [ "mn_foreign_task.cpp", "mn__foreign__task_8cpp.html", null ],
     [ "mn_foreign_task.hpp", "mn__foreign__task_8hpp.html", "mn__foreign__task_8hpp" ],
     [ "mn_free_list_mempool.cpp", "mn__free__list__mempool_8cpp.html", "mn__free__list__mempool_8cpp" ],
-    [ "mn_free_list_mempool.hpp", "mn__free__list__mempool_8hpp.html", "mn__free__list__mempool_8hpp" ],
+    [ "mn_free_list_mempool.hpp", "mn__free__list__mempool_8hpp.html", null ],
     [ "mn_lock.hpp", "mn__lock_8hpp.html", [
       [ "ILockObject", "class_i_lock_object.html", "class_i_lock_object" ]
     ] ],
+    [ "mn_lock_exptions.cpp", "mn__lock__exptions_8cpp.html", null ],
+    [ "mn_lock_exptions.hpp", "mn__lock__exptions_8hpp.html", [
+      [ "lockcreate_exception", "classlockcreate__exception.html", "classlockcreate__exception" ]
+    ] ],
     [ "mn_memory.cpp", "mn__memory_8cpp.html", null ],
     [ "mn_memory.hpp", "mn__memory_8hpp.html", null ],
-    [ "mn_mempool.hpp", "mn__mempool_8hpp.html", [
-      [ "IMemPool", "class_i_mem_pool.html", "class_i_mem_pool" ]
-    ] ],
+    [ "mn_mempool.hpp", "mn__mempool_8hpp.html", null ],
     [ "mn_micros.cpp", "mn__micros_8cpp.html", "mn__micros_8cpp" ],
     [ "mn_micros.hpp", "mn__micros_8hpp.html", "mn__micros_8hpp" ],
     [ "mn_msg_task.cpp", "mn__msg__task_8cpp.html", null ],
@@ -54,11 +52,9 @@ var files_dup =
     [ "mn_queue.hpp", "mn__queue_8hpp.html", "mn__queue_8hpp" ],
     [ "mn_recursive_mutex.cpp", "mn__recursive__mutex_8cpp.html", null ],
     [ "mn_recursive_mutex.hpp", "mn__recursive__mutex_8hpp.html", "mn__recursive__mutex_8hpp" ],
-    [ "mn_ringbuffer.hpp", "mn__ringbuffer_8hpp.html", [
-      [ "basic_ringbuffer", "mn__ringbuffer_8hpp.html#classbasic__ringbuffer", null ]
-    ] ],
+    [ "mn_ringbuffer.hpp", "mn__ringbuffer_8hpp.html", null ],
     [ "mn_semaphore.hpp", "mn__semaphore_8hpp.html", null ],
-    [ "mn_shared.hpp", "mn__shared_8hpp.html", "mn__shared_8hpp" ],
+    [ "mn_shared.hpp", "mn__shared_8hpp.html", null ],
     [ "mn_sleep.cpp", "mn__sleep_8cpp.html", "mn__sleep_8cpp" ],
     [ "mn_sleep.hpp", "mn__sleep_8hpp.html", "mn__sleep_8hpp" ],
     [ "mn_task.cpp", "mn__task_8cpp.html", null ],
@@ -84,6 +80,5 @@ var files_dup =
     [ "mn_workqueue_task.cpp", "mn__workqueue__task_8cpp.html", null ],
     [ "mn_workqueue_task.hpp", "mn__workqueue__task_8hpp.html", [
       [ "work_queue_task", "classwork__queue__task.html", "classwork__queue__task" ]
-    ] ],
-    [ "sdkconfig.h", "sdkconfig_8h.html", null ]
+    ] ]
 ];

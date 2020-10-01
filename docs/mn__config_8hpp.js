@@ -1,6 +1,5 @@
 var mn__config_8hpp =
 [
-    [ "configMAX_PRIORITIES", "mn__config_8hpp.html#a9a78f5ac61e6cb172dadf2a51f11db38", null ],
     [ "MN_THREAD_BETA_MAJOR_VERSION", "mn__config_8hpp.html#ac6cfeea38445d3d7feba1e9be92aed9b", null ],
     [ "MN_THREAD_BETA_MINOR_VERSION", "mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e", null ],
     [ "MN_THREAD_BETA_VERSION_STRING", "mn__config_8hpp.html#a1d73a768413a6a1c5590b7733c78a43d", null ],
@@ -33,6 +32,7 @@ var mn__config_8hpp =
     [ "MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT", "mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4", null ],
     [ "MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT", "mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725", null ],
     [ "MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT", "mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2", null ],
+    [ "MN_THREAD_CONFIG_USE_EXCEPTIONS", "mn__config_8hpp.html#ac8cf48648de13dfd540bc2a9f1849279", null ],
     [ "MN_THREAD_CONFIG_WORKQUEUE_GETNEXTITEM_TIMEOUT", "mn__config_8hpp.html#a060f30c571d899925211c1f3ac054816", null ],
     [ "MN_THREAD_CONFIG_WORKQUEUE_MULTI_MAXITEMS", "mn__config_8hpp.html#a7c285196ad60ff04d1bebd556eaa48c5", null ],
     [ "MN_THREAD_CONFIG_WORKQUEUE_MULTI_PRIORITY", "mn__config_8hpp.html#ab4c34b9df0f9532a460738584f538e2a", null ],

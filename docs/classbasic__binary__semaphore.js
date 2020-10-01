@@ -1,7 +1,5 @@
 var classbasic__binary__semaphore =
 [
     [ "basic_binary_semaphore", "classbasic__binary__semaphore.html#a5faa66db7e0d437259a578dfe418f324", null ],
-    [ "~basic_binary_semaphore", "classbasic__binary__semaphore.html#a6b8430e39884a266a3ef77c9b1f1f90c", null ],
-    [ "create", "classbasic__binary__semaphore.html#adeb909ebfc1b7014556736c2da911016", null ],
-    [ "destroy", "classbasic__binary__semaphore.html#a2bdec98ca27c68bc58743db846fe031c", null ]
+    [ "~basic_binary_semaphore", "classbasic__binary__semaphore.html#acc410b29970067e8befe2adf59a9fccf", null ]
 ];

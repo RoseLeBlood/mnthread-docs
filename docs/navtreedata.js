@@ -25,11 +25,10 @@
 var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
-    [ "Mini Thread 1.90-beta2.0 (2.0.0 preview)", "index.html", [
-      [ "Simple Example", "index.html#autotoc_md21", null ],
-      [ "TODO's for Version 2.0", "index.html#autotoc_md22", [
-        [ "New Value Added", "index.html#autotoc_md23", null ]
-      ] ],
+    [ "Mini Thread 1.91-beta2.0 (2.0.0 preview)", "index.html", [
+      [ "Folder Strutur", "index.html#autotoc_md21", null ],
+      [ "Simple Example", "index.html#autotoc_md22", null ],
+      [ "TODO's for Version 2.0", "index.html#autotoc_md23", null ],
       [ "ChangeLog", "index.html#autotoc_md24", null ],
       [ "Version 1.9.0 September 2020: (stable 2.0beta)", "index.html#autotoc_md25", null ],
       [ "Version 1.71 September 2020: (unstable 2.0beta)", "index.html#autotoc_md26", null ],
@@ -37,7 +36,7 @@ var NAVTREE =
       [ "Version 1.54 September 2020: (unstable)", "index.html#autotoc_md28", null ]
     ] ],
     [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", [
-      [ "Version 1.9.1 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
+      [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
       [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md2", null ],
       [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md3", null ],
       [ "Version 1.60 September 2020: (unstable nightly)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md4", null ],
@@ -62,9 +61,8 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
@@ -86,9 +84,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classbasic__timer.html#a0281675d18c6e8b618f6a6a37e128f55",
-"mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b",
-"mn__workqueue__multi_8hpp.html"
+"classforeign__task.html#a01d88d78e4769b985ea8d8f7fe2014f9",
+"mn__error_8hpp.html#a9c8df9f748111ba73832831df4e8305f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

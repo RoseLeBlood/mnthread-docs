@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.8.20"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>Mini Thread: Mini Thread 1.90-beta2.0 (2.0.0 preview)</title>
+        <title>Mini Thread: Mini Thread 1.91-beta2.0 (2.0.0 preview)</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Mini Thread 1.90-beta2.0 (2.0.0 preview) </div>  </div>
+<div class="title">Mini Thread 1.91-beta2.0 (2.0.0 preview) </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__home_ambersophia_Dokumente_git_mnthread_README"></a>Mini Thread is a library for creating secure threads for the esp32 microcontroller. With variable condition support if required. And wrappers for: <br  />
@@ -119,9 +119,24 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li>workqueues (multithreaded and singlethreaded workqueues)</li>
 <li>Timers, Protothreads and event groups</li>
 </ul>
-<p>For more detailed information about the library, please refer to the library documentation (<a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a>) and Examples you find in the extra repository: <a href="https://github.com/RoseLeBlood/mnthread-examples">mnthread-examples</a></p>
 <p>The license that applies to the library is the LGPL.The license texts of these licenses can be found in the files <a class="el" href="md__home_ambersophia__dokumente_git_mnthread__l_i_c_e_n_s_e.html">LICENSE</a> of the source code archive.</p>
 <h1><a class="anchor" id="autotoc_md21"></a>
+Folder Strutur</h1>
+<ul>
+<li>include and src:<ul>
+<li>/ : all basics: task, semaphores. timer ...</li>
+<li>memory: mempool handling</li>
+<li>queue: FreeRTOS queue's and workqueue-engines</li>
+<li>slock: ystem interrupt, schedular and ... autolock helper</li>
+</ul>
+</li>
+<li>doc: Files to create the docu with doxygen<ul>
+<li>The online pre builded version: <a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a></li>
+</ul>
+</li>
+<li>example; The basic's example, and for more see extra repository: <a href="https://github.com/RoseLeBlood/mnthread-examples">mnthread-examples</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Simple Example</h1>
 <div class="fragment"><div class="line"><span class="comment">//simple_example.cpp</span></div>
 <div class="line"> </div>
@@ -136,8 +151,8 @@ Simple Example</h1>
 <div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span>*  <a class="code" href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9">on_task</a>()<span class="keyword"> override </span>{ </div>
 <div class="line">        basic_thread::on_task(); </div>
 <div class="line">        </div>
-<div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classbasic__task.html#aeb34fa159de4292b4a2234863c106c3e">get_id</a>();</div>
-<div class="line">        <span class="keywordtype">int</span> core = <a class="code" href="classbasic__task.html#a3cc1be96e00f9b1b3a4c5163350d9bed">get_on_core</a>();</div>
+<div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">get_id</a>();</div>
+<div class="line">        <span class="keywordtype">int</span> core = <a class="code" href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">get_on_core</a>();</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">for</span>(;;) {</div>
 <div class="line">            printf(<span class="stringliteral">&quot;[%d @ %d] Hello World!!\n&quot;</span>, <span class="keywordtype">id</span>, core );</div>
@@ -155,7 +170,7 @@ Simple Example</h1>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a>();</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md22"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md23"></a>
 TODO's for Version 2.0</h1>
 <ul>
 <li>[X] Add event group class</li>
@@ -176,13 +191,11 @@ TODO's for Version 2.0</h1>
 </ul>
 </li>
 <li>[ ] task Local Storage</li>
+<li>[ ] Optional:<ul>
+<li>[ ] In Timers, add OnStop / OnStart / mutex sync with these methods?</li>
+<li>[ ] Priority queues</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md23"></a>
-New Value Added</h2>
-<ul>
-<li>In Timers, add OnStop / OnStart / mutex sync with these methods?</li>
-<li>Priority queues</li>
-<li>Tick Hooks - option to round robin hooks, one per tick</li>
+</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md24"></a>
 ChangeLog</h1>
@@ -244,12 +257,12 @@ Version 1.54 September 2020: (unstable)</h1>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassbasic__task_html_a3cc1be96e00f9b1b3a4c5163350d9bed"><div class="ttname"><a href="classbasic__task.html#a3cc1be96e00f9b1b3a4c5163350d9bed">basic_task::get_on_core</a></div><div class="ttdeci">uint32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:187</div></div>
 <div class="ttc" id="amini_thread_8hpp_html"><div class="ttname"><a href="mini_thread_8hpp.html">miniThread.hpp</a></div></div>
-<div class="ttc" id="aclassbasic__task_html_aeb34fa159de4292b4a2234863c106c3e"><div class="ttname"><a href="classbasic__task.html#aeb34fa159de4292b4a2234863c106c3e">basic_task::get_id</a></div><div class="ttdeci">uint32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:179</div></div>
+<div class="ttc" id="aclassbasic__task_html_a354384ebfae119b3cde62e8a1937a0a5"><div class="ttname"><a href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">basic_task::get_id</a></div><div class="ttdeci">int32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:157</div></div>
+<div class="ttc" id="aclassbasic__task_html_ae6dfd172010d2d63c9298d36cf549676"><div class="ttname"><a href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">basic_task::get_on_core</a></div><div class="ttdeci">int32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:165</div></div>
 <div class="ttc" id="aclassbasic__task_html_abbae529ca159f9c3a5ebd6c951ba44c9"><div class="ttname"><a href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9">basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()=0</div></div>
 <div class="ttc" id="amini_thread_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> miniThread.cpp:24</div></div>
-<div class="ttc" id="aclassbasic__task_html"><div class="ttname"><a href="classbasic__task.html">basic_task</a></div><div class="ttdef"><b>Definition:</b> mn_task.hpp:39</div></div>
+<div class="ttc" id="aclassbasic__task_html"><div class="ttname"><a href="classbasic__task.html">basic_task</a></div><div class="ttdef"><b>Definition:</b> mn_task.hpp:41</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

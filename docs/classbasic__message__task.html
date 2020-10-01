@@ -112,8 +112,8 @@ $(document).ready(function(){initNavTree('classbasic__message__task.html',''); i
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbasic__message__task-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">basic_message_task Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('classbasic__message__task.html',''); i
 Inheritance diagram for basic_message_task:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task__inherit__graph.png" border="0" usemap="#abasic__message__task_inherit__map" alt="Inheritance graph"/></div>
-<map name="basic__message__task_inherit__map" id="abasic__message__task_inherit__map">
+<map name="basic__message__task_inherit__map" id="basic__message__task_inherit__map">
 <area shape="rect" title=" " alt="" coords="5,80,163,107"/>
 <area shape="rect" title=" " alt="" coords="13,5,155,32"/>
 </map>
@@ -135,12 +135,12 @@ Collaboration diagram for basic_message_task:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task__coll__graph.png" border="0" usemap="#abasic__message__task_coll__map" alt="Collaboration graph"/></div>
 <map name="basic__message__task_coll__map" id="abasic__message__task_coll__map">
-<area shape="rect" title=" " alt="" coords="173,247,330,273"/>
+<area shape="rect" title=" " alt="" coords="113,247,270,273"/>
 <area shape="rect" title=" " alt="" coords="5,157,148,184"/>
-<area shape="rect" href="classbasic__binary__semaphore.html" title=" " alt="" coords="173,157,357,184"/>
-<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="197,81,333,108"/>
-<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="215,5,314,32"/>
-<area shape="rect" href="classbasic__queue.html" title=" " alt="" coords="395,157,497,184"/>
+<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="172,157,277,184"/>
+<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="157,81,293,108"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="175,5,274,32"/>
+<area shape="rect" href="classbasic__queue.html" title=" " alt="" coords="335,157,437,184"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -190,21 +190,21 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a8e457b7e95034487e6f3f66e5c570b84"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a8e457b7e95034487e6f3f66e5c570b84">on_message</a> (id_t id, void *message)=0</td></tr>
 <tr class="separator:a8e457b7e95034487e6f3f66e5c570b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a1060d2be1b8df4ce8d7d8f51693beae1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a1060d2be1b8df4ce8d7d8f51693beae1">m_ltMessageQueueLock</a></td></tr>
+<tr class="separator:a1060d2be1b8df4ce8d7d8f51693beae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6209130e9d6923e893165a92901cc4e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__queue_8hpp.html#a27023a8e82e9c0994a1587b8de80613b">queue_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a6209130e9d6923e893165a92901cc4e7">m_qeMessageQueue</a></td></tr>
+<tr class="separator:a6209130e9d6923e893165a92901cc4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1300555f0d8755f649d4901adcbd2c67"><td class="memItemLeft" align="right" valign="top">convar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a1300555f0d8755f649d4901adcbd2c67">m_cvMessage</a></td></tr>
+<tr class="separator:a1300555f0d8755f649d4901adcbd2c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a33e9bf23347c9b133a1eaf99aeadfd33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a33e9bf23347c9b133a1eaf99aeadfd33">basic_message_task</a> (const <a class="el" href="classbasic__message__task.html">basic_message_task</a> &amp;)=delete</td></tr>
 <tr class="separator:a33e9bf23347c9b133a1eaf99aeadfd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cf6a5c4c0b41c47d2d8fdbf17c4aced"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__message__task.html">basic_message_task</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a0cf6a5c4c0b41c47d2d8fdbf17c4aced">operator=</a> (const <a class="el" href="classbasic__message__task.html">basic_message_task</a> &amp;)=delete</td></tr>
 <tr class="separator:a0cf6a5c4c0b41c47d2d8fdbf17c4aced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a6209130e9d6923e893165a92901cc4e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__queue_8hpp.html#a27023a8e82e9c0994a1587b8de80613b">queue_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a6209130e9d6923e893165a92901cc4e7">m_qeMessageQueue</a></td></tr>
-<tr class="separator:a6209130e9d6923e893165a92901cc4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc74b96e3983d6be001b4fb6e6dbec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">LockType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a0dc74b96e3983d6be001b4fb6e6dbec5">m_ltMessageQueueLock</a></td></tr>
-<tr class="separator:a0dc74b96e3983d6be001b4fb6e6dbec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1300555f0d8755f649d4901adcbd2c67"><td class="memItemLeft" align="right" valign="top">convar_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__message__task.html#a1300555f0d8755f649d4901adcbd2c67">m_cvMessage</a></td></tr>
-<tr class="separator:a1300555f0d8755f649d4901adcbd2c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extends the basic_convar_task with a message queue support</p>
@@ -468,7 +468,7 @@ Private Attributes</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task_a666a1bc869dd833872b682fea9927fcd_cgraph.png" border="0" usemap="#aclassbasic__message__task_a666a1bc869dd833872b682fea9927fcd_cgraph" alt=""/></div>
-<map name="classbasic__message__task_a666a1bc869dd833872b682fea9927fcd_cgraph" id="aclassbasic__message__task_a666a1bc869dd833872b682fea9927fcd_cgraph">
+<map name="classbasic__message__task_a666a1bc869dd833872b682fea9927fcd_cgraph" id="classbasic__message__task_a666a1bc869dd833872b682fea9927fcd_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,163,47"/>
 <area shape="rect" href="classbasic__message__task.html#a81f6714fe0805c51347429fff953741f" title=" " alt="" coords="211,5,368,47"/>
 </map>
@@ -504,7 +504,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task_a8604cf566ceadf28e7b0d50edefac996_cgraph.png" border="0" usemap="#aclassbasic__message__task_a8604cf566ceadf28e7b0d50edefac996_cgraph" alt=""/></div>
-<map name="classbasic__message__task_a8604cf566ceadf28e7b0d50edefac996_cgraph" id="aclassbasic__message__task_a8604cf566ceadf28e7b0d50edefac996_cgraph">
+<map name="classbasic__message__task_a8604cf566ceadf28e7b0d50edefac996_cgraph" id="classbasic__message__task_a8604cf566ceadf28e7b0d50edefac996_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,163,47"/>
 <area shape="rect" href="classbasic__message__task.html#a81f6714fe0805c51347429fff953741f" title=" " alt="" coords="211,5,368,47"/>
 </map>
@@ -540,7 +540,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task_aac80b87e282a96eff82c92526ed95a4a_cgraph.png" border="0" usemap="#aclassbasic__message__task_aac80b87e282a96eff82c92526ed95a4a_cgraph" alt=""/></div>
-<map name="classbasic__message__task_aac80b87e282a96eff82c92526ed95a4a_cgraph" id="aclassbasic__message__task_aac80b87e282a96eff82c92526ed95a4a_cgraph">
+<map name="classbasic__message__task_aac80b87e282a96eff82c92526ed95a4a_cgraph" id="classbasic__message__task_aac80b87e282a96eff82c92526ed95a4a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,163,47"/>
 <area shape="rect" href="classbasic__message__task.html#a81f6714fe0805c51347429fff953741f" title=" " alt="" coords="211,5,368,47"/>
 </map>
@@ -576,7 +576,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task_aa372bfba99abfe84b90fd5793fcdd1c4_cgraph.png" border="0" usemap="#aclassbasic__message__task_aa372bfba99abfe84b90fd5793fcdd1c4_cgraph" alt=""/></div>
-<map name="classbasic__message__task_aa372bfba99abfe84b90fd5793fcdd1c4_cgraph" id="aclassbasic__message__task_aa372bfba99abfe84b90fd5793fcdd1c4_cgraph">
+<map name="classbasic__message__task_aa372bfba99abfe84b90fd5793fcdd1c4_cgraph" id="classbasic__message__task_aa372bfba99abfe84b90fd5793fcdd1c4_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,163,47"/>
 <area shape="rect" href="classbasic__message__task.html#a81f6714fe0805c51347429fff953741f" title=" " alt="" coords="211,5,368,47"/>
 </map>
@@ -629,7 +629,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task_a2c173aeedbfd04d3b07d76762c842f49_cgraph.png" border="0" usemap="#aclassbasic__message__task_a2c173aeedbfd04d3b07d76762c842f49_cgraph" alt=""/></div>
-<map name="classbasic__message__task_a2c173aeedbfd04d3b07d76762c842f49_cgraph" id="aclassbasic__message__task_a2c173aeedbfd04d3b07d76762c842f49_cgraph">
+<map name="classbasic__message__task_a2c173aeedbfd04d3b07d76762c842f49_cgraph" id="classbasic__message__task_a2c173aeedbfd04d3b07d76762c842f49_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,163,47"/>
 <area shape="rect" href="classbasic__message__task.html#a81f6714fe0805c51347429fff953741f" title=" " alt="" coords="211,5,368,47"/>
 </map>
@@ -689,7 +689,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task_a387e7465d211a0cfe1dd89e7df794375_cgraph.png" border="0" usemap="#aclassbasic__message__task_a387e7465d211a0cfe1dd89e7df794375_cgraph" alt=""/></div>
-<map name="classbasic__message__task_a387e7465d211a0cfe1dd89e7df794375_cgraph" id="aclassbasic__message__task_a387e7465d211a0cfe1dd89e7df794375_cgraph">
+<map name="classbasic__message__task_a387e7465d211a0cfe1dd89e7df794375_cgraph" id="classbasic__message__task_a387e7465d211a0cfe1dd89e7df794375_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,163,47"/>
 <area shape="rect" href="classbasic__message__task.html#a81f6714fe0805c51347429fff953741f" title=" " alt="" coords="211,5,368,47"/>
 </map>
@@ -734,7 +734,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__message__task_a81f6714fe0805c51347429fff953741f_icgraph.png" border="0" usemap="#aclassbasic__message__task_a81f6714fe0805c51347429fff953741f_icgraph" alt=""/></div>
-<map name="classbasic__message__task_a81f6714fe0805c51347429fff953741f_icgraph" id="aclassbasic__message__task_a81f6714fe0805c51347429fff953741f_icgraph">
+<map name="classbasic__message__task_a81f6714fe0805c51347429fff953741f_icgraph" id="classbasic__message__task_a81f6714fe0805c51347429fff953741f_icgraph">
 <area shape="rect" title=" " alt="" coords="211,136,368,177"/>
 <area shape="rect" href="classbasic__message__task.html#a666a1bc869dd833872b682fea9927fcd" title=" " alt="" coords="5,5,163,47"/>
 <area shape="rect" href="classbasic__message__task.html#a8604cf566ceadf28e7b0d50edefac996" title=" " alt="" coords="5,71,163,112"/>
@@ -762,15 +762,15 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0dc74b96e3983d6be001b4fb6e6dbec5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dc74b96e3983d6be001b4fb6e6dbec5">&#9670;&nbsp;</a></span>m_ltMessageQueueLock</h2>
+<a id="a1060d2be1b8df4ce8d7d8f51693beae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1060d2be1b8df4ce8d7d8f51693beae1">&#9670;&nbsp;</a></span>m_ltMessageQueueLock</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -779,12 +779,12 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">LockType_t</a> basic_message_task::m_ltMessageQueueLock</td>
+          <td class="memname"><a class="el" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a> basic_message_task::m_ltMessageQueueLock</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -806,7 +806,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

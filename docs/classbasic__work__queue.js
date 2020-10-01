@@ -13,7 +13,6 @@ var classbasic__work__queue =
     [ "queue", "classbasic__work__queue.html#a2893c69cf58efa717186838082aaa247", null ],
     [ "running", "classbasic__work__queue.html#a65b3393ceb232d9c4ac9975181172da6", null ],
     [ "work_queue_task", "classbasic__work__queue.html#a30898e8e19a81bf45c4a22cd80491d88", null ],
-    [ "m_bMutexInit", "classbasic__work__queue.html#ad396b26a58a825c433869eba976adc92", null ],
     [ "m_bRunning", "classbasic__work__queue.html#ae1938194d42292114e62db58e5a9c3eb", null ],
     [ "m_pWorkItemQueue", "classbasic__work__queue.html#a971787e938c770160c460b2ea1a3d395", null ],
     [ "m_ThreadJob", "classbasic__work__queue.html#afb3ce0dfb1fbd8730d9bcbd22114d56e", null ],

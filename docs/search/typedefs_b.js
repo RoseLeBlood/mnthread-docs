@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ref_5fobject_5ft_871',['ref_object_t',['../classbasic__shared__object.html#a327ee2430819bb738053faceaa3fcae9',1,'basic_shared_object']]],
-  ['remutex_5ft_872',['remutex_t',['../mn__recursive__mutex_8hpp.html#a84d2861dec617ce59f255ec231804faa',1,'mn_recursive_mutex.hpp']]]
+  ['work_5fqueue_5fitem_5ft_767',['work_queue_item_t',['../mn__workqueue__item_8hpp.html#abbd4bf0b4bc3bc8ae1d8d9543203b2bb',1,'mn_workqueue_item.hpp']]]
 ];

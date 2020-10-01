@@ -7,7 +7,6 @@ var classlibmn_version =
     [ "get_major_version", "classlibmn_version.html#a1ab51114f35d50ef7e19bac35edd4588", null ],
     [ "get_minor_version", "classlibmn_version.html#a5762c3c11feced0ef3b5015b85b74d00", null ],
     [ "instance", "classlibmn_version.html#ab64dde06d24c3af970bd17c6da90796c", null ],
-    [ "is_beta", "classlibmn_version.html#aaa3cd3f55d584241db890299e42e91cf", null ],
     [ "to_string", "classlibmn_version.html#ac34880e7e7d55107161f97183d36b3b5", null ],
     [ "m_debug", "classlibmn_version.html#ad758bfe6091248f3de6f8ef858b19845", null ],
     [ "m_extras", "classlibmn_version.html#aa69257efffbd552d04aefb668bfee892", null ],
