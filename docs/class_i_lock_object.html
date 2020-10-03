@@ -135,8 +135,8 @@ Inheritance diagram for ILockObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aba2228daa52411a90ea87075c69f5870"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">lock</a> (unsigned int timeout)=0</td></tr>
-<tr class="separator:aba2228daa52411a90ea87075c69f5870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ea8c3572be245b28681a96be10d8f6"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#aa0ea8c3572be245b28681a96be10d8f6">lock</a> (unsigned int timeout=0)=0</td></tr>
+<tr class="separator:aa0ea8c3572be245b28681a96be10d8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a26ff03a1d7261f45bbf0d8b230444f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#a6a26ff03a1d7261f45bbf0d8b230444f">lock</a> (const struct timeval *abs_time)=0</td></tr>
 <tr class="separator:a6a26ff03a1d7261f45bbf0d8b230444f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cba5d261f9d8528925b8bf5e018d4a5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">unlock</a> ()=0</td></tr>
@@ -176,16 +176,7 @@ Public Member Functions</h2></td></tr>
 <p>Is the <a class="el" href="class_i_lock_object.html">ILockObject</a> created (initialized) ?</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="class_i_lock_object.html">ILockObject</a> created (initialized) and false when not </dd></dl>
 
-<p>Implemented in <a class="el" href="classbasic__scheduler__lock.html#a8e9231f736df15d461c26b4a949d13c0">basic_scheduler_lock</a>, <a class="el" href="classbasic__interrupts__lock.html#a074bb5229eb359de289e037de663dbcd">basic_interrupts_lock</a>, and <a class="el" href="classbasic__critical__lock.html#a73e5b03d3bbd17a5eca6a5e2693d382d">basic_critical_lock</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph.png" border="0" usemap="#aclass_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph" alt=""/></div>
-<map name="class_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph" id="class_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph">
-<area shape="rect" title=" " alt="" coords="232,13,420,39"/>
-<area shape="rect" href="classbasic__semaphore.html#a1574814ba8843ff44a639bf12ba87640" title=" " alt="" coords="5,5,184,47"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classbasic__scheduler__lock.html#a8e9231f736df15d461c26b4a949d13c0">basic_scheduler_lock</a>, <a class="el" href="classbasic__interrupts__lock.html#a074bb5229eb359de289e037de663dbcd">basic_interrupts_lock</a>, <a class="el" href="classbasic__critical__lock.html#a73e5b03d3bbd17a5eca6a5e2693d382d">basic_critical_lock</a>, and <a class="el" href="classbasic__semaphore.html#a64214e5c3aa37b9b403014931805bccf">basic_semaphore</a>.</p>
 
 </div>
 </div>
@@ -217,8 +208,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aba2228daa52411a90ea87075c69f5870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba2228daa52411a90ea87075c69f5870">&#9670;&nbsp;</a></span>lock() <span class="overload">[2/2]</span></h2>
+<a id="aa0ea8c3572be245b28681a96be10d8f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ea8c3572be245b28681a96be10d8f6">&#9670;&nbsp;</a></span>lock() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,7 +221,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">virtual int ILockObject::lock </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td class="paramname"><em>timeout</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -251,8 +242,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_i_lock_object_aba2228daa52411a90ea87075c69f5870_icgraph.png" border="0" usemap="#aclass_i_lock_object_aba2228daa52411a90ea87075c69f5870_icgraph" alt=""/></div>
-<map name="class_i_lock_object_aba2228daa52411a90ea87075c69f5870_icgraph" id="class_i_lock_object_aba2228daa52411a90ea87075c69f5870_icgraph">
+<div class="center"><img src="class_i_lock_object_aa0ea8c3572be245b28681a96be10d8f6_icgraph.png" border="0" usemap="#aclass_i_lock_object_aa0ea8c3572be245b28681a96be10d8f6_icgraph" alt=""/></div>
+<map name="class_i_lock_object_aa0ea8c3572be245b28681a96be10d8f6_icgraph" id="aclass_i_lock_object_aa0ea8c3572be245b28681a96be10d8f6_icgraph">
 <area shape="rect" title=" " alt="" coords="212,5,345,32"/>
 <area shape="rect" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef" title=" " alt="" coords="5,5,164,32"/>
 </map>
@@ -286,14 +277,14 @@ Here is the caller graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>call lock with timeout from 0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the Lock was acquired, false when not </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203">basic_mutex</a>, and <a class="el" href="classbasic__semaphore.html#a01f89c73a8652de925fdd22361590d46">basic_semaphore</a>.</p>
+<p>Reimplemented in <a class="el" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203">basic_mutex</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph.png" border="0" usemap="#aclass_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph" alt=""/></div>
-<map name="class_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph" id="class_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph">
+<map name="class_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph" id="aclass_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,164,32"/>
-<area shape="rect" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870" title=" " alt="" coords="212,5,345,32"/>
+<area shape="rect" href="class_i_lock_object.html#aa0ea8c3572be245b28681a96be10d8f6" title=" " alt="" coords="212,5,345,32"/>
 </map>
 </div>
 

@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('classbasic__task.html',''); initResiza
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classbasic__task-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">basic_task Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">basic_task Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -135,7 +135,7 @@ Inheritance diagram for basic_task:</div>
 Collaboration diagram for basic_task:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task__coll__graph.png" border="0" usemap="#abasic__task_coll__map" alt="Collaboration graph"/></div>
-<map name="basic__task_coll__map" id="abasic__task_coll__map">
+<map name="basic__task_coll__map" id="basic__task_coll__map">
 <area shape="rect" title=" " alt="" coords="32,96,123,123"/>
 <area shape="rect" href="classbasic__event__group.html" title=" " alt="" coords="5,5,149,32"/>
 </map>
@@ -221,8 +221,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8ab701e7548526255c1cc25f7438043e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b72239cffabe53da7de414f897b323"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ae2b72239cffabe53da7de414f897b323">on_kill</a> ()</td></tr>
 <tr class="separator:ae2b72239cffabe53da7de414f897b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbae529ca159f9c3a5ebd6c951ba44c9"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9">on_task</a> ()=0</td></tr>
-<tr class="separator:abbae529ca159f9c3a5ebd6c951ba44c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a38181ee473266a564b6b9478dba8c1"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task</a> ()</td></tr>
+<tr class="separator:a9a38181ee473266a564b6b9478dba8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6758a89add164cc0166d6436432ac5b9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a6758a89add164cc0166d6436432ac5b9">on_cleanup</a> ()</td></tr>
 <tr class="separator:a6758a89add164cc0166d6436432ac5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae164356297bfa6e080d24c40470e5469"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__task.html">basic_task</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ae164356297bfa6e080d24c40470e5469">get_root</a> ()</td></tr>
@@ -306,7 +306,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class around FreeRTOS's implementation of a task.</p>
-<p>This is an abstract base class. To use this, you need to subclass it. All of your task should be derived from the <a class="el" href="classbasic__task.html">basic_task</a> class. Then implement the virtual on_task function. </p>
+<p>To use this, you need to subclass it. All of your task should be derived from the <a class="el" href="classbasic__task.html">basic_task</a> class. Then implement the virtual on_task function. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="af2f26dcc4ddc2a0e5eaeea036effcf0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2f26dcc4ddc2a0e5eaeea036effcf0e">&#9670;&nbsp;</a></span>event</h2>
@@ -415,8 +415,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_a4871a116a5e13cc5e489226b8b10ab24_icgraph.png" border="0" usemap="#aclassbasic__task_a4871a116a5e13cc5e489226b8b10ab24_icgraph" alt=""/></div>
 <map name="classbasic__task_a4871a116a5e13cc5e489226b8b10ab24_icgraph" id="aclassbasic__task_a4871a116a5e13cc5e489226b8b10ab24_icgraph">
-<area shape="rect" title=" " alt="" coords="204,5,372,32"/>
-<area shape="rect" href="classbasic__task.html#a7293261cee60b89ba8ebfc5f6e8b6ba1" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" title=" " alt="" coords="415,5,583,32"/>
+<area shape="rect" href="classbasic__task.html#a7293261cee60b89ba8ebfc5f6e8b6ba1" title=" " alt="" coords="216,5,367,32"/>
+<area shape="rect" href="classbasic__task.html#ae78ab1544af8c43e1ad47a13bc8a0a0d" title=" " alt="" coords="5,5,168,32"/>
 </map>
 </div>
 
@@ -769,9 +770,18 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_cgraph.png" border="0" usemap="#aclassbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_cgraph" alt=""/></div>
-<map name="classbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_cgraph" id="aclassbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_cgraph">
+<map name="classbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_cgraph" id="classbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,156,32"/>
 <area shape="rect" href="classbasic__task.html#a4871a116a5e13cc5e489226b8b10ab24" title=" " alt="" coords="204,5,372,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_icgraph.png" border="0" usemap="#aclassbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_icgraph" alt=""/></div>
+<map name="classbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_icgraph" id="aclassbasic__task_a7293261cee60b89ba8ebfc5f6e8b6ba1_icgraph">
+<area shape="rect" title=" " alt="" coords="216,5,367,32"/>
+<area shape="rect" href="classbasic__task.html#ae78ab1544af8c43e1ad47a13bc8a0a0d" title=" " alt="" coords="5,5,168,32"/>
 </map>
 </div>
 
@@ -885,6 +895,16 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>Is the given task the current running task ? </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__task_ae78ab1544af8c43e1ad47a13bc8a0a0d_cgraph.png" border="0" usemap="#aclassbasic__task_ae78ab1544af8c43e1ad47a13bc8a0a0d_cgraph" alt=""/></div>
+<map name="classbasic__task_ae78ab1544af8c43e1ad47a13bc8a0a0d_cgraph" id="aclassbasic__task_ae78ab1544af8c43e1ad47a13bc8a0a0d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect" href="classbasic__task.html#a7293261cee60b89ba8ebfc5f6e8b6ba1" title=" " alt="" coords="216,5,367,32"/>
+<area shape="rect" href="classbasic__task.html#a4871a116a5e13cc5e489226b8b10ab24" title=" " alt="" coords="415,5,583,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -934,7 +954,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_a89cfe779e45feba081754a85327c2d04_cgraph.png" border="0" usemap="#aclassbasic__task_a89cfe779e45feba081754a85327c2d04_cgraph" alt=""/></div>
-<map name="classbasic__task_a89cfe779e45feba081754a85327c2d04_cgraph" id="aclassbasic__task_a89cfe779e45feba081754a85327c2d04_cgraph">
+<map name="classbasic__task_a89cfe779e45feba081754a85327c2d04_cgraph" id="classbasic__task_a89cfe779e45feba081754a85327c2d04_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,128,57"/>
 <area shape="rect" href="mn__micros_8hpp.html#a4dae981d2a2788aca9b0b5767f96d426" title=" " alt="" coords="176,31,287,57"/>
 <area shape="rect" href="mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72" title=" " alt="" coords="335,5,435,32"/>
@@ -971,7 +991,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_a6925a7cae036f8a6931e0c0eff7c120f_cgraph.png" border="0" usemap="#aclassbasic__task_a6925a7cae036f8a6931e0c0eff7c120f_cgraph" alt=""/></div>
-<map name="classbasic__task_a6925a7cae036f8a6931e0c0eff7c120f_cgraph" id="aclassbasic__task_a6925a7cae036f8a6931e0c0eff7c120f_cgraph">
+<map name="classbasic__task_a6925a7cae036f8a6931e0c0eff7c120f_cgraph" id="classbasic__task_a6925a7cae036f8a6931e0c0eff7c120f_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,128,32"/>
 <area shape="rect" href="classbasic__event__group.html#afae37acc51aa9d0cb2ec585939532749" title=" " alt="" coords="176,5,356,32"/>
 </map>
@@ -1084,7 +1104,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Called on exit from your <a class="el" href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9">on_task()</a> routine.</p>
+<p>Called on exit from your <a class="el" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task()</a> routine.</p>
 <p>It is optional whether you implement this or not.</p>
 <p>If you allow your task to exit its on_task method, </p>
 <div class="dynheader">
@@ -1173,8 +1193,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="abbae529ca159f9c3a5ebd6c951ba44c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbae529ca159f9c3a5ebd6c951ba44c9">&#9670;&nbsp;</a></span>on_task()</h2>
+<a id="a9a38181ee473266a564b6b9478dba8c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a38181ee473266a564b6b9478dba8c1">&#9670;&nbsp;</a></span>on_task()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1191,19 +1211,19 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Implementation of your actual task code. You must override this function.</p>
 <dl class="section return"><dt>Returns</dt><dd>Your return your task function, get with <a class="el" href="classbasic__task.html#a058f4acc8288a2453695924e4d2e5ae1">get_return_value()</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9">work_queue_task</a>, and <a class="el" href="classforeign__task.html#a2401f66479dbd9336f543a7820979657">foreign_task</a>.</p>
+<p>Reimplemented in <a class="el" href="classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9">work_queue_task</a>, and <a class="el" href="classforeign__task.html#a2401f66479dbd9336f543a7820979657">foreign_task</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classbasic__task_abbae529ca159f9c3a5ebd6c951ba44c9_icgraph.png" border="0" usemap="#aclassbasic__task_abbae529ca159f9c3a5ebd6c951ba44c9_icgraph" alt=""/></div>
-<map name="classbasic__task_abbae529ca159f9c3a5ebd6c951ba44c9_icgraph" id="classbasic__task_abbae529ca159f9c3a5ebd6c951ba44c9_icgraph">
+<div class="center"><img src="classbasic__task_a9a38181ee473266a564b6b9478dba8c1_icgraph.png" border="0" usemap="#aclassbasic__task_a9a38181ee473266a564b6b9478dba8c1_icgraph" alt=""/></div>
+<map name="classbasic__task_a9a38181ee473266a564b6b9478dba8c1_icgraph" id="aclassbasic__task_a9a38181ee473266a564b6b9478dba8c1_icgraph">
 <area shape="rect" title=" " alt="" coords="661,31,812,57"/>
 <area shape="rect" href="classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9" title=" " alt="" coords="419,5,613,32"/>
 <area shape="rect" href="classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020" title=" " alt="" coords="428,56,604,83"/>
@@ -1241,7 +1261,7 @@ Here is the caller graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_a781d500eae89a6e62051a94fdb453da7_cgraph.png" border="0" usemap="#aclassbasic__task_a781d500eae89a6e62051a94fdb453da7_cgraph" alt=""/></div>
-<map name="classbasic__task_a781d500eae89a6e62051a94fdb453da7_cgraph" id="aclassbasic__task_a781d500eae89a6e62051a94fdb453da7_cgraph">
+<map name="classbasic__task_a781d500eae89a6e62051a94fdb453da7_cgraph" id="classbasic__task_a781d500eae89a6e62051a94fdb453da7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,176,32"/>
 <area shape="rect" href="classbasic__task.html#a6b051f59a4f4fdf54e9aeb84191f3a4f" title=" " alt="" coords="224,5,400,32"/>
 </map>
@@ -1328,7 +1348,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_a6b051f59a4f4fdf54e9aeb84191f3a4f_icgraph.png" border="0" usemap="#aclassbasic__task_a6b051f59a4f4fdf54e9aeb84191f3a4f_icgraph" alt=""/></div>
-<map name="classbasic__task_a6b051f59a4f4fdf54e9aeb84191f3a4f_icgraph" id="aclassbasic__task_a6b051f59a4f4fdf54e9aeb84191f3a4f_icgraph">
+<map name="classbasic__task_a6b051f59a4f4fdf54e9aeb84191f3a4f_icgraph" id="classbasic__task_a6b051f59a4f4fdf54e9aeb84191f3a4f_icgraph">
 <area shape="rect" title=" " alt="" coords="224,5,400,32"/>
 <area shape="rect" href="classbasic__task.html#a781d500eae89a6e62051a94fdb453da7" title=" " alt="" coords="5,5,176,32"/>
 </map>
@@ -1454,7 +1474,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adapter function that allows you to write a class specific <a class="el" href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9">on_task()</a> function that interfaces with FreeRTOS. </p>
+<p>Adapter function that allows you to write a class specific <a class="el" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task()</a> function that interfaces with FreeRTOS. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1462,7 +1482,7 @@ Here is the call graph for this function:</div>
 <map name="classbasic__task_ac9d7c136a8e7eeba1227df042ca51020_cgraph" id="aclassbasic__task_ac9d7c136a8e7eeba1227df042ca51020_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,181,83"/>
 <area shape="rect" href="classbasic__task.html#a6758a89add164cc0166d6436432ac5b9" title=" " alt="" coords="229,5,403,32"/>
-<area shape="rect" href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9" title=" " alt="" coords="241,56,391,83"/>
+<area shape="rect" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1" title=" " alt="" coords="241,56,391,83"/>
 <area shape="rect" href="classbasic__event__group.html#a46da3674dc535fd549cbe050f608d37c" title=" " alt="" coords="230,107,402,133"/>
 </map>
 </div>
@@ -1589,7 +1609,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classbasic__task.html#a8ab701e7548526255c1cc25f7438043e" title=" " alt="" coords="195,5,347,32"/>
 <area shape="rect" href="classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020" title=" " alt="" coords="183,56,359,83"/>
 <area shape="rect" href="classbasic__task.html#a6758a89add164cc0166d6436432ac5b9" title=" " alt="" coords="407,5,580,32"/>
-<area shape="rect" href="classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9" title=" " alt="" coords="418,56,569,83"/>
+<area shape="rect" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1" title=" " alt="" coords="418,56,569,83"/>
 <area shape="rect" href="classbasic__event__group.html#a46da3674dc535fd549cbe050f608d37c" title=" " alt="" coords="407,107,579,133"/>
 </map>
 </div>
@@ -1769,7 +1789,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_a8519597409ccc8ccdb69440f5a590642_cgraph.png" border="0" usemap="#aclassbasic__task_a8519597409ccc8ccdb69440f5a590642_cgraph" alt=""/></div>
-<map name="classbasic__task_a8519597409ccc8ccdb69440f5a590642_cgraph" id="aclassbasic__task_a8519597409ccc8ccdb69440f5a590642_cgraph">
+<map name="classbasic__task_a8519597409ccc8ccdb69440f5a590642_cgraph" id="classbasic__task_a8519597409ccc8ccdb69440f5a590642_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,132,108"/>
 <area shape="rect" href="mn__micros_8hpp.html#a4dae981d2a2788aca9b0b5767f96d426" title=" " alt="" coords="188,56,299,83"/>
 <area shape="rect" href="classbasic__task.html#acb804cd09b760ce1746859530782d0da" title=" " alt="" coords="180,107,307,133"/>
@@ -1806,7 +1826,7 @@ Here is the call graph for this function:</div>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_acb804cd09b760ce1746859530782d0da_cgraph.png" border="0" usemap="#aclassbasic__task_acb804cd09b760ce1746859530782d0da_cgraph" alt=""/></div>
-<map name="classbasic__task_acb804cd09b760ce1746859530782d0da_cgraph" id="aclassbasic__task_acb804cd09b760ce1746859530782d0da_cgraph">
+<map name="classbasic__task_acb804cd09b760ce1746859530782d0da_cgraph" id="classbasic__task_acb804cd09b760ce1746859530782d0da_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,132,32"/>
 <area shape="rect" href="classbasic__event__group.html#afae37acc51aa9d0cb2ec585939532749" title=" " alt="" coords="180,5,360,32"/>
 </map>
@@ -1815,7 +1835,7 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__task_acb804cd09b760ce1746859530782d0da_icgraph.png" border="0" usemap="#aclassbasic__task_acb804cd09b760ce1746859530782d0da_icgraph" alt=""/></div>
-<map name="classbasic__task_acb804cd09b760ce1746859530782d0da_icgraph" id="aclassbasic__task_acb804cd09b760ce1746859530782d0da_icgraph">
+<map name="classbasic__task_acb804cd09b760ce1746859530782d0da_icgraph" id="classbasic__task_acb804cd09b760ce1746859530782d0da_icgraph">
 <area shape="rect" title=" " alt="" coords="180,5,307,32"/>
 <area shape="rect" href="classbasic__task.html#a8519597409ccc8ccdb69440f5a590642" title=" " alt="" coords="5,5,132,32"/>
 </map>

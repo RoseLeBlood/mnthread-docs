@@ -46,7 +46,7 @@ var classbasic__task =
     [ "on_cleanup", "classbasic__task.html#a6758a89add164cc0166d6436432ac5b9", null ],
     [ "on_kill", "classbasic__task.html#ae2b72239cffabe53da7de414f897b323", null ],
     [ "on_start", "classbasic__task.html#a8ab701e7548526255c1cc25f7438043e", null ],
-    [ "on_task", "classbasic__task.html#abbae529ca159f9c3a5ebd6c951ba44c9", null ],
+    [ "on_task", "classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1", null ],
     [ "operator!=", "classbasic__task.html#a781d500eae89a6e62051a94fdb453da7", null ],
     [ "operator<", "classbasic__task.html#a3e830112b0e245d9e859615ec1afef10", null ],
     [ "operator=", "classbasic__task.html#ac02bd9410257823449bdd180df8b1647", null ],

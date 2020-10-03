@@ -186,7 +186,7 @@ var NAVTREEINDEX1 =
 "mn__basic__semaphore_8cpp.html":[4,0,5],
 "mn__basic__semaphore_8hpp.html":[4,0,6],
 "mn__basic__semaphore_8hpp.html#a30ccffd5d59d4a0398922563558a1b16":[4,0,6,1],
-"mn__basic__semaphore_8hpp.html#a38e423a2cd23bc6fa857619ac922c711":[4,0,6,2],
+"mn__basic__semaphore_8hpp.html#a8dcc38d3232c62022bd17b7369a207fb":[4,0,6,2],
 "mn__basic__semaphore_8hpp_source.html":[4,0,6],
 "mn__binary__semaphore_8cpp.html":[4,0,7],
 "mn__binary__semaphore_8hpp.html":[4,0,8],
