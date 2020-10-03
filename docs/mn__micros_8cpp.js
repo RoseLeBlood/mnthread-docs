@@ -6,5 +6,7 @@ var mn__micros_8cpp =
     [ "ms_to_ticks", "mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72", null ],
     [ "seconds_to_ticks", "mn__micros_8cpp.html#a894568cb5a61a0b2e9902b900b4d159e", null ],
     [ "ticks_to_ms", "mn__micros_8cpp.html#a2a3ed6286aa98d795df3035274ec9e58", null ],
+    [ "time_to_ms", "mn__micros_8cpp.html#a3ae16aa615f1922ff29cd4a0d15334ad", null ],
+    [ "time_to_ticks", "mn__micros_8cpp.html#a4dae981d2a2788aca9b0b5767f96d426", null ],
     [ "microsMux", "mn__micros_8cpp.html#a2bd5b9348154dbb586c0c9c2a9fca07b", null ]
 ];

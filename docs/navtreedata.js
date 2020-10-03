@@ -61,7 +61,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
@@ -77,15 +77,16 @@ var NAVTREE =
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"classforeign__task.html#a01d88d78e4769b985ea8d8f7fe2014f9",
-"mn__error_8hpp.html#a9c8df9f748111ba73832831df4e8305f"
+"_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html",
+"classbasic__work__queue.html#a93e2cb1b7be1553089532b65c656499c",
+"mn__config__preview_8hpp.html#ad5f3537d1f4376b35d538dc7040f8e9a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

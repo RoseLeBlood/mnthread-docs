@@ -303,6 +303,17 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of the event group at the time the call to <a class="el" href="classbasic__event__group.html#a46da3674dc535fd549cbe050f608d37c">basic_event_group::set</a> returns </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__event__group_a46da3674dc535fd549cbe050f608d37c_icgraph.png" border="0" usemap="#aclassbasic__event__group_a46da3674dc535fd549cbe050f608d37c_icgraph" alt=""/></div>
+<map name="classbasic__event__group_a46da3674dc535fd549cbe050f608d37c_icgraph" id="aclassbasic__event__group_a46da3674dc535fd549cbe050f608d37c_icgraph">
+<area shape="rect" title=" " alt="" coords="643,13,815,39"/>
+<area shape="rect" href="classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020" title=" " alt="" coords="419,13,595,39"/>
+<area shape="rect" href="classbasic__task.html#a4d6776acfc21001a380019060ddc9cc7" title=" " alt="" coords="241,13,371,39"/>
+<area shape="rect" href="classbasic__work__queue__single.html#a9b69f915e0738a47005608405dad5a4b" title=" " alt="" coords="5,5,193,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -410,6 +421,17 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of the event group at the time either the event bits being waited for became set, or the block time expired. The current value of the event bits in an event group will be different to the returned value if a higher priority task or interrupt changed the value of an event bit between the calling task leaving the Blocked state and exiting the <a class="el" href="classbasic__event__group.html#afae37acc51aa9d0cb2ec585939532749">basic_event_group::wait</a> function. Test the return value to know which bits were set. If <a class="el" href="classbasic__event__group.html#afae37acc51aa9d0cb2ec585939532749">basic_event_group::wait</a> returned because its timeout expired then not all the bits being waited for will be set. If <a class="el" href="classbasic__event__group.html#afae37acc51aa9d0cb2ec585939532749">basic_event_group::wait</a> returned because the bits it was waiting for were set then the returned value is the event group value before any bits were automatically cleared because the xClearOnExit parameter was set to true. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__event__group_afae37acc51aa9d0cb2ec585939532749_icgraph.png" border="0" usemap="#aclassbasic__event__group_afae37acc51aa9d0cb2ec585939532749_icgraph" alt=""/></div>
+<map name="classbasic__event__group_afae37acc51aa9d0cb2ec585939532749_icgraph" id="aclassbasic__event__group_afae37acc51aa9d0cb2ec585939532749_icgraph">
+<area shape="rect" title=" " alt="" coords="355,31,535,57"/>
+<area shape="rect" href="classbasic__task.html#a6925a7cae036f8a6931e0c0eff7c120f" title=" " alt="" coords="182,5,305,32"/>
+<area shape="rect" href="classbasic__task.html#acb804cd09b760ce1746859530782d0da" title=" " alt="" coords="180,56,307,83"/>
+<area shape="rect" href="classbasic__task.html#a8519597409ccc8ccdb69440f5a590642" title=" " alt="" coords="5,56,132,83"/>
+</map>
+</div>
 
 </div>
 </div>

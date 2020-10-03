@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['no_5faction_778',['no_action',['../classtask__utils.html#a3ad11431d8cf2bb0a3234625c77ae5e4a8072f986487e10b4dcad2ff689d29150',1,'task_utils']]]
+  ['message_5fchild_5fexit_822',['Message_Child_Exit',['../classbasic__message__task.html#a1241fa8312e8924ed30e26a820af7db4a32afeed402d158b661cf9db6d42ec5ff',1,'basic_message_task']]],
+  ['message_5fchild_5fresume_823',['Message_Child_Resume',['../classbasic__message__task.html#a1241fa8312e8924ed30e26a820af7db4a759294aec8d815f87e9f358dc8c84718',1,'basic_message_task']]],
+  ['message_5fchild_5fsuspend_824',['Message_Child_Suspend',['../classbasic__message__task.html#a1241fa8312e8924ed30e26a820af7db4a345ce9a9f31bd6cc3abe8487e5f1e4db',1,'basic_message_task']]],
+  ['message_5fexit_825',['Message_Exit',['../classbasic__message__task.html#a1241fa8312e8924ed30e26a820af7db4aae312711bec9aadd638911cb7c11d5e9',1,'basic_message_task']]],
+  ['message_5fuser_826',['Message_User',['../classbasic__message__task.html#a1241fa8312e8924ed30e26a820af7db4a361782131ea73bf46159e6f855f0f9d2',1,'basic_message_task']]]
 ];

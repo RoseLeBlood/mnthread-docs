@@ -132,13 +132,14 @@ Collaboration diagram for work_queue_task:</div>
 <div class="dyncontent">
 <div class="center"><img src="classwork__queue__task__coll__graph.png" border="0" usemap="#awork__queue__task_coll__map" alt="Collaboration graph"/></div>
 <map name="work__queue__task_coll__map" id="awork__queue__task_coll__map">
-<area shape="rect" title=" " alt="" coords="99,353,235,380"/>
-<area shape="rect" href="classbasic__task.html" title=" " alt="" coords="5,263,96,289"/>
-<area shape="rect" href="classbasic__work__queue.html" title=" " alt="" coords="214,263,357,289"/>
-<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="165,157,270,184"/>
-<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="149,81,285,108"/>
-<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="168,5,267,32"/>
-<area shape="rect" href="classbasic__queue.html" title=" " alt="" coords="303,157,406,184"/>
+<area shape="rect" title=" " alt="" coords="125,353,261,380"/>
+<area shape="rect" href="classbasic__task.html" title=" " alt="" coords="32,263,123,289"/>
+<area shape="rect" href="classbasic__event__group.html" title=" " alt="" coords="5,157,149,184"/>
+<area shape="rect" href="classbasic__work__queue.html" title=" " alt="" coords="241,263,383,289"/>
+<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="217,157,322,184"/>
+<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="201,81,337,108"/>
+<area shape="rect" href="class_i_lock_object.html" title=" " alt="" coords="220,5,319,32"/>
+<area shape="rect" href="classbasic__queue.html" title=" " alt="" coords="355,157,458,184"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -163,8 +164,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4d6776acfc21001a380019060ddc9cc7 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51d2205ce6fedd999494fbd672ca3911 inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a51d2205ce6fedd999494fbd672ca3911">kill</a> ()</td></tr>
 <tr class="separator:a51d2205ce6fedd999494fbd672ca3911 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cfe779e45feba081754a85327c2d04 inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a89cfe779e45feba081754a85327c2d04">join</a> (const struct timeval *abs_time)</td></tr>
+<tr class="separator:a89cfe779e45feba081754a85327c2d04 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6925a7cae036f8a6931e0c0eff7c120f inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a6925a7cae036f8a6931e0c0eff7c120f">join</a> (unsigned int timeout=portMAX_DELAY)</td></tr>
+<tr class="separator:a6925a7cae036f8a6931e0c0eff7c120f inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c6346dc6f293f45fbff7e76749b5ffa inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a6c6346dc6f293f45fbff7e76749b5ffa">is_running</a> ()</td></tr>
 <tr class="separator:a6c6346dc6f293f45fbff7e76749b5ffa inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb804cd09b760ce1746859530782d0da inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#acb804cd09b760ce1746859530782d0da">wait</a> (unsigned int timeout)</td></tr>
+<tr class="separator:acb804cd09b760ce1746859530782d0da inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8519597409ccc8ccdb69440f5a590642 inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a8519597409ccc8ccdb69440f5a590642">wait</a> (const struct timeval *abs_time)</td></tr>
+<tr class="separator:a8519597409ccc8ccdb69440f5a590642 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66dc3d2e5ec754aa76e875013dc42d81 inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a66dc3d2e5ec754aa76e875013dc42d81">get_name</a> ()</td></tr>
 <tr class="separator:a66dc3d2e5ec754aa76e875013dc42d81 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7610aede8af62918881230e72867c30c inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a7610aede8af62918881230e72867c30c">get_priority</a> ()</td></tr>
@@ -201,6 +210,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf061ac6881695e0a89b70e686be7622 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0111d42a4358b1151ccce8eabcf6d8 inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#aaa0111d42a4358b1151ccce8eabcf6d8">add_child_task</a> (<a class="el" href="classbasic__task.html">basic_task</a> *task)</td></tr>
 <tr class="separator:aaa0111d42a4358b1151ccce8eabcf6d8 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b051f59a4f4fdf54e9aeb84191f3a4f inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a6b051f59a4f4fdf54e9aeb84191f3a4f">operator==</a> (const <a class="el" href="classbasic__task.html">basic_task</a> &amp;r) const</td></tr>
+<tr class="separator:a6b051f59a4f4fdf54e9aeb84191f3a4f inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781d500eae89a6e62051a94fdb453da7 inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a781d500eae89a6e62051a94fdb453da7">operator!=</a> (const <a class="el" href="classbasic__task.html">basic_task</a> &amp;r) const</td></tr>
+<tr class="separator:a781d500eae89a6e62051a94fdb453da7 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e830112b0e245d9e859615ec1afef10 inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a3e830112b0e245d9e859615ec1afef10">operator&lt;</a> (const <a class="el" href="classbasic__task.html">basic_task</a> &amp;r) const</td></tr>
+<tr class="separator:a3e830112b0e245d9e859615ec1afef10 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53889dbe540a24e8eed642b77e8c551 inherit pub_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ac53889dbe540a24e8eed642b77e8c551">operator&gt;</a> (const <a class="el" href="classbasic__task.html">basic_task</a> &amp;r) const</td></tr>
+<tr class="separator:ac53889dbe540a24e8eed642b77e8c551 inherit pub_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -239,6 +256,10 @@ Additional Inherited Members</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ab23e8cb172e37ec41a5ee7dfe65b1cab inherit pub_types_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f26dcc4ddc2a0e5eaeea036effcf0e inherit pub_types_classbasic__task"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#af2f26dcc4ddc2a0e5eaeea036effcf0e">event</a> { <a class="el" href="classbasic__task.html#af2f26dcc4ddc2a0e5eaeea036effcf0ea4f7dc4017e277c51a22d178a8b17a438">EventStarted</a> = 1 &lt;&lt; 24, 
+<a class="el" href="classbasic__task.html#af2f26dcc4ddc2a0e5eaeea036effcf0eabcb1f5e03dffb777d48ba7aca25e0a5c">EventJoin</a> = 1 &lt;&lt; 25
+ }</td></tr>
+<tr class="separator:af2f26dcc4ddc2a0e5eaeea036effcf0e inherit pub_types_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classbasic__task"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classbasic__task')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classbasic__task.html">basic_task</a></td></tr>
 <tr class="memitem:a6b53166e8fd2a8a64c7bde5ec240ad2c inherit pub_static_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a6b53166e8fd2a8a64c7bde5ec240ad2c">suspend</a> (<a class="el" href="classbasic__task.html">basic_task</a> *t)</td></tr>
 <tr class="separator:a6b53166e8fd2a8a64c7bde5ec240ad2c inherit pub_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,12 +273,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2229a31fb96085bcd202e585705bc0fc inherit pub_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb483556de0f92f83e351884cadc2221 inherit pub_static_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#adb483556de0f92f83e351884cadc2221">nsleep</a> (const struct timespec *req, struct timespec *rem)</td></tr>
 <tr class="separator:adb483556de0f92f83e351884cadc2221 inherit pub_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaebb9db8e321e5d08323fbd0a0adbc39 inherit pub_static_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#aaebb9db8e321e5d08323fbd0a0adbc39">lock</a> (<a class="el" href="classbasic__task.html">basic_task</a> &amp;t)</td></tr>
-<tr class="separator:aaebb9db8e321e5d08323fbd0a0adbc39 inherit pub_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c13309a3050dae486b2eeffed58b27c inherit pub_static_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a9c13309a3050dae486b2eeffed58b27c">unlock</a> (<a class="el" href="classbasic__task.html">basic_task</a> &amp;t)</td></tr>
-<tr class="separator:a9c13309a3050dae486b2eeffed58b27c inherit pub_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2583004c12f7d14b96b1bb6f971f217a inherit pub_static_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a2583004c12f7d14b96b1bb6f971f217a">get_tasks</a> ()</td></tr>
 <tr class="separator:a2583004c12f7d14b96b1bb6f971f217a inherit pub_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78ab1544af8c43e1ad47a13bc8a0a0d inherit pub_static_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ae78ab1544af8c43e1ad47a13bc8a0a0d">is_current</a> (<a class="el" href="classbasic__task.html">basic_task</a> *task)</td></tr>
+<tr class="separator:ae78ab1544af8c43e1ad47a13bc8a0a0d inherit pub_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7293261cee60b89ba8ebfc5f6e8b6ba1 inherit pub_static_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbasic__task.html">basic_task</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a7293261cee60b89ba8ebfc5f6e8b6ba1">get_self</a> ()</td></tr>
+<tr class="separator:a7293261cee60b89ba8ebfc5f6e8b6ba1 inherit pub_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classbasic__task"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classbasic__task')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classbasic__task.html">basic_task</a></td></tr>
 <tr class="memitem:ac9d7c136a8e7eeba1227df042ca51020 inherit pro_static_methods_classbasic__task"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020">runtaskstub</a> (void *parm)</td></tr>
 <tr class="separator:ac9d7c136a8e7eeba1227df042ca51020 inherit pro_static_methods_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,8 +289,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ada5bdbf32f875fae85688b7a01d43af3 inherit pro_attribs_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6844b82a4d42a8468849cf5b6e5436c inherit pro_attribs_classbasic__task"><td class="memItemLeft" align="right" valign="top">LockType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ad6844b82a4d42a8468849cf5b6e5436c">m_continuemutex</a></td></tr>
 <tr class="separator:ad6844b82a4d42a8468849cf5b6e5436c inherit pro_attribs_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a815aa196229f6b9ad01e9b17b1fc9778 inherit pro_attribs_classbasic__task"><td class="memItemLeft" align="right" valign="top">LockType_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a815aa196229f6b9ad01e9b17b1fc9778">m_continuemutex2</a></td></tr>
-<tr class="separator:a815aa196229f6b9ad01e9b17b1fc9778 inherit pro_attribs_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7782c5497ceaa99e60f67c5982e66b1d inherit pro_attribs_classbasic__task"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a7782c5497ceaa99e60f67c5982e66b1d">m_strName</a></td></tr>
 <tr class="separator:a7782c5497ceaa99e60f67c5982e66b1d inherit pro_attribs_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46fb1c083a5b238daf222c705a95eec8 inherit pro_attribs_classbasic__task"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58db">basic_task::priority</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a46fb1c083a5b238daf222c705a95eec8">m_uiPriority</a></td></tr>
@@ -290,6 +309,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a669c567df93bac1679d726fcb070812e inherit pro_attribs_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcc112cb40f91e1c940dddb61cd5fc78 inherit pro_attribs_classbasic__task"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__task.html">basic_task</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#adcc112cb40f91e1c940dddb61cd5fc78">m_pParent</a></td></tr>
 <tr class="separator:adcc112cb40f91e1c940dddb61cd5fc78 inherit pro_attribs_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a627f8094ec1a536dfa13604ff8815e inherit pro_attribs_classbasic__task"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__eventgroup_8hpp.html#a80cc926f701a2e3c3dbdea720595a136">event_group_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a1a627f8094ec1a536dfa13604ff8815e">m_event</a></td></tr>
+<tr class="separator:a1a627f8094ec1a536dfa13604ff8815e inherit pro_attribs_classbasic__task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The basic worker task for single task and multi task workqueue engines </p>

@@ -131,29 +131,43 @@ $(document).ready(function(){initNavTree('mn__micros_8hpp_source.html',''); init
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MNTHREAD_MICROS_H_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MNTHREAD_MICROS_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="mn__micros_8hpp.html#a8b24cbb7c3486e1bfa05c86db83ecb01">micros</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="mn__micros_8hpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451">get_ticks</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#a2a3ed6286aa98d795df3035274ec9e58">ticks_to_ms</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ticks);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="mn__micros_8hpp.html#ad6abbe9b7d00cca6e5d54a4596ea2b44">seconds_to_ticks</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ms);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;sys/time.h</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">unsigned long micros();</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">unsigned long millis();</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">unsigned int get_ticks();</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">unsigned int ticks_to_ms(unsigned int ticks);</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">unsigned int ms_to_ticks(unsigned int ms);</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">unsigned int seconds_to_ticks(unsigned int ms);</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">unsigned int time_to_ms(const struct timeval* time);</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="mn__micros_8hpp.html#a1153506008b44a7d710d2a985b7052d5">   81</a></span>&#160;<span class="preprocessor">unsigned int time_to_ticks(const struct timeval* time);</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">static inline struct timeval operator - (const struct timeval &amp;lhs, const struct timeval &amp;rhs) {</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">    int32_t s = lhs.tv_sec - rhs.tv_sec;</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">    int32_t ns = lhs.tv_usec - rhs.tv_usec * 1000;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">    return timeval{s, ns};</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">static inline struct timeval operator + (const struct timeval &amp;lhs, const struct timeval &amp;rhs) {</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">    int32_t s = lhs.tv_sec - rhs.tv_sec;</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">    int32_t ns = lhs.tv_usec - rhs.tv_usec * 1000;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span> </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">    return timeval{s, ns};</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="amn__micros_8hpp_html_a8b24cbb7c3486e1bfa05c86db83ecb01"><div class="ttname"><a href="mn__micros_8hpp.html#a8b24cbb7c3486e1bfa05c86db83ecb01">micros</a></div><div class="ttdeci">unsigned long micros()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:38</div></div>
 <div class="ttc" id="amn__micros_8cpp_html_af74f583a5fd5c67d9d8b4f347ab1143d"><div class="ttname"><a href="mn__micros_8cpp.html#af74f583a5fd5c67d9d8b4f347ab1143d">micros</a></div><div class="ttdeci">unsigned long IRAM_ATTR micros()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:38</div></div>
 <div class="ttc" id="amn__micros_8cpp_html_a2bd5b9348154dbb586c0c9c2a9fca07b"><div class="ttname"><a href="mn__micros_8cpp.html#a2bd5b9348154dbb586c0c9c2a9fca07b">microsMux</a></div><div class="ttdeci">portMUX_TYPE microsMux</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:33</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_afe01282e038ec57df55905e1ecceff72"><div class="ttname"><a href="mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a></div><div class="ttdeci">unsigned int ms_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:84</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_a2a3ed6286aa98d795df3035274ec9e58"><div class="ttname"><a href="mn__micros_8hpp.html#a2a3ed6286aa98d795df3035274ec9e58">ticks_to_ms</a></div><div class="ttdeci">unsigned int ticks_to_ms(unsigned int ticks)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:77</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_afdf0a92b2d187681014a7ba7aa672451"><div class="ttname"><a href="mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451">get_ticks</a></div><div class="ttdeci">unsigned int get_ticks()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:66</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_a6ff7f2532a22366f0013bc41397129fd"><div class="ttname"><a href="mn__micros_8hpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a></div><div class="ttdeci">unsigned long millis()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:55</div></div>
-<div class="ttc" id="amn__micros_8hpp_html_ad6abbe9b7d00cca6e5d54a4596ea2b44"><div class="ttname"><a href="mn__micros_8hpp.html#ad6abbe9b7d00cca6e5d54a4596ea2b44">seconds_to_ticks</a></div><div class="ttdeci">unsigned int seconds_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:91</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_a3ae16aa615f1922ff29cd4a0d15334ad"><div class="ttname"><a href="mn__micros_8cpp.html#a3ae16aa615f1922ff29cd4a0d15334ad">time_to_ms</a></div><div class="ttdeci">unsigned int time_to_ms(const struct timeval *time)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:98</div></div>
 <div class="ttc" id="amn__micros_8cpp_html_a6ff7f2532a22366f0013bc41397129fd"><div class="ttname"><a href="mn__micros_8cpp.html#a6ff7f2532a22366f0013bc41397129fd">millis</a></div><div class="ttdeci">unsigned long millis()</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:55</div></div>
+<div class="ttc" id="amn__micros_8cpp_html_a4dae981d2a2788aca9b0b5767f96d426"><div class="ttname"><a href="mn__micros_8cpp.html#a4dae981d2a2788aca9b0b5767f96d426">time_to_ticks</a></div><div class="ttdeci">unsigned int time_to_ticks(const struct timeval *time)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:110</div></div>
 <div class="ttc" id="amn__micros_8cpp_html_a894568cb5a61a0b2e9902b900b4d159e"><div class="ttname"><a href="mn__micros_8cpp.html#a894568cb5a61a0b2e9902b900b4d159e">seconds_to_ticks</a></div><div class="ttdeci">unsigned int seconds_to_ticks(unsigned int sec)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:91</div></div>
 <div class="ttc" id="amn__micros_8cpp_html_afe01282e038ec57df55905e1ecceff72"><div class="ttname"><a href="mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72">ms_to_ticks</a></div><div class="ttdeci">unsigned int ms_to_ticks(unsigned int ms)</div><div class="ttdef"><b>Definition:</b> mn_micros.cpp:84</div></div>
 <div class="ttc" id="amn__micros_8hpp_html"><div class="ttname"><a href="mn__micros_8hpp.html">mn_micros.hpp</a></div></div>

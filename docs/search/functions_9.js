@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kill_617',['kill',['../classbasic__task.html#a51d2205ce6fedd999494fbd672ca3911',1,'basic_task']]]
+  ['join_646',['join',['../classbasic__task.html#a89cfe779e45feba081754a85327c2d04',1,'basic_task::join(const struct timeval *abs_time)'],['../classbasic__task.html#a6925a7cae036f8a6931e0c0eff7c120f',1,'basic_task::join(unsigned int timeout=portMAX_DELAY)']]]
 ];

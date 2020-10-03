@@ -131,25 +131,31 @@ $(document).ready(function(){initNavTree('mn__lock_8hpp_source.html',''); initRe
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MINLIB_ILOCK_INTERFACE_H_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINLIB_ILOCK_INTERFACE_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_i_lock_object.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_lock_object.html">ILockObject</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">   44</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout) = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">   48</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">unlock</a>() = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">   57</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">try_lock</a>() {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">lock</a>(0) == 0);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809">   66</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809">is_initialized</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__micros_8hpp.html">mn_micros.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_i_lock_object.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_lock_object.html">ILockObject</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">   39</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout) = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#a6a26ff03a1d7261f45bbf0d8b230444f">   41</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_i_lock_object.html#a6a26ff03a1d7261f45bbf0d8b230444f">lock</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timeval *abs_time) = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">   45</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">unlock</a>() = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">   54</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">try_lock</a>() {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">lock</a>(0) == 0);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809">   63</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809">is_initialized</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_i_lock_object_html"><div class="ttname"><a href="class_i_lock_object.html">ILockObject</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:31</div></div>
-<div class="ttc" id="aclass_i_lock_object_html_afea7dd35cae90d7f44db21352f9a7cef"><div class="ttname"><a href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">ILockObject::try_lock</a></div><div class="ttdeci">virtual bool try_lock()</div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:57</div></div>
+<div class="ttc" id="aclass_i_lock_object_html"><div class="ttname"><a href="class_i_lock_object.html">ILockObject</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:33</div></div>
+<div class="ttc" id="aclass_i_lock_object_html_afea7dd35cae90d7f44db21352f9a7cef"><div class="ttname"><a href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">ILockObject::try_lock</a></div><div class="ttdeci">virtual bool try_lock()</div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:54</div></div>
 <div class="ttc" id="aclass_i_lock_object_html_a0cba5d261f9d8528925b8bf5e018d4a5"><div class="ttname"><a href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">ILockObject::unlock</a></div><div class="ttdeci">virtual int unlock()=0</div></div>
 <div class="ttc" id="aclass_i_lock_object_html_aba2228daa52411a90ea87075c69f5870"><div class="ttname"><a href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">ILockObject::lock</a></div><div class="ttdeci">virtual int lock(unsigned int timeout)=0</div></div>
+<div class="ttc" id="aclass_i_lock_object_html_a6a26ff03a1d7261f45bbf0d8b230444f"><div class="ttname"><a href="class_i_lock_object.html#a6a26ff03a1d7261f45bbf0d8b230444f">ILockObject::lock</a></div><div class="ttdeci">virtual int lock(const struct timeval *abs_time)=0</div></div>
+<div class="ttc" id="amn__micros_8hpp_html"><div class="ttname"><a href="mn__micros_8hpp.html">mn_micros.hpp</a></div></div>
 <div class="ttc" id="aclass_i_lock_object_html_abdd29c33b5d3d0e49c1d2f7172c16809"><div class="ttname"><a href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809">ILockObject::is_initialized</a></div><div class="ttdeci">virtual bool is_initialized() const =0</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

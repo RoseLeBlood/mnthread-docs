@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['increment_772',['increment',['../classtask__utils.html#a3ad11431d8cf2bb0a3234625c77ae5e4a03bb183ff91c4f976c0552714c5ce675',1,'task_utils']]]
+  ['eventjoin_819',['EventJoin',['../classbasic__task.html#af2f26dcc4ddc2a0e5eaeea036effcf0eabcb1f5e03dffb777d48ba7aca25e0a5c',1,'basic_task']]],
+  ['eventstarted_820',['EventStarted',['../classbasic__task.html#af2f26dcc4ddc2a0e5eaeea036effcf0ea4f7dc4017e277c51a22d178a8b17a438',1,'basic_task']]]
 ];

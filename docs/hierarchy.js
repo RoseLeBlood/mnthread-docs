@@ -14,6 +14,7 @@ var hierarchy =
       [ "work_queue_task", "classwork__queue__task.html", null ]
     ] ],
     [ "basic_tasklet", "classbasic__tasklet.html", null ],
+    [ "basic_timed_lock< TLOCK >", "classbasic__timed__lock.html", null ],
     [ "basic_timer", "classbasic__timer.html", null ],
     [ "basic_work_queue", "classbasic__work__queue.html", [
       [ "basic_work_queue_multi", "classbasic__work__queue__multi.html", null ],

@@ -15,6 +15,7 @@ var annotated_dup =
     [ "basic_semaphore", "classbasic__semaphore.html", "classbasic__semaphore" ],
     [ "basic_task", "classbasic__task.html", "classbasic__task" ],
     [ "basic_tasklet", "classbasic__tasklet.html", "classbasic__tasklet" ],
+    [ "basic_timed_lock", "classbasic__timed__lock.html", "classbasic__timed__lock" ],
     [ "basic_timer", "classbasic__timer.html", "classbasic__timer" ],
     [ "basic_work_queue", "classbasic__work__queue.html", "classbasic__work__queue" ],
     [ "basic_work_queue_multi", "classbasic__work__queue__multi.html", "classbasic__work__queue__multi" ],

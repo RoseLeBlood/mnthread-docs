@@ -149,6 +149,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1574814ba8843ff44a639bf12ba87640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade8fed61cc1dd5b48129e837b67fabd7"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7">lock</a> (unsigned int timeout=<a class="el" href="mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2">MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT</a>)</td></tr>
 <tr class="separator:ade8fed61cc1dd5b48129e837b67fabd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec8c5700b0e232710da39750da4eaae"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#a4ec8c5700b0e232710da39750da4eaae">lock</a> (const struct timeval *abs_time)</td></tr>
+<tr class="separator:a4ec8c5700b0e232710da39750da4eaae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1eed14bc4c271923e2ac0a4ff3dc572"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572">unlock</a> ()</td></tr>
 <tr class="separator:ad1eed14bc4c271923e2ac0a4ff3dc572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01f89c73a8652de925fdd22361590d46"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#a01f89c73a8652de925fdd22361590d46">try_lock</a> ()</td></tr>
@@ -157,6 +159,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3f687583c39b52b9c34a73a842d80efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5642d86cba4b542d00534a5f389f91f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#a5642d86cba4b542d00534a5f389f91f7">get_error</a> ()</td></tr>
 <tr class="separator:a5642d86cba4b542d00534a5f389f91f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4769cf9d813c7b8ac9370fb63c862338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#a4769cf9d813c7b8ac9370fb63c862338">operator==</a> (const <a class="el" href="classbasic__semaphore.html">basic_semaphore</a> &amp;r) const</td></tr>
+<tr class="separator:a4769cf9d813c7b8ac9370fb63c862338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a97adcf3d92fab49b679be734edb50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#ac2a97adcf3d92fab49b679be734edb50">operator!=</a> (const <a class="el" href="classbasic__semaphore.html">basic_semaphore</a> &amp;r) const</td></tr>
+<tr class="separator:ac2a97adcf3d92fab49b679be734edb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f96a3bc71ad33c9d1482ab6d1af7040"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#a0f96a3bc71ad33c9d1482ab6d1af7040">operator&lt;</a> (const <a class="el" href="classbasic__semaphore.html">basic_semaphore</a> &amp;r) const</td></tr>
+<tr class="separator:a0f96a3bc71ad33c9d1482ab6d1af7040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e014ae19733535971ec451851248acf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__semaphore.html#a8e014ae19733535971ec451851248acf">operator&gt;</a> (const <a class="el" href="classbasic__semaphore.html">basic_semaphore</a> &amp;r) const</td></tr>
+<tr class="separator:a8e014ae19733535971ec451851248acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_i_lock_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_lock_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_lock_object.html">ILockObject</a></td></tr>
 <tr class="memitem:abdd29c33b5d3d0e49c1d2f7172c16809 inherit pub_methods_class_i_lock_object"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809">is_initialized</a> () const =0</td></tr>
 <tr class="separator:abdd29c33b5d3d0e49c1d2f7172c16809 inherit pub_methods_class_i_lock_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +185,8 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base wrapper class around FreeRTOS's implementation of semaphores. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#_a0">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a44d78db5e0248847bda2e8ae7dbc556d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44d78db5e0248847bda2e8ae7dbc556d">&#9670;&nbsp;</a></span>basic_semaphore() <span class="overload">[1/2]</span></h2>
@@ -190,6 +202,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a2">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -212,7 +226,7 @@ Protected Attributes</h2></td></tr>
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__semaphore_a1574814ba8843ff44a639bf12ba87640_cgraph.png" border="0" usemap="#aclassbasic__semaphore_a1574814ba8843ff44a639bf12ba87640_cgraph" alt=""/></div>
-<map name="classbasic__semaphore_a1574814ba8843ff44a639bf12ba87640_cgraph" id="aclassbasic__semaphore_a1574814ba8843ff44a639bf12ba87640_cgraph">
+<map name="classbasic__semaphore_a1574814ba8843ff44a639bf12ba87640_cgraph" id="classbasic__semaphore_a1574814ba8843ff44a639bf12ba87640_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,184,47"/>
 <area shape="rect" href="class_i_lock_object.html#abdd29c33b5d3d0e49c1d2f7172c16809" title=" " alt="" coords="232,13,420,39"/>
 </map>
@@ -243,6 +257,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a9">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -270,11 +286,61 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Get the FreeRTOS handle</p>
 <dl class="section return"><dt>Returns</dt><dd>the FreeRTOS handle </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a7">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ec8c5700b0e232710da39750da4eaae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec8c5700b0e232710da39750da4eaae">&#9670;&nbsp;</a></span>lock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int basic_semaphore::lock </td>
+          <td>(</td>
+          <td class="paramtype">const struct timeval *&#160;</td>
+          <td class="paramname"><em>abs_time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>lock (take) a semaphore.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abs_time</td><td>How long to wait to get the lock until giving up.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ERR_SPINLOCK_OK if the Semaphore was locked, ERR_SPINLOCK_LOCK if it timed out. </dd></dl>
+
+<p>Implements <a class="el" href="class_i_lock_object.html#a6a26ff03a1d7261f45bbf0d8b230444f">ILockObject</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__semaphore_a4ec8c5700b0e232710da39750da4eaae_cgraph.png" border="0" usemap="#aclassbasic__semaphore_a4ec8c5700b0e232710da39750da4eaae_cgraph" alt=""/></div>
+<map name="classbasic__semaphore_a4ec8c5700b0e232710da39750da4eaae_cgraph" id="aclassbasic__semaphore_a4ec8c5700b0e232710da39750da4eaae_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,176,57"/>
+<area shape="rect" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7" title=" " alt="" coords="224,5,395,32"/>
+<area shape="rect" href="mn__micros_8hpp.html#a4dae981d2a2788aca9b0b5767f96d426" title=" " alt="" coords="254,56,365,83"/>
+<area shape="rect" href="mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72" title=" " alt="" coords="443,31,543,57"/>
+<area shape="rect" href="mn__micros_8cpp.html#a3ae16aa615f1922ff29cd4a0d15334ad" title=" " alt="" coords="443,81,542,108"/>
+</map>
+</div>
 
 </div>
 </div>
 <a id="ade8fed61cc1dd5b48129e837b67fabd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade8fed61cc1dd5b48129e837b67fabd7">&#9670;&nbsp;</a></span>lock()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8fed61cc1dd5b48129e837b67fabd7">&#9670;&nbsp;</a></span>lock() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,30 +362,159 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Aquire (take) a semaphore.</p>
-<p>Example of blocking indefinitely: aSemaphore.Take();</p>
-<p>Example of blocking for 100 ticks: aSemaphore.Take(100);</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>lock (take) a LokObject </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">timeout</td><td>How long to wait to get the Lock until giving up. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>ERR_SPINLOCK_OK if the Semaphore was acquired, ERR_SPINLOCK_LOCK if it timed out. </dd></dl>
 
 <p>Implements <a class="el" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">ILockObject</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classrecursive__mutex.html#a360b1b4749cf2ef0f7662beb1cf7cf97">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">basic_mutex</a>.</p>
+<p>Reimplemented in <a class="el" href="classrecursive__mutex.html#acf8a7871defd1a18a2d2e9463b4224b1">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">basic_mutex</a>.</p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a3">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph.png" border="0" usemap="#aclassbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph" alt=""/></div>
 <map name="classbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph" id="aclassbasic__semaphore_ade8fed61cc1dd5b48129e837b67fabd7_icgraph">
-<area shape="rect" title=" " alt="" coords="249,31,420,57"/>
+<area shape="rect" title=" " alt="" coords="249,56,420,83"/>
 <area shape="rect" href="classbasic__tasklet.html#add637f5d08f5280e4634adb73eac831a" title=" " alt="" coords="25,5,182,32"/>
-<area shape="rect" href="classbasic__semaphore.html#a01f89c73a8652de925fdd22361590d46" title=" " alt="" coords="5,56,201,83"/>
+<area shape="rect" href="classbasic__semaphore.html#a4ec8c5700b0e232710da39750da4eaae" title=" " alt="" coords="18,56,189,83"/>
+<area shape="rect" href="classbasic__semaphore.html#a01f89c73a8652de925fdd22361590d46" title=" " alt="" coords="5,107,201,133"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ac2a97adcf3d92fab49b679be734edb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a97adcf3d92fab49b679be734edb50">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basic_semaphore::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbasic__semaphore.html">basic_semaphore</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a12">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__semaphore_ac2a97adcf3d92fab49b679be734edb50_cgraph.png" border="0" usemap="#aclassbasic__semaphore_ac2a97adcf3d92fab49b679be734edb50_cgraph" alt=""/></div>
+<map name="classbasic__semaphore_ac2a97adcf3d92fab49b679be734edb50_cgraph" id="aclassbasic__semaphore_ac2a97adcf3d92fab49b679be734edb50_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" href="classbasic__semaphore.html#a4769cf9d813c7b8ac9370fb63c862338" title=" " alt="" coords="268,5,489,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0f96a3bc71ad33c9d1482ab6d1af7040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f96a3bc71ad33c9d1482ab6d1af7040">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basic_semaphore::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbasic__semaphore.html">basic_semaphore</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a13">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a4769cf9d813c7b8ac9370fb63c862338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4769cf9d813c7b8ac9370fb63c862338">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basic_semaphore::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbasic__semaphore.html">basic_semaphore</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a11">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic__semaphore_a4769cf9d813c7b8ac9370fb63c862338_icgraph.png" border="0" usemap="#aclassbasic__semaphore_a4769cf9d813c7b8ac9370fb63c862338_icgraph" alt=""/></div>
+<map name="classbasic__semaphore_a4769cf9d813c7b8ac9370fb63c862338_icgraph" id="aclassbasic__semaphore_a4769cf9d813c7b8ac9370fb63c862338_icgraph">
+<area shape="rect" title=" " alt="" coords="268,5,489,32"/>
+<area shape="rect" href="classbasic__semaphore.html#ac2a97adcf3d92fab49b679be734edb50" title=" " alt="" coords="5,5,220,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8e014ae19733535971ec451851248acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e014ae19733535971ec451851248acf">&#9670;&nbsp;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool basic_semaphore::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classbasic__semaphore.html">basic_semaphore</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a14">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -346,6 +541,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a15">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -378,6 +575,8 @@ Here is the caller graph for this function:</div>
 <p>Reimplemented from <a class="el" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">ILockObject</a>.</p>
 
 <p>Reimplemented in <a class="el" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203">basic_mutex</a>.</p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a6">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -412,17 +611,19 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Release (give) a semaphore.</p>
-<dl class="section return"><dt>Returns</dt><dd>ERR_SPINLOCK_OK if the Semaphore was released, ERR_SPINLOCK_UNLOCK if it failed. </dd></dl>
+<p>unlock (give) a semaphore.</p>
+<dl class="section return"><dt>Returns</dt><dd>ERR_SPINLOCK_OK if the Semaphore was unlocked, ERR_SPINLOCK_UNLOCK if it failed. </dd></dl>
 
 <p>Implements <a class="el" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">ILockObject</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classrecursive__mutex.html#a5ed84c06d86fc9ba4e998b0fc5bde897">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex</a>.</p>
+<p>Reimplemented in <a class="el" href="classrecursive__mutex.html#aa4d5bcce538269f718fc9d4f6cb8e472">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex</a>.</p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a5">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph.png" border="0" usemap="#aclassbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph" alt=""/></div>
-<map name="classbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph" id="aclassbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph">
+<map name="classbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph" id="classbasic__semaphore_ad1eed14bc4c271923e2ac0a4ff3dc572_icgraph">
 <area shape="rect" title=" " alt="" coords="465,107,652,134"/>
 <area shape="rect" href="classbasic__binary__semaphore.html#a5faa66db7e0d437259a578dfe418f324" title=" " alt="" coords="218,5,410,47"/>
 <area shape="rect" href="classbasic__counting__semaphore.html#a71785d3fd74ae1a9b7bb6744d5d57b87" title=" " alt="" coords="211,71,417,112"/>
@@ -453,6 +654,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a10">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -476,6 +679,8 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>FreeRTOS semaphore handle. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a8">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 
 </div>
 </div>

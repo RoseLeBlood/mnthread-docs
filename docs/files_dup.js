@@ -63,6 +63,7 @@ var files_dup =
     [ "mn_task_utils.hpp", "mn__task__utils_8hpp.html", "mn__task__utils_8hpp" ],
     [ "mn_tasklet.cpp", "mn__tasklet_8cpp.html", null ],
     [ "mn_tasklet.hpp", "mn__tasklet_8hpp.html", "mn__tasklet_8hpp" ],
+    [ "mn_timed_lock.hpp", "mn__timed__lock_8hpp.html", "mn__timed__lock_8hpp" ],
     [ "mn_timer.cpp", "mn__timer_8cpp.html", null ],
     [ "mn_timer.hpp", "mn__timer_8hpp.html", "mn__timer_8hpp" ],
     [ "mn_version.cpp", "mn__version_8cpp.html", null ],

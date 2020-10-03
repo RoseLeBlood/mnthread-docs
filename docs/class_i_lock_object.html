@@ -137,6 +137,8 @@ Inheritance diagram for ILockObject:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aba2228daa52411a90ea87075c69f5870"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#aba2228daa52411a90ea87075c69f5870">lock</a> (unsigned int timeout)=0</td></tr>
 <tr class="separator:aba2228daa52411a90ea87075c69f5870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a26ff03a1d7261f45bbf0d8b230444f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#a6a26ff03a1d7261f45bbf0d8b230444f">lock</a> (const struct timeval *abs_time)=0</td></tr>
+<tr class="separator:a6a26ff03a1d7261f45bbf0d8b230444f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cba5d261f9d8528925b8bf5e018d4a5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">unlock</a> ()=0</td></tr>
 <tr class="separator:a0cba5d261f9d8528925b8bf5e018d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea7dd35cae90d7f44db21352f9a7cef"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">try_lock</a> ()</td></tr>
@@ -146,6 +148,8 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for all lock types in this library This is an abstract base class. To use this, you need to subclass it. All of your LockObjetcs should be derived from the <a class="el" href="class_i_lock_object.html">ILockObject</a> class. Then implement the virtual lock, unlock and is_initialized functions. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#_a1">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abdd29c33b5d3d0e49c1d2f7172c16809"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abdd29c33b5d3d0e49c1d2f7172c16809">&#9670;&nbsp;</a></span>is_initialized()</h2>
@@ -177,7 +181,7 @@ Public Member Functions</h2></td></tr>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph.png" border="0" usemap="#aclass_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph" alt=""/></div>
-<map name="class_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph" id="aclass_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph">
+<map name="class_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph" id="class_i_lock_object_abdd29c33b5d3d0e49c1d2f7172c16809_icgraph">
 <area shape="rect" title=" " alt="" coords="232,13,420,39"/>
 <area shape="rect" href="classbasic__semaphore.html#a1574814ba8843ff44a639bf12ba87640" title=" " alt="" coords="5,5,184,47"/>
 </map>
@@ -185,8 +189,36 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a6a26ff03a1d7261f45bbf0d8b230444f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a26ff03a1d7261f45bbf0d8b230444f">&#9670;&nbsp;</a></span>lock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int ILockObject::lock </td>
+          <td>(</td>
+          <td class="paramtype">const struct timeval *&#160;</td>
+          <td class="paramname"><em>abs_time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classbasic__semaphore.html#a4ec8c5700b0e232710da39750da4eaae">basic_semaphore</a>.</p>
+
+</div>
+</div>
 <a id="aba2228daa52411a90ea87075c69f5870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba2228daa52411a90ea87075c69f5870">&#9670;&nbsp;</a></span>lock()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2228daa52411a90ea87075c69f5870">&#9670;&nbsp;</a></span>lock() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,17 +240,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Aquire (take) a LokObject</p>
-<p>Example of blocking indefinitely: LockObject.Take();</p>
-<p>Example of blocking for 100 ticks: LockObject.Take(100);</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>lock (take) a LokObject </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">timeout</td><td>How long to wait to get the Lock until giving up. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7">basic_semaphore</a>, <a class="el" href="classrecursive__mutex.html#a360b1b4749cf2ef0f7662beb1cf7cf97">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">basic_mutex</a>.</p>
+<p>Implemented in <a class="el" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7">basic_semaphore</a>, <a class="el" href="classrecursive__mutex.html#acf8a7871defd1a18a2d2e9463b4224b1">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">basic_mutex</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -292,9 +321,9 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Release (give) a semaphore. </p>
+<p>unlock (give) a semaphore. </p>
 
-<p>Implemented in <a class="el" href="classrecursive__mutex.html#a5ed84c06d86fc9ba4e998b0fc5bde897">recursive_mutex</a>, <a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex</a>, <a class="el" href="classbasic__scheduler__lock.html#a9b4591a48e2cf9e81c1ba043fa77c24d">basic_scheduler_lock</a>, <a class="el" href="classbasic__interrupts__lock.html#ab5333f45b86b0c114d096cbc58a5b4a7">basic_interrupts_lock</a>, <a class="el" href="classbasic__critical__lock.html#a40fb4da5aea428fd108ca84ef168eb23">basic_critical_lock</a>, and <a class="el" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572">basic_semaphore</a>.</p>
+<p>Implemented in <a class="el" href="classrecursive__mutex.html#aa4d5bcce538269f718fc9d4f6cb8e472">recursive_mutex</a>, <a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex</a>, <a class="el" href="classbasic__scheduler__lock.html#a9b4591a48e2cf9e81c1ba043fa77c24d">basic_scheduler_lock</a>, <a class="el" href="classbasic__interrupts__lock.html#ab5333f45b86b0c114d096cbc58a5b4a7">basic_interrupts_lock</a>, <a class="el" href="classbasic__critical__lock.html#a40fb4da5aea428fd108ca84ef168eb23">basic_critical_lock</a>, and <a class="el" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572">basic_semaphore</a>.</p>
 
 </div>
 </div>
