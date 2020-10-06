@@ -20,14 +20,14 @@ var classbasic__task =
       [ "StateDeleted", "classbasic__task.html#ab23e8cb172e37ec41a5ee7dfe65b1caba2bca1037a89b6cc0a1b0db72382f54b7", null ]
     ] ],
     [ "basic_task", "classbasic__task.html#a4871a116a5e13cc5e489226b8b10ab24", null ],
-    [ "basic_task", "classbasic__task.html#a201aed0109c90e93695741b9232d4fec", null ],
+    [ "basic_task", "classbasic__task.html#a7cd618d5b25ca39e6402f13b402b750c", null ],
     [ "basic_task", "classbasic__task.html#a085ff3080f9325e84dafec324e29dc4b", null ],
     [ "~basic_task", "classbasic__task.html#a7e9e8d31cf0b760d963fe617e271bc45", null ],
     [ "add_child_task", "classbasic__task.html#aaa0111d42a4358b1151ccce8eabcf6d8", null ],
     [ "get_child", "classbasic__task.html#ac2eb5ce0a5dbaec7207a97123247cbc6", null ],
     [ "get_handle", "classbasic__task.html#aeef4ab01e82599388fbbe5bf5369243c", null ],
     [ "get_id", "classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5", null ],
-    [ "get_name", "classbasic__task.html#a66dc3d2e5ec754aa76e875013dc42d81", null ],
+    [ "get_name", "classbasic__task.html#a8dcb4a8c842bc3101da2c8f588e2e550", null ],
     [ "get_on_core", "classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676", null ],
     [ "get_priority", "classbasic__task.html#a7610aede8af62918881230e72867c30c", null ],
     [ "get_return_value", "classbasic__task.html#a058f4acc8288a2453695924e4d2e5ae1", null ],
@@ -76,7 +76,7 @@ var classbasic__task =
     [ "m_pParent", "classbasic__task.html#adcc112cb40f91e1c940dddb61cd5fc78", null ],
     [ "m_retval", "classbasic__task.html#a60c2a84277b6b8d31191ba8cd8ffab58", null ],
     [ "m_runningMutex", "classbasic__task.html#ac59085292e61eebbe1910bbaf0e8dd5d", null ],
-    [ "m_strName", "classbasic__task.html#a7782c5497ceaa99e60f67c5982e66b1d", null ],
+    [ "m_strName", "classbasic__task.html#aa828e2ea55405350a0a4ccdd68177964", null ],
     [ "m_uiPriority", "classbasic__task.html#a46fb1c083a5b238daf222c705a95eec8", null ],
     [ "m_usStackDepth", "classbasic__task.html#a0d38a4e4aae5f12815aacf12f9e380d6", null ]
 ];

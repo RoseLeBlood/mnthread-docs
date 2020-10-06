@@ -1,9 +1,9 @@
 var hierarchy =
 [
+    [ "basic_autolock< LOCK >", "classbasic__autolock.html", null ],
     [ "basic_convar_task", null, [
       [ "basic_message_task", "classbasic__message__task.html", null ]
     ] ],
-    [ "basic_critical", "classbasic__critical.html", null ],
     [ "basic_event_group", "classbasic__event__group.html", null ],
     [ "basic_queue", "classbasic__queue.html", [
       [ "basic_binaryqueue", "classbasic__binaryqueue.html", null ],
@@ -13,6 +13,7 @@ var hierarchy =
       [ "foreign_task", "classforeign__task.html", null ],
       [ "work_queue_task", "classwork__queue__task.html", null ]
     ] ],
+    [ "basic_task_list", "classbasic__task__list.html", null ],
     [ "basic_tasklet", "classbasic__tasklet.html", null ],
     [ "basic_timed_lock< TLOCK >", "classbasic__timed__lock.html", null ],
     [ "basic_timer", "classbasic__timer.html", null ],
@@ -24,15 +25,17 @@ var hierarchy =
       [ "lockcreate_exception", "classlockcreate__exception.html", null ]
     ] ],
     [ "ILockObject", "class_i_lock_object.html", [
-      [ "basic_critical_lock", "classbasic__critical__lock.html", null ],
-      [ "basic_interrupts_lock", "classbasic__interrupts__lock.html", null ],
-      [ "basic_scheduler_lock", "classbasic__scheduler__lock.html", null ],
       [ "basic_semaphore", "classbasic__semaphore.html", [
         [ "basic_binary_semaphore", "classbasic__binary__semaphore.html", null ],
         [ "basic_counting_semaphore", "classbasic__counting__semaphore.html", null ],
         [ "basic_mutex", "classbasic__mutex.html", [
           [ "recursive_mutex", "classrecursive__mutex.html", null ]
         ] ]
+      ] ],
+      [ "ISystemLockObject", "class_i_system_lock_object.html", [
+        [ "basic_critical_section", "classbasic__critical__section.html", null ],
+        [ "basic_critical_section_nested", "classbasic__critical__section__nested.html", null ],
+        [ "basic_critical_section_timedout", "classbasic__critical__section__timedout.html", null ]
       ] ]
     ] ],
     [ "libmnVersion", "classlibmn_version.html", null ],

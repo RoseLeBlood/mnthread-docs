@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['configuse_5fdaemon_5ftask_5fstartup_5fhook_844',['configUSE_DAEMON_TASK_STARTUP_HOOK',['../mini_thread_8hpp.html#a0415288d8efe664e0b05a7b53fbfaa33',1,'miniThread.hpp']]],
-  ['configuse_5fidle_5fhook_845',['configUSE_IDLE_HOOK',['../mini_thread_8hpp.html#ac637ae45863c19fa2e919db0ed49301f',1,'miniThread.hpp']]]
+  ['_5fminlib_5fcritical_5fh_5f_900',['_MINLIB_CRITICAL_H_',['../mn__criticalsection_8cpp.html#a2b0012d237b74d50af46bd570d98f006',1,'mn_criticalsection.cpp']]]
 ];

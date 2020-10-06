@@ -153,6 +153,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>m_iCreateErrorCode
 : <a class="el" href="classbasic__semaphore.html#ac06f972d1e0b6272b2e4c7f76dd6602f">basic_semaphore</a>
 </li>
+<li>m_iErrorLock
+: <a class="el" href="classbasic__autolock.html#a4ecfeefd65aa669b280a9ed028bb3a29">basic_autolock&lt; LOCK &gt;</a>
+</li>
 <li>m_iID
 : <a class="el" href="classbasic__task.html#a872bba067d1567b5356ac4b1c22fda82">basic_task</a>
 </li>
@@ -164,6 +167,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 </li>
 <li>m_imaxItems
 : <a class="el" href="classbasic__queue.html#aec4a375ef5b49d5e5f0f4eb4aeef8324">basic_queue</a>
+</li>
+<li>m_iState
+: <a class="el" href="classbasic__critical__section__nested.html#ac072aaeca1b9546e23ae2a4b68c84d95">basic_critical_section_nested</a>
 </li>
 <li>m_iTimerID
 : <a class="el" href="classbasic__timer.html#a907cd28211db15373a6a3f96d402a83e">basic_timer</a>
@@ -180,6 +186,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>m_major
 : <a class="el" href="classlibmn_version.html#a79d6914678d6a7e047abdeae5ac7a6ff">libmnVersion</a>
 </li>
+<li>m_mapTaskOnCore
+: <a class="el" href="classbasic__task__list.html#a2b099838d518baf3f92b4f97ae6dbb35">basic_task_list</a>
+</li>
 <li>m_minor
 : <a class="el" href="classlibmn_version.html#a0360440cc107a7601175240c68778d35">libmnVersion</a>
 </li>
@@ -190,14 +199,19 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 : <a class="el" href="classbasic__task.html#a669c567df93bac1679d726fcb070812e">basic_task</a>
 </li>
 <li>m_pHandle
-: <a class="el" href="classbasic__critical__lock.html#a0f4d1393a341bcb42203435bc9a572ed">basic_critical_lock</a>
+: <a class="el" href="classbasic__critical__section.html#a6d9b7404e5c4e41686e0f0c3a568f6ae">basic_critical_section</a>
+, <a class="el" href="classbasic__critical__section__timedout.html#a000d0caf2ca1cc95bad40ba5dbc6ac0c">basic_critical_section_timedout</a>
 , <a class="el" href="classbasic__event__group.html#ae10b0333b57d6e7340928d2eb1492620">basic_event_group</a>
 , <a class="el" href="classbasic__queue.html#a806eceeb823892fc4c1ef7aa2ec0ed3d">basic_queue</a>
 , <a class="el" href="classbasic__task.html#a24ae4aaa344a3ca7a8b559030a3f8a21">basic_task</a>
 , <a class="el" href="classbasic__timer.html#aadf18a72676eb12e4b78a395114bda76">basic_timer</a>
 </li>
 <li>m_pInstance
-: <a class="el" href="classlibmn_version.html#a71dc5e4dc4a19929f637dc62f8e9c103">libmnVersion</a>
+: <a class="el" href="classbasic__task__list.html#ade2b3f0e9e9997f289268a3dd349bb1d">basic_task_list</a>
+, <a class="el" href="classlibmn_version.html#a71dc5e4dc4a19929f637dc62f8e9c103">libmnVersion</a>
+</li>
+<li>m_pLock
+: <a class="el" href="classbasic__task__list.html#a77dc8f7bd374bc1729f976e27e0c1caa">basic_task_list</a>
 </li>
 <li>m_pParent
 : <a class="el" href="classbasic__task.html#adcc112cb40f91e1c940dddb61cd5fc78">basic_task</a>
@@ -214,6 +228,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>m_qeMessageQueue
 : <a class="el" href="classbasic__message__task.html#a6209130e9d6923e893165a92901cc4e7">basic_message_task</a>
 </li>
+<li>m_ref_lock
+: <a class="el" href="classbasic__autolock.html#affca5bf226e5bab848bb79f77a47e81f">basic_autolock&lt; LOCK &gt;</a>
+</li>
 <li>m_retval
 : <a class="el" href="classbasic__task.html#a60c2a84277b6b8d31191ba8cd8ffab58">basic_task</a>
 </li>
@@ -223,11 +240,14 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>m_ssLock
 : <a class="el" href="classbasic__tasklet.html#af46ec17c3dd392678aebd09d0f29b216">basic_tasklet</a>
 </li>
+<li>m_staticInstanceMux
+: <a class="el" href="classbasic__task__list.html#ae3018092df2902e530bce3f7a748a7e2">basic_task_list</a>
+</li>
 <li>m_strFile
 : <a class="el" href="classlockcreate__exception.html#a9c3e54dc82954d34d9292e4a9d62da79">lockcreate_exception</a>
 </li>
 <li>m_strName
-: <a class="el" href="classbasic__task.html#a7782c5497ceaa99e60f67c5982e66b1d">basic_task</a>
+: <a class="el" href="classbasic__task.html#aa828e2ea55405350a0a4ccdd68177964">basic_task</a>
 , <a class="el" href="classbasic__timer.html#ab4d92ba68df5b71f092953d59297e0f8">basic_timer</a>
 </li>
 <li>m_ThreadJob

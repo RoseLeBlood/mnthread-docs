@@ -108,140 +108,229 @@ $(document).ready(function(){initNavTree('mn__critical_8hpp.html',''); initResiz
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">mn_critical.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__lock_8hpp_source.html">mn_lock.hpp</a>&quot;</code><br />
-<code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
-<code>#include &quot;freertos/task.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__error_8hpp_source.html">mn_error.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__micros_8hpp_source.html">mn_micros.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>&quot;</code><br />
+<code>#include &lt;freertos/FreeRTOS.h&gt;</code><br />
+<code>#include &lt;freertos/task.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="mn__criticalsection_8hpp_source.html">slock/mn_criticalsection.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mn_critical.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="mn__critical_8hpp__incl.png" border="0" usemap="#amn__critical_8hpp" alt=""/></div>
-<map name="mn__critical_8hpp" id="mn__critical_8hpp">
-<area shape="rect" title=" " alt="" coords="157,5,280,32"/>
-<area shape="rect" href="mn__lock_8hpp.html" title=" " alt="" coords="14,80,119,107"/>
-<area shape="rect" title=" " alt="" coords="143,80,294,107"/>
-<area shape="rect" title=" " alt="" coords="319,80,436,107"/>
-<area shape="rect" href="mn__micros_8hpp.html" title=" " alt="" coords="5,155,128,181"/>
+<map name="mn__critical_8hpp" id="amn__critical_8hpp">
+<area shape="rect" title=" " alt="" coords="421,5,544,32"/>
+<area shape="rect" href="mn__error_8hpp.html" title=" " alt="" coords="113,379,221,405"/>
+<area shape="rect" href="mn__micros_8hpp.html" title=" " alt="" coords="723,453,845,480"/>
+<area shape="rect" href="mn__autolock_8hpp.html" title=" " alt="" coords="119,80,254,107"/>
+<area shape="rect" title=" " alt="" coords="509,80,659,107"/>
+<area shape="rect" title=" " alt="" coords="684,80,801,107"/>
+<area shape="rect" href="mn__criticalsection_8hpp.html" title=" " alt="" coords="278,80,485,107"/>
+<area shape="rect" title=" " alt="" coords="739,528,829,555"/>
+<area shape="rect" title=" " alt="" coords="651,528,715,555"/>
+<area shape="rect" href="mn__config_8hpp.html" title=" " alt="" coords="221,528,339,555"/>
+<area shape="rect" href="mn__mutex_8hpp.html" title=" " alt="" coords="117,229,237,256"/>
+<area shape="rect" href="mn__semaphore_8hpp.html" title=" " alt="" coords="355,155,506,181"/>
+<area shape="rect" href="mn__recursive__mutex_8hpp.html" title=" " alt="" coords="93,155,280,181"/>
+<area shape="rect" href="mn__basic__semaphore_8hpp.html" title=" " alt="" coords="327,304,519,331"/>
+<area shape="rect" href="mn__config__preview_8hpp.html" title=" " alt="" coords="398,453,573,480"/>
+<area shape="rect" href="mn__lock_8hpp.html" title=" " alt="" coords="661,379,766,405"/>
+<area shape="rect" href="mn__lock__exptions_8hpp.html" title=" " alt="" coords="245,379,448,405"/>
+<area shape="rect" title=" " alt="" coords="203,453,290,480"/>
+<area shape="rect" title=" " alt="" coords="315,453,373,480"/>
+<area shape="rect" href="mn__counting__semaphore_8hpp.html" title=" " alt="" coords="485,229,699,256"/>
+<area shape="rect" href="mn__binary__semaphore_8hpp.html" title=" " alt="" coords="262,229,461,256"/>
+<area shape="rect" href="mn__system__lock_8hpp.html" title=" " alt="" coords="636,304,796,331"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="mn__critical_8hpp__dep__incl.png" border="0" usemap="#amn__critical_8hppdep" alt=""/></div>
-<map name="mn__critical_8hppdep" id="mn__critical_8hppdep">
-<area shape="rect" title=" " alt="" coords="583,5,706,32"/>
-<area shape="rect" href="mn__autolock_8hpp.html" title=" " alt="" coords="501,80,636,107"/>
-<area shape="rect" href="mn__critical_8cpp.html" title=" " alt="" coords="660,80,781,107"/>
-<area shape="rect" href="mini_thread_8hpp.html" title=" " alt="" coords="5,155,129,181"/>
-<area shape="rect" href="mn__ringbuffer_8hpp.html" title=" " alt="" coords="153,155,293,181"/>
-<area shape="rect" href="mn__shared_8hpp.html" title=" " alt="" coords="318,155,441,181"/>
-<area shape="rect" href="mn__task_8hpp.html" title=" " alt="" coords="515,155,622,181"/>
-<area shape="rect" href="mn__task__utils_8hpp.html" title=" " alt="" coords="226,229,367,256"/>
-<area shape="rect" href="mn__tasklet_8hpp.html" title=" " alt="" coords="646,155,769,181"/>
-<area shape="rect" href="mn__timed__lock_8hpp.html" title=" " alt="" coords="793,155,944,181"/>
-<area shape="rect" href="mn__free__list__mempool_8cpp.html" title=" " alt="" coords="968,155,1167,181"/>
-<area shape="rect" href="mn__autolock_8cpp.html" title=" " alt="" coords="1191,155,1325,181"/>
-<area shape="rect" href="mini_thread_8cpp.html" title=" " alt="" coords="6,229,129,256"/>
-<area shape="rect" href="mn__foreign__task_8hpp.html" title=" " alt="" coords="572,229,731,256"/>
-<area shape="rect" href="mn__workqueue__task_8hpp.html" title=" " alt="" coords="755,229,940,256"/>
-<area shape="rect" href="mn__workqueue_8cpp.html" title=" " alt="" coords="970,379,1119,405"/>
-<area shape="rect" href="mn__workqueue__task_8cpp.html" title=" " alt="" coords="326,379,510,405"/>
-<area shape="rect" href="mn__task_8cpp.html" title=" " alt="" coords="443,229,548,256"/>
-<area shape="rect" href="mn__foreign__task_8cpp.html" title=" " alt="" coords="537,304,696,331"/>
-<area shape="rect" href="mn__convar__task_8cpp.html" title=" " alt="" coords="47,304,203,331"/>
-<area shape="rect" href="mn__task__utils_8cpp.html" title=" " alt="" coords="227,304,367,331"/>
-<area shape="rect" href="mn__workqueue_8hpp.html" title=" " alt="" coords="772,304,923,331"/>
-<area shape="rect" href="mn__workqueue__multi_8hpp.html" title=" " alt="" coords="535,379,725,405"/>
-<area shape="rect" href="mn__workqueue__single_8hpp.html" title=" " alt="" coords="749,379,945,405"/>
-<area shape="rect" href="mn__workqueue__multi_8cpp.html" title=" " alt="" coords="535,453,725,480"/>
-<area shape="rect" href="mn__workqueue__single_8cpp.html" title=" " alt="" coords="750,453,945,480"/>
-<area shape="rect" href="mn__tasklet_8cpp.html" title=" " alt="" coords="1015,229,1138,256"/>
+<map name="mn__critical_8hppdep" id="amn__critical_8hppdep">
+<area shape="rect" title=" " alt="" coords="79,5,202,32"/>
+<area shape="rect" href="mini_thread_8hpp.html" title=" " alt="" coords="5,80,129,107"/>
+<area shape="rect" href="mn__critical_8cpp.html" title=" " alt="" coords="153,80,275,107"/>
+<area shape="rect" href="mini_thread_8cpp.html" title=" " alt="" coords="6,155,129,181"/>
 </map>
 </div>
 </div>
 <p><a href="mn__critical_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__critical.html">basic_critical</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__critical__lock.html">basic_critical_lock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__scheduler__lock.html">basic_scheduler_lock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a63b5577a473dcd39f536f66e1c2719cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a63b5577a473dcd39f536f66e1c2719cd">CRITICAL_SECTION</a>(OBJECT)&#160;&#160;&#160;if( (bool)(auto_critical_t lock(OBJECT)) )</td></tr>
+<tr class="separator:a63b5577a473dcd39f536f66e1c2719cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab815d207b8ec9e2336b7c1e45f407aef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a>(OBJECT)&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#a442616c5268d3a04cbf73b31ef43476f">auto_critical_section_timedout_t</a> lock(OBJECT)) )</td></tr>
+<tr class="separator:ab815d207b8ec9e2336b7c1e45f407aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac6181e2b48fa72a6f9f39155c8e007"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a>(OBJECT)&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#afdaae7e1bb6e9a984e6c39422ffbf1bb">auto_critical_section_nested_t</a> lock(OBJECT)) )</td></tr>
+<tr class="separator:a6ac6181e2b48fa72a6f9f39155c8e007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a3a0f9da8825f3ff52f60f0984e53180f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a3a0f9da8825f3ff52f60f0984e53180f">critical_t</a> = <a class="el" href="classbasic__critical.html">basic_critical</a></td></tr>
-<tr class="separator:a3a0f9da8825f3ff52f60f0984e53180f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49de65e5f1e5aeb2dda447bcd1daa5a2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a49de65e5f1e5aeb2dda447bcd1daa5a2">critical_lock_t</a> = <a class="el" href="classbasic__critical__lock.html">basic_critical_lock</a></td></tr>
-<tr class="separator:a49de65e5f1e5aeb2dda447bcd1daa5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df6b2274ed7a2f0960ff6cac2942428"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a8df6b2274ed7a2f0960ff6cac2942428">interrupts_lock_t</a> = <a class="el" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></td></tr>
-<tr class="separator:a8df6b2274ed7a2f0960ff6cac2942428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9b5e17646370caa4005a3c6495b5b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a4b9b5e17646370caa4005a3c6495b5b9">sheduler_lock_t</a> = <a class="el" href="classbasic__scheduler__lock.html">basic_scheduler_lock</a></td></tr>
-<tr class="separator:a4b9b5e17646370caa4005a3c6495b5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae424d7b2161e1468e1a59104ff656f8a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#ae424d7b2161e1468e1a59104ff656f8a">critical_section_t</a> = <a class="el" href="classbasic__critical__section.html">basic_critical_section</a></td></tr>
+<tr class="separator:ae424d7b2161e1468e1a59104ff656f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21377ca62b81f11e27d23a0051ca9ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#aa21377ca62b81f11e27d23a0051ca9ac">critical_section_timedout_t</a> = <a class="el" href="classbasic__critical__section__timedout.html">basic_critical_section_timedout</a></td></tr>
+<tr class="separator:aa21377ca62b81f11e27d23a0051ca9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af085f3d01a25f3696912764f38d6f0fb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#af085f3d01a25f3696912764f38d6f0fb">critical_section_nested_t</a> = <a class="el" href="classbasic__critical__section__nested.html">basic_critical_section_nested</a></td></tr>
+<tr class="separator:af085f3d01a25f3696912764f38d6f0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f683decfd21fa62795e89632975a652"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a5f683decfd21fa62795e89632975a652">auto_critical_section_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="classbasic__critical__section.html">basic_critical_section</a> &gt;</td></tr>
+<tr class="separator:a5f683decfd21fa62795e89632975a652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442616c5268d3a04cbf73b31ef43476f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a442616c5268d3a04cbf73b31ef43476f">auto_critical_section_timedout_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__critical_8hpp.html#aa21377ca62b81f11e27d23a0051ca9ac">critical_section_timedout_t</a> &gt;</td></tr>
+<tr class="separator:a442616c5268d3a04cbf73b31ef43476f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdaae7e1bb6e9a984e6c39422ffbf1bb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#afdaae7e1bb6e9a984e6c39422ffbf1bb">auto_critical_section_nested_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__critical_8hpp.html#af085f3d01a25f3696912764f38d6f0fb">critical_section_nested_t</a> &gt;</td></tr>
+<tr class="separator:afdaae7e1bb6e9a984e6c39422ffbf1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a63b5577a473dcd39f536f66e1c2719cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b5577a473dcd39f536f66e1c2719cd">&#9670;&nbsp;</a></span>CRITICAL_SECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRITICAL_SECTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OBJECT</td><td>)</td>
+          <td>&#160;&#160;&#160;if( (bool)(auto_critical_t lock(OBJECT)) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Helper macro's for critical sections </p>
+
+</div>
+</div>
+<a id="a6ac6181e2b48fa72a6f9f39155c8e007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac6181e2b48fa72a6f9f39155c8e007">&#9670;&nbsp;</a></span>CRITICAL_SECTION_NESTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRITICAL_SECTION_NESTED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OBJECT</td><td>)</td>
+          <td>&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#afdaae7e1bb6e9a984e6c39422ffbf1bb">auto_critical_section_nested_t</a> lock(OBJECT)) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab815d207b8ec9e2336b7c1e45f407aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab815d207b8ec9e2336b7c1e45f407aef">&#9670;&nbsp;</a></span>CRITICAL_SECTION_TIMEDOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRITICAL_SECTION_TIMEDOUT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OBJECT</td><td>)</td>
+          <td>&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#a442616c5268d3a04cbf73b31ef43476f">auto_critical_section_timedout_t</a> lock(OBJECT)) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a49de65e5f1e5aeb2dda447bcd1daa5a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49de65e5f1e5aeb2dda447bcd1daa5a2">&#9670;&nbsp;</a></span>critical_lock_t</h2>
+<a id="afdaae7e1bb6e9a984e6c39422ffbf1bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdaae7e1bb6e9a984e6c39422ffbf1bb">&#9670;&nbsp;</a></span>auto_critical_section_nested_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a49de65e5f1e5aeb2dda447bcd1daa5a2">critical_lock_t</a> =  <a class="el" href="classbasic__critical__lock.html">basic_critical_lock</a></td>
+          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#afdaae7e1bb6e9a984e6c39422ffbf1bb">auto_critical_section_nested_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__critical_8hpp.html#af085f3d01a25f3696912764f38d6f0fb">critical_section_nested_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A autolock guard type for critical_section_nested_t objects </p>
 
 </div>
 </div>
-<a id="a3a0f9da8825f3ff52f60f0984e53180f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a0f9da8825f3ff52f60f0984e53180f">&#9670;&nbsp;</a></span>critical_t</h2>
+<a id="a5f683decfd21fa62795e89632975a652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f683decfd21fa62795e89632975a652">&#9670;&nbsp;</a></span>auto_critical_section_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a3a0f9da8825f3ff52f60f0984e53180f">critical_t</a> =  <a class="el" href="classbasic__critical.html">basic_critical</a></td>
+          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a5f683decfd21fa62795e89632975a652">auto_critical_section_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="classbasic__critical__section.html">basic_critical_section</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A autolock guard type for basic_critical_lock objects </p>
 
 </div>
 </div>
-<a id="a8df6b2274ed7a2f0960ff6cac2942428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8df6b2274ed7a2f0960ff6cac2942428">&#9670;&nbsp;</a></span>interrupts_lock_t</h2>
+<a id="a442616c5268d3a04cbf73b31ef43476f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442616c5268d3a04cbf73b31ef43476f">&#9670;&nbsp;</a></span>auto_critical_section_timedout_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a8df6b2274ed7a2f0960ff6cac2942428">interrupts_lock_t</a> =  <a class="el" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></td>
+          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a442616c5268d3a04cbf73b31ef43476f">auto_critical_section_timedout_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__critical_8hpp.html#aa21377ca62b81f11e27d23a0051ca9ac">critical_section_timedout_t</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>A autolock guard type for critical_section_timedout_t objects </p>
 
 </div>
 </div>
-<a id="a4b9b5e17646370caa4005a3c6495b5b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b9b5e17646370caa4005a3c6495b5b9">&#9670;&nbsp;</a></span>sheduler_lock_t</h2>
+<a id="af085f3d01a25f3696912764f38d6f0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af085f3d01a25f3696912764f38d6f0fb">&#9670;&nbsp;</a></span>critical_section_nested_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a4b9b5e17646370caa4005a3c6495b5b9">sheduler_lock_t</a> =  <a class="el" href="classbasic__scheduler__lock.html">basic_scheduler_lock</a></td>
+          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#af085f3d01a25f3696912764f38d6f0fb">critical_section_nested_t</a> =  <a class="el" href="classbasic__critical__section__nested.html">basic_critical_section_nested</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>using for the <a class="el" href="classbasic__critical__section__nested.html">basic_critical_section_nested</a> class, for miniTask type design </p>
+
+</div>
+</div>
+<a id="ae424d7b2161e1468e1a59104ff656f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae424d7b2161e1468e1a59104ff656f8a">&#9670;&nbsp;</a></span>critical_section_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#ae424d7b2161e1468e1a59104ff656f8a">critical_section_t</a> =  <a class="el" href="classbasic__critical__section.html">basic_critical_section</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>using for the <a class="el" href="classbasic__critical__section.html">basic_critical_section</a> class, for miniTask type design </p>
+
+</div>
+</div>
+<a id="aa21377ca62b81f11e27d23a0051ca9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21377ca62b81f11e27d23a0051ca9ac">&#9670;&nbsp;</a></span>critical_section_timedout_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#aa21377ca62b81f11e27d23a0051ca9ac">critical_section_timedout_t</a> =  <a class="el" href="classbasic__critical__section__timedout.html">basic_critical_section_timedout</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>using for the <a class="el" href="classbasic__critical__section__timedout.html">basic_critical_section_timedout</a> class, for miniTask type design </p>
 
 </div>
 </div>

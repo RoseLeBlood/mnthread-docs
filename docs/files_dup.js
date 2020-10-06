@@ -4,7 +4,7 @@ var files_dup =
     [ "miniThread.cpp", "mini_thread_8cpp.html", "mini_thread_8cpp" ],
     [ "miniThread.hpp", "mini_thread_8hpp.html", "mini_thread_8hpp" ],
     [ "mn_autolock.cpp", "mn__autolock_8cpp.html", null ],
-    [ "mn_autolock.hpp", "mn__autolock_8hpp.html", null ],
+    [ "mn_autolock.hpp", "mn__autolock_8hpp.html", "mn__autolock_8hpp" ],
     [ "mn_basic_semaphore.cpp", "mn__basic__semaphore_8cpp.html", null ],
     [ "mn_basic_semaphore.hpp", "mn__basic__semaphore_8hpp.html", "mn__basic__semaphore_8hpp" ],
     [ "mn_binary_semaphore.cpp", "mn__binary__semaphore_8cpp.html", null ],
@@ -22,6 +22,12 @@ var files_dup =
     [ "mn_counting_semaphore.hpp", "mn__counting__semaphore_8hpp.html", "mn__counting__semaphore_8hpp" ],
     [ "mn_critical.cpp", "mn__critical_8cpp.html", null ],
     [ "mn_critical.hpp", "mn__critical_8hpp.html", "mn__critical_8hpp" ],
+    [ "mn_criticalsection.cpp", "mn__criticalsection_8cpp.html", "mn__criticalsection_8cpp" ],
+    [ "mn_criticalsection.hpp", "mn__criticalsection_8hpp.html", [
+      [ "basic_critical_section", "classbasic__critical__section.html", "classbasic__critical__section" ],
+      [ "basic_critical_section_timedout", "classbasic__critical__section__timedout.html", "classbasic__critical__section__timedout" ],
+      [ "basic_critical_section_nested", "classbasic__critical__section__nested.html", "classbasic__critical__section__nested" ]
+    ] ],
     [ "mn_deque.cpp", "mn__deque_8cpp.html", null ],
     [ "mn_deque.hpp", "mn__deque_8hpp.html", "mn__deque_8hpp" ],
     [ "mn_error.hpp", "mn__error_8hpp.html", "mn__error_8hpp" ],
@@ -57,8 +63,13 @@ var files_dup =
     [ "mn_shared.hpp", "mn__shared_8hpp.html", null ],
     [ "mn_sleep.cpp", "mn__sleep_8cpp.html", "mn__sleep_8cpp" ],
     [ "mn_sleep.hpp", "mn__sleep_8hpp.html", "mn__sleep_8hpp" ],
+    [ "mn_system_lock.hpp", "mn__system__lock_8hpp.html", [
+      [ "ISystemLockObject", "class_i_system_lock_object.html", "class_i_system_lock_object" ]
+    ] ],
     [ "mn_task.cpp", "mn__task_8cpp.html", null ],
     [ "mn_task.hpp", "mn__task_8hpp.html", "mn__task_8hpp" ],
+    [ "mn_task_list.cpp", "mn__task__list_8cpp.html", null ],
+    [ "mn_task_list.hpp", "mn__task__list_8hpp.html", "mn__task__list_8hpp" ],
     [ "mn_task_utils.cpp", "mn__task__utils_8cpp.html", null ],
     [ "mn_task_utils.hpp", "mn__task__utils_8hpp.html", "mn__task__utils_8hpp" ],
     [ "mn_tasklet.cpp", "mn__tasklet_8cpp.html", null ],

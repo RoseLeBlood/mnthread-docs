@@ -1,7 +1,7 @@
 var mn__micros_8hpp =
 [
     [ "get_ticks", "mn__micros_8hpp.html#afdf0a92b2d187681014a7ba7aa672451", null ],
-    [ "micros", "mn__micros_8hpp.html#a339d99e54ceecb9805190003eaf41d9e", null ],
+    [ "micros", "mn__micros_8hpp.html#a8b24cbb7c3486e1bfa05c86db83ecb01", null ],
     [ "millis", "mn__micros_8hpp.html#a6ff7f2532a22366f0013bc41397129fd", null ],
     [ "ms_to_ticks", "mn__micros_8hpp.html#afe01282e038ec57df55905e1ecceff72", null ],
     [ "operator+", "mn__micros_8hpp.html#a01493dfbd3f6fe0a8b37d7fb4be3c5de", null ],

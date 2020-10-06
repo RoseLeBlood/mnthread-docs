@@ -141,8 +141,8 @@ $(document).ready(function(){initNavTree('mn__mempool_8hpp_source.html',''); ini
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    IMemPool(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nItemSize, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nElements)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        : m_uiItemSize(nItemSize), m_uiElements(nElements) { }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>* allocate() = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span>  free(<span class="keywordtype">void</span>* mem) = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span>* allocate(TickType_t xTicksToWait) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span>  free(<span class="keywordtype">void</span>* mem, TickType_t xTicksToWait) = 0;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_uiItemSize;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_uiElements;</div>

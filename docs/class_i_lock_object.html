@@ -120,16 +120,17 @@ $(document).ready(function(){initNavTree('class_i_lock_object.html',''); initRes
 Inheritance diagram for ILockObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_lock_object__inherit__graph.png" border="0" usemap="#a_i_lock_object_inherit__map" alt="Inheritance graph"/></div>
-<map name="_i_lock_object_inherit__map" id="_i_lock_object_inherit__map">
-<area shape="rect" title=" " alt="" coords="293,5,392,32"/>
-<area shape="rect" href="classbasic__critical__lock.html" title=" " alt="" coords="5,80,147,107"/>
-<area shape="rect" href="classbasic__interrupts__lock.html" title=" " alt="" coords="171,80,331,107"/>
-<area shape="rect" href="classbasic__scheduler__lock.html" title=" " alt="" coords="355,80,515,107"/>
-<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="539,80,675,107"/>
-<area shape="rect" href="classbasic__binary__semaphore.html" title=" " alt="" coords="299,155,483,181"/>
-<area shape="rect" href="classbasic__counting__semaphore.html" title=" " alt="" coords="507,155,706,181"/>
-<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="730,155,835,181"/>
-<area shape="rect" href="classrecursive__mutex.html" title=" " alt="" coords="717,229,848,256"/>
+<map name="_i_lock_object_inherit__map" id="a_i_lock_object_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,147,104,173"/>
+<area shape="rect" href="classbasic__semaphore.html" title=" " alt="" coords="157,92,293,119"/>
+<area shape="rect" href="class_i_system_lock_object.html" title=" " alt="" coords="152,172,299,199"/>
+<area shape="rect" href="classbasic__binary__semaphore.html" title=" " alt="" coords="354,5,538,32"/>
+<area shape="rect" href="classbasic__counting__semaphore.html" title=" " alt="" coords="347,56,545,83"/>
+<area shape="rect" href="classbasic__mutex.html" title=" " alt="" coords="393,107,499,133"/>
+<area shape="rect" href="classrecursive__mutex.html" title=" " alt="" coords="593,107,724,133"/>
+<area shape="rect" href="classbasic__critical__section.html" title=" " alt="" coords="365,157,527,184"/>
+<area shape="rect" href="classbasic__critical__section__nested.html" title=" " alt="" coords="365,209,527,250"/>
+<area shape="rect" href="classbasic__critical__section__timedout.html" title=" " alt="" coords="365,274,527,315"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -137,8 +138,8 @@ Inheritance diagram for ILockObject:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0ea8c3572be245b28681a96be10d8f6"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#aa0ea8c3572be245b28681a96be10d8f6">lock</a> (unsigned int timeout=0)=0</td></tr>
 <tr class="separator:aa0ea8c3572be245b28681a96be10d8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a26ff03a1d7261f45bbf0d8b230444f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#a6a26ff03a1d7261f45bbf0d8b230444f">lock</a> (const struct timeval *abs_time)=0</td></tr>
-<tr class="separator:a6a26ff03a1d7261f45bbf0d8b230444f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6dd487ba9daa352d55dbc1d410b6ea"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#abd6dd487ba9daa352d55dbc1d410b6ea">time_lock</a> (const struct timespec *timeout)=0</td></tr>
+<tr class="separator:abd6dd487ba9daa352d55dbc1d410b6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cba5d261f9d8528925b8bf5e018d4a5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5">unlock</a> ()=0</td></tr>
 <tr class="separator:a0cba5d261f9d8528925b8bf5e018d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afea7dd35cae90d7f44db21352f9a7cef"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef">try_lock</a> ()</td></tr>
@@ -176,40 +177,12 @@ Public Member Functions</h2></td></tr>
 <p>Is the <a class="el" href="class_i_lock_object.html">ILockObject</a> created (initialized) ?</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="class_i_lock_object.html">ILockObject</a> created (initialized) and false when not </dd></dl>
 
-<p>Implemented in <a class="el" href="classbasic__scheduler__lock.html#a8e9231f736df15d461c26b4a949d13c0">basic_scheduler_lock</a>, <a class="el" href="classbasic__interrupts__lock.html#a074bb5229eb359de289e037de663dbcd">basic_interrupts_lock</a>, <a class="el" href="classbasic__critical__lock.html#a73e5b03d3bbd17a5eca6a5e2693d382d">basic_critical_lock</a>, and <a class="el" href="classbasic__semaphore.html#a64214e5c3aa37b9b403014931805bccf">basic_semaphore</a>.</p>
-
-</div>
-</div>
-<a id="a6a26ff03a1d7261f45bbf0d8b230444f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a26ff03a1d7261f45bbf0d8b230444f">&#9670;&nbsp;</a></span>lock() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual int ILockObject::lock </td>
-          <td>(</td>
-          <td class="paramtype">const struct timeval *&#160;</td>
-          <td class="paramname"><em>abs_time</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classbasic__semaphore.html#a4ec8c5700b0e232710da39750da4eaae">basic_semaphore</a>.</p>
+<p>Implemented in <a class="el" href="classbasic__semaphore.html#a64214e5c3aa37b9b403014931805bccf">basic_semaphore</a>.</p>
 
 </div>
 </div>
 <a id="aa0ea8c3572be245b28681a96be10d8f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0ea8c3572be245b28681a96be10d8f6">&#9670;&nbsp;</a></span>lock() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ea8c3572be245b28681a96be10d8f6">&#9670;&nbsp;</a></span>lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,16 +211,45 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7">basic_semaphore</a>, <a class="el" href="classrecursive__mutex.html#acf8a7871defd1a18a2d2e9463b4224b1">recursive_mutex</a>, and <a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">basic_mutex</a>.</p>
+<p>Implemented in <a class="el" href="classbasic__critical__section__nested.html#ae59b7388d596d97ef1d9e48933add5f0">basic_critical_section_nested</a>, <a class="el" href="classbasic__critical__section__timedout.html#ab7e82ae97dcddab447c4986b12ed5ce4">basic_critical_section_timedout</a>, <a class="el" href="classbasic__semaphore.html#ade8fed61cc1dd5b48129e837b67fabd7">basic_semaphore</a>, <a class="el" href="classrecursive__mutex.html#acf8a7871defd1a18a2d2e9463b4224b1">recursive_mutex</a>, <a class="el" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">basic_mutex</a>, and <a class="el" href="classbasic__critical__section.html#aa659b529a18f8402f670b938afa4014e">basic_critical_section</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_lock_object_aa0ea8c3572be245b28681a96be10d8f6_icgraph.png" border="0" usemap="#aclass_i_lock_object_aa0ea8c3572be245b28681a96be10d8f6_icgraph" alt=""/></div>
 <map name="class_i_lock_object_aa0ea8c3572be245b28681a96be10d8f6_icgraph" id="aclass_i_lock_object_aa0ea8c3572be245b28681a96be10d8f6_icgraph">
-<area shape="rect" title=" " alt="" coords="212,5,345,32"/>
-<area shape="rect" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef" title=" " alt="" coords="5,5,164,32"/>
+<area shape="rect" title=" " alt="" coords="212,42,345,69"/>
+<area shape="rect" href="class_i_system_lock_object.html#a0e19aace71ea7a4ef4cf3a2e549bc67f" title=" " alt="" coords="7,5,162,47"/>
+<area shape="rect" href="class_i_lock_object.html#afea7dd35cae90d7f44db21352f9a7cef" title=" " alt="" coords="5,71,164,98"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="abd6dd487ba9daa352d55dbc1d410b6ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd6dd487ba9daa352d55dbc1d410b6ea">&#9670;&nbsp;</a></span>time_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int ILockObject::time_lock </td>
+          <td>(</td>
+          <td class="paramtype">const struct timespec *&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_i_system_lock_object.html#a0e19aace71ea7a4ef4cf3a2e549bc67f">ISystemLockObject</a>, <a class="el" href="classbasic__critical__section__timedout.html#a2b41bf963a69cb9c6a01a50be2a28836">basic_critical_section_timedout</a>, and <a class="el" href="classbasic__semaphore.html#a738d07947760ddaa5ffec5003fa65a82">basic_semaphore</a>.</p>
 
 </div>
 </div>
@@ -277,12 +279,12 @@ Here is the caller graph for this function:</div>
 <dl class="section note"><dt>Note</dt><dd>call lock with timeout from 0</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the Lock was acquired, false when not </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classbasic__mutex.html#a0f62edd6b2ea82c3caa8c04d4067f203">basic_mutex</a>.</p>
+<p>Reimplemented in <a class="el" href="classbasic__critical__section__timedout.html#aad8c4797cded6eb94495860cf50a001c">basic_critical_section_timedout</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph.png" border="0" usemap="#aclass_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph" alt=""/></div>
-<map name="class_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph" id="aclass_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph">
+<map name="class_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph" id="class_i_lock_object_afea7dd35cae90d7f44db21352f9a7cef_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,164,32"/>
 <area shape="rect" href="class_i_lock_object.html#aa0ea8c3572be245b28681a96be10d8f6" title=" " alt="" coords="212,5,345,32"/>
 </map>
@@ -314,7 +316,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>unlock (give) a semaphore. </p>
 
-<p>Implemented in <a class="el" href="classrecursive__mutex.html#aa4d5bcce538269f718fc9d4f6cb8e472">recursive_mutex</a>, <a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex</a>, <a class="el" href="classbasic__scheduler__lock.html#a9b4591a48e2cf9e81c1ba043fa77c24d">basic_scheduler_lock</a>, <a class="el" href="classbasic__interrupts__lock.html#ab5333f45b86b0c114d096cbc58a5b4a7">basic_interrupts_lock</a>, <a class="el" href="classbasic__critical__lock.html#a40fb4da5aea428fd108ca84ef168eb23">basic_critical_lock</a>, and <a class="el" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572">basic_semaphore</a>.</p>
+<p>Implemented in <a class="el" href="classbasic__critical__section__nested.html#a12b7b32b94ce0a44adc8c6eba47ea66f">basic_critical_section_nested</a>, <a class="el" href="classbasic__critical__section__timedout.html#ab9c5e1d18144bfd0241c4c8f0d4b6c06">basic_critical_section_timedout</a>, <a class="el" href="classbasic__critical__section.html#ad9b42309b73fd869dcd6eea8898b6024">basic_critical_section</a>, <a class="el" href="classrecursive__mutex.html#aa4d5bcce538269f718fc9d4f6cb8e472">recursive_mutex</a>, <a class="el" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex</a>, and <a class="el" href="classbasic__semaphore.html#ad1eed14bc4c271923e2ac0a4ff3dc572">basic_semaphore</a>.</p>
 
 </div>
 </div>

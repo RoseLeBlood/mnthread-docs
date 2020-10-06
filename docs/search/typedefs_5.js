@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interrupts_5flock_5ft_797',['interrupts_lock_t',['../mn__critical_8hpp.html#a8df6b2274ed7a2f0960ff6cac2942428',1,'mn_critical.hpp']]]
+  ['foreign_5ftask_5ft_852',['foreign_task_t',['../mn__foreign__task_8hpp.html#af270ea4631f129877a799787a834c653',1,'mn_foreign_task.hpp']]]
 ];

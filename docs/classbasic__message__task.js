@@ -9,7 +9,7 @@ var classbasic__message__task =
       [ "Message_User", "classbasic__message__task.html#a1241fa8312e8924ed30e26a820af7db4a361782131ea73bf46159e6f855f0f9d2", null ]
     ] ],
     [ "basic_message_task", "classbasic__message__task.html#a778e87fe00e46aae79cb7b68b1c23357", null ],
-    [ "basic_message_task", "classbasic__message__task.html#a77ca106d1f6e0b1a537d43111280595a", null ],
+    [ "basic_message_task", "classbasic__message__task.html#a8917c4aaf8dea09e52bd6174f17d08c6", null ],
     [ "basic_message_task", "classbasic__message__task.html#a33e9bf23347c9b133a1eaf99aeadfd33", null ],
     [ "on_message", "classbasic__message__task.html#a8e457b7e95034487e6f3f66e5c570b84", null ],
     [ "on_task", "classbasic__message__task.html#abe3b221e0c4f7ac7a577f5bca9ee2a39", null ],

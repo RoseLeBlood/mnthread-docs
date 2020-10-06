@@ -115,8 +115,10 @@ $(document).ready(function(){initNavTree('md__home_ambersophia__dokumente_git_mn
 Version 1.9.1 Oktober 2020: (unstable 2.0beta)</h1>
 <ul>
 <li>for the future version add prototypes: (Not for produtions use!!)<ul>
-<li>free_list_memory pool and mempool</li>
-<li>Shared Object</li>
+<li>free_list_memory pool = basic_free_list_mempool</li>
+<li>Shared Object = basic_shared_object</li>
+<li>Ringbuffer = basic_circular_buffer</li>
+<li>Add timed lock type = <a class="el" href="classbasic__timed__lock.html">basic_timed_lock</a></li>
 </ul>
 </li>
 <li>Add class to extends the basic_convar_task with a message queue support - <a class="el" href="classbasic__message__task.html">basic_message_task</a><ul>
@@ -139,7 +141,6 @@ Version 1.9.1 Oktober 2020: (unstable 2.0beta)</h1>
 <li>add in <a class="el" href="classbasic__task.html">basic_task</a> get_state() to get the current state and static function get_tasks() to get the number of tasks</li>
 <li>remove create and destroy from all mutex and semaphore objects and add exceptins handling</li>
 <li>rename create and on_create to start and on_start</li>
-<li>Add timed lock type</li>
 <li>add to the <a class="el" href="classbasic__task.html">basic_task</a>: join(), wait() and get_self() functions - <a class="el" href="classbasic__task.html">basic_task</a> remove abstract</li>
 <li>remove the m_contextMutext2 LockObject</li>
 </ul>

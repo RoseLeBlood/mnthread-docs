@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['throw_5flock_5fexp_950',['THROW_LOCK_EXP',['../mn__basic__semaphore_8hpp.html#a30ccffd5d59d4a0398922563558a1b16',1,'mn_basic_semaphore.hpp']]],
-  ['throw_5flock_5fexp2_951',['THROW_LOCK_EXP2',['../mn__basic__semaphore_8hpp.html#a8dcc38d3232c62022bd17b7369a207fb',1,'mn_basic_semaphore.hpp']]]
+  ['no_5ferror_1013',['NO_ERROR',['../mn__error_8hpp.html#a258bb72419ef143530a2f8f55e7d57af',1,'mn_error.hpp']]]
 ];

@@ -149,12 +149,12 @@ $(document).ready(function(){initNavTree('mn__shared_8hpp_source.html',''); init
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        m_pReadWriteLock.create();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    ref_object_t get_object ()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        automutx_t lock(m_pReadWriteLock);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classbasic__autolock.html">automutx_t</a> lock(m_pReadWriteLock);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> m_refValue;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> set_object (<span class="keyword">const</span> ref_object_t refNewValue) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        automutx_t lock(m_pReadWriteLock);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classbasic__autolock.html">automutx_t</a> lock(m_pReadWriteLock);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        m_refValue = refNewValue;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> operator = (<span class="keyword">const</span> T&amp; refNewValue)  {</div>
@@ -240,6 +240,7 @@ $(document).ready(function(){initNavTree('mn__shared_8hpp_source.html',''); init
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
 <div class="ttc" id="aclassbasic__mutex_html"><div class="ttname"><a href="classbasic__mutex.html">basic_mutex</a></div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:32</div></div>
 <div class="ttc" id="amn__autolock_8hpp_html"><div class="ttname"><a href="mn__autolock_8hpp.html">mn_autolock.hpp</a></div></div>
+<div class="ttc" id="aclassbasic__autolock_html"><div class="ttname"><a href="classbasic__autolock.html">basic_autolock</a></div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:55</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

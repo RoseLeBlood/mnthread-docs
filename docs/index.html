@@ -149,8 +149,6 @@ Simple Example</h1>
 <div class="line">    hello_world_task() : <a class="code" href="classbasic__task.html">basic_task</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span>*  <a class="code" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task</a>()<span class="keyword"> override </span>{ </div>
-<div class="line">        basic_thread::on_task(); </div>
-<div class="line">        </div>
 <div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">get_id</a>();</div>
 <div class="line">        <span class="keywordtype">int</span> core = <a class="code" href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">get_on_core</a>();</div>
 <div class="line"> </div>
@@ -167,7 +165,8 @@ Simple Example</h1>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; NUMBER_OF_TEST_THREADS; i++) {</div>
 <div class="line">        tasks[i].create( i % 2 );</div>
 <div class="line">    }</div>
-<div class="line"> </div>
+<div class="line">    tasks.join();</div>
+<div class="line">    </div>
 <div class="line">    <a class="code" href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a>();</div>
 <div class="line">}</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md23"></a>
@@ -177,29 +176,60 @@ TODO's for Version 2.0</h1>
 <li>[X] Add timer, events and other usefull FreeRTOS Wrapper<ul>
 <li>[X] timer</li>
 <li>[ ] events</li>
-<li>[ ] coroutine</li>
-<li>[ ] MPU tasks???</li>
-<li>[ ] ...</li>
+<li>[X] ...</li>
 </ul>
 </li>
 <li>[X] Completed the documentation</li>
 <li>[ ] Write more examles (after 1.9 ready )</li>
 <li>[X] add a Workqueues</li>
 <li>[X] add Memory Manager class</li>
-<li>[ ] uxTaskGetStackHighWaterMark add to task class<ul>
+<li>[ ] add trace support UART and LwIP out<ul>
+<li>[ ] uxTaskGetStackHighWaterMark add to task class</li>
 <li>[ ] get stackpointer and other things</li>
 </ul>
 </li>
 <li>[ ] task Local Storage</li>
 <li>[ ] Optional:<ul>
 <li>[ ] In Timers, add OnStop / OnStart / mutex sync with these methods?</li>
-<li>[ ] Priority queues</li>
 </ul>
 </li>
 </ul>
 <h1><a class="anchor" id="autotoc_md24"></a>
 ChangeLog</h1>
 <h1><a class="anchor" id="autotoc_md25"></a>
+Version 1.9.1 Oktober 2020: (unstable 2.0beta)</h1>
+<ul>
+<li>for the future version add prototypes: (Not for produtions use!!)<ul>
+<li>free_list_memory pool = basic_free_list_mempool</li>
+<li>Shared Object = basic_shared_object</li>
+<li>Ringbuffer = basic_circular_buffer</li>
+<li>Add timed lock type = <a class="el" href="classbasic__timed__lock.html">basic_timed_lock</a></li>
+</ul>
+</li>
+<li>Add class to extends the basic_convar_task with a message queue support - <a class="el" href="classbasic__message__task.html">basic_message_task</a><ul>
+<li>Add new config item, to handle the maximal messages in the message queue (MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES)</li>
+<li>For message queue support must be conditional variable support marked as enable</li>
+</ul>
+</li>
+<li>Add new defines:<ul>
+<li>in <a class="el" href="mn__foreign__task_8hpp.html">mn_foreign_task.hpp</a>:<ul>
+<li>FT_IDLE_TASK (<a class="el" href="classforeign__task.html#a9b858481c508b10da507a956be426e6a">foreign_task::get_idle_task()</a>)</li>
+<li>FT_IDLE_TASK_ON(CPUID foreign_task::get_idle_task(CPUID)</li>
+</ul>
+</li>
+<li>in <a class="el" href="mn__config_8hpp.html">mn_config.hpp</a>:<ul>
+<li>MN_THREAD_CONFIG_MINIMAL_STACK_SIZE set the default minimal stack size for a task</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>add in <a class="el" href="classbasic__task.html">basic_task</a> get_state() to get the current state and static function get_tasks() to get the number of tasks</li>
+<li>remove create and destroy from all mutex and semaphore objects and add exceptins handling</li>
+<li>rename create and on_create to start and on_start</li>
+<li>add to the <a class="el" href="classbasic__task.html">basic_task</a>: join(), wait() and get_self() functions - <a class="el" href="classbasic__task.html">basic_task</a> remove abstract</li>
+<li>remove the m_contextMutext2 LockObject</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md26"></a>
 Version 1.9.0 September 2020: (stable 2.0beta)</h1>
 <ul>
 <li>add a eventgroup wrapper</li>
@@ -214,14 +244,14 @@ Version 1.9.0 September 2020: (stable 2.0beta)</h1>
 <li>Strip semaphore classes</li>
 <li>add <a class="el" href="classtask__utils.html">task_utils</a> class for notify</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 Version 1.71 September 2020: (unstable 2.0beta)</h1>
 <ul>
 <li>add single and multi threaded worcking queues (<a class="el" href="classbasic__work__queue__single.html">basic_work_queue_single</a> &amp; <a class="el" href="classbasic__work__queue__multi.html">basic_work_queue_multi</a>) (TODO Optional add a Workqueues ) and add configand error defines, with doku</li>
 <li>remove bugs and errors</li>
 <li>This is the preview version of 2.0.0</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md28"></a>
 Version 1.60 September 2020: (unstable nightly)</h1>
 <ul>
 <li>add Work queue support (<a class="el" href="classbasic__work__queue.html">basic_work_queue</a>) <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> pull <a class="el" href="classwork__queue__item.html">work_queue_item</a> off of a FIFO queue and run them sequentially. <br  />
@@ -244,25 +274,16 @@ Version 1.60 September 2020: (unstable nightly)</h1>
 <li><a class="el" href="classbasic__mutex.html">basic_mutex</a> extends <a class="el" href="classbasic__semaphore.html">basic_semaphore</a></li>
 <li>add foreign_thread for mini Thread foregin thread and current Thread handling</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md28"></a>
-Version 1.54 September 2020: (unstable)</h1>
-<ul>
-<li>Documentation ready</li>
-<li>add Licence text to source files</li>
-<li>remove semaphore_t and spinlock_t</li>
-<li>add counting_semaphore_t (autocsemp_t) and binary_semaphore_t (autobinsemp_t) <br  />
- please update code semaphore_t = counting_semaphore_t, spinlock_t = binary_semaphore_t</li>
-</ul>
 <p>For more see <a class="el" href="md__home_ambersophia__dokumente_git_mnthread__change_log.html">ChangeLog</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="amini_thread_8hpp_html"><div class="ttname"><a href="mini_thread_8hpp.html">miniThread.hpp</a></div></div>
-<div class="ttc" id="aclassbasic__task_html_a9a38181ee473266a564b6b9478dba8c1"><div class="ttname"><a href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:244</div></div>
-<div class="ttc" id="aclassbasic__task_html_a354384ebfae119b3cde62e8a1937a0a5"><div class="ttname"><a href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">basic_task::get_id</a></div><div class="ttdeci">int32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:195</div></div>
-<div class="ttc" id="aclassbasic__task_html_ae6dfd172010d2d63c9298d36cf549676"><div class="ttname"><a href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">basic_task::get_on_core</a></div><div class="ttdeci">int32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:203</div></div>
+<div class="ttc" id="aclassbasic__task_html_a9a38181ee473266a564b6b9478dba8c1"><div class="ttname"><a href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:247</div></div>
+<div class="ttc" id="aclassbasic__task_html_a354384ebfae119b3cde62e8a1937a0a5"><div class="ttname"><a href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">basic_task::get_id</a></div><div class="ttdeci">int32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:208</div></div>
+<div class="ttc" id="aclassbasic__task_html_ae6dfd172010d2d63c9298d36cf549676"><div class="ttname"><a href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">basic_task::get_on_core</a></div><div class="ttdeci">int32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:216</div></div>
 <div class="ttc" id="amini_thread_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> miniThread.cpp:24</div></div>
-<div class="ttc" id="aclassbasic__task_html"><div class="ttname"><a href="classbasic__task.html">basic_task</a></div><div class="ttdef"><b>Definition:</b> mn_task.hpp:41</div></div>
+<div class="ttc" id="aclassbasic__task_html"><div class="ttname"><a href="classbasic__task.html">basic_task</a></div><div class="ttdef"><b>Definition:</b> mn_task.hpp:43</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

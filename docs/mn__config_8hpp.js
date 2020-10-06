@@ -3,6 +3,7 @@ var mn__config_8hpp =
     [ "MN_THREAD_BETA_MAJOR_VERSION", "mn__config_8hpp.html#ac6cfeea38445d3d7feba1e9be92aed9b", null ],
     [ "MN_THREAD_BETA_MINOR_VERSION", "mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e", null ],
     [ "MN_THREAD_BETA_VERSION_STRING", "mn__config_8hpp.html#a1d73a768413a6a1c5590b7733c78a43d", null ],
+    [ "MN_THREAD_CONFIG_ADD_TASK_TO_TASK_LIST", "mn__config_8hpp.html#a937884c489bccb0b25f73a7fedc17e9a", null ],
     [ "MN_THREAD_CONFIG_BINARY_SEMAPHORE", "mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115", null ],
     [ "MN_THREAD_CONFIG_CORE_IFNO", "mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee", null ],
     [ "MN_THREAD_CONFIG_CORE_MAX", "mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9", null ],

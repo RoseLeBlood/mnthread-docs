@@ -30,10 +30,10 @@ var NAVTREE =
       [ "Simple Example", "index.html#autotoc_md22", null ],
       [ "TODO's for Version 2.0", "index.html#autotoc_md23", null ],
       [ "ChangeLog", "index.html#autotoc_md24", null ],
-      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "index.html#autotoc_md25", null ],
-      [ "Version 1.71 September 2020: (unstable 2.0beta)", "index.html#autotoc_md26", null ],
-      [ "Version 1.60 September 2020: (unstable nightly)", "index.html#autotoc_md27", null ],
-      [ "Version 1.54 September 2020: (unstable)", "index.html#autotoc_md28", null ]
+      [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "index.html#autotoc_md25", null ],
+      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "index.html#autotoc_md26", null ],
+      [ "Version 1.71 September 2020: (unstable 2.0beta)", "index.html#autotoc_md27", null ],
+      [ "Version 1.60 September 2020: (unstable nightly)", "index.html#autotoc_md28", null ]
     ] ],
     [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", [
       [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
@@ -84,9 +84,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html",
-"classbasic__work__queue.html#a93e2cb1b7be1553089532b65c656499c",
-"mn__config__preview_8hpp.html#ad5f3537d1f4376b35d538dc7040f8e9a"
+"_0dcode-example.html",
+"classbasic__timer.html#a94693fa31bb3b6b8446444dff01fcdbe",
+"mn__config_8hpp.html#a937884c489bccb0b25f73a7fedc17e9a",
+"pages.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
