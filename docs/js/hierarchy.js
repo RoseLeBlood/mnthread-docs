@@ -1,15 +1,16 @@
 var hierarchy =
 [
     [ "basic_autolock< LOCK >", "classbasic__autolock.html", null ],
-    [ "basic_convar_task", null, [
-      [ "basic_message_task", "classbasic__message__task.html", null ]
-    ] ],
+    [ "basic_condition_variable", "classbasic__condition__variable.html", null ],
     [ "basic_event_group", "classbasic__event__group.html", null ],
     [ "basic_queue", "classbasic__queue.html", [
       [ "basic_binaryqueue", "classbasic__binaryqueue.html", null ],
       [ "basic_deque", "classbasic__deque.html", null ]
     ] ],
     [ "basic_task", "classbasic__task.html", [
+      [ "basic_convar_task", "classbasic__convar__task.html", [
+        [ "basic_message_task", "classbasic__message__task.html", null ]
+      ] ],
       [ "foreign_task", "classforeign__task.html", null ],
       [ "work_queue_task", "classwork__queue__task.html", null ]
     ] ],
@@ -28,9 +29,7 @@ var hierarchy =
       [ "basic_semaphore", "classbasic__semaphore.html", [
         [ "basic_binary_semaphore", "classbasic__binary__semaphore.html", null ],
         [ "basic_counting_semaphore", "classbasic__counting__semaphore.html", null ],
-        [ "basic_mutex", "classbasic__mutex.html", [
-          [ "recursive_mutex", "classrecursive__mutex.html", null ]
-        ] ]
+        [ "basic_mutex", "classbasic__mutex.html", null ]
       ] ],
       [ "ISystemLockObject", "class_i_system_lock_object.html", [
         [ "basic_critical_section", "classbasic__critical__section.html", null ],

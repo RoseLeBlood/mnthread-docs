@@ -165,6 +165,8 @@ Macros</h2></td></tr>
 <tr class="separator:a352db8489e062b0e9c1365d39bb17b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af75f0ad7789180411059976192486e4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#af75f0ad7789180411059976192486e4e">MN_THREAD_CONFIG_LOCK_TYPE</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">MN_THREAD_CONFIG_BINARY_SEMAPHORE</a></td></tr>
 <tr class="separator:af75f0ad7789180411059976192486e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164eb9501389b4ba7784551401dc388b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
+<tr class="separator:a164eb9501389b4ba7784551401dc388b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1af1b16705ec8d267a32767da010c2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</a>&#160;&#160;&#160;3072</td></tr>
 <tr class="separator:ae1af1b16705ec8d267a32767da010c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6a2073609e7b98ce87f87cd1a7b677c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ab6a2073609e7b98ce87f87cd1a7b677c">MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES</a>&#160;&#160;&#160;5</td></tr>
@@ -211,8 +213,6 @@ Macros</h2></td></tr>
 <tr class="separator:ac6cfeea38445d3d7feba1e9be92aed9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d76c697f9a62755f96da3f916b4e10e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e">MN_THREAD_BETA_MINOR_VERSION</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a0d76c697f9a62755f96da3f916b4e10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5a1390a78543d9807e3dc1f9c650f4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#aa5a1390a78543d9807e3dc1f9c650f4a">MN_THREAD_CONFIG_RECURSIVE_MUTEX</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
-<tr class="separator:aa5a1390a78543d9807e3dc1f9c650f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ac6cfeea38445d3d7feba1e9be92aed9b"></a>
@@ -287,6 +287,21 @@ Ab hier nichts verändern | DO NOT EDIT AFTER THIS LINE!!!</h1>
 </div><div class="memdoc">
 
 <p>Pre defined values for config items - Use a binary semaphore. </p>
+
+</div>
+</div>
+<a id="a164eb9501389b4ba7784551401dc388b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164eb9501389b4ba7784551401dc388b">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Condition variable support for this libary 'MN_THREAD_CONFIG_YES' or 'MN_THREAD_CONFIG_NO' </p><dl class="section note"><dt>Note</dt><dd>default: MN_THREAD_CONFIG_YES </dd></dl>
 
 </div>
 </div>
@@ -593,7 +608,7 @@ default: MN_THREAD_CONFIG_BINARY_SEMAPHORE </dd></dl>
 </div><div class="memdoc">
 <p>How many message can stored in the <a class="el" href="classbasic__message__task.html">basic_message_task</a> queue - default: 5</p>
 <dl class="section note"><dt>Note</dt><dd>for message task support must be Condition variable support enabled </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT</a> </dd></dl>
 
 </div>
 </div>
@@ -643,21 +658,6 @@ default: MN_THREAD_CONFIG_BINARY_SEMAPHORE </dd></dl>
 <p>Whenn MN_THREAD_CONFIG_YES then activate develop unsafe future for next major version not for production use</p>
 <dl class="section note"><dt>Note</dt><dd>default: MN_THREAD_CONFIG_NO <br  />
  </dd></dl>
-
-</div>
-</div>
-<a id="aa5a1390a78543d9807e3dc1f9c650f4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5a1390a78543d9807e3dc1f9c650f4a">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_RECURSIVE_MUTEX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_THREAD_CONFIG_RECURSIVE_MUTEX&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Supported the FeeRTOS RECURSIVE_MUTEXES ? </p><dl class="section note"><dt>Note</dt><dd>Don't edit Enabled Build with RECURSIVE_MUTEXES support </dd></dl>
 
 </div>
 </div>

@@ -3,6 +3,8 @@ var annotated_dup =
     [ "basic_autolock", "classbasic__autolock.html", "classbasic__autolock" ],
     [ "basic_binary_semaphore", "classbasic__binary__semaphore.html", "classbasic__binary__semaphore" ],
     [ "basic_binaryqueue", "classbasic__binaryqueue.html", "classbasic__binaryqueue" ],
+    [ "basic_condition_variable", "classbasic__condition__variable.html", "classbasic__condition__variable" ],
+    [ "basic_convar_task", "classbasic__convar__task.html", "classbasic__convar__task" ],
     [ "basic_counting_semaphore", "classbasic__counting__semaphore.html", "classbasic__counting__semaphore" ],
     [ "basic_critical_section", "classbasic__critical__section.html", "classbasic__critical__section" ],
     [ "basic_critical_section_nested", "classbasic__critical__section__nested.html", "classbasic__critical__section__nested" ],
@@ -26,7 +28,6 @@ var annotated_dup =
     [ "ISystemLockObject", "class_i_system_lock_object.html", "class_i_system_lock_object" ],
     [ "libmnVersion", "classlibmn_version.html", "classlibmn_version" ],
     [ "lockcreate_exception", "classlockcreate__exception.html", "classlockcreate__exception" ],
-    [ "recursive_mutex", "classrecursive__mutex.html", "classrecursive__mutex" ],
     [ "task_utils", "classtask__utils.html", "classtask__utils" ],
     [ "work_queue_item", "classwork__queue__item.html", "classwork__queue__item" ],
     [ "work_queue_task", "classwork__queue__task.html", "classwork__queue__task" ]

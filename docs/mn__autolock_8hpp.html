@@ -98,7 +98,6 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp.html',''); initResiz
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__mutex_8hpp_source.html">mn_mutex.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__semaphore_8hpp_source.html">mn_semaphore.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mn__recursive__mutex_8hpp_source.html">mn_recursive_mutex.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__autolock_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -120,8 +119,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:a68592369b8b17bf26fc9d9b4e9c85e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa15c6409f6cc14789ae3f623bf79fbb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#aaa15c6409f6cc14789ae3f623bf79fbb">automutx_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa">mutex_t</a> &gt;</td></tr>
 <tr class="separator:aaa15c6409f6cc14789ae3f623bf79fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada4f72ea86a4fb0d781d9d83e8cecac0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#ada4f72ea86a4fb0d781d9d83e8cecac0">autoremutx_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__recursive__mutex_8hpp.html#a84d2861dec617ce59f255ec231804faa">remutex_t</a> &gt;</td></tr>
-<tr class="separator:ada4f72ea86a4fb0d781d9d83e8cecac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8829e7928234229aee06f6781ca6f3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">LockType_t</a> = <a class="el" href="mn__binary__semaphore_8hpp.html#adb77a9b18988a479e7f15534053c27d4">binary_semaphore_t</a></td></tr>
 <tr class="separator:a2b8829e7928234229aee06f6781ca6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53eeba9f0f1c7ce32281d401d4d94a75"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a53eeba9f0f1c7ce32281d401d4d94a75">autolock_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__autolock_8hpp.html#a2b8829e7928234229aee06f6781ca6f3">LockType_t</a> &gt;</td></tr>
@@ -213,21 +210,6 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A autolock type for mutex_t objects </p>
-
-</div>
-</div>
-<a id="ada4f72ea86a4fb0d781d9d83e8cecac0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada4f72ea86a4fb0d781d9d83e8cecac0">&#9670;&nbsp;</a></span>autoremutx_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__autolock_8hpp.html#ada4f72ea86a4fb0d781d9d83e8cecac0">autoremutx_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__recursive__mutex_8hpp.html#a84d2861dec617ce59f255ec231804faa">remutex_t</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A autolock type for remutex_t objects </p>
 
 </div>
 </div>
