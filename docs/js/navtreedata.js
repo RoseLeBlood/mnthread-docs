@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
-    [ "Mini Thread 1.91-beta2.0 (2.0.0 preview)", "index.html", [
+    [ "Mini Thread 1.95-beta.2.0 (2.0.0 preview)", "index.html", [
       [ "Folder Strutur", "index.html#autotoc_md21", null ],
       [ "Simple Example", "index.html#autotoc_md22", null ],
       [ "TODO's for Version 2.0", "index.html#autotoc_md23", null ],
