@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"mn__workqueue__task_8hpp.html":[4,0,80],
-"mn__workqueue__task_8hpp_source.html":[4,0,80],
 "pages.html":[],
 "structbasic__message__task_1_1task__message.html":[3,0,9,0],
 "structbasic__message__task_1_1task__message.html#a770078d80346dc1191b41632a5eb12df":[3,0,9,0,1],
