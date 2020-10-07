@@ -1,6 +1,6 @@
 var files_dup =
 [
-    [ "doxy-boot.js", "doxy-boot_8js.html", null ],
+    [ "bootstrap-doxy.js", "bootstrap-doxy_8js.html", null ],
     [ "jquery-2.1.1.min.js", "jquery-2_81_81_8min_8js.html", null ],
     [ "miniThread.cpp", "mini_thread_8cpp.html", "mini_thread_8cpp" ],
     [ "miniThread.hpp", "mini_thread_8hpp.html", "mini_thread_8hpp" ],

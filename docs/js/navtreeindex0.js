@@ -3,6 +3,7 @@ var NAVTREEINDEX0 =
 "_0dcode-example.html":[5,1],
 "_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html":[5,0],
 "annotated.html":[3,0],
+"bootstrap-doxy_8js.html":[4,0,0],
 "class_i_lock_object.html":[3,0,22],
 "class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5":[3,0,22,4],
 "class_i_lock_object.html#aa0ea8c3572be245b28681a96be10d8f6":[3,0,22,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classbasic__timer.html#a70e0d03a38f152e502abf29aacfb9b71":[3,0,17,16],
 "classbasic__timer.html#a7db3a5c1cff6049de411f00630dde69f":[3,0,17,3],
 "classbasic__timer.html#a898ff7329857cdf3b62a7b4957dae3c5":[3,0,17,0],
-"classbasic__timer.html#a8cd4af21e9f39356d5ab175b081be011":[3,0,17,4],
-"classbasic__timer.html#a907cd28211db15373a6a3f96d402a83e":[3,0,17,19]
+"classbasic__timer.html#a8cd4af21e9f39356d5ab175b081be011":[3,0,17,4]
 };

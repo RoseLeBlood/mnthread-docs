@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classbasic__timer.html#a907cd28211db15373a6a3f96d402a83e":[3,0,17,19],
 "classbasic__timer.html#a94693fa31bb3b6b8446444dff01fcdbe":[3,0,17,1],
 "classbasic__timer.html#a967b5d33276759732ee0ef468b04e653":[3,0,17,17],
 "classbasic__timer.html#aadf18a72676eb12e4b78a395114bda76":[3,0,17,20],
@@ -105,7 +106,6 @@ var NAVTREEINDEX1 =
 "classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9":[3,0,29,2],
 "classwork__queue__task.html#af5deef7dd402ae780ca10a1991185aa5":[3,0,29,3],
 "classwork__queue__task.html#afd17da27e34ecf51714f8ee6b861f075":[3,0,29,1],
-"doxy-boot_8js.html":[4,0,0],
 "examples.html":[5],
 "files.html":[4,0],
 "functions.html":[3,3,0],
