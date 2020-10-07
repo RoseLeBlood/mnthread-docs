@@ -8,7 +8,7 @@ var classtask__utils =
       [ "set_value", "classtask__utils.html#a3ad11431d8cf2bb0a3234625c77ae5e4a37f818e23915805ad2956f7e5a8be861", null ]
     ] ],
     [ "notify", "classtask__utils.html#a91745adf24cac7afa6d31045f18722d4", null ],
-    [ "notify_lock", "classtask__utils.html#aee5c19aea84eebd905c2e33e1b1d3379", null ],
-    [ "notify_unlock", "classtask__utils.html#adf087a38d85753ea6999287139efc4a4", null ],
+    [ "notify_give", "classtask__utils.html#a8c3cf854f51ac4cc278bc25f8328bd5e", null ],
+    [ "notify_take", "classtask__utils.html#a2294cc067296f8b919203a05992b92ce", null ],
     [ "notify_wait", "classtask__utils.html#a92c9da2bc6029148323e8c8049170352", null ]
 ];

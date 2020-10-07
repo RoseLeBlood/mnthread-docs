@@ -27,6 +27,7 @@ var mn__error_8hpp =
     [ "ERR_SYSTEM_LOCK", "mn__error_8hpp.html#abbf304fbe5ca15f9a1c2c967dcfa6a2f", null ],
     [ "ERR_SYSTEM_NO_RETURN", "mn__error_8hpp.html#a8760131e92a4fc56990e4444b495e62c", null ],
     [ "ERR_SYSTEM_OK", "mn__error_8hpp.html#aa1f093b6f7bec3a249274ce7ea16bc2d", null ],
+    [ "ERR_SYSTEM_UNLOCK", "mn__error_8hpp.html#a86493a69026c2067797b522d595f7fe2", null ],
     [ "ERR_TASK_ALREADYRUNNING", "mn__error_8hpp.html#a5fb2a002ca4d32f8292ce17825863cd4", null ],
     [ "ERR_TASK_CANTINITMUTEX", "mn__error_8hpp.html#adb41539745f5c3a67b95861101178e88", null ],
     [ "ERR_TASK_CANTSTARTTHREAD", "mn__error_8hpp.html#af9ccdb4cde6b9e7e4ab585125a0ff79f", null ],

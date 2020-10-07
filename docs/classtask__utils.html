@@ -115,10 +115,10 @@ Public Types</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a91745adf24cac7afa6d31045f18722d4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtask__utils.html#a91745adf24cac7afa6d31045f18722d4">notify</a> (<a class="el" href="classbasic__task.html">basic_task</a> *pTaskToNotify, uint32_t ulValue, <a class="el" href="classtask__utils.html#a3ad11431d8cf2bb0a3234625c77ae5e4">task_utils::action</a> eAction)</td></tr>
 <tr class="separator:a91745adf24cac7afa6d31045f18722d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee5c19aea84eebd905c2e33e1b1d3379"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtask__utils.html#aee5c19aea84eebd905c2e33e1b1d3379">notify_lock</a> (bool bClearCountOnExit, TickType_t xTicksToWait)</td></tr>
-<tr class="separator:aee5c19aea84eebd905c2e33e1b1d3379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf087a38d85753ea6999287139efc4a4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtask__utils.html#adf087a38d85753ea6999287139efc4a4">notify_unlock</a> (<a class="el" href="classbasic__task.html">basic_task</a> *pTaskToNotify)</td></tr>
-<tr class="separator:adf087a38d85753ea6999287139efc4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2294cc067296f8b919203a05992b92ce"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtask__utils.html#a2294cc067296f8b919203a05992b92ce">notify_take</a> (bool bClearCountOnExit, TickType_t xTicksToWait)</td></tr>
+<tr class="separator:a2294cc067296f8b919203a05992b92ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3cf854f51ac4cc278bc25f8328bd5e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtask__utils.html#a8c3cf854f51ac4cc278bc25f8328bd5e">notify_give</a> (<a class="el" href="classbasic__task.html">basic_task</a> *pTaskToNotify)</td></tr>
+<tr class="separator:a8c3cf854f51ac4cc278bc25f8328bd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92c9da2bc6029148323e8c8049170352"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtask__utils.html#a92c9da2bc6029148323e8c8049170352">notify_wait</a> (uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait)</td></tr>
 <tr class="separator:a92c9da2bc6029148323e8c8049170352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -134,6 +134,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Actions that can be performed when <a class="el" href="classtask__utils.html#a91745adf24cac7afa6d31045f18722d4">task_utils::notify()</a> is called. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3ad11431d8cf2bb0a3234625c77ae5e4a8072f986487e10b4dcad2ff689d29150"></a>no_action&#160;</td><td class="fielddoc"><p>Notify the task without updating its notify value. </p>
 </td></tr>
@@ -202,8 +203,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aee5c19aea84eebd905c2e33e1b1d3379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee5c19aea84eebd905c2e33e1b1d3379">&#9670;&nbsp;</a></span>notify_lock()</h2>
+<a id="a8c3cf854f51ac4cc278bc25f8328bd5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3cf854f51ac4cc278bc25f8328bd5e">&#9670;&nbsp;</a></span>notify_give()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +213,41 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t task_utils::notify_lock </td>
+          <td class="memname">bool task_utils::notify_give </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classbasic__task.html">basic_task</a> *&#160;</td>
+          <td class="paramname"><em>pTaskToNotify</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Send a task notification.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pTaskToNotify</td><td>The task being notified.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if give and else if not </dd></dl>
+
+</div>
+</div>
+<a id="a2294cc067296f8b919203a05992b92ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2294cc067296f8b919203a05992b92ce">&#9670;&nbsp;</a></span>notify_take()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t task_utils::notify_take </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>bClearCountOnExit</em>, </td>
@@ -235,49 +270,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Simplified macro for receiving task notification.</p>
-<p>lock = take</p>
+<p>Recive a task notification.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bClearCountOnExit</td><td>if is false then the task's notification value is decremented when the function exits. If true then the task's notification value is cleared to zero when the function exits. </td></tr>
+    <tr><td class="paramname">bClearCountOnExit</td><td>if is false then the task's notification value is decremented when the function exits. If true then the task's notification value is cleared to zero when the function exits.</td></tr>
+    <tr><td class="paramname">xTicksToWait</td><td>The maximum amount of time that the task should wait in the Blocked state for the task's notification value to be greater than zero, should the count not already be greater than zero when <a class="el" href="classtask__utils.html#a2294cc067296f8b919203a05992b92ce">notify_take()</a> was called. The task will not consume any processing time while it is in the Blocked state. This is specified in kernel ticks, the function ms_to_ticks( value_in_ms ) can be used to convert a time specified in milliseconds to a time specified in ticks.</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="adf087a38d85753ea6999287139efc4a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf087a38d85753ea6999287139efc4a4">&#9670;&nbsp;</a></span>notify_unlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool task_utils::notify_unlock </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classbasic__task.html">basic_task</a> *&#160;</td>
-          <td class="paramname"><em>pTaskToNotify</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Simplified macro for sending task notification.</p>
-<p>unlock = give</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pTaskToNotify</td><td>The task being notified.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if give and else if not </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The task's notification count before it is either cleared to zero or decremented </dd></dl>
 
 </div>
 </div>

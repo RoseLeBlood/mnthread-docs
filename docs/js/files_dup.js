@@ -40,6 +40,10 @@ var files_dup =
     [ "mn_foreign_task.hpp", "mn__foreign__task_8hpp.html", "mn__foreign__task_8hpp" ],
     [ "mn_free_list_mempool.cpp", "mn__free__list__mempool_8cpp.html", "mn__free__list__mempool_8cpp" ],
     [ "mn_free_list_mempool.hpp", "mn__free__list__mempool_8hpp.html", null ],
+    [ "mn_interrupts_lock.cpp", "mn__interrupts__lock_8cpp.html", null ],
+    [ "mn_interrupts_lock.hpp", "mn__interrupts__lock_8hpp.html", [
+      [ "basic_interrupts_lock", "classbasic__interrupts__lock.html", "classbasic__interrupts__lock" ]
+    ] ],
     [ "mn_lock.hpp", "mn__lock_8hpp.html", [
       [ "ILockObject", "class_i_lock_object.html", "class_i_lock_object" ]
     ] ],
@@ -61,6 +65,10 @@ var files_dup =
     [ "mn_recursive_mutex.cpp", "mn__recursive__mutex_8cpp.html", null ],
     [ "mn_recursive_mutex.hpp", "mn__recursive__mutex_8hpp.html", null ],
     [ "mn_ringbuffer.hpp", "mn__ringbuffer_8hpp.html", null ],
+    [ "mn_schedular_lock.cpp", "mn__schedular__lock_8cpp.html", null ],
+    [ "mn_schedular_lock.hpp", "mn__schedular__lock_8hpp.html", [
+      [ "basic_schedular_lock", "classbasic__schedular__lock.html", "classbasic__schedular__lock" ]
+    ] ],
     [ "mn_semaphore.hpp", "mn__semaphore_8hpp.html", null ],
     [ "mn_shared.hpp", "mn__shared_8hpp.html", null ],
     [ "mn_sleep.cpp", "mn__sleep_8cpp.html", "mn__sleep_8cpp" ],

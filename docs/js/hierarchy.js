@@ -34,7 +34,9 @@ var hierarchy =
       [ "ISystemLockObject", "class_i_system_lock_object.html", [
         [ "basic_critical_section", "classbasic__critical__section.html", null ],
         [ "basic_critical_section_nested", "classbasic__critical__section__nested.html", null ],
-        [ "basic_critical_section_timedout", "classbasic__critical__section__timedout.html", null ]
+        [ "basic_critical_section_timedout", "classbasic__critical__section__timedout.html", null ],
+        [ "basic_interrupts_lock", "classbasic__interrupts__lock.html", null ],
+        [ "basic_schedular_lock", "classbasic__schedular__lock.html", null ]
       ] ]
     ] ],
     [ "libmnVersion", "classlibmn_version.html", null ],
