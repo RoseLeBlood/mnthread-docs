@@ -127,8 +127,11 @@ dl.el {
   margin-left: -1cm;
 }
 
+div.fragment {
+  border: 0px solid #C4CFE5 !important;
+}
 pre.fragment {
-  border: 0px solid #C4CFE5;
+  border: 0px solid #C4CFE5 !important;
   background-color: #FBFCFD;
   padding: 4px 6px;
   margin: 4px 8px 4px 2px;
@@ -138,32 +141,6 @@ pre.fragment {
   line-height: 125%;
   font-family: monospace, fixed;
   font-size: 100%;
-}
-
-div.fragment {
-  padding: 4px 6px;
-  margin: 4px 8px 4px 2px;
-  border: 1px solid #C4CFE5;
-}
-
-div.line {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 12px;
-  min-height: 13px;
-  line-height: 1.0;     
-  word-wrap: normal;      
-  text-indent: -53px;
-  padding-left: 53px;
-  padding-bottom: 0px;
-  margin: 0px;
-}
-div.line:hover{
-  background-color: #FBFF00;
-}
-
-div.line.glow {
-  background-color: cyan;
-  box-shadow: 0 0 10px cyan;
 }
 
 
@@ -183,7 +160,7 @@ span.lineno a {
 }
 
 span.lineno a:hover {
-  background-color: #EFE200;
+  background-color: #ff4be7;
   color: #1e1e1e;
 }
 
@@ -460,8 +437,21 @@ span.mlabel {
   border-radius: 2px; 
   white-space: nowrap;
   vertical-align: middle;
+  font-size: 10px;
 }
 div.dynheader {
   margin-top: 8px;
   margin-left: 10px;
+}
+
+div.line {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+  min-height: 13px;
+  line-height: 1.0;     
+  word-wrap: normal;      
+  text-indent: -53px;
+  padding-left: 53px;
+  padding-bottom: 0px;
+  margin: 0px;
 }
