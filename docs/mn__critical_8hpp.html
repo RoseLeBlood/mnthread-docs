@@ -157,7 +157,7 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Helper macro for critical sections Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
 <div class="line"> <a class="code" href="classbasic__critical__section.html">critical_section_t</a> critical_section;</div>
 <div class="line"> <a class="code" href="mn__critical_8hpp.html#a63b5577a473dcd39f536f66e1c2719cd">CRITICAL_SECTION</a>(critical_section) {</div>
 <div class="line">     <span class="comment">// locked section code goes hier</span></div>
@@ -182,7 +182,7 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
 <div class="line"> <a class="code" href="classbasic__critical__section__nested.html">critical_section_nested_t</a> critical_section;</div>
 <div class="line"> <a class="code" href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a>(critical_section) {</div>
 <div class="line">     <span class="comment">// locked section code goes hier</span></div>
@@ -207,7 +207,7 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Example usage: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
 <div class="line"> <a class="code" href="classbasic__critical__section__timedout.html">critical_section_timedout_t</a> critical_section;</div>
 <div class="line"> <a class="code" href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a>(critical_section) {</div>
 <div class="line">     <span class="comment">// locked section code goes hier</span></div>
@@ -232,7 +232,14 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
+<div class="line"> <a class="code" href="classbasic__interrupts__lock.html">interrupts_lock_t</a> interrupts_lock;</div>
+<div class="line"> <a class="code" href="mn__critical_8hpp.html#ad74f9a5d105daac4e1f8593b42065299">INTERRUPTS_LOCK</a>(interrupts_lock) {</div>
+<div class="line">     <span class="comment">// locked section code goes hier</span></div>
+<div class="line"> }</div>
+<div class="line"> <span class="comment">// unlocked section  code goes hier</span></div>
+<div class="line">} </div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a656e99d4522c985dbe9cd848596c5fc1"></a>
@@ -250,7 +257,14 @@ Typedefs</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
+<div class="line"> <a class="code" href="classbasic__schedular__lock.html">schedular_lock_t</a> schedlock;</div>
+<div class="line"> <a class="code" href="mn__critical_8hpp.html#a656e99d4522c985dbe9cd848596c5fc1">SCHEDULAR_LOCK</a>(schedlock) {</div>
+<div class="line">     <span class="comment">// locked section code goes hier</span></div>
+<div class="line"> }</div>
+<div class="line"> <span class="comment">// unlocked section  code goes hier</span></div>
+<div class="line">} </div>
+</div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -406,12 +420,16 @@ Typedefs</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="amn__critical_8hpp_html_ab815d207b8ec9e2336b7c1e45f407aef"><div class="ttname"><a href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a></div><div class="ttdeci">#define CRITICAL_SECTION_TIMEDOUT(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:58</div></div>
-<div class="ttc" id="amn__critical_8hpp_html_a63b5577a473dcd39f536f66e1c2719cd"><div class="ttname"><a href="mn__critical_8hpp.html#a63b5577a473dcd39f536f66e1c2719cd">CRITICAL_SECTION</a></div><div class="ttdeci">#define CRITICAL_SECTION(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:44</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_ab815d207b8ec9e2336b7c1e45f407aef"><div class="ttname"><a href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a></div><div class="ttdeci">#define CRITICAL_SECTION_TIMEDOUT(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:56</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_a63b5577a473dcd39f536f66e1c2719cd"><div class="ttname"><a href="mn__critical_8hpp.html#a63b5577a473dcd39f536f66e1c2719cd">CRITICAL_SECTION</a></div><div class="ttdeci">#define CRITICAL_SECTION(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:43</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_ad74f9a5d105daac4e1f8593b42065299"><div class="ttname"><a href="mn__critical_8hpp.html#ad74f9a5d105daac4e1f8593b42065299">INTERRUPTS_LOCK</a></div><div class="ttdeci">#define INTERRUPTS_LOCK(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:82</div></div>
+<div class="ttc" id="aclassbasic__schedular__lock_html"><div class="ttname"><a href="classbasic__schedular__lock.html">basic_schedular_lock</a></div><div class="ttdef"><b>Definition:</b> mn_schedular_lock.hpp:54</div></div>
+<div class="ttc" id="aclassbasic__interrupts__lock_html"><div class="ttname"><a href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></div><div class="ttdef"><b>Definition:</b> mn_interrupts_lock.hpp:27</div></div>
 <div class="ttc" id="aclassbasic__critical__section_html"><div class="ttname"><a href="classbasic__critical__section.html">basic_critical_section</a></div><div class="ttdef"><b>Definition:</b> mn_criticalsection.hpp:31</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_a656e99d4522c985dbe9cd848596c5fc1"><div class="ttname"><a href="mn__critical_8hpp.html#a656e99d4522c985dbe9cd848596c5fc1">SCHEDULAR_LOCK</a></div><div class="ttdeci">#define SCHEDULAR_LOCK(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:95</div></div>
 <div class="ttc" id="aclassbasic__critical__section__timedout_html"><div class="ttname"><a href="classbasic__critical__section__timedout.html">basic_critical_section_timedout</a></div><div class="ttdef"><b>Definition:</b> mn_criticalsection.hpp:58</div></div>
 <div class="ttc" id="aclassbasic__critical__section__nested_html"><div class="ttname"><a href="classbasic__critical__section__nested.html">basic_critical_section_nested</a></div><div class="ttdef"><b>Definition:</b> mn_criticalsection.hpp:98</div></div>
-<div class="ttc" id="amn__critical_8hpp_html_a6ac6181e2b48fa72a6f9f39155c8e007"><div class="ttname"><a href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a></div><div class="ttdeci">#define CRITICAL_SECTION_NESTED(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:71</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_a6ac6181e2b48fa72a6f9f39155c8e007"><div class="ttname"><a href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a></div><div class="ttdeci">#define CRITICAL_SECTION_NESTED(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:68</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>
