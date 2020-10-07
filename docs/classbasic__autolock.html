@@ -350,7 +350,14 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p>Helper for lock sections, see example</p>
+<div class="fragment"><div class="line"><a class="code" href="classbasic__binary__semaphore.html">LockType_t</a> mutex;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">if</span>( (<a class="code" href="classbasic__autolock.html">autolock_t</a> lock(mutex)) ) {</div>
+<div class="line">  locked</div>
+<div class="line">}</div>
+<div class="line">unlocked</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a2208b315a751996402ef1db8d8e8a941"></a>
@@ -437,6 +444,8 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassbasic__binary__semaphore_html"><div class="ttname"><a href="classbasic__binary__semaphore.html">basic_binary_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_binary_semaphore.hpp:23</div></div>
+<div class="ttc" id="aclassbasic__autolock_html"><div class="ttname"><a href="classbasic__autolock.html">basic_autolock</a></div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:55</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

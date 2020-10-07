@@ -91,7 +91,6 @@ $(document).ready(function(){initNavTree('classbasic__task.html',''); initResiza
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classbasic__task-members.html">List of all members</a>  </div>
@@ -234,11 +233,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7293261cee60b89ba8ebfc5f6e8b6ba1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbasic__task.html">basic_task</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a7293261cee60b89ba8ebfc5f6e8b6ba1">get_self</a> ()</td></tr>
 <tr class="separator:a7293261cee60b89ba8ebfc5f6e8b6ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3e43614e2593a6fc0c2e5e73b051e818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#a3e43614e2593a6fc0c2e5e73b051e818">task_started</a> ()</td></tr>
-<tr class="separator:a3e43614e2593a6fc0c2e5e73b051e818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac9d7c136a8e7eeba1227df042ca51020"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__task.html#ac9d7c136a8e7eeba1227df042ca51020">runtaskstub</a> (void *parm)</td></tr>
@@ -277,8 +271,43 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class around FreeRTOS's implementation of a task.</p>
-<p>To use this, you need to subclass it. All of your task should be derived from the <a class="el" href="classbasic__task.html">basic_task</a> class. Then implement the virtual on_task function. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<p>To use this, you need to subclass it. All of your task should be derived from the <a class="el" href="classbasic__task.html">basic_task</a> class. Then implement the virtual on_task function.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="mini_thread_8hpp.html">miniThread.hpp</a>&gt;</span></div>
+<div class="line"><span class="comment">// The number of test tasks</span></div>
+<div class="line"><span class="preprocessor">#define NUMBER_OF_TEST_TASK      2</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The tost task class</span></div>
+<div class="line"><span class="keyword">class </span>hello_world_task : <span class="keyword">public</span> <a class="code" href="classbasic__task.html">basic_task</a> {</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    hello_world_task() : <a class="code" href="classbasic__task.html">basic_task</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span>*  <a class="code" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task</a>()<span class="keyword"> override </span>{ </div>
+<div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">get_id</a>(); <span class="comment">// get the task id from this task</span></div>
+<div class="line">        <span class="keywordtype">int</span> core = <a class="code" href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">get_on_core</a>(); <span class="comment">// get the core on run this task</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">while</span>(<span class="keyword">true</span>) { <span class="comment">// infinity run</span></div>
+<div class="line">            <span class="comment">// print the hello world message to the std output </span></div>
+<div class="line">            <span class="comment">// out on core: 0 and with id: 0: &quot;[0 @ 0] Hello World!&quot; </span></div>
+<div class="line">            printf(<span class="stringliteral">&quot;[%d @ %d] Hello World!!\n&quot;</span>, <span class="keywordtype">id</span>, core );</div>
+<div class="line">        }</div>
+<div class="line">         </div>
+<div class="line">        <span class="keywordflow">return</span> NULL; </div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> app_main() {</div>
+<div class="line">    hello_world_task tasks[NUMBER_OF_TEST_TASK];</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; NUMBER_OF_TEST_TASK; i++) {</div>
+<div class="line">        tasks[i].start( i % 2 );</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a>();</div>
+<div class="line">}</div>
+<div class="line"><span class="comment">// Examplo output:</span></div>
+<div class="line"><span class="comment">// [0 @ 0] Hello World!</span></div>
+<div class="line"><span class="comment">// [1 @ 1] Hello World!</span></div>
+<div class="line"><span class="comment">// [0 @ 0] Hello World!</span></div>
+<div class="line"><span class="comment">// ...</span></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="af2f26dcc4ddc2a0e5eaeea036effcf0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2f26dcc4ddc2a0e5eaeea036effcf0e">&#9670;&nbsp;</a></span>event</h2>
 
@@ -886,7 +915,11 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Destroy and delete the task and call the function 'on_kill'</p>
-<dl class="section return"><dt>Returns</dt><dd>ERR_TASK_OK The tasx are destroyed and 'ERR_TASK_NOTRUNNING' the task is not running </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>ERR_TASK_OK The task are destroyed</li>
+<li>ERR_TASK_NOTRUNNING The task was not running </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -1398,32 +1431,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e43614e2593a6fc0c2e5e73b051e818"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e43614e2593a6fc0c2e5e73b051e818">&#9670;&nbsp;</a></span>task_started()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void basic_task::task_started </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Internal function </p>
-
-</div>
-</div>
 <a id="a2229a31fb96085bcd202e585705bc0fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2229a31fb96085bcd202e585705bc0fc">&#9670;&nbsp;</a></span>usleep()</h2>
 
@@ -1858,6 +1865,12 @@ Protected Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="amini_thread_8hpp_html"><div class="ttname"><a href="mini_thread_8hpp.html">miniThread.hpp</a></div></div>
+<div class="ttc" id="aclassbasic__task_html_a9a38181ee473266a564b6b9478dba8c1"><div class="ttname"><a href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:286</div></div>
+<div class="ttc" id="aclassbasic__task_html_a354384ebfae119b3cde62e8a1937a0a5"><div class="ttname"><a href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">basic_task::get_id</a></div><div class="ttdeci">int32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:208</div></div>
+<div class="ttc" id="aclassbasic__task_html_ae6dfd172010d2d63c9298d36cf549676"><div class="ttname"><a href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">basic_task::get_on_core</a></div><div class="ttdeci">int32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:216</div></div>
+<div class="ttc" id="amini_thread_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> miniThread.cpp:24</div></div>
+<div class="ttc" id="aclassbasic__task_html"><div class="ttname"><a href="classbasic__task.html">basic_task</a></div><div class="ttdef"><b>Definition:</b> mn_task.hpp:80</div></div>
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"> </div>

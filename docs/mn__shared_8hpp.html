@@ -87,14 +87,638 @@ $(document).ready(function(){initNavTree('mn__shared_8hpp.html',''); initResizab
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">mn_shared.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;esp_types.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="mn__shared_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__shared__object.html">basic_shared_object&lt; TOBJECT &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a57e76dcd44528f9d62b58e9e806e817f"><td class="memTemplParams" colspan="2">template&lt;class TOBJECT &gt; </td></tr>
+<tr class="memitem:a57e76dcd44528f9d62b58e9e806e817f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a57e76dcd44528f9d62b58e9e806e817f">shared_object_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; TOBJECT &gt;</td></tr>
+<tr class="separator:a57e76dcd44528f9d62b58e9e806e817f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae2bfb36d482fc91fbff300c29b2bbf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a6ae2bfb36d482fc91fbff300c29b2bbf">shared_int8_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int8_t &gt;</td></tr>
+<tr class="memdesc:a6ae2bfb36d482fc91fbff300c29b2bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int8_t</code>.  <a href="mn__shared_8hpp.html#a6ae2bfb36d482fc91fbff300c29b2bbf">More...</a><br /></td></tr>
+<tr class="separator:a6ae2bfb36d482fc91fbff300c29b2bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f94c546a05c6a6d3d01013e2020adea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a3f94c546a05c6a6d3d01013e2020adea">shared_int16_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int16_t &gt;</td></tr>
+<tr class="memdesc:a3f94c546a05c6a6d3d01013e2020adea"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int16_t</code>.  <a href="mn__shared_8hpp.html#a3f94c546a05c6a6d3d01013e2020adea">More...</a><br /></td></tr>
+<tr class="separator:a3f94c546a05c6a6d3d01013e2020adea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffaa035d6c8dcc943a102ae953dc33b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a6ffaa035d6c8dcc943a102ae953dc33b">shared_int32_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int32_t &gt;</td></tr>
+<tr class="memdesc:a6ffaa035d6c8dcc943a102ae953dc33b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int32_t</code>.  <a href="mn__shared_8hpp.html#a6ffaa035d6c8dcc943a102ae953dc33b">More...</a><br /></td></tr>
+<tr class="separator:a6ffaa035d6c8dcc943a102ae953dc33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580d76bbba792ced8e79101585c0d8eb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a580d76bbba792ced8e79101585c0d8eb">shared_int64_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int64_t &gt;</td></tr>
+<tr class="memdesc:a580d76bbba792ced8e79101585c0d8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int64_t</code>.  <a href="mn__shared_8hpp.html#a580d76bbba792ced8e79101585c0d8eb">More...</a><br /></td></tr>
+<tr class="separator:a580d76bbba792ced8e79101585c0d8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a226d01353b546ed18ac1ba290883fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a9a226d01353b546ed18ac1ba290883fe">shared_uint8_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint8_t &gt;</td></tr>
+<tr class="memdesc:a9a226d01353b546ed18ac1ba290883fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint8_t</code>.  <a href="mn__shared_8hpp.html#a9a226d01353b546ed18ac1ba290883fe">More...</a><br /></td></tr>
+<tr class="separator:a9a226d01353b546ed18ac1ba290883fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affbc4dfe1e735cfbaf9c32fe37521749"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#affbc4dfe1e735cfbaf9c32fe37521749">shared_uint16_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint16_t &gt;</td></tr>
+<tr class="memdesc:affbc4dfe1e735cfbaf9c32fe37521749"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint16_t</code>.  <a href="mn__shared_8hpp.html#affbc4dfe1e735cfbaf9c32fe37521749">More...</a><br /></td></tr>
+<tr class="separator:affbc4dfe1e735cfbaf9c32fe37521749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dc84d93f41c26aa123986ea2e876f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a51dc84d93f41c26aa123986ea2e876f8">shared_uint32_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint32_t &gt;</td></tr>
+<tr class="memdesc:a51dc84d93f41c26aa123986ea2e876f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint32_t</code>.  <a href="mn__shared_8hpp.html#a51dc84d93f41c26aa123986ea2e876f8">More...</a><br /></td></tr>
+<tr class="separator:a51dc84d93f41c26aa123986ea2e876f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05706995a6a3c5a3cfecf2b62be3dea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#ac05706995a6a3c5a3cfecf2b62be3dea">shared_uint64_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint64_t &gt;</td></tr>
+<tr class="memdesc:ac05706995a6a3c5a3cfecf2b62be3dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint64_t</code>.  <a href="mn__shared_8hpp.html#ac05706995a6a3c5a3cfecf2b62be3dea">More...</a><br /></td></tr>
+<tr class="separator:ac05706995a6a3c5a3cfecf2b62be3dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60001d9a011ccd5e614a5a6f05b9e578"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a60001d9a011ccd5e614a5a6f05b9e578">shared_fast_int8_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int_fast8_t &gt;</td></tr>
+<tr class="memdesc:a60001d9a011ccd5e614a5a6f05b9e578"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int8_fast_t</code>.  <a href="mn__shared_8hpp.html#a60001d9a011ccd5e614a5a6f05b9e578">More...</a><br /></td></tr>
+<tr class="separator:a60001d9a011ccd5e614a5a6f05b9e578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a86ee9defe8599f2a8058a035160b45"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a3a86ee9defe8599f2a8058a035160b45">shared_fast_int16_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int_fast16_t &gt;</td></tr>
+<tr class="memdesc:a3a86ee9defe8599f2a8058a035160b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int16_fast_t</code>.  <a href="mn__shared_8hpp.html#a3a86ee9defe8599f2a8058a035160b45">More...</a><br /></td></tr>
+<tr class="separator:a3a86ee9defe8599f2a8058a035160b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ef827929f43c88cc58091ff5b171ca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#aa1ef827929f43c88cc58091ff5b171ca">shared_fast_int32_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int_fast32_t &gt;</td></tr>
+<tr class="memdesc:aa1ef827929f43c88cc58091ff5b171ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int32_fast_t</code>.  <a href="mn__shared_8hpp.html#aa1ef827929f43c88cc58091ff5b171ca">More...</a><br /></td></tr>
+<tr class="separator:aa1ef827929f43c88cc58091ff5b171ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af3bad22aad46fee2680c9cbf251c45"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a9af3bad22aad46fee2680c9cbf251c45">shared_fast_int64_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int_fast64_t &gt;</td></tr>
+<tr class="memdesc:a9af3bad22aad46fee2680c9cbf251c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int64_fast_t</code>.  <a href="mn__shared_8hpp.html#a9af3bad22aad46fee2680c9cbf251c45">More...</a><br /></td></tr>
+<tr class="separator:a9af3bad22aad46fee2680c9cbf251c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fb2b3a840b2653534e56def54c3729"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a55fb2b3a840b2653534e56def54c3729">shared_fast_uint8_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint_fast8_t &gt;</td></tr>
+<tr class="memdesc:a55fb2b3a840b2653534e56def54c3729"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint8_fast_t</code>.  <a href="mn__shared_8hpp.html#a55fb2b3a840b2653534e56def54c3729">More...</a><br /></td></tr>
+<tr class="separator:a55fb2b3a840b2653534e56def54c3729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada03e8725cc68bd83a6bd5ccfba94bf2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#ada03e8725cc68bd83a6bd5ccfba94bf2">shared_fast_uint16_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint_fast16_t &gt;</td></tr>
+<tr class="memdesc:ada03e8725cc68bd83a6bd5ccfba94bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint16_fast_t</code>.  <a href="mn__shared_8hpp.html#ada03e8725cc68bd83a6bd5ccfba94bf2">More...</a><br /></td></tr>
+<tr class="separator:ada03e8725cc68bd83a6bd5ccfba94bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad872ab2bd000f159dcf49cac2f75dfd1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#ad872ab2bd000f159dcf49cac2f75dfd1">shared_fast_uint32_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint_fast32_t &gt;</td></tr>
+<tr class="memdesc:ad872ab2bd000f159dcf49cac2f75dfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint32_fast_t</code>.  <a href="mn__shared_8hpp.html#ad872ab2bd000f159dcf49cac2f75dfd1">More...</a><br /></td></tr>
+<tr class="separator:ad872ab2bd000f159dcf49cac2f75dfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4632f2258f25908541ce3dd47886f5d3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a4632f2258f25908541ce3dd47886f5d3">shared_fast_uint64_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint_fast64_t &gt;</td></tr>
+<tr class="memdesc:a4632f2258f25908541ce3dd47886f5d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint64_fast_t</code>.  <a href="mn__shared_8hpp.html#a4632f2258f25908541ce3dd47886f5d3">More...</a><br /></td></tr>
+<tr class="separator:a4632f2258f25908541ce3dd47886f5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1d1c78857e16fe062ce76413386d2f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a7c1d1c78857e16fe062ce76413386d2f">shared_least_int8_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int_least8_t &gt;</td></tr>
+<tr class="memdesc:a7c1d1c78857e16fe062ce76413386d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int_least8_t</code>.  <a href="mn__shared_8hpp.html#a7c1d1c78857e16fe062ce76413386d2f">More...</a><br /></td></tr>
+<tr class="separator:a7c1d1c78857e16fe062ce76413386d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fc3120672a4930dc8e0831250b1f25"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a32fc3120672a4930dc8e0831250b1f25">shared_least_int16_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int_least16_t &gt;</td></tr>
+<tr class="memdesc:a32fc3120672a4930dc8e0831250b1f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int_least16_t</code>.  <a href="mn__shared_8hpp.html#a32fc3120672a4930dc8e0831250b1f25">More...</a><br /></td></tr>
+<tr class="separator:a32fc3120672a4930dc8e0831250b1f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13016ff8b2beebd2411ae681b81d770"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#aa13016ff8b2beebd2411ae681b81d770">shared_least_int32_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int_least32_t &gt;</td></tr>
+<tr class="memdesc:aa13016ff8b2beebd2411ae681b81d770"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int_least32_t</code>.  <a href="mn__shared_8hpp.html#aa13016ff8b2beebd2411ae681b81d770">More...</a><br /></td></tr>
+<tr class="separator:aa13016ff8b2beebd2411ae681b81d770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4536131ab1d300cdbb8c3085ceb34a0d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a4536131ab1d300cdbb8c3085ceb34a0d">shared_least_int64_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; int_least64_t &gt;</td></tr>
+<tr class="memdesc:a4536131ab1d300cdbb8c3085ceb34a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>int_least64_t</code>.  <a href="mn__shared_8hpp.html#a4536131ab1d300cdbb8c3085ceb34a0d">More...</a><br /></td></tr>
+<tr class="separator:a4536131ab1d300cdbb8c3085ceb34a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5da2d5005f56a74c3d4fcb44c86f9de"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#ab5da2d5005f56a74c3d4fcb44c86f9de">shared_least_uint8_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint_least8_t &gt;</td></tr>
+<tr class="memdesc:ab5da2d5005f56a74c3d4fcb44c86f9de"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint_least8_t</code>.  <a href="mn__shared_8hpp.html#ab5da2d5005f56a74c3d4fcb44c86f9de">More...</a><br /></td></tr>
+<tr class="separator:ab5da2d5005f56a74c3d4fcb44c86f9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df1fa1a28a7028b41b5de4bf4ae3d80"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a5df1fa1a28a7028b41b5de4bf4ae3d80">shared_least_uint16_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint_least16_t &gt;</td></tr>
+<tr class="memdesc:a5df1fa1a28a7028b41b5de4bf4ae3d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint_least16_t</code>.  <a href="mn__shared_8hpp.html#a5df1fa1a28a7028b41b5de4bf4ae3d80">More...</a><br /></td></tr>
+<tr class="separator:a5df1fa1a28a7028b41b5de4bf4ae3d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04990fbcb6f56e8050d10f3f7a03542e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a04990fbcb6f56e8050d10f3f7a03542e">shared_least_uint32_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint_least32_t &gt;</td></tr>
+<tr class="memdesc:a04990fbcb6f56e8050d10f3f7a03542e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint_least32_t</code>.  <a href="mn__shared_8hpp.html#a04990fbcb6f56e8050d10f3f7a03542e">More...</a><br /></td></tr>
+<tr class="separator:a04990fbcb6f56e8050d10f3f7a03542e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bc8a8d8942ef76ef42fa71232d9698"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#af4bc8a8d8942ef76ef42fa71232d9698">shared_least_uint64_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; uint_least64_t &gt;</td></tr>
+<tr class="memdesc:af4bc8a8d8942ef76ef42fa71232d9698"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>uint_least64_t</code>.  <a href="mn__shared_8hpp.html#af4bc8a8d8942ef76ef42fa71232d9698">More...</a><br /></td></tr>
+<tr class="separator:af4bc8a8d8942ef76ef42fa71232d9698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13456503f3e8f89eb39f5a64117a0a58"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a13456503f3e8f89eb39f5a64117a0a58">shared_float_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; float &gt;</td></tr>
+<tr class="memdesc:a13456503f3e8f89eb39f5a64117a0a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>float</code>.  <a href="mn__shared_8hpp.html#a13456503f3e8f89eb39f5a64117a0a58">More...</a><br /></td></tr>
+<tr class="separator:a13456503f3e8f89eb39f5a64117a0a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1603fc3446241fb42cf6881a75a84e41"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a1603fc3446241fb42cf6881a75a84e41">shared_double_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; double &gt;</td></tr>
+<tr class="memdesc:a1603fc3446241fb42cf6881a75a84e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>double</code>.  <a href="mn__shared_8hpp.html#a1603fc3446241fb42cf6881a75a84e41">More...</a><br /></td></tr>
+<tr class="separator:a1603fc3446241fb42cf6881a75a84e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1005c22ee9c5dcc0494809330e54b87"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#af1005c22ee9c5dcc0494809330e54b87">shared_bool_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; bool &gt;</td></tr>
+<tr class="memdesc:af1005c22ee9c5dcc0494809330e54b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>bool</code>.  <a href="mn__shared_8hpp.html#af1005c22ee9c5dcc0494809330e54b87">More...</a><br /></td></tr>
+<tr class="separator:af1005c22ee9c5dcc0494809330e54b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864dfb2d816fb2e009656a0af96dd537"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a864dfb2d816fb2e009656a0af96dd537">shared_void_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; void * &gt;</td></tr>
+<tr class="memdesc:a864dfb2d816fb2e009656a0af96dd537"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>void*</code>.  <a href="mn__shared_8hpp.html#a864dfb2d816fb2e009656a0af96dd537">More...</a><br /></td></tr>
+<tr class="separator:a864dfb2d816fb2e009656a0af96dd537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717c837b53c43f2cc58e1acd9aed1af4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a717c837b53c43f2cc58e1acd9aed1af4">shared_size_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; size_t &gt;</td></tr>
+<tr class="memdesc:a717c837b53c43f2cc58e1acd9aed1af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>size_t</code>.  <a href="mn__shared_8hpp.html#a717c837b53c43f2cc58e1acd9aed1af4">More...</a><br /></td></tr>
+<tr class="separator:a717c837b53c43f2cc58e1acd9aed1af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5829c95be05ae450bce62c062960612"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#ab5829c95be05ae450bce62c062960612">shared_char_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; char &gt;</td></tr>
+<tr class="memdesc:ab5829c95be05ae450bce62c062960612"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>char</code>.  <a href="mn__shared_8hpp.html#ab5829c95be05ae450bce62c062960612">More...</a><br /></td></tr>
+<tr class="separator:ab5829c95be05ae450bce62c062960612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74bc26ee3d4b534b032e613468cc263c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__shared_8hpp.html#a74bc26ee3d4b534b032e613468cc263c">shared_string_t</a> = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt; std::string &gt;</td></tr>
+<tr class="memdesc:a74bc26ee3d4b534b032e613468cc263c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>std::string</code>.  <a href="mn__shared_8hpp.html#a74bc26ee3d4b534b032e613468cc263c">More...</a><br /></td></tr>
+<tr class="separator:a74bc26ee3d4b534b032e613468cc263c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="af1005c22ee9c5dcc0494809330e54b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1005c22ee9c5dcc0494809330e54b87">&#9670;&nbsp;</a></span>shared_bool_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#af1005c22ee9c5dcc0494809330e54b87">shared_bool_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;bool&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>bool</code>. </p>
+
+</div>
+</div>
+<a id="ab5829c95be05ae450bce62c062960612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5829c95be05ae450bce62c062960612">&#9670;&nbsp;</a></span>shared_char_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#ab5829c95be05ae450bce62c062960612">shared_char_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;char&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>char</code>. </p>
+
+</div>
+</div>
+<a id="a1603fc3446241fb42cf6881a75a84e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1603fc3446241fb42cf6881a75a84e41">&#9670;&nbsp;</a></span>shared_double_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a1603fc3446241fb42cf6881a75a84e41">shared_double_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>double</code>. </p>
+
+</div>
+</div>
+<a id="a3a86ee9defe8599f2a8058a035160b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a86ee9defe8599f2a8058a035160b45">&#9670;&nbsp;</a></span>shared_fast_int16_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a3a86ee9defe8599f2a8058a035160b45">shared_fast_int16_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int_fast16_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int16_fast_t</code>. </p>
+
+</div>
+</div>
+<a id="aa1ef827929f43c88cc58091ff5b171ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ef827929f43c88cc58091ff5b171ca">&#9670;&nbsp;</a></span>shared_fast_int32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#aa1ef827929f43c88cc58091ff5b171ca">shared_fast_int32_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int_fast32_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int32_fast_t</code>. </p>
+
+</div>
+</div>
+<a id="a9af3bad22aad46fee2680c9cbf251c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af3bad22aad46fee2680c9cbf251c45">&#9670;&nbsp;</a></span>shared_fast_int64_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a9af3bad22aad46fee2680c9cbf251c45">shared_fast_int64_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int_fast64_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int64_fast_t</code>. </p>
+
+</div>
+</div>
+<a id="a60001d9a011ccd5e614a5a6f05b9e578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60001d9a011ccd5e614a5a6f05b9e578">&#9670;&nbsp;</a></span>shared_fast_int8_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a60001d9a011ccd5e614a5a6f05b9e578">shared_fast_int8_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int_fast8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int8_fast_t</code>. </p>
+
+</div>
+</div>
+<a id="ada03e8725cc68bd83a6bd5ccfba94bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada03e8725cc68bd83a6bd5ccfba94bf2">&#9670;&nbsp;</a></span>shared_fast_uint16_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#ada03e8725cc68bd83a6bd5ccfba94bf2">shared_fast_uint16_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint_fast16_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint16_fast_t</code>. </p>
+
+</div>
+</div>
+<a id="ad872ab2bd000f159dcf49cac2f75dfd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad872ab2bd000f159dcf49cac2f75dfd1">&#9670;&nbsp;</a></span>shared_fast_uint32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#ad872ab2bd000f159dcf49cac2f75dfd1">shared_fast_uint32_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint_fast32_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint32_fast_t</code>. </p>
+
+</div>
+</div>
+<a id="a4632f2258f25908541ce3dd47886f5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4632f2258f25908541ce3dd47886f5d3">&#9670;&nbsp;</a></span>shared_fast_uint64_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a4632f2258f25908541ce3dd47886f5d3">shared_fast_uint64_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint_fast64_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint64_fast_t</code>. </p>
+
+</div>
+</div>
+<a id="a55fb2b3a840b2653534e56def54c3729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fb2b3a840b2653534e56def54c3729">&#9670;&nbsp;</a></span>shared_fast_uint8_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a55fb2b3a840b2653534e56def54c3729">shared_fast_uint8_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint_fast8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint8_fast_t</code>. </p>
+
+</div>
+</div>
+<a id="a13456503f3e8f89eb39f5a64117a0a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13456503f3e8f89eb39f5a64117a0a58">&#9670;&nbsp;</a></span>shared_float_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a13456503f3e8f89eb39f5a64117a0a58">shared_float_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;float&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>float</code>. </p>
+
+</div>
+</div>
+<a id="a3f94c546a05c6a6d3d01013e2020adea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f94c546a05c6a6d3d01013e2020adea">&#9670;&nbsp;</a></span>shared_int16_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a3f94c546a05c6a6d3d01013e2020adea">shared_int16_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int16_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int16_t</code>. </p>
+
+</div>
+</div>
+<a id="a6ffaa035d6c8dcc943a102ae953dc33b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ffaa035d6c8dcc943a102ae953dc33b">&#9670;&nbsp;</a></span>shared_int32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a6ffaa035d6c8dcc943a102ae953dc33b">shared_int32_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int32_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int32_t</code>. </p>
+
+</div>
+</div>
+<a id="a580d76bbba792ced8e79101585c0d8eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a580d76bbba792ced8e79101585c0d8eb">&#9670;&nbsp;</a></span>shared_int64_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a580d76bbba792ced8e79101585c0d8eb">shared_int64_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int64_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int64_t</code>. </p>
+
+</div>
+</div>
+<a id="a6ae2bfb36d482fc91fbff300c29b2bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae2bfb36d482fc91fbff300c29b2bbf">&#9670;&nbsp;</a></span>shared_int8_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a6ae2bfb36d482fc91fbff300c29b2bbf">shared_int8_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int8_t</code>. </p>
+
+</div>
+</div>
+<a id="a32fc3120672a4930dc8e0831250b1f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32fc3120672a4930dc8e0831250b1f25">&#9670;&nbsp;</a></span>shared_least_int16_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a32fc3120672a4930dc8e0831250b1f25">shared_least_int16_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int_least16_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int_least16_t</code>. </p>
+
+</div>
+</div>
+<a id="aa13016ff8b2beebd2411ae681b81d770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa13016ff8b2beebd2411ae681b81d770">&#9670;&nbsp;</a></span>shared_least_int32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#aa13016ff8b2beebd2411ae681b81d770">shared_least_int32_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int_least32_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int_least32_t</code>. </p>
+
+</div>
+</div>
+<a id="a4536131ab1d300cdbb8c3085ceb34a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4536131ab1d300cdbb8c3085ceb34a0d">&#9670;&nbsp;</a></span>shared_least_int64_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a4536131ab1d300cdbb8c3085ceb34a0d">shared_least_int64_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int_least64_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int_least64_t</code>. </p>
+
+</div>
+</div>
+<a id="a7c1d1c78857e16fe062ce76413386d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c1d1c78857e16fe062ce76413386d2f">&#9670;&nbsp;</a></span>shared_least_int8_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a7c1d1c78857e16fe062ce76413386d2f">shared_least_int8_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;int_least8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>int_least8_t</code>. </p>
+
+</div>
+</div>
+<a id="a5df1fa1a28a7028b41b5de4bf4ae3d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df1fa1a28a7028b41b5de4bf4ae3d80">&#9670;&nbsp;</a></span>shared_least_uint16_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a5df1fa1a28a7028b41b5de4bf4ae3d80">shared_least_uint16_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint_least16_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint_least16_t</code>. </p>
+
+</div>
+</div>
+<a id="a04990fbcb6f56e8050d10f3f7a03542e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04990fbcb6f56e8050d10f3f7a03542e">&#9670;&nbsp;</a></span>shared_least_uint32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a04990fbcb6f56e8050d10f3f7a03542e">shared_least_uint32_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint_least32_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint_least32_t</code>. </p>
+
+</div>
+</div>
+<a id="af4bc8a8d8942ef76ef42fa71232d9698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4bc8a8d8942ef76ef42fa71232d9698">&#9670;&nbsp;</a></span>shared_least_uint64_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#af4bc8a8d8942ef76ef42fa71232d9698">shared_least_uint64_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint_least64_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint_least64_t</code>. </p>
+
+</div>
+</div>
+<a id="ab5da2d5005f56a74c3d4fcb44c86f9de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5da2d5005f56a74c3d4fcb44c86f9de">&#9670;&nbsp;</a></span>shared_least_uint8_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#ab5da2d5005f56a74c3d4fcb44c86f9de">shared_least_uint8_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint_least8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint_least8_t</code>. </p>
+
+</div>
+</div>
+<a id="a57e76dcd44528f9d62b58e9e806e817f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e76dcd44528f9d62b58e9e806e817f">&#9670;&nbsp;</a></span>shared_object_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOBJECT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a57e76dcd44528f9d62b58e9e806e817f">shared_object_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;TOBJECT&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a717c837b53c43f2cc58e1acd9aed1af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717c837b53c43f2cc58e1acd9aed1af4">&#9670;&nbsp;</a></span>shared_size_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a717c837b53c43f2cc58e1acd9aed1af4">shared_size_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;size_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>size_t</code>. </p>
+
+</div>
+</div>
+<a id="a74bc26ee3d4b534b032e613468cc263c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74bc26ee3d4b534b032e613468cc263c">&#9670;&nbsp;</a></span>shared_string_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a74bc26ee3d4b534b032e613468cc263c">shared_string_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>std::string</code>. </p>
+
+</div>
+</div>
+<a id="affbc4dfe1e735cfbaf9c32fe37521749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affbc4dfe1e735cfbaf9c32fe37521749">&#9670;&nbsp;</a></span>shared_uint16_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#affbc4dfe1e735cfbaf9c32fe37521749">shared_uint16_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint16_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint16_t</code>. </p>
+
+</div>
+</div>
+<a id="a51dc84d93f41c26aa123986ea2e876f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51dc84d93f41c26aa123986ea2e876f8">&#9670;&nbsp;</a></span>shared_uint32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a51dc84d93f41c26aa123986ea2e876f8">shared_uint32_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint32_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint32_t</code>. </p>
+
+</div>
+</div>
+<a id="ac05706995a6a3c5a3cfecf2b62be3dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05706995a6a3c5a3cfecf2b62be3dea">&#9670;&nbsp;</a></span>shared_uint64_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#ac05706995a6a3c5a3cfecf2b62be3dea">shared_uint64_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint64_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint64_t</code>. </p>
+
+</div>
+</div>
+<a id="a9a226d01353b546ed18ac1ba290883fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a226d01353b546ed18ac1ba290883fe">&#9670;&nbsp;</a></span>shared_uint8_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a9a226d01353b546ed18ac1ba290883fe">shared_uint8_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;uint8_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>uint8_t</code>. </p>
+
+</div>
+</div>
+<a id="a864dfb2d816fb2e009656a0af96dd537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864dfb2d816fb2e009656a0af96dd537">&#9670;&nbsp;</a></span>shared_void_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="mn__shared_8hpp.html#a864dfb2d816fb2e009656a0af96dd537">shared_void_t</a> =  <a class="el" href="classbasic__shared__object.html">basic_shared_object</a>&lt;void*&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A shared object value of <code>void*</code>. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -12,6 +12,8 @@ var classbasic__timer =
     [ "inactive", "classbasic__timer.html#abdaaccdc1cf479a24f70be77c86f2908", null ],
     [ "is_oneshot", "classbasic__timer.html#a090c9675eaf0af7c8a3996d40dbc73c7", null ],
     [ "is_running", "classbasic__timer.html#adba46e60f6e59b12cd133afc110d7177", null ],
+    [ "on_enter", "classbasic__timer.html#a459aad847804a1931c563fefdd845f15", null ],
+    [ "on_exit", "classbasic__timer.html#a5a1cea61c8c8e7f1bbaef40dfca9818c", null ],
     [ "on_timer", "classbasic__timer.html#a419287e0654292a4a38b46f3a9b1b0d3", null ],
     [ "operator bool", "classbasic__timer.html#a3fb41818ccef55fe58245c99f344ba46", null ],
     [ "reset", "classbasic__timer.html#a19709a0934e3bc4d4f2aa3b83d655914", null ],

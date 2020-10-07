@@ -15,7 +15,7 @@ var files_dup =
     [ "mn_binaryqueue.hpp", "mn__binaryqueue_8hpp.html", "mn__binaryqueue_8hpp" ],
     [ "mn_bit_map_mempool.hpp", "mn__bit__map__mempool_8hpp.html", null ],
     [ "mn_config.hpp", "mn__config_8hpp.html", "mn__config_8hpp" ],
-    [ "mn_config_preview.hpp", "mn__config__preview_8hpp.html", "mn__config__preview_8hpp" ],
+    [ "mn_config_preview.hpp", "mn__config__preview_8hpp.html", null ],
     [ "mn_convar.cpp", "mn__convar_8cpp.html", null ],
     [ "mn_convar.hpp", "mn__convar_8hpp.html", "mn__convar_8hpp" ],
     [ "mn_convar_task.cpp", "mn__convar__task_8cpp.html", null ],
@@ -33,7 +33,7 @@ var files_dup =
     [ "mn_deque.cpp", "mn__deque_8cpp.html", null ],
     [ "mn_deque.hpp", "mn__deque_8hpp.html", "mn__deque_8hpp" ],
     [ "mn_error.hpp", "mn__error_8hpp.html", "mn__error_8hpp" ],
-    [ "mn_error_preview.hpp", "mn__error__preview_8hpp.html", "mn__error__preview_8hpp" ],
+    [ "mn_error_preview.hpp", "mn__error__preview_8hpp.html", null ],
     [ "mn_eventgroup.cpp", "mn__eventgroup_8cpp.html", null ],
     [ "mn_eventgroup.hpp", "mn__eventgroup_8hpp.html", "mn__eventgroup_8hpp" ],
     [ "mn_foreign_task.cpp", "mn__foreign__task_8cpp.html", null ],
@@ -64,13 +64,13 @@ var files_dup =
     [ "mn_queue.hpp", "mn__queue_8hpp.html", "mn__queue_8hpp" ],
     [ "mn_recursive_mutex.cpp", "mn__recursive__mutex_8cpp.html", null ],
     [ "mn_recursive_mutex.hpp", "mn__recursive__mutex_8hpp.html", null ],
-    [ "mn_ringbuffer.hpp", "mn__ringbuffer_8hpp.html", null ],
+    [ "mn_ringbuffer.hpp", "mn__ringbuffer_8hpp.html", "mn__ringbuffer_8hpp" ],
     [ "mn_schedular_lock.cpp", "mn__schedular__lock_8cpp.html", null ],
     [ "mn_schedular_lock.hpp", "mn__schedular__lock_8hpp.html", [
       [ "basic_schedular_lock", "classbasic__schedular__lock.html", "classbasic__schedular__lock" ]
     ] ],
     [ "mn_semaphore.hpp", "mn__semaphore_8hpp.html", null ],
-    [ "mn_shared.hpp", "mn__shared_8hpp.html", null ],
+    [ "mn_shared.hpp", "mn__shared_8hpp.html", "mn__shared_8hpp" ],
     [ "mn_sleep.cpp", "mn__sleep_8cpp.html", "mn__sleep_8cpp" ],
     [ "mn_sleep.hpp", "mn__sleep_8hpp.html", "mn__sleep_8hpp" ],
     [ "mn_system_lock.hpp", "mn__system__lock_8hpp.html", [

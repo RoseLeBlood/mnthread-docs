@@ -60,7 +60,6 @@ var classbasic__task =
     [ "start", "classbasic__task.html#a4d6776acfc21001a380019060ddc9cc7", null ],
     [ "suspend", "classbasic__task.html#a5a5389d9182486ea6fa383d9c55d15b4", null ],
     [ "suspend", "classbasic__task.html#a6b53166e8fd2a8a64c7bde5ec240ad2c", null ],
-    [ "task_started", "classbasic__task.html#a3e43614e2593a6fc0c2e5e73b051e818", null ],
     [ "usleep", "classbasic__task.html#a2229a31fb96085bcd202e585705bc0fc", null ],
     [ "wait", "classbasic__task.html#a8519597409ccc8ccdb69440f5a590642", null ],
     [ "wait", "classbasic__task.html#acb804cd09b760ce1746859530782d0da", null ],

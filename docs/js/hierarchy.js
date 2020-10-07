@@ -1,12 +1,14 @@
 var hierarchy =
 [
     [ "basic_autolock< LOCK >", "classbasic__autolock.html", null ],
+    [ "basic_circular_buffer< T >", "classbasic__circular__buffer.html", null ],
     [ "basic_condition_variable", "classbasic__condition__variable.html", null ],
     [ "basic_event_group", "classbasic__event__group.html", null ],
     [ "basic_queue", "classbasic__queue.html", [
       [ "basic_binaryqueue", "classbasic__binaryqueue.html", null ],
       [ "basic_deque", "classbasic__deque.html", null ]
     ] ],
+    [ "basic_shared_object< TOBJECT >", "classbasic__shared__object.html", null ],
     [ "basic_task", "classbasic__task.html", [
       [ "basic_convar_task", "classbasic__convar__task.html", [
         [ "basic_message_task", "classbasic__message__task.html", null ]

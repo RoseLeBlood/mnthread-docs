@@ -139,6 +139,10 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a419287e0654292a4a38b46f3a9b1b0d3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__timer.html#a419287e0654292a4a38b46f3a9b1b0d3">on_timer</a> ()=0</td></tr>
 <tr class="separator:a419287e0654292a4a38b46f3a9b1b0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459aad847804a1931c563fefdd845f15"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__timer.html#a459aad847804a1931c563fefdd845f15">on_enter</a> ()</td></tr>
+<tr class="separator:a459aad847804a1931c563fefdd845f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1cea61c8c8e7f1bbaef40dfca9818c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__timer.html#a5a1cea61c8c8e7f1bbaef40dfca9818c">on_exit</a> ()</td></tr>
+<tr class="separator:a5a1cea61c8c8e7f1bbaef40dfca9818c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -479,6 +483,58 @@ Private Attributes</h2></td></tr>
 <p>Queries a timer to see if it is active or dormant.</p>
 <dl class="section return"><dt>Returns</dt><dd>false will be returned if the timer is dormant. <br  />
  And true will be returned if the timer is active. </dd></dl>
+
+</div>
+</div>
+<a id="a459aad847804a1931c563fefdd845f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a459aad847804a1931c563fefdd845f15">&#9670;&nbsp;</a></span>on_enter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void basic_timer::on_enter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>You can override this functions, call befor on_timer </p>
+
+</div>
+</div>
+<a id="a5a1cea61c8c8e7f1bbaef40dfca9818c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a1cea61c8c8e7f1bbaef40dfca9818c">&#9670;&nbsp;</a></span>on_exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void basic_timer::on_exit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>You can override this functions, call after on_timer </p>
 
 </div>
 </div>
