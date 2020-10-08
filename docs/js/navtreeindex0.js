@@ -3,6 +3,7 @@ var NAVTREEINDEX0 =
 "_0dcode-example.html":[5,1],
 "_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html":[5,0],
 "annotated.html":[3,0],
+"bootstrap_8min_8js.html":[4,0,0],
 "class_i_lock_object.html":[3,0,28],
 "class_i_lock_object.html#a0cba5d261f9d8528925b8bf5e018d4a5":[3,0,28,4],
 "class_i_lock_object.html#aa0ea8c3572be245b28681a96be10d8f6":[3,0,28,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba1fc391ba1271a61a60a4d9736dd68797":[3,0,19,1,0],
 "classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba27aec4e8c8d79efebc32815e904d9efa":[3,0,19,1,5],
 "classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba49e0851c93729159d60d43816a08328b":[3,0,19,1,4],
-"classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba91dec2766fd6eeccd15a046567bb65ec":[3,0,19,1,2],
-"classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba96418e4d6f309855ea7e34cce01f420d":[3,0,19,1,3]
+"classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba91dec2766fd6eeccd15a046567bb65ec":[3,0,19,1,2]
 };

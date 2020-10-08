@@ -1,6 +1,7 @@
 var files_dup =
 [
-    [ "jquery-2.1.1.min.js", "jquery-2_81_81_8min_8js.html", null ],
+    [ "bootstrap.min.js", "bootstrap_8min_8js.html", null ],
+    [ "jquery-3.2.1.slim.min.js", "jquery-3_82_81_8slim_8min_8js.html", null ],
     [ "miniThread.cpp", "mini_thread_8cpp.html", "mini_thread_8cpp" ],
     [ "miniThread.hpp", "mini_thread_8hpp.html", "mini_thread_8hpp" ],
     [ "mn_autolock.cpp", "mn__autolock_8cpp.html", null ],
@@ -100,5 +101,6 @@ var files_dup =
     [ "mn_workqueue_task.cpp", "mn__workqueue__task_8cpp.html", null ],
     [ "mn_workqueue_task.hpp", "mn__workqueue__task_8hpp.html", [
       [ "work_queue_task", "classwork__queue__task.html", "classwork__queue__task" ]
-    ] ]
+    ] ],
+    [ "popper.min.js", "popper_8min_8js.html", null ]
 ];
