@@ -13,19 +13,17 @@
         <script type="text/javascript" src="js/navtree.js"></script>
         <script type="text/javascript" src="js/searchdata.js"></script>
         <script type="text/javascript" src="js/search.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap-doxy.js"></script>
-        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="js/svgpan.js"></script>
-        <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/dynsections.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- stylesheet -->
         <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
         <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
         <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
         <link href="css/search.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -264,9 +262,10 @@ $(document).ready(function(){initNavTree('mn__ringbuffer_8hpp_source.html',''); 
 <div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classbasic__circular__buffer.html#a12457c3c5c831093f67b7569ab883a41">  238</a></span>&#160;    <span class="keywordtype">bool</span>            <a class="code" href="classbasic__circular__buffer.html#a12457c3c5c831093f67b7569ab883a41">m_bFull</a>;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;};</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="mn__ringbuffer_8hpp.html#a72b916254cceea71ead5358e5c6f5ac7">  241</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__circular__buffer.html">circular_buffer_t</a> = <a class="code" href="classbasic__circular__buffer.html">basic_circular_buffer</a>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif // MINLIB_ESP32_RINGBUFFER_</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="mn__ringbuffer_8hpp.html#a3824f65c6ba0ef73de3a1fd9ae6c5c18">  242</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__circular__buffer.html">circular_buffer_t</a> = <a class="code" href="classbasic__circular__buffer.html">basic_circular_buffer&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif // MINLIB_ESP32_RINGBUFFER_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassbasic__circular__buffer_html_a12457c3c5c831093f67b7569ab883a41"><div class="ttname"><a href="classbasic__circular__buffer.html#a12457c3c5c831093f67b7569ab883a41">basic_circular_buffer::m_bFull</a></div><div class="ttdeci">bool m_bFull</div><div class="ttdef"><b>Definition:</b> mn_ringbuffer.hpp:238</div></div>

@@ -18,7 +18,7 @@ var NAVTREEINDEX3 =
 "mn__recursive__mutex_8hpp.html":[4,0,53],
 "mn__recursive__mutex_8hpp_source.html":[4,0,53],
 "mn__ringbuffer_8hpp.html":[4,0,54],
-"mn__ringbuffer_8hpp.html#a72b916254cceea71ead5358e5c6f5ac7":[4,0,54,1],
+"mn__ringbuffer_8hpp.html#a3824f65c6ba0ef73de3a1fd9ae6c5c18":[4,0,54,1],
 "mn__ringbuffer_8hpp_source.html":[4,0,54],
 "mn__schedular__lock_8cpp.html":[4,0,55],
 "mn__schedular__lock_8hpp.html":[4,0,56],
