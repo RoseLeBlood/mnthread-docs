@@ -14,12 +14,16 @@ var hierarchy =
         [ "basic_message_task", "classbasic__message__task.html", null ]
       ] ],
       [ "foreign_task", "classforeign__task.html", null ],
+      [ "hello_world_task", "classhello__world__task.html", null ],
       [ "work_queue_task", "classwork__queue__task.html", null ]
     ] ],
     [ "basic_task_list", "classbasic__task__list.html", null ],
     [ "basic_tasklet", "classbasic__tasklet.html", null ],
     [ "basic_timed_lock< TLOCK >", "classbasic__timed__lock.html", null ],
     [ "basic_timer", "classbasic__timer.html", null ],
+    [ "basic_trace_item", "classbasic__trace__item.html", [
+      [ "semaphore_trace_item", "classsemaphore__trace__item.html", null ]
+    ] ],
     [ "basic_work_queue", "classbasic__work__queue.html", [
       [ "basic_work_queue_multi", "classbasic__work__queue__multi.html", null ],
       [ "basic_work_queue_single", "classbasic__work__queue__single.html", null ]
@@ -44,5 +48,8 @@ var hierarchy =
     [ "libmnVersion", "classlibmn_version.html", null ],
     [ "basic_message_task::task_message", "structbasic__message__task_1_1task__message.html", null ],
     [ "task_utils", "classtask__utils.html", null ],
+    [ "basic_trace_item::time", "classbasic__trace__item.html#structbasic__trace__item_1_1time", null ],
+    [ "basic_trace_item::time.__unnamed__", "classbasic__trace__item.html#unionbasic__trace__item_1_1time_8____unnamed____", null ],
+    [ "basic_trace_item::time.__unnamed__.__unnamed__", "classbasic__trace__item.html#structbasic__trace__item_1_1time_8____unnamed_____8____unnamed____", null ],
     [ "work_queue_item", "classwork__queue__item.html", null ]
 ];

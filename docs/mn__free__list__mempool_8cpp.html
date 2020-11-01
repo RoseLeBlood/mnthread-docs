@@ -97,17 +97,91 @@ $(document).ready(function(){initNavTree('mn__free__list__mempool_8cpp.html','')
 Macros</h2></td></tr>
 <tr class="memitem:a4ccb5f386cbab86fb5b836c720bc5735"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#a4ccb5f386cbab86fb5b836c720bc5735">SAFE_DELETE</a>(ob)&#160;&#160;&#160;if(ob != NULL) { delete ob; ob = NULL; }</td></tr>
 <tr class="separator:a4ccb5f386cbab86fb5b836c720bc5735"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b57d23046587068c0b9e2660e8c8867"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#a2b57d23046587068c0b9e2660e8c8867">MEMPOOL_SAFE_DELETE</a>(mO)</td></tr>
+<tr class="memitem:a2b57d23046587068c0b9e2660e8c8867"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#a2b57d23046587068c0b9e2660e8c8867">MEMPOOL_SAFE_DELETE</a>(mO)&#160;&#160;&#160;<a class="el" href="mn__free__list__mempool_8cpp.html#ad75282bf0da344f5a4edb91b0e2f03b9">__mempool_block_safe_free</a>(m0);</td></tr>
 <tr class="separator:a2b57d23046587068c0b9e2660e8c8867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e6a1e33a715dc6f1c91db81f6dcd70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#a78e6a1e33a715dc6f1c91db81f6dcd70">MEMPOOL_ADDR</a>(B)&#160;&#160;&#160;<a class="el" href="mn__free__list__mempool_8cpp.html#a1bd02cf3542082e439da372753d257b2">__mempool_block_addr</a>(B)</td></tr>
+<tr class="separator:a78e6a1e33a715dc6f1c91db81f6dcd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe797711a602d52c478e63d71ca201aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#abe797711a602d52c478e63d71ca201aa">MEMPOOL_CALC_SIZE</a>(mS,  mA)&#160;&#160;&#160;<a class="el" href="mn__free__list__mempool_8cpp.html#a02622f0a03cddd81cdc195f445a5ee5d">__mempool_block_item_size</a>(mS, mA)</td></tr>
+<tr class="separator:abe797711a602d52c478e63d71ca201aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ff7eaa1d278665bd51ec19f362736a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#a94ff7eaa1d278665bd51ec19f362736a">MEMPOOL_CALC_ALIGNMENT</a>(mA)&#160;&#160;&#160;<a class="el" href="mn__free__list__mempool_8cpp.html#abd614390580bed99c13cf846c25f70fd">__mempool_block_alignment</a>(mA)</td></tr>
+<tr class="separator:a94ff7eaa1d278665bd51ec19f362736a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeea63bf07ab3c15f3eedf6760645cec7"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#aeea63bf07ab3c15f3eedf6760645cec7">__calc_item_size</a> (unsigned int uiItemSize, unsigned int uiAlignment)</td></tr>
-<tr class="separator:aeea63bf07ab3c15f3eedf6760645cec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dfd2201b2830a602448eff1c5ee791b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#a5dfd2201b2830a602448eff1c5ee791b">__calc_alignment</a> (unsigned int uiAlignment)</td></tr>
-<tr class="separator:a5dfd2201b2830a602448eff1c5ee791b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd02cf3542082e439da372753d257b2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#a1bd02cf3542082e439da372753d257b2">__mempool_block_addr</a> (const char *mem)</td></tr>
+<tr class="separator:a1bd02cf3542082e439da372753d257b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75282bf0da344f5a4edb91b0e2f03b9"><td class="memItemLeft" align="right" valign="top">memObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#ad75282bf0da344f5a4edb91b0e2f03b9">__mempool_block_safe_free</a> (memObject *mO)</td></tr>
+<tr class="separator:ad75282bf0da344f5a4edb91b0e2f03b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02622f0a03cddd81cdc195f445a5ee5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#a02622f0a03cddd81cdc195f445a5ee5d">__mempool_block_item_size</a> (unsigned int uiItemSize, unsigned int uiAlignment)</td></tr>
+<tr class="separator:a02622f0a03cddd81cdc195f445a5ee5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd614390580bed99c13cf846c25f70fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__free__list__mempool_8cpp.html#abd614390580bed99c13cf846c25f70fd">__mempool_block_alignment</a> (unsigned int uiAlignment)</td></tr>
+<tr class="separator:abd614390580bed99c13cf846c25f70fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a78e6a1e33a715dc6f1c91db81f6dcd70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e6a1e33a715dc6f1c91db81f6dcd70">&#9670;&nbsp;</a></span>MEMPOOL_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEMPOOL_ADDR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">B</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="mn__free__list__mempool_8cpp.html#a1bd02cf3542082e439da372753d257b2">__mempool_block_addr</a>(B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94ff7eaa1d278665bd51ec19f362736a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ff7eaa1d278665bd51ec19f362736a">&#9670;&nbsp;</a></span>MEMPOOL_CALC_ALIGNMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEMPOOL_CALC_ALIGNMENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mA</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="mn__free__list__mempool_8cpp.html#abd614390580bed99c13cf846c25f70fd">__mempool_block_alignment</a>(mA)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe797711a602d52c478e63d71ca201aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe797711a602d52c478e63d71ca201aa">&#9670;&nbsp;</a></span>MEMPOOL_CALC_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MEMPOOL_CALC_SIZE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mS, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mA&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="mn__free__list__mempool_8cpp.html#a02622f0a03cddd81cdc195f445a5ee5d">__mempool_block_item_size</a>(mS, mA)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2b57d23046587068c0b9e2660e8c8867"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b57d23046587068c0b9e2660e8c8867">&#9670;&nbsp;</a></span>MEMPOOL_SAFE_DELETE</h2>
 
@@ -119,16 +193,11 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">mO</td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;<a class="el" href="mn__free__list__mempool_8cpp.html#ad75282bf0da344f5a4edb91b0e2f03b9">__mempool_block_safe_free</a>(m0);</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    { \</div>
-<div class="line">    if(blockPtr-&gt;addr != NULL) { <span class="keyword">delete</span> blockPtr-&gt;addr; blockPtr-&gt;addr = NULL; } \</div>
-<div class="line">    blockPtr-&gt;dim = 0; \</div>
-<div class="line">    blockPtr-&gt;blockAvaible = <a class="code" href="mn__config_8hpp.html#ab38cc792d50f34fdd08b9e7939a7b5ee">MN_THREAD_CONFIG_FREELIST_MEMPOOL_USED</a>; \</div>
-<div class="line">}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4ccb5f386cbab86fb5b836c720bc5735"></a>
@@ -150,8 +219,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5dfd2201b2830a602448eff1c5ee791b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dfd2201b2830a602448eff1c5ee791b">&#9670;&nbsp;</a></span>__calc_alignment()</h2>
+<a id="a1bd02cf3542082e439da372753d257b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd02cf3542082e439da372753d257b2">&#9670;&nbsp;</a></span>__mempool_block_addr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +229,33 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int __calc_alignment </td>
+          <td class="memname">uint32_t __mempool_block_addr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd614390580bed99c13cf846c25f70fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd614390580bed99c13cf846c25f70fd">&#9670;&nbsp;</a></span>__mempool_block_alignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __mempool_block_alignment </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>uiAlignment</em></td><td>)</td>
@@ -169,15 +264,15 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aeea63bf07ab3c15f3eedf6760645cec7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeea63bf07ab3c15f3eedf6760645cec7">&#9670;&nbsp;</a></span>__calc_item_size()</h2>
+<a id="a02622f0a03cddd81cdc195f445a5ee5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02622f0a03cddd81cdc195f445a5ee5d">&#9670;&nbsp;</a></span>__mempool_block_item_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +281,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int __calc_item_size </td>
+          <td class="memname">int __mempool_block_item_size </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>uiItemSize</em>, </td>
@@ -205,7 +300,33 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad75282bf0da344f5a4edb91b0e2f03b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75282bf0da344f5a4edb91b0e2f03b9">&#9670;&nbsp;</a></span>__mempool_block_safe_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">memObject* __mempool_block_safe_free </td>
+          <td>(</td>
+          <td class="paramtype">memObject *&#160;</td>
+          <td class="paramname"><em>mO</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -214,7 +335,6 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="amn__config_8hpp_html_ab38cc792d50f34fdd08b9e7939a7b5ee"><div class="ttname"><a href="mn__config_8hpp.html#ab38cc792d50f34fdd08b9e7939a7b5ee">MN_THREAD_CONFIG_FREELIST_MEMPOOL_USED</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_FREELIST_MEMPOOL_USED</div><div class="ttdoc">The mempool object is used, not free.</div><div class="ttdef"><b>Definition:</b> mn_config.hpp:411</div></div>
 </div>
 </div>
 </div>

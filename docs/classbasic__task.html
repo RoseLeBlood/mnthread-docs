@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classbasic__task.html',''); initResiza
 <div class="dynheader">
 Inheritance diagram for basic_task:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbasic__task__inherit__graph.svg" width="448" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbasic__task__inherit__graph.svg" width="604" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for basic_task:</div>
@@ -270,9 +270,9 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="preprocessor">#define NUMBER_OF_TEST_TASK      2</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// The tost task class</span></div>
-<div class="line"><span class="keyword">class </span>hello_world_task : <span class="keyword">public</span> <a class="code" href="classbasic__task.html">basic_task</a> {</div>
+<div class="line"><span class="keyword">class </span><a class="code" href="classhello__world__task.html">hello_world_task</a> : <span class="keyword">public</span> <a class="code" href="classbasic__task.html">basic_task</a> {</div>
 <div class="line"><span class="keyword">public</span>:</div>
-<div class="line">    hello_world_task() : <a class="code" href="classbasic__task.html">basic_task</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
+<div class="line">    <a class="code" href="classhello__world__task.html">hello_world_task</a>() : <a class="code" href="classbasic__task.html">basic_task</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span>*  <a class="code" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task</a>()<span class="keyword"> override </span>{ </div>
 <div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">get_id</a>(); <span class="comment">// get the task id from this task</span></div>
@@ -287,11 +287,11 @@ Protected Attributes</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> NULL; </div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> app_main() {</div>
-<div class="line">    hello_world_task tasks[NUMBER_OF_TEST_TASK];</div>
+<div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="main_8cpp.html#abce06be17fc37d675118a678a8100a36">app_main</a>() {</div>
+<div class="line">    <a class="code" href="classhello__world__task.html">hello_world_task</a> tasks[NUMBER_OF_TEST_TASK];</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; NUMBER_OF_TEST_TASK; i++) {</div>
-<div class="line">        tasks[i].start( i % 2 );</div>
+<div class="line">        tasks[i].<a class="code" href="classbasic__task.html#a4d6776acfc21001a380019060ddc9cc7">start</a>( i % 2 );</div>
 <div class="line">    }</div>
 <div class="line">    <a class="code" href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a>();</div>
 <div class="line">}</div>
@@ -1058,7 +1058,7 @@ Protected Attributes</h2></td></tr>
 <p>Implementation of your actual task code. You must override this function.</p>
 <dl class="section return"><dt>Returns</dt><dd>Your return your task function, get with <a class="el" href="classbasic__task.html#a058f4acc8288a2453695924e4d2e5ae1">get_return_value()</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9">work_queue_task</a>, <a class="el" href="classbasic__message__task.html#aab5c217d1ce6faa59fb8be76962bd38e">basic_message_task</a>, and <a class="el" href="classforeign__task.html#a2401f66479dbd9336f543a7820979657">foreign_task</a>.</p>
+<p>Reimplemented in <a class="el" href="classhello__world__task.html#a9bc894cf4cb35a20306536ec7d2e0dda">hello_world_task</a>, <a class="el" href="classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9">work_queue_task</a>, <a class="el" href="classbasic__message__task.html#aab5c217d1ce6faa59fb8be76962bd38e">basic_message_task</a>, and <a class="el" href="classforeign__task.html#a2401f66479dbd9336f543a7820979657">foreign_task</a>.</p>
 
 </div>
 </div>
@@ -1858,8 +1858,11 @@ Protected Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="amain_8cpp_html_abce06be17fc37d675118a678a8100a36"><div class="ttname"><a href="main_8cpp.html#abce06be17fc37d675118a678a8100a36">app_main</a></div><div class="ttdeci">void app_main()</div><div class="ttdef"><b>Definition:</b> main.cpp:5</div></div>
 <div class="ttc" id="amini_thread_8hpp_html"><div class="ttname"><a href="mini_thread_8hpp.html">miniThread.hpp</a></div></div>
+<div class="ttc" id="aclassbasic__task_html_a4d6776acfc21001a380019060ddc9cc7"><div class="ttname"><a href="classbasic__task.html#a4d6776acfc21001a380019060ddc9cc7">basic_task::start</a></div><div class="ttdeci">virtual int start(int uiCore=MN_THREAD_CONFIG_DEFAULT_CORE)</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:97</div></div>
 <div class="ttc" id="aclassbasic__task_html_a9a38181ee473266a564b6b9478dba8c1"><div class="ttname"><a href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:286</div></div>
+<div class="ttc" id="aclasshello__world__task_html"><div class="ttname"><a href="classhello__world__task.html">hello_world_task</a></div><div class="ttdef"><b>Definition:</b> hallo_world_task.hpp:8</div></div>
 <div class="ttc" id="aclassbasic__task_html_a354384ebfae119b3cde62e8a1937a0a5"><div class="ttname"><a href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">basic_task::get_id</a></div><div class="ttdeci">int32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:208</div></div>
 <div class="ttc" id="aclassbasic__task_html_ae6dfd172010d2d63c9298d36cf549676"><div class="ttname"><a href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">basic_task::get_on_core</a></div><div class="ttdeci">int32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:216</div></div>
 <div class="ttc" id="amini_thread_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> miniThread.cpp:24</div></div>

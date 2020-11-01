@@ -1,7 +1,10 @@
 var files_dup =
 [
     [ "bootstrap.min.js", "bootstrap_8min_8js.html", null ],
+    [ "hallo_world_task.cpp", "hallo__world__task_8cpp.html", null ],
+    [ "hallo_world_task.hpp", "hallo__world__task_8hpp.html", "hallo__world__task_8hpp" ],
     [ "jquery-3.2.1.slim.min.js", "jquery-3_82_81_8slim_8min_8js.html", null ],
+    [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "miniThread.cpp", "mini_thread_8cpp.html", "mini_thread_8cpp" ],
     [ "miniThread.hpp", "mini_thread_8hpp.html", "mini_thread_8hpp" ],
     [ "mn_autolock.cpp", "mn__autolock_8cpp.html", null ],
@@ -12,7 +15,6 @@ var files_dup =
     [ "mn_binary_semaphore.hpp", "mn__binary__semaphore_8hpp.html", "mn__binary__semaphore_8hpp" ],
     [ "mn_binaryqueue.cpp", "mn__binaryqueue_8cpp.html", null ],
     [ "mn_binaryqueue.hpp", "mn__binaryqueue_8hpp.html", "mn__binaryqueue_8hpp" ],
-    [ "mn_bit_map_mempool.hpp", "mn__bit__map__mempool_8hpp.html", null ],
     [ "mn_config.hpp", "mn__config_8hpp.html", "mn__config_8hpp" ],
     [ "mn_config_preview.hpp", "mn__config__preview_8hpp.html", null ],
     [ "mn_convar.cpp", "mn__convar_8cpp.html", null ],
@@ -43,6 +45,21 @@ var files_dup =
     [ "mn_interrupts_lock.hpp", "mn__interrupts__lock_8hpp.html", [
       [ "basic_interrupts_lock", "classbasic__interrupts__lock.html", "classbasic__interrupts__lock" ]
     ] ],
+    [ "mn_item.cpp", "mn__item_8cpp.html", null ],
+    [ "mn_item.hpp", "mn__item_8hpp.html", [
+      [ "basic_trace_item", "classbasic__trace__item.html", "classbasic__trace__item" ],
+      [ "time", "classbasic__trace__item.html#structbasic__trace__item_1_1time", null ],
+      [ "time.__unnamed__", "classbasic__trace__item.html#unionbasic__trace__item_1_1time_8____unnamed____", [
+        [ "bytetime", "classbasic__trace__item.html#a544d31fdccaef105888739d867aa39d7", null ]
+      ] ],
+      [ "time.__unnamed__.__unnamed__", "classbasic__trace__item.html#structbasic__trace__item_1_1time_8____unnamed_____8____unnamed____", [
+        [ "hour", "classbasic__trace__item.html#a896c55cc5e46fab38ce9f51ebf7bfcd3", null ],
+        [ "min", "classbasic__trace__item.html#ad8bd79cc131920d5de426f914d17405a", null ],
+        [ "reserved", "classbasic__trace__item.html#a7f005c3fa691e77c52d3297cc2699072", null ],
+        [ "sec", "classbasic__trace__item.html#a74459ca3cf85a81df90da95ff6e7a207", null ],
+        [ "ticks", "classbasic__trace__item.html#a48484a39612824059f2e51d06691465b", null ]
+      ] ]
+    ] ],
     [ "mn_lock.hpp", "mn__lock_8hpp.html", [
       [ "ILockObject", "class_i_lock_object.html", "class_i_lock_object" ]
     ] ],
@@ -69,6 +86,8 @@ var files_dup =
       [ "basic_schedular_lock", "classbasic__schedular__lock.html", "classbasic__schedular__lock" ]
     ] ],
     [ "mn_semaphore.hpp", "mn__semaphore_8hpp.html", null ],
+    [ "mn_semaphore_item.cpp", "mn__semaphore__item_8cpp.html", null ],
+    [ "mn_semaphore_item.hpp", "mn__semaphore__item_8hpp.html", "mn__semaphore__item_8hpp" ],
     [ "mn_shared.hpp", "mn__shared_8hpp.html", "mn__shared_8hpp" ],
     [ "mn_sleep.cpp", "mn__sleep_8cpp.html", "mn__sleep_8cpp" ],
     [ "mn_sleep.hpp", "mn__sleep_8hpp.html", "mn__sleep_8hpp" ],
@@ -86,6 +105,7 @@ var files_dup =
     [ "mn_timed_lock.hpp", "mn__timed__lock_8hpp.html", "mn__timed__lock_8hpp" ],
     [ "mn_timer.cpp", "mn__timer_8cpp.html", null ],
     [ "mn_timer.hpp", "mn__timer_8hpp.html", "mn__timer_8hpp" ],
+    [ "mn_trace.hpp", "mn__trace_8hpp.html", null ],
     [ "mn_version.cpp", "mn__version_8cpp.html", null ],
     [ "mn_version.hpp", "mn__version_8hpp.html", "mn__version_8hpp" ],
     [ "mn_workqueue.cpp", "mn__workqueue_8cpp.html", null ],

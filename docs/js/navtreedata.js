@@ -25,18 +25,9 @@
 var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
-    [ "Mini Thread 1.95-beta.2.0 (2.0.0 preview)", "index.html", [
-      [ "Folder Strutur", "index.html#autotoc_md21", null ],
-      [ "Simple Example", "index.html#autotoc_md22", null ],
-      [ "TODO's for Version 2.0", "index.html#autotoc_md23", null ],
-      [ "ChangeLog", "index.html#autotoc_md24", null ],
-      [ "Version 1.9.5 Oktober 2020: (unstable 2.0beta)", "index.html#autotoc_md25", null ],
-      [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "index.html#autotoc_md26", null ],
-      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "index.html#autotoc_md27", null ],
-      [ "Version 1.71 September 2020: (unstable 2.0beta)", "index.html#autotoc_md28", null ]
-    ] ],
+    [ "mnthread-docs", "index.html", null ],
     [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", [
-      [ "Version 1.9.5 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
+      [ "Version 1.9.5 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
       [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md2", null ],
       [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md3", null ],
       [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md4", null ],
@@ -77,6 +68,7 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ],
@@ -88,8 +80,8 @@ var NAVTREEINDEX =
 [
 "_0dcode-example.html",
 "classbasic__task.html#ae231306af1c1b0a9aead2fe7842e58dba96418e4d6f309855ea7e34cce01f420d",
-"md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md11",
-"mn__micros_8hpp_source.html"
+"functions_w.html",
+"mn__free__list__mempool_8cpp.html#a1bd02cf3542082e439da372753d257b2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

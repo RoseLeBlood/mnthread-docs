@@ -149,32 +149,29 @@ $(document).ready(function(){initNavTree('mn__free__list__mempool_8hpp_source.ht
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  get_free_items();</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>  get_used();</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">    #if MN_THREAD_CONFIG_DEBUG == MN_THREAD_CONFIG_YES</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    memObject     get_mem_object(<span class="keywordtype">void</span>* mem);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">    #endif</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">int</span> set_alignment(uint8_t uiAlignment);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    basic_free_list_mempool(<span class="keyword">const</span> basic_free_list_mempool&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    basic_free_list_mempool&amp; operator=(<span class="keyword">const</span> basic_free_list_mempool&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    memObject    get_free_block(TickType_t xTicksToWait);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="classbasic__mutex.html">mutex_t</a>                   m_nMutex;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>              m_uiAlignment;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    memObject*   get_mem_object(<span class="keywordtype">void</span>* mem, TickType_t xTicksToWait);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">int</span> set_alignment(uint8_t uiAlignment);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    basic_free_list_mempool(<span class="keyword">const</span> basic_free_list_mempool&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    basic_free_list_mempool&amp; operator=(<span class="keyword">const</span> basic_free_list_mempool&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    memObject    get_free_block(TickType_t xTicksToWait);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="classbasic__mutex.html">mutex_t</a>                   m_nMutex;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>              m_uiAlignment;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    std::vector&lt;memObject&gt;    m_lBytePtrList;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    std::vector&lt;memObject&gt;    m_lBytePtrList;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">bool</span>                      m_bCreated;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;};</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">using</span> freelist_mempool_t = basic_free_list_mempool;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">bool</span>                      m_bCreated;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;};</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">using</span> freelist_mempool_t = basic_free_list_mempool;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassbasic__mutex_html"><div class="ttname"><a href="classbasic__mutex.html">basic_mutex</a></div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:32</div></div>

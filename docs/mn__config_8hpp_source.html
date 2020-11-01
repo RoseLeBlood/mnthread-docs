@@ -349,7 +349,11 @@ $(document).ready(function(){initNavTree('mn__config_8hpp_source.html',''); init
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor">    #define MN_THREAD_CONFIG_FREELIST_MEMPOOL_USED 0</span></div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#endif //__MINLIB_MNTHREAD_CONFIG_H__</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#ifndef MN_THREAD_CONFIG_USE_TRACE</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="mn__config_8hpp.html#ab52fbf702e5cd328048240dd64178992">  415</a></span>&#160;<span class="preprocessor">    #define MN_THREAD_CONFIG_USE_TRACE configUSE_TRACE_FACILITY</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">#endif //__MINLIB_MNTHREAD_CONFIG_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

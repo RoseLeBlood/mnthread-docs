@@ -40,6 +40,7 @@ var mn__config_8hpp =
     [ "MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT", "mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725", null ],
     [ "MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT", "mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2", null ],
     [ "MN_THREAD_CONFIG_USE_EXCEPTIONS", "mn__config_8hpp.html#ac8cf48648de13dfd540bc2a9f1849279", null ],
+    [ "MN_THREAD_CONFIG_USE_TRACE", "mn__config_8hpp.html#ab52fbf702e5cd328048240dd64178992", null ],
     [ "MN_THREAD_CONFIG_WORKQUEUE_GETNEXTITEM_TIMEOUT", "mn__config_8hpp.html#a060f30c571d899925211c1f3ac054816", null ],
     [ "MN_THREAD_CONFIG_WORKQUEUE_MULTI_MAXITEMS", "mn__config_8hpp.html#a7c285196ad60ff04d1bebd556eaa48c5", null ],
     [ "MN_THREAD_CONFIG_WORKQUEUE_MULTI_PRIORITY", "mn__config_8hpp.html#ab4c34b9df0f9532a460738584f538e2a", null ],
