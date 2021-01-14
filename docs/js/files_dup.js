@@ -9,6 +9,7 @@ var files_dup =
     [ "classbasic__binary__semaphore.js", "classbasic____binary____semaphore_8js.html", null ],
     [ "classbasic__binaryqueue.js", "classbasic____binaryqueue_8js.html", null ],
     [ "classbasic__circular__buffer.js", "classbasic____circular____buffer_8js.html", null ],
+    [ "classbasic__clock.js", "classbasic____clock_8js.html", null ],
     [ "classbasic__condition__variable.js", "classbasic____condition____variable_8js.html", null ],
     [ "classbasic__convar__task.js", "classbasic____convar____task_8js.html", null ],
     [ "classbasic__counting__semaphore.js", "classbasic____counting____semaphore_8js.html", null ],
@@ -39,6 +40,9 @@ var files_dup =
     [ "classlockcreate__exception.js", "classlockcreate____exception_8js.html", null ],
     [ "classsemaphore__trace__item.js", "classsemaphore____trace____item_8js.html", null ],
     [ "classtask__utils.js", "classtask____utils_8js.html", null ],
+    [ "classtest__tasklet.js", "classtest____tasklet_8js.html", null ],
+    [ "classtest__timer__onshot.js", "classtest____timer____onshot_8js.html", null ],
+    [ "classtest__timer__period.js", "classtest____timer____period_8js.html", null ],
     [ "classwork__queue__item.js", "classwork____queue____item_8js.html", null ],
     [ "classwork__queue__task.js", "classwork____queue____task_8js.html", null ],
     [ "dynsections.js", "dynsections_8js.html", null ],
@@ -221,10 +225,13 @@ var files_dup =
     [ "navtreeindex1.js", "navtreeindex1_8js.html", null ],
     [ "navtreeindex2.js", "navtreeindex2_8js.html", null ],
     [ "navtreeindex3.js", "navtreeindex3_8js.html", null ],
+    [ "navtreeindex4.js", "navtreeindex4_8js.html", null ],
     [ "docs-git/docs/js/popper.min.js", "docs-git_2docs_2js_2popper_8min_8js.html", null ],
     [ "popper.min.js", "popper_8min_8js.html", null ],
     [ "resize.js", "resize_8js.html", null ],
     [ "structbasic__message__task_1_1task__message.js", "structbasic____message____task__1__1task____message_8js.html", null ],
     [ "tasklet.cpp", "tasklet_8cpp.html", "tasklet_8cpp" ],
-    [ "timer.cpp", "timer_8cpp.html", "timer_8cpp" ]
+    [ "tasklet_8cpp.js", "tasklet__8cpp_8js.html", null ],
+    [ "timer.cpp", "timer_8cpp.html", "timer_8cpp" ],
+    [ "timer_8cpp.js", "timer__8cpp_8js.html", null ]
 ];
