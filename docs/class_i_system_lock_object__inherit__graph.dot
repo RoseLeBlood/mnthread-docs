@@ -1,0 +1,20 @@
+digraph "ISystemLockObject"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ISystemLockObject",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ILockObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_lock_object.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="basic_critical_section",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbasic__critical__section.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="basic_critical_section\l_nested",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbasic__critical__section__nested.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="basic_critical_section\l_timedout",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbasic__critical__section__timedout.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="basic_interrupts_lock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbasic__interrupts__lock.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="basic_schedular_lock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbasic__schedular__lock.html",tooltip=" "];
+}

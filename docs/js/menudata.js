@@ -113,6 +113,7 @@ var menudata={children:[
 {text:"Functions",url:"globals_func.html",children:[
 {text:"_",url:"globals_func.html#index__5F"},
 {text:"a",url:"globals_func.html#index_a"},
+{text:"e",url:"globals_func.html#index_e"},
 {text:"g",url:"globals_func.html#index_g"},
 {text:"m",url:"globals_func.html#index_m"},
 {text:"o",url:"globals_func.html#index_o"},

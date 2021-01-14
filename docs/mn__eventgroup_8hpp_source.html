@@ -131,24 +131,28 @@ $(document).ready(function(){initNavTree('mn__eventgroup_8hpp_source.html',''); 
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classbasic__event__group.html#abe1f4759148b106f49c4ba1ab940b5ba">  168</a></span>&#160;    EventGroupHandle_t <a class="code" href="classbasic__event__group.html#abe1f4759148b106f49c4ba1ab940b5ba">get_handle</a>() { <span class="keywordflow">return</span> <a class="code" href="classbasic__event__group.html#ae10b0333b57d6e7340928d2eb1492620">m_pHandle</a>; }</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classbasic__event__group.html#ae10b0333b57d6e7340928d2eb1492620">  173</a></span>&#160;    EventGroupHandle_t <a class="code" href="classbasic__event__group.html#ae10b0333b57d6e7340928d2eb1492620">m_pHandle</a>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="mn__eventgroup_8hpp.html#a80cc926f701a2e3c3dbdea720595a136">  176</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__event__group.html">event_group_t</a> = <a class="code" href="classbasic__event__group.html">basic_event_group</a>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">    #if( configSUPPORT_STATIC_ALLOCATION == 1 )</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        StaticEventGroup_t m_xEventGroupBuffer;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;};</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="mn__eventgroup_8hpp.html#a80cc926f701a2e3c3dbdea720595a136">  180</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__event__group.html">event_group_t</a> = <a class="code" href="classbasic__event__group.html">basic_event_group</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassbasic__event__group_html_afae37acc51aa9d0cb2ec585939532749"><div class="ttname"><a href="classbasic__event__group.html#afae37acc51aa9d0cb2ec585939532749">basic_event_group::wait</a></div><div class="ttdeci">EventBits_t wait(const EventBits_t uxBitsToWaitFor, bool xClearOnExit, bool xWaitForAllBits, uint32_t timeout)</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:57</div></div>
-<div class="ttc" id="aclassbasic__event__group_html_a46da3674dc535fd549cbe050f608d37c"><div class="ttname"><a href="classbasic__event__group.html#a46da3674dc535fd549cbe050f608d37c">basic_event_group::set</a></div><div class="ttdeci">EventBits_t set(const EventBits_t uxBitsToSet)</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:92</div></div>
-<div class="ttc" id="aclassbasic__event__group_html_a3ae7ea5346a7edc8434ea6f75b7768af"><div class="ttname"><a href="classbasic__event__group.html#a3ae7ea5346a7edc8434ea6f75b7768af">basic_event_group::clear</a></div><div class="ttdeci">EventBits_t clear(const EventBits_t uxBitsToClear)</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:70</div></div>
+<div class="ttc" id="aclassbasic__event__group_html_afae37acc51aa9d0cb2ec585939532749"><div class="ttname"><a href="classbasic__event__group.html#afae37acc51aa9d0cb2ec585939532749">basic_event_group::wait</a></div><div class="ttdeci">EventBits_t wait(const EventBits_t uxBitsToWaitFor, bool xClearOnExit, bool xWaitForAllBits, uint32_t timeout)</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:62</div></div>
+<div class="ttc" id="aclassbasic__event__group_html_a46da3674dc535fd549cbe050f608d37c"><div class="ttname"><a href="classbasic__event__group.html#a46da3674dc535fd549cbe050f608d37c">basic_event_group::set</a></div><div class="ttdeci">EventBits_t set(const EventBits_t uxBitsToSet)</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:97</div></div>
+<div class="ttc" id="aclassbasic__event__group_html_a3ae7ea5346a7edc8434ea6f75b7768af"><div class="ttname"><a href="classbasic__event__group.html#a3ae7ea5346a7edc8434ea6f75b7768af">basic_event_group::clear</a></div><div class="ttdeci">EventBits_t clear(const EventBits_t uxBitsToClear)</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:75</div></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
-<div class="ttc" id="aclassbasic__event__group_html_a664f07c71fe1f26508cee5e3c45a5043"><div class="ttname"><a href="classbasic__event__group.html#a664f07c71fe1f26508cee5e3c45a5043">basic_event_group::sync</a></div><div class="ttdeci">EventBits_t sync(const EventBits_t uxBitsToSet, const EventBits_t uxBitsToWaitFor, TickType_t xTicksToWait)</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:48</div></div>
+<div class="ttc" id="aclassbasic__event__group_html_a664f07c71fe1f26508cee5e3c45a5043"><div class="ttname"><a href="classbasic__event__group.html#a664f07c71fe1f26508cee5e3c45a5043">basic_event_group::sync</a></div><div class="ttdeci">EventBits_t sync(const EventBits_t uxBitsToSet, const EventBits_t uxBitsToWaitFor, TickType_t xTicksToWait)</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:53</div></div>
 <div class="ttc" id="aclassbasic__event__group_html_a855c2fd719bcfa5a557007846c0862c0"><div class="ttname"><a href="classbasic__event__group.html#a855c2fd719bcfa5a557007846c0862c0">basic_event_group::basic_event_group</a></div><div class="ttdeci">basic_event_group()</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:26</div></div>
 <div class="ttc" id="aclassbasic__event__group_html"><div class="ttname"><a href="classbasic__event__group.html">basic_event_group</a></div><div class="ttdef"><b>Definition:</b> mn_eventgroup.hpp:29</div></div>
 <div class="ttc" id="aclassbasic__event__group_html_abe1f4759148b106f49c4ba1ab940b5ba"><div class="ttname"><a href="classbasic__event__group.html#abe1f4759148b106f49c4ba1ab940b5ba">basic_event_group::get_handle</a></div><div class="ttdeci">EventGroupHandle_t get_handle()</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.hpp:168</div></div>
-<div class="ttc" id="aclassbasic__event__group_html_a730eae38cba701b105f2cdd0755080c8"><div class="ttname"><a href="classbasic__event__group.html#a730eae38cba701b105f2cdd0755080c8">basic_event_group::get</a></div><div class="ttdeci">EventBits_t get()</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:81</div></div>
+<div class="ttc" id="aclassbasic__event__group_html_a730eae38cba701b105f2cdd0755080c8"><div class="ttname"><a href="classbasic__event__group.html#a730eae38cba701b105f2cdd0755080c8">basic_event_group::get</a></div><div class="ttdeci">EventBits_t get()</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:86</div></div>
 <div class="ttc" id="aclassbasic__event__group_html_ae10b0333b57d6e7340928d2eb1492620"><div class="ttname"><a href="classbasic__event__group.html#ae10b0333b57d6e7340928d2eb1492620">basic_event_group::m_pHandle</a></div><div class="ttdeci">EventGroupHandle_t m_pHandle</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.hpp:173</div></div>
-<div class="ttc" id="aclassbasic__event__group_html_a85ad432083e36c1ce6e8f40b0fce9656"><div class="ttname"><a href="classbasic__event__group.html#a85ad432083e36c1ce6e8f40b0fce9656">basic_event_group::~basic_event_group</a></div><div class="ttdeci">virtual ~basic_event_group()</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:39</div></div>
+<div class="ttc" id="aclassbasic__event__group_html_a85ad432083e36c1ce6e8f40b0fce9656"><div class="ttname"><a href="classbasic__event__group.html#a85ad432083e36c1ce6e8f40b0fce9656">basic_event_group::~basic_event_group</a></div><div class="ttdeci">virtual ~basic_event_group()</div><div class="ttdef"><b>Definition:</b> mn_eventgroup.cpp:44</div></div>
 </div>
 </div>
 </div>
@@ -173,7 +177,7 @@ $(document).ready(function(){initNavTree('mn__eventgroup_8hpp_source.html',''); 
             </div>
         </div>
         <div class="footer-copyright text-center py-3">
-            © 2020 RoseLeBlood - Generated with doxigen 1.8.20 and Bootstrap
+            © 2021 RoseLeBlood - Generated with doxigen 1.8.20 and Bootstrap
         </div>
     </div>
   </footer>

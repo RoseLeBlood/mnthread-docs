@@ -4,6 +4,7 @@ var annotated_dup =
     [ "basic_binary_semaphore", "classbasic__binary__semaphore.html", "classbasic__binary__semaphore" ],
     [ "basic_binaryqueue", "classbasic__binaryqueue.html", "classbasic__binaryqueue" ],
     [ "basic_circular_buffer", "classbasic__circular__buffer.html", "classbasic__circular__buffer" ],
+    [ "basic_clock", "classbasic__clock.html", "classbasic__clock" ],
     [ "basic_condition_variable", "classbasic__condition__variable.html", "classbasic__condition__variable" ],
     [ "basic_convar_task", "classbasic__convar__task.html", "classbasic__convar__task" ],
     [ "basic_counting_semaphore", "classbasic__counting__semaphore.html", "classbasic__counting__semaphore" ],
@@ -36,6 +37,9 @@ var annotated_dup =
     [ "lockcreate_exception", "classlockcreate__exception.html", "classlockcreate__exception" ],
     [ "semaphore_trace_item", "classsemaphore__trace__item.html", "classsemaphore__trace__item" ],
     [ "task_utils", "classtask__utils.html", "classtask__utils" ],
+    [ "test_tasklet", "classtest__tasklet.html", "classtest__tasklet" ],
+    [ "test_timer_onshot", "classtest__timer__onshot.html", "classtest__timer__onshot" ],
+    [ "test_timer_period", "classtest__timer__period.html", "classtest__timer__period" ],
     [ "work_queue_item", "classwork__queue__item.html", "classwork__queue__item" ],
     [ "work_queue_task", "classwork__queue__task.html", "classwork__queue__task" ]
 ];

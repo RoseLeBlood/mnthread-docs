@@ -18,9 +18,14 @@ var hierarchy =
       [ "work_queue_task", "classwork__queue__task.html", null ]
     ] ],
     [ "basic_task_list", "classbasic__task__list.html", null ],
-    [ "basic_tasklet", "classbasic__tasklet.html", null ],
+    [ "basic_tasklet", "classbasic__tasklet.html", [
+      [ "test_tasklet", "classtest__tasklet.html", null ]
+    ] ],
     [ "basic_timed_lock< TLOCK >", "classbasic__timed__lock.html", null ],
-    [ "basic_timer", "classbasic__timer.html", null ],
+    [ "basic_timer", "classbasic__timer.html", [
+      [ "test_timer_onshot", "classtest__timer__onshot.html", null ],
+      [ "test_timer_period", "classtest__timer__period.html", null ]
+    ] ],
     [ "basic_trace_item", "classbasic__trace__item.html", [
       [ "semaphore_trace_item", "classsemaphore__trace__item.html", null ]
     ] ],
@@ -34,6 +39,7 @@ var hierarchy =
     [ "ILockObject", "class_i_lock_object.html", [
       [ "basic_semaphore", "classbasic__semaphore.html", [
         [ "basic_binary_semaphore", "classbasic__binary__semaphore.html", null ],
+        [ "basic_clock< TLockType >", "classbasic__clock.html", null ],
         [ "basic_counting_semaphore", "classbasic__counting__semaphore.html", null ],
         [ "basic_mutex", "classbasic__mutex.html", null ]
       ] ],
