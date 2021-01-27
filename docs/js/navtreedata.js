@@ -27,7 +27,7 @@ var NAVTREE =
   [ "Mini Thread", "index.html", [
     [ "mnthread-docs", "index.html", null ],
     [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", [
-      [ "Version 1.9.5 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
+      [ "Version 1.95 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
       [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md2", null ],
       [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md3", null ],
       [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md4", null ],
@@ -46,7 +46,19 @@ var NAVTREE =
       [ "Version 0.8.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md17", null ],
       [ "Version 0.8.2, November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md18", null ]
     ] ],
-    [ "LICENSE", "md__home_ambersophia__dokumente_git_mnthread__l_i_c_e_n_s_e.html", null ],
+    [ "Contributing", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html", [
+      [ "Pull Request Process", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md20", null ],
+      [ "Documentation", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md21", null ],
+      [ "Bug reporting", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md22", null ],
+      [ "Code of Conduct", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md23", [
+        [ "Our Pledge", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md24", null ],
+        [ "Our Standards", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md25", null ],
+        [ "Our Responsibilities", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md26", null ],
+        [ "Scope", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md27", null ],
+        [ "Enforcement", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md28", null ],
+        [ "Attribution", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md29", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -78,11 +90,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_0dcode-example.html",
-"classbasic__task.html#a6758a89add164cc0166d6436432ac5b9",
-"classwork____queue____task_8js.html",
-"mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f",
-"mn__task__list_8cpp.html"
+"00___empty_example_2src_2main_8cpp.html",
+"classbasic__queue.html#a9252e9c080cbaeb4e3d4408491924a5a",
+"classbasic__vector__mempool__timed.html#aa2d10dcf09c303e3a1742192cbf49dcd",
+"md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md27",
+"mn__error_8hpp.html#afb218939e10dc094d9b5212436d72373"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
