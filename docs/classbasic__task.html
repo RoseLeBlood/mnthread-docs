@@ -271,9 +271,53 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a1a627f8094ec1a536dfa13604ff8815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#_a0">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<div class="textblock"><p>Wrapper class around FreeRTOS's implementation of a task.</p>
+<p>To use this, you need to subclass it. All of your task should be derived from the <a class="el" href="classbasic__task.html">basic_task</a> class. Then implement the virtual on_task function.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="mini_thread_8hpp.html">miniThread.hpp</a>&gt;</span></div>
+<div class="line"><span class="comment">// The number of test tasks</span></div>
+<div class="line"><span class="preprocessor">#define NUMBER_OF_TEST_TASK      2</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// The tost task class</span></div>
+<div class="line"><span class="keyword">class </span><a class="code" href="classhello__world__task.html">hello_world_task</a> : <span class="keyword">public</span> <a class="code" href="classbasic__task.html">basic_task</a> {</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <a class="code" href="classhello__world__task.html">hello_world_task</a>() : <a class="code" href="classbasic__task.html">basic_task</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span>*  <a class="code" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task</a>()<span class="keyword"> override </span>{ </div>
+<div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">get_id</a>(); <span class="comment">// get the task id from this task</span></div>
+<div class="line">        <span class="keywordtype">int</span> core = <a class="code" href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">get_on_core</a>(); <span class="comment">// get the core on run this task</span></div>
+<div class="line"> </div>
+<div class="line">        <span class="keywordflow">while</span>(<span class="keyword">true</span>) { <span class="comment">// infinity run</span></div>
+<div class="line">            <span class="comment">// print the hello world message to the std output </span></div>
+<div class="line">            <span class="comment">// out on core: 0 and with id: 0: &quot;[0 @ 0] Hello World!&quot; </span></div>
+<div class="line">            printf(<span class="stringliteral">&quot;[%d @ %d] Hello World!!\n&quot;</span>, <span class="keywordtype">id</span>, core );</div>
+<div class="line">        }</div>
+<div class="line">         </div>
+<div class="line">        <span class="keywordflow">return</span> NULL; </div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="00___empty_example_2src_2main_8cpp.html#abce06be17fc37d675118a678a8100a36">app_main</a>() {</div>
+<div class="line">    <a class="code" href="classhello__world__task.html">hello_world_task</a> tasks[NUMBER_OF_TEST_TASK];</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; NUMBER_OF_TEST_TASK; i++) {</div>
+<div class="line">        tasks[i].<a class="code" href="classbasic__task.html#a4d6776acfc21001a380019060ddc9cc7">start</a>( i % 2 );</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a>();</div>
+<div class="line">}</div>
+<div class="line"><span class="comment">// Examplo output:</span></div>
+<div class="line"><span class="comment">// [0 @ 0] Hello World!</span></div>
+<div class="line"><span class="comment">// [1 @ 1] Hello World!</span></div>
+<div class="line"><span class="comment">// [0 @ 0] Hello World!</span></div>
+<div class="line"><span class="comment">// ...</span></div>
+<div class="ttc" id="a00___empty_example_2src_2main_8cpp_html_abce06be17fc37d675118a678a8100a36"><div class="ttname"><a href="00___empty_example_2src_2main_8cpp.html#abce06be17fc37d675118a678a8100a36">app_main</a></div><div class="ttdeci">void app_main()</div><div class="ttdef"><b>Definition:</b> 00_EmptyExample/src/main.cpp:3</div></div>
+<div class="ttc" id="aclassbasic__task_html"><div class="ttname"><a href="classbasic__task.html">basic_task</a></div><div class="ttdef"><b>Definition:</b> mn_task.hpp:83</div></div>
+<div class="ttc" id="aclassbasic__task_html_a354384ebfae119b3cde62e8a1937a0a5"><div class="ttname"><a href="classbasic__task.html#a354384ebfae119b3cde62e8a1937a0a5">basic_task::get_id</a></div><div class="ttdeci">int32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:220</div></div>
+<div class="ttc" id="aclassbasic__task_html_a4d6776acfc21001a380019060ddc9cc7"><div class="ttname"><a href="classbasic__task.html#a4d6776acfc21001a380019060ddc9cc7">basic_task::start</a></div><div class="ttdeci">virtual int start(int uiCore=MN_THREAD_CONFIG_DEFAULT_CORE)</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:100</div></div>
+<div class="ttc" id="aclassbasic__task_html_a9a38181ee473266a564b6b9478dba8c1"><div class="ttname"><a href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:291</div></div>
+<div class="ttc" id="aclassbasic__task_html_ae6dfd172010d2d63c9298d36cf549676"><div class="ttname"><a href="classbasic__task.html#ae6dfd172010d2d63c9298d36cf549676">basic_task::get_on_core</a></div><div class="ttdeci">int32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:228</div></div>
+<div class="ttc" id="aclasshello__world__task_html"><div class="ttname"><a href="classhello__world__task.html">hello_world_task</a></div><div class="ttdef"><b>Definition:</b> hallo_world_task.hpp:8</div></div>
+<div class="ttc" id="amini_thread_8hpp_html"><div class="ttname"><a href="mini_thread_8hpp.html">miniThread.hpp</a></div></div>
+<div class="ttc" id="amini_thread_8hpp_html_a112fa11ff1ed48fc8c537e2fcc6b7da7"><div class="ttname"><a href="mini_thread_8hpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7">mn_panic</a></div><div class="ttdeci">void mn_panic()</div><div class="ttdef"><b>Definition:</b> miniThread.cpp:24</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="af2f26dcc4ddc2a0e5eaeea036effcf0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2f26dcc4ddc2a0e5eaeea036effcf0e">&#9670;&nbsp;</a></span>event</h2>
 
@@ -323,8 +367,6 @@ Protected Attributes</h2></td></tr>
  </p>
 </td></tr>
 </table>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a1">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -352,8 +394,6 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="ab23e8cb172e37ec41a5ee7dfe65b1caba2bca1037a89b6cc0a1b0db72382f54b7"></a>StateDeleted&#160;</td><td class="fielddoc"><p>The task being queried has been deleted, but its TCB has not yet been freed. </p>
 </td></tr>
 </table>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a14">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -381,8 +421,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Basic Constructor for this task. The priority is PriorityNormal and use 2048 for the stack size </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a22">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -486,8 +524,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Our destructor. Delete the task </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a25">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -510,8 +546,6 @@ Protected Attributes</h2></td></tr>
 <p>Add a child task to this task.</p>
 <dl class="section return"><dt>Returns</dt><dd>True The child tasx are add and false when not</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>For example this task for the WiFi connection and the child the TCP Connection on signal or broadcast this task, will signal and broadcast the child too. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a50">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -531,8 +565,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the child task of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The child task </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a48">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -552,8 +584,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Accessor to get the task's backing task handle. There is no setter, on purpose.</p>
 <dl class="section return"><dt>Returns</dt><dd>FreeRTOS task handle. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a35">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -573,8 +603,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the FreeRTOS task Numberid of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The FreeRTOS task Number </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a38">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -594,8 +622,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the debug name of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The name of this task </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a32">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -615,8 +641,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the core number of this task run</p>
 <dl class="section return"><dt>Returns</dt><dd>The core number </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a39">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -636,8 +660,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the priority of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The priority </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a33">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -657,8 +679,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the return value of this task - after run</p>
 <dl class="section return"><dt>Returns</dt><dd>The return value </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a36">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -678,8 +698,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the root task of this task list</p>
 <dl class="section return"><dt>Returns</dt><dd>The root task </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a47">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -707,8 +725,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the current task</p>
 <dl class="section return"><dt>Returns</dt><dd>The current task </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a65">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -728,8 +744,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the stack depth of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The stack depth </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a34">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -749,8 +763,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the state of the task</p>
 <dl class="section return"><dt>Returns</dt><dd>The state of the task at the time the function was called. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a49">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -778,8 +790,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get current number of tasks</p>
 <dl class="section return"><dt>Returns</dt><dd>The number of tasks that the real time kernel is currently managing. This includes all ready, blocked and suspended tasks. A task that has been deleted but not yet freed by the idle task will also be included in the count. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a63">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -799,8 +809,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the time since start of this task</p>
 <dl class="section return"><dt>Returns</dt><dd>The time since start of this task </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a37">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -828,8 +836,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Is the given task the current running task ? </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a64">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -849,8 +855,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Is the Task running?</p>
 <dl class="section return"><dt>Returns</dt><dd>true If the task running, false If not </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a30">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -877,8 +881,6 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>call never in this task, then wait this task to end this task </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a29">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -928,8 +930,6 @@ Protected Attributes</h2></td></tr>
 <li>ERR_TASK_NOTRUNNING The task was not running </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a28">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -967,8 +967,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>pause execution for a specified time </p><dl class="section note"><dt>Note</dt><dd>see Linux nanosleep function </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a61">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -997,8 +995,6 @@ Protected Attributes</h2></td></tr>
 <p>Called on exit from your <a class="el" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task()</a> routine.</p>
 <p>It is optional whether you implement this or not.</p>
 <p>If you allow your task to exit its on_task method, </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a46">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1027,8 +1023,6 @@ Protected Attributes</h2></td></tr>
 <p>This virtual function call on kill, use for user code It is optional whether you implement this or not. </p>
 
 <p>Reimplemented in <a class="el" href="classmutex_simple_test_task.html#a3376bc514650baf5b9a6a768ea7766c1">mutexSimpleTestTask</a>.</p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a44">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1057,8 +1051,6 @@ Protected Attributes</h2></td></tr>
 <p>This virtual function call on creating, use for user code It is optional whether you implement this or not. </p>
 
 <p>Reimplemented in <a class="el" href="classmutex_simple_test_task.html#ac75f60ca578c48b84abe5bbcaf2a20e7">mutexSimpleTestTask</a>.</p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a43">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1088,8 +1080,6 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Your return your task function, get with <a class="el" href="classbasic__task.html#a058f4acc8288a2453695924e4d2e5ae1">get_return_value()</a> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classhello__world__task.html#a9bc894cf4cb35a20306536ec7d2e0dda">hello_world_task</a>, <a class="el" href="classwork__queue__task.html#aa1be2e59f2835d75df1a48de996cc4a9">work_queue_task</a>, <a class="el" href="classbasic__message__task.html#aab5c217d1ce6faa59fb8be76962bd38e">basic_message_task</a>, <a class="el" href="classforeign__task.html#a2401f66479dbd9336f543a7820979657">foreign_task</a>, and <a class="el" href="classmutex_simple_test_task.html#a9ee70508eb64a6c08c68ac8dbf6edd51">mutexSimpleTestTask</a>.</p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a45">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1193,8 +1183,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a53">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1221,8 +1209,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a54">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1249,8 +1235,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a24">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1277,8 +1261,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a51">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1305,8 +1287,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a55">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1325,8 +1305,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Resume a specific task. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a42">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1387,8 +1365,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Adapter function that allows you to write a class specific <a class="el" href="classbasic__task.html#a9a38181ee473266a564b6b9478dba8c1">on_task()</a> function that interfaces with FreeRTOS. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a66">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1413,8 +1389,6 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">uiPriority</td><td>The task's new priority. </td></tr>
   </table>
   </dd>
-</dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a40">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
 </dl>
 
 </div>
@@ -1448,8 +1422,6 @@ Protected Attributes</h2></td></tr>
     <tr><td class="paramname">secs</td><td>How long seconds to sleep the task. </td></tr>
   </table>
   </dd>
-</dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a57">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
 </dl>
 
 </div>
@@ -1494,8 +1466,6 @@ Protected Attributes</h2></td></tr>
 </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classforeign__task.html#a05f89e68be6f1ed89dc63ad4942df3e2">foreign_task</a>.</p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a26">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1515,8 +1485,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Suspend this task.</p>
 <dl class="section note"><dt>Note</dt><dd>While a task can <a class="el" href="classbasic__task.html#a5a5389d9182486ea6fa383d9c55d15b4">suspend()</a> itself, it cannot <a class="el" href="classbasic__task.html#ad38fa5e405a600b37d7d3c56b4a28b77">resume()</a> itself, becauseit's suspended. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a41">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1584,8 +1552,6 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a59">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1634,8 +1600,6 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a31">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1662,8 +1626,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Yield the scheduler. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a56">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1688,8 +1650,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Flag whether or not the task was started. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a75">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1712,8 +1672,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a69">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1736,8 +1694,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a70">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1761,8 +1717,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The event group for this task used or <a class="el" href="classbasic__task.html#acb804cd09b760ce1746859530782d0da">wait()</a> and <a class="el" href="classbasic__task.html#a89cfe779e45feba081754a85327c2d04">join()</a> </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a81">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1786,8 +1740,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>A saved / cached copy of which core this task is running on </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a77">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1811,8 +1763,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The FreeRTOS task Number </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a76">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1836,8 +1786,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The child task pointer </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a78">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1861,8 +1809,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Reference to the underlying task handle for this task. Can be obtained from <a class="el" href="classbasic__task.html#aeef4ab01e82599388fbbe5bf5369243c">get_handle()</a>. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a52">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1886,8 +1832,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The parent task pointer </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a79">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1911,8 +1855,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The return value from user task routine </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a74">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1936,8 +1878,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Lock Objekt for task safty </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a68">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1961,8 +1901,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The name of this task. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a71">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -1986,8 +1924,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>A saved / cached copy of what the task's priority is. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a72">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -2011,8 +1947,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Stack depth of this task, in words. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2_dokumente_2git_2mnthread_2include_2mn_task_8hpp-example.html#a73">/home/ambersophia/Dokumente/git/mnthread/include/mn_task.hpp</a>.</dd>
-</dl>
 
 </div>
 </div>
