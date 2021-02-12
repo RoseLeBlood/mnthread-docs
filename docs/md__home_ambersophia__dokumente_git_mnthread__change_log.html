@@ -85,6 +85,48 @@ $(document).ready(function(){initNavTree('md__home_ambersophia__dokumente_git_mn
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
+Version 2.0.4 Januar 2021</h1>
+<ul>
+<li>add staked, buffered allocator</li>
+<li>add allocator, mempool and stack to <a class="el" href="namespacemn_1_1memory.html">mn::memory</a> namespace</li>
+<li>add allocator with mempool backend</li>
+<li>start add aSTL template classes to this library, aSTL a other lightwidgt STL In the future are replace all vector, list, map etc. with aSTL version<ul>
+<li>add auto_ptr, weak_ptr, skoped_ptr, clone_ptr, save_ptr, shared_ptr to library</li>
+</ul>
+</li>
+<li>added namespaces:<ul>
+<li>slock -&gt; <a class="el" href="namespacemn_1_1system.html">mn::system</a></li>
+<li>mempool, allocator and deleter -&gt; <a class="el" href="namespacemn_1_1memory.html">mn::memory</a></li>
+<li>foregin_task, convar system, msg task -&gt; <a class="el" href="namespacemn_1_1ext.html">mn::ext</a></li>
+<li>trace -&gt; <a class="el" href="namespacemn_1_1trace.html">mn::trace</a></li>
+<li>all other -&gt; mn</li>
+</ul>
+</li>
+<li>rename:<ul>
+<li>func: mn_sleep, mn_usleep and mn_nsleep rename to sleep, nsleep and usleeep</li>
+<li>func: mn_panic to panic</li>
+<li>class: libmnversion to version</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Version 2.0.1 Januar 2021</h1>
+<ul>
+<li>rename tasklet function create to schedule - (DE: Mein fehler - misverständnis)</li>
+<li>add schudaler util class</li>
+<li>add random handler, for future use</li>
+<li>add new memory pool handler simple version and a complexere version for debugging</li>
+<li>add a stack template class: <a class="el" href="mn__stack_8hpp.html">memory/mn_stack.hpp</a></li>
+<li>add a wrapper for handling tickhooks</li>
+<li>EXAMPLES in progress</li>
+<li>Add new configs items<ul>
+<li>MN_THREAD_CONFIG_MEMPOOL_USETIMED Use for mempool the timed version and xTicksToWait (see config)</li>
+<li>MN_THREAD_CONFIG_TICKHOOK_MAXENTRYS The max entrys are hold the tickhook queue</li>
+<li>MN_THREAD_CONFIG_STACK_TYPE The basic type for stack_t ( basic_stack&lt;MN_THREAD_CONFIG_STACK_TYPE&gt;; )</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Version 1.95 Oktober 2020: (stable 2.0beta)</h1>
 <ul>
 <li>update error codes</li>
@@ -95,44 +137,44 @@ Version 1.95 Oktober 2020: (stable 2.0beta)</h1>
 <li>add basic_tickhook system</li>
 <li>add mempool support</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Version 1.9.1 Oktober 2020: (unstable 2.0beta)</h1>
 <ul>
 <li>for the future version add prototypes: (Not for produtions use!!)<ul>
 <li>free_list_memory pool = basic_free_list_mempool</li>
-<li>Shared Object = <a class="el" href="classbasic__shared__object.html">basic_shared_object</a></li>
-<li>Ringbuffer = <a class="el" href="classbasic__circular__buffer.html">basic_circular_buffer</a></li>
-<li>Add timed lock type = <a class="el" href="classbasic__timed__lock.html">basic_timed_lock</a></li>
+<li>Shared Object = basic_shared_object</li>
+<li>Ringbuffer = basic_circular_buffer</li>
+<li>Add timed lock type = basic_timed_lock</li>
 </ul>
 </li>
-<li>Add class to extends the <a class="el" href="classbasic__convar__task.html">basic_convar_task</a> with a message queue support - <a class="el" href="classbasic__message__task.html">basic_message_task</a><ul>
+<li>Add class to extends the basic_convar_task with a message queue support - basic_message_task<ul>
 <li>Add new config item, to handle the maximal messages in the message queue (MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES)</li>
 <li>For message queue support must be conditional variable support marked as enable</li>
 </ul>
 </li>
 <li>Add new defines:<ul>
 <li>in <a class="el" href="mn__foreign__task_8hpp.html">mn_foreign_task.hpp</a>:<ul>
-<li>FT_IDLE_TASK (<a class="el" href="classforeign__task.html#a9b858481c508b10da507a956be426e6a">foreign_task::get_idle_task()</a>)</li>
+<li>FT_IDLE_TASK (foreign_task::get_idle_task())</li>
 <li>FT_IDLE_TASK_ON(CPUID foreign_task::get_idle_task(CPUID)</li>
 </ul>
 </li>
-<li>in <a class="el" href="mn__config_8hpp.html">mn_config.hpp</a>:<ul>
+<li>in mn_config.hpp:<ul>
 <li>MN_THREAD_CONFIG_MINIMAL_STACK_SIZE set the default minimal stack size for a task</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>add in <a class="el" href="classbasic__task.html">basic_task</a> get_state() to get the current state and static function get_tasks() to get the number of tasks</li>
+<li>add in basic_task get_state() to get the current state and static function get_tasks() to get the number of tasks</li>
 <li>remove create and destroy from all mutex and semaphore objects and add exceptins handling</li>
 <li>rename create and on_create to start and on_start</li>
-<li>add to the <a class="el" href="classbasic__task.html">basic_task</a>: join(), wait() and get_self() functions - <a class="el" href="classbasic__task.html">basic_task</a> remove abstract</li>
+<li>add to the basic_task: join(), wait() and get_self() functions - basic_task remove abstract</li>
 <li>remove the m_contextMutext2 LockObject</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Version 1.9.0 September 2020: (stable 2.0beta)</h1>
 <ul>
 <li>add a eventgroup wrapper</li>
-<li>rename basic_thread to <a class="el" href="classbasic__task.html">basic_task</a> and the other threads to task - with error codes and rename on_thread to on_task</li>
+<li>rename basic_thread to basic_task and the other threads to task - with error codes and rename on_thread to on_task</li>
 <li>add in confg:<ul>
 <li>MN_THREAD_CONFIG_CORE_MAX (portNUM_PROCESSORS - 1)</li>
 <li>add prority enum to task</li>
@@ -141,22 +183,22 @@ Version 1.9.0 September 2020: (stable 2.0beta)</h1>
 <li>rename mn_base.hpp to <a class="el" href="mini_thread_8hpp.html">miniThread.hpp</a></li>
 <li>remove bugs and errors</li>
 <li>Strip semaphore classes</li>
-<li>add <a class="el" href="classtask__utils.html">task_utils</a> class for notify</li>
+<li>add task_utils class for notify</li>
 <li>add MN_THREAD_CONFIG_PREVIEW_FUTURE config item for next major version future (not for product use), not activate</li>
 <li>all config items can you now override in the sdkconfig file</li>
 <li>update config with new items, please cheack</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Version 1.71 September 2020: (unstable 2.0beta)</h1>
 <ul>
-<li>add single and multi threaded worcking queues (<a class="el" href="classbasic__work__queue__single.html">basic_work_queue_single</a> &amp; <a class="el" href="classbasic__work__queue__multi.html">basic_work_queue_multi</a>) (TODO Optional add a Workqueues ) and add configand error defines, with doku</li>
+<li>add single and multi threaded worcking queues (basic_work_queue_single &amp; basic_work_queue_multi) (TODO Optional add a Workqueues ) and add configand error defines, with doku</li>
 <li>remove bugs and errors</li>
 <li>This is the preview version of 2.0.0</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Version 1.60 September 2020: (unstable nightly)</h1>
 <ul>
-<li>add Work queue support (<a class="el" href="classbasic__work__queue.html">basic_work_queue</a>) <a class="el" href="classbasic__work__queue.html">basic_work_queue</a> pull <a class="el" href="classwork__queue__item.html">work_queue_item</a> off of a FIFO queue and run them sequentially. <br  />
+<li>add Work queue support (basic_work_queue) basic_work_queue pull work_queue_item off of a FIFO queue and run them sequentially. <br  />
 </li>
 <li>add New Config Options to mn_conig.hpp<ul>
 <li>MN_THREAD_CONFIG_WORK_QUEUE_MAX_WORK_ITEMS: How many work items to queue in the work queue engine default is 8</li>
@@ -173,10 +215,10 @@ Version 1.60 September 2020: (unstable nightly)</h1>
 <li>remove config option MN_THREAD_CONFIG_MUTEX_CLASS. MN_THREAD_CONFIG_MUTEX_CLASS</li>
 <li>rename libmn.hpp to mn_base.hpp and add missing headers</li>
 <li>rename mn_spinlock.hpp =&gt; <a class="el" href="mn__semaphore_8hpp.html">mn_semaphore.hpp</a> and mn_spinlock.cpp =&gt; mn_semaphore.cpp</li>
-<li><a class="el" href="classbasic__mutex.html">basic_mutex</a> extends <a class="el" href="classbasic__semaphore.html">basic_semaphore</a></li>
+<li>basic_mutex extends basic_semaphore</li>
 <li>add foreign_thread for mini Thread foregin thread and current Thread handling</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Version 1.54 September 2020: (unstable)</h1>
 <ul>
 <li>Documentation ready</li>
@@ -185,48 +227,48 @@ Version 1.54 September 2020: (unstable)</h1>
 <li>add counting_semaphore_t (autocsemp_t) and binary_semaphore_t (autobinsemp_t) <br  />
  please update code semaphore_t = counting_semaphore_t, spinlock_t = binary_semaphore_t</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Version 1.53 September 2020:</h1>
 <ul>
 <li>add eaxample</li>
 <li>add Documentation add (<a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a>)</li>
 <li>rename Project from mnthread to Mini Thread</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Version 1.43 September 2020:  (stable)</h1>
 <ul>
 <li>move convar function from basic_thread to basic_convar_thread</li>
-<li>add basic_convar_thread when "MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT  MN_THREAD_CONFIG_YES"is and update <a class="el" href="classbasic__condition__variable.html">basic_condition_variable</a></li>
+<li>add basic_convar_thread when "MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT  MN_THREAD_CONFIG_YES"is and update basic_condition_variable</li>
 <li>remove errors - (sorry, ... )</li>
-<li>add a deque class that implements a double ended queue. (deque_t = <a class="el" href="classbasic__deque.html">basic_deque</a>)</li>
+<li>add a deque class that implements a double ended queue. (deque_t = basic_deque)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Version 1.42 August 2020: (non-stable)</h1>
 <ul>
 <li>add queue wrapper (<a class="el" href="mn__queue_8hpp.html">queue/mn_queue.hpp</a>) queue_t</li>
 <li>add binary queue (<a class="el" href="mn__binaryqueue_8hpp.html">queue/mn_binaryqueue.hpp</a>) binaryqueue_t</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 Version 1.4 August 2020: (non-stable)</h1>
 <ul>
-<li>add Conditional Variable an disable in config file (<a class="el" href="mn__config_8hpp.html">mn_config.hpp</a>)</li>
-<li>add new Cosfigurations items on <a class="el" href="mn__config_8hpp.html">mn_config.hpp</a></li>
+<li>add Conditional Variable an disable in config file (mn_config.hpp)</li>
+<li>add new Cosfigurations items on mn_config.hpp</li>
 <li>add recursive matux and autolack tps for interrupt, critical_lock and schedular</li>
 <li>add Tasklets</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Version 1.2 August 2020: (stable)</h1>
 <ul>
 <li>rename the header files from mn-(xxx).h to mn_(xxx).hpp</li>
 <li>Platformio regestration</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Version 1.0.62 Mai 2020:  (non-stable)</h1>
 <ul>
 <li>update examples - stripped</li>
 <li>switch from c3pb.gitlab to my public github account</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Version 1.0.60 November 2018: (non-stable)</h1>
 <ul>
 <li>rename:<ul>
@@ -239,7 +281,7 @@ Version 1.0.60 November 2018: (non-stable)</h1>
 <li>update examples</li>
 <li>update version </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Version 1.0.5 November 2018: (stable)</h1>
 <ul>
 <li>Add libmn.h</li>
@@ -247,14 +289,14 @@ Version 1.0.5 November 2018: (stable)</h1>
 <li>rename header</li>
 <li>Add examples</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Version 0.9.3 November 2018: (non-stable)</h1>
 <ul>
 <li>add autolock_t to mn-Thread</li>
 <li>add mn-autolock.h</li>
 <li>add spinlock</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Version 0.8.31 November 2018: (non-stable)</h1>
 <ul>
 <li>add logical mutext handle to basic_thread</li>
@@ -263,12 +305,12 @@ Version 0.8.31 November 2018: (non-stable)</h1>
 <li>add "child_thread" and "parent_thread" to basic_thread</li>
 <li>add function "get_root();" "get_child();" "add_child_thread(basic_thread+ thread);"</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Version 0.8.3 November 2018: (non-stable)</h1>
 <ul>
 <li>add nsleep, sleep, usleep, micros, milis</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md20"></a>
 Version 0.8.2, November 2018: (non-stable)</h1>
 <ul>
 <li>Public release </li>

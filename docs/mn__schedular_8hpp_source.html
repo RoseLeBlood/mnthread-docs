@@ -105,34 +105,34 @@ $(document).ready(function(){initNavTree('mn__schedular_8hpp_source.html',''); i
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef _MINLIB_VECTOR_SCHEDULAR_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define _MINLIB_VECTOR_SCHEDULAR_H_</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__error_8hpp.html">mn_error.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="test-ccc_2mn__error_8hpp.html">mn_error.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="test-ccc_2mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classbasic__schedular.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__schedular.html">basic_schedular</a> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__schedular.html#aaa67ba4d42844e90554954862e9a111d">start</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__schedular.html#a8571c83c79b11d0597ed6540a20ef3b2">stop</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classbasic__schedular.html#a4ef42a679268bd96a898bb1f1025cb29">   44</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classbasic__schedular.html#a4ef42a679268bd96a898bb1f1025cb29">yieldOtherCore</a>(<span class="keywordtype">int</span> core) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;       vPortYieldOtherCore(core);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classbasic__schedular.html#a2f34c2dce3ce01e9d11730efbea8f275">   47</a></span>&#160;    <span class="keyword">static</span> uint32_t <a class="code" href="classbasic__schedular.html#a2f34c2dce3ce01e9d11730efbea8f275">get_hz</a>() {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> (uint32_t)configTICK_RATE_HZ;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="mn__schedular_8hpp.html#a22bfca1f3eb10103877c9188eda3445b">   52</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbasic__schedular.html">mnschedular</a> = <a class="code" href="classbasic__schedular.html">basic_schedular</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassbasic__schedular_html"><div class="ttname"><a href="classbasic__schedular.html">basic_schedular</a></div><div class="ttdef"><b>Definition:</b> mn_schedular.hpp:29</div></div>
-<div class="ttc" id="aclassbasic__schedular_html_a2f34c2dce3ce01e9d11730efbea8f275"><div class="ttname"><a href="classbasic__schedular.html#a2f34c2dce3ce01e9d11730efbea8f275">basic_schedular::get_hz</a></div><div class="ttdeci">static uint32_t get_hz()</div><div class="ttdef"><b>Definition:</b> mn_schedular.hpp:47</div></div>
-<div class="ttc" id="aclassbasic__schedular_html_a4ef42a679268bd96a898bb1f1025cb29"><div class="ttname"><a href="classbasic__schedular.html#a4ef42a679268bd96a898bb1f1025cb29">basic_schedular::yieldOtherCore</a></div><div class="ttdeci">static void yieldOtherCore(int core)</div><div class="ttdef"><b>Definition:</b> mn_schedular.hpp:44</div></div>
-<div class="ttc" id="aclassbasic__schedular_html_a8571c83c79b11d0597ed6540a20ef3b2"><div class="ttname"><a href="classbasic__schedular.html#a8571c83c79b11d0597ed6540a20ef3b2">basic_schedular::stop</a></div><div class="ttdeci">static void stop()</div><div class="ttdef"><b>Definition:</b> mn_schedular.cpp:26</div></div>
-<div class="ttc" id="aclassbasic__schedular_html_aaa67ba4d42844e90554954862e9a111d"><div class="ttname"><a href="classbasic__schedular.html#aaa67ba4d42844e90554954862e9a111d">basic_schedular::start</a></div><div class="ttdeci">static int start()</div><div class="ttdef"><b>Definition:</b> mn_schedular.cpp:23</div></div>
-<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
-<div class="ttc" id="amn__error_8hpp_html"><div class="ttname"><a href="mn__error_8hpp.html">mn_error.hpp</a></div></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classmn_1_1basic__schedular.html">   30</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmn_1_1basic__schedular.html">basic_schedular</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1basic__schedular.html#a85efd59ffcd1abd6b19b17623d4ca050">start</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1basic__schedular.html#a7ae8d05371a3df1c99d4c6e32f66757d">stop</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmn_1_1basic__schedular.html#a0db9d00af284fc314427345d49f1c030">   45</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1basic__schedular.html#a0db9d00af284fc314427345d49f1c030">yieldOtherCore</a>(<span class="keywordtype">int</span> core) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        vPortYieldOtherCore(core);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmn_1_1basic__schedular.html#a95f348ba06e47e14862760172a63f0bb">   48</a></span>&#160;        <span class="keyword">static</span> uint32_t <a class="code" href="classmn_1_1basic__schedular.html#a95f348ba06e47e14862760172a63f0bb">get_hz</a>() {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> (uint32_t)configTICK_RATE_HZ;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespacemn.html#a499a72f06682c1535f99472d14525fca">   53</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__schedular.html">schedular</a> = <a class="code" href="classmn_1_1basic__schedular.html">basic_schedular</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1basic__schedular_html"><div class="ttname"><a href="classmn_1_1basic__schedular.html">mn::basic_schedular</a></div><div class="ttdef"><b>Definition:</b> mn_schedular.hpp:30</div></div>
+<div class="ttc" id="aclassmn_1_1basic__schedular_html_a0db9d00af284fc314427345d49f1c030"><div class="ttname"><a href="classmn_1_1basic__schedular.html#a0db9d00af284fc314427345d49f1c030">mn::basic_schedular::yieldOtherCore</a></div><div class="ttdeci">static void yieldOtherCore(int core)</div><div class="ttdef"><b>Definition:</b> mn_schedular.hpp:45</div></div>
+<div class="ttc" id="aclassmn_1_1basic__schedular_html_a7ae8d05371a3df1c99d4c6e32f66757d"><div class="ttname"><a href="classmn_1_1basic__schedular.html#a7ae8d05371a3df1c99d4c6e32f66757d">mn::basic_schedular::stop</a></div><div class="ttdeci">static void stop()</div><div class="ttdef"><b>Definition:</b> mn_schedular.cpp:26</div></div>
+<div class="ttc" id="aclassmn_1_1basic__schedular_html_a85efd59ffcd1abd6b19b17623d4ca050"><div class="ttname"><a href="classmn_1_1basic__schedular.html#a85efd59ffcd1abd6b19b17623d4ca050">mn::basic_schedular::start</a></div><div class="ttdeci">static int start()</div><div class="ttdef"><b>Definition:</b> mn_schedular.cpp:23</div></div>
+<div class="ttc" id="aclassmn_1_1basic__schedular_html_a95f348ba06e47e14862760172a63f0bb"><div class="ttname"><a href="classmn_1_1basic__schedular.html#a95f348ba06e47e14862760172a63f0bb">mn::basic_schedular::get_hz</a></div><div class="ttdeci">static uint32_t get_hz()</div><div class="ttdef"><b>Definition:</b> mn_schedular.hpp:48</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_lock_exptions.hpp:26</div></div>
+<div class="ttc" id="atest-ccc_2mn__config_8hpp_html"><div class="ttname"><a href="test-ccc_2mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="ttc" id="atest-ccc_2mn__error_8hpp_html"><div class="ttname"><a href="test-ccc_2mn__error_8hpp.html">mn_error.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

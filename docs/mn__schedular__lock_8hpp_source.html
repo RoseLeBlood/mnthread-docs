@@ -106,18 +106,23 @@ $(document).ready(function(){initNavTree('mn__schedular__lock_8hpp_source.html',
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__system__lock_8hpp.html">mn_system_lock.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classbasic__schedular__lock.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__schedular__lock.html">basic_schedular_lock</a> : <span class="keyword">public</span> <a class="code" href="class_i_system_lock_object.html">ISystemLockObject</a> {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classbasic__schedular__lock.html#a1c641910be33a8ea8bbe41fd582d615d">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = 0);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classbasic__schedular__lock.html#ae4e26cc6702880f100f927e505cb7d52">unlock</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_i_system_lock_object_html"><div class="ttname"><a href="class_i_system_lock_object.html">ISystemLockObject</a></div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:35</div></div>
-<div class="ttc" id="aclassbasic__schedular__lock_html"><div class="ttname"><a href="classbasic__schedular__lock.html">basic_schedular_lock</a></div><div class="ttdef"><b>Definition:</b> mn_schedular_lock.hpp:54</div></div>
-<div class="ttc" id="aclassbasic__schedular__lock_html_a1c641910be33a8ea8bbe41fd582d615d"><div class="ttname"><a href="classbasic__schedular__lock.html#a1c641910be33a8ea8bbe41fd582d615d">basic_schedular_lock::lock</a></div><div class="ttdeci">int lock(unsigned int timeout=0)</div><div class="ttdef"><b>Definition:</b> mn_schedular_lock.cpp:25</div></div>
-<div class="ttc" id="aclassbasic__schedular__lock_html_ae4e26cc6702880f100f927e505cb7d52"><div class="ttname"><a href="classbasic__schedular__lock.html#ae4e26cc6702880f100f927e505cb7d52">basic_schedular_lock::unlock</a></div><div class="ttdeci">int unlock()</div><div class="ttdef"><b>Definition:</b> mn_schedular_lock.cpp:29</div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">namespace </span>system {</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmn_1_1system_1_1basic__schedular__lock.html">   56</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1system_1_1basic__schedular__lock.html">basic_schedular_lock</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1system_1_1_i_system_lock_object.html">ISystemLockObject</a> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1system_1_1basic__schedular__lock.html#ad85a0b690c3fb14711b43c2bcf4802f1">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = 0);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1system_1_1basic__schedular__lock.html#ada567f4129200d7824be4f355b350bd0">unlock</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1system_1_1_i_system_lock_object_html"><div class="ttname"><a href="classmn_1_1system_1_1_i_system_lock_object.html">mn::system::ISystemLockObject</a></div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:37</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1basic__schedular__lock_html"><div class="ttname"><a href="classmn_1_1system_1_1basic__schedular__lock.html">mn::system::basic_schedular_lock</a></div><div class="ttdef"><b>Definition:</b> mn_schedular_lock.hpp:56</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1basic__schedular__lock_html_ad85a0b690c3fb14711b43c2bcf4802f1"><div class="ttname"><a href="classmn_1_1system_1_1basic__schedular__lock.html#ad85a0b690c3fb14711b43c2bcf4802f1">mn::system::basic_schedular_lock::lock</a></div><div class="ttdeci">int lock(unsigned int timeout=0)</div><div class="ttdef"><b>Definition:</b> mn_schedular_lock.cpp:27</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1basic__schedular__lock_html_ada567f4129200d7824be4f355b350bd0"><div class="ttname"><a href="classmn_1_1system_1_1basic__schedular__lock.html#ada567f4129200d7824be4f355b350bd0">mn::system::basic_schedular_lock::unlock</a></div><div class="ttdeci">int unlock()</div><div class="ttdef"><b>Definition:</b> mn_schedular_lock.cpp:31</div></div>
 <div class="ttc" id="amn__system__lock_8hpp_html"><div class="ttname"><a href="mn__system__lock_8hpp.html">mn_system_lock.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_lock_exptions.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

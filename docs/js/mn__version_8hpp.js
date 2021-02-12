@@ -1,5 +1,5 @@
 var mn__version_8hpp =
 [
-    [ "libmnVersion", "classlibmn_version.html", "classlibmn_version" ],
-    [ "mnversion_t", "mn__version_8hpp.html#af40fb2640f6a2534e5403f16a37f88f4", null ]
+    [ "version", "classmn_1_1version.html", "classmn_1_1version" ],
+    [ "version_t", "mn__version_8hpp.html#a2cca548421a08ff372ae21f46d9cbeaa", null ]
 ];

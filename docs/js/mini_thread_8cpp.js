@@ -1,4 +1,4 @@
 var mini_thread_8cpp =
 [
-    [ "mn_panic", "mini_thread_8cpp.html#a112fa11ff1ed48fc8c537e2fcc6b7da7", null ]
+    [ "panic", "mini_thread_8cpp.html#a339a1da0f9b06ac6c294558edc2a2a0b", null ]
 ];

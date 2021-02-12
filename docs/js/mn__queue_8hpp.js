@@ -1,5 +1,5 @@
 var mn__queue_8hpp =
 [
-    [ "basic_queue", "classbasic__queue.html", "classbasic__queue" ],
-    [ "queue_t", "mn__queue_8hpp.html#a27023a8e82e9c0994a1587b8de80613b", null ]
+    [ "basic_queue", "classmn_1_1queue_1_1basic__queue.html", "classmn_1_1queue_1_1basic__queue" ],
+    [ "queue_t", "mn__queue_8hpp.html#a1c14458920001de37575eb7c99b28e98", null ]
 ];

@@ -1,5 +1,5 @@
 var mn__mutex_8hpp =
 [
-    [ "basic_mutex", "classbasic__mutex.html", "classbasic__mutex" ],
-    [ "mutex_t", "mn__mutex_8hpp.html#ae94b3ff09eca976047fe23d9051c46fa", null ]
+    [ "basic_mutex", "classmn_1_1basic__mutex.html", "classmn_1_1basic__mutex" ],
+    [ "mutex_t", "mn__mutex_8hpp.html#a1f9940b60c6e47624e749e63e13e4a41", null ]
 ];

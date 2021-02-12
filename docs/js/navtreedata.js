@@ -27,36 +27,48 @@ var NAVTREE =
   [ "Mini Thread", "index.html", [
     [ "mnthread-docs", "index.html", null ],
     [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", [
-      [ "Version 1.95 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
-      [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md2", null ],
-      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md3", null ],
-      [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md4", null ],
-      [ "Version 1.60 September 2020: (unstable nightly)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md5", null ],
-      [ "Version 1.54 September 2020: (unstable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md6", null ],
-      [ "Version 1.53 September 2020:", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md7", null ],
-      [ "Version 1.43 September 2020:  (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md8", null ],
-      [ "Version 1.42 August 2020: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md9", null ],
-      [ "Version 1.4 August 2020: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md10", null ],
-      [ "Version 1.2 August 2020: (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md11", null ],
-      [ "Version 1.0.62 Mai 2020:  (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md12", null ],
-      [ "Version 1.0.60 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md13", null ],
-      [ "Version 1.0.5 November 2018: (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md14", null ],
-      [ "Version 0.9.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md15", null ],
-      [ "Version 0.8.31 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md16", null ],
-      [ "Version 0.8.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md17", null ],
-      [ "Version 0.8.2, November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md18", null ]
+      [ "Version 2.0.4 Januar 2021", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],
+      [ "Version 2.0.1 Januar 2021", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md2", null ],
+      [ "Version 1.95 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md3", null ],
+      [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md4", null ],
+      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md5", null ],
+      [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md6", null ],
+      [ "Version 1.60 September 2020: (unstable nightly)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md7", null ],
+      [ "Version 1.54 September 2020: (unstable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md8", null ],
+      [ "Version 1.53 September 2020:", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md9", null ],
+      [ "Version 1.43 September 2020:  (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md10", null ],
+      [ "Version 1.42 August 2020: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md11", null ],
+      [ "Version 1.4 August 2020: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md12", null ],
+      [ "Version 1.2 August 2020: (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md13", null ],
+      [ "Version 1.0.62 Mai 2020:  (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md14", null ],
+      [ "Version 1.0.60 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md15", null ],
+      [ "Version 1.0.5 November 2018: (stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md16", null ],
+      [ "Version 0.9.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md17", null ],
+      [ "Version 0.8.31 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md18", null ],
+      [ "Version 0.8.3 November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md19", null ],
+      [ "Version 0.8.2, November 2018: (non-stable)", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md20", null ]
     ] ],
     [ "Contributing", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html", [
-      [ "Pull Request Process", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md20", null ],
-      [ "Documentation", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md21", null ],
-      [ "Bug reporting", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md22", null ],
-      [ "Code of Conduct", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md23", [
-        [ "Our Pledge", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md24", null ],
-        [ "Our Standards", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md25", null ],
-        [ "Our Responsibilities", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md26", null ],
-        [ "Scope", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md27", null ],
-        [ "Enforcement", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md28", null ],
-        [ "Attribution", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md29", null ]
+      [ "Pull Request Process", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md22", null ],
+      [ "Documentation", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md23", null ],
+      [ "Bug reporting", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md24", null ],
+      [ "Code of Conduct", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md25", [
+        [ "Our Pledge", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md26", null ],
+        [ "Our Standards", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md27", null ],
+        [ "Our Responsibilities", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md28", null ],
+        [ "Scope", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md29", null ],
+        [ "Enforcement", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md30", null ],
+        [ "Attribution", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md31", null ]
+      ] ]
+    ] ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -81,7 +93,7 @@ var NAVTREE =
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ],
     [ "Examples", "examples.html", "examples" ]
@@ -91,11 +103,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "00______empty__example__2src__2main__8cpp_8js.html",
-"classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b",
-"classbasic__vector__mempool__timed.html#a2a4d94bd0614555c4daa0da6a0aa76ca",
-"index.html",
-"mn__error_8hpp.html#ab91fa986d71240a37e949cfae0fac66f",
-"structbasic__vector__mempool__timed_1_1chunk.html#a8bec748b456d82540c49003ce13967db"
+"classmn_1_1basic__clock.html#aa7bd2318a4ad9f47bc1565549343edd5",
+"classmn_1_1ext_1_1basic__convar__task.html#af8094ee27455d373b3f1c85d827fb495",
+"classmn_1_1memory_1_1basic__stack.html#a9d3a83e35c196cacc80db7dd03973493",
+"functions_b.html",
+"include_2mn__error_8hpp.html#afb218939e10dc094d9b5212436d72373",
+"mn__micros_8cpp.html",
+"namespacemn.html#abb1eefc523b1f7d1927bb74b54a10d56",
+"test-ccc_2mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

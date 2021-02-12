@@ -81,6 +81,7 @@ $(document).ready(function(){initNavTree('mn__sleep_8hpp.html',''); initResizabl
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_sleep.hpp File Reference</div>  </div>
@@ -95,84 +96,20 @@ $(document).ready(function(){initNavTree('mn__sleep_8hpp.html',''); initResizabl
 </div>
 <p><a href="mn__sleep_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af0d0f7ac576d81be775cefe3f68de20b"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__sleep_8hpp.html#af0d0f7ac576d81be775cefe3f68de20b">mn_sleep</a> (unsigned int secs)</td></tr>
-<tr class="separator:af0d0f7ac576d81be775cefe3f68de20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636c9a0076d940e5bd54cf8a8aaa9065"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__sleep_8hpp.html#a636c9a0076d940e5bd54cf8a8aaa9065">mn_usleep</a> (useconds_t usec)</td></tr>
-<tr class="separator:a636c9a0076d940e5bd54cf8a8aaa9065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19ff28b418993d1050ddc0586816cc3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__sleep_8hpp.html#a19ff28b418993d1050ddc0586816cc3f">mn_nsleep</a> (const struct timespec *req, struct timespec *rem)</td></tr>
-<tr class="separator:a19ff28b418993d1050ddc0586816cc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094c5c18f9b3159c0935207cc9489f7e"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a094c5c18f9b3159c0935207cc9489f7e">mn::sleep</a> (unsigned int secs)</td></tr>
+<tr class="separator:a094c5c18f9b3159c0935207cc9489f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ae1241da7c4b4cdcc385af3d191599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a22ae1241da7c4b4cdcc385af3d191599">mn::usleep</a> (useconds_t usec)</td></tr>
+<tr class="separator:a22ae1241da7c4b4cdcc385af3d191599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a684af303215bfb8b6538060075665fb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a684af303215bfb8b6538060075665fb2">mn::nsleep</a> (const struct timespec *req, struct timespec *rem)</td></tr>
+<tr class="separator:a684af303215bfb8b6538060075665fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a19ff28b418993d1050ddc0586816cc3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19ff28b418993d1050ddc0586816cc3f">&#9670;&nbsp;</a></span>mn_nsleep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mn_nsleep </td>
-          <td>(</td>
-          <td class="paramtype">const struct timespec *&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct timespec *&#160;</td>
-          <td class="paramname"><em>rem</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delay a given task for a given timespec </p>
-
-</div>
-</div>
-<a id="af0d0f7ac576d81be775cefe3f68de20b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0d0f7ac576d81be775cefe3f68de20b">&#9670;&nbsp;</a></span>mn_sleep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned mn_sleep </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>secs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delay a given task for a given number of seconds. <br  />
- </p>
-
-</div>
-</div>
-<a id="a636c9a0076d940e5bd54cf8a8aaa9065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a636c9a0076d940e5bd54cf8a8aaa9065">&#9670;&nbsp;</a></span>mn_usleep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int mn_usleep </td>
-          <td>(</td>
-          <td class="paramtype">useconds_t&#160;</td>
-          <td class="paramname"><em>usec</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delay a given task for a given number of micro seconds. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>

@@ -1,5 +1,5 @@
 var mn__convar__task_8hpp =
 [
-    [ "basic_convar_task", "classbasic__convar__task.html", "classbasic__convar__task" ],
-    [ "convar_task_t", "mn__convar__task_8hpp.html#a37d8789beeffad9f17ef72c8ed617662", null ]
+    [ "basic_convar_task", "classmn_1_1ext_1_1basic__convar__task.html", "classmn_1_1ext_1_1basic__convar__task" ],
+    [ "convar_task_t", "mn__convar__task_8hpp.html#a1a2b11f6cdb50fb96cb89edf2e61a49d", null ]
 ];

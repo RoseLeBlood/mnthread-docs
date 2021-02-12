@@ -82,43 +82,57 @@ $(document).ready(function(){initNavTree('mn__stack_8hpp.html',''); initResizabl
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">mn_stack.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">../mn_config.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mn__error_8hpp_source.html">../mn_error.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="include_2mn__config_8hpp_source.html">../mn_config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="include_2mn__error_8hpp_source.html">../mn_error.hpp</a>&quot;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;malloc.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div>
 <p><a href="mn__stack_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__stack.html">basic_stack&lt; TType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__stack.html">mn::memory::basic_stack&lt; TType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemn_1_1memory"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html">mn::memory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad0139780071d3833d0b2a9d0a338da3e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__stack_8hpp.html#ad0139780071d3833d0b2a9d0a338da3e">stack_t</a> = <a class="el" href="classbasic__stack.html">basic_stack</a>&lt; <a class="el" href="mn__config_8hpp.html#a5ad080396922e54adb11e7c31223267a">MN_THREAD_CONFIG_STACK_TYPE</a> &gt;</td></tr>
-<tr class="separator:ad0139780071d3833d0b2a9d0a338da3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad14de2bba54e4804a964d6e094205668"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#ad14de2bba54e4804a964d6e094205668">mn::memory::stack_t</a> = basic_stack&lt; <a class="el" href="test-ccc_2mn__config_8hpp.html#a5ad080396922e54adb11e7c31223267a">MN_THREAD_CONFIG_STACK_TYPE</a> &gt;</td></tr>
+<tr class="separator:ad14de2bba54e4804a964d6e094205668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639c99fa33217faccd53fa99d86f1ace"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a639c99fa33217faccd53fa99d86f1ace">mn::memory::uint8_stack_t</a> = basic_stack&lt; uint8_t &gt;</td></tr>
+<tr class="separator:a639c99fa33217faccd53fa99d86f1ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bd74351b0386172e014275443a7245"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a71bd74351b0386172e014275443a7245">mn::memory::uint16_stack_t</a> = basic_stack&lt; uint16_t &gt;</td></tr>
+<tr class="separator:a71bd74351b0386172e014275443a7245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc09262e6f259eb872afd43015a3ca9b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#adc09262e6f259eb872afd43015a3ca9b">mn::memory::uint32_stack_t</a> = basic_stack&lt; uint32_t &gt;</td></tr>
+<tr class="separator:adc09262e6f259eb872afd43015a3ca9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03c3081fd7bfe44572fff8cbea14ccb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#ad03c3081fd7bfe44572fff8cbea14ccb">mn::memory::uint64_stack_t</a> = basic_stack&lt; uint64_t &gt;</td></tr>
+<tr class="separator:ad03c3081fd7bfe44572fff8cbea14ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b4ac51249190c8d01da9371b5f3289"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a69b4ac51249190c8d01da9371b5f3289">mn::memory::int8_stack_t</a> = basic_stack&lt; int8_t &gt;</td></tr>
+<tr class="separator:a69b4ac51249190c8d01da9371b5f3289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12edd7a7cb5b2f830d289f15097a49c4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a12edd7a7cb5b2f830d289f15097a49c4">mn::memory::int16_stack_t</a> = basic_stack&lt; int16_t &gt;</td></tr>
+<tr class="separator:a12edd7a7cb5b2f830d289f15097a49c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8340273499185fcc17530db77d82b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a7e8340273499185fcc17530db77d82b1">mn::memory::int32_stack_t</a> = basic_stack&lt; int32_t &gt;</td></tr>
+<tr class="separator:a7e8340273499185fcc17530db77d82b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af388d2cf0014e9751a4b056fb81c493e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#af388d2cf0014e9751a4b056fb81c493e">mn::memory::int64_stack_t</a> = basic_stack&lt; int64_t &gt;</td></tr>
+<tr class="separator:af388d2cf0014e9751a4b056fb81c493e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4546441bfd27b66b75e0ec4a535c2a4c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a4546441bfd27b66b75e0ec4a535c2a4c">mn::memory::string_stack_t</a> = basic_stack&lt; const char * &gt;</td></tr>
+<tr class="separator:a4546441bfd27b66b75e0ec4a535c2a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90df09de87a204f8704ed6d7684401d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a90df09de87a204f8704ed6d7684401d4">mn::memory::float_stack_t</a> = basic_stack&lt; float &gt;</td></tr>
+<tr class="separator:a90df09de87a204f8704ed6d7684401d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ad0139780071d3833d0b2a9d0a338da3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0139780071d3833d0b2a9d0a338da3e">&#9670;&nbsp;</a></span>stack_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__stack_8hpp.html#ad0139780071d3833d0b2a9d0a338da3e">stack_t</a> =  <a class="el" href="classbasic__stack.html">basic_stack</a>&lt;<a class="el" href="mn__config_8hpp.html#a5ad080396922e54adb11e7c31223267a">MN_THREAD_CONFIG_STACK_TYPE</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>

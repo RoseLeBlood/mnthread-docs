@@ -1,5 +1,5 @@
 var mn__task_8hpp =
 [
-    [ "basic_task", "classbasic__task.html", "classbasic__task" ],
-    [ "task_t", "mn__task_8hpp.html#a53bf3b71ff2994678a06a3b9fe21b162", null ]
+    [ "basic_task", "classmn_1_1basic__task.html", "classmn_1_1basic__task" ],
+    [ "task_t", "mn__task_8hpp.html#a25b8ead5c12c12f56c64a873eae35039", null ]
 ];

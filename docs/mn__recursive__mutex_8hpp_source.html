@@ -106,26 +106,27 @@ $(document).ready(function(){initNavTree('mn__recursive__mutex_8hpp_source.html'
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__mutex_8hpp.html">mn_mutex.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_RECURSIVE_MUTEX == MN_THREAD_CONFIG_YES</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>recursive_mutex : <span class="keyword">public</span> <a class="code" href="classbasic__mutex.html">basic_mutex</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  recursive_mutex();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = <a class="code" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">unlock</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">using</span> remutex_t = recursive_mutex;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MN_THREAD_CONFIG_RECURSIVE_MUTEX MN_THREAD_CONFIG_YES</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MINLIB_ESP32_REC_MUTEX_</span></div>
-<div class="ttc" id="aclassbasic__mutex_html"><div class="ttname"><a href="classbasic__mutex.html">basic_mutex</a></div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:32</div></div>
-<div class="ttc" id="aclassbasic__mutex_html_a5694cab5206c23953513bf494a79a50b"><div class="ttname"><a href="classbasic__mutex.html#a5694cab5206c23953513bf494a79a50b">basic_mutex::lock</a></div><div class="ttdeci">virtual int lock(unsigned int timeout=MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT)</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:58</div></div>
-<div class="ttc" id="aclassbasic__mutex_html_aece9c3fbd550415f12b9090c0f61d640"><div class="ttname"><a href="classbasic__mutex.html#aece9c3fbd550415f12b9090c0f61d640">basic_mutex::unlock</a></div><div class="ttdeci">virtual int unlock()</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:79</div></div>
-<div class="ttc" id="amn__config_8hpp_html_a20fe1420e9a6d53d806d9d5e3a6cefc4"><div class="ttname"><a href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</div><div class="ttdef"><b>Definition:</b> mn_config.hpp:317</div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> { </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_RECURSIVE_MUTEX == MN_THREAD_CONFIG_YES</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>recursive_mutex : <span class="keyword">public</span> basic_mutex {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  recursive_mutex();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> lock(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = <a class="code" href="include_2mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> unlock();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">using</span> remutex_t = recursive_mutex;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MN_THREAD_CONFIG_RECURSIVE_MUTEX MN_THREAD_CONFIG_YES</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MINLIB_ESP32_REC_MUTEX_</span></div>
+<div class="ttc" id="ainclude_2mn__config_8hpp_html_a20fe1420e9a6d53d806d9d5e3a6cefc4"><div class="ttname"><a href="include_2mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</div><div class="ttdef"><b>Definition:</b> include/mn_config.hpp:329</div></div>
 <div class="ttc" id="amn__mutex_8hpp_html"><div class="ttname"><a href="mn__mutex_8hpp.html">mn_mutex.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_lock_exptions.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

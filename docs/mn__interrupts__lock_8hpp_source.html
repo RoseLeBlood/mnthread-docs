@@ -106,18 +106,23 @@ $(document).ready(function(){initNavTree('mn__interrupts__lock_8hpp_source.html'
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__system__lock_8hpp.html">mn_system_lock.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classbasic__interrupts__lock.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a> : <span class="keyword">public</span> <a class="code" href="class_i_system_lock_object.html">ISystemLockObject</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classbasic__interrupts__lock.html#ae104d3e7af287fb8107b550354b0ce03">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = 0);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classbasic__interrupts__lock.html#a9a352f60b4c61fe0e2291168bde27830">unlock</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_i_system_lock_object_html"><div class="ttname"><a href="class_i_system_lock_object.html">ISystemLockObject</a></div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:35</div></div>
-<div class="ttc" id="aclassbasic__interrupts__lock_html"><div class="ttname"><a href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></div><div class="ttdef"><b>Definition:</b> mn_interrupts_lock.hpp:27</div></div>
-<div class="ttc" id="aclassbasic__interrupts__lock_html_a9a352f60b4c61fe0e2291168bde27830"><div class="ttname"><a href="classbasic__interrupts__lock.html#a9a352f60b4c61fe0e2291168bde27830">basic_interrupts_lock::unlock</a></div><div class="ttdeci">int unlock()</div><div class="ttdef"><b>Definition:</b> mn_interrupts_lock.cpp:29</div></div>
-<div class="ttc" id="aclassbasic__interrupts__lock_html_ae104d3e7af287fb8107b550354b0ce03"><div class="ttname"><a href="classbasic__interrupts__lock.html#ae104d3e7af287fb8107b550354b0ce03">basic_interrupts_lock::lock</a></div><div class="ttdeci">int lock(unsigned int timeout=0)</div><div class="ttdef"><b>Definition:</b> mn_interrupts_lock.cpp:25</div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">namespace </span>system {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classmn_1_1system_1_1basic__interrupts__lock.html">   29</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1system_1_1basic__interrupts__lock.html">basic_interrupts_lock</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1system_1_1_i_system_lock_object.html">ISystemLockObject</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1system_1_1basic__interrupts__lock.html#aebe01670017acd5fd43ff3860786e09f">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = 0);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1system_1_1basic__interrupts__lock.html#ac6d851f2be89651a27c1c6ff4026a7c8">unlock</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1system_1_1_i_system_lock_object_html"><div class="ttname"><a href="classmn_1_1system_1_1_i_system_lock_object.html">mn::system::ISystemLockObject</a></div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:37</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1basic__interrupts__lock_html"><div class="ttname"><a href="classmn_1_1system_1_1basic__interrupts__lock.html">mn::system::basic_interrupts_lock</a></div><div class="ttdef"><b>Definition:</b> mn_interrupts_lock.hpp:29</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1basic__interrupts__lock_html_ac6d851f2be89651a27c1c6ff4026a7c8"><div class="ttname"><a href="classmn_1_1system_1_1basic__interrupts__lock.html#ac6d851f2be89651a27c1c6ff4026a7c8">mn::system::basic_interrupts_lock::unlock</a></div><div class="ttdeci">int unlock()</div><div class="ttdef"><b>Definition:</b> mn_interrupts_lock.cpp:31</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1basic__interrupts__lock_html_aebe01670017acd5fd43ff3860786e09f"><div class="ttname"><a href="classmn_1_1system_1_1basic__interrupts__lock.html#aebe01670017acd5fd43ff3860786e09f">mn::system::basic_interrupts_lock::lock</a></div><div class="ttdeci">int lock(unsigned int timeout=0)</div><div class="ttdef"><b>Definition:</b> mn_interrupts_lock.cpp:27</div></div>
 <div class="ttc" id="amn__system__lock_8hpp_html"><div class="ttname"><a href="mn__system__lock_8hpp.html">mn_system_lock.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_lock_exptions.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

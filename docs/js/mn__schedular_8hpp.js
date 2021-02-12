@@ -1,5 +1,5 @@
 var mn__schedular_8hpp =
 [
-    [ "basic_schedular", "classbasic__schedular.html", "classbasic__schedular" ],
-    [ "mnschedular", "mn__schedular_8hpp.html#a22bfca1f3eb10103877c9188eda3445b", null ]
+    [ "basic_schedular", "classmn_1_1basic__schedular.html", "classmn_1_1basic__schedular" ],
+    [ "schedular", "mn__schedular_8hpp.html#a499a72f06682c1535f99472d14525fca", null ]
 ];

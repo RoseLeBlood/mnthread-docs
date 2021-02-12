@@ -106,22 +106,27 @@ $(document).ready(function(){initNavTree('mn__system__lock_8hpp_source.html','')
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_lock.hpp&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_i_system_lock_object.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_system_lock_object.html">ISystemLockObject</a> : <span class="keyword">public</span> <a class="code" href="class_i_lock_object.html">ILockObject</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_i_system_lock_object.html#a0e19aace71ea7a4ef4cf3a2e549bc67f">   41</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_i_system_lock_object.html#a0e19aace71ea7a4ef4cf3a2e549bc67f">time_lock</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timespec *timeout) { </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_i_lock_object.html#aa0ea8c3572be245b28681a96be10d8f6">lock</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_i_system_lock_object.html#ac80a11699a8b83fd29bd8c0c9d7d7b1f">   49</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_i_system_lock_object.html#ac80a11699a8b83fd29bd8c0c9d7d7b1f">is_initialized</a>() { </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_i_lock_object_html"><div class="ttname"><a href="class_i_lock_object.html">ILockObject</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:34</div></div>
-<div class="ttc" id="aclass_i_lock_object_html_aa0ea8c3572be245b28681a96be10d8f6"><div class="ttname"><a href="class_i_lock_object.html#aa0ea8c3572be245b28681a96be10d8f6">ILockObject::lock</a></div><div class="ttdeci">virtual int lock(unsigned int timeout=0)=0</div></div>
-<div class="ttc" id="aclass_i_system_lock_object_html"><div class="ttname"><a href="class_i_system_lock_object.html">ISystemLockObject</a></div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:35</div></div>
-<div class="ttc" id="aclass_i_system_lock_object_html_a0e19aace71ea7a4ef4cf3a2e549bc67f"><div class="ttname"><a href="class_i_system_lock_object.html#a0e19aace71ea7a4ef4cf3a2e549bc67f">ISystemLockObject::time_lock</a></div><div class="ttdeci">virtual int time_lock(const struct timespec *timeout)</div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:41</div></div>
-<div class="ttc" id="aclass_i_system_lock_object_html_ac80a11699a8b83fd29bd8c0c9d7d7b1f"><div class="ttname"><a href="class_i_system_lock_object.html#ac80a11699a8b83fd29bd8c0c9d7d7b1f">ISystemLockObject::is_initialized</a></div><div class="ttdeci">virtual bool is_initialized()</div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:49</div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">namespace </span>system {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmn_1_1system_1_1_i_system_lock_object.html">   37</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1system_1_1_i_system_lock_object.html">ISystemLockObject</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1_i_lock_object.html">::mn::ILockObject</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmn_1_1system_1_1_i_system_lock_object.html#a1fe3475eda7d1c747784ddb17dc2a2bf">   43</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1system_1_1_i_system_lock_object.html#a1fe3475eda7d1c747784ddb17dc2a2bf">time_lock</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timespec *timeout) { </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1_i_lock_object.html#a2c7d2be0b7e970761e559201200850b7">lock</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmn_1_1system_1_1_i_system_lock_object.html#aa9422e9df02c76d4faa8c34f36391e80">   51</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1system_1_1_i_system_lock_object.html#aa9422e9df02c76d4faa8c34f36391e80">is_initialized</a>() { </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1_i_lock_object_html"><div class="ttname"><a href="classmn_1_1_i_lock_object.html">mn::ILockObject</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:35</div></div>
+<div class="ttc" id="aclassmn_1_1_i_lock_object_html_a2c7d2be0b7e970761e559201200850b7"><div class="ttname"><a href="classmn_1_1_i_lock_object.html#a2c7d2be0b7e970761e559201200850b7">mn::ILockObject::lock</a></div><div class="ttdeci">virtual int lock(unsigned int timeout=0)=0</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1_i_system_lock_object_html"><div class="ttname"><a href="classmn_1_1system_1_1_i_system_lock_object.html">mn::system::ISystemLockObject</a></div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:37</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1_i_system_lock_object_html_a1fe3475eda7d1c747784ddb17dc2a2bf"><div class="ttname"><a href="classmn_1_1system_1_1_i_system_lock_object.html#a1fe3475eda7d1c747784ddb17dc2a2bf">mn::system::ISystemLockObject::time_lock</a></div><div class="ttdeci">virtual int time_lock(const struct timespec *timeout)</div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:43</div></div>
+<div class="ttc" id="aclassmn_1_1system_1_1_i_system_lock_object_html_aa9422e9df02c76d4faa8c34f36391e80"><div class="ttname"><a href="classmn_1_1system_1_1_i_system_lock_object.html#aa9422e9df02c76d4faa8c34f36391e80">mn::system::ISystemLockObject::is_initialized</a></div><div class="ttdeci">virtual bool is_initialized()</div><div class="ttdef"><b>Definition:</b> mn_system_lock.hpp:51</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_lock_exptions.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

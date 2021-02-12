@@ -1,12 +1,12 @@
 var mn__micros_8cpp =
 [
-    [ "get_ticks", "mn__micros_8cpp.html#afdf0a92b2d187681014a7ba7aa672451", null ],
-    [ "micros", "mn__micros_8cpp.html#af74f583a5fd5c67d9d8b4f347ab1143d", null ],
-    [ "millis", "mn__micros_8cpp.html#a6ff7f2532a22366f0013bc41397129fd", null ],
-    [ "ms_to_ticks", "mn__micros_8cpp.html#afe01282e038ec57df55905e1ecceff72", null ],
-    [ "seconds_to_ticks", "mn__micros_8cpp.html#a894568cb5a61a0b2e9902b900b4d159e", null ],
-    [ "ticks_to_ms", "mn__micros_8cpp.html#a2a3ed6286aa98d795df3035274ec9e58", null ],
-    [ "time_to_ms", "mn__micros_8cpp.html#a3ae16aa615f1922ff29cd4a0d15334ad", null ],
-    [ "time_to_ticks", "mn__micros_8cpp.html#a4dae981d2a2788aca9b0b5767f96d426", null ],
-    [ "microsMux", "mn__micros_8cpp.html#a2bd5b9348154dbb586c0c9c2a9fca07b", null ]
+    [ "get_ticks", "mn__micros_8cpp.html#af4e07264b352af7728c478fbcb2e49be", null ],
+    [ "micros", "mn__micros_8cpp.html#a50043c128b7670c28482d49ada88f06c", null ],
+    [ "millis", "mn__micros_8cpp.html#a048899eea73570573c5bd8f4f6378968", null ],
+    [ "ms_to_ticks", "mn__micros_8cpp.html#ac0770354a89312af3b28e3a5036b14ba", null ],
+    [ "seconds_to_ticks", "mn__micros_8cpp.html#a80365862e991c712aab3be7c91b155af", null ],
+    [ "ticks_to_ms", "mn__micros_8cpp.html#ac227921d269022e25fee05520453537e", null ],
+    [ "time_to_ms", "mn__micros_8cpp.html#a26a01fd356024ad240a32099673a63c6", null ],
+    [ "time_to_ticks", "mn__micros_8cpp.html#a9c8ba3d1300cdbf0ee08d30431cbaff4", null ],
+    [ "microsMux", "mn__micros_8cpp.html#afdbf5278c54a504b47de2ee4b6313e5a", null ]
 ];

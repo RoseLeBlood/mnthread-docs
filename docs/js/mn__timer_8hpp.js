@@ -1,5 +1,5 @@
 var mn__timer_8hpp =
 [
-    [ "basic_timer", "classbasic__timer.html", "classbasic__timer" ],
-    [ "mtimer_t", "mn__timer_8hpp.html#a567a0c8e494139b02f8978ad610ab3dd", null ]
+    [ "basic_timer", "classmn_1_1basic__timer.html", "classmn_1_1basic__timer" ],
+    [ "timer_t", "mn__timer_8hpp.html#a13026b228eff19d79c329dd60c935004", null ]
 ];

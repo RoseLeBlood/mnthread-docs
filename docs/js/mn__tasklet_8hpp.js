@@ -1,5 +1,5 @@
 var mn__tasklet_8hpp =
 [
-    [ "basic_tasklet", "classbasic__tasklet.html", "classbasic__tasklet" ],
-    [ "tasklet_t", "mn__tasklet_8hpp.html#a775e9f6a736ed5297af061e3714ddeae", null ]
+    [ "basic_tasklet", "classmn_1_1basic__tasklet.html", "classmn_1_1basic__tasklet" ],
+    [ "tasklet_t", "mn__tasklet_8hpp.html#ac2855883e34d334fa1569a1d9aec3368", null ]
 ];

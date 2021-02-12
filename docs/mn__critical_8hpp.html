@@ -81,13 +81,14 @@ $(document).ready(function(){initNavTree('mn__critical_8hpp.html',''); initResiz
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">mn_critical.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__error_8hpp_source.html">mn_error.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="include_2mn__error_8hpp_source.html">mn_error.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__micros_8hpp_source.html">mn_micros.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>&quot;</code><br />
 <code>#include &lt;freertos/FreeRTOS.h&gt;</code><br />
@@ -98,41 +99,48 @@ $(document).ready(function(){initNavTree('mn__critical_8hpp.html',''); initResiz
 </div>
 <p><a href="mn__critical_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemn_1_1system"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html">mn::system</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a63b5577a473dcd39f536f66e1c2719cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a63b5577a473dcd39f536f66e1c2719cd">CRITICAL_SECTION</a>(OBJECT)&#160;&#160;&#160;if( (bool)(auto_critical_t lock(OBJECT)) )</td></tr>
 <tr class="separator:a63b5577a473dcd39f536f66e1c2719cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab815d207b8ec9e2336b7c1e45f407aef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a>(OBJECT)&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#a442616c5268d3a04cbf73b31ef43476f">auto_critical_section_timedout_t</a> lock(OBJECT)) )</td></tr>
+<tr class="memitem:ab815d207b8ec9e2336b7c1e45f407aef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a>(OBJECT)&#160;&#160;&#160;if( (bool)(auto_critical_section_timedout_t lock(OBJECT)) )</td></tr>
 <tr class="separator:ab815d207b8ec9e2336b7c1e45f407aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ac6181e2b48fa72a6f9f39155c8e007"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a>(OBJECT)&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#afdaae7e1bb6e9a984e6c39422ffbf1bb">auto_critical_section_nested_t</a> lock(OBJECT)) )</td></tr>
+<tr class="memitem:a6ac6181e2b48fa72a6f9f39155c8e007"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a>(OBJECT)&#160;&#160;&#160;if( (bool)(auto_critical_section_nested_t lock(OBJECT)) )</td></tr>
 <tr class="separator:a6ac6181e2b48fa72a6f9f39155c8e007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74f9a5d105daac4e1f8593b42065299"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#ad74f9a5d105daac4e1f8593b42065299">INTERRUPTS_LOCK</a>(OBJECT)&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#a3d73f9eb626a5817e04524dc4d3ea88b">auto_interrupts_lock_t</a> lock(OBJECT)) )</td></tr>
+<tr class="memitem:ad74f9a5d105daac4e1f8593b42065299"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#ad74f9a5d105daac4e1f8593b42065299">INTERRUPTS_LOCK</a>(OBJECT)&#160;&#160;&#160;if( (bool)(auto_interrupts_lock_t lock(OBJECT)) )</td></tr>
 <tr class="separator:ad74f9a5d105daac4e1f8593b42065299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a656e99d4522c985dbe9cd848596c5fc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a656e99d4522c985dbe9cd848596c5fc1">SCHEDULAR_LOCK</a>(OBJECT)&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#a38e9727793540f02261b089e58c5fbf2">auto_schedular_lock_t</a> lock(OBJECT)) )</td></tr>
+<tr class="memitem:a656e99d4522c985dbe9cd848596c5fc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a656e99d4522c985dbe9cd848596c5fc1">SCHEDULAR_LOCK</a>(OBJECT)&#160;&#160;&#160;if( (bool)(auto_schedular_lock_t lock(OBJECT)) )</td></tr>
 <tr class="separator:a656e99d4522c985dbe9cd848596c5fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ae424d7b2161e1468e1a59104ff656f8a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#ae424d7b2161e1468e1a59104ff656f8a">critical_section_t</a> = <a class="el" href="classbasic__critical__section.html">basic_critical_section</a></td></tr>
-<tr class="separator:ae424d7b2161e1468e1a59104ff656f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa21377ca62b81f11e27d23a0051ca9ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#aa21377ca62b81f11e27d23a0051ca9ac">critical_section_timedout_t</a> = <a class="el" href="classbasic__critical__section__timedout.html">basic_critical_section_timedout</a></td></tr>
-<tr class="separator:aa21377ca62b81f11e27d23a0051ca9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af085f3d01a25f3696912764f38d6f0fb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#af085f3d01a25f3696912764f38d6f0fb">critical_section_nested_t</a> = <a class="el" href="classbasic__critical__section__nested.html">basic_critical_section_nested</a></td></tr>
-<tr class="separator:af085f3d01a25f3696912764f38d6f0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df6b2274ed7a2f0960ff6cac2942428"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a8df6b2274ed7a2f0960ff6cac2942428">interrupts_lock_t</a> = <a class="el" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></td></tr>
-<tr class="separator:a8df6b2274ed7a2f0960ff6cac2942428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c70dc72c14ef480c8ccb47e4535b6f6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a1c70dc72c14ef480c8ccb47e4535b6f6">schedular_lock_t</a> = <a class="el" href="classbasic__schedular__lock.html">basic_schedular_lock</a></td></tr>
-<tr class="separator:a1c70dc72c14ef480c8ccb47e4535b6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f683decfd21fa62795e89632975a652"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a5f683decfd21fa62795e89632975a652">auto_critical_section_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="classbasic__critical__section.html">basic_critical_section</a> &gt;</td></tr>
-<tr class="separator:a5f683decfd21fa62795e89632975a652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a442616c5268d3a04cbf73b31ef43476f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a442616c5268d3a04cbf73b31ef43476f">auto_critical_section_timedout_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__critical_8hpp.html#aa21377ca62b81f11e27d23a0051ca9ac">critical_section_timedout_t</a> &gt;</td></tr>
-<tr class="separator:a442616c5268d3a04cbf73b31ef43476f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdaae7e1bb6e9a984e6c39422ffbf1bb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#afdaae7e1bb6e9a984e6c39422ffbf1bb">auto_critical_section_nested_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__critical_8hpp.html#af085f3d01a25f3696912764f38d6f0fb">critical_section_nested_t</a> &gt;</td></tr>
-<tr class="separator:afdaae7e1bb6e9a984e6c39422ffbf1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d73f9eb626a5817e04524dc4d3ea88b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a3d73f9eb626a5817e04524dc4d3ea88b">auto_interrupts_lock_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__critical_8hpp.html#a8df6b2274ed7a2f0960ff6cac2942428">interrupts_lock_t</a> &gt;</td></tr>
-<tr class="separator:a3d73f9eb626a5817e04524dc4d3ea88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38e9727793540f02261b089e58c5fbf2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__critical_8hpp.html#a38e9727793540f02261b089e58c5fbf2">auto_schedular_lock_t</a> = <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt; <a class="el" href="mn__critical_8hpp.html#a1c70dc72c14ef480c8ccb47e4535b6f6">schedular_lock_t</a> &gt;</td></tr>
-<tr class="separator:a38e9727793540f02261b089e58c5fbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcce9497d305d4ea8f40282d6150f05d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#afcce9497d305d4ea8f40282d6150f05d">mn::system::critical_section_t</a> = basic_critical_section</td></tr>
+<tr class="separator:afcce9497d305d4ea8f40282d6150f05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14e2bb7b669e66bf92334a63fd7f96d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#ae14e2bb7b669e66bf92334a63fd7f96d">mn::system::critical_section_timedout_t</a> = basic_critical_section_timedout</td></tr>
+<tr class="separator:ae14e2bb7b669e66bf92334a63fd7f96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250ebb8b9957dcbfbc1ee046f0131c0a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#a250ebb8b9957dcbfbc1ee046f0131c0a">mn::system::critical_section_nested_t</a> = basic_critical_section_nested</td></tr>
+<tr class="separator:a250ebb8b9957dcbfbc1ee046f0131c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a6c1d9fba6b65eb8b392f701755f5f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#a85a6c1d9fba6b65eb8b392f701755f5f">mn::system::interrupts_lock_t</a> = basic_interrupts_lock</td></tr>
+<tr class="separator:a85a6c1d9fba6b65eb8b392f701755f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021b1ed53571340f991611a35591e932"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#a021b1ed53571340f991611a35591e932">mn::system::schedular_lock_t</a> = basic_schedular_lock</td></tr>
+<tr class="separator:a021b1ed53571340f991611a35591e932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8081dafbc0236c46b5a96d48911ed2b3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#a8081dafbc0236c46b5a96d48911ed2b3">mn::system::auto_critical_section_t</a> = basic_autolock&lt; basic_critical_section &gt;</td></tr>
+<tr class="separator:a8081dafbc0236c46b5a96d48911ed2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0aa6064e19cd638af00b077d7e0899"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#a5d0aa6064e19cd638af00b077d7e0899">mn::system::auto_critical_section_timedout_t</a> = basic_autolock&lt; critical_section_timedout_t &gt;</td></tr>
+<tr class="separator:a5d0aa6064e19cd638af00b077d7e0899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2176747a90405e868ad731ea48e8eed9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#a2176747a90405e868ad731ea48e8eed9">mn::system::auto_critical_section_nested_t</a> = basic_autolock&lt; critical_section_nested_t &gt;</td></tr>
+<tr class="separator:a2176747a90405e868ad731ea48e8eed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09231cddc862a60c56dda2df5175294"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#ad09231cddc862a60c56dda2df5175294">mn::system::auto_interrupts_lock_t</a> = basic_autolock&lt; interrupts_lock_t &gt;</td></tr>
+<tr class="separator:ad09231cddc862a60c56dda2df5175294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e1f856a413ce77a8e9ee7247aac4b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1system.html#a34e1f856a413ce77a8e9ee7247aac4b7">mn::system::auto_schedular_lock_t</a> = basic_autolock&lt; schedular_lock_t &gt;</td></tr>
+<tr class="separator:a34e1f856a413ce77a8e9ee7247aac4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a63b5577a473dcd39f536f66e1c2719cd"></a>
@@ -151,14 +159,14 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
-<div class="line"> <a class="code" href="classbasic__critical__section.html">critical_section_t</a> critical_section;</div>
+<div class="line"> <a class="code" href="namespacemn_1_1system.html#afcce9497d305d4ea8f40282d6150f05d">critical_section_t</a> critical_section;</div>
 <div class="line"> <a class="code" href="mn__critical_8hpp.html#a63b5577a473dcd39f536f66e1c2719cd">CRITICAL_SECTION</a>(critical_section) {</div>
 <div class="line">     <span class="comment">// locked section code goes hier</span></div>
 <div class="line"> }</div>
 <div class="line"> <span class="comment">// unlocked section  code goes hier</span></div>
 <div class="line">} </div>
-<div class="ttc" id="aclassbasic__critical__section_html"><div class="ttname"><a href="classbasic__critical__section.html">basic_critical_section</a></div><div class="ttdef"><b>Definition:</b> mn_criticalsection.hpp:31</div></div>
-<div class="ttc" id="amn__critical_8hpp_html_a63b5577a473dcd39f536f66e1c2719cd"><div class="ttname"><a href="mn__critical_8hpp.html#a63b5577a473dcd39f536f66e1c2719cd">CRITICAL_SECTION</a></div><div class="ttdeci">#define CRITICAL_SECTION(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:43</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_a63b5577a473dcd39f536f66e1c2719cd"><div class="ttname"><a href="mn__critical_8hpp.html#a63b5577a473dcd39f536f66e1c2719cd">CRITICAL_SECTION</a></div><div class="ttdeci">#define CRITICAL_SECTION(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:46</div></div>
+<div class="ttc" id="anamespacemn_1_1system_html_afcce9497d305d4ea8f40282d6150f05d"><div class="ttname"><a href="namespacemn_1_1system.html#afcce9497d305d4ea8f40282d6150f05d">mn::system::critical_section_t</a></div><div class="ttdeci">basic_critical_section critical_section_t</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:101</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -173,19 +181,19 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">OBJECT</td><td>)</td>
-          <td>&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#afdaae7e1bb6e9a984e6c39422ffbf1bb">auto_critical_section_nested_t</a> lock(OBJECT)) )</td>
+          <td>&#160;&#160;&#160;if( (bool)(auto_critical_section_nested_t lock(OBJECT)) )</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
-<div class="line"> <a class="code" href="classbasic__critical__section__nested.html">critical_section_nested_t</a> critical_section;</div>
+<div class="line"> <a class="code" href="namespacemn_1_1system.html#a250ebb8b9957dcbfbc1ee046f0131c0a">critical_section_nested_t</a> critical_section;</div>
 <div class="line"> <a class="code" href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a>(critical_section) {</div>
 <div class="line">     <span class="comment">// locked section code goes hier</span></div>
 <div class="line"> }</div>
 <div class="line"> <span class="comment">// unlocked section  code goes hier</span></div>
 <div class="line">} </div>
-<div class="ttc" id="aclassbasic__critical__section__nested_html"><div class="ttname"><a href="classbasic__critical__section__nested.html">basic_critical_section_nested</a></div><div class="ttdef"><b>Definition:</b> mn_criticalsection.hpp:98</div></div>
-<div class="ttc" id="amn__critical_8hpp_html_a6ac6181e2b48fa72a6f9f39155c8e007"><div class="ttname"><a href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a></div><div class="ttdeci">#define CRITICAL_SECTION_NESTED(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:68</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_a6ac6181e2b48fa72a6f9f39155c8e007"><div class="ttname"><a href="mn__critical_8hpp.html#a6ac6181e2b48fa72a6f9f39155c8e007">CRITICAL_SECTION_NESTED</a></div><div class="ttdeci">#define CRITICAL_SECTION_NESTED(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:71</div></div>
+<div class="ttc" id="anamespacemn_1_1system_html_a250ebb8b9957dcbfbc1ee046f0131c0a"><div class="ttname"><a href="namespacemn_1_1system.html#a250ebb8b9957dcbfbc1ee046f0131c0a">mn::system::critical_section_nested_t</a></div><div class="ttdeci">basic_critical_section_nested critical_section_nested_t</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:105</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -200,19 +208,19 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">OBJECT</td><td>)</td>
-          <td>&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#a442616c5268d3a04cbf73b31ef43476f">auto_critical_section_timedout_t</a> lock(OBJECT)) )</td>
+          <td>&#160;&#160;&#160;if( (bool)(auto_critical_section_timedout_t lock(OBJECT)) )</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
-<div class="line"> <a class="code" href="classbasic__critical__section__timedout.html">critical_section_timedout_t</a> critical_section;</div>
+<div class="line"> <a class="code" href="namespacemn_1_1system.html#ae14e2bb7b669e66bf92334a63fd7f96d">critical_section_timedout_t</a> critical_section;</div>
 <div class="line"> <a class="code" href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a>(critical_section) {</div>
 <div class="line">     <span class="comment">// locked section code goes hier</span></div>
 <div class="line"> }</div>
 <div class="line"> <span class="comment">// unlocked section  code goes hier</span></div>
 <div class="line">} </div>
-<div class="ttc" id="aclassbasic__critical__section__timedout_html"><div class="ttname"><a href="classbasic__critical__section__timedout.html">basic_critical_section_timedout</a></div><div class="ttdef"><b>Definition:</b> mn_criticalsection.hpp:58</div></div>
-<div class="ttc" id="amn__critical_8hpp_html_ab815d207b8ec9e2336b7c1e45f407aef"><div class="ttname"><a href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a></div><div class="ttdeci">#define CRITICAL_SECTION_TIMEDOUT(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:56</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_ab815d207b8ec9e2336b7c1e45f407aef"><div class="ttname"><a href="mn__critical_8hpp.html#ab815d207b8ec9e2336b7c1e45f407aef">CRITICAL_SECTION_TIMEDOUT</a></div><div class="ttdeci">#define CRITICAL_SECTION_TIMEDOUT(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:59</div></div>
+<div class="ttc" id="anamespacemn_1_1system_html_ae14e2bb7b669e66bf92334a63fd7f96d"><div class="ttname"><a href="namespacemn_1_1system.html#ae14e2bb7b669e66bf92334a63fd7f96d">mn::system::critical_section_timedout_t</a></div><div class="ttdeci">basic_critical_section_timedout critical_section_timedout_t</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:103</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -227,19 +235,19 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">OBJECT</td><td>)</td>
-          <td>&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#a3d73f9eb626a5817e04524dc4d3ea88b">auto_interrupts_lock_t</a> lock(OBJECT)) )</td>
+          <td>&#160;&#160;&#160;if( (bool)(auto_interrupts_lock_t lock(OBJECT)) )</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
-<div class="line"> <a class="code" href="classbasic__interrupts__lock.html">interrupts_lock_t</a> interrupts_lock;</div>
+<div class="line"> <a class="code" href="namespacemn_1_1system.html#a85a6c1d9fba6b65eb8b392f701755f5f">interrupts_lock_t</a> interrupts_lock;</div>
 <div class="line"> <a class="code" href="mn__critical_8hpp.html#ad74f9a5d105daac4e1f8593b42065299">INTERRUPTS_LOCK</a>(interrupts_lock) {</div>
 <div class="line">     <span class="comment">// locked section code goes hier</span></div>
 <div class="line"> }</div>
 <div class="line"> <span class="comment">// unlocked section  code goes hier</span></div>
 <div class="line">} </div>
-<div class="ttc" id="aclassbasic__interrupts__lock_html"><div class="ttname"><a href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></div><div class="ttdef"><b>Definition:</b> mn_interrupts_lock.hpp:27</div></div>
-<div class="ttc" id="amn__critical_8hpp_html_ad74f9a5d105daac4e1f8593b42065299"><div class="ttname"><a href="mn__critical_8hpp.html#ad74f9a5d105daac4e1f8593b42065299">INTERRUPTS_LOCK</a></div><div class="ttdeci">#define INTERRUPTS_LOCK(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:82</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_ad74f9a5d105daac4e1f8593b42065299"><div class="ttname"><a href="mn__critical_8hpp.html#ad74f9a5d105daac4e1f8593b42065299">INTERRUPTS_LOCK</a></div><div class="ttdeci">#define INTERRUPTS_LOCK(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:85</div></div>
+<div class="ttc" id="anamespacemn_1_1system_html_a85a6c1d9fba6b65eb8b392f701755f5f"><div class="ttname"><a href="namespacemn_1_1system.html#a85a6c1d9fba6b65eb8b392f701755f5f">mn::system::interrupts_lock_t</a></div><div class="ttdeci">basic_interrupts_lock interrupts_lock_t</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:108</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -254,171 +262,20 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">OBJECT</td><td>)</td>
-          <td>&#160;&#160;&#160;if( (bool)(<a class="el" href="mn__critical_8hpp.html#a38e9727793540f02261b089e58c5fbf2">auto_schedular_lock_t</a> lock(OBJECT)) )</td>
+          <td>&#160;&#160;&#160;if( (bool)(auto_schedular_lock_t lock(OBJECT)) )</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>() {</div>
-<div class="line"> <a class="code" href="classbasic__schedular__lock.html">schedular_lock_t</a> schedlock;</div>
+<div class="line"> <a class="code" href="namespacemn_1_1system.html#a021b1ed53571340f991611a35591e932">schedular_lock_t</a> schedlock;</div>
 <div class="line"> <a class="code" href="mn__critical_8hpp.html#a656e99d4522c985dbe9cd848596c5fc1">SCHEDULAR_LOCK</a>(schedlock) {</div>
 <div class="line">     <span class="comment">// locked section code goes hier</span></div>
 <div class="line"> }</div>
 <div class="line"> <span class="comment">// unlocked section  code goes hier</span></div>
 <div class="line">} </div>
-<div class="ttc" id="aclassbasic__schedular__lock_html"><div class="ttname"><a href="classbasic__schedular__lock.html">basic_schedular_lock</a></div><div class="ttdef"><b>Definition:</b> mn_schedular_lock.hpp:54</div></div>
-<div class="ttc" id="amn__critical_8hpp_html_a656e99d4522c985dbe9cd848596c5fc1"><div class="ttname"><a href="mn__critical_8hpp.html#a656e99d4522c985dbe9cd848596c5fc1">SCHEDULAR_LOCK</a></div><div class="ttdeci">#define SCHEDULAR_LOCK(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:95</div></div>
+<div class="ttc" id="amn__critical_8hpp_html_a656e99d4522c985dbe9cd848596c5fc1"><div class="ttname"><a href="mn__critical_8hpp.html#a656e99d4522c985dbe9cd848596c5fc1">SCHEDULAR_LOCK</a></div><div class="ttdeci">#define SCHEDULAR_LOCK(OBJECT)</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:98</div></div>
+<div class="ttc" id="anamespacemn_1_1system_html_a021b1ed53571340f991611a35591e932"><div class="ttname"><a href="namespacemn_1_1system.html#a021b1ed53571340f991611a35591e932">mn::system::schedular_lock_t</a></div><div class="ttdeci">basic_schedular_lock schedular_lock_t</div><div class="ttdef"><b>Definition:</b> mn_critical.hpp:111</div></div>
 </div><!-- fragment --> 
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="afdaae7e1bb6e9a984e6c39422ffbf1bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdaae7e1bb6e9a984e6c39422ffbf1bb">&#9670;&nbsp;</a></span>auto_critical_section_nested_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#afdaae7e1bb6e9a984e6c39422ffbf1bb">auto_critical_section_nested_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__critical_8hpp.html#af085f3d01a25f3696912764f38d6f0fb">critical_section_nested_t</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A autolock guard type for critical_section_nested_t objects </p>
-
-</div>
-</div>
-<a id="a5f683decfd21fa62795e89632975a652"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f683decfd21fa62795e89632975a652">&#9670;&nbsp;</a></span>auto_critical_section_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a5f683decfd21fa62795e89632975a652">auto_critical_section_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="classbasic__critical__section.html">basic_critical_section</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A autolock guard type for basic_critical_lock objects </p>
-
-</div>
-</div>
-<a id="a442616c5268d3a04cbf73b31ef43476f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a442616c5268d3a04cbf73b31ef43476f">&#9670;&nbsp;</a></span>auto_critical_section_timedout_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a442616c5268d3a04cbf73b31ef43476f">auto_critical_section_timedout_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__critical_8hpp.html#aa21377ca62b81f11e27d23a0051ca9ac">critical_section_timedout_t</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A autolock guard type for critical_section_timedout_t objects </p>
-
-</div>
-</div>
-<a id="a3d73f9eb626a5817e04524dc4d3ea88b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d73f9eb626a5817e04524dc4d3ea88b">&#9670;&nbsp;</a></span>auto_interrupts_lock_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a3d73f9eb626a5817e04524dc4d3ea88b">auto_interrupts_lock_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__critical_8hpp.html#a8df6b2274ed7a2f0960ff6cac2942428">interrupts_lock_t</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A autolock guard type for interrupts_lock_t objects </p>
-
-</div>
-</div>
-<a id="a38e9727793540f02261b089e58c5fbf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38e9727793540f02261b089e58c5fbf2">&#9670;&nbsp;</a></span>auto_schedular_lock_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a38e9727793540f02261b089e58c5fbf2">auto_schedular_lock_t</a> =  <a class="el" href="classbasic__autolock.html">basic_autolock</a>&lt;<a class="el" href="mn__critical_8hpp.html#a1c70dc72c14ef480c8ccb47e4535b6f6">schedular_lock_t</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>A autolock guard type for schedular_lock_t objects </p>
-
-</div>
-</div>
-<a id="af085f3d01a25f3696912764f38d6f0fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af085f3d01a25f3696912764f38d6f0fb">&#9670;&nbsp;</a></span>critical_section_nested_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#af085f3d01a25f3696912764f38d6f0fb">critical_section_nested_t</a> =  <a class="el" href="classbasic__critical__section__nested.html">basic_critical_section_nested</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>using for the <a class="el" href="classbasic__critical__section__nested.html">basic_critical_section_nested</a> class, for miniTask type design </p>
-
-</div>
-</div>
-<a id="ae424d7b2161e1468e1a59104ff656f8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae424d7b2161e1468e1a59104ff656f8a">&#9670;&nbsp;</a></span>critical_section_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#ae424d7b2161e1468e1a59104ff656f8a">critical_section_t</a> =  <a class="el" href="classbasic__critical__section.html">basic_critical_section</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>using for the <a class="el" href="classbasic__critical__section.html">basic_critical_section</a> class, for miniTask type design </p>
-
-</div>
-</div>
-<a id="aa21377ca62b81f11e27d23a0051ca9ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa21377ca62b81f11e27d23a0051ca9ac">&#9670;&nbsp;</a></span>critical_section_timedout_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#aa21377ca62b81f11e27d23a0051ca9ac">critical_section_timedout_t</a> =  <a class="el" href="classbasic__critical__section__timedout.html">basic_critical_section_timedout</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>using for the <a class="el" href="classbasic__critical__section__timedout.html">basic_critical_section_timedout</a> class, for miniTask type design </p>
-
-</div>
-</div>
-<a id="a8df6b2274ed7a2f0960ff6cac2942428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8df6b2274ed7a2f0960ff6cac2942428">&#9670;&nbsp;</a></span>interrupts_lock_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a8df6b2274ed7a2f0960ff6cac2942428">interrupts_lock_t</a> =  <a class="el" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>using for the <a class="el" href="classbasic__interrupts__lock.html">basic_interrupts_lock</a> class, for miniTask type design </p>
-
-</div>
-</div>
-<a id="a1c70dc72c14ef480c8ccb47e4535b6f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c70dc72c14ef480c8ccb47e4535b6f6">&#9670;&nbsp;</a></span>schedular_lock_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="mn__critical_8hpp.html#a1c70dc72c14ef480c8ccb47e4535b6f6">schedular_lock_t</a> =  <a class="el" href="classbasic__schedular__lock.html">basic_schedular_lock</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>using for the <a class="el" href="classbasic__schedular__lock.html">basic_schedular_lock</a> class, for miniTask type design </p>
-
 </div>
 </div>
 </div><!-- contents -->
