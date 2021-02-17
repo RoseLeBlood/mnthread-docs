@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af3ad62cbde2f1f98df38d152e06cc23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50745feeccae809e2c8b65af41e80ebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#a50745feeccae809e2c8b65af41e80ebe">free</a> (<a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#a1128f095a59e57d96376031c36637783">pointer</a> mem, unsigned int xTime)</td></tr>
 <tr class="separator:a50745feeccae809e2c8b65af41e80ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a0d3aa238e6dd190f9661971065764"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#ae6a0d3aa238e6dd190f9661971065764">add_memory</a> (TType **address, size_t sSizeOf)</td></tr>
-<tr class="separator:ae6a0d3aa238e6dd190f9661971065764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76011864d6ea7f091b9b3da8e57388af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#a76011864d6ea7f091b9b3da8e57388af">add_memory</a> (<a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#a1128f095a59e57d96376031c36637783">pointer</a> address, size_t sSizeOf)</td></tr>
+<tr class="separator:a76011864d6ea7f091b9b3da8e57388af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa56562cd66d9789259588d94cb2c009"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#aaa56562cd66d9789259588d94cb2c009">add_memory</a> (size_t nElements)</td></tr>
 <tr class="separator:aaa56562cd66d9789259588d94cb2c009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64ce8e1c553a981da45a2694079bd85f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#a64ce8e1c553a981da45a2694079bd85f">get_free</a> ()</td></tr>
@@ -246,8 +246,46 @@ template&lt;typename T , class TMEMPOOL &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a76011864d6ea7f091b9b3da8e57388af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76011864d6ea7f091b9b3da8e57388af">&#9670;&nbsp;</a></span>add_memory() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TMEMPOOL &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html">mn::memory::basic_allocator_mempool</a>&lt; T, TMEMPOOL &gt;::add_memory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#a1128f095a59e57d96376031c36637783">pointer</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>sSizeOf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaa56562cd66d9789259588d94cb2c009"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa56562cd66d9789259588d94cb2c009">&#9670;&nbsp;</a></span>add_memory() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa56562cd66d9789259588d94cb2c009">&#9670;&nbsp;</a></span>add_memory() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,44 +301,6 @@ template&lt;typename T , class TMEMPOOL &gt; </div>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>nElements</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae6a0d3aa238e6dd190f9661971065764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6a0d3aa238e6dd190f9661971065764">&#9670;&nbsp;</a></span>add_memory() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , class TMEMPOOL &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html">mn::memory::basic_allocator_mempool</a>&lt; T, TMEMPOOL &gt;::add_memory </td>
-          <td>(</td>
-          <td class="paramtype">TType **&#160;</td>
-          <td class="paramname"><em>address</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sSizeOf</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -580,7 +580,7 @@ template&lt;typename T , class TMEMPOOL &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html">mn::memory::basic_allocator_mempool</a>&lt; T, TMEMPOOL &gt;::is_empty </td>
+          <td class="memname">bool <a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html">mn::memory::basic_allocator_mempool</a>&lt; T, TMEMPOOL &gt;::<a class="el" href="structmn_1_1is__empty.html">is_empty</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

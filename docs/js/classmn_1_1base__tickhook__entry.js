@@ -10,6 +10,7 @@ var classmn_1_1base__tickhook__entry =
     [ "set_ticks", "classmn_1_1base__tickhook__entry.html#a773a3543d94a4d3a71ac6f8f44365a51", null ],
     [ "start", "classmn_1_1base__tickhook__entry.html#a8bf5672e7bb3f75948338eb4757a86e2", null ],
     [ "stop", "classmn_1_1base__tickhook__entry.html#a086ec18555037103fbf3652131709def", null ],
+    [ "base_tickhook", "classmn_1_1base__tickhook__entry.html#ac62baeaa3c3d6614a5d7cfc1873cb9d5", null ],
     [ "m_bOneShoted", "classmn_1_1base__tickhook__entry.html#a07e5f2c655315ab6d0185af4bae20a21", null ],
     [ "m_bReady", "classmn_1_1base__tickhook__entry.html#a1d94da58559f6683df792b90f19760c9", null ],
     [ "m_iTicksToCall", "classmn_1_1base__tickhook__entry.html#adda72514c55bb9cfa8f921cb1e6f771d", null ],

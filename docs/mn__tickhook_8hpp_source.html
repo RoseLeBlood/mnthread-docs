@@ -138,26 +138,28 @@ $(document).ready(function(){initNavTree('mn__tickhook_8hpp_source.html',''); in
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">void</span> reset();</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> onApplicationTickHook();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordtype">void</span> swap();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mutex_t</a> m_mutexAdd;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="namespacemn_1_1queue.html#a1c14458920001de37575eb7c99b28e98">queue_t</a> m_listHooks, m_listToAdd;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_iCurrent;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    };</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">using</span> tickhook_t = base_tickhook;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// #if ( configUSE_TICK_HOOK == 1 )</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;#endif <span class="comment">//  MINLIB_ESP32_TICK_HOOK_</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">void</span> onApplicationTickHook();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">swap</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mutex_t</a> m_mutexAdd;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="namespacemn_1_1queue.html#a1c14458920001de37575eb7c99b28e98">queue::queue_t</a> m_listHooks, m_listToAdd;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_iCurrent;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    };</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">using</span> tickhook_t = base_tickhook;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// #if ( configUSE_TICK_HOOK == 1 )</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;#endif <span class="comment">//  MINLIB_ESP32_TICK_HOOK_</span></div>
 <div class="ttc" id="amn__queue_8hpp_html"><div class="ttname"><a href="mn__queue_8hpp.html">mn_queue.hpp</a></div></div>
 <div class="ttc" id="amn__task_8hpp_html"><div class="ttname"><a href="mn__task_8hpp.html">mn_task.hpp</a></div></div>
 <div class="ttc" id="amn__tickhook__entry_8hpp_html"><div class="ttname"><a href="mn__tickhook__entry_8hpp.html">mn_tickhook_entry.hpp</a></div></div>
 <div class="ttc" id="anamespacemn_1_1queue_html_a1c14458920001de37575eb7c99b28e98"><div class="ttname"><a href="namespacemn_1_1queue.html#a1c14458920001de37575eb7c99b28e98">mn::queue::queue_t</a></div><div class="ttdeci">basic_queue queue_t</div><div class="ttdef"><b>Definition:</b> mn_queue.hpp:142</div></div>
 <div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_lock_exptions.hpp:26</div></div>
 <div class="ttc" id="anamespacemn_html_a1f9940b60c6e47624e749e63e13e4a41"><div class="ttname"><a href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mn::mutex_t</a></div><div class="ttdeci">basic_mutex mutex_t</div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:71</div></div>
+<div class="ttc" id="anamespacemn_html_a83841949e9c46378f0f533a3a6605bff"><div class="ttname"><a href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a></div><div class="ttdeci">void swap(TAssignable &amp;a, TAssignable &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:228</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

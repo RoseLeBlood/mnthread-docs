@@ -84,7 +84,8 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp.html',''); initResiz
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_autolock.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -108,6 +109,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a72723ba1e4a85ca14f25c2b9e066613d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a72723ba1e4a85ca14f25c2b9e066613d">portMAX_DELAY</a>&#160;&#160;&#160;0xffffffffUL</td></tr>
+<tr class="separator:a72723ba1e4a85ca14f25c2b9e066613d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad63ba351ef42ff312a0f260b5638aad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#aad63ba351ef42ff312a0f260b5638aad">LOCKED_SECTION</a>(LOCK,  OBJECT)&#160;&#160;&#160;if( (basic_autolock&lt;LOCK&gt; lock(OBJECT)) )</td></tr>
 <tr class="separator:aad63ba351ef42ff312a0f260b5638aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -123,6 +126,18 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6e09b226c42d6d72e5e3f7cd518e89d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac31cad6a9d99e7654915635c2c4d8a1c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">mn::autolock_t</a> = basic_autolock&lt; LockType_t &gt;</td></tr>
 <tr class="separator:ac31cad6a9d99e7654915635c2c4d8a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a897578ea51b9d1f8bcbef7763677037b"><td class="memTemplParams" colspan="2">template&lt;class TLOCK  = LockType_t&gt; </td></tr>
+<tr class="memitem:a897578ea51b9d1f8bcbef7763677037b"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">mn::lock</a> (TLOCK &amp;m1, unsigned int timeout)</td></tr>
+<tr class="separator:a897578ea51b9d1f8bcbef7763677037b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9027964956f48b6728bd4dc49273bb55"><td class="memTemplParams" colspan="2">template&lt;class TLOCK  = LockType_t&gt; </td></tr>
+<tr class="memitem:a9027964956f48b6728bd4dc49273bb55"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9027964956f48b6728bd4dc49273bb55">mn::unlock</a> (TLOCK &amp;m1)</td></tr>
+<tr class="separator:a9027964956f48b6728bd4dc49273bb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92968146b371c174743a6ce190205687"><td class="memTemplParams" colspan="2">template&lt;class TLOCK  = LockType_t&gt; </td></tr>
+<tr class="memitem:a92968146b371c174743a6ce190205687"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a92968146b371c174743a6ce190205687">mn::try_lock</a> (TLOCK &amp;m1)</td></tr>
+<tr class="separator:a92968146b371c174743a6ce190205687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aad63ba351ef42ff312a0f260b5638aad"></a>
@@ -147,6 +162,20 @@ Typedefs</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;if( (basic_autolock&lt;LOCK&gt; lock(OBJECT)) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72723ba1e4a85ca14f25c2b9e066613d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72723ba1e4a85ca14f25c2b9e066613d">&#9670;&nbsp;</a></span>portMAX_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define portMAX_DELAY&#160;&#160;&#160;0xffffffffUL</td>
         </tr>
       </table>
 </div><div class="memdoc">

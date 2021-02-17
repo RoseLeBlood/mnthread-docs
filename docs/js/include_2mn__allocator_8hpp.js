@@ -1,13 +1,9 @@
 var include_2mn__allocator_8hpp =
 [
-    [ "allocator_buffer_t", "include_2mn__allocator_8hpp.html#a80876ae57c3ef1280a5ec3c8bc5cb05e", null ],
-    [ "allocator_internal32_esp32_t", "include_2mn__allocator_8hpp.html#abfefec240a192933329ca4351e8d2d2d", null ],
-    [ "allocator_internal_dma_esp32_t", "include_2mn__allocator_8hpp.html#a3cab4a91d040888720eedc5c1301136f", null ],
-    [ "allocator_internal_esp32_t", "include_2mn__allocator_8hpp.html#a1256a996d63f2c1ce63b67453645e2c5", null ],
-    [ "allocator_psram32_esp32_t", "include_2mn__allocator_8hpp.html#a82f8bb722099ceea3b5b0b741c0bef73", null ],
-    [ "allocator_psram_dma_esp32_t", "include_2mn__allocator_8hpp.html#a4d64fdccc2232787765e726e2474f855", null ],
-    [ "allocator_psram_esp32_t", "include_2mn__allocator_8hpp.html#a7683e8e59d34aa2ee58818e768f1049e", null ],
-    [ "allocator_stack_t", "include_2mn__allocator_8hpp.html#ad5990051f140eed2b0b121b79805e19e", null ],
-    [ "default_allocator_t", "include_2mn__allocator_8hpp.html#a74de285949917d4ae900fa8768cc5911", null ],
-    [ "multiheap_allocator_esp32_t", "include_2mn__allocator_8hpp.html#a99c9a2a06d705b00734dcc1f7a4a76aa", null ]
+    [ "MN_TEMPLATE_USING_ONE", "include_2mn__allocator_8hpp.html#a59c82463663f4aeb2c2fdb3146fba7f0", null ],
+    [ "MN_TEMPLATE_USING_ONE", "include_2mn__allocator_8hpp.html#a1323f3fb2a058df8fedea7be46502f1b", null ],
+    [ "MN_TEMPLATE_USING_ONE", "include_2mn__allocator_8hpp.html#ad9844bb8f55bddb130422d8d92dc74b3", null ],
+    [ "MN_TEMPLATE_USING_TWO", "include_2mn__allocator_8hpp.html#a25cb75dd8b5302b8ad4ad86d49ab7836", null ],
+    [ "MN_TEMPLATE_USING_TWO", "include_2mn__allocator_8hpp.html#a73effbbf1df39114ede2a95b3fc1a6cb", null ],
+    [ "MN_TEMPLATE_USING_TWO", "include_2mn__allocator_8hpp.html#a88e9ac34d7a4e8a8b922b047902744d9", null ]
 ];

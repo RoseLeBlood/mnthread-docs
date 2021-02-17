@@ -82,12 +82,14 @@ $(document).ready(function(){initNavTree('include_2mn__allocator_8hpp.html','');
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">include/mn_allocator.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="include_2mn__allocator__system_8hpp_source.html">mn_allocator_system.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;freertos/FreeRTOS.h&quot;</code><br />
+<code>#include &quot;freertos/task.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="include_2mn__allocator__system_8hpp_source.html">mn_allocator_system.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="include_2mn__allocator__stack_8hpp_source.html">mn_allocator_stack.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="include_2mn__allocator__buffer_8hpp_source.html">mn_allocator_buffer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__allocator__caps_8hpp_source.html">mn_allocator_caps.hpp</a>&quot;</code><br />
@@ -102,38 +104,26 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacemn_1_1memory"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html">mn::memory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a1256a996d63f2c1ce63b67453645e2c5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a1256a996d63f2c1ce63b67453645e2c5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a1256a996d63f2c1ce63b67453645e2c5">mn::memory::allocator_internal_esp32_t</a> = basic_cap_allocator_esp32&lt; T, cap_allocator_map::Default, cap_allocator_size::Size8Bit &gt;</td></tr>
-<tr class="separator:a1256a996d63f2c1ce63b67453645e2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7683e8e59d34aa2ee58818e768f1049e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7683e8e59d34aa2ee58818e768f1049e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a7683e8e59d34aa2ee58818e768f1049e">mn::memory::allocator_psram_esp32_t</a> = basic_cap_allocator_esp32&lt; T, cap_allocator_map::SpiRam, cap_allocator_size::Size8Bit &gt;</td></tr>
-<tr class="separator:a7683e8e59d34aa2ee58818e768f1049e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfefec240a192933329ca4351e8d2d2d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:abfefec240a192933329ca4351e8d2d2d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#abfefec240a192933329ca4351e8d2d2d">mn::memory::allocator_internal32_esp32_t</a> = basic_cap_allocator_esp32&lt; T, cap_allocator_map::Default, cap_allocator_size::Size32Bit &gt;</td></tr>
-<tr class="separator:abfefec240a192933329ca4351e8d2d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f8bb722099ceea3b5b0b741c0bef73"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a82f8bb722099ceea3b5b0b741c0bef73"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a82f8bb722099ceea3b5b0b741c0bef73">mn::memory::allocator_psram32_esp32_t</a> = basic_cap_allocator_esp32&lt; T, cap_allocator_map::SpiRam, cap_allocator_size::Size32Bit &gt;</td></tr>
-<tr class="separator:a82f8bb722099ceea3b5b0b741c0bef73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cab4a91d040888720eedc5c1301136f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3cab4a91d040888720eedc5c1301136f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a3cab4a91d040888720eedc5c1301136f">mn::memory::allocator_internal_dma_esp32_t</a> = basic_cap_allocator_esp32&lt; T, cap_allocator_map::DMA, cap_allocator_size::Size32Bit &gt;</td></tr>
-<tr class="separator:a3cab4a91d040888720eedc5c1301136f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d64fdccc2232787765e726e2474f855"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4d64fdccc2232787765e726e2474f855"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a4d64fdccc2232787765e726e2474f855">mn::memory::allocator_psram_dma_esp32_t</a> = basic_cap_allocator_esp32&lt; T, cap_allocator_map::DMA, cap_allocator_size::Size32Bit &gt;</td></tr>
-<tr class="separator:a4d64fdccc2232787765e726e2474f855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74de285949917d4ae900fa8768cc5911"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a74de285949917d4ae900fa8768cc5911"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a74de285949917d4ae900fa8768cc5911">mn::memory::default_allocator_t</a> = <a class="el" href="classbasic__allocator__system.html">basic_allocator_system</a>&lt; T &gt;</td></tr>
-<tr class="separator:a74de285949917d4ae900fa8768cc5911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5990051f140eed2b0b121b79805e19e"><td class="memTemplParams" colspan="2">template&lt;typename T , int TBytes&gt; </td></tr>
-<tr class="memitem:ad5990051f140eed2b0b121b79805e19e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#ad5990051f140eed2b0b121b79805e19e">mn::memory::allocator_stack_t</a> = <a class="el" href="classbasic__allocator__stack.html">basic_allocator_stack</a>&lt; T, TBytes &gt;</td></tr>
-<tr class="separator:ad5990051f140eed2b0b121b79805e19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80876ae57c3ef1280a5ec3c8bc5cb05e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a80876ae57c3ef1280a5ec3c8bc5cb05e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a80876ae57c3ef1280a5ec3c8bc5cb05e">mn::memory::allocator_buffer_t</a> = <a class="el" href="classbasic__allocator__buffer.html">basic_allocator_buffer</a>&lt; T, <a class="el" href="test-ccc_2mn__allocator_8hpp.html#a7f281d5d5665d8fedbe6ae8985ddf087">default_allocator_t</a>&lt; T &gt; &gt;</td></tr>
-<tr class="separator:a80876ae57c3ef1280a5ec3c8bc5cb05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c9a2a06d705b00734dcc1f7a4a76aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a99c9a2a06d705b00734dcc1f7a4a76aa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a99c9a2a06d705b00734dcc1f7a4a76aa">mn::memory::multiheap_allocator_esp32_t</a> = basic_multiheap_allocator_esp32&lt; T, basic_cap_allocator_esp32&lt; T &gt; &gt;</td></tr>
-<tr class="separator:a99c9a2a06d705b00734dcc1f7a4a76aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1323f3fb2a058df8fedea7be46502f1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a1323f3fb2a058df8fedea7be46502f1b">mn::memory::MN_TEMPLATE_USING_ONE</a> (<a class="el" href="test-ccc_2mn__allocator_8hpp.html#a9dfe530c1372cddf1e87619f1ee0fde4">allocator_system_t</a>, <a class="el" href="classbasic__allocator__system.html">basic_allocator_system</a>, typename, T)</td></tr>
+<tr class="memdesc:a1323f3fb2a058df8fedea7be46502f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic allocator, use the basic alloc system from tde used libc.  <a href="namespacemn_1_1memory.html#a1323f3fb2a058df8fedea7be46502f1b">More...</a><br /></td></tr>
+<tr class="separator:a1323f3fb2a058df8fedea7be46502f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73effbbf1df39114ede2a95b3fc1a6cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a73effbbf1df39114ede2a95b3fc1a6cb">mn::memory::MN_TEMPLATE_USING_TWO</a> (allocator_system_ex_t, <a class="el" href="classbasic__allocator__system.html">basic_allocator_system</a>, typename, T, int, sMaxSize)</td></tr>
+<tr class="memdesc:a73effbbf1df39114ede2a95b3fc1a6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic allocator, use the basic alloc system from tde used libc.  <a href="namespacemn_1_1memory.html#a73effbbf1df39114ede2a95b3fc1a6cb">More...</a><br /></td></tr>
+<tr class="separator:a73effbbf1df39114ede2a95b3fc1a6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9844bb8f55bddb130422d8d92dc74b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#ad9844bb8f55bddb130422d8d92dc74b3">mn::memory::MN_TEMPLATE_USING_ONE</a> (<a class="el" href="test-ccc_2mn__allocator_8hpp.html#a7f281d5d5665d8fedbe6ae8985ddf087">default_allocator_t</a>, <a class="el" href="test-ccc_2mn__allocator_8hpp.html#a9dfe530c1372cddf1e87619f1ee0fde4">allocator_system_t</a>, typename, T)</td></tr>
+<tr class="memdesc:ad9844bb8f55bddb130422d8d92dc74b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the <a class="el" href="classmn_1_1memory_1_1basic__allocator__system.html">basic_allocator_system</a> as default allocator for this library.  <a href="namespacemn_1_1memory.html#ad9844bb8f55bddb130422d8d92dc74b3">More...</a><br /></td></tr>
+<tr class="separator:ad9844bb8f55bddb130422d8d92dc74b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e9ac34d7a4e8a8b922b047902744d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a88e9ac34d7a4e8a8b922b047902744d9">mn::memory::MN_TEMPLATE_USING_TWO</a> (default_allocator_ex_t, allocator_system_ex_t, typename, T, int, sMaxSize)</td></tr>
+<tr class="memdesc:a88e9ac34d7a4e8a8b922b047902744d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the <a class="el" href="classmn_1_1memory_1_1basic__allocator__system.html">basic_allocator_system</a> as default allocator for this library.  <a href="namespacemn_1_1memory.html#a88e9ac34d7a4e8a8b922b047902744d9">More...</a><br /></td></tr>
+<tr class="separator:a88e9ac34d7a4e8a8b922b047902744d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25cb75dd8b5302b8ad4ad86d49ab7836"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a25cb75dd8b5302b8ad4ad86d49ab7836">mn::memory::MN_TEMPLATE_USING_TWO</a> (<a class="el" href="test-ccc_2mn__allocator_8hpp.html#abca07d534ac33749861ff285b1236af1">allocator_stack_t</a>, <a class="el" href="classbasic__allocator__stack.html">basic_allocator_stack</a>, typename, T, int, TBUFFERSIZE)</td></tr>
+<tr class="memdesc:a25cb75dd8b5302b8ad4ad86d49ab7836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack based allocator.  <a href="namespacemn_1_1memory.html#a25cb75dd8b5302b8ad4ad86d49ab7836">More...</a><br /></td></tr>
+<tr class="separator:a25cb75dd8b5302b8ad4ad86d49ab7836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c82463663f4aeb2c2fdb3146fba7f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a59c82463663f4aeb2c2fdb3146fba7f0">mn::memory::MN_TEMPLATE_USING_ONE</a> (<a class="el" href="test-ccc_2mn__allocator_8hpp.html#a61de65d9992d4bf846c15a09c6aca2c0">allocator_buffer_t</a>, <a class="el" href="classbasic__allocator__buffer.html">basic_allocator_buffer</a>, typename, T)</td></tr>
+<tr class="memdesc:a59c82463663f4aeb2c2fdb3146fba7f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">buffer based allocator.  <a href="namespacemn_1_1memory.html#a59c82463663f4aeb2c2fdb3146fba7f0">More...</a><br /></td></tr>
+<tr class="separator:a59c82463663f4aeb2c2fdb3146fba7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

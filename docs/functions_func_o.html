@@ -141,12 +141,6 @@ $(document).ready(function(){initNavTree('functions_func_o.html',''); initResiza
 <li>onTick()
 : <a class="el" href="classmn_1_1base__tickhook__entry.html#ae40ffb8eea1ebe94169a8535ed7e9740">mn::base_tickhook_entry</a>
 </li>
-<li>operator basic_auto_ptr&lt; T1 &gt;()
-: <a class="el" href="classmn_1_1basic__auto__ptr.html#aeea37ff6f7962488bb66644a0fa19805">mn::basic_auto_ptr&lt; T &gt;</a>
-</li>
-<li>operator basic_auto_ptr_ref&lt; T1 &gt;()
-: <a class="el" href="classmn_1_1basic__auto__ptr.html#a11254134a13b3e3b50f569eeb44e24e4">mn::basic_auto_ptr&lt; T &gt;</a>
-</li>
 <li>operator bool()
 : <a class="el" href="classmn_1_1basic__autolock.html#abf350048be5437284bfe6b5e7fe1ae0a">mn::basic_autolock&lt; LOCK &gt;</a>
 , <a class="el" href="classmn_1_1basic__clock.html#a8e4d8a1ed3be7c18b10b4dced99f0c12">mn::basic_clock&lt; TLockType &gt;</a>
@@ -155,6 +149,9 @@ $(document).ready(function(){initNavTree('functions_func_o.html',''); initResiza
 , <a class="el" href="classmn_1_1esp32_1_1basic__esp32__timer.html#a864c317b32c7c5fda5bc3f5e09e53a36">mn::esp32::basic_esp32_timer</a>
 , <a class="el" href="classmn_1_1_i_timer.html#a2fa981605240914cffc4f3438fb67b0c">mn::ITimer</a>
 , <a class="el" href="classmn_1_1memory_1_1basic__allocator__mempool.html#a287d4b86eae0c414923a9db9dfc63962">mn::memory::basic_allocator_mempool&lt; T, TMEMPOOL &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html#a628d8ae83c68db843c5be9f95ea5a305">mn::pointer::basic_scoped_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a48f19da3e9b4b3fcc69e6f611f53b49e">mn::pointer::basic_shared_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#afc73440e02217fdd00022ddd157112d0">mn::pointer::basic_weak_ptr&lt; T &gt;</a>
 </li>
 <li>operator int()
 : <a class="el" href="classmn_1_1basic__task.html#a47d296cb588223e8e05b18b341330b29">mn::basic_task</a>
@@ -162,52 +159,82 @@ $(document).ready(function(){initNavTree('functions_func_o.html',''); initResiza
 <li>operator object_t()
 : <a class="el" href="classmn_1_1basic__shared__object.html#a3f2f8b923969533ddf72798bd03fb644">mn::basic_shared_object&lt; TOBJECT &gt;</a>
 </li>
-<li>operator xTaskHandle *()
-: <a class="el" href="classmn_1_1basic__task.html#a2117905867c847a307e5bb18cc6ac15b">mn::basic_task</a>
+<li>operator value_type()
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#ab61439a9cb6429da4de4029548d8ccb0">mn::basic_atomic_gcc&lt; T &gt;</a>
+</li>
+<li>operator xTaskHandle()
+: <a class="el" href="classmn_1_1basic__task.html#ad424d0aa1cdc4289f4b4b203daeba104">mn::basic_task</a>
 </li>
 <li>operator!=()
 : <a class="el" href="classmn_1_1basic__fbit.html#aa7c3f65b83595011bade3e9a70df3309">mn::basic_fbit</a>
 , <a class="el" href="classmn_1_1basic__semaphore.html#a44078ee23b3bd9c2caa67683e3d3617f">mn::basic_semaphore</a>
 , <a class="el" href="classmn_1_1basic__task.html#aa1885ed78aa887d1426c40723d99106b">mn::basic_task</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a5167cc76ce6d15397a13847c9cb0c85a">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
 , <a class="el" href="classmn_1_1fast__type.html#a87bb15a24d246ee4bfb3431116737431">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator&amp;()
 : <a class="el" href="classmn_1_1fast__type.html#a62e986a3c93270ee35abd38e5e52877e">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator&amp;=()
-: <a class="el" href="classmn_1_1fast__type.html#acd22e674ae0aca00966eefd66449e808">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#a3972d0c07d2c4066d5ff22abf5fda2cf">mn::basic_atomic_gcc&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#acd22e674ae0aca00966eefd66449e808">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator()()
-: <a class="el" href="structmn_1_1memory_1_1basic__mempool__delete.html#a672654c82cc87f040aa5225118a05eac">mn::memory::basic_mempool_delete&lt; T, TMEMPOOL &gt;</a>
+: <a class="el" href="structmn_1_1equal__to.html#af1496ea3e47024977dce2ba8709adcfc">mn::equal_to</a>
+, <a class="el" href="structmn_1_1greater.html#aff5b4045306108a42420780795189caf">mn::greater</a>
+, <a class="el" href="structmn_1_1less.html#a46fe1286beb056be3d253cd8e3d1e5d4">mn::less</a>
+, <a class="el" href="structmn_1_1memory_1_1basic__mempool__delete.html#a672654c82cc87f040aa5225118a05eac">mn::memory::basic_mempool_delete&lt; T, TMEMPOOL &gt;</a>
 , <a class="el" href="structmn_1_1memory_1_1default__delete.html#a0c4834376a5443097f9bfe1ac966fb40">mn::memory::default_delete&lt; T &gt;</a>
 </li>
 <li>operator*()
-: <a class="el" href="classmn_1_1basic__auto__ptr.html#ac3c594f3345e5f7428ef58d6ef20a81d">mn::basic_auto_ptr&lt; T &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a470dd9e6206ab620419ee0d1a22bc990">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
 , <a class="el" href="classmn_1_1fast__type.html#a58cc4e6036a8eecccf5c59489fc8247d">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html#a3ec49ae0c03d6dd60d1a3caf716e6a37">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#a9a54c9691da4128cd659bcb845ad73f9">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html#a0ab724397617863dbe9be4ac4b375aa0">mn::pointer::basic_save_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html#ac34fb60a81ad618b168285905df9d7b5">mn::pointer::basic_scoped_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a4d966200c7a176bce83f263da71a611c">mn::pointer::basic_shared_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#a026236ccbbfc6c54cf9669a02e847533">mn::pointer::basic_weak_ptr&lt; T &gt;</a>
 </li>
 <li>operator*=()
 : <a class="el" href="classmn_1_1fast__type.html#a4d3c92b5dcbc01614f6951b205282d20">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator+()
-: <a class="el" href="classmn_1_1fast__type.html#a1582a9e09a78cdf9114f3cbc5b889be5">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#ae7f708b595be174e12ab96409586f2be">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a1582a9e09a78cdf9114f3cbc5b889be5">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator++()
-: <a class="el" href="classmn_1_1fast__type.html#a60a2e781e1dc8cb0da68ab7e12fd61d9">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#a04b9a9636944ade33bc31d6d3940a661">mn::basic_atomic_gcc&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#aa6bf1b646fcbbccc3ed29afd5a2553bb">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a60a2e781e1dc8cb0da68ab7e12fd61d9">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator+=()
-: <a class="el" href="classmn_1_1fast__type.html#a3a858a2ccdc5d625d1d38529e5f0b06b">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#a4c2c7347d6ee72525735d7954a594e56">mn::basic_atomic_gcc&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a313da76a5f703e006cdf4a1b65f3ea26">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a3a858a2ccdc5d625d1d38529e5f0b06b">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator-()
-: <a class="el" href="classmn_1_1fast__type.html#a66ab1b50c75fb40e53890ee6153f365d">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a93918e99fdc19ea8c9676e5ab399b618">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a66ab1b50c75fb40e53890ee6153f365d">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator--()
-: <a class="el" href="classmn_1_1fast__type.html#a4371e7724be9d69924d0b74e1f715738">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#af5e241f72c152b56aec1aef4cdf9355e">mn::basic_atomic_gcc&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#aec919da9e3f439ecf6ab272a7815fdee">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a4371e7724be9d69924d0b74e1f715738">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator-=()
-: <a class="el" href="classmn_1_1fast__type.html#aa62509162fc0b93890d2b2a983dd656c">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#a43c52344531cf2d3ba8f70cd8a40fe7a">mn::basic_atomic_gcc&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#ae9eed5554be7b7eb59415c73f7d8ebf9">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#aa62509162fc0b93890d2b2a983dd656c">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator-&gt;()
-: <a class="el" href="classmn_1_1basic__auto__ptr.html#ad6e6f46c0cba440bb58a77ccedecfd0f">mn::basic_auto_ptr&lt; T &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#abfced43e78670dc8cdf9ec742a21eb75">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html#aa37989a074898d79de165ad8eecc069f">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#a98509cdf6a97f84ce50fd3fa7b4fda87">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html#a402722e76a8133b8463318e840632a63">mn::pointer::basic_save_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html#a33e2bf4979242272a519176b78f344ce">mn::pointer::basic_scoped_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ad79d7dd2fc021b15f439649696bc5c8a">mn::pointer::basic_shared_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#ae8fab75e3ad6bbbaf718031ea72a0b29">mn::pointer::basic_weak_ptr&lt; T &gt;</a>
 </li>
 <li>operator/()
 : <a class="el" href="classmn_1_1fast__type.html#a3d829cf02000533370ed3c4023e6c58a">mn::fast_type&lt; Bits, TBaseType &gt;</a>
@@ -218,6 +245,7 @@ $(document).ready(function(){initNavTree('functions_func_o.html',''); initResiza
 <li>operator&lt;()
 : <a class="el" href="classmn_1_1basic__semaphore.html#a58212880666e7466fd4c4aa8e3ce5652">mn::basic_semaphore</a>
 , <a class="el" href="classmn_1_1basic__task.html#a1d836f5e534f4bed122bf88dd53caf26">mn::basic_task</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a3a1bdd259fe2cf79a77d5421f740a4e8">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
 , <a class="el" href="classmn_1_1fast__type.html#a988125b6406575058a06bdc347eb44b5">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator&lt;&lt;()
@@ -227,40 +255,50 @@ $(document).ready(function(){initNavTree('functions_func_o.html',''); initResiza
 : <a class="el" href="classmn_1_1fast__type.html#a4f99b1b472a539872629cad115ee891d">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator&lt;=()
-: <a class="el" href="classmn_1_1fast__type.html#a2b2da7aca6bfe2f6c9bbd01f3088d0fd">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a7cb5a5b545e91fe74ca9dc0a29defa65">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a2b2da7aca6bfe2f6c9bbd01f3088d0fd">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator=()
 : <a class="el" href="classbasic__allocator__buffer.html#a562e00683ba56121176d527b8763a033">basic_allocator_buffer&lt; T, TALLOC &gt;</a>
 , <a class="el" href="classbasic__allocator__stack.html#afdc8a3422f7a3b62f2e9c849b15ded37">basic_allocator_stack&lt; T, TBytes &gt;</a>
 , <a class="el" href="classbasic__mempool__vector.html#a50f28e2d8638c82246a5591413c3a54b">basic_mempool_vector&lt; TType, nElements, TALLOCATOR &gt;</a>
-, <a class="el" href="classmn_1_1basic__auto__ptr.html#ad3cbaf124e2d35fe9e34478ebf6c5ab3">mn::basic_auto_ptr&lt; T &gt;</a>
-, <a class="el" href="classmn_1_1basic__auto__ptr__ref.html#aa3cdc468f5c66187c0d01058d7142cf0">mn::basic_auto_ptr_ref&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1basic__atomic__gcc.html#a47f7e91f6c24c95d3f04eb005e66f00d">mn::basic_atomic_gcc&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1basic__autolock.html#a234d20f653bf2c95440c06fcbbe2a833">mn::basic_autolock&lt; LOCK &gt;</a>
 , <a class="el" href="classmn_1_1basic__clock.html#acc354b217048ba233ba59f9f32896e6b">mn::basic_clock&lt; TLockType &gt;</a>
 , <a class="el" href="classmn_1_1basic__fbit.html#ad959d03d4bedaa7d4f78abc7d74768d5">mn::basic_fbit</a>
-, <a class="el" href="classmn_1_1basic__shared__object.html#a1bb01e20ccc66860c5b4bc72516c23c8">mn::basic_shared_object&lt; TOBJECT &gt;</a>
+, <a class="el" href="classmn_1_1basic__shared__object.html#a446c61be92c8dc66458d9fc185380a8f">mn::basic_shared_object&lt; TOBJECT &gt;</a>
+, <a class="el" href="classmn_1_1basic__singleton.html#a6fc47bd19606c6a14bc3fceeea1a20fb">mn::basic_singleton&lt; T, TLOCK &gt;</a>
 , <a class="el" href="classmn_1_1basic__task.html#a88c31d09010e3172e3b4989066a64f85">mn::basic_task</a>
+, <a class="el" href="classmn_1_1container_1_1basic__array.html#a353e54d0e444e76ec03b7902830f85e8">mn::container::basic_array&lt; T, N &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#ae4f29235b36278e4ab5a8ddfbce95405">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
 , <a class="el" href="classmn_1_1ext_1_1basic__message__task.html#a6b4787eb5b93a0c6f366e612c3ec4b77">mn::ext::basic_message_task</a>
-, <a class="el" href="classmn_1_1fast__type.html#a15e14204275b131ae703d035130e776c">mn::fast_type&lt; Bits, TBaseType &gt;</a>
-, <a class="el" href="classmn_1_1memory_1_1basic__allocator__buffer.html#a4743723eb17eea7bd25523944855b119">mn::memory::basic_allocator_buffer&lt; T, TALLOC &gt;</a>
-, <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html#a4b62dce1ef9f099eb6ecc2a1405d7440">mn::memory::basic_allocator_stack&lt; T, TBytes &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a6f53d40f909449fe2e476b6ba2e25ec6">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+, <a class="el" href="classmn_1_1memory_1_1basic__allocator__buffer.html#a506f571e86f07d7ee7d16e56039f7378">mn::memory::basic_allocator_buffer&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html#af5df541411bb5c92ebf4ecc21e62e71d">mn::memory::basic_allocator_stack&lt; T, TBUFFERSIZE &gt;</a>
 , <a class="el" href="classmn_1_1memory_1_1basic__mempool__vector.html#ad8539985375b1885057625f567bda6e6">mn::memory::basic_mempool_vector&lt; TType, nElements, TMUTEX, TALLOCATOR &gt;</a>
-, <a class="el" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#ac513f4bc8ef14c52399f2ae6042b999c">mn::memory::basic_multiheap_allocator_esp32&lt; T, TALLOC &gt;</a>
-, <a class="el" href="classnm_1_1basic__singleton.html#a82284d89ab96e91ca4c16a443c507052">nm::basic_singleton&lt; T, TLOCK &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html#a926de85f73c3eed1b70d0b0528a42368">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#a23ec8b6063818c3688f13d858d64eb6a">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html#afc15dbac063e1e046b7ae671ba9d7fb0">mn::pointer::basic_save_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a51f03004bbf78c3f10d2a073a3565386">mn::pointer::basic_shared_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#a1218fb9c994ad498782a2f62d8e31d83">mn::pointer::basic_weak_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1version.html#aa3249574bf028fe4e44aaaf7cdca3a68">mn::version</a>
 </li>
 <li>operator==()
 : <a class="el" href="classmn_1_1basic__fbit.html#add19c0579a8ac286ffd8c812f287e51c">mn::basic_fbit</a>
 , <a class="el" href="classmn_1_1basic__semaphore.html#a56e5092626eb4bee282c224d4c66af1a">mn::basic_semaphore</a>
 , <a class="el" href="classmn_1_1basic__task.html#af9c153208cd46a3018adc42992fd48ff">mn::basic_task</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#ad1a4ce7d0981783660fd11a712c81c82">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
 , <a class="el" href="classmn_1_1fast__type.html#aeda7fa46c27e52d1783b2c9e1a3e42cc">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator&gt;()
 : <a class="el" href="classmn_1_1basic__semaphore.html#a636aaa6adf93566a7c5921653cf7739f">mn::basic_semaphore</a>
 , <a class="el" href="classmn_1_1basic__task.html#ac84cba53773aeb34c3c8df1cb14e547e">mn::basic_task</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a5a2fd7b879bc2266e8fb5ef2f824e704">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
 , <a class="el" href="classmn_1_1fast__type.html#a8d04ebb6bf90b8e189a6e8c1a12bf17d">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator&gt;=()
-: <a class="el" href="classmn_1_1fast__type.html#acfaf01089bc4da451c072afd9e3bab47">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a25a0b1a21d76cc951d2adf1bbe7f1c22">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#acfaf01089bc4da451c072afd9e3bab47">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator&gt;&gt;()
 : <a class="el" href="classmn_1_1fast__type.html#aab57821c687e5803035df7a9357382c4">mn::fast_type&lt; Bits, TBaseType &gt;</a>
@@ -269,22 +307,32 @@ $(document).ready(function(){initNavTree('functions_func_o.html',''); initResiza
 : <a class="el" href="classmn_1_1fast__type.html#a4b6f2b8f912f4c7bf7b34b820b6dd95d">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classmn_1_1fast__type.html#a6933b7e7e07867dc69c9d34dec3c5a5f">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__array.html#acac9ada221737c949f008948530db676">mn::container::basic_array&lt; T, N &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a1bcba1daf9edbe1f4f0a03d75644de87">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a6933b7e7e07867dc69c9d34dec3c5a5f">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator^()
 : <a class="el" href="classmn_1_1fast__type.html#ac63680ab789463bf750c07f54938135f">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator^=()
-: <a class="el" href="classmn_1_1fast__type.html#a522622d528fc19a5a4373f6e10f2e01e">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#a67919895125817ce2e3f58d1e09fa7a5">mn::basic_atomic_gcc&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a522622d528fc19a5a4373f6e10f2e01e">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator|()
 : <a class="el" href="classmn_1_1fast__type.html#aaa027e0d286aff815e716e5d74ee68da">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator|=()
-: <a class="el" href="classmn_1_1fast__type.html#a23b0c0536534836eaf9e7d83dd75df68">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#a266bac564879a6d753eda088b39561e3">mn::basic_atomic_gcc&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1fast__type.html#a23b0c0536534836eaf9e7d83dd75df68">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator~()
 : <a class="el" href="classmn_1_1fast__type.html#ad1b0204a64327e8c3d5bbec6b7f7c89a">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+</li>
+<li>or_fetch()
+: <a class="el" href="classmn_1_1basic__atomic__gcc.html#ad576ee7778289bcd439c7cbaa381f4d0">mn::basic_atomic_gcc&lt; T &gt;</a>
+</li>
+<li>owner_before()
+: <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#a620b57e03c075c0f22032716b690429f">mn::pointer::basic_weak_ptr&lt; T &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

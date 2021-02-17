@@ -121,9 +121,9 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a6df179b3e42f60cf30e533d478573cec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2memory_2mn__basic__mempool_8hpp.html#a6df179b3e42f60cf30e533d478573cec">_MEMPOOL_CLASS_LOCK</a>(Mutex,  xTicksRemaining)&#160;&#160;&#160;if(Mutex.lock(xTicksRemaining) != <a class="el" href="test-ccc_2mn__error_8hpp.html#a258bb72419ef143530a2f8f55e7d57af">NO_ERROR</a>) break;</td></tr>
 <tr class="separator:a6df179b3e42f60cf30e533d478573cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0c83759bed3e65c8b2bd44c4214d922"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2memory_2mn__basic__mempool_8hpp.html#ab0c83759bed3e65c8b2bd44c4214d922">_MEMPOOL_CLASS_UNLOCK</a>(Mutex)&#160;&#160;&#160;Mutex-&gt;unlock();</td></tr>
+<tr class="memitem:ab0c83759bed3e65c8b2bd44c4214d922"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2memory_2mn__basic__mempool_8hpp.html#ab0c83759bed3e65c8b2bd44c4214d922">_MEMPOOL_CLASS_UNLOCK</a>(Mutex)&#160;&#160;&#160;Mutex.unlock();</td></tr>
 <tr class="separator:ab0c83759bed3e65c8b2bd44c4214d922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab47854f8cd34d2e21b3200ce85e64f31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2memory_2mn__basic__mempool_8hpp.html#ab47854f8cd34d2e21b3200ce85e64f31">_MEMPOOL_CLASS_UNLOCK_BREAK</a>(Mutex)&#160;&#160;&#160;Mutex-&gt;unlock(); break;</td></tr>
+<tr class="memitem:ab47854f8cd34d2e21b3200ce85e64f31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2memory_2mn__basic__mempool_8hpp.html#ab47854f8cd34d2e21b3200ce85e64f31">_MEMPOOL_CLASS_UNLOCK_BREAK</a>(Mutex)&#160;&#160;&#160;Mutex.unlock(); break;</td></tr>
 <tr class="separator:ab47854f8cd34d2e21b3200ce85e64f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a55fd3975ed7b7b14567dc2207ac4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="include_2memory_2mn__basic__mempool_8hpp.html#a26a55fd3975ed7b7b14567dc2207ac4e">VMEM_CHUNK_OWNER_FREE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a26a55fd3975ed7b7b14567dc2207ac4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,7 +247,7 @@ theMagicGuard[2]</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">Mutex</td><td>)</td>
-          <td>&#160;&#160;&#160;Mutex-&gt;unlock();</td>
+          <td>&#160;&#160;&#160;Mutex.unlock();</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -265,7 +265,7 @@ theMagicGuard[2]</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">Mutex</td><td>)</td>
-          <td>&#160;&#160;&#160;Mutex-&gt;unlock(); break;</td>
+          <td>&#160;&#160;&#160;Mutex.unlock(); break;</td>
         </tr>
       </table>
 </div><div class="memdoc">

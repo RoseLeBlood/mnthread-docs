@@ -101,8 +101,8 @@ Collaboration diagram for mn::basic_autolock&lt; LOCK &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0cf375fa78e3acd231abbb6cd1cb7e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__autolock.html#ac0cf375fa78e3acd231abbb6cd1cb7e2">basic_autolock</a> (LOCK &amp;m)</td></tr>
 <tr class="separator:ac0cf375fa78e3acd231abbb6cd1cb7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff1ff6cfb6105e2e807e7a56f094df9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__autolock.html#aff1ff6cfb6105e2e807e7a56f094df9b">basic_autolock</a> (LOCK &amp;m, <a class="el" href="test-ccc_2mn__basic__mempool_8hpp.html#acc0a32ef1e853825ce413f41bf802e83">TickType_t</a> xTicksToWait)</td></tr>
-<tr class="separator:aff1ff6cfb6105e2e807e7a56f094df9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc40594d60011946e2376e6532411a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__autolock.html#acdc40594d60011946e2376e6532411a3">basic_autolock</a> (LOCK &amp;m, unsigned long xTicksToWait)</td></tr>
+<tr class="separator:acdc40594d60011946e2376e6532411a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a487e95575db04a29f57101301c20275e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__autolock.html#a487e95575db04a29f57101301c20275e">~basic_autolock</a> ()</td></tr>
 <tr class="separator:a487e95575db04a29f57101301c20275e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf350048be5437284bfe6b5e7fe1ae0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__autolock.html#abf350048be5437284bfe6b5e7fe1ae0a">operator bool</a> ()</td></tr>
@@ -159,8 +159,8 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 
 </div>
 </div>
-<a id="aff1ff6cfb6105e2e807e7a56f094df9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff1ff6cfb6105e2e807e7a56f094df9b">&#9670;&nbsp;</a></span>basic_autolock() <span class="overload">[2/3]</span></h2>
+<a id="acdc40594d60011946e2376e6532411a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc40594d60011946e2376e6532411a3">&#9670;&nbsp;</a></span>basic_autolock() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +179,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="test-ccc_2mn__basic__mempool_8hpp.html#acc0a32ef1e853825ce413f41bf802e83">TickType_t</a>&#160;</td>
+          <td class="paramtype">unsigned long&#160;</td>
           <td class="paramname"><em>xTicksToWait</em>&#160;</td>
         </tr>
         <tr>
@@ -347,12 +347,13 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <p>Helper for lock sections, see example</p>
 <div class="fragment"><div class="line"><a class="code" href="namespacemn.html#a6e09b226c42d6d72e5e3f7cd518e89d5">LockType_t</a> mutex;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span>( (<a class="code" href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">autolock_t</a> lock(mutex)) ) {</div>
+<div class="line"><span class="keywordflow">if</span>( (<a class="code" href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">autolock_t</a> <a class="code" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">lock</a>(mutex)) ) {</div>
 <div class="line">  locked</div>
 <div class="line">}</div>
 <div class="line">unlocked</div>
-<div class="ttc" id="anamespacemn_html_a6e09b226c42d6d72e5e3f7cd518e89d5"><div class="ttname"><a href="namespacemn.html#a6e09b226c42d6d72e5e3f7cd518e89d5">mn::LockType_t</a></div><div class="ttdeci">binary_semaphore_t LockType_t</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:157</div></div>
-<div class="ttc" id="anamespacemn_html_ac31cad6a9d99e7654915635c2c4d8a1c"><div class="ttname"><a href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">mn::autolock_t</a></div><div class="ttdeci">basic_autolock&lt; LockType_t &gt; autolock_t</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:164</div></div>
+<div class="ttc" id="anamespacemn_html_a6e09b226c42d6d72e5e3f7cd518e89d5"><div class="ttname"><a href="namespacemn.html#a6e09b226c42d6d72e5e3f7cd518e89d5">mn::LockType_t</a></div><div class="ttdeci">binary_semaphore_t LockType_t</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:163</div></div>
+<div class="ttc" id="anamespacemn_html_a897578ea51b9d1f8bcbef7763677037b"><div class="ttname"><a href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">mn::lock</a></div><div class="ttdeci">int lock(TLOCK &amp;m1, unsigned int timeout)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:173</div></div>
+<div class="ttc" id="anamespacemn_html_ac31cad6a9d99e7654915635c2c4d8a1c"><div class="ttname"><a href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">mn::autolock_t</a></div><div class="ttdeci">basic_autolock&lt; LockType_t &gt; autolock_t</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:170</div></div>
 </div><!-- fragment --> 
 </div>
 </div>

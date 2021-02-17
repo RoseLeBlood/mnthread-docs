@@ -10,6 +10,7 @@ var include_2mn__config_8hpp =
     [ "MN_THREAD_CONFIG_BASIC_ALIGNMENT", "include_2mn__config_8hpp.html#af5908772af5ac083502c56e5a4f18010", null ],
     [ "MN_THREAD_CONFIG_BINARY_SEMAPHORE", "include_2mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115", null ],
     [ "MN_THREAD_CONFIG_BOARD", "include_2mn__config_8hpp.html#a14dd59cbe58bd6a41d15ceefe3b6f0d5", null ],
+    [ "MN_THREAD_CONFIG_BOARD_NODEFS", "include_2mn__config_8hpp.html#a9a7d8572d3567d5ce51d1532e7589045", null ],
     [ "MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT", "include_2mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b", null ],
     [ "MN_THREAD_CONFIG_CORE_IFNO", "include_2mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee", null ],
     [ "MN_THREAD_CONFIG_CORE_MAX", "include_2mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9", null ],

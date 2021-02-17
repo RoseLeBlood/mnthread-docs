@@ -92,24 +92,32 @@ $(document).ready(function(){initNavTree('mn__ringbuffer_8hpp.html',''); initRes
 <code>#include &quot;freertos/task.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="include_2mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="include_2mn__allocator_8hpp_source.html">mn_allocator.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__array_8hpp_source.html">mn_array.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__ringbuffer_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__circular__buffer.html">mn::basic_circular_buffer&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ring_buffer_iterator  <a href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__ring__buffer.html">mn::container::basic_ring_buffer&lt; T, TCAPACITY, TLOCK &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic ring buffer with iterator.  <a href="classmn_1_1container_1_1basic__ring__buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemn_1_1container"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html">mn::container</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a39a4cf14e19426355f2e3e932ec1eee3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a39a4cf14e19426355f2e3e932ec1eee3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a39a4cf14e19426355f2e3e932ec1eee3">mn::circular_buffer_t</a> = basic_circular_buffer&lt; T &gt;</td></tr>
-<tr class="separator:a39a4cf14e19426355f2e3e932ec1eee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354fed85044522a3860875fff2f6720b"><td class="memTemplParams" colspan="2">template&lt;class T , size_t TCAPACITY = 100, typename TLOCK  = LockType_t&gt; </td></tr>
+<tr class="memitem:a354fed85044522a3860875fff2f6720b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a354fed85044522a3860875fff2f6720b">mn::container::ringbuffer_t</a> = basic_ring_buffer&lt; T, TCAPACITY, TLOCK &gt;</td></tr>
+<tr class="separator:a354fed85044522a3860875fff2f6720b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
