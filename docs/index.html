@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <p>The license that applies to the library is the LGPL.The license texts of these licenses can be found in the files <a href="https://github.com/RoseLeBlood/mnthread/LICENSE.md">LICENSE</a> of the source code archive.</p>
 <p>More On github: <a href="https://github.com/RoseLeBlood/mnthread">mnthread</a> Version 2.10</p>
 <h1><a class="anchor" id="autotoc_md34"></a>
-Using</h1>
+Install</h1>
 <p>Build from git from</p><ol type="1">
 <li><code>sh ./configure or ./configure --prefix=&lt;path&gt; # without prefix then install to /opt</code></li>
 <li><code>sh make build</code></li>
@@ -103,14 +103,15 @@ Using</h1>
 <li>add "lib_deps = /opt/miniThread/miniThread-2.*.tar.gz" to your platformio.ini</li>
 </ol>
 <h2><a class="anchor" id="autotoc_md35"></a>
-Example</h2>
+Example platformio.ini</h2>
 <div class="fragment"><div class="line">[env:esp-wrover-kit]</div>
 <div class="line">platform = espressif32</div>
 <div class="line">board = esp-wrover-kit</div>
 <div class="line">framework = espidf</div>
-<div class="line">lib_deps = /opt/miniThread/miniThread-2.*.tar.gz</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autotoc_md36"></a>
-Using from platformio</h1>
+<div class="line">lib_deps = </div>
+<div class="line">    /opt/miniThread/miniThread-2.*.tar.gz</div>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md36"></a>
+Using from platformio regestrie</h2>
 <div class="fragment"><div class="line"># platformio.ini – project configuration file</div>
 <div class="line"> </div>
 <div class="line">[env:my_build_env]</div>

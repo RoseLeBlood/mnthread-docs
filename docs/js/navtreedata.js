@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
     [ "Mini Thread 2.10.x Documentation", "index.html", [
-      [ "Using", "index.html#autotoc_md34", [
-        [ "Example", "index.html#autotoc_md35", null ]
-      ] ],
-      [ "Using from platformio", "index.html#autotoc_md36", null ]
+      [ "Install", "index.html#autotoc_md34", [
+        [ "Example platformio.ini", "index.html#autotoc_md35", null ],
+        [ "Using from platformio regestrie", "index.html#autotoc_md36", null ]
+      ] ]
     ] ],
     [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", [
       [ "Version 2.10 Februar 2021", "md__home_ambersophia__dokumente_git_mnthread__change_log.html#autotoc_md1", null ],

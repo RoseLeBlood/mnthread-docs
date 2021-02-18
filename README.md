@@ -14,23 +14,24 @@ source code archive.
 
 More On github: [mnthread](https://github.com/RoseLeBlood/mnthread) Version 2.10
 
-## Using 
+## Install 
 Build from git from
 1. ```sh ./configure or ./configure --prefix=<path> # without prefix then install to /opt```
 2. ```sh make build ```
 3. ```sh sudo or doas make install ```
 4. add  "lib_deps = /opt/miniThread/miniThread-2.*.tar.gz"  to your platformio.ini
  
-### Example
+### Example platformio.ini
 ```ini
 [env:esp-wrover-kit]
 platform = espressif32
 board = esp-wrover-kit
 framework = espidf
-lib_deps = /opt/miniThread/miniThread-2.*.tar.gz
+lib_deps = 
+    /opt/miniThread/miniThread-2.*.tar.gz
 
 ```
-## Using from platformio
+### Using from platformio regestrie
 ```ini
 # platformio.ini – project configuration file
 
