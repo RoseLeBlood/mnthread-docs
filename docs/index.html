@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
-        <title>Mini Thread: mnthread-docs</title>
+        <title>Mini Thread: Mini Thread 2.10.x Documentation</title>
         <!-- javascript -->
         <script type="text/javascript" src="js/dynsections.js"></script>
         <script type="text/javascript" src="js/navtreedata.js"></script>
@@ -81,13 +81,10 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div id="doc-content">
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">mnthread-docs </div>  </div>
+<div class="title">Mini Thread 2.10.x Documentation </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_docs_git_README"></a>Ducomentation abaut <a href="https://github.com/RoseLeBlood/mnthread">mnthread</a> Version 2.10</p>
-<h1><a class="anchor" id="autotoc_md34"></a>
-Mini Thread 2.10.7</h1>
-<p>Mini Thread is a library for creating secure threads for the esp32 microcontroller. With variable condition support if required. And wrappers for: <br  />
+<div class="textblock"><p><a class="anchor" id="md_docs_git_README"></a>Mini Thread is a library for creating secure threads for the esp32 microcontroller. With variable condition support if required. And wrappers for: <br  />
 </p><ul>
 <li>Mutex (recursive and standard)</li>
 <li>Semaphore (binary and counting)</li>
@@ -95,40 +92,25 @@ Mini Thread 2.10.7</h1>
 <li>workqueues (multithreaded and singlethreaded workqueues)</li>
 <li>Timers, Protothreads and event groups</li>
 </ul>
-<p>The license that applies to the library is the LGPL.The license texts of these licenses can be found in the files LICENSE of the source code archive.</p>
-<h2><a class="anchor" id="autotoc_md35"></a>
-Folder Strutur</h2>
-<ul>
-<li>include and src:<ul>
-<li>/ : all basics: task, semaphores. timer ...</li>
-<li>memory: mempool handling</li>
-<li>queue: FreeRTOS queue's and workqueue-engines</li>
-<li>slock: ystem interrupt, schedular and ... autolock helper</li>
-</ul>
-</li>
-<li>doc: Files to create the docu with doxygen<ul>
-<li>The online pre builded version: <a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a></li>
-</ul>
-</li>
-<li>example; The basic's example, and for more see extra repository: <a href="https://github.com/RoseLeBlood/mnthread-examples">mnthread-examples</a></li>
-</ul>
-<h2><a class="anchor" id="autotoc_md36"></a>
-Using</h2>
+<p>The license that applies to the library is the LGPL.The license texts of these licenses can be found in the files <a href="https://github.com/RoseLeBlood/mnthread/LICENSE.md">LICENSE</a> of the source code archive.</p>
+<p>More On github: <a href="https://github.com/RoseLeBlood/mnthread">mnthread</a> Version 2.10</p>
+<h1><a class="anchor" id="autotoc_md34"></a>
+Using</h1>
 <p>Build from git from</p><ol type="1">
 <li><code>sh ./configure or ./configure --prefix=&lt;path&gt; # without prefix then install to /opt</code></li>
 <li><code>sh make build</code></li>
 <li><code>sh sudo or doas make install</code></li>
 <li>add "lib_deps = /opt/miniThread/miniThread-2.*.tar.gz" to your platformio.ini</li>
 </ol>
-<h3><a class="anchor" id="autotoc_md37"></a>
-Example</h3>
+<h2><a class="anchor" id="autotoc_md35"></a>
+Example</h2>
 <div class="fragment"><div class="line">[env:esp-wrover-kit]</div>
 <div class="line">platform = espressif32</div>
 <div class="line">board = esp-wrover-kit</div>
 <div class="line">framework = espidf</div>
 <div class="line">lib_deps = /opt/miniThread/miniThread-2.*.tar.gz</div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md38"></a>
-Using from platformio</h2>
+</div><!-- fragment --> <h1><a class="anchor" id="autotoc_md36"></a>
+Using from platformio</h1>
 <div class="fragment"><div class="line"># platformio.ini – project configuration file</div>
 <div class="line"> </div>
 <div class="line">[env:my_build_env]</div>
@@ -145,80 +127,7 @@ Using from platformio</h2>
 <div class="line"> </div>
 <div class="line">  # The exact version</div>
 <div class="line">  roseleblood/mini Thread @ 2.10.7</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md39"></a>
-ChangeLog</h2>
-<p>For more see <a class="el" href="_change_log_8md.html">ChangeLog</a> </p>
-<h2><a class="anchor" id="autotoc_md40"></a>
-Version 2.10.7 Februar 2021 (stable)</h2>
-<ul>
-<li>remove build issus</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md41"></a>
-Version 2.0.4 Januar 2021 (beta 2.0)</h2>
-<ul>
-<li>add staked, buffered allocator</li>
-<li>add allocator, mempool and stack to <a class="el" href="namespacemn_1_1memory.html">mn::memory</a> namespace</li>
-<li>add allocator with mempool backend</li>
-<li>start add aSTL template classes to this library, aSTL a other lightwidgt STL In the future are replace all vector, list, map etc. with aSTL version<ul>
-<li>add auto_ptr, weak_ptr, skoped_ptr, clone_ptr, save_ptr, shared_ptr to library</li>
-</ul>
-</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md42"></a>
-Version 2.0.1 Januar 2021 (beta 2.0)</h2>
-<ul>
-<li>rename tasklet function create to schedule - (DE: Mein fehler - misverständnis)</li>
-<li>add schudaler util class</li>
-<li>add random handler, for future use</li>
-<li>add new memory pool handler simple version and a complexere version for debugging</li>
-<li>Version jump to 2.0</li>
-<li>EXAMPLES in progress</li>
-<li>Add namespaces</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md43"></a>
-Version 1.9.5 Oktober 2020: (unstable 2.0beta)</h2>
-<ul>
-<li>update error codes</li>
-<li>merge config_preview with config and error_preview with error</li>
-<li>add shared, timed and the ringbuffer to main version</li>
-<li>remove old system locks and add new lock system - old nclude file</li>
-<li>add new in code example and update the doxygen bootstra output style (not online)</li>
-<li>Add static support</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md44"></a>
-Version 1.9.1 Oktober 2020: (unstable 2.0beta)</h2>
-<ul>
-<li>for the future version add prototypes: (Not for produtions use!!)<ul>
-<li>free_list_memory pool = basic_free_list_mempool</li>
-<li>Shared Object = basic_shared_object</li>
-<li>Ringbuffer = basic_circular_buffer</li>
-<li>Add timed lock type = basic_timed_lock</li>
-</ul>
-</li>
-<li>Add class to extends the basic_convar_task with a message queue support - basic_message_task<ul>
-<li>Add new config item, to handle the maximal messages in the message queue (MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES)</li>
-<li>For message queue support must be conditional variable support marked as enable</li>
-</ul>
-</li>
-<li>Add new defines:<ul>
-<li>in <a class="el" href="mn__foreign__task_8hpp.html">mn_foreign_task.hpp</a>:<ul>
-<li>FT_IDLE_TASK (foreign_task::get_idle_task())</li>
-<li>FT_IDLE_TASK_ON(CPUID foreign_task::get_idle_task(CPUID)</li>
-</ul>
-</li>
-<li>in mn_config.hpp:<ul>
-<li>MN_THREAD_CONFIG_MINIMAL_STACK_SIZE set the default minimal stack size for a task</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>add in basic_task get_state() to get the current state and static function get_tasks() to get the number of tasks</li>
-<li>remove create and destroy from all mutex and semaphore objects and add exceptins handling</li>
-<li>rename create and on_create to start and on_start</li>
-<li>add to the basic_task: join(), wait() and get_self() functions - basic_task remove abstract</li>
-<li>remove the m_contextMutext2 LockObject </li>
-</ul>
-</div></div><!-- PageDoc -->
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>
