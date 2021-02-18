@@ -26,9 +26,17 @@ var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
     [ "Mini Thread 2.10.x Documentation", "index.html", [
-      [ "Install", "index.html#autotoc_md34", [
-        [ "Example platformio.ini", "index.html#autotoc_md35", null ],
-        [ "Using from platformio regestrie", "index.html#autotoc_md36", null ]
+      [ "Bug reporting", "index.html#autotoc_md34", null ],
+      [ "Using", "index.html#autotoc_md35", [
+        [ "Example", "index.html#autotoc_md36", null ]
+      ] ],
+      [ "Using from platformio", "index.html#autotoc_md37", [
+        [ "Our Pledge", "index.html#autotoc_md38", null ],
+        [ "Our Standards", "index.html#autotoc_md39", null ],
+        [ "Our Responsibilities", "index.html#autotoc_md40", null ],
+        [ "Scope", "index.html#autotoc_md41", null ],
+        [ "Enforcement", "index.html#autotoc_md42", null ],
+        [ "Attribution", "index.html#autotoc_md43", null ]
       ] ]
     ] ],
     [ "Changelog", "md__home_ambersophia__dokumente_git_mnthread__change_log.html", [
@@ -114,11 +122,11 @@ var NAVTREEINDEX =
 "classmn_1_1memory_1_1basic__mempool__vector.html#a6e5128041860f06c122d75a2af6cc264",
 "classmn_1_1system_1_1basic__schedular__lock.html",
 "globals_defs_i.html",
-"mn____atomic____gcc__8hpp_8js.html",
-"mn__lock_8hpp_source.html",
-"mn__workqueue__item_8hpp.html",
-"namespacemn_1_1internal.html#aa879d37de88012b16f5d31b664cb2bcf",
-"test-ccc_2mn__basic__mempool_8hpp.html#afd29996b44975f028aa577d690f07494a019d1ca7d50cc54b995f60d456435e87"
+"mini_thread_8hpp.html#ac637ae45863c19fa2e919db0ed49301f",
+"mn__iterator_8hpp.html#a89d1f65e5981b5715a88294330f9ab2a",
+"mn__version_8hpp_source.html",
+"namespacemn_1_1internal.html#a918cdb57ac94f363c06f080c6e1f1033",
+"test-ccc_2mn__basic__mempool_8hpp.html#ab0c83759bed3e65c8b2bd44c4214d922"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

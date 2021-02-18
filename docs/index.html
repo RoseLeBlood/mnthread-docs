@@ -37,6 +37,8 @@
                     <li class="nav-item "><a class="nav-link" href="inherits.html">Class Hierarchy</a></li>
                     <li class="nav-item "><a class="nav-link" href="globals.html">Members</a></li>
                     <li class="nav-item "><a class="nav-link" href="files.html">Files</a></li>
+                    <li class="nav-item"><a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__change_log.html">Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html">Contributing</a></li>
                 </ul>
                 <span class="form-inline my-2 my-lg-0">
                     <ul class="navbar-nav mr-auto">
@@ -89,26 +91,38 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="title">Mini Thread 2.10.x Documentation </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_docs_git_README"></a> The license that applies to the library is the LGPL.The license texts of these licenses can be found in the files <a href="https://github.com/RoseLeBlood/mnthread/LICENSE.md">LICENSE</a> of the source code archive.</p>
-<p>More On github: <a href="https://github.com/RoseLeBlood/mnthread">mnthread</a> Version 2.10</p>
+<div class="textblock"><p><a class="anchor" id="md_docs_git_README"></a> Mini Thread is a library for creating safe tasks, queues and other useful things for the esp32, in c ++. All in the background of a more secure and consistent workflow. So that your application will be smaller and more effective.</p>
+<p>Many of the standard STL containers are replaced with their own optimized versions. Recognizable by its own namespace mn. All containers, such as vector, map, list, array, can be found in the namespace <a class="el" href="namespacemn_1_1container.html">mn::container</a>.</p>
+<p>Various types of association classes are provided for simplicity. This is just the exchange of the used allocator from the system to the Spiram allocator, whereby certain regions can be swapped out to a different storage capacity without having to rewrite the entire program. Certain allocation in addition to a limit, the bytes used to be limited. All allocator find you under the namespace <a class="el" href="namespacemn_1_1memory.html">mn::memory</a>.</p>
+<p>The containers and pointers use as default the mn::memory::default_allocator_t.</p>
+<p>The code is licensed under the GPLv3, so you always have access to it. You can also create as many derivative works as you want. However, in order for your code to get back into the official codebase, you must provide a copyright assignment for that code.</p>
+<ol type="1">
+<li>Ensure any install or build dependencies are removed before the end of the layer when doing a build.</li>
+<li>Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.</li>
+<li>Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is <a href="http://semver.org/">SemVer</a>. <br  />
+</li>
+<li>You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.</li>
+</ol>
 <h1><a class="anchor" id="autotoc_md34"></a>
-Install</h1>
+Bug reporting</h1>
+<p>The preferred bug reporting channel is via <a href="https://github.com/RoseLeBlood/MiniThread/issues">Github Issues</a></p>
+<h1><a class="anchor" id="autotoc_md35"></a>
+Using</h1>
 <p>Build from git from</p><ol type="1">
 <li><code>sh ./configure or ./configure --prefix=&lt;path&gt; # without prefix then install to /opt</code></li>
 <li><code>sh make build</code></li>
 <li><code>sh sudo or doas make install</code></li>
 <li>add "lib_deps = /opt/miniThread/miniThread-2.*.tar.gz" to your platformio.ini</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md35"></a>
-Example platformio.ini</h2>
+<h2><a class="anchor" id="autotoc_md36"></a>
+Example</h2>
 <div class="fragment"><div class="line">[env:esp-wrover-kit]</div>
 <div class="line">platform = espressif32</div>
 <div class="line">board = esp-wrover-kit</div>
 <div class="line">framework = espidf</div>
-<div class="line">lib_deps = </div>
-<div class="line">    /opt/miniThread/miniThread-2.*.tar.gz</div>
-</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md36"></a>
-Using from platformio regestrie</h2>
+<div class="line">lib_deps = /opt/miniThread/miniThread-2.*.tar.gz</div>
+</div><!-- fragment --> <h1><a class="anchor" id="autotoc_md37"></a>
+Using from platformio</h1>
 <div class="fragment"><div class="line"># platformio.ini – project configuration file</div>
 <div class="line"> </div>
 <div class="line">[env:my_build_env]</div>
@@ -125,7 +139,42 @@ Using from platformio regestrie</h2>
 <div class="line"> </div>
 <div class="line">  # The exact version</div>
 <div class="line">  roseleblood/mini Thread @ 2.10.7</div>
-</div><!-- fragment --> </div></div><!-- PageDoc -->
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md38"></a>
+Our Pledge</h2>
+<p>In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
+<h2><a class="anchor" id="autotoc_md39"></a>
+Our Standards</h2>
+<p>Examples of behavior that contributes to creating a positive environment include:</p>
+<ul>
+<li>Using welcoming and inclusive language</li>
+<li>Being respectful of differing viewpoints and experiences</li>
+<li>Gracefully accepting constructive criticism</li>
+<li>Focusing on what is best for the community</li>
+<li>Showing empathy towards other community members</li>
+</ul>
+<p>Examples of unacceptable behavior by participants include:</p>
+<ul>
+<li>The use of sexualized language or imagery and unwelcome sexual attention or advances</li>
+<li>Trolling, insulting/derogatory comments, and personal or political attacks</li>
+<li>Public or private harassment</li>
+<li>Publishing others' private information, such as a physical or electronic address, without explicit permission</li>
+<li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md40"></a>
+Our Responsibilities</h2>
+<p>Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.</p>
+<p>Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.</p>
+<h2><a class="anchor" id="autotoc_md41"></a>
+Scope</h2>
+<p>This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.</p>
+<h2><a class="anchor" id="autotoc_md42"></a>
+Enforcement</h2>
+<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [<a href="#" onclick="location.href='mai'+'lto:'+'amb'+'er'+'sop'+'hi'+'a.a'+'ms'+'hop'+'@o'+'utl'+'oo'+'k.d'+'e'; return false;">amber<span style="display: none;">.nosp@m.</span>soph<span style="display: none;">.nosp@m.</span>ia.am<span style="display: none;">.nosp@m.</span>shop<span style="display: none;">.nosp@m.</span>@outl<span style="display: none;">.nosp@m.</span>ook.<span style="display: none;">.nosp@m.</span>de</a>]. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.</p>
+<p>Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.</p>
+<h2><a class="anchor" id="autotoc_md43"></a>
+Attribution</h2>
+<p>This Code of Conduct is adapted from the <a href="http://contributor-covenant.org">Contributor Covenant</a>, version 1.4, available at <a href="http://contributor-covenant.org/version/1/4/">http://contributor-covenant.org/version/1/4</a> </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>
