@@ -3,15 +3,6 @@
 
 # Mini Thread 2.10.x Documentation
 
-Mini Thread is a library for creating secure threads for the esp32 microcontroller. 
-With variable condition support if required. 
-And wrappers for:  
-   +  Mutex (recursive and standard)
-   +  Semaphore (binary and counting)
-   +  Queues (deque, binary-queue and the standard queue)
-   +  workqueues (multithreaded and singlethreaded workqueues)
-   +  Timers, Protothreads and event groups
-
 The license that applies to the library is the LGPL.The license texts of these
 licenses can be found in the files [LICENSE](https://github.com/RoseLeBlood/mnthread/LICENSE.md) of the
 source code archive.
