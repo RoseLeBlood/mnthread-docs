@@ -62,7 +62,6 @@ var NAVTREE =
         [ "Attribution", "md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md32", null ]
       ] ]
     ] ],
-    [ "Using", "md__home_ambersophia__dokumente_git_mnthread_release__u_s_i_n_g.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -109,12 +108,12 @@ var NAVTREEINDEX =
 "classmn_1_1container_1_1basic__ring__buffer.html#adacb15699efaa5ece6418cf9d953bbf9",
 "classmn_1_1memory_1_1basic__mempool__vector.html#a6e5128041860f06c122d75a2af6cc264",
 "classmn_1_1system_1_1basic__schedular__lock.html",
-"globals_defs_t.html",
-"mn____eventgroup__8hpp_8js.html",
-"mn__micros_8cpp.html#a80365862e991c712aab3be7c91b155af",
-"namespacemembers_a.html",
-"namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_014_01_4",
-"test-ccc_2mn__config_8hpp.html#a4872c5fc30c3382fe645408bf9501abf"
+"globals_defs_i.html",
+"mn____binary____semaphore__8hpp_8js.html",
+"mn__lock__exptions_8hpp_source.html",
+"mn__workqueue__multi_8cpp.html",
+"namespacemn_1_1internal.html#ad00545828cb74e7ad65b9b230501df18",
+"test-ccc_2mn__basic__mempool_8hpp.html#afd29996b44975f028aa577d690f07494aeeba3d376cda8a60f9f7bdc3961c81f8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
