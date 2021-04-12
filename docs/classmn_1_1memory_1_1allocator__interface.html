@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::memory::allocator_interface Class Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1memory_1_1allocator__interface.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classmn_1_1memory_1_1allocator__interface-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::memory::allocator_interface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A basic abstractet interface for all allocator in the library.  
+ <a href="classmn_1_1memory_1_1allocator__interface.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__allocator__interface_8hpp_source.html">mn_allocator_interface.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::memory::allocator_interface:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1memory_1_1allocator__interface__inherit__graph.svg" width="450" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae28dd4de4cd25d730cf78bba824f4890"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#ae28dd4de4cd25d730cf78bba824f4890">allocator_interface</a> ()</td></tr>
+<tr class="memdesc:ae28dd4de4cd25d730cf78bba824f4890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new allocator interface object, with no limit.  <a href="classmn_1_1memory_1_1allocator__interface.html#ae28dd4de4cd25d730cf78bba824f4890">More...</a><br /></td></tr>
+<tr class="separator:ae28dd4de4cd25d730cf78bba824f4890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2b01361a32d116db16a3b12fedbbeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#afa2b01361a32d116db16a3b12fedbbeb">allocator_interface</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> maxSize)</td></tr>
+<tr class="memdesc:afa2b01361a32d116db16a3b12fedbbeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new allocator interface object, with limit.  <a href="classmn_1_1memory_1_1allocator__interface.html#afa2b01361a32d116db16a3b12fedbbeb">More...</a><br /></td></tr>
+<tr class="separator:afa2b01361a32d116db16a3b12fedbbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a2f66c03d90fd103c9123cbfcdee9e"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a78a2f66c03d90fd103c9123cbfcdee9e">alloc</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> n, unsigned int xTime=__UINT32_MAX__)=0</td></tr>
+<tr class="memdesc:a78a2f66c03d90fd103c9123cbfcdee9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alloc a n size of bytes.  <a href="classmn_1_1memory_1_1allocator__interface.html#a78a2f66c03d90fd103c9123cbfcdee9e">More...</a><br /></td></tr>
+<tr class="separator:a78a2f66c03d90fd103c9123cbfcdee9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada8c6ffc198b08ddf9740d81224afac0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#ada8c6ffc198b08ddf9740d81224afac0">calloc</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> n, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> b, void **buf, unsigned int xTime=__UINT32_MAX__)=0</td></tr>
+<tr class="separator:ada8c6ffc198b08ddf9740d81224afac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4741ad0caa7b941925af7b2f0a08a061"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a4741ad0caa7b941925af7b2f0a08a061">free</a> (void *mem, unsigned int xTime)=0</td></tr>
+<tr class="separator:a4741ad0caa7b941925af7b2f0a08a061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630c1ebbf047a5ab7143cf94f2aea34b"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a630c1ebbf047a5ab7143cf94f2aea34b">alloc_alignment</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> n, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> alignment)</td></tr>
+<tr class="separator:a630c1ebbf047a5ab7143cf94f2aea34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e150a828af66d3b90ce6ec1f6da878"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a45e150a828af66d3b90ce6ec1f6da878">set_limit</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> maxSize)</td></tr>
+<tr class="memdesc:a45e150a828af66d3b90ce6ec1f6da878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the limit of bytes to use.  <a href="classmn_1_1memory_1_1allocator__interface.html#a45e150a828af66d3b90ce6ec1f6da878">More...</a><br /></td></tr>
+<tr class="separator:a45e150a828af66d3b90ce6ec1f6da878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38500d80a8b1cfbbdaf4241bd9cd2138"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a38500d80a8b1cfbbdaf4241bd9cd2138">limit</a> ()</td></tr>
+<tr class="memdesc:a38500d80a8b1cfbbdaf4241bd9cd2138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the limit of bytes to use.  <a href="classmn_1_1memory_1_1allocator__interface.html#a38500d80a8b1cfbbdaf4241bd9cd2138">More...</a><br /></td></tr>
+<tr class="separator:a38500d80a8b1cfbbdaf4241bd9cd2138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1852a045adefacadb970783cb2da20f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a1852a045adefacadb970783cb2da20f0">have_limit</a> ()</td></tr>
+<tr class="memdesc:a1852a045adefacadb970783cb2da20f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Have the allocator a limit?  <a href="classmn_1_1memory_1_1allocator__interface.html#a1852a045adefacadb970783cb2da20f0">More...</a><br /></td></tr>
+<tr class="separator:a1852a045adefacadb970783cb2da20f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951a77c3be1e32f1bfd4bdf172c72059"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a951a77c3be1e32f1bfd4bdf172c72059">is_free</a> ()</td></tr>
+<tr class="memdesc:a951a77c3be1e32f1bfd4bdf172c72059"><td class="mdescLeft">&#160;</td><td class="mdescRight">In the heap free.  <a href="classmn_1_1memory_1_1allocator__interface.html#a951a77c3be1e32f1bfd4bdf172c72059">More...</a><br /></td></tr>
+<tr class="separator:a951a77c3be1e32f1bfd4bdf172c72059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac198fbd557a112124549dd016a2ac3ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#ac198fbd557a112124549dd016a2ac3ad">is_free</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> mSize)</td></tr>
+<tr class="separator:ac198fbd557a112124549dd016a2ac3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6507f82948b2bc63bfd607f229ac03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#aff6507f82948b2bc63bfd607f229ac03">get_allocated</a> ()</td></tr>
+<tr class="separator:aff6507f82948b2bc63bfd607f229ac03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5378c7a52be91cb9e4ceac39152f85be"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5378c7a52be91cb9e4ceac39152f85be"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a5378c7a52be91cb9e4ceac39152f85be">alloc</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> n, unsigned int xTime)</td></tr>
+<tr class="separator:a5378c7a52be91cb9e4ceac39152f85be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176ca2828508c9397b3ec8fcbdad295e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a176ca2828508c9397b3ec8fcbdad295e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a176ca2828508c9397b3ec8fcbdad295e">max_size</a> () const</td></tr>
+<tr class="separator:a176ca2828508c9397b3ec8fcbdad295e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b2c0fc82e2126522a510a3cc19f749"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TARG &gt; </td></tr>
+<tr class="memitem:ad4b2c0fc82e2126522a510a3cc19f749"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#ad4b2c0fc82e2126522a510a3cc19f749">construct</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size, TARG arg, unsigned int xTime=__UINT32_MAX__)</td></tr>
+<tr class="separator:ad4b2c0fc82e2126522a510a3cc19f749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa60551d489e09ae97fdc79b8ddeefba"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:afa60551d489e09ae97fdc79b8ddeefba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#afa60551d489e09ae97fdc79b8ddeefba">deconstruct</a> (T *pObject)</td></tr>
+<tr class="separator:afa60551d489e09ae97fdc79b8ddeefba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aec7fcc98b6f399a8e1c9a568c7d2cf08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#aec7fcc98b6f399a8e1c9a568c7d2cf08">add_allocatedsize</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size)</td></tr>
+<tr class="separator:aec7fcc98b6f399a8e1c9a568c7d2cf08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a74c0b35acf729ad261a1f664ad6e36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a5a74c0b35acf729ad261a1f664ad6e36">rm_allocatedsize</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size)</td></tr>
+<tr class="separator:a5a74c0b35acf729ad261a1f664ad6e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a0e2af125154ae92185e86153a29fa5ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a0e2af125154ae92185e86153a29fa5ca">m_szeMaxSize</a></td></tr>
+<tr class="separator:a0e2af125154ae92185e86153a29fa5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69c8fd94283c8387a0c66c0241050a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__interface.html#ad69c8fd94283c8387a0c66c0241050a9">m_szeAllocted</a></td></tr>
+<tr class="separator:ad69c8fd94283c8387a0c66c0241050a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A basic abstractet interface for all allocator in the library. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae28dd4de4cd25d730cf78bba824f4890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28dd4de4cd25d730cf78bba824f4890">&#9670;&nbsp;</a></span>allocator_interface() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::memory::allocator_interface::allocator_interface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new allocator interface object, with no limit. </p>
+
+</div>
+</div>
+<a id="afa2b01361a32d116db16a3b12fedbbeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2b01361a32d116db16a3b12fedbbeb">&#9670;&nbsp;</a></span>allocator_interface() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::memory::allocator_interface::allocator_interface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>maxSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new allocator interface object, with limit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxSize</td><td>The limit of bytes to use, when 0 then use no limit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec7fcc98b6f399a8e1c9a568c7d2cf08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7fcc98b6f399a8e1c9a568c7d2cf08">&#9670;&nbsp;</a></span>add_allocatedsize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::memory::allocator_interface::add_allocatedsize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5378c7a52be91cb9e4ceac39152f85be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5378c7a52be91cb9e4ceac39152f85be">&#9670;&nbsp;</a></span>alloc() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* mn::memory::allocator_interface::alloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>xTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78a2f66c03d90fd103c9123cbfcdee9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a2f66c03d90fd103c9123cbfcdee9e">&#9670;&nbsp;</a></span>alloc() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* mn::memory::allocator_interface::alloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>xTime</em> = <code>__UINT32_MAX__</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Alloc a n size of bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The size of bytes to alloc </td></tr>
+    <tr><td class="paramname">xTime</td><td>How long to wait to get the Lock until giving up. (default = 0xffffffffUL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The allocated memory from heap </dd></dl>
+
+<p>Implemented in <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html#a4114155d44b720220114c3950a7a4ec4">mn::memory::basic_allocator_stack&lt; TBUFFERSIZE &gt;</a>, <a class="el" href="classmn_1_1memory_1_1basic__cap__allocator__esp32.html#a6fbcb8ed69ad3d3ae219be7486943d62">mn::memory::basic_cap_allocator_esp32&lt; TCAPS, TSBITS &gt;</a>, <a class="el" href="classmn_1_1memory_1_1basic__allocator__buffer.html#a20a729592a22fe9b29410d74738ac9f4">mn::memory::basic_allocator_buffer</a>, <a class="el" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a579ea7a458f730d8507574715c1309c1">mn::memory::basic_multiheap_allocator_esp32&lt; TBytes &gt;</a>, and <a class="el" href="classmn_1_1memory_1_1basic__allocator__system.html#a5b09613b006943c1d0df9192ff7a1f2d">mn::memory::basic_allocator_system</a>.</p>
+
+</div>
+</div>
+<a id="a630c1ebbf047a5ab7143cf94f2aea34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a630c1ebbf047a5ab7143cf94f2aea34b">&#9670;&nbsp;</a></span>alloc_alignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* mn::memory::allocator_interface::alloc_alignment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada8c6ffc198b08ddf9740d81224afac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada8c6ffc198b08ddf9740d81224afac0">&#9670;&nbsp;</a></span>calloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> mn::memory::allocator_interface::calloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>xTime</em> = <code>__UINT32_MAX__</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td></td></tr>
+    <tr><td class="paramname">b</td><td></td></tr>
+    <tr><td class="paramname">buf</td><td></td></tr>
+    <tr><td class="paramname">xTime</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size_t </dd></dl>
+
+<p>Implemented in <a class="el" href="classmn_1_1memory_1_1basic__cap__allocator__esp32.html#a3770b2fb92ed58658082f2753164716d">mn::memory::basic_cap_allocator_esp32&lt; TCAPS, TSBITS &gt;</a>, <a class="el" href="classmn_1_1memory_1_1basic__allocator__buffer.html#a73aedf9e3e97a97442f13f9eeaad4cba">mn::memory::basic_allocator_buffer</a>, <a class="el" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#ae1f61be89d693a3e110ea503d001d5d2">mn::memory::basic_multiheap_allocator_esp32&lt; TBytes &gt;</a>, <a class="el" href="classmn_1_1memory_1_1basic__allocator__system.html#af9e25cc91a8b0c847355444d8df316d3">mn::memory::basic_allocator_system</a>, and <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html#a7440b5cfc7390ec026b035f15188d332">mn::memory::basic_allocator_stack&lt; TBUFFERSIZE &gt;</a>.</p>
+
+</div>
+</div>
+<a id="ad4b2c0fc82e2126522a510a3cc19f749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b2c0fc82e2126522a510a3cc19f749">&#9670;&nbsp;</a></span>construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TARG &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* mn::memory::allocator_interface::construct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TARG&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>xTime</em> = <code>__UINT32_MAX__</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa60551d489e09ae97fdc79b8ddeefba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa60551d489e09ae97fdc79b8ddeefba">&#9670;&nbsp;</a></span>deconstruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::memory::allocator_interface::deconstruct </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>pObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4741ad0caa7b941925af7b2f0a08a061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4741ad0caa7b941925af7b2f0a08a061">&#9670;&nbsp;</a></span>free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::memory::allocator_interface::free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>mem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>xTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classmn_1_1memory_1_1basic__allocator__system.html#af163223d7f05713c28890d96c9cf0cc9">mn::memory::basic_allocator_system</a>, and <a class="el" href="classmn_1_1memory_1_1basic__cap__allocator__esp32.html#a69fcefbe4ca1c11de2872bd827ec5286">mn::memory::basic_cap_allocator_esp32&lt; TCAPS, TSBITS &gt;</a>.</p>
+
+</div>
+</div>
+<a id="aff6507f82948b2bc63bfd607f229ac03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff6507f82948b2bc63bfd607f229ac03">&#9670;&nbsp;</a></span>get_allocated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> mn::memory::allocator_interface::get_allocated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1852a045adefacadb970783cb2da20f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1852a045adefacadb970783cb2da20f0">&#9670;&nbsp;</a></span>have_limit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::memory::allocator_interface::have_limit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Have the allocator a limit? </p>
+<dl class="section return"><dt>Returns</dt><dd>true The allocator is limited </dd>
+<dd>
+false The allocator have no limit </dd></dl>
+
+</div>
+</div>
+<a id="a951a77c3be1e32f1bfd4bdf172c72059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951a77c3be1e32f1bfd4bdf172c72059">&#9670;&nbsp;</a></span>is_free() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::memory::allocator_interface::is_free </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>In the heap free. </p>
+<dl class="section return"><dt>Returns</dt><dd>true The heap is free </dd>
+<dd>
+false The limit is erreicht </dd></dl>
+
+</div>
+</div>
+<a id="ac198fbd557a112124549dd016a2ac3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac198fbd557a112124549dd016a2ac3ad">&#9670;&nbsp;</a></span>is_free() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::memory::allocator_interface::is_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>mSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38500d80a8b1cfbbdaf4241bd9cd2138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38500d80a8b1cfbbdaf4241bd9cd2138">&#9670;&nbsp;</a></span>limit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> mn::memory::allocator_interface::limit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the limit of bytes to use. </p>
+<dl class="section return"><dt>Returns</dt><dd>The limit of bytes to use, when 0 then use no limit </dd></dl>
+
+</div>
+</div>
+<a id="a176ca2828508c9397b3ec8fcbdad295e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176ca2828508c9397b3ec8fcbdad295e">&#9670;&nbsp;</a></span>max_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> mn::memory::allocator_interface::max_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a74c0b35acf729ad261a1f664ad6e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a74c0b35acf729ad261a1f664ad6e36">&#9670;&nbsp;</a></span>rm_allocatedsize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::memory::allocator_interface::rm_allocatedsize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45e150a828af66d3b90ce6ec1f6da878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e150a828af66d3b90ce6ec1f6da878">&#9670;&nbsp;</a></span>set_limit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::memory::allocator_interface::set_limit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>maxSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the limit of bytes to use. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxSize</td><td>The limit of bytes to use, when 0 then use no limit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html#a700038d9f4a2f7d67f8ed311bfb1e7e2">mn::memory::basic_allocator_stack&lt; TBUFFERSIZE &gt;</a>, and <a class="el" href="classmn_1_1memory_1_1basic__allocator__buffer.html#a94b8f48f6221326b0711f023c8f36d8f">mn::memory::basic_allocator_buffer</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad69c8fd94283c8387a0c66c0241050a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69c8fd94283c8387a0c66c0241050a9">&#9670;&nbsp;</a></span>m_szeAllocted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> mn::memory::allocator_interface::m_szeAllocted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e2af125154ae92185e86153a29fa5ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2af125154ae92185e86153a29fa5ca">&#9670;&nbsp;</a></span>m_szeMaxSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> mn::memory::allocator_interface::m_szeMaxSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__allocator__interface_8hpp_source.html">mn_allocator_interface.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

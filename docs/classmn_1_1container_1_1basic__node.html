@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::container::basic_node&lt; T, TALLOCATOR &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1container_1_1basic__node.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1container_1_1basic__node-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::container::basic_node&lt; T, TALLOCATOR &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__node_8hpp_source.html">mn_node.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::container::basic_node&lt; T, TALLOCATOR &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1container_1_1basic__node__coll__graph.svg" width="262" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:af42625e9e4d7f45720949ad9970f8c46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#af42625e9e4d7f45720949ad9970f8c46">iterator_category</a> = <a class="el" href="structmn_1_1bidirectional__iterator__tag.html">bidirectional_iterator_tag</a></td></tr>
+<tr class="separator:af42625e9e4d7f45720949ad9970f8c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b0e462f48909e4c8e3579f40f99678"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> = <a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T, TALLOCATOR &gt;</td></tr>
+<tr class="separator:a99b0e462f48909e4c8e3579f40f99678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac573adc91f0283623df1cbeff07f1cea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a> = T</td></tr>
+<tr class="separator:ac573adc91f0283623df1cbeff07f1cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96dce749deff31920ba30652b4f74d87"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a96dce749deff31920ba30652b4f74d87">pointer</a> = <a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a> *</td></tr>
+<tr class="separator:a96dce749deff31920ba30652b4f74d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafab70757d6469dfb757612832c2360c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#aafab70757d6469dfb757612832c2360c">const_pointer</a> = const <a class="el" href="classmn_1_1container_1_1basic__node.html#a96dce749deff31920ba30652b4f74d87">pointer</a></td></tr>
+<tr class="separator:aafab70757d6469dfb757612832c2360c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832f16f8ff23f50564f0761a62e65c8d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a832f16f8ff23f50564f0761a62e65c8d">reference</a> = <a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a> &amp;</td></tr>
+<tr class="separator:a832f16f8ff23f50564f0761a62e65c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4606e85a7fc6a8ecc5b3dd285ce598"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#abb4606e85a7fc6a8ecc5b3dd285ce598">const_reference</a> = const <a class="el" href="classmn_1_1container_1_1basic__node.html#a832f16f8ff23f50564f0761a62e65c8d">reference</a></td></tr>
+<tr class="separator:abb4606e85a7fc6a8ecc5b3dd285ce598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e7bd2cae42fe7288f0c3c9d1dc4f04"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#ae4e7bd2cae42fe7288f0c3c9d1dc4f04">iterator</a> = <a class="el" href="classmn_1_1container_1_1basic__node__itarrator.html">basic_node_itarrator</a>&lt; <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &gt;</td></tr>
+<tr class="separator:ae4e7bd2cae42fe7288f0c3c9d1dc4f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af603f2d536c623774da69400b3c932ab"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#af603f2d536c623774da69400b3c932ab">const_iterator</a> = const <a class="el" href="classmn_1_1container_1_1basic__node__itarrator.html">basic_node_itarrator</a>&lt; const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &gt;</td></tr>
+<tr class="separator:af603f2d536c623774da69400b3c932ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7f3331dd0132b9dc7b401b0c030383"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a3d7f3331dd0132b9dc7b401b0c030383">reverse_iterator</a> = <a class="el" href="classmn_1_1container_1_1basic__node__itarrator__res.html">basic_node_itarrator_res</a>&lt; <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &gt;</td></tr>
+<tr class="separator:a3d7f3331dd0132b9dc7b401b0c030383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5944666dc3085e7e4d6c569522621973"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a5944666dc3085e7e4d6c569522621973">const_reverse_iterator</a> = const <a class="el" href="classmn_1_1container_1_1basic__node__itarrator__res.html">basic_node_itarrator_res</a>&lt; const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &gt;</td></tr>
+<tr class="separator:a5944666dc3085e7e4d6c569522621973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af8b6224e4ad07a2b7b13c1622a5368f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#af8b6224e4ad07a2b7b13c1622a5368f1">MNALLOC_OBJECT</a> (TALLOCATOR)</td></tr>
+<tr class="separator:af8b6224e4ad07a2b7b13c1622a5368f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f6b5e891ffe0a5c3522ce9ff1152335"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a1f6b5e891ffe0a5c3522ce9ff1152335">basic_node</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a> value)</td></tr>
+<tr class="memdesc:a1f6b5e891ffe0a5c3522ce9ff1152335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new base node object.  <a href="classmn_1_1container_1_1basic__node.html#a1f6b5e891ffe0a5c3522ce9ff1152335">More...</a><br /></td></tr>
+<tr class="separator:a1f6b5e891ffe0a5c3522ce9ff1152335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d9452f5fb6c8da6d233b1fa5672679"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a71d9452f5fb6c8da6d233b1fa5672679">basic_node</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *_pNext, <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *_pPrev)</td></tr>
+<tr class="separator:a71d9452f5fb6c8da6d233b1fa5672679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3896bedc23c1bfc5601fc558daa4be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a2d3896bedc23c1bfc5601fc558daa4be">basic_node</a> (const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &amp;_pOther)</td></tr>
+<tr class="separator:a2d3896bedc23c1bfc5601fc558daa4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3d33b8c159614d2df848539d43f4f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#ae4e7bd2cae42fe7288f0c3c9d1dc4f04">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#acc3d33b8c159614d2df848539d43f4f5">begin</a> ()</td></tr>
+<tr class="separator:acc3d33b8c159614d2df848539d43f4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936f348be17afa0c59be1f4c7ea78623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#a3d7f3331dd0132b9dc7b401b0c030383">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a936f348be17afa0c59be1f4c7ea78623">rbegin</a> ()</td></tr>
+<tr class="separator:a936f348be17afa0c59be1f4c7ea78623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7904d370fdf62691ba7504598fb09bc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#af603f2d536c623774da69400b3c932ab">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a7904d370fdf62691ba7504598fb09bc9">cbegin</a> () const</td></tr>
+<tr class="separator:a7904d370fdf62691ba7504598fb09bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb60905452b439ce83f16f1b2d68dd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#ae4e7bd2cae42fe7288f0c3c9d1dc4f04">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a6bb60905452b439ce83f16f1b2d68dd9">end</a> ()</td></tr>
+<tr class="separator:a6bb60905452b439ce83f16f1b2d68dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a4f4829b8863395a229f1de94c5ec9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#a3d7f3331dd0132b9dc7b401b0c030383">reverse_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a59a4f4829b8863395a229f1de94c5ec9">rend</a> ()</td></tr>
+<tr class="separator:a59a4f4829b8863395a229f1de94c5ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bca1a1d72f550ddfa31144789dd1ddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#af603f2d536c623774da69400b3c932ab">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a8bca1a1d72f550ddfa31144789dd1ddc">cend</a> () const</td></tr>
+<tr class="separator:a8bca1a1d72f550ddfa31144789dd1ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28fb4ed6b94e3de382632a7c13f81e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#ad28fb4ed6b94e3de382632a7c13f81e8">root</a> ()</td></tr>
+<tr class="separator:ad28fb4ed6b94e3de382632a7c13f81e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0d8f2444e232c1d1829a7216bb2798"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#aec0d8f2444e232c1d1829a7216bb2798">root</a> () const</td></tr>
+<tr class="separator:aec0d8f2444e232c1d1829a7216bb2798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f0d4f8f1fa97540294a9c08a3f6281"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a90f0d4f8f1fa97540294a9c08a3f6281">last</a> ()</td></tr>
+<tr class="separator:a90f0d4f8f1fa97540294a9c08a3f6281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7b45ce8a094ca1612a2b802c9ea2c2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a2e7b45ce8a094ca1612a2b802c9ea2c2">last</a> () const</td></tr>
+<tr class="separator:a2e7b45ce8a094ca1612a2b802c9ea2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfff113488ad2eb5298f38b911d25280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#abfff113488ad2eb5298f38b911d25280">insert</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *pNext)</td></tr>
+<tr class="memdesc:abfff113488ad2eb5298f38b911d25280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts this standalone node before the node pNext in pNext's .  <a href="classmn_1_1container_1_1basic__node.html#abfff113488ad2eb5298f38b911d25280">More...</a><br /></td></tr>
+<tr class="separator:abfff113488ad2eb5298f38b911d25280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51a41c5b9ab5793bdc1f4f7f8fed3fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#ae51a41c5b9ab5793bdc1f4f7f8fed3fb">remove</a> ()</td></tr>
+<tr class="memdesc:ae51a41c5b9ab5793bdc1f4f7f8fed3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes this node from the it's in.  <a href="classmn_1_1container_1_1basic__node.html#ae51a41c5b9ab5793bdc1f4f7f8fed3fb">More...</a><br /></td></tr>
+<tr class="separator:ae51a41c5b9ab5793bdc1f4f7f8fed3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4667a87bb070a387233e49aac65aa3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#aba4667a87bb070a387233e49aac65aa3">is</a> () const</td></tr>
+<tr class="separator:aba4667a87bb070a387233e49aac65aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518353df7c1f6d4615b4fbda01310889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a518353df7c1f6d4615b4fbda01310889">splice</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *first, <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *<a class="el" href="classmn_1_1container_1_1basic__node.html#a90f0d4f8f1fa97540294a9c08a3f6281">last</a>)</td></tr>
+<tr class="memdesc:a518353df7c1f6d4615b4fbda01310889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes [pFirst,pLast) from the it's in and inserts it before this in this node's .  <a href="classmn_1_1container_1_1basic__node.html#a518353df7c1f6d4615b4fbda01310889">More...</a><br /></td></tr>
+<tr class="separator:a518353df7c1f6d4615b4fbda01310889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6164ba4262b9292b14a8f261536540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#aaf6164ba4262b9292b14a8f261536540">reverse</a> ()</td></tr>
+<tr class="memdesc:aaf6164ba4262b9292b14a8f261536540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverses the order of nodes in the circular this node is a part of.  <a href="classmn_1_1container_1_1basic__node.html#aaf6164ba4262b9292b14a8f261536540">More...</a><br /></td></tr>
+<tr class="separator:aaf6164ba4262b9292b14a8f261536540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b3fc17cd62dc3c1d93a07f8d1d2b29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#ae4b3fc17cd62dc3c1d93a07f8d1d2b29">insert_range</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *pFirst, <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *pFinal)</td></tr>
+<tr class="memdesc:ae4b3fc17cd62dc3c1d93a07f8d1d2b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a range of elements.  <a href="classmn_1_1container_1_1basic__node.html#ae4b3fc17cd62dc3c1d93a07f8d1d2b29">More...</a><br /></td></tr>
+<tr class="separator:ae4b3fc17cd62dc3c1d93a07f8d1d2b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2040eea3040770b2aff60cd390717f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#ad2040eea3040770b2aff60cd390717f9">swap</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &amp;other)</td></tr>
+<tr class="separator:ad2040eea3040770b2aff60cd390717f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f94ae63806e916cd0a95907f793632"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a01f94ae63806e916cd0a95907f793632">get</a> ()</td></tr>
+<tr class="separator:a01f94ae63806e916cd0a95907f793632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a640b5c6b2717001c9b51ab45a64e09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a8a640b5c6b2717001c9b51ab45a64e09">operator==</a> (const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &amp;rhs) const</td></tr>
+<tr class="separator:a8a640b5c6b2717001c9b51ab45a64e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5316daab5055900e82fc1255c17f5e94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a5316daab5055900e82fc1255c17f5e94">operator!=</a> (const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &amp;rhs) const</td></tr>
+<tr class="separator:a5316daab5055900e82fc1255c17f5e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a13c2afab2bc08917fae1d78f9517d11d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a13c2afab2bc08917fae1d78f9517d11d">remove_range</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *pFirst, <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *pFinal)</td></tr>
+<tr class="memdesc:a13c2afab2bc08917fae1d78f9517d11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove a range of elements  <a href="classmn_1_1container_1_1basic__node.html#a13c2afab2bc08917fae1d78f9517d11d">More...</a><br /></td></tr>
+<tr class="separator:a13c2afab2bc08917fae1d78f9517d11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac96c73263d71e7c184efbdd448f7dce9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#ac96c73263d71e7c184efbdd448f7dce9">Next</a></td></tr>
+<tr class="memdesc:ac96c73263d71e7c184efbdd448f7dce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pointer to the next node.  <a href="classmn_1_1container_1_1basic__node.html#ac96c73263d71e7c184efbdd448f7dce9">More...</a><br /></td></tr>
+<tr class="separator:ac96c73263d71e7c184efbdd448f7dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3c5914ed79146b069f4ef10c6e9814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#a5e3c5914ed79146b069f4ef10c6e9814">Prev</a></td></tr>
+<tr class="memdesc:a5e3c5914ed79146b069f4ef10c6e9814"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pointer to the prev node.  <a href="classmn_1_1container_1_1basic__node.html#a5e3c5914ed79146b069f4ef10c6e9814">More...</a><br /></td></tr>
+<tr class="separator:a5e3c5914ed79146b069f4ef10c6e9814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20282843f7d5fce856f7aff47132b73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__node.html#ac20282843f7d5fce856f7aff47132b73">m_tValue</a></td></tr>
+<tr class="separator:ac20282843f7d5fce856f7aff47132b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af603f2d536c623774da69400b3c932ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af603f2d536c623774da69400b3c932ab">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#af603f2d536c623774da69400b3c932ab">const_iterator</a> =  const <a class="el" href="classmn_1_1container_1_1basic__node__itarrator.html">basic_node_itarrator</a>&lt;const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafab70757d6469dfb757612832c2360c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafab70757d6469dfb757612832c2360c">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#aafab70757d6469dfb757612832c2360c">const_pointer</a> =  const <a class="el" href="classmn_1_1container_1_1basic__node.html#a96dce749deff31920ba30652b4f74d87">pointer</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb4606e85a7fc6a8ecc5b3dd285ce598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4606e85a7fc6a8ecc5b3dd285ce598">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#abb4606e85a7fc6a8ecc5b3dd285ce598">const_reference</a> =  const <a class="el" href="classmn_1_1container_1_1basic__node.html#a832f16f8ff23f50564f0761a62e65c8d">reference</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5944666dc3085e7e4d6c569522621973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5944666dc3085e7e4d6c569522621973">&#9670;&nbsp;</a></span>const_reverse_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#a5944666dc3085e7e4d6c569522621973">const_reverse_iterator</a> =  const <a class="el" href="classmn_1_1container_1_1basic__node__itarrator__res.html">basic_node_itarrator_res</a>&lt;const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4e7bd2cae42fe7288f0c3c9d1dc4f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e7bd2cae42fe7288f0c3c9d1dc4f04">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#ae4e7bd2cae42fe7288f0c3c9d1dc4f04">iterator</a> =  <a class="el" href="classmn_1_1container_1_1basic__node__itarrator.html">basic_node_itarrator</a>&lt;<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af42625e9e4d7f45720949ad9970f8c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af42625e9e4d7f45720949ad9970f8c46">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#af42625e9e4d7f45720949ad9970f8c46">iterator_category</a> =  <a class="el" href="structmn_1_1bidirectional__iterator__tag.html">bidirectional_iterator_tag</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96dce749deff31920ba30652b4f74d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96dce749deff31920ba30652b4f74d87">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#a96dce749deff31920ba30652b4f74d87">pointer</a> =  <a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a>*</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a832f16f8ff23f50564f0761a62e65c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a832f16f8ff23f50564f0761a62e65c8d">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#a832f16f8ff23f50564f0761a62e65c8d">reference</a> =  <a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a>&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d7f3331dd0132b9dc7b401b0c030383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7f3331dd0132b9dc7b401b0c030383">&#9670;&nbsp;</a></span>reverse_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#a3d7f3331dd0132b9dc7b401b0c030383">reverse_iterator</a> =  <a class="el" href="classmn_1_1container_1_1basic__node__itarrator__res.html">basic_node_itarrator_res</a>&lt;<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99b0e462f48909e4c8e3579f40f99678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b0e462f48909e4c8e3579f40f99678">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> =  <a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt;T, TALLOCATOR&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac573adc91f0283623df1cbeff07f1cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac573adc91f0283623df1cbeff07f1cea">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a> =  T</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1f6b5e891ffe0a5c3522ce9ff1152335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f6b5e891ffe0a5c3522ce9ff1152335">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new base node object. </p>
+
+</div>
+</div>
+<a id="a71d9452f5fb6c8da6d233b1fa5672679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71d9452f5fb6c8da6d233b1fa5672679">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>_pNext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>_pPrev</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d3896bedc23c1bfc5601fc558daa4be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3896bedc23c1bfc5601fc558daa4be">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::<a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>_pOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acc3d33b8c159614d2df848539d43f4f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc3d33b8c159614d2df848539d43f4f5">&#9670;&nbsp;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#ae4e7bd2cae42fe7288f0c3c9d1dc4f04">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7904d370fdf62691ba7504598fb09bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7904d370fdf62691ba7504598fb09bc9">&#9670;&nbsp;</a></span>cbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#af603f2d536c623774da69400b3c932ab">const_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::cbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bca1a1d72f550ddfa31144789dd1ddc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bca1a1d72f550ddfa31144789dd1ddc">&#9670;&nbsp;</a></span>cend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#af603f2d536c623774da69400b3c932ab">const_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::cend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6bb60905452b439ce83f16f1b2d68dd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb60905452b439ce83f16f1b2d68dd9">&#9670;&nbsp;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#ae4e7bd2cae42fe7288f0c3c9d1dc4f04">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01f94ae63806e916cd0a95907f793632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f94ae63806e916cd0a95907f793632">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a> <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfff113488ad2eb5298f38b911d25280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfff113488ad2eb5298f38b911d25280">&#9670;&nbsp;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>pNext</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inserts this standalone node before the node pNext in pNext's . </p>
+
+</div>
+</div>
+<a id="ae4b3fc17cd62dc3c1d93a07f8d1d2b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b3fc17cd62dc3c1d93a07f8d1d2b29">&#9670;&nbsp;</a></span>insert_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::insert_range </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>pFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>pFinal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a range of elements. </p>
+
+</div>
+</div>
+<a id="aba4667a87bb070a387233e49aac65aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4667a87bb070a387233e49aac65aa3">&#9670;&nbsp;</a></span>is()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::is </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90f0d4f8f1fa97540294a9c08a3f6281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f0d4f8f1fa97540294a9c08a3f6281">&#9670;&nbsp;</a></span>last() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>* <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::last </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e7b45ce8a094ca1612a2b802c9ea2c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e7b45ce8a094ca1612a2b802c9ea2c2">&#9670;&nbsp;</a></span>last() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>* <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::last </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8b6224e4ad07a2b7b13c1622a5368f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b6224e4ad07a2b7b13c1622a5368f1">&#9670;&nbsp;</a></span>MNALLOC_OBJECT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::MNALLOC_OBJECT </td>
+          <td>(</td>
+          <td class="paramtype">TALLOCATOR&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5316daab5055900e82fc1255c17f5e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5316daab5055900e82fc1255c17f5e94">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a640b5c6b2717001c9b51ab45a64e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a640b5c6b2717001c9b51ab45a64e09">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a936f348be17afa0c59be1f4c7ea78623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a936f348be17afa0c59be1f4c7ea78623">&#9670;&nbsp;</a></span>rbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#a3d7f3331dd0132b9dc7b401b0c030383">reverse_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::rbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae51a41c5b9ab5793bdc1f4f7f8fed3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51a41c5b9ab5793bdc1f4f7f8fed3fb">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::remove </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes this node from the it's in. </p>
+
+</div>
+</div>
+<a id="a13c2afab2bc08917fae1d78f9517d11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c2afab2bc08917fae1d78f9517d11d">&#9670;&nbsp;</a></span>remove_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::remove_range </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>pFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>pFinal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>remove a range of elements </p>
+
+</div>
+</div>
+<a id="a59a4f4829b8863395a229f1de94c5ec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a4f4829b8863395a229f1de94c5ec9">&#9670;&nbsp;</a></span>rend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#a3d7f3331dd0132b9dc7b401b0c030383">reverse_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::rend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf6164ba4262b9292b14a8f261536540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6164ba4262b9292b14a8f261536540">&#9670;&nbsp;</a></span>reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::reverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reverses the order of nodes in the circular this node is a part of. </p>
+
+</div>
+</div>
+<a id="ad28fb4ed6b94e3de382632a7c13f81e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28fb4ed6b94e3de382632a7c13f81e8">&#9670;&nbsp;</a></span>root() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>* <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::root </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec0d8f2444e232c1d1829a7216bb2798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0d8f2444e232c1d1829a7216bb2798">&#9670;&nbsp;</a></span>root() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>* <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::root </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a518353df7c1f6d4615b4fbda01310889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518353df7c1f6d4615b4fbda01310889">&#9670;&nbsp;</a></span>splice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::splice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> *&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes [pFirst,pLast) from the it's in and inserts it before this in this node's . </p>
+
+</div>
+</div>
+<a id="ad2040eea3040770b2aff60cd390717f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2040eea3040770b2aff60cd390717f9">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac20282843f7d5fce856f7aff47132b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20282843f7d5fce856f7aff47132b73">&#9670;&nbsp;</a></span>m_tValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#ac573adc91f0283623df1cbeff07f1cea">value_type</a> <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::m_tValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96c73263d71e7c184efbdd448f7dce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96c73263d71e7c184efbdd448f7dce9">&#9670;&nbsp;</a></span>Next</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>* <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::Next</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The pointer to the next node. </p>
+
+</div>
+</div>
+<a id="a5e3c5914ed79146b069f4ef10c6e9814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e3c5914ed79146b069f4ef10c6e9814">&#9670;&nbsp;</a></span>Prev</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TALLOCATOR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__node.html#a99b0e462f48909e4c8e3579f40f99678">self_type</a>* <a class="el" href="classmn_1_1container_1_1basic__node.html">mn::container::basic_node</a>&lt; T, TALLOCATOR &gt;::Prev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The pointer to the prev node. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__node_8hpp_source.html">mn_node.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

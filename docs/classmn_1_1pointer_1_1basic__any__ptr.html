@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::pointer::basic_any_ptr&lt; T &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1pointer_1_1basic__any__ptr.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1pointer_1_1basic__any__ptr-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::pointer::basic_any_ptr&lt; T &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__any__ptr_8hpp_source.html">mn_any_ptr.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::pointer::basic_any_ptr&lt; T &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1pointer_1_1basic__any__ptr__inherit__graph.svg" width="162" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::pointer::basic_any_ptr&lt; T &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1pointer_1_1basic__any__ptr__coll__graph.svg" width="162" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a3c0f5f6fb7790cf45a358b5ea139e6d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a3c0f5f6fb7790cf45a358b5ea139e6d9">size_type</a> = <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a></td></tr>
+<tr class="separator:a3c0f5f6fb7790cf45a358b5ea139e6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c8205ff4bc7a677fc63f9265ee8a8c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a81c8205ff4bc7a677fc63f9265ee8a8c">pointer</a> = T *</td></tr>
+<tr class="separator:a81c8205ff4bc7a677fc63f9265ee8a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29d7f46eda0e7422157c11ca24d4f4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ab29d7f46eda0e7422157c11ca24d4f4a">const_pointer</a> = const T *</td></tr>
+<tr class="separator:ab29d7f46eda0e7422157c11ca24d4f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf858bf94b7ec37d15cf7562b63b6f9e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a> = <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt; T &gt;</td></tr>
+<tr class="separator:abf858bf94b7ec37d15cf7562b63b6f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae841a216782a894c158967c463dec994"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ae841a216782a894c158967c463dec994">basic_any_ptr</a> ()</td></tr>
+<tr class="memdesc:ae841a216782a894c158967c463dec994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new basic any ptr object.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#ae841a216782a894c158967c463dec994">More...</a><br /></td></tr>
+<tr class="separator:ae841a216782a894c158967c463dec994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90f0f87081d9c07962f9b7bdb6e7db3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#aa90f0f87081d9c07962f9b7bdb6e7db3">basic_any_ptr</a> (<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ab29d7f46eda0e7422157c11ca24d4f4a">const_pointer</a> pObject)</td></tr>
+<tr class="memdesc:aa90f0f87081d9c07962f9b7bdb6e7db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new basic any ptr object.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#aa90f0f87081d9c07962f9b7bdb6e7db3">More...</a><br /></td></tr>
+<tr class="separator:aa90f0f87081d9c07962f9b7bdb6e7db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02fa18ae3e1ce66e0aead0020b95094"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ae02fa18ae3e1ce66e0aead0020b95094">basic_any_ptr</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a> &amp;other)</td></tr>
+<tr class="memdesc:ae02fa18ae3e1ce66e0aead0020b95094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new basic any ptr object from a copy.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#ae02fa18ae3e1ce66e0aead0020b95094">More...</a><br /></td></tr>
+<tr class="separator:ae02fa18ae3e1ce66e0aead0020b95094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e5ddd036ced9e360c4fb8e7057cd9e"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:af1e5ddd036ced9e360c4fb8e7057cd9e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#af1e5ddd036ced9e360c4fb8e7057cd9e">basic_any_ptr</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt; U &gt; &amp;other)</td></tr>
+<tr class="memdesc:af1e5ddd036ced9e360c4fb8e7057cd9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new basic any ptr object from a copy.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#af1e5ddd036ced9e360c4fb8e7057cd9e">More...</a><br /></td></tr>
+<tr class="separator:af1e5ddd036ced9e360c4fb8e7057cd9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1109035f1b4943a553bffe023097ddb7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a1109035f1b4943a553bffe023097ddb7">operator=</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a> &amp;other)</td></tr>
+<tr class="memdesc:a1109035f1b4943a553bffe023097ddb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment Operator.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#a1109035f1b4943a553bffe023097ddb7">More...</a><br /></td></tr>
+<tr class="separator:a1109035f1b4943a553bffe023097ddb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f47b23ea754ca9a5221c0eff84b9f0"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:a30f47b23ea754ca9a5221c0eff84b9f0"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a30f47b23ea754ca9a5221c0eff84b9f0">operator=</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt; U &gt; &amp;other)</td></tr>
+<tr class="memdesc:a30f47b23ea754ca9a5221c0eff84b9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment Operator.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#a30f47b23ea754ca9a5221c0eff84b9f0">More...</a><br /></td></tr>
+<tr class="separator:a30f47b23ea754ca9a5221c0eff84b9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08998ba3c9e196fa41f9b4327fe804e5"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:a08998ba3c9e196fa41f9b4327fe804e5"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a08998ba3c9e196fa41f9b4327fe804e5">operator=</a> (const U *pObject)</td></tr>
+<tr class="memdesc:a08998ba3c9e196fa41f9b4327fe804e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign from object pointer.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#a08998ba3c9e196fa41f9b4327fe804e5">More...</a><br /></td></tr>
+<tr class="separator:a08998ba3c9e196fa41f9b4327fe804e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c879047a62fd4da8ca7551b24ee45a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a1c879047a62fd4da8ca7551b24ee45a3">operator const_pointer</a> ()</td></tr>
+<tr class="separator:a1c879047a62fd4da8ca7551b24ee45a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518290e873b41ae4167f9e7ba599e363"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:a518290e873b41ae4167f9e7ba599e363"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a518290e873b41ae4167f9e7ba599e363">operator const U *</a> ()</td></tr>
+<tr class="memdesc:a518290e873b41ae4167f9e7ba599e363"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit cast to non-const object pointer.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#a518290e873b41ae4167f9e7ba599e363">More...</a><br /></td></tr>
+<tr class="separator:a518290e873b41ae4167f9e7ba599e363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a40af2a3eb267becffe248ce6b079a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a0a40af2a3eb267becffe248ce6b079a4">is_null</a> ()</td></tr>
+<tr class="memdesc:a0a40af2a3eb267becffe248ce6b079a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the pointer null.  <a href="classmn_1_1pointer_1_1basic__any__ptr.html#a0a40af2a3eb267becffe248ce6b079a4">More...</a><br /></td></tr>
+<tr class="separator:a0a40af2a3eb267becffe248ce6b079a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abaefb03e8506a64aceb920a5815b898d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ab29d7f46eda0e7422157c11ca24d4f4a">const_pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abaefb03e8506a64aceb920a5815b898d">m_pObject</a></td></tr>
+<tr class="separator:abaefb03e8506a64aceb920a5815b898d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_structmn_1_1pointer_1_1pointer__ptr"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structmn_1_1pointer_1_1pointer__ptr')"><img src="closed.png" alt="-"/>&#160;Private Attributes inherited from <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html">mn::pointer::pointer_ptr&lt; T &gt;</a></td></tr>
+<tr class="memitem:a480d89441a2435cb94bb2186691a02f0 inherit pub_attribs_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a480d89441a2435cb94bb2186691a02f0">__ptr</a></td></tr>
+<tr class="separator:a480d89441a2435cb94bb2186691a02f0 inherit pub_attribs_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_structmn_1_1pointer_1_1pointer__ptr"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structmn_1_1pointer_1_1pointer__ptr')"><img src="closed.png" alt="-"/>&#160;Private Types inherited from <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html">mn::pointer::pointer_ptr&lt; T &gt;</a></td></tr>
+<tr class="memitem:a225a1f3dfa5f08fd0b2f2c1c561e1759 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a> = T</td></tr>
+<tr class="separator:a225a1f3dfa5f08fd0b2f2c1c561e1759 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adedf2e7aac15d86d198d7be5c7c86790 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#adedf2e7aac15d86d198d7be5c7c86790">ref_type</a> = T &amp;</td></tr>
+<tr class="separator:adedf2e7aac15d86d198d7be5c7c86790 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670f7136804d641237350e6f60a52721 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a670f7136804d641237350e6f60a52721">const_value_type</a> = const <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a></td></tr>
+<tr class="separator:a670f7136804d641237350e6f60a52721 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3c715402e0d4ef0d42b06992006285 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a> = <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a> *</td></tr>
+<tr class="separator:acb3c715402e0d4ef0d42b06992006285 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structmn_1_1pointer_1_1pointer__ptr')"><img src="closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html">mn::pointer::pointer_ptr&lt; T &gt;</a></td></tr>
+<tr class="memitem:a6ed9d9b75d533847a9624c166dda9deb inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a6ed9d9b75d533847a9624c166dda9deb">pointer_ptr</a> (const <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a> _pValue)</td></tr>
+<tr class="separator:a6ed9d9b75d533847a9624c166dda9deb inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2083c289b9c0636f3ed47b58e71712 inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#abd2083c289b9c0636f3ed47b58e71712">get</a> () const</td></tr>
+<tr class="separator:abd2083c289b9c0636f3ed47b58e71712 inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614eddd00bc87ac59b7139495613ef0f inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a614eddd00bc87ac59b7139495613ef0f">operator-&gt;</a> () const</td></tr>
+<tr class="separator:a614eddd00bc87ac59b7139495613ef0f inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea65b3618091614fd2db9653c9f0f18d inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a670f7136804d641237350e6f60a52721">const_value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#aea65b3618091614fd2db9653c9f0f18d">operator*</a> ()</td></tr>
+<tr class="separator:aea65b3618091614fd2db9653c9f0f18d inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b7be79992dd5284522b3eb31d644c7f inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a1b7be79992dd5284522b3eb31d644c7f">operator bool</a> ()</td></tr>
+<tr class="separator:a1b7be79992dd5284522b3eb31d644c7f inherit pub_methods_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ab29d7f46eda0e7422157c11ca24d4f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29d7f46eda0e7422157c11ca24d4f4a">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ab29d7f46eda0e7422157c11ca24d4f4a">const_pointer</a> =  const T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81c8205ff4bc7a677fc63f9265ee8a8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c8205ff4bc7a677fc63f9265ee8a8c">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a81c8205ff4bc7a677fc63f9265ee8a8c">pointer</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf858bf94b7ec37d15cf7562b63b6f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf858bf94b7ec37d15cf7562b63b6f9e">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a> =  <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c0f5f6fb7790cf45a358b5ea139e6d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0f5f6fb7790cf45a358b5ea139e6d9">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a3c0f5f6fb7790cf45a358b5ea139e6d9">size_type</a> =  <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae841a216782a894c158967c463dec994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae841a216782a894c158967c463dec994">&#9670;&nbsp;</a></span>basic_any_ptr() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new basic any ptr object. </p>
+
+</div>
+</div>
+<a id="aa90f0f87081d9c07962f9b7bdb6e7db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90f0f87081d9c07962f9b7bdb6e7db3">&#9670;&nbsp;</a></span>basic_any_ptr() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ab29d7f46eda0e7422157c11ca24d4f4a">const_pointer</a>&#160;</td>
+          <td class="paramname"><em>pObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new basic any ptr object. </p>
+
+</div>
+</div>
+<a id="ae02fa18ae3e1ce66e0aead0020b95094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae02fa18ae3e1ce66e0aead0020b95094">&#9670;&nbsp;</a></span>basic_any_ptr() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new basic any ptr object from a copy. </p>
+
+</div>
+</div>
+<a id="af1e5ddd036ced9e360c4fb8e7057cd9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e5ddd036ced9e360c4fb8e7057cd9e">&#9670;&nbsp;</a></span>basic_any_ptr() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new basic any ptr object from a copy. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>The type of the other any_ptr type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The copy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0a40af2a3eb267becffe248ce6b079a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a40af2a3eb267becffe248ce6b079a4">&#9670;&nbsp;</a></span>is_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::is_null </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the pointer null. </p>
+<dl class="section return"><dt>Returns</dt><dd>true The pointer hold a null pointer </dd>
+<dd>
+false The pointer is set </dd></dl>
+
+</div>
+</div>
+<a id="a518290e873b41ae4167f9e7ba599e363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a518290e873b41ae4167f9e7ba599e363">&#9670;&nbsp;</a></span>operator const U *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::operator const U * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implicit cast to non-const object pointer. </p>
+
+</div>
+</div>
+<a id="a1c879047a62fd4da8ca7551b24ee45a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c879047a62fd4da8ca7551b24ee45a3">&#9670;&nbsp;</a></span>operator const_pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::operator <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ab29d7f46eda0e7422157c11ca24d4f4a">const_pointer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30f47b23ea754ca9a5221c0eff84b9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30f47b23ea754ca9a5221c0eff84b9f0">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assignment Operator. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>The type of the other any_ptr type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The assignment object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>self </dd></dl>
+
+</div>
+</div>
+<a id="a1109035f1b4943a553bffe023097ddb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1109035f1b4943a553bffe023097ddb7">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assignment Operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The assignment object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>self </dd></dl>
+
+</div>
+</div>
+<a id="a08998ba3c9e196fa41f9b4327fe804e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08998ba3c9e196fa41f9b4327fe804e5">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#abf858bf94b7ec37d15cf7562b63b6f9e">self_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const U *&#160;</td>
+          <td class="paramname"><em>pObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assign from object pointer. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abaefb03e8506a64aceb920a5815b898d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaefb03e8506a64aceb920a5815b898d">&#9670;&nbsp;</a></span>m_pObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ab29d7f46eda0e7422157c11ca24d4f4a">const_pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">mn::pointer::basic_any_ptr</a>&lt; T &gt;::m_pObject</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__any__ptr_8hpp_source.html">mn_any_ptr.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

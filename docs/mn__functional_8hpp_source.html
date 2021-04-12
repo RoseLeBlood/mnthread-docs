@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_functional.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__functional_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_functional.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__functional_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef _MINLIB_423a6056_5421_4f39_85b0_41c5bada4730_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define _MINLIB_423a6056_5421_4f39_85b0_41c5bada4730_H_</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__defines_8hpp.html">mn_defines.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__typetraits_8hpp.html">mn_typetraits.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__def_8hpp.html">mn_def.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="mn__functional_8hpp.html#afb2c9350d32e78a0e4c960b9859ccb40">   27</a></span>&#160;<span class="keyword">using</span> <a class="code" href="mn__functional_8hpp.html#afb2c9350d32e78a0e4c960b9859ccb40">nullptr_t</a> = decltype(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structmn_1_1tag.html#a663ea5282269431efc54a85a390ea3de">   32</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span><a class="code" href="structmn_1_1tag.html">tag</a> { <span class="keyword">using</span> <a class="code" href="structmn_1_1tag.html#a663ea5282269431efc54a85a390ea3de">type</a> = T; };</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="namespacemn.html#af949eb65c3630a00c9a42b4f97aa3e53">   33</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Tag&gt; <span class="keyword">using</span> <a class="code" href="namespacemn.html#af949eb65c3630a00c9a42b4f97aa3e53">type_t</a> = <span class="keyword">typename</span> Tag::type;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacemn.html#a177f1faa0309d763662e8a1d02c6921e">   35</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T &amp;&amp;<a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">move</a>(T &amp;t) { </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T &amp;&amp;<span class="keyword">&gt;</span>(t); }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structmn_1_1remove__reference.html">   39</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1remove__reference.html">remove_reference</a> </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;T&gt; { };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structmn_1_1remove__reference_3_01T_01_6_01_4.html">   43</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1remove__reference.html">remove_reference</a>&lt;T &amp;&gt; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        : <a class="code" href="structmn_1_1tag.html">tag&lt;T&gt;</a> {  };</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacemn.html#a61084ea2eda2c55ad5ad05aee89af146">   47</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacemn.html#a61084ea2eda2c55ad5ad05aee89af146">remove_reference_t</a> = <a class="code" href="namespacemn.html#af949eb65c3630a00c9a42b4f97aa3e53">type_t&lt;remove_reference&lt;T&gt;</a>&gt;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">   50</a></span>&#160;    T &amp;&amp;<a class="code" href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">forward</a>(<a class="code" href="namespacemn.html#a61084ea2eda2c55ad5ad05aee89af146">remove_reference_t&lt;T&gt;</a> &amp;t) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T &amp;&amp;<span class="keyword">&gt;</span>(t);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespacemn.html#a9db74c4837644f9c0b0f6156c93daae2">   54</a></span>&#160;    T &amp;&amp;<a class="code" href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">forward</a>(<a class="code" href="namespacemn.html#a61084ea2eda2c55ad5ad05aee89af146">remove_reference_t&lt;T&gt;</a> &amp;&amp;t) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T &amp;&amp;<span class="keyword">&gt;</span>(t);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structmn_1_1remove__const.html">   59</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1remove__const.html">remove_const</a> </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;T&gt; { };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structmn_1_1remove__const_3_01T_01const_01_4.html">   63</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1remove__const.html">remove_const</a>&lt;T const&gt; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;T&gt; {};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structmn_1_1remove__volatile.html">   67</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1remove__volatile.html">remove_volatile</a> </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;T&gt; {};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structmn_1_1remove__volatile_3_01T_01volatile_01_4.html">   71</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1remove__volatile.html">remove_volatile</a>&lt;T volatile&gt; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;T&gt; {};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structmn_1_1remove__cv.html">   75</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1remove__cv.html">remove_cv</a> </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        : <a class="code" href="structmn_1_1remove__const.html">remove_const</a>&lt;type_t&lt;remove_volatile&lt;T&gt;&gt;&gt; {};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structmn_1_1decay3.html">   79</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1decay3.html">decay3</a> : <a class="code" href="structmn_1_1remove__cv.html">remove_cv</a>&lt;T&gt; {};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> R, <span class="keyword">typename</span>... Args&gt; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structmn_1_1decay3_3_01R_07Args_8_8_8_08_4.html">   82</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1decay3.html">decay3</a>&lt;R(Args...)&gt; : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;R (*)(Args...)&gt; {};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="structmn_1_1decay2.html">   85</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1decay2.html">decay2</a> : <a class="code" href="structmn_1_1decay3.html">decay3</a>&lt;T&gt; {};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt; </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="structmn_1_1decay2_3_01T_0fN_0e_4.html">   88</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1decay2.html">decay2</a>&lt;T[N]&gt; : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;T *&gt; {};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structmn_1_1decay.html">   91</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1decay.html">decay</a> : <a class="code" href="structmn_1_1decay2.html">decay2</a>&lt;remove_reference_t&lt;T&gt;&gt; {};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="namespacemn.html#a9d69badc37d358a0a0e9bb161eba9a71">   94</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacemn.html#a9d69badc37d358a0a0e9bb161eba9a71">decay_t</a> = <a class="code" href="namespacemn.html#af949eb65c3630a00c9a42b4f97aa3e53">type_t&lt;decay&lt;T&gt;</a>&gt;;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">   97</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T <a class="code" href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">declval</a>();  </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">namespace </span>internal {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">class</span>...&gt; <span class="keyword">typename</span> Z, <span class="keyword">typename</span>, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structmn_1_1internal_1_1can__apply.html">  102</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1internal_1_1can__apply.html">can_apply</a> : <a class="code" href="structmn_1_1integral__constant.html">false_type</a> {};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">class</span>...&gt; <span class="keyword">typename</span> Z, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="structmn_1_1internal_1_1can__apply_3_01Z_00_01void__t_3_01Z_3_01Ts_8_8_8_01_4_01_4_00_01Ts_8_8_8_01_4.html">  105</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1internal_1_1can__apply.html">can_apply</a>&lt;Z, <a class="code" href="namespacemn.html#ad0b8a428f956f77926d9eb759d6d4128">void_t</a>&lt;Z&lt;Ts...&gt;&gt;, Ts...&gt; : <a class="code" href="structmn_1_1integral__constant.html">true_type</a> {};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="namespacemn_1_1internal.html#ac747922a9821e230c3d6e094914a475f">  108</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn_1_1internal.html#ac747922a9821e230c3d6e094914a475f">try_convert</a> = decltype(To{declval&lt;From&gt;()});</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class </span>G, <span class="keyword">class</span>... Args&gt; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="namespacemn_1_1internal.html#a524a17bb16be6911dad6c491c0d89f50">  111</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn_1_1internal.html#a524a17bb16be6911dad6c491c0d89f50">invoke_t</a> = decltype(declval&lt;G&gt;()(declval&lt;Args&gt;()...));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> Sig, <span class="keyword">class</span> = <span class="keywordtype">void</span>&gt; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="namespacemn_1_1internal.html">  114</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1res__of">res_of</a> {};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class </span>G, <span class="keyword">class</span>... Args&gt;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structmn_1_1internal_1_1res__of_3_01G_07Args_8_8_8_08_00_01void__t_3_01invoke__t_3_01G_00_01Args_8_8_8_01_4_01_4_01_4.html">  116</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1res__of">res_of</a>&lt;G(Args...), <a class="code" href="namespacemn.html#ad0b8a428f956f77926d9eb759d6d4128">void_t</a>&lt;<a class="code" href="namespacemn_1_1internal.html#a524a17bb16be6911dad6c491c0d89f50">invoke_t</a>&lt;G, Args...&gt;&gt;&gt; : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;invoke_t&lt;G, Args...&gt;&gt; {};</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }  </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>...&gt; <span class="keyword">typename</span> Z, <span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="namespacemn.html#ac79af95af6145737e87c2d5ddf784663">  121</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structmn_1_1internal_1_1can__apply.html">can_apply</a> = <a class="code" href="structmn_1_1internal_1_1can__apply.html">internal::can_apply</a>&lt;Z, void, Ts...&gt;;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> From, <span class="keyword">typename</span> To&gt;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="structmn_1_1is__convertible.html">  125</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1is__convertible.html">is_convertible</a> : <a class="code" href="structmn_1_1internal_1_1can__apply.html">internal::can_apply</a>&lt;internal::try_convert, From, To&gt; {};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="structmn_1_1is__convertible_3_01void_00_01void_01_4.html">  127</a></span>&#160;    <span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span><a class="code" href="structmn_1_1is__convertible.html">is_convertible</a>&lt;void, void&gt; : <a class="code" href="structmn_1_1integral__constant.html">true_type</a> {};</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">bool</span>, <span class="keyword">class</span> = <span class="keywordtype">void</span>&gt; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="namespacemn.html">  130</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="namespacemn.html#structmn_1_1enable__if">enable_if</a> {};</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="structmn_1_1enable__if_3_01true_00_01T_01_4.html">  133</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="namespacemn.html#structmn_1_1enable__if">enable_if</a>&lt;true, T&gt; : <a class="code" href="structmn_1_1tag.html">tag</a>&lt;T&gt; {};</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> b, <span class="keyword">class</span> T = <span class="keywordtype">void</span>&gt; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="namespacemn.html#a82df290f62120843ae7b69892ca51eed">  136</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacemn.html#a82df290f62120843ae7b69892ca51eed">enable_if_t</a> = <a class="code" href="namespacemn.html#af949eb65c3630a00c9a42b4f97aa3e53">type_t&lt;enable_if&lt;b, T&gt;</a>&gt;;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;     </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> Sig&gt; </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="namespacemn.html#a46160e395158e297f526fcaf85f2eb9b">  140</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1res__of">res_of</a> = <a class="code" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1res__of">internal::res_of&lt;Sig&gt;</a>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> Sig&gt; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="namespacemn.html#a4be2502d58e63842ca5f0025f08a9b15">  143</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacemn.html#a4be2502d58e63842ca5f0025f08a9b15">res_of_t</a> = <a class="code" href="namespacemn.html#af949eb65c3630a00c9a42b4f97aa3e53">type_t&lt;res_of&lt;Sig&gt;</a>&gt;;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// aligned_storage</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> size, <span class="keywordtype">size_t</span> align&gt; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="namespacemn.html#a066dc7792e927089a95e46f4eda3de76">  147</a></span>&#160;    <span class="keyword">struct </span>alignas(align) <a class="code" href="namespacemn.html#structmn_1_1aligned__storage__t">aligned_storage_t</a> { <span class="keywordtype">char</span> buff[size]; };</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// is_same</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> A, <span class="keyword">class</span> B&gt; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="structmn_1_1is__same.html">  151</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1is__same.html">is_same</a> : <a class="code" href="structmn_1_1integral__constant.html">false_type</a> {};</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> A&gt; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="structmn_1_1is__same_3_01A_00_01A_01_4.html">  154</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1is__same.html">is_same</a>&lt;A, A&gt; : <a class="code" href="structmn_1_1integral__constant.html">true_type</a> {};</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> Sig, <span class="keywordtype">size_t</span> sz, <span class="keywordtype">size_t</span> algn&gt; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="namespacemn.html">  157</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>R, <span class="keyword">class</span>... Args, <span class="keywordtype">size_t</span> sz, <span class="keywordtype">size_t</span> algn&gt; </div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html">  162</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>&lt;R(Args...), sz, algn&gt; {</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html">  163</a></span>&#160;        <span class="keyword">struct </span>vtable_t {</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html#a33405a02df896911731edbca14080779">  164</a></span>&#160;            void (*mover)(<span class="keywordtype">void</span> *src, <span class="keywordtype">void</span> *dest);</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html#a7e304e5e9332e22ba8767917a716620e">  165</a></span>&#160;            void (*destroyer)(<span class="keywordtype">void</span> *);</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html#a4ea94375cd2b907ef97df4eab04d0c2d">  166</a></span>&#160;            R (*invoke)(<span class="keywordtype">void</span> <span class="keyword">const</span> *t, Args &amp;&amp;...args);</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html#a0d780a7af2a84319924d9987980d3895">  167</a></span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <span class="keyword">static</span> vtable_t <span class="keyword">const</span> *<a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html#a0d780a7af2a84319924d9987980d3895">get</a>() {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keyword">static</span> <span class="keyword">const</span> vtable_t table = {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    [](<span class="keywordtype">void</span> *src, <span class="keywordtype">void</span> *dest) { <span class="keyword">new</span> (dest) T(<a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">move</a>(*<span class="keyword">static_cast&lt;</span>T *<span class="keyword">&gt;</span>(src))); },</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    [](<span class="keywordtype">void</span> *t) { <span class="keyword">static_cast&lt;</span>T *<span class="keyword">&gt;</span>(t)-&gt;~T(); },</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    [](<span class="keywordtype">void</span> <span class="keyword">const</span> *t, Args &amp;&amp;...args) -&gt; R {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                        <span class="keywordflow">return</span> (*<span class="keyword">static_cast&lt;</span>T <span class="keyword">const </span>*<span class="keyword">&gt;</span>(t))(forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    }};</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">return</span> &amp;table;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        };</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#aee8a13bbc37e6dbde82fded4e583cfdc">  178</a></span>&#160;        vtable_t <span class="keyword">const</span> *table = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a61b7360272f154f7921374cdc8f8493f">  179</a></span>&#160;        <a class="code" href="namespacemn.html#namespacemn">aligned_storage_t&lt;sz, algn&gt;</a> <a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a61b7360272f154f7921374cdc8f8493f">data</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a033f3e352a163f3a46f78a2e63f5810e">  181</a></span>&#160;        <a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a033f3e352a163f3a46f78a2e63f5810e">small_task</a>() { }</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a0220ec624bbd7a47cb63de086a571f44">  182</a></span>&#160;        <a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a0220ec624bbd7a47cb63de086a571f44">small_task</a>(<span class="keyword">const</span> <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a> &amp;o) </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            : table(o.table), data(o.data) { }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a054c7d8131bdebc190fdab5444312877">  185</a></span>&#160;        <a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a054c7d8131bdebc190fdab5444312877">small_task</a>(<a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a> &amp;&amp;o) </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            : table(o.table) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">if</span> (table) table-&gt;mover(&amp;o.data, &amp;data);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> F, <span class="keyword">class</span> dF = decay_t&lt;F&gt;, enable_if_t&lt;!is_same&lt;dF, small_task&gt;{}&gt; * = <span class="keywordtype">nullptr</span>,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                  enable_if_t&lt;is_convertible&lt;res_of_t&lt;dF &amp;(Args...)&gt;, R&gt;{}&gt; * = <span class="keywordtype">nullptr</span>&gt;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a2ecca249bc65ef21627ce31ee71fe6c7">  192</a></span>&#160;        <a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a2ecca249bc65ef21627ce31ee71fe6c7">small_task</a>(F &amp;&amp;f) : table(vtable_t::template get&lt;dF&gt;()) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            static_assert(<span class="keyword">sizeof</span>(dF) &lt;= sz, <span class="stringliteral">&quot;object too large&quot;</span>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            static_assert(<span class="keyword">alignof</span>(dF) &lt;= algn, <span class="stringliteral">&quot;object too aligned&quot;</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keyword">new</span> (&amp;data) dF(forward&lt;F&gt;(f));</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a82e9706713e7fed72c742ba060c19e04">  197</a></span>&#160;        <a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a82e9706713e7fed72c742ba060c19e04">~small_task</a>() {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">if</span> (table) </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                table-&gt;destroyer(&amp;data);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#ad9ffaea3aa35a4e9fbb3c5a26aec2b21">  202</a></span>&#160;        <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a> &amp;<a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#ad9ffaea3aa35a4e9fbb3c5a26aec2b21">operator=</a>(<span class="keyword">const</span> <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a> &amp;o) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            this-&gt;~<a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keyword">new</span> (<span class="keyword">this</span>) <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>(<a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">move</a>(o));</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a39d13982933a5f2d1ae190ce608bd894">  207</a></span>&#160;        <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a> &amp;<a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a39d13982933a5f2d1ae190ce608bd894">operator=</a>(<a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a> &amp;&amp;o) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            this-&gt;~<a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keyword">new</span> (<span class="keyword">this</span>) <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>(<a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">move</a>(o));</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a4600de2c2189c3a658cd7f816b65e353">  212</a></span>&#160;        <span class="keyword">explicit</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">return</span> table;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#afd3d654177df822ed3f41f9b53679378">  215</a></span>&#160;        R <a class="code" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#afd3d654177df822ed3f41f9b53679378">operator()</a>(Args... args)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordflow">return</span> table-&gt;invoke(&amp;data, forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    };</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>R, <span class="keyword">class</span>... Args, <span class="keywordtype">size_t</span> sz, <span class="keywordtype">size_t</span> algn&gt;</div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="namespacemn.html#afd6f752021ced120bb4a11618a81cf8f">  221</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#afd6f752021ced120bb4a11618a81cf8f">operator==</a>(<span class="keyword">const</span> <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>&lt;R(Args...), sz, algn&gt; &amp;__f, <a class="code" href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">nullptr_t</a>) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">return</span> !<span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(__f);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;   </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>R, <span class="keyword">class</span>... Args, <span class="keywordtype">size_t</span> sz, <span class="keywordtype">size_t</span> algn&gt;</div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="namespacemn.html#a4135015241d4865dba3c1372a83286d5">  227</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#afd6f752021ced120bb4a11618a81cf8f">operator==</a>(<a class="code" href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">nullptr_t</a>, <span class="keyword">const</span> <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>&lt;R(Args...), sz, algn&gt; &amp;__f) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">return</span> !<span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(__f);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>R, <span class="keyword">class</span>... Args, <span class="keywordtype">size_t</span> sz, <span class="keywordtype">size_t</span> algn&gt;</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="namespacemn.html#a670f32411e639929b80177ef50f04cf9">  232</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a670f32411e639929b80177ef50f04cf9">operator!=</a>(<span class="keyword">const</span> <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>&lt;R(Args...), sz, algn&gt; &amp;__f, <a class="code" href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">nullptr_t</a>) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(__f);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class </span>R, <span class="keyword">class</span>... Args, <span class="keywordtype">size_t</span> sz, <span class="keywordtype">size_t</span> algn&gt;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="namespacemn.html#aa54d8c6375a64431a77aa27d87e25ace">  237</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a670f32411e639929b80177ef50f04cf9">operator!=</a>(<a class="code" href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">nullptr_t</a>, <span class="keyword">const</span> <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>&lt;R(Args...), sz, algn&gt; &amp;__f) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(__f);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> Sig&gt; </div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="namespacemn.html#ab3cd06c8217a74f1c564e902ebdb3dc9">  242</a></span>&#160;    <span class="keyword">using</span> <span class="keyword">function</span> = <a class="code" href="namespacemn.html#structmn_1_1small__task">small_task</a>&lt;Sig, <span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *) * 4, <span class="keyword">alignof</span>(<span class="keywordtype">void</span> *)&gt;;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="ttc" id="amn__def_8hpp_html"><div class="ttname"><a href="mn__def_8hpp.html">mn_def.hpp</a></div></div>
+<div class="ttc" id="amn__defines_8hpp_html"><div class="ttname"><a href="mn__defines_8hpp.html">mn_defines.hpp</a></div></div>
+<div class="ttc" id="amn__functional_8hpp_html_afb2c9350d32e78a0e4c960b9859ccb40"><div class="ttname"><a href="mn__functional_8hpp.html#afb2c9350d32e78a0e4c960b9859ccb40">nullptr_t</a></div><div class="ttdeci">decltype(nullptr) nullptr_t</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:27</div></div>
+<div class="ttc" id="amn__typetraits_8hpp_html"><div class="ttname"><a href="mn__typetraits_8hpp.html">mn_typetraits.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_1_1internal_html_a524a17bb16be6911dad6c491c0d89f50"><div class="ttname"><a href="namespacemn_1_1internal.html#a524a17bb16be6911dad6c491c0d89f50">mn::internal::invoke_t</a></div><div class="ttdeci">decltype(declval&lt; G &gt;()(declval&lt; Args &gt;()...)) invoke_t</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:111</div></div>
+<div class="ttc" id="anamespacemn_1_1internal_html_ac747922a9821e230c3d6e094914a475f"><div class="ttname"><a href="namespacemn_1_1internal.html#ac747922a9821e230c3d6e094914a475f">mn::internal::try_convert</a></div><div class="ttdeci">decltype(To{declval&lt; From &gt;()}) try_convert</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:108</div></div>
+<div class="ttc" id="anamespacemn_1_1internal_html_structmn_1_1internal_1_1res__of"><div class="ttname"><a href="namespacemn_1_1internal.html#structmn_1_1internal_1_1res__of">mn::internal::res_of</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:114</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
+<div class="ttc" id="anamespacemn_html_a1db3e24baedfe1c8979f6d64bba89765"><div class="ttname"><a href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">mn::declval</a></div><div class="ttdeci">T declval()</div></div>
+<div class="ttc" id="anamespacemn_html_a4be2502d58e63842ca5f0025f08a9b15"><div class="ttname"><a href="namespacemn.html#a4be2502d58e63842ca5f0025f08a9b15">mn::res_of_t</a></div><div class="ttdeci">type_t&lt; res_of&lt; Sig &gt; &gt; res_of_t</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:143</div></div>
+<div class="ttc" id="anamespacemn_html_a61084ea2eda2c55ad5ad05aee89af146"><div class="ttname"><a href="namespacemn.html#a61084ea2eda2c55ad5ad05aee89af146">mn::remove_reference_t</a></div><div class="ttdeci">type_t&lt; remove_reference&lt; T &gt; &gt; remove_reference_t</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:47</div></div>
+<div class="ttc" id="anamespacemn_html_a670f32411e639929b80177ef50f04cf9"><div class="ttname"><a href="namespacemn.html#a670f32411e639929b80177ef50f04cf9">mn::operator!=</a></div><div class="ttdeci">bool operator!=(const small_task&lt; R(Args...), sz, algn &gt; &amp;__f, nullptr_t)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:232</div></div>
+<div class="ttc" id="anamespacemn_html_a82df290f62120843ae7b69892ca51eed"><div class="ttname"><a href="namespacemn.html#a82df290f62120843ae7b69892ca51eed">mn::enable_if_t</a></div><div class="ttdeci">type_t&lt; enable_if&lt; b, T &gt; &gt; enable_if_t</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:136</div></div>
+<div class="ttc" id="anamespacemn_html_a9d69badc37d358a0a0e9bb161eba9a71"><div class="ttname"><a href="namespacemn.html#a9d69badc37d358a0a0e9bb161eba9a71">mn::decay_t</a></div><div class="ttdeci">type_t&lt; decay&lt; T &gt; &gt; decay_t</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:94</div></div>
+<div class="ttc" id="anamespacemn_html_acd72f028c96da628475a88ad4702dedd"><div class="ttname"><a href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">mn::nullptr_t</a></div><div class="ttdeci">decltype(nullptr) nullptr_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:26</div></div>
+<div class="ttc" id="anamespacemn_html_ad0b8a428f956f77926d9eb759d6d4128"><div class="ttname"><a href="namespacemn.html#ad0b8a428f956f77926d9eb759d6d4128">mn::void_t</a></div><div class="ttdeci">typename make_void&lt; ts ... &gt;::type void_t</div><div class="ttdef"><b>Definition:</b> mn_typetraits.hpp:27</div></div>
+<div class="ttc" id="anamespacemn_html_ae37469aa8cfbdec2289a0c3879decbdd"><div class="ttname"><a href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a></div><div class="ttdeci">void move(const T *src, const T *last, T *dest)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:84</div></div>
+<div class="ttc" id="anamespacemn_html_aebd48cb5d4810a57409cabb3c78e9521"><div class="ttname"><a href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">mn::forward</a></div><div class="ttdeci">T &amp;&amp; forward(remove_reference_t&lt; T &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:50</div></div>
+<div class="ttc" id="anamespacemn_html_af949eb65c3630a00c9a42b4f97aa3e53"><div class="ttname"><a href="namespacemn.html#af949eb65c3630a00c9a42b4f97aa3e53">mn::type_t</a></div><div class="ttdeci">typename Tag::type type_t</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:33</div></div>
+<div class="ttc" id="anamespacemn_html_afd6f752021ced120bb4a11618a81cf8f"><div class="ttname"><a href="namespacemn.html#afd6f752021ced120bb4a11618a81cf8f">mn::operator==</a></div><div class="ttdeci">bool operator==(const small_task&lt; R(Args...), sz, algn &gt; &amp;__f, nullptr_t)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:221</div></div>
+<div class="ttc" id="anamespacemn_html_namespacemn"><div class="ttname"><a href="namespacemn.html#namespacemn">mn::aligned_storage_t&lt; sz, algn &gt;</a></div></div>
+<div class="ttc" id="anamespacemn_html_structmn_1_1aligned__storage__t"><div class="ttname"><a href="namespacemn.html#structmn_1_1aligned__storage__t">mn::aligned_storage_t</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:147</div></div>
+<div class="ttc" id="anamespacemn_html_structmn_1_1enable__if"><div class="ttname"><a href="namespacemn.html#structmn_1_1enable__if">mn::enable_if</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:130</div></div>
+<div class="ttc" id="anamespacemn_html_structmn_1_1small__task"><div class="ttname"><a href="namespacemn.html#structmn_1_1small__task">mn::small_task</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:157</div></div>
+<div class="ttc" id="astructmn_1_1decay2_html"><div class="ttname"><a href="structmn_1_1decay2.html">mn::decay2</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:85</div></div>
+<div class="ttc" id="astructmn_1_1decay3_html"><div class="ttname"><a href="structmn_1_1decay3.html">mn::decay3</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:79</div></div>
+<div class="ttc" id="astructmn_1_1decay_html"><div class="ttname"><a href="structmn_1_1decay.html">mn::decay</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:91</div></div>
+<div class="ttc" id="astructmn_1_1integral__constant_html"><div class="ttname"><a href="structmn_1_1integral__constant.html">mn::integral_constant&lt; bool, false &gt;</a></div></div>
+<div class="ttc" id="astructmn_1_1internal_1_1can__apply_html"><div class="ttname"><a href="structmn_1_1internal_1_1can__apply.html">mn::internal::can_apply</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:102</div></div>
+<div class="ttc" id="astructmn_1_1is__convertible_html"><div class="ttname"><a href="structmn_1_1is__convertible.html">mn::is_convertible</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:125</div></div>
+<div class="ttc" id="astructmn_1_1is__same_html"><div class="ttname"><a href="structmn_1_1is__same.html">mn::is_same</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:151</div></div>
+<div class="ttc" id="astructmn_1_1remove__const_html"><div class="ttname"><a href="structmn_1_1remove__const.html">mn::remove_const</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:60</div></div>
+<div class="ttc" id="astructmn_1_1remove__cv_html"><div class="ttname"><a href="structmn_1_1remove__cv.html">mn::remove_cv</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:76</div></div>
+<div class="ttc" id="astructmn_1_1remove__reference_html"><div class="ttname"><a href="structmn_1_1remove__reference.html">mn::remove_reference</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:40</div></div>
+<div class="ttc" id="astructmn_1_1remove__volatile_html"><div class="ttname"><a href="structmn_1_1remove__volatile.html">mn::remove_volatile</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:68</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t_html_a0d780a7af2a84319924d9987980d3895"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html#a0d780a7af2a84319924d9987980d3895">mn::small_task&lt; R(Args...), sz, algn &gt;::vtable_t::get</a></div><div class="ttdeci">static vtable_t const  * get()</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:167</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_a0220ec624bbd7a47cb63de086a571f44"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a0220ec624bbd7a47cb63de086a571f44">mn::small_task&lt; R(Args...), sz, algn &gt;::small_task</a></div><div class="ttdeci">small_task(const small_task &amp;o)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:182</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_a033f3e352a163f3a46f78a2e63f5810e"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a033f3e352a163f3a46f78a2e63f5810e">mn::small_task&lt; R(Args...), sz, algn &gt;::small_task</a></div><div class="ttdeci">small_task()</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:181</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_a054c7d8131bdebc190fdab5444312877"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a054c7d8131bdebc190fdab5444312877">mn::small_task&lt; R(Args...), sz, algn &gt;::small_task</a></div><div class="ttdeci">small_task(small_task &amp;&amp;o)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:185</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_a2ecca249bc65ef21627ce31ee71fe6c7"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a2ecca249bc65ef21627ce31ee71fe6c7">mn::small_task&lt; R(Args...), sz, algn &gt;::small_task</a></div><div class="ttdeci">small_task(F &amp;&amp;f)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:192</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_a39d13982933a5f2d1ae190ce608bd894"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a39d13982933a5f2d1ae190ce608bd894">mn::small_task&lt; R(Args...), sz, algn &gt;::operator=</a></div><div class="ttdeci">small_task &amp; operator=(small_task &amp;&amp;o)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:207</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_a61b7360272f154f7921374cdc8f8493f"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a61b7360272f154f7921374cdc8f8493f">mn::small_task&lt; R(Args...), sz, algn &gt;::data</a></div><div class="ttdeci">aligned_storage_t&lt; sz, algn &gt; data</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:179</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_a82e9706713e7fed72c742ba060c19e04"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#a82e9706713e7fed72c742ba060c19e04">mn::small_task&lt; R(Args...), sz, algn &gt;::~small_task</a></div><div class="ttdeci">~small_task()</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:197</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_ad9ffaea3aa35a4e9fbb3c5a26aec2b21"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#ad9ffaea3aa35a4e9fbb3c5a26aec2b21">mn::small_task&lt; R(Args...), sz, algn &gt;::operator=</a></div><div class="ttdeci">small_task &amp; operator=(const small_task &amp;o)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:202</div></div>
+<div class="ttc" id="astructmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_html_afd3d654177df822ed3f41f9b53679378"><div class="ttname"><a href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4.html#afd3d654177df822ed3f41f9b53679378">mn::small_task&lt; R(Args...), sz, algn &gt;::operator()</a></div><div class="ttdeci">R operator()(Args... args) const</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:215</div></div>
+<div class="ttc" id="astructmn_1_1tag_html"><div class="ttname"><a href="structmn_1_1tag.html">mn::tag</a></div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:32</div></div>
+<div class="ttc" id="astructmn_1_1tag_html_a663ea5282269431efc54a85a390ea3de"><div class="ttname"><a href="structmn_1_1tag.html#a663ea5282269431efc54a85a390ea3de">mn::tag::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

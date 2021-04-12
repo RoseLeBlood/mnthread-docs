@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::container::basic_queue_iterator&lt; T, TQUEUE &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1container_1_1basic__queue__iterator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1container_1_1basic__queue__iterator-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::container::basic_queue_iterator&lt; T, TQUEUE &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="container_2mn__queue_8hpp_source.html">mn_queue.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0e5a3615e8404b2ceb9fecc71bca2b01"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a0e5a3615e8404b2ceb9fecc71bca2b01">iterator_category</a> = <a class="el" href="structmn_1_1forward__iterator__tag.html">mn::forward_iterator_tag</a></td></tr>
+<tr class="separator:a0e5a3615e8404b2ceb9fecc71bca2b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4477668dc02c679f94932d22634db935"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a4477668dc02c679f94932d22634db935">value_type</a> = T</td></tr>
+<tr class="separator:a4477668dc02c679f94932d22634db935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24287d495a5048b1a0c6c3ba8728e807"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a> = <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a4477668dc02c679f94932d22634db935">value_type</a> *</td></tr>
+<tr class="separator:a24287d495a5048b1a0c6c3ba8728e807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574c7247a574e080dd930dacc0946298"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a574c7247a574e080dd930dacc0946298">reference</a> = <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a4477668dc02c679f94932d22634db935">value_type</a> &amp;</td></tr>
+<tr class="separator:a574c7247a574e080dd930dacc0946298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d5542bf99b99ef12dad1aca36b53b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac7d5542bf99b99ef12dad1aca36b53b7">difference_type</a> = <a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">ptrdiff_t</a></td></tr>
+<tr class="separator:ac7d5542bf99b99ef12dad1aca36b53b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f72261859560ade354d236b6148ab52"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a2f72261859560ade354d236b6148ab52">queue_type</a> = TQUEUE</td></tr>
+<tr class="separator:a2f72261859560ade354d236b6148ab52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473c60fc7cc272fdc6bbfb30c1de62e0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a> = <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a>&lt; T, TQUEUE &gt;</td></tr>
+<tr class="separator:a473c60fc7cc272fdc6bbfb30c1de62e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71d5300632a41442e71b2d10a2cceb6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac71d5300632a41442e71b2d10a2cceb6">pointer_queue</a> = TQUEUE *</td></tr>
+<tr class="separator:ac71d5300632a41442e71b2d10a2cceb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa67ff7c31d6c0f44c9ff9cdac82ea98b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#aa67ff7c31d6c0f44c9ff9cdac82ea98b">basic_queue_iterator</a> (<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac71d5300632a41442e71b2d10a2cceb6">pointer_queue</a> _pQueue, bool isEnd=false)</td></tr>
+<tr class="separator:aa67ff7c31d6c0f44c9ff9cdac82ea98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb75ce215d42df0a3508385e76da0e00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#afb75ce215d42df0a3508385e76da0e00">basic_queue_iterator</a> (<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a> value, <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac71d5300632a41442e71b2d10a2cceb6">pointer_queue</a> _pQueue, bool isEnd=false)</td></tr>
+<tr class="separator:afb75ce215d42df0a3508385e76da0e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c22ce8d2fbe5cbdd5a653542d80ac17"><td class="memTemplParams" colspan="2">template&lt;class U , class UQUEUE &gt; </td></tr>
+<tr class="memitem:a8c22ce8d2fbe5cbdd5a653542d80ac17"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a8c22ce8d2fbe5cbdd5a653542d80ac17">basic_queue_iterator</a> (const <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a>&lt; U, UQUEUE &gt; &amp;rhs)</td></tr>
+<tr class="separator:a8c22ce8d2fbe5cbdd5a653542d80ac17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ecfa20bcbba5f38322137f7e495a276"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a8ecfa20bcbba5f38322137f7e495a276">get</a> () const</td></tr>
+<tr class="separator:a8ecfa20bcbba5f38322137f7e495a276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1182025d99dbb6c7e0211497681fcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a574c7247a574e080dd930dacc0946298">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#aee1182025d99dbb6c7e0211497681fcc">operator*</a> () const</td></tr>
+<tr class="separator:aee1182025d99dbb6c7e0211497681fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d74264adf92c5f0fc1a0e16d8df6243"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a3d74264adf92c5f0fc1a0e16d8df6243">operator-&gt;</a> () const</td></tr>
+<tr class="separator:a3d74264adf92c5f0fc1a0e16d8df6243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a476e4f7e651c4a4d0b93f39ea528dcb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a476e4f7e651c4a4d0b93f39ea528dcb8">operator++</a> ()</td></tr>
+<tr class="separator:a476e4f7e651c4a4d0b93f39ea528dcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c3cb73c60c06870b2ec4c1d938ef47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ad9c3cb73c60c06870b2ec4c1d938ef47">operator++</a> (int)</td></tr>
+<tr class="separator:ad9c3cb73c60c06870b2ec4c1d938ef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88e20bcb09ef7a0f6e5c6de2d2c871b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ad88e20bcb09ef7a0f6e5c6de2d2c871b">operator==</a> (const <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a> &amp;rhs) const</td></tr>
+<tr class="separator:ad88e20bcb09ef7a0f6e5c6de2d2c871b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcfdf1f01a8f0312510445a3946752a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a6dcfdf1f01a8f0312510445a3946752a">operator!=</a> (const <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a> &amp;rhs) const</td></tr>
+<tr class="separator:a6dcfdf1f01a8f0312510445a3946752a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a96bc8ab5d0802d6d8b871514d72055e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a96bc8ab5d0802d6d8b871514d72055e3">m_pValue</a></td></tr>
+<tr class="separator:a96bc8ab5d0802d6d8b871514d72055e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf8b03641d515d7c3c54665857ae2d0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac71d5300632a41442e71b2d10a2cceb6">pointer_queue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#abf8b03641d515d7c3c54665857ae2d0e">m_pQueue</a></td></tr>
+<tr class="separator:abf8b03641d515d7c3c54665857ae2d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ebee91ac34d154c51124165eecbd67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac2ebee91ac34d154c51124165eecbd67">m_bIsEnd</a></td></tr>
+<tr class="separator:ac2ebee91ac34d154c51124165eecbd67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ac7d5542bf99b99ef12dad1aca36b53b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d5542bf99b99ef12dad1aca36b53b7">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac7d5542bf99b99ef12dad1aca36b53b7">difference_type</a> =  <a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">ptrdiff_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e5a3615e8404b2ceb9fecc71bca2b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5a3615e8404b2ceb9fecc71bca2b01">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a0e5a3615e8404b2ceb9fecc71bca2b01">iterator_category</a> =  <a class="el" href="structmn_1_1forward__iterator__tag.html">mn::forward_iterator_tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24287d495a5048b1a0c6c3ba8728e807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24287d495a5048b1a0c6c3ba8728e807">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a> =  <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a4477668dc02c679f94932d22634db935">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac71d5300632a41442e71b2d10a2cceb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71d5300632a41442e71b2d10a2cceb6">&#9670;&nbsp;</a></span>pointer_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac71d5300632a41442e71b2d10a2cceb6">pointer_queue</a> =  TQUEUE*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f72261859560ade354d236b6148ab52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f72261859560ade354d236b6148ab52">&#9670;&nbsp;</a></span>queue_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a2f72261859560ade354d236b6148ab52">queue_type</a> =  TQUEUE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a574c7247a574e080dd930dacc0946298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a574c7247a574e080dd930dacc0946298">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a574c7247a574e080dd930dacc0946298">reference</a> =  <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a4477668dc02c679f94932d22634db935">value_type</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a473c60fc7cc272fdc6bbfb30c1de62e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473c60fc7cc272fdc6bbfb30c1de62e0">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a> =  <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a>&lt;T, TQUEUE&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4477668dc02c679f94932d22634db935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4477668dc02c679f94932d22634db935">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a4477668dc02c679f94932d22634db935">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa67ff7c31d6c0f44c9ff9cdac82ea98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67ff7c31d6c0f44c9ff9cdac82ea98b">&#9670;&nbsp;</a></span>basic_queue_iterator() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac71d5300632a41442e71b2d10a2cceb6">pointer_queue</a>&#160;</td>
+          <td class="paramname"><em>_pQueue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isEnd</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb75ce215d42df0a3508385e76da0e00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb75ce215d42df0a3508385e76da0e00">&#9670;&nbsp;</a></span>basic_queue_iterator() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac71d5300632a41442e71b2d10a2cceb6">pointer_queue</a>&#160;</td>
+          <td class="paramname"><em>_pQueue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isEnd</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c22ce8d2fbe5cbdd5a653542d80ac17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c22ce8d2fbe5cbdd5a653542d80ac17">&#9670;&nbsp;</a></span>basic_queue_iterator() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<div class="memtemplate">
+template&lt;class U , class UQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a>&lt; U, UQUEUE &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8ecfa20bcbba5f38322137f7e495a276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ecfa20bcbba5f38322137f7e495a276">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a> <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dcfdf1f01a8f0312510445a3946752a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dcfdf1f01a8f0312510445a3946752a">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee1182025d99dbb6c7e0211497681fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee1182025d99dbb6c7e0211497681fcc">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a574c7247a574e080dd930dacc0946298">reference</a> <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a476e4f7e651c4a4d0b93f39ea528dcb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a476e4f7e651c4a4d0b93f39ea528dcb8">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a>&amp; <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9c3cb73c60c06870b2ec4c1d938ef47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c3cb73c60c06870b2ec4c1d938ef47">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a> <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d74264adf92c5f0fc1a0e16d8df6243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d74264adf92c5f0fc1a0e16d8df6243">&#9670;&nbsp;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a> <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad88e20bcb09ef7a0f6e5c6de2d2c871b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad88e20bcb09ef7a0f6e5c6de2d2c871b">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a473c60fc7cc272fdc6bbfb30c1de62e0">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac2ebee91ac34d154c51124165eecbd67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ebee91ac34d154c51124165eecbd67">&#9670;&nbsp;</a></span>m_bIsEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::m_bIsEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf8b03641d515d7c3c54665857ae2d0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf8b03641d515d7c3c54665857ae2d0e">&#9670;&nbsp;</a></span>m_pQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac71d5300632a41442e71b2d10a2cceb6">pointer_queue</a> <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::m_pQueue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96bc8ab5d0802d6d8b871514d72055e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bc8ab5d0802d6d8b871514d72055e3">&#9670;&nbsp;</a></span>m_pValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class TQUEUE &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#a24287d495a5048b1a0c6c3ba8728e807">pointer</a>* <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">mn::container::basic_queue_iterator</a>&lt; T, TQUEUE &gt;::m_pValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="container_2mn__queue_8hpp_source.html">container/mn_queue.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

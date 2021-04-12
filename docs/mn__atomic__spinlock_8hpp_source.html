@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_atomic_spinlock.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__atomic__spinlock_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_atomic_spinlock.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__atomic__spinlock_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2021 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify  </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by  </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.  </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MINLIB_d82b672b_8681_4cea_bb66_a4aa2d9927e2_H_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINLIB_d82b672b_8681_4cea_bb66_a4aa2d9927e2_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__atomic_8hpp.html">mn_atomic.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__lock_8hpp.html">mn_lock.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html">   26</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1ILockObject.html">ILockObject</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">   28</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1atomic__spinlock.html">self_type</a> = <a class="code" href="classmn_1_1atomic__spinlock.html">atomic_spinlock&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">   29</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> = T;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#abcac2181c81506a45e1eea1fb1f3d083">   30</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1atomic__spinlock.html#abcac2181c81506a45e1eea1fb1f3d083">pointer</a> = <a class="code" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>*;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#ad53a0a2e08dc0c92fec0d91286472304">   31</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1atomic__spinlock.html#ad53a0a2e08dc0c92fec0d91286472304">reference</a> = <a class="code" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>&amp;;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#ac72f975408678d37f47e718ef8ffa265">   32</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">lock_guard</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;self_type&gt;</a> ;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#abeede400bb5e39108f91994c699c003e">   34</a></span>&#160;        <a class="code" href="classmn_1_1atomic__spinlock.html#abeede400bb5e39108f91994c699c003e">atomic_spinlock</a>() : <a class="code" href="classmn_1_1atomic__spinlock.html#ac96178ac3f9b9e116b9e471d1cf2c8ee">m_locked</a>(false) { }</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">   39</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> not_use = 0) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">while</span>(! <a class="code" href="classmn_1_1atomic__spinlock.html#ac96178ac3f9b9e116b9e471d1cf2c8ee">m_locked</a>.compare_exchange_t(<span class="keyword">false</span>, <span class="keyword">true</span>, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                atomic_bool::memory_order::Acquire) ) { }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a2c155fffd28596a3eaad251aa5e21c89">   45</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a2c155fffd28596a3eaad251aa5e21c89">time_lock</a>(<span class="keyword">const</span> <span class="keyword">struct</span> timespec *timeout) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">lock</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#ac78903271e8d891f91e02eaf8cb7c228">   51</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1atomic__spinlock.html#ac78903271e8d891f91e02eaf8cb7c228">unlock</a>() {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="classmn_1_1atomic__spinlock.html#ac96178ac3f9b9e116b9e471d1cf2c8ee">m_locked</a>.store(<span class="keyword">false</span>, basic_atomic_gcc_memory_order::Release);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a8701f03019044d8ad94412a4cb0d3654">   62</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a8701f03019044d8ad94412a4cb0d3654">try_lock</a>() {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span>( <a class="code" href="classmn_1_1atomic__spinlock.html#ac96178ac3f9b9e116b9e471d1cf2c8ee">m_locked</a>.compare_exchange_t(<span class="keyword">false</span>, <span class="keyword">true</span>, atomic_bool::memory_order::Acquire) )</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">lock</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a2c623124b5b2da59183ce45824919229">   74</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a2c623124b5b2da59183ce45824919229">is_initialized</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#af113f79221945433bd6139c9d7b66f79">   77</a></span>&#160;        <span class="keyword">operator</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>() { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a2573b93c0fb0b0f10980ab98aec1738d">m_value</a>; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#ad22c47863062d03af20b6c550d270864">   79</a></span>&#160;        <a class="code" href="classmn_1_1atomic__spinlock.html">self_type</a>&amp; <a class="code" href="classmn_1_1atomic__spinlock.html#ad22c47863062d03af20b6c550d270864">operator = </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>&amp; oValue) { </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="classmn_1_1basic__autolock.html">lock_guard</a> <a class="code" href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">lock</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="classmn_1_1atomic__spinlock.html#a2573b93c0fb0b0f10980ab98aec1738d">m_value</a> = oValue;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#adae4f6270439c80f3f0924fb160c3fad">   85</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1atomic__spinlock.html#adae4f6270439c80f3f0924fb160c3fad">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>&amp; oValue) { </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="classmn_1_1basic__autolock.html">lock_guard</a> <a class="code" href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">lock</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a2573b93c0fb0b0f10980ab98aec1738d">m_value</a> == oValue;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a44415dc4e1602c158e706aa9f01bab33">   89</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a44415dc4e1602c158e706aa9f01bab33">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>&amp; oValue) { </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="classmn_1_1basic__autolock.html">lock_guard</a> <a class="code" href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">lock</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1atomic__spinlock.html#a2573b93c0fb0b0f10980ab98aec1738d">m_value</a> != oValue;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a092db6ff11dfe8cd993e52dd52a34c23">   94</a></span>&#160;        <a class="code" href="classmn_1_1atomic__spinlock.html#a092db6ff11dfe8cd993e52dd52a34c23">atomic_spinlock</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1atomic__spinlock.html">self_type</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#ad1911d98e9d57556466c6e49e5c2faa2">   95</a></span>&#160;        <a class="code" href="classmn_1_1atomic__spinlock.html">self_type</a>&amp; <a class="code" href="classmn_1_1atomic__spinlock.html#ad1911d98e9d57556466c6e49e5c2faa2">operator=</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1atomic__spinlock.html">self_type</a>&amp;) = <span class="keyword">delete</span>; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#ac96178ac3f9b9e116b9e471d1cf2c8ee">   97</a></span>&#160;        <a class="code" href="structmn_1_1__atomic_3_01bool_01_4.html">atomic_bool</a> <a class="code" href="classmn_1_1atomic__spinlock.html#ac96178ac3f9b9e116b9e471d1cf2c8ee">m_locked</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classmn_1_1atomic__spinlock.html#a2573b93c0fb0b0f10980ab98aec1738d">   98</a></span>&#160;        <a class="code" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> <a class="code" href="classmn_1_1atomic__spinlock.html#a2573b93c0fb0b0f10980ab98aec1738d">m_value</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    };</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1ILockObject_html"><div class="ttname"><a href="classmn_1_1ILockObject.html">mn::ILockObject</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:38</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a></div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:26</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_a092db6ff11dfe8cd993e52dd52a34c23"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#a092db6ff11dfe8cd993e52dd52a34c23">mn::atomic_spinlock::atomic_spinlock</a></div><div class="ttdeci">atomic_spinlock(const self_type &amp;)=delete</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_a2573b93c0fb0b0f10980ab98aec1738d"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#a2573b93c0fb0b0f10980ab98aec1738d">mn::atomic_spinlock::m_value</a></div><div class="ttdeci">value_type m_value</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:98</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_a2c155fffd28596a3eaad251aa5e21c89"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#a2c155fffd28596a3eaad251aa5e21c89">mn::atomic_spinlock::time_lock</a></div><div class="ttdeci">virtual int time_lock(const struct timespec *timeout)</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:45</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_a2c623124b5b2da59183ce45824919229"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#a2c623124b5b2da59183ce45824919229">mn::atomic_spinlock::is_initialized</a></div><div class="ttdeci">virtual bool is_initialized() const</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:74</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_a44415dc4e1602c158e706aa9f01bab33"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#a44415dc4e1602c158e706aa9f01bab33">mn::atomic_spinlock::operator!=</a></div><div class="ttdeci">bool operator!=(const value_type &amp;oValue)</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:89</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_a5360c17ee161ad2c51b8458c95def403"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">mn::atomic_spinlock::lock</a></div><div class="ttdeci">virtual int lock(unsigned int not_use=0)</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:39</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_a644972aa0c8e9e9538bac0f80a46b93a"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">mn::atomic_spinlock::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:29</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_a8701f03019044d8ad94412a4cb0d3654"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#a8701f03019044d8ad94412a4cb0d3654">mn::atomic_spinlock::try_lock</a></div><div class="ttdeci">virtual bool try_lock()</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:62</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_abcac2181c81506a45e1eea1fb1f3d083"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#abcac2181c81506a45e1eea1fb1f3d083">mn::atomic_spinlock::pointer</a></div><div class="ttdeci">value_type * pointer</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:30</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_abeede400bb5e39108f91994c699c003e"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#abeede400bb5e39108f91994c699c003e">mn::atomic_spinlock::atomic_spinlock</a></div><div class="ttdeci">atomic_spinlock()</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:34</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_ac78903271e8d891f91e02eaf8cb7c228"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#ac78903271e8d891f91e02eaf8cb7c228">mn::atomic_spinlock::unlock</a></div><div class="ttdeci">virtual int unlock()</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:51</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_ac96178ac3f9b9e116b9e471d1cf2c8ee"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#ac96178ac3f9b9e116b9e471d1cf2c8ee">mn::atomic_spinlock::m_locked</a></div><div class="ttdeci">atomic_bool m_locked</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:97</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_ad1911d98e9d57556466c6e49e5c2faa2"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#ad1911d98e9d57556466c6e49e5c2faa2">mn::atomic_spinlock::operator=</a></div><div class="ttdeci">self_type &amp; operator=(const self_type &amp;)=delete</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_ad22c47863062d03af20b6c550d270864"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#ad22c47863062d03af20b6c550d270864">mn::atomic_spinlock::operator=</a></div><div class="ttdeci">self_type &amp; operator=(const value_type &amp;oValue)</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:79</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_ad53a0a2e08dc0c92fec0d91286472304"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#ad53a0a2e08dc0c92fec0d91286472304">mn::atomic_spinlock::reference</a></div><div class="ttdeci">value_type &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:31</div></div>
+<div class="ttc" id="aclassmn_1_1atomic__spinlock_html_adae4f6270439c80f3f0924fb160c3fad"><div class="ttname"><a href="classmn_1_1atomic__spinlock.html#adae4f6270439c80f3f0924fb160c3fad">mn::atomic_spinlock::operator==</a></div><div class="ttdeci">bool operator==(const value_type &amp;oValue)</div><div class="ttdef"><b>Definition:</b> mn_atomic_spinlock.hpp:85</div></div>
+<div class="ttc" id="aclassmn_1_1basic__autolock_html"><div class="ttname"><a href="classmn_1_1basic__autolock.html">mn::basic_autolock</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:102</div></div>
+<div class="ttc" id="amn__atomic_8hpp_html"><div class="ttname"><a href="mn__atomic_8hpp.html">mn_atomic.hpp</a></div></div>
+<div class="ttc" id="amn__lock_8hpp_html"><div class="ttname"><a href="mn__lock_8hpp.html">mn_lock.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
+<div class="ttc" id="astructmn_1_1__atomic_3_01bool_01_4_html"><div class="ttname"><a href="structmn_1_1__atomic_3_01bool_01_4.html">mn::_atomic&lt; bool &gt;</a></div><div class="ttdoc">Special version for bool.</div><div class="ttdef"><b>Definition:</b> mn_atomic_primary_types.hpp:50</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

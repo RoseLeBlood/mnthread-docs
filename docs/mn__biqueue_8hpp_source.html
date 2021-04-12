@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_biqueue.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__biqueue_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_biqueue.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__biqueue_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MINILIB_a7a12e6f_55af_455f_8086_826c7dc83357_H_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINILIB_a7a12e6f_55af_455f_8086_826c7dc83357_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;../queue/mn_binaryqueue.hpp&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;../mn_algorithm.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html">   26</a></span>&#160;    <span class="keyword">namespace </span>container {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">   28</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">basic_binary_queue_iterator</a>  {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a6b851914b525ddbe3bace2fe43d8237f">   30</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="structmn_1_1forward__iterator__tag.html">iterator_category</a> = <a class="code" href="structmn_1_1forward__iterator__tag.html">forward_iterator_tag</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">   31</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">value_type</a> = T;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ab6463b6e9a51ec944c2ba48297645391">   32</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ab6463b6e9a51ec944c2ba48297645391">pointer</a> = <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">value_type</a>*;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8afa730470be0c0fa56ba6110825b0aa">   33</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8afa730470be0c0fa56ba6110825b0aa">reference</a> = <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">value_type</a>&amp;;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a7c2cb206d3881f2d06d3d9151721ced6">   34</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">self_type</a> = <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">basic_binary_queue_iterator&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a6cc590be4aeeb068b30d56e84e86cbb5">   35</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a6cc590be4aeeb068b30d56e84e86cbb5">difference_type</a> = <a class="code" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">ptrdiff_t</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a3b2ff2f5674cc3b6d8ba233397ec7131">   38</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="structmn_1_1forward__iterator__tag.html">iterator_category</a> = TCategory ;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">   40</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">value_type</a> = T;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a6cc590be4aeeb068b30d56e84e86cbb5">   42</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a6cc590be4aeeb068b30d56e84e86cbb5">difference_type</a> = <a class="code" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">ptrdiff_t</a>; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ab6463b6e9a51ec944c2ba48297645391">   44</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ab6463b6e9a51ec944c2ba48297645391">pointer</a> = <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">value_type</a>*;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8afa730470be0c0fa56ba6110825b0aa">   46</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8afa730470be0c0fa56ba6110825b0aa">reference</a> = <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">value_type</a>&amp; ;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8d4646d4379c84289f32cc78290863e1">   48</a></span>&#160;            <span class="keyword">explicit</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8d4646d4379c84289f32cc78290863e1">basic_binary_queue_iterator</a>(T* pValue)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a>(pValue) { }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keyword">template</span>&lt;<span class="keyword">class</span> U&gt; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a2a957c801214c614e13ede50c61ba3b6">   52</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a2a957c801214c614e13ede50c61ba3b6">basic_binary_queue_iterator</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">basic_binary_queue_iterator&lt;U&gt;</a>&amp; rhs)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a>(rhs.<a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a>) { }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a48731412686d36cd9a3568ae9b387e5d">   55</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ab6463b6e9a51ec944c2ba48297645391">pointer</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a48731412686d36cd9a3568ae9b387e5d">get</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a>; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#af28296cd40faa84dbd30423e2515609e">   57</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8afa730470be0c0fa56ba6110825b0aa">reference</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#af28296cd40faa84dbd30423e2515609e">operator*</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *<a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a>; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a20de6840709a1f569788f01c397ae7cf">   58</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ab6463b6e9a51ec944c2ba48297645391">pointer</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a20de6840709a1f569788f01c397ae7cf">operator-&gt;</a>()<span class="keyword"> const  </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a>; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a99a0f15a68bcef3335a0ff6d216e59bd">   60</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a99a0f15a68bcef3335a0ff6d216e59bd">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">self_type</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span> rhs.<a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a> == <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a>; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ac2b2bf56765fc3b08b38ec607a229c1d">   63</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ac2b2bf56765fc3b08b38ec607a229c1d">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">self_type</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">return</span> !(rhs == *<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">   66</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ab6463b6e9a51ec944c2ba48297645391">pointer</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">m_pValue</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T, mn::<span class="keywordtype">size_t</span> TITEMSIZE = sizeof(T) &gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html">   77</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">basic_binary_queue</a> {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a51f8f78ff7b8faa9dc62992009263d72">   79</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1queue_1_1basic__binaryqueue.html">queue_type</a> = <a class="code" href="namespacemn_1_1queue.html#a6ccda37b6587b8817eb4327ed7e8e0b4">mn::queue::binaryqueue_t</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#aaed5a6d7a7026f790bed71879308c52d">   80</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#aaed5a6d7a7026f790bed71879308c52d">value_type</a> = T;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a53eeabe63741ef3852664ef44436a05e">   81</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a53eeabe63741ef3852664ef44436a05e">pointer</a> = T*;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#af8c02008a87c7d773c3fc247373218fb">   82</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#af8c02008a87c7d773c3fc247373218fb">reference</a> = T&amp;;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a73c4494b32f276a219d2f1fbbfa2e92f">   83</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a73c4494b32f276a219d2f1fbbfa2e92f">const_reference</a> = <span class="keyword">const</span> T&amp;;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a0fa8439f2bf85b345ed58c5e75630202">   84</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">self_type</a> = <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">basic_binary_queue&lt;T, TITEMSIZE&gt;</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a5e530f20382b0d55579269fdad78a3f8">   85</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">iterator</a> = <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">basic_binary_queue_iterator&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a10faa0f1ef64b456421df225d94c8366">   86</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">const_iterator</a> = <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a5e530f20382b0d55579269fdad78a3f8">iterator</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a749de42020de464068d2610b3dcf21a9">   89</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a749de42020de464068d2610b3dcf21a9">basic_binary_queue</a>() </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">m_BinQueue</a>(TITEMSIZE) { <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">m_BinQueue</a>.<a class="code" href="classmn_1_1queue_1_1basic__queue.html#ab06e8487bf446f1f4423b80af6cb1dea">create</a>(); }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#ac88f7d14f28e13e4b79b7fb2fedf743a">   92</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac88f7d14f28e13e4b79b7fb2fedf743a">basic_binary_queue</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">self_type</a>&amp; other) </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">m_BinQueue</a>(other.<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">m_BinQueue</a>) { }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#acce88b05cd5d345790d62d4cdff635b8">   95</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#acce88b05cd5d345790d62d4cdff635b8">~basic_binary_queue</a>() { <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">m_BinQueue</a>.<a class="code" href="classmn_1_1queue_1_1basic__queue.html#a709d97f6d09b4e32a79091d3eaa24be8">destroy</a>(); }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a36a98aa87dc5a1fdd5509a96f4377c2a">  101</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a36a98aa87dc5a1fdd5509a96f4377c2a">begin</a>() {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">basic_binary_queue_iterator</a>(<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">intern_get</a>());</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a3ad8cfe02322a3e0af41104e876cbfee">  108</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a3ad8cfe02322a3e0af41104e876cbfee">end</a>() {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">basic_binary_queue_iterator</a>(<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">intern_get</a>());</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#acd1cc52d413cf7651d8d2fd11829b843">  116</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">const_iterator</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#acd1cc52d413cf7651d8d2fd11829b843">begin</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">basic_binary_queue_iterator</a>(<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">intern_get</a>());</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            }</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a89edf18201771b3e6572aa70468dbc3a">  123</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">const_iterator</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a89edf18201771b3e6572aa70468dbc3a">end</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue__iterator.html">basic_binary_queue_iterator</a>(<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">intern_get</a>());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#aa14cc973bdd6bdc6560636fe8bee8396">  127</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a73c4494b32f276a219d2f1fbbfa2e92f">const_reference</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#aa14cc973bdd6bdc6560636fe8bee8396">item</a>()<span class="keyword"> const  </span>{ </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                assert(!<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a2f9fb247c97a683bb266b0a6e3be8d44">empty</a>()); <span class="keywordflow">return</span> *<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">intern_get</a>(); }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#ad3f755a0edd136294ec8c5c6cb6ee1da">  130</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#af8c02008a87c7d773c3fc247373218fb">reference</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ad3f755a0edd136294ec8c5c6cb6ee1da">item</a>() { </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                assert(!<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a2f9fb247c97a683bb266b0a6e3be8d44">empty</a>()); <span class="keywordflow">return</span> *<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">intern_get</a>(); }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#acbd16fe80ab681cf053743c60b277f91">  138</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#acbd16fe80ab681cf053743c60b277f91">push</a>(<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#af8c02008a87c7d773c3fc247373218fb">reference</a> _Element) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">if</span>( m_queue.enqueue(&amp;_Element) == <a class="code" href="mn__error_8hpp.html#ac29241cdee998f1f86737da1b56850cf">ERR_QUEUE_OK</a>) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    m_pEnd = &amp;_Element;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            }</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a5a775b04705115e797512a38cc124f57">  147</a></span>&#160;            <span class="keyword">inline</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a53eeabe63741ef3852664ef44436a05e">pointer</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a5a775b04705115e797512a38cc124f57">pop</a>() { </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a53eeabe63741ef3852664ef44436a05e">pointer</a> tmp = NULL;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                m_queue.dequeue(tmp);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a57226fed1ce2547ef5e7f934a210cdfa">  157</a></span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a57226fed1ce2547ef5e7f934a210cdfa">clear</a>() {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                m_queue.clear();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a2f9fb247c97a683bb266b0a6e3be8d44">  165</a></span>&#160;            <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a2f9fb247c97a683bb266b0a6e3be8d44">empty</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="keywordflow">return</span> m_queue.is_empty();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a3633100d09d33f80551d7126663370ac">  169</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a3633100d09d33f80551d7126663370ac">swap</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">self_type</a> _temp(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                other = <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keyword">this</span> = _temp;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#a231c3da9feb552efbc2ae0af06a1ae4f">  175</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">self_type</a>&amp; <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a231c3da9feb552efbc2ae0af06a1ae4f">operator = </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">m_BinQueue</a> = other.<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">m_BinQueue</a>:</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">  180</a></span>&#160;            T* <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">intern_get</a>() {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a53eeabe63741ef3852664ef44436a05e">pointer</a> _pItem;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                m_queue.peek(_pItem, <a class="code" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <span class="keywordflow">return</span> _pItem;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">  186</a></span>&#160;            <a class="code" href="classmn_1_1queue_1_1basic__binaryqueue.html">queue_type</a> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">m_BinQueue</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        };</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T, mn::<span class="keywordtype">size_t</span> TITEMSIZE&gt;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#af6b4fa483bb163ee00bb27cfcef3dc9d">  190</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="namespacemn_1_1container.html#af6b4fa483bb163ee00bb27cfcef3dc9d">swap</a>(<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">basic_binary_queue&lt;T, TITEMSIZE&gt;</a>&amp; a, </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                  <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">basic_binary_queue&lt;T, TITEMSIZE&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            a.<a class="code" href="classmn_1_1container_1_1basic__binary__queue.html#a3633100d09d33f80551d7126663370ac">swap</a>(b);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T, mn::<span class="keywordtype">size_t</span> TITEMSIZE = sizeof(T)&gt;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#aa664ca8d3b6eaeacc9d43489710caf9d">  196</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">biqueue</a> = <a class="code" href="classmn_1_1container_1_1basic__binary__queue.html">basic_binary_queue&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html">mn::container::basic_binary_queue_iterator</a></div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:28</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_a20de6840709a1f569788f01c397ae7cf"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a20de6840709a1f569788f01c397ae7cf">mn::container::basic_binary_queue_iterator::operator-&gt;</a></div><div class="ttdeci">pointer operator-&gt;() const</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:58</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_a2a957c801214c614e13ede50c61ba3b6"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a2a957c801214c614e13ede50c61ba3b6">mn::container::basic_binary_queue_iterator::basic_binary_queue_iterator</a></div><div class="ttdeci">basic_binary_queue_iterator(const basic_binary_queue_iterator&lt; U &gt; &amp;rhs)</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:52</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_a48731412686d36cd9a3568ae9b387e5d"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a48731412686d36cd9a3568ae9b387e5d">mn::container::basic_binary_queue_iterator::get</a></div><div class="ttdeci">pointer get() const</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:55</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_a6cc590be4aeeb068b30d56e84e86cbb5"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a6cc590be4aeeb068b30d56e84e86cbb5">mn::container::basic_binary_queue_iterator::difference_type</a></div><div class="ttdeci">ptrdiff_t difference_type</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:35</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_a8afa730470be0c0fa56ba6110825b0aa"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8afa730470be0c0fa56ba6110825b0aa">mn::container::basic_binary_queue_iterator::reference</a></div><div class="ttdeci">value_type &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:33</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_a8d4646d4379c84289f32cc78290863e1"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a8d4646d4379c84289f32cc78290863e1">mn::container::basic_binary_queue_iterator::basic_binary_queue_iterator</a></div><div class="ttdeci">basic_binary_queue_iterator(T *pValue)</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:48</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_a99a0f15a68bcef3335a0ff6d216e59bd"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a99a0f15a68bcef3335a0ff6d216e59bd">mn::container::basic_binary_queue_iterator::operator==</a></div><div class="ttdeci">bool operator==(const self_type &amp;rhs) const</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:60</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_ab6463b6e9a51ec944c2ba48297645391"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ab6463b6e9a51ec944c2ba48297645391">mn::container::basic_binary_queue_iterator::pointer</a></div><div class="ttdeci">value_type * pointer</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:32</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_ac2b2bf56765fc3b08b38ec607a229c1d"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ac2b2bf56765fc3b08b38ec607a229c1d">mn::container::basic_binary_queue_iterator::operator!=</a></div><div class="ttdeci">bool operator!=(const self_type &amp;rhs) const</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:63</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_ad77596d07080a6c04b521ceead9d237f"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ad77596d07080a6c04b521ceead9d237f">mn::container::basic_binary_queue_iterator::m_pValue</a></div><div class="ttdeci">pointer m_pValue</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:66</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_ae30133fa5a2b15882bb2705b831297c4"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#ae30133fa5a2b15882bb2705b831297c4">mn::container::basic_binary_queue_iterator::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:31</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue__iterator_html_af28296cd40faa84dbd30423e2515609e"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue__iterator.html#af28296cd40faa84dbd30423e2515609e">mn::container::basic_binary_queue_iterator::operator*</a></div><div class="ttdeci">reference operator*() const</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:57</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html">mn::container::basic_binary_queue</a></div><div class="ttdoc">This queue can only hold one item. If sucessive push operations are called, that item is overwritten ...</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:77</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a231c3da9feb552efbc2ae0af06a1ae4f"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a231c3da9feb552efbc2ae0af06a1ae4f">mn::container::basic_binary_queue::operator=</a></div><div class="ttdeci">self_type &amp; operator=(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:175</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a2f9fb247c97a683bb266b0a6e3be8d44"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a2f9fb247c97a683bb266b0a6e3be8d44">mn::container::basic_binary_queue::empty</a></div><div class="ttdeci">const bool empty() const</div><div class="ttdoc">Check, if queue is empty.</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:165</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a3633100d09d33f80551d7126663370ac"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a3633100d09d33f80551d7126663370ac">mn::container::basic_binary_queue::swap</a></div><div class="ttdeci">void swap(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:169</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a36a98aa87dc5a1fdd5509a96f4377c2a"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a36a98aa87dc5a1fdd5509a96f4377c2a">mn::container::basic_binary_queue::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Get the begin iterator.</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:101</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a3ad8cfe02322a3e0af41104e876cbfee"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a3ad8cfe02322a3e0af41104e876cbfee">mn::container::basic_binary_queue::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Get the end iterator.</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:108</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a53eeabe63741ef3852664ef44436a05e"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a53eeabe63741ef3852664ef44436a05e">mn::container::basic_binary_queue::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:81</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a57226fed1ce2547ef5e7f934a210cdfa"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a57226fed1ce2547ef5e7f934a210cdfa">mn::container::basic_binary_queue::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the queue.</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:157</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a5a775b04705115e797512a38cc124f57"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a5a775b04705115e797512a38cc124f57">mn::container::basic_binary_queue::pop</a></div><div class="ttdeci">pointer pop()</div><div class="ttdoc">Pop the oldest entry from the queue.</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:147</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a5e530f20382b0d55579269fdad78a3f8"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a5e530f20382b0d55579269fdad78a3f8">mn::container::basic_binary_queue::iterator</a></div><div class="ttdeci">basic_binary_queue_iterator&lt; T &gt; iterator</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:85</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a73c4494b32f276a219d2f1fbbfa2e92f"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a73c4494b32f276a219d2f1fbbfa2e92f">mn::container::basic_binary_queue::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:83</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a749de42020de464068d2610b3dcf21a9"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a749de42020de464068d2610b3dcf21a9">mn::container::basic_binary_queue::basic_binary_queue</a></div><div class="ttdeci">basic_binary_queue()</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:89</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_a89edf18201771b3e6572aa70468dbc3a"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#a89edf18201771b3e6572aa70468dbc3a">mn::container::basic_binary_queue::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdoc">Get the end iterator.</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:123</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_aa14cc973bdd6bdc6560636fe8bee8396"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#aa14cc973bdd6bdc6560636fe8bee8396">mn::container::basic_binary_queue::item</a></div><div class="ttdeci">const_reference item() const</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:127</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_aaed5a6d7a7026f790bed71879308c52d"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#aaed5a6d7a7026f790bed71879308c52d">mn::container::basic_binary_queue::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:80</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_abcbf7b796d0cbfa6b55752dfeed6995f"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#abcbf7b796d0cbfa6b55752dfeed6995f">mn::container::basic_binary_queue::intern_get</a></div><div class="ttdeci">T * intern_get()</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:180</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_ac88f7d14f28e13e4b79b7fb2fedf743a"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#ac88f7d14f28e13e4b79b7fb2fedf743a">mn::container::basic_binary_queue::basic_binary_queue</a></div><div class="ttdeci">basic_binary_queue(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:92</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_ac9e5c1e4e8a97f71f946d5b44792f6e1"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#ac9e5c1e4e8a97f71f946d5b44792f6e1">mn::container::basic_binary_queue::m_BinQueue</a></div><div class="ttdeci">queue_type m_BinQueue</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:186</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_acbd16fe80ab681cf053743c60b277f91"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#acbd16fe80ab681cf053743c60b277f91">mn::container::basic_binary_queue::push</a></div><div class="ttdeci">void push(reference _Element)</div><div class="ttdoc">Push a element to the queue.</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:138</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_acce88b05cd5d345790d62d4cdff635b8"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#acce88b05cd5d345790d62d4cdff635b8">mn::container::basic_binary_queue::~basic_binary_queue</a></div><div class="ttdeci">~basic_binary_queue()</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:95</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_acd1cc52d413cf7651d8d2fd11829b843"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#acd1cc52d413cf7651d8d2fd11829b843">mn::container::basic_binary_queue::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdoc">Get the begin iterator.</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:116</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_ad3f755a0edd136294ec8c5c6cb6ee1da"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#ad3f755a0edd136294ec8c5c6cb6ee1da">mn::container::basic_binary_queue::item</a></div><div class="ttdeci">reference item()</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:130</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__binary__queue_html_af8c02008a87c7d773c3fc247373218fb"><div class="ttname"><a href="classmn_1_1container_1_1basic__binary__queue.html#af8c02008a87c7d773c3fc247373218fb">mn::container::basic_binary_queue::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:82</div></div>
+<div class="ttc" id="aclassmn_1_1queue_1_1basic__binaryqueue_html"><div class="ttname"><a href="classmn_1_1queue_1_1basic__binaryqueue.html">mn::queue::basic_binaryqueue</a></div><div class="ttdoc">Binary queue with overwrite. This queue can only hold one item. If sucessive Enqueue operations are c...</div><div class="ttdef"><b>Definition:</b> mn_binaryqueue.hpp:32</div></div>
+<div class="ttc" id="aclassmn_1_1queue_1_1basic__queue_html_a709d97f6d09b4e32a79091d3eaa24be8"><div class="ttname"><a href="classmn_1_1queue_1_1basic__queue.html#a709d97f6d09b4e32a79091d3eaa24be8">mn::queue::basic_queue::destroy</a></div><div class="ttdeci">virtual int destroy()</div><div class="ttdef"><b>Definition:</b> mn_queue.cpp:41</div></div>
+<div class="ttc" id="aclassmn_1_1queue_1_1basic__queue_html_ab06e8487bf446f1f4423b80af6cb1dea"><div class="ttname"><a href="classmn_1_1queue_1_1basic__queue.html#ab06e8487bf446f1f4423b80af6cb1dea">mn::queue::basic_queue::create</a></div><div class="ttdeci">virtual int create()</div><div class="ttdef"><b>Definition:</b> mn_queue.cpp:34</div></div>
+<div class="ttc" id="amn__config_8hpp_html_a76b9342a36f28f62f27570399e60a725"><div class="ttname"><a href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</div><div class="ttdef"><b>Definition:</b> mn_config.hpp:394</div></div>
+<div class="ttc" id="amn__error_8hpp_html_ac29241cdee998f1f86737da1b56850cf"><div class="ttname"><a href="mn__error_8hpp.html#ac29241cdee998f1f86737da1b56850cf">ERR_QUEUE_OK</a></div><div class="ttdeci">#define ERR_QUEUE_OK</div><div class="ttdef"><b>Definition:</b> mn_error.hpp:148</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_af6b4fa483bb163ee00bb27cfcef3dc9d"><div class="ttname"><a href="namespacemn_1_1container.html#af6b4fa483bb163ee00bb27cfcef3dc9d">mn::container::swap</a></div><div class="ttdeci">void swap(basic_binary_queue&lt; T, TITEMSIZE &gt; &amp;a, basic_binary_queue&lt; T, TITEMSIZE &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:190</div></div>
+<div class="ttc" id="anamespacemn_1_1queue_html_a6ccda37b6587b8817eb4327ed7e8e0b4"><div class="ttname"><a href="namespacemn_1_1queue.html#a6ccda37b6587b8817eb4327ed7e8e0b4">mn::queue::binaryqueue_t</a></div><div class="ttdeci">basic_binaryqueue binaryqueue_t</div><div class="ttdef"><b>Definition:</b> mn_binaryqueue.hpp:53</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
+<div class="ttc" id="anamespacemn_html_a8d0b944ea3172c4bc932d79d3e2c01c1"><div class="ttname"><a href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a></div><div class="ttdeci">long ptrdiff_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:29</div></div>
+<div class="ttc" id="astructmn_1_1forward__iterator__tag_html"><div class="ttname"><a href="structmn_1_1forward__iterator__tag.html">mn::forward_iterator_tag</a></div><div class="ttdef"><b>Definition:</b> mn_iterator.hpp:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

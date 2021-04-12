@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_config.hpp File Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__config_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
+  <div class="headertitle">
+<div class="title">mn_config.hpp File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__defines_8hpp_source.html">mn_defines.hpp</a>&quot;</code><br />
+</div>
+<p><a href="mn__config_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae8e43bb3aa6d7b1705cedd81bd1f8b90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90">MN_THREAD_MAJOR_VERSION</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:ae8e43bb3aa6d7b1705cedd81bd1f8b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Major Version, the first number.  <a href="mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90">More...</a><br /></td></tr>
+<tr class="separator:ae8e43bb3aa6d7b1705cedd81bd1f8b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0f3724fe8622f21ae5b8f412d144e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0">MN_THREAD_MINOR_VERSION</a>&#160;&#160;&#160;25</td></tr>
+<tr class="memdesc:aad0f3724fe8622f21ae5b8f412d144e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minor Version, the 2. number.  <a href="mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0">More...</a><br /></td></tr>
+<tr class="separator:aad0f3724fe8622f21ae5b8f412d144e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716b0d4bd0b293fc6464ab0b8dbdac9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c">MN_THREAD_DEBUG_VERSION</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a716b0d4bd0b293fc6464ab0b8dbdac9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug version.  <a href="mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c">More...</a><br /></td></tr>
+<tr class="separator:a716b0d4bd0b293fc6464ab0b8dbdac9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbda74b1d32ee3d4518fc2e7d313cfab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab">MN_THREAD_VERSION_STRING</a>&#160;&#160;&#160;&quot;2.25.0&quot;</td></tr>
+<tr class="memdesc:afbda74b1d32ee3d4518fc2e7d313cfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mini thread version as string.  <a href="mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab">More...</a><br /></td></tr>
+<tr class="separator:afbda74b1d32ee3d4518fc2e7d313cfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664bef337ebc2277702bbb63321b657c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">MN_THREAD_CONFIG_MUTEX</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a664bef337ebc2277702bbb63321b657c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined helper values for config items - Use a mutex.  <a href="mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">More...</a><br /></td></tr>
+<tr class="separator:a664bef337ebc2277702bbb63321b657c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907c3e321e76f37f9043d251b2f06aa4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a907c3e321e76f37f9043d251b2f06aa4">MN_THREAD_CONFIG_COUNTING_SEMAPHORE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a907c3e321e76f37f9043d251b2f06aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined helper value for config items - Use a counting semaphore.  <a href="mn__config_8hpp.html#a907c3e321e76f37f9043d251b2f06aa4">More...</a><br /></td></tr>
+<tr class="separator:a907c3e321e76f37f9043d251b2f06aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98234c43ec9fef385eca752276d2b115"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">MN_THREAD_CONFIG_BINARY_SEMAPHORE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a98234c43ec9fef385eca752276d2b115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined values for config items - Use a binary semaphore.  <a href="mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">More...</a><br /></td></tr>
+<tr class="separator:a98234c43ec9fef385eca752276d2b115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae911d55d86029d20c96e0e6b0526e3df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ae911d55d86029d20c96e0e6b0526e3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined helper values for config items - Use for aktivating.  <a href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">More...</a><br /></td></tr>
+<tr class="separator:ae911d55d86029d20c96e0e6b0526e3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ac2cfca56481d8e1e70d84483cce0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a02ac2cfca56481d8e1e70d84483cce0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined helper values for config items - Use for deaktivating.  <a href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">More...</a><br /></td></tr>
+<tr class="separator:a02ac2cfca56481d8e1e70d84483cce0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc77c40f0f1cd378773159d8f1ef0b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9">MN_THREAD_CONFIG_CORE_MAX</a>&#160;&#160;&#160;(portNUM_PROCESSORS - 1)</td></tr>
+<tr class="memdesc:abdc77c40f0f1cd378773159d8f1ef0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The max number of usable cores.  <a href="mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9">More...</a><br /></td></tr>
+<tr class="separator:abdc77c40f0f1cd378773159d8f1ef0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034d23f83dd3e683ca09cacd402f94ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">MN_THREAD_CONFIG_CORE_IFNO</a>&#160;&#160;&#160;tskNO_AFFINITY</td></tr>
+<tr class="memdesc:a034d23f83dd3e683ca09cacd402f94ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined values for config items - Use for indicating the task has no affinity core.  <a href="mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">More...</a><br /></td></tr>
+<tr class="separator:a034d23f83dd3e683ca09cacd402f94ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6395cf50f0e8a7a8ff1280f5ca01950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950">MN_THREAD_CONFIG_CORE_ONE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ad6395cf50f0e8a7a8ff1280f5ca01950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined values for config items - Use for run the config task on core 0.  <a href="mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950">More...</a><br /></td></tr>
+<tr class="separator:ad6395cf50f0e8a7a8ff1280f5ca01950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fe84f8b0f4f9294972ffc6cacb290aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">MN_THREAD_CONFIG_CORE_TWO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a0fe84f8b0f4f9294972ffc6cacb290aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined values for config items - Use for run the config task on core 1.  <a href="mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">More...</a><br /></td></tr>
+<tr class="separator:a0fe84f8b0f4f9294972ffc6cacb290aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af915055b76ed0819ce8b44dac99a9328"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#af915055b76ed0819ce8b44dac99a9328">MN_THREAD_CONFIG_ESP32</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:af915055b76ed0819ce8b44dac99a9328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined values for config items -.  <a href="mn__config_8hpp.html#af915055b76ed0819ce8b44dac99a9328">More...</a><br /></td></tr>
+<tr class="separator:af915055b76ed0819ce8b44dac99a9328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7d8572d3567d5ce51d1532e7589045"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a9a7d8572d3567d5ce51d1532e7589045">MN_THREAD_CONFIG_BOARD_NODEFS</a>&#160;&#160;&#160;99</td></tr>
+<tr class="memdesc:a9a7d8572d3567d5ce51d1532e7589045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined values for config items -.  <a href="mn__config_8hpp.html#a9a7d8572d3567d5ce51d1532e7589045">More...</a><br /></td></tr>
+<tr class="separator:a9a7d8572d3567d5ce51d1532e7589045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d34aeabc9cf566a9bc3918d7fc6604"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ac0d34aeabc9cf566a9bc3918d7fc6604">MN_THREAD_CONFIG_OTHER</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ac0d34aeabc9cf566a9bc3918d7fc6604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined values for config items -.  <a href="mn__config_8hpp.html#ac0d34aeabc9cf566a9bc3918d7fc6604">More...</a><br /></td></tr>
+<tr class="separator:ac0d34aeabc9cf566a9bc3918d7fc6604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14dd59cbe58bd6a41d15ceefe3b6f0d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a14dd59cbe58bd6a41d15ceefe3b6f0d5">MN_THREAD_CONFIG_BOARD</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a9a7d8572d3567d5ce51d1532e7589045">MN_THREAD_CONFIG_BOARD_NODEFS</a></td></tr>
+<tr class="separator:a14dd59cbe58bd6a41d15ceefe3b6f0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f788bd3608508c927a94fdceee8a52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">MN_THREAD_CONFIG_DEFAULT_CORE</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">MN_THREAD_CONFIG_CORE_IFNO</a></td></tr>
+<tr class="memdesc:af3f788bd3608508c927a94fdceee8a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined on which core must run the task, can override in the create function.  <a href="mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">More...</a><br /></td></tr>
+<tr class="separator:af3f788bd3608508c927a94fdceee8a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8683395ac0c90d9e2660c6258e32d64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64">MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">MN_THREAD_CONFIG_CORE_TWO</a></td></tr>
+<tr class="memdesc:af8683395ac0c90d9e2660c6258e32d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined on which core must run the work queue task, can override in the create function.  <a href="mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64">More...</a><br /></td></tr>
+<tr class="separator:af8683395ac0c90d9e2660c6258e32d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111752072ad1ae53214ffda480934a1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a111752072ad1ae53214ffda480934a1d">MN_THREAD_CONFIG_ALLOCATOR_SYSTEM</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a111752072ad1ae53214ffda480934a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">For variable MN_THREAD_CONFIG_ALLOCATOR_DEFAULT, with this use the normel system as defualt allocator.  <a href="mn__config_8hpp.html#a111752072ad1ae53214ffda480934a1d">More...</a><br /></td></tr>
+<tr class="separator:a111752072ad1ae53214ffda480934a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321d46cd96fc812e1b368ade85e3d29d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a321d46cd96fc812e1b368ade85e3d29d">MN_THREAD_CONFIG_ALLOCATOR_SPIRAM</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a321d46cd96fc812e1b368ade85e3d29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">For variable MN_THREAD_CONFIG_ALLOCATOR_DEFAULT, with this use the spiram system as defualt allocator.  <a href="mn__config_8hpp.html#a321d46cd96fc812e1b368ade85e3d29d">More...</a><br /></td></tr>
+<tr class="separator:a321d46cd96fc812e1b368ade85e3d29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e5f9c1523e1a8c6ee7f022b672cb55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a50e5f9c1523e1a8c6ee7f022b672cb55">MN_THREAD_CONFIG_SIZE_TYPE</a>&#160;&#160;&#160;long unsigned int</td></tr>
+<tr class="separator:a50e5f9c1523e1a8c6ee7f022b672cb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8cf48648de13dfd540bc2a9f1849279"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ac8cf48648de13dfd540bc2a9f1849279">MN_THREAD_CONFIG_USE_EXCEPTIONS</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td></tr>
+<tr class="separator:ac8cf48648de13dfd540bc2a9f1849279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c2a1334e83cd83ebd6fc025f153bf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#af2c2a1334e83cd83ebd6fc025f153bf3">MN_THREAD_CONFIG_DEBUG</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
+<tr class="separator:af2c2a1334e83cd83ebd6fc025f153bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad080396922e54adb11e7c31223267a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a5ad080396922e54adb11e7c31223267a">MN_THREAD_CONFIG_STACK_TYPE</a>&#160;&#160;&#160;unsigned long</td></tr>
+<tr class="memdesc:a5ad080396922e54adb11e7c31223267a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stack using type.  <a href="mn__config_8hpp.html#a5ad080396922e54adb11e7c31223267a">More...</a><br /></td></tr>
+<tr class="separator:a5ad080396922e54adb11e7c31223267a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5908772af5ac083502c56e5a4f18010"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#af5908772af5ac083502c56e5a4f18010">MN_THREAD_CONFIG_BASIC_ALIGNMENT</a>&#160;&#160;&#160;sizeof(unsigned char*)</td></tr>
+<tr class="separator:af5908772af5ac083502c56e5a4f18010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8812f52f98bf4791aa3a286ca1c13729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a8812f52f98bf4791aa3a286ca1c13729">MN_THREAD_CONFIG_CORE_PRIORITY_IDLE</a>&#160;&#160;&#160;tskIDLE_PRIORITY</td></tr>
+<tr class="memdesc:a8812f52f98bf4791aa3a286ca1c13729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task priority for basic_task::PriorityIdle.  <a href="mn__config_8hpp.html#a8812f52f98bf4791aa3a286ca1c13729">More...</a><br /></td></tr>
+<tr class="separator:a8812f52f98bf4791aa3a286ca1c13729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f4e60713fea12bce98c76d447ffde5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ac0f4e60713fea12bce98c76d447ffde5">MN_THREAD_CONFIG_CORE_PRIORITY_LOW</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ac0f4e60713fea12bce98c76d447ffde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task priority for basic_task::PriorityLow.  <a href="mn__config_8hpp.html#ac0f4e60713fea12bce98c76d447ffde5">More...</a><br /></td></tr>
+<tr class="separator:ac0f4e60713fea12bce98c76d447ffde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d75da3e2ca5e0d23942201e6c46f52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a41d75da3e2ca5e0d23942201e6c46f52">MN_THREAD_CONFIG_CORE_PRIORITY_NORM</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a41d75da3e2ca5e0d23942201e6c46f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task priority for basic_task::PriorityNormal.  <a href="mn__config_8hpp.html#a41d75da3e2ca5e0d23942201e6c46f52">More...</a><br /></td></tr>
+<tr class="separator:a41d75da3e2ca5e0d23942201e6c46f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357e1796cb597dbad06c8023e58dd76b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b">MN_THREAD_CONFIG_CORE_PRIORITY_HALFCRT</a>&#160;&#160;&#160;(configMAX_PRIORITIES-1)/2</td></tr>
+<tr class="memdesc:a357e1796cb597dbad06c8023e58dd76b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task priority for basic_task::PriorityHalfCritical.  <a href="mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b">More...</a><br /></td></tr>
+<tr class="separator:a357e1796cb597dbad06c8023e58dd76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05a7d79e49329dacb1f4a5464d0240b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ad05a7d79e49329dacb1f4a5464d0240b">MN_THREAD_CONFIG_CORE_PRIORITY_URGENT</a>&#160;&#160;&#160;(configMAX_PRIORITIES-2)</td></tr>
+<tr class="memdesc:ad05a7d79e49329dacb1f4a5464d0240b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task priority for basic_task::PriorityUrgent.  <a href="mn__config_8hpp.html#ad05a7d79e49329dacb1f4a5464d0240b">More...</a><br /></td></tr>
+<tr class="separator:ad05a7d79e49329dacb1f4a5464d0240b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a352db8489e062b0e9c1365d39bb17b0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a352db8489e062b0e9c1365d39bb17b0d">MN_THREAD_CONFIG_CORE_PRIORITY_CRITICAL</a>&#160;&#160;&#160;(configMAX_PRIORITIES-1)</td></tr>
+<tr class="memdesc:a352db8489e062b0e9c1365d39bb17b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task priority for basic_task::PriorityCritical.  <a href="mn__config_8hpp.html#a352db8489e062b0e9c1365d39bb17b0d">More...</a><br /></td></tr>
+<tr class="separator:a352db8489e062b0e9c1365d39bb17b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164eb9501389b4ba7784551401dc388b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
+<tr class="separator:a164eb9501389b4ba7784551401dc388b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1af1b16705ec8d267a32767da010c2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</a>&#160;&#160;&#160;2048</td></tr>
+<tr class="separator:ae1af1b16705ec8d267a32767da010c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a2073609e7b98ce87f87cd1a7b677c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ab6a2073609e7b98ce87f87cd1a7b677c">MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:ab6a2073609e7b98ce87f87cd1a7b677c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2d0635c2fb68699d6d3262441b71c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#afc2d0635c2fb68699d6d3262441b71c2">MN_THREAD_CONFIG_FOREIGIN_TASK_SUPPORT</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
+<tr class="separator:afc2d0635c2fb68699d6d3262441b71c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75f0ad7789180411059976192486e4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#af75f0ad7789180411059976192486e4e">MN_THREAD_CONFIG_LOCK_TYPE</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">MN_THREAD_CONFIG_BINARY_SEMAPHORE</a></td></tr>
+<tr class="separator:af75f0ad7789180411059976192486e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937884c489bccb0b25f73a7fedc17e9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a937884c489bccb0b25f73a7fedc17e9a">MN_THREAD_CONFIG_ADD_TASK_TO_TASK_LIST</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td></tr>
+<tr class="separator:a937884c489bccb0b25f73a7fedc17e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060f30c571d899925211c1f3ac054816"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a060f30c571d899925211c1f3ac054816">MN_THREAD_CONFIG_WORKQUEUE_GETNEXTITEM_TIMEOUT</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:a060f30c571d899925211c1f3ac054816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cd1bd439df99613159cc6012920f16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ae2cd1bd439df99613159cc6012920f16">MN_THREAD_CONFIG_WORKQUEUE_SINGLE_MAXITEMS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ae2cd1bd439df99613159cc6012920f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e9e87c8fd8cede584d680bcea94b8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ab0e9e87c8fd8cede584d680bcea94b8a">MN_THREAD_CONFIG_WORKQUEUE_SINGLE_STACKSIZE</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</a></td></tr>
+<tr class="separator:ab0e9e87c8fd8cede584d680bcea94b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4872c5fc30c3382fe645408bf9501abf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a4872c5fc30c3382fe645408bf9501abf">MN_THREAD_CONFIG_WORKQUEUE_SINGLE_PRIORITY</a>&#160;&#160;&#160;basic_task::PriorityLow</td></tr>
+<tr class="separator:a4872c5fc30c3382fe645408bf9501abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3135a204d86e78dc51aa638712a82bcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a3135a204d86e78dc51aa638712a82bcb">MN_THREAD_CONFIG_WORKQUEUE_MULTI_WORKER</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a3135a204d86e78dc51aa638712a82bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c285196ad60ff04d1bebd556eaa48c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a7c285196ad60ff04d1bebd556eaa48c5">MN_THREAD_CONFIG_WORKQUEUE_MULTI_MAXITEMS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:a7c285196ad60ff04d1bebd556eaa48c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771ac26a0445c8ded5d5d2658b83265a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a771ac26a0445c8ded5d5d2658b83265a">MN_THREAD_CONFIG_WORKQUEUE_MULTI_STACKSIZE</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</a></td></tr>
+<tr class="separator:a771ac26a0445c8ded5d5d2658b83265a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c34b9df0f9532a460738584f538e2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ab4c34b9df0f9532a460738584f538e2a">MN_THREAD_CONFIG_WORKQUEUE_MULTI_PRIORITY</a>&#160;&#160;&#160;basic_task::PriorityLow</td></tr>
+<tr class="separator:ab4c34b9df0f9532a460738584f538e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4336b36a6998360e0c17e166693f1e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2">MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT</a>&#160;&#160;&#160;(unsigned int) 0xffffffffUL</td></tr>
+<tr class="separator:ad4336b36a6998360e0c17e166693f1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e59cd4828b0ff11f8fe0b81185a1e03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a0e59cd4828b0ff11f8fe0b81185a1e03">MN_THREAD_CONFIG_CSEMAPHORE_MIN_COUNT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a0e59cd4828b0ff11f8fe0b81185a1e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1554026e4fad333e7d50835e5c7b08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#aed1554026e4fad333e7d50835e5c7b08">MN_THREAD_CONFIG_CSEMAPHORE_MAX_COUNT</a>&#160;&#160;&#160;0x7fffffff</td></tr>
+<tr class="separator:aed1554026e4fad333e7d50835e5c7b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20fe1420e9a6d53d806d9d5e3a6cefc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a>&#160;&#160;&#160;(unsigned int) 0xffffffffUL</td></tr>
+<tr class="separator:a20fe1420e9a6d53d806d9d5e3a6cefc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088badaa2d25119018451eb7a7068bf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a088badaa2d25119018451eb7a7068bf6">MN_THREAD_CONFIG_RECURSIVE_MUTEX_CHEAKING</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
+<tr class="separator:a088badaa2d25119018451eb7a7068bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b9342a36f28f62f27570399e60a725"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>&#160;&#160;&#160;(unsigned int) 0xffffffffUL</td></tr>
+<tr class="separator:a76b9342a36f28f62f27570399e60a725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa89a82b841c0c8e4c5eb3c9dd60c20d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#afa89a82b841c0c8e4c5eb3c9dd60c20d">MN_THREAD_CONFIG_TIMEOUT_COROUTINE_DEFAULT</a>&#160;&#160;&#160;(unsigned int) 0xffffffffUL</td></tr>
+<tr class="separator:afa89a82b841c0c8e4c5eb3c9dd60c20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134b9cfbd0a9862f78a74eb0509b4baa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a134b9cfbd0a9862f78a74eb0509b4baa">MN_THREAD_CONFIG_SHAREDOBJECT_PREUSING</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
+<tr class="memdesc:a134b9cfbd0a9862f78a74eb0509b4baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using pre defines (usings) for basic types for the shared objects.  <a href="mn__config_8hpp.html#a134b9cfbd0a9862f78a74eb0509b4baa">More...</a><br /></td></tr>
+<tr class="separator:a134b9cfbd0a9862f78a74eb0509b4baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7af2f242062e3b0f4960de6b335b03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#abb7af2f242062e3b0f4960de6b335b03">MN_THREAD_CONFIG_MEMPOOL_USE_MAGIC</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td></tr>
+<tr class="memdesc:abb7af2f242062e3b0f4960de6b335b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the magic guard for detect heap memory corruption - default: MN_THREAD_CONFIG_NO.  <a href="mn__config_8hpp.html#abb7af2f242062e3b0f4960de6b335b03">More...</a><br /></td></tr>
+<tr class="separator:abb7af2f242062e3b0f4960de6b335b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b49da03fa010bf7527d514dbf29e34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a47b49da03fa010bf7527d514dbf29e34">MN_THREAD_CONFIG_MEMPOOL_MAGIC_START</a>&#160;&#160;&#160;0x6d</td></tr>
+<tr class="memdesc:a47b49da03fa010bf7527d514dbf29e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">The start magic guard byte for detect heap memory corruption, not use in simple version.  <a href="mn__config_8hpp.html#a47b49da03fa010bf7527d514dbf29e34">More...</a><br /></td></tr>
+<tr class="separator:a47b49da03fa010bf7527d514dbf29e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609d559fa4b25aab1aee09ff7adfd3f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a609d559fa4b25aab1aee09ff7adfd3f5">MN_THREAD_CONFIG_MEMPOOL_MAGIC_END</a>&#160;&#160;&#160;0xa8</td></tr>
+<tr class="memdesc:a609d559fa4b25aab1aee09ff7adfd3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The end magic guard byte for detect heap memory corruption, not use in simple version.  <a href="mn__config_8hpp.html#a609d559fa4b25aab1aee09ff7adfd3f5">More...</a><br /></td></tr>
+<tr class="separator:a609d559fa4b25aab1aee09ff7adfd3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8412e7e06a300c22ecaf5b3fcb589dec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a8412e7e06a300c22ecaf5b3fcb589dec">MN_THREAD_CONFIG_MEMPOOL_USETIMED</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
+<tr class="separator:a8412e7e06a300c22ecaf5b3fcb589dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60d27e97769ddef1818c0c1383c409c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ad60d27e97769ddef1818c0c1383c409c">MN_THREAD_CONFIG_ALLOCATOR_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a111752072ad1ae53214ffda480934a1d">MN_THREAD_CONFIG_ALLOCATOR_SYSTEM</a></td></tr>
+<tr class="separator:ad60d27e97769ddef1818c0c1383c409c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7755b3f708d90aa99b006d11c760a22c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a7755b3f708d90aa99b006d11c760a22c">MN_THREAD_CONFIG_TICKHOOK_MAXENTRYS</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:a7755b3f708d90aa99b006d11c760a22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The max entrys are hold the tickhook queue.  <a href="mn__config_8hpp.html#a7755b3f708d90aa99b006d11c760a22c">More...</a><br /></td></tr>
+<tr class="separator:a7755b3f708d90aa99b006d11c760a22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531ecc7321eaad4c689658e3a166665a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a531ecc7321eaad4c689658e3a166665a">MN_THREAD_CONFIG_NET_IPADDRESS6_ENABLE</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td></tr>
+<tr class="separator:a531ecc7321eaad4c689658e3a166665a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936726e3457730e3621fe8a83f4889a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a936726e3457730e3621fe8a83f4889a2">MN_THREAD_CONFIG_NET_IPADDRESS6_USE_SCOPEID</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td></tr>
+<tr class="separator:a936726e3457730e3621fe8a83f4889a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438b234b09b83980add3cf1ac0ebbf71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a438b234b09b83980add3cf1ac0ebbf71">MN_THREAD_CONFIG_NET_IPADDRESS6_SCOPEID_VAL</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a438b234b09b83980add3cf1ac0ebbf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7f3f8fbd6ff30ad21aabae00922caa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a9d7f3f8fbd6ff30ad21aabae00922caa">MN_THREAD_CONFIG_PREVIEW_FUTURE</a>&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td></tr>
+<tr class="separator:a9d7f3f8fbd6ff30ad21aabae00922caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d73a768413a6a1c5590b7733c78a43d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a1d73a768413a6a1c5590b7733c78a43d">MN_THREAD_BETA_VERSION_STRING</a></td></tr>
+<tr class="separator:a1d73a768413a6a1c5590b7733c78a43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cfeea38445d3d7feba1e9be92aed9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ac6cfeea38445d3d7feba1e9be92aed9b">MN_THREAD_BETA_MAJOR_VERSION</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ac6cfeea38445d3d7feba1e9be92aed9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d76c697f9a62755f96da3f916b4e10e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e">MN_THREAD_BETA_MINOR_VERSION</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a0d76c697f9a62755f96da3f916b4e10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5fbb8ced2a12bb7a1d87deef15da4b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#af5fbb8ced2a12bb7a1d87deef15da4b1">MN_THREAD_CONFIG_FREELIST_MEMPOOL_FREE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:af5fbb8ced2a12bb7a1d87deef15da4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mempool object is not used.  <a href="mn__config_8hpp.html#af5fbb8ced2a12bb7a1d87deef15da4b1">More...</a><br /></td></tr>
+<tr class="separator:af5fbb8ced2a12bb7a1d87deef15da4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38cc792d50f34fdd08b9e7939a7b5ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ab38cc792d50f34fdd08b9e7939a7b5ee">MN_THREAD_CONFIG_FREELIST_MEMPOOL_USED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ab38cc792d50f34fdd08b9e7939a7b5ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mempool object is used, not free.  <a href="mn__config_8hpp.html#ab38cc792d50f34fdd08b9e7939a7b5ee">More...</a><br /></td></tr>
+<tr class="separator:ab38cc792d50f34fdd08b9e7939a7b5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52fbf702e5cd328048240dd64178992"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ab52fbf702e5cd328048240dd64178992">MN_THREAD_CONFIG_USE_TRACE</a>&#160;&#160;&#160;configUSE_TRACE_FACILITY</td></tr>
+<tr class="separator:ab52fbf702e5cd328048240dd64178992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a40c79f97ffb858c5f5b2424939de2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">MN_UNUSED_VARIABLE</a>(var)&#160;&#160;&#160;do { (void)(var); } while (false)</td></tr>
+<tr class="separator:a25a40c79f97ffb858c5f5b2424939de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8446b71b78dda75ad4a2c490a1a98da6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a8446b71b78dda75ad4a2c490a1a98da6">MN_ZERO_SET</a>(var,  size)&#160;&#160;&#160;memset(var, 0, size)</td></tr>
+<tr class="separator:a8446b71b78dda75ad4a2c490a1a98da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a321d6244f0367104bb24b59f21e036"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a3a321d6244f0367104bb24b59f21e036">MN_SAFE_DELETE</a>(var)&#160;&#160;&#160;if((var)) { delete var; var = NULL; }</td></tr>
+<tr class="separator:a3a321d6244f0367104bb24b59f21e036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49835d5b423a6c62a065c74f07f9505f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a49835d5b423a6c62a065c74f07f9505f">MN_SAFE_FREE</a>(var)&#160;&#160;&#160;if((var)) { free(var); var = NULL; }</td></tr>
+<tr class="separator:a49835d5b423a6c62a065c74f07f9505f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3a321d6244f0367104bb24b59f21e036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a321d6244f0367104bb24b59f21e036">&#9670;&nbsp;</a></span>MN_SAFE_DELETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_SAFE_DELETE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var</td><td>)</td>
+          <td>&#160;&#160;&#160;if((var)) { delete var; var = NULL; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49835d5b423a6c62a065c74f07f9505f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49835d5b423a6c62a065c74f07f9505f">&#9670;&nbsp;</a></span>MN_SAFE_FREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_SAFE_FREE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var</td><td>)</td>
+          <td>&#160;&#160;&#160;if((var)) { free(var); var = NULL; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6cfeea38445d3d7feba1e9be92aed9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6cfeea38445d3d7feba1e9be92aed9b">&#9670;&nbsp;</a></span>MN_THREAD_BETA_MAJOR_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_BETA_MAJOR_VERSION&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d76c697f9a62755f96da3f916b4e10e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d76c697f9a62755f96da3f916b4e10e">&#9670;&nbsp;</a></span>MN_THREAD_BETA_MINOR_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_BETA_MINOR_VERSION&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d73a768413a6a1c5590b7733c78a43d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d73a768413a6a1c5590b7733c78a43d">&#9670;&nbsp;</a></span>MN_THREAD_BETA_VERSION_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_BETA_VERSION_STRING</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a937884c489bccb0b25f73a7fedc17e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937884c489bccb0b25f73a7fedc17e9a">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_ADD_TASK_TO_TASK_LIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_ADD_TASK_TO_TASK_LIST&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Add a Task automatic to basic_task_list? </p>
+
+</div>
+</div>
+<a id="ad60d27e97769ddef1818c0c1383c409c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60d27e97769ddef1818c0c1383c409c">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_ALLOCATOR_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_ALLOCATOR_DEFAULT&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a111752072ad1ae53214ffda480934a1d">MN_THREAD_CONFIG_ALLOCATOR_SYSTEM</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Which allocator use for default_allocator_t default: MN_THREAD_CONFIG_ALLOCATOR_SYSTEM </p>
+
+</div>
+</div>
+<a id="a321d46cd96fc812e1b368ade85e3d29d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a321d46cd96fc812e1b368ade85e3d29d">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_ALLOCATOR_SPIRAM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_ALLOCATOR_SPIRAM&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For variable MN_THREAD_CONFIG_ALLOCATOR_DEFAULT, with this use the spiram system as defualt allocator. </p>
+
+</div>
+</div>
+<a id="a111752072ad1ae53214ffda480934a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111752072ad1ae53214ffda480934a1d">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_ALLOCATOR_SYSTEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_ALLOCATOR_SYSTEM&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For variable MN_THREAD_CONFIG_ALLOCATOR_DEFAULT, with this use the normel system as defualt allocator. </p>
+
+</div>
+</div>
+<a id="af5908772af5ac083502c56e5a4f18010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5908772af5ac083502c56e5a4f18010">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_BASIC_ALIGNMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_BASIC_ALIGNMENT&#160;&#160;&#160;sizeof(unsigned char*)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98234c43ec9fef385eca752276d2b115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98234c43ec9fef385eca752276d2b115">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_BINARY_SEMAPHORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_BINARY_SEMAPHORE&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined values for config items - Use a binary semaphore. </p>
+
+</div>
+</div>
+<a id="a14dd59cbe58bd6a41d15ceefe3b6f0d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14dd59cbe58bd6a41d15ceefe3b6f0d5">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_BOARD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_BOARD&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a9a7d8572d3567d5ce51d1532e7589045">MN_THREAD_CONFIG_BOARD_NODEFS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a7d8572d3567d5ce51d1532e7589045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a7d8572d3567d5ce51d1532e7589045">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_BOARD_NODEFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_BOARD_NODEFS&#160;&#160;&#160;99</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined values for config items -. </p>
+<dl class="section note"><dt>Note</dt><dd>corrently use for MN_THREAD_CONFIG_BOARD Set board type to no spezial use, currently no esp32 spezial apis to use </dd></dl>
+
+</div>
+</div>
+<a id="a164eb9501389b4ba7784551401dc388b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164eb9501389b4ba7784551401dc388b">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Condition variable support for this libary 'MN_THREAD_CONFIG_YES' or 'MN_THREAD_CONFIG_NO' </p><dl class="section note"><dt>Note</dt><dd>default: MN_THREAD_CONFIG_YES </dd></dl>
+
+</div>
+</div>
+<a id="a034d23f83dd3e683ca09cacd402f94ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034d23f83dd3e683ca09cacd402f94ee">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_IFNO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_IFNO&#160;&#160;&#160;tskNO_AFFINITY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined values for config items - Use for indicating the task has no affinity core. </p>
+
+</div>
+</div>
+<a id="abdc77c40f0f1cd378773159d8f1ef0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc77c40f0f1cd378773159d8f1ef0b9">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_MAX&#160;&#160;&#160;(portNUM_PROCESSORS - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The max number of usable cores. </p>
+
+</div>
+</div>
+<a id="ad6395cf50f0e8a7a8ff1280f5ca01950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6395cf50f0e8a7a8ff1280f5ca01950">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_ONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_ONE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined values for config items - Use for run the config task on core 0. </p>
+
+</div>
+</div>
+<a id="a352db8489e062b0e9c1365d39bb17b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a352db8489e062b0e9c1365d39bb17b0d">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_PRIORITY_CRITICAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_PRIORITY_CRITICAL&#160;&#160;&#160;(configMAX_PRIORITIES-1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Task priority for basic_task::PriorityCritical. </p>
+
+</div>
+</div>
+<a id="a357e1796cb597dbad06c8023e58dd76b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357e1796cb597dbad06c8023e58dd76b">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_PRIORITY_HALFCRT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_PRIORITY_HALFCRT&#160;&#160;&#160;(configMAX_PRIORITIES-1)/2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Task priority for basic_task::PriorityHalfCritical. </p>
+
+</div>
+</div>
+<a id="a8812f52f98bf4791aa3a286ca1c13729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8812f52f98bf4791aa3a286ca1c13729">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_PRIORITY_IDLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_PRIORITY_IDLE&#160;&#160;&#160;tskIDLE_PRIORITY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Task priority for basic_task::PriorityIdle. </p>
+
+</div>
+</div>
+<a id="ac0f4e60713fea12bce98c76d447ffde5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f4e60713fea12bce98c76d447ffde5">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_PRIORITY_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_PRIORITY_LOW&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Task priority for basic_task::PriorityLow. </p>
+
+</div>
+</div>
+<a id="a41d75da3e2ca5e0d23942201e6c46f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d75da3e2ca5e0d23942201e6c46f52">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_PRIORITY_NORM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_PRIORITY_NORM&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Task priority for basic_task::PriorityNormal. </p>
+
+</div>
+</div>
+<a id="ad05a7d79e49329dacb1f4a5464d0240b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05a7d79e49329dacb1f4a5464d0240b">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_PRIORITY_URGENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_PRIORITY_URGENT&#160;&#160;&#160;(configMAX_PRIORITIES-2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Task priority for basic_task::PriorityUrgent. </p>
+
+</div>
+</div>
+<a id="a0fe84f8b0f4f9294972ffc6cacb290aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fe84f8b0f4f9294972ffc6cacb290aa">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CORE_TWO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CORE_TWO&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined values for config items - Use for run the config task on core 1. </p>
+
+</div>
+</div>
+<a id="a907c3e321e76f37f9043d251b2f06aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907c3e321e76f37f9043d251b2f06aa4">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_COUNTING_SEMAPHORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_COUNTING_SEMAPHORE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined helper value for config items - Use a counting semaphore. </p>
+
+</div>
+</div>
+<a id="aed1554026e4fad333e7d50835e5c7b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed1554026e4fad333e7d50835e5c7b08">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CSEMAPHORE_MAX_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CSEMAPHORE_MAX_COUNT&#160;&#160;&#160;0x7fffffff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>default: max initial count for counting semaphore, can override in constuctor </dd>
+<dd>
+default: 0x7fffffff </dd></dl>
+
+</div>
+</div>
+<a id="a0e59cd4828b0ff11f8fe0b81185a1e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e59cd4828b0ff11f8fe0b81185a1e03">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_CSEMAPHORE_MIN_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_CSEMAPHORE_MIN_COUNT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>default: min initial count for counting semaphore, can override in constuctor default 1 </dd></dl>
+
+</div>
+</div>
+<a id="af2c2a1334e83cd83ebd6fc025f153bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c2a1334e83cd83ebd6fc025f153bf3">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_DEBUG&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3f788bd3608508c927a94fdceee8a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3f788bd3608508c927a94fdceee8a52">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_DEFAULT_CORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_DEFAULT_CORE&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">MN_THREAD_CONFIG_CORE_IFNO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined on which core must run the task, can override in the create function. </p>
+
+</div>
+</div>
+<a id="af8683395ac0c90d9e2660c6258e32d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8683395ac0c90d9e2660c6258e32d64">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">MN_THREAD_CONFIG_CORE_TWO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined on which core must run the work queue task, can override in the create function. </p>
+
+</div>
+</div>
+<a id="af915055b76ed0819ce8b44dac99a9328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af915055b76ed0819ce8b44dac99a9328">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_ESP32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_ESP32&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined values for config items -. </p>
+<dl class="section note"><dt>Note</dt><dd>corrently use for MN_THREAD_CONFIG_BOARD Set board type to esp32 </dd></dl>
+
+</div>
+</div>
+<a id="afc2d0635c2fb68699d6d3262441b71c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2d0635c2fb68699d6d3262441b71c2">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_FOREIGIN_TASK_SUPPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_FOREIGIN_TASK_SUPPORT&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Foreign support for this libary. When MN_THREAD_CONFIG_YES then can with the class foreign_thread_t foreign tasks handled</p>
+<p>'MN_THREAD_CONFIG_YES' or 'MN_THREAD_CONFIG_NO' </p><dl class="section note"><dt>Note</dt><dd>default: MN_THREAD_CONFIG_YES </dd></dl>
+
+</div>
+</div>
+<a id="af5fbb8ced2a12bb7a1d87deef15da4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5fbb8ced2a12bb7a1d87deef15da4b1">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_FREELIST_MEMPOOL_FREE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_FREELIST_MEMPOOL_FREE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The mempool object is not used. </p>
+<p>Supported the FeeRTOS RECURSIVE_MUTEXES ? </p><dl class="section note"><dt>Note</dt><dd>Don't edit </dd></dl>
+
+</div>
+</div>
+<a id="ab38cc792d50f34fdd08b9e7939a7b5ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38cc792d50f34fdd08b9e7939a7b5ee">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_FREELIST_MEMPOOL_USED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_FREELIST_MEMPOOL_USED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The mempool object is used, not free. </p>
+
+</div>
+</div>
+<a id="af75f0ad7789180411059976192486e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75f0ad7789180411059976192486e4e">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_LOCK_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_LOCK_TYPE&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">MN_THREAD_CONFIG_BINARY_SEMAPHORE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>default: lock type using in the thread class MN_THREAD_CONFIG_MUTEX: using the mutex as default lock type MN_THREAD_CONFIG_BINARY_SEMAPHORE using the binary semaphore as default lock type MN_THREAD_CONFIG_COUNTING_SEMAPHORE: using the counting semaphore as default lock type </dd>
+<dd>
+default: MN_THREAD_CONFIG_BINARY_SEMAPHORE </dd></dl>
+
+</div>
+</div>
+<a id="a609d559fa4b25aab1aee09ff7adfd3f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609d559fa4b25aab1aee09ff7adfd3f5">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_MEMPOOL_MAGIC_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_MEMPOOL_MAGIC_END&#160;&#160;&#160;0xa8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The end magic guard byte for detect heap memory corruption, not use in simple version. </p>
+
+</div>
+</div>
+<a id="a47b49da03fa010bf7527d514dbf29e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b49da03fa010bf7527d514dbf29e34">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_MEMPOOL_MAGIC_START</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_MEMPOOL_MAGIC_START&#160;&#160;&#160;0x6d</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The start magic guard byte for detect heap memory corruption, not use in simple version. </p>
+
+</div>
+</div>
+<a id="abb7af2f242062e3b0f4960de6b335b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7af2f242062e3b0f4960de6b335b03">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_MEMPOOL_USE_MAGIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_MEMPOOL_USE_MAGIC&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use the magic guard for detect heap memory corruption - default: MN_THREAD_CONFIG_NO. </p>
+
+</div>
+</div>
+<a id="a8412e7e06a300c22ecaf5b3fcb589dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8412e7e06a300c22ecaf5b3fcb589dec">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_MEMPOOL_USETIMED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_MEMPOOL_USETIMED&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use for mempool the timed version and xTicksToWait When true than is the class name basic_mempool_name_timed and If false then basic_mempool_name% </p>
+
+</div>
+</div>
+<a id="ae1af1b16705ec8d267a32767da010c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1af1b16705ec8d267a32767da010c2f">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_MINIMAL_STACK_SIZE&#160;&#160;&#160;2048</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The minimal stack size for a mn task </p><dl class="section note"><dt>Note</dt><dd>default: 2048 </dd></dl>
+
+</div>
+</div>
+<a id="ab6a2073609e7b98ce87f87cd1a7b677c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a2073609e7b98ce87f87cd1a7b677c">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How many message can stored in the basic_message_task queue - default: 5</p>
+<dl class="section note"><dt>Note</dt><dd>for message task support must be Condition variable support enabled </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT</a> </dd></dl>
+
+</div>
+</div>
+<a id="a664bef337ebc2277702bbb63321b657c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a664bef337ebc2277702bbb63321b657c">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_MUTEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_MUTEX&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined helper values for config items - Use a mutex. </p>
+
+</div>
+</div>
+<a id="a531ecc7321eaad4c689658e3a166665a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531ecc7321eaad4c689658e3a166665a">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_NET_IPADDRESS6_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_NET_IPADDRESS6_ENABLE&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a438b234b09b83980add3cf1ac0ebbf71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a438b234b09b83980add3cf1ac0ebbf71">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_NET_IPADDRESS6_SCOPEID_VAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_NET_IPADDRESS6_SCOPEID_VAL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a936726e3457730e3621fe8a83f4889a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a936726e3457730e3621fe8a83f4889a2">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_NET_IPADDRESS6_USE_SCOPEID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_NET_IPADDRESS6_USE_SCOPEID&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02ac2cfca56481d8e1e70d84483cce0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02ac2cfca56481d8e1e70d84483cce0c">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_NO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_NO&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined helper values for config items - Use for deaktivating. </p>
+
+</div>
+</div>
+<a id="ac0d34aeabc9cf566a9bc3918d7fc6604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d34aeabc9cf566a9bc3918d7fc6604">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_OTHER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_OTHER&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined values for config items -. </p>
+<dl class="section note"><dt>Note</dt><dd>corrently use for MN_THREAD_CONFIG_BOARD Set board type to other - not work </dd></dl>
+
+</div>
+</div>
+<a id="a9d7f3f8fbd6ff30ad21aabae00922caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7f3f8fbd6ff30ad21aabae00922caa">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_PREVIEW_FUTURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_PREVIEW_FUTURE&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whenn MN_THREAD_CONFIG_YES then activate develop unsafe future for next major version not for production use</p>
+<dl class="section note"><dt>Note</dt><dd>default: MN_THREAD_CONFIG_NO </dd></dl>
+
+</div>
+</div>
+<a id="a088badaa2d25119018451eb7a7068bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a088badaa2d25119018451eb7a7068bf6">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_RECURSIVE_MUTEX_CHEAKING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_RECURSIVE_MUTEX_CHEAKING&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>When MN_THREAD_CONFIG_YES then cheaking for recursive mutex and when FreeRTOS recursive mutex supported then can you use thes </p>
+
+</div>
+</div>
+<a id="a134b9cfbd0a9862f78a74eb0509b4baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134b9cfbd0a9862f78a74eb0509b4baa">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_SHAREDOBJECT_PREUSING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_SHAREDOBJECT_PREUSING&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">MN_THREAD_CONFIG_YES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Using pre defines (usings) for basic types for the shared objects. </p>
+
+</div>
+</div>
+<a id="a50e5f9c1523e1a8c6ee7f022b672cb55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50e5f9c1523e1a8c6ee7f022b672cb55">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_SIZE_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_SIZE_TYPE&#160;&#160;&#160;long unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type for <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> </p>
+
+</div>
+</div>
+<a id="a5ad080396922e54adb11e7c31223267a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad080396922e54adb11e7c31223267a">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_STACK_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_STACK_TYPE&#160;&#160;&#160;unsigned long</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The stack using type. </p>
+
+</div>
+</div>
+<a id="a7755b3f708d90aa99b006d11c760a22c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7755b3f708d90aa99b006d11c760a22c">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_TICKHOOK_MAXENTRYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_TICKHOOK_MAXENTRYS&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The max entrys are hold the tickhook queue. </p>
+
+</div>
+</div>
+<a id="afa89a82b841c0c8e4c5eb3c9dd60c20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa89a82b841c0c8e4c5eb3c9dd60c20d">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_TIMEOUT_COROUTINE_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_TIMEOUT_COROUTINE_DEFAULT&#160;&#160;&#160;(unsigned int) 0xffffffffUL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The default initial timeout for coroutine (recursive and normal) Can override </p><dl class="section note"><dt>Note</dt><dd>default: (unsigned int) 0xffffffffUL) </dd></dl>
+
+</div>
+</div>
+<a id="a20fe1420e9a6d53d806d9d5e3a6cefc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20fe1420e9a6d53d806d9d5e3a6cefc4">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT&#160;&#160;&#160;(unsigned int) 0xffffffffUL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The default initial timeout for mutex lock (recursive and normal) Can override </p><dl class="section note"><dt>Note</dt><dd>default: (unsigned int) 0xffffffffUL) </dd></dl>
+
+</div>
+</div>
+<a id="a76b9342a36f28f62f27570399e60a725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b9342a36f28f62f27570399e60a725">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT&#160;&#160;&#160;(unsigned int) 0xffffffffUL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The default initial timeout for all queues Can override </p><dl class="section note"><dt>Note</dt><dd>default: (unsigned int) 0xffffffffUL) </dd></dl>
+
+</div>
+</div>
+<a id="ad4336b36a6998360e0c17e166693f1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4336b36a6998360e0c17e166693f1e2">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT&#160;&#160;&#160;(unsigned int) 0xffffffffUL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The default initial timeout for semaphore lock (counting semaphore and binary semaphore) Can override </p><dl class="section note"><dt>Note</dt><dd>default: (unsigned int) 0xffffffffUL </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_2home_2ambersophia_2Dokumente_2git_2mnthread_2include_2mn_basic_semaphore_8hpp-example.html#a2">/home/ambersophia/Dokumente/git/mnthread/include/mn_basic_semaphore.hpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ac8cf48648de13dfd540bc2a9f1849279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8cf48648de13dfd540bc2a9f1849279">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_USE_EXCEPTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_USE_EXCEPTIONS&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">MN_THREAD_CONFIG_NO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use for lock objects exceptions? default: MN_THREAD_CONFIG_NO </p>
+
+</div>
+</div>
+<a id="ab52fbf702e5cd328048240dd64178992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52fbf702e5cd328048240dd64178992">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_USE_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_USE_TRACE&#160;&#160;&#160;configUSE_TRACE_FACILITY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a060f30c571d899925211c1f3ac054816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060f30c571d899925211c1f3ac054816">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_WORKQUEUE_GETNEXTITEM_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_WORKQUEUE_GETNEXTITEM_TIMEOUT&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Very Importend !!! Handled the timeout for get_next_job timeout in the work queue Only in this config medificated </p>
+
+</div>
+</div>
+<a id="a7c285196ad60ff04d1bebd556eaa48c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c285196ad60ff04d1bebd556eaa48c5">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_WORKQUEUE_MULTI_MAXITEMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_WORKQUEUE_MULTI_MAXITEMS&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How many work items to queue in the workqueue multi-threaded </p><dl class="section note"><dt>Note</dt><dd>default: 16 </dd></dl>
+
+</div>
+</div>
+<a id="ab4c34b9df0f9532a460738584f538e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c34b9df0f9532a460738584f538e2a">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_WORKQUEUE_MULTI_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_WORKQUEUE_MULTI_PRIORITY&#160;&#160;&#160;basic_task::PriorityLow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>default: Priority for the workqueue multi-threaded for all worked thread </dd>
+<dd>
+default: basic_thread::PriorityLow </dd></dl>
+
+</div>
+</div>
+<a id="a771ac26a0445c8ded5d5d2658b83265a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a771ac26a0445c8ded5d5d2658b83265a">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_WORKQUEUE_MULTI_STACKSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_WORKQUEUE_MULTI_STACKSIZE&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stak size for the workqueue multi-threaded for all worked thread </p><dl class="section note"><dt>Note</dt><dd>default: MN_THREAD_CONFIG_MINIMAL_STACK_SIZE </dd></dl>
+
+</div>
+</div>
+<a id="a3135a204d86e78dc51aa638712a82bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3135a204d86e78dc51aa638712a82bcb">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_WORKQUEUE_MULTI_WORKER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_WORKQUEUE_MULTI_WORKER&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How many worker threads run in the workqueue multi-threaded </p><dl class="section note"><dt>Note</dt><dd>default: 4 </dd></dl>
+
+</div>
+</div>
+<a id="ae2cd1bd439df99613159cc6012920f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2cd1bd439df99613159cc6012920f16">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_MAXITEMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_WORKQUEUE_SINGLE_MAXITEMS&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How many work items to queue in the workqueue single-threaded default: 8 </p>
+
+</div>
+</div>
+<a id="a4872c5fc30c3382fe645408bf9501abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4872c5fc30c3382fe645408bf9501abf">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_PRIORITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_WORKQUEUE_SINGLE_PRIORITY&#160;&#160;&#160;basic_task::PriorityLow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>default: Priority for the workqueue single-threaded thread </dd>
+<dd>
+default: basic_thread::PriorityLow </dd></dl>
+
+</div>
+</div>
+<a id="ab0e9e87c8fd8cede584d680bcea94b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e9e87c8fd8cede584d680bcea94b8a">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_STACKSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_WORKQUEUE_SINGLE_STACKSIZE&#160;&#160;&#160;<a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">MN_THREAD_CONFIG_MINIMAL_STACK_SIZE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stak size for the workqueue single-threaded thread </p><dl class="section note"><dt>Note</dt><dd>default: MN_THREAD_CONFIG_MINIMAL_STACK_SIZE </dd></dl>
+
+</div>
+</div>
+<a id="ae911d55d86029d20c96e0e6b0526e3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae911d55d86029d20c96e0e6b0526e3df">&#9670;&nbsp;</a></span>MN_THREAD_CONFIG_YES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_CONFIG_YES&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre defined helper values for config items - Use for aktivating. </p>
+
+</div>
+</div>
+<a id="a716b0d4bd0b293fc6464ab0b8dbdac9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716b0d4bd0b293fc6464ab0b8dbdac9c">&#9670;&nbsp;</a></span>MN_THREAD_DEBUG_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_DEBUG_VERSION&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debug version. </p>
+
+</div>
+</div>
+<a id="ae8e43bb3aa6d7b1705cedd81bd1f8b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e43bb3aa6d7b1705cedd81bd1f8b90">&#9670;&nbsp;</a></span>MN_THREAD_MAJOR_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_MAJOR_VERSION&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Major Version, the first number. </p>
+<p>All cunfig properties can override in your sdkconfig.h </p>
+
+</div>
+</div>
+<a id="aad0f3724fe8622f21ae5b8f412d144e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0f3724fe8622f21ae5b8f412d144e0">&#9670;&nbsp;</a></span>MN_THREAD_MINOR_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_MINOR_VERSION&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minor Version, the 2. number. </p>
+
+</div>
+</div>
+<a id="afbda74b1d32ee3d4518fc2e7d313cfab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbda74b1d32ee3d4518fc2e7d313cfab">&#9670;&nbsp;</a></span>MN_THREAD_VERSION_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_VERSION_STRING&#160;&#160;&#160;&quot;2.25.0&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The mini thread version as string. </p>
+
+</div>
+</div>
+<a id="a25a40c79f97ffb858c5f5b2424939de2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a40c79f97ffb858c5f5b2424939de2">&#9670;&nbsp;</a></span>MN_UNUSED_VARIABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_UNUSED_VARIABLE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var</td><td>)</td>
+          <td>&#160;&#160;&#160;do { (void)(var); } while (false)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8446b71b78dda75ad4a2c490a1a98da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8446b71b78dda75ad4a2c490a1a98da6">&#9670;&nbsp;</a></span>MN_ZERO_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_ZERO_SET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;memset(var, 0, size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

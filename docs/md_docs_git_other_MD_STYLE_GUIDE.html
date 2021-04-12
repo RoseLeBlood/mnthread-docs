@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: OpenThread Coding Conventions and Style</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__change_log.html">
+                                <span data-feather="info"></span>
+                                Changelog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html">
+                                <span data-feather="info"></span>
+                                Contributing
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('md_docs_git_other_MD_STYLE_GUIDE.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">OpenThread Coding Conventions and Style </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><ul>
+<li><a href="#c-and-c">1 C and C++</a><ul>
+<li><a href="#standards">Standards</a></li>
+<li><a href="#conventions-and-best-practices">Conventions and Best Practices</a></li>
+<li><a href="#tightly-constrained-systems-and-shared-infrastructure">Tightly-constrained Systems and Shared Infrastructure</a></li>
+<li><a href="#format-and-style">Format and Style</a></li>
+<li><a href="#comments">Comments</a></li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md47"></a>
+C and C++</h1>
+<h2><a class="anchor" id="autotoc_md48"></a>
+Standards</h2>
+<ul>
+<li>C<ul>
+<li>Mini Thread uses and enforces the ISO9899:1999 (aka ISO C99, C99) C language standard as the minimum.</li>
+</ul>
+</li>
+<li>C++<ul>
+<li>Mini Thread uses and enforces the ISO14882:2011 (aka ISO C++11, C++11) C++ language standard as the minimum.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md49"></a>
+Conventions and Best Practices</h2>
+<h3><a class="anchor" id="autotoc_md50"></a>
+Language Independent</h3>
+<ul>
+<li>Inline functions should be used judiciously.<ul>
+<li>The use of code in headers and, more specifically, the use of the non-local scope inline functions should be avoided. Exception: Simple setters and getters are fine since the compiler can efficiently optimize these and make their overhead as low as a direct data member access.</li>
+</ul>
+</li>
+<li>Return Statements<ul>
+<li>There should be one return statement per free function or method at the end of the free function or method.</li>
+</ul>
+</li>
+<li>Local Goto<ul>
+<li>There should be no calls to the C/C++ keyword goto. Exception: The use of local gotos for the purposes of common error handling blocks and single points of function return at the bottom of a function.</li>
+</ul>
+</li>
+<li>C Preprocessor<ul>
+<li>Use of the C preprocessor should be limited to file inclusion and simple macros.</li>
+<li>Macros shall not be defined within a function or a block and should be defined at the top of a file.</li>
+<li>All <code>#else</code>, <code>#elif</code>, and <code>#endif</code> preprocessor directives shall reside in the same file as the <code>#if</code> or <code>#ifdef</code> directive to which they are related.</li>
+<li>All <code>#endif</code> directives equal to or greater than 20 lines away from the <code>#if</code> or <code>#ifdef</code> directive to which they are related shall be decorated by language comment indicating the conditional they are associated with.</li>
+<li>Preprocessor <code>#include</code> directives in a file shall only be preceded by other preprocessor directives or comments.</li>
+<li>Preprocessor <code>#include</code> directives shall use brace (“&lt;”) and (“&gt;”) style for all public headers, including C and C++ standard library, or other first- and third-party public library headers.</li>
+<li>Preprocessor <code>#include</code> directives should use double quote (‘“‘) and (‘“‘) style for all private or relative headers.</li>
+<li>Preprocessor <code>#include</code> directives should be grouped, ordered, or sorted as follows:<ul>
+<li>If the unit is a core/private header file, <code>"mn_config.hpp"</code> should be the first header file included.</li>
+<li>If the unit is a core/private <code>.c</code> or <code>.cpp</code> file:<ul>
+<li>If the unit has a corresponding header file, the unit's corresponding header file should be included before any other header file.</li>
+<li>If the unit has no corresponding header file, then it should directly include <code>"mn_config.hpp"</code> before any other header file.</li>
+</ul>
+</li>
+<li>C++ Standard Library headers</li>
+<li>C Standard Library headers</li>
+<li>Third-party library headers</li>
+<li>First-party library headers</li>
+<li>Private or local headers</li>
+<li>Alphanumeric order within each subgroup</li>
+</ul>
+</li>
+<li>The preprocessor shall not be used to redefine reserved language keywords.</li>
+<li>Unused code shall not be disabled by commenting it out with C- or C++-style comments or with preprocessor <code>#if 0 ... #endif</code> semantics.</li>
+<li>Use of the preprocessor token concatenation operator '##' should be avoided.</li>
+<li>The <code>undef</code> preprocessor directive should be avoided and shall never be used to undefine a symbol from a foreign module.</li>
+</ul>
+</li>
+<li>Object Scope<ul>
+<li>Data objects shall be declared at the smallest possible level of scope.</li>
+<li>No declaration in an inner scope shall hide or shadow a declaration in an outer scope. Compiler flags shall be set to flag and enforce this.</li>
+</ul>
+</li>
+<li>Unbounded Recursion<ul>
+<li>There shall be no direct or indirect use of unbounded recursive function calls.</li>
+</ul>
+</li>
+<li>Symmetric APIs<ul>
+<li>Wherever possible and appropriate, particularly around the management of resources, APIs should be symmetric. For example, if there is a free function or object method that allocates a resource, then there should be one that deallocates it. If there is a free function or object method that opens a file or network stream, then there should be one that closes it.</li>
+</ul>
+</li>
+<li>Use C stdint.h or C++ cstdint for Plain Old Data Types<ul>
+<li>Standard, scalar data types defined in stdint.h (C) or cstdint (C++) should be used for basic signed and unsigned integer types, especially when size and serialization to non-volatile storage or across a network is concerned. Examples of these are: <code>uint8_t</code>, <code>int8_t</code>, etc.</li>
+</ul>
+</li>
+<li>Constant Qualifiers<ul>
+<li>Read-only methods, global variables, stack variables, or data members are read-only should be qualified using the C or C++ <code>const</code> qualifier.</li>
+<li>Pointers or references to read-only objects or storage, including but not limited to function parameters, should be qualified using the C or C++ <code>const</code> qualifier.</li>
+</ul>
+</li>
+<li>Header Include Guard<ul>
+<li>All C and C++ headers shall use preprocessor header include guards.</li>
+<li>The terminating endif preprocessor directive shall have a comment, C or C++ depending on the header type, containing the preprocessor symbol introduced by the ifndef directive starting the guard.</li>
+<li>The symbol used for the guard should be the file name, converted to all uppercase, with any spaces (“ “) or dots (“.”) converted to underscores (“_”).</li>
+</ul>
+</li>
+<li>Function and Method Prototypes<ul>
+<li>All void functions or methods shall explicitly declare and specify the void type keyword.</li>
+</ul>
+</li>
+<li>Unused parameters<ul>
+<li>All unused parameters shall be declared as such using the <code>MN_UNUSED_VARIABLE</code> macro at the top of a function or method before all local variable declarations.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md51"></a>
+C</h3>
+<ul>
+<li>C / C++ Linkage Wrappers<ul>
+<li>All header files intended to have C symbol linkage shall use “extern C” linkage wrappers.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md52"></a>
+C++</h3>
+<ul>
+<li>Prefer Passing Parameters by Reference to Pointer<ul>
+<li>Unlike C, C++ offers an alternate way to alias data over and above a pointer, the reference, indicated by the &amp; symbol. Where appropriate, the reference should be preferred to the pointer.</li>
+</ul>
+</li>
+<li>Passing Base Scalars<ul>
+<li>Size- and call frequency-based considerations should be made when passing scalars as to whether they should be passed by value or by constant reference; however, pass-by-value should generally be preferred.</li>
+</ul>
+</li>
+<li>Eliminate Unnecessary Destructors<ul>
+<li>The creation of empty or useless destructors should be avoided. Empty or useless destructors should be removed.</li>
+</ul>
+</li>
+<li>Default Parameters<ul>
+<li>When you declare C++ free functions and object methods, you should avoid or minimize using default parameters.</li>
+<li>When you declare C++ virtual object methods, you shall avoid using default parameters.</li>
+</ul>
+</li>
+<li>Global and Scoped Static Construction<ul>
+<li>There shall be no use of global, static or otherwise, object construction. The use of scoped static object construction should be avoided.</li>
+</ul>
+</li>
+<li>C++-style Casts<ul>
+<li>Wherever possible and practical, C++ style casts should be used and preferred to the C style cast equivalent.</li>
+</ul>
+</li>
+<li>Avoid <code>using namespace</code> Statements in Headers<ul>
+<li>The C++ <code>using namespace</code> statement should not be used outside of object scope inside header files.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md53"></a>
+Tightly-constrained Systems and Shared Infrastructure</h2>
+<ul>
+<li>Heap-based resource allocation should be avoided.</li>
+<li>There shall be no direct or indirect use of recursive function calls.</li>
+<li>The use of virtual functions should be avoided.</li>
+<li>The use of the C++ Standard Library shall be avoided.</li>
+<li>The use of the C++ Standard Template Library (STL) should be avoided or minimized.</li>
+<li>The use of the C++ templates should be avoided or minimized.</li>
+<li>Code shall not use exceptions.</li>
+<li>Code shall not use C++ runtime type information (RTTI), including facilities that rely upon it, such as <code>dynamic_cast</code> and <code>typeid</code>.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md54"></a>
+Format and Style</h2>
+<ul>
+<li>OpenThread uses <code>script/make-pretty</code> to reformat code and enforce code format and style. <code>script/make-pretty check</code> build target is included in OpenThread's continuous integration and must pass before a pull request is merged.</li>
+<li><code>script/make-pretty</code> requires <a href="https://releases.llvm.org/download.html#9.0.0">clang-format v9.0.0</a> for C/C++ and <a href="https://github.com/google/yapf">yapf v0.31.0</a> for Python.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md55"></a>
+File Names</h3>
+<ul>
+<li>File names should match the names and types of what is described in the file. If a file contains many declarations and definitions, the author should choose the one that predominantly describes or that makes the most sense.</li>
+<li>File contents and names should be limited in the scope of what they contain. It may also be possible that there is too much stuff in one file and you need to break it up into multiple files.</li>
+<li>File names should be all lower case.</li>
+<li>File extensions shall be indicative and appropriate for the type and usage of the source or header file.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md56"></a>
+Naming</h3>
+<ul>
+<li>Names should be descriptive but not overly so and they should give some idea of scope and should be selected such that <em>wrong code looks wrong</em>.</li>
+<li>Names shall not give any idea of type, such as is done with System Hungarian notation.</li>
+<li>Case<ul>
+<li>C preprocessor symbols should be all uppercase.</li>
+<li>All OpenThread class, namespace, structure, method, function, enumeration, and type names in the C/C++ language shall be in <em>upper camel case</em>. Exception: the top level OpenThread namespace 'ot'.</li>
+<li>All OpenThread instantiated names of instances of classes, namespaces, structures, methods, functions, enumerations, and types as well as method and function parameters in the C++ language shall be in <em>lower camel case</em>.</li>
+</ul>
+</li>
+<li>Symbol Qualification<ul>
+<li>All OpenThread C++ code should be in the ‘mn’ top-level namespace.</li>
+</ul>
+</li>
+<li>Scope<ul>
+<li>All global data shall have a <code>_g</code> prepended to the name to denote global scope.</li>
+<li>All static data shall have a <code>ms_</code> or <code>_sg</code> prepended to the name to denote static scope.</li>
+<li>All class or structure data members shall have a <code>m_</code> prepended to the name to denote member scope.</li>
+<li>All variables that do not have such prefixes shall be assumed to be function local scope.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md57"></a>
+White Space</h3>
+<ul>
+<li>Indentation shall be 4 space characters.</li>
+<li>Conditionals shall always appear on a separate line from the code to execute as a result of the condition.</li>
+<li>Scoped Variable declarations<ul>
+<li>All scoped (i.e. stack) variable declarations should be placed together at the top of the enclosing scope in which they are used.</li>
+<li>There shall be an empty line after all such variable declarations.</li>
+<li>The names of all variable declarations should be left aligned.</li>
+</ul>
+</li>
+<li>Data Member declarations<ul>
+<li>All data member declarations should be placed together.</li>
+<li>The names of all data member declarations should be left aligned.</li>
+<li>The data member declarations for C++ classes should be placed at the end or tail of the class.</li>
+</ul>
+</li>
+<li>Braces<ul>
+<li>Braces should go on their own lines.</li>
+<li>Statements should never be on the same line following a closing brace.</li>
+</ul>
+</li>
+<li>Keywords<ul>
+<li>There should be a single space after language-reserved keywords (for, while, if, etc).</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md58"></a>
+Comments</h2>
+<ul>
+<li>All code should use Doxygen to:<ul>
+<li>Detail what the various source and header files are and how they fit into the broader context.</li>
+<li>Detail what the various C++ namespaces are.</li>
+<li>Detail what the constants, C preprocessor definitions, and enumerations are.</li>
+<li>Detail what the globals are and how they are to be used.</li>
+<li>Detail what the free function and object / class methods are and how they are to be used, what their parameters are, and what their return values are.</li>
+<li>Detail any other important technical information or theory of operation unique and relevant to the stack that is not otherwise captured in architecture, design, or protocol documentation.</li>
+</ul>
+</li>
+<li>Every public, and ideally private, free function and class method should likewise have a prologue comment that:<ul>
+<li>Briefly describes what it is and what it does.</li>
+<li>Describes in detail, optionally, what it is and what it does.</li>
+<li>Describes the purpose, function, and influence of each parameter as well as whether it is an input, an output, or both.</li>
+<li>Describes the return value, if present, and the expected range or constraints of it. </li>
+</ul>
+</li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

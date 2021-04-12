@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::container::basic_queue&lt; T, TMAXITEMS, TITEMSIZE &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1container_1_1basic__queue.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1container_1_1basic__queue-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::container::basic_queue&lt; T, TMAXITEMS, TITEMSIZE &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A basic wrapper for the MiniLib queue's as Template queue.  
+ <a href="classmn_1_1container_1_1basic__queue.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="container_2mn__queue_8hpp_source.html">mn_queue.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::container::basic_queue&lt; T, TMAXITEMS, TITEMSIZE &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1container_1_1basic__queue__coll__graph.svg" width="194" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a388ce3975958ed5ddac2bd343cb941d1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a388ce3975958ed5ddac2bd343cb941d1">queue_type</a> = <a class="el" href="namespacemn_1_1queue.html#a1c14458920001de37575eb7c99b28e98">mn::queue::queue_t</a></td></tr>
+<tr class="separator:a388ce3975958ed5ddac2bd343cb941d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0215841d803834beef14deaa5b58aa0a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a0215841d803834beef14deaa5b58aa0a">value_type</a> = T</td></tr>
+<tr class="separator:a0215841d803834beef14deaa5b58aa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1b1e264caa1c7c840563e19703e5ca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a4a1b1e264caa1c7c840563e19703e5ca">pointer</a> = T *</td></tr>
+<tr class="separator:a4a1b1e264caa1c7c840563e19703e5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05de9499ae06c1f6130d931d4730fbcb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a05de9499ae06c1f6130d931d4730fbcb">reference</a> = T &amp;</td></tr>
+<tr class="separator:a05de9499ae06c1f6130d931d4730fbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0323abc39395770a7f29aff3ea2dc589"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a0323abc39395770a7f29aff3ea2dc589">const_reference</a> = const T &amp;</td></tr>
+<tr class="separator:a0323abc39395770a7f29aff3ea2dc589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5717562d24f6454643e0141871f313fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> = <a class="el" href="classmn_1_1container_1_1basic__queue.html">basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;</td></tr>
+<tr class="separator:a5717562d24f6454643e0141871f313fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bb1ac2f7ea4b369ca868eac0723645"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a76bb1ac2f7ea4b369ca868eac0723645">iterator</a> = <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a>&lt; T, <a class="el" href="classmn_1_1container_1_1basic__queue.html#a388ce3975958ed5ddac2bd343cb941d1">queue_type</a> &gt;</td></tr>
+<tr class="separator:a76bb1ac2f7ea4b369ca868eac0723645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7a6d38abcc39c6bd06e1664c67975e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a3c7a6d38abcc39c6bd06e1664c67975e">const_iterator</a> = const <a class="el" href="classmn_1_1container_1_1basic__queue.html#a76bb1ac2f7ea4b369ca868eac0723645">iterator</a></td></tr>
+<tr class="separator:a3c7a6d38abcc39c6bd06e1664c67975e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162dd40908d230d3b2623f6f1171fb1a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a162dd40908d230d3b2623f6f1171fb1a">size_type</a> = <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></td></tr>
+<tr class="separator:a162dd40908d230d3b2623f6f1171fb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2534067d81f8eb603ba225af5ad44ca1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a2534067d81f8eb603ba225af5ad44ca1">basic_queue</a> ()</td></tr>
+<tr class="memdesc:a2534067d81f8eb603ba225af5ad44ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new basic queue object.  <a href="classmn_1_1container_1_1basic__queue.html#a2534067d81f8eb603ba225af5ad44ca1">More...</a><br /></td></tr>
+<tr class="separator:a2534067d81f8eb603ba225af5ad44ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bd39bed81a3adebb6f0e2dbddd0e448"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a6bd39bed81a3adebb6f0e2dbddd0e448">basic_queue</a> (const <a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> &amp;other)</td></tr>
+<tr class="separator:a6bd39bed81a3adebb6f0e2dbddd0e448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed486f1485f77413b4ba95593e708b24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#aed486f1485f77413b4ba95593e708b24">~basic_queue</a> ()</td></tr>
+<tr class="memdesc:aed486f1485f77413b4ba95593e708b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the basic queue object.  <a href="classmn_1_1container_1_1basic__queue.html#aed486f1485f77413b4ba95593e708b24">More...</a><br /></td></tr>
+<tr class="separator:aed486f1485f77413b4ba95593e708b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ecd73272b01adfc8984e5065eac43e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a76bb1ac2f7ea4b369ca868eac0723645">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#af2ecd73272b01adfc8984e5065eac43e">begin</a> ()</td></tr>
+<tr class="memdesc:af2ecd73272b01adfc8984e5065eac43e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the begin iterator.  <a href="classmn_1_1container_1_1basic__queue.html#af2ecd73272b01adfc8984e5065eac43e">More...</a><br /></td></tr>
+<tr class="separator:af2ecd73272b01adfc8984e5065eac43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af4104dd1e960c1dff82f672dfd6b02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a76bb1ac2f7ea4b369ca868eac0723645">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a6af4104dd1e960c1dff82f672dfd6b02">end</a> ()</td></tr>
+<tr class="memdesc:a6af4104dd1e960c1dff82f672dfd6b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end iterator.  <a href="classmn_1_1container_1_1basic__queue.html#a6af4104dd1e960c1dff82f672dfd6b02">More...</a><br /></td></tr>
+<tr class="separator:a6af4104dd1e960c1dff82f672dfd6b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd249f81574ab04d86220898f29dd4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a3c7a6d38abcc39c6bd06e1664c67975e">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a7cd249f81574ab04d86220898f29dd4e">begin</a> () const</td></tr>
+<tr class="memdesc:a7cd249f81574ab04d86220898f29dd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the begin iterator.  <a href="classmn_1_1container_1_1basic__queue.html#a7cd249f81574ab04d86220898f29dd4e">More...</a><br /></td></tr>
+<tr class="separator:a7cd249f81574ab04d86220898f29dd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd77d03a37383c536b819c9656cc949"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a3c7a6d38abcc39c6bd06e1664c67975e">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a5dd77d03a37383c536b819c9656cc949">end</a> () const</td></tr>
+<tr class="memdesc:a5dd77d03a37383c536b819c9656cc949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the end iterator.  <a href="classmn_1_1container_1_1basic__queue.html#a5dd77d03a37383c536b819c9656cc949">More...</a><br /></td></tr>
+<tr class="separator:a5dd77d03a37383c536b819c9656cc949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8543d8efc694cfc98a334b085456a052"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a0323abc39395770a7f29aff3ea2dc589">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a8543d8efc694cfc98a334b085456a052">front</a> () const</td></tr>
+<tr class="separator:a8543d8efc694cfc98a334b085456a052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5eb2643aac0c6ca6e566c7076e7432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a05de9499ae06c1f6130d931d4730fbcb">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a1b5eb2643aac0c6ca6e566c7076e7432">front</a> ()</td></tr>
+<tr class="separator:a1b5eb2643aac0c6ca6e566c7076e7432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b5546578dcc25919cc08966b54c7b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a0323abc39395770a7f29aff3ea2dc589">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#ae7b5546578dcc25919cc08966b54c7b0">back</a> () const</td></tr>
+<tr class="separator:ae7b5546578dcc25919cc08966b54c7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e506703184f9ca358ab00f7555709f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a05de9499ae06c1f6130d931d4730fbcb">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a32e506703184f9ca358ab00f7555709f">back</a> ()</td></tr>
+<tr class="separator:a32e506703184f9ca358ab00f7555709f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3836b88f4954e61ac9e696f45deb8aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a3836b88f4954e61ac9e696f45deb8aae">push</a> (<a class="el" href="classmn_1_1container_1_1basic__queue.html#a05de9499ae06c1f6130d931d4730fbcb">reference</a> _Element)</td></tr>
+<tr class="memdesc:a3836b88f4954e61ac9e696f45deb8aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a element to the queue.  <a href="classmn_1_1container_1_1basic__queue.html#a3836b88f4954e61ac9e696f45deb8aae">More...</a><br /></td></tr>
+<tr class="separator:a3836b88f4954e61ac9e696f45deb8aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2daf06b7b602e47e0c4ea3acb7276c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a4a1b1e264caa1c7c840563e19703e5ca">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#aa2daf06b7b602e47e0c4ea3acb7276c7">pop</a> ()</td></tr>
+<tr class="memdesc:aa2daf06b7b602e47e0c4ea3acb7276c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop the oldest entry from the queue.  <a href="classmn_1_1container_1_1basic__queue.html#aa2daf06b7b602e47e0c4ea3acb7276c7">More...</a><br /></td></tr>
+<tr class="separator:aa2daf06b7b602e47e0c4ea3acb7276c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af300f479f1aaef52dc8919b0b150b4c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#af300f479f1aaef52dc8919b0b150b4c1">clear</a> ()</td></tr>
+<tr class="memdesc:af300f479f1aaef52dc8919b0b150b4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the queue.  <a href="classmn_1_1container_1_1basic__queue.html#af300f479f1aaef52dc8919b0b150b4c1">More...</a><br /></td></tr>
+<tr class="separator:af300f479f1aaef52dc8919b0b150b4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc257b347c03799e8e40803f0cc33b03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#acc257b347c03799e8e40803f0cc33b03">empty</a> ()</td></tr>
+<tr class="memdesc:acc257b347c03799e8e40803f0cc33b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check, if queue is empty.  <a href="classmn_1_1container_1_1basic__queue.html#acc257b347c03799e8e40803f0cc33b03">More...</a><br /></td></tr>
+<tr class="separator:acc257b347c03799e8e40803f0cc33b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31820b0e3fbf95f9f72fc277015b6597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a31820b0e3fbf95f9f72fc277015b6597">length</a> ()</td></tr>
+<tr class="memdesc:a31820b0e3fbf95f9f72fc277015b6597"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many items can queue.  <a href="classmn_1_1container_1_1basic__queue.html#a31820b0e3fbf95f9f72fc277015b6597">More...</a><br /></td></tr>
+<tr class="separator:a31820b0e3fbf95f9f72fc277015b6597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b253bd2a61a246b8954bed30fe54560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a6b253bd2a61a246b8954bed30fe54560">size</a> ()</td></tr>
+<tr class="separator:a6b253bd2a61a246b8954bed30fe54560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5375b1082884f35e84962cf94f15ac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#ae5375b1082884f35e84962cf94f15ac0">left</a> ()</td></tr>
+<tr class="separator:ae5375b1082884f35e84962cf94f15ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d88629e9635a7b6bac407bb01a79e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#af5d88629e9635a7b6bac407bb01a79e7">swap</a> (const <a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> &amp;other)</td></tr>
+<tr class="separator:af5d88629e9635a7b6bac407bb01a79e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a99dc50ade1b143fff6d6a228bbfef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a14a99dc50ade1b143fff6d6a228bbfef">operator=</a> (const <a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> &amp;other)</td></tr>
+<tr class="separator:a14a99dc50ade1b143fff6d6a228bbfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a38f3870659aee7c96a783d428586dd18"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a38f3870659aee7c96a783d428586dd18">intern_getfront</a> ()</td></tr>
+<tr class="separator:a38f3870659aee7c96a783d428586dd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5bf5cc7303b8d274d5f6ef4e28136c50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a388ce3975958ed5ddac2bd343cb941d1">queue_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a5bf5cc7303b8d274d5f6ef4e28136c50">m_queue</a></td></tr>
+<tr class="separator:a5bf5cc7303b8d274d5f6ef4e28136c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6feee1e9828f40634124df2bd990f61a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a4a1b1e264caa1c7c840563e19703e5ca">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a6feee1e9828f40634124df2bd990f61a">m_pEnd</a></td></tr>
+<tr class="separator:a6feee1e9828f40634124df2bd990f61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9463618ab1cdb86cebf1eae3a46aabe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a4a1b1e264caa1c7c840563e19703e5ca">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__queue.html#aa9463618ab1cdb86cebf1eae3a46aabe">m_pFront</a></td></tr>
+<tr class="separator:aa9463618ab1cdb86cebf1eae3a46aabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class T, mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt;<br />
+class mn::container::basic_queue&lt; T, TMAXITEMS, TITEMSIZE &gt;</h3>
+
+<p>A basic wrapper for the MiniLib queue's as Template queue. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of an element </td></tr>
+    <tr><td class="paramname">TMAXITEMS</td><td>Maximal items can queue </td></tr>
+    <tr><td class="paramname">TITEMSIZE</td><td>A size of a item </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3c7a6d38abcc39c6bd06e1664c67975e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7a6d38abcc39c6bd06e1664c67975e">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a3c7a6d38abcc39c6bd06e1664c67975e">const_iterator</a> =  const <a class="el" href="classmn_1_1container_1_1basic__queue.html#a76bb1ac2f7ea4b369ca868eac0723645">iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0323abc39395770a7f29aff3ea2dc589"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0323abc39395770a7f29aff3ea2dc589">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a0323abc39395770a7f29aff3ea2dc589">const_reference</a> =  const T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76bb1ac2f7ea4b369ca868eac0723645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76bb1ac2f7ea4b369ca868eac0723645">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a76bb1ac2f7ea4b369ca868eac0723645">iterator</a> =  <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html">basic_queue_iterator</a>&lt;T, <a class="el" href="classmn_1_1container_1_1basic__queue.html#a388ce3975958ed5ddac2bd343cb941d1">queue_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a1b1e264caa1c7c840563e19703e5ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1b1e264caa1c7c840563e19703e5ca">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a4a1b1e264caa1c7c840563e19703e5ca">pointer</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a388ce3975958ed5ddac2bd343cb941d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a388ce3975958ed5ddac2bd343cb941d1">&#9670;&nbsp;</a></span>queue_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a388ce3975958ed5ddac2bd343cb941d1">queue_type</a> =  <a class="el" href="namespacemn_1_1queue.html#a1c14458920001de37575eb7c99b28e98">mn::queue::queue_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05de9499ae06c1f6130d931d4730fbcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05de9499ae06c1f6130d931d4730fbcb">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a05de9499ae06c1f6130d931d4730fbcb">reference</a> =  T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5717562d24f6454643e0141871f313fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5717562d24f6454643e0141871f313fe">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> =  <a class="el" href="classmn_1_1container_1_1basic__queue.html">basic_queue</a>&lt;T, TMAXITEMS, TITEMSIZE&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a162dd40908d230d3b2623f6f1171fb1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162dd40908d230d3b2623f6f1171fb1a">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a162dd40908d230d3b2623f6f1171fb1a">size_type</a> =  <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0215841d803834beef14deaa5b58aa0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0215841d803834beef14deaa5b58aa0a">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html#a0215841d803834beef14deaa5b58aa0a">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2534067d81f8eb603ba225af5ad44ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2534067d81f8eb603ba225af5ad44ca1">&#9670;&nbsp;</a></span>basic_queue() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html">basic_queue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new basic queue object. </p>
+
+</div>
+</div>
+<a id="a6bd39bed81a3adebb6f0e2dbddd0e448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd39bed81a3adebb6f0e2dbddd0e448">&#9670;&nbsp;</a></span>basic_queue() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::<a class="el" href="classmn_1_1container_1_1basic__queue.html">basic_queue</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed486f1485f77413b4ba95593e708b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed486f1485f77413b4ba95593e708b24">&#9670;&nbsp;</a></span>~basic_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::~<a class="el" href="classmn_1_1container_1_1basic__queue.html">basic_queue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy the basic queue object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a32e506703184f9ca358ab00f7555709f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e506703184f9ca358ab00f7555709f">&#9670;&nbsp;</a></span>back() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a05de9499ae06c1f6130d931d4730fbcb">reference</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7b5546578dcc25919cc08966b54c7b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b5546578dcc25919cc08966b54c7b0">&#9670;&nbsp;</a></span>back() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a0323abc39395770a7f29aff3ea2dc589">const_reference</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2ecd73272b01adfc8984e5065eac43e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ecd73272b01adfc8984e5065eac43e">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a76bb1ac2f7ea4b369ca868eac0723645">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the begin iterator. </p>
+<dl class="section return"><dt>Returns</dt><dd>The begin iterator </dd></dl>
+
+</div>
+</div>
+<a id="a7cd249f81574ab04d86220898f29dd4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd249f81574ab04d86220898f29dd4e">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a3c7a6d38abcc39c6bd06e1664c67975e">const_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the begin iterator. </p>
+<dl class="section return"><dt>Returns</dt><dd>The begin iterator </dd></dl>
+
+</div>
+</div>
+<a id="af300f479f1aaef52dc8919b0b150b4c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af300f479f1aaef52dc8919b0b150b4c1">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear the queue. </p>
+
+</div>
+</div>
+<a id="acc257b347c03799e8e40803f0cc33b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc257b347c03799e8e40803f0cc33b03">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check, if queue is empty. </p>
+<dl class="section return"><dt>Returns</dt><dd>true The queue is empty and false when not </dd></dl>
+
+</div>
+</div>
+<a id="a6af4104dd1e960c1dff82f672dfd6b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af4104dd1e960c1dff82f672dfd6b02">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a76bb1ac2f7ea4b369ca868eac0723645">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the end iterator. </p>
+<dl class="section return"><dt>Returns</dt><dd>The end iterator </dd></dl>
+
+</div>
+</div>
+<a id="a5dd77d03a37383c536b819c9656cc949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd77d03a37383c536b819c9656cc949">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a3c7a6d38abcc39c6bd06e1664c67975e">const_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the end iterator. </p>
+<dl class="section return"><dt>Returns</dt><dd>The end iterator </dd></dl>
+
+</div>
+</div>
+<a id="a1b5eb2643aac0c6ca6e566c7076e7432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5eb2643aac0c6ca6e566c7076e7432">&#9670;&nbsp;</a></span>front() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a05de9499ae06c1f6130d931d4730fbcb">reference</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8543d8efc694cfc98a334b085456a052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8543d8efc694cfc98a334b085456a052">&#9670;&nbsp;</a></span>front() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a0323abc39395770a7f29aff3ea2dc589">const_reference</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38f3870659aee7c96a783d428586dd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f3870659aee7c96a783d428586dd18">&#9670;&nbsp;</a></span>intern_getfront()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T* <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::intern_getfront </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5375b1082884f35e84962cf94f15ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5375b1082884f35e84962cf94f15ac0">&#9670;&nbsp;</a></span>left()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::left </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>How many empty spaves are currently left in the queue. </p><dl class="section return"><dt>Returns</dt><dd>the number of remaining spaces. </dd></dl>
+
+</div>
+</div>
+<a id="a31820b0e3fbf95f9f72fc277015b6597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31820b0e3fbf95f9f72fc277015b6597">&#9670;&nbsp;</a></span>length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How many items can queue. </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximal number of entries can queue </dd></dl>
+
+</div>
+</div>
+<a id="a14a99dc50ade1b143fff6d6a228bbfef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a99dc50ade1b143fff6d6a228bbfef">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a>&amp; <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2daf06b7b602e47e0c4ea3acb7276c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2daf06b7b602e47e0c4ea3acb7276c7">&#9670;&nbsp;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a4a1b1e264caa1c7c840563e19703e5ca">pointer</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pop the oldest entry from the queue. </p>
+<dl class="section return"><dt>Returns</dt><dd>The oldest entry from the queue <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a3836b88f4954e61ac9e696f45deb8aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3836b88f4954e61ac9e696f45deb8aae">&#9670;&nbsp;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a05de9499ae06c1f6130d931d4730fbcb">reference</a>&#160;</td>
+          <td class="paramname"><em>_Element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Push a element to the queue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pElement</td><td>The element </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b253bd2a61a246b8954bed30fe54560"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b253bd2a61a246b8954bed30fe54560">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>How many items are currently in the queue. </p><dl class="section return"><dt>Returns</dt><dd>the number of items in the queue. </dd></dl>
+
+</div>
+</div>
+<a id="af5d88629e9635a7b6bac407bb01a79e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d88629e9635a7b6bac407bb01a79e7">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__queue.html#a5717562d24f6454643e0141871f313fe">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6feee1e9828f40634124df2bd990f61a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6feee1e9828f40634124df2bd990f61a">&#9670;&nbsp;</a></span>m_pEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a4a1b1e264caa1c7c840563e19703e5ca">pointer</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::m_pEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9463618ab1cdb86cebf1eae3a46aabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9463618ab1cdb86cebf1eae3a46aabe">&#9670;&nbsp;</a></span>m_pFront</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a4a1b1e264caa1c7c840563e19703e5ca">pointer</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::m_pFront</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bf5cc7303b8d274d5f6ef4e28136c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf5cc7303b8d274d5f6ef4e28136c50">&#9670;&nbsp;</a></span>m_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__queue.html#a388ce3975958ed5ddac2bd343cb941d1">queue_type</a> <a class="el" href="classmn_1_1container_1_1basic__queue.html">mn::container::basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;::m_queue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="container_2mn__queue_8hpp_source.html">container/mn_queue.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::basic_iterator_triple&lt; TIterator, UIterator, VIterator, TCategory &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1basic__iterator__triple.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="classmn_1_1basic__iterator__triple-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::basic_iterator_triple&lt; TIterator, UIterator, VIterator, TCategory &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__iterator__pair_8hpp_source.html">mn_iterator_pair.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::basic_iterator_triple&lt; TIterator, UIterator, VIterator, TCategory &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1basic__iterator__triple__inherit__graph.svg" width="174" height="186"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::basic_iterator_triple&lt; TIterator, UIterator, VIterator, TCategory &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1basic__iterator__triple__coll__graph.svg" width="174" height="186"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aedb5638258f900adce0db428bd5f0333"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#aedb5638258f900adce0db428bd5f0333">iterator_category</a> = TCategory</td></tr>
+<tr class="separator:aedb5638258f900adce0db428bd5f0333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016d42dce050d975cd9dc4ddd12b8bea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a016d42dce050d975cd9dc4ddd12b8bea">value_type</a> = void</td></tr>
+<tr class="separator:a016d42dce050d975cd9dc4ddd12b8bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a71f738818f8fe06c7920bee394f26c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a7a71f738818f8fe06c7920bee394f26c">traits_type</a> = <a class="el" href="namespacemn.html#structmn_1_1iterator__traits">mn::iterator_traits</a>&lt; TIterator &gt;</td></tr>
+<tr class="separator:a7a71f738818f8fe06c7920bee394f26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b472eaa30e231a7f31412f8916a0ab"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">difference_type</a> = typename <a class="el" href="namespacemn.html#aa027f1c905d76f7ffc5da16338dd2066">traits_type::difference_type</a></td></tr>
+<tr class="separator:ae9b472eaa30e231a7f31412f8916a0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e86c74f8d04335a8f929ac05a7f4d58"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a5e86c74f8d04335a8f929ac05a7f4d58">self_type</a> = <a class="el" href="classmn_1_1basic__iterator__pair.html">basic_iterator_pair</a>&lt; TIterator, UIterator, TCategory, VIterator &gt;</td></tr>
+<tr class="separator:a5e86c74f8d04335a8f929ac05a7f4d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72182de283b790bf5759308409e4625"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#ac72182de283b790bf5759308409e4625">pointer</a> = <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> *</td></tr>
+<tr class="separator:ac72182de283b790bf5759308409e4625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262d5570a6714abe484099fb23febdde"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a262d5570a6714abe484099fb23febdde">reference</a> = <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;</td></tr>
+<tr class="separator:a262d5570a6714abe484099fb23febdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_structmn_1_1container_1_1basic__triple"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structmn_1_1container_1_1basic__triple')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structmn_1_1container_1_1basic__triple.html">mn::container::basic_triple&lt; TFIRST, TSECOND, TTHIRD &gt;</a></td></tr>
+<tr class="memitem:a01f45282d6490213d60ca004f2c7561a inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a01f45282d6490213d60ca004f2c7561a">first_type</a> = TFIRST</td></tr>
+<tr class="separator:a01f45282d6490213d60ca004f2c7561a inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c0eeadf36d9cc4abac783fe7a1e711 inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a69c0eeadf36d9cc4abac783fe7a1e711">pointer_first</a> = TFIRST *</td></tr>
+<tr class="separator:a69c0eeadf36d9cc4abac783fe7a1e711 inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5447ca0d5de46f1f2784b739d851c6d9 inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a5447ca0d5de46f1f2784b739d851c6d9">reference_first</a> = TFIRST &amp;</td></tr>
+<tr class="separator:a5447ca0d5de46f1f2784b739d851c6d9 inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c7023c332442c3215b1978b60a64ce inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#aa4c7023c332442c3215b1978b60a64ce">second_type</a> = TSECOND</td></tr>
+<tr class="separator:aa4c7023c332442c3215b1978b60a64ce inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615ca2d61d5c48b546b30f1840d5feeb inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a615ca2d61d5c48b546b30f1840d5feeb">pointer_second</a> = TSECOND *</td></tr>
+<tr class="separator:a615ca2d61d5c48b546b30f1840d5feeb inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41bd5e9412c9cf517e258ba5788a858d inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a41bd5e9412c9cf517e258ba5788a858d">reference_second</a> = TSECOND &amp;</td></tr>
+<tr class="separator:a41bd5e9412c9cf517e258ba5788a858d inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803d9e99ff23100612af01478f279dac inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a803d9e99ff23100612af01478f279dac">third_type</a> = TTHIRD</td></tr>
+<tr class="separator:a803d9e99ff23100612af01478f279dac inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a9cb339332599373611b699999661f inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a40a9cb339332599373611b699999661f">pointer_third</a> = TTHIRD *</td></tr>
+<tr class="separator:a40a9cb339332599373611b699999661f inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e34a305a300ccb0bccfa4ab503f9219 inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a9e34a305a300ccb0bccfa4ab503f9219">reference_third</a> = TTHIRD &amp;</td></tr>
+<tr class="separator:a9e34a305a300ccb0bccfa4ab503f9219 inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2e31a15202b5bde9217e796ada4d04 inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> = <a class="el" href="structmn_1_1container_1_1basic__triple.html">basic_triple</a>&lt; TFIRST, TSECOND, TTHIRD &gt;</td></tr>
+<tr class="separator:a0c2e31a15202b5bde9217e796ada4d04 inherit pub_types_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a94ad7b66c402f5048a902245a68d1b47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a94ad7b66c402f5048a902245a68d1b47">basic_iterator_pair</a> ()</td></tr>
+<tr class="separator:a94ad7b66c402f5048a902245a68d1b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cfcaee86e2eca6f7b252708498615f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a0cfcaee86e2eca6f7b252708498615f5">basic_iterator_pair</a> (const TIterator &amp;_itFirst, const UIterator &amp;_itSecond, const VIterator &amp;_itThird)</td></tr>
+<tr class="separator:a0cfcaee86e2eca6f7b252708498615f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad842b8da9b257bffd5219e120e73c46a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#ad842b8da9b257bffd5219e120e73c46a">basic_iterator_pair</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;other)</td></tr>
+<tr class="separator:ad842b8da9b257bffd5219e120e73c46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b1e915c3f853986fb6fcdb65f38ecc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a88b1e915c3f853986fb6fcdb65f38ecc">operator UIterator</a> () const</td></tr>
+<tr class="separator:a88b1e915c3f853986fb6fcdb65f38ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5964004ce4c79eb8606f3395ec22c4a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a5964004ce4c79eb8606f3395ec22c4a7">operator TIterator</a> () const</td></tr>
+<tr class="separator:a5964004ce4c79eb8606f3395ec22c4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b30aded746ac61681b4e211fee1470c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a8b30aded746ac61681b4e211fee1470c">operator VIterator</a> () const</td></tr>
+<tr class="separator:a8b30aded746ac61681b4e211fee1470c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aee2bda7bb10fed291232b3a222ea0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__iterator__triple.html#a262d5570a6714abe484099fb23febdde">reference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a6aee2bda7bb10fed291232b3a222ea0a">operator++</a> ()</td></tr>
+<tr class="separator:a6aee2bda7bb10fed291232b3a222ea0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aee2bda7bb10fed291232b3a222ea0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__iterator__triple.html#a262d5570a6714abe484099fb23febdde">reference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a6aee2bda7bb10fed291232b3a222ea0a">operator++</a> ()</td></tr>
+<tr class="separator:a6aee2bda7bb10fed291232b3a222ea0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a9aa997588e99c409f1b89337d8929"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a80a9aa997588e99c409f1b89337d8929">operator++</a> (int)</td></tr>
+<tr class="separator:a80a9aa997588e99c409f1b89337d8929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346beb94dd82e44072d6d23ccfe9e260"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a346beb94dd82e44072d6d23ccfe9e260">operator--</a> (int)</td></tr>
+<tr class="separator:a346beb94dd82e44072d6d23ccfe9e260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19edeace8e987f7722b5dff13363b9c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">difference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a19edeace8e987f7722b5dff13363b9c7">operator-</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;other) const</td></tr>
+<tr class="separator:a19edeace8e987f7722b5dff13363b9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7c4fe1b12f1a18ed85c1e61304ab05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a8f7c4fe1b12f1a18ed85c1e61304ab05">operator+</a> (<a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">difference_type</a> delta) const</td></tr>
+<tr class="separator:a8f7c4fe1b12f1a18ed85c1e61304ab05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f2935b25c306f2b6d057b73d6e2dfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a69f2935b25c306f2b6d057b73d6e2dfe">operator-</a> (<a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">difference_type</a> delta) const</td></tr>
+<tr class="separator:a69f2935b25c306f2b6d057b73d6e2dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structmn_1_1container_1_1basic__triple"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structmn_1_1container_1_1basic__triple')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structmn_1_1container_1_1basic__triple.html">mn::container::basic_triple&lt; TFIRST, TSECOND, TTHIRD &gt;</a></td></tr>
+<tr class="memitem:a008e4333d8b35540c260d778c52532be inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a008e4333d8b35540c260d778c52532be">basic_triple</a> ()</td></tr>
+<tr class="separator:a008e4333d8b35540c260d778c52532be inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed1e2f69c33f8868c68c7f2881c5932 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a3ed1e2f69c33f8868c68c7f2881c5932">basic_triple</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a5447ca0d5de46f1f2784b739d851c6d9">reference_first</a> a)</td></tr>
+<tr class="separator:a3ed1e2f69c33f8868c68c7f2881c5932 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7880a6db39d205a80d90e30e7721ae76 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a7880a6db39d205a80d90e30e7721ae76">basic_triple</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a5447ca0d5de46f1f2784b739d851c6d9">reference_first</a> a, <a class="el" href="structmn_1_1container_1_1basic__triple.html#a41bd5e9412c9cf517e258ba5788a858d">reference_second</a> b, <a class="el" href="structmn_1_1container_1_1basic__triple.html#a9e34a305a300ccb0bccfa4ab503f9219">reference_third</a> c)</td></tr>
+<tr class="separator:a7880a6db39d205a80d90e30e7721ae76 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281a242e94b25ce2668fd829c8a78d29 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a281a242e94b25ce2668fd829c8a78d29">basic_triple</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;other)</td></tr>
+<tr class="separator:a281a242e94b25ce2668fd829c8a78d29 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8903baadf96a2fffd557ad4fa0e3e78 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#ab8903baadf96a2fffd557ad4fa0e3e78">swap</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;other)</td></tr>
+<tr class="separator:ab8903baadf96a2fffd557ad4fa0e3e78 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c09be959c4df280ad0808c77295f67 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a48c09be959c4df280ad0808c77295f67">operator=</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;rhs)</td></tr>
+<tr class="separator:a48c09be959c4df280ad0808c77295f67 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a920e579144bedc4d05ec9c54d33e0413 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a920e579144bedc4d05ec9c54d33e0413">operator==</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;rhs)</td></tr>
+<tr class="separator:a920e579144bedc4d05ec9c54d33e0413 inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027192f6be71f071e96c4c31e322c27d inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a027192f6be71f071e96c4c31e322c27d">operator!=</a> (const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;rhs)</td></tr>
+<tr class="separator:a027192f6be71f071e96c4c31e322c27d inherit pub_methods_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a82590e58d7d7ec530ebb1a04caa41a6a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__iterator__triple.html#a82590e58d7d7ec530ebb1a04caa41a6a">base_type</a> = <a class="el" href="namespacemn_1_1container.html#a6a6647e63ccb65bc8e83a2d65af8a147">mn::container::triple</a>&lt; TIterator, UIterator, VIterator &gt;</td></tr>
+<tr class="separator:a82590e58d7d7ec530ebb1a04caa41a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_structmn_1_1container_1_1basic__triple"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structmn_1_1container_1_1basic__triple')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structmn_1_1container_1_1basic__triple.html">mn::container::basic_triple&lt; TFIRST, TSECOND, TTHIRD &gt;</a></td></tr>
+<tr class="memitem:a2254d2567f6941c9a6607a7a01f6090f inherit pub_attribs_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a01f45282d6490213d60ca004f2c7561a">first_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a2254d2567f6941c9a6607a7a01f6090f">first</a></td></tr>
+<tr class="separator:a2254d2567f6941c9a6607a7a01f6090f inherit pub_attribs_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea7968f1981a7a184199b8099bc8d6d inherit pub_attribs_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1container_1_1basic__triple.html#aa4c7023c332442c3215b1978b60a64ce">second_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a9ea7968f1981a7a184199b8099bc8d6d">second</a></td></tr>
+<tr class="separator:a9ea7968f1981a7a184199b8099bc8d6d inherit pub_attribs_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d7e70990cc0fc52b42570cd1eb19f9 inherit pub_attribs_structmn_1_1container_1_1basic__triple"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a803d9e99ff23100612af01478f279dac">third_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a35d7e70990cc0fc52b42570cd1eb19f9">third</a></td></tr>
+<tr class="separator:a35d7e70990cc0fc52b42570cd1eb19f9 inherit pub_attribs_structmn_1_1container_1_1basic__triple"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a82590e58d7d7ec530ebb1a04caa41a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82590e58d7d7ec530ebb1a04caa41a6a">&#9670;&nbsp;</a></span>base_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__triple.html#a82590e58d7d7ec530ebb1a04caa41a6a">base_type</a> =  <a class="el" href="namespacemn_1_1container.html#a6a6647e63ccb65bc8e83a2d65af8a147">mn::container::triple</a>&lt;TIterator, UIterator, VIterator&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9b472eaa30e231a7f31412f8916a0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9b472eaa30e231a7f31412f8916a0ab">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">difference_type</a> =  typename <a class="el" href="namespacemn.html#aa027f1c905d76f7ffc5da16338dd2066">traits_type::difference_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedb5638258f900adce0db428bd5f0333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb5638258f900adce0db428bd5f0333">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__triple.html#aedb5638258f900adce0db428bd5f0333">iterator_category</a> =  TCategory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac72182de283b790bf5759308409e4625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72182de283b790bf5759308409e4625">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__triple.html#ac72182de283b790bf5759308409e4625">pointer</a> =  <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a262d5570a6714abe484099fb23febdde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262d5570a6714abe484099fb23febdde">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__triple.html#a262d5570a6714abe484099fb23febdde">reference</a> =  <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e86c74f8d04335a8f929ac05a7f4d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e86c74f8d04335a8f929ac05a7f4d58">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> =  <a class="el" href="classmn_1_1basic__iterator__pair.html">basic_iterator_pair</a>&lt;TIterator, UIterator, TCategory, VIterator&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a71f738818f8fe06c7920bee394f26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a71f738818f8fe06c7920bee394f26c">&#9670;&nbsp;</a></span>traits_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__triple.html#a7a71f738818f8fe06c7920bee394f26c">traits_type</a> =  <a class="el" href="namespacemn.html#structmn_1_1iterator__traits">mn::iterator_traits</a>&lt;TIterator&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a016d42dce050d975cd9dc4ddd12b8bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016d42dce050d975cd9dc4ddd12b8bea">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__triple.html#a016d42dce050d975cd9dc4ddd12b8bea">value_type</a> =  void</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a94ad7b66c402f5048a902245a68d1b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ad7b66c402f5048a902245a68d1b47">&#9670;&nbsp;</a></span>basic_iterator_pair() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__pair.html">basic_iterator_pair</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad842b8da9b257bffd5219e120e73c46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad842b8da9b257bffd5219e120e73c46a">&#9670;&nbsp;</a></span>basic_iterator_pair() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__pair.html">basic_iterator_pair</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cfcaee86e2eca6f7b252708498615f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cfcaee86e2eca6f7b252708498615f5">&#9670;&nbsp;</a></span>basic_iterator_pair() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::<a class="el" href="classmn_1_1basic__iterator__pair.html">basic_iterator_pair</a> </td>
+          <td>(</td>
+          <td class="paramtype">const TIterator &amp;&#160;</td>
+          <td class="paramname"><em>_itFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UIterator &amp;&#160;</td>
+          <td class="paramname"><em>_itSecond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VIterator &amp;&#160;</td>
+          <td class="paramname"><em>_itThird</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5964004ce4c79eb8606f3395ec22c4a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5964004ce4c79eb8606f3395ec22c4a7">&#9670;&nbsp;</a></span>operator TIterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator TIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88b1e915c3f853986fb6fcdb65f38ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b1e915c3f853986fb6fcdb65f38ecc">&#9670;&nbsp;</a></span>operator UIterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator UIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b30aded746ac61681b4e211fee1470c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b30aded746ac61681b4e211fee1470c">&#9670;&nbsp;</a></span>operator VIterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator VIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f7c4fe1b12f1a18ed85c1e61304ab05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7c4fe1b12f1a18ed85c1e61304ab05">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">difference_type</a>&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6aee2bda7bb10fed291232b3a222ea0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aee2bda7bb10fed291232b3a222ea0a">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html#a262d5570a6714abe484099fb23febdde">reference</a>&amp; <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6aee2bda7bb10fed291232b3a222ea0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aee2bda7bb10fed291232b3a222ea0a">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html#a262d5570a6714abe484099fb23febdde">reference</a>&amp; <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80a9aa997588e99c409f1b89337d8929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a9aa997588e99c409f1b89337d8929">&#9670;&nbsp;</a></span>operator++() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19edeace8e987f7722b5dff13363b9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19edeace8e987f7722b5dff13363b9c7">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">difference_type</a> <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69f2935b25c306f2b6d057b73d6e2dfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f2935b25c306f2b6d057b73d6e2dfe">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">difference_type</a>&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a346beb94dd82e44072d6d23ccfe9e260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346beb94dd82e44072d6d23ccfe9e260">&#9670;&nbsp;</a></span>operator--()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TIterator , typename UIterator , typename VIterator , typename TCategory &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmn_1_1container_1_1basic__triple.html#a0c2e31a15202b5bde9217e796ada4d04">self_type</a> <a class="el" href="classmn_1_1basic__iterator__triple.html">mn::basic_iterator_triple</a>&lt; TIterator, UIterator, VIterator, TCategory &gt;::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__iterator__pair_8hpp_source.html">mn_iterator_pair.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

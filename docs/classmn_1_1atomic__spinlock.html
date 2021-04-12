@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::atomic_spinlock&lt; T &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1atomic__spinlock.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classmn_1_1atomic__spinlock-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::atomic_spinlock&lt; T &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__atomic__spinlock_8hpp_source.html">mn_atomic_spinlock.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::atomic_spinlock&lt; T &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1atomic__spinlock__inherit__graph.svg" width="206" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::atomic_spinlock&lt; T &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1atomic__spinlock__coll__graph.svg" width="348" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8734684c6d6448116f451d5c909a2c4c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> = <a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a>&lt; T &gt;</td></tr>
+<tr class="separator:a8734684c6d6448116f451d5c909a2c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644972aa0c8e9e9538bac0f80a46b93a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> = T</td></tr>
+<tr class="separator:a644972aa0c8e9e9538bac0f80a46b93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcac2181c81506a45e1eea1fb1f3d083"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#abcac2181c81506a45e1eea1fb1f3d083">pointer</a> = <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> *</td></tr>
+<tr class="separator:abcac2181c81506a45e1eea1fb1f3d083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53a0a2e08dc0c92fec0d91286472304"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#ad53a0a2e08dc0c92fec0d91286472304">reference</a> = <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> &amp;</td></tr>
+<tr class="separator:ad53a0a2e08dc0c92fec0d91286472304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72f975408678d37f47e718ef8ffa265"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#ac72f975408678d37f47e718ef8ffa265">lock_guard</a> = <a class="el" href="classmn_1_1basic__autolock.html">basic_autolock</a>&lt; <a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> &gt;</td></tr>
+<tr class="separator:ac72f975408678d37f47e718ef8ffa265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abeede400bb5e39108f91994c699c003e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#abeede400bb5e39108f91994c699c003e">atomic_spinlock</a> ()</td></tr>
+<tr class="separator:abeede400bb5e39108f91994c699c003e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5360c17ee161ad2c51b8458c95def403"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403">lock</a> (unsigned int not_use=0)</td></tr>
+<tr class="separator:a5360c17ee161ad2c51b8458c95def403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c155fffd28596a3eaad251aa5e21c89"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a2c155fffd28596a3eaad251aa5e21c89">time_lock</a> (const struct timespec *timeout)</td></tr>
+<tr class="separator:a2c155fffd28596a3eaad251aa5e21c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78903271e8d891f91e02eaf8cb7c228"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#ac78903271e8d891f91e02eaf8cb7c228">unlock</a> ()</td></tr>
+<tr class="separator:ac78903271e8d891f91e02eaf8cb7c228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8701f03019044d8ad94412a4cb0d3654"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a8701f03019044d8ad94412a4cb0d3654">try_lock</a> ()</td></tr>
+<tr class="separator:a8701f03019044d8ad94412a4cb0d3654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c623124b5b2da59183ce45824919229"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a2c623124b5b2da59183ce45824919229">is_initialized</a> () const</td></tr>
+<tr class="separator:a2c623124b5b2da59183ce45824919229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af113f79221945433bd6139c9d7b66f79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#af113f79221945433bd6139c9d7b66f79">operator value_type</a> ()</td></tr>
+<tr class="separator:af113f79221945433bd6139c9d7b66f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22c47863062d03af20b6c550d270864"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#ad22c47863062d03af20b6c550d270864">operator=</a> (const <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> &amp;oValue)</td></tr>
+<tr class="separator:ad22c47863062d03af20b6c550d270864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae4f6270439c80f3f0924fb160c3fad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#adae4f6270439c80f3f0924fb160c3fad">operator==</a> (const <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> &amp;oValue)</td></tr>
+<tr class="separator:adae4f6270439c80f3f0924fb160c3fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44415dc4e1602c158e706aa9f01bab33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a44415dc4e1602c158e706aa9f01bab33">operator!=</a> (const <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> &amp;oValue)</td></tr>
+<tr class="separator:a44415dc4e1602c158e706aa9f01bab33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092db6ff11dfe8cd993e52dd52a34c23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a092db6ff11dfe8cd993e52dd52a34c23">atomic_spinlock</a> (const <a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> &amp;)=delete</td></tr>
+<tr class="separator:a092db6ff11dfe8cd993e52dd52a34c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1911d98e9d57556466c6e49e5c2faa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#ad1911d98e9d57556466c6e49e5c2faa2">operator=</a> (const <a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> &amp;)=delete</td></tr>
+<tr class="separator:ad1911d98e9d57556466c6e49e5c2faa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac96178ac3f9b9e116b9e471d1cf2c8ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#abbb7d48656a84be0ca6afe37726a211c">atomic_bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#ac96178ac3f9b9e116b9e471d1cf2c8ee">m_locked</a></td></tr>
+<tr class="separator:ac96178ac3f9b9e116b9e471d1cf2c8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2573b93c0fb0b0f10980ab98aec1738d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__spinlock.html#a2573b93c0fb0b0f10980ab98aec1738d">m_value</a></td></tr>
+<tr class="separator:a2573b93c0fb0b0f10980ab98aec1738d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ac72f975408678d37f47e718ef8ffa265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72f975408678d37f47e718ef8ffa265">&#9670;&nbsp;</a></span>lock_guard</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::<a class="el" href="classmn_1_1atomic__spinlock.html#ac72f975408678d37f47e718ef8ffa265">lock_guard</a> =  <a class="el" href="classmn_1_1basic__autolock.html">basic_autolock</a>&lt;<a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcac2181c81506a45e1eea1fb1f3d083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcac2181c81506a45e1eea1fb1f3d083">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::<a class="el" href="classmn_1_1atomic__spinlock.html#abcac2181c81506a45e1eea1fb1f3d083">pointer</a> =  <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad53a0a2e08dc0c92fec0d91286472304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53a0a2e08dc0c92fec0d91286472304">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::<a class="el" href="classmn_1_1atomic__spinlock.html#ad53a0a2e08dc0c92fec0d91286472304">reference</a> =  <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8734684c6d6448116f451d5c909a2c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8734684c6d6448116f451d5c909a2c4c">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::<a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> =  <a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a644972aa0c8e9e9538bac0f80a46b93a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644972aa0c8e9e9538bac0f80a46b93a">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::<a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abeede400bb5e39108f91994c699c003e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeede400bb5e39108f91994c699c003e">&#9670;&nbsp;</a></span>atomic_spinlock() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::<a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a092db6ff11dfe8cd993e52dd52a34c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092db6ff11dfe8cd993e52dd52a34c23">&#9670;&nbsp;</a></span>atomic_spinlock() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::<a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c623124b5b2da59183ce45824919229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c623124b5b2da59183ce45824919229">&#9670;&nbsp;</a></span>is_initialized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::is_initialized </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Is the <a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a> created (initialized) ?</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a> created (initialized) </dd></dl>
+
+<p>Implements <a class="el" href="classmn_1_1ILockObject.html#a538d16e64a1abb33a21bf9f2b190c1df">mn::ILockObject</a>.</p>
+
+</div>
+</div>
+<a id="a5360c17ee161ad2c51b8458c95def403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5360c17ee161ad2c51b8458c95def403">&#9670;&nbsp;</a></span>lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::lock </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>not_use</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>lock (take) a <a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>Not use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classmn_1_1ILockObject.html#a2c7d2be0b7e970761e559201200850b7">mn::ILockObject</a>.</p>
+
+</div>
+</div>
+<a id="af113f79221945433bd6139c9d7b66f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af113f79221945433bd6139c9d7b66f79">&#9670;&nbsp;</a></span>operator value_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::operator <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44415dc4e1602c158e706aa9f01bab33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44415dc4e1602c158e706aa9f01bab33">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>oValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1911d98e9d57556466c6e49e5c2faa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1911d98e9d57556466c6e49e5c2faa2">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a>&amp; <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad22c47863062d03af20b6c550d270864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22c47863062d03af20b6c550d270864">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c">self_type</a>&amp; <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>oValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adae4f6270439c80f3f0924fb160c3fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adae4f6270439c80f3f0924fb160c3fad">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>oValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c155fffd28596a3eaad251aa5e21c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c155fffd28596a3eaad251aa5e21c89">&#9670;&nbsp;</a></span>time_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::time_lock </td>
+          <td>(</td>
+          <td class="paramtype">const struct timespec *&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classmn_1_1ILockObject.html#a87ec1d1137f566a5a7234a6f25c37dca">mn::ILockObject</a>.</p>
+
+</div>
+</div>
+<a id="a8701f03019044d8ad94412a4cb0d3654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8701f03019044d8ad94412a4cb0d3654">&#9670;&nbsp;</a></span>try_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::try_lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Try to lock the <a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a></p>
+<dl class="section note"><dt>Note</dt><dd>call lock with timeout from 0</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the Lock was acquired, false when not </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classmn_1_1ILockObject.html#ae964b770640a57d08c6f87526f2c4398">mn::ILockObject</a>.</p>
+
+</div>
+</div>
+<a id="ac78903271e8d891f91e02eaf8cb7c228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78903271e8d891f91e02eaf8cb7c228">&#9670;&nbsp;</a></span>unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>unlock (give) a <a class="el" href="classmn_1_1atomic__spinlock.html">atomic_spinlock</a>. </p>
+
+<p>Implements <a class="el" href="classmn_1_1ILockObject.html#a1dca59b73e1e73be632e41cde10e506c">mn::ILockObject</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac96178ac3f9b9e116b9e471d1cf2c8ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96178ac3f9b9e116b9e471d1cf2c8ee">&#9670;&nbsp;</a></span>m_locked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#abbb7d48656a84be0ca6afe37726a211c">atomic_bool</a> <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::m_locked</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2573b93c0fb0b0f10980ab98aec1738d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2573b93c0fb0b0f10980ab98aec1738d">&#9670;&nbsp;</a></span>m_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a">value_type</a> <a class="el" href="classmn_1_1atomic__spinlock.html">mn::atomic_spinlock</a>&lt; T &gt;::m_value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__atomic__spinlock_8hpp_source.html">mn_atomic_spinlock.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>
