@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.10.8</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -68,18 +68,6 @@
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__change_log.html">
-                                <span data-feather="info"></span>
-                                Changelog
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html">
-                                <span data-feather="info"></span>
-                                Contributing
                             </a>
                         </li>
                     </ul>
@@ -154,14 +142,18 @@ $(document).ready(function(){initNavTree('classmn_1_1basic__task.html',''); init
  <a href="classmn_1_1basic__task.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mn__task_8hpp_source.html">mn_task.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for mn::basic_task:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1basic__task__inherit__graph.svg" width="655" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::basic_task:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1basic__task__inherit__graph.svg" width="642" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for mn::basic_task:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::basic_task:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1basic__task__coll__graph.svg" width="363" height="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -317,14 +309,14 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class around FreeRTOS's implementation of a task. </p>
 <dl class="section note"><dt>Note</dt><dd>To use this, you need to subclass it. All of your task should be derived from the <a class="el" href="classmn_1_1basic__task.html" title="Wrapper class around FreeRTOS&#39;s implementation of a task.">basic_task</a> class. Then implement the virtual on_task function.</dd></dl>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="mini_thread_8hpp.html">miniThread.hpp</a>&gt;</span></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="miniThread_8hpp.html">miniThread.hpp</a>&gt;</span></div>
 <div class="line"><span class="comment">// The number of test tasks</span></div>
 <div class="line"><span class="preprocessor">#define NUMBER_OF_TEST_TASK      2</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// The tost task class</span></div>
-<div class="line"><span class="keyword">class </span><a class="code" href="classhello__world__task.html">hello_world_task</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1basic__task.html#a052d3aac5cd39c48dff9cf4053468106">basic_task</a> {</div>
+<div class="line"><span class="keyword">class </span>hello_world_task : <span class="keyword">public</span> <a class="code" href="classmn_1_1basic__task.html#a052d3aac5cd39c48dff9cf4053468106">basic_task</a> {</div>
 <div class="line"><span class="keyword">public</span>:</div>
-<div class="line">    <a class="code" href="classhello__world__task.html">hello_world_task</a>() : <a class="code" href="classmn_1_1basic__task.html#a052d3aac5cd39c48dff9cf4053468106">basic_task</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
+<div class="line">    hello_world_task() : <a class="code" href="classmn_1_1basic__task.html#a052d3aac5cd39c48dff9cf4053468106">basic_task</a>(<span class="stringliteral">&quot;HelloWorld&quot;</span>, 1) { }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span>*  <a class="code" href="classmn_1_1basic__task.html#ab19bece3a73cde1ffd58e2df927413fb">on_task</a>()<span class="keyword"> override </span>{</div>
 <div class="line">        <span class="keywordtype">int</span> <span class="keywordtype">id</span> = <a class="code" href="classmn_1_1basic__task.html#adeca3c198e8a4879ed44e8677209500b">get_id</a>(); <span class="comment">// get the task id from this task</span></div>
@@ -339,11 +331,11 @@ Protected Attributes</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> NULL;</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code" href="empty-project_8cpp.html#abce06be17fc37d675118a678a8100a36">app_main</a>() {</div>
-<div class="line">    <a class="code" href="classhello__world__task.html">hello_world_task</a> tasks[NUMBER_OF_TEST_TASK];</div>
+<div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> app_main() {</div>
+<div class="line">    hello_world_task tasks[NUMBER_OF_TEST_TASK];</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; NUMBER_OF_TEST_TASK; i++) {</div>
-<div class="line">        tasks[i].<a class="code" href="classmn_1_1basic__task.html#a65cb9050bc0b2c7b3b744e962c8f2435">start</a>( i % 2 );</div>
+<div class="line">        tasks[i].start( i % 2 );</div>
 <div class="line">    }</div>
 <div class="line">    mn_panic();</div>
 <div class="line">}</div>
@@ -352,14 +344,11 @@ Protected Attributes</h2></td></tr>
 <div class="line"><span class="comment">// [1 @ 1] Hello World!</span></div>
 <div class="line"><span class="comment">// [0 @ 0] Hello World!</span></div>
 <div class="line"><span class="comment">// ...</span></div>
-<div class="ttc" id="aclasshello__world__task_html"><div class="ttname"><a href="classhello__world__task.html">hello_world_task</a></div><div class="ttdef"><b>Definition:</b> simple-task.cpp:7</div></div>
 <div class="ttc" id="aclassmn_1_1basic__task_html_a052d3aac5cd39c48dff9cf4053468106"><div class="ttname"><a href="classmn_1_1basic__task.html#a052d3aac5cd39c48dff9cf4053468106">mn::basic_task::basic_task</a></div><div class="ttdeci">basic_task()</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:113</div></div>
-<div class="ttc" id="aclassmn_1_1basic__task_html_a65cb9050bc0b2c7b3b744e962c8f2435"><div class="ttname"><a href="classmn_1_1basic__task.html#a65cb9050bc0b2c7b3b744e962c8f2435">mn::basic_task::start</a></div><div class="ttdeci">virtual int start(int uiCore=MN_THREAD_CONFIG_DEFAULT_CORE)</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:111</div></div>
 <div class="ttc" id="aclassmn_1_1basic__task_html_a70794f2ccb027a928c79c6e9bcdcffb2"><div class="ttname"><a href="classmn_1_1basic__task.html#a70794f2ccb027a928c79c6e9bcdcffb2">mn::basic_task::get_on_core</a></div><div class="ttdeci">int32_t get_on_core()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:198</div></div>
 <div class="ttc" id="aclassmn_1_1basic__task_html_ab19bece3a73cde1ffd58e2df927413fb"><div class="ttname"><a href="classmn_1_1basic__task.html#ab19bece3a73cde1ffd58e2df927413fb">mn::basic_task::on_task</a></div><div class="ttdeci">virtual void * on_task()</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:258</div></div>
 <div class="ttc" id="aclassmn_1_1basic__task_html_adeca3c198e8a4879ed44e8677209500b"><div class="ttname"><a href="classmn_1_1basic__task.html#adeca3c198e8a4879ed44e8677209500b">mn::basic_task::get_id</a></div><div class="ttdeci">int32_t get_id()</div><div class="ttdef"><b>Definition:</b> mn_task.cpp:190</div></div>
-<div class="ttc" id="aempty-project_8cpp_html_abce06be17fc37d675118a678a8100a36"><div class="ttname"><a href="empty-project_8cpp.html#abce06be17fc37d675118a678a8100a36">app_main</a></div><div class="ttdeci">void app_main()</div><div class="ttdef"><b>Definition:</b> empty-project.cpp:6</div></div>
-<div class="ttc" id="amini_thread_8hpp_html"><div class="ttname"><a href="mini_thread_8hpp.html">miniThread.hpp</a></div></div>
+<div class="ttc" id="aminiThread_8hpp_html"><div class="ttname"><a href="miniThread_8hpp.html">miniThread.hpp</a></div></div>
 </div><!-- fragment --><dl class="section author"><dt>Author</dt><dd>Amber-Sophia Schröck </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a0c09dddcc768da659421d4883155f544"></a>
@@ -994,8 +983,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>This virtual function call on kill, use for user code It is optional whether you implement this or not. </p>
 
-<p>Reimplemented in <a class="el" href="classmutex_simple_test_task.html#a3376bc514650baf5b9a6a768ea7766c1">mutexSimpleTestTask</a>.</p>
-
 </div>
 </div>
 <a id="a6014b1be110431b6fedaaf797f2ac1e1"></a>
@@ -1021,8 +1008,6 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This virtual function call on creating, use for user code It is optional whether you implement this or not. </p>
-
-<p>Reimplemented in <a class="el" href="classtest__tasklet__task.html#ac13a60a70a58653182094b6f4a746026">test_tasklet_task</a>, and <a class="el" href="classmutex_simple_test_task.html#ac75f60ca578c48b84abe5bbcaf2a20e7">mutexSimpleTestTask</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1036,7 @@ Protected Attributes</h2></td></tr>
 <p>Implementation of your actual task code. You must override this function.</p>
 <dl class="section return"><dt>Returns</dt><dd>Your return your task function, get with <a class="el" href="classmn_1_1basic__task.html#adf365e86a13dd2be0551dd1f4567c065">get_return_value()</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classtest__tasklet__task.html#afe1b889cc7bdf94642818160f91de382">test_tasklet_task</a>, <a class="el" href="classhello__world__task.html#a9bc894cf4cb35a20306536ec7d2e0dda">hello_world_task</a>, <a class="el" href="classmn_1_1queue_1_1work__queue__task.html#abf1dfda48de946679781f1ba9829bb59">mn::queue::work_queue_task</a>, <a class="el" href="classmn_1_1ext_1_1basic__message__task.html#a07056ddc293e477560a975c80a965080">mn::ext::basic_message_task</a>, <a class="el" href="classmn_1_1ext_1_1foreign__task.html#a3d8bc18b122f27c6bb5c93bb3339603d">mn::ext::foreign_task</a>, and <a class="el" href="classmutex_simple_test_task.html#a9ee70508eb64a6c08c68ac8dbf6edd51">mutexSimpleTestTask</a>.</p>
+<p>Reimplemented in <a class="el" href="classmn_1_1queue_1_1work__queue__task.html#abf1dfda48de946679781f1ba9829bb59">mn::queue::work_queue_task</a>, <a class="el" href="classmn_1_1ext_1_1basic__message__task.html#a07056ddc293e477560a975c80a965080">mn::ext::basic_message_task</a>, and <a class="el" href="classmn_1_1ext_1_1foreign__task.html#a3d8bc18b122f27c6bb5c93bb3339603d">mn::ext::foreign_task</a>.</p>
 
 </div>
 </div>

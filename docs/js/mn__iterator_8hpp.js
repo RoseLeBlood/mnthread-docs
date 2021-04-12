@@ -12,7 +12,7 @@ var mn__iterator_8hpp =
       [ "reference", "namespacemn.html#a95d351a7572efd40494e38dc589f8e03", null ],
       [ "value_type", "namespacemn.html#a9f995f2bf8252bb61fa7268ef3b49f4f", null ]
     ] ],
-    [ "iterator_traits< T * >", "namespacemn.html#structmn_1_1iterator__traits_3_01_t_01_5_01_4", [
+    [ "iterator_traits< T * >", "namespacemn.html#structmn_1_1iterator__traits_3_01T_01_5_01_4", [
       [ "difference_type", "namespacemn.html#aff282b853ebf00947bedd617d27a0a59", null ],
       [ "iterator_category", "namespacemn.html#a80e5c761ba49397dbc201baf10868d35", null ],
       [ "pointer", "namespacemn.html#a948c21771fc02d893db70c9eb30b747e", null ],

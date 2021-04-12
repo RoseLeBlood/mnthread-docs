@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.10.8</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -68,18 +68,6 @@
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__change_log.html">
-                                <span data-feather="info"></span>
-                                Changelog
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html">
-                                <span data-feather="info"></span>
-                                Contributing
                             </a>
                         </li>
                     </ul>
@@ -150,14 +138,18 @@ $(document).ready(function(){initNavTree('classmn_1_1esp32_1_1basic__esp32__time
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="mn__timer__esp32_8hpp_source.html">mn_timer_esp32.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for mn::esp32::basic_esp32_timer:</div>
-<div class="dyncontent">
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::esp32::basic_esp32_timer:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1esp32_1_1basic__esp32__timer__inherit__graph.svg" width="190" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for mn::esp32::basic_esp32_timer:</div>
-<div class="dyncontent">
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::esp32::basic_esp32_timer:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1esp32_1_1basic__esp32__timer__coll__graph.svg" width="190" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -323,7 +315,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ERR_TIMER_OK All okay, no error ERR_TIMER_NOTCREATED the timer are not created, plaese call <a class="el" href="classmn_1_1esp32_1_1basic__esp32__timer.html#a7c6ef98e79d46955e1800590c6cd2de4">create()</a> first ERR_TIMER_AKTIVATE if it will not (i.e. timeout). </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a6f13a58bf8999d7d19429a2a2e77f151">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a6f13a58bf8999d7d19429a2a2e77f151">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -357,7 +349,7 @@ Private Attributes</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#afc9124d357972a50089b2685d9fd933d">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#afc9124d357972a50089b2685d9fd933d">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -396,7 +388,7 @@ Private Attributes</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#ab477558a1da13d0d0150b8c6a9085763">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#ab477558a1da13d0d0150b8c6a9085763">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -424,7 +416,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the timer handle </p><dl class="section return"><dt>Returns</dt><dd>The timer handle </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a834b6504804e480bd4e33cba5a00cefe">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a834b6504804e480bd4e33cba5a00cefe">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -453,7 +445,7 @@ Private Attributes</h2></td></tr>
 <p>Get the timer's period</p>
 <dl class="section return"><dt>Returns</dt><dd>The timer's period </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#ac71997505fe492e41f005fd1bd92c4d3">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#ac71997505fe492e41f005fd1bd92c4d3">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -489,7 +481,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>ERR_TIMER_OK All okay, no error ERR_TIMER_NOTCREATED the timer are not created, plaese call <a class="el" href="classmn_1_1esp32_1_1basic__esp32__timer.html#a7c6ef98e79d46955e1800590c6cd2de4">create()</a> first ERR_TIMER_INAKTIVATE Can not stop the timer </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a6469508d5fe29527cd65f04ca1431140">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a6469508d5fe29527cd65f04ca1431140">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -519,7 +511,7 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>false will be returned if the timer is dormant. <br  />
  And true will be returned if the timer is active. </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a931292fa4ce376413cd41069300022fc">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a931292fa4ce376413cd41069300022fc">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -547,7 +539,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>call befor on_timer </p>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a868ddcb5d1dcafc103fbd850a09ff890">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a868ddcb5d1dcafc103fbd850a09ff890">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -575,7 +567,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>call after on_timer </p>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#abe48896bc42db86aad8cf85d3075dc37">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#abe48896bc42db86aad8cf85d3075dc37">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -603,7 +595,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Implementation of your actual timer code. You must override this function. </p>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a07f9aec5b3b8f4779291f685d7c7ded3">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a07f9aec5b3b8f4779291f685d7c7ded3">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -630,7 +622,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classmn_1_1_i_timer.html#a2fa981605240914cffc4f3438fb67b0c">mn::ITimer</a>.</p>
+<p>Reimplemented from <a class="el" href="classmn_1_1ITimer.html#a2fa981605240914cffc4f3438fb67b0c">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -671,7 +663,7 @@ Private Attributes</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a7c68ed481734d3f561e985012a26225d">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a7c68ed481734d3f561e985012a26225d">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -727,7 +719,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Get the timer ID - not implantated </p>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a952429b9596571b028ba96c2de6d49e5">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a952429b9596571b028ba96c2de6d49e5">mn::ITimer</a>.</p>
 
 </div>
 </div>
@@ -774,7 +766,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true no error, false if it will not (i.e. timeout). </dd></dl>
 
-<p>Implements <a class="el" href="classmn_1_1_i_timer.html#a4002c627cf65e771222a046cba6838f7">mn::ITimer</a>.</p>
+<p>Implements <a class="el" href="classmn_1_1ITimer.html#a4002c627cf65e771222a046cba6838f7">mn::ITimer</a>.</p>
 
 </div>
 </div>

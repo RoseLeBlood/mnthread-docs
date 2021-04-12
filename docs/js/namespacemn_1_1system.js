@@ -5,7 +5,7 @@ var namespacemn_1_1system =
     [ "basic_critical_section_nested", "classmn_1_1system_1_1basic__critical__section__nested.html", "classmn_1_1system_1_1basic__critical__section__nested" ],
     [ "basic_interrupts_lock", "classmn_1_1system_1_1basic__interrupts__lock.html", "classmn_1_1system_1_1basic__interrupts__lock" ],
     [ "basic_schedular_lock", "classmn_1_1system_1_1basic__schedular__lock.html", "classmn_1_1system_1_1basic__schedular__lock" ],
-    [ "ISystemLockObject", "classmn_1_1system_1_1_i_system_lock_object.html", "classmn_1_1system_1_1_i_system_lock_object" ],
+    [ "ISystemLockObject", "classmn_1_1system_1_1ISystemLockObject.html", "classmn_1_1system_1_1ISystemLockObject" ],
     [ "auto_critical_section_nested_t", "namespacemn_1_1system.html#a2176747a90405e868ad731ea48e8eed9", null ],
     [ "auto_critical_section_t", "namespacemn_1_1system.html#a8081dafbc0236c46b5a96d48911ed2b3", null ],
     [ "auto_critical_section_timedout_t", "namespacemn_1_1system.html#a5d0aa6064e19cd638af00b077d7e0899", null ],

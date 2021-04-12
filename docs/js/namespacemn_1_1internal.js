@@ -2,9 +2,9 @@ var namespacemn_1_1internal =
 [
     [ "atomic_flag", "structmn_1_1internal_1_1atomic__flag.html", "structmn_1_1internal_1_1atomic__flag" ],
     [ "can_apply", "structmn_1_1internal_1_1can__apply.html", null ],
-    [ "can_apply< Z, void_t< Z< Ts... > >, Ts... >", "structmn_1_1internal_1_1can__apply_3_01_z_00_01void__t_3_01_z_3_01_ts_8_8_8_01_4_01_4_00_01_ts_8_8_8_01_4.html", null ],
+    [ "can_apply< Z, void_t< Z< Ts... > >, Ts... >", "structmn_1_1internal_1_1can__apply_3_01Z_00_01void__t_3_01Z_3_01Ts_8_8_8_01_4_01_4_00_01Ts_8_8_8_01_4.html", null ],
     [ "res_of", "namespacemn_1_1internal.html#structmn_1_1internal_1_1res__of", null ],
-    [ "res_of< G(Args...), void_t< invoke_t< G, Args... > > >", "structmn_1_1internal_1_1res__of_3_01_g_07_args_8_8_8_08_00_01void__t_3_01invoke__t_3_01_g_00_01_args_8_8_8_01_4_01_4_01_4.html", null ],
+    [ "res_of< G(Args...), void_t< invoke_t< G, Args... > > >", "structmn_1_1internal_1_1res__of_3_01G_07Args_8_8_8_08_00_01void__t_3_01invoke__t_3_01G_00_01Args_8_8_8_01_4_01_4_01_4.html", null ],
     [ "alignof_helper", "namespacemn_1_1internal.html#structmn_1_1internal_1_1alignof__helper", "namespacemn_1_1internal_structmn_1_1internal_1_1alignof__helper_dup" ],
     [ "type_with_alignment", "namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment", "namespacemn_1_1internal_structmn_1_1internal_1_1type__with__alignment_dup" ],
     [ "type_with_alignment< 0 >", "namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_010_01_4", null ],

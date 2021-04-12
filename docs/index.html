@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
-        <title>Mini Thread: Mini Thread 2.10.x Documentation</title>
+        <title>Mini Thread: Main Page</title>
         <!-- javascript -->
         <script type="text/javascript" src="js/dynsections.js"></script>
         <script type="text/javascript" src="js/navtreedata.js"></script>
@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.10.8</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -68,18 +68,6 @@
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__change_log.html">
-                                <span data-feather="info"></span>
-                                Changelog
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="md__home_ambersophia__dokumente_git_mnthread__c_o_n_t_r_i_b_u_t_i_n_g.html">
-                                <span data-feather="info"></span>
-                                Contributing
                             </a>
                         </li>
                     </ul>
@@ -139,41 +127,49 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div id="doc-content">
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Mini Thread 2.10.x Documentation </div>  </div>
+<div class="title">Mini Thread Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_docs_git_README"></a> Mini Thread is a library for creating safe tasks, queues and other useful things for the esp32, in c ++. All in the background of a more secure and consistent workflow. So that your application will be smaller and more effective.</p>
-<p>Many of the standard STL containers are replaced with their own optimized versions. Recognizable by its own namespace mn. All containers, such as vector, map, list, array, can be found in the namespace <a class="el" href="namespacemn_1_1container.html">mn::container</a>.</p>
+<div class="textblock"><p><a class="anchor" id="md__home_ambersophia_Dokumente_git_mnthread_README"></a> <img src="images/Logo mnThread.png" alt="Mini Thread" title="Mini Thread" width="50%" align="left" class="inline"/> Mini Thread is a library for creating safe tasks, queues and other useful things for the esp32, in c ++.</p>
+<p>Many of the standard STL containers are replaced with their own optimized versions. Recognizable by its own namespace mn. All containers, such as vector, list, queue, rb-tree can be found in the namespace <a class="el" href="namespacemn_1_1container.html">mn::container</a>.</p>
 <p>Various types of association classes are provided for simplicity. This is just the exchange of the used allocator from the system to the Spiram allocator, whereby certain regions can be swapped out to a different storage capacity without having to rewrite the entire program. Certain allocation in addition to a limit, the bytes used to be limited. All allocator find you under the namespace <a class="el" href="namespacemn_1_1memory.html">mn::memory</a>.</p>
 <p>The containers and pointers use as default the mn::memory::default_allocator_t.</p>
-<p>The code is licensed under the GPLv3, so you always have access to it. You can also create as many derivative works as you want. However, in order for your code to get back into the official codebase, you must provide a copyright assignment for that code.</p>
-<ol type="1">
-<li>Ensure any install or build dependencies are removed before the end of the layer when doing a build.</li>
-<li>Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.</li>
-<li>Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is <a href="http://semver.org/">SemVer</a>. <br  />
+<p>For network programming see <a class="el" href="namespacemn_1_1net.html">mn::net</a>. (<a class="el" href="mn__socket_8hpp.html">net/mn_socket.hpp</a>) they contains a asy to use network socket wrapper for lwip, IPv4 and IPv6 support. Currently only dgram_socket_ip{4,6} and stream_socket_ip{4,6} support, raw socket are follow in version 2.30, with class for wifi AP and Wifi STA support</p>
+<p>For tickhooks please activated CONFIG_FREERTOS_LEGACY_HOOKS in your sdkconfig !!</p>
+<p><img src="https://img.shields.io/badge/maintainer-theMaintainer-blue" alt="Maintaner" class="inline"/> ![GPL license](https://img.shields.io/badge/License-LGPL-blue.svg) <a href="https://github.com/RoseLeblood/mnthread/"><img src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github" alt="Open Source? Yes!" class="inline"/></a> <img src="https://img.shields.io/github/v/tag/roseleblood/MiniThread" alt="GitHub tag (latest by date)" class="inline"/> <img src="https://img.shields.io/tokei/lines/github/roseleblood/MiniThread" alt="Lines of code" class="inline"/> <img src="https://img.shields.io/github/repo-size/roseleblood/MiniThread" alt="GitHub repo size" class="inline"/> <img src="https://img.shields.io/badge/build%20with-PlatformIO-orange?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMjUwMCIgaGVpZ2h0PSIyNTAwIiB2aWV3Qm94PSIwIDAgMjU2IDI1NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI+PHBhdGggZD0iTTEyOCAwQzkzLjgxIDAgNjEuNjY2IDEzLjMxNCAzNy40OSAzNy40OSAxMy4zMTQgNjEuNjY2IDAgOTMuODEgMCAxMjhjMCAzNC4xOSAxMy4zMTQgNjYuMzM0IDM3LjQ5IDkwLjUxQzYxLjY2NiAyNDIuNjg2IDkzLjgxIDI1NiAxMjggMjU2YzM0LjE5IDAgNjYuMzM0LTEzLjMxNCA5MC41MS0zNy40OUMyNDIuNjg2IDE5NC4zMzQgMjU2IDE2Mi4xOSAyNTYgMTI4YzAtMzQuMTktMTMuMzE0LTY2LjMzNC0zNy40OS05MC41MUMxOTQuMzM0IDEzLjMxNCAxNjIuMTkgMCAxMjggMCIgZmlsbD0iI0ZGN0YwMCIvPjxwYXRoIGQ9Ik0yNDkuMzg2IDEyOGMwIDY3LjA0LTU0LjM0NyAxMjEuMzg2LTEyMS4zODYgMTIxLjM4NkM2MC45NiAyNDkuMzg2IDYuNjEzIDE5NS4wNCA2LjYxMyAxMjggNi42MTMgNjAuOTYgNjAuOTYgNi42MTQgMTI4IDYuNjE0YzY3LjA0IDAgMTIxLjM4NiA1NC4zNDYgMTIxLjM4NiAxMjEuMzg2IiBmaWxsPSIjRkZGIi8+PHBhdGggZD0iTTE2MC44NjkgNzQuMDYybDUuMTQ1LTE4LjUzN2M1LjI2NC0uNDcgOS4zOTItNC44ODYgOS4zOTItMTAuMjczIDAtNS43LTQuNjItMTAuMzItMTAuMzItMTAuMzJzLTEwLjMyIDQuNjItMTAuMzIgMTAuMzJjMCAzLjc1NSAyLjAxMyA3LjAzIDUuMDEgOC44MzdsLTUuMDUgMTguMTk1Yy0xNC40MzctMy42Ny0yNi42MjUtMy4zOS0yNi42MjUtMy4zOWwtMi4yNTggMS4wMXYxNDAuODcybDIuMjU4Ljc1M2MxMy42MTQgMCA3My4xNzctNDEuMTMzIDczLjMyMy04NS4yNyAwLTMxLjYyNC0yMS4wMjMtNDUuODI1LTQwLjU1NS01Mi4xOTd6TTE0Ni41MyAxNjQuOGMtMTEuNjE3LTE4LjU1Ny02LjcwNi02MS43NTEgMjMuNjQzLTY3LjkyNSA4LjMyLTEuMzMzIDE4LjUwOSA0LjEzNCAyMS41MSAxNi4yNzkgNy41ODIgMjUuNzY2LTM3LjAxNSA2MS44NDUtNDUuMTUzIDUxLjY0NnptMTguMjE2LTM5Ljc1MmE5LjM5OSA5LjM5OSAwIDAgMC05LjM5OSA5LjM5OSA5LjM5OSA5LjM5OSAwIDAgMCA5LjQgOS4zOTkgOS4zOTkgOS4zOTkgMCAwIDAgOS4zOTgtOS40IDkuMzk5IDkuMzk5IDAgMCAwLTkuMzk5LTkuMzk4em0yLjgxIDguNjcyYTIuMzc0IDIuMzc0IDAgMSAxIDAtNC43NDkgMi4zNzQgMi4zNzQgMCAwIDEgMCA0Ljc0OXoiIGZpbGw9IiNFNTcyMDAiLz48cGF0aCBkPSJNMTAxLjM3MSA3Mi43MDlsLTUuMDIzLTE4LjkwMWMyLjg3NC0xLjgzMiA0Ljc4Ni01LjA0IDQuNzg2LTguNzAxIDAtNS43LTQuNjItMTAuMzItMTAuMzItMTAuMzItNS42OTkgMC0xMC4zMTkgNC42Mi0xMC4zMTkgMTAuMzIgMCA1LjY4MiA0LjU5MiAxMC4yODkgMTAuMjY3IDEwLjMxN0w5NS44IDc0LjM3OGMtMTkuNjA5IDYuNTEtNDAuODg1IDIwLjc0Mi00MC44ODUgNTEuODguNDM2IDQ1LjAxIDU5LjU3MiA4NS4yNjcgNzMuMTg2IDg1LjI2N1Y2OC44OTJzLTEyLjI1Mi0uMDYyLTI2LjcyOSAzLjgxN3ptMTAuMzk1IDkyLjA5Yy04LjEzOCAxMC4yLTUyLjczNS0yNS44OC00NS4xNTQtNTEuNjQ1IDMuMDAyLTEyLjE0NSAxMy4xOS0xNy42MTIgMjEuNTExLTE2LjI4IDMwLjM1IDYuMTc1IDM1LjI2IDQ5LjM2OSAyMy42NDMgNjcuOTI2em0tMTguODItMzkuNDZhOS4zOTkgOS4zOTkgMCAwIDAtOS4zOTkgOS4zOTggOS4zOTkgOS4zOTkgMCAwIDAgOS40IDkuNCA5LjM5OSA5LjM5OSAwIDAgMCA5LjM5OC05LjQgOS4zOTkgOS4zOTkgMCAwIDAtOS4zOTktOS4zOTl6bS0yLjgxIDguNjcxYTIuMzc0IDIuMzc0IDAgMSAxIDAtNC43NDggMi4zNzQgMi4zNzQgMCAwIDEgMCA0Ljc0OHoiIGZpbGw9IiNGRjdGMDAiLz48L3N2Zz4=" alt="Build with PlatformIO" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md62"></a>
+Folder Strutur</h2>
+<ul>
+<li>include and src:<ul>
+<li>/ : all basics: task, semaphores. timer ...</li>
+<li>memory: mempool handling</li>
+<li>queue: FreeRTOS queue's and workqueue-engines</li>
+<li>slock: ystem interrupt, schedular and ... autolock helper</li>
+</ul>
 </li>
-<li>You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.</li>
-</ol>
-<h1><a class="anchor" id="autotoc_md63"></a>
-Bug reporting</h1>
-<p>The preferred bug reporting channel is via <a href="https://github.com/RoseLeBlood/MiniThread/issues">Github Issues</a></p>
-<h1><a class="anchor" id="autotoc_md64"></a>
-Using</h1>
+<li>doc: Files to create the docu with doxygen<ul>
+<li>The online pre builded version: <a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a></li>
+</ul>
+</li>
+<li>example; The basic's example, and for more see extra repository: <a href="https://github.com/RoseLeBlood/mnthread-examples">mnthread-examples</a></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md63"></a>
+Using</h2>
 <p>Build from git from</p><ol type="1">
 <li><code>sh ./configure or ./configure --prefix=&lt;path&gt; # without prefix then install to /opt</code></li>
 <li><code>sh make build</code></li>
 <li><code>sh sudo or doas make install</code></li>
 <li>add "lib_deps = /opt/miniThread/miniThread-2.*.tar.gz" to your platformio.ini</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md65"></a>
-Example</h2>
+<h3><a class="anchor" id="autotoc_md64"></a>
+Example</h3>
 <div class="fragment"><div class="line">[env:esp-wrover-kit]</div>
 <div class="line">platform = espressif32</div>
 <div class="line">board = esp-wrover-kit</div>
 <div class="line">framework = espidf</div>
 <div class="line">lib_deps = /opt/miniThread/miniThread-2.*.tar.gz</div>
-</div><!-- fragment --> <h1><a class="anchor" id="autotoc_md66"></a>
-Using from platformio</h1>
+</div><!-- fragment --> <h2><a class="anchor" id="autotoc_md65"></a>
+Using from platformio</h2>
 <div class="fragment"><div class="line"># platformio.ini – project configuration file</div>
 <div class="line"> </div>
 <div class="line">[env:my_build_env]</div>
@@ -182,49 +178,27 @@ Using from platformio</h1>
 <div class="line">lib_deps =</div>
 <div class="line">  # RECOMMENDED</div>
 <div class="line">  # Accept new functionality in a backwards compatible manner and patches</div>
-<div class="line">  roseleblood/mini Thread @ ^2.10.7</div>
+<div class="line">  roseleblood/mini Thread @ ^2.21.0</div>
 <div class="line"> </div>
 <div class="line">  # Accept only backwards compatible bug fixes</div>
 <div class="line">  # (any version with the same major and minor versions, and an equal or greater patch version)</div>
-<div class="line">  roseleblood/mini Thread @ ~2.10.7</div>
+<div class="line">  roseleblood/mini Thread @ ~2.21.0</div>
 <div class="line"> </div>
 <div class="line">  # The exact version</div>
-<div class="line">  roseleblood/mini Thread @ 2.10.7</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md67"></a>
-Our Pledge</h2>
-<p>In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
-<h2><a class="anchor" id="autotoc_md68"></a>
-Our Standards</h2>
-<p>Examples of behavior that contributes to creating a positive environment include:</p>
-<ul>
-<li>Using welcoming and inclusive language</li>
-<li>Being respectful of differing viewpoints and experiences</li>
-<li>Gracefully accepting constructive criticism</li>
-<li>Focusing on what is best for the community</li>
-<li>Showing empathy towards other community members</li>
-</ul>
-<p>Examples of unacceptable behavior by participants include:</p>
-<ul>
-<li>The use of sexualized language or imagery and unwelcome sexual attention or advances</li>
-<li>Trolling, insulting/derogatory comments, and personal or political attacks</li>
-<li>Public or private harassment</li>
-<li>Publishing others' private information, such as a physical or electronic address, without explicit permission</li>
-<li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
-</ul>
+<div class="line">  roseleblood/mini Thread @ 2.21.0</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md66"></a>
+ChangeLog</h2>
+<p>For more see <a class="el" href="md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html">ChangeLog</a></p>
+<h2><a class="anchor" id="autotoc_md67"></a>
+Contributing</h2>
+<p>We would love for you to contribute to Mini Thread and help make it even better than it is today! See our <a class="el" href="md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html">Contributing Guidelines</a> for more information.</p>
+<p>Contributors are required to abide by our <a class="el" href="md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html">Code of Conduct</a> and <a class="el" href="md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html">Coding Conventions and Style Guide</a>.</p>
+<h1><a class="anchor" id="autotoc_md68"></a>
+Versioning</h1>
+<p>Mini Thread follows the <a href="http://semver.org/">Semantic Versioning guidelines</a> for release cycle transparency and to maintain backwards compatibility.</p>
 <h2><a class="anchor" id="autotoc_md69"></a>
-Our Responsibilities</h2>
-<p>Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.</p>
-<p>Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.</p>
-<h2><a class="anchor" id="autotoc_md70"></a>
-Scope</h2>
-<p>This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.</p>
-<h2><a class="anchor" id="autotoc_md71"></a>
-Enforcement</h2>
-<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [<a href="#" onclick="location.href='mai'+'lto:'+'amb'+'er'+'sop'+'hi'+'a.a'+'ms'+'hop'+'@o'+'utl'+'oo'+'k.d'+'e'; return false;">amber<span style="display: none;">.nosp@m.</span>soph<span style="display: none;">.nosp@m.</span>ia.am<span style="display: none;">.nosp@m.</span>shop<span style="display: none;">.nosp@m.</span>@outl<span style="display: none;">.nosp@m.</span>ook.<span style="display: none;">.nosp@m.</span>de</a>]. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.</p>
-<p>Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.</p>
-<h2><a class="anchor" id="autotoc_md72"></a>
-Attribution</h2>
-<p>This Code of Conduct is adapted from the <a href="http://contributor-covenant.org">Contributor Covenant</a>, version 1.4, available at <a href="http://contributor-covenant.org/version/1/4/">http://contributor-covenant.org/version/1/4</a> </p>
+License</h2>
+<p>Mini Thread is released under the [LGPL](LICENSE) file for more information. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
