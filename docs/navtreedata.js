@@ -109,7 +109,7 @@ var NAVTREE =
       ] ],
       [ "Contributing Documentation", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md61", null ]
     ] ],
-    [ "OpenThread Coding Conventions and Style", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html", [
+    [ "Mini Thread Coding Conventions and Style", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html", [
       [ "C and C++", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md71", [
         [ "Standards", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md72", null ],
         [ "Conventions and Best Practices", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md73", [

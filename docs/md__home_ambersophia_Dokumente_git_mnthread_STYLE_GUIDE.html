@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
-        <title>Mini Thread: OpenThread Coding Conventions and Style</title>
+        <title>Mini Thread: Mini Thread Coding Conventions and Style</title>
         <!-- javascript -->
         <script type="text/javascript" src="js/dynsections.js"></script>
         <script type="text/javascript" src="js/navtreedata.js"></script>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('md__home_ambersophia_Dokumente_git_mnt
 <div id="doc-content">
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">OpenThread Coding Conventions and Style </div>  </div>
+<div class="title">Mini Thread Coding Conventions and Style </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><ul>
@@ -293,7 +293,7 @@ Tightly-constrained Systems and Shared Infrastructure</h2>
 <h2><a class="anchor" id="autotoc_md78"></a>
 Format and Style</h2>
 <ul>
-<li>OpenThread uses <code>script/make-pretty</code> to reformat code and enforce code format and style. <code>script/make-pretty check</code> build target is included in OpenThread's continuous integration and must pass before a pull request is merged.</li>
+<li>Mini Thread uses <code>script/make-pretty</code> to reformat code and enforce code format and style. <code>script/make-pretty check</code> build target is included in Mini Thread's continuous integration and must pass before a pull request is merged.</li>
 <li><code>script/make-pretty</code> requires <a href="https://releases.llvm.org/download.html#9.0.0">clang-format v9.0.0</a> for C/C++ and <a href="https://github.com/google/yapf">yapf v0.31.0</a> for Python.</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md79"></a>
@@ -311,12 +311,12 @@ Naming</h3>
 <li>Names shall not give any idea of type, such as is done with System Hungarian notation.</li>
 <li>Case<ul>
 <li>C preprocessor symbols should be all uppercase.</li>
-<li>All OpenThread class, namespace, structure, method, function, enumeration, and type names in the C/C++ language shall be in <em>upper camel case</em>. Exception: the top level OpenThread namespace 'ot'.</li>
-<li>All OpenThread instantiated names of instances of classes, namespaces, structures, methods, functions, enumerations, and types as well as method and function parameters in the C++ language shall be in <em>lower camel case</em>.</li>
+<li>All Mini Thread class, namespace, structure, method, function, enumeration, and type names in the C/C++ language shall be in <em>upper camel case</em>. Exception: the top level Mini Thread namespace 'ot'.</li>
+<li>All Mini Thread instantiated names of instances of classes, namespaces, structures, methods, functions, enumerations, and types as well as method and function parameters in the C++ language shall be in <em>lower camel case</em>.</li>
 </ul>
 </li>
 <li>Symbol Qualification<ul>
-<li>All OpenThread C++ code should be in the ‘mn’ top-level namespace.</li>
+<li>All Mini Thread C++ code should be in the ‘mn’ top-level namespace.</li>
 </ul>
 </li>
 <li>Scope<ul>
