@@ -146,23 +146,25 @@ $(document).ready(function(){initNavTree('classmn_1_1queue_1_1basic__binaryqueue
 </div><!--header-->
 <div class="contents">
 
+<p>Binary queue with overwrite. This queue can only hold one item. If sucessive Enqueue operations are called, that item is overwritten with whatever the last item was.  
+ <a href="classmn_1_1queue_1_1basic__binaryqueue.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mn__binaryqueue_8hpp_source.html">mn_binaryqueue.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for mn::queue::basic_binaryqueue:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1queue_1_1basic__binaryqueue__inherit__graph.svg" width="232" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1queue_1_1basic__binaryqueue__inherit__graph.svg" width="232" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for mn::queue::basic_binaryqueue:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1queue_1_1basic__binaryqueue__coll__graph.svg" width="232" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1queue_1_1basic__binaryqueue__coll__graph.svg" width="232" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0cc3e1b72bee0fe1c03dfa244e6c4fdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__binaryqueue.html#a0cc3e1b72bee0fe1c03dfa244e6c4fdb">basic_binaryqueue</a> (unsigned int itemSize)</td></tr>
+<tr class="memdesc:a0cc3e1b72bee0fe1c03dfa244e6c4fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new basic binaryqueue object.  <a href="classmn_1_1queue_1_1basic__binaryqueue.html#a0cc3e1b72bee0fe1c03dfa244e6c4fdb">More...</a><br /></td></tr>
 <tr class="separator:a0cc3e1b72bee0fe1c03dfa244e6c4fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a814c32d9d422e06e4bce8ef8d39a81"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__binaryqueue.html#a5a814c32d9d422e06e4bce8ef8d39a81">enqueue</a> (void *item, unsigned int timeout=-1)</td></tr>
 <tr class="separator:a5a814c32d9d422e06e4bce8ef8d39a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,9 +177,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab06e8487bf446f1f4423b80af6cb1dea inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709d97f6d09b4e32a79091d3eaa24be8 inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a709d97f6d09b4e32a79091d3eaa24be8">destroy</a> ()</td></tr>
 <tr class="separator:a709d97f6d09b4e32a79091d3eaa24be8 inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ee9c9393f80fb305d0bb4cd52a1199 inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a47ee9c9393f80fb305d0bb4cd52a1199">peek</a> (void *item, unsigned int timeout=<a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
+<tr class="memitem:a47ee9c9393f80fb305d0bb4cd52a1199 inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a47ee9c9393f80fb305d0bb4cd52a1199">peek</a> (void *item, unsigned int timeout=<a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
 <tr class="separator:a47ee9c9393f80fb305d0bb4cd52a1199 inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70c40d9221a43a5dd1cfc1ba2d63141 inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#af70c40d9221a43a5dd1cfc1ba2d63141">dequeue</a> (void *item, unsigned int timeout=<a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
+<tr class="memitem:af70c40d9221a43a5dd1cfc1ba2d63141 inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#af70c40d9221a43a5dd1cfc1ba2d63141">dequeue</a> (void *item, unsigned int timeout=<a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
 <tr class="separator:af70c40d9221a43a5dd1cfc1ba2d63141 inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ae4fb9a41efc639f67ca6f5a8590ca inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a91ae4fb9a41efc639f67ca6f5a8590ca">is_empty</a> ()</td></tr>
 <tr class="separator:a91ae4fb9a41efc639f67ca6f5a8590ca inherit pub_methods_classmn_1_1queue_1_1basic__queue"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,7 +230,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>ctor</p>
+
+<p>Construct a new basic binaryqueue object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">itemSize</td><td>Size of an item in a queue. </td></tr>

@@ -142,10 +142,19 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>data()
-: <a class="el" href="classmn_1_1container_1_1basic__array.html#aa9eed419d1b1ce9fbec07b4f00bc2d5d">mn::container::basic_array&lt; T, N &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__vector.html#ac3226bce715d1f11037b391f724ab035">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
+, <a class="el" href="structmn_1_1small__task_3_01_r_07_args_8_8_8_08_00_01sz_00_01algn_01_4.html#a61b7360272f154f7921374cdc8f8493f">mn::small_task&lt; R(Args...), sz, algn &gt;</a>
+</li>
+<li>deconstruct()
+: <a class="el" href="classmn_1_1memory_1_1allocator__interface.html#afa60551d489e09ae97fdc79b8ddeefba">mn::memory::allocator_interface</a>
+, <a class="el" href="classmn_1_1memory_1_1vmempool__chunk.html#a4f9cddcdd4aace3860fd09b3d04c8ce4">mn::memory::vmempool_chunk&lt; TBufferSize, TALLOCATOR &gt;</a>
 </li>
 <li>default_delete()
-: <a class="el" href="structmn_1_1memory_1_1default__delete.html#af914d31dd08a2d001f6c2d3820c006f6">mn::memory::default_delete&lt; T &gt;</a>
+: <a class="el" href="structmn_1_1memory_1_1default__delete.html#ab8eefa94396837ac75c314b3c738a174">mn::memory::default_delete&lt; T, TALLOCATOR &gt;</a>
+</li>
+<li>deque_type
+: <a class="el" href="classmn_1_1container_1_1basic__deque.html#a156b173f9d8ed312706c44f5dab9c110">mn::container::basic_deque&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__deque__iterator.html#a649504106fb7cdd4869cfaa60d5b2305">mn::container::basic_deque_iterator&lt; T, TQUEUE &gt;</a>
 </li>
 <li>dequeue()
 : <a class="el" href="classmn_1_1queue_1_1basic__queue.html#af70c40d9221a43a5dd1cfc1ba2d63141">mn::queue::basic_queue</a>
@@ -153,6 +162,8 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 <li>destroy()
 : <a class="el" href="classmn_1_1basic__tasklet.html#abfd4cdd4de4986e05f26a191602c3f2d">mn::basic_tasklet</a>
 , <a class="el" href="classmn_1_1basic__timer.html#a1db51e062287fdc26351414f21f46070">mn::basic_timer</a>
+, <a class="el" href="structmn_1_1container_1_1basic__vector__storage.html#a4ee8dba50b5df6fad08576b4c3b0dd91">mn::container::basic_vector_storage&lt; T, TAllocator &gt;</a>
+, <a class="el" href="structmn_1_1container_1_1fixed__vector__storage.html#a040f5d6e6cd4ec413c207f1606c10782">mn::container::fixed_vector_storage&lt; T, TAllocator, TCapacity &gt;</a>
 , <a class="el" href="classmn_1_1esp32_1_1basic__esp32__timer.html#af89aad7db8807c76acb580798553b42b">mn::esp32::basic_esp32_timer</a>
 , <a class="el" href="classmn_1_1_i_timer.html#ab477558a1da13d0d0150b8c6a9085763">mn::ITimer</a>
 , <a class="el" href="classmn_1_1queue_1_1basic__queue.html#a709d97f6d09b4e32a79091d3eaa24be8">mn::queue::basic_queue</a>
@@ -163,9 +174,48 @@ $(document).ready(function(){initNavTree('functions_d.html',''); initResizable()
 , <a class="el" href="classmn_1_1queue_1_1basic__work__queue__multi.html#a1db75ec8f6f68340a1de99fcac5cd5d6">mn::queue::basic_work_queue_multi</a>
 , <a class="el" href="classmn_1_1queue_1_1basic__work__queue__single.html#a191c1568621bbc1ce06cf06b63839d70">mn::queue::basic_work_queue_single</a>
 </li>
+<li>destroyer
+: <a class="el" href="structmn_1_1small__task_3_01_r_07_args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html#a7e304e5e9332e22ba8767917a716620e">mn::small_task&lt; R(Args...), sz, algn &gt;::vtable_t</a>
+</li>
+<li>destruct_node()
+: <a class="el" href="classmn_1_1container_1_1basic__list.html#a8acafc3407f0416f16287ab29a4339e8">mn::container::basic_list&lt; T, TAllocator &gt;</a>
+</li>
+<li>detach()
+: <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html#a73522e35ad33fc3cfad838e58a788462">mn::pointer::basic_linked_ptr&lt; T &gt;</a>
+</li>
 <li>difference_type
-: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer.html#a06b5ec6c73adb33d892dce4ad01db5c4">mn::container::basic_ring_buffer&lt; T, TCAPACITY, TLOCK &gt;</a>
+: <a class="el" href="structmn_1_1__atomic.html#a674499204bff62764ef612aef4ac40cc">mn::_atomic&lt; T &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01bool_01_4.html#af63ac84ff87bc389fcbb4ef496bfb482">mn::_atomic&lt; bool &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01char_01_4.html#a9da088db22ac27c170e6c1af611a22d8">mn::_atomic&lt; char &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01char16__t_01_4.html#a8af4e080f746f88016f82c7ef0c5b627">mn::_atomic&lt; char16_t &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01char32__t_01_4.html#a6274cf3fdb0d9e459ba6d13418a7420d">mn::_atomic&lt; char32_t &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01int_01_4.html#afea91dc30fed1df2f1a2f1c63dac7c2e">mn::_atomic&lt; int &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01long_01_4.html#aaa1f5ef2975c4627c248b25f19f4cd3d">mn::_atomic&lt; long &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01long_01long_01_4.html#a52d1c88307ec906537bbf9220fa4c23f">mn::_atomic&lt; long long &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01short_01_4.html#a23aa093d890b523ef5a8302c5d45ca66">mn::_atomic&lt; short &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01signed_01char_01_4.html#a7564d0ae3e299a2392d8d9700d617fa7">mn::_atomic&lt; signed char &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01unsigned_01char_01_4.html#a3c703c3e9a2b200e09c7aa054a7958d6">mn::_atomic&lt; unsigned char &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01unsigned_01int_01_4.html#a35c0142323568c9a9916d8224fd6a380">mn::_atomic&lt; unsigned int &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01unsigned_01long_01_4.html#ae59a4e1dca9d481f6f1299a7f90629e8">mn::_atomic&lt; unsigned long &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01unsigned_01short_01_4.html#ab9dadd40ff9ca5c3ef45480e8512bc9d">mn::_atomic&lt; unsigned short &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01wchar__t_01_4.html#ae5d235a3f4aae1af3e74dfd2c3e89dc7">mn::_atomic&lt; wchar_t &gt;</a>
+, <a class="el" href="structmn_1_1__atomic__ptr.html#ada5dcbe56f2c30b3630f4db51b65b2e5">mn::_atomic_ptr&lt; T &gt;</a>
+, <a class="el" href="structmn_1_1basic__atomic__gcc.html#a8ee87f76a0be6360dc35c0d1b2c6c825">mn::basic_atomic_gcc&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1basic__iterator__pair.html#ab1307cf61a57eec96ea05461c63ed43b">mn::basic_iterator_pair&lt; TIterator, UIterator, TCategory &gt;</a>
+, <a class="el" href="classmn_1_1basic__iterator__triple.html#ae9b472eaa30e231a7f31412f8916a0ab">mn::basic_iterator_triple&lt; TIterator, UIterator, VIterator, TCategory &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__binary__queue__iterator.html#a6cc590be4aeeb068b30d56e84e86cbb5">mn::container::basic_binary_queue_iterator&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__deque__iterator.html#a7050835d6fe02a5a91892fb157bd2039">mn::container::basic_deque_iterator&lt; T, TQUEUE &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__fixed__sorted__vector.html#a8ecd89761e8a19eb75f6baf73c4603a3">mn::container::basic_fixed_sorted_vector&lt; TKey, TValue, TCapacity, TAllocator, TCompare &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__fixed__vector.html#a4d563b1f77e5bf2296b359c48665f672">mn::container::basic_fixed_vector&lt; T, TCapacity, TAllocator &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__node__itarrator.html#a9abe4c13ad7e911bbbb68e066e365005">mn::container::basic_node_itarrator&lt; TNODE &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__node__itarrator__res.html#ae8eee79743418bb25ada0bbf03e3b776">mn::container::basic_node_itarrator_res&lt; TNODE &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__queue__iterator.html#ac7d5542bf99b99ef12dad1aca36b53b7">mn::container::basic_queue_iterator&lt; T, TQUEUE &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__ring__buffer.html#a06b5ec6c73adb33d892dce4ad01db5c4">mn::container::basic_ring_buffer&lt; T, TCAPACITY, TLOCK &gt;</a>
 , <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#ad75062ea0338285ceec441b0c30af5d4">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__vector.html#ad37bb8ecfb8dc56de3debcc3f876a23f">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1list__node__iterator.html#a63b5da68300f719ff762511c71a5856b">mn::container::list_node_iterator&lt; TNodePtr, TPtr, TRef &gt;</a>
+, <a class="el" href="namespacemn.html#aa027f1c905d76f7ffc5da16338dd2066">mn::iterator_traits&lt; IterT &gt;</a>
+, <a class="el" href="namespacemn.html#aff282b853ebf00947bedd617d27a0a59">mn::iterator_traits&lt; T * &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

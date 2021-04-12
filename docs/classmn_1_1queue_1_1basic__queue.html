@@ -147,12 +147,14 @@ $(document).ready(function(){initNavTree('classmn_1_1queue_1_1basic__queue.html'
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="mn__queue_8hpp_source.html">mn_queue.hpp</a>&gt;</code></p>
+<p>Queue class wrapper for FreeRTOS queues.  
+ <a href="classmn_1_1queue_1_1basic__queue.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="queue_2mn__queue_8hpp_source.html">mn_queue.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for mn::queue::basic_queue:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1queue_1_1basic__queue__inherit__graph.svg" width="438" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1queue_1_1basic__queue__inherit__graph.svg" width="438" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -165,11 +167,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab06e8487bf446f1f4423b80af6cb1dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a709d97f6d09b4e32a79091d3eaa24be8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a709d97f6d09b4e32a79091d3eaa24be8">destroy</a> ()</td></tr>
 <tr class="separator:a709d97f6d09b4e32a79091d3eaa24be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13f1b2d76f6c9994e1c8677768e7679f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a13f1b2d76f6c9994e1c8677768e7679f">enqueue</a> (void *item, unsigned int timeout=<a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
+<tr class="memitem:a13f1b2d76f6c9994e1c8677768e7679f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a13f1b2d76f6c9994e1c8677768e7679f">enqueue</a> (void *item, unsigned int timeout=<a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
 <tr class="separator:a13f1b2d76f6c9994e1c8677768e7679f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ee9c9393f80fb305d0bb4cd52a1199"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a47ee9c9393f80fb305d0bb4cd52a1199">peek</a> (void *item, unsigned int timeout=<a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
+<tr class="memitem:a47ee9c9393f80fb305d0bb4cd52a1199"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a47ee9c9393f80fb305d0bb4cd52a1199">peek</a> (void *item, unsigned int timeout=<a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
 <tr class="separator:a47ee9c9393f80fb305d0bb4cd52a1199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70c40d9221a43a5dd1cfc1ba2d63141"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#af70c40d9221a43a5dd1cfc1ba2d63141">dequeue</a> (void *item, unsigned int timeout=<a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
+<tr class="memitem:af70c40d9221a43a5dd1cfc1ba2d63141"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#af70c40d9221a43a5dd1cfc1ba2d63141">dequeue</a> (void *item, unsigned int timeout=<a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a>)</td></tr>
 <tr class="separator:af70c40d9221a43a5dd1cfc1ba2d63141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ae4fb9a41efc639f67ca6f5a8590ca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1queue_1_1basic__queue.html#a91ae4fb9a41efc639f67ca6f5a8590ca">is_empty</a> ()</td></tr>
 <tr class="separator:a91ae4fb9a41efc639f67ca6f5a8590ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +196,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a0f5c1a0ac9256fdd21ee2e68b53c3e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Queue class wrapper for FreeRTOS queues </p><dl class="section note"><dt>Note</dt><dd>can use at the ISR Context, too. This wrapper switch automatic </dd></dl>
+<div class="textblock"><p>Queue class wrapper for FreeRTOS queues. </p>
+<dl class="section note"><dt>Note</dt><dd>can use at the ISR Context, too. This wrapper switch automatic </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a666da692e1486a4dd91ff86ebc33353f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a666da692e1486a4dd91ff86ebc33353f">&#9670;&nbsp;</a></span>basic_queue()</h2>
@@ -332,7 +335,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code><a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a></code>&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -404,7 +407,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code><a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a></code>&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -581,7 +584,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>timeout</em> = <code><a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a></code>&#160;</td>
+          <td class="paramname"><em>timeout</em> = <code><a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -676,7 +679,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="mn__queue_8hpp_source.html">mn_queue.hpp</a></li>
+<li><a class="el" href="queue_2mn__queue_8hpp_source.html">queue/mn_queue.hpp</a></li>
 <li><a class="el" href="mn__queue_8cpp.html">mn_queue.cpp</a></li>
 </ul>
 </div><!-- contents -->

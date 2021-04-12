@@ -38,7 +38,7 @@ var mn__typetraits_8hpp =
     [ "MN_INTEGRAL", "mn__typetraits_8hpp.html#a4a2d75214d05e0e283afbf7a77f58eba", null ],
     [ "MN_RATIONAL", "mn__typetraits_8hpp.html#a0ba169b86e8c598afa9087120f851cc5", null ],
     [ "MN_VOIDTYPE", "mn__typetraits_8hpp.html#af0b50620fb7c0f5d06ef17fe516fed6c", null ],
-    [ "false_type", "mn__typetraits_8hpp.html#a72b80d78e51fe174d2dd58b168711558", null ],
-    [ "true_type", "mn__typetraits_8hpp.html#a08068793620e71906feccb62b34ec003", null ],
+    [ "false_type", "mn__typetraits_8hpp.html#afb1f94a29d5337f0a8b28a06a4f79570", null ],
+    [ "true_type", "mn__typetraits_8hpp.html#a7153baf13d7f8bec585ed6ea2625fe06", null ],
     [ "void_t", "mn__typetraits_8hpp.html#ad0b8a428f956f77926d9eb759d6d4128", null ]
 ];

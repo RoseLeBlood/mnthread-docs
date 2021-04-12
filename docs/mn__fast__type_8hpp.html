@@ -146,8 +146,11 @@ $(document).ready(function(){initNavTree('mn__fast__type_8hpp.html',''); initRes
 <div class="title">mn_fast_type.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="include_2mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="mn__def_8hpp_source.html">mn_def.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__uint128_8hpp_source.html">mn_uint128.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__algorithm_8hpp_source.html">mn_algorithm.hpp</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 </div>
 <p><a href="mn__fast__type_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -158,12 +161,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1fast__type.html">mn::fast_type&lt; Bits, TBaseType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1value2size.html">mn::value2size&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:unionmn_1_1basic__fbit_8____unnamed5____"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#unionmn_1_1basic__fbit_8____unnamed5____">mn::basic_fbit.__unnamed5__</a></td></tr>
-<tr class="separator:unionmn_1_1basic__fbit_8____unnamed5____"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:unionmn_1_1fast__type_8____unnamed7____"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#unionmn_1_1fast__type_8____unnamed7____">mn::fast_type.__unnamed7__</a></td></tr>
-<tr class="separator:unionmn_1_1fast__type_8____unnamed7____"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionmn_1_1basic__fbit_8____unnamed15____"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#unionmn_1_1basic__fbit_8____unnamed15____">mn::basic_fbit.__unnamed15__</a></td></tr>
+<tr class="separator:unionmn_1_1basic__fbit_8____unnamed15____"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionmn_1_1fast__type_8____unnamed17____"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#unionmn_1_1fast__type_8____unnamed17____">mn::fast_type.__unnamed17__</a></td></tr>
+<tr class="separator:unionmn_1_1fast__type_8____unnamed17____"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -194,32 +195,36 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad60ba4c38768d9b35baca4f550a1749e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba3db2dcc2698d3732360ce40ee6f3e9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#aba3db2dcc2698d3732360ce40ee6f3e9">mn::fuint64_t</a> = fast_type&lt; value2size&lt; uint64_t &gt;::size, uint64_t &gt;</td></tr>
 <tr class="separator:aba3db2dcc2698d3732360ce40ee6f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f24ac33632f4d300574873391e5b8b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a42f24ac33632f4d300574873391e5b8b">mn::fuint128_t</a> = fast_type&lt; value2size&lt; uint128_t &gt;::size, uint128_t &gt;</td></tr>
+<tr class="separator:a42f24ac33632f4d300574873391e5b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6f1afd0f4e31278cb55738da0a5bb32"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#aa6f1afd0f4e31278cb55738da0a5bb32">mn::fint_least8_t</a> = fast_type&lt; value2size&lt; int_least8_t &gt;::size, int_least8_t &gt;</td></tr>
 <tr class="separator:aa6f1afd0f4e31278cb55738da0a5bb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27c2427a3855c40ab7aede5fb9e10335"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a27c2427a3855c40ab7aede5fb9e10335">mn::fint_least16_t</a> = fast_type&lt; value2size&lt; int_least16_t &gt;::size, int_least16_t &gt;</td></tr>
 <tr class="separator:a27c2427a3855c40ab7aede5fb9e10335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4adc9ed86f7e40390dd1887ac3eeda7c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4adc9ed86f7e40390dd1887ac3eeda7c">mn::fint_least32_t</a> = fast_type&lt; value2size&lt; int_least32_t &gt;::size, int_least32_t &gt;</td></tr>
 <tr class="separator:a4adc9ed86f7e40390dd1887ac3eeda7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf10330c1f31efa7d32df1db5fff130d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#abf10330c1f31efa7d32df1db5fff130d">mn::fint_least63_t</a> = fast_type&lt; value2size&lt; int_least64_t &gt;::size, int_least64_t &gt;</td></tr>
-<tr class="separator:abf10330c1f31efa7d32df1db5fff130d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241637f7cfdd14f73452a89cdca44a1d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a241637f7cfdd14f73452a89cdca44a1d">mn::fint_least64_t</a> = fast_type&lt; value2size&lt; int_least64_t &gt;::size, int_least64_t &gt;</td></tr>
+<tr class="separator:a241637f7cfdd14f73452a89cdca44a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8b64a41e4b78118d1b611e743eafa3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a1f8b64a41e4b78118d1b611e743eafa3">mn::fuint_least8_t</a> = fast_type&lt; value2size&lt; uint_least8_t &gt;::size, uint_least8_t &gt;</td></tr>
 <tr class="separator:a1f8b64a41e4b78118d1b611e743eafa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b9177f6259ec3cc5dde1d91063d9c23"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9b9177f6259ec3cc5dde1d91063d9c23">mn::fuint_least16_t</a> = fast_type&lt; value2size&lt; uint_least16_t &gt;::size, uint_least16_t &gt;</td></tr>
 <tr class="separator:a9b9177f6259ec3cc5dde1d91063d9c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a517f860d054294d8fa7ff876bd491ac6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a517f860d054294d8fa7ff876bd491ac6">mn::fuint_least32_t</a> = fast_type&lt; value2size&lt; uint_least32_t &gt;::size, uint_least32_t &gt;</td></tr>
 <tr class="separator:a517f860d054294d8fa7ff876bd491ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66bea973ab12dcd1226e539bf1c0e7be"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a66bea973ab12dcd1226e539bf1c0e7be">mn::fuint_least63_t</a> = fast_type&lt; value2size&lt; uint_least64_t &gt;::size, uint_least64_t &gt;</td></tr>
-<tr class="separator:a66bea973ab12dcd1226e539bf1c0e7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1119295e174e9d5c18c14ab143426a52"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a1119295e174e9d5c18c14ab143426a52">mn::fuint_least64_t</a> = fast_type&lt; value2size&lt; uint_least64_t &gt;::size, uint_least64_t &gt;</td></tr>
+<tr class="separator:a1119295e174e9d5c18c14ab143426a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2105e1a4110f92cdf1bd36d64cbcbd22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a2105e1a4110f92cdf1bd36d64cbcbd22">mn::fuint_least128_t</a> = fast_type&lt; value2size&lt; uint_least128_t &gt;::size, uint_least128_t &gt;</td></tr>
+<tr class="separator:a2105e1a4110f92cdf1bd36d64cbcbd22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
-<a name="unionmn_1_1basic__fbit_8____unnamed5____" id="unionmn_1_1basic__fbit_8____unnamed5____"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#unionmn_1_1basic__fbit_8____unnamed5____">&#9670;&nbsp;</a></span>mn::basic_fbit.__unnamed5__</h2>
+<a name="unionmn_1_1basic__fbit_8____unnamed15____" id="unionmn_1_1basic__fbit_8____unnamed15____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionmn_1_1basic__fbit_8____unnamed15____">&#9670;&nbsp;</a></span>mn::basic_fbit.__unnamed15__</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union mn::basic_fbit.__unnamed5__</td>
+          <td class="memname">union mn::basic_fbit.__unnamed15__</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -236,14 +241,14 @@ bit: 1</td>
 
 </div>
 </div>
-<a name="unionmn_1_1fast__type_8____unnamed7____" id="unionmn_1_1fast__type_8____unnamed7____"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#unionmn_1_1fast__type_8____unnamed7____">&#9670;&nbsp;</a></span>mn::fast_type.__unnamed7__</h2>
+<a name="unionmn_1_1fast__type_8____unnamed17____" id="unionmn_1_1fast__type_8____unnamed17____"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionmn_1_1fast__type_8____unnamed17____">&#9670;&nbsp;</a></span>mn::fast_type.__unnamed17__</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union mn::fast_type.__unnamed7__</td>
+          <td class="memname">union mn::fast_type.__unnamed17__</td>
         </tr>
       </table>
 </div><div class="memdoc">

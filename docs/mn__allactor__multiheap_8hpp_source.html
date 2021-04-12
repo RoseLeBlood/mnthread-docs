@@ -162,86 +162,76 @@ $(document).ready(function(){initNavTree('mn__allactor__multiheap_8hpp_source.ht
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MINLIB_ALLOCATOR_MULTI_HEAP_H_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINLIB_ALLOCATOR_MULTI_HEAP_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="test-ccc_2mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;multi_heap.h&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">namespace </span>memory {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> TBytes&gt; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">class </span>basic_multiheap_allocator_esp32 {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            basic_multiheap_allocator_esp32()</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                : m_pHandle(NULL) { </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">if</span>(m_pHandle == NULL) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    m_pHandle = multi_heap_register(m_buffer, TBytes);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            basic_multiheap_allocator_esp32(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">int</span> size) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                 <span class="keywordflow">if</span>(m_pHandle == NULL) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    m_pHandle = multi_heap_register(buffer, size);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            T* alloc(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> xTime) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">return</span> (T*) multi_heap_malloc(m_pHandle, <span class="keyword">sizeof</span>(T) );</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">size_t</span> calloc(<span class="keywordtype">size_t</span> n, T** buf, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> xTime) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">if</span>(is_empty()) <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keywordtype">size_t</span> size = n * <span class="keyword">sizeof</span>(T);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">if</span>( get_free() &lt; size) size = get_free();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">if</span>(size != 0) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    *buf = (T*) multi_heap_malloc(m_pHandle, size );</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    size = size / <span class="keyword">sizeof</span>(T);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">void</span> free(<span class="keywordtype">void</span>* ptr) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                multi_heap_free(m_pHandle, ptr);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">bool</span> is_empty() { </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> get_free() == 0;  </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> get_free() { </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                multi_heap_info_t info;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                multi_heap_get_info(m_pHandle, &amp;info);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">return</span> info.free_blocks ; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> get_allocated() { </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                multi_heap_info_t info;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                multi_heap_get_info(m_pHandle, &amp;info);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">return</span> info.allocated_blocks ; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }   </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> get_max() { </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">return</span> TBytes; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            basic_multiheap_allocator_esp32(<span class="keyword">const</span> basic_multiheap_allocator_esp32&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            basic_multiheap_allocator_esp32&amp; operator=(<span class="keyword">const</span> basic_multiheap_allocator_esp32&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">char</span>                    m_buffer[TBytes];</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            multi_heap_handle_t     m_pHandle;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        };</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_lock_exptions.hpp:26</div></div>
-<div class="ttc" id="atest-ccc_2mn__config_8hpp_html"><div class="ttname"><a href="test-ccc_2mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__interface_8hpp.html">mn_allocator_interface.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespacemn.html">   28</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html">   29</a></span>&#160;    <span class="keyword">namespace </span>memory {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> TBytes&gt; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html">   32</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html">basic_multiheap_allocator_esp32</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1memory_1_1allocator__interface.html">allocator_interface</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a641840ff23706704d298733903fd2520">   34</a></span>&#160;            <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a641840ff23706704d298733903fd2520">basic_multiheap_allocator_esp32</a>() : <a class="code" href="classmn_1_1memory_1_1allocator__interface.html">allocator_interface</a>(TBytes)  { </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#aefb0db49c1f9edb0a94b5107fee6354b">m_pHandle</a> = multi_heap_register(<a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a079661e97192871ec90af7cd9a036832">m_buffer</a>, TBytes);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a579ea7a458f730d8507574715c1309c1">   38</a></span>&#160;            <span class="keywordtype">void</span>* <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a579ea7a458f730d8507574715c1309c1">alloc</a>(<span class="keywordtype">size_t</span> size, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> xTime) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordtype">void</span>* buffer = NULL;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1memory_1_1allocator__interface.html#a951a77c3be1e32f1bfd4bdf172c72059">is_free</a>(size)) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    buffer = multi_heap_malloc(<a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#aefb0db49c1f9edb0a94b5107fee6354b">m_pHandle</a>, size ); </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">if</span>(buffer) <a class="code" href="classmn_1_1memory_1_1allocator__interface.html#aec7fcc98b6f399a8e1c9a568c7d2cf08">add_allocatedsize</a>(size);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">return</span> buffer;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#ae1f61be89d693a3e110ea503d001d5d2">   55</a></span>&#160;            <span class="keywordtype">size_t</span> <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#ae1f61be89d693a3e110ea503d001d5d2">calloc</a>(<span class="keywordtype">size_t</span> n, <span class="keywordtype">size_t</span> size, <span class="keywordtype">void</span>** buf, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> xTime) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordtype">size_t</span> _size = n * size;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1memory_1_1allocator__interface.html#a951a77c3be1e32f1bfd4bdf172c72059">is_free</a>(_size)) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    *buf = (<span class="keywordtype">void</span>*) multi_heap_malloc(<a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#aefb0db49c1f9edb0a94b5107fee6354b">m_pHandle</a>, _size );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">if</span>(*buf) <a class="code" href="classmn_1_1memory_1_1allocator__interface.html#aec7fcc98b6f399a8e1c9a568c7d2cf08">add_allocatedsize</a>(_size);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">return</span> _size;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a2c3b0265a4e48e8e99ee9cd4ee87d43a">   64</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a2c3b0265a4e48e8e99ee9cd4ee87d43a">free</a>(<span class="keywordtype">void</span>* ptr) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                multi_heap_free(<a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#aefb0db49c1f9edb0a94b5107fee6354b">m_pHandle</a>, ptr);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="classmn_1_1memory_1_1allocator__interface.html#a5a74c0b35acf729ad261a1f664ad6e36">rm_allocatedsize</a>(<span class="keyword">sizeof</span>(ptr));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a09c5151442eecc3782369ff113cbe486">   69</a></span>&#160;            <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a09c5151442eecc3782369ff113cbe486">basic_multiheap_allocator_esp32</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html">basic_multiheap_allocator_esp32</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#ab7dd603f5eafd08944e87b71e4e9bde4">   70</a></span>&#160;            <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html">basic_multiheap_allocator_esp32</a>&amp; <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#ab7dd603f5eafd08944e87b71e4e9bde4">operator=</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html">basic_multiheap_allocator_esp32</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a079661e97192871ec90af7cd9a036832">   72</a></span>&#160;            <span class="keywordtype">char</span>                    <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a079661e97192871ec90af7cd9a036832">m_buffer</a>[TBytes];</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#aefb0db49c1f9edb0a94b5107fee6354b">   73</a></span>&#160;            multi_heap_handle_t     <a class="code" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#aefb0db49c1f9edb0a94b5107fee6354b">m_pHandle</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        };</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1allocator__interface_html"><div class="ttname"><a href="classmn_1_1memory_1_1allocator__interface.html">mn::memory::allocator_interface</a></div><div class="ttdoc">A basic abstractet interface for all allocator in the library.</div><div class="ttdef"><b>Definition:</b> mn_allocator_interface.hpp:29</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1allocator__interface_html_a5a74c0b35acf729ad261a1f664ad6e36"><div class="ttname"><a href="classmn_1_1memory_1_1allocator__interface.html#a5a74c0b35acf729ad261a1f664ad6e36">mn::memory::allocator_interface::rm_allocatedsize</a></div><div class="ttdeci">void rm_allocatedsize(size_t size)</div><div class="ttdef"><b>Definition:</b> mn_allocator_interface.hpp:117</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1allocator__interface_html_a951a77c3be1e32f1bfd4bdf172c72059"><div class="ttname"><a href="classmn_1_1memory_1_1allocator__interface.html#a951a77c3be1e32f1bfd4bdf172c72059">mn::memory::allocator_interface::is_free</a></div><div class="ttdeci">bool is_free()</div><div class="ttdoc">In the heap free.</div><div class="ttdef"><b>Definition:</b> mn_allocator_interface.hpp:96</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1allocator__interface_html_aec7fcc98b6f399a8e1c9a568c7d2cf08"><div class="ttname"><a href="classmn_1_1memory_1_1allocator__interface.html#aec7fcc98b6f399a8e1c9a568c7d2cf08">mn::memory::allocator_interface::add_allocatedsize</a></div><div class="ttdeci">void add_allocatedsize(size_t size)</div><div class="ttdef"><b>Definition:</b> mn_allocator_interface.hpp:116</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html">mn::memory::basic_multiheap_allocator_esp32</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:32</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html_a079661e97192871ec90af7cd9a036832"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a079661e97192871ec90af7cd9a036832">mn::memory::basic_multiheap_allocator_esp32::m_buffer</a></div><div class="ttdeci">char m_buffer[TBytes]</div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:72</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html_a09c5151442eecc3782369ff113cbe486"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a09c5151442eecc3782369ff113cbe486">mn::memory::basic_multiheap_allocator_esp32::basic_multiheap_allocator_esp32</a></div><div class="ttdeci">basic_multiheap_allocator_esp32(const basic_multiheap_allocator_esp32 &amp;)=delete</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html_a2c3b0265a4e48e8e99ee9cd4ee87d43a"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a2c3b0265a4e48e8e99ee9cd4ee87d43a">mn::memory::basic_multiheap_allocator_esp32::free</a></div><div class="ttdeci">void free(void *ptr)</div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:64</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html_a579ea7a458f730d8507574715c1309c1"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a579ea7a458f730d8507574715c1309c1">mn::memory::basic_multiheap_allocator_esp32::alloc</a></div><div class="ttdeci">void * alloc(size_t size, unsigned int xTime)</div><div class="ttdoc">Alloc a n size of bytes.</div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:38</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html_a641840ff23706704d298733903fd2520"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a641840ff23706704d298733903fd2520">mn::memory::basic_multiheap_allocator_esp32::basic_multiheap_allocator_esp32</a></div><div class="ttdeci">basic_multiheap_allocator_esp32()</div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:34</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html_ab7dd603f5eafd08944e87b71e4e9bde4"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#ab7dd603f5eafd08944e87b71e4e9bde4">mn::memory::basic_multiheap_allocator_esp32::operator=</a></div><div class="ttdeci">basic_multiheap_allocator_esp32 &amp; operator=(const basic_multiheap_allocator_esp32 &amp;)=delete</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html_ae1f61be89d693a3e110ea503d001d5d2"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#ae1f61be89d693a3e110ea503d001d5d2">mn::memory::basic_multiheap_allocator_esp32::calloc</a></div><div class="ttdeci">size_t calloc(size_t n, size_t size, void **buf, unsigned int xTime)</div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:55</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__multiheap__allocator__esp32_html_aefb0db49c1f9edb0a94b5107fee6354b"><div class="ttname"><a href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#aefb0db49c1f9edb0a94b5107fee6354b">mn::memory::basic_multiheap_allocator_esp32::m_pHandle</a></div><div class="ttdeci">multi_heap_handle_t m_pHandle</div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:73</div></div>
+<div class="ttc" id="amn__allocator__interface_8hpp_html"><div class="ttname"><a href="mn__allocator__interface_8hpp.html">mn_allocator_interface.hpp</a></div></div>
+<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

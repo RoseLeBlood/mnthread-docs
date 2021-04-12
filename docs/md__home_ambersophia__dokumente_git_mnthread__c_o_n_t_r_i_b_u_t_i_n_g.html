@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
-        <title>Mini Thread: Contributing</title>
+        <title>Mini Thread: Contributing to MiniThread</title>
         <!-- javascript -->
         <script type="text/javascript" src="js/dynsections.js"></script>
         <script type="text/javascript" src="js/navtreedata.js"></script>
@@ -139,64 +139,100 @@ $(document).ready(function(){initNavTree('md__home_ambersophia__dokumente_git_mn
 <div id="doc-content">
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Contributing </div>  </div>
+<div class="title">Contributing to MiniThread </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>First off, thank you for thinking so highly of <a href="https://github.com/RoseLeBlood/MiniThread">Mini Thread</a> that you want to contribute to it! When I started this project, I was amazed that so many people asked for examples. I never expected that, thank you very much.</p>
-<p>Since I currently do not have the resources to write more examples more quickly in the foreseeable future, you are welcome to help me. The examples are provided at <a href="https://github.com/RoseLeBlood/mnthread-examples">Mini Thread examples</a>.</p>
-<h1><a class="anchor" id="autotoc_md23"></a>
-Pull Request Process</h1>
-<p>The code is licensed under the GPLv3, so you always have access to it. You can also create as many derivative works as you want. However, in order for your code to get back into the official codebase, you must provide a copyright assignment for that code.</p>
-<ol type="1">
-<li>Ensure any install or build dependencies are removed before the end of the layer when doing a build.</li>
-<li>Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.</li>
-<li>Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is <a href="http://semver.org/">SemVer</a>. <br  />
+<div class="textblock"><p>We would love for you to contribute to MiniThread and help make it even better than it is today! As a contributor, here are the guidelines we would like you to follow.</p>
+<ul>
+<li><a href="#code-of-conduct">1 Code of Conduct</a></li>
+<li><a href="#bugs">2 Bugs</a></li>
+<li><a href="#new-features">3 New Features</a></li>
+<li><a href="#contributing-code">4 Contributing Code</a><ul>
+<li><a href="#initial-setup">4.1 Initial Setup</a></li>
+<li><a href="#submitting-a-pull-request">4.2 Submitting a Pull Request</a></li>
+</ul>
 </li>
-<li>You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.</li>
-</ol>
-<h1><a class="anchor" id="autotoc_md24"></a>
-Documentation</h1>
-<p>Please document every new function and class, we use doxygen for the automatic generation of the documentation. Please adhere to this standard. Please refer: <a href="https://mesos.readthedocs.io/en/latest/doxygen-style-guide/">https://mesos.readthedocs.io/en/latest/doxygen-style-guide/</a> Sections of code that are difficult to understand must be provided with comments in order to be able to understand the function.</p>
-<h1><a class="anchor" id="autotoc_md25"></a>
-Bug reporting</h1>
-<p>The preferred bug reporting channel is via <a href="https://github.com/RoseLeBlood/MiniThread/issues">Github Issues</a></p>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<li><a href="#contributing-documentation">5 Contributing Documentation</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md49"></a>
 Code of Conduct</h1>
-<h2><a class="anchor" id="autotoc_md27"></a>
-Our Pledge</h2>
-<p>In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>
-<h2><a class="anchor" id="autotoc_md28"></a>
-Our Standards</h2>
-<p>Examples of behavior that contributes to creating a positive environment include:</p>
+<p>Help us keep MiniThread open and inclusive. Please read and follow our <a class="el" href="md__home_ambersophia__dokumente_git_mnthread__c_o_d_e__o_f__c_o_n_d_u_c_t.html">Code of Conduct</a>.</p>
+<h1><a class="anchor" id="autotoc_md50"></a>
+Bugs</h1>
+<p>If you find a bug in the source code, you can help us by <a href="https://github.com/RoseLeBlood/MiniThread/issues/new">submitting a GitHub Issue</a>. The best bug reports provide a detailed description of the issue and step-by-step instructions for predictably reproducing the issue. Even better, you can <a href="#submitting-a-pull-request">submit a Pull Request</a> with a fix.</p>
+<h1><a class="anchor" id="autotoc_md51"></a>
+New Features</h1>
+<p>You can request a new feature by <a href="https://github.com/RoseLeBlood/MiniThread/issues/new">submitting a GitHub Issue</a>.</p>
+<p>If you would like to implement a new feature, please consider the scope of the new feature:</p>
 <ul>
-<li>Using welcoming and inclusive language</li>
-<li>Being respectful of differing viewpoints and experiences</li>
-<li>Gracefully accepting constructive criticism</li>
-<li>Focusing on what is best for the community</li>
-<li>Showing empathy towards other community members</li>
+<li><em>Large feature</em>: first <a href="https://github.com/RoseLeBlood/MiniThread/issues/new">submit a GitHub Issue</a> and communicate your proposal so that the community can review and provide feedback. Getting early feedback will help ensure your implementation work is accepted by the community. This will also allow us to better coordinate our efforts and minimize duplicated effort.</li>
+<li><em>Small feature</em>: can be implemented and directly <a href="#submitting-a-pull-request">submitted as a Pull Request</a>.</li>
 </ul>
-<p>Examples of unacceptable behavior by participants include:</p>
-<ul>
-<li>The use of sexualized language or imagery and unwelcome sexual attention or advances</li>
-<li>Trolling, insulting/derogatory comments, and personal or political attacks</li>
-<li>Public or private harassment</li>
-<li>Publishing others' private information, such as a physical or electronic address, without explicit permission</li>
-<li>Other conduct which could reasonably be considered inappropriate in a professional setting</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md29"></a>
-Our Responsibilities</h2>
-<p>Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.</p>
-<p>Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.</p>
-<h2><a class="anchor" id="autotoc_md30"></a>
-Scope</h2>
-<p>This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.</p>
-<h2><a class="anchor" id="autotoc_md31"></a>
-Enforcement</h2>
-<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [<a href="#" onclick="location.href='mai'+'lto:'+'amb'+'er'+'sop'+'hi'+'a.a'+'ms'+'hop'+'@o'+'utl'+'oo'+'k.d'+'e'; return false;">amber<span style="display: none;">.nosp@m.</span>soph<span style="display: none;">.nosp@m.</span>ia.am<span style="display: none;">.nosp@m.</span>shop<span style="display: none;">.nosp@m.</span>@outl<span style="display: none;">.nosp@m.</span>ook.<span style="display: none;">.nosp@m.</span>de</a>]. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.</p>
-<p>Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.</p>
-<h2><a class="anchor" id="autotoc_md32"></a>
-Attribution</h2>
-<p>This Code of Conduct is adapted from the <a href="http://contributor-covenant.org">Contributor Covenant</a>, version 1.4, available at <a href="http://contributor-covenant.org/version/1/4/">http://contributor-covenant.org/version/1/4</a> </p>
+<h1><a class="anchor" id="autotoc_md52"></a>
+Contributing Code</h1>
+<p>The MiniThread Project follows the "Fork-and-Pull" model for accepting contributions.</p>
+<h2><a class="anchor" id="autotoc_md53"></a>
+Initial Setup</h2>
+<p>Setup your GitHub fork and continuous-integration services:</p>
+<ol type="1">
+<li>Fork the <a href="https://github.com/RoseLeBlood/MiniThread/">MiniThread repository</a> by clicking "Fork" on the web UI.</li>
+</ol>
+<p>Setup your local development environment:</p>
+<div class="fragment"><div class="line"># Clone your fork</div>
+<div class="line">git clone git@github.com:&lt;username&gt;/minithread.git</div>
+<div class="line"> </div>
+<div class="line"># Configure upstream alias</div>
+<div class="line">git remote add upstream git@github.com:roseleblood/minithread.git</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md54"></a>
+Submitting a Pull Request</h2>
+<h3><a class="anchor" id="autotoc_md55"></a>
+Branch</h3>
+<p>For each new feature, create a working branch:</p>
+<div class="fragment"><div class="line"># Create a working branch for your new feature</div>
+<div class="line">git branch --track &lt;branch-name&gt; origin/main</div>
+<div class="line"> </div>
+<div class="line"># Checkout the branch</div>
+<div class="line">git checkout &lt;branch-name&gt;</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md56"></a>
+Create Commits</h3>
+<div class="fragment"><div class="line"># Add each modified file you&#39;d like to include in the commit</div>
+<div class="line">git add &lt;file1&gt; &lt;file2&gt;</div>
+<div class="line"> </div>
+<div class="line"># Create a commit</div>
+<div class="line">git commit</div>
+</div><!-- fragment --><p>This will open up a text editor where you can craft your commit message.</p>
+<h3><a class="anchor" id="autotoc_md57"></a>
+Upstream Sync and Clean Up</h3>
+<p>Prior to submitting your pull request, you might want to do a few things to clean up your branch and make it as simple as possible for the original repo's maintainer to test, accept, and merge your work.</p>
+<p>If any commits have been made to the upstream main branch, you should rebase your development branch so that merging it will be a simple fast-forward that won't require any conflict resolution work.</p>
+<div class="fragment"><div class="line"># Fetch upstream main and merge with your repo&#39;s main branch</div>
+<div class="line">git checkout main</div>
+<div class="line">git pull upstream main</div>
+<div class="line"> </div>
+<div class="line"># If there were any new commits, rebase your development branch</div>
+<div class="line">git checkout &lt;branch-name&gt;</div>
+<div class="line">git rebase main</div>
+</div><!-- fragment --><p>Now, it may be desirable to squash some of your smaller commits down into a small number of larger more cohesive commits. You can do this with an interactive rebase:</p>
+<div class="fragment"><div class="line"># Rebase all commits on your development branch</div>
+<div class="line">git checkout</div>
+<div class="line">git rebase -i main</div>
+</div><!-- fragment --><p>This will open up a text editor where you can specify which commits to squash.</p>
+<h3><a class="anchor" id="autotoc_md58"></a>
+Coding Conventions and Style</h3>
+<p>MiniThread uses and enforces the <a class="el" href="md__home_ambersophia__dokumente_git_mnthread__s_t_y_l_e__g_u_i_d_e.html">Coding Conventions and Style</a> on all code. MiniThread currently requires <a href="https://platform.io/">platform-io</a> for building, testing and uplaod the firmware on the device</p>
+<h3><a class="anchor" id="autotoc_md59"></a>
+Push and Test</h3>
+<div class="fragment"><div class="line"># Checkout your branch</div>
+<div class="line">git checkout &lt;branch-name&gt;</div>
+<div class="line"> </div>
+<div class="line"># Push to your GitHub fork:</div>
+<div class="line">git push origin &lt;branch-name&gt;</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md60"></a>
+Submit Pull Request</h3>
+<p>Once you've validated that all continuous-integration checks have passed, go to the page for your fork on GitHub, select your development branch, and click the pull request button. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes on your development branch and update.</p>
+<h1><a class="anchor" id="autotoc_md61"></a>
+Contributing Documentation</h1>
+<p>Documentation undergoes the same review process as code and contributions may be mirrored on our <a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a> website. See the Documentation Style Guide for more information on how to author and format documentation for contribution. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

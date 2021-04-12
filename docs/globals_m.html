@@ -144,12 +144,6 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 <li>main()
 : <a class="el" href="test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">test.cpp</a>
 </li>
-<li>mempool_test_allocate()
-: <a class="el" href="mempool_8cpp.html#a2497489b941a0ad717634e5bfff40b13">mempool.cpp</a>
-</li>
-<li>mempool_test_free()
-: <a class="el" href="mempool_8cpp.html#af1d12ab67ba3568b7cce52f2c71de988">mempool.cpp</a>
-</li>
 <li>MN_INTEGRAL
 : <a class="el" href="mn__typetraits_8hpp.html#a4a2d75214d05e0e283afbf7a77f58eba">mn_typetraits.hpp</a>
 </li>
@@ -158,6 +152,12 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 </li>
 <li>MN_RATIONAL
 : <a class="el" href="mn__typetraits_8hpp.html#a0ba169b86e8c598afa9087120f851cc5">mn_typetraits.hpp</a>
+</li>
+<li>MN_SAFE_DELETE
+: <a class="el" href="mn__config_8hpp.html#a3a321d6244f0367104bb24b59f21e036">mn_config.hpp</a>
+</li>
+<li>MN_SAFE_FREE
+: <a class="el" href="mn__config_8hpp.html#a49835d5b423a6c62a065c74f07f9505f">mn_config.hpp</a>
 </li>
 <li>MN_TEMPLATE_DECL_ONE
 : <a class="el" href="mn__defines_8hpp.html#afd17e167bafe0811f0fb2e4f1a40db3d">mn_defines.hpp</a>
@@ -202,271 +202,325 @@ $(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); 
 : <a class="el" href="mn__defines_8hpp.html#a3e794a2fa7f9486b4ebdca6845d8e62e">mn_defines.hpp</a>
 </li>
 <li>MN_THREAD_BETA_MAJOR_VERSION
-: <a class="el" href="test-ccc_2mn__config_8hpp.html#ac6cfeea38445d3d7feba1e9be92aed9b">test-ccc/mn_config.hpp</a>
-, <a class="el" href="include_2mn__config_8hpp.html#ac6cfeea38445d3d7feba1e9be92aed9b">include/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ac6cfeea38445d3d7feba1e9be92aed9b">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_BETA_MINOR_VERSION
-: <a class="el" href="include_2mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_BETA_VERSION_STRING
-: <a class="el" href="include_2mn__config_8hpp.html#a1d73a768413a6a1c5590b7733c78a43d">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a1d73a768413a6a1c5590b7733c78a43d">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a1d73a768413a6a1c5590b7733c78a43d">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_ADD_TASK_TO_TASK_LIST
-: <a class="el" href="include_2mn__config_8hpp.html#a937884c489bccb0b25f73a7fedc17e9a">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a937884c489bccb0b25f73a7fedc17e9a">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a937884c489bccb0b25f73a7fedc17e9a">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_ALLOCATOR_DEFAULT
-: <a class="el" href="include_2mn__config_8hpp.html#ad60d27e97769ddef1818c0c1383c409c">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ad60d27e97769ddef1818c0c1383c409c">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ad60d27e97769ddef1818c0c1383c409c">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_ALLOCATOR_SPIRAM
-: <a class="el" href="include_2mn__config_8hpp.html#a321d46cd96fc812e1b368ade85e3d29d">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a321d46cd96fc812e1b368ade85e3d29d">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a321d46cd96fc812e1b368ade85e3d29d">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_ALLOCATOR_SYSTEM
-: <a class="el" href="include_2mn__config_8hpp.html#a111752072ad1ae53214ffda480934a1d">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a111752072ad1ae53214ffda480934a1d">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a111752072ad1ae53214ffda480934a1d">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_BASIC_ALIGNMENT
-: <a class="el" href="include_2mn__config_8hpp.html#af5908772af5ac083502c56e5a4f18010">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#af5908772af5ac083502c56e5a4f18010">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#af5908772af5ac083502c56e5a4f18010">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_BINARY_SEMAPHORE
-: <a class="el" href="include_2mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a98234c43ec9fef385eca752276d2b115">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_BOARD
-: <a class="el" href="test-ccc_2mn__config_8hpp.html#a14dd59cbe58bd6a41d15ceefe3b6f0d5">test-ccc/mn_config.hpp</a>
-, <a class="el" href="include_2mn__config_8hpp.html#a14dd59cbe58bd6a41d15ceefe3b6f0d5">include/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a14dd59cbe58bd6a41d15ceefe3b6f0d5">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_BOARD_NODEFS
-: <a class="el" href="include_2mn__config_8hpp.html#a9a7d8572d3567d5ce51d1532e7589045">include/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a9a7d8572d3567d5ce51d1532e7589045">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CONDITION_VARIABLE_SUPPORT
-: <a class="el" href="test-ccc_2mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">test-ccc/mn_config.hpp</a>
-, <a class="el" href="include_2mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">include/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a164eb9501389b4ba7784551401dc388b">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_IFNO
-: <a class="el" href="include_2mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a034d23f83dd3e683ca09cacd402f94ee">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_MAX
-: <a class="el" href="include_2mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#abdc77c40f0f1cd378773159d8f1ef0b9">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_ONE
-: <a class="el" href="include_2mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ad6395cf50f0e8a7a8ff1280f5ca01950">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_PRIORITY_CRITICAL
-: <a class="el" href="include_2mn__config_8hpp.html#a352db8489e062b0e9c1365d39bb17b0d">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a352db8489e062b0e9c1365d39bb17b0d">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a352db8489e062b0e9c1365d39bb17b0d">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_PRIORITY_HALFCRT
-: <a class="el" href="include_2mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a357e1796cb597dbad06c8023e58dd76b">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_PRIORITY_IDLE
-: <a class="el" href="include_2mn__config_8hpp.html#a8812f52f98bf4791aa3a286ca1c13729">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a8812f52f98bf4791aa3a286ca1c13729">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a8812f52f98bf4791aa3a286ca1c13729">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_PRIORITY_LOW
-: <a class="el" href="include_2mn__config_8hpp.html#ac0f4e60713fea12bce98c76d447ffde5">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ac0f4e60713fea12bce98c76d447ffde5">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ac0f4e60713fea12bce98c76d447ffde5">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_PRIORITY_NORM
-: <a class="el" href="include_2mn__config_8hpp.html#a41d75da3e2ca5e0d23942201e6c46f52">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a41d75da3e2ca5e0d23942201e6c46f52">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a41d75da3e2ca5e0d23942201e6c46f52">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_PRIORITY_URGENT
-: <a class="el" href="include_2mn__config_8hpp.html#ad05a7d79e49329dacb1f4a5464d0240b">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ad05a7d79e49329dacb1f4a5464d0240b">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ad05a7d79e49329dacb1f4a5464d0240b">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CORE_TWO
-: <a class="el" href="include_2mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a0fe84f8b0f4f9294972ffc6cacb290aa">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_COUNTING_SEMAPHORE
-: <a class="el" href="include_2mn__config_8hpp.html#a907c3e321e76f37f9043d251b2f06aa4">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a907c3e321e76f37f9043d251b2f06aa4">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a907c3e321e76f37f9043d251b2f06aa4">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CSEMAPHORE_MAX_COUNT
-: <a class="el" href="include_2mn__config_8hpp.html#aed1554026e4fad333e7d50835e5c7b08">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#aed1554026e4fad333e7d50835e5c7b08">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#aed1554026e4fad333e7d50835e5c7b08">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_CSEMAPHORE_MIN_COUNT
-: <a class="el" href="include_2mn__config_8hpp.html#a0e59cd4828b0ff11f8fe0b81185a1e03">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a0e59cd4828b0ff11f8fe0b81185a1e03">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a0e59cd4828b0ff11f8fe0b81185a1e03">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_DEBUG
-: <a class="el" href="include_2mn__config_8hpp.html#af2c2a1334e83cd83ebd6fc025f153bf3">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#af2c2a1334e83cd83ebd6fc025f153bf3">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#af2c2a1334e83cd83ebd6fc025f153bf3">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_DEFAULT_CORE
-: <a class="el" href="include_2mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#af3f788bd3608508c927a94fdceee8a52">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_DEFAULT_WORKQUEUE_CORE
-: <a class="el" href="include_2mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#af8683395ac0c90d9e2660c6258e32d64">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_ESP32
-: <a class="el" href="test-ccc_2mn__config_8hpp.html#af915055b76ed0819ce8b44dac99a9328">test-ccc/mn_config.hpp</a>
-, <a class="el" href="include_2mn__config_8hpp.html#af915055b76ed0819ce8b44dac99a9328">include/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#af915055b76ed0819ce8b44dac99a9328">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_FOREIGIN_TASK_SUPPORT
-: <a class="el" href="include_2mn__config_8hpp.html#afc2d0635c2fb68699d6d3262441b71c2">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#afc2d0635c2fb68699d6d3262441b71c2">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#afc2d0635c2fb68699d6d3262441b71c2">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_FREELIST_MEMPOOL_FREE
-: <a class="el" href="include_2mn__config_8hpp.html#af5fbb8ced2a12bb7a1d87deef15da4b1">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#af5fbb8ced2a12bb7a1d87deef15da4b1">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#af5fbb8ced2a12bb7a1d87deef15da4b1">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_FREELIST_MEMPOOL_USED
-: <a class="el" href="include_2mn__config_8hpp.html#ab38cc792d50f34fdd08b9e7939a7b5ee">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ab38cc792d50f34fdd08b9e7939a7b5ee">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ab38cc792d50f34fdd08b9e7939a7b5ee">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_LOCK_TYPE
-: <a class="el" href="include_2mn__config_8hpp.html#af75f0ad7789180411059976192486e4e">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#af75f0ad7789180411059976192486e4e">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#af75f0ad7789180411059976192486e4e">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_MEMPOOL_MAGIC_END
-: <a class="el" href="include_2mn__config_8hpp.html#a609d559fa4b25aab1aee09ff7adfd3f5">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a609d559fa4b25aab1aee09ff7adfd3f5">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a609d559fa4b25aab1aee09ff7adfd3f5">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_MEMPOOL_MAGIC_START
-: <a class="el" href="test-ccc_2mn__config_8hpp.html#a47b49da03fa010bf7527d514dbf29e34">test-ccc/mn_config.hpp</a>
-, <a class="el" href="include_2mn__config_8hpp.html#a47b49da03fa010bf7527d514dbf29e34">include/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a47b49da03fa010bf7527d514dbf29e34">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_MEMPOOL_USE_MAGIC
-: <a class="el" href="include_2mn__config_8hpp.html#abb7af2f242062e3b0f4960de6b335b03">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__basic__mempool_8hpp.html#abb7af2f242062e3b0f4960de6b335b03">test-ccc/mn_basic_mempool.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#abb7af2f242062e3b0f4960de6b335b03">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#abb7af2f242062e3b0f4960de6b335b03">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_MEMPOOL_USETIMED
-: <a class="el" href="include_2mn__config_8hpp.html#a8412e7e06a300c22ecaf5b3fcb589dec">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a8412e7e06a300c22ecaf5b3fcb589dec">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a8412e7e06a300c22ecaf5b3fcb589dec">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_MINIMAL_STACK_SIZE
-: <a class="el" href="include_2mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ae1af1b16705ec8d267a32767da010c2f">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_MSGTASK_MAX_MESSAGES
-: <a class="el" href="include_2mn__config_8hpp.html#ab6a2073609e7b98ce87f87cd1a7b677c">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ab6a2073609e7b98ce87f87cd1a7b677c">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ab6a2073609e7b98ce87f87cd1a7b677c">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_MUTEX
-: <a class="el" href="include_2mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_NET_IPADDRESS6_ENABLE
+: <a class="el" href="mn__config_8hpp.html#a531ecc7321eaad4c689658e3a166665a">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_NET_IPADDRESS6_SCOPEID_VAL
+: <a class="el" href="mn__config_8hpp.html#a438b234b09b83980add3cf1ac0ebbf71">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_NET_IPADDRESS6_USE_SCOPEID
+: <a class="el" href="mn__config_8hpp.html#a936726e3457730e3621fe8a83f4889a2">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_NO
-: <a class="el" href="include_2mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a02ac2cfca56481d8e1e70d84483cce0c">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_OTHER
-: <a class="el" href="include_2mn__config_8hpp.html#ac0d34aeabc9cf566a9bc3918d7fc6604">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ac0d34aeabc9cf566a9bc3918d7fc6604">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ac0d34aeabc9cf566a9bc3918d7fc6604">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_PREVIEW_FUTURE
-: <a class="el" href="include_2mn__config_8hpp.html#a9d7f3f8fbd6ff30ad21aabae00922caa">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a9d7f3f8fbd6ff30ad21aabae00922caa">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a9d7f3f8fbd6ff30ad21aabae00922caa">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_RECURSIVE_MUTEX_CHEAKING
-: <a class="el" href="include_2mn__config_8hpp.html#a088badaa2d25119018451eb7a7068bf6">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a088badaa2d25119018451eb7a7068bf6">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a088badaa2d25119018451eb7a7068bf6">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_SHAREDOBJECT_PREUSING
-: <a class="el" href="include_2mn__config_8hpp.html#a134b9cfbd0a9862f78a74eb0509b4baa">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a134b9cfbd0a9862f78a74eb0509b4baa">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a134b9cfbd0a9862f78a74eb0509b4baa">mn_config.hpp</a>
+</li>
+<li>MN_THREAD_CONFIG_SIZE_TYPE
+: <a class="el" href="mn__config_8hpp.html#a50e5f9c1523e1a8c6ee7f022b672cb55">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_STACK_TYPE
-: <a class="el" href="include_2mn__config_8hpp.html#a5ad080396922e54adb11e7c31223267a">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a5ad080396922e54adb11e7c31223267a">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a5ad080396922e54adb11e7c31223267a">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_TICKHOOK_MAXENTRYS
-: <a class="el" href="include_2mn__config_8hpp.html#a7755b3f708d90aa99b006d11c760a22c">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a7755b3f708d90aa99b006d11c760a22c">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a7755b3f708d90aa99b006d11c760a22c">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_TIMEOUT_COROUTINE_DEFAULT
-: <a class="el" href="include_2mn__config_8hpp.html#afa89a82b841c0c8e4c5eb3c9dd60c20d">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#afa89a82b841c0c8e4c5eb3c9dd60c20d">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#afa89a82b841c0c8e4c5eb3c9dd60c20d">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT
-: <a class="el" href="include_2mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_TIMEOUT_QUEUE_DEFAULT
-: <a class="el" href="include_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a76b9342a36f28f62f27570399e60a725">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_TIMEOUT_SEMAPHORE_DEFAULT
-: <a class="el" href="include_2mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ad4336b36a6998360e0c17e166693f1e2">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_USE_EXCEPTIONS
-: <a class="el" href="include_2mn__config_8hpp.html#ac8cf48648de13dfd540bc2a9f1849279">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ac8cf48648de13dfd540bc2a9f1849279">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ac8cf48648de13dfd540bc2a9f1849279">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_USE_TRACE
-: <a class="el" href="include_2mn__config_8hpp.html#ab52fbf702e5cd328048240dd64178992">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ab52fbf702e5cd328048240dd64178992">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ab52fbf702e5cd328048240dd64178992">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_GETNEXTITEM_TIMEOUT
-: <a class="el" href="include_2mn__config_8hpp.html#a060f30c571d899925211c1f3ac054816">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a060f30c571d899925211c1f3ac054816">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a060f30c571d899925211c1f3ac054816">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_MULTI_MAXITEMS
-: <a class="el" href="include_2mn__config_8hpp.html#a7c285196ad60ff04d1bebd556eaa48c5">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a7c285196ad60ff04d1bebd556eaa48c5">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a7c285196ad60ff04d1bebd556eaa48c5">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_MULTI_PRIORITY
-: <a class="el" href="include_2mn__config_8hpp.html#ab4c34b9df0f9532a460738584f538e2a">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ab4c34b9df0f9532a460738584f538e2a">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ab4c34b9df0f9532a460738584f538e2a">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_MULTI_STACKSIZE
-: <a class="el" href="include_2mn__config_8hpp.html#a771ac26a0445c8ded5d5d2658b83265a">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a771ac26a0445c8ded5d5d2658b83265a">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a771ac26a0445c8ded5d5d2658b83265a">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_MULTI_WORKER
-: <a class="el" href="include_2mn__config_8hpp.html#a3135a204d86e78dc51aa638712a82bcb">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a3135a204d86e78dc51aa638712a82bcb">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a3135a204d86e78dc51aa638712a82bcb">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_MAXITEMS
-: <a class="el" href="include_2mn__config_8hpp.html#ae2cd1bd439df99613159cc6012920f16">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ae2cd1bd439df99613159cc6012920f16">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ae2cd1bd439df99613159cc6012920f16">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_PRIORITY
-: <a class="el" href="include_2mn__config_8hpp.html#a4872c5fc30c3382fe645408bf9501abf">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a4872c5fc30c3382fe645408bf9501abf">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a4872c5fc30c3382fe645408bf9501abf">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_WORKQUEUE_SINGLE_STACKSIZE
-: <a class="el" href="include_2mn__config_8hpp.html#ab0e9e87c8fd8cede584d680bcea94b8a">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ab0e9e87c8fd8cede584d680bcea94b8a">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ab0e9e87c8fd8cede584d680bcea94b8a">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_CONFIG_YES
-: <a class="el" href="include_2mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_DEBUG_VERSION
-: <a class="el" href="include_2mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_MAJOR_VERSION
-: <a class="el" href="include_2mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_MINOR_VERSION
-: <a class="el" href="include_2mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0">mn_config.hpp</a>
 </li>
 <li>MN_THREAD_VERSION_STRING
-: <a class="el" href="include_2mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab">include/mn_config.hpp</a>
-, <a class="el" href="test-ccc_2mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab">test-ccc/mn_config.hpp</a>
+: <a class="el" href="mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab">mn_config.hpp</a>
+</li>
+<li>MN_UNUSED_VARIABLE
+: <a class="el" href="mn__config_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">mn_config.hpp</a>
 </li>
 <li>MN_VOIDTYPE
 : <a class="el" href="mn__typetraits_8hpp.html#af0b50620fb7c0f5d06ef17fe516fed6c">mn_typetraits.hpp</a>
+</li>
+<li>MN_ZERO_SET
+: <a class="el" href="mn__config_8hpp.html#a8446b71b78dda75ad4a2c490a1a98da6">mn_config.hpp</a>
+</li>
+<li>MNALLOC_OBJECT
+: <a class="el" href="mn__allocator__object_8hpp.html#a490fd59cfab4af9070de48ecbe44b5a8">mn_allocator_object.hpp</a>
+</li>
+<li>MNALLOC_OBJECT_D0
+: <a class="el" href="mn__allocator__object_8hpp.html#a4a13fe4a72eabd7276facc4589ed3394">mn_allocator_object.hpp</a>
+</li>
+<li>MNALLOC_OBJECT_DONE
+: <a class="el" href="mn__allocator__object_8hpp.html#af873003fb9749720dfcdfe96e9020e04">mn_allocator_object.hpp</a>
+</li>
+<li>MNALLOC_OBJECT_DTHREE
+: <a class="el" href="mn__allocator__object_8hpp.html#a9786879a6324e8f6bbefdf2b43b742f7">mn_allocator_object.hpp</a>
+</li>
+<li>MNALLOC_OBJECT_DTWO
+: <a class="el" href="mn__allocator__object_8hpp.html#a2fe27184e205403bb425354c5a37d8bd">mn_allocator_object.hpp</a>
+</li>
+<li>MNNET_IP_BADCLASS
+: <a class="el" href="mn__basic__ip__address_8hpp.html#aa98a867c0898df7b12c30c8d472ff70f">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IP_EXPERIMENTAL
+: <a class="el" href="mn__basic__ip__address_8hpp.html#aa0a20497d5b53cb46fa5ee9805c72d67">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IP_MULTICAST
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a1b06df27195624c0006498d660bc5fe9">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT4
+: <a class="el" href="mn__basic__endpoint_8hpp.html#a9e814af50fca888dc197e93c397cb9df">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT4_ANY
+: <a class="el" href="mn__basic__endpoint_8hpp.html#aff47d66897f983072772ee53f7f35c4d">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT4_BROADCAST
+: <a class="el" href="mn__basic__endpoint_8hpp.html#ad42b2199c54ecaeec9b4dbf0d2e38189">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT4_EMPTY
+: <a class="el" href="mn__basic__endpoint_8hpp.html#a03d9f8ba2685f1b85383c45b5626421b">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT4_LOOPBACK
+: <a class="el" href="mn__basic__endpoint_8hpp.html#a7a2aff375caf743df5026edb596c7184">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT4_NONE
+: <a class="el" href="mn__basic__endpoint_8hpp.html#aff5cc5ecefeeca12420829086ecf8e61">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT6
+: <a class="el" href="mn__basic__endpoint_8hpp.html#ace81acab66c7cacdd9c3aba7cca7f85c">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT6_ANY
+: <a class="el" href="mn__basic__endpoint_8hpp.html#a2ec8f3f4f32922b1a14ea4aafa3a704a">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT6_EMPTY
+: <a class="el" href="mn__basic__endpoint_8hpp.html#ad62789794342c4270cbd094225140027">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPENDPOINT6_LOOPBACK
+: <a class="el" href="mn__basic__endpoint_8hpp.html#a9a2c5c5df717229d8528fc1dfd2f96bc">mn_basic_endpoint.hpp</a>
+</li>
+<li>MNNET_IPV4_ADDRESS_ANY
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV4_ADDRESS_BROADCAST
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a8aea294baae77073eb81b82940173f68">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV4_ADDRESS_BYTES
+: <a class="el" href="mn__basic__ip__address_8hpp.html#abea8c8f778041c439fd857bd79846518">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV4_ADDRESS_LOOPBACK
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a2332a0fd0dcc55f94f53470b0675a85e">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV4_ADDRESS_NONE
+: <a class="el" href="mn__basic__ip__address_8hpp.html#add8625f137a85439f98c073f3799ca09">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV6_ADDRESS_ANY
+: <a class="el" href="mn__basic__ip__address_8hpp.html#aded26fdcfcd57aa4299b191d90e24a7b">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV6_ADDRESS_BYTES
+: <a class="el" href="mn__basic__ip__address_8hpp.html#afb474349235b91beac363bdb140ae3f7">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV6_ADDRESS_LOOPBACK
+: <a class="el" href="mn__basic__ip__address_8hpp.html#aea970d5fa7f2826fc3a1fb1e2381fa43">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV6_ADDRESS_NONE
+: <a class="el" href="mn__basic__ip__address_8hpp.html#aa6972ddb10f46f1e4223dd8160b167ec">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV6_NEW_ARRAY_LOOP
+: <a class="el" href="mn__basic__ip__address_8hpp.html#ab390a4eb4c4b6c414ba74bd14420f9ba">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IPV6_NEW_ARRAY_NULL
+: <a class="el" href="mn__basic__ip__address_8hpp.html#ac155b06fe196dc5d0d1299e783d35648">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IS_CLASSA
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a5fe5604c25ddcd20d2aad1de2739e23b">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IS_CLASSB
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a9a05c709dcc47a70a1060b21b445f4f8">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IS_CLASSC
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a4fc2ff45afbb75bc8ea5ebb8224c7ed3">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_IS_CLASSD
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a7844a3c86d2d628c9f9972fda1724ffb">mn_basic_ip_address.hpp</a>
+</li>
+<li>MNNET_NUMBER_OF_LABELS
+: <a class="el" href="mn__basic__ip__address_8hpp.html#a6dd0df11ca1cc480dd877d0311799eb0">mn_basic_ip_address.hpp</a>
 </li>
 </ul>
 </div><!-- contents -->

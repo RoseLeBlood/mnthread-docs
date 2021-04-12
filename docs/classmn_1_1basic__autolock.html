@@ -147,13 +147,7 @@ $(document).ready(function(){initNavTree('classmn_1_1basic__autolock.html',''); 
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for mn::basic_autolock&lt; LOCK &gt;:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1basic__autolock__coll__graph.svg" width="176" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<p><code>#include &lt;<a class="el" href="mn__lock_8hpp_source.html">mn_lock.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -182,7 +176,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a6b8b55e6d8f99039dc6543beb53aee26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class LOCK = basic_mutex&gt;<br />
+<div class="textblock"><h3>template&lt;class LOCK&gt;<br />
 class mn::basic_autolock&lt; LOCK &gt;</h3>
 
 <p>Synchronization helper class that leverages the C++ language to help prevent deadlocks. This is a C++11 feature that allows <a class="el" href="classmn_1_1_i_lock_object.html">ILockObject</a> Locking and Unlocking to behave following an RAII style. The constructor of this helper object locks the <a class="el" href="classmn_1_1_i_lock_object.html">ILockObject</a>. The destructor unlocks the <a class="el" href="classmn_1_1_i_lock_object.html">ILockObject</a>. </p>
@@ -193,7 +187,7 @@ class mn::basic_autolock&lt; LOCK &gt;</h3>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -223,7 +217,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -269,7 +263,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -298,7 +292,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -328,7 +322,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -357,7 +351,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -384,7 +378,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -409,9 +403,9 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="line">  locked</div>
 <div class="line">}</div>
 <div class="line">unlocked</div>
-<div class="ttc" id="anamespacemn_html_a6e09b226c42d6d72e5e3f7cd518e89d5"><div class="ttname"><a href="namespacemn.html#a6e09b226c42d6d72e5e3f7cd518e89d5">mn::LockType_t</a></div><div class="ttdeci">binary_semaphore_t LockType_t</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:163</div></div>
-<div class="ttc" id="anamespacemn_html_a897578ea51b9d1f8bcbef7763677037b"><div class="ttname"><a href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">mn::lock</a></div><div class="ttdeci">int lock(TLOCK &amp;m1, unsigned int timeout)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:173</div></div>
-<div class="ttc" id="anamespacemn_html_ac31cad6a9d99e7654915635c2c4d8a1c"><div class="ttname"><a href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">mn::autolock_t</a></div><div class="ttdeci">basic_autolock&lt; LockType_t &gt; autolock_t</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:170</div></div>
+<div class="ttc" id="anamespacemn_html_a6e09b226c42d6d72e5e3f7cd518e89d5"><div class="ttname"><a href="namespacemn.html#a6e09b226c42d6d72e5e3f7cd518e89d5">mn::LockType_t</a></div><div class="ttdeci">binary_semaphore_t LockType_t</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:59</div></div>
+<div class="ttc" id="anamespacemn_html_a897578ea51b9d1f8bcbef7763677037b"><div class="ttname"><a href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">mn::lock</a></div><div class="ttdeci">int lock(TLOCK &amp;m1, unsigned int timeout)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:69</div></div>
+<div class="ttc" id="anamespacemn_html_ac31cad6a9d99e7654915635c2c4d8a1c"><div class="ttname"><a href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">mn::autolock_t</a></div><div class="ttdeci">basic_autolock&lt; LockType_t &gt; autolock_t</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:66</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -421,7 +415,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -450,7 +444,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -475,7 +469,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class LOCK  = basic_mutex&gt; </div>
+template&lt;class LOCK &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -495,7 +489,7 @@ template&lt;class LOCK  = basic_mutex&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="mn__autolock_8hpp_source.html">mn_autolock.hpp</a></li>
+<li><a class="el" href="mn__lock_8hpp_source.html">mn_lock.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

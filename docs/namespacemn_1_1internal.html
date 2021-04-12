@@ -140,7 +140,9 @@ $(document).ready(function(){initNavTree('namespacemn_1_1internal.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mn::internal Namespace Reference</div>  </div>
 </div><!--header-->
@@ -148,6 +150,16 @@ $(document).ready(function(){initNavTree('namespacemn_1_1internal.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1internal_1_1atomic__flag.html">atomic_flag</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1internal_1_1can__apply.html">can_apply</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1internal_1_1can__apply_3_01_z_00_01void__t_3_01_z_3_01_ts_8_8_8_01_4_01_4_00_01_ts_8_8_8_01_4.html">can_apply&lt; Z, void_t&lt; Z&lt; Ts... &gt; &gt;, Ts... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1internal_1_1res__of"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1res__of">res_of</a></td></tr>
+<tr class="separator:structmn_1_1internal_1_1res__of"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1internal_1_1res__of_3_01_g_07_args_8_8_8_08_00_01void__t_3_01invoke__t_3_01_g_00_01_args_8_8_8_01_4_01_4_01_4.html">res_of&lt; G(Args...), void_t&lt; invoke_t&lt; G, Args... &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1internal_1_1alignof__helper"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1alignof__helper">alignof_helper</a></td></tr>
 <tr class="separator:structmn_1_1internal_1_1alignof__helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1internal_1_1type__with__alignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment">type_with_alignment</a></td></tr>
@@ -167,23 +179,32 @@ Classes</h2></td></tr>
 <tr class="memitem:structmn_1_1internal_1_1type__with__alignment_3_0132_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_0132_01_4">type_with_alignment&lt; 32 &gt;</a></td></tr>
 <tr class="separator:structmn_1_1internal_1_1type__with__alignment_3_0132_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ac747922a9821e230c3d6e094914a475f"><td class="memTemplParams" colspan="2">template&lt;typename From , typename To &gt; </td></tr>
+<tr class="memitem:ac747922a9821e230c3d6e094914a475f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ac747922a9821e230c3d6e094914a475f">try_convert</a> = decltype(To{<a class="el" href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">declval</a>&lt; From &gt;()})</td></tr>
+<tr class="separator:ac747922a9821e230c3d6e094914a475f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524a17bb16be6911dad6c491c0d89f50"><td class="memTemplParams" colspan="2">template&lt;class G , class... Args&gt; </td></tr>
+<tr class="memitem:a524a17bb16be6911dad6c491c0d89f50"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a524a17bb16be6911dad6c491c0d89f50">invoke_t</a> = decltype(<a class="el" href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">declval</a>&lt; G &gt;()(<a class="el" href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">declval</a>&lt; Args &gt;()...))</td></tr>
+<tr class="separator:a524a17bb16be6911dad6c491c0d89f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a439797c10bb12b444723e6581118d20b"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a439797c10bb12b444723e6581118d20b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a439797c10bb12b444723e6581118d20b">distance</a> (TIter first, TIter last, TDist &amp;dist, std::random_access_iterator_tag)</td></tr>
-<tr class="separator:a439797c10bb12b444723e6581118d20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d1f65e5981b5715a88294330f9ab2a"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a89d1f65e5981b5715a88294330f9ab2a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a89d1f65e5981b5715a88294330f9ab2a">distance</a> (TIter first, TIter last, TDist &amp;dist, std::input_iterator_tag)</td></tr>
-<tr class="separator:a89d1f65e5981b5715a88294330f9ab2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c253eb018b10ade73dcd2c6df9e517f"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a6c253eb018b10ade73dcd2c6df9e517f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a6c253eb018b10ade73dcd2c6df9e517f">advance</a> (TIter &amp;iter, TDist d, std::random_access_iterator_tag)</td></tr>
-<tr class="separator:a6c253eb018b10ade73dcd2c6df9e517f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eb02a8d205e71b3eb2c190a992760ae"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a7eb02a8d205e71b3eb2c190a992760ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a7eb02a8d205e71b3eb2c190a992760ae">advance</a> (TIter &amp;iter, TDist d, std::bidirectional_iterator_tag)</td></tr>
-<tr class="separator:a7eb02a8d205e71b3eb2c190a992760ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ff3fb6de4d73c8d06cefc565bcbc1e"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a16ff3fb6de4d73c8d06cefc565bcbc1e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a16ff3fb6de4d73c8d06cefc565bcbc1e">advance</a> (TIter &amp;iter, TDist d, std::input_iterator_tag)</td></tr>
-<tr class="separator:a16ff3fb6de4d73c8d06cefc565bcbc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257455ffc20fbd5699983fc509a0a979"><td class="memTemplParams" colspan="2">template&lt;typename TIter &gt; </td></tr>
+<tr class="memitem:a257455ffc20fbd5699983fc509a0a979"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#structmn_1_1iterator__traits">iterator_traits</a>&lt; TIter &gt;::difference_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a257455ffc20fbd5699983fc509a0a979">distance</a> (TIter first, TIter last, <a class="el" href="structmn_1_1random__access__iterator__tag.html">mn::random_access_iterator_tag</a>)</td></tr>
+<tr class="separator:a257455ffc20fbd5699983fc509a0a979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be5517726bc6870072235a86c7bddaf"><td class="memTemplParams" colspan="2">template&lt;typename TIter &gt; </td></tr>
+<tr class="memitem:a2be5517726bc6870072235a86c7bddaf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#structmn_1_1iterator__traits">iterator_traits</a>&lt; TIter &gt;::difference_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a2be5517726bc6870072235a86c7bddaf">distance</a> (TIter first, TIter last, <a class="el" href="structmn_1_1input__iterator__tag.html">mn::input_iterator_tag</a>)</td></tr>
+<tr class="separator:a2be5517726bc6870072235a86c7bddaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855039beaa2706d1611e66f0d6a20f7d"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:a855039beaa2706d1611e66f0d6a20f7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a855039beaa2706d1611e66f0d6a20f7d">advance</a> (TIter &amp;iter, TDistance d, <a class="el" href="structmn_1_1random__access__iterator__tag.html">mn::random_access_iterator_tag</a>)</td></tr>
+<tr class="separator:a855039beaa2706d1611e66f0d6a20f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fd498e25868cc94db540ad4d71da7a"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:ab2fd498e25868cc94db540ad4d71da7a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ab2fd498e25868cc94db540ad4d71da7a">advance</a> (TIter &amp;iter, TDistance d, <a class="el" href="structmn_1_1bidirectional__iterator__tag.html">mn::bidirectional_iterator_tag</a>)</td></tr>
+<tr class="separator:ab2fd498e25868cc94db540ad4d71da7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772facf1e405e5b2938d90b2de09ee31"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:a772facf1e405e5b2938d90b2de09ee31"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a772facf1e405e5b2938d90b2de09ee31">advance</a> (TIter &amp;iter, TDistance d, <a class="el" href="structmn_1_1input__iterator__tag.html">mn::input_iterator_tag</a>)</td></tr>
+<tr class="separator:a772facf1e405e5b2938d90b2de09ee31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74470eacb750d9b974c8dfa6abc9d706"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a74470eacb750d9b974c8dfa6abc9d706">make_buffer</a> (T value)</td></tr>
 <tr class="memdesc:a74470eacb750d9b974c8dfa6abc9d706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the given pointer.  <a href="namespacemn_1_1internal.html#a74470eacb750d9b974c8dfa6abc9d706">More...</a><br /></td></tr>
 <tr class="separator:a74470eacb750d9b974c8dfa6abc9d706"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,32 +214,32 @@ Functions</h2></td></tr>
 <tr class="separator:a2f18691df902accab88bc23855f12d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44669e513b713bdc04a2fda09ed117e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a44669e513b713bdc04a2fda09ed117e5">quick_sort</a> (T *data, long low, long high, TPredicate pred)</td></tr>
 <tr class="separator:a44669e513b713bdc04a2fda09ed117e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43fb0357d54e902dbfdab614c84da25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ae43fb0357d54e902dbfdab614c84da25">down_heap</a> (T *data, size_t k, size_t n, TPredicate pred)</td></tr>
+<tr class="memitem:ae43fb0357d54e902dbfdab614c84da25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ae43fb0357d54e902dbfdab614c84da25">down_heap</a> (T *data, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> k, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> n, TPredicate pred)</td></tr>
 <tr class="separator:ae43fb0357d54e902dbfdab614c84da25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234542c4f8271495a09b10dc62bcb590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a234542c4f8271495a09b10dc62bcb590">copy_n</a> (const T *first, size_t n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
-<tr class="separator:a234542c4f8271495a09b10dc62bcb590"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a614c5b9596846502b27134a100a8b59d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a614c5b9596846502b27134a100a8b59d">copy_n</a> (const T *first, size_t n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
-<tr class="separator:a614c5b9596846502b27134a100a8b59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868a449d0c3150ef9f4dd3d2a45b3fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a868a449d0c3150ef9f4dd3d2a45b3fbc">copy_n</a> (const T *first, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
+<tr class="separator:a868a449d0c3150ef9f4dd3d2a45b3fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1547fa04ebe26588f8827f45c566c77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#af1547fa04ebe26588f8827f45c566c77">copy_n</a> (const T *first, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
+<tr class="separator:af1547fa04ebe26588f8827f45c566c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab86da4dde9d57bbf964806dc84af6c81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ab86da4dde9d57bbf964806dc84af6c81">copy</a> (const T *first, const T *last, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
 <tr class="separator:ab86da4dde9d57bbf964806dc84af6c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a952cf8d802075c490280775eb73fb408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a952cf8d802075c490280775eb73fb408">copy</a> (const T *first, const T *last, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
 <tr class="separator:a952cf8d802075c490280775eb73fb408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2ff9b80ba6ca7d2bca3ee32caf2ae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#aef2ff9b80ba6ca7d2bca3ee32caf2ae3">move_n</a> (const T *from, size_t n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
-<tr class="separator:aef2ff9b80ba6ca7d2bca3ee32caf2ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f4ae6c62255d1b41d497558455e9126"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a6f4ae6c62255d1b41d497558455e9126">move_n</a> (const T *first, size_t n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
-<tr class="separator:a6f4ae6c62255d1b41d497558455e9126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36427e41e53ba0d60030a87f96b71977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a36427e41e53ba0d60030a87f96b71977">move_n</a> (const T *from, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
+<tr class="separator:a36427e41e53ba0d60030a87f96b71977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62ffd99de38be6f61bdba3d883c5559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ab62ffd99de38be6f61bdba3d883c5559">move_n</a> (const T *first, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
+<tr class="separator:ab62ffd99de38be6f61bdba3d883c5559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3796a57b39de0e71c9f62353269cb1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#aa3796a57b39de0e71c9f62353269cb1b">move</a> (const T *first, const T *last, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
 <tr class="separator:aa3796a57b39de0e71c9f62353269cb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1f17b49ea329488a06995c8bc317c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a9c1f17b49ea329488a06995c8bc317c7">move</a> (const T *first, const T *last, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
 <tr class="separator:a9c1f17b49ea329488a06995c8bc317c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b381eeacb5ad12d95e7d801848d319a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a4b381eeacb5ad12d95e7d801848d319a">copy_construct_n</a> (const T *first, size_t n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
-<tr class="separator:a4b381eeacb5ad12d95e7d801848d319a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dea5640c60ed6b30499ce15d3f9635"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a23dea5640c60ed6b30499ce15d3f9635">copy_construct_n</a> (const T *first, size_t n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
-<tr class="separator:a23dea5640c60ed6b30499ce15d3f9635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add68c0c6d82d79809b0ccd7426d78b9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#add68c0c6d82d79809b0ccd7426d78b9f">destruct_n</a> (T *first, size_t n, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
-<tr class="separator:add68c0c6d82d79809b0ccd7426d78b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee158bd61bdf65ff8a6768b9c9e8251e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#aee158bd61bdf65ff8a6768b9c9e8251e">destruct_n</a> (T *, size_t, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
-<tr class="separator:aee158bd61bdf65ff8a6768b9c9e8251e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb44325635fb48f9a3d6287bbb42d9bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#acb44325635fb48f9a3d6287bbb42d9bd">copy_construct_n</a> (const T *first, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
+<tr class="separator:acb44325635fb48f9a3d6287bbb42d9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756c29b472bee83e5e0dd8c332961f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a756c29b472bee83e5e0dd8c332961f86">copy_construct_n</a> (const T *first, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> n, T *result, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
+<tr class="separator:a756c29b472bee83e5e0dd8c332961f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e40c78baab72c723847af2fa5fa2719"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a0e40c78baab72c723847af2fa5fa2719">destruct_n</a> (T *first, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> n, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
+<tr class="separator:a0e40c78baab72c723847af2fa5fa2719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d4690e0c4d0447d03e187703757ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ab9d4690e0c4d0447d03e187703757ee7">destruct_n</a> (T *, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
+<tr class="separator:ab9d4690e0c4d0447d03e187703757ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb35bb4899c7e643246627a0b6a9da1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#afb35bb4899c7e643246627a0b6a9da1f">destruct</a> (T *mem, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
 <tr class="separator:afb35bb4899c7e643246627a0b6a9da1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9897c95dbbfedee9564b096d308d187f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a9897c95dbbfedee9564b096d308d187f">destruct</a> (T *, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
@@ -231,16 +252,40 @@ Functions</h2></td></tr>
 <tr class="separator:a5fdca545ed5866d655d93af5753b2f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa879d37de88012b16f5d31b664cb2bcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#aa879d37de88012b16f5d31b664cb2bcf">copy_construct</a> (T *mem, const T &amp;orig, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
 <tr class="separator:aa879d37de88012b16f5d31b664cb2bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962bb7f8d42dd7e14b3d1c5338b30283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a962bb7f8d42dd7e14b3d1c5338b30283">construct_n</a> (T *to, size_t count, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
-<tr class="separator:a962bb7f8d42dd7e14b3d1c5338b30283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d626cbc8890d4513a158f20665d9e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a0d626cbc8890d4513a158f20665d9e4a">construct_n</a> (T *to, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> count, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; false &gt;)</td></tr>
+<tr class="separator:a0d626cbc8890d4513a158f20665d9e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3726ffddad8736c4bf14153252441682"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a3726ffddad8736c4bf14153252441682">construct_n</a> (T *, int, <a class="el" href="structmn_1_1int__to__type.html">int_to_type</a>&lt; true &gt;)</td></tr>
 <tr class="separator:a3726ffddad8736c4bf14153252441682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad00545828cb74e7ad65b9b230501df18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ad00545828cb74e7ad65b9b230501df18">test_ordering</a> (TIter first, TIter last, const TPred &amp;pred)</td></tr>
 <tr class="separator:ad00545828cb74e7ad65b9b230501df18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a429140694cbb2e4b88112d23f8054edd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a429140694cbb2e4b88112d23f8054edd">debug_pred</a> (const TPred &amp;pred, const T1 &amp;a, const T2 &amp;b)</td></tr>
 <tr class="separator:a429140694cbb2e4b88112d23f8054edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb33ee16a070810287a5dbc3cf86318d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#abb33ee16a070810287a5dbc3cf86318d">get_new_id</a> ()</td></tr>
+<tr class="separator:abb33ee16a070810287a5dbc3cf86318d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a5cbb8ced57c3f0abaad8aafdd0db8f5d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a5cbb8ced57c3f0abaad8aafdd0db8f5d">__id_rnioeu</a> = 0</td></tr>
+<tr class="separator:a5cbb8ced57c3f0abaad8aafdd0db8f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="structmn_1_1internal_1_1res__of" id="structmn_1_1internal_1_1res__of"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1internal_1_1res__of">&#9670;&nbsp;</a></span>mn::internal::res_of</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::res_of</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;class Sig, class = void&gt;<br />
+struct mn::internal::res_of&lt; Sig, class &gt;</h3>
+
+</div>
+</div>
+</div>
 <a name="structmn_1_1internal_1_1alignof__helper" id="structmn_1_1internal_1_1alignof__helper"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1internal_1_1alignof__helper">&#9670;&nbsp;</a></span>mn::internal::alignof_helper</h2>
 
@@ -451,6 +496,39 @@ member</td>
 
 </div>
 </div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a524a17bb16be6911dad6c491c0d89f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a524a17bb16be6911dad6c491c0d89f50">&#9670;&nbsp;</a></span>invoke_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class G , class... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1internal.html#a524a17bb16be6911dad6c491c0d89f50">mn::internal::invoke_t</a> = typedef decltype(<a class="el" href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">declval</a>&lt;G&gt;()(<a class="el" href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">declval</a>&lt;Args&gt;()...))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac747922a9821e230c3d6e094914a475f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac747922a9821e230c3d6e094914a475f">&#9670;&nbsp;</a></span>try_convert</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename From , typename To &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1internal.html#ac747922a9821e230c3d6e094914a475f">mn::internal::try_convert</a> = typedef decltype(To{<a class="el" href="namespacemn.html#a1db3e24baedfe1c8979f6d64bba89765">declval</a>&lt;From&gt;()})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a2f18691df902accab88bc23855f12d54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f18691df902accab88bc23855f12d54">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[1/2]</span></h2>
@@ -488,13 +566,13 @@ member</td>
 
 </div>
 </div>
-<a id="a7eb02a8d205e71b3eb2c190a992760ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eb02a8d205e71b3eb2c190a992760ae">&#9670;&nbsp;</a></span>advance() <span class="overload">[1/3]</span></h2>
+<a id="ab2fd498e25868cc94db540ad4d71da7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2fd498e25868cc94db540ad4d71da7a">&#9670;&nbsp;</a></span>advance() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TIter , typename TDist &gt; </div>
+template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -508,13 +586,13 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TDist&#160;</td>
+          <td class="paramtype">TDistance&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::bidirectional_iterator_tag&#160;</td>
+          <td class="paramtype"><a class="el" href="structmn_1_1bidirectional__iterator__tag.html">mn::bidirectional_iterator_tag</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -532,13 +610,13 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a16ff3fb6de4d73c8d06cefc565bcbc1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16ff3fb6de4d73c8d06cefc565bcbc1e">&#9670;&nbsp;</a></span>advance() <span class="overload">[2/3]</span></h2>
+<a id="a772facf1e405e5b2938d90b2de09ee31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772facf1e405e5b2938d90b2de09ee31">&#9670;&nbsp;</a></span>advance() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TIter , typename TDist &gt; </div>
+template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -552,13 +630,13 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TDist&#160;</td>
+          <td class="paramtype">TDistance&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::input_iterator_tag&#160;</td>
+          <td class="paramtype"><a class="el" href="structmn_1_1input__iterator__tag.html">mn::input_iterator_tag</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -576,13 +654,13 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a6c253eb018b10ade73dcd2c6df9e517f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c253eb018b10ade73dcd2c6df9e517f">&#9670;&nbsp;</a></span>advance() <span class="overload">[3/3]</span></h2>
+<a id="a855039beaa2706d1611e66f0d6a20f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a855039beaa2706d1611e66f0d6a20f7d">&#9670;&nbsp;</a></span>advance() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TIter , typename TDist &gt; </div>
+template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -596,13 +674,13 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TDist&#160;</td>
+          <td class="paramtype">TDistance&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::random_access_iterator_tag&#160;</td>
+          <td class="paramtype"><a class="el" href="structmn_1_1random__access__iterator__tag.html">mn::random_access_iterator_tag</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -726,8 +804,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a962bb7f8d42dd7e14b3d1c5338b30283"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a962bb7f8d42dd7e14b3d1c5338b30283">&#9670;&nbsp;</a></span>construct_n() <span class="overload">[2/2]</span></h2>
+<a id="a0d626cbc8890d4513a158f20665d9e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d626cbc8890d4513a158f20665d9e4a">&#9670;&nbsp;</a></span>construct_n() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -741,7 +819,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname"><em>count</em>, </td>
         </tr>
         <tr>
@@ -924,8 +1002,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a4b381eeacb5ad12d95e7d801848d319a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b381eeacb5ad12d95e7d801848d319a">&#9670;&nbsp;</a></span>copy_construct_n() <span class="overload">[1/2]</span></h2>
+<a id="acb44325635fb48f9a3d6287bbb42d9bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb44325635fb48f9a3d6287bbb42d9bd">&#9670;&nbsp;</a></span>copy_construct_n() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -939,7 +1017,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -964,8 +1042,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a23dea5640c60ed6b30499ce15d3f9635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23dea5640c60ed6b30499ce15d3f9635">&#9670;&nbsp;</a></span>copy_construct_n() <span class="overload">[2/2]</span></h2>
+<a id="a756c29b472bee83e5e0dd8c332961f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756c29b472bee83e5e0dd8c332961f86">&#9670;&nbsp;</a></span>copy_construct_n() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -979,7 +1057,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -1004,8 +1082,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a234542c4f8271495a09b10dc62bcb590"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a234542c4f8271495a09b10dc62bcb590">&#9670;&nbsp;</a></span>copy_n() <span class="overload">[1/2]</span></h2>
+<a id="a868a449d0c3150ef9f4dd3d2a45b3fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a868a449d0c3150ef9f4dd3d2a45b3fbc">&#9670;&nbsp;</a></span>copy_n() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1019,7 +1097,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -1044,8 +1122,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a614c5b9596846502b27134a100a8b59d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a614c5b9596846502b27134a100a8b59d">&#9670;&nbsp;</a></span>copy_n() <span class="overload">[2/2]</span></h2>
+<a id="af1547fa04ebe26588f8827f45c566c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1547fa04ebe26588f8827f45c566c77">&#9670;&nbsp;</a></span>copy_n() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1059,7 +1137,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -1190,8 +1268,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="aee158bd61bdf65ff8a6768b9c9e8251e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee158bd61bdf65ff8a6768b9c9e8251e">&#9670;&nbsp;</a></span>destruct_n() <span class="overload">[1/2]</span></h2>
+<a id="ab9d4690e0c4d0447d03e187703757ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d4690e0c4d0447d03e187703757ee7">&#9670;&nbsp;</a></span>destruct_n() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1208,7 +1286,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -1232,8 +1310,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="add68c0c6d82d79809b0ccd7426d78b9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add68c0c6d82d79809b0ccd7426d78b9f">&#9670;&nbsp;</a></span>destruct_n() <span class="overload">[2/2]</span></h2>
+<a id="a0e40c78baab72c723847af2fa5fa2719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e40c78baab72c723847af2fa5fa2719">&#9670;&nbsp;</a></span>destruct_n() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1247,7 +1325,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -1266,19 +1344,19 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a89d1f65e5981b5715a88294330f9ab2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89d1f65e5981b5715a88294330f9ab2a">&#9670;&nbsp;</a></span>distance() <span class="overload">[1/2]</span></h2>
+<a id="a2be5517726bc6870072235a86c7bddaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be5517726bc6870072235a86c7bddaf">&#9670;&nbsp;</a></span>distance() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TIter , typename TDist &gt; </div>
+template&lt;typename TIter &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mn::internal::distance </td>
+          <td class="memname"><a class="el" href="namespacemn.html#structmn_1_1iterator__traits">iterator_traits</a>&lt;TIter&gt;::difference_type mn::internal::distance </td>
           <td>(</td>
           <td class="paramtype">TIter&#160;</td>
           <td class="paramname"><em>first</em>, </td>
@@ -1292,13 +1370,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TDist &amp;&#160;</td>
-          <td class="paramname"><em>dist</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::input_iterator_tag&#160;</td>
+          <td class="paramtype"><a class="el" href="structmn_1_1input__iterator__tag.html">mn::input_iterator_tag</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1316,19 +1388,19 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a439797c10bb12b444723e6581118d20b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a439797c10bb12b444723e6581118d20b">&#9670;&nbsp;</a></span>distance() <span class="overload">[2/2]</span></h2>
+<a id="a257455ffc20fbd5699983fc509a0a979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257455ffc20fbd5699983fc509a0a979">&#9670;&nbsp;</a></span>distance() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TIter , typename TDist &gt; </div>
+template&lt;typename TIter &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mn::internal::distance </td>
+          <td class="memname"><a class="el" href="namespacemn.html#structmn_1_1iterator__traits">iterator_traits</a>&lt;TIter&gt;::difference_type mn::internal::distance </td>
           <td>(</td>
           <td class="paramtype">TIter&#160;</td>
           <td class="paramname"><em>first</em>, </td>
@@ -1342,13 +1414,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TDist &amp;&#160;</td>
-          <td class="paramname"><em>dist</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::random_access_iterator_tag&#160;</td>
+          <td class="paramtype"><a class="el" href="structmn_1_1random__access__iterator__tag.html">mn::random_access_iterator_tag</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1381,13 +1447,13 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
           <td class="paramname"><em>k</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -1402,6 +1468,31 @@ template&lt;typename TIter , typename TDist &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb33ee16a070810287a5dbc3cf86318d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb33ee16a070810287a5dbc3cf86318d">&#9670;&nbsp;</a></span>get_new_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t mn::internal::get_new_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1545,8 +1636,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="a6f4ae6c62255d1b41d497558455e9126"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f4ae6c62255d1b41d497558455e9126">&#9670;&nbsp;</a></span>move_n() <span class="overload">[1/2]</span></h2>
+<a id="ab62ffd99de38be6f61bdba3d883c5559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62ffd99de38be6f61bdba3d883c5559">&#9670;&nbsp;</a></span>move_n() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1563,7 +1654,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -1593,8 +1684,8 @@ template&lt;typename TIter , typename TDist &gt; </div>
 
 </div>
 </div>
-<a id="aef2ff9b80ba6ca7d2bca3ee32caf2ae3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef2ff9b80ba6ca7d2bca3ee32caf2ae3">&#9670;&nbsp;</a></span>move_n() <span class="overload">[2/2]</span></h2>
+<a id="a36427e41e53ba0d60030a87f96b71977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36427e41e53ba0d60030a87f96b71977">&#9670;&nbsp;</a></span>move_n() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1611,7 +1702,7 @@ template&lt;typename TIter , typename TDist &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -1709,6 +1800,21 @@ template&lt;typename TIter , typename TDist &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a5cbb8ced57c3f0abaad8aafdd0db8f5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbb8ced57c3f0abaad8aafdd0db8f5d">&#9670;&nbsp;</a></span>__id_rnioeu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t mn::internal::__id_rnioeu = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">

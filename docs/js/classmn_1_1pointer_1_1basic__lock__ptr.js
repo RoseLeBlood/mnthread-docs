@@ -1,17 +1,26 @@
 var classmn_1_1pointer_1_1basic__lock__ptr =
 [
+    [ "const_pointer", "classmn_1_1pointer_1_1basic__lock__ptr.html#a07b082b9a3bb5328aab019501a9377cc", null ],
+    [ "const_reference", "classmn_1_1pointer_1_1basic__lock__ptr.html#a18f686fd859a1f1d3a64d2ddd04a71f9", null ],
+    [ "const_value_type", "classmn_1_1pointer_1_1basic__lock__ptr.html#a343e19e365053eac6e6113a3aa9558f5", null ],
     [ "lock_type", "classmn_1_1pointer_1_1basic__lock__ptr.html#aaedf1a625ef570a3424cd4333ef06a8a", null ],
-    [ "pointer", "classmn_1_1pointer_1_1basic__lock__ptr.html#a70e5b3208ad5c2cf6303502f1b15b2a0", null ],
+    [ "pointer", "classmn_1_1pointer_1_1basic__lock__ptr.html#a70999b7d759a08b62bce37e8f02a9ccb", null ],
+    [ "reference", "classmn_1_1pointer_1_1basic__lock__ptr.html#aec64a73ef2106d51253e00b4be6915ed", null ],
     [ "self_type", "classmn_1_1pointer_1_1basic__lock__ptr.html#a53e20b72167c8d1ae593d8688129f459", null ],
     [ "value_type", "classmn_1_1pointer_1_1basic__lock__ptr.html#af266e497393ac7183976fb4f88afa2a0", null ],
-    [ "basic_lock_ptr", "classmn_1_1pointer_1_1basic__lock__ptr.html#a38009bae23eeb81aaf3f478e62e8ae09", null ],
+    [ "basic_lock_ptr", "classmn_1_1pointer_1_1basic__lock__ptr.html#ade1f32cc756832d72c316c8263b6391b", null ],
     [ "~basic_lock_ptr", "classmn_1_1pointer_1_1basic__lock__ptr.html#abde9c911a3800980d209a85f1f63475b", null ],
     [ "basic_lock_ptr", "classmn_1_1pointer_1_1basic__lock__ptr.html#ab22a3414098b4ed8f38b424df65cf4c5", null ],
-    [ "get", "classmn_1_1pointer_1_1basic__lock__ptr.html#a76249a5c7d31fb74217879d2fc53a063", null ],
-    [ "get", "classmn_1_1pointer_1_1basic__lock__ptr.html#a436dba7e4689bea182798bb95468c6df", null ],
-    [ "operator*", "classmn_1_1pointer_1_1basic__lock__ptr.html#a9a54c9691da4128cd659bcb845ad73f9", null ],
-    [ "operator->", "classmn_1_1pointer_1_1basic__lock__ptr.html#a98509cdf6a97f84ce50fd3fa7b4fda87", null ],
+    [ "get", "classmn_1_1pointer_1_1basic__lock__ptr.html#ab11c36b38511c7d8e8a9213f12be2455", null ],
+    [ "get", "classmn_1_1pointer_1_1basic__lock__ptr.html#a1980c0dd4ce3db19c97d99aa9ed55094", null ],
+    [ "get_lock", "classmn_1_1pointer_1_1basic__lock__ptr.html#a501d6b8f3b6e321882a5d6f3582bbbb1", null ],
+    [ "operator*", "classmn_1_1pointer_1_1basic__lock__ptr.html#a2b4eeec619973a7304fceb1ac1fe8285", null ],
+    [ "operator*", "classmn_1_1pointer_1_1basic__lock__ptr.html#a21b0ee98958397cca04750300667d4e5", null ],
+    [ "operator->", "classmn_1_1pointer_1_1basic__lock__ptr.html#a904121bf9349569b7ee0c86db660e55e", null ],
+    [ "operator->", "classmn_1_1pointer_1_1basic__lock__ptr.html#a4c96210421afb2beb2a672316860a4e1", null ],
     [ "operator=", "classmn_1_1pointer_1_1basic__lock__ptr.html#a23ec8b6063818c3688f13d858d64eb6a", null ],
+    [ "release", "classmn_1_1pointer_1_1basic__lock__ptr.html#ac4035eb7365d3be3ca197bce784d5655", null ],
+    [ "reset", "classmn_1_1pointer_1_1basic__lock__ptr.html#a0ca1d49fcd03a616151ea15469266ee5", null ],
     [ "m_lock", "classmn_1_1pointer_1_1basic__lock__ptr.html#a300a7a366501e56aba48d3478d16228f", null ],
-    [ "m_ptr", "classmn_1_1pointer_1_1basic__lock__ptr.html#a689bf5da46f155adc0e0e5f2deea24b1", null ]
+    [ "m_ptr", "classmn_1_1pointer_1_1basic__lock__ptr.html#ae25e7c88e3380956a94eb7eae42110c6", null ]
 ];

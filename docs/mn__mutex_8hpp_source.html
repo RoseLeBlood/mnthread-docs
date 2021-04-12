@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('mn__mutex_8hpp_source.html',''); initR
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_MUTEX_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__basic__semaphore_8hpp.html">mn_basic_semaphore.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="test-ccc_2mn__error_8hpp.html">mn_error.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__error_8hpp.html">mn_error.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classmn_1_1basic__mutex.html">   33</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classmn_1_1basic__mutex.html">basic_mutex</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1basic__semaphore.html">basic_semaphore</a> {</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('mn__mutex_8hpp_source.html',''); initR
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classmn_1_1basic__mutex.html#a00756a1b8566f4de12142987f3623f84">basic_mutex</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classmn_1_1basic__mutex.html#a752adf3b0de7b88595219718e2d11730">~basic_mutex</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1basic__mutex.html#ab56fead9a48e8874d056327a040a864b">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = <a class="code" href="include_2mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1basic__mutex.html#ab56fead9a48e8874d056327a040a864b">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = <a class="code" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1basic__mutex.html#a92e275601418995dc4de841247297296">unlock</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  };</div>
@@ -190,10 +190,10 @@ $(document).ready(function(){initNavTree('mn__mutex_8hpp_source.html',''); initR
 <div class="ttc" id="aclassmn_1_1basic__mutex_html_a92e275601418995dc4de841247297296"><div class="ttname"><a href="classmn_1_1basic__mutex.html#a92e275601418995dc4de841247297296">mn::basic_mutex::unlock</a></div><div class="ttdeci">virtual int unlock()</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:80</div></div>
 <div class="ttc" id="aclassmn_1_1basic__mutex_html_ab56fead9a48e8874d056327a040a864b"><div class="ttname"><a href="classmn_1_1basic__mutex.html#ab56fead9a48e8874d056327a040a864b">mn::basic_mutex::lock</a></div><div class="ttdeci">virtual int lock(unsigned int timeout=MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT)</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:59</div></div>
 <div class="ttc" id="aclassmn_1_1basic__semaphore_html"><div class="ttname"><a href="classmn_1_1basic__semaphore.html">mn::basic_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_basic_semaphore.hpp:63</div></div>
-<div class="ttc" id="ainclude_2mn__config_8hpp_html_a20fe1420e9a6d53d806d9d5e3a6cefc4"><div class="ttname"><a href="include_2mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</div><div class="ttdef"><b>Definition:</b> include/mn_config.hpp:336</div></div>
 <div class="ttc" id="amn__basic__semaphore_8hpp_html"><div class="ttname"><a href="mn__basic__semaphore_8hpp.html">mn_basic_semaphore.hpp</a></div></div>
-<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_lock_exptions.hpp:26</div></div>
-<div class="ttc" id="atest-ccc_2mn__error_8hpp_html"><div class="ttname"><a href="test-ccc_2mn__error_8hpp.html">mn_error.hpp</a></div></div>
+<div class="ttc" id="amn__config_8hpp_html_a20fe1420e9a6d53d806d9d5e3a6cefc4"><div class="ttname"><a href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</div><div class="ttdef"><b>Definition:</b> mn_config.hpp:375</div></div>
+<div class="ttc" id="amn__error_8hpp_html"><div class="ttname"><a href="mn__error_8hpp.html">mn_error.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

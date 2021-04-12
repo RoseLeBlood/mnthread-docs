@@ -145,15 +145,17 @@ $(document).ready(function(){initNavTree('mn__pointer_8hpp.html',''); initResiza
 <div class="title">mn_pointer.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="include_2mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="include_2mn__allocator_8hpp_source.html">mn_allocator.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__allocator_8hpp_source.html">mn_allocator.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__save__ptr_8hpp_source.html">pointer/mn_save_ptr.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__clone__ptr_8hpp_source.html">pointer/mn_clone_ptr.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__shared__ptr_8hpp_source.html">pointer/mn_shared_ptr.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__scoped__ptr_8hpp_source.html">pointer/mn_scoped_ptr.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__lock__ptr_8hpp_source.html">pointer/mn_lock_ptr.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__weak__ptr_8hpp_source.html">pointer/mn_weak_ptr.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__linked__ptr_8hpp_source.html">pointer/mn_linked_ptr.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__any__ptr_8hpp_source.html">pointer/mn_any_ptr.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__pointer_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -166,6 +168,26 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2225f5ab0b440798d1e0d11553f4ef3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a2225f5ab0b440798d1e0d11553f4ef3b">mn::MN_TEMPLATE_USING_ONE</a> (clone_ptr, pointer::basic_clone_ptr, typename, T)</td></tr>
+<tr class="separator:a2225f5ab0b440798d1e0d11553f4ef3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a969ce3de0fb405b7dbe414bccb2a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a56a969ce3de0fb405b7dbe414bccb2a8">mn::MN_TEMPLATE_USING_TWO</a> (clone_ptr_ex, pointer::basic_clone_ptr, typename, T, class, TInterface)</td></tr>
+<tr class="separator:a56a969ce3de0fb405b7dbe414bccb2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe194125ecd203d4d61a95a795f1d6b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#afe194125ecd203d4d61a95a795f1d6b3">mn::MN_TEMPLATE_USING_ONE</a> (shared_ptr, pointer::basic_shared_ptr, typename, T)</td></tr>
+<tr class="separator:afe194125ecd203d4d61a95a795f1d6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24f7371d8c507acc10cd717806ef634"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ad24f7371d8c507acc10cd717806ef634">mn::MN_TEMPLATE_USING_ONE</a> (scoped_ptr, pointer::basic_scoped_ptr, typename, T)</td></tr>
+<tr class="separator:ad24f7371d8c507acc10cd717806ef634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9581945d9946328c20558f78c9c25b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#aa9581945d9946328c20558f78c9c25b8">mn::MN_TEMPLATE_USING_ONE</a> (save_ptr, pointer::basic_save_ptr, typename, T)</td></tr>
+<tr class="separator:aa9581945d9946328c20558f78c9c25b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca985f14a8f21e038df10a746151ba89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#aca985f14a8f21e038df10a746151ba89">mn::MN_TEMPLATE_USING_ONE</a> (lock_ptr, pointer::basic_save_ptr, typename, T)</td></tr>
+<tr class="separator:aca985f14a8f21e038df10a746151ba89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4c55ea85445907252a6e9feb31940d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a1c4c55ea85445907252a6e9feb31940d">mn::MN_TEMPLATE_USING_TWO</a> (lock_ptr_ex, pointer::basic_lock_ptr, typename, T, class, TLOCK)</td></tr>
+<tr class="separator:a1c4c55ea85445907252a6e9feb31940d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad748b0c6b5678766589f6791f24b167f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ad748b0c6b5678766589f6791f24b167f">mn::MN_TEMPLATE_USING_ONE</a> (weak_ptr, pointer::basic_weak_ptr, typename, T)</td></tr>
+<tr class="separator:ad748b0c6b5678766589f6791f24b167f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28a820b9cee7189b500e0feb997bd5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ac28a820b9cee7189b500e0feb997bd5f">mn::MN_TEMPLATE_USING_ONE</a> (linked_ptr, pointer::basic_linked_ptr, typename, T)</td></tr>
+<tr class="separator:ac28a820b9cee7189b500e0feb997bd5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe90e66c5bc88ab6d64d198f55869d50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#afe90e66c5bc88ab6d64d198f55869d50">mn::MN_TEMPLATE_USING</a> (any_ptr, pointer::basic_any_ptr&lt; void &gt;)</td></tr>
+<tr class="separator:afe90e66c5bc88ab6d64d198f55869d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4352f0c7c93840928d10f63cca6c8a98"><td class="memItemLeft" align="right" valign="top">lock_ptr_ex&lt; T, TLOCK &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4352f0c7c93840928d10f63cca6c8a98">mn::lock_object</a> (volatile T *v, TLOCK &amp;m)</td></tr>
 <tr class="separator:a4352f0c7c93840928d10f63cca6c8a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75bcd5391b47de96b8a65c935d91771"><td class="memItemLeft" align="right" valign="top">lock_ptr_ex&lt; T, LockType_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ae75bcd5391b47de96b8a65c935d91771">mn::lock_object</a> (volatile T *v, LockType_t &amp;m)</td></tr>
@@ -183,6 +205,12 @@ Functions</h2></td></tr>
 <tr class="separator:aa2fec493f23f9ff46ffc0a3904567329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa07393f12146b3f1e2478c76c45401bb"><td class="memItemLeft" align="right" valign="top">weak_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#aa07393f12146b3f1e2478c76c45401bb">mn::make_weak</a> (T *value)</td></tr>
 <tr class="separator:aa07393f12146b3f1e2478c76c45401bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae23871d712115b179f5b7b08140906"><td class="memItemLeft" align="right" valign="top">linked_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a3ae23871d712115b179f5b7b08140906">mn::make_link</a> (const linked_ptr&lt; T &gt; &amp;value)</td></tr>
+<tr class="separator:a3ae23871d712115b179f5b7b08140906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad29511f4d249e471317d5ed55c0e74c3"><td class="memItemLeft" align="right" valign="top">linked_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ad29511f4d249e471317d5ed55c0e74c3">mn::make_link</a> (const linked_ptr&lt; U &gt; &amp;value)</td></tr>
+<tr class="separator:ad29511f4d249e471317d5ed55c0e74c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0630ac3e3c916fafa40c66b6afb4faae"><td class="memItemLeft" align="right" valign="top">linked_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a0630ac3e3c916fafa40c66b6afb4faae">mn::make_link</a> (T *value)</td></tr>
+<tr class="separator:a0630ac3e3c916fafa40c66b6afb4faae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e6c465fc6b895658830a785052d2e89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a6e6c465fc6b895658830a785052d2e89">mn::swap</a> (scoped_ptr&lt; T &gt; &amp;a, scoped_ptr&lt; T &gt; &amp;b)</td></tr>
 <tr class="separator:a6e6c465fc6b895658830a785052d2e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3abee346cb51ee2a62576c821e5f67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ace3abee346cb51ee2a62576c821e5f67">mn::swap</a> (save_ptr&lt; T &gt; &amp;a, save_ptr&lt; T &gt; &amp;b)</td></tr>

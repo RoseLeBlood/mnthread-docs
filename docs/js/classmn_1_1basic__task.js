@@ -1,9 +1,5 @@
 var classmn_1_1basic__task =
 [
-    [ "event", "classmn_1_1basic__task.html#aec5272e9b704031709c7859c55ead2fd", [
-      [ "EventStarted", "classmn_1_1basic__task.html#aec5272e9b704031709c7859c55ead2fdaaeef54ace5eb76ca85417ac1bda98db4", null ],
-      [ "EventJoin", "classmn_1_1basic__task.html#aec5272e9b704031709c7859c55ead2fdaddf5f4430c1b01dd579a2712bb8107eb", null ]
-    ] ],
     [ "priority", "classmn_1_1basic__task.html#a0c09dddcc768da659421d4883155f544", [
       [ "PriorityIdle", "classmn_1_1basic__task.html#a0c09dddcc768da659421d4883155f544a79e263db099ac93391ac6ec3bc4b42ef", null ],
       [ "PriorityLow", "classmn_1_1basic__task.html#a0c09dddcc768da659421d4883155f544a17daf3aaca57324baba76719a9ee121c", null ],
@@ -39,8 +35,6 @@ var classmn_1_1basic__task =
     [ "get_time_since_start", "classmn_1_1basic__task.html#a3962a2cbadba2e140e4284d97fbb956b", null ],
     [ "is_current", "classmn_1_1basic__task.html#a5462b87bc1c9ad7b9473dac3e616dad1", null ],
     [ "is_running", "classmn_1_1basic__task.html#a4855cbfb4d33c7548c9ff14424d8aef8", null ],
-    [ "join", "classmn_1_1basic__task.html#a6c6977718f78636516fb2fae650c3863", null ],
-    [ "join", "classmn_1_1basic__task.html#acde326c48e29382eb88af97c273b0d86", null ],
     [ "kill", "classmn_1_1basic__task.html#aa4761a5a33df28905ea5ef7bd2696852", null ],
     [ "nsleep", "classmn_1_1basic__task.html#a6aef640316dce54d7212da5ca6ba1d78", null ],
     [ "on_cleanup", "classmn_1_1basic__task.html#aec7c186a627db2b8e46b9a7dd49c9e50", null ],
@@ -63,13 +57,10 @@ var classmn_1_1basic__task =
     [ "suspend", "classmn_1_1basic__task.html#af7f34765d6872a0c1fbfd3307c6cea7e", null ],
     [ "suspend", "classmn_1_1basic__task.html#adcf483bab21d18da3f405d80950fe775", null ],
     [ "usleep", "classmn_1_1basic__task.html#a77481d57a51c04a7d9ea52dd2c5457d4", null ],
-    [ "wait", "classmn_1_1basic__task.html#aa58ae4f070d798246d9ec6123613c95b", null ],
-    [ "wait", "classmn_1_1basic__task.html#ac86a461d7cbfe937ad0a07e6fadccf95", null ],
     [ "yield", "classmn_1_1basic__task.html#a52cd13edef290f97ace2033094e3fdba", null ],
     [ "m_bRunning", "classmn_1_1basic__task.html#a90c2b3608c974bccfc08192fbd74120e", null ],
     [ "m_contextMutext", "classmn_1_1basic__task.html#adcdfa4dc9c594abcfcafc51f5678846c", null ],
     [ "m_continuemutex", "classmn_1_1basic__task.html#a2eb3eb89bfcf48ddd994d3cb8fe6498f", null ],
-    [ "m_event", "classmn_1_1basic__task.html#ac64d43213731f0f52df40d9bc18c0d78", null ],
     [ "m_iCore", "classmn_1_1basic__task.html#ad472525d18a61e44c48d23da2b73a6b4", null ],
     [ "m_iID", "classmn_1_1basic__task.html#a3921ed6afac734c30c26f8dd2fdc8f13", null ],
     [ "m_pChild", "classmn_1_1basic__task.html#a1fa4900a1bac551a23fc1fc86c34efff", null ],

@@ -147,7 +147,8 @@ $(document).ready(function(){initNavTree('mn__iterator_8hpp.html',''); initResiz
 <div class="title">mn_iterator.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__def_8hpp_source.html">mn_def.hpp</a>&quot;</code><br />
+</div>
 <p><a href="mn__iterator_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -185,21 +186,33 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a439797c10bb12b444723e6581118d20b"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a439797c10bb12b444723e6581118d20b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a439797c10bb12b444723e6581118d20b">mn::internal::distance</a> (TIter first, TIter last, TDist &amp;dist, std::random_access_iterator_tag)</td></tr>
-<tr class="separator:a439797c10bb12b444723e6581118d20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d1f65e5981b5715a88294330f9ab2a"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a89d1f65e5981b5715a88294330f9ab2a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a89d1f65e5981b5715a88294330f9ab2a">mn::internal::distance</a> (TIter first, TIter last, TDist &amp;dist, std::input_iterator_tag)</td></tr>
-<tr class="separator:a89d1f65e5981b5715a88294330f9ab2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c253eb018b10ade73dcd2c6df9e517f"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a6c253eb018b10ade73dcd2c6df9e517f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a6c253eb018b10ade73dcd2c6df9e517f">mn::internal::advance</a> (TIter &amp;iter, TDist d, std::random_access_iterator_tag)</td></tr>
-<tr class="separator:a6c253eb018b10ade73dcd2c6df9e517f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eb02a8d205e71b3eb2c190a992760ae"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a7eb02a8d205e71b3eb2c190a992760ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a7eb02a8d205e71b3eb2c190a992760ae">mn::internal::advance</a> (TIter &amp;iter, TDist d, std::bidirectional_iterator_tag)</td></tr>
-<tr class="separator:a7eb02a8d205e71b3eb2c190a992760ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ff3fb6de4d73c8d06cefc565bcbc1e"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDist &gt; </td></tr>
-<tr class="memitem:a16ff3fb6de4d73c8d06cefc565bcbc1e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a16ff3fb6de4d73c8d06cefc565bcbc1e">mn::internal::advance</a> (TIter &amp;iter, TDist d, std::input_iterator_tag)</td></tr>
-<tr class="separator:a16ff3fb6de4d73c8d06cefc565bcbc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257455ffc20fbd5699983fc509a0a979"><td class="memTemplParams" colspan="2">template&lt;typename TIter &gt; </td></tr>
+<tr class="memitem:a257455ffc20fbd5699983fc509a0a979"><td class="memTemplItemLeft" align="right" valign="top">iterator_traits&lt; TIter &gt;::difference_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a257455ffc20fbd5699983fc509a0a979">mn::internal::distance</a> (TIter first, TIter last, <a class="el" href="structmn_1_1random__access__iterator__tag.html">mn::random_access_iterator_tag</a>)</td></tr>
+<tr class="separator:a257455ffc20fbd5699983fc509a0a979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be5517726bc6870072235a86c7bddaf"><td class="memTemplParams" colspan="2">template&lt;typename TIter &gt; </td></tr>
+<tr class="memitem:a2be5517726bc6870072235a86c7bddaf"><td class="memTemplItemLeft" align="right" valign="top">iterator_traits&lt; TIter &gt;::difference_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a2be5517726bc6870072235a86c7bddaf">mn::internal::distance</a> (TIter first, TIter last, <a class="el" href="structmn_1_1input__iterator__tag.html">mn::input_iterator_tag</a>)</td></tr>
+<tr class="separator:a2be5517726bc6870072235a86c7bddaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855039beaa2706d1611e66f0d6a20f7d"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:a855039beaa2706d1611e66f0d6a20f7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a855039beaa2706d1611e66f0d6a20f7d">mn::internal::advance</a> (TIter &amp;iter, TDistance d, <a class="el" href="structmn_1_1random__access__iterator__tag.html">mn::random_access_iterator_tag</a>)</td></tr>
+<tr class="separator:a855039beaa2706d1611e66f0d6a20f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2fd498e25868cc94db540ad4d71da7a"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:ab2fd498e25868cc94db540ad4d71da7a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ab2fd498e25868cc94db540ad4d71da7a">mn::internal::advance</a> (TIter &amp;iter, TDistance d, <a class="el" href="structmn_1_1bidirectional__iterator__tag.html">mn::bidirectional_iterator_tag</a>)</td></tr>
+<tr class="separator:ab2fd498e25868cc94db540ad4d71da7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772facf1e405e5b2938d90b2de09ee31"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:a772facf1e405e5b2938d90b2de09ee31"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a772facf1e405e5b2938d90b2de09ee31">mn::internal::advance</a> (TIter &amp;iter, TDistance d, <a class="el" href="structmn_1_1input__iterator__tag.html">mn::input_iterator_tag</a>)</td></tr>
+<tr class="separator:a772facf1e405e5b2938d90b2de09ee31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0dc5d9f660148a070e29131cabe5b3d"><td class="memTemplParams" colspan="2">template&lt;typename TIter &gt; </td></tr>
+<tr class="memitem:ab0dc5d9f660148a070e29131cabe5b3d"><td class="memTemplItemLeft" align="right" valign="top">iterator_traits&lt; TIter &gt;::difference_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#ab0dc5d9f660148a070e29131cabe5b3d">mn::distance</a> (TIter first, TIter last)</td></tr>
+<tr class="separator:ab0dc5d9f660148a070e29131cabe5b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375cf1e37b5ff31f48b1d23fc3e6f78f"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:a375cf1e37b5ff31f48b1d23fc3e6f78f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a375cf1e37b5ff31f48b1d23fc3e6f78f">mn::advance</a> (TIter &amp;iter, TDistance d)</td></tr>
+<tr class="separator:a375cf1e37b5ff31f48b1d23fc3e6f78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac517f36776dd2b2a93797efe0459ba31"><td class="memTemplParams" colspan="2">template&lt;typename TForwardIter , typename TDistance  = typename iterator_traits&lt;TForwardIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:ac517f36776dd2b2a93797efe0459ba31"><td class="memTemplItemLeft" align="right" valign="top">TForwardIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#ac517f36776dd2b2a93797efe0459ba31">mn::next</a> (TForwardIter x, TDistance n=1)</td></tr>
+<tr class="separator:ac517f36776dd2b2a93797efe0459ba31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b8d7db96f34c8917a1dbc9775b713d"><td class="memTemplParams" colspan="2">template&lt;typename TBidirectionalIter , typename TDistance  = typename iterator_traits&lt;TBidirectionalIter&gt;::difference_type&gt; </td></tr>
+<tr class="memitem:a69b8d7db96f34c8917a1dbc9775b713d"><td class="memTemplItemLeft" align="right" valign="top">TBidirectionalIter&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a69b8d7db96f34c8917a1dbc9775b713d">mn::prev</a> (TBidirectionalIter x, TDistance n=1)</td></tr>
+<tr class="separator:a69b8d7db96f34c8917a1dbc9775b713d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="structmn_1_1output__iterator__tag" id="structmn_1_1output__iterator__tag"></a>
@@ -233,9 +246,33 @@ struct mn::iterator_traits&lt; IterT &gt;</h3>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="ae76bb0c773e2857f5255385fc6c0cd5e"></a>typedef <a class="el" href="namespacemn.html#ae76bb0c773e2857f5255385fc6c0cd5e">iterator_category</a></td>
+<a id="aa027f1c905d76f7ffc5da16338dd2066"></a>typedef typename <a class="el" href="namespacemn.html#aa027f1c905d76f7ffc5da16338dd2066">difference_type</a></td>
+<td class="fieldname">
+difference_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ad45186c5d5f9c50246962838e46cb598"></a>typedef typename <a class="el" href="namespacemn.html#ad45186c5d5f9c50246962838e46cb598">iterator_category</a></td>
 <td class="fieldname">
 iterator_category</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5190feb540c88caaf7bfb242ca1c61f2"></a>typedef typename <a class="el" href="namespacemn.html#a5190feb540c88caaf7bfb242ca1c61f2">pointer</a></td>
+<td class="fieldname">
+pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a95d351a7572efd40494e38dc589f8e03"></a>typedef typename <a class="el" href="namespacemn.html#a95d351a7572efd40494e38dc589f8e03">reference</a></td>
+<td class="fieldname">
+reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9f995f2bf8252bb61fa7268ef3b49f4f"></a>typedef typename <a class="el" href="namespacemn.html#a9f995f2bf8252bb61fa7268ef3b49f4f">value_type</a></td>
+<td class="fieldname">
+value_type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -259,9 +296,33 @@ struct mn::iterator_traits&lt; T * &gt;</h3>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="aaa7d0daa24581d7ae2def5cc1ad13b53"></a>typedef <a class="el" href="structmn_1_1random__access__iterator__tag.html">random_access_iterator_tag</a></td>
+<a id="aff282b853ebf00947bedd617d27a0a59"></a>typedef <a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">ptrdiff_t</a></td>
+<td class="fieldname">
+difference_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a80e5c761ba49397dbc201baf10868d35"></a>typedef <a class="el" href="structmn_1_1random__access__iterator__tag.html">random_access_iterator_tag</a></td>
 <td class="fieldname">
 iterator_category</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a948c21771fc02d893db70c9eb30b747e"></a>typedef <a class="el" href="namespacemn.html#a51bf9aa936e00c6128604f12bcef878a">value_type</a> *</td>
+<td class="fieldname">
+pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa87bd66083e4d373ea01e42dbf2dd6ef"></a>typedef <a class="el" href="namespacemn.html#a51bf9aa936e00c6128604f12bcef878a">value_type</a> &amp;</td>
+<td class="fieldname">
+reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a51bf9aa936e00c6128604f12bcef878a"></a>typedef T</td>
+<td class="fieldname">
+value_type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -338,6 +399,13 @@ iterator_category</td>
 </div><div class="memdoc">
 
 <p>Shorthand for container iteration. </p>
+<p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2021 Amber-Sophia Schroeck</p>
+<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
+ it under the terms of the GNU Lesser General Public License as published by <br  />
+ the Free Software Foundation, version 3, or (at your option) any later version.</p>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. <br  />
+ </p>
 
 </div>
 </div>

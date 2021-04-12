@@ -139,7 +139,6 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp.html',''); initResiz
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
@@ -148,18 +147,14 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp.html',''); initResiz
 <div class="title">mn_autolock.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="include_2mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__lock_8hpp_source.html">mn_lock.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__mutex_8hpp_source.html">mn_mutex.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__semaphore_8hpp_source.html">mn_semaphore.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__null__lock_8hpp_source.html">mn_null_lock.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__autolock_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__autolock.html">mn::basic_autolock&lt; LOCK &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
@@ -169,8 +164,6 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a72723ba1e4a85ca14f25c2b9e066613d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#a72723ba1e4a85ca14f25c2b9e066613d">portMAX_DELAY</a>&#160;&#160;&#160;0xffffffffUL</td></tr>
 <tr class="separator:a72723ba1e4a85ca14f25c2b9e066613d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad63ba351ef42ff312a0f260b5638aad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__autolock_8hpp.html#aad63ba351ef42ff312a0f260b5638aad">LOCKED_SECTION</a>(LOCK,  OBJECT)&#160;&#160;&#160;if( (basic_autolock&lt;LOCK&gt; lock(OBJECT)) )</td></tr>
-<tr class="separator:aad63ba351ef42ff312a0f260b5638aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -198,34 +191,6 @@ Functions</h2></td></tr>
 <tr class="separator:a92968146b371c174743a6ce190205687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aad63ba351ef42ff312a0f260b5638aad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad63ba351ef42ff312a0f260b5638aad">&#9670;&nbsp;</a></span>LOCKED_SECTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LOCKED_SECTION</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">LOCK, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">OBJECT&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;if( (basic_autolock&lt;LOCK&gt; lock(OBJECT)) )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a72723ba1e4a85ca14f25c2b9e066613d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72723ba1e4a85ca14f25c2b9e066613d">&#9670;&nbsp;</a></span>portMAX_DELAY</h2>
 
