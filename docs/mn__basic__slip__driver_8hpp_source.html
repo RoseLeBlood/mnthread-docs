@@ -164,34 +164,42 @@ $(document).ready(function(){initNavTree('mn__basic__slip__driver_8hpp_source.ht
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">namespace </span>net {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">class </span>basic_slip_driver : <span class="keyword">public</span> basic_ppp_net_if {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            basic_slip_driver(uint8_t uart_num = UART_NUM_2)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                : basic_slip_driver(uart_num, 4, 36, 115200, 1024) { }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            basic_slip_driver(uint8_t uart_num, uint8_t tx_pin, uint8_t rx_pin)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                : basic_slip_driver(uart_num, tx_pin, rx_pin, 115200, 1024) { }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            basic_slip_driver(uint8_t uart_num, uint8_t tx_pin, uint8_t rx_pin,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                              uint32_t baud, uint32_t buffer_len) ;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> start();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>     get_ip()            { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>     get_broadcast()     { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>     get_gateway()       { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>     get_netmask()       { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordtype">void</span> set_pin(<span class="keyword">const</span> uint8_t&amp; pin, <span class="keyword">const</span> uint8_t&amp; rx_pin);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">void</span> set_serial(<span class="keyword">const</span> uint8_t&amp; uart_num, <span class="keyword">const</span> uint32_t&amp; baud);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">void</span> set_buffer(<span class="keyword">const</span> uint32_t&amp; buffer_len);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">void</span> set_ip(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>&amp; ip);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            esp_netif_slip_config_t m_slipConfig;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            esp_netif_netstack_config_t m_slipNetStackConfig;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        };</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CONFIG_LWIP_PPP_SUPPORT</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_BASIC_SLIP_DRIVER_H__</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">class </span>basic_slip_net_if : <span class="keyword">public</span> basic_net_if {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            basic_slip_net_if() : basic_net_if() { }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">bool</span>    create_default();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">class </span>basic_slip_driver : <span class="keyword">public</span> basic_slip_net_if {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            basic_slip_driver(uint8_t uart_num = UART_NUM_2)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                : basic_slip_driver(uart_num, 4, 36, 115200, 1024) { }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            basic_slip_driver(uint8_t uart_num, uint8_t tx_pin, uint8_t rx_pin)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                : basic_slip_driver(uart_num, tx_pin, rx_pin, 115200, 1024) { }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            basic_slip_driver(uint8_t uart_num, uint8_t tx_pin, uint8_t rx_pin,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                              uint32_t baud, uint32_t buffer_len) ;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> start();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>     get_ip()            { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>     get_broadcast()     { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>     get_gateway()       { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>     get_netmask()       { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">void</span> set_pin(<span class="keyword">const</span> uint8_t&amp; pin, <span class="keyword">const</span> uint8_t&amp; rx_pin);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">void</span> set_serial(<span class="keyword">const</span> uint8_t&amp; uart_num, <span class="keyword">const</span> uint32_t&amp; baud);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">void</span> set_buffer(<span class="keyword">const</span> uint32_t&amp; buffer_len);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">void</span> set_ip(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">ip4_address</a>&amp; ip);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            esp_netif_slip_config_t m_slipConfig;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            esp_netif_netstack_config_t m_slipNetStackConfig;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CONFIG_LWIP_PPP_SUPPORT</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_BASIC_SLIP_DRIVER_H__</span></div>
 <div class="ttc" id="amn__basic__ip__address_8hpp_html_a06d1435b173c8c0b92a7af98581191ac"><div class="ttname"><a href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a></div><div class="ttdeci">#define MNNET_IPV4_ADDRESS_ANY</div><div class="ttdef"><b>Definition:</b> mn_basic_ip_address.hpp:43</div></div>
 <div class="ttc" id="amn__basic__netif_8hpp_html"><div class="ttname"><a href="mn__basic__netif_8hpp.html">mn_basic_netif.hpp</a></div></div>
 <div class="ttc" id="anamespacemn_1_1net_html_ae76cedf1feb39a12ff2e94d9a85399ee"><div class="ttname"><a href="namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee">mn::net::ip4_address</a></div><div class="ttdeci">basic_ip4_address ip4_address</div><div class="ttdef"><b>Definition:</b> mn_basic_ip_address.hpp:351</div></div>

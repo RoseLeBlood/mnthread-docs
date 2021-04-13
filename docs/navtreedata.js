@@ -117,13 +117,12 @@ var NAVTREE =
           [ "C", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md75", null ],
           [ "C++", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md76", null ]
         ] ],
-        [ "Tightly-constrained Systems and Shared Infrastructure", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md77", null ],
-        [ "Format and Style", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md78", [
-          [ "File Names", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md79", null ],
-          [ "Naming", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md80", null ],
-          [ "White Space", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md81", null ]
+        [ "Tightly-constrained Systems and Shared Infrastructure", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md77", [
+          [ "File Names", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md78", null ],
+          [ "Naming", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md79", null ],
+          [ "White Space", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md80", null ]
         ] ],
-        [ "Comments", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md82", null ]
+        [ "Comments", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md81", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -175,15 +174,15 @@ var NAVTREEINDEX =
 "classmn_1_1pointer_1_1basic__linked__ptr.html",
 "classmn_1_1system_1_1basic__critical__section__timedout.html#a3daa81c08f8fde54aded4d831262e85d",
 "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md9",
-"mn__basic__mempool__chunk_8hpp.html#a26a55fd3975ed7b7b14567dc2207ac4e",
-"mn__config_8hpp.html#a9a7d8572d3567d5ce51d1532e7589045",
-"mn__iterator_8hpp.html#ab2fd498e25868cc94db540ad4d71da7a",
-"mn__shared_8hpp.html#ae513171ca5eaba8981f43147b34cbbbb",
-"namespacemn.html#a13026b228eff19d79c329dd60c935004",
-"namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521",
-"namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a8b7b9806e715b01b9021912e0f86935f",
-"structmn_1_1__atomic_3_01bool_01_4.html#ab0f551ee200402af3b85a624f8d4bb4c",
-"structmn_1_1container_1_1basic__vector__storage.html#ac3b6af7d624777308646819b925e2928"
+"mn__basic__mempool__chunk_8hpp.html#ac5c7bed2155e09cc76ade2fe0c7cf803",
+"mn__config_8hpp.html#a9d7f3f8fbd6ff30ad21aabae00922caa",
+"mn__iterator_8hpp.html#ac517f36776dd2b2a93797efe0459ba31",
+"mn__shared_8hpp.html#ae5689d52c25967ae74cf08ceb880df4c",
+"namespacemn.html#a135d662b05282f95d3bdc2b6d2ff4d15",
+"namespacemn.html#aeced714f6064c8ff387c7633233f13f5",
+"namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a8caa8a2c27e9d60b3894bac4e6859129",
+"structmn_1_1__atomic_3_01bool_01_4.html#ac63384ee4430ba8ae75977e2b23b4d03",
+"structmn_1_1container_1_1basic__vector__storage.html#ac7922ef26a4cef13154af2f51edc8d7b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

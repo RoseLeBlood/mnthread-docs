@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a8b7b9806e715b01b9021912e0f86935f":[6,0,0,5,5,55],
 "namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a8caa8a2c27e9d60b3894bac4e6859129":[6,0,0,5,5,17],
 "namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a8dc5344bc0746e1cc5abf896ca03bbdf":[6,0,0,5,5,108],
 "namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a8ffc9d76217d9109d2bb25925816f002":[6,0,0,5,5,99],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "structmn_1_1__atomic_3_01bool_01_4.html#a1f1405d696cd9365fa87bfbd6ec2df68":[7,0,0,13,3],
 "structmn_1_1__atomic_3_01bool_01_4.html#a4f9e465f35733e1cb2f3b582bb1a1c70":[7,0,0,13,0],
 "structmn_1_1__atomic_3_01bool_01_4.html#a797b98055daa7b46281dab6e383d2f4b":[7,0,0,13,5],
-"structmn_1_1__atomic_3_01bool_01_4.html#aad2b253b6b5fb2f5c51a03f3803c39ab":[7,0,0,13,4]
+"structmn_1_1__atomic_3_01bool_01_4.html#aad2b253b6b5fb2f5c51a03f3803c39ab":[7,0,0,13,4],
+"structmn_1_1__atomic_3_01bool_01_4.html#ab0f551ee200402af3b85a624f8d4bb4c":[7,0,0,13,6]
 };
