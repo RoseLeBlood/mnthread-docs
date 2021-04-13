@@ -134,62 +134,59 @@ $(document).ready(function(){initNavTree('mn__allocator_8hpp_source.html',''); i
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef _MINLIB_ALLOCATOR_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define _MINLIB_ALLOCATOR_H_</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//#include &quot;freertos/FreeRTOS.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//#include &quot;freertos/task.h&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__object_8hpp.html">allocator/mn_allocator_object.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__system_8hpp.html">allocator/mn_allocator_system.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__stack_8hpp.html">allocator/mn_allocator_stack.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__buffer_8hpp.html">allocator/mn_allocator_buffer.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__caps_8hpp.html">allocator/mn_allocator_caps.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allactor__multiheap_8hpp.html">allocator/mn_allactor_multiheap.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__object_8hpp.html">allocator/mn_allocator_object.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__system_8hpp.html">allocator/mn_allocator_system.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__stack_8hpp.html">allocator/mn_allocator_stack.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__buffer_8hpp.html">allocator/mn_allocator_buffer.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__caps_8hpp.html">allocator/mn_allocator_caps.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allactor__multiheap_8hpp.html">allocator/mn_allactor_multiheap.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">namespace </span>memory {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">namespace </span>memory {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32 </span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">using</span> allocator_internal8_esp32_t = basic_cap_allocator_esp32&lt;cap_allocator_map::Default, cap_allocator_size::Size8Bit&gt;;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">using</span> allocator_psram_esp32_t = </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            basic_cap_allocator_esp32&lt;cap_allocator_map::SpiRam, cap_allocator_size::Size8Bit&gt;;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">using</span> allocator_internal32_esp32_t = </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            basic_cap_allocator_esp32&lt;cap_allocator_map::Default, cap_allocator_size::Size32Bit&gt;;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">using</span> allocator_psram32_esp32_t = </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            basic_cap_allocator_esp32&lt;cap_allocator_map::SpiRam, cap_allocator_size::Size32Bit&gt;;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">using</span> allocator_internal_dma_esp32_t = </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            basic_cap_allocator_esp32&lt;cap_allocator_map::DMA, cap_allocator_size::Size32Bit&gt;;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        allocator_psram_dma_esp32_t = basic_cap_allocator_esp32&lt;cap_allocator_map::DMA, cap_allocator_size::Size32Bit&gt;;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a6904ae5c583e3a5ed62f05ddf87d7e62">MN_TEMPLATE_USING_ONE</a>(multiheap_allocator_esp32_t, basic_multiheap_allocator_esp32, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>, TBytes );</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131">   95</a></span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131">MN_TEMPLATE_USING</a>(allocator_system_t, <a class="code" href="classmn_1_1memory_1_1basic__allocator__system.html">basic_allocator_system</a>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_ALLOCATOR_DEFAULT == MN_THREAD_CONFIG_ALLOCATOR_SYSTEM</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a0cffd3ac6dc8052ff7053951e315ba44">  104</a></span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131">MN_TEMPLATE_USING</a>(default_allocator_t, allocator_system_t);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a6904ae5c583e3a5ed62f05ddf87d7e62">  117</a></span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a6904ae5c583e3a5ed62f05ddf87d7e62">MN_TEMPLATE_USING_ONE</a>(allocator_stack_t, <a class="code" href="classmn_1_1memory_1_1basic__allocator__stack.html">basic_allocator_stack</a>, <span class="keywordtype">int</span>, TBUFFERSIZE);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a1d5d2df180d92257977fe1efaf1c31a5">  128</a></span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131">MN_TEMPLATE_USING</a>(allocator_buffer_t, <a class="code" href="classmn_1_1memory_1_1basic__allocator__buffer.html">basic_allocator_buffer</a>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">using</span> allocator_internal8_esp32_t = basic_cap_allocator_esp32&lt;cap_allocator_map::Default, cap_allocator_size::Size8Bit&gt;;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">using</span> allocator_psram_esp32_t =</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            basic_cap_allocator_esp32&lt;cap_allocator_map::SpiRam, cap_allocator_size::Size8Bit&gt;;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">using</span> allocator_internal32_esp32_t =</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            basic_cap_allocator_esp32&lt;cap_allocator_map::Default, cap_allocator_size::Size32Bit&gt;;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">using</span> allocator_psram32_esp32_t =</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            basic_cap_allocator_esp32&lt;cap_allocator_map::SpiRam, cap_allocator_size::Size32Bit&gt;;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">using</span> allocator_internal_dma_esp32_t =</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            basic_cap_allocator_esp32&lt;cap_allocator_map::DMA, cap_allocator_size::Size32Bit&gt;;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        allocator_psram_dma_esp32_t = basic_cap_allocator_esp32&lt;cap_allocator_map::DMA, cap_allocator_size::Size32Bit&gt;;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a6904ae5c583e3a5ed62f05ddf87d7e62">MN_TEMPLATE_USING_ONE</a>(multiheap_allocator_esp32_t, basic_multiheap_allocator_esp32, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>, TBytes );</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MN_THREAD_CONFIG_BOARD ==  MN_THREAD_CONFIG_ESP32</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131">   92</a></span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131">MN_TEMPLATE_USING</a>(allocator_system_t, <a class="code" href="classmn_1_1memory_1_1basic__allocator__system.html">basic_allocator_system</a>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#if MN_THREAD_CONFIG_ALLOCATOR_DEFAULT == MN_THREAD_CONFIG_ALLOCATOR_SYSTEM</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a0cffd3ac6dc8052ff7053951e315ba44">  101</a></span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131">MN_TEMPLATE_USING</a>(default_allocator_t, allocator_system_t);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MN_THREAD_CONFIG_ALLOCATOR_DEFAULT</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a6904ae5c583e3a5ed62f05ddf87d7e62">  114</a></span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a6904ae5c583e3a5ed62f05ddf87d7e62">MN_TEMPLATE_USING_ONE</a>(allocator_stack_t, <a class="code" href="classmn_1_1memory_1_1basic__allocator__stack.html">basic_allocator_stack</a>, <span class="keywordtype">int</span>, TBUFFERSIZE);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a1d5d2df180d92257977fe1efaf1c31a5">  125</a></span>&#160;        <a class="code" href="namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131">MN_TEMPLATE_USING</a>(allocator_buffer_t, <a class="code" href="classmn_1_1memory_1_1basic__allocator__buffer.html">basic_allocator_buffer</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _MINLIB_ALLOCATOR_H_</span></div>
 <div class="ttc" id="aclassmn_1_1memory_1_1basic__allocator__buffer_html"><div class="ttname"><a href="classmn_1_1memory_1_1basic__allocator__buffer.html">mn::memory::basic_allocator_buffer</a></div><div class="ttdoc">buffer based allocator.</div><div class="ttdef"><b>Definition:</b> mn_allocator_buffer.hpp:34</div></div>
 <div class="ttc" id="aclassmn_1_1memory_1_1basic__allocator__stack_html"><div class="ttname"><a href="classmn_1_1memory_1_1basic__allocator__stack.html">mn::memory::basic_allocator_stack</a></div><div class="ttdoc">Stack based allocator.</div><div class="ttdef"><b>Definition:</b> mn_allocator_stack.hpp:36</div></div>
 <div class="ttc" id="aclassmn_1_1memory_1_1basic__allocator__system_html"><div class="ttname"><a href="classmn_1_1memory_1_1basic__allocator__system.html">mn::memory::basic_allocator_system</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_system.hpp:27</div></div>

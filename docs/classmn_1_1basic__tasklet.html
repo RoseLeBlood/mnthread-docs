@@ -157,13 +157,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a28b5be31575e601e4c07ec8c3e7de6e1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__tasklet.html#a28b5be31575e601e4c07ec8c3e7de6e1">on_coroutine</a> (uint32_t arg)=0</td></tr>
-<tr class="separator:a28b5be31575e601e4c07ec8c3e7de6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd4f573f37307c3fb622ebb1aecb2f2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__tasklet.html#abfd4f573f37307c3fb622ebb1aecb2f2">on_tasklet</a> (uint32_t arg)=0</td></tr>
+<tr class="separator:abfd4f573f37307c3fb622ebb1aecb2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0bcfda2a2ed518aab6e887bb1c57fd81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__tasklet.html#a0bcfda2a2ed518aab6e887bb1c57fd81">runcorostub</a> (void *parm, uint32_t parameter)</td></tr>
-<tr class="separator:a0bcfda2a2ed518aab6e887bb1c57fd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaee69720b47bbee1afd956d1a195e41"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__tasklet.html#aaaee69720b47bbee1afd956d1a195e41">runtasklet</a> (void *parm, uint32_t parameter)</td></tr>
+<tr class="separator:aaaee69720b47bbee1afd956d1a195e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -172,7 +172,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A FreeRTOS wrapper for its concept of a Pended Function. In Linux, one permutation of this would be a Tasklet, or bottom half processing from an ISR.</p>
-<p>This is an abstract base class. To use this, you need to subclass it. All of your coroutines should be derived from the <a class="el" href="classmn_1_1basic__tasklet.html">basic_tasklet</a> class. Then implement the virtual on_coroutine function. </p>
+<p>This is an abstract base class. To use this, you need to subclass it. All of your tasklet should be derived from the <a class="el" href="classmn_1_1basic__tasklet.html">basic_tasklet</a> class. Then implement the virtual on_tasklet function. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9281e247239c93ddc6f749a678c7211f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9281e247239c93ddc6f749a678c7211f">&#9670;&nbsp;</a></span>basic_tasklet()</h2>
@@ -218,8 +218,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a28b5be31575e601e4c07ec8c3e7de6e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28b5be31575e601e4c07ec8c3e7de6e1">&#9670;&nbsp;</a></span>on_coroutine()</h2>
+<a id="abfd4f573f37307c3fb622ebb1aecb2f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfd4f573f37307c3fb622ebb1aecb2f2">&#9670;&nbsp;</a></span>on_tasklet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,7 +228,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool mn::basic_tasklet::on_coroutine </td>
+          <td class="memname">virtual bool mn::basic_tasklet::on_tasklet </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>arg</em></td><td>)</td>
@@ -248,12 +248,12 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>false to end the coroutine and true when run </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>false to end the on_tasklet and true when run </dd></dl>
 
 </div>
 </div>
-<a id="a0bcfda2a2ed518aab6e887bb1c57fd81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bcfda2a2ed518aab6e887bb1c57fd81">&#9670;&nbsp;</a></span>runcorostub()</h2>
+<a id="aaaee69720b47bbee1afd956d1a195e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaee69720b47bbee1afd956d1a195e41">&#9670;&nbsp;</a></span>runtasklet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +262,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void mn::basic_tasklet::runcorostub </td>
+          <td class="memname">void mn::basic_tasklet::runtasklet </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>parm</em>, </td>
@@ -285,7 +285,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adapter function that allows you to write a class specific on_tasklet() function that interfaces with FreeRTOS. </p>
+<p>Adapter function that allows you to write a class specific <a class="el" href="classmn_1_1basic__tasklet.html#abfd4f573f37307c3fb622ebb1aecb2f2">on_tasklet()</a> function that interfaces with FreeRTOS. </p>
 
 </div>
 </div>

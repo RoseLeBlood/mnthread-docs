@@ -134,23 +134,23 @@ $(document).ready(function(){initNavTree('mn__task__utils_8hpp_source.html','');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018-2020 Amber-Sophia Schroeck</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify  </span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by  </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.  </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef MINLIB_ESP32_THREAD_UTILS_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_THREAD_UTILS_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__autolock_8hpp.html">mn_autolock.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('mn__task__utils_8hpp_source.html','');
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmn_1_1task__utils.html#a07ccd0e341a06ebfd2f8428b117dc525">   55</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1task__utils.html#a07ccd0e341a06ebfd2f8428b117dc525">notify</a>(<a class="code" href="classmn_1_1basic__task.html">basic_task</a>* pTaskToNotify, uint32_t ulValue, <a class="code" href="classmn_1_1task__utils.html#ac939c9d13d2862f4ddf127302a53968a">task_utils::action</a> eAction);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmn_1_1task__utils.html#a8c7c09d0254a69b69abfe4cf7dae5321">   77</a></span>&#160;    <span class="keyword">static</span> uint32_t <a class="code" href="classmn_1_1task__utils.html#a8c7c09d0254a69b69abfe4cf7dae5321">notify_take</a>(<span class="keywordtype">bool</span> bClearCountOnExit, TickType_t xTicksToWait); </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmn_1_1task__utils.html#a8c7c09d0254a69b69abfe4cf7dae5321">   77</a></span>&#160;    <span class="keyword">static</span> uint32_t <a class="code" href="classmn_1_1task__utils.html#a8c7c09d0254a69b69abfe4cf7dae5321">notify_take</a>(<span class="keywordtype">bool</span> bClearCountOnExit, TickType_t xTicksToWait);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classmn_1_1task__utils.html#ad114d52ee64960c806ddde171b24308e">   87</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1task__utils.html#ad114d52ee64960c806ddde171b24308e">notify_give</a>(<a class="code" href="classmn_1_1basic__task.html">basic_task</a>* pTaskToNotify);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
@@ -177,14 +177,14 @@ $(document).ready(function(){initNavTree('mn__task__utils_8hpp_source.html','');
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">    #if( configNUM_THREAD_LOCAL_STORAGE_POINTERS &gt; 0 )</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> set_storage_pointer(<a class="code" href="classmn_1_1basic__task.html">basic_task</a>* task, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> index, <span class="keywordtype">void</span>* value);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* get_storage_pointer(<a class="code" href="classmn_1_1basic__task.html">basic_task</a>* task, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> index); </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">    #endif                       </span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>* get_storage_pointer(<a class="code" href="classmn_1_1basic__task.html">basic_task</a>* task, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> index);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">    #endif</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  };</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
 <div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="namespacemn.html#a9178c06e307a497f0cf0025b1b514691">  147</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1task__utils.html">task_utils_t</a> = <a class="code" href="classmn_1_1task__utils.html">task_utils</a>;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassmn_1_1basic__task_html"><div class="ttname"><a href="classmn_1_1basic__task.html">mn::basic_task</a></div><div class="ttdoc">Wrapper class around FreeRTOS's implementation of a task.</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:85</div></div>
+<div class="ttc" id="aclassmn_1_1basic__task_html"><div class="ttname"><a href="classmn_1_1basic__task.html">mn::basic_task</a></div><div class="ttdoc">Wrapper class around FreeRTOS's implementation of a task.</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:88</div></div>
 <div class="ttc" id="aclassmn_1_1task__utils_html"><div class="ttname"><a href="classmn_1_1task__utils.html">mn::task_utils</a></div><div class="ttdef"><b>Definition:</b> mn_task_utils.hpp:31</div></div>
 <div class="ttc" id="aclassmn_1_1task__utils_html_a07ccd0e341a06ebfd2f8428b117dc525"><div class="ttname"><a href="classmn_1_1task__utils.html#a07ccd0e341a06ebfd2f8428b117dc525">mn::task_utils::notify</a></div><div class="ttdeci">static bool notify(basic_task *pTaskToNotify, uint32_t ulValue, task_utils::action eAction)</div></div>
 <div class="ttc" id="aclassmn_1_1task__utils_html_a8c7c09d0254a69b69abfe4cf7dae5321"><div class="ttname"><a href="classmn_1_1task__utils.html#a8c7c09d0254a69b69abfe4cf7dae5321">mn::task_utils::notify_take</a></div><div class="ttdeci">static uint32_t notify_take(bool bClearCountOnExit, TickType_t xTicksToWait)</div></div>
@@ -197,6 +197,7 @@ $(document).ready(function(){initNavTree('mn__task__utils_8hpp_source.html','');
 <div class="ttc" id="aclassmn_1_1task__utils_html_ac939c9d13d2862f4ddf127302a53968aaf0ba3dd7a05d7078842819ddfa8d671f"><div class="ttname"><a href="classmn_1_1task__utils.html#ac939c9d13d2862f4ddf127302a53968aaf0ba3dd7a05d7078842819ddfa8d671f">mn::task_utils::increment</a></div><div class="ttdeci">@ increment</div><div class="ttdef"><b>Definition:</b> mn_task_utils.hpp:37</div></div>
 <div class="ttc" id="aclassmn_1_1task__utils_html_ad114d52ee64960c806ddde171b24308e"><div class="ttname"><a href="classmn_1_1task__utils.html#ad114d52ee64960c806ddde171b24308e">mn::task_utils::notify_give</a></div><div class="ttdeci">static bool notify_give(basic_task *pTaskToNotify)</div></div>
 <div class="ttc" id="amn__autolock_8hpp_html"><div class="ttname"><a href="mn__autolock_8hpp.html">mn_autolock.hpp</a></div></div>
+<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
 <div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

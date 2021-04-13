@@ -1069,15 +1069,16 @@ Variables</h2></td></tr>
 <p>The Mini Thread Library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 3, or (at your option) any later version.</p>
 <p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
 <p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+<p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2021 Amber-Sophia Schroeck</p>
+<p>The Mini Thread Library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 3, or (at your option) any later version.</p>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
 <p>Condition variables are an additon to the mini Thread classes. If you want to include them, you need to define the following in your config file with MN_THREAD_CONFIG_YES</p>
 <p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). Copyright (c) 2018-2020 Amber-Sophia Schroeck</p>
-<p>The Mini Thread Library is free software; you can redistribute it and/or modify <br  />
- it under the terms of the GNU Lesser General Public License as published by <br  />
- the Free Software Foundation, version 3, or (at your option) any later version.</p>
+<p>The Mini Thread Library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 3, or (at your option) any later version.</p>
 <p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
 <p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. - </p><dl class="section author"><dt>Author</dt><dd>Amber-Sophia Schröck </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2021.02.14 <br  />
- </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021.02.14 </dd></dl>
 </div><hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="structmn_1_1enable__if" id="structmn_1_1enable__if"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1enable__if">&#9670;&nbsp;</a></span>mn::enable_if</h2>
@@ -2715,12 +2716,12 @@ template&lt;class Sig &gt; </div>
 <div class="fragment"><div class="line"><a class="code" href="namespacemn.html#aee7acd58d70053f085c77c9b34fab7e9">safe_counter_t</a> counter(1);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// this while parallel use</span></div>
-<div class="line"><span class="keywordflow">while</span>(it != <a class="code" href="namespacemn_1_1container.html#ae93902d04e8a3d04f25dcf5fb3397574">list</a>.end()) { </div>
+<div class="line"><span class="keywordflow">while</span>(it != <a class="code" href="namespacemn_1_1container.html#ae93902d04e8a3d04f25dcf5fb3397574">list</a>.end()) {</div>
 <div class="line"> ++counter;</div>
 <div class="line">}</div>
 <div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;In list are: &quot;</span> &lt;&lt; counter.count() &lt;&lt; <span class="stringliteral">&quot; elements&quot;</span>;</div>
 <div class="ttc" id="anamespacemn_1_1container_html_ae93902d04e8a3d04f25dcf5fb3397574"><div class="ttname"><a href="namespacemn_1_1container.html#ae93902d04e8a3d04f25dcf5fb3397574">mn::container::list</a></div><div class="ttdeci">basic_list&lt; T, memory::default_allocator_t &gt; list</div><div class="ttdoc">List type witch allocated in global heap.</div><div class="ttdef"><b>Definition:</b> mn_list.hpp:240</div></div>
-<div class="ttc" id="anamespacemn_html_aee7acd58d70053f085c77c9b34fab7e9"><div class="ttname"><a href="namespacemn.html#aee7acd58d70053f085c77c9b34fab7e9">mn::safe_counter_t</a></div><div class="ttdeci">basic_safe_counter&lt; uint64_t, LockType_t &gt; safe_counter_t</div><div class="ttdoc">sot the default safe_counter, value type are uint64_t and as lock type use LockType_t</div><div class="ttdef"><b>Definition:</b> mn_safecounter.hpp:95</div></div>
+<div class="ttc" id="anamespacemn_html_aee7acd58d70053f085c77c9b34fab7e9"><div class="ttname"><a href="namespacemn.html#aee7acd58d70053f085c77c9b34fab7e9">mn::safe_counter_t</a></div><div class="ttdeci">basic_safe_counter&lt; uint64_t, LockType_t &gt; safe_counter_t</div><div class="ttdoc">sot the default safe_counter, value type are uint64_t and as lock type use LockType_t</div><div class="ttdef"><b>Definition:</b> mn_safecounter.hpp:97</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -6734,8 +6735,7 @@ template&lt;typename TBidirectionalIter , typename TDistance  = typename iterato
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delay a given task for a given number of seconds. <br  />
- </p>
+<p>Delay a given task for a given number of seconds. </p>
 
 </div>
 </div>
