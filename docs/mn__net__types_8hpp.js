@@ -7,12 +7,10 @@ var mn__net__types_8hpp =
       [ "Unknown", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaa88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Unspecified", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaa6fcdc090caeade09d0efd6253932b6f5", null ],
       [ "inet_v4", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaa7838f8fe6cbf9681f8b74d7ed4cfde3b", null ],
-      [ "inet_v6", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaad15af7a2cb7fc5b5e024b9aa91ed67a9", null ],
-      [ "Max", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaa6a061313d22e51e0f25b7cd4dc065233", null ]
+      [ "inet_v6", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaad15af7a2cb7fc5b5e024b9aa91ed67a9", null ]
     ] ],
     [ "protocol_type", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d", [
       [ "unspec", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dae13593f343f43afb25e0585565a167a4", null ],
-      [ "ip", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7da957b527bcfbad2e80f58d20683931435", null ],
       [ "icmp", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7da1249ce19ef6180e143506b5287be8a7a", null ],
       [ "tcp", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dae20bb202b1d5537b1415e3263a37ed78", null ],
       [ "udp", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7da84864c1fe095359bc9c5ac068e24e781", null ],
@@ -41,9 +39,7 @@ var mn__net__types_8hpp =
       [ "ip", "mn__net__types_8hpp.html#acabf6880ad9783038a0951e318f6db9ca957b527bcfbad2e80f58d20683931435", null ],
       [ "tcp", "mn__net__types_8hpp.html#acabf6880ad9783038a0951e318f6db9cae20bb202b1d5537b1415e3263a37ed78", null ],
       [ "udp", "mn__net__types_8hpp.html#acabf6880ad9783038a0951e318f6db9ca84864c1fe095359bc9c5ac068e24e781", null ],
-      [ "udp_lite", "mn__net__types_8hpp.html#acabf6880ad9783038a0951e318f6db9cadec09555f72b789e1942650e52077cd4", null ],
-      [ "tos", "mn__net__types_8hpp.html#acabf6880ad9783038a0951e318f6db9ca227f82daef18fd97b0ed9538ce418761", null ],
-      [ "ttl", "mn__net__types_8hpp.html#acabf6880ad9783038a0951e318f6db9cac431a4425bc56080c868435c8d910f83", null ]
+      [ "udp_lite", "mn__net__types_8hpp.html#acabf6880ad9783038a0951e318f6db9cadec09555f72b789e1942650e52077cd4", null ]
     ] ],
     [ "socket_option_name", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052", [
       [ "debug", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052aad42f6697b035b7580e4fef93be20b4d", null ],
@@ -67,7 +63,9 @@ var mn__net__types_8hpp =
       [ "no_check", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052af216e5ec853fe2ec463c722f59d59b96", null ],
       [ "bind_device", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052a1e6c830f5daeb64ae6d7ea2894655b0c", null ],
       [ "broadcast", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052ab605ea609b9dfcf295cfd5a7803dcd37", null ],
-      [ "keepalive", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052a797919b5a9c95dfae9b06cf3086e40c1", null ]
+      [ "keepalive", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052a797919b5a9c95dfae9b06cf3086e40c1", null ],
+      [ "tos", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052a227f82daef18fd97b0ed9538ce418761", null ],
+      [ "ttl", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052ac431a4425bc56080c868435c8d910f83", null ]
     ] ],
     [ "socket_select_mode", "mn__net__types_8hpp.html#a409713481569807121c90788405355a9", [
       [ "read", "mn__net__types_8hpp.html#a409713481569807121c90788405355a9aecae13117d6f0584c25a9da6c8f8415e", null ],

@@ -72,10 +72,16 @@ var files_dup =
     [ "mn_basic_netif.cpp", "mn__basic__netif_8cpp.html", null ],
     [ "mn_basic_netif.hpp", "mn__basic__netif_8hpp.html", [
       [ "basic_net_if", "classmn_1_1net_1_1basic__net__if.html", "classmn_1_1net_1_1basic__net__if" ],
-      [ "basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", "classmn_1_1net_1_1basic__wifi__net__if" ]
+      [ "ip_info", "classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info", [
+        [ "gw", "classmn_1_1net_1_1basic__net__if.html#aa69876bd76beb4d7fd138ce147879d0e", null ],
+        [ "ip", "classmn_1_1net_1_1basic__net__if.html#a53a96b980d272f664f850cfd34182817", null ],
+        [ "netmask", "classmn_1_1net_1_1basic__net__if.html#aeb28a7ac660f860c613a8b8ceabfa235", null ]
+      ] ]
     ] ],
     [ "mn_basic_semaphore.cpp", "mn__basic__semaphore_8cpp.html", null ],
-    [ "mn_basic_semaphore.hpp", "mn__basic__semaphore_8hpp.html", "mn__basic__semaphore_8hpp" ],
+    [ "mn_basic_semaphore.hpp", "mn__basic__semaphore_8hpp.html", [
+      [ "basic_semaphore", "classmn_1_1basic__semaphore.html", "classmn_1_1basic__semaphore" ]
+    ] ],
     [ "mn_basic_slip_driver.cpp", "mn__basic__slip__driver_8cpp.html", null ],
     [ "mn_basic_slip_driver.hpp", "mn__basic__slip__driver_8hpp.html", null ],
     [ "mn_basic_socket.cpp", "mn__basic__socket_8cpp.html", null ],
@@ -84,6 +90,14 @@ var files_dup =
     [ "mn_basic_stream_ip_socket.hpp", "mn__basic__stream__ip__socket_8hpp.html", [
       [ "basic_stream_ip_socket", "classmn_1_1net_1_1basic__stream__ip__socket.html", "classmn_1_1net_1_1basic__stream__ip__socket" ],
       [ "basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html", "classmn_1_1net_1_1basic__stream__ip6__socket" ]
+    ] ],
+    [ "mn_basic_wifi_net_if.cpp", "mn__basic__wifi__net__if_8cpp.html", null ],
+    [ "mn_basic_wifi_net_if.hpp", "mn__basic__wifi__net__if_8hpp.html", [
+      [ "basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", "classmn_1_1net_1_1basic__wifi__net__if" ]
+    ] ],
+    [ "mn_basic_wifi_sta_net_if.cpp", "mn__basic__wifi__sta__net__if_8cpp.html", null ],
+    [ "mn_basic_wifi_sta_net_if.hpp", "mn__basic__wifi__sta__net__if_8hpp.html", [
+      [ "basic_wifi_sta_net_if", "classmn_1_1net_1_1basic__wifi__sta__net__if.html", "classmn_1_1net_1_1basic__wifi__sta__net__if" ]
     ] ],
     [ "mn_binary_semaphore.cpp", "mn__binary__semaphore_8cpp.html", null ],
     [ "mn_binary_semaphore.hpp", "mn__binary__semaphore_8hpp.html", "mn__binary__semaphore_8hpp" ],
@@ -156,9 +170,7 @@ var files_dup =
     [ "mn_list.hpp", "mn__list_8hpp.html", "mn__list_8hpp" ],
     [ "mn_lock.hpp", "mn__lock_8hpp.html", "mn__lock_8hpp" ],
     [ "mn_lock_exptions.cpp", "mn__lock__exptions_8cpp.html", null ],
-    [ "mn_lock_exptions.hpp", "mn__lock__exptions_8hpp.html", [
-      [ "lockcreate_exception", "classmn_1_1lockcreate__exception.html", "classmn_1_1lockcreate__exception" ]
-    ] ],
+    [ "mn_lock_exptions.hpp", "mn__lock__exptions_8hpp.html", "mn__lock__exptions_8hpp" ],
     [ "mn_lock_ptr.hpp", "mn__lock__ptr_8hpp.html", [
       [ "basic_lock_ptr", "classmn_1_1pointer_1_1basic__lock__ptr.html", "classmn_1_1pointer_1_1basic__lock__ptr" ]
     ] ],

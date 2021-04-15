@@ -1,7 +1,5 @@
 var mn__config_8hpp =
 [
-    [ "MN_SAFE_DELETE", "mn__config_8hpp.html#a3a321d6244f0367104bb24b59f21e036", null ],
-    [ "MN_SAFE_FREE", "mn__config_8hpp.html#a49835d5b423a6c62a065c74f07f9505f", null ],
     [ "MN_THREAD_BETA_MAJOR_VERSION", "mn__config_8hpp.html#ac6cfeea38445d3d7feba1e9be92aed9b", null ],
     [ "MN_THREAD_BETA_MINOR_VERSION", "mn__config_8hpp.html#a0d76c697f9a62755f96da3f916b4e10e", null ],
     [ "MN_THREAD_BETA_VERSION_STRING", "mn__config_8hpp.html#a1d73a768413a6a1c5590b7733c78a43d", null ],
@@ -71,7 +69,5 @@ var mn__config_8hpp =
     [ "MN_THREAD_DEBUG_VERSION", "mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c", null ],
     [ "MN_THREAD_MAJOR_VERSION", "mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90", null ],
     [ "MN_THREAD_MINOR_VERSION", "mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0", null ],
-    [ "MN_THREAD_VERSION_STRING", "mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab", null ],
-    [ "MN_UNUSED_VARIABLE", "mn__config_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2", null ],
-    [ "MN_ZERO_SET", "mn__config_8hpp.html#a8446b71b78dda75ad4a2c490a1a98da6", null ]
+    [ "MN_THREAD_VERSION_STRING", "mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab", null ]
 ];

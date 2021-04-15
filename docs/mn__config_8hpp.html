@@ -312,52 +312,8 @@ Macros</h2></td></tr>
 <tr class="separator:ab38cc792d50f34fdd08b9e7939a7b5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab52fbf702e5cd328048240dd64178992"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ab52fbf702e5cd328048240dd64178992">MN_THREAD_CONFIG_USE_TRACE</a>&#160;&#160;&#160;configUSE_TRACE_FACILITY</td></tr>
 <tr class="separator:ab52fbf702e5cd328048240dd64178992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a40c79f97ffb858c5f5b2424939de2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">MN_UNUSED_VARIABLE</a>(var)&#160;&#160;&#160;do { (void)(var); } while (false)</td></tr>
-<tr class="separator:a25a40c79f97ffb858c5f5b2424939de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8446b71b78dda75ad4a2c490a1a98da6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a8446b71b78dda75ad4a2c490a1a98da6">MN_ZERO_SET</a>(var,  size)&#160;&#160;&#160;memset(var, 0, size)</td></tr>
-<tr class="separator:a8446b71b78dda75ad4a2c490a1a98da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a321d6244f0367104bb24b59f21e036"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a3a321d6244f0367104bb24b59f21e036">MN_SAFE_DELETE</a>(var)&#160;&#160;&#160;if((var)) { delete var; var = NULL; }</td></tr>
-<tr class="separator:a3a321d6244f0367104bb24b59f21e036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49835d5b423a6c62a065c74f07f9505f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a49835d5b423a6c62a065c74f07f9505f">MN_SAFE_FREE</a>(var)&#160;&#160;&#160;if((var)) { free(var); var = NULL; }</td></tr>
-<tr class="separator:a49835d5b423a6c62a065c74f07f9505f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a3a321d6244f0367104bb24b59f21e036"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a321d6244f0367104bb24b59f21e036">&#9670;&nbsp;</a></span>MN_SAFE_DELETE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_SAFE_DELETE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var</td><td>)</td>
-          <td>&#160;&#160;&#160;if((var)) { delete var; var = NULL; }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a49835d5b423a6c62a065c74f07f9505f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49835d5b423a6c62a065c74f07f9505f">&#9670;&nbsp;</a></span>MN_SAFE_FREE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_SAFE_FREE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var</td><td>)</td>
-          <td>&#160;&#160;&#160;if((var)) { free(var); var = NULL; }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac6cfeea38445d3d7feba1e9be92aed9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6cfeea38445d3d7feba1e9be92aed9b">&#9670;&nbsp;</a></span>MN_THREAD_BETA_MAJOR_VERSION</h2>
 
@@ -1448,52 +1404,6 @@ default: basic_thread::PriorityLow </dd></dl>
 </div><div class="memdoc">
 
 <p>The mini thread version as string. </p>
-
-</div>
-</div>
-<a id="a25a40c79f97ffb858c5f5b2424939de2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25a40c79f97ffb858c5f5b2424939de2">&#9670;&nbsp;</a></span>MN_UNUSED_VARIABLE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_UNUSED_VARIABLE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var</td><td>)</td>
-          <td>&#160;&#160;&#160;do { (void)(var); } while (false)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8446b71b78dda75ad4a2c490a1a98da6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8446b71b78dda75ad4a2c490a1a98da6">&#9670;&nbsp;</a></span>MN_ZERO_SET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_ZERO_SET</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">size&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;memset(var, 0, size)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

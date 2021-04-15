@@ -75,7 +75,9 @@ var hierarchy =
     [ "mn::pointer::basic_lock_ptr< T, TLOCK >", "classmn_1_1pointer_1_1basic__lock__ptr.html", null ],
     [ "mn::memory::basic_mempool_vector< TType, nElements, TMUTEX, TALLOCATOR >", "classmn_1_1memory_1_1basic__mempool__vector.html", null ],
     [ "mn::net::basic_net_if", "classmn_1_1net_1_1basic__net__if.html", [
-      [ "mn::net::basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", null ]
+      [ "mn::net::basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", [
+        [ "mn::net::basic_wifi_sta_net_if", "classmn_1_1net_1_1basic__wifi__sta__net__if.html", null ]
+      ] ]
     ] ],
     [ "mn::container::basic_node< T, TALLOCATOR >", "classmn_1_1container_1_1basic__node.html", null ],
     [ "mn::container::basic_node< T, TAllocator >", "classmn_1_1container_1_1basic__node.html", null ],
@@ -141,9 +143,6 @@ var hierarchy =
     [ "mn::memory::default_delete< T, TALLOCATOR >", "structmn_1_1memory_1_1default__delete.html", null ],
     [ "mn::enable_if< bool, class >", "namespacemn.html#structmn_1_1enable__if", null ],
     [ "mn::equal_to", "structmn_1_1equal__to.html", null ],
-    [ "std::exception", null, [
-      [ "mn::lockcreate_exception", "classmn_1_1lockcreate__exception.html", null ]
-    ] ],
     [ "mn::fast_type< Bits, TBaseType >", "classmn_1_1fast__type.html", null ],
     [ "mn::fast_type.__unnamed17__", "namespacemn.html#unionmn_1_1fast__type_8____unnamed17____", null ],
     [ "mn::container::fixed_vector_storage< T, TAllocator, TCapacity >", "structmn_1_1container_1_1fixed__vector__storage.html", [
@@ -246,6 +245,7 @@ var hierarchy =
       [ "mn::is_pointer< T * >", "structmn_1_1is__pointer_3_01T_01_5_01_4.html", null ],
       [ "mn::is_same< A, A >", "structmn_1_1is__same_3_01A_00_01A_01_4.html", null ]
     ] ],
+    [ "mn::net::basic_net_if::ip_info", "classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info", null ],
     [ "mn::IPseudoRandomUtil< TSEEDTYPE >", "classmn_1_1IPseudoRandomUtil.html", null ],
     [ "mn::IPseudoRandomUtil< unsigned int >", "classmn_1_1IPseudoRandomUtil.html", [
       [ "mn::basic_random_lfsr", "classmn_1_1basic__random__lfsr.html", null ]

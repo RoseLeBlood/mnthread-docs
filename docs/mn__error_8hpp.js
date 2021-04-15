@@ -7,6 +7,9 @@ var mn__error_8hpp =
     [ "ERR_MEMPOOL_CREATE", "mn__error_8hpp.html#ad2a86a215b1a3b62506e06236d2b4e7c", null ],
     [ "ERR_MEMPOOL_MIN", "mn__error_8hpp.html#acd0ac6d29de5d7af5edd4c51a73724e9", null ],
     [ "ERR_MEMPOOL_OK", "mn__error_8hpp.html#a8dd73c11391af71a2d1875df5a63aeb5", null ],
+    [ "ERR_MNTHREAD_INVALID_ARG", "mn__error_8hpp.html#a041871c5f0c2c2635b6fbfbab0327dae", null ],
+    [ "ERR_MNTHREAD_NETIF_NOT_INIT", "mn__error_8hpp.html#ae8c4bcdc4978e9cc0ce068a7f3ff24f3", null ],
+    [ "ERR_MNTHREAD_NOT_SUPPORTED", "mn__error_8hpp.html#a365e8ed7a318afe08020fd179d7811f5", null ],
     [ "ERR_MNTHREAD_NULL", "mn__error_8hpp.html#a8cd1c68a6982c2463cab897444a8d7e8", null ],
     [ "ERR_MNTHREAD_TIMEOUT", "mn__error_8hpp.html#a55471207305c931665ce3e25d46ff573", null ],
     [ "ERR_MNTHREAD_UNKN", "mn__error_8hpp.html#acbce619e281bf8e096bca1c95de66d05", null ],
@@ -57,5 +60,8 @@ var mn__error_8hpp =
     [ "ERR_WORKQUEUE_CANTINITMUTEX", "mn__error_8hpp.html#a6ef0dc7809a4f0ecf0dc6641f4cc5e6b", null ],
     [ "ERR_WORKQUEUE_OK", "mn__error_8hpp.html#a9e351ff9072292afb8102b778ad6e7f6", null ],
     [ "ERR_WORKQUEUE_WARNING", "mn__error_8hpp.html#abf3da728851d5fbebc409133b774fecd", null ],
+    [ "MN_ESP2MNTHREAD_ERROR_BEGIN", "mn__error_8hpp.html#acd2ea02982ed1edd451aa1e7d567e1d4", null ],
+    [ "MN_ESP2MNTHREAD_ERROR_END", "mn__error_8hpp.html#a07d3868acc2c3fbd2dbe48d5f8e6ea24", null ],
+    [ "MN_ESP2MNTHREAD_ERROR_VAL", "mn__error_8hpp.html#aa753fb4c0d2246c0fec903989a16b8e7", null ],
     [ "NO_ERROR", "mn__error_8hpp.html#a258bb72419ef143530a2f8f55e7d57af", null ]
 ];

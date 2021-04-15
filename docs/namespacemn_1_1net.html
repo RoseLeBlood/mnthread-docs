@@ -156,8 +156,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for the Internet Protocal version 6.  <a href="classmn_1_1net_1_1basic__ip6__address.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html">basic_net_if</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html">basic_wifi_net_if</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper class around esp-idf implementation of a esp-netif device.  <a href="classmn_1_1net_1_1basic__net__if.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">basic_ip_socket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +167,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip__socket.html">basic_stream_ip_socket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html">basic_stream_ip6_socket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html">basic_wifi_net_if</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper basic WiFi class around esp-idf implementation of a esp-netif device.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__sta__net__if.html">basic_wifi_sta_net_if</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -186,8 +190,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6789fb122f81d4132750fb223e2e9bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09fa1f3f0fea859171eb29956906ee32"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a09fa1f3f0fea859171eb29956906ee32">wifi_net_if</a> = <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html">basic_wifi_net_if</a></td></tr>
 <tr class="separator:a09fa1f3f0fea859171eb29956906ee32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83191f7d6ce432131f8c35611878e91c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a83191f7d6ce432131f8c35611878e91c">ppp_net_if</a> = basic_ppp_net_if</td></tr>
-<tr class="separator:a83191f7d6ce432131f8c35611878e91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295efd65189216a683c08f0a1e8e5549"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a295efd65189216a683c08f0a1e8e5549">dgram_ip4_socket</a> = <a class="el" href="classmn_1_1net_1_1basic__dgram__ip__socket.html">basic_dgram_ip_socket</a></td></tr>
 <tr class="separator:a295efd65189216a683c08f0a1e8e5549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e1bfb376cfa0239d3482dae3dd4fcf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#aa8e1bfb376cfa0239d3482dae3dd4fcf">stream_ip4_socket</a> = <a class="el" href="classmn_1_1net_1_1basic__stream__ip__socket.html">basic_stream_ip_socket</a></td></tr>
@@ -203,27 +205,24 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a71904aba97f0d9731cff82d62a17a3ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a> { <br />
-&#160;&#160;<a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaa88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a> = -1
+<tr class="memitem:a71904aba97f0d9731cff82d62a17a3ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a> { <a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaa88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a> = -1
 , <a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaa6fcdc090caeade09d0efd6253932b6f5">Unspecified</a> = AF_UNSPEC
 , <a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaa7838f8fe6cbf9681f8b74d7ed4cfde3b">inet_v4</a> = AF_INET
 , <a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaad15af7a2cb7fc5b5e024b9aa91ed67a9">inet_v6</a> = AF_INET6
-, <br />
-&#160;&#160;<a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaa6a061313d22e51e0f25b7cd4dc065233">Max</a> = 5
-<br />
  }</td></tr>
+<tr class="memdesc:a71904aba97f0d9731cff82d62a17a3ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines socket address types for creating.  <a href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">More...</a><br /></td></tr>
 <tr class="separator:a71904aba97f0d9731cff82d62a17a3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05afb60a1fb9ca57f7aee1f73cb0ac7d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d">protocol_type</a> : int { <br />
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dae13593f343f43afb25e0585565a167a4">unspec</a> = 0
-, <a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7da957b527bcfbad2e80f58d20683931435">ip</a> = IPPROTO_IP
 , <a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7da1249ce19ef6180e143506b5287be8a7a">icmp</a> = IPPROTO_ICMP
 , <a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dae20bb202b1d5537b1415e3263a37ed78">tcp</a> = IPPROTO_TCP
+, <a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7da84864c1fe095359bc9c5ac068e24e781">udp</a> = IPPROTO_UDP
 , <br />
-&#160;&#160;<a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7da84864c1fe095359bc9c5ac068e24e781">udp</a> = IPPROTO_UDP
-, <a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dadec09555f72b789e1942650e52077cd4">udp_lite</a> = IPPROTO_UDPLITE
+&#160;&#160;<a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dadec09555f72b789e1942650e52077cd4">udp_lite</a> = IPPROTO_UDPLITE
 , <a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dabdd166af3a63f7be696dd17a218a6ffb">raw</a> = IPPROTO_RAW
 <br />
  }</td></tr>
+<tr class="memdesc:a05afb60a1fb9ca57f7aee1f73cb0ac7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines socket protoco types for creating.  <a href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d">More...</a><br /></td></tr>
 <tr class="separator:a05afb60a1fb9ca57f7aee1f73cb0ac7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60cdf67b23eaa1b42c01a98e3589742e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742e">socket_type</a> : int { <br />
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742eae13593f343f43afb25e0585565a167a4">unspec</a> = -1
@@ -234,6 +233,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742ea26a4b44a837bf97b972628509912b4a5">MAX</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a60cdf67b23eaa1b42c01a98e3589742e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines socket socket types for creating.  <a href="namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742e">More...</a><br /></td></tr>
 <tr class="separator:a60cdf67b23eaa1b42c01a98e3589742e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2121619734553ddaf5c3ef5757e7823"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823">socket_flags</a> : int { <br />
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a> = 0x00
@@ -246,6 +246,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823a23906031439badaa342eb120da6e3032">no_signal</a> = MSG_NOSIGNAL
 <br />
  }</td></tr>
+<tr class="memdesc:ae2121619734553ddaf5c3ef5757e7823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies socket send and receive behaviors.  <a href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823">More...</a><br /></td></tr>
 <tr class="separator:ae2121619734553ddaf5c3ef5757e7823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a409713481569807121c90788405355a9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a409713481569807121c90788405355a9">socket_select_mode</a> : int { <a class="el" href="namespacemn_1_1net.html#a409713481569807121c90788405355a9aecae13117d6f0584c25a9da6c8f8415e">read</a> = SHUT_RD
 , <a class="el" href="namespacemn_1_1net.html#a409713481569807121c90788405355a9aefb2a684e4afb7d55e6147fbe5a332ee">write</a> = SHUT_WR
@@ -254,15 +255,14 @@ Enumerations</h2></td></tr>
 <tr class="separator:a409713481569807121c90788405355a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabf6880ad9783038a0951e318f6db9c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">socket_option_level</a> : int { <br />
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9ca61f2529360aec54f5dc9804b842cf3fa">socket</a> = 0xffff
-, <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9ca957b527bcfbad2e80f58d20683931435">ip</a> = (int)protocol_type::ip
+, <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9ca957b527bcfbad2e80f58d20683931435">ip</a> = IPPROTO_IP
 , <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9cae20bb202b1d5537b1415e3263a37ed78">tcp</a> = (int)protocol_type::tcp
 , <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9ca84864c1fe095359bc9c5ac068e24e781">udp</a> = (int)protocol_type::udp
 , <br />
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9cadec09555f72b789e1942650e52077cd4">udp_lite</a> = (int)protocol_type::udp_lite
-, <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9ca227f82daef18fd97b0ed9538ce418761">tos</a> = IP_TOS
-, <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9cac431a4425bc56080c868435c8d910f83">ttl</a> = IP_TTL
 <br />
  }</td></tr>
+<tr class="memdesc:acabf6880ad9783038a0951e318f6db9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines socket option levels for the mn_socket::set_options and mn_socket::get_options.  <a href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">More...</a><br /></td></tr>
 <tr class="separator:acabf6880ad9783038a0951e318f6db9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac78d17c83aa08c5ca33da490085c6052"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052">socket_option_name</a> : int { <br />
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052aad42f6697b035b7580e4fef93be20b4d">debug</a> = SO_DEBUG
@@ -292,6 +292,8 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052ab605ea609b9dfcf295cfd5a7803dcd37">broadcast</a> = SO_BROADCAST
 , <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052a797919b5a9c95dfae9b06cf3086e40c1">keepalive</a> = SO_KEEPALIVE
+, <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052a227f82daef18fd97b0ed9538ce418761">tos</a> = IP_TOS
+, <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052ac431a4425bc56080c868435c8d910f83">ttl</a> = IP_TTL
 <br />
  }</td></tr>
 <tr class="separator:ac78d17c83aa08c5ca33da490085c6052"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -420,20 +422,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="a83191f7d6ce432131f8c35611878e91c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83191f7d6ce432131f8c35611878e91c">&#9670;&nbsp;</a></span>ppp_net_if</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemn_1_1net.html#a83191f7d6ce432131f8c35611878e91c">mn::net::ppp_net_if</a> = typedef basic_ppp_net_if</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4bb1d57937a4ea1e8748c1d4cefe5e86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bb1d57937a4ea1e8748c1d4cefe5e86">&#9670;&nbsp;</a></span>raw_ip4_socket</h2>
 
@@ -524,12 +512,17 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Defines socket address types for creating. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaa88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaa6fcdc090caeade09d0efd6253932b6f5"></a>Unspecified&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaa7838f8fe6cbf9681f8b74d7ed4cfde3b"></a>inet_v4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaad15af7a2cb7fc5b5e024b9aa91ed67a9"></a>inet_v6&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaa6a061313d22e51e0f25b7cd4dc065233"></a>Max&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaa88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Unknown </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaa6fcdc090caeade09d0efd6253932b6f5"></a>Unspecified&#160;</td><td class="fielddoc"><p>The address family is unspecified. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaa7838f8fe6cbf9681f8b74d7ed4cfde3b"></a>inet_v4&#160;</td><td class="fielddoc"><p>The Internet Protocol version 4 (IPv4) address family. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71904aba97f0d9731cff82d62a17a3eaad15af7a2cb7fc5b5e024b9aa91ed67a9"></a>inet_v6&#160;</td><td class="fielddoc"><p>The Internet Protocol version 6 (IPv6) address family. </p>
+</td></tr>
 </table>
 
 </div>
@@ -553,14 +546,21 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Defines socket protoco types for creating. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7dae13593f343f43afb25e0585565a167a4"></a>unspec&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7da957b527bcfbad2e80f58d20683931435"></a>ip&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7da1249ce19ef6180e143506b5287be8a7a"></a>icmp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7dae20bb202b1d5537b1415e3263a37ed78"></a>tcp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7da84864c1fe095359bc9c5ac068e24e781"></a>udp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7dadec09555f72b789e1942650e52077cd4"></a>udp_lite&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7dabdd166af3a63f7be696dd17a218a6ffb"></a>raw&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7da1249ce19ef6180e143506b5287be8a7a"></a>icmp&#160;</td><td class="fielddoc"><p>The Internet Control Message Protocol (ICMP) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7dae20bb202b1d5537b1415e3263a37ed78"></a>tcp&#160;</td><td class="fielddoc"><p>The Transmission Control Protocol (TCP). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7da84864c1fe095359bc9c5ac068e24e781"></a>udp&#160;</td><td class="fielddoc"><p>The User Datagram Protocol (UDP) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7dadec09555f72b789e1942650e52077cd4"></a>udp_lite&#160;</td><td class="fielddoc"><p>This is an implementation of the Lightweight User Datagram Protocol (UDP-Lite), as described in RFC 3828. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a05afb60a1fb9ca57f7aee1f73cb0ac7dabdd166af3a63f7be696dd17a218a6ffb"></a>raw&#160;</td><td class="fielddoc"><p>Raw sockets allow new IPv4 protocols to be implemented in user space. <br  />
+ </p>
+</td></tr>
 </table>
 
 </div>
@@ -606,14 +606,27 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Specifies socket send and receive behaviors. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823adeae37c649159bf7e5f67dd8c6c9682b"></a>out_of_band&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823a7dcf5e1eb5e8fa02cdd1dd4415aaef3e"></a>peek&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823a4e1789381cf8c976ec7a7118b3529345"></a>wait_all&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823aacc1dd5e3a4019590a9bcc5639a49236"></a>non_blocking&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823aaddec426932e71323700afa1911f8f1c"></a>more&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823a23906031439badaa342eb120da6e3032"></a>no_signal&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"><p>Use no flags for this call. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823adeae37c649159bf7e5f67dd8c6c9682b"></a>out_of_band&#160;</td><td class="fielddoc"><p>Processes Out Of Band (OOB) data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823a7dcf5e1eb5e8fa02cdd1dd4415aaef3e"></a>peek&#160;</td><td class="fielddoc"><p>Peeks at the incoming data. The data is copied into the buffer, but is not removed from the input queue. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823a4e1789381cf8c976ec7a7118b3529345"></a>wait_all&#160;</td><td class="fielddoc"><p>The receive request will complete only when one of the following events occurs:</p><ul>
+<li>The buffer supplied by the caller is completely full.</li>
+<li>The connection has been closed.</li>
+<li>The request has been canceled or an error occurred. </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823aacc1dd5e3a4019590a9bcc5639a49236"></a>non_blocking&#160;</td><td class="fielddoc"><p>Nonblocking i/o for this operation only </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823aaddec426932e71323700afa1911f8f1c"></a>more&#160;</td><td class="fielddoc"><p>Sender will send more </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae2121619734553ddaf5c3ef5757e7823a23906031439badaa342eb120da6e3032"></a>no_signal&#160;</td><td class="fielddoc"><p>Requests not to send any data on errors on stream oriented sockets when the other end breaks the connection </p>
+</td></tr>
 </table>
 
 </div>
@@ -637,14 +650,19 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Defines socket option levels for the mn_socket::set_options and mn_socket::get_options. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9ca61f2529360aec54f5dc9804b842cf3fa"></a>socket&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9ca957b527bcfbad2e80f58d20683931435"></a>ip&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9cae20bb202b1d5537b1415e3263a37ed78"></a>tcp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9ca84864c1fe095359bc9c5ac068e24e781"></a>udp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9cadec09555f72b789e1942650e52077cd4"></a>udp_lite&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9ca227f82daef18fd97b0ed9538ce418761"></a>tos&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9cac431a4425bc56080c868435c8d910f83"></a>ttl&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9ca61f2529360aec54f5dc9804b842cf3fa"></a>socket&#160;</td><td class="fielddoc"><p>options for socket level </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9ca957b527bcfbad2e80f58d20683931435"></a>ip&#160;</td><td class="fielddoc"><p>options for IPv4 level </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9cae20bb202b1d5537b1415e3263a37ed78"></a>tcp&#160;</td><td class="fielddoc"><p>options for TCP level </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9ca84864c1fe095359bc9c5ac068e24e781"></a>udp&#160;</td><td class="fielddoc"><p>options for UDP level </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acabf6880ad9783038a0951e318f6db9cadec09555f72b789e1942650e52077cd4"></a>udp_lite&#160;</td><td class="fielddoc"><p>options for UDPLite level </p>
+</td></tr>
 </table>
 
 </div>
@@ -669,28 +687,57 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052aad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a84f39d775e75b78a0df31fa2bc9eaffc"></a>acceptconn&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052ab4f4a8e1ef6c8a7153561e9b8cab2887"></a>dont_route&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a843fc961b4be08a15c829b596bd5cadb"></a>use_loopback&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052afa1711bb276806d1f1808dbb0e31018a"></a>linger&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052acf28e15da45bae2f605edaf405dfd3f5"></a>nolinger&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a6cf14f171811249466d1af04798f90f7"></a>oob_inline&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052ad23ebbf6188ee613c1c0b82681b71ce8"></a>reuse_port&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a4878f055c18ed2609b08d220e1ba9582"></a>reuse_addr&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a370f45c9e2c394149d6cdaa883dd90f4"></a>sendbuffer&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052aad03de27bed762a42381c45799e61d73"></a>recivebuffer&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a43dc1332debb9d0025a290b20156437a"></a>send_lowat&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a53104ba73ea5623b78b582cf0a990b84"></a>recive_lowat&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052aacada9ea0284da2d535105b61d2fcb3b"></a>send_timeout&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a083052792396753aad412a32adf4b68e"></a>recive_timeout&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052acb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a7e86fb6a82c0050577b369687bb1959f"></a>get_type&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a429489da1d791634f5f50880e21ed066"></a>commected_timeout&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052af216e5ec853fe2ec463c722f59d59b96"></a>no_check&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052aad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"><p>Enables debug output. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a84f39d775e75b78a0df31fa2bc9eaffc"></a>acceptconn&#160;</td><td class="fielddoc"><p>Returns whether a socket is in listening mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052ab4f4a8e1ef6c8a7153561e9b8cab2887"></a>dont_route&#160;</td><td class="fielddoc"><p>Sets whether outgoing data should be sent on interface the socket is bound to and not a routed on some other interface </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a843fc961b4be08a15c829b596bd5cadb"></a>use_loopback&#160;</td><td class="fielddoc"><p>Use the local loopback address when sending data from this socket. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052afa1711bb276806d1f1808dbb0e31018a"></a>linger&#160;</td><td class="fielddoc"><p>Lingers on close if unsent data is present. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052acf28e15da45bae2f605edaf405dfd3f5"></a>nolinger&#160;</td><td class="fielddoc"><p>Does not block close waiting for unsent data to be sent. Setting this option is equivalent to setting SO_LINGER with 0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a6cf14f171811249466d1af04798f90f7"></a>oob_inline&#160;</td><td class="fielddoc"><p>Indicates that out-of-bound data should be returned in-line with regular data. This option is only valid for connection-oriented protocols that support out-of-band data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052ad23ebbf6188ee613c1c0b82681b71ce8"></a>reuse_port&#160;</td><td class="fielddoc"><p>Allows the socket to be bound to an port that is already in use. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a4878f055c18ed2609b08d220e1ba9582"></a>reuse_addr&#160;</td><td class="fielddoc"><p>Allows the socket to be bound to an address that is already in use. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a370f45c9e2c394149d6cdaa883dd90f4"></a>sendbuffer&#160;</td><td class="fielddoc"><p>Specifies the total per-socket buffer space reserved for sends. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052aad03de27bed762a42381c45799e61d73"></a>recivebuffer&#160;</td><td class="fielddoc"><p>Specifies the total per-socket buffer space reserved for receives. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a43dc1332debb9d0025a290b20156437a"></a>send_lowat&#160;</td><td class="fielddoc"><p>This option sets the minimum number of bytes to process for socket output operations. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a53104ba73ea5623b78b582cf0a990b84"></a>recive_lowat&#160;</td><td class="fielddoc"><p>This option sets the minimum number of bytes to process for socket input operations. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052aacada9ea0284da2d535105b61d2fcb3b"></a>send_timeout&#160;</td><td class="fielddoc"><p>Sets the timeout, in milliseconds, for blocking send calls. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a083052792396753aad412a32adf4b68e"></a>recive_timeout&#160;</td><td class="fielddoc"><p>Sets the timeout, in milliseconds, for blocking receive calls </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052acb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"><p>Get last error </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a7e86fb6a82c0050577b369687bb1959f"></a>get_type&#160;</td><td class="fielddoc"><p>Returns the socket type for the given socket (SOCK_STREAM or SOCK_DGRAM) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a429489da1d791634f5f50880e21ed066"></a>commected_timeout&#160;</td><td class="fielddoc"><p>Unimplemented: connect timeout </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052af216e5ec853fe2ec463c722f59d59b96"></a>no_check&#160;</td><td class="fielddoc"><p>don't create UDP checksum </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a1e6c830f5daeb64ae6d7ea2894655b0c"></a>bind_device&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052ab605ea609b9dfcf295cfd5a7803dcd37"></a>broadcast&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a797919b5a9c95dfae9b06cf3086e40c1"></a>keepalive&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052ab605ea609b9dfcf295cfd5a7803dcd37"></a>broadcast&#160;</td><td class="fielddoc"><p>Configures a socket for sending broadcast data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a797919b5a9c95dfae9b06cf3086e40c1"></a>keepalive&#160;</td><td class="fielddoc"><p>Enables sending keep-alive packets for a socket connection. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052a227f82daef18fd97b0ed9538ce418761"></a>tos&#160;</td><td class="fielddoc"><p>Type of Service (TOS) settings should only be set using the Quality of Service API. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ac78d17c83aa08c5ca33da490085c6052ac431a4425bc56080c868435c8d910f83"></a>ttl&#160;</td><td class="fielddoc"><p>Changes the default value set by the TCP/IP service provider in the TTL field of the IP header in outgoing datagrams </p>
+</td></tr>
 </table>
 
 </div>
@@ -715,9 +762,13 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a409713481569807121c90788405355a9aecae13117d6f0584c25a9da6c8f8415e"></a>read&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a409713481569807121c90788405355a9aefb2a684e4afb7d55e6147fbe5a332ee"></a>write&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a409713481569807121c90788405355a9a038c0dc8a958ffea17af047244fb6960"></a>rw&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a409713481569807121c90788405355a9aecae13117d6f0584c25a9da6c8f8415e"></a>read&#160;</td><td class="fielddoc"><p>receptions will be disallowed <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a409713481569807121c90788405355a9aefb2a684e4afb7d55e6147fbe5a332ee"></a>write&#160;</td><td class="fielddoc"><p>transmissions will be disallowed </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a409713481569807121c90788405355a9a038c0dc8a958ffea17af047244fb6960"></a>rw&#160;</td><td class="fielddoc"><p>receptions and transmissions will be disallowed </p>
+</td></tr>
 </table>
 
 </div>
@@ -741,11 +792,17 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Defines socket socket types for creating. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742eae13593f343f43afb25e0585565a167a4"></a>unspec&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742eaf7b44cfafd5c52223d5498196c8a2e7b"></a>stream&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742eafbf7c787e5a1bb8634a7639a596aa786"></a>dgram&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742eabdd166af3a63f7be696dd17a218a6ffb"></a>raw&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742eae13593f343f43afb25e0585565a167a4"></a>unspec&#160;</td><td class="fielddoc"><p>Unspec type of socket </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742eaf7b44cfafd5c52223d5498196c8a2e7b"></a>stream&#160;</td><td class="fielddoc"><p>Socket type for stream (tcp) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742eafbf7c787e5a1bb8634a7639a596aa786"></a>dgram&#160;</td><td class="fielddoc"><p>Socket type for datagram (udp for example) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742eabdd166af3a63f7be696dd17a218a6ffb"></a>raw&#160;</td><td class="fielddoc"><p>A socket type that provides a raw socket that allows an application to manipulate the next upper-layer protocol header </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a60cdf67b23eaa1b42c01a98e3589742ea26a4b44a837bf97b972628509912b4a5"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
 </table>
 

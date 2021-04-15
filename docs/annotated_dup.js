@@ -89,12 +89,13 @@ var annotated_dup =
         [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html", "classmn_1_1net_1_1basic__ip4__address" ],
         [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html", "classmn_1_1net_1_1basic__ip6__address" ],
         [ "basic_net_if", "classmn_1_1net_1_1basic__net__if.html", "classmn_1_1net_1_1basic__net__if" ],
-        [ "basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", "classmn_1_1net_1_1basic__wifi__net__if" ],
         [ "basic_ip_socket", "classmn_1_1net_1_1basic__ip__socket.html", "classmn_1_1net_1_1basic__ip__socket" ],
         [ "basic_ip4_socket", "classmn_1_1net_1_1basic__ip4__socket.html", "classmn_1_1net_1_1basic__ip4__socket" ],
         [ "basic_ip6_socket", "classmn_1_1net_1_1basic__ip6__socket.html", "classmn_1_1net_1_1basic__ip6__socket" ],
         [ "basic_stream_ip_socket", "classmn_1_1net_1_1basic__stream__ip__socket.html", "classmn_1_1net_1_1basic__stream__ip__socket" ],
-        [ "basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html", "classmn_1_1net_1_1basic__stream__ip6__socket" ]
+        [ "basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html", "classmn_1_1net_1_1basic__stream__ip6__socket" ],
+        [ "basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", "classmn_1_1net_1_1basic__wifi__net__if" ],
+        [ "basic_wifi_sta_net_if", "classmn_1_1net_1_1basic__wifi__sta__net__if.html", "classmn_1_1net_1_1basic__wifi__sta__net__if" ]
       ] ],
       [ "pointer", "namespacemn_1_1pointer.html", [
         [ "basic_any_ptr", "classmn_1_1pointer_1_1basic__any__ptr.html", "classmn_1_1pointer_1_1basic__any__ptr" ],
@@ -147,7 +148,6 @@ var annotated_dup =
       [ "_atomic_ptr", "structmn_1_1__atomic__ptr.html", "structmn_1_1__atomic__ptr" ],
       [ "is_pod< container::pair< TFIRST, TSECOND > >", "structmn_1_1is__pod_3_01container_1_1pair_3_01TFIRST_00_01TSECOND_01_4_01_4.html", null ],
       [ "is_pod< container::triple< TFIRST, TSECOND, TTHIRD > >", "structmn_1_1is__pod_3_01container_1_1triple_3_01TFIRST_00_01TSECOND_00_01TTHIRD_01_4_01_4.html", null ],
-      [ "lockcreate_exception", "classmn_1_1lockcreate__exception.html", "classmn_1_1lockcreate__exception" ],
       [ "value2size", "structmn_1_1value2size.html", null ],
       [ "value2size_raw", "structmn_1_1value2size__raw.html", null ],
       [ "atomic_spinlock", "classmn_1_1atomic__spinlock.html", "classmn_1_1atomic__spinlock" ],

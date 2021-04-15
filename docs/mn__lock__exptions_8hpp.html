@@ -127,28 +127,72 @@ $(document).ready(function(){initNavTree('mn__lock__exptions_8hpp.html',''); ini
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">mn_lock_exptions.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">../mn_config.hpp</a>&quot;</code><br />
 <code>#include &lt;exception&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="mn__lock__exptions_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1lockcreate__exception.html">mn::lockcreate_exception</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac24ac578ec7450986130f89a22c956f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__lock__exptions_8hpp.html#ac24ac578ec7450986130f89a22c956f8">MN_THROW_LOCK_EXP</a>(CODE)&#160;&#160;&#160;set_error(CODE);</td></tr>
+<tr class="separator:ac24ac578ec7450986130f89a22c956f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b942b0dc61a8519006af16c722bbe9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__lock__exptions_8hpp.html#a22b942b0dc61a8519006af16c722bbe9">MN_THROW_LOCK_EXP2</a>(CODE,  RET)&#160;&#160;&#160;{ set_error(CODE); return RET; }</td></tr>
+<tr class="separator:a22b942b0dc61a8519006af16c722bbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ac24ac578ec7450986130f89a22c956f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24ac578ec7450986130f89a22c956f8">&#9670;&nbsp;</a></span>MN_THROW_LOCK_EXP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THROW_LOCK_EXP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CODE</td><td>)</td>
+          <td>&#160;&#160;&#160;set_error(CODE);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This Macro util set only the error code </p>
+
+</div>
+</div>
+<a id="a22b942b0dc61a8519006af16c722bbe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b942b0dc61a8519006af16c722bbe9">&#9670;&nbsp;</a></span>MN_THROW_LOCK_EXP2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THROW_LOCK_EXP2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">CODE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">RET&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;{ set_error(CODE); return RET; }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This Macro util set only the error code, and return setted return code </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>

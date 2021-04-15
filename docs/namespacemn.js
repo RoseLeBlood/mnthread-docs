@@ -1,6 +1,7 @@
 var namespacemn =
 [
     [ "container", "namespacemn_1_1container.html", "namespacemn_1_1container" ],
+    [ "error", "namespacemn_1_1error.html", null ],
     [ "esp32", "namespacemn_1_1esp32.html", "namespacemn_1_1esp32" ],
     [ "ext", "namespacemn_1_1ext.html", "namespacemn_1_1ext" ],
     [ "hash", "namespacemn_1_1hash.html", "namespacemn_1_1hash" ],
@@ -39,7 +40,6 @@ var namespacemn =
     [ "_atomic_ptr", "structmn_1_1__atomic__ptr.html", "structmn_1_1__atomic__ptr" ],
     [ "is_pod< container::pair< TFIRST, TSECOND > >", "structmn_1_1is__pod_3_01container_1_1pair_3_01TFIRST_00_01TSECOND_01_4_01_4.html", null ],
     [ "is_pod< container::triple< TFIRST, TSECOND, TTHIRD > >", "structmn_1_1is__pod_3_01container_1_1triple_3_01TFIRST_00_01TSECOND_00_01TTHIRD_01_4_01_4.html", null ],
-    [ "lockcreate_exception", "classmn_1_1lockcreate__exception.html", "classmn_1_1lockcreate__exception" ],
     [ "value2size", "structmn_1_1value2size.html", null ],
     [ "value2size_raw", "structmn_1_1value2size__raw.html", null ],
     [ "atomic_spinlock", "classmn_1_1atomic__spinlock.html", "classmn_1_1atomic__spinlock" ],
