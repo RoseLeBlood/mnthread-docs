@@ -53,6 +53,7 @@ var files_dup =
       [ "atomic_spinlock", "classmn_1_1atomic__spinlock.html", "classmn_1_1atomic__spinlock" ]
     ] ],
     [ "mn_atomic_weak_ptr.hpp", "mn__atomic__weak__ptr_8hpp.html", null ],
+    [ "mn_auto_version.hpp", "mn__auto__version_8hpp.html", "mn__auto__version_8hpp" ],
     [ "mn_autolock.cpp", "mn__autolock_8cpp.html", null ],
     [ "mn_autolock.hpp", "mn__autolock_8hpp.html", "mn__autolock_8hpp" ],
     [ "mn_base_ptr.hpp", "mn__base__ptr_8hpp.html", [
@@ -67,6 +68,8 @@ var files_dup =
     [ "mn_basic_endpoint.hpp", "mn__basic__endpoint_8hpp.html", "mn__basic__endpoint_8hpp" ],
     [ "mn_basic_ip_address.cpp", "mn__basic__ip__address_8cpp.html", "mn__basic__ip__address_8cpp" ],
     [ "mn_basic_ip_address.hpp", "mn__basic__ip__address_8hpp.html", "mn__basic__ip__address_8hpp" ],
+    [ "mn_basic_ip_socket.cpp", "mn__basic__ip__socket_8cpp.html", null ],
+    [ "mn_basic_ip_socket.hpp", "mn__basic__ip__socket_8hpp.html", null ],
     [ "mn_basic_mempool.hpp", "mn__basic__mempool_8hpp.html", "mn__basic__mempool_8hpp" ],
     [ "mn_basic_mempool_chunk.hpp", "mn__basic__mempool__chunk_8hpp.html", "mn__basic__mempool__chunk_8hpp" ],
     [ "mn_basic_netif.cpp", "mn__basic__netif_8cpp.html", null ],

@@ -65,9 +65,5 @@ var mn__config_8hpp =
     [ "MN_THREAD_CONFIG_WORKQUEUE_SINGLE_MAXITEMS", "mn__config_8hpp.html#ae2cd1bd439df99613159cc6012920f16", null ],
     [ "MN_THREAD_CONFIG_WORKQUEUE_SINGLE_PRIORITY", "mn__config_8hpp.html#a4872c5fc30c3382fe645408bf9501abf", null ],
     [ "MN_THREAD_CONFIG_WORKQUEUE_SINGLE_STACKSIZE", "mn__config_8hpp.html#ab0e9e87c8fd8cede584d680bcea94b8a", null ],
-    [ "MN_THREAD_CONFIG_YES", "mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df", null ],
-    [ "MN_THREAD_DEBUG_VERSION", "mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c", null ],
-    [ "MN_THREAD_MAJOR_VERSION", "mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90", null ],
-    [ "MN_THREAD_MINOR_VERSION", "mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0", null ],
-    [ "MN_THREAD_VERSION_STRING", "mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab", null ]
+    [ "MN_THREAD_CONFIG_YES", "mn__config_8hpp.html#ae911d55d86029d20c96e0e6b0526e3df", null ]
 ];

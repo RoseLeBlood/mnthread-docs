@@ -65,6 +65,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
@@ -138,18 +144,6 @@ $(document).ready(function(){initNavTree('mn__config_8hpp.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae8e43bb3aa6d7b1705cedd81bd1f8b90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90">MN_THREAD_MAJOR_VERSION</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:ae8e43bb3aa6d7b1705cedd81bd1f8b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Major Version, the first number.  <a href="mn__config_8hpp.html#ae8e43bb3aa6d7b1705cedd81bd1f8b90">More...</a><br /></td></tr>
-<tr class="separator:ae8e43bb3aa6d7b1705cedd81bd1f8b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad0f3724fe8622f21ae5b8f412d144e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0">MN_THREAD_MINOR_VERSION</a>&#160;&#160;&#160;25</td></tr>
-<tr class="memdesc:aad0f3724fe8622f21ae5b8f412d144e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minor Version, the 2. number.  <a href="mn__config_8hpp.html#aad0f3724fe8622f21ae5b8f412d144e0">More...</a><br /></td></tr>
-<tr class="separator:aad0f3724fe8622f21ae5b8f412d144e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716b0d4bd0b293fc6464ab0b8dbdac9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c">MN_THREAD_DEBUG_VERSION</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a716b0d4bd0b293fc6464ab0b8dbdac9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug version.  <a href="mn__config_8hpp.html#a716b0d4bd0b293fc6464ab0b8dbdac9c">More...</a><br /></td></tr>
-<tr class="separator:a716b0d4bd0b293fc6464ab0b8dbdac9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbda74b1d32ee3d4518fc2e7d313cfab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab">MN_THREAD_VERSION_STRING</a>&#160;&#160;&#160;&quot;2.25.0&quot;</td></tr>
-<tr class="memdesc:afbda74b1d32ee3d4518fc2e7d313cfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mini thread version as string.  <a href="mn__config_8hpp.html#afbda74b1d32ee3d4518fc2e7d313cfab">More...</a><br /></td></tr>
-<tr class="separator:afbda74b1d32ee3d4518fc2e7d313cfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a664bef337ebc2277702bbb63321b657c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">MN_THREAD_CONFIG_MUTEX</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a664bef337ebc2277702bbb63321b657c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre defined helper values for config items - Use a mutex.  <a href="mn__config_8hpp.html#a664bef337ebc2277702bbb63321b657c">More...</a><br /></td></tr>
 <tr class="separator:a664bef337ebc2277702bbb63321b657c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -939,6 +933,7 @@ default: MN_THREAD_CONFIG_BINARY_SEMAPHORE </dd></dl>
 </div><div class="memdoc">
 
 <p>Pre defined helper values for config items - Use a mutex. </p>
+<p>All cunfig properties can override in your sdkconfig.h </p>
 
 </div>
 </div>
@@ -1339,71 +1334,6 @@ default: basic_thread::PriorityLow </dd></dl>
 </div><div class="memdoc">
 
 <p>Pre defined helper values for config items - Use for aktivating. </p>
-
-</div>
-</div>
-<a id="a716b0d4bd0b293fc6464ab0b8dbdac9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a716b0d4bd0b293fc6464ab0b8dbdac9c">&#9670;&nbsp;</a></span>MN_THREAD_DEBUG_VERSION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_THREAD_DEBUG_VERSION&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Debug version. </p>
-
-</div>
-</div>
-<a id="ae8e43bb3aa6d7b1705cedd81bd1f8b90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e43bb3aa6d7b1705cedd81bd1f8b90">&#9670;&nbsp;</a></span>MN_THREAD_MAJOR_VERSION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_THREAD_MAJOR_VERSION&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Major Version, the first number. </p>
-<p>All cunfig properties can override in your sdkconfig.h </p>
-
-</div>
-</div>
-<a id="aad0f3724fe8622f21ae5b8f412d144e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad0f3724fe8622f21ae5b8f412d144e0">&#9670;&nbsp;</a></span>MN_THREAD_MINOR_VERSION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_THREAD_MINOR_VERSION&#160;&#160;&#160;25</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Minor Version, the 2. number. </p>
-
-</div>
-</div>
-<a id="afbda74b1d32ee3d4518fc2e7d313cfab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbda74b1d32ee3d4518fc2e7d313cfab">&#9670;&nbsp;</a></span>MN_THREAD_VERSION_STRING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MN_THREAD_VERSION_STRING&#160;&#160;&#160;&quot;2.25.0&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The mini thread version as string. </p>
 
 </div>
 </div>

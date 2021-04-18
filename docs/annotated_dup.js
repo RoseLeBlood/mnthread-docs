@@ -241,7 +241,6 @@ var annotated_dup =
       [ "has_trivial_assign", "structmn_1_1has__trivial__assign.html", null ],
       [ "has_trivial_destructor", "structmn_1_1has__trivial__destructor.html", null ],
       [ "basic_uint128_t", "namespacemn.html#structmn_1_1basic__uint128__t", null ],
-      [ "version", "classmn_1_1version.html", "classmn_1_1version" ],
       [ "aligof", "structmn_1_1aligof.html", null ],
       [ "aligned_as", "namespacemn.html#structmn_1_1aligned__as", "namespacemn_structmn_1_1aligned__as_dup" ],
       [ "int_to_type", "structmn_1_1int__to__type.html", null ],

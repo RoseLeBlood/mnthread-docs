@@ -18,19 +18,20 @@ var namespacemn_1_1net =
     [ "basic_wifi_sta_net_if", "classmn_1_1net_1_1basic__wifi__sta__net__if.html", "classmn_1_1net_1_1basic__wifi__sta__net__if" ],
     [ "dgram_ip4_socket", "namespacemn_1_1net.html#a295efd65189216a683c08f0a1e8e5549", null ],
     [ "dgram_ip6_socket", "namespacemn_1_1net.html#a47508b034d7466c2212f78484dd4b982", null ],
+    [ "ethernet_nef_if", "namespacemn_1_1net.html#aa6c7ac24bd2b54e51f848a252cf770a8", null ],
     [ "ip4_address", "namespacemn_1_1net.html#ae76cedf1feb39a12ff2e94d9a85399ee", null ],
     [ "ip4_endpoint", "namespacemn_1_1net.html#aaa92d02991eacb0dca1c540de55540a7", null ],
     [ "ip4_socket", "namespacemn_1_1net.html#a6789fb122f81d4132750fb223e2e9bab", null ],
     [ "ip6_address", "namespacemn_1_1net.html#abf355b3380eb82e03789f1a5fc0e2b0f", null ],
     [ "ip6_endpoint", "namespacemn_1_1net.html#a6cd5acc0827f7562db70b22c6ef9c08d", null ],
     [ "ip6_socket", "namespacemn_1_1net.html#a4bf3e6139717816294b2395727049922", null ],
+    [ "ppp_net_if", "namespacemn_1_1net.html#a662a0ed15f92182b05429e92cc3ae1cb", null ],
     [ "raw_ip4_socket", "namespacemn_1_1net.html#a4bb1d57937a4ea1e8748c1d4cefe5e86", null ],
     [ "raw_ip6_socket", "namespacemn_1_1net.html#ada44cacd685a435e7596d83f130e0e18", null ],
     [ "stream_ip4_socket", "namespacemn_1_1net.html#aa8e1bfb376cfa0239d3482dae3dd4fcf", null ],
     [ "stream_ip6_socket", "namespacemn_1_1net.html#afda63733496d086fc4f39ba94d356898", null ],
     [ "wifi_net_if", "namespacemn_1_1net.html#a09fa1f3f0fea859171eb29956906ee32", null ],
     [ "address_family", "namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea", [
-      [ "Unknown", "namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaa88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Unspecified", "namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaa6fcdc090caeade09d0efd6253932b6f5", null ],
       [ "inet_v4", "namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaa7838f8fe6cbf9681f8b74d7ed4cfde3b", null ],
       [ "inet_v6", "namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3eaad15af7a2cb7fc5b5e024b9aa91ed67a9", null ]
@@ -99,10 +100,8 @@ var namespacemn_1_1net =
       [ "rw", "namespacemn_1_1net.html#a409713481569807121c90788405355a9a038c0dc8a958ffea17af047244fb6960", null ]
     ] ],
     [ "socket_type", "namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742e", [
-      [ "unspec", "namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742eae13593f343f43afb25e0585565a167a4", null ],
       [ "stream", "namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742eaf7b44cfafd5c52223d5498196c8a2e7b", null ],
       [ "dgram", "namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742eafbf7c787e5a1bb8634a7639a596aa786", null ],
-      [ "raw", "namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742eabdd166af3a63f7be696dd17a218a6ffb", null ],
-      [ "MAX", "namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742ea26a4b44a837bf97b972628509912b4a5", null ]
+      [ "raw", "namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742eabdd166af3a63f7be696dd17a218a6ffb", null ]
     ] ]
 ];

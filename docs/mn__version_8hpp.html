@@ -65,6 +65,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
@@ -127,34 +133,50 @@ $(document).ready(function(){initNavTree('mn__version_8hpp.html',''); initResiza
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_version.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mn__singleton_8hpp_source.html">mn_singleton.hpp</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="mn__auto__version_8hpp_source.html">mn_auto_version.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__version_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1version.html">mn::version</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a2cca548421a08ff372ae21f46d9cbeaa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a2cca548421a08ff372ae21f46d9cbeaa">mn::version_t</a> = version</td></tr>
-<tr class="separator:a2cca548421a08ff372ae21f46d9cbeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a026de5025d10cea3060a968615ee8e2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>&#160;&#160;&#160;sizeof(MN_VERSION_FULLVERSION_STRING) + sizeof(MN_VERSION_STATUS) + 8</td></tr>
+<tr class="separator:a026de5025d10cea3060a968615ee8e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a02d8c57c1e073791ef45848b67a47a76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a02d8c57c1e073791ef45848b67a47a76">mn::minilib_version_string</a> (char version_string[<a class="el" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>])</td></tr>
+<tr class="separator:a02d8c57c1e073791ef45848b67a47a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a73bf11270aa4bfef04aad3b51c5b8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9a73bf11270aa4bfef04aad3b51c5b8a">mn::minilib_version_print</a> ()</td></tr>
+<tr class="separator:a9a73bf11270aa4bfef04aad3b51c5b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a026de5025d10cea3060a968615ee8e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026de5025d10cea3060a968615ee8e2c">&#9670;&nbsp;</a></span>MN_THREAD_VERSION_STRING_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_THREAD_VERSION_STRING_LEN&#160;&#160;&#160;sizeof(MN_VERSION_FULLVERSION_STRING) + sizeof(MN_VERSION_STATUS) + 8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>

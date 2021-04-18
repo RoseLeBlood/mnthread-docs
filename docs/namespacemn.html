@@ -65,6 +65,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
@@ -413,8 +419,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1basic__uint128__t"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1basic__uint128__t">basic_uint128_t</a></td></tr>
 <tr class="separator:structmn_1_1basic__uint128__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1version.html">version</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1aligof.html">aligof</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1aligned__as"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1aligned__as">aligned_as</a></td></tr>
@@ -739,6 +743,7 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a5627e5f55e4994f4fbad84df61be3090"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared object value of <code>std::string</code>.  <a href="namespacemn.html#a5627e5f55e4994f4fbad84df61be3090">More...</a><br /></td></tr>
 <tr class="separator:a5627e5f55e4994f4fbad84df61be3090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25b8ead5c12c12f56c64a873eae35039"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a25b8ead5c12c12f56c64a873eae35039">task_t</a> = <a class="el" href="classmn_1_1basic__task.html">basic_task</a></td></tr>
+<tr class="memdesc:a25b8ead5c12c12f56c64a873eae35039"><td class="mdescLeft">&#160;</td><td class="mdescRight">using the <a class="el" href="classmn_1_1basic__task.html" title="Wrapper class around FreeRTOS&#39;s implementation of a task.">basic_task</a> as task_t type  <a href="namespacemn.html#a25b8ead5c12c12f56c64a873eae35039">More...</a><br /></td></tr>
 <tr class="separator:a25b8ead5c12c12f56c64a873eae35039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a219b5f317a470e2ffa585e7e7e0fa268"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a219b5f317a470e2ffa585e7e7e0fa268">task_list_t</a> = <a class="el" href="classmn_1_1basic__task__list.html">basic_task_list</a></td></tr>
 <tr class="separator:a219b5f317a470e2ffa585e7e7e0fa268"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -765,8 +770,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:ab9ddf6ca64a56bd7b0cb02fd2ba1ca58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa28020f10b41deb43ce40a01e745f6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9fa28020f10b41deb43ce40a01e745f6">uint_least128_t</a> = <a class="el" href="namespacemn.html#structmn_1_1basic__uint128__t">basic_uint128_t</a></td></tr>
 <tr class="separator:a9fa28020f10b41deb43ce40a01e745f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cca548421a08ff372ae21f46d9cbeaa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a2cca548421a08ff372ae21f46d9cbeaa">version_t</a> = <a class="el" href="classmn_1_1version.html">version</a></td></tr>
-<tr class="separator:a2cca548421a08ff372ae21f46d9cbeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -1021,6 +1024,10 @@ Functions</h2></td></tr>
 <tr class="separator:a22ae1241da7c4b4cdcc385af3d191599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a684af303215bfb8b6538060075665fb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a684af303215bfb8b6538060075665fb2">nsleep</a> (const struct timespec *req, struct timespec *rem)</td></tr>
 <tr class="separator:a684af303215bfb8b6538060075665fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d8c57c1e073791ef45848b67a47a76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a02d8c57c1e073791ef45848b67a47a76">minilib_version_string</a> (char version_string[<a class="el" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>])</td></tr>
+<tr class="separator:a02d8c57c1e073791ef45848b67a47a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a73bf11270aa4bfef04aad3b51c5b8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9a73bf11270aa4bfef04aad3b51c5b8a">minilib_version_print</a> ()</td></tr>
+<tr class="separator:a9a73bf11270aa4bfef04aad3b51c5b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90303031bd337b9f357aa87f2ac6498f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a90303031bd337b9f357aa87f2ac6498f">insertion_sort</a> (T *begin, T *end, TPredicate pred)</td></tr>
 <tr class="separator:a90303031bd337b9f357aa87f2ac6498f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632c14f7bfadcdb2b9eadfd9079c8d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a632c14f7bfadcdb2b9eadfd9079c8d67">insertion_sort</a> (T *begin, T *end)</td></tr>
@@ -1040,6 +1047,24 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ada817fb620fa6690d7bd09d39579fce6"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ada817fb620fa6690d7bd09d39579fce6">MN_VERSION_STATUS</a> [] = &quot;Beta&quot;</td></tr>
+<tr class="separator:ada817fb620fa6690d7bd09d39579fce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29964fa9d476edb0e0b0f90f4206b066"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a29964fa9d476edb0e0b0f90f4206b066">MN_VERSION_STATUS_SHORT</a> [] = &quot;b&quot;</td></tr>
+<tr class="separator:a29964fa9d476edb0e0b0f90f4206b066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbd6ecdcb9129615bdbbfe765644d9c"><td class="memItemLeft" align="right" valign="top">static const long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#acdbd6ecdcb9129615bdbbfe765644d9c">MN_VERSION_MAJOR</a> = 2</td></tr>
+<tr class="separator:acdbd6ecdcb9129615bdbbfe765644d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ce86e058b300d7578199d9e6a6b411"><td class="memItemLeft" align="right" valign="top">static const long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a06ce86e058b300d7578199d9e6a6b411">MN_VERSION_MINOR</a> = 27</td></tr>
+<tr class="separator:a06ce86e058b300d7578199d9e6a6b411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8b79ecef112a1570dfdbd1e1b6a56d"><td class="memItemLeft" align="right" valign="top">static const long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a5b8b79ecef112a1570dfdbd1e1b6a56d">MN_VERSION_BUILD</a> = 3049</td></tr>
+<tr class="separator:a5b8b79ecef112a1570dfdbd1e1b6a56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73bb3387cb12ccb9cb08ab666205cc9"><td class="memItemLeft" align="right" valign="top">static const long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ad73bb3387cb12ccb9cb08ab666205cc9">MN_VERSION_REVISION</a> = 74</td></tr>
+<tr class="separator:ad73bb3387cb12ccb9cb08ab666205cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b9dd0b4b3184bee448a8d0c56814eb5"><td class="memItemLeft" align="right" valign="top">static const long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a0b9dd0b4b3184bee448a8d0c56814eb5">MN_VERSION_BUILDS_COUNT</a> = 3</td></tr>
+<tr class="separator:a0b9dd0b4b3184bee448a8d0c56814eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5f516887db6fbdacd47628b9068003"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#acc5f516887db6fbdacd47628b9068003">MN_VERSION_FULLVERSION_STRING</a> [] = &quot;2.27.3049.74&quot;</td></tr>
+<tr class="separator:acc5f516887db6fbdacd47628b9068003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047db3620071d85930390eff9df27a7a"><td class="memItemLeft" align="right" valign="top">static const long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a047db3620071d85930390eff9df27a7a">MN_VERSION_BUILD_HISTORY</a> = 1</td></tr>
+<tr class="separator:a047db3620071d85930390eff9df27a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdbf5278c54a504b47de2ee4b6313e5a"><td class="memItemLeft" align="right" valign="top">portMUX_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#afdbf5278c54a504b47de2ee4b6313e5a">microsMux</a> = portMUX_INITIALIZER_UNLOCKED</td></tr>
 <tr class="separator:afdbf5278c54a504b47de2ee4b6313e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -3291,6 +3316,8 @@ template&lt;class TOBJECT &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>using the <a class="el" href="classmn_1_1basic__task.html" title="Wrapper class around FreeRTOS&#39;s implementation of a task.">basic_task</a> as task_t type </p>
+
 </div>
 </div>
 <a id="a9178c06e307a497f0cf0025b1b514691"></a>
@@ -3457,20 +3484,6 @@ template&lt;typename Tag &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespacemn.html#a4465a82923b65fe1bbe77478ca290b3e">mn::uptrdiff_t</a> = typedef unsigned long</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2cca548421a08ff372ae21f46d9cbeaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cca548421a08ff372ae21f46d9cbeaa">&#9670;&nbsp;</a></span>version_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacemn.html#a2cca548421a08ff372ae21f46d9cbeaa">mn::version_t</a> = typedef <a class="el" href="classmn_1_1version.html">version</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5257,6 +5270,57 @@ template&lt;class TLOCK  = LockType_t&gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a73bf11270aa4bfef04aad3b51c5b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a73bf11270aa4bfef04aad3b51c5b8a">&#9670;&nbsp;</a></span>minilib_version_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::minilib_version_print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02d8c57c1e073791ef45848b67a47a76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d8c57c1e073791ef45848b67a47a76">&#9670;&nbsp;</a></span>minilib_version_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a> const char* mn::minilib_version_string </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>version_string</em>[MN_THREAD_VERSION_STRING_LEN]</td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -7099,6 +7163,204 @@ template&lt;class TLOCK  = LockType_t&gt; </div>
           <td class="memname">portMUX_TYPE mn::microsMux = portMUX_INITIALIZER_UNLOCKED</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b8b79ecef112a1570dfdbd1e1b6a56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8b79ecef112a1570dfdbd1e1b6a56d">&#9670;&nbsp;</a></span>MN_VERSION_BUILD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const long mn::MN_VERSION_BUILD = 3049</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a047db3620071d85930390eff9df27a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047db3620071d85930390eff9df27a7a">&#9670;&nbsp;</a></span>MN_VERSION_BUILD_HISTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const long mn::MN_VERSION_BUILD_HISTORY = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b9dd0b4b3184bee448a8d0c56814eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b9dd0b4b3184bee448a8d0c56814eb5">&#9670;&nbsp;</a></span>MN_VERSION_BUILDS_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const long mn::MN_VERSION_BUILDS_COUNT = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc5f516887db6fbdacd47628b9068003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc5f516887db6fbdacd47628b9068003">&#9670;&nbsp;</a></span>MN_VERSION_FULLVERSION_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char mn::MN_VERSION_FULLVERSION_STRING[] = &quot;2.27.3049.74&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdbd6ecdcb9129615bdbbfe765644d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdbd6ecdcb9129615bdbbfe765644d9c">&#9670;&nbsp;</a></span>MN_VERSION_MAJOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const long mn::MN_VERSION_MAJOR = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06ce86e058b300d7578199d9e6a6b411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ce86e058b300d7578199d9e6a6b411">&#9670;&nbsp;</a></span>MN_VERSION_MINOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const long mn::MN_VERSION_MINOR = 27</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad73bb3387cb12ccb9cb08ab666205cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73bb3387cb12ccb9cb08ab666205cc9">&#9670;&nbsp;</a></span>MN_VERSION_REVISION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const long mn::MN_VERSION_REVISION = 74</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada817fb620fa6690d7bd09d39579fce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada817fb620fa6690d7bd09d39579fce6">&#9670;&nbsp;</a></span>MN_VERSION_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char mn::MN_VERSION_STATUS[] = &quot;Beta&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29964fa9d476edb0e0b0f90f4206b066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29964fa9d476edb0e0b0f90f4206b066">&#9670;&nbsp;</a></span>MN_VERSION_STATUS_SHORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char mn::MN_VERSION_STATUS_SHORT[] = &quot;b&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

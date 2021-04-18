@@ -2,6 +2,8 @@ var mn__socket_8hpp =
 [
     [ "dgram_ip4_socket", "mn__socket_8hpp.html#a295efd65189216a683c08f0a1e8e5549", null ],
     [ "dgram_ip6_socket", "mn__socket_8hpp.html#a47508b034d7466c2212f78484dd4b982", null ],
+    [ "ethernet_nef_if", "mn__socket_8hpp.html#aa6c7ac24bd2b54e51f848a252cf770a8", null ],
+    [ "ppp_net_if", "mn__socket_8hpp.html#a662a0ed15f92182b05429e92cc3ae1cb", null ],
     [ "raw_ip4_socket", "mn__socket_8hpp.html#a4bb1d57937a4ea1e8748c1d4cefe5e86", null ],
     [ "raw_ip6_socket", "mn__socket_8hpp.html#ada44cacd685a435e7596d83f130e0e18", null ],
     [ "stream_ip4_socket", "mn__socket_8hpp.html#aa8e1bfb376cfa0239d3482dae3dd4fcf", null ],

@@ -65,6 +65,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
@@ -143,17 +149,18 @@ $(document).ready(function(){initNavTree('classmn_1_1ext_1_1basic__condition__va
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ext_1_1basic__condition__variable__coll__graph.svg" width="531" height="610"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ext_1_1basic__condition__variable__coll__graph.svg" width="531" height="607"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6653b1627ef77cfa72942fcde6afa38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#ae6653b1627ef77cfa72942fcde6afa38">basic_condition_variable</a> ()</td></tr>
 <tr class="separator:ae6653b1627ef77cfa72942fcde6afa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cad5bfbfa33d8997066d6fb164eead9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#a9cad5bfbfa33d8997066d6fb164eead9">signal</a> (bool with_child_thread=true)</td></tr>
-<tr class="separator:a9cad5bfbfa33d8997066d6fb164eead9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adee5ba5fb1310a18fd2f7ad35e36ad79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#adee5ba5fb1310a18fd2f7ad35e36ad79">broadcast</a> (bool with_child_thread=true)</td></tr>
-<tr class="separator:adee5ba5fb1310a18fd2f7ad35e36ad79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1219832d3497258845edc7ddb0c355e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#a1219832d3497258845edc7ddb0c355e6">signal</a> ()</td></tr>
+<tr class="separator:a1219832d3497258845edc7ddb0c355e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee74fec9af194d1d34395b9f425fc75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#acee74fec9af194d1d34395b9f425fc75">broadcast</a> ()</td></tr>
+<tr class="separator:acee74fec9af194d1d34395b9f425fc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -229,8 +236,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="adee5ba5fb1310a18fd2f7ad35e36ad79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adee5ba5fb1310a18fd2f7ad35e36ad79">&#9670;&nbsp;</a></span>broadcast()</h2>
+<a id="acee74fec9af194d1d34395b9f425fc75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee74fec9af194d1d34395b9f425fc75">&#9670;&nbsp;</a></span>broadcast()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,24 +245,17 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void mn::ext::basic_condition_variable::broadcast </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>with_child_thread</em> = <code>true</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Signal all threads waiting on this condition_variable.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">with_child_thread</td><td>If true then signal the threads (i.e. tasks) with all childs threads (i.e. tasks), if false then signal the threads (i.e. tasks) without all childs threads (i.e. tasks) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Signal all threads waiting on this condition_variable. </p>
 
 </div>
 </div>
-<a id="a9cad5bfbfa33d8997066d6fb164eead9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cad5bfbfa33d8997066d6fb164eead9">&#9670;&nbsp;</a></span>signal()</h2>
+<a id="a1219832d3497258845edc7ddb0c355e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1219832d3497258845edc7ddb0c355e6">&#9670;&nbsp;</a></span>signal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,19 +263,12 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">void mn::ext::basic_condition_variable::signal </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>with_child_thread</em> = <code>true</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Signal a thread waiting on this condition_variable (FIFO list).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">with_child_thread</td><td>If true then signal the thread (i.e. task) with all childs threads (i.e. tasks), if false then signal the thread (i.e. task) without all childs threads (i.e. tasks) </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Signal a thread waiting on this condition_variable (FIFO list). </p>
 
 </div>
 </div>

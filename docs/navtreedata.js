@@ -131,7 +131,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", "namespacemembers_dup" ],
-        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", "namespacemembers_type" ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
@@ -169,22 +169,22 @@ var NAVTREEINDEX =
 [
 "_0dcode-example.html",
 "classmn_1_1basic__singleton.html#a574fa52ebe92fd45b01505610b8cc600",
-"classmn_1_1container_1_1basic__deque__iterator.html#a027497d2790772c0a4c0cd0b05f7574b",
-"classmn_1_1container_1_1basic__ring__buffer.html#a9696a1919ca90866731c301e4fd43237",
-"classmn_1_1ext_1_1basic__message__task.html#aa34085bc9d2a027f4c06ee544676c9af",
-"classmn_1_1net_1_1basic__ip4__address.html#a431312b7d3fe096e7fef6f44e109919b",
-"classmn_1_1pointer_1_1basic__any__ptr.html#ae841a216782a894c158967c463dec994",
-"classmn_1_1queue_1_1work__queue__task.html",
-"md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md10",
-"mn__basic__ip__address_8hpp.html#aa0a20497d5b53cb46fa5ee9805c72d67",
-"mn__config_8hpp.html#a438b234b09b83980add3cf1ac0ebbf71",
-"mn__functional_8hpp.html#a46160e395158e297f526fcaf85f2eb9b",
-"mn__scoped__ptr_8hpp.html",
+"classmn_1_1container_1_1basic__deque__iterator.html#a2de67bf840bdc9d8b6dd9077bfb0693d",
+"classmn_1_1container_1_1basic__ring__buffer.html#aafb12497171d2755df36db629a41d056",
+"classmn_1_1fast__type.html#a15e14204275b131ae703d035130e776c",
+"classmn_1_1net_1_1basic__ip4__address.html#ace416dc1999eca40c56ee163ceb11dfe",
+"classmn_1_1pointer_1_1basic__clone__ptr.html#a968645b0530e506db80a646f409ffda0",
+"classmn_1_1system_1_1basic__critical__section__nested.html#a4fcd37eaae587327a8e69c5c107730bd",
+"md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md79",
+"mn__basic__mempool_8hpp.html#ab0c83759bed3e65c8b2bd44c4214d922",
+"mn__config_8hpp.html#a936726e3457730e3621fe8a83f4889a2",
+"mn__interrupts__lock_8hpp_source.html",
+"mn__shared_8hpp.html#ad24224af4336b7dfcd0b223523983579",
 "namespacemembers_type_g.html",
-"namespacemn.html#ad60d70cc73477f96af19fa6fd25f4c6a",
-"namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a4de7c793f8a9d93f2e61a0e422f6e54b",
-"namespacemn_1_1system.html#a2176747a90405e868ad731ea48e8eed9",
-"structmn_1_1container_1_1basic__triple.html#a281a242e94b25ce2668fd829c8a78d29"
+"namespacemn.html#ad24224af4336b7dfcd0b223523983579",
+"namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a3fbb08ae4be82929c27ecff536355b74",
+"namespacemn_1_1queue.html",
+"structmn_1_1container_1_1basic__pair.html#aa4667befec996e870cbd48117f7ae289"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

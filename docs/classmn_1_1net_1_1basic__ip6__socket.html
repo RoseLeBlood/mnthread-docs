@@ -65,6 +65,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
@@ -142,14 +148,16 @@ $(document).ready(function(){initNavTree('classmn_1_1net_1_1basic__ip6__socket.h
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__ip6__socket__inherit__graph.svg" width="366" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__ip6__socket__inherit__graph.svg" width="366" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::net::basic_ip6_socket:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__ip6__socket__coll__graph.svg" width="512" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__ip6__socket__coll__graph.svg" width="512" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -167,84 +175,111 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a09a3d9801f2a0a358276d1554774df5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a09a3d9801f2a0a358276d1554774df5c">basic_ip6_socket</a> (<a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8090a4b4c1410128ba5aef424e4d50a3">handle_type</a> &amp;hndl, <a class="el" href="namespacemn_1_1net.html#a6cd5acc0827f7562db70b22c6ef9c08d">ip6_endpoint</a> *endp=nullptr)</td></tr>
+<tr class="memdesc:a09a3d9801f2a0a358276d1554774df5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the wrapper class from a given lwip socket handle and the endpoint.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a09a3d9801f2a0a358276d1554774df5c">More...</a><br /></td></tr>
 <tr class="separator:a09a3d9801f2a0a358276d1554774df5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd2f2c6b3f6f9c1d694e9466bc1a6935"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#abd2f2c6b3f6f9c1d694e9466bc1a6935">basic_ip6_socket</a> (const <a class="el" href="namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742e">socket_type</a> &amp;type, const <a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d">protocol_type</a> &amp;protocol)</td></tr>
+<tr class="memdesc:abd2f2c6b3f6f9c1d694e9466bc1a6935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct create a IPv4 Socket AF_INET.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#abd2f2c6b3f6f9c1d694e9466bc1a6935">More...</a><br /></td></tr>
 <tr class="separator:abd2f2c6b3f6f9c1d694e9466bc1a6935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8fe7084c1b38cf42fedef0b8f0c4baa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#ad8fe7084c1b38cf42fedef0b8f0c4baa">basic_ip6_socket</a> (const <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html">basic_ip6_socket</a> &amp;other)</td></tr>
+<tr class="memdesc:ad8fe7084c1b38cf42fedef0b8f0c4baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">a copy construtor  <a href="classmn_1_1net_1_1basic__ip6__socket.html#ad8fe7084c1b38cf42fedef0b8f0c4baa">More...</a><br /></td></tr>
 <tr class="separator:ad8fe7084c1b38cf42fedef0b8f0c4baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d984d85a4fa81597713aaa3c71b267c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html">basic_ip6_socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a6d984d85a4fa81597713aaa3c71b267c">operator=</a> (const <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html">basic_ip6_socket</a> &amp;other)</td></tr>
+<tr class="memdesc:a6d984d85a4fa81597713aaa3c71b267c"><td class="mdescLeft">&#160;</td><td class="mdescRight">a copy operator  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a6d984d85a4fa81597713aaa3c71b267c">More...</a><br /></td></tr>
 <tr class="separator:a6d984d85a4fa81597713aaa3c71b267c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad59047c38f9d34c6a2fe96d7eceecca8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#ad59047c38f9d34c6a2fe96d7eceecca8">~basic_ip6_socket</a> ()</td></tr>
-<tr class="separator:ad59047c38f9d34c6a2fe96d7eceecca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ca0ab7fd24a074d4d7a31f545e73bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a33ca0ab7fd24a074d4d7a31f545e73bc">bind</a> (<a class="el" href="namespacemn_1_1net.html#a6cd5acc0827f7562db70b22c6ef9c08d">ip6_endpoint</a> local_ep)</td></tr>
+<tr class="memdesc:a33ca0ab7fd24a074d4d7a31f545e73bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the socket on the given endpoint (ip and port)  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a33ca0ab7fd24a074d4d7a31f545e73bc">More...</a><br /></td></tr>
 <tr class="separator:a33ca0ab7fd24a074d4d7a31f545e73bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f198cd827dbb11f41d1b3fb4a057f33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a9f198cd827dbb11f41d1b3fb4a057f33">bind</a> (const unsigned int &amp;port)</td></tr>
+<tr class="memdesc:a9f198cd827dbb11f41d1b3fb4a057f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the socket.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a9f198cd827dbb11f41d1b3fb4a057f33">More...</a><br /></td></tr>
 <tr class="separator:a9f198cd827dbb11f41d1b3fb4a057f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027b6e2a31d94259bcd342e529393d9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a027b6e2a31d94259bcd342e529393d9e">bind</a> (<a class="el" href="namespacemn_1_1net.html#abf355b3380eb82e03789f1a5fc0e2b0f">ip6_address</a> ip, const unsigned int &amp;port)</td></tr>
+<tr class="memdesc:a027b6e2a31d94259bcd342e529393d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the socket on the given ip and port.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a027b6e2a31d94259bcd342e529393d9e">More...</a><br /></td></tr>
 <tr class="separator:a027b6e2a31d94259bcd342e529393d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c84ce79b8a0fcf62bda32f2de28561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a6cd5acc0827f7562db70b22c6ef9c08d">ip6_endpoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a03c84ce79b8a0fcf62bda32f2de28561">get_endpoint</a> (bool local)</td></tr>
+<tr class="memdesc:a03c84ce79b8a0fcf62bda32f2de28561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local or remote ip endpoint.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a03c84ce79b8a0fcf62bda32f2de28561">More...</a><br /></td></tr>
 <tr class="separator:a03c84ce79b8a0fcf62bda32f2de28561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4449f109130c174561d5c3a2962a7ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a6cd5acc0827f7562db70b22c6ef9c08d">ip6_endpoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#ad4449f109130c174561d5c3a2962a7ef">get_local</a> ()</td></tr>
+<tr class="memdesc:ad4449f109130c174561d5c3a2962a7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local endpoint.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#ad4449f109130c174561d5c3a2962a7ef">More...</a><br /></td></tr>
 <tr class="separator:ad4449f109130c174561d5c3a2962a7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1e70e3d6cfdc44ad5f6eb3dc70be67c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a6cd5acc0827f7562db70b22c6ef9c08d">ip6_endpoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#ab1e70e3d6cfdc44ad5f6eb3dc70be67c">get_remote</a> ()</td></tr>
+<tr class="memdesc:ab1e70e3d6cfdc44ad5f6eb3dc70be67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the remote endpoint.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#ab1e70e3d6cfdc44ad5f6eb3dc70be67c">More...</a><br /></td></tr>
 <tr class="separator:ab1e70e3d6cfdc44ad5f6eb3dc70be67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5737430416224dde13ef302655a3cbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#ae5737430416224dde13ef302655a3cbd">get_peername</a> (<a class="el" href="namespacemn_1_1net.html#a6cd5acc0827f7562db70b22c6ef9c08d">ip6_endpoint</a> &amp;endpoint)</td></tr>
+<tr class="memdesc:ae5737430416224dde13ef302655a3cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the remote endpoint.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#ae5737430416224dde13ef302655a3cbd">More...</a><br /></td></tr>
 <tr class="separator:ae5737430416224dde13ef302655a3cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09d4861ab9f85e9675857d7bf65ae776"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a09d4861ab9f85e9675857d7bf65ae776">get_peername</a> (<a class="el" href="namespacemn_1_1net.html#abf355b3380eb82e03789f1a5fc0e2b0f">ip6_address</a> &amp;strPeerAddress, uint16_t &amp;iPeerPort)</td></tr>
-<tr class="separator:a09d4861ab9f85e9675857d7bf65ae776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044c26f85cb923b6dc86bef1a5f2de24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a044c26f85cb923b6dc86bef1a5f2de24">get_peername</a> (<a class="el" href="namespacemn_1_1net.html#abf355b3380eb82e03789f1a5fc0e2b0f">ip6_address</a> &amp;ipPeerAddress, uint16_t &amp;iPeerPort)</td></tr>
+<tr class="memdesc:a044c26f85cb923b6dc86bef1a5f2de24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the remote endpoint.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a044c26f85cb923b6dc86bef1a5f2de24">More...</a><br /></td></tr>
+<tr class="separator:a044c26f85cb923b6dc86bef1a5f2de24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20b48b544c347139220edd9c6b3e4614"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">basic_ip_socket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a20b48b544c347139220edd9c6b3e4614">get_copy</a> ()</td></tr>
+<tr class="memdesc:a20b48b544c347139220edd9c6b3e4614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of this socket.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a20b48b544c347139220edd9c6b3e4614">More...</a><br /></td></tr>
 <tr class="separator:a20b48b544c347139220edd9c6b3e4614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmn_1_1net_1_1basic__ip__socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmn_1_1net_1_1basic__ip__socket')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">mn::net::basic_ip_socket</a></td></tr>
-<tr class="memitem:a360112d5ad76be7ac594e2a6ae61ba5e inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a360112d5ad76be7ac594e2a6ae61ba5e">basic_ip_socket</a> ()</td></tr>
-<tr class="separator:a360112d5ad76be7ac594e2a6ae61ba5e inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ef6f52b19daef199adae32560045fd inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a31ef6f52b19daef199adae32560045fd">basic_ip_socket</a> (const <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8090a4b4c1410128ba5aef424e4d50a3">handle_type</a> &amp;hndl)</td></tr>
+<tr class="memdesc:a31ef6f52b19daef199adae32560045fd inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">construtor from a raw handle  <a href="classmn_1_1net_1_1basic__ip__socket.html#a31ef6f52b19daef199adae32560045fd">More...</a><br /></td></tr>
 <tr class="separator:a31ef6f52b19daef199adae32560045fd inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ab0b848a67f9d40e411f7d4d4d11947 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a2ab0b848a67f9d40e411f7d4d4d11947">basic_ip_socket</a> (const <a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a> &amp;fam, const <a class="el" href="namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742e">socket_type</a> &amp;type, const <a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d">protocol_type</a> &amp;protocol)</td></tr>
+<tr class="memdesc:a2ab0b848a67f9d40e411f7d4d4d11947 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">construtor create the socket  <a href="classmn_1_1net_1_1basic__ip__socket.html#a2ab0b848a67f9d40e411f7d4d4d11947">More...</a><br /></td></tr>
 <tr class="separator:a2ab0b848a67f9d40e411f7d4d4d11947 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf45233d37cc33b6af21b123a159817b inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#acf45233d37cc33b6af21b123a159817b">basic_ip_socket</a> (const <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">basic_ip_socket</a> &amp;other)</td></tr>
+<tr class="memdesc:acf45233d37cc33b6af21b123a159817b inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy construtor  <a href="classmn_1_1net_1_1basic__ip__socket.html#acf45233d37cc33b6af21b123a159817b">More...</a><br /></td></tr>
 <tr class="separator:acf45233d37cc33b6af21b123a159817b inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a003963fcab0ee2699d5f174737944ae1 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a003963fcab0ee2699d5f174737944ae1">~basic_ip_socket</a> ()</td></tr>
+<tr class="memdesc:a003963fcab0ee2699d5f174737944ae1 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">deconstrutor, close the socket  <a href="classmn_1_1net_1_1basic__ip__socket.html#a003963fcab0ee2699d5f174737944ae1">More...</a><br /></td></tr>
 <tr class="separator:a003963fcab0ee2699d5f174737944ae1 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ebe8fbc7ab47f6481241703896653a2 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8ebe8fbc7ab47f6481241703896653a2">close</a> ()</td></tr>
 <tr class="separator:a8ebe8fbc7ab47f6481241703896653a2 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a139cd8f4dbbd8c9f79e7f0b57c36fbba inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a139cd8f4dbbd8c9f79e7f0b57c36fbba">available</a> ()</td></tr>
+<tr class="memdesc:a139cd8f4dbbd8c9f79e7f0b57c36fbba inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many bytes in the recive buffer available.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a139cd8f4dbbd8c9f79e7f0b57c36fbba">More...</a><br /></td></tr>
 <tr class="separator:a139cd8f4dbbd8c9f79e7f0b57c36fbba inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e38e25269ab8346e88db793b51a40cd inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a3e38e25269ab8346e88db793b51a40cd">get_last_error</a> ()</td></tr>
+<tr class="memdesc:a3e38e25269ab8346e88db793b51a40cd inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the saved copy of the last lwip error code.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a3e38e25269ab8346e88db793b51a40cd">More...</a><br /></td></tr>
 <tr class="separator:a3e38e25269ab8346e88db793b51a40cd inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79d2b0dd4da894f4122d29d5b2a8078 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#ad79d2b0dd4da894f4122d29d5b2a8078">get_handle</a> ()</td></tr>
+<tr class="memdesc:ad79d2b0dd4da894f4122d29d5b2a8078 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw socket handle.  <a href="classmn_1_1net_1_1basic__ip__socket.html#ad79d2b0dd4da894f4122d29d5b2a8078">More...</a><br /></td></tr>
 <tr class="separator:ad79d2b0dd4da894f4122d29d5b2a8078 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde85fd2ad9a144fda76185161f843b1 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#acde85fd2ad9a144fda76185161f843b1">operator int</a> ()</td></tr>
-<tr class="separator:acde85fd2ad9a144fda76185161f843b1 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbdc75e29187a0832b42f268af061445 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">basic_ip_socket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#adbdc75e29187a0832b42f268af061445">operator=</a> (const <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">basic_ip_socket</a> &amp;other)</td></tr>
 <tr class="separator:adbdc75e29187a0832b42f268af061445 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaae80df8c02e2be61186898546f062ec inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#aaae80df8c02e2be61186898546f062ec">set_nocheak</a> (bool value)</td></tr>
+<tr class="memdesc:aaae80df8c02e2be61186898546f062ec inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the option <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052af216e5ec853fe2ec463c722f59d59b96" title="don&#39;t create UDP checksum">socket_option_name::no_check</a>.  <a href="classmn_1_1net_1_1basic__ip__socket.html#aaae80df8c02e2be61186898546f062ec">More...</a><br /></td></tr>
 <tr class="separator:aaae80df8c02e2be61186898546f062ec inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b6ea234a55cd581e8dc63b88fa6813d inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a4b6ea234a55cd581e8dc63b88fa6813d">get_nocheak</a> ()</td></tr>
+<tr class="memdesc:a4b6ea234a55cd581e8dc63b88fa6813d inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the option <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052af216e5ec853fe2ec463c722f59d59b96" title="don&#39;t create UDP checksum">socket_option_name::no_check</a>.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a4b6ea234a55cd581e8dc63b88fa6813d">More...</a><br /></td></tr>
 <tr class="separator:a4b6ea234a55cd581e8dc63b88fa6813d inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4325c57f97ee16fe56ddbc14d35004 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a7a4325c57f97ee16fe56ddbc14d35004">set_options</a> (const <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">socket_option_level</a> &amp;opt, const <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052">socket_option_name</a> &amp;name, int value)</td></tr>
+<tr class="memdesc:a7a4325c57f97ee16fe56ddbc14d35004 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a given option, version for interger values.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a7a4325c57f97ee16fe56ddbc14d35004">More...</a><br /></td></tr>
 <tr class="separator:a7a4325c57f97ee16fe56ddbc14d35004 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d24e2a2c98dcde5f495795555b4dd09 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a5d24e2a2c98dcde5f495795555b4dd09">set_options</a> (const <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">socket_option_level</a> &amp;opt, const <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052">socket_option_name</a> &amp;name, bool value)</td></tr>
+<tr class="memdesc:a5d24e2a2c98dcde5f495795555b4dd09 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a given option, version for boolen values.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a5d24e2a2c98dcde5f495795555b4dd09">More...</a><br /></td></tr>
 <tr class="separator:a5d24e2a2c98dcde5f495795555b4dd09 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aade78bed56a2cfea18c166f07af74cc7 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#aade78bed56a2cfea18c166f07af74cc7">set_options</a> (const <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">socket_option_level</a> &amp;opt, const <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052">socket_option_name</a> &amp;name, void *value, uint32_t size)</td></tr>
+<tr class="memdesc:aade78bed56a2cfea18c166f07af74cc7 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a given option, version for data.  <a href="classmn_1_1net_1_1basic__ip__socket.html#aade78bed56a2cfea18c166f07af74cc7">More...</a><br /></td></tr>
 <tr class="separator:aade78bed56a2cfea18c166f07af74cc7 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ef991eec2589444ddc447f4d4642ae inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a37ef991eec2589444ddc447f4d4642ae">get_option_int</a> (const <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">socket_option_level</a> &amp;opt, const <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052">socket_option_name</a> &amp;name)</td></tr>
+<tr class="memdesc:a37ef991eec2589444ddc447f4d4642ae inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a interger value of a given option.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a37ef991eec2589444ddc447f4d4642ae">More...</a><br /></td></tr>
 <tr class="separator:a37ef991eec2589444ddc447f4d4642ae inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d399bd8aa49c442570cd289dc711d54 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8d399bd8aa49c442570cd289dc711d54">get_option_bool</a> (const <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">socket_option_level</a> &amp;opt, const <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052">socket_option_name</a> &amp;name)</td></tr>
+<tr class="memdesc:a8d399bd8aa49c442570cd289dc711d54 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a booles value of a given option.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a8d399bd8aa49c442570cd289dc711d54">More...</a><br /></td></tr>
 <tr class="separator:a8d399bd8aa49c442570cd289dc711d54 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0172d305c44ac6bb280f6f45a159e6e0 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a0172d305c44ac6bb280f6f45a159e6e0">get_option_ex</a> (const <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">socket_option_level</a> &amp;opt, const <a class="el" href="namespacemn_1_1net.html#ac78d17c83aa08c5ca33da490085c6052">socket_option_name</a> &amp;name, void *value, uint32_t size)</td></tr>
+<tr class="memdesc:a0172d305c44ac6bb280f6f45a159e6e0 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a buffer value of a given option.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a0172d305c44ac6bb280f6f45a159e6e0">More...</a><br /></td></tr>
 <tr class="separator:a0172d305c44ac6bb280f6f45a159e6e0 inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a849e4aebce228f9d6957a2421f7da20b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a6cd5acc0827f7562db70b22c6ef9c08d">ip6_endpoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a849e4aebce228f9d6957a2421f7da20b">m_pEndPoint</a></td></tr>
+<tr class="memdesc:a849e4aebce228f9d6957a2421f7da20b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A saved / cached copy of the endpoint on binde the socket.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a849e4aebce228f9d6957a2421f7da20b">More...</a><br /></td></tr>
 <tr class="separator:a849e4aebce228f9d6957a2421f7da20b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmn_1_1net_1_1basic__ip__socket')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">mn::net::basic_ip_socket</a></td></tr>
 <tr class="memitem:a83d8a16e49395d652ddcd17cb68de114 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8090a4b4c1410128ba5aef424e4d50a3">handle_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a83d8a16e49395d652ddcd17cb68de114">m_iHandle</a></td></tr>
+<tr class="memdesc:a83d8a16e49395d652ddcd17cb68de114 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the underlying socket handle for this socket.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a83d8a16e49395d652ddcd17cb68de114">More...</a><br /></td></tr>
 <tr class="separator:a83d8a16e49395d652ddcd17cb68de114 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99cd168d4e373049ff5583d0286ddd03 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a99cd168d4e373049ff5583d0286ddd03">m_iLastError</a></td></tr>
+<tr class="memdesc:a99cd168d4e373049ff5583d0286ddd03 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a copy of the last lwip error code.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a99cd168d4e373049ff5583d0286ddd03">More...</a><br /></td></tr>
 <tr class="separator:a99cd168d4e373049ff5583d0286ddd03 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Wrapper class around lwip implementation of a ip6 socket. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a24138b2af9228cbd704f385ae5f2434a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24138b2af9228cbd704f385ae5f2434a">&#9670;&nbsp;</a></span>endpoint_type</h2>
 
@@ -314,6 +349,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct the wrapper class from a given lwip socket handle and the endpoint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hndl</td><td>The raw lwip socket handle. </td></tr>
+    <tr><td class="paramname">endp</td><td>The endpoint for this socket </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="abd2f2c6b3f6f9c1d694e9466bc1a6935"></a>
@@ -342,6 +386,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Construct create a IPv4 Socket AF_INET. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of the socket </td></tr>
+    <tr><td class="paramname">protocol</td><td>The using protocal for this socket </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad8fe7084c1b38cf42fedef0b8f0c4baa"></a>
@@ -360,30 +413,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ad59047c38f9d34c6a2fe96d7eceecca8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad59047c38f9d34c6a2fe96d7eceecca8">&#9670;&nbsp;</a></span>~basic_ip6_socket()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual mn::net::basic_ip6_socket::~basic_ip6_socket </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>a copy construtor </p>
 
 </div>
 </div>
@@ -403,6 +433,22 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Bind the socket. </p>
+<dl class="section note"><dt>Note</dt><dd>bind on MNNET_IPV4_ADDRESS_ANY : port</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>The port to bind this socket</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>true: bind the socket on MNNET_IPV4_ADDRESS_ANY : port</li>
+</ul>
+</dd></dl>
+<ul>
+<li>false: bind error </li>
+</ul>
 
 </div>
 </div>
@@ -432,6 +478,22 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Bind the socket on the given ip and port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ip</td><td>The IPv6 address to bind this socket </td></tr>
+    <tr><td class="paramname">port</td><td>The port to bind this socket</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>true: success</li>
+</ul>
+</dd></dl>
+<ul>
+<li>false: on error </li>
+</ul>
+
 </div>
 </div>
 <a id="a33ca0ab7fd24a074d4d7a31f545e73bc"></a>
@@ -449,6 +511,21 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Bind the socket on the given endpoint (ip and port) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ep</td><td>The endpoint to bind this socket</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>true: bind the socket on the given endpoint</li>
+</ul>
+</dd></dl>
+<ul>
+<li>false: bind error </li>
+</ul>
 
 </div>
 </div>
@@ -475,6 +552,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get a copy of this socket. </p>
+<dl class="section return"><dt>Returns</dt><dd>A copy of this socket </dd></dl>
+
 <p>Implements <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#ae0dcbe9873c2d9bfd26a946399641a4c">mn::net::basic_ip_socket</a>.</p>
 
 </div>
@@ -494,6 +574,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the local or remote ip endpoint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">local</td><td>When this flag true is then return the local endpoint</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The local or remote ip endpoint </dd></dl>
 
 </div>
 </div>
@@ -520,10 +609,13 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the local endpoint. </p>
+<dl class="section return"><dt>Returns</dt><dd>The local endpoint </dd></dl>
+
 </div>
 </div>
-<a id="a09d4861ab9f85e9675857d7bf65ae776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09d4861ab9f85e9675857d7bf65ae776">&#9670;&nbsp;</a></span>get_peername() <span class="overload">[1/2]</span></h2>
+<a id="a044c26f85cb923b6dc86bef1a5f2de24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044c26f85cb923b6dc86bef1a5f2de24">&#9670;&nbsp;</a></span>get_peername() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +624,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">bool mn::net::basic_ip6_socket::get_peername </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacemn_1_1net.html#abf355b3380eb82e03789f1a5fc0e2b0f">ip6_address</a> &amp;&#160;</td>
-          <td class="paramname"><em>strPeerAddress</em>, </td>
+          <td class="paramname"><em>ipPeerAddress</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -547,6 +639,16 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the remote endpoint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ipPeerAddress</td><td>The holder of the returned ip4 address </td></tr>
+    <tr><td class="paramname">iPeerPort</td><td>The holder of the returned port</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if true then success and if false on error </dd></dl>
 
 </div>
 </div>
@@ -565,6 +667,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the remote endpoint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>The holder of the returned endpoint</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if true then success and if false on error </dd></dl>
 
 </div>
 </div>
@@ -591,6 +702,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the remote endpoint. </p>
+<dl class="section return"><dt>Returns</dt><dd>The remote endpoint </dd></dl>
+
 </div>
 </div>
 <a id="a6d984d85a4fa81597713aaa3c71b267c"></a>
@@ -608,6 +722,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>a copy operator </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other socket object</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return this as reference </dd></dl>
 
 </div>
 </div>
@@ -631,6 +754,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A saved / cached copy of the endpoint on binde the socket. </p>
 
 </div>
 </div>

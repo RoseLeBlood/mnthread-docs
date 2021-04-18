@@ -4,7 +4,6 @@ var mn__net__types_8hpp =
     [ "UDPLITE_RECV_CSCOV", "mn__net__types_8hpp.html#af421f8f6f43679e0ec3b2048aec37bec", null ],
     [ "UDPLITE_SEND_CSCOV", "mn__net__types_8hpp.html#a1b2e3aea5b22026c1f4322cc2d78743d", null ],
     [ "address_family", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3ea", [
-      [ "Unknown", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaa88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Unspecified", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaa6fcdc090caeade09d0efd6253932b6f5", null ],
       [ "inet_v4", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaa7838f8fe6cbf9681f8b74d7ed4cfde3b", null ],
       [ "inet_v6", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaad15af7a2cb7fc5b5e024b9aa91ed67a9", null ]
@@ -73,10 +72,8 @@ var mn__net__types_8hpp =
       [ "rw", "mn__net__types_8hpp.html#a409713481569807121c90788405355a9a038c0dc8a958ffea17af047244fb6960", null ]
     ] ],
     [ "socket_type", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742e", [
-      [ "unspec", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742eae13593f343f43afb25e0585565a167a4", null ],
       [ "stream", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742eaf7b44cfafd5c52223d5498196c8a2e7b", null ],
       [ "dgram", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742eafbf7c787e5a1bb8634a7639a596aa786", null ],
-      [ "raw", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742eabdd166af3a63f7be696dd17a218a6ffb", null ],
-      [ "MAX", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742ea26a4b44a837bf97b972628509912b4a5", null ]
+      [ "raw", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742eabdd166af3a63f7be696dd17a218a6ffb", null ]
     ] ]
 ];

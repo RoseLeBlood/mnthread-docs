@@ -65,6 +65,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
@@ -166,30 +172,30 @@ $(document).ready(function(){initNavTree('mn__convar_8hpp_source.html',''); init
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#ae6653b1627ef77cfa72942fcde6afa38">basic_condition_variable</a>();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#a9cad5bfbfa33d8997066d6fb164eead9">signal</a>(<span class="keywordtype">bool</span> with_child_thread = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#adee5ba5fb1310a18fd2f7ad35e36ad79">broadcast</a>(<span class="keywordtype">bool</span> with_child_thread = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#aa220155bbecfe624fee0976c62e74750">add_list</a>(<a class="code" href="classmn_1_1ext_1_1basic__convar__task.html">basic_convar_task</a> *thread);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classmn_1_1ext_1_1basic__condition__variable.html#a070f0d9386ab94412d3a85cf952ce006">   96</a></span>&#160;            <a class="code" href="classmn_1_1basic__mutex.html">mutex_t</a>                            <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#a070f0d9386ab94412d3a85cf952ce006">m_mutex</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classmn_1_1ext_1_1basic__condition__variable.html#abdee05eae4145cdcb4f5eab19fd8d1a9">  100</a></span>&#160;            std::list&lt;basic_convar_task*&gt;    <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#abdee05eae4145cdcb4f5eab19fd8d1a9">m_waitList</a>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        };</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="namespacemn_1_1ext.html#ab0a78ce4fd682d50b6a970a08582f90e">  103</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html">convar_t</a> = <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html">basic_condition_variable</a>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#a1219832d3497258845edc7ddb0c355e6">signal</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#acee74fec9af194d1d34395b9f425fc75">broadcast</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#aa220155bbecfe624fee0976c62e74750">add_list</a>(<a class="code" href="classmn_1_1ext_1_1basic__convar__task.html">basic_convar_task</a> *thread);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classmn_1_1ext_1_1basic__condition__variable.html#a070f0d9386ab94412d3a85cf952ce006">   88</a></span>&#160;            <a class="code" href="classmn_1_1basic__mutex.html">mutex_t</a>                            <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#a070f0d9386ab94412d3a85cf952ce006">m_mutex</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmn_1_1ext_1_1basic__condition__variable.html#abdee05eae4145cdcb4f5eab19fd8d1a9">   92</a></span>&#160;            std::list&lt;basic_convar_task*&gt;    <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html#abdee05eae4145cdcb4f5eab19fd8d1a9">m_waitList</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        };</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="namespacemn_1_1ext.html#ab0a78ce4fd682d50b6a970a08582f90e">   95</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html">convar_t</a> = <a class="code" href="classmn_1_1ext_1_1basic__condition__variable.html">basic_condition_variable</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassmn_1_1basic__mutex_html"><div class="ttname"><a href="classmn_1_1basic__mutex.html">mn::basic_mutex</a></div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:35</div></div>
 <div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html">mn::ext::basic_condition_variable</a></div><div class="ttdef"><b>Definition:</b> mn_convar.hpp:52</div></div>
-<div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_a070f0d9386ab94412d3a85cf952ce006"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#a070f0d9386ab94412d3a85cf952ce006">mn::ext::basic_condition_variable::m_mutex</a></div><div class="ttdeci">mutex_t m_mutex</div><div class="ttdef"><b>Definition:</b> mn_convar.hpp:96</div></div>
-<div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_a9cad5bfbfa33d8997066d6fb164eead9"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#a9cad5bfbfa33d8997066d6fb164eead9">mn::ext::basic_condition_variable::signal</a></div><div class="ttdeci">void signal(bool with_child_thread=true)</div><div class="ttdef"><b>Definition:</b> mn_convar.cpp:46</div></div>
+<div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_a070f0d9386ab94412d3a85cf952ce006"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#a070f0d9386ab94412d3a85cf952ce006">mn::ext::basic_condition_variable::m_mutex</a></div><div class="ttdeci">mutex_t m_mutex</div><div class="ttdef"><b>Definition:</b> mn_convar.hpp:88</div></div>
+<div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_a1219832d3497258845edc7ddb0c355e6"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#a1219832d3497258845edc7ddb0c355e6">mn::ext::basic_condition_variable::signal</a></div><div class="ttdeci">void signal()</div><div class="ttdef"><b>Definition:</b> mn_convar.cpp:46</div></div>
 <div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_aa220155bbecfe624fee0976c62e74750"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#aa220155bbecfe624fee0976c62e74750">mn::ext::basic_condition_variable::add_list</a></div><div class="ttdeci">void add_list(basic_convar_task *thread)</div><div class="ttdef"><b>Definition:</b> mn_convar.cpp:37</div></div>
-<div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_abdee05eae4145cdcb4f5eab19fd8d1a9"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#abdee05eae4145cdcb4f5eab19fd8d1a9">mn::ext::basic_condition_variable::m_waitList</a></div><div class="ttdeci">std::list&lt; basic_convar_task * &gt; m_waitList</div><div class="ttdef"><b>Definition:</b> mn_convar.hpp:100</div></div>
-<div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_adee5ba5fb1310a18fd2f7ad35e36ad79"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#adee5ba5fb1310a18fd2f7ad35e36ad79">mn::ext::basic_condition_variable::broadcast</a></div><div class="ttdeci">void broadcast(bool with_child_thread=true)</div><div class="ttdef"><b>Definition:</b> mn_convar.cpp:63</div></div>
+<div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_abdee05eae4145cdcb4f5eab19fd8d1a9"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#abdee05eae4145cdcb4f5eab19fd8d1a9">mn::ext::basic_condition_variable::m_waitList</a></div><div class="ttdeci">std::list&lt; basic_convar_task * &gt; m_waitList</div><div class="ttdef"><b>Definition:</b> mn_convar.hpp:92</div></div>
+<div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_acee74fec9af194d1d34395b9f425fc75"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#acee74fec9af194d1d34395b9f425fc75">mn::ext::basic_condition_variable::broadcast</a></div><div class="ttdeci">void broadcast()</div><div class="ttdef"><b>Definition:</b> mn_convar.cpp:60</div></div>
 <div class="ttc" id="aclassmn_1_1ext_1_1basic__condition__variable_html_ae6653b1627ef77cfa72942fcde6afa38"><div class="ttname"><a href="classmn_1_1ext_1_1basic__condition__variable.html#ae6653b1627ef77cfa72942fcde6afa38">mn::ext::basic_condition_variable::basic_condition_variable</a></div><div class="ttdeci">basic_condition_variable()</div><div class="ttdef"><b>Definition:</b> mn_convar.cpp:30</div></div>
 <div class="ttc" id="aclassmn_1_1ext_1_1basic__convar__task_html"><div class="ttname"><a href="classmn_1_1ext_1_1basic__convar__task.html">mn::ext::basic_convar_task</a></div><div class="ttdef"><b>Definition:</b> mn_convar_task.hpp:39</div></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>

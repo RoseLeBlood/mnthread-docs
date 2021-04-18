@@ -98,9 +98,6 @@ var hierarchy =
     [ "mn::basic_schedular", "classmn_1_1basic__schedular.html", null ],
     [ "mn::basic_shared_object< TOBJECT >", "classmn_1_1basic__shared__object.html", null ],
     [ "mn::basic_singleton< T, TLOCK >", "classmn_1_1basic__singleton.html", null ],
-    [ "mn::basic_singleton< version >", "classmn_1_1basic__singleton.html", [
-      [ "mn::version", "classmn_1_1version.html", null ]
-    ] ],
     [ "mn::container::basic_stack< TType >", "classmn_1_1container_1_1basic__stack.html", null ],
     [ "mn::basic_task", "classmn_1_1basic__task.html", [
       [ "mn::ext::basic_convar_task", "classmn_1_1ext_1_1basic__convar__task.html", [

@@ -65,6 +65,12 @@
                             </a>
                         </li>
                         <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
                             <a class="nav-link" href="files.html">
                                 <span data-feather="file-text"></span>
                                 Files
@@ -135,28 +141,38 @@ $(document).ready(function(){initNavTree('classmn_1_1net_1_1basic__ip__address.h
 </div><!--header-->
 <div class="contents">
 
+<p>Wrapper class around lwip implementation of a ip address.  
+ <a href="classmn_1_1net_1_1basic__ip__address.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mn__basic__ip__address_8hpp_source.html">mn_basic_ip_address.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::net::basic_ip_address:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__ip__address__inherit__graph.svg" width="318" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__ip__address__inherit__graph.svg" width="318" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a01992d0d9ad9e596128ee23f441b5fea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a01992d0d9ad9e596128ee23f441b5fea">basic_ip_address</a> (<a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a> fam)</td></tr>
+<tr class="memdesc:a01992d0d9ad9e596128ee23f441b5fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classmn_1_1net_1_1basic__ip__address.html#a01992d0d9ad9e596128ee23f441b5fea">More...</a><br /></td></tr>
 <tr class="separator:a01992d0d9ad9e596128ee23f441b5fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5740b3faeeccb7bc6e4cd362341d72aa"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a5740b3faeeccb7bc6e4cd362341d72aa">to_string</a> ()=0</td></tr>
+<tr class="memdesc:a5740b3faeeccb7bc6e4cd362341d72aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ip address as string.  <a href="classmn_1_1net_1_1basic__ip__address.html#a5740b3faeeccb7bc6e4cd362341d72aa">More...</a><br /></td></tr>
 <tr class="separator:a5740b3faeeccb7bc6e4cd362341d72aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c02940004dd61575efa2da23a16c5e6"><td class="memItemLeft" align="right" valign="top">virtual uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a0c02940004dd61575efa2da23a16c5e6">get_bytes</a> ()=0</td></tr>
+<tr class="memdesc:a0c02940004dd61575efa2da23a16c5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ip address as byte array.  <a href="classmn_1_1net_1_1basic__ip__address.html#a0c02940004dd61575efa2da23a16c5e6">More...</a><br /></td></tr>
 <tr class="separator:a0c02940004dd61575efa2da23a16c5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7906d49cb8dac8bd5af5d9d83d3abf0f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a7906d49cb8dac8bd5af5d9d83d3abf0f">is_loopback</a> ()=0</td></tr>
+<tr class="memdesc:a7906d49cb8dac8bd5af5d9d83d3abf0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the this address a loopback address?  <a href="classmn_1_1net_1_1basic__ip__address.html#a7906d49cb8dac8bd5af5d9d83d3abf0f">More...</a><br /></td></tr>
 <tr class="separator:a7906d49cb8dac8bd5af5d9d83d3abf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e95ea1168c16d03327c481064167f7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a12e95ea1168c16d03327c481064167f7">is_broadcast</a> ()=0</td></tr>
+<tr class="memdesc:a12e95ea1168c16d03327c481064167f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the this address a broadcast address?  <a href="classmn_1_1net_1_1basic__ip__address.html#a12e95ea1168c16d03327c481064167f7">More...</a><br /></td></tr>
 <tr class="separator:a12e95ea1168c16d03327c481064167f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc0c8709594def2f6e34d9ffc1a9c8e2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#afc0c8709594def2f6e34d9ffc1a9c8e2">get_family</a> ()</td></tr>
+<tr class="memdesc:afc0c8709594def2f6e34d9ffc1a9c8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address family.  <a href="classmn_1_1net_1_1basic__ip__address.html#afc0c8709594def2f6e34d9ffc1a9c8e2">More...</a><br /></td></tr>
 <tr class="separator:afc0c8709594def2f6e34d9ffc1a9c8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -164,7 +180,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ad510b5d9f765ac8dd1c4740ba77b032a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#ad510b5d9f765ac8dd1c4740ba77b032a">m_aFamily</a></td></tr>
 <tr class="separator:ad510b5d9f765ac8dd1c4740ba77b032a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Wrapper class around lwip implementation of a ip address. </p>
+<dl class="section note"><dt>Note</dt><dd>To use this, you need to subclass it. All of your ip address should be derived from the <a class="el" href="classmn_1_1net_1_1basic__ip__address.html" title="Wrapper class around lwip implementation of a ip address.">basic_ip_address</a> class. Then implement the all virtual abstracted functions.</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Amber-Sophia Schröck </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a01992d0d9ad9e596128ee23f441b5fea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01992d0d9ad9e596128ee23f441b5fea">&#9670;&nbsp;</a></span>basic_ip_address()</h2>
 
@@ -188,6 +208,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
 
 </div>
 </div>
@@ -214,6 +236,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the ip address as byte array. </p>
+<dl class="section return"><dt>Returns</dt><dd>The ip address as byte array </dd></dl>
 
 <p>Implemented in <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a391ff4e9f6e89e1087607494b400ffd8">mn::net::basic_ip6_address</a>, and <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a01373bd1b70daa925af278fcc0c70933">mn::net::basic_ip4_address</a>.</p>
 
@@ -242,6 +267,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the address family. </p>
+<dl class="section return"><dt>Returns</dt><dd>The address family </dd></dl>
+
 </div>
 </div>
 <a id="a12e95ea1168c16d03327c481064167f7"></a>
@@ -266,6 +294,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Is the this address a broadcast address? </p>
+<dl class="section return"><dt>Returns</dt><dd>if true then yes and false if not </dd></dl>
 
 <p>Implemented in <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#abde0248fc3bfd149ec995f6c118b27f2">mn::net::basic_ip6_address</a>, and <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#ad5d7dab99fe34f30e3630331fff45993">mn::net::basic_ip4_address</a>.</p>
 
@@ -294,6 +325,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Is the this address a loopback address? </p>
+<dl class="section return"><dt>Returns</dt><dd>if true then yes and false if not </dd></dl>
+
 <p>Implemented in <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ac2b48cce1b35aed8223d60489e3c46b0">mn::net::basic_ip6_address</a>, and <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a5ea9c5e8bf9d2310c9d0ece34a10f259">mn::net::basic_ip4_address</a>.</p>
 
 </div>
@@ -320,6 +354,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the ip address as string. </p>
+<dl class="section return"><dt>Returns</dt><dd>The ip address as string </dd></dl>
 
 <p>Implemented in <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ad53f7821d098cc5637c83feaadefda89">mn::net::basic_ip6_address</a>, and <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#af9db56d1efc844c31e59dc1146a15d6a">mn::net::basic_ip4_address</a>.</p>
 

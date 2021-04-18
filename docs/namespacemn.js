@@ -133,7 +133,6 @@ var namespacemn =
     [ "has_trivial_assign", "structmn_1_1has__trivial__assign.html", null ],
     [ "has_trivial_destructor", "structmn_1_1has__trivial__destructor.html", null ],
     [ "basic_uint128_t", "namespacemn.html#structmn_1_1basic__uint128__t", null ],
-    [ "version", "classmn_1_1version.html", "classmn_1_1version" ],
     [ "aligof", "structmn_1_1aligof.html", null ],
     [ "aligned_as", "namespacemn.html#structmn_1_1aligned__as", "namespacemn_structmn_1_1aligned__as_dup" ],
     [ "int_to_type", "structmn_1_1int__to__type.html", null ],
@@ -283,7 +282,6 @@ var namespacemn =
     [ "uint_least128_t", "namespacemn.html#a9fa28020f10b41deb43ce40a01e745f6", null ],
     [ "uintmax_t", "namespacemn.html#ae297c2528dc20d5c5450c1e2ed80d338", null ],
     [ "uptrdiff_t", "namespacemn.html#a4465a82923b65fe1bbe77478ca290b3e", null ],
-    [ "version_t", "namespacemn.html#a2cca548421a08ff372ae21f46d9cbeaa", null ],
     [ "void_t", "namespacemn.html#ad0b8a428f956f77926d9eb759d6d4128", null ],
     [ "byte", "namespacemn.html#ab9e38dac1c2cd5d4e786098b802c7c71", null ],
     [ "memory_order", "namespacemn.html#a407618ad86d6d5d93d504543f2e97d31", [
@@ -357,6 +355,8 @@ var namespacemn =
     [ "micros", "namespacemn.html#a50043c128b7670c28482d49ada88f06c", null ],
     [ "millis", "namespacemn.html#a048899eea73570573c5bd8f4f6378968", null ],
     [ "min", "namespacemn.html#a4f254b2c0f95cd48df7f9d3c143dbd6f", null ],
+    [ "minilib_version_print", "namespacemn.html#a9a73bf11270aa4bfef04aad3b51c5b8a", null ],
+    [ "minilib_version_string", "namespacemn.html#a02d8c57c1e073791ef45848b67a47a76", null ],
     [ "MN_TEMPLATE_USING", "namespacemn.html#afe90e66c5bc88ab6d64d198f55869d50", null ],
     [ "MN_TEMPLATE_USING_ONE", "namespacemn.html#a2225f5ab0b440798d1e0d11553f4ef3b", null ],
     [ "MN_TEMPLATE_USING_ONE", "namespacemn.html#ac28a820b9cee7189b500e0feb997bd5f", null ],
@@ -411,5 +411,14 @@ var namespacemn =
     [ "unlock", "namespacemn.html#a9027964956f48b6728bd4dc49273bb55", null ],
     [ "upper_bound", "namespacemn.html#ad27f67ee696187387dd9e08eaa109d38", null ],
     [ "usleep", "namespacemn.html#a22ae1241da7c4b4cdcc385af3d191599", null ],
-    [ "microsMux", "namespacemn.html#afdbf5278c54a504b47de2ee4b6313e5a", null ]
+    [ "microsMux", "namespacemn.html#afdbf5278c54a504b47de2ee4b6313e5a", null ],
+    [ "MN_VERSION_BUILD", "namespacemn.html#a5b8b79ecef112a1570dfdbd1e1b6a56d", null ],
+    [ "MN_VERSION_BUILD_HISTORY", "namespacemn.html#a047db3620071d85930390eff9df27a7a", null ],
+    [ "MN_VERSION_BUILDS_COUNT", "namespacemn.html#a0b9dd0b4b3184bee448a8d0c56814eb5", null ],
+    [ "MN_VERSION_FULLVERSION_STRING", "namespacemn.html#acc5f516887db6fbdacd47628b9068003", null ],
+    [ "MN_VERSION_MAJOR", "namespacemn.html#acdbd6ecdcb9129615bdbbfe765644d9c", null ],
+    [ "MN_VERSION_MINOR", "namespacemn.html#a06ce86e058b300d7578199d9e6a6b411", null ],
+    [ "MN_VERSION_REVISION", "namespacemn.html#ad73bb3387cb12ccb9cb08ab666205cc9", null ],
+    [ "MN_VERSION_STATUS", "namespacemn.html#ada817fb620fa6690d7bd09d39579fce6", null ],
+    [ "MN_VERSION_STATUS_SHORT", "namespacemn.html#a29964fa9d476edb0e0b0f90f4206b066", null ]
 ];
