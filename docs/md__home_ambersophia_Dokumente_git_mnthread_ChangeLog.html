@@ -148,10 +148,13 @@ Versoin 2.25 März 2021 (unstable beta)</h1>
 <li>add sockets support -&gt; see <a class="el" href="mn__socket_8hpp.html">mn_socket.hpp</a></li>
 <li>rename ERR_TIMEOUT =&gt; ERR_MINILIB_TIMEOUT - build bug </li>
 </ul>
-<h2><a class="anchor" id="autotoc_md2"></a>
-2.25.30</h2>
+<h3><a class="anchor" id="autotoc_md2"></a>
+2.27.3049</h3>
 <ul>
-<li>remove container -(mn_container) and netzwerk header file (<a class="el" href="mn__socket_8hpp.html">mn_socket.hpp</a>) from mn_minithread.hpp header file, when use then include it in your project manual</li>
+<li>remove container -(<a class="el" href="mn__container_8hpp.html">mn_container.hpp</a>) and netzwerk header file (<a class="el" href="mn__socket_8hpp.html">mn_socket.hpp</a>) from mn_minithread.hpp header file, when use then include it in your project manual, for socket support add after <a class="el" href="miniThread_8hpp.html">miniThread.hpp</a> the socket heaher file <a class="el" href="mn__socket_8hpp.html">mn_socket.hpp</a> and for container support after <a class="el" href="miniThread_8hpp.html">miniThread.hpp</a> the container header file <a class="el" href="mn__container_8hpp.html">mn_container.hpp</a></li>
+<li>update version style and remove the version singleton, see empty example for use. See <a class="el" href="mn__auto__version_8hpp.html">mn_auto_version.hpp</a> for details</li>
+<li>Task: remove the eventgroup and remove child task handling</li>
+<li>Convar: remove the function signal all</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Version 2.20 März 2021</h1>

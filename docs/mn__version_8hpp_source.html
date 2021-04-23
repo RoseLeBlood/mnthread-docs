@@ -163,42 +163,44 @@ $(document).ready(function(){initNavTree('mn__version_8hpp_source.html',''); ini
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINLIB_VERSION_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">   21</a></span>&#160;<span class="preprocessor">#define MN_THREAD_VERSION_STRING_LEN sizeof(MN_VERSION_FULLVERSION_STRING) + sizeof(MN_VERSION_STATUS) + 8</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__auto__version_8hpp.html">mn_auto_version.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespacemn.html#a02d8c57c1e073791ef45848b67a47a76">   31</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="namespacemn.html#a02d8c57c1e073791ef45848b67a47a76">minilib_version_string</a>(<span class="keywordtype">char</span> version_string[<a class="code" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>]) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="mn__version_8hpp.html#a133ae224876de983c417822133649c31">   22</a></span>&#160;<span class="preprocessor">#define MN_THREAD_VERSION_INFO(PRJNAME)  mn::minilib_version_print(PRJNAME)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__auto__version_8hpp.html">mn_auto_version.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<a class="code" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespacemn.html#ace5273e2b38248f455c224b686086973">   31</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="namespacemn.html#ace5273e2b38248f455c224b686086973">minilib_version_string</a>(<span class="keywordtype">char</span> version_string[<a class="code" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>]) {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        snprintf(version_string, <a class="code" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>, <span class="stringliteral">&quot;%s-%s-LGPL&quot;</span>, <a class="code" href="namespacemn.html#acc5f516887db6fbdacd47628b9068003">MN_VERSION_FULLVERSION_STRING</a>,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <a class="code" href="namespacemn.html#ada817fb620fa6690d7bd09d39579fce6">MN_VERSION_STATUS</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> version_string;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacemn.html#a9a73bf11270aa4bfef04aad3b51c5b8a">   38</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemn.html#a9a73bf11270aa4bfef04aad3b51c5b8a">minilib_version_print</a>() {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacemn.html#acd5e1ef9ee38ae5bfa8178afb0f5d3de">   38</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemn.html#acd5e1ef9ee38ae5bfa8178afb0f5d3de">minilib_version_print</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* strPrjName, <span class="keyword">const</span> <span class="keywordtype">char</span>* strExtraInfo = <span class="stringliteral">&quot;&quot;</span>) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">char</span> _version_string[<a class="code" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>];</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="namespacemn.html#a02d8c57c1e073791ef45848b67a47a76">minilib_version_string</a>(_version_string);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="namespacemn.html#ace5273e2b38248f455c224b686086973">minilib_version_string</a>(_version_string);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        printf(_version_string);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="mn__defines_8hpp.html#ad14ae3fd1c6b48289423a5a08eda08e6">MN_EXTERNC_END</a></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        printf(<span class="stringliteral">&quot;%s using %s\n&quot;</span>,strPrjName, _version_string);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span>(strlen(strExtraInfo) &gt; 0) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                printf(<span class="stringliteral">&quot;%s\n&quot;</span> , strExtraInfo);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="mn__defines_8hpp.html#ad14ae3fd1c6b48289423a5a08eda08e6">MN_EXTERNC_END</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="amn__auto__version_8hpp_html"><div class="ttname"><a href="mn__auto__version_8hpp.html">mn_auto_version.hpp</a></div></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
 <div class="ttc" id="amn__defines_8hpp_html_ab8ff08b2662f02faf08956d89435fcbb"><div class="ttname"><a href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a></div><div class="ttdeci">#define MN_EXTERNC_BEGINN</div><div class="ttdef"><b>Definition:</b> mn_defines.hpp:48</div></div>
 <div class="ttc" id="amn__defines_8hpp_html_ad14ae3fd1c6b48289423a5a08eda08e6"><div class="ttname"><a href="mn__defines_8hpp.html#ad14ae3fd1c6b48289423a5a08eda08e6">MN_EXTERNC_END</a></div><div class="ttdeci">#define MN_EXTERNC_END</div><div class="ttdef"><b>Definition:</b> mn_defines.hpp:49</div></div>
 <div class="ttc" id="amn__version_8hpp_html_a026de5025d10cea3060a968615ee8e2c"><div class="ttname"><a href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a></div><div class="ttdeci">#define MN_THREAD_VERSION_STRING_LEN</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:21</div></div>
 <div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
-<div class="ttc" id="anamespacemn_html_a02d8c57c1e073791ef45848b67a47a76"><div class="ttname"><a href="namespacemn.html#a02d8c57c1e073791ef45848b67a47a76">mn::minilib_version_string</a></div><div class="ttdeci">MN_EXTERNC_BEGINN const char * minilib_version_string(char version_string[MN_THREAD_VERSION_STRING_LEN])</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:31</div></div>
-<div class="ttc" id="anamespacemn_html_a9a73bf11270aa4bfef04aad3b51c5b8a"><div class="ttname"><a href="namespacemn.html#a9a73bf11270aa4bfef04aad3b51c5b8a">mn::minilib_version_print</a></div><div class="ttdeci">void minilib_version_print()</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:38</div></div>
 <div class="ttc" id="anamespacemn_html_acc5f516887db6fbdacd47628b9068003"><div class="ttname"><a href="namespacemn.html#acc5f516887db6fbdacd47628b9068003">mn::MN_VERSION_FULLVERSION_STRING</a></div><div class="ttdeci">static const char MN_VERSION_FULLVERSION_STRING[]</div><div class="ttdef"><b>Definition:</b> mn_auto_version.hpp:20</div></div>
+<div class="ttc" id="anamespacemn_html_acd5e1ef9ee38ae5bfa8178afb0f5d3de"><div class="ttname"><a href="namespacemn.html#acd5e1ef9ee38ae5bfa8178afb0f5d3de">mn::minilib_version_print</a></div><div class="ttdeci">void minilib_version_print(const char *strPrjName, const char *strExtraInfo=&quot;&quot;)</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_html_ace5273e2b38248f455c224b686086973"><div class="ttname"><a href="namespacemn.html#ace5273e2b38248f455c224b686086973">mn::minilib_version_string</a></div><div class="ttdeci">const char * minilib_version_string(char version_string[MN_THREAD_VERSION_STRING_LEN])</div><div class="ttdef"><b>Definition:</b> mn_version.hpp:31</div></div>
 <div class="ttc" id="anamespacemn_html_ada817fb620fa6690d7bd09d39579fce6"><div class="ttname"><a href="namespacemn.html#ada817fb620fa6690d7bd09d39579fce6">mn::MN_VERSION_STATUS</a></div><div class="ttdeci">static const char MN_VERSION_STATUS[]</div><div class="ttdef"><b>Definition:</b> mn_auto_version.hpp:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

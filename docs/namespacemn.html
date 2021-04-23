@@ -1030,10 +1030,10 @@ Functions</h2></td></tr>
 <tr class="separator:a22ae1241da7c4b4cdcc385af3d191599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a684af303215bfb8b6538060075665fb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a684af303215bfb8b6538060075665fb2">nsleep</a> (const struct timespec *req, struct timespec *rem)</td></tr>
 <tr class="separator:a684af303215bfb8b6538060075665fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02d8c57c1e073791ef45848b67a47a76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a02d8c57c1e073791ef45848b67a47a76">minilib_version_string</a> (char version_string[<a class="el" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>])</td></tr>
-<tr class="separator:a02d8c57c1e073791ef45848b67a47a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a73bf11270aa4bfef04aad3b51c5b8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9a73bf11270aa4bfef04aad3b51c5b8a">minilib_version_print</a> ()</td></tr>
-<tr class="separator:a9a73bf11270aa4bfef04aad3b51c5b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5273e2b38248f455c224b686086973"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ace5273e2b38248f455c224b686086973">minilib_version_string</a> (char version_string[<a class="el" href="mn__version_8hpp.html#a026de5025d10cea3060a968615ee8e2c">MN_THREAD_VERSION_STRING_LEN</a>])</td></tr>
+<tr class="separator:ace5273e2b38248f455c224b686086973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5e1ef9ee38ae5bfa8178afb0f5d3de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#acd5e1ef9ee38ae5bfa8178afb0f5d3de">minilib_version_print</a> (const char *strPrjName, const char *strExtraInfo=&quot;&quot;)</td></tr>
+<tr class="separator:acd5e1ef9ee38ae5bfa8178afb0f5d3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90303031bd337b9f357aa87f2ac6498f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a90303031bd337b9f357aa87f2ac6498f">insertion_sort</a> (T *begin, T *end, TPredicate pred)</td></tr>
 <tr class="separator:a90303031bd337b9f357aa87f2ac6498f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632c14f7bfadcdb2b9eadfd9079c8d67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a632c14f7bfadcdb2b9eadfd9079c8d67">insertion_sort</a> (T *begin, T *end)</td></tr>
@@ -5287,8 +5287,8 @@ template&lt;class TLOCK  = LockType_t&gt; </div>
 
 </div>
 </div>
-<a id="a9a73bf11270aa4bfef04aad3b51c5b8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a73bf11270aa4bfef04aad3b51c5b8a">&#9670;&nbsp;</a></span>minilib_version_print()</h2>
+<a id="acd5e1ef9ee38ae5bfa8178afb0f5d3de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd5e1ef9ee38ae5bfa8178afb0f5d3de">&#9670;&nbsp;</a></span>minilib_version_print()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5299,8 +5299,19 @@ template&lt;class TLOCK  = LockType_t&gt; </div>
         <tr>
           <td class="memname">void mn::minilib_version_print </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>strPrjName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>strExtraInfo</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -5312,8 +5323,8 @@ template&lt;class TLOCK  = LockType_t&gt; </div>
 
 </div>
 </div>
-<a id="a02d8c57c1e073791ef45848b67a47a76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02d8c57c1e073791ef45848b67a47a76">&#9670;&nbsp;</a></span>minilib_version_string()</h2>
+<a id="ace5273e2b38248f455c224b686086973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5273e2b38248f455c224b686086973">&#9670;&nbsp;</a></span>minilib_version_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5322,7 +5333,7 @@ template&lt;class TLOCK  = LockType_t&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a> const char* mn::minilib_version_string </td>
+          <td class="memname">const char* mn::minilib_version_string </td>
           <td>(</td>
           <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>version_string</em>[MN_THREAD_VERSION_STRING_LEN]</td><td>)</td>
