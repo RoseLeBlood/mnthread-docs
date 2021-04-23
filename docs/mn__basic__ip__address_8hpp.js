@@ -21,7 +21,5 @@ var mn__basic__ip__address_8hpp =
     [ "MNNET_IS_CLASSB", "mn__basic__ip__address_8hpp.html#a9a05c709dcc47a70a1060b21b445f4f8", null ],
     [ "MNNET_IS_CLASSC", "mn__basic__ip__address_8hpp.html#a4fc2ff45afbb75bc8ea5ebb8224c7ed3", null ],
     [ "MNNET_IS_CLASSD", "mn__basic__ip__address_8hpp.html#a7844a3c86d2d628c9f9972fda1724ffb", null ],
-    [ "MNNET_NUMBER_OF_LABELS", "mn__basic__ip__address_8hpp.html#a6dd0df11ca1cc480dd877d0311799eb0", null ],
-    [ "ip4_address", "mn__basic__ip__address_8hpp.html#ae76cedf1feb39a12ff2e94d9a85399ee", null ],
-    [ "ip6_address", "mn__basic__ip__address_8hpp.html#abf355b3380eb82e03789f1a5fc0e2b0f", null ]
+    [ "MNNET_NUMBER_OF_LABELS", "mn__basic__ip__address_8hpp.html#a6dd0df11ca1cc480dd877d0311799eb0", null ]
 ];

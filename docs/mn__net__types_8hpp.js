@@ -8,6 +8,10 @@ var mn__net__types_8hpp =
       [ "inet_v4", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaa7838f8fe6cbf9681f8b74d7ed4cfde3b", null ],
       [ "inet_v6", "mn__net__types_8hpp.html#a71904aba97f0d9731cff82d62a17a3eaad15af7a2cb7fc5b5e024b9aa91ed67a9", null ]
     ] ],
+    [ "ioctl_request_type", "mn__net__types_8hpp.html#ad4962d0170ef24512e8199ba4f93eb09", [
+      [ "available", "mn__net__types_8hpp.html#ad4962d0170ef24512e8199ba4f93eb09ae4894ca167b08880bfc35862f18575eb", null ],
+      [ "non_blocking", "mn__net__types_8hpp.html#ad4962d0170ef24512e8199ba4f93eb09aacc1dd5e3a4019590a9bcc5639a49236", null ]
+    ] ],
     [ "protocol_type", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d", [
       [ "unspec", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dae13593f343f43afb25e0585565a167a4", null ],
       [ "icmp", "mn__net__types_8hpp.html#a05afb60a1fb9ca57f7aee1f73cb0ac7da1249ce19ef6180e143506b5287be8a7a", null ],
@@ -66,10 +70,10 @@ var mn__net__types_8hpp =
       [ "tos", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052a227f82daef18fd97b0ed9538ce418761", null ],
       [ "ttl", "mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052ac431a4425bc56080c868435c8d910f83", null ]
     ] ],
-    [ "socket_select_mode", "mn__net__types_8hpp.html#a409713481569807121c90788405355a9", [
-      [ "read", "mn__net__types_8hpp.html#a409713481569807121c90788405355a9aecae13117d6f0584c25a9da6c8f8415e", null ],
-      [ "write", "mn__net__types_8hpp.html#a409713481569807121c90788405355a9aefb2a684e4afb7d55e6147fbe5a332ee", null ],
-      [ "rw", "mn__net__types_8hpp.html#a409713481569807121c90788405355a9a038c0dc8a958ffea17af047244fb6960", null ]
+    [ "socket_shutdown_type", "mn__net__types_8hpp.html#a0472396e3949b29af683da52d3d7fcdb", [
+      [ "read", "mn__net__types_8hpp.html#a0472396e3949b29af683da52d3d7fcdbaecae13117d6f0584c25a9da6c8f8415e", null ],
+      [ "write", "mn__net__types_8hpp.html#a0472396e3949b29af683da52d3d7fcdbaefb2a684e4afb7d55e6147fbe5a332ee", null ],
+      [ "rw", "mn__net__types_8hpp.html#a0472396e3949b29af683da52d3d7fcdba038c0dc8a958ffea17af047244fb6960", null ]
     ] ],
     [ "socket_type", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742e", [
       [ "stream", "mn__net__types_8hpp.html#a60cdf67b23eaa1b42c01a98e3589742eaf7b44cfafd5c52223d5498196c8a2e7b", null ],

@@ -12,7 +12,5 @@ var mn__basic__endpoint_8hpp =
     [ "MNNET_IPENDPOINT6", "mn__basic__endpoint_8hpp.html#ace81acab66c7cacdd9c3aba7cca7f85c", null ],
     [ "MNNET_IPENDPOINT6_ANY", "mn__basic__endpoint_8hpp.html#a2ec8f3f4f32922b1a14ea4aafa3a704a", null ],
     [ "MNNET_IPENDPOINT6_EMPTY", "mn__basic__endpoint_8hpp.html#ad62789794342c4270cbd094225140027", null ],
-    [ "MNNET_IPENDPOINT6_LOOPBACK", "mn__basic__endpoint_8hpp.html#a9a2c5c5df717229d8528fc1dfd2f96bc", null ],
-    [ "ip4_endpoint", "mn__basic__endpoint_8hpp.html#aaa92d02991eacb0dca1c540de55540a7", null ],
-    [ "ip6_endpoint", "mn__basic__endpoint_8hpp.html#a6cd5acc0827f7562db70b22c6ef9c08d", null ]
+    [ "MNNET_IPENDPOINT6_LOOPBACK", "mn__basic__endpoint_8hpp.html#a9a2c5c5df717229d8528fc1dfd2f96bc", null ]
 ];

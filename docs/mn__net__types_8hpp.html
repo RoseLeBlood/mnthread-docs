@@ -206,12 +206,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ae2121619734553ddaf5c3ef5757e7823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies socket send and receive behaviors.  <a href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823">More...</a><br /></td></tr>
 <tr class="separator:ae2121619734553ddaf5c3ef5757e7823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a409713481569807121c90788405355a9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a409713481569807121c90788405355a9">mn::net::socket_select_mode</a> : int { <a class="el" href="namespacemn_1_1net.html#a409713481569807121c90788405355a9aecae13117d6f0584c25a9da6c8f8415e">mn::net::read</a> = SHUT_RD
-, <a class="el" href="namespacemn_1_1net.html#a409713481569807121c90788405355a9aefb2a684e4afb7d55e6147fbe5a332ee">mn::net::write</a> = SHUT_WR
-, <a class="el" href="namespacemn_1_1net.html#a409713481569807121c90788405355a9a038c0dc8a958ffea17af047244fb6960">mn::net::rw</a> = SHUT_RDWR
+<tr class="memitem:a0472396e3949b29af683da52d3d7fcdb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#a0472396e3949b29af683da52d3d7fcdb">mn::net::socket_shutdown_type</a> : uint8_t { <a class="el" href="namespacemn_1_1net.html#a0472396e3949b29af683da52d3d7fcdbaecae13117d6f0584c25a9da6c8f8415e">mn::net::read</a> = SHUT_RD
+, <a class="el" href="namespacemn_1_1net.html#a0472396e3949b29af683da52d3d7fcdbaefb2a684e4afb7d55e6147fbe5a332ee">mn::net::write</a> = SHUT_WR
+, <a class="el" href="namespacemn_1_1net.html#a0472396e3949b29af683da52d3d7fcdba038c0dc8a958ffea17af047244fb6960">mn::net::rw</a> = SHUT_RDWR
  }</td></tr>
-<tr class="memdesc:a409713481569807121c90788405355a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commands for lwip_..  <a href="namespacemn_1_1net.html#a409713481569807121c90788405355a9">More...</a><br /></td></tr>
-<tr class="separator:a409713481569807121c90788405355a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a0472396e3949b29af683da52d3d7fcdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commands for lwip_shutdown.  <a href="namespacemn_1_1net.html#a0472396e3949b29af683da52d3d7fcdb">More...</a><br /></td></tr>
+<tr class="separator:a0472396e3949b29af683da52d3d7fcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabf6880ad9783038a0951e318f6db9c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9c">mn::net::socket_option_level</a> : int { <br />
 &#160;&#160;<a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9ca61f2529360aec54f5dc9804b842cf3fa">mn::net::socket</a> = SOL_SOCKET
 , <a class="el" href="namespacemn_1_1net.html#acabf6880ad9783038a0951e318f6db9ca957b527bcfbad2e80f58d20683931435">mn::net::ip</a> = IPPROTO_IP
@@ -268,6 +268,11 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:afec1ab6ca2d4ba7572fabb99533a1db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4962d0170ef24512e8199ba4f93eb09"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1net.html#ad4962d0170ef24512e8199ba4f93eb09">mn::net::ioctl_request_type</a> { <a class="el" href="namespacemn_1_1net.html#ad4962d0170ef24512e8199ba4f93eb09ae4894ca167b08880bfc35862f18575eb">mn::net::available</a> = FIONREAD
+, <a class="el" href="namespacemn_1_1net.html#ad4962d0170ef24512e8199ba4f93eb09aacc1dd5e3a4019590a9bcc5639a49236">mn::net::non_blocking</a> = FIONBIO
+ }</td></tr>
+<tr class="memdesc:ad4962d0170ef24512e8199ba4f93eb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commands for ioctlsocket(), taken from the BSD file fcntl.h. lwip_ioctl only supports FIONREAD and FIONBIO, for now.  <a href="namespacemn_1_1net.html#ad4962d0170ef24512e8199ba4f93eb09">More...</a><br /></td></tr>
+<tr class="separator:ad4962d0170ef24512e8199ba4f93eb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a44b47762ed15f4461a123e807fc78017"></a>

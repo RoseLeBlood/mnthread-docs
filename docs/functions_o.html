@@ -189,6 +189,9 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 <li>onTick()
 : <a class="el" href="classmn_1_1base__tickhook__entry.html#ae40ffb8eea1ebe94169a8535ed7e9740">mn::base_tickhook_entry</a>
 </li>
+<li>open()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8bace11e83ae31b8778610992a50cd1d">mn::net::basic_ip_socket</a>
+</li>
 <li>operator bool()
 : <a class="el" href="classmn_1_1basic__autolock.html#abf350048be5437284bfe6b5e7fe1ae0a">mn::basic_autolock&lt; LOCK &gt;</a>
 , <a class="el" href="classmn_1_1basic__clock.html#a8e4d8a1ed3be7c18b10b4dced99f0c12">mn::basic_clock&lt; TLockType &gt;</a>
@@ -265,17 +268,19 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 , <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#a859bbbb40ecb4fff1059be81f2e93805">mn::net::basic_ip4_endpoint</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a593da7367edfd4ef56716a9d17114a3c">mn::net::basic_ip6_address</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#a3c73825e5d58fa458ed6d6af2dc92e74">mn::net::basic_ip6_endpoint</a>
-, <a class="el" href="classmn_1_1net_1_1basic__net__if.html#a444035955bf351713f28c9feca147d43">mn::net::basic_net_if</a>
+, <a class="el" href="classmn_1_1net_1_1basic__net__if.html#a3f213a9fa29b8ba84b643eb5d42e651b">mn::net::basic_net_if</a>
 </li>
 <li>operator&amp;()
 : <a class="el" href="classmn_1_1fast__type.html#a62e986a3c93270ee35abd38e5e52877e">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#aae459a37a06b5ff1109c4d400a762995">mn::net::basic_ip4_address</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ad857007d15fb835a30e0c24bb8768217">mn::net::basic_ip6_address</a>
 </li>
 <li>operator&amp;=()
 : <a class="el" href="structmn_1_1basic__atomic__gcc.html#a3972d0c07d2c4066d5ff22abf5fda2cf">mn::basic_atomic_gcc&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1fast__type.html#acd22e674ae0aca00966eefd66449e808">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator()()
-: <a class="el" href="structmn_1_1container_1_1internal_1_1compare__func.html#ae2fb5b45a137f0d40c932a273cbd5959">mn::container::internal::compare_func&lt; TPair, TFunctor &gt;</a>
+: <a class="el" href="structmn_1_1container_1_1internal_1_1compare__func.html#a211e71ada815252bab5338fec640bf2e">mn::container::internal::compare_func&lt; TPair, TFunctor &gt;</a>
 , <a class="el" href="structmn_1_1equal__to.html#af1496ea3e47024977dce2ba8709adcfc">mn::equal_to</a>
 , <a class="el" href="structmn_1_1greater.html#aff5b4045306108a42420780795189caf">mn::greater</a>
 , <a class="el" href="structmn_1_1less.html#a46fe1286beb056be3d253cd8e3d1e5d4">mn::less</a>
@@ -363,18 +368,18 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 , <a class="el" href="classmn_1_1container_1_1list__node__iterator.html#a2d0b2c9c492708cde029b990eca5c593">mn::container::list_node_iterator&lt; TNodePtr, TPtr, TRef &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html#aa37989a074898d79de165ad8eecc069f">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html#a2eb65893796362dc9b026fc6aaa547ec">mn::pointer::basic_linked_ptr&lt; T &gt;</a>
-, <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#a904121bf9349569b7ee0c86db660e55e">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
-, <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html#a402722e76a8133b8463318e840632a63">mn::pointer::basic_save_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#a4c96210421afb2beb2a672316860a4e1">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html#af14cd812fa24385aa3cec6bbb365bbbb">mn::pointer::basic_save_ptr&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html#a33e2bf4979242272a519176b78f344ce">mn::pointer::basic_scoped_ptr&lt; T &gt;</a>
-, <a class="el" href="classmn_1_1pointer_1_1node__ptr.html#a0344b7682c3f7314db201340ea2295c0">mn::pointer::node_ptr&lt; T, TAllocator &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1node__ptr.html#a7a22399d05ee24d3a908f44e335c9c97">mn::pointer::node_ptr&lt; T, TAllocator &gt;</a>
 , <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a614eddd00bc87ac59b7139495613ef0f">mn::pointer::pointer_ptr&lt; T &gt;</a>
 </li>
 <li>operator/()
 : <a class="el" href="classmn_1_1fast__type.html#a3d829cf02000533370ed3c4023e6c58a">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 </li>
 <li>operator/=()
-: <a class="el" href="classmn_1_1fast__type.html#af7fc0dcc15cd859c7fec27cbe9356b67">mn::fast_type&lt; Bits, TBaseType &gt;</a>
-, <a class="el" href="classmn_1_1math_1_1basic__color.html#a04fbb3c90eef3b46e646b22a7cd32e35">mn::math::basic_color&lt; T &gt;</a>
+: <a class="el" href="classmn_1_1fast__type.html#a54ff8606c6f617ee7eb84e6a07205dd8">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+, <a class="el" href="classmn_1_1math_1_1basic__color.html#ab044f5089a9bc0206c27f17fa890c866">mn::math::basic_color&lt; T &gt;</a>
 </li>
 <li>operator&lt;()
 : <a class="el" href="classmn_1_1basic__semaphore.html#a58212880666e7466fd4c4aa8e3ce5652">mn::basic_semaphore</a>
@@ -395,20 +400,20 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 <li>operator=()
 : <a class="el" href="structmn_1_1__atomic_3_01bool_01_4.html#ab0f551ee200402af3b85a624f8d4bb4c">mn::_atomic&lt; bool &gt;</a>
 , <a class="el" href="structmn_1_1__atomic_3_01char_01_4.html#ae628741ab3ae14ab3bfc8ddab3b49468">mn::_atomic&lt; char &gt;</a>
-, <a class="el" href="structmn_1_1__atomic_3_01char16__t_01_4.html#a01d1edfd98a7992fc8ec5fde29759596">mn::_atomic&lt; char16_t &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01char16__t_01_4.html#ae9727f8d112eea0e8ed148da9dc96d0d">mn::_atomic&lt; char16_t &gt;</a>
 , <a class="el" href="structmn_1_1__atomic_3_01char32__t_01_4.html#a7ac674d94d5e309c128d0974cbd67745">mn::_atomic&lt; char32_t &gt;</a>
 , <a class="el" href="structmn_1_1__atomic_3_01int_01_4.html#a0ef5237873c01ce43a919080a8dc9991">mn::_atomic&lt; int &gt;</a>
-, <a class="el" href="structmn_1_1__atomic_3_01long_01_4.html#a1de4e1a0da2603ba141bbce35df58506">mn::_atomic&lt; long &gt;</a>
-, <a class="el" href="structmn_1_1__atomic_3_01long_01long_01_4.html#aac548c308c6c69d71c13a09fee5d9782">mn::_atomic&lt; long long &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01long_01_4.html#aabecd025baf6ef3a426298ec36b95543">mn::_atomic&lt; long &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01long_01long_01_4.html#a72ea3243ac4ddbedb1ab89c63c382c21">mn::_atomic&lt; long long &gt;</a>
 , <a class="el" href="structmn_1_1__atomic_3_01short_01_4.html#a52aa3cc0ca10d0f17db26629006a0da1">mn::_atomic&lt; short &gt;</a>
 , <a class="el" href="structmn_1_1__atomic_3_01signed_01char_01_4.html#a789b9398b88b4f8707fe4b23ab9dd792">mn::_atomic&lt; signed char &gt;</a>
 , <a class="el" href="structmn_1_1__atomic_3_01unsigned_01char_01_4.html#ab112302b88dc63f708c283adb3123718">mn::_atomic&lt; unsigned char &gt;</a>
-, <a class="el" href="structmn_1_1__atomic_3_01unsigned_01int_01_4.html#a2545cda32a4feeb566ec65e4efa8029d">mn::_atomic&lt; unsigned int &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01unsigned_01int_01_4.html#a97e39e168edffa88cc4b8d03a031797b">mn::_atomic&lt; unsigned int &gt;</a>
 , <a class="el" href="structmn_1_1__atomic_3_01unsigned_01long_01_4.html#a6c1574a06394b3c9a36036d08a9c7c01">mn::_atomic&lt; unsigned long &gt;</a>
-, <a class="el" href="structmn_1_1__atomic_3_01unsigned_01short_01_4.html#a661bfe7e400567ebda6ae13471c00788">mn::_atomic&lt; unsigned short &gt;</a>
+, <a class="el" href="structmn_1_1__atomic_3_01unsigned_01short_01_4.html#a3fc5484292f455749d64162315514530">mn::_atomic&lt; unsigned short &gt;</a>
 , <a class="el" href="structmn_1_1__atomic_3_01wchar__t_01_4.html#aae5f0075a136ee265db9c4fc1b92166a">mn::_atomic&lt; wchar_t &gt;</a>
 , <a class="el" href="structmn_1_1__atomic__ptr.html#a0b35bbfe88dea9cca5dd462ff1729dcf">mn::_atomic_ptr&lt; T &gt;</a>
-, <a class="el" href="classmn_1_1atomic__spinlock.html#ad22c47863062d03af20b6c550d270864">mn::atomic_spinlock&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1atomic__spinlock.html#ad1911d98e9d57556466c6e49e5c2faa2">mn::atomic_spinlock&lt; T &gt;</a>
 , <a class="el" href="structmn_1_1basic__atomic__gcc.html#a47f7e91f6c24c95d3f04eb005e66f00d">mn::basic_atomic_gcc&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1basic__autolock.html#a234d20f653bf2c95440c06fcbbe2a833">mn::basic_autolock&lt; LOCK &gt;</a>
 , <a class="el" href="classmn_1_1basic__clock.html#acc354b217048ba233ba59f9f32896e6b">mn::basic_clock&lt; TLockType &gt;</a>
@@ -447,7 +452,7 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 , <a class="el" href="classmn_1_1net_1_1basic__net__if.html#ad881bd9e58b42710d229a590ca933ea0">mn::net::basic_net_if</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a1109035f1b4943a553bffe023097ddb7">mn::pointer::basic_any_ptr&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html#a926de85f73c3eed1b70d0b0528a42368">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a>
-, <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html#a3313a59390c5262a1228b7f28dcbaaa1">mn::pointer::basic_linked_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html#ab634824474907e0ef2e6777ec46f8708">mn::pointer::basic_linked_ptr&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#a23ec8b6063818c3688f13d858d64eb6a">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html#afc15dbac063e1e046b7ae671ba9d7fb0">mn::pointer::basic_save_ptr&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abce6281d027366c3b0df38d072617556">mn::pointer::basic_shared_ptr&lt; T, TRefType &gt;</a>
@@ -472,7 +477,7 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 , <a class="el" href="classmn_1_1container_1_1list__node__iterator.html#a18452b6e48690087247c706df41c3dc3">mn::container::list_node_iterator&lt; TNodePtr, TPtr, TRef &gt;</a>
 , <a class="el" href="classmn_1_1fast__type.html#aeda7fa46c27e52d1783b2c9e1a3e42cc">mn::fast_type&lt; Bits, TBaseType &gt;</a>
 , <a class="el" href="classmn_1_1hash_1_1basic__uuid.html#a22bc9fa130c0c93d85d458c97f776fcf">mn::hash::basic_uuid</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a30bb81cde30ceb822e7f58bc97ff1453">mn::net::basic_ip4_address</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#aa0df4b9d149874aa6ab572c74936b564">mn::net::basic_ip4_address</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#ab3263e31a1336946c5fcfdc308a5d3ae">mn::net::basic_ip4_endpoint</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ad2a91b01862880e6d57001c05cf5f5c7">mn::net::basic_ip6_address</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#aed647a4a95a14beaa1bce1ad7a9dac7b">mn::net::basic_ip6_endpoint</a>
@@ -498,11 +503,13 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 : <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#a1bcba1daf9edbe1f4f0a03d75644de87">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
 , <a class="el" href="classmn_1_1container_1_1basic__vector.html#a6d36b04aa43178dc54956d71a622e11b">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
 , <a class="el" href="classmn_1_1fast__type.html#a6933b7e7e07867dc69c9d34dec3c5a5f">mn::fast_type&lt; Bits, TBaseType &gt;</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#ace416dc1999eca40c56ee163ceb11dfe">mn::net::basic_ip4_address</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#abd1905fdacba16f3275db9030293350b">mn::net::basic_ip4_address</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a8480bb3e711c23e3007d0a5af3e7ee28">mn::net::basic_ip6_address</a>
 </li>
 <li>operator^()
 : <a class="el" href="classmn_1_1fast__type.html#ac63680ab789463bf750c07f54938135f">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#ada79fe730a6fa6521df8a100fd5bf9cf">mn::net::basic_ip4_address</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a1bd021791c518c878c1cb62ab55266ae">mn::net::basic_ip6_address</a>
 </li>
 <li>operator^=()
 : <a class="el" href="structmn_1_1basic__atomic__gcc.html#a67919895125817ce2e3f58d1e09fa7a5">mn::basic_atomic_gcc&lt; T &gt;</a>
@@ -510,6 +517,8 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 </li>
 <li>operator|()
 : <a class="el" href="classmn_1_1fast__type.html#aaa027e0d286aff815e716e5d74ee68da">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a81250c37be31739a25cb798d515e28c6">mn::net::basic_ip4_address</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a8c7ef063c92b1775abb77dd1911fc85b">mn::net::basic_ip6_address</a>
 </li>
 <li>operator|=()
 : <a class="el" href="structmn_1_1basic__atomic__gcc.html#a266bac564879a6d753eda088b39561e3">mn::basic_atomic_gcc&lt; T &gt;</a>
@@ -517,6 +526,8 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 </li>
 <li>operator~()
 : <a class="el" href="classmn_1_1fast__type.html#ad1b0204a64327e8c3d5bbec6b7f7c89a">mn::fast_type&lt; Bits, TBaseType &gt;</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a50522f452861b38c347c2474487e62e3">mn::net::basic_ip4_address</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#aae4b8ef7ef23ca17861acc2a9224e1a4">mn::net::basic_ip6_address</a>
 </li>
 <li>or_fetch()
 : <a class="el" href="structmn_1_1basic__atomic__gcc.html#ac81db3f74416b8d0ed9f3e6c762667b4">mn::basic_atomic_gcc&lt; T &gt;</a>

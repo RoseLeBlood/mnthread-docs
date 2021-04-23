@@ -66,6 +66,14 @@ var files_dup =
     ] ],
     [ "mn_basic_endpoint.cpp", "mn__basic__endpoint_8cpp.html", null ],
     [ "mn_basic_endpoint.hpp", "mn__basic__endpoint_8hpp.html", "mn__basic__endpoint_8hpp" ],
+    [ "mn_basic_ip4_socket.cpp", "mn__basic__ip4__socket_8cpp.html", null ],
+    [ "mn_basic_ip4_socket.hpp", "mn__basic__ip4__socket_8hpp.html", [
+      [ "basic_ip4_socket", "classmn_1_1net_1_1basic__ip4__socket.html", "classmn_1_1net_1_1basic__ip4__socket" ]
+    ] ],
+    [ "mn_basic_ip6_socket.cpp", "mn__basic__ip6__socket_8cpp.html", null ],
+    [ "mn_basic_ip6_socket.hpp", "mn__basic__ip6__socket_8hpp.html", [
+      [ "basic_ip6_socket", "classmn_1_1net_1_1basic__ip6__socket.html", "classmn_1_1net_1_1basic__ip6__socket" ]
+    ] ],
     [ "mn_basic_ip_address.cpp", "mn__basic__ip__address_8cpp.html", "mn__basic__ip__address_8cpp" ],
     [ "mn_basic_ip_address.hpp", "mn__basic__ip__address_8hpp.html", "mn__basic__ip__address_8hpp" ],
     [ "mn_basic_ip_socket.cpp", "mn__basic__ip__socket_8cpp.html", null ],
@@ -76,9 +84,9 @@ var files_dup =
     [ "mn_basic_netif.hpp", "mn__basic__netif_8hpp.html", [
       [ "basic_net_if", "classmn_1_1net_1_1basic__net__if.html", "classmn_1_1net_1_1basic__net__if" ],
       [ "ip_info", "classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info", [
-        [ "gw", "classmn_1_1net_1_1basic__net__if.html#aa69876bd76beb4d7fd138ce147879d0e", null ],
-        [ "ip", "classmn_1_1net_1_1basic__net__if.html#a53a96b980d272f664f850cfd34182817", null ],
-        [ "netmask", "classmn_1_1net_1_1basic__net__if.html#aeb28a7ac660f860c613a8b8ceabfa235", null ]
+        [ "gw", "classmn_1_1net_1_1basic__net__if.html#a38a33d2823c06f6779a2fb484240b13a", null ],
+        [ "ip", "classmn_1_1net_1_1basic__net__if.html#a7fbd204866b65baa9a740480febf6a87", null ],
+        [ "netmask", "classmn_1_1net_1_1basic__net__if.html#ab368d2c60cd74d034e2e6b5ff51e00ad", null ]
       ] ]
     ] ],
     [ "mn_basic_semaphore.cpp", "mn__basic__semaphore_8cpp.html", null ],

@@ -1,9 +1,9 @@
 var classmn_1_1net_1_1basic__net__if =
 [
     [ "ip_info", "classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info", [
-      [ "gw", "classmn_1_1net_1_1basic__net__if.html#aa69876bd76beb4d7fd138ce147879d0e", null ],
-      [ "ip", "classmn_1_1net_1_1basic__net__if.html#a53a96b980d272f664f850cfd34182817", null ],
-      [ "netmask", "classmn_1_1net_1_1basic__net__if.html#aeb28a7ac660f860c613a8b8ceabfa235", null ]
+      [ "gw", "classmn_1_1net_1_1basic__net__if.html#a38a33d2823c06f6779a2fb484240b13a", null ],
+      [ "ip", "classmn_1_1net_1_1basic__net__if.html#a7fbd204866b65baa9a740480febf6a87", null ],
+      [ "netmask", "classmn_1_1net_1_1basic__net__if.html#ab368d2c60cd74d034e2e6b5ff51e00ad", null ]
     ] ],
     [ "ip_info_t", "classmn_1_1net_1_1basic__net__if.html#a62f4d9ebf9197bd323e6adf5de58bce6", null ],
     [ "basic_net_if", "classmn_1_1net_1_1basic__net__if.html#ab57d07f17ac84f7fe81134226fe90562", null ],

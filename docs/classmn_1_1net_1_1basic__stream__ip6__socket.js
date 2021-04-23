@@ -1,6 +1,6 @@
 var classmn_1_1net_1_1basic__stream__ip6__socket =
 [
-    [ "base_type", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a7c08de21a8791e725838d5815458039b", null ],
+    [ "base_type", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a1d351b61781012d7254e7e0554f236c3", null ],
     [ "endpoint_type", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a9ec99c626eb424ff243f990480f96a24", null ],
     [ "handle_type", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a24125a8db5a29199ce3401e7238c0c02", null ],
     [ "ipaddress_type", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a9baca0715056067593c7bf2adc5363d4", null ],
@@ -13,6 +13,6 @@ var classmn_1_1net_1_1basic__stream__ip6__socket =
     [ "listen", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a393dda79662d4c92d6609ca315992e74", null ],
     [ "recive", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a8b985cce92e94e4c00a84577e5c01422", null ],
     [ "recive", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a7de6c7d49d8ef31981374425a1cc790b", null ],
-    [ "send", "classmn_1_1net_1_1basic__stream__ip6__socket.html#aa2ccb85710ee86636ca1c4e4eacc0a36", null ],
-    [ "send", "classmn_1_1net_1_1basic__stream__ip6__socket.html#aa355458ee48b55cf4e0a9b24c3ed75d3", null ]
+    [ "send_bytes", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a8e9d7c987e5a0f557a2027109f4cb452", null ],
+    [ "send_bytes", "classmn_1_1net_1_1basic__stream__ip6__socket.html#afbed3ca835ac2ee201e1f9a1a0880c61", null ]
 ];

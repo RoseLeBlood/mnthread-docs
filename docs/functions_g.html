@@ -162,11 +162,11 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 , <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html#a57a6eacb133d0d88074875632bb0a0f5">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html#a92cd97c5a019e8e2ccb3d6f37afff6e3">mn::pointer::basic_linked_ptr&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#a1980c0dd4ce3db19c97d99aa9ed55094">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
-, <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html#a5460afb7e23ed9ebb421103bd489aebd">mn::pointer::basic_save_ptr&lt; T &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html#ae38d4e3d27e83de6718a7e84dc7c3c9d">mn::pointer::basic_save_ptr&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html#abcca56ec55e6743807795368cf51c98e">mn::pointer::basic_scoped_ptr&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abd2083c289b9c0636f3ed47b58e71712">mn::pointer::basic_shared_ptr&lt; T, TRefType &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#abd2083c289b9c0636f3ed47b58e71712">mn::pointer::basic_weak_ptr&lt; T, TRefType &gt;</a>
-, <a class="el" href="classmn_1_1pointer_1_1node__ptr.html#a9a621d9c608c3af06264865a95af898d">mn::pointer::node_ptr&lt; T, TAllocator &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1node__ptr.html#a76cde3acaba5483e86b9f6aabeb7801e">mn::pointer::node_ptr&lt; T, TAllocator &gt;</a>
 , <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#abd2083c289b9c0636f3ed47b58e71712">mn::pointer::pointer_ptr&lt; T &gt;</a>
 , <a class="el" href="structmn_1_1small__task_3_01R_07Args_8_8_8_08_00_01sz_00_01algn_01_4_1_1vtable__t.html#a0d780a7af2a84319924d9987980d3895">mn::small_task&lt; R(Args...), sz, algn &gt;::vtable_t</a>
 </li>
@@ -180,6 +180,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>get_blocked()
 : <a class="el" href="classmn_1_1memory_1_1basic__mempool__vector.html#af71cae7337699ef5c5f9679d942a64c3">mn::memory::basic_mempool_vector&lt; TType, nElements, TMUTEX, TALLOCATOR &gt;</a>
+</li>
+<li>get_blocking()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a5eea9b3b572cf806aa0beda33789babd">mn::net::basic_ip_socket</a>
 </li>
 <li>get_bytes()
 : <a class="el" href="classmn_1_1hash_1_1basic__uuid.html#a48e5b4c74859e6743e6c4f89b40e078b">mn::hash::basic_uuid</a>
@@ -208,8 +211,8 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classmn_1_1basic__counting__semaphore.html#abb0e1b01c3baa099e621332bd41f0002">mn::basic_counting_semaphore</a>
 </li>
 <li>get_endpoint()
-: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a351bf2e0863fb9541b4a436a65ff3381">mn::net::basic_ip4_socket</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a03c84ce79b8a0fcf62bda32f2de28561">mn::net::basic_ip6_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a92ed887163de95102e0f6301d143ed42">mn::net::basic_ip4_socket</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a843213aea96a1ffcae07884828a0586c">mn::net::basic_ip6_socket</a>
 </li>
 <li>get_error()
 : <a class="el" href="classmn_1_1basic__autolock.html#afb3f4ffb025b7fddc23c391705ee3404">mn::basic_autolock&lt; LOCK &gt;</a>
@@ -217,6 +220,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>get_family()
 : <a class="el" href="classmn_1_1net_1_1basic__ip__address.html#afc0c8709594def2f6e34d9ffc1a9c8e2">mn::net::basic_ip_address</a>
+</li>
+<li>get_fcntl()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a2dbc20b53e963ff6e68c9d5610f7ab9a">mn::net::basic_ip_socket</a>
 </li>
 <li>get_free()
 : <a class="el" href="classmn_1_1memory_1_1basic__mempool__vector.html#aec36a96ae589a78ec1840d73bdebcda1">mn::memory::basic_mempool_vector&lt; TType, nElements, TMUTEX, TALLOCATOR &gt;</a>
@@ -258,25 +264,31 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a38299e7ef0e7b1d529fe79565a4d6214">mn::net::basic_ip6_address</a>
 </li>
 <li>get_ip()
-: <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#aa04a892e0c04330ea654c6c400c784bf">mn::net::basic_ip4_endpoint</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#af58604bcaa143f3a58f7e314ea6deb29">mn::net::basic_ip6_endpoint</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#aaf895cff27e22dab936f8cb48a382655">mn::net::basic_ip4_endpoint</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#a05158ee73ecd1bb5fb63232d50842121">mn::net::basic_ip6_endpoint</a>
 </li>
 <li>get_ip_infos()
 : <a class="el" href="classmn_1_1net_1_1basic__net__if.html#a73c48b1f7d941474b87ecb0414ebf74b">mn::net::basic_net_if</a>
+</li>
+<li>get_keep_alive()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a6bc049c8e8dcbf9c4f48b80b46b9d5d7">mn::net::basic_ip_socket</a>
 </li>
 <li>get_key()
 : <a class="el" href="structmn_1_1container_1_1internal_1_1rb__tree__key__wrapper.html#a654bb030ea528e8136424ef933835e8e">mn::container::internal::rb_tree_key_wrapper&lt; TKey &gt;</a>
 </li>
 <li>get_last_error()
-: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a3e38e25269ab8346e88db793b51a40cd">mn::net::basic_ip_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a1f707afb7d7a74e1aa40a40412a698e9">mn::net::basic_ip_socket</a>
 </li>
 <li>get_left()
 : <a class="el" href="classmn_1_1container_1_1basic__stack.html#a53f2773f7f6db4c4e1fb33fecbc297f8">mn::container::basic_stack&lt; TType &gt;</a>
 , <a class="el" href="classmn_1_1queue_1_1basic__queue.html#add62480e3172bb2cf0635fd05d4618d9">mn::queue::basic_queue</a>
 </li>
+<li>get_linger()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#ad7b851a3e454eec94d9342c69ebee940">mn::net::basic_ip_socket</a>
+</li>
 <li>get_local()
-: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a1450d168e59b8baf37ebc1430d879894">mn::net::basic_ip4_socket</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#ad4449f109130c174561d5c3a2962a7ef">mn::net::basic_ip6_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a35bb76a8f725d64fa34601bd761b8609">mn::net::basic_ip4_socket</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a02e399ef1ff93b4088e3e22357f64331">mn::net::basic_ip6_socket</a>
 </li>
 <li>get_lock()
 : <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#a501d6b8f3b6e321882a5d6f3582bbbb1">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
@@ -296,6 +308,9 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 </li>
 <li>get_next_item()
 : <a class="el" href="classmn_1_1queue_1_1basic__work__queue.html#a1697cbf129a158fe01f813ec6ab23ae0">mn::queue::basic_work_queue</a>
+</li>
+<li>get_no_delay()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a576b415aeccb14a5fa795c7b2b92220a">mn::net::basic_ip_socket</a>
 </li>
 <li>get_nocheak()
 : <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a4b6ea234a55cd581e8dc63b88fa6813d">mn::net::basic_ip_socket</a>
@@ -324,18 +339,21 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>get_on_core()
 : <a class="el" href="classmn_1_1basic__task.html#a70794f2ccb027a928c79c6e9bcdcffb2">mn::basic_task</a>
 </li>
+<li>get_oob_inline()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a72f9fb590f58484799bd84137aec387a">mn::net::basic_ip_socket</a>
+</li>
 <li>get_option_bool()
 : <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8d399bd8aa49c442570cd289dc711d54">mn::net::basic_ip_socket</a>
-</li>
-<li>get_option_ex()
-: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a0172d305c44ac6bb280f6f45a159e6e0">mn::net::basic_ip_socket</a>
 </li>
 <li>get_option_int()
 : <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a37ef991eec2589444ddc447f4d4642ae">mn::net::basic_ip_socket</a>
 </li>
+<li>get_option_raw()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a3f43d58892dba39df3e971d4d0e04d81">mn::net::basic_ip_socket</a>
+</li>
 <li>get_peername()
-: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#ac338d095ec866d2655f4824eb10a6a54">mn::net::basic_ip4_socket</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a044c26f85cb923b6dc86bef1a5f2de24">mn::net::basic_ip6_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a2cf29c48cd61338d35e8fd1268df806a">mn::net::basic_ip4_socket</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a9cdf372d0359c418c4aad691cdf0c375">mn::net::basic_ip6_socket</a>
 </li>
 <li>get_period()
 : <a class="el" href="classmn_1_1basic__timer.html#a609f4ac06ca13ae66a43988ccf27393d">mn::basic_timer</a>
@@ -358,18 +376,36 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 <li>get_protocol()
 : <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a971dc7218fd95a6fbe2f979610e2292b">mn::net::basic_wifi_net_if</a>
 </li>
+<li>get_rause_port()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a2f749503cb0e9765fba35b2ff3e878f1">mn::net::basic_ip_socket</a>
+</li>
+<li>get_recive_buffer_size()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a6f9da24336e0aa730ce7abcbc1d9bea3">mn::net::basic_ip_socket</a>
+</li>
+<li>get_recive_timeout()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a33fa82c5c44c49f75d1bf0a893786dbf">mn::net::basic_ip_socket</a>
+</li>
 <li>get_remote()
-: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a9a4092c7c04c81ea7960e6dc68e0c3b7">mn::net::basic_ip4_socket</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#ab1e70e3d6cfdc44ad5f6eb3dc70be67c">mn::net::basic_ip6_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a0802c25126a0c4ecb074a96f5704ffaa">mn::net::basic_ip4_socket</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#acb00fbdf5905bffbbe4825dcefa7d20c">mn::net::basic_ip6_socket</a>
 </li>
 <li>get_return_value()
 : <a class="el" href="classmn_1_1basic__task.html#adf365e86a13dd2be0551dd1f4567c065">mn::basic_task</a>
+</li>
+<li>get_reuse_address()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8be053c735cec6031be7fc9e6c6ae78a">mn::net::basic_ip_socket</a>
 </li>
 <li>get_seed()
 : <a class="el" href="classmn_1_1IPseudoRandomUtil.html#a0b481966db4ad0c18411caaeffcfc603">mn::IPseudoRandomUtil&lt; TSEEDTYPE &gt;</a>
 </li>
 <li>get_self()
 : <a class="el" href="classmn_1_1basic__task.html#abeb99f59339a62fd945aced867daf36a">mn::basic_task</a>
+</li>
+<li>get_send_buffer_size()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a9862fb2e9d2e635cf6668b060970b270">mn::net::basic_ip_socket</a>
+</li>
+<li>get_send_timeout()
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a481f3b42726350dcc9b667bab3881530">mn::net::basic_ip_socket</a>
 </li>
 <li>get_size()
 : <a class="el" href="classmn_1_1memory_1_1basic__cap__allocator__esp32.html#afe70a4279080b7e2c7ab65f017876c3c">mn::memory::basic_cap_allocator_esp32&lt; TCAPS, TSBITS &gt;</a>
@@ -392,7 +428,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classmn_1_1container_1_1basic__ring__buffer.html#aa92bd9422b729680ec984e46c008020a">mn::container::basic_ring_buffer&lt; T, TCAPACITY, TLOCK &gt;</a>
 </li>
 <li>get_task()
-: <a class="el" href="classmn_1_1basic__task__list.html#a9838cc18f175f4fa42200253341a57ec">mn::basic_task_list</a>
+: <a class="el" href="classmn_1_1basic__task__list.html#a2f9f9315ce105e3f2c9276f5f9f344ec">mn::basic_task_list</a>
 </li>
 <li>get_tasks()
 : <a class="el" href="classmn_1_1basic__task.html#a8ac449ff6905174bd140f09ad92d0a2c">mn::basic_task</a>
@@ -410,7 +446,7 @@ $(document).ready(function(){initNavTree('functions_g.html',''); initResizable()
 : <a class="el" href="classmn_1_1container_1_1basic__vector.html#a88cf4512f155cc39e881ab3b4a8bac43">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
 </li>
 <li>gw
-: <a class="el" href="classmn_1_1net_1_1basic__net__if.html#aa69876bd76beb4d7fd138ce147879d0e">mn::net::basic_net_if::ip_info</a>
+: <a class="el" href="classmn_1_1net_1_1basic__net__if.html#a38a33d2823c06f6779a2fb484240b13a">mn::net::basic_net_if::ip_info</a>
 </li>
 </ul>
 </div><!-- contents -->

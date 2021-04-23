@@ -1,8 +1,9 @@
 var classmn_1_1net_1_1basic__dgram__ip__socket =
 [
-    [ "endpoint_type", "classmn_1_1net_1_1basic__dgram__ip__socket.html#a723cf0629f2be9d395a91902f90b9edb", null ],
-    [ "handle_type", "classmn_1_1net_1_1basic__dgram__ip__socket.html#a39eb85f831338aee73be0090daf5420f", null ],
-    [ "ipaddress_type", "classmn_1_1net_1_1basic__dgram__ip__socket.html#a5a3b0600a59fe4d3c61195ffe820252b", null ],
+    [ "base_type", "classmn_1_1net_1_1basic__dgram__ip__socket.html#a07dc484c0be366c972f032ea2fc26896", null ],
+    [ "endpoint_type", "classmn_1_1net_1_1basic__dgram__ip__socket.html#aa39c761e7a0eb5cd2f2229a25c0d3ff3", null ],
+    [ "handle_type", "classmn_1_1net_1_1basic__dgram__ip__socket.html#a66ac242f782a6362f6ceaf2750fa7701", null ],
+    [ "ipaddress_type", "classmn_1_1net_1_1basic__dgram__ip__socket.html#a588dd104b86e2c23f13ce61f39b71edf", null ],
     [ "self_typ", "classmn_1_1net_1_1basic__dgram__ip__socket.html#a81a216f818528cbede3a303f4f8b20c9", null ],
     [ "basic_dgram_ip_socket", "classmn_1_1net_1_1basic__dgram__ip__socket.html#aa4c0b3a715ddfa780a673be74c94158b", null ],
     [ "basic_dgram_ip_socket", "classmn_1_1net_1_1basic__dgram__ip__socket.html#ab4a3dab4813a28ff0b9e87d52d8c05e0", null ],
