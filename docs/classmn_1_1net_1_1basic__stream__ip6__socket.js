@@ -10,7 +10,7 @@ var classmn_1_1net_1_1basic__stream__ip6__socket =
     [ "basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a49a0959489e475a311fa7263bcb27576", null ],
     [ "accept", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a4e2e1b97eeeeb732323c74f56e375519", null ],
     [ "connect", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a379df61589c87fa06013106b139a9f61", null ],
-    [ "listen", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a393dda79662d4c92d6609ca315992e74", null ],
+    [ "listen", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a26781df2e965ed5e4d6b2de0cfe1639a", null ],
     [ "recive", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a8b985cce92e94e4c00a84577e5c01422", null ],
     [ "recive", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a7de6c7d49d8ef31981374425a1cc790b", null ],
     [ "send_bytes", "classmn_1_1net_1_1basic__stream__ip6__socket.html#a8e9d7c987e5a0f557a2027109f4cb452", null ],

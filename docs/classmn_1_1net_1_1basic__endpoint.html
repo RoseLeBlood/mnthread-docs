@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -146,21 +146,30 @@ $(document).ready(function(){initNavTree('classmn_1_1net_1_1basic__endpoint.html
 </div><!--header-->
 <div class="contents">
 
+<p>This abstract basic class represents an endpoint/socket address.  
+ <a href="classmn_1_1net_1_1basic__endpoint.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mn__basic__endpoint_8hpp_source.html">mn_basic_endpoint.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::net::basic_endpoint:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__endpoint__inherit__graph.svg" width="318" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__endpoint__inherit__graph.svg" width="642" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f1d413d21869149bcf9787a59f14929"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmn_1_1net_1_1basic__endpoint.html">basic_endpoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__endpoint.html#a5f1d413d21869149bcf9787a59f14929">get_copy</a> ()=0</td></tr>
+<tr class="memdesc:a5f1d413d21869149bcf9787a59f14929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy from this.  <a href="classmn_1_1net_1_1basic__endpoint.html#a5f1d413d21869149bcf9787a59f14929">More...</a><br /></td></tr>
 <tr class="separator:a5f1d413d21869149bcf9787a59f14929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This abstract basic class represents an endpoint/socket address. </p>
+<dl class="section note"><dt>Note</dt><dd>To use this, you need to subclass it. All of your endpoint should be derived from the <a class="el" href="classmn_1_1net_1_1basic__endpoint.html" title="This abstract basic class represents an endpoint/socket address.">basic_endpoint</a> class. Then implement the all virtual abstracted functions.</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Amber-Sophia Schröck </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5f1d413d21869149bcf9787a59f14929"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f1d413d21869149bcf9787a59f14929">&#9670;&nbsp;</a></span>get_copy()</h2>
 
@@ -183,6 +192,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get a copy from this. </p>
+<dl class="section return"><dt>Returns</dt><dd>The copy of this. </dd></dl>
 
 <p>Implemented in <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#a2904acae7df3f62deb895abba6ccd475">mn::net::basic_ip6_endpoint</a>, and <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#abf8f34517ea706f1422d535ec8007ba3">mn::net::basic_ip4_endpoint</a>.</p>
 

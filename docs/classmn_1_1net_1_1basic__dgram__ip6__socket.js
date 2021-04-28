@@ -11,6 +11,5 @@ var classmn_1_1net_1_1basic__dgram__ip6__socket =
     [ "recive_from", "classmn_1_1net_1_1basic__dgram__ip6__socket.html#a0fb98bbcf5acc33f7baeaea0a271e746", null ],
     [ "recive_from", "classmn_1_1net_1_1basic__dgram__ip6__socket.html#aa8f8d9d8ecaeaa6317a96d66e92d4ae8", null ],
     [ "send_to", "classmn_1_1net_1_1basic__dgram__ip6__socket.html#a769e862145a48cc7663dcaa78f576565", null ],
-    [ "send_to", "classmn_1_1net_1_1basic__dgram__ip6__socket.html#a8964dd2155c47faf29cfca959a5bde20", null ],
-    [ "m_ipMultiCast", "classmn_1_1net_1_1basic__dgram__ip6__socket.html#a1bc97be9e7de843ddd6fd9d6dc464cc2", null ]
+    [ "send_to", "classmn_1_1net_1_1basic__dgram__ip6__socket.html#a8964dd2155c47faf29cfca959a5bde20", null ]
 ];

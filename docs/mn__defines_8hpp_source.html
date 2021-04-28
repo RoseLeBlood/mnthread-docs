@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -142,58 +142,62 @@ $(document).ready(function(){initNavTree('mn__defines_8hpp_source.html',''); ini
 <div class="title">mn_defines.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mn__defines_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2021 Amber-Sophia Schroeck</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MINLIB_cfc6e05b_d8d4_4a9d_ae4b_42fa56cd3443_H_</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINLIB_cfc6e05b_d8d4_4a9d_ae4b_42fa56cd3443_H_</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#aa6fddab2250ad939819c273cc9280b22">   23</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_FULL_DECL()                                     template&lt; &gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a913e35c2f55086e64c00fbdfa183e67f">   24</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_FULL_DECL_ONE(d1,t1)                            template &lt;d1 t1&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#aec8c4c96a42f9a499d00e6d8ae2c50f0">   25</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_FULL_DECL_TWO(d1,t1,d2,t2)                      template &lt;d1 t1, d2 t2&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a1438079712857d915328ab91f4870788">   26</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_FULL_DECL_THREE(d1,t1,d2,t2,d3,t3)              template &lt;d1 t1, d2 t2, d3 t3&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#afd17e167bafe0811f0fb2e4f1a40db3d">   27</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_DECL_ONE(t1)                                    MN_TEMPLATE_FULL_DECL_ONE(typename,t1)</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a9343a36ac23e36b8ebb60b74666bd0c9">   28</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_DECL_TWO(t1,t2)                                 MN_TEMPLATE_FULL_DECL_TWO(typename,t1,typename,t2)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ae25370dcc8b31cb778918e9c359b5a13">   29</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_DECL_THREE(t1,t2,t3)                            MN_TEMPLATE_FULL_DECL_THREE(typename,t1,typename,t2,typename,t3)</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#af41de5c96ba42b7aa0ee23a0bcf6f1a4">   30</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_TYPE_ONE(type,a1)                               type&lt;a1&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ae999a45ea72445bea23411301f94e535">   31</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_TYPE_TWO(type,a1,a2)                            type&lt;a1,a2&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ac8bf4d335c826a0e52149b7276f6efb0">   32</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_TYPE_THREE(type,a1,a2,a3)                       type&lt;a1,a2,a3&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a3c13f36be0b4b949c2047edb0f55235d">   34</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_USING_ONE(name, basic_name,d1,t1)               template &lt;d1 t1&gt; using name = basic_name&lt;t1&gt;;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a3e794a2fa7f9486b4ebdca6845d8e62e">   35</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_USING_TWO(name,basic_name, d1,t1,d2,t2)         template &lt;d1 t1, d2 t2&gt; using name = basic_name&lt;t1, t2&gt;;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a84ee9dd9369f2f047eb261ab9fafd40b">   36</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_USING_THREE(name,basic_name,d1,t1,d2,t2,d3,t3)  template &lt;d1 t1, d2 t2, d3 t3&gt; using name = basic_name&lt;t1, t2, t3&gt;;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ab727a821149e4a326dcf1cc1c28698fd">   37</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_USING(name, basic_name)                         using name = basic_name;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">   39</a></span>&#160;<span class="preprocessor">#define MN_UNUSED_VARIABLE(var)     do { (void)(var); } while (false)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a8446b71b78dda75ad4a2c490a1a98da6">   40</a></span>&#160;<span class="preprocessor">#define MN_ZERO_SET(var, size)      memset(var, 0, size)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a3a321d6244f0367104bb24b59f21e036">   41</a></span>&#160;<span class="preprocessor">#define MN_SAFE_DELETE(var)         if((var)) { delete var; var = NULL; }</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a49835d5b423a6c62a065c74f07f9505f">   42</a></span>&#160;<span class="preprocessor">#define MN_SAFE_FREE(var)           if((var)) { free(var); var = NULL; }</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define MN_EXTERNC_BEGINN           extern &quot;C&quot;</span> {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define MN_EXTERNC_END              }</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">   48</a></span>&#160;<span class="preprocessor">#define MN_EXTERNC_BEGINN</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ad14ae3fd1c6b48289423a5a08eda08e6">   49</a></span>&#160;<span class="preprocessor">#define MN_EXTERNC_END</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _MINLIB_cfc6e05b_d8d4_4a9d_ae4b_42fa56cd3443_H_</span></div>
+<a href="mn__defines_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// *** ADDED BY HEADER FIXUP ***</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// *** END ***</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*Copyright (c) 2021 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifndef _MINLIB_cfc6e05b_d8d4_4a9d_ae4b_42fa56cd3443_H_</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define _MINLIB_cfc6e05b_d8d4_4a9d_ae4b_42fa56cd3443_H_</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#aa6fddab2250ad939819c273cc9280b22">   27</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_FULL_DECL()                                     template&lt; &gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a913e35c2f55086e64c00fbdfa183e67f">   28</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_FULL_DECL_ONE(d1,t1)                            template &lt;d1 t1&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#aec8c4c96a42f9a499d00e6d8ae2c50f0">   29</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_FULL_DECL_TWO(d1,t1,d2,t2)                      template &lt;d1 t1, d2 t2&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a1438079712857d915328ab91f4870788">   30</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_FULL_DECL_THREE(d1,t1,d2,t2,d3,t3)              template &lt;d1 t1, d2 t2, d3 t3&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#afd17e167bafe0811f0fb2e4f1a40db3d">   31</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_DECL_ONE(t1)                                    MN_TEMPLATE_FULL_DECL_ONE(typename,t1)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a9343a36ac23e36b8ebb60b74666bd0c9">   32</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_DECL_TWO(t1,t2)                                 MN_TEMPLATE_FULL_DECL_TWO(typename,t1,typename,t2)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ae25370dcc8b31cb778918e9c359b5a13">   33</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_DECL_THREE(t1,t2,t3)                            MN_TEMPLATE_FULL_DECL_THREE(typename,t1,typename,t2,typename,t3)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#af41de5c96ba42b7aa0ee23a0bcf6f1a4">   34</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_TYPE_ONE(type,a1)                               type&lt;a1&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ae999a45ea72445bea23411301f94e535">   35</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_TYPE_TWO(type,a1,a2)                            type&lt;a1,a2&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ac8bf4d335c826a0e52149b7276f6efb0">   36</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_TYPE_THREE(type,a1,a2,a3)                       type&lt;a1,a2,a3&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a3c13f36be0b4b949c2047edb0f55235d">   38</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_USING_ONE(name, basic_name,d1,t1)               template &lt;d1 t1&gt; using name = basic_name&lt;t1&gt;;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a3e794a2fa7f9486b4ebdca6845d8e62e">   39</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_USING_TWO(name,basic_name, d1,t1,d2,t2)         template &lt;d1 t1, d2 t2&gt; using name = basic_name&lt;t1, t2&gt;;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a84ee9dd9369f2f047eb261ab9fafd40b">   40</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_USING_THREE(name,basic_name,d1,t1,d2,t2,d3,t3)  template &lt;d1 t1, d2 t2, d3 t3&gt; using name = basic_name&lt;t1, t2, t3&gt;;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ab727a821149e4a326dcf1cc1c28698fd">   41</a></span>&#160;<span class="preprocessor">#define MN_TEMPLATE_USING(name, basic_name)                         using name = basic_name;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">   43</a></span>&#160;<span class="preprocessor">#define MN_UNUSED_VARIABLE(var)     do { (void)(var); } while (false)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a8446b71b78dda75ad4a2c490a1a98da6">   44</a></span>&#160;<span class="preprocessor">#define MN_ZERO_SET(var, size)      memset(var, 0, size)</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a3a321d6244f0367104bb24b59f21e036">   45</a></span>&#160;<span class="preprocessor">#define MN_SAFE_DELETE(var)         if((var)) { delete var; var = NULL; }</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#a49835d5b423a6c62a065c74f07f9505f">   46</a></span>&#160;<span class="preprocessor">#define MN_SAFE_FREE(var)           if((var)) { free(var); var = NULL; }</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define MN_EXTERNC_BEGINN           extern &quot;C&quot;</span> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#define MN_EXTERNC_END              }</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">   52</a></span>&#160;<span class="preprocessor">#define MN_EXTERNC_BEGINN</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="mn__defines_8hpp.html#ad14ae3fd1c6b48289423a5a08eda08e6">   53</a></span>&#160;<span class="preprocessor">#define MN_EXTERNC_END</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _MINLIB_cfc6e05b_d8d4_4a9d_ae4b_42fa56cd3443_H_</span></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

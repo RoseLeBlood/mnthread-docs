@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -143,19 +143,27 @@ $(document).ready(function(){initNavTree('md__home_ambersophia_Dokumente_git_mnt
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
+Versoin 2.28.x März 2021 (unstable beta)</h1>
+<ul>
+<li>add socket classes for udp, tcp and raw - IPv6 and IPv4</li>
+<li>add new config defines for IPv6<ul>
+<li>MN_THREAD_CONFIG_NET_IPADDRESS6_ENABLE: When enable then compile with IPv6 support and enable tcp, udp, raw IPv6 socket versions</li>
+<li>MN_THREAD_CONFIG_NET_IPADDRESS6_USE_SCOPEID: When enable then save the basic_ip6_address the scopeid</li>
+<li>MN_THREAD_CONFIG_NET_IPADDRESS6_SCOPEID_VAL: The basic scoped val default 0</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
 Versoin 2.27 März 2021 (unstable beta)</h1>
 <ul>
 <li>add sockets support -&gt; see <a class="el" href="mn__socket_8hpp.html">mn_socket.hpp</a></li>
 <li>rename ERR_TIMEOUT =&gt; ERR_MINILIB_TIMEOUT - build bug</li>
-<li>2.27.3049:<ul>
 <li>remove container -(<a class="el" href="mn__container_8hpp.html">mn_container.hpp</a>) and netzwerk header file (<a class="el" href="mn__socket_8hpp.html">mn_socket.hpp</a>) from mn_minithread.hpp header file, when use then include it in your project manual, for socket support add after <a class="el" href="miniThread_8hpp.html">miniThread.hpp</a> the socket heaher file <a class="el" href="mn__socket_8hpp.html">mn_socket.hpp</a> and for container support after <a class="el" href="miniThread_8hpp.html">miniThread.hpp</a> the container header file <a class="el" href="mn__container_8hpp.html">mn_container.hpp</a></li>
 <li>update version style and remove the version singleton, see empty example for use. See <a class="el" href="mn__auto__version_8hpp.html">mn_auto_version.hpp</a> for details</li>
 <li>Task: remove the eventgroup and remove child task handling</li>
 <li>Convar: remove the function signal all</li>
 </ul>
-</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Version 2.20 März 2021</h1>
 <ul>
 <li>add allocator helpor macros: MNALLOC_OBJECT, MNALLOC_OBJECT_D ... <dl class="section see"><dt>See also</dt><dd><a class="el" href="mn__allocator__object_8hpp.html#a490fd59cfab4af9070de48ecbe44b5a8" title="Defines when the class the mn::allocator to create the object, with new and delete.">MNALLOC_OBJECT</a></dd></dl>
@@ -172,14 +180,14 @@ Version 2.20 März 2021</h1>
 <li>add new algorythmen and mn::functinal support</li>
 <li>make atomic ready</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Version 2.10 Februar 2021</h1>
 <ul>
 <li>add pointer suppert - weak, shared, clone_ptr, and other</li>
 <li>add new ringbuffer and updated examples</li>
 <li>add Makefile support only for use the source from git, not use in platformio library regestrie</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md5"></a>
 Version 2.0.4 Januar 2021</h1>
 <ul>
 <li>add staked, buffered allocator</li>
@@ -204,7 +212,7 @@ Version 2.0.4 Januar 2021</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Version 2.0.1 Januar 2021</h1>
 <ul>
 <li>rename tasklet function create to schedule - (DE: Mein fehler - misverständnis)</li>
@@ -221,7 +229,7 @@ Version 2.0.1 Januar 2021</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Version 1.95 Oktober 2020: (stable 2.0beta)</h1>
 <ul>
 <li>update error codes</li>
@@ -232,7 +240,7 @@ Version 1.95 Oktober 2020: (stable 2.0beta)</h1>
 <li>add basic_tickhook system</li>
 <li>add mempool support</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Version 1.9.1 Oktober 2020: (unstable 2.0beta)</h1>
 <ul>
 <li>for the future version add prototypes: (Not for produtions use!!)<ul>
@@ -265,7 +273,7 @@ Version 1.9.1 Oktober 2020: (unstable 2.0beta)</h1>
 <li>add to the basic_task: join(), wait() and get_self() functions - basic_task remove abstract</li>
 <li>remove the m_contextMutext2 LockObject</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Version 1.9.0 September 2020: (stable 2.0beta)</h1>
 <ul>
 <li>add a eventgroup wrapper</li>
@@ -283,14 +291,14 @@ Version 1.9.0 September 2020: (stable 2.0beta)</h1>
 <li>all config items can you now override in the sdkconfig file</li>
 <li>update config with new items, please cheack</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md10"></a>
 Version 1.71 September 2020: (unstable 2.0beta)</h1>
 <ul>
 <li>add single and multi threaded worcking queues (basic_work_queue_single &amp; basic_work_queue_multi) (TODO Optional add a Workqueues ) and add configand error defines, with doku</li>
 <li>remove bugs and errors</li>
 <li>This is the preview version of 2.0.0</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Version 1.60 September 2020: (unstable nightly)</h1>
 <ul>
 <li>add Work queue support (basic_work_queue) basic_work_queue pull work_queue_item off of a FIFO queue and run them sequentially.</li>
@@ -312,7 +320,7 @@ Version 1.60 September 2020: (unstable nightly)</h1>
 <li>basic_mutex extends basic_semaphore</li>
 <li>add foreign_thread for mini Thread foregin thread and current Thread handling</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 Version 1.54 September 2020: (unstable)</h1>
 <ul>
 <li>Documentation ready</li>
@@ -320,14 +328,14 @@ Version 1.54 September 2020: (unstable)</h1>
 <li>remove semaphore_t and spinlock_t</li>
 <li>add counting_semaphore_t (autocsemp_t) and binary_semaphore_t (autobinsemp_t) please update code semaphore_t = counting_semaphore_t, spinlock_t = binary_semaphore_t</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Version 1.53 September 2020:</h1>
 <ul>
 <li>add eaxample</li>
 <li>add Documentation add (<a href="https://roseleblood.github.io/mnthread-docs/">https://roseleblood.github.io/mnthread-docs/</a>)</li>
 <li>rename Project from mnthread to Mini Thread</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Version 1.43 September 2020:  (stable)</h1>
 <ul>
 <li>move convar function from basic_thread to basic_convar_thread</li>
@@ -335,13 +343,13 @@ Version 1.43 September 2020:  (stable)</h1>
 <li>remove errors - (sorry, ... )</li>
 <li>add a deque class that implements a double ended queue. (deque_t = basic_deque)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Version 1.42 August 2020: (non-stable)</h1>
 <ul>
 <li>add queue wrapper (<a class="el" href="queue_2mn__queue_8hpp.html">queue/mn_queue.hpp</a>) queue_t</li>
 <li>add binary queue (<a class="el" href="mn__binaryqueue_8hpp.html">queue/mn_binaryqueue.hpp</a>) binaryqueue_t</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Version 1.4 August 2020: (non-stable)</h1>
 <ul>
 <li>add Conditional Variable an disable in config file (<a class="el" href="mn__config_8hpp.html">mn_config.hpp</a>)</li>
@@ -349,19 +357,19 @@ Version 1.4 August 2020: (non-stable)</h1>
 <li>add recursive matux and autolack tps for interrupt, critical_lock and schedular</li>
 <li>add Tasklets</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Version 1.2 August 2020: (stable)</h1>
 <ul>
 <li>rename the header files from mn-(xxx).h to mn_(xxx).hpp</li>
 <li>Platformio regestration</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Version 1.0.62 Mai 2020:  (non-stable)</h1>
 <ul>
 <li>update examples - stripped</li>
 <li>switch from c3pb.gitlab to my public github account</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Version 1.0.60 November 2018: (non-stable)</h1>
 <ul>
 <li>rename:<ul>
@@ -374,7 +382,7 @@ Version 1.0.60 November 2018: (non-stable)</h1>
 <li>update examples</li>
 <li>update version </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md20"></a>
 Version 1.0.5 November 2018: (stable)</h1>
 <ul>
 <li>Add libmn.h</li>
@@ -382,14 +390,14 @@ Version 1.0.5 November 2018: (stable)</h1>
 <li>rename header</li>
 <li>Add examples</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md20"></a>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Version 0.9.3 November 2018: (non-stable)</h1>
 <ul>
 <li>add autolock_t to mn-Thread</li>
 <li>add mn-autolock.h</li>
 <li>add spinlock</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md21"></a>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Version 0.8.31 November 2018: (non-stable)</h1>
 <ul>
 <li>add logical mutext handle to basic_thread</li>
@@ -398,12 +406,12 @@ Version 0.8.31 November 2018: (non-stable)</h1>
 <li>add "child_thread" and "parent_thread" to basic_thread</li>
 <li>add function "get_root();" "get_child();" "add_child_thread(basic_thread+ thread);"</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Version 0.8.3 November 2018: (non-stable)</h1>
 <ul>
 <li>add nsleep, sleep, usleep, micros, milis</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<h1><a class="anchor" id="autotoc_md24"></a>
 Version 0.8.2, November 2018: (non-stable)</h1>
 <ul>
 <li>Public release </li>

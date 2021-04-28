@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('mn__basic__slip__driver_8hpp_source.ht
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifdef CONFIG_LWIP_PPP_SUPPORT</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifdef CONFIG_LWIP_SLIP_SUPPORT</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;esp_netif.h&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;esp_netif_slip.h&gt;</span></div>
@@ -196,10 +196,10 @@ $(document).ready(function(){initNavTree('mn__basic__slip__driver_8hpp_source.ht
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> start();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">ip4_address</a>     get_ip()            { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">ip4_address</a>     get_broadcast()     { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">ip4_address</a>     get_gateway()       { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">ip4_address</a>     get_netmask()       { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">ip4_address</a>     get_ip()            { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip4__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">ip4_address</a>     get_broadcast()     { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip4__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">ip4_address</a>     get_gateway()       { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip4__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">virtual</span> <a class="code" href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">ip4_address</a>     get_netmask()       { <span class="keywordflow">return</span> <a class="code" href="mn__basic__ip4__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>;  }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">void</span> set_pin(<span class="keyword">const</span> uint8_t&amp; pin, <span class="keyword">const</span> uint8_t&amp; rx_pin);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">void</span> set_serial(<span class="keyword">const</span> uint8_t&amp; uart_num, <span class="keyword">const</span> uint32_t&amp; baud);</div>
@@ -211,11 +211,11 @@ $(document).ready(function(){initNavTree('mn__basic__slip__driver_8hpp_source.ht
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        };</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CONFIG_LWIP_PPP_SUPPORT</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CONFIG_LWIP_SLIP_SUPPORT</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_BASIC_SLIP_DRIVER_H__</span></div>
-<div class="ttc" id="amn__basic__ip__address_8hpp_html_a06d1435b173c8c0b92a7af98581191ac"><div class="ttname"><a href="mn__basic__ip__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a></div><div class="ttdeci">#define MNNET_IPV4_ADDRESS_ANY</div><div class="ttdef"><b>Definition:</b> mn_basic_ip_address.hpp:43</div></div>
+<div class="ttc" id="amn__basic__ip4__address_8hpp_html_a06d1435b173c8c0b92a7af98581191ac"><div class="ttname"><a href="mn__basic__ip4__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a></div><div class="ttdeci">#define MNNET_IPV4_ADDRESS_ANY</div><div class="ttdef"><b>Definition:</b> mn_basic_ip4_address.hpp:25</div></div>
 <div class="ttc" id="amn__basic__netif_8hpp_html"><div class="ttname"><a href="mn__basic__netif_8hpp.html">mn_basic_netif.hpp</a></div></div>
-<div class="ttc" id="anamespacemn_1_1net_html_ab5bfb99680cb5df51fff514146af4f3d"><div class="ttname"><a href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">mn::net::ip4_address</a></div><div class="ttdeci">basic_ip4_address ip4_address</div><div class="ttdoc">using basic_ip4_address for ip4_address</div><div class="ttdef"><b>Definition:</b> mn_socket.hpp:51</div></div>
+<div class="ttc" id="anamespacemn_1_1net_html_ab5bfb99680cb5df51fff514146af4f3d"><div class="ttname"><a href="namespacemn_1_1net.html#ab5bfb99680cb5df51fff514146af4f3d">mn::net::ip4_address</a></div><div class="ttdeci">basic_ip4_address ip4_address</div><div class="ttdoc">using basic_ip4_address for ip4_address</div><div class="ttdef"><b>Definition:</b> mn_socket.hpp:52</div></div>
 <div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

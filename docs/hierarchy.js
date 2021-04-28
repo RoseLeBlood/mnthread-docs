@@ -45,8 +45,13 @@ var hierarchy =
     [ "mn::container::basic_deque< T, TMAXITEMS, TITEMSIZE >", "classmn_1_1container_1_1basic__deque.html", null ],
     [ "mn::container::basic_deque_iterator< T, TQUEUE >", "classmn_1_1container_1_1basic__deque__iterator.html", null ],
     [ "mn::net::basic_endpoint", "classmn_1_1net_1_1basic__endpoint.html", [
-      [ "mn::net::basic_ip4_endpoint", "classmn_1_1net_1_1basic__ip4__endpoint.html", null ],
-      [ "mn::net::basic_ip6_endpoint", "classmn_1_1net_1_1basic__ip6__endpoint.html", null ]
+      [ "mn::net::basic_ip_endpoint< basic_ip4_address, address_family::inet_v4 >", "classmn_1_1net_1_1basic__ip__endpoint.html", [
+        [ "mn::net::basic_ip4_endpoint", "classmn_1_1net_1_1basic__ip4__endpoint.html", null ]
+      ] ],
+      [ "mn::net::basic_ip_endpoint< basic_ip6_address, address_family::inet_v6 >", "classmn_1_1net_1_1basic__ip__endpoint.html", [
+        [ "mn::net::basic_ip6_endpoint", "classmn_1_1net_1_1basic__ip6__endpoint.html", null ]
+      ] ],
+      [ "mn::net::basic_ip_endpoint< TIPCLASS, TAF >", "classmn_1_1net_1_1basic__ip__endpoint.html", null ]
     ] ],
     [ "mn::basic_event_group", "classmn_1_1basic__event__group.html", null ],
     [ "mn::basic_fbit", "classmn_1_1basic__fbit.html", null ],
@@ -61,10 +66,12 @@ var hierarchy =
     [ "mn::net::basic_ip_socket", "classmn_1_1net_1_1basic__ip__socket.html", [
       [ "mn::net::basic_ip4_socket", "classmn_1_1net_1_1basic__ip4__socket.html", [
         [ "mn::net::basic_dgram_ip_socket", "classmn_1_1net_1_1basic__dgram__ip__socket.html", null ],
+        [ "mn::net::basic_raw_ip4_socket", "classmn_1_1net_1_1basic__raw__ip4__socket.html", null ],
         [ "mn::net::basic_stream_ip_socket", "classmn_1_1net_1_1basic__stream__ip__socket.html", null ]
       ] ],
       [ "mn::net::basic_ip6_socket", "classmn_1_1net_1_1basic__ip6__socket.html", [
         [ "mn::net::basic_dgram_ip6_socket", "classmn_1_1net_1_1basic__dgram__ip6__socket.html", null ],
+        [ "mn::net::basic_raw_ip6_socket", "classmn_1_1net_1_1basic__raw__ip6__socket.html", null ],
         [ "mn::net::basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html", null ]
       ] ]
     ] ],

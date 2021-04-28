@@ -65,16 +65,27 @@ var files_dup =
       [ "basic_dgram_ip6_socket", "classmn_1_1net_1_1basic__dgram__ip6__socket.html", "classmn_1_1net_1_1basic__dgram__ip6__socket" ]
     ] ],
     [ "mn_basic_endpoint.cpp", "mn__basic__endpoint_8cpp.html", null ],
-    [ "mn_basic_endpoint.hpp", "mn__basic__endpoint_8hpp.html", "mn__basic__endpoint_8hpp" ],
+    [ "mn_basic_endpoint.hpp", "mn__basic__endpoint_8hpp.html", [
+      [ "basic_endpoint", "classmn_1_1net_1_1basic__endpoint.html", "classmn_1_1net_1_1basic__endpoint" ],
+      [ "basic_ip_endpoint", "classmn_1_1net_1_1basic__ip__endpoint.html", "classmn_1_1net_1_1basic__ip__endpoint" ]
+    ] ],
+    [ "mn_basic_ip4_address.cpp", "mn__basic__ip4__address_8cpp.html", null ],
+    [ "mn_basic_ip4_address.hpp", "mn__basic__ip4__address_8hpp.html", "mn__basic__ip4__address_8hpp" ],
+    [ "mn_basic_ip4_endpoint.cpp", "mn__basic__ip4__endpoint_8cpp.html", null ],
+    [ "mn_basic_ip4_endpoint.hpp", "mn__basic__ip4__endpoint_8hpp.html", "mn__basic__ip4__endpoint_8hpp" ],
     [ "mn_basic_ip4_socket.cpp", "mn__basic__ip4__socket_8cpp.html", null ],
     [ "mn_basic_ip4_socket.hpp", "mn__basic__ip4__socket_8hpp.html", [
       [ "basic_ip4_socket", "classmn_1_1net_1_1basic__ip4__socket.html", "classmn_1_1net_1_1basic__ip4__socket" ]
     ] ],
+    [ "mn_basic_ip6_address.cpp", "mn__basic__ip6__address_8cpp.html", null ],
+    [ "mn_basic_ip6_address.hpp", "mn__basic__ip6__address_8hpp.html", "mn__basic__ip6__address_8hpp" ],
+    [ "mn_basic_ip6_endpoint.cpp", "mn__basic__ip6__endpoint_8cpp.html", null ],
+    [ "mn_basic_ip6_endpoint.hpp", "mn__basic__ip6__endpoint_8hpp.html", "mn__basic__ip6__endpoint_8hpp" ],
     [ "mn_basic_ip6_socket.cpp", "mn__basic__ip6__socket_8cpp.html", null ],
     [ "mn_basic_ip6_socket.hpp", "mn__basic__ip6__socket_8hpp.html", [
       [ "basic_ip6_socket", "classmn_1_1net_1_1basic__ip6__socket.html", "classmn_1_1net_1_1basic__ip6__socket" ]
     ] ],
-    [ "mn_basic_ip_address.cpp", "mn__basic__ip__address_8cpp.html", "mn__basic__ip__address_8cpp" ],
+    [ "mn_basic_ip_address.cpp", "mn__basic__ip__address_8cpp.html", null ],
     [ "mn_basic_ip_address.hpp", "mn__basic__ip__address_8hpp.html", "mn__basic__ip__address_8hpp" ],
     [ "mn_basic_ip_socket.cpp", "mn__basic__ip__socket_8cpp.html", null ],
     [ "mn_basic_ip_socket.hpp", "mn__basic__ip__socket_8hpp.html", null ],
@@ -88,6 +99,11 @@ var files_dup =
         [ "ip", "classmn_1_1net_1_1basic__net__if.html#a7fbd204866b65baa9a740480febf6a87", null ],
         [ "netmask", "classmn_1_1net_1_1basic__net__if.html#ab368d2c60cd74d034e2e6b5ff51e00ad", null ]
       ] ]
+    ] ],
+    [ "mn_basic_raw_ip_socket.cpp", "mn__basic__raw__ip__socket_8cpp.html", null ],
+    [ "mn_basic_raw_ip_socket.hpp", "mn__basic__raw__ip__socket_8hpp.html", [
+      [ "basic_raw_ip4_socket", "classmn_1_1net_1_1basic__raw__ip4__socket.html", "classmn_1_1net_1_1basic__raw__ip4__socket" ],
+      [ "basic_raw_ip6_socket", "classmn_1_1net_1_1basic__raw__ip6__socket.html", "classmn_1_1net_1_1basic__raw__ip6__socket" ]
     ] ],
     [ "mn_basic_semaphore.cpp", "mn__basic__semaphore_8cpp.html", null ],
     [ "mn_basic_semaphore.hpp", "mn__basic__semaphore_8hpp.html", [

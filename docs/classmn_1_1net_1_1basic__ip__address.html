@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -156,7 +156,8 @@ $(document).ready(function(){initNavTree('classmn_1_1net_1_1basic__ip__address.h
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__ip__address__inherit__graph.svg" width="318" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__ip__address__inherit__graph.svg" width="318" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -165,7 +166,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a01992d0d9ad9e596128ee23f441b5fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classmn_1_1net_1_1basic__ip__address.html#a01992d0d9ad9e596128ee23f441b5fea">More...</a><br /></td></tr>
 <tr class="separator:a01992d0d9ad9e596128ee23f441b5fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5740b3faeeccb7bc6e4cd362341d72aa"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a5740b3faeeccb7bc6e4cd362341d72aa">to_string</a> ()=0</td></tr>
-<tr class="memdesc:a5740b3faeeccb7bc6e4cd362341d72aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ip address as string.  <a href="classmn_1_1net_1_1basic__ip__address.html#a5740b3faeeccb7bc6e4cd362341d72aa">More...</a><br /></td></tr>
+<tr class="memdesc:a5740b3faeeccb7bc6e4cd362341d72aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string containing a representation of the address in presentation format.  <a href="classmn_1_1net_1_1basic__ip__address.html#a5740b3faeeccb7bc6e4cd362341d72aa">More...</a><br /></td></tr>
 <tr class="separator:a5740b3faeeccb7bc6e4cd362341d72aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c02940004dd61575efa2da23a16c5e6"><td class="memItemLeft" align="right" valign="top">virtual uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a0c02940004dd61575efa2da23a16c5e6">get_bytes</a> ()=0</td></tr>
 <tr class="memdesc:a0c02940004dd61575efa2da23a16c5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ip address as byte array.  <a href="classmn_1_1net_1_1basic__ip__address.html#a0c02940004dd61575efa2da23a16c5e6">More...</a><br /></td></tr>
@@ -177,12 +178,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a12e95ea1168c16d03327c481064167f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the this address a broadcast address?  <a href="classmn_1_1net_1_1basic__ip__address.html#a12e95ea1168c16d03327c481064167f7">More...</a><br /></td></tr>
 <tr class="separator:a12e95ea1168c16d03327c481064167f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc0c8709594def2f6e34d9ffc1a9c8e2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#afc0c8709594def2f6e34d9ffc1a9c8e2">get_family</a> ()</td></tr>
-<tr class="memdesc:afc0c8709594def2f6e34d9ffc1a9c8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address family.  <a href="classmn_1_1net_1_1basic__ip__address.html#afc0c8709594def2f6e34d9ffc1a9c8e2">More...</a><br /></td></tr>
+<tr class="memdesc:afc0c8709594def2f6e34d9ffc1a9c8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address family (AF_INET or AF_INET6) of the address.  <a href="classmn_1_1net_1_1basic__ip__address.html#afc0c8709594def2f6e34d9ffc1a9c8e2">More...</a><br /></td></tr>
 <tr class="separator:afc0c8709594def2f6e34d9ffc1a9c8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7c7e2a83c6c649607377f0c532328b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a6e7c7e2a83c6c649607377f0c532328b">length</a> () const =0</td></tr>
+<tr class="memdesc:a6e7c7e2a83c6c649607377f0c532328b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length in bytes of the ip address.  <a href="classmn_1_1net_1_1basic__ip__address.html#a6e7c7e2a83c6c649607377f0c532328b">More...</a><br /></td></tr>
+<tr class="separator:a6e7c7e2a83c6c649607377f0c532328b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ad510b5d9f765ac8dd1c4740ba77b032a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__address.html#ad510b5d9f765ac8dd1c4740ba77b032a">m_aFamily</a></td></tr>
+<tr class="memdesc:ad510b5d9f765ac8dd1c4740ba77b032a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A saved / cached copy of the address family type of this socket.  <a href="classmn_1_1net_1_1basic__ip__address.html#ad510b5d9f765ac8dd1c4740ba77b032a">More...</a><br /></td></tr>
 <tr class="separator:ad510b5d9f765ac8dd1c4740ba77b032a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -272,7 +277,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the address family. </p>
+<p>Get the address family (AF_INET or AF_INET6) of the address. </p>
 <dl class="section return"><dt>Returns</dt><dd>The address family </dd></dl>
 
 </div>
@@ -337,6 +342,36 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6e7c7e2a83c6c649607377f0c532328b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7c7e2a83c6c649607377f0c532328b">&#9670;&nbsp;</a></span>length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int mn::net::basic_ip_address::length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the length in bytes of the ip address. </p>
+<dl class="section return"><dt>Returns</dt><dd>The length in bytes of the ip address </dd></dl>
+
+<p>Implemented in <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ad6294e0364cc236e9a613072529af841">mn::net::basic_ip6_address</a>, and <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a9c37217e6b79dab85791749bf3279ade">mn::net::basic_ip4_address</a>.</p>
+
+</div>
+</div>
 <a id="a5740b3faeeccb7bc6e4cd362341d72aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5740b3faeeccb7bc6e4cd362341d72aa">&#9670;&nbsp;</a></span>to_string()</h2>
 
@@ -360,7 +395,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the ip address as string. </p>
+<p>Returns a string containing a representation of the address in presentation format. </p>
 <dl class="section return"><dt>Returns</dt><dd>The ip address as string </dd></dl>
 
 <p>Implemented in <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ad53f7821d098cc5637c83feaadefda89">mn::net::basic_ip6_address</a>, and <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#af9db56d1efc844c31e59dc1146a15d6a">mn::net::basic_ip4_address</a>.</p>
@@ -387,6 +422,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A saved / cached copy of the address family type of this socket. </p>
 
 </div>
 </div>

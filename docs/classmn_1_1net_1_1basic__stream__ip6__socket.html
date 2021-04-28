@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -148,6 +148,9 @@ $(document).ready(function(){initNavTree('classmn_1_1net_1_1basic__stream__ip6__
 </div><!--header-->
 <div class="contents">
 
+<p>This class provides an interface to a tcp IPv6 socket.  
+ <a href="classmn_1_1net_1_1basic__stream__ip6__socket.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mn__basic__stream__ip__socket_8hpp_source.html">mn_basic_stream_ip_socket.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::net::basic_stream_ip6_socket:</div>
@@ -162,7 +165,7 @@ $(document).ready(function(){initNavTree('classmn_1_1net_1_1basic__stream__ip6__
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__stream__ip6__socket__coll__graph.svg" width="512" height="427"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__stream__ip6__socket__coll__graph.svg" width="396" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -193,20 +196,27 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa1a6e3d67e16499062102e73c286fc21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#aa1a6e3d67e16499062102e73c286fc21">basic_stream_ip6_socket</a> ()</td></tr>
 <tr class="separator:aa1a6e3d67e16499062102e73c286fc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379df61589c87fa06013106b139a9f61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a379df61589c87fa06013106b139a9f61">connect</a> (<a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a73ee962618bd9ba23f46c0c5d0c05861">endpoint_type</a> remote_ep)</td></tr>
+<tr class="memdesc:a379df61589c87fa06013106b139a9f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes a connection to the stream server at the given address.  <a href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a379df61589c87fa06013106b139a9f61">More...</a><br /></td></tr>
+<tr class="separator:a379df61589c87fa06013106b139a9f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26781df2e965ed5e4d6b2de0cfe1639a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a26781df2e965ed5e4d6b2de0cfe1639a">listen</a> (int backLog=8)</td></tr>
+<tr class="memdesc:a26781df2e965ed5e4d6b2de0cfe1639a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the socket into listening state.  <a href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a26781df2e965ed5e4d6b2de0cfe1639a">More...</a><br /></td></tr>
+<tr class="separator:a26781df2e965ed5e4d6b2de0cfe1639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e2e1b97eeeeb732323c74f56e375519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a1a08307bb16a12726160257d6b1ae79b">self_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a4e2e1b97eeeeb732323c74f56e375519">accept</a> ()</td></tr>
+<tr class="memdesc:a4e2e1b97eeeeb732323c74f56e375519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the next completed connection from the socket's completed connection queue.  <a href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a4e2e1b97eeeeb732323c74f56e375519">More...</a><br /></td></tr>
+<tr class="separator:a4e2e1b97eeeeb732323c74f56e375519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de6c7d49d8ef31981374425a1cc790b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a7de6c7d49d8ef31981374425a1cc790b">recive</a> (char *buffer, int size, <a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823">socket_flags</a> socketFlags=<a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823a334c4a4c42fdb79d7ebc3e73b517e6f8">socket_flags::none</a>)</td></tr>
+<tr class="memdesc:a7de6c7d49d8ef31981374425a1cc790b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives data from the socket and stores it in buffer. Up to length bytes are received.  <a href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a7de6c7d49d8ef31981374425a1cc790b">More...</a><br /></td></tr>
 <tr class="separator:a7de6c7d49d8ef31981374425a1cc790b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b985cce92e94e4c00a84577e5c01422"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a8b985cce92e94e4c00a84577e5c01422">recive</a> (char *buffer, int offset, int size, <a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823">socket_flags</a> socketFlags)</td></tr>
+<tr class="memdesc:a8b985cce92e94e4c00a84577e5c01422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives data from the socket and stores it in buffer. Up to length bytes are received.  <a href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a8b985cce92e94e4c00a84577e5c01422">More...</a><br /></td></tr>
 <tr class="separator:a8b985cce92e94e4c00a84577e5c01422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbed3ca835ac2ee201e1f9a1a0880c61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#afbed3ca835ac2ee201e1f9a1a0880c61">send_bytes</a> (const void *buffer, int size, <a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823">socket_flags</a> socketFlags=<a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823a334c4a4c42fdb79d7ebc3e73b517e6f8">socket_flags::none</a>)</td></tr>
+<tr class="memdesc:afbed3ca835ac2ee201e1f9a1a0880c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the contents of the given buffer.  <a href="classmn_1_1net_1_1basic__stream__ip6__socket.html#afbed3ca835ac2ee201e1f9a1a0880c61">More...</a><br /></td></tr>
 <tr class="separator:afbed3ca835ac2ee201e1f9a1a0880c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e9d7c987e5a0f557a2027109f4cb452"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a8e9d7c987e5a0f557a2027109f4cb452">send_bytes</a> (const void *buffer, int offset, int size, <a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823">socket_flags</a> socketFlags=<a class="el" href="namespacemn_1_1net.html#ae2121619734553ddaf5c3ef5757e7823a334c4a4c42fdb79d7ebc3e73b517e6f8">socket_flags::none</a>)</td></tr>
+<tr class="memdesc:a8e9d7c987e5a0f557a2027109f4cb452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the contents of the given buffer.  <a href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a8e9d7c987e5a0f557a2027109f4cb452">More...</a><br /></td></tr>
 <tr class="separator:a8e9d7c987e5a0f557a2027109f4cb452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379df61589c87fa06013106b139a9f61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a379df61589c87fa06013106b139a9f61">connect</a> (<a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a73ee962618bd9ba23f46c0c5d0c05861">endpoint_type</a> remote_ep)</td></tr>
-<tr class="separator:a379df61589c87fa06013106b139a9f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393dda79662d4c92d6609ca315992e74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a393dda79662d4c92d6609ca315992e74">listen</a> (int backLog)</td></tr>
-<tr class="separator:a393dda79662d4c92d6609ca315992e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2e1b97eeeeb732323c74f56e375519"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a1a08307bb16a12726160257d6b1ae79b">self_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a4e2e1b97eeeeb732323c74f56e375519">accept</a> ()</td></tr>
-<tr class="separator:a4e2e1b97eeeeb732323c74f56e375519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmn_1_1net_1_1basic__ip6__socket')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html">mn::net::basic_ip6_socket</a></td></tr>
 <tr class="memitem:a0e13d4847428d93a4617e9d2430fc991 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a0e13d4847428d93a4617e9d2430fc991">basic_ip6_socket</a> (<a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a75501a308a9e25add496d05aac90eb09">handle_type</a> &amp;hndl, <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html">basic_ip6_endpoint</a> *endp=nullptr)</td></tr>
 <tr class="memdesc:a0e13d4847428d93a4617e9d2430fc991 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the wrapper class from a given lwip socket handle and the endpoint.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a0e13d4847428d93a4617e9d2430fc991">More...</a><br /></td></tr>
@@ -244,9 +254,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94ead95596b83320b852947cffd20452 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a94ead95596b83320b852947cffd20452">get_peername</a> (<a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a51fe0d7a7ebf7042b3e16e54c675be38">ipaddress_type</a> &amp;ipPeerAddress, uint16_t &amp;iPeerPort)</td></tr>
 <tr class="memdesc:a94ead95596b83320b852947cffd20452 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the remote endpoint.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a94ead95596b83320b852947cffd20452">More...</a><br /></td></tr>
 <tr class="separator:a94ead95596b83320b852947cffd20452 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20b48b544c347139220edd9c6b3e4614 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">basic_ip_socket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a20b48b544c347139220edd9c6b3e4614">get_copy</a> ()</td></tr>
-<tr class="memdesc:a20b48b544c347139220edd9c6b3e4614 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of this socket.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a20b48b544c347139220edd9c6b3e4614">More...</a><br /></td></tr>
-<tr class="separator:a20b48b544c347139220edd9c6b3e4614 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08cab49f24a17309d62f85987001be53 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">basic_ip_socket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a08cab49f24a17309d62f85987001be53">get_copy</a> ()</td></tr>
+<tr class="memdesc:a08cab49f24a17309d62f85987001be53 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of this socket.  <a href="classmn_1_1net_1_1basic__ip6__socket.html#a08cab49f24a17309d62f85987001be53">More...</a><br /></td></tr>
+<tr class="separator:a08cab49f24a17309d62f85987001be53 inherit pub_methods_classmn_1_1net_1_1basic__ip6__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classmn_1_1net_1_1basic__ip__socket"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmn_1_1net_1_1basic__ip__socket')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html">mn::net::basic_ip_socket</a></td></tr>
 <tr class="memitem:a31ef6f52b19daef199adae32560045fd inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a31ef6f52b19daef199adae32560045fd">basic_ip_socket</a> (const <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a8090a4b4c1410128ba5aef424e4d50a3">handle_type</a> &amp;hndl)</td></tr>
 <tr class="memdesc:a31ef6f52b19daef199adae32560045fd inherit pub_methods_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">construtor from a raw handle  <a href="classmn_1_1net_1_1basic__ip__socket.html#a31ef6f52b19daef199adae32560045fd">More...</a><br /></td></tr>
@@ -413,15 +423,21 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a83d8a16e49395d652ddcd17cb68de114 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the underlying socket handle for this socket.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a83d8a16e49395d652ddcd17cb68de114">More...</a><br /></td></tr>
 <tr class="separator:a83d8a16e49395d652ddcd17cb68de114 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43055513ca159e6ee1a14e5c18e4819f inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a71904aba97f0d9731cff82d62a17a3ea">address_family</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a43055513ca159e6ee1a14e5c18e4819f">m_eFam</a></td></tr>
+<tr class="memdesc:a43055513ca159e6ee1a14e5c18e4819f inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">A saved / cached copy of the address family type of this socket.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a43055513ca159e6ee1a14e5c18e4819f">More...</a><br /></td></tr>
 <tr class="separator:a43055513ca159e6ee1a14e5c18e4819f inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0e1e53d77bfe558688a966a678a932 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a60cdf67b23eaa1b42c01a98e3589742e">socket_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a7a0e1e53d77bfe558688a966a678a932">m_eType</a></td></tr>
+<tr class="memdesc:a7a0e1e53d77bfe558688a966a678a932 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">A saved / cached copy of the socket type of this socket.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a7a0e1e53d77bfe558688a966a678a932">More...</a><br /></td></tr>
 <tr class="separator:a7a0e1e53d77bfe558688a966a678a932 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade70e18e8044adbc565dfbd6606ddfaa inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d">protocol_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#ade70e18e8044adbc565dfbd6606ddfaa">m_eProtocol</a></td></tr>
+<tr class="memdesc:ade70e18e8044adbc565dfbd6606ddfaa inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">A saved / cached copy of the protocal type of this socket.  <a href="classmn_1_1net_1_1basic__ip__socket.html#ade70e18e8044adbc565dfbd6606ddfaa">More...</a><br /></td></tr>
 <tr class="separator:ade70e18e8044adbc565dfbd6606ddfaa inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a958ee9dad0741c40e4a28e6912cc73f8 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a958ee9dad0741c40e4a28e6912cc73f8">m_bBlocked</a></td></tr>
+<tr class="memdesc:a958ee9dad0741c40e4a28e6912cc73f8 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">A saved / cached copy of a blocked flag.  <a href="classmn_1_1net_1_1basic__ip__socket.html#a958ee9dad0741c40e4a28e6912cc73f8">More...</a><br /></td></tr>
 <tr class="separator:a958ee9dad0741c40e4a28e6912cc73f8 inherit pro_attribs_classmn_1_1net_1_1basic__ip__socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class provides an interface to a tcp IPv6 socket. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a1d351b61781012d7254e7e0554f236c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d351b61781012d7254e7e0554f236c3">&#9670;&nbsp;</a></span>base_type</h2>
 
@@ -596,6 +612,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the next completed connection from the socket's completed connection queue. </p>
+<dl class="section note"><dt>Note</dt><dd>If the queue is empty, waits until a connection request completes.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="classmn_1_1net_1_1basic__stream__ip__socket.html" title="This class provides an interface to a tcp IPv4 socket.">basic_stream_ip_socket</a> for the connection with the client. </dd></dl>
+
 </div>
 </div>
 <a id="a379df61589c87fa06013106b139a9f61"></a>
@@ -614,10 +634,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Establishes a connection to the stream server at the given address. </p>
+<dl class="section note"><dt>Note</dt><dd>Can also be used for UDP sockets. In this case, no connection is established. Instead, incoming and outgoing packets are restricted to the specified address.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">remote_ep</td><td>The adress to connect this socket </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on connecte and false on error </dd></dl>
+
 </div>
 </div>
-<a id="a393dda79662d4c92d6609ca315992e74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a393dda79662d4c92d6609ca315992e74">&#9670;&nbsp;</a></span>listen()</h2>
+<a id="a26781df2e965ed5e4d6b2de0cfe1639a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26781df2e965ed5e4d6b2de0cfe1639a">&#9670;&nbsp;</a></span>listen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -626,11 +656,20 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool mn::net::basic_stream_ip6_socket::listen </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>backLog</em></td><td>)</td>
+          <td class="paramname"><em>backLog</em> = <code>8</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Puts the socket into listening state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">backLog</td><td>The maximum number of connections that can be queued for this socket. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return true when sucessfull put the socket in the listening state and false if not </dd></dl>
 
 </div>
 </div>
@@ -671,6 +710,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Receives data from the socket and stores it in buffer. Up to length bytes are received. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the number of bytes received. </dd></dl>
 
 </div>
 </div>
@@ -714,6 +756,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Receives data from the socket and stores it in buffer. Up to length bytes are received. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the number of bytes received. </dd></dl>
+
 </div>
 </div>
 <a id="a8e9d7c987e5a0f557a2027109f4cb452"></a>
@@ -754,6 +799,18 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Sends the contents of the given buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the number of bytes sent, which may be less than the number of bytes specified.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The specific buffer to send </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the buffer </td></tr>
+    <tr><td class="paramname">socketFlags</td><td>Socket sending optians </td></tr>
+    <tr><td class="paramname">offset</td><td>buffer+offset </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="afbed3ca835ac2ee201e1f9a1a0880c61"></a>
@@ -787,6 +844,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sends the contents of the given buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the number of bytes sent, which may be less than the number of bytes specified.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The specific buffer to send </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the buffer </td></tr>
+    <tr><td class="paramname">socketFlags</td><td>Socket sending optians </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -27,7 +27,7 @@
     </head>
     <body>    
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.25.x</a>
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
         </nav>
         <div class="container-fluid">
             <div class="row">
@@ -211,11 +211,16 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 <li>ip_info_t
 : <a class="el" href="classmn_1_1net_1_1basic__net__if.html#a62f4d9ebf9197bd323e6adf5de58bce6">mn::net::basic_net_if</a>
 </li>
+<li>ip_type
+: <a class="el" href="classmn_1_1net_1_1basic__ip__endpoint.html#af053abd3e43792057a0aa82cd945ed84">mn::net::basic_ip_endpoint&lt; TIPCLASS, TAF &gt;</a>
+</li>
 <li>ipaddress_type
 : <a class="el" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ab74df9ce731d17e4124826d399c79966">mn::net::basic_dgram_ip6_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a588dd104b86e2c23f13ce61f39b71edf">mn::net::basic_dgram_ip_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a8dec22e740e785ac288bf31adb212629">mn::net::basic_ip4_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a51fe0d7a7ebf7042b3e16e54c675be38">mn::net::basic_ip6_socket</a>
+, <a class="el" href="classmn_1_1net_1_1basic__raw__ip4__socket.html#a0a94d4183c084325a77f37dcffb3489d">mn::net::basic_raw_ip4_socket</a>
+, <a class="el" href="classmn_1_1net_1_1basic__raw__ip6__socket.html#aac229ed981a004a09628c4965c255651">mn::net::basic_raw_ip6_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a9baca0715056067593c7bf2adc5363d4">mn::net::basic_stream_ip6_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__stream__ip__socket.html#a9cf8b322ea149ccf1131cd816584afb1">mn::net::basic_stream_ip_socket</a>
 </li>
@@ -248,7 +253,6 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 </li>
 <li>is_broadcast()
 : <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#ad5d7dab99fe34f30e3630331fff45993">mn::net::basic_ip4_address</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#a7cd77bd7bd712b105d1ec525428c7a7c">mn::net::basic_ip4_endpoint</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#abde0248fc3bfd149ec995f6c118b27f2">mn::net::basic_ip6_address</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a12e95ea1168c16d03327c481064167f7">mn::net::basic_ip_address</a>
 </li>
@@ -265,7 +269,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 </li>
 <li>is_equel()
 : <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a638eb79a463e967c1fc8340346853460">mn::net::basic_ip4_address</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a919f848b18eb96ffc4913567d732f51c">mn::net::basic_ip6_address</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#aee342bf7f3863baa78675cc0bcdf4889">mn::net::basic_ip6_address</a>
 </li>
 <li>is_free()
 : <a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a951a77c3be1e32f1bfd4bdf172c72059">mn::memory::allocator_interface</a>
@@ -289,7 +293,7 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ab0de54c3e344d7dadf35f0f5c2ca4c38">mn::net::basic_ip6_address</a>
 </li>
 <li>is_lock_free()
-: <a class="el" href="structmn_1_1basic__atomic__gcc.html#ab76150bac942d29307c1662bc1ee56bf">mn::basic_atomic_gcc&lt; T &gt;</a>
+: <a class="el" href="structmn_1_1basic__atomic__gcc.html#a4b6075c3361286b0e6d4e23ccb605ba1">mn::basic_atomic_gcc&lt; T &gt;</a>
 </li>
 <li>is_locked()
 : <a class="el" href="classmn_1_1basic__autolock.html#a6904bee6ce247f79afabb4ef7f9e97b8">mn::basic_autolock&lt; LOCK &gt;</a>
@@ -297,15 +301,14 @@ $(document).ready(function(){initNavTree('functions_i.html',''); initResizable()
 </li>
 <li>is_loopback()
 : <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a5ea9c5e8bf9d2310c9d0ece34a10f259">mn::net::basic_ip4_address</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#a81cc48ea657ae0bd869de2ae01beafeb">mn::net::basic_ip4_endpoint</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ac2b48cce1b35aed8223d60489e3c46b0">mn::net::basic_ip6_address</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#a686f8f6d19f1bd4ef9413d3e600dc99f">mn::net::basic_ip6_endpoint</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a7906d49cb8dac8bd5af5d9d83d3abf0f">mn::net::basic_ip_address</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip__endpoint.html#af7d298df4174e68cec686e7f224e9f98">mn::net::basic_ip_endpoint&lt; TIPCLASS, TAF &gt;</a>
 </li>
 <li>is_multicast()
 : <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#a8efd6db3104c51e5a77c96c03da37cb5">mn::net::basic_ip4_address</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a94f46a56f6c5ab4e8477711dd22bc1b1">mn::net::basic_ip6_address</a>
-, <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#a99d6eb631b73cce2072053cde2146439">mn::net::basic_ip6_endpoint</a>
+, <a class="el" href="classmn_1_1net_1_1basic__ip__endpoint.html#aabed5e455de361ec87870eca8d2ae292">mn::net::basic_ip_endpoint&lt; TIPCLASS, TAF &gt;</a>
 </li>
 <li>is_null()
 : <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#a0a40af2a3eb267becffe248ce6b079a4">mn::pointer::basic_any_ptr&lt; T &gt;</a>

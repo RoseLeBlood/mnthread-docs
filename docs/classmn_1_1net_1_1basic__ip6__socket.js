@@ -9,7 +9,7 @@ var classmn_1_1net_1_1basic__ip6__socket =
     [ "bind", "classmn_1_1net_1_1basic__ip6__socket.html#afe0a10c616a323f0324b00ec37d5c811", null ],
     [ "bind", "classmn_1_1net_1_1basic__ip6__socket.html#af79e6ec44d98a393d0d8ca56151ab1af", null ],
     [ "bind", "classmn_1_1net_1_1basic__ip6__socket.html#a9f198cd827dbb11f41d1b3fb4a057f33", null ],
-    [ "get_copy", "classmn_1_1net_1_1basic__ip6__socket.html#a20b48b544c347139220edd9c6b3e4614", null ],
+    [ "get_copy", "classmn_1_1net_1_1basic__ip6__socket.html#a08cab49f24a17309d62f85987001be53", null ],
     [ "get_endpoint", "classmn_1_1net_1_1basic__ip6__socket.html#a843213aea96a1ffcae07884828a0586c", null ],
     [ "get_local", "classmn_1_1net_1_1basic__ip6__socket.html#a02e399ef1ff93b4088e3e22357f64331", null ],
     [ "get_peername", "classmn_1_1net_1_1basic__ip6__socket.html#a9cdf372d0359c418c4aad691cdf0c375", null ],
