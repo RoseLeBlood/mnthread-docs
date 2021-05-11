@@ -15,15 +15,12 @@ var classmn_1_1pointer_1_1basic__weak__ptr =
     [ "basic_weak_ptr", "classmn_1_1pointer_1_1basic__weak__ptr.html#a663d07cbb374962f61e2d91e4feb90fe", null ],
     [ "basic_weak_ptr", "classmn_1_1pointer_1_1basic__weak__ptr.html#a1c5b21e59de6e933706aebe296f80ec0", null ],
     [ "expired", "classmn_1_1pointer_1_1basic__weak__ptr.html#a10f7cd56a637c897400ffdb74b09955b", null ],
-    [ "get", "classmn_1_1pointer_1_1basic__weak__ptr.html#abd2083c289b9c0636f3ed47b58e71712", null ],
     [ "lock", "classmn_1_1pointer_1_1basic__weak__ptr.html#a913aac89c1c8e858f6c8757b7d7b3efb", null ],
-    [ "operator*", "classmn_1_1pointer_1_1basic__weak__ptr.html#aea65b3618091614fd2db9653c9f0f18d", null ],
     [ "operator=", "classmn_1_1pointer_1_1basic__weak__ptr.html#ae1ae11ff07d53970b14ac482218e654c", null ],
     [ "owner_before", "classmn_1_1pointer_1_1basic__weak__ptr.html#a4709075b195d18f6802298cba083a73d", null ],
     [ "owner_before", "classmn_1_1pointer_1_1basic__weak__ptr.html#aa8b86c2a5e1180bded23e49a569dbeda", null ],
     [ "reset", "classmn_1_1pointer_1_1basic__weak__ptr.html#a12524895185fc9c809d33dbc62d8a761", null ],
     [ "swap", "classmn_1_1pointer_1_1basic__weak__ptr.html#ab39a140ca2fc36c4fe4534d38d21bf1d", null ],
     [ "use_count", "classmn_1_1pointer_1_1basic__weak__ptr.html#a621d15947e9982aa2a55795195fb6df9", null ],
-    [ "__ptr", "classmn_1_1pointer_1_1basic__weak__ptr.html#a480d89441a2435cb94bb2186691a02f0", null ],
     [ "_m_ref", "classmn_1_1pointer_1_1basic__weak__ptr.html#a5cf83ce7a03a318ea08a57850d814442", null ]
 ];

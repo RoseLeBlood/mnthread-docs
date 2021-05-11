@@ -1,32 +1,21 @@
 var files_dup =
 [
+    [ "default_allocator.cpp", "default__allocator_8cpp.html", null ],
     [ "miniThread.cpp", "miniThread_8cpp.html", "miniThread_8cpp" ],
     [ "miniThread.hpp", "miniThread_8hpp.html", "miniThread_8hpp" ],
     [ "mn_algorithm.hpp", "mn__algorithm_8hpp.html", "mn__algorithm_8hpp" ],
     [ "mn_alignment.hpp", "mn__alignment_8hpp.html", "mn__alignment_8hpp" ],
-    [ "mn_allactor_multiheap.hpp", "mn__allactor__multiheap_8hpp.html", [
-      [ "basic_multiheap_allocator_esp32", "classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html", "classmn_1_1memory_1_1basic__multiheap__allocator__esp32" ]
-    ] ],
-    [ "mn_allocator.hpp", "mn__allocator_8hpp.html", "mn__allocator_8hpp" ],
-    [ "mn_allocator_buffer.hpp", "mn__allocator__buffer_8hpp.html", [
-      [ "basic_allocator_buffer", "classmn_1_1memory_1_1basic__allocator__buffer.html", "classmn_1_1memory_1_1basic__allocator__buffer" ]
-    ] ],
-    [ "mn_allocator_caps.hpp", "mn__allocator__caps_8hpp.html", "mn__allocator__caps_8hpp" ],
-    [ "mn_allocator_interface.hpp", "mn__allocator__interface_8hpp.html", [
-      [ "allocator_interface", "classmn_1_1memory_1_1allocator__interface.html", "classmn_1_1memory_1_1allocator__interface" ]
-    ] ],
-    [ "mn_allocator_object.hpp", "mn__allocator__object_8hpp.html", "mn__allocator__object_8hpp" ],
-    [ "mn_allocator_stack.hpp", "mn__allocator__stack_8hpp.html", [
-      [ "basic_allocator_stack", "classmn_1_1memory_1_1basic__allocator__stack.html", "classmn_1_1memory_1_1basic__allocator__stack" ]
-    ] ],
-    [ "mn_allocator_system.hpp", "mn__allocator__system_8hpp.html", [
-      [ "basic_allocator_system", "classmn_1_1memory_1_1basic__allocator__system.html", "classmn_1_1memory_1_1basic__allocator__system" ]
-    ] ],
+    [ "mn_allocator.hpp", "mn__allocator_8hpp.html", null ],
+    [ "mn_allocator_typetraits.hpp", "mn__allocator__typetraits_8hpp.html", "mn__allocator__typetraits_8hpp" ],
     [ "mn_any_ptr.hpp", "mn__any__ptr_8hpp.html", [
       [ "basic_any_ptr", "classmn_1_1pointer_1_1basic__any__ptr.html", "classmn_1_1pointer_1_1basic__any__ptr" ]
     ] ],
     [ "mn_atomic.hpp", "mn__atomic_8hpp.html", "mn__atomic_8hpp" ],
     [ "mn_atomic_classes.hpp", "mn__atomic__classes_8hpp.html", null ],
+    [ "mn_atomic_counter.cpp", "mn__atomic__counter_8cpp.html", null ],
+    [ "mn_atomic_counter.hpp", "mn__atomic__counter_8hpp.html", [
+      [ "atomic_counter", "classmn_1_1atomic__counter.html", "classmn_1_1atomic__counter" ]
+    ] ],
     [ "mn_atomic_flags.hpp", "mn__atomic__flags_8hpp.html", "mn__atomic__flags_8hpp" ],
     [ "mn_atomic_gcc.hpp", "mn__atomic__gcc_8hpp.html", [
       [ "basic_atomic_gcc", "structmn_1_1basic__atomic__gcc.html", "structmn_1_1basic__atomic__gcc" ]
@@ -53,11 +42,32 @@ var files_dup =
       [ "atomic_spinlock", "classmn_1_1atomic__spinlock.html", "classmn_1_1atomic__spinlock" ]
     ] ],
     [ "mn_atomic_weak_ptr.hpp", "mn__atomic__weak__ptr_8hpp.html", null ],
+    [ "mn_auto_ptr.hpp", "mn__auto__ptr_8hpp.html", [
+      [ "basic_auto_ptr", "classmn_1_1pointer_1_1basic__auto__ptr.html", "classmn_1_1pointer_1_1basic__auto__ptr" ]
+    ] ],
+    [ "mn_auto_release.hpp", "mn__auto__release_8hpp.html", [
+      [ "auto_release_object", "classmn_1_1auto__release__object.html", "classmn_1_1auto__release__object" ],
+      [ "auto_release", "classmn_1_1auto__release.html", "classmn_1_1auto__release" ]
+    ] ],
     [ "mn_auto_version.hpp", "mn__auto__version_8hpp.html", "mn__auto__version_8hpp" ],
     [ "mn_autolock.cpp", "mn__autolock_8cpp.html", null ],
     [ "mn_autolock.hpp", "mn__autolock_8hpp.html", "mn__autolock_8hpp" ],
     [ "mn_base_ptr.hpp", "mn__base__ptr_8hpp.html", [
       [ "pointer_ptr", "structmn_1_1pointer_1_1pointer__ptr.html", "structmn_1_1pointer_1_1pointer__ptr" ]
+    ] ],
+    [ "mn_basic_allocator.cpp", "mn__basic__allocator_8cpp.html", null ],
+    [ "mn_basic_allocator.hpp", "mn__basic__allocator_8hpp.html", [
+      [ "basic_allocator_filter", "classmn_1_1memory_1_1basic__allocator__filter.html", "classmn_1_1memory_1_1basic__allocator__filter" ],
+      [ "basic_allocator", "classmn_1_1memory_1_1basic__allocator.html", "classmn_1_1memory_1_1basic__allocator" ]
+    ] ],
+    [ "mn_basic_allocator_maximal_filter.hpp", "mn__basic__allocator__maximal__filter_8hpp.html", [
+      [ "basic_allocator_maximal_filter", "classmn_1_1memory_1_1basic__allocator__maximal__filter.html", "classmn_1_1memory_1_1basic__allocator__maximal__filter" ]
+    ] ],
+    [ "mn_basic_allocator_stack.hpp", "mn__basic__allocator__stack_8hpp.html", "mn__basic__allocator__stack_8hpp" ],
+    [ "mn_basic_caps_allocator.hpp", "mn__basic__caps__allocator_8hpp.html", null ],
+    [ "mn_basic_deleter.hpp", "mn__basic__deleter_8hpp.html", [
+      [ "basic_deleter", "classmn_1_1memory_1_1basic__deleter.html", "classmn_1_1memory_1_1basic__deleter" ],
+      [ "basic_deleter< Type[], TAllocator >", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4.html", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4" ]
     ] ],
     [ "mn_basic_dgram_socket.cpp", "mn__basic__dgram__socket_8cpp.html", null ],
     [ "mn_basic_dgram_socket.hpp", "mn__basic__dgram__socket_8hpp.html", [
@@ -89,8 +99,13 @@ var files_dup =
     [ "mn_basic_ip_address.hpp", "mn__basic__ip__address_8hpp.html", "mn__basic__ip__address_8hpp" ],
     [ "mn_basic_ip_socket.cpp", "mn__basic__ip__socket_8cpp.html", null ],
     [ "mn_basic_ip_socket.hpp", "mn__basic__ip__socket_8hpp.html", null ],
-    [ "mn_basic_mempool.hpp", "mn__basic__mempool_8hpp.html", "mn__basic__mempool_8hpp" ],
-    [ "mn_basic_mempool_chunk.hpp", "mn__basic__mempool__chunk_8hpp.html", "mn__basic__mempool__chunk_8hpp" ],
+    [ "mn_basic_malloc_allocator.hpp", "mn__basic__malloc__allocator_8hpp.html", "mn__basic__malloc__allocator_8hpp" ],
+    [ "mn_basic_multicast_ip_socket.cpp", "mn__basic__multicast__ip__socket_8cpp.html", null ],
+    [ "mn_basic_multicast_ip_socket.hpp", "mn__basic__multicast__ip__socket_8hpp.html", [
+      [ "basic_multicast_ip_socket", "classmn_1_1net_1_1basic__multicast__ip__socket.html", "classmn_1_1net_1_1basic__multicast__ip__socket" ],
+      [ "basic_multicast_ip6_socket", "classmn_1_1net_1_1basic__multicast__ip6__socket.html", "classmn_1_1net_1_1basic__multicast__ip6__socket" ]
+    ] ],
+    [ "mn_basic_multiheap_allocator.hpp", "mn__basic__multiheap__allocator_8hpp.html", null ],
     [ "mn_basic_netif.cpp", "mn__basic__netif_8cpp.html", null ],
     [ "mn_basic_netif.hpp", "mn__basic__netif_8hpp.html", [
       [ "basic_net_if", "classmn_1_1net_1_1basic__net__if.html", "classmn_1_1net_1_1basic__net__if" ],
@@ -100,6 +115,7 @@ var files_dup =
         [ "netmask", "classmn_1_1net_1_1basic__net__if.html#ab368d2c60cd74d034e2e6b5ff51e00ad", null ]
       ] ]
     ] ],
+    [ "mn_basic_new_allocaor.hpp", "mn__basic__new__allocaor_8hpp.html", "mn__basic__new__allocaor_8hpp" ],
     [ "mn_basic_raw_ip_socket.cpp", "mn__basic__raw__ip__socket_8cpp.html", null ],
     [ "mn_basic_raw_ip_socket.hpp", "mn__basic__raw__ip__socket_8hpp.html", [
       [ "basic_raw_ip4_socket", "classmn_1_1net_1_1basic__raw__ip4__socket.html", "classmn_1_1net_1_1basic__raw__ip4__socket" ],
@@ -118,6 +134,10 @@ var files_dup =
       [ "basic_stream_ip_socket", "classmn_1_1net_1_1basic__stream__ip__socket.html", "classmn_1_1net_1_1basic__stream__ip__socket" ],
       [ "basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html", "classmn_1_1net_1_1basic__stream__ip6__socket" ]
     ] ],
+    [ "mn_basic_timespan.cpp", "mn__basic__timespan_8cpp.html", "mn__basic__timespan_8cpp" ],
+    [ "mn_basic_timespan.hpp", "mn__basic__timespan_8hpp.html", "mn__basic__timespan_8hpp" ],
+    [ "mn_basic_timestamp.cpp", "mn__basic__timestamp_8cpp.html", null ],
+    [ "mn_basic_timestamp.hpp", "mn__basic__timestamp_8hpp.html", "mn__basic__timestamp_8hpp" ],
     [ "mn_basic_wifi_net_if.cpp", "mn__basic__wifi__net__if_8cpp.html", null ],
     [ "mn_basic_wifi_net_if.hpp", "mn__basic__wifi__net__if_8hpp.html", [
       [ "basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", "classmn_1_1net_1_1basic__wifi__net__if" ]
@@ -131,6 +151,10 @@ var files_dup =
     [ "mn_binaryqueue.cpp", "mn__binaryqueue_8cpp.html", null ],
     [ "mn_binaryqueue.hpp", "mn__binaryqueue_8hpp.html", "mn__binaryqueue_8hpp" ],
     [ "mn_biqueue.hpp", "mn__biqueue_8hpp.html", "mn__biqueue_8hpp" ],
+    [ "mn_buffer.cpp", "mn__buffer_8cpp.html", null ],
+    [ "mn_buffer.hpp", "mn__buffer_8hpp.html", [
+      [ "buffer", "classmn_1_1buffer.html", "classmn_1_1buffer" ]
+    ] ],
     [ "mn_clock.hpp", "mn__clock_8hpp.html", [
       [ "basic_clock", "classmn_1_1basic__clock.html", "classmn_1_1basic__clock" ]
     ] ],
@@ -148,6 +172,8 @@ var files_dup =
     [ "mn_convar.hpp", "mn__convar_8hpp.html", "mn__convar_8hpp" ],
     [ "mn_convar_task.cpp", "mn__convar__task_8cpp.html", null ],
     [ "mn_convar_task.hpp", "mn__convar__task_8hpp.html", "mn__convar__task_8hpp" ],
+    [ "mn_copyable.cpp", "mn__copyable_8cpp.html", null ],
+    [ "mn_copyable.hpp", "mn__copyable_8hpp.html", "mn__copyable_8hpp" ],
     [ "mn_counting_semaphore.cpp", "mn__counting__semaphore_8cpp.html", null ],
     [ "mn_counting_semaphore.hpp", "mn__counting__semaphore_8hpp.html", "mn__counting__semaphore_8hpp" ],
     [ "mn_critical.cpp", "mn__critical_8cpp.html", null ],
@@ -159,10 +185,9 @@ var files_dup =
       [ "basic_critical_section_nested", "classmn_1_1system_1_1basic__critical__section__nested.html", "classmn_1_1system_1_1basic__critical__section__nested" ]
     ] ],
     [ "mn_def.hpp", "mn__def_8hpp.html", "mn__def_8hpp" ],
+    [ "mn_default_allocator.hpp", "mn__default__allocator_8hpp.html", "mn__default__allocator_8hpp" ],
     [ "mn_defines.hpp", "mn__defines_8hpp.html", "mn__defines_8hpp" ],
-    [ "mn_deleter.hpp", "mn__deleter_8hpp.html", [
-      [ "default_delete", "structmn_1_1memory_1_1default__delete.html", "structmn_1_1memory_1_1default__delete" ]
-    ] ],
+    [ "mn_deleter.hpp", "mn__deleter_8hpp.html", null ],
     [ "mn_deque.cpp", "mn__deque_8cpp.html", null ],
     [ "container/mn_deque.hpp", "container_2mn__deque_8hpp.html", "container_2mn__deque_8hpp" ],
     [ "queue/mn_deque.hpp", "queue_2mn__deque_8hpp.html", "queue_2mn__deque_8hpp" ],
@@ -170,6 +195,8 @@ var files_dup =
     [ "mn_error_preview.hpp", "mn__error__preview_8hpp.html", null ],
     [ "mn_eventgroup.cpp", "mn__eventgroup_8cpp.html", null ],
     [ "mn_eventgroup.hpp", "mn__eventgroup_8hpp.html", "mn__eventgroup_8hpp" ],
+    [ "mn_eventgroup_exception.cpp", "mn__eventgroup__exception_8cpp.html", null ],
+    [ "mn_eventgroup_exception.hpp", "mn__eventgroup__exception_8hpp.html", null ],
     [ "mn_fast_type.hpp", "mn__fast__type_8hpp.html", "mn__fast__type_8hpp" ],
     [ "mn_fixed_sorted_vector.hpp", "mn__fixed__sorted__vector_8hpp.html", [
       [ "basic_fixed_sorted_vector", "classmn_1_1container_1_1basic__fixed__sorted__vector.html", "classmn_1_1container_1_1basic__fixed__sorted__vector" ]
@@ -202,7 +229,6 @@ var files_dup =
       [ "basic_lock_ptr", "classmn_1_1pointer_1_1basic__lock__ptr.html", "classmn_1_1pointer_1_1basic__lock__ptr" ]
     ] ],
     [ "mn_memory.cpp", "mn__memory_8cpp.html", null ],
-    [ "mn_mempool.hpp", "mn__mempool_8hpp.html", "mn__mempool_8hpp" ],
     [ "mn_micros.cpp", "mn__micros_8cpp.html", "mn__micros_8cpp" ],
     [ "mn_micros.hpp", "mn__micros_8hpp.html", "mn__micros_8hpp" ],
     [ "mn_msg_task.cpp", "mn__msg__task_8cpp.html", null ],
@@ -210,6 +236,7 @@ var files_dup =
     [ "mn_mutex.cpp", "mn__mutex_8cpp.html", null ],
     [ "mn_mutex.hpp", "mn__mutex_8hpp.html", "mn__mutex_8hpp" ],
     [ "mn_net_types.hpp", "mn__net__types_8hpp.html", "mn__net__types_8hpp" ],
+    [ "mn_nlz.hpp", "mn__nlz_8hpp.html", "mn__nlz_8hpp" ],
     [ "mn_node.hpp", "mn__node_8hpp.html", "mn__node_8hpp" ],
     [ "mn_node_ptr.hpp", "mn__node__ptr_8hpp.html", [
       [ "node_ptr", "classmn_1_1pointer_1_1node__ptr.html", "classmn_1_1pointer_1_1node__ptr" ]
@@ -315,6 +342,5 @@ var files_dup =
     [ "mn_workqueue_task.cpp", "mn__workqueue__task_8cpp.html", null ],
     [ "mn_workqueue_task.hpp", "mn__workqueue__task_8hpp.html", [
       [ "work_queue_task", "classmn_1_1queue_1_1work__queue__task.html", "classmn_1_1queue_1_1work__queue__task" ]
-    ] ],
-    [ "test.cpp", "test_8cpp.html", "test_8cpp" ]
+    ] ]
 ];

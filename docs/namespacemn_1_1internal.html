@@ -141,8 +141,7 @@ $(document).ready(function(){initNavTree('namespacemn_1_1internal.html',''); ini
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn::internal Namespace Reference</div>  </div>
 </div><!--header-->
@@ -178,6 +177,10 @@ Classes</h2></td></tr>
 <tr class="separator:structmn_1_1internal_1_1type__with__alignment_3_0116_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1internal_1_1type__with__alignment_3_0132_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_0132_01_4">type_with_alignment&lt; 32 &gt;</a></td></tr>
 <tr class="separator:structmn_1_1internal_1_1type__with__alignment_3_0132_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1internal_1_1type__with__alignment_3_0164_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_0164_01_4">type_with_alignment&lt; 64 &gt;</a></td></tr>
+<tr class="separator:structmn_1_1internal_1_1type__with__alignment_3_0164_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionmn_1_1internal_1_1max__align"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#unionmn_1_1internal_1_1max__align">max_align</a></td></tr>
+<tr class="separator:unionmn_1_1internal_1_1max__align"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -205,13 +208,22 @@ Functions</h2></td></tr>
 <tr class="memitem:a772facf1e405e5b2938d90b2de09ee31"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TDistance  = typename iterator_traits&lt;TIter&gt;::difference_type&gt; </td></tr>
 <tr class="memitem:a772facf1e405e5b2938d90b2de09ee31"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a772facf1e405e5b2938d90b2de09ee31">advance</a> (TIter &amp;iter, TDistance d, <a class="el" href="structmn_1_1input__iterator__tag.html">mn::input_iterator_tag</a>)</td></tr>
 <tr class="separator:a772facf1e405e5b2938d90b2de09ee31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74470eacb750d9b974c8dfa6abc9d706"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a74470eacb750d9b974c8dfa6abc9d706">make_buffer</a> (T value)</td></tr>
-<tr class="memdesc:a74470eacb750d9b974c8dfa6abc9d706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the given pointer.  <a href="namespacemn_1_1internal.html#a74470eacb750d9b974c8dfa6abc9d706">More...</a><br /></td></tr>
-<tr class="separator:a74470eacb750d9b974c8dfa6abc9d706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e46df3bf73a8371cc6a85ebbb007869"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a9e46df3bf73a8371cc6a85ebbb007869">__attribute__</a> ((aligned(32))) aligned32</td></tr>
-<tr class="separator:a9e46df3bf73a8371cc6a85ebbb007869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e66406c3e9e7bbe2d29d27139f9f8c1"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a9e66406c3e9e7bbe2d29d27139f9f8c1">__attribute__</a> ((aligned(0))) aligned0</td></tr>
+<tr class="separator:a9e66406c3e9e7bbe2d29d27139f9f8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215f21f1be646c21e53ea193ddd03ecc"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a215f21f1be646c21e53ea193ddd03ecc">__attribute__</a> ((aligned(1))) aligned1</td></tr>
+<tr class="separator:a215f21f1be646c21e53ea193ddd03ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5f79bf34ecf986903266d7fbb34731"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#acd5f79bf34ecf986903266d7fbb34731">__attribute__</a> ((aligned(2))) aligned2</td></tr>
+<tr class="separator:acd5f79bf34ecf986903266d7fbb34731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0261cc29a46b9d2bc843323cb386261b"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a0261cc29a46b9d2bc843323cb386261b">__attribute__</a> ((aligned(4))) aligned4</td></tr>
+<tr class="separator:a0261cc29a46b9d2bc843323cb386261b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0d7757d8123c9cb392fa93821f05a4"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#abc0d7757d8123c9cb392fa93821f05a4">__attribute__</a> ((aligned(8))) aligned8</td></tr>
+<tr class="separator:abc0d7757d8123c9cb392fa93821f05a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f18691df902accab88bc23855f12d54"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a2f18691df902accab88bc23855f12d54">__attribute__</a> ((aligned(16))) aligned16</td></tr>
 <tr class="separator:a2f18691df902accab88bc23855f12d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e46df3bf73a8371cc6a85ebbb007869"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a9e46df3bf73a8371cc6a85ebbb007869">__attribute__</a> ((aligned(32))) aligned32</td></tr>
+<tr class="separator:a9e46df3bf73a8371cc6a85ebbb007869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a2f200578bcd9240b7c78f53b71320"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ac3a2f200578bcd9240b7c78f53b71320">__attribute__</a> ((aligned(64))) aligned64</td></tr>
+<tr class="separator:ac3a2f200578bcd9240b7c78f53b71320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44669e513b713bdc04a2fda09ed117e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a44669e513b713bdc04a2fda09ed117e5">quick_sort</a> (T *data, long low, long high, TPredicate pred)</td></tr>
 <tr class="separator:a44669e513b713bdc04a2fda09ed117e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae43fb0357d54e902dbfdab614c84da25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ae43fb0357d54e902dbfdab614c84da25">down_heap</a> (T *data, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> k, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> n, TPredicate pred)</td></tr>
@@ -260,13 +272,8 @@ Functions</h2></td></tr>
 <tr class="separator:ad00545828cb74e7ad65b9b230501df18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a429140694cbb2e4b88112d23f8054edd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a429140694cbb2e4b88112d23f8054edd">debug_pred</a> (const TPred &amp;pred, const T1 &amp;a, const T2 &amp;b)</td></tr>
 <tr class="separator:a429140694cbb2e4b88112d23f8054edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb33ee16a070810287a5dbc3cf86318d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#abb33ee16a070810287a5dbc3cf86318d">get_new_id</a> ()</td></tr>
-<tr class="separator:abb33ee16a070810287a5dbc3cf86318d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a5cbb8ced57c3f0abaad8aafdd0db8f5d"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a5cbb8ced57c3f0abaad8aafdd0db8f5d">__id_rnioeu</a> = 0</td></tr>
-<tr class="separator:a5cbb8ced57c3f0abaad8aafdd0db8f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554274666d085083f536e10c70815767"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a554274666d085083f536e10c70815767">get_new_uniqid</a> ()</td></tr>
+<tr class="separator:a554274666d085083f536e10c70815767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="structmn_1_1internal_1_1res__of" id="structmn_1_1internal_1_1res__of"></a>
@@ -355,7 +362,16 @@ err_invalid_alignment</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"></div>
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a5822f61b9a3ae820d73ef031bb55ec67"></a>aligned0</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
 </div>
 </div>
 <a name="structmn_1_1internal_1_1type__with__alignment_3_011_01_4" id="structmn_1_1internal_1_1type__with__alignment_3_011_01_4"></a>
@@ -372,9 +388,9 @@ err_invalid_alignment</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="aacb93e220fcf39d2928c90c5465a43b9"></a>uint8_t</td>
+<a id="a280501d82d06ac046577b36d62124f34"></a>aligned1</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -395,9 +411,9 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a40ef80e3672d38075c393348d8731ea7"></a>uint16_t</td>
+<a id="ac66c3fe12090b02c8001821055355efb"></a>aligned2</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -418,9 +434,9 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a8d2a1e7d0b39a2931c6dbc2883e836f9"></a>uint32_t</td>
+<a id="a7709f7899d835c81ff223af566f6ae80"></a>aligned4</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -441,9 +457,9 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a58e510d536930d4fe1d8212382a50664"></a>uint64_t</td>
+<a id="a79a368b971f56e123423809944b99d4d"></a>aligned8</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -464,9 +480,9 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a031ba1c303462a0719574ae6295c3eb0"></a>aligned16</td>
+<a id="a439d85fbe2e0597a23cb59f3892e7a85"></a>aligned16</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -487,9 +503,91 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="aedb8ff3aa00fa0b4ac08c702f2f92b52"></a>aligned32</td>
+<a id="a8b1fc06e3835e16f6ffd10faf1859dbe"></a>aligned32</td>
 <td class="fieldname">
-member</td>
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1internal_1_1type__with__alignment_3_0164_01_4" id="structmn_1_1internal_1_1type__with__alignment_3_0164_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1internal_1_1type__with__alignment_3_0164_01_4">&#9670;&nbsp;</a></span>mn::internal::type_with_alignment&lt; 64 &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::type_with_alignment&lt; 64 &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a6032545d0a11b31e05d9e99eee6c3d8b"></a>aligned64</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionmn_1_1internal_1_1max__align" id="unionmn_1_1internal_1_1max__align"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionmn_1_1internal_1_1max__align">&#9670;&nbsp;</a></span>mn::internal::max_align</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union mn::internal::max_align</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a697a1dbdd86de67b5689573c060d12ce"></a>char</td>
+<td class="fieldname">
+c</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a55718b491ab1d5fe5ca81a60e178ec95"></a>double</td>
+<td class="fieldname">
+d</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5676ed6ec7954b3740d0e3285fa99752"></a>float</td>
+<td class="fieldname">
+f</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a60d4e63a1c354ab51bf84dbafe91f27f"></a>int</td>
+<td class="fieldname">
+i</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa20691c7c8d53993946e1f13eccfa31e"></a>long</td>
+<td class="fieldname">
+l</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a87c217669c7512be5607657c9226eb0d"></a>long long</td>
+<td class="fieldname">
+ll</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3506ad5e10521d4ee202093f7d961c6b"></a>short</td>
+<td class="fieldname">
+s</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -530,8 +628,44 @@ template&lt;typename From , typename To &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a9e66406c3e9e7bbe2d29d27139f9f8c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e66406c3e9e7bbe2d29d27139f9f8c1">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(0))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a215f21f1be646c21e53ea193ddd03ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215f21f1be646c21e53ea193ddd03ecc">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(1))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2f18691df902accab88bc23855f12d54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f18691df902accab88bc23855f12d54">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f18691df902accab88bc23855f12d54">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -548,8 +682,26 @@ template&lt;typename From , typename To &gt; </div>
 
 </div>
 </div>
+<a id="acd5f79bf34ecf986903266d7fbb34731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd5f79bf34ecf986903266d7fbb34731">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(2))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9e46df3bf73a8371cc6a85ebbb007869"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e46df3bf73a8371cc6a85ebbb007869">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e46df3bf73a8371cc6a85ebbb007869">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -558,6 +710,60 @@ template&lt;typename From , typename To &gt; </div>
           <td class="memname">struct mn::internal::__attribute__ </td>
           <td>(</td>
           <td class="paramtype">(aligned(32))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0261cc29a46b9d2bc843323cb386261b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0261cc29a46b9d2bc843323cb386261b">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(4))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3a2f200578bcd9240b7c78f53b71320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a2f200578bcd9240b7c78f53b71320">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(64))&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc0d7757d8123c9cb392fa93821f05a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc0d7757d8123c9cb392fa93821f05a4">&#9670;&nbsp;</a></span>__attribute__() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(aligned(8))&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1472,8 +1678,8 @@ template&lt;typename TIter &gt; </div>
 
 </div>
 </div>
-<a id="abb33ee16a070810287a5dbc3cf86318d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb33ee16a070810287a5dbc3cf86318d">&#9670;&nbsp;</a></span>get_new_id()</h2>
+<a id="a554274666d085083f536e10c70815767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554274666d085083f536e10c70815767">&#9670;&nbsp;</a></span>get_new_uniqid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1482,7 +1688,7 @@ template&lt;typename TIter &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t mn::internal::get_new_id </td>
+          <td class="memname">int32_t mn::internal::get_new_uniqid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1494,49 +1700,6 @@ template&lt;typename TIter &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a74470eacb750d9b974c8dfa6abc9d706"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74470eacb750d9b974c8dfa6abc9d706">&#9670;&nbsp;</a></span>make_buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T * mn::internal::make_buffer </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Make the given pointer. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TPOINTER</td><td>The returned pointer class </td></tr>
-    <tr><td class="paramname">T</td><td>Value type of the pointer </td></tr>
-    <tr><td class="paramname">TALLOCATOR</td><td>The using allocator to create the raw pointer for the class. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>The value to hold </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The new pointer class with the given value </dd></dl>
 
 </div>
 </div>
@@ -1800,21 +1963,6 @@ template&lt;typename TIter &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a5cbb8ced57c3f0abaad8aafdd0db8f5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cbb8ced57c3f0abaad8aafdd0db8f5d">&#9670;&nbsp;</a></span>__id_rnioeu</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t mn::internal::__id_rnioeu = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">

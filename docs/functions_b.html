@@ -142,9 +142,10 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>back()
-: <a class="el" href="classmn_1_1container_1_1basic__deque.html#a2ef585fd2631d5d02c129322c670312d">mn::container::basic_deque&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
-, <a class="el" href="classmn_1_1container_1_1basic__list.html#a566d95414bc56f20d461609e978f5ece">mn::container::basic_list&lt; T, TAllocator &gt;</a>
-, <a class="el" href="classmn_1_1container_1_1basic__queue.html#a32e506703184f9ca358ab00f7555709f">mn::container::basic_queue&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
+: <a class="el" href="classmn_1_1auto__release.html#a0bcaf99cc1b6efce14b970a7012b0692">mn::auto_release&lt; TRELOBJ, TALLOCATOR &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__deque.html#a2ef585fd2631d5d02c129322c670312d">mn::container::basic_deque&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__list.html#af26845d979979f12848ebbf923023ebf">mn::container::basic_list&lt; T, TAllocator &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__queue.html#ae7b5546578dcc25919cc08966b54c7b0">mn::container::basic_queue&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
 , <a class="el" href="classmn_1_1container_1_1basic__vector.html#ac8862c1a2fb706a2bbe94069e0d93aee">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
 </li>
 <li>base_rb_tree()
@@ -182,6 +183,8 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 , <a class="el" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a07dc484c0be366c972f032ea2fc26896">mn::net::basic_dgram_ip_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#aea11aa031cb1a10da0c1dd52beb9060d">mn::net::basic_ip4_endpoint</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#a045f53be642d417f754f847903969ed4">mn::net::basic_ip6_endpoint</a>
+, <a class="el" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a8594bee2a45de8c18e2202d9d84a66c0">mn::net::basic_multicast_ip6_socket</a>
+, <a class="el" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a34b34860d5fd92c1bbc089a466bdc559">mn::net::basic_multicast_ip_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__raw__ip4__socket.html#a0f5ef34675825037adde3ce8b53d18d6">mn::net::basic_raw_ip4_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__raw__ip6__socket.html#a4d01ff54a185dea30008fc1390c2d109">mn::net::basic_raw_ip6_socket</a>
 , <a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#a1d351b61781012d7254e7e0554f236c3">mn::net::basic_stream_ip6_socket</a>
@@ -190,20 +193,23 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 , <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#af791b97c65cf95f9aae4c35b6e1bdda6">mn::pointer::basic_shared_ptr&lt; T, TRefType &gt;</a>
 , <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#aeaadd02c0f6524efe39a3c73f6b189f2">mn::pointer::basic_weak_ptr&lt; T, TRefType &gt;</a>
 </li>
-<li>basic_allocator_buffer()
-: <a class="el" href="classmn_1_1memory_1_1basic__allocator__buffer.html#afac5163c2fe65b9e323740928bc0b7ba">mn::memory::basic_allocator_buffer</a>
-</li>
-<li>basic_allocator_stack()
-: <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html#a80e2cab280134db2e91bc09f46941c7a">mn::memory::basic_allocator_stack&lt; TBUFFERSIZE &gt;</a>
+<li>basic_allocator()
+: <a class="el" href="classmn_1_1memory_1_1basic__allocator.html#a7228be7c3043044d51936eb5bd2a3210">mn::memory::basic_allocator&lt; TAllocator, TFilter &gt;</a>
 </li>
 <li>basic_any_ptr()
-: <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ae841a216782a894c158967c463dec994">mn::pointer::basic_any_ptr&lt; T &gt;</a>
+: <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html#ae02fa18ae3e1ce66e0aead0020b95094">mn::pointer::basic_any_ptr&lt; T &gt;</a>
+</li>
+<li>basic_atomic_flag()
+: <a class="el" href="classmn_1_1basic__atomic__flag.html#acabcd45f9f23196cb892b11670856a4d">mn::basic_atomic_flag&lt; TAtomicType, TTrue, TFalse &gt;</a>
 </li>
 <li>basic_atomic_gcc()
 : <a class="el" href="structmn_1_1basic__atomic__gcc.html#a2b0b9ffa21594539765db5d5a29c66c7">mn::basic_atomic_gcc&lt; T &gt;</a>
 </li>
+<li>basic_auto_ptr()
+: <a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1e770edaed90d3afa26493f19919f95b">mn::pointer::basic_auto_ptr&lt; T &gt;</a>
+</li>
 <li>basic_autolock()
-: <a class="el" href="classmn_1_1basic__autolock.html#adaf22077eb623e46c8e24ab100d4bbf2">mn::basic_autolock&lt; LOCK &gt;</a>
+: <a class="el" href="classmn_1_1basic__autolock.html#ac0cf375fa78e3acd231abbb6cd1cb7e2">mn::basic_autolock&lt; LOCK &gt;</a>
 </li>
 <li>basic_binary_queue()
 : <a class="el" href="classmn_1_1container_1_1basic__binary__queue.html#a749de42020de464068d2610b3dcf21a9">mn::container::basic_binary_queue&lt; T, TITEMSIZE &gt;</a>
@@ -217,14 +223,11 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>basic_binaryqueue()
 : <a class="el" href="classmn_1_1queue_1_1basic__binaryqueue.html#a0cc3e1b72bee0fe1c03dfa244e6c4fdb">mn::queue::basic_binaryqueue</a>
 </li>
-<li>basic_cap_allocator_esp32()
-: <a class="el" href="classmn_1_1memory_1_1basic__cap__allocator__esp32.html#a8502cb800a1680a17bbcbfd36fd821e4">mn::memory::basic_cap_allocator_esp32&lt; TCAPS, TSBITS &gt;</a>
-</li>
 <li>basic_clock()
 : <a class="el" href="classmn_1_1basic__clock.html#a08b5e6116f3c06318cc25b0bca9da052">mn::basic_clock&lt; TLockType &gt;</a>
 </li>
 <li>basic_clone_ptr()
-: <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html#a11344c600bf7abdb32bfbd61272d0561">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a>
+: <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html#acdbab89b9f66574db9582ded70268f1c">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a>
 </li>
 <li>basic_color()
 : <a class="el" href="classmn_1_1math_1_1basic__color.html#a4d7a67829184005e3af988c869621504">mn::math::basic_color&lt; T &gt;</a>
@@ -246,15 +249,19 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>basic_critical_section_timedout()
 : <a class="el" href="classmn_1_1system_1_1basic__critical__section__timedout.html#a86c5f16d3f0086deec5a6dcab7489241">mn::system::basic_critical_section_timedout</a>
 </li>
+<li>basic_deleter()
+: <a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a4f22161dbb3556b0b5ad9595fcc07eba">mn::memory::basic_deleter&lt; Type, TAllocator &gt;</a>
+, <a class="el" href="classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4.html#a7bda7693975bda17894106ec93d14a19">mn::memory::basic_deleter&lt; Type[], TAllocator &gt;</a>
+</li>
 <li>basic_deque()
 : <a class="el" href="classmn_1_1container_1_1basic__deque.html#a209915ffd1630b2fbb86ecfaae451efd">mn::container::basic_deque&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
 , <a class="el" href="classmn_1_1queue_1_1basic__deque.html#a75c101b5701afe13c1f4aa7cf21c346a">mn::queue::basic_deque</a>
 </li>
 <li>basic_deque_iterator()
-: <a class="el" href="classmn_1_1container_1_1basic__deque__iterator.html#a78c4b999023b5c27a543b286ed2cc55d">mn::container::basic_deque_iterator&lt; T, TQUEUE &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__deque__iterator.html#a2de67bf840bdc9d8b6dd9077bfb0693d">mn::container::basic_deque_iterator&lt; T, TQUEUE &gt;</a>
 </li>
 <li>basic_dgram_ip6_socket()
-: <a class="el" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ad98791f6855b40ce5ded71f523d7b59c">mn::net::basic_dgram_ip6_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ab207b82e489a9f2a0613fe474143d78a">mn::net::basic_dgram_ip6_socket</a>
 </li>
 <li>basic_dgram_ip_socket()
 : <a class="el" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#aa4c0b3a715ddfa780a673be74c94158b">mn::net::basic_dgram_ip_socket</a>
@@ -281,28 +288,28 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#ac06d29223b377507bef4fbd86d70d1c6">mn::net::basic_ip4_address</a>
 </li>
 <li>basic_ip4_endpoint()
-: <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#a87d70af562d626d611c25fa57e8ad244">mn::net::basic_ip4_endpoint</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip4__endpoint.html#a550d9cf3fa66000a13bafd29d0e8de04">mn::net::basic_ip4_endpoint</a>
 </li>
 <li>basic_ip4_socket()
-: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#a80f95e0d95b657165fbf64319d23de41">mn::net::basic_ip4_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip4__socket.html#ac5d9f0968611d83cef3dbe112c70385e">mn::net::basic_ip4_socket</a>
 </li>
 <li>basic_ip6_address()
 : <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a6aad4f1b8ec1efb8ccbeb840fd5f5f6e">mn::net::basic_ip6_address</a>
 </li>
 <li>basic_ip6_endpoint()
-: <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#a820549607b7263d2706413132b712c0b">mn::net::basic_ip6_endpoint</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip6__endpoint.html#afb6b2f267dc4c7a4bcbb395559344a25">mn::net::basic_ip6_endpoint</a>
 </li>
 <li>basic_ip6_socket()
-: <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a0e13d4847428d93a4617e9d2430fc991">mn::net::basic_ip6_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip6__socket.html#a3f81dcd23bdafc4b3be28c80a5eda2fa">mn::net::basic_ip6_socket</a>
 </li>
 <li>basic_ip_address()
 : <a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a01992d0d9ad9e596128ee23f441b5fea">mn::net::basic_ip_address</a>
 </li>
 <li>basic_ip_endpoint()
-: <a class="el" href="classmn_1_1net_1_1basic__ip__endpoint.html#a4352a47c521af6bc28b00b91aaa47924">mn::net::basic_ip_endpoint&lt; TIPCLASS, TAF &gt;</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip__endpoint.html#a4ccd488398d936dd387a283723e1155f">mn::net::basic_ip_endpoint&lt; TIPCLASS, TAF &gt;</a>
 </li>
 <li>basic_ip_socket()
-: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a31ef6f52b19daef199adae32560045fd">mn::net::basic_ip_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a526c476b4b71f81a33b61032768c37eb">mn::net::basic_ip_socket</a>
 </li>
 <li>basic_iterator_pair()
 : <a class="el" href="classmn_1_1basic__iterator__pair.html#a1f0107d5f2f3c513967628bfdd60ba74">mn::basic_iterator_pair&lt; TIterator, UIterator, TCategory &gt;</a>
@@ -317,14 +324,14 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>basic_lock_ptr()
 : <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html#ade1f32cc756832d72c316c8263b6391b">mn::pointer::basic_lock_ptr&lt; T, TLOCK &gt;</a>
 </li>
-<li>basic_mempool_vector()
-: <a class="el" href="classmn_1_1memory_1_1basic__mempool__vector.html#a0cd9cff4efc48daf553f35ded3a1d2c6">mn::memory::basic_mempool_vector&lt; TType, nElements, TMUTEX, TALLOCATOR &gt;</a>
-</li>
 <li>basic_message_task()
 : <a class="el" href="classmn_1_1ext_1_1basic__message__task.html#acfb074dc996314e5df1b276ca9c143c0">mn::ext::basic_message_task</a>
 </li>
-<li>basic_multiheap_allocator_esp32()
-: <a class="el" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a641840ff23706704d298733903fd2520">mn::memory::basic_multiheap_allocator_esp32&lt; TBytes &gt;</a>
+<li>basic_multicast_ip6_socket()
+: <a class="el" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a2a47e8c305ef058645893b616d6ff00b">mn::net::basic_multicast_ip6_socket</a>
+</li>
+<li>basic_multicast_ip_socket()
+: <a class="el" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#aca045ca492207460df188776bab54778">mn::net::basic_multicast_ip_socket</a>
 </li>
 <li>basic_mutex()
 : <a class="el" href="classmn_1_1basic__mutex.html#a00756a1b8566f4de12142987f3623f84">mn::basic_mutex</a>
@@ -333,19 +340,19 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="classmn_1_1net_1_1basic__net__if.html#ab57d07f17ac84f7fe81134226fe90562">mn::net::basic_net_if</a>
 </li>
 <li>basic_node()
-: <a class="el" href="classmn_1_1container_1_1basic__node.html#a1f6b5e891ffe0a5c3522ce9ff1152335">mn::container::basic_node&lt; T, TALLOCATOR &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__node.html#afe21db990e5ddd51c539a4bf2b81dfba">mn::container::basic_node&lt; T &gt;</a>
 </li>
 <li>basic_node_itarrator()
 : <a class="el" href="classmn_1_1container_1_1basic__node__itarrator.html#aa24754c3983f1539d7e1f29da701494d">mn::container::basic_node_itarrator&lt; TNODE &gt;</a>
 </li>
 <li>basic_node_itarrator_res()
-: <a class="el" href="classmn_1_1container_1_1basic__node__itarrator__res.html#a834b8640f3dbe8ef733749aa31f8434e">mn::container::basic_node_itarrator_res&lt; TNODE &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__node__itarrator__res.html#adfa4755414717c48d5b507d108676111">mn::container::basic_node_itarrator_res&lt; TNODE &gt;</a>
 </li>
 <li>basic_null_lock()
 : <a class="el" href="classmn_1_1basic__null__lock.html#aafcb47ce4a6d63801eb8b0b88faaf645">mn::basic_null_lock</a>
 </li>
 <li>basic_pair()
-: <a class="el" href="structmn_1_1container_1_1basic__pair.html#a0ce9392f33f2c6bfa5bb3a69d10c6f05">mn::container::basic_pair&lt; TFIRST, TSECOND &gt;</a>
+: <a class="el" href="structmn_1_1container_1_1basic__pair.html#a22ce24e45f698af5e93aae904c3d7f88">mn::container::basic_pair&lt; TFIRST, TSECOND &gt;</a>
 </li>
 <li>basic_queue()
 : <a class="el" href="classmn_1_1container_1_1basic__queue.html#a2534067d81f8eb603ba225af5ad44ca1">mn::container::basic_queue&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
@@ -358,7 +365,7 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="classmn_1_1basic__random__lfsr.html#a72a70bf9f1c27dfe9e532571dacbd5b7">mn::basic_random_lfsr</a>
 </li>
 <li>basic_raw_ip4_socket()
-: <a class="el" href="classmn_1_1net_1_1basic__raw__ip4__socket.html#a7814b7b2b9c4ed119dd011a862572830">mn::net::basic_raw_ip4_socket</a>
+: <a class="el" href="classmn_1_1net_1_1basic__raw__ip4__socket.html#ab038b6123a0fc4f4459d58264437e9ec">mn::net::basic_raw_ip4_socket</a>
 </li>
 <li>basic_raw_ip6_socket()
 : <a class="el" href="classmn_1_1net_1_1basic__raw__ip6__socket.html#aa09b723e018b40756d65a534896a079f">mn::net::basic_raw_ip6_socket</a>
@@ -367,7 +374,7 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="classmn_1_1container_1_1basic__ring__buffer.html#aa9655eb2bbf5869ccb9f613d00268617">mn::container::basic_ring_buffer&lt; T, TCAPACITY, TLOCK &gt;</a>
 </li>
 <li>basic_ring_buffer_iterator()
-: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#ae26e8b8844ae1211381d6e498bc0d503">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__ring__buffer__iterator.html#abac4c0d630b7f2d9fb6edd2b3036856d">mn::container::basic_ring_buffer_iterator&lt; T, E &gt;</a>
 </li>
 <li>basic_safe_counter()
 : <a class="el" href="classmn_1_1basic__safe__counter.html#aec2f7296faf82d9ff9c2b86c597b2da1">mn::basic_safe_counter&lt; T, TLOCK &gt;</a>
@@ -385,16 +392,16 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="classmn_1_1basic__shared__object.html#a8ffc72510eae46bb99c42e1ac4172b31">mn::basic_shared_object&lt; TOBJECT &gt;</a>
 </li>
 <li>basic_shared_ptr()
-: <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a5ff5dd6abebb871a686ba0d99b288512">mn::pointer::basic_shared_ptr&lt; T, TRefType &gt;</a>
+: <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a65159f418e8a17cb78fe3348672d9bec">mn::pointer::basic_shared_ptr&lt; T, TRefType &gt;</a>
 </li>
 <li>basic_singleton()
-: <a class="el" href="classmn_1_1basic__singleton.html#a952b0730a61f4e56926c2b78683adbdc">mn::basic_singleton&lt; T, TLOCK &gt;</a>
+: <a class="el" href="classmn_1_1basic__singleton.html#a632024dec1fcc5d18892ff9da82953fd">mn::basic_singleton&lt; T, TLOCK &gt;</a>
 </li>
 <li>basic_sorted_vector()
-: <a class="el" href="classmn_1_1container_1_1basic__sorted__vector.html#a5540886e2b4548813547120ab52c9fde">mn::container::basic_sorted_vector&lt; TKey, TValue, TAllocator, TCompare, TStorage &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__sorted__vector.html#a8b1235f290a75c2b2b28c083f811c00c">mn::container::basic_sorted_vector&lt; TKey, TValue, TAllocator, TCompare, TStorage &gt;</a>
 </li>
 <li>basic_stack()
-: <a class="el" href="classmn_1_1container_1_1basic__stack.html#ae4d02fa11455f12007e636b5e5220eed">mn::container::basic_stack&lt; TType &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__stack.html#a3a97b883074bc5f36b20ce490b326a18">mn::container::basic_stack&lt; TType &gt;</a>
 </li>
 <li>basic_stream_ip6_socket()
 : <a class="el" href="classmn_1_1net_1_1basic__stream__ip6__socket.html#aa1a6e3d67e16499062102e73c286fc21">mn::net::basic_stream_ip6_socket</a>
@@ -417,6 +424,12 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>basic_timer()
 : <a class="el" href="classmn_1_1basic__timer.html#aa1bc6371be5af32a01d591b51156a69c">mn::basic_timer</a>
 </li>
+<li>basic_timespan()
+: <a class="el" href="classmn_1_1basic__timespan.html#ab86c56497930d4051fb2f5a14d4f5a87">mn::basic_timespan</a>
+</li>
+<li>basic_timestamp()
+: <a class="el" href="classmn_1_1basic__timestamp.html#a949b87ae61871f609dd6178d3d3117d8">mn::basic_timestamp</a>
+</li>
 <li>basic_triple()
 : <a class="el" href="structmn_1_1container_1_1basic__triple.html#a008e4333d8b35540c260d778c52532be">mn::container::basic_triple&lt; TFIRST, TSECOND, TTHIRD &gt;</a>
 </li>
@@ -424,19 +437,19 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="classmn_1_1container_1_1basic__stack.html#a8ece345814bacc6f10b191883ad3a529">mn::container::basic_stack&lt; TType &gt;</a>
 </li>
 <li>basic_uuid()
-: <a class="el" href="classmn_1_1hash_1_1basic__uuid.html#ae3eaa250e9f54b4fa454d8fc859c7324">mn::hash::basic_uuid</a>
+: <a class="el" href="classmn_1_1hash_1_1basic__uuid.html#a0b2348bc6bcbac143a175b617e2addc5">mn::hash::basic_uuid</a>
 </li>
 <li>basic_vector()
-: <a class="el" href="classmn_1_1container_1_1basic__vector.html#a2704e81f4f8bdd7f1a47d36e01adbba2">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
+: <a class="el" href="classmn_1_1container_1_1basic__vector.html#acecff5b103974188e1fa41bd40d575cc">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
 </li>
 <li>basic_vector_storage()
 : <a class="el" href="structmn_1_1container_1_1basic__vector__storage.html#ae96134a00ba1de5ffa5517d79843988f">mn::container::basic_vector_storage&lt; T, TAllocator &gt;</a>
 </li>
 <li>basic_weak_ptr()
-: <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#a7c26cb770dd2c8edda49a91aaa043f57">mn::pointer::basic_weak_ptr&lt; T, TRefType &gt;</a>
+: <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html#a1c5b21e59de6e933706aebe296f80ec0">mn::pointer::basic_weak_ptr&lt; T, TRefType &gt;</a>
 </li>
 <li>basic_wifi_net_if()
-: <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#ad9612cd0a522937b2ffb4e2f391c2693">mn::net::basic_wifi_net_if</a>
+: <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a9c2642ba535b74cd1a9d58a366969fb1">mn::net::basic_wifi_net_if</a>
 </li>
 <li>basic_wifi_sta_net_if()
 : <a class="el" href="classmn_1_1net_1_1basic__wifi__sta__net__if.html#af6a22e29b923e5f87b9be0168725b02f">mn::net::basic_wifi_sta_net_if</a>
@@ -451,11 +464,13 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="classmn_1_1queue_1_1basic__work__queue__single.html#af68e738a455d6701daf1e9ab44b4d52b">mn::queue::basic_work_queue_single</a>
 </li>
 <li>begin()
-: <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc0c3b2c8aad80b683318b2ee85bb43e">mn::container::base_rb_tree&lt; TTreeTraits, TAllocator &gt;</a>
-, <a class="el" href="classmn_1_1container_1_1basic__binary__queue.html#a36a98aa87dc5a1fdd5509a96f4377c2a">mn::container::basic_binary_queue&lt; T, TITEMSIZE &gt;</a>
-, <a class="el" href="classmn_1_1container_1_1basic__deque.html#ab169394f7342be80d8ae8d55df385f20">mn::container::basic_deque&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
+: <a class="el" href="classmn_1_1buffer.html#a401e3fb319cded32226a1c7006df8530">mn::buffer&lt; TVALUE, TALLOCATOR &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc0c3b2c8aad80b683318b2ee85bb43e">mn::container::base_rb_tree&lt; TTreeTraits, TAllocator &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__binary__queue.html#acd1cc52d413cf7651d8d2fd11829b843">mn::container::basic_binary_queue&lt; T, TITEMSIZE &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__deque.html#acb84d143c4ac3684b3c4e0ec9972b7bf">mn::container::basic_deque&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__fixed__vector.html#a1a4e2e797c3f6e585cfab2f16e532a22">mn::container::basic_fixed_vector&lt; T, TCapacity, TAllocator &gt;</a>
 , <a class="el" href="classmn_1_1container_1_1basic__list.html#a98725a83f3d9139b4623471a178503da">mn::container::basic_list&lt; T, TAllocator &gt;</a>
-, <a class="el" href="classmn_1_1container_1_1basic__node.html#acc3d33b8c159614d2df848539d43f4f5">mn::container::basic_node&lt; T, TALLOCATOR &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__node.html#aa8ba5fc92c1305ce2f2386ac65d9a2b3">mn::container::basic_node&lt; T &gt;</a>
 , <a class="el" href="classmn_1_1container_1_1basic__queue.html#af2ecd73272b01adfc8984e5065eac43e">mn::container::basic_queue&lt; T, TMAXITEMS, TITEMSIZE &gt;</a>
 , <a class="el" href="classmn_1_1container_1_1basic__ring__buffer.html#a812711bf59a51352b358afd276d67c02">mn::container::basic_ring_buffer&lt; T, TCAPACITY, TLOCK &gt;</a>
 , <a class="el" href="classmn_1_1container_1_1basic__sorted__vector.html#a1a4e2e797c3f6e585cfab2f16e532a22">mn::container::basic_sorted_vector&lt; TKey, TValue, TAllocator, TCompare, TStorage &gt;</a>
@@ -473,6 +488,9 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 </li>
 <li>buff
 : <a class="el" href="namespacemn.html#a066dc7792e927089a95e46f4eda3de76">mn::aligned_storage_t&lt; size, align &gt;</a>
+</li>
+<li>buffer()
+: <a class="el" href="classmn_1_1buffer.html#a3b6e532ae020aa2cb1954341eacfa670">mn::buffer&lt; TVALUE, TALLOCATOR &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

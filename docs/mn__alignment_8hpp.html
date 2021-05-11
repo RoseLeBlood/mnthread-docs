@@ -148,6 +148,10 @@ $(document).ready(function(){initNavTree('mn__alignment_8hpp.html',''); initResi
 <div class="contents">
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdalign.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="mn__nlz_8hpp_source.html">mn_nlz.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__typetraits_8hpp_source.html">../mn_typetraits.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__def_8hpp_source.html">../mn_def.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__alignment_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -171,8 +175,68 @@ Classes</h2></td></tr>
 <tr class="separator:structmn_1_1internal_1_1type__with__alignment_3_0116_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1internal_1_1type__with__alignment_3_0132_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_0132_01_4">mn::internal::type_with_alignment&lt; 32 &gt;</a></td></tr>
 <tr class="separator:structmn_1_1internal_1_1type__with__alignment_3_0132_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1aligof.html">mn::aligof&lt; T &gt;</a></td></tr>
+<tr class="memitem:structmn_1_1internal_1_1type__with__alignment_3_0164_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_0164_01_4">mn::internal::type_with_alignment&lt; 64 &gt;</a></td></tr>
+<tr class="separator:structmn_1_1internal_1_1type__with__alignment_3_0164_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unionmn_1_1internal_1_1max__align"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#unionmn_1_1internal_1_1max__align">mn::internal::max_align</a></td></tr>
+<tr class="separator:unionmn_1_1internal_1_1max__align"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1is__pod_3_01internal_1_1aligned0_01_4.html">mn::is_pod&lt; internal::aligned0 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1is__pod_3_01internal_1_1aligned1_01_4.html">mn::is_pod&lt; internal::aligned1 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1is__pod_3_01internal_1_1aligned2_01_4.html">mn::is_pod&lt; internal::aligned2 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1is__pod_3_01internal_1_1aligned4_01_4.html">mn::is_pod&lt; internal::aligned4 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1is__pod_3_01internal_1_1aligned8_01_4.html">mn::is_pod&lt; internal::aligned8 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1is__pod_3_01internal_1_1aligned16_01_4.html">mn::is_pod&lt; internal::aligned16 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1is__pod_3_01internal_1_1aligned32_01_4.html">mn::is_pod&lt; internal::aligned32 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1is__pod_3_01internal_1_1aligned64_01_4.html">mn::is_pod&lt; internal::aligned64 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1alignment__of.html">mn::alignment_of&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1alignment__of_3_01void_01_4.html">mn::alignment_of&lt; void &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1alignment__of_3_01void_01const_01_4.html">mn::alignment_of&lt; void const &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1alignment__of_3_01void_01const_01volatile_01_4.html">mn::alignment_of&lt; void const volatile &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1alignment__of_3_01void_01volatile_01_4.html">mn::alignment_of&lt; void volatile &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1aligned__storage"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1aligned__storage">mn::aligned_storage&lt; Len, Align &gt;</a></td></tr>
+<tr class="separator:structmn_1_1aligned__storage"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1aligned__storage_1_1type"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1aligned__storage_1_1type">mn::aligned_storage&lt; Len, Align &gt;::type</a></td></tr>
+<tr class="separator:structmn_1_1aligned__storage_1_1type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1long__double__alignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1long__double__alignment">mn::long_double_alignment&lt; Target, check &gt;</a></td></tr>
+<tr class="separator:structmn_1_1long__double__alignment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1long__double__alignment_3_01Target_00_01false_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1long__double__alignment_3_01Target_00_01false_01_4">mn::long_double_alignment&lt; Target, false &gt;</a></td></tr>
+<tr class="separator:structmn_1_1long__double__alignment_3_01Target_00_01false_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1double__alignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1double__alignment">mn::double_alignment&lt; Target, check &gt;</a></td></tr>
+<tr class="separator:structmn_1_1double__alignment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1double__alignment_3_01Target_00_01false_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1double__alignment_3_01Target_00_01false_01_4">mn::double_alignment&lt; Target, false &gt;</a></td></tr>
+<tr class="separator:structmn_1_1double__alignment_3_01Target_00_01false_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1long__long__alignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1long__long__alignment">mn::long_long_alignment&lt; Target, check &gt;</a></td></tr>
+<tr class="separator:structmn_1_1long__long__alignment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1long__long__alignment_3_01Target_00_01false_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1long__long__alignment_3_01Target_00_01false_01_4">mn::long_long_alignment&lt; Target, false &gt;</a></td></tr>
+<tr class="separator:structmn_1_1long__long__alignment_3_01Target_00_01false_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1long__alignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1long__alignment">mn::long_alignment&lt; Target, check &gt;</a></td></tr>
+<tr class="separator:structmn_1_1long__alignment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1long__alignment_3_01Target_00_01false_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1long__alignment_3_01Target_00_01false_01_4">mn::long_alignment&lt; Target, false &gt;</a></td></tr>
+<tr class="separator:structmn_1_1long__alignment_3_01Target_00_01false_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1int__alignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1int__alignment">mn::int_alignment&lt; Target, check &gt;</a></td></tr>
+<tr class="separator:structmn_1_1int__alignment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1int__alignment_3_01Target_00_01false_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1int__alignment_3_01Target_00_01false_01_4">mn::int_alignment&lt; Target, false &gt;</a></td></tr>
+<tr class="separator:structmn_1_1int__alignment_3_01Target_00_01false_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1short__alignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1short__alignment">mn::short_alignment&lt; Target, check &gt;</a></td></tr>
+<tr class="separator:structmn_1_1short__alignment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1short__alignment_3_01Target_00_01false_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1short__alignment_3_01Target_00_01false_01_4">mn::short_alignment&lt; Target, false &gt;</a></td></tr>
+<tr class="separator:structmn_1_1short__alignment_3_01Target_00_01false_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1char__alignment"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1char__alignment">mn::char_alignment&lt; Target, check &gt;</a></td></tr>
+<tr class="separator:structmn_1_1char__alignment"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1char__alignment_3_01Target_00_01false_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1char__alignment_3_01Target_00_01false_01_4">mn::char_alignment&lt; Target, false &gt;</a></td></tr>
+<tr class="separator:structmn_1_1char__alignment_3_01Target_00_01false_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1aligned__as"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#structmn_1_1aligned__as">mn::aligned_as&lt; T &gt;</a></td></tr>
 <tr class="separator:structmn_1_1aligned__as"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -185,10 +249,46 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9e46df3bf73a8371cc6a85ebbb007869"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a9e46df3bf73a8371cc6a85ebbb007869">mn::internal::__attribute__</a> ((aligned(32))) aligned32</td></tr>
-<tr class="separator:a9e46df3bf73a8371cc6a85ebbb007869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e66406c3e9e7bbe2d29d27139f9f8c1"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a9e66406c3e9e7bbe2d29d27139f9f8c1">mn::internal::__attribute__</a> ((aligned(0))) aligned0</td></tr>
+<tr class="separator:a9e66406c3e9e7bbe2d29d27139f9f8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215f21f1be646c21e53ea193ddd03ecc"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a215f21f1be646c21e53ea193ddd03ecc">mn::internal::__attribute__</a> ((aligned(1))) aligned1</td></tr>
+<tr class="separator:a215f21f1be646c21e53ea193ddd03ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5f79bf34ecf986903266d7fbb34731"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#acd5f79bf34ecf986903266d7fbb34731">mn::internal::__attribute__</a> ((aligned(2))) aligned2</td></tr>
+<tr class="separator:acd5f79bf34ecf986903266d7fbb34731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0261cc29a46b9d2bc843323cb386261b"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a0261cc29a46b9d2bc843323cb386261b">mn::internal::__attribute__</a> ((aligned(4))) aligned4</td></tr>
+<tr class="separator:a0261cc29a46b9d2bc843323cb386261b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0d7757d8123c9cb392fa93821f05a4"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#abc0d7757d8123c9cb392fa93821f05a4">mn::internal::__attribute__</a> ((aligned(8))) aligned8</td></tr>
+<tr class="separator:abc0d7757d8123c9cb392fa93821f05a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f18691df902accab88bc23855f12d54"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a2f18691df902accab88bc23855f12d54">mn::internal::__attribute__</a> ((aligned(16))) aligned16</td></tr>
 <tr class="separator:a2f18691df902accab88bc23855f12d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e46df3bf73a8371cc6a85ebbb007869"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a9e46df3bf73a8371cc6a85ebbb007869">mn::internal::__attribute__</a> ((aligned(32))) aligned32</td></tr>
+<tr class="separator:a9e46df3bf73a8371cc6a85ebbb007869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a2f200578bcd9240b7c78f53b71320"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#ac3a2f200578bcd9240b7c78f53b71320">mn::internal::__attribute__</a> ((aligned(64))) aligned64</td></tr>
+<tr class="separator:ac3a2f200578bcd9240b7c78f53b71320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ffe9a28d76ff5923fed2187fce4cfa"><td class="memTemplParams" colspan="2">template&lt;class integral &gt; </td></tr>
+<tr class="memitem:ac9ffe9a28d76ff5923fed2187fce4cfa"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#ac9ffe9a28d76ff5923fed2187fce4cfa">mn::is_aligned</a> (integral x, size_t a) noexcept</td></tr>
+<tr class="separator:ac9ffe9a28d76ff5923fed2187fce4cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22de0375a0ee48bd1e60fd734ff3a45b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a22de0375a0ee48bd1e60fd734ff3a45b">mn::is_aligned</a> (const volatile void *p, size_t a)</td></tr>
+<tr class="separator:a22de0375a0ee48bd1e60fd734ff3a45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068bfe92fabc5663e3ba8c94b1bb2f09"><td class="memTemplParams" colspan="2">template&lt;class integral &gt; </td></tr>
+<tr class="memitem:a068bfe92fabc5663e3ba8c94b1bb2f09"><td class="memTemplItemLeft" align="right" valign="top">constexpr integral&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a068bfe92fabc5663e3ba8c94b1bb2f09">mn::align_up</a> (integral x, size_t a) noexcept</td></tr>
+<tr class="separator:a068bfe92fabc5663e3ba8c94b1bb2f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3135bb6df6ff55a7d6032e3fc9227b7c"><td class="memTemplParams" colspan="2">template&lt;class pointer &gt; </td></tr>
+<tr class="memitem:a3135bb6df6ff55a7d6032e3fc9227b7c"><td class="memTemplItemLeft" align="right" valign="top">pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a3135bb6df6ff55a7d6032e3fc9227b7c">mn::align_up_ptr</a> (pointer p, size_t a)</td></tr>
+<tr class="separator:a3135bb6df6ff55a7d6032e3fc9227b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4388713d51227be4114928c2193f004"><td class="memTemplParams" colspan="2">template&lt;class integral &gt; </td></tr>
+<tr class="memitem:aa4388713d51227be4114928c2193f004"><td class="memTemplItemLeft" align="right" valign="top">constexpr integral&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#aa4388713d51227be4114928c2193f004">mn::align_down</a> (integral x, size_t a) noexcept</td></tr>
+<tr class="separator:aa4388713d51227be4114928c2193f004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc7f7f22c4162a3ee744d6ac10b60ad"><td class="memTemplParams" colspan="2">template&lt;class pointer &gt; </td></tr>
+<tr class="memitem:affc7f7f22c4162a3ee744d6ac10b60ad"><td class="memTemplItemLeft" align="right" valign="top">pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#affc7f7f22c4162a3ee744d6ac10b60ad">mn::align_down_ptr</a> (pointer p, size_t a)</td></tr>
+<tr class="separator:affc7f7f22c4162a3ee744d6ac10b60ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b48a7585374e88501f0ec599792a5b9"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a3b48a7585374e88501f0ec599792a5b9">mn::is_aligvalid</a> (size_t alignment) noexcept</td></tr>
+<tr class="memdesc:a3b48a7585374e88501f0ec599792a5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">is a valid alignment, i.e. a power of two not zero  <a href="namespacemn.html#a3b48a7585374e88501f0ec599792a5b9">More...</a><br /></td></tr>
+<tr class="separator:a3b48a7585374e88501f0ec599792a5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4c89a53ce48ae6d8a2b2f8eb899d8e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9a4c89a53ce48ae6d8a2b2f8eb899d8e">mn::alig_offset</a> (void *address, size_t alignment) noexcept</td></tr>
+<tr class="separator:a9a4c89a53ce48ae6d8a2b2f8eb899d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c21535710f86305aa22b79078e3bf4c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a8c21535710f86305aa22b79078e3bf4c">mn::alignment_for</a> (const size_t size) noexcept</td></tr>
+<tr class="separator:a8c21535710f86305aa22b79078e3bf4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="structmn_1_1internal_1_1alignof__helper" id="structmn_1_1internal_1_1alignof__helper"></a>
@@ -260,7 +360,16 @@ err_invalid_alignment</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"></div>
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a5822f61b9a3ae820d73ef031bb55ec67"></a>aligned0</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
 </div>
 </div>
 <a name="structmn_1_1internal_1_1type__with__alignment_3_011_01_4" id="structmn_1_1internal_1_1type__with__alignment_3_011_01_4"></a>
@@ -277,9 +386,9 @@ err_invalid_alignment</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="aacb93e220fcf39d2928c90c5465a43b9"></a>uint8_t</td>
+<a id="a280501d82d06ac046577b36d62124f34"></a>aligned1</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -300,9 +409,9 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a40ef80e3672d38075c393348d8731ea7"></a>uint16_t</td>
+<a id="ac66c3fe12090b02c8001821055355efb"></a>aligned2</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -323,9 +432,9 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a8d2a1e7d0b39a2931c6dbc2883e836f9"></a>uint32_t</td>
+<a id="a7709f7899d835c81ff223af566f6ae80"></a>aligned4</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -346,9 +455,9 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a58e510d536930d4fe1d8212382a50664"></a>uint64_t</td>
+<a id="a79a368b971f56e123423809944b99d4d"></a>aligned8</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -369,9 +478,9 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a031ba1c303462a0719574ae6295c3eb0"></a>aligned16</td>
+<a id="a439d85fbe2e0597a23cb59f3892e7a85"></a>aligned16</td>
 <td class="fieldname">
-member</td>
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -392,9 +501,498 @@ member</td>
 <div class="textblock"></div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="aedb8ff3aa00fa0b4ac08c702f2f92b52"></a>aligned32</td>
+<a id="a8b1fc06e3835e16f6ffd10faf1859dbe"></a>aligned32</td>
 <td class="fieldname">
-member</td>
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1internal_1_1type__with__alignment_3_0164_01_4" id="structmn_1_1internal_1_1type__with__alignment_3_0164_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1internal_1_1type__with__alignment_3_0164_01_4">&#9670;&nbsp;</a></span>mn::internal::type_with_alignment&lt; 64 &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::type_with_alignment&lt; 64 &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a6032545d0a11b31e05d9e99eee6c3d8b"></a>aligned64</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="unionmn_1_1internal_1_1max__align" id="unionmn_1_1internal_1_1max__align"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#unionmn_1_1internal_1_1max__align">&#9670;&nbsp;</a></span>mn::internal::max_align</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union mn::internal::max_align</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a697a1dbdd86de67b5689573c060d12ce"></a>char</td>
+<td class="fieldname">
+c</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a55718b491ab1d5fe5ca81a60e178ec95"></a>double</td>
+<td class="fieldname">
+d</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a5676ed6ec7954b3740d0e3285fa99752"></a>float</td>
+<td class="fieldname">
+f</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a60d4e63a1c354ab51bf84dbafe91f27f"></a>int</td>
+<td class="fieldname">
+i</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="aa20691c7c8d53993946e1f13eccfa31e"></a>long</td>
+<td class="fieldname">
+l</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a87c217669c7512be5607657c9226eb0d"></a>long long</td>
+<td class="fieldname">
+ll</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3506ad5e10521d4ee202093f7d961c6b"></a>short</td>
+<td class="fieldname">
+s</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1aligned__storage" id="structmn_1_1aligned__storage"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1aligned__storage">&#9670;&nbsp;</a></span>mn::aligned_storage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::aligned_storage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Len, size_t Align&gt;<br />
+struct mn::aligned_storage&lt; Len, Align &gt;</h3>
+
+</div>
+</div>
+</div>
+<a name="structmn_1_1aligned__storage_1_1type" id="structmn_1_1aligned__storage_1_1type"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1aligned__storage_1_1type">&#9670;&nbsp;</a></span>mn::aligned_storage::type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::aligned_storage::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Len, size_t Align&gt;<br />
+struct mn::aligned_storage&lt; Len, Align &gt;::type</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a0a2288d2eff4c38ab4bce68a8822216c"></a>unsigned char</td>
+<td class="fieldname">
+data[Len]</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1long__double__alignment" id="structmn_1_1long__double__alignment"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1long__double__alignment">&#9670;&nbsp;</a></span>mn::long_double_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::long_double_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target, bool check&gt;<br />
+struct mn::long_double_alignment&lt; Target, check &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a880aa73f1b6f5af053ad7a904d6cdbb6"></a>typedef long double</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1long__double__alignment_3_01Target_00_01false_01_4" id="structmn_1_1long__double__alignment_3_01Target_00_01false_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1long__double__alignment_3_01Target_00_01false_01_4">&#9670;&nbsp;</a></span>mn::long_double_alignment&lt; Target, false &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::long_double_alignment&lt; Target, false &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target&gt;<br />
+struct mn::long_double_alignment&lt; Target, false &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a94f89aa87fa5bdd84388eee58e9cc2ab"></a>typedef max_align</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1double__alignment" id="structmn_1_1double__alignment"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1double__alignment">&#9670;&nbsp;</a></span>mn::double_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::double_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target, bool check&gt;<br />
+struct mn::double_alignment&lt; Target, check &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a80b5283573942e1ebd033fbf7358e192"></a>typedef double</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1double__alignment_3_01Target_00_01false_01_4" id="structmn_1_1double__alignment_3_01Target_00_01false_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1double__alignment_3_01Target_00_01false_01_4">&#9670;&nbsp;</a></span>mn::double_alignment&lt; Target, false &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::double_alignment&lt; Target, false &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target&gt;<br />
+struct mn::double_alignment&lt; Target, false &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="aff3065059d6922dd33bdd3424a1f9733"></a>typedef typename <a class="el" href="namespacemn.html#structmn_1_1long__double__alignment">long_double_alignment</a>&lt; Target, <a class="el" href="structmn_1_1alignment__of.html">alignment_of</a>&lt; long double &gt;::res &gt;=Target &gt;::<a class="el" href="namespacemn.html#aff3065059d6922dd33bdd3424a1f9733">type</a></td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1long__long__alignment" id="structmn_1_1long__long__alignment"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1long__long__alignment">&#9670;&nbsp;</a></span>mn::long_long_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::long_long_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target, bool check&gt;<br />
+struct mn::long_long_alignment&lt; Target, check &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a64d22b1fa9a35c40918118f4386c8875"></a>typedef long long</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1long__long__alignment_3_01Target_00_01false_01_4" id="structmn_1_1long__long__alignment_3_01Target_00_01false_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1long__long__alignment_3_01Target_00_01false_01_4">&#9670;&nbsp;</a></span>mn::long_long_alignment&lt; Target, false &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::long_long_alignment&lt; Target, false &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target&gt;<br />
+struct mn::long_long_alignment&lt; Target, false &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a9766cf66e62738ca68234f2b4e0b52e5"></a>typedef typename <a class="el" href="namespacemn.html#structmn_1_1double__alignment">double_alignment</a>&lt; Target, <a class="el" href="structmn_1_1alignment__of.html">alignment_of</a>&lt; double &gt;::res &gt;=Target &gt;::<a class="el" href="namespacemn.html#a9766cf66e62738ca68234f2b4e0b52e5">type</a></td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1long__alignment" id="structmn_1_1long__alignment"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1long__alignment">&#9670;&nbsp;</a></span>mn::long_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::long_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target, bool check&gt;<br />
+struct mn::long_alignment&lt; Target, check &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="adb21e17071252ccf92964344add8a23b"></a>typedef long</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1long__alignment_3_01Target_00_01false_01_4" id="structmn_1_1long__alignment_3_01Target_00_01false_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1long__alignment_3_01Target_00_01false_01_4">&#9670;&nbsp;</a></span>mn::long_alignment&lt; Target, false &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::long_alignment&lt; Target, false &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target&gt;<br />
+struct mn::long_alignment&lt; Target, false &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a787743f9070719abb2f2d19e928f9ba3"></a>typedef typename <a class="el" href="namespacemn.html#structmn_1_1long__long__alignment">long_long_alignment</a>&lt; Target, <a class="el" href="structmn_1_1alignment__of.html">alignment_of</a>&lt; long long &gt;::res &gt;=Target &gt;::<a class="el" href="namespacemn.html#a787743f9070719abb2f2d19e928f9ba3">type</a></td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1int__alignment" id="structmn_1_1int__alignment"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1int__alignment">&#9670;&nbsp;</a></span>mn::int_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::int_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target, bool check&gt;<br />
+struct mn::int_alignment&lt; Target, check &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a080f35ec0a430b41a4a5b2bbb78152b7"></a>typedef int</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1int__alignment_3_01Target_00_01false_01_4" id="structmn_1_1int__alignment_3_01Target_00_01false_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1int__alignment_3_01Target_00_01false_01_4">&#9670;&nbsp;</a></span>mn::int_alignment&lt; Target, false &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::int_alignment&lt; Target, false &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target&gt;<br />
+struct mn::int_alignment&lt; Target, false &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a59a240a3f8d31dfca1694f93c0c25ee6"></a>typedef typename <a class="el" href="namespacemn.html#structmn_1_1long__alignment">long_alignment</a>&lt; Target, <a class="el" href="structmn_1_1alignment__of.html">alignment_of</a>&lt; long &gt;::res &gt;=Target &gt;::<a class="el" href="namespacemn.html#a59a240a3f8d31dfca1694f93c0c25ee6">type</a></td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1short__alignment" id="structmn_1_1short__alignment"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1short__alignment">&#9670;&nbsp;</a></span>mn::short_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::short_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target, bool check&gt;<br />
+struct mn::short_alignment&lt; Target, check &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="aa79624ca671a3d5c19e49d78c2b8deff"></a>typedef short</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1short__alignment_3_01Target_00_01false_01_4" id="structmn_1_1short__alignment_3_01Target_00_01false_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1short__alignment_3_01Target_00_01false_01_4">&#9670;&nbsp;</a></span>mn::short_alignment&lt; Target, false &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::short_alignment&lt; Target, false &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target&gt;<br />
+struct mn::short_alignment&lt; Target, false &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a31c485bb5bad58a0e9fdd7300dff2f14"></a>typedef typename <a class="el" href="namespacemn.html#structmn_1_1int__alignment">int_alignment</a>&lt; Target, <a class="el" href="structmn_1_1alignment__of.html">alignment_of</a>&lt; int &gt;::res &gt;=Target &gt;::<a class="el" href="namespacemn.html#a31c485bb5bad58a0e9fdd7300dff2f14">type</a></td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1char__alignment" id="structmn_1_1char__alignment"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1char__alignment">&#9670;&nbsp;</a></span>mn::char_alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::char_alignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target, bool check&gt;<br />
+struct mn::char_alignment&lt; Target, check &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="aa912ff4e9a875e06bb3823e6bb4c7477"></a>typedef char</td>
+<td class="fieldname">
+type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1char__alignment_3_01Target_00_01false_01_4" id="structmn_1_1char__alignment_3_01Target_00_01false_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1char__alignment_3_01Target_00_01false_01_4">&#9670;&nbsp;</a></span>mn::char_alignment&lt; Target, false &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::char_alignment&lt; Target, false &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;size_t Target&gt;<br />
+struct mn::char_alignment&lt; Target, false &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a4efe4e249064b8ae518f29969ee6aaa7"></a>typedef typename <a class="el" href="namespacemn.html#structmn_1_1short__alignment">short_alignment</a>&lt; Target, <a class="el" href="structmn_1_1alignment__of.html">alignment_of</a>&lt; short &gt;::res &gt;=Target &gt;::<a class="el" href="namespacemn.html#a4efe4e249064b8ae518f29969ee6aaa7">type</a></td>
+<td class="fieldname">
+type</td>
 <td class="fielddoc">
 </td></tr>
 </table>
@@ -418,7 +1016,7 @@ struct mn::aligned_as&lt; T &gt;</h3>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="a2c7f0a7e8b7d66efa96910daa3ee3419"></a>typedef typename type_with_alignment&lt; <a class="el" href="structmn_1_1aligof.html">aligof</a>&lt; T &gt;::<a class="el" href="namespacemn.html#a2c7f0a7e8b7d66efa96910daa3ee3419">res</a> &gt;</td>
+<a id="ac529c3bee99de8ed32ab60ed9e16bf33"></a>typedef typename type_with_alignment&lt; <a class="el" href="structmn_1_1alignment__of.html">alignment_of</a>&lt; T &gt;::<a class="el" href="namespacemn.html#ac529c3bee99de8ed32ab60ed9e16bf33">res</a> &gt;</td>
 <td class="fieldname">
 res</td>
 <td class="fielddoc">

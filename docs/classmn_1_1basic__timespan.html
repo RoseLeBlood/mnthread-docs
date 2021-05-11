@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::basic_timespan Class Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1basic__timespan.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1basic__timespan-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::basic_timespan Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class represents a time span (using microseconds)  
+ <a href="classmn_1_1basic__timespan.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__basic__timespan_8hpp_source.html">mn_basic_timespan.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aeb4ee89d8c462a6bd8366c8ae029f3b4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> = int64_t</td></tr>
+<tr class="separator:aeb4ee89d8c462a6bd8366c8ae029f3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1cd7a763ece4208863ece607860057"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">int_type</a> = uint64_t</td></tr>
+<tr class="separator:a8c1cd7a763ece4208863ece607860057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a252886ba7eed5a0577a29fa079dd1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> = <a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a></td></tr>
+<tr class="separator:a04a252886ba7eed5a0577a29fa079dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a391b3c6fd6161adf5c55b3adc1012dd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a391b3c6fd6161adf5c55b3adc1012dd1">basic_timespan</a> ()</td></tr>
+<tr class="memdesc:a391b3c6fd6161adf5c55b3adc1012dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span and initializes it to zero.  <a href="classmn_1_1basic__timespan.html#a391b3c6fd6161adf5c55b3adc1012dd1">More...</a><br /></td></tr>
+<tr class="separator:a391b3c6fd6161adf5c55b3adc1012dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496aca54b23b7ff4c5166c9b2169aaad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a496aca54b23b7ff4c5166c9b2169aaad">basic_timespan</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> ms)</td></tr>
+<tr class="memdesc:a496aca54b23b7ff4c5166c9b2169aaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span and initializes it with the given value.  <a href="classmn_1_1basic__timespan.html#a496aca54b23b7ff4c5166c9b2169aaad">More...</a><br /></td></tr>
+<tr class="separator:a496aca54b23b7ff4c5166c9b2169aaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ea996eb69382fc11c6eec9b47b7a1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a35ea996eb69382fc11c6eec9b47b7a1a">basic_timespan</a> (struct timeval val)</td></tr>
+<tr class="memdesc:a35ea996eb69382fc11c6eec9b47b7a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span and initializes it with the given timeval.  <a href="classmn_1_1basic__timespan.html#a35ea996eb69382fc11c6eec9b47b7a1a">More...</a><br /></td></tr>
+<tr class="separator:a35ea996eb69382fc11c6eec9b47b7a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a79a6a9316bfa648a0de64ae5a229e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ad3a79a6a9316bfa648a0de64ae5a229e">basic_timespan</a> (uint16_t days, uint8_t hours, uint8_t minutes, uint8_t seconds, uint16_t microSeconds=0)</td></tr>
+<tr class="memdesc:ad3a79a6a9316bfa648a0de64ae5a229e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span and initializes it the given values.  <a href="classmn_1_1basic__timespan.html#ad3a79a6a9316bfa648a0de64ae5a229e">More...</a><br /></td></tr>
+<tr class="separator:ad3a79a6a9316bfa648a0de64ae5a229e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86c56497930d4051fb2f5a14d4f5a87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ab86c56497930d4051fb2f5a14d4f5a87">basic_timespan</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;other)</td></tr>
+<tr class="memdesc:ab86c56497930d4051fb2f5a14d4f5a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span from another time span.  <a href="classmn_1_1basic__timespan.html#ab86c56497930d4051fb2f5a14d4f5a87">More...</a><br /></td></tr>
+<tr class="separator:ab86c56497930d4051fb2f5a14d4f5a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570af4f2d319aa6d53319d32be614776"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a570af4f2d319aa6d53319d32be614776">get_days</a> () const</td></tr>
+<tr class="memdesc:a570af4f2d319aa6d53319d32be614776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of days.  <a href="classmn_1_1basic__timespan.html#a570af4f2d319aa6d53319d32be614776">More...</a><br /></td></tr>
+<tr class="separator:a570af4f2d319aa6d53319d32be614776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774658a09db912efca84ef901e5dc7e5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a774658a09db912efca84ef901e5dc7e5">get_hours</a> () const</td></tr>
+<tr class="memdesc:a774658a09db912efca84ef901e5dc7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of (0 to 23) hours.  <a href="classmn_1_1basic__timespan.html#a774658a09db912efca84ef901e5dc7e5">More...</a><br /></td></tr>
+<tr class="separator:a774658a09db912efca84ef901e5dc7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab818e11f8b8f0e9855933edab31a7432"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ab818e11f8b8f0e9855933edab31a7432">get_minutes</a> () const</td></tr>
+<tr class="memdesc:ab818e11f8b8f0e9855933edab31a7432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of (0 to 59) minutes.  <a href="classmn_1_1basic__timespan.html#ab818e11f8b8f0e9855933edab31a7432">More...</a><br /></td></tr>
+<tr class="separator:ab818e11f8b8f0e9855933edab31a7432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1798338a2674c4a702b8085b42d06679"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a1798338a2674c4a702b8085b42d06679">get_seconds</a> () const</td></tr>
+<tr class="memdesc:a1798338a2674c4a702b8085b42d06679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of (0 to 59) seconds.  <a href="classmn_1_1basic__timespan.html#a1798338a2674c4a702b8085b42d06679">More...</a><br /></td></tr>
+<tr class="separator:a1798338a2674c4a702b8085b42d06679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ff9392c1dcd9b4ca8fbb16ee525f6a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#af9ff9392c1dcd9b4ca8fbb16ee525f6a">get_milliseconds</a> () const</td></tr>
+<tr class="memdesc:af9ff9392c1dcd9b4ca8fbb16ee525f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of milliseconds.  <a href="classmn_1_1basic__timespan.html#af9ff9392c1dcd9b4ca8fbb16ee525f6a">More...</a><br /></td></tr>
+<tr class="separator:af9ff9392c1dcd9b4ca8fbb16ee525f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ffa312fd375582fba0ad6f1a0bb7e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">int_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a78ffa312fd375582fba0ad6f1a0bb7e0">get_microseconds</a> () const</td></tr>
+<tr class="memdesc:a78ffa312fd375582fba0ad6f1a0bb7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of microseconds.  <a href="classmn_1_1basic__timespan.html#a78ffa312fd375582fba0ad6f1a0bb7e0">More...</a><br /></td></tr>
+<tr class="separator:a78ffa312fd375582fba0ad6f1a0bb7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3d72c3d4b1f529365fdbbd0c4aa54ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">int_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ac3d72c3d4b1f529365fdbbd0c4aa54ad">get_total_hours</a> () const</td></tr>
+<tr class="memdesc:ac3d72c3d4b1f529365fdbbd0c4aa54ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of hours.  <a href="classmn_1_1basic__timespan.html#ac3d72c3d4b1f529365fdbbd0c4aa54ad">More...</a><br /></td></tr>
+<tr class="separator:ac3d72c3d4b1f529365fdbbd0c4aa54ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5122e44dd2824c1eaa6fd7548ca267a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">int_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ac5122e44dd2824c1eaa6fd7548ca267a">get_total_minutes</a> () const</td></tr>
+<tr class="memdesc:ac5122e44dd2824c1eaa6fd7548ca267a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of minutes.  <a href="classmn_1_1basic__timespan.html#ac5122e44dd2824c1eaa6fd7548ca267a">More...</a><br /></td></tr>
+<tr class="separator:ac5122e44dd2824c1eaa6fd7548ca267a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b56ebc686a2243ee11c0c3013291fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">int_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a13b56ebc686a2243ee11c0c3013291fc">get_total_seconds</a> () const</td></tr>
+<tr class="memdesc:a13b56ebc686a2243ee11c0c3013291fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of seconds.  <a href="classmn_1_1basic__timespan.html#a13b56ebc686a2243ee11c0c3013291fc">More...</a><br /></td></tr>
+<tr class="separator:a13b56ebc686a2243ee11c0c3013291fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1fd8802beffef048af1cb0d96cbe84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#acc1fd8802beffef048af1cb0d96cbe84">get_total_milliseconds</a> () const</td></tr>
+<tr class="memdesc:acc1fd8802beffef048af1cb0d96cbe84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of milliseconds.  <a href="classmn_1_1basic__timespan.html#acc1fd8802beffef048af1cb0d96cbe84">More...</a><br /></td></tr>
+<tr class="separator:acc1fd8802beffef048af1cb0d96cbe84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4021534d902bdf7cb32157ff802c8e26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a4021534d902bdf7cb32157ff802c8e26">operator=</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;timespan)</td></tr>
+<tr class="separator:a4021534d902bdf7cb32157ff802c8e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b988bbacd310575ce3bcf9dd64a190"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a08b988bbacd310575ce3bcf9dd64a190">operator=</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> microseconds)</td></tr>
+<tr class="separator:a08b988bbacd310575ce3bcf9dd64a190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacaf4d0f9c0e20f6b9dd332df82198fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#aacaf4d0f9c0e20f6b9dd332df82198fd">operator=</a> (struct timeval val)</td></tr>
+<tr class="separator:aacaf4d0f9c0e20f6b9dd332df82198fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485b716e1d53d13a2859f6136dd49ec6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a485b716e1d53d13a2859f6136dd49ec6">operator==</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a485b716e1d53d13a2859f6136dd49ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36426bee670e720a7ec6dd22f7537460"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a36426bee670e720a7ec6dd22f7537460">operator==</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> microSeconds) const</td></tr>
+<tr class="separator:a36426bee670e720a7ec6dd22f7537460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ccd1a64c9f6b6369b9e97f58a212187"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a6ccd1a64c9f6b6369b9e97f58a212187">operator!=</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a6ccd1a64c9f6b6369b9e97f58a212187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf479ec17ce7834fdff930346ed4452"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#adaf479ec17ce7834fdff930346ed4452">operator!=</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> microSeconds) const</td></tr>
+<tr class="separator:adaf479ec17ce7834fdff930346ed4452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592908b287754d2cc9c059734ba9a44a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a592908b287754d2cc9c059734ba9a44a">operator&gt;</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a592908b287754d2cc9c059734ba9a44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0be235044d9b721cd7a3b752772b4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a2b0be235044d9b721cd7a3b752772b4a">operator&gt;</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> microSeconds) const</td></tr>
+<tr class="separator:a2b0be235044d9b721cd7a3b752772b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd39d7d7cb0c4d342116cbb449a62e19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#acd39d7d7cb0c4d342116cbb449a62e19">operator&gt;=</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:acd39d7d7cb0c4d342116cbb449a62e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1dec687af63e1aa8d3014992b66aa5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a0b1dec687af63e1aa8d3014992b66aa5">operator&gt;=</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> microSeconds) const</td></tr>
+<tr class="separator:a0b1dec687af63e1aa8d3014992b66aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65b43786477afa6dc44ce4feb18d95c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ab65b43786477afa6dc44ce4feb18d95c">operator&lt;</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:ab65b43786477afa6dc44ce4feb18d95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f5e271eef483bde641281d851c2818"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a77f5e271eef483bde641281d851c2818">operator&lt;</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> microSeconds) const</td></tr>
+<tr class="separator:a77f5e271eef483bde641281d851c2818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b4e3ecb0ffb38630326a0b975db3f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a79b4e3ecb0ffb38630326a0b975db3f6">operator&lt;=</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a79b4e3ecb0ffb38630326a0b975db3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe53eae499d23122be9c83c3d5804e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a9fe53eae499d23122be9c83c3d5804e1">operator&lt;=</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> microSeconds) const</td></tr>
+<tr class="separator:a9fe53eae499d23122be9c83c3d5804e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58cdea7f9d8bb3d1aec4ac267adf815"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#af58cdea7f9d8bb3d1aec4ac267adf815">operator+=</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;other)</td></tr>
+<tr class="separator:af58cdea7f9d8bb3d1aec4ac267adf815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06903dcb22164fcd13b0a8c0c336d189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a06903dcb22164fcd13b0a8c0c336d189">operator+=</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> ms)</td></tr>
+<tr class="separator:a06903dcb22164fcd13b0a8c0c336d189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bdbdfc2c9f75107ef64b5ae9dc88c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a90bdbdfc2c9f75107ef64b5ae9dc88c4">operator-=</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;other)</td></tr>
+<tr class="separator:a90bdbdfc2c9f75107ef64b5ae9dc88c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1014cdec1c16c8c0aba37e68f31a22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a9f1014cdec1c16c8c0aba37e68f31a22">operator-=</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> ms)</td></tr>
+<tr class="separator:a9f1014cdec1c16c8c0aba37e68f31a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa6a048a87ad360b41bf181e9cd5456"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a3aa6a048a87ad360b41bf181e9cd5456">operator+</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;other) const</td></tr>
+<tr class="separator:a3aa6a048a87ad360b41bf181e9cd5456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9f1e9743f08d2206f0df47117261df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a5f9f1e9743f08d2206f0df47117261df">operator-</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;other) const</td></tr>
+<tr class="separator:a5f9f1e9743f08d2206f0df47117261df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802f93b32eb97c74b38200cebdd9847c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a802f93b32eb97c74b38200cebdd9847c">operator+</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> ms) const</td></tr>
+<tr class="separator:a802f93b32eb97c74b38200cebdd9847c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd4c55e4e1de1d1bb7f660932c45a21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a6dd4c55e4e1de1d1bb7f660932c45a21">operator-</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> ms) const</td></tr>
+<tr class="separator:a6dd4c55e4e1de1d1bb7f660932c45a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96326f4706971c6a69bc93a9fd1df7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ae96326f4706971c6a69bc93a9fd1df7c">swap</a> (<a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;other)</td></tr>
+<tr class="memdesc:ae96326f4706971c6a69bc93a9fd1df7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap this time span with a other time span.  <a href="classmn_1_1basic__timespan.html#ae96326f4706971c6a69bc93a9fd1df7c">More...</a><br /></td></tr>
+<tr class="separator:ae96326f4706971c6a69bc93a9fd1df7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56fec2469a351f8cfc44d66cad90567"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ab56fec2469a351f8cfc44d66cad90567">assign</a> (uint16_t days, uint8_t hours, uint8_t minutes, uint8_t seconds, uint16_t microSeconds)</td></tr>
+<tr class="memdesc:ab56fec2469a351f8cfc44d66cad90567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a new time span.  <a href="classmn_1_1basic__timespan.html#ab56fec2469a351f8cfc44d66cad90567">More...</a><br /></td></tr>
+<tr class="separator:ab56fec2469a351f8cfc44d66cad90567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b55b2641e455f389cde690b562e1ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a92b55b2641e455f389cde690b562e1ef">assign</a> (struct timeval val)</td></tr>
+<tr class="memdesc:a92b55b2641e455f389cde690b562e1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a new time span.  <a href="classmn_1_1basic__timespan.html#a92b55b2641e455f389cde690b562e1ef">More...</a><br /></td></tr>
+<tr class="separator:a92b55b2641e455f389cde690b562e1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e6c62000ac02700b60ccd1f5a9b737"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a55e6c62000ac02700b60ccd1f5a9b737">to_ticks</a> () const</td></tr>
+<tr class="separator:a55e6c62000ac02700b60ccd1f5a9b737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ec7813c405fc352201b1e613212bba3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a8ec7813c405fc352201b1e613212bba3">from_ticks</a> (const unsigned int &amp;ticks)</td></tr>
+<tr class="separator:a8ec7813c405fc352201b1e613212bba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a587590847103ff218c2c86495431773d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a587590847103ff218c2c86495431773d">m_timeSpan</a></td></tr>
+<tr class="separator:a587590847103ff218c2c86495431773d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class represents a time span (using microseconds) </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8c1cd7a763ece4208863ece607860057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1cd7a763ece4208863ece607860057">&#9670;&nbsp;</a></span>int_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">mn::basic_timespan::int_type</a> =  uint64_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04a252886ba7eed5a0577a29fa079dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a252886ba7eed5a0577a29fa079dd1">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">mn::basic_timespan::self_type</a> =  <a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb4ee89d8c462a6bd8366c8ae029f3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb4ee89d8c462a6bd8366c8ae029f3b4">&#9670;&nbsp;</a></span>time_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">mn::basic_timespan::time_type</a> =  int64_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a391b3c6fd6161adf5c55b3adc1012dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391b3c6fd6161adf5c55b3adc1012dd1">&#9670;&nbsp;</a></span>basic_timespan() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timespan::basic_timespan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new time span and initializes it to zero. </p>
+
+</div>
+</div>
+<a id="a496aca54b23b7ff4c5166c9b2169aaad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496aca54b23b7ff4c5166c9b2169aaad">&#9670;&nbsp;</a></span>basic_timespan() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timespan::basic_timespan </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new time span and initializes it with the given value. </p>
+
+</div>
+</div>
+<a id="a35ea996eb69382fc11c6eec9b47b7a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ea996eb69382fc11c6eec9b47b7a1a">&#9670;&nbsp;</a></span>basic_timespan() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timespan::basic_timespan </td>
+          <td>(</td>
+          <td class="paramtype">struct timeval&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new time span and initializes it with the given timeval. </p>
+
+</div>
+</div>
+<a id="ad3a79a6a9316bfa648a0de64ae5a229e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a79a6a9316bfa648a0de64ae5a229e">&#9670;&nbsp;</a></span>basic_timespan() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timespan::basic_timespan </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>days</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>hours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>minutes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>microSeconds</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new time span and initializes it the given values. </p>
+
+</div>
+</div>
+<a id="ab86c56497930d4051fb2f5a14d4f5a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86c56497930d4051fb2f5a14d4f5a87">&#9670;&nbsp;</a></span>basic_timespan() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timespan::basic_timespan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new time span from another time span. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a92b55b2641e455f389cde690b562e1ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92b55b2641e455f389cde690b562e1ef">&#9670;&nbsp;</a></span>assign() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a> &amp; mn::basic_timespan::assign </td>
+          <td>(</td>
+          <td class="paramtype">struct timeval&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assigns a new time span. </p>
+
+</div>
+</div>
+<a id="ab56fec2469a351f8cfc44d66cad90567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56fec2469a351f8cfc44d66cad90567">&#9670;&nbsp;</a></span>assign() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a> &amp; mn::basic_timespan::assign </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>days</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>hours</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>minutes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>microSeconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assigns a new time span. </p>
+
+</div>
+</div>
+<a id="a8ec7813c405fc352201b1e613212bba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec7813c405fc352201b1e613212bba3">&#9670;&nbsp;</a></span>from_ticks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a> mn::basic_timespan::from_ticks </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int &amp;&#160;</td>
+          <td class="paramname"><em>ticks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a570af4f2d319aa6d53319d32be614776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a570af4f2d319aa6d53319d32be614776">&#9670;&nbsp;</a></span>get_days()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t mn::basic_timespan::get_days </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of days. </p>
+
+</div>
+</div>
+<a id="a774658a09db912efca84ef901e5dc7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774658a09db912efca84ef901e5dc7e5">&#9670;&nbsp;</a></span>get_hours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mn::basic_timespan::get_hours </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of (0 to 23) hours. </p>
+
+</div>
+</div>
+<a id="a78ffa312fd375582fba0ad6f1a0bb7e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ffa312fd375582fba0ad6f1a0bb7e0">&#9670;&nbsp;</a></span>get_microseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">basic_timespan::int_type</a> mn::basic_timespan::get_microseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of microseconds. </p>
+
+</div>
+</div>
+<a id="af9ff9392c1dcd9b4ca8fbb16ee525f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ff9392c1dcd9b4ca8fbb16ee525f6a">&#9670;&nbsp;</a></span>get_milliseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t mn::basic_timespan::get_milliseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of milliseconds. </p>
+
+</div>
+</div>
+<a id="ab818e11f8b8f0e9855933edab31a7432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab818e11f8b8f0e9855933edab31a7432">&#9670;&nbsp;</a></span>get_minutes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mn::basic_timespan::get_minutes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of (0 to 59) minutes. </p>
+
+</div>
+</div>
+<a id="a1798338a2674c4a702b8085b42d06679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1798338a2674c4a702b8085b42d06679">&#9670;&nbsp;</a></span>get_seconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t mn::basic_timespan::get_seconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of (0 to 59) seconds. </p>
+
+</div>
+</div>
+<a id="ac3d72c3d4b1f529365fdbbd0c4aa54ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3d72c3d4b1f529365fdbbd0c4aa54ad">&#9670;&nbsp;</a></span>get_total_hours()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">basic_timespan::int_type</a> mn::basic_timespan::get_total_hours </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the total number of hours. </p>
+
+</div>
+</div>
+<a id="acc1fd8802beffef048af1cb0d96cbe84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1fd8802beffef048af1cb0d96cbe84">&#9670;&nbsp;</a></span>get_total_milliseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">basic_timespan::time_type</a> mn::basic_timespan::get_total_milliseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the total number of milliseconds. </p>
+
+</div>
+</div>
+<a id="ac5122e44dd2824c1eaa6fd7548ca267a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5122e44dd2824c1eaa6fd7548ca267a">&#9670;&nbsp;</a></span>get_total_minutes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">basic_timespan::int_type</a> mn::basic_timespan::get_total_minutes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the total number of minutes. </p>
+
+</div>
+</div>
+<a id="a13b56ebc686a2243ee11c0c3013291fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b56ebc686a2243ee11c0c3013291fc">&#9670;&nbsp;</a></span>get_total_seconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">basic_timespan::int_type</a> mn::basic_timespan::get_total_seconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the total number of seconds. </p>
+
+</div>
+</div>
+<a id="a6ccd1a64c9f6b6369b9e97f58a212187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ccd1a64c9f6b6369b9e97f58a212187">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaf479ec17ce7834fdff930346ed4452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf479ec17ce7834fdff930346ed4452">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>microSeconds</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3aa6a048a87ad360b41bf181e9cd5456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa6a048a87ad360b41bf181e9cd5456">&#9670;&nbsp;</a></span>operator+() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> mn::basic_timespan::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a802f93b32eb97c74b38200cebdd9847c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a802f93b32eb97c74b38200cebdd9847c">&#9670;&nbsp;</a></span>operator+() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> mn::basic_timespan::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af58cdea7f9d8bb3d1aec4ac267adf815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58cdea7f9d8bb3d1aec4ac267adf815">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a>&amp; mn::basic_timespan::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06903dcb22164fcd13b0a8c0c336d189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06903dcb22164fcd13b0a8c0c336d189">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a>&amp; mn::basic_timespan::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f9f1e9743f08d2206f0df47117261df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9f1e9743f08d2206f0df47117261df">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> mn::basic_timespan::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dd4c55e4e1de1d1bb7f660932c45a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd4c55e4e1de1d1bb7f660932c45a21">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> mn::basic_timespan::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90bdbdfc2c9f75107ef64b5ae9dc88c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bdbdfc2c9f75107ef64b5ae9dc88c4">&#9670;&nbsp;</a></span>operator-=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a>&amp; mn::basic_timespan::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f1014cdec1c16c8c0aba37e68f31a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f1014cdec1c16c8c0aba37e68f31a22">&#9670;&nbsp;</a></span>operator-=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a>&amp; mn::basic_timespan::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab65b43786477afa6dc44ce4feb18d95c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab65b43786477afa6dc44ce4feb18d95c">&#9670;&nbsp;</a></span>operator&lt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a77f5e271eef483bde641281d851c2818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f5e271eef483bde641281d851c2818">&#9670;&nbsp;</a></span>operator&lt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>microSeconds</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79b4e3ecb0ffb38630326a0b975db3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b4e3ecb0ffb38630326a0b975db3f6">&#9670;&nbsp;</a></span>operator&lt;=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fe53eae499d23122be9c83c3d5804e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe53eae499d23122be9c83c3d5804e1">&#9670;&nbsp;</a></span>operator&lt;=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>microSeconds</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4021534d902bdf7cb32157ff802c8e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4021534d902bdf7cb32157ff802c8e26">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a> &amp; mn::basic_timespan::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>timespan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacaf4d0f9c0e20f6b9dd332df82198fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacaf4d0f9c0e20f6b9dd332df82198fd">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a> &amp; mn::basic_timespan::operator= </td>
+          <td>(</td>
+          <td class="paramtype">struct timeval&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b988bbacd310575ce3bcf9dd64a190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b988bbacd310575ce3bcf9dd64a190">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a> &amp; mn::basic_timespan::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>microseconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a485b716e1d53d13a2859f6136dd49ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485b716e1d53d13a2859f6136dd49ec6">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36426bee670e720a7ec6dd22f7537460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36426bee670e720a7ec6dd22f7537460">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>microSeconds</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a592908b287754d2cc9c059734ba9a44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592908b287754d2cc9c059734ba9a44a">&#9670;&nbsp;</a></span>operator&gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b0be235044d9b721cd7a3b752772b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0be235044d9b721cd7a3b752772b4a">&#9670;&nbsp;</a></span>operator&gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>microSeconds</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd39d7d7cb0c4d342116cbb449a62e19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd39d7d7cb0c4d342116cbb449a62e19">&#9670;&nbsp;</a></span>operator&gt;=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b1dec687af63e1aa8d3014992b66aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1dec687af63e1aa8d3014992b66aa5">&#9670;&nbsp;</a></span>operator&gt;=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timespan::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td>
+          <td class="paramname"><em>microSeconds</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae96326f4706971c6a69bc93a9fd1df7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae96326f4706971c6a69bc93a9fd1df7c">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::basic_timespan::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Swap this time span with a other time span. </p>
+
+</div>
+</div>
+<a id="a55e6c62000ac02700b60ccd1f5a9b737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55e6c62000ac02700b60ccd1f5a9b737">&#9670;&nbsp;</a></span>to_ticks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">basic_timespan::time_type</a> mn::basic_timespan::to_ticks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a587590847103ff218c2c86495431773d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a587590847103ff218c2c86495431773d">&#9670;&nbsp;</a></span>m_timeSpan</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> mn::basic_timespan::m_timeSpan</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="mn__basic__timespan_8hpp_source.html">mn_basic_timespan.hpp</a></li>
+<li><a class="el" href="mn__basic__timespan_8cpp.html">mn_basic_timespan.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

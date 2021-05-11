@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::atomic_counter Class Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1atomic__counter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1atomic__counter-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::atomic_counter Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class implements a simple counter, whit atomic operations for use in a multithreaded environment.  
+ <a href="classmn_1_1atomic__counter.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__atomic__counter_8hpp_source.html">mn_atomic_counter.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::atomic_counter:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1atomic__counter__coll__graph.svg" width="222" height="232"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8dad9febc5f3af7f2e3ca7c146dc7803"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> = int</td></tr>
+<tr class="separator:a8dad9febc5f3af7f2e3ca7c146dc7803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a451030f7636e9c0d8a4d551de09a6608"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#a451030f7636e9c0d8a4d551de09a6608">atomic_counter</a> ()</td></tr>
+<tr class="memdesc:a451030f7636e9c0d8a4d551de09a6608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a> and initializes it to zero.  <a href="classmn_1_1atomic__counter.html#a451030f7636e9c0d8a4d551de09a6608">More...</a><br /></td></tr>
+<tr class="separator:a451030f7636e9c0d8a4d551de09a6608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac061192aa78f36e3527b62daa5f375eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#ac061192aa78f36e3527b62daa5f375eb">atomic_counter</a> (const <a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> &amp;<a class="el" href="classmn_1_1atomic__counter.html#a505b4147799fd9e4153ebb4717bf2de7">value</a>)</td></tr>
+<tr class="memdesc:ac061192aa78f36e3527b62daa5f375eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a> and initializes it with the given value.  <a href="classmn_1_1atomic__counter.html#ac061192aa78f36e3527b62daa5f375eb">More...</a><br /></td></tr>
+<tr class="separator:ac061192aa78f36e3527b62daa5f375eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec10e478317c24141b23694a33879b83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#aec10e478317c24141b23694a33879b83">atomic_counter</a> (const <a class="el" href="classmn_1_1atomic__counter.html">atomic_counter</a> &amp;other)</td></tr>
+<tr class="memdesc:aec10e478317c24141b23694a33879b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a> from a other <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a>.  <a href="classmn_1_1atomic__counter.html#aec10e478317c24141b23694a33879b83">More...</a><br /></td></tr>
+<tr class="separator:aec10e478317c24141b23694a33879b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4934580778fa3d5b012be0c8dcc1a050"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#a4934580778fa3d5b012be0c8dcc1a050">operator value_type</a> () const</td></tr>
+<tr class="memdesc:a4934580778fa3d5b012be0c8dcc1a050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a> to value_type.  <a href="classmn_1_1atomic__counter.html#a4934580778fa3d5b012be0c8dcc1a050">More...</a><br /></td></tr>
+<tr class="separator:a4934580778fa3d5b012be0c8dcc1a050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505b4147799fd9e4153ebb4717bf2de7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#a505b4147799fd9e4153ebb4717bf2de7">value</a> () const</td></tr>
+<tr class="memdesc:a505b4147799fd9e4153ebb4717bf2de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of the counter.  <a href="classmn_1_1atomic__counter.html#a505b4147799fd9e4153ebb4717bf2de7">More...</a><br /></td></tr>
+<tr class="separator:a505b4147799fd9e4153ebb4717bf2de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9128eb012becd8d1a03dcdac78da5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#aef9128eb012becd8d1a03dcdac78da5c">operator++</a> ()</td></tr>
+<tr class="memdesc:aef9128eb012becd8d1a03dcdac78da5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the counter.  <a href="classmn_1_1atomic__counter.html#aef9128eb012becd8d1a03dcdac78da5c">More...</a><br /></td></tr>
+<tr class="separator:aef9128eb012becd8d1a03dcdac78da5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4dae8004da8b53a8e36e81ced5d635d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#ac4dae8004da8b53a8e36e81ced5d635d">operator--</a> ()</td></tr>
+<tr class="memdesc:ac4dae8004da8b53a8e36e81ced5d635d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrements the counter.  <a href="classmn_1_1atomic__counter.html#ac4dae8004da8b53a8e36e81ced5d635d">More...</a><br /></td></tr>
+<tr class="separator:ac4dae8004da8b53a8e36e81ced5d635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7890631d38e727282605dbeb5e9c75c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#a7890631d38e727282605dbeb5e9c75c8">operator++</a> (int)</td></tr>
+<tr class="memdesc:a7890631d38e727282605dbeb5e9c75c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the counter.  <a href="classmn_1_1atomic__counter.html#a7890631d38e727282605dbeb5e9c75c8">More...</a><br /></td></tr>
+<tr class="separator:a7890631d38e727282605dbeb5e9c75c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa568598affb3f14ba5a461940f83cbf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#aa568598affb3f14ba5a461940f83cbf2">operator--</a> (int)</td></tr>
+<tr class="memdesc:aa568598affb3f14ba5a461940f83cbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrements the counter.  <a href="classmn_1_1atomic__counter.html#aa568598affb3f14ba5a461940f83cbf2">More...</a><br /></td></tr>
+<tr class="separator:aa568598affb3f14ba5a461940f83cbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20a77753cb6a5384b8dab03f8eee501"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#ad20a77753cb6a5384b8dab03f8eee501">operator!</a> () const</td></tr>
+<tr class="memdesc:ad20a77753cb6a5384b8dab03f8eee501"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the counter zero?  <a href="classmn_1_1atomic__counter.html#ad20a77753cb6a5384b8dab03f8eee501">More...</a><br /></td></tr>
+<tr class="separator:ad20a77753cb6a5384b8dab03f8eee501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff65c903449a6152e6d5bf2557bfc6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__counter.html">atomic_counter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#afff65c903449a6152e6d5bf2557bfc6a">operator=</a> (const <a class="el" href="classmn_1_1atomic__counter.html">atomic_counter</a> &amp;other)</td></tr>
+<tr class="memdesc:afff65c903449a6152e6d5bf2557bfc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the value of another <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a>.  <a href="classmn_1_1atomic__counter.html#afff65c903449a6152e6d5bf2557bfc6a">More...</a><br /></td></tr>
+<tr class="separator:afff65c903449a6152e6d5bf2557bfc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1fb25c117259353ac398121462de432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1atomic__counter.html">atomic_counter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#af1fb25c117259353ac398121462de432">operator=</a> (const <a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> &amp;<a class="el" href="classmn_1_1atomic__counter.html#a505b4147799fd9e4153ebb4717bf2de7">value</a>)</td></tr>
+<tr class="memdesc:af1fb25c117259353ac398121462de432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a value to the counter.  <a href="classmn_1_1atomic__counter.html#af1fb25c117259353ac398121462de432">More...</a><br /></td></tr>
+<tr class="separator:af1fb25c117259353ac398121462de432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aaa385180c5a3d747dce7e95d35e7ad14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1__atomic.html">_atomic</a>&lt; <a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1atomic__counter.html#aaa385180c5a3d747dce7e95d35e7ad14">m_atomicCount</a></td></tr>
+<tr class="separator:aaa385180c5a3d747dce7e95d35e7ad14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class implements a simple counter, whit atomic operations for use in a multithreaded environment. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8dad9febc5f3af7f2e3ca7c146dc7803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dad9febc5f3af7f2e3ca7c146dc7803">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">mn::atomic_counter::value_type</a> =  int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a451030f7636e9c0d8a4d551de09a6608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451030f7636e9c0d8a4d551de09a6608">&#9670;&nbsp;</a></span>atomic_counter() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::atomic_counter::atomic_counter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a> and initializes it to zero. </p>
+
+</div>
+</div>
+<a id="ac061192aa78f36e3527b62daa5f375eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac061192aa78f36e3527b62daa5f375eb">&#9670;&nbsp;</a></span>atomic_counter() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::atomic_counter::atomic_counter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a> and initializes it with the given value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The start value for this the counter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec10e478317c24141b23694a33879b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec10e478317c24141b23694a33879b83">&#9670;&nbsp;</a></span>atomic_counter() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::atomic_counter::atomic_counter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__counter.html">atomic_counter</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a> from a other <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other counter from copyed it. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4934580778fa3d5b012be0c8dcc1a050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4934580778fa3d5b012be0c8dcc1a050">&#9670;&nbsp;</a></span>operator value_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::atomic_counter::operator <a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts the <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a> to value_type. </p>
+
+</div>
+</div>
+<a id="ad20a77753cb6a5384b8dab03f8eee501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad20a77753cb6a5384b8dab03f8eee501">&#9670;&nbsp;</a></span>operator!()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::atomic_counter::operator! </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If the counter zero? </p>
+<dl class="section return"><dt>Returns</dt><dd>If true the counter is zero and if false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="aef9128eb012becd8d1a03dcdac78da5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9128eb012becd8d1a03dcdac78da5c">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> mn::atomic_counter::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increments the counter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The result of the increment. </dd></dl>
+
+</div>
+</div>
+<a id="a7890631d38e727282605dbeb5e9c75c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7890631d38e727282605dbeb5e9c75c8">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> mn::atomic_counter::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increments the counter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The previous value. </dd></dl>
+
+</div>
+</div>
+<a id="ac4dae8004da8b53a8e36e81ced5d635d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4dae8004da8b53a8e36e81ced5d635d">&#9670;&nbsp;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> mn::atomic_counter::operator-- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrements the counter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The result of the decrement. </dd></dl>
+
+</div>
+</div>
+<a id="aa568598affb3f14ba5a461940f83cbf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa568598affb3f14ba5a461940f83cbf2">&#9670;&nbsp;</a></span>operator--() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> mn::atomic_counter::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrements the counter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The previous value. </dd></dl>
+
+</div>
+</div>
+<a id="afff65c903449a6152e6d5bf2557bfc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff65c903449a6152e6d5bf2557bfc6a">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__counter.html">atomic_counter</a> &amp; mn::atomic_counter::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__counter.html">atomic_counter</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assigns the value of another <a class="el" href="classmn_1_1atomic__counter.html" title="This class implements a simple counter, whit atomic operations for use in a multithreaded environment...">atomic_counter</a>. </p>
+
+</div>
+</div>
+<a id="af1fb25c117259353ac398121462de432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1fb25c117259353ac398121462de432">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__counter.html">atomic_counter</a> &amp; mn::atomic_counter::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Assigns a value to the counter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value for assigns the counter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a505b4147799fd9e4153ebb4717bf2de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505b4147799fd9e4153ebb4717bf2de7">&#9670;&nbsp;</a></span>value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a> mn::atomic_counter::value </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the value of the counter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The value of the counter. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aaa385180c5a3d747dce7e95d35e7ad14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa385180c5a3d747dce7e95d35e7ad14">&#9670;&nbsp;</a></span>m_atomicCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmn_1_1__atomic.html">_atomic</a>&lt;<a class="el" href="classmn_1_1atomic__counter.html#a8dad9febc5f3af7f2e3ca7c146dc7803">value_type</a>&gt; mn::atomic_counter::m_atomicCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="mn__atomic__counter_8hpp_source.html">mn_atomic_counter.hpp</a></li>
+<li><a class="el" href="mn__atomic__counter_8cpp.html">mn_atomic_counter.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

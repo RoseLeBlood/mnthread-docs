@@ -162,13 +162,17 @@ Public Types</h2></td></tr>
 <tr class="separator:aae95537de46793d78c754ab2008b6dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf427b016382b80fdea9dcf6626cfb39"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__singleton.html#aaf427b016382b80fdea9dcf6626cfb39">pointer</a> = T *</td></tr>
 <tr class="separator:aaf427b016382b80fdea9dcf6626cfb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677247580a9cd374da54dda414d3556e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">this_type</a> = <a class="el" href="classmn_1_1basic__singleton.html">basic_singleton</a></td></tr>
+<tr class="separator:a677247580a9cd374da54dda414d3556e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a952b0730a61f4e56926c2b78683adbdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__singleton.html#a952b0730a61f4e56926c2b78683adbdc">basic_singleton</a> (const <a class="el" href="classmn_1_1basic__singleton.html">basic_singleton</a> &amp;)=delete</td></tr>
-<tr class="separator:a952b0730a61f4e56926c2b78683adbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fc47bd19606c6a14bc3fceeea1a20fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__singleton.html#a6fc47bd19606c6a14bc3fceeea1a20fb">operator=</a> (const <a class="el" href="classmn_1_1basic__singleton.html">basic_singleton</a> &amp;)=delete</td></tr>
-<tr class="separator:a6fc47bd19606c6a14bc3fceeea1a20fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632024dec1fcc5d18892ff9da82953fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__singleton.html#a632024dec1fcc5d18892ff9da82953fd">basic_singleton</a> (<a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">this_type</a> &amp;&amp;other)=delete</td></tr>
+<tr class="separator:a632024dec1fcc5d18892ff9da82953fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c3f8b0181f41739d89f645f3626eec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__singleton.html#a09c3f8b0181f41739d89f645f3626eec">basic_singleton</a> (const <a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">this_type</a> &amp;)=delete</td></tr>
+<tr class="separator:a09c3f8b0181f41739d89f645f3626eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f9a407913e7602397509e4e4467ad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__singleton.html#a51f9a407913e7602397509e4e4467ad4">operator=</a> (const <a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">this_type</a> &amp;)=delete</td></tr>
+<tr class="separator:a51f9a407913e7602397509e4e4467ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -236,6 +240,22 @@ template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
 
 </div>
 </div>
+<a id="a677247580a9cd374da54dda414d3556e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677247580a9cd374da54dda414d3556e">&#9670;&nbsp;</a></span>this_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__singleton.html">mn::basic_singleton</a>&lt; T, TLOCK &gt;::<a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">this_type</a> =  <a class="el" href="classmn_1_1basic__singleton.html">basic_singleton</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a254f16ef4a6667b66d715afa54fd547b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a254f16ef4a6667b66d715afa54fd547b">&#9670;&nbsp;</a></span>value_type</h2>
 
@@ -253,8 +273,8 @@ template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a952b0730a61f4e56926c2b78683adbdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a952b0730a61f4e56926c2b78683adbdc">&#9670;&nbsp;</a></span>basic_singleton() <span class="overload">[1/2]</span></h2>
+<a id="a632024dec1fcc5d18892ff9da82953fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632024dec1fcc5d18892ff9da82953fd">&#9670;&nbsp;</a></span>basic_singleton() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +287,35 @@ template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classmn_1_1basic__singleton.html">mn::basic_singleton</a>&lt; T, TLOCK &gt;::<a class="el" href="classmn_1_1basic__singleton.html">basic_singleton</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmn_1_1basic__singleton.html">basic_singleton</a>&lt; T, TLOCK &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">this_type</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09c3f8b0181f41739d89f645f3626eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c3f8b0181f41739d89f645f3626eec">&#9670;&nbsp;</a></span>basic_singleton() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__singleton.html">mn::basic_singleton</a>&lt; T, TLOCK &gt;::<a class="el" href="classmn_1_1basic__singleton.html">basic_singleton</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">this_type</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -282,7 +330,7 @@ template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
 </div>
 </div>
 <a id="a18f982211fc5e10f487d584f52399d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18f982211fc5e10f487d584f52399d66">&#9670;&nbsp;</a></span>basic_singleton() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f982211fc5e10f487d584f52399d66">&#9670;&nbsp;</a></span>basic_singleton() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,8 +384,8 @@ template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
 
 </div>
 </div>
-<a id="a6fc47bd19606c6a14bc3fceeea1a20fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fc47bd19606c6a14bc3fceeea1a20fb">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a51f9a407913e7602397509e4e4467ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f9a407913e7602397509e4e4467ad4">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +398,7 @@ template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1basic__singleton.html">mn::basic_singleton</a>&lt; T, TLOCK &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmn_1_1basic__singleton.html">basic_singleton</a>&lt; T, TLOCK &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">this_type</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

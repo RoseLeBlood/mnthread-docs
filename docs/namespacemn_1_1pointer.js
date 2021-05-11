@@ -1,6 +1,7 @@
 var namespacemn_1_1pointer =
 [
     [ "basic_any_ptr", "classmn_1_1pointer_1_1basic__any__ptr.html", "classmn_1_1pointer_1_1basic__any__ptr" ],
+    [ "basic_auto_ptr", "classmn_1_1pointer_1_1basic__auto__ptr.html", "classmn_1_1pointer_1_1basic__auto__ptr" ],
     [ "pointer_ptr", "structmn_1_1pointer_1_1pointer__ptr.html", "structmn_1_1pointer_1_1pointer__ptr" ],
     [ "clone_ptr_interface", "classmn_1_1pointer_1_1clone__ptr__interface.html", "classmn_1_1pointer_1_1clone__ptr__interface" ],
     [ "basic_clone_ptr", "classmn_1_1pointer_1_1basic__clone__ptr.html", "classmn_1_1pointer_1_1basic__clone__ptr" ],

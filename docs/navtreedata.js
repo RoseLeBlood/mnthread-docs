@@ -25,105 +25,107 @@
 var NAVTREE =
 [
   [ "Mini Thread", "index.html", [
-    [ "Versioning", "index.html#autotoc_md69", [
-      [ "Folder Strutur", "index.html#autotoc_md63", null ],
-      [ "Using", "index.html#autotoc_md64", [
-        [ "Example", "index.html#autotoc_md65", null ]
+    [ "Versioning", "index.html#autotoc_md71", [
+      [ "Folder Strutur", "index.html#autotoc_md65", null ],
+      [ "Using", "index.html#autotoc_md66", [
+        [ "Example", "index.html#autotoc_md67", null ]
       ] ],
-      [ "Using from platformio", "index.html#autotoc_md66", null ],
-      [ "ChangeLog", "index.html#autotoc_md67", null ],
-      [ "Contributing", "index.html#autotoc_md68", null ],
-      [ "License", "index.html#autotoc_md70", null ]
+      [ "Using from platformio", "index.html#autotoc_md68", null ],
+      [ "ChangeLog", "index.html#autotoc_md69", null ],
+      [ "Contributing", "index.html#autotoc_md70", null ],
+      [ "License", "index.html#autotoc_md72", null ]
     ] ],
     [ "Changelog", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html", [
-      [ "Versoin 2.28.x März 2021 (unstable beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md1", null ],
-      [ "Versoin 2.27 März 2021 (unstable beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md2", null ],
-      [ "Version 2.20 März 2021", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md3", null ],
-      [ "Version 2.10 Februar 2021", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md4", null ],
-      [ "Version 2.0.4 Januar 2021", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md5", null ],
-      [ "Version 2.0.1 Januar 2021", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md6", null ],
-      [ "Version 1.95 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md7", null ],
-      [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md8", null ],
-      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md9", null ],
-      [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md10", null ],
-      [ "Version 1.60 September 2020: (unstable nightly)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md11", null ],
-      [ "Version 1.54 September 2020: (unstable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md12", null ],
-      [ "Version 1.53 September 2020:", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md13", null ],
-      [ "Version 1.43 September 2020:  (stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md14", null ],
-      [ "Version 1.42 August 2020: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md15", null ],
-      [ "Version 1.4 August 2020: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md16", null ],
-      [ "Version 1.2 August 2020: (stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md17", null ],
-      [ "Version 1.0.62 Mai 2020:  (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md18", null ],
-      [ "Version 1.0.60 November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md19", null ],
-      [ "Version 1.0.5 November 2018: (stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md20", null ],
-      [ "Version 0.9.3 November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md21", null ],
-      [ "Version 0.8.31 November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md22", null ],
-      [ "Version 0.8.3 November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md23", null ],
-      [ "Version 0.8.2, November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md24", null ]
+      [ "Version 2.29.8906 Mai 2021 (unstable beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md1", null ],
+      [ "Versoin 2.28.3098 April 2021 (unstable beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md2", null ],
+      [ "Versoin 2.28.x März 2021 (unstable beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md3", null ],
+      [ "Versoin 2.27 März 2021 (unstable beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md4", null ],
+      [ "Version 2.20 März 2021", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md5", null ],
+      [ "Version 2.10 Februar 2021", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md6", null ],
+      [ "Version 2.0.4 Januar 2021", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md7", null ],
+      [ "Version 2.0.1 Januar 2021", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md8", null ],
+      [ "Version 1.95 Oktober 2020: (stable 2.0beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md9", null ],
+      [ "Version 1.9.1 Oktober 2020: (unstable 2.0beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md10", null ],
+      [ "Version 1.9.0 September 2020: (stable 2.0beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md11", null ],
+      [ "Version 1.71 September 2020: (unstable 2.0beta)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md12", null ],
+      [ "Version 1.60 September 2020: (unstable nightly)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md13", null ],
+      [ "Version 1.54 September 2020: (unstable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md14", null ],
+      [ "Version 1.53 September 2020:", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md15", null ],
+      [ "Version 1.43 September 2020:  (stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md16", null ],
+      [ "Version 1.42 August 2020: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md17", null ],
+      [ "Version 1.4 August 2020: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md18", null ],
+      [ "Version 1.2 August 2020: (stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md19", null ],
+      [ "Version 1.0.62 Mai 2020:  (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md20", null ],
+      [ "Version 1.0.60 November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md21", null ],
+      [ "Version 1.0.5 November 2018: (stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md22", null ],
+      [ "Version 0.9.3 November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md23", null ],
+      [ "Version 0.8.31 November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md24", null ],
+      [ "Version 0.8.3 November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md25", null ],
+      [ "Version 0.8.2, November 2018: (non-stable)", "md__home_ambersophia_Dokumente_git_mnthread_ChangeLog.html#autotoc_md26", null ]
     ] ],
     [ "CODE_OF_CONDUCT", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html", [
-      [ "Contributor Covenant Code of Conduct", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md25", [
-        [ "Our Pledge", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md26", null ],
-        [ "Our Standards", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md27", null ],
-        [ "Enforcement Responsibilities", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md28", null ],
-        [ "Scope", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md29", null ],
-        [ "Enforcement", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md30", null ],
-        [ "Enforcement Guidelines", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md31", [
-          [ "1. Correction", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md32", null ],
-          [ "2. Warning", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md33", null ],
-          [ "3. Temporary Ban", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md34", null ],
-          [ "4. Permanent Ban", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md35", null ]
+      [ "Contributor Covenant Code of Conduct", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md27", [
+        [ "Our Pledge", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md28", null ],
+        [ "Our Standards", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md29", null ],
+        [ "Enforcement Responsibilities", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md30", null ],
+        [ "Scope", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md31", null ],
+        [ "Enforcement", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md32", null ],
+        [ "Enforcement Guidelines", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md33", [
+          [ "1. Correction", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md34", null ],
+          [ "2. Warning", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md35", null ],
+          [ "3. Temporary Ban", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md36", null ],
+          [ "4. Permanent Ban", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md37", null ]
         ] ],
-        [ "Attribution", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md36", null ]
+        [ "Attribution", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT.html#autotoc_md38", null ]
       ] ]
     ] ],
     [ "CODE_OF_CONDUCT_de", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html", [
-      [ "Vereinbarung über Verhaltenskodex für Mitwirkende", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md37", [
-        [ "Unsere Verpflichtung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md38", null ],
-        [ "Unsere Standards", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md39", null ],
-        [ "Verantwortlichkeiten bei der Durchsetzung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md40", null ],
-        [ "Geltungsbereich", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md41", null ],
-        [ "Umsetzung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md42", null ],
-        [ "Durchsetzungsrichtlinien", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md43", [
-          [ "1. Berichtigung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md44", null ],
-          [ "2. Verwarnung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md45", null ],
-          [ "3. Vorübergehender Ausschluss", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md46", null ],
-          [ "4. Dauerhafter Ausschluss", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md47", null ]
+      [ "Vereinbarung über Verhaltenskodex für Mitwirkende", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md39", [
+        [ "Unsere Verpflichtung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md40", null ],
+        [ "Unsere Standards", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md41", null ],
+        [ "Verantwortlichkeiten bei der Durchsetzung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md42", null ],
+        [ "Geltungsbereich", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md43", null ],
+        [ "Umsetzung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md44", null ],
+        [ "Durchsetzungsrichtlinien", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md45", [
+          [ "1. Berichtigung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md46", null ],
+          [ "2. Verwarnung", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md47", null ],
+          [ "3. Vorübergehender Ausschluss", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md48", null ],
+          [ "4. Dauerhafter Ausschluss", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md49", null ]
         ] ],
-        [ "Bezug", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md48", null ]
+        [ "Bezug", "md__home_ambersophia_Dokumente_git_mnthread_CODE_OF_CONDUCT_de.html#autotoc_md50", null ]
       ] ]
     ] ],
     [ "Contributing to MiniThread", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html", [
-      [ "Code of Conduct", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md50", null ],
-      [ "Bugs", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md51", null ],
-      [ "New Features", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md52", null ],
-      [ "Contributing Code", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md53", [
-        [ "Initial Setup", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md54", null ],
-        [ "Submitting a Pull Request", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md55", [
-          [ "Branch", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md56", null ],
-          [ "Create Commits", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md57", null ],
-          [ "Upstream Sync and Clean Up", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md58", null ],
-          [ "Coding Conventions and Style", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md59", null ],
-          [ "Push and Test", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md60", null ],
-          [ "Submit Pull Request", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md61", null ]
+      [ "Code of Conduct", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md52", null ],
+      [ "Bugs", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md53", null ],
+      [ "New Features", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md54", null ],
+      [ "Contributing Code", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md55", [
+        [ "Initial Setup", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md56", null ],
+        [ "Submitting a Pull Request", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md57", [
+          [ "Branch", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md58", null ],
+          [ "Create Commits", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md59", null ],
+          [ "Upstream Sync and Clean Up", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md60", null ],
+          [ "Coding Conventions and Style", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md61", null ],
+          [ "Push and Test", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md62", null ],
+          [ "Submit Pull Request", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md63", null ]
         ] ]
       ] ],
-      [ "Contributing Documentation", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md62", null ]
+      [ "Contributing Documentation", "md__home_ambersophia_Dokumente_git_mnthread_CONTRIBUTING.html#autotoc_md64", null ]
     ] ],
     [ "Mini Thread Coding Conventions and Style", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html", [
-      [ "C and C++", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md72", [
-        [ "Standards", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md73", null ],
-        [ "Conventions and Best Practices", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md74", [
-          [ "Language Independent", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md75", null ],
-          [ "C", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md76", null ],
-          [ "C++", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md77", null ]
+      [ "C and C++", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md74", [
+        [ "Standards", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md75", null ],
+        [ "Conventions and Best Practices", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md76", [
+          [ "Language Independent", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md77", null ],
+          [ "C", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md78", null ],
+          [ "C++", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md79", null ]
         ] ],
-        [ "Tightly-constrained Systems and Shared Infrastructure", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md78", [
-          [ "File Names", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md79", null ],
-          [ "Naming", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md80", null ],
-          [ "White Space", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md81", null ]
+        [ "Tightly-constrained Systems and Shared Infrastructure", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md80", [
+          [ "File Names", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md81", null ],
+          [ "Naming", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md82", null ],
+          [ "White Space", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md83", null ]
         ] ],
-        [ "Comments", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md82", null ]
+        [ "Comments", "md__home_ambersophia_Dokumente_git_mnthread_STYLE_GUIDE.html#autotoc_md84", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -155,7 +157,6 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
@@ -167,24 +168,25 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_0dcode-example.html",
-"classmn_1_1basic__singleton.html#a574fa52ebe92fd45b01505610b8cc600",
-"classmn_1_1container_1_1basic__deque__iterator.html#a2de67bf840bdc9d8b6dd9077bfb0693d",
-"classmn_1_1container_1_1basic__ring__buffer.html#aafb12497171d2755df36db629a41d056",
-"classmn_1_1fast__type.html#a15e14204275b131ae703d035130e776c",
-"classmn_1_1net_1_1basic__ip4__address.html#aae459a37a06b5ff1109c4d400a762995",
-"classmn_1_1net_1_1basic__raw__ip6__socket.html#a6cd255945ba812f1158a8beb25eec97b",
-"classmn_1_1pointer_1_1node__ptr.html#a68ebf050ef1b9e258241bfc0b3491b92",
-"globals_defs_v.html",
-"mn__atomic__flags_8hpp.html#a407618ad86d6d5d93d504543f2e97d31ad2e0379c3a30439bfc1b6869af4408cc",
-"mn__colors_8hpp.html#a83642e4db1d79e3971dccfe6ecb83b69a6ea408ea56e8b710aa240004af7580c1",
-"mn__error_8hpp.html#a46c9a683ce856faa8621f4668d6451e9",
-"mn__net__types_8hpp.html#af421f8f6f43679e0ec3b2048aec37bec",
-"mn__utils_8hpp.html#a5fdca545ed5866d655d93af5753b2f09",
-"namespacemn.html#a68486602e748c21af38e7d226e9c786b",
-"namespacemn_1_1esp32.html",
-"namespacemn_1_1memory.html#a27600a425e6b3930ff788cd788d0e131",
-"structmn_1_1__atomic_3_01unsigned_01char_01_4.html#ab112302b88dc63f708c283adb3123718",
-"structmn_1_1is__pod_3_01container_1_1triple_3_01TFIRST_00_01TSECOND_00_01TTHIRD_01_4_01_4.html"
+"classmn_1_1basic__random__lfsr.html#a54d7808265ca46727ced524c8d91f805",
+"classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f",
+"classmn_1_1container_1_1basic__node.html#a04db7f4896fdd35f6259c24546cbd21b",
+"classmn_1_1container_1_1basic__stack.html#a3a97b883074bc5f36b20ce490b326a18",
+"classmn_1_1memory_1_1basic__allocator.html#a49b22f0fe8db8c22c3ff0c20a7676d8e",
+"classmn_1_1net_1_1basic__ip__endpoint.html#a90ffdb24c88b5aeaf99d48dd8b95885e",
+"classmn_1_1net_1_1basic__wifi__sta__net__if.html#af6a22e29b923e5f87b9be0168725b02f",
+"classmn_1_1pointer_1_1node__ptr.html#ab650a628f02b8d912988b50542a6e968",
+"globals_m.html",
+"mn__atomic__primary__types_8hpp_source.html",
+"mn__colors_8hpp.html#a83642e4db1d79e3971dccfe6ecb83b69a522474a458025b77a679357e3d9bd7c2",
+"mn__defines_8hpp.html#aec8c4c96a42f9a499d00e6d8ae2c50f0",
+"mn__net__types_8hpp.html#ac78d17c83aa08c5ca33da490085c6052ac431a4425bc56080c868435c8d910f83",
+"mn__timer_8hpp.html#a13026b228eff19d79c329dd60c935004",
+"namespacemn.html#a4465a82923b65fe1bbe77478ca290b3e",
+"namespacemn.html#structmn_1_1int__alignment",
+"namespacemn_1_1math.html#a83642e4db1d79e3971dccfe6ecb83b69a8dc5344bc0746e1cc5abf896ca03bbdf",
+"structmn_1_1__atomic_3_01char32__t_01_4.html#a6274cf3fdb0d9e459ba6d13418a7420d",
+"structmn_1_1container_1_1fixed__vector__storage.html#a83ec75ffbde896dd67250f264e89eeef"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

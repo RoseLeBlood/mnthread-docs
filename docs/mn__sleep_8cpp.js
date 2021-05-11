@@ -1,6 +1,6 @@
 var mn__sleep_8cpp =
 [
-    [ "nsleep", "mn__sleep_8cpp.html#a684af303215bfb8b6538060075665fb2", null ],
-    [ "sleep", "mn__sleep_8cpp.html#a094c5c18f9b3159c0935207cc9489f7e", null ],
-    [ "usleep", "mn__sleep_8cpp.html#a22ae1241da7c4b4cdcc385af3d191599", null ]
+    [ "delay", "mn__sleep_8cpp.html#ac51873844ea0a59f372a25e1aff5e1e1", null ],
+    [ "delay_until", "mn__sleep_8cpp.html#a3d4a9ca9fb65da6c894f8dda8921e7a1", null ],
+    [ "ndelay", "mn__sleep_8cpp.html#a1b269577a6ebb0ec61969466a2396d87", null ]
 ];

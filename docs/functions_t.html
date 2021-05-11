@@ -147,11 +147,25 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 <li>task_message()
 : <a class="el" href="structmn_1_1ext_1_1basic__message__task_1_1task__message.html#ad8eeecaa019973bc66af7ae5c380d4a7">mn::ext::basic_message_task::task_message</a>
 </li>
+<li>test()
+: <a class="el" href="classmn_1_1basic__atomic__flag.html#a2ddfc5cdbeea31262b9018bf65e4aca4">mn::basic_atomic_flag&lt; TAtomicType, TTrue, TFalse &gt;</a>
+</li>
+<li>test_and_set()
+: <a class="el" href="classmn_1_1basic__atomic__flag.html#afa18a945b7f33a7498af85dd34f907e7">mn::basic_atomic_flag&lt; TAtomicType, TTrue, TFalse &gt;</a>
+</li>
 <li>third
 : <a class="el" href="structmn_1_1container_1_1basic__triple.html#a35d7e70990cc0fc52b42570cd1eb19f9">mn::container::basic_triple&lt; TFIRST, TSECOND, TTHIRD &gt;</a>
 </li>
 <li>third_type
 : <a class="el" href="structmn_1_1container_1_1basic__triple.html#a803d9e99ff23100612af01478f279dac">mn::container::basic_triple&lt; TFIRST, TSECOND, TTHIRD &gt;</a>
+</li>
+<li>this_type
+: <a class="el" href="classmn_1_1basic__singleton.html#a677247580a9cd374da54dda414d3556e">mn::basic_singleton&lt; T, TLOCK &gt;</a>
+, <a class="el" href="classmn_1_1copy__move__tag.html#af95bb461eefe465a69fda164c1b3babd">mn::copy_move_tag&lt; t &gt;</a>
+, <a class="el" href="classmn_1_1ILockObject.html#a30b2c4fbb8bebb92f8aafbbfc16facf1">mn::ILockObject</a>
+, <a class="el" href="classmn_1_1only__copyable__tag.html#a3b77648a136cd5789de21972448c3f03">mn::only_copyable_tag&lt; t &gt;</a>
+, <a class="el" href="classmn_1_1only__move__tag.html#a371d4e77f5610a536c7bec7ec2df52b3">mn::only_move_tag&lt; t &gt;</a>
+, <a class="el" href="classmn_1_1only__oneable__tag.html#a5cea69266b461da171b124be88303f78">mn::only_oneable_tag&lt; t &gt;</a>
 </li>
 <li>time_lock()
 : <a class="el" href="classmn_1_1atomic__spinlock.html#a2c155fffd28596a3eaad251aa5e21c89">mn::atomic_spinlock&lt; T &gt;</a>
@@ -161,6 +175,10 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="classmn_1_1system_1_1basic__critical__section__timedout.html#a3daa81c08f8fde54aded4d831262e85d">mn::system::basic_critical_section_timedout</a>
 , <a class="el" href="classmn_1_1system_1_1ISystemLockObject.html#a1fe3475eda7d1c747784ddb17dc2a2bf">mn::system::ISystemLockObject</a>
 </li>
+<li>time_type
+: <a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">mn::basic_timespan</a>
+, <a class="el" href="classmn_1_1basic__timestamp.html#a36dca4de3266cbda26a88eabe5cb2ed6">mn::basic_timestamp</a>
+</li>
 <li>to_ip4()
 : <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#a8df3ffc1f017cc7fef81783ae947480d">mn::net::basic_ip6_address</a>
 </li>
@@ -169,6 +187,9 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html#af9db56d1efc844c31e59dc1146a15d6a">mn::net::basic_ip4_address</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip6__address.html#ad53f7821d098cc5637c83feaadefda89">mn::net::basic_ip6_address</a>
 , <a class="el" href="classmn_1_1net_1_1basic__ip__address.html#a5740b3faeeccb7bc6e4cd362341d72aa">mn::net::basic_ip_address</a>
+</li>
+<li>to_ticks()
+: <a class="el" href="classmn_1_1basic__timespan.html#a55e6c62000ac02700b60ccd1f5a9b737">mn::basic_timespan</a>
 </li>
 <li>traits_type
 : <a class="el" href="classmn_1_1basic__iterator__pair.html#a8660a16087bf3d2b5648f322f439aa4f">mn::basic_iterator_pair&lt; TIterator, UIterator, TCategory &gt;</a>
@@ -189,7 +210,29 @@ $(document).ready(function(){initNavTree('functions_t.html',''); initResizable()
 , <a class="el" href="classmn_1_1system_1_1basic__critical__section__timedout.html#a6df0d133a8edb7e7dbff2a6e7b6fc8f5">mn::system::basic_critical_section_timedout</a>
 </li>
 <li>type
-: <a class="el" href="namespacemn.html#a089435d3dec9ea535a59b12d5326c4de">mn::make_void&lt; ts &gt;</a>
+: <a class="el" href="namespacemn.html#aa912ff4e9a875e06bb3823e6bb4c7477">mn::char_alignment&lt; Target, check &gt;</a>
+, <a class="el" href="namespacemn.html#a4efe4e249064b8ae518f29969ee6aaa7">mn::char_alignment&lt; Target, false &gt;</a>
+, <a class="el" href="namespacemn.html#a80b5283573942e1ebd033fbf7358e192">mn::double_alignment&lt; Target, check &gt;</a>
+, <a class="el" href="namespacemn.html#aff3065059d6922dd33bdd3424a1f9733">mn::double_alignment&lt; Target, false &gt;</a>
+, <a class="el" href="namespacemn.html#a080f35ec0a430b41a4a5b2bbb78152b7">mn::int_alignment&lt; Target, check &gt;</a>
+, <a class="el" href="namespacemn.html#a59a240a3f8d31dfca1694f93c0c25ee6">mn::int_alignment&lt; Target, false &gt;</a>
+, <a class="el" href="namespacemn_1_1internal.html#a5822f61b9a3ae820d73ef031bb55ec67">mn::internal::type_with_alignment&lt; 0 &gt;</a>
+, <a class="el" href="namespacemn_1_1internal.html#a280501d82d06ac046577b36d62124f34">mn::internal::type_with_alignment&lt; 1 &gt;</a>
+, <a class="el" href="namespacemn_1_1internal.html#a439d85fbe2e0597a23cb59f3892e7a85">mn::internal::type_with_alignment&lt; 16 &gt;</a>
+, <a class="el" href="namespacemn_1_1internal.html#ac66c3fe12090b02c8001821055355efb">mn::internal::type_with_alignment&lt; 2 &gt;</a>
+, <a class="el" href="namespacemn_1_1internal.html#a8b1fc06e3835e16f6ffd10faf1859dbe">mn::internal::type_with_alignment&lt; 32 &gt;</a>
+, <a class="el" href="namespacemn_1_1internal.html#a7709f7899d835c81ff223af566f6ae80">mn::internal::type_with_alignment&lt; 4 &gt;</a>
+, <a class="el" href="namespacemn_1_1internal.html#a6032545d0a11b31e05d9e99eee6c3d8b">mn::internal::type_with_alignment&lt; 64 &gt;</a>
+, <a class="el" href="namespacemn_1_1internal.html#a79a368b971f56e123423809944b99d4d">mn::internal::type_with_alignment&lt; 8 &gt;</a>
+, <a class="el" href="namespacemn.html#adb21e17071252ccf92964344add8a23b">mn::long_alignment&lt; Target, check &gt;</a>
+, <a class="el" href="namespacemn.html#a787743f9070719abb2f2d19e928f9ba3">mn::long_alignment&lt; Target, false &gt;</a>
+, <a class="el" href="namespacemn.html#a880aa73f1b6f5af053ad7a904d6cdbb6">mn::long_double_alignment&lt; Target, check &gt;</a>
+, <a class="el" href="namespacemn.html#a94f89aa87fa5bdd84388eee58e9cc2ab">mn::long_double_alignment&lt; Target, false &gt;</a>
+, <a class="el" href="namespacemn.html#a64d22b1fa9a35c40918118f4386c8875">mn::long_long_alignment&lt; Target, check &gt;</a>
+, <a class="el" href="namespacemn.html#a9766cf66e62738ca68234f2b4e0b52e5">mn::long_long_alignment&lt; Target, false &gt;</a>
+, <a class="el" href="namespacemn.html#a089435d3dec9ea535a59b12d5326c4de">mn::make_void&lt; ts &gt;</a>
+, <a class="el" href="namespacemn.html#aa79624ca671a3d5c19e49d78c2b8deff">mn::short_alignment&lt; Target, check &gt;</a>
+, <a class="el" href="namespacemn.html#a31c485bb5bad58a0e9fdd7300dff2f14">mn::short_alignment&lt; Target, false &gt;</a>
 , <a class="el" href="structmn_1_1tag.html#a663ea5282269431efc54a85a390ea3de">mn::tag&lt; T &gt;</a>
 </li>
 </ul>

@@ -1,7 +1,6 @@
 var classmn_1_1basic__semaphore =
 [
     [ "basic_semaphore", "classmn_1_1basic__semaphore.html#ae3d4861767c089b2bf15f1c4b2e531d6", null ],
-    [ "basic_semaphore", "classmn_1_1basic__semaphore.html#ae976de927c5e7e4124e8c2a7ae9e22cf", null ],
     [ "get_error", "classmn_1_1basic__semaphore.html#abb07f70c84e9387e0b5a478055bc70aa", null ],
     [ "get_handle", "classmn_1_1basic__semaphore.html#a8afacd192c0133b7955be09e5e7e3d13", null ],
     [ "is_initialized", "classmn_1_1basic__semaphore.html#a38f8a5b36fedbe591425bd2d9072674b", null ],

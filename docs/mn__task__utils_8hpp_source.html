@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('mn__task__utils_8hpp_source.html','');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">class </span>basic_task;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmn_1_1task__utils.html">   31</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classmn_1_1task__utils.html">task_utils</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmn_1_1task__utils.html">   31</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classmn_1_1task__utils.html">task_utils</a> : <a class="code" href="mn__copyable_8hpp.html#a38339c38a7c4a9953f35c8b51b6ede46">MN_ONSIGLETN_CLASS</a> {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmn_1_1task__utils.html#ac939c9d13d2862f4ddf127302a53968a">   34</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classmn_1_1task__utils.html#ac939c9d13d2862f4ddf127302a53968a">action</a> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmn_1_1task__utils.html#ac939c9d13d2862f4ddf127302a53968aab99232c6d063edfbf2c8be87976fc53f">   35</a></span>&#160;      <a class="code" href="classmn_1_1task__utils.html#ac939c9d13d2862f4ddf127302a53968aab99232c6d063edfbf2c8be87976fc53f">no_action</a> = eNoAction,                                </div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('mn__task__utils_8hpp_source.html','');
 <div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="namespacemn.html#a9178c06e307a497f0cf0025b1b514691">  147</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1task__utils.html">task_utils_t</a> = <a class="code" href="classmn_1_1task__utils.html">task_utils</a>;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassmn_1_1basic__task_html"><div class="ttname"><a href="classmn_1_1basic__task.html">mn::basic_task</a></div><div class="ttdoc">Wrapper class around FreeRTOS's implementation of a task.</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:88</div></div>
+<div class="ttc" id="aclassmn_1_1basic__task_html"><div class="ttname"><a href="classmn_1_1basic__task.html">mn::basic_task</a></div><div class="ttdoc">Wrapper class around FreeRTOS's implementation of a task.</div><div class="ttdef"><b>Definition:</b> mn_task.hpp:89</div></div>
 <div class="ttc" id="aclassmn_1_1task__utils_html"><div class="ttname"><a href="classmn_1_1task__utils.html">mn::task_utils</a></div><div class="ttdef"><b>Definition:</b> mn_task_utils.hpp:31</div></div>
 <div class="ttc" id="aclassmn_1_1task__utils_html_a07ccd0e341a06ebfd2f8428b117dc525"><div class="ttname"><a href="classmn_1_1task__utils.html#a07ccd0e341a06ebfd2f8428b117dc525">mn::task_utils::notify</a></div><div class="ttdeci">static bool notify(basic_task *pTaskToNotify, uint32_t ulValue, task_utils::action eAction)</div></div>
 <div class="ttc" id="aclassmn_1_1task__utils_html_a8c7c09d0254a69b69abfe4cf7dae5321"><div class="ttname"><a href="classmn_1_1task__utils.html#a8c7c09d0254a69b69abfe4cf7dae5321">mn::task_utils::notify_take</a></div><div class="ttdeci">static uint32_t notify_take(bool bClearCountOnExit, TickType_t xTicksToWait)</div></div>
@@ -210,7 +210,8 @@ $(document).ready(function(){initNavTree('mn__task__utils_8hpp_source.html','');
 <div class="ttc" id="aclassmn_1_1task__utils_html_ad114d52ee64960c806ddde171b24308e"><div class="ttname"><a href="classmn_1_1task__utils.html#ad114d52ee64960c806ddde171b24308e">mn::task_utils::notify_give</a></div><div class="ttdeci">static bool notify_give(basic_task *pTaskToNotify)</div></div>
 <div class="ttc" id="amn__autolock_8hpp_html"><div class="ttname"><a href="mn__autolock_8hpp.html">mn_autolock.hpp</a></div></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
-<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allactor_multiheap.hpp:28</div></div>
+<div class="ttc" id="amn__copyable_8hpp_html_a38339c38a7c4a9953f35c8b51b6ede46"><div class="ttname"><a href="mn__copyable_8hpp.html#a38339c38a7c4a9953f35c8b51b6ede46">MN_ONSIGLETN_CLASS</a></div><div class="ttdeci">#define MN_ONSIGLETN_CLASS</div><div class="ttdef"><b>Definition:</b> mn_copyable.hpp:26</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

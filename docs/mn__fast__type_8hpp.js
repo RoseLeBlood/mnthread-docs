@@ -2,10 +2,10 @@ var mn__fast__type_8hpp =
 [
     [ "basic_fbit", "classmn_1_1basic__fbit.html", "classmn_1_1basic__fbit" ],
     [ "fast_type", "classmn_1_1fast__type.html", "classmn_1_1fast__type" ],
-    [ "basic_fbit.__unnamed15__", "namespacemn.html#unionmn_1_1basic__fbit_8____unnamed15____", [
+    [ "basic_fbit.__unnamed11__", "namespacemn.html#unionmn_1_1basic__fbit_8____unnamed11____", [
       [ "bit", "namespacemn.html#af67169dfbf72c4ca285e9ee12e3e9ac5", null ]
     ] ],
-    [ "fast_type.__unnamed17__", "namespacemn.html#unionmn_1_1fast__type_8____unnamed17____", [
+    [ "fast_type.__unnamed13__", "namespacemn.html#unionmn_1_1fast__type_8____unnamed13____", [
       [ "bits", "namespacemn.html#a3819f466681ab741e6d8497282f93fd5", null ],
       [ "Value", "namespacemn.html#a689202409e48743b914713f96d93947c", null ]
     ] ],

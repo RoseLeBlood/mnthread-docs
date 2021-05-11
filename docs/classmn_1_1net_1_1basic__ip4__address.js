@@ -1,11 +1,11 @@
 var classmn_1_1net_1_1basic__ip4__address =
 [
     [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#ac06d29223b377507bef4fbd86d70d1c6", null ],
-    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#a6a88ec6f8a155c6765bc1355fc42af07", null ],
-    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#a62134aa1de1ad5267228c6272d15526f", null ],
-    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#a53436feb0267116221f71c5a02acda13", null ],
-    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#a7142b086f46a31aae7c9f63205257a7d", null ],
-    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#a6aab870fedf1a01e24e0a562fdb0c0c4", null ],
+    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#a982186d5f36bd67f5478667242d7fc40", null ],
+    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#a8fc737ca1159f50f6349fa4cbd19d9d0", null ],
+    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#ab2cdcdd4114a0af9de3ca21ca83e5af1", null ],
+    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#a32e61f87854d61ed31e859414b7c50ba", null ],
+    [ "basic_ip4_address", "classmn_1_1net_1_1basic__ip4__address.html#af66da51a7d8c1bbb2f775a1651bf14aa", null ],
     [ "calc_broadcast", "classmn_1_1net_1_1basic__ip4__address.html#a2270a4d8fdd265e96699955528b9bc57", null ],
     [ "calc_network_id", "classmn_1_1net_1_1basic__ip4__address.html#a7bdab99627276ee528e0dd9409f3e199", null ],
     [ "get_bytes", "classmn_1_1net_1_1basic__ip4__address.html#a01373bd1b70daa925af278fcc0c70933", null ],
@@ -32,5 +32,6 @@ var classmn_1_1net_1_1basic__ip4__address =
     [ "set_broadcast", "classmn_1_1net_1_1basic__ip4__address.html#a1a01f64f095ec1dfbfa4aeafb3bdd6d2", null ],
     [ "set_loop", "classmn_1_1net_1_1basic__ip4__address.html#a66e77f0bd055c6022f232f94d7fe828e", null ],
     [ "set_zero", "classmn_1_1net_1_1basic__ip4__address.html#a431312b7d3fe096e7fef6f44e109919b", null ],
+    [ "swap", "classmn_1_1net_1_1basic__ip4__address.html#afb38925c393460273b955eac8f092258", null ],
     [ "to_string", "classmn_1_1net_1_1basic__ip4__address.html#af9db56d1efc844c31e59dc1146a15d6a", null ]
 ];

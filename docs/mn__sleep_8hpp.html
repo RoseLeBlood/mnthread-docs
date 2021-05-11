@@ -140,6 +140,7 @@ $(document).ready(function(){initNavTree('mn__sleep_8hpp.html',''); initResizabl
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_sleep.hpp File Reference</div>  </div>
@@ -153,6 +154,7 @@ $(document).ready(function(){initNavTree('mn__sleep_8hpp.html',''); initResizabl
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;freertos/FreeRTOS.h&gt;</code><br />
 <code>#include &lt;freertos/task.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="mn__basic__timespan_8hpp_source.html">mn_basic_timespan.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__sleep_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -161,15 +163,60 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:afe06ce59bb9c5c6c501784357b2bc08c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__sleep_8hpp.html#afe06ce59bb9c5c6c501784357b2bc08c">MN_DELAY_SEC</a>(sec)&#160;&#160;&#160;<a class="el" href="namespacemn.html#ac51873844ea0a59f372a25e1aff5e1e1">mn::delay</a>(timespan_t(0,0,0,sec,0))</td></tr>
+<tr class="separator:afe06ce59bb9c5c6c501784357b2bc08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17baf6e38fed7638543b131e3a42475"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__sleep_8hpp.html#ab17baf6e38fed7638543b131e3a42475">MN_DELAY_MICROS</a>(ms)&#160;&#160;&#160;<a class="el" href="namespacemn.html#ac51873844ea0a59f372a25e1aff5e1e1">mn::delay</a>(timespan_t(0,0,0,0,ms))</td></tr>
+<tr class="separator:ab17baf6e38fed7638543b131e3a42475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a094c5c18f9b3159c0935207cc9489f7e"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a094c5c18f9b3159c0935207cc9489f7e">mn::sleep</a> (unsigned int secs)</td></tr>
-<tr class="separator:a094c5c18f9b3159c0935207cc9489f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ae1241da7c4b4cdcc385af3d191599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a22ae1241da7c4b4cdcc385af3d191599">mn::usleep</a> (useconds_t usec)</td></tr>
-<tr class="separator:a22ae1241da7c4b4cdcc385af3d191599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a684af303215bfb8b6538060075665fb2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a684af303215bfb8b6538060075665fb2">mn::nsleep</a> (const struct timespec *req, struct timespec *rem)</td></tr>
-<tr class="separator:a684af303215bfb8b6538060075665fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51873844ea0a59f372a25e1aff5e1e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ac51873844ea0a59f372a25e1aff5e1e1">mn::delay</a> (const timespan_t &amp;ts)</td></tr>
+<tr class="separator:ac51873844ea0a59f372a25e1aff5e1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4a9ca9fb65da6c894f8dda8921e7a1"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a3d4a9ca9fb65da6c894f8dda8921e7a1">mn::delay_until</a> (timespan_t &amp;tsPreviousWakeTime, const unsigned int &amp;uiTimeIncrement)</td></tr>
+<tr class="memdesc:a3d4a9ca9fb65da6c894f8dda8921e7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay a task until a specified time.  <a href="namespacemn.html#a3d4a9ca9fb65da6c894f8dda8921e7a1">More...</a><br /></td></tr>
+<tr class="separator:a3d4a9ca9fb65da6c894f8dda8921e7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b269577a6ebb0ec61969466a2396d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a1b269577a6ebb0ec61969466a2396d87">mn::ndelay</a> (const timespan_t &amp;req, timespan_t *rem)</td></tr>
+<tr class="separator:a1b269577a6ebb0ec61969466a2396d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ab17baf6e38fed7638543b131e3a42475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab17baf6e38fed7638543b131e3a42475">&#9670;&nbsp;</a></span>MN_DELAY_MICROS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_DELAY_MICROS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ms</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="namespacemn.html#ac51873844ea0a59f372a25e1aff5e1e1">mn::delay</a>(timespan_t(0,0,0,0,ms))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe06ce59bb9c5c6c501784357b2bc08c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe06ce59bb9c5c6c501784357b2bc08c">&#9670;&nbsp;</a></span>MN_DELAY_SEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MN_DELAY_SEC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sec</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="namespacemn.html#ac51873844ea0a59f372a25e1aff5e1e1">mn::delay</a>(timespan_t(0,0,0,sec,0))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>

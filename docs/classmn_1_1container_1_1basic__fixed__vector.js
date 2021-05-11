@@ -15,5 +15,13 @@ var classmn_1_1container_1_1basic__fixed__vector =
     [ "basic_fixed_vector", "classmn_1_1container_1_1basic__fixed__vector.html#af05d10c2b592a79efd8067ab7928ffd3", null ],
     [ "basic_fixed_vector", "classmn_1_1container_1_1basic__fixed__vector.html#afbf863ba71863f466b8b5fe998af246f", null ],
     [ "basic_fixed_vector", "classmn_1_1container_1_1basic__fixed__vector.html#a62545cfedf328c0b0e8e793bfc4a3c83", null ],
-    [ "operator=", "classmn_1_1container_1_1basic__fixed__vector.html#a8c25ce14afd9704b95a87385dd59a585", null ]
+    [ "begin", "classmn_1_1container_1_1basic__fixed__vector.html#a1a4e2e797c3f6e585cfab2f16e532a22", null ],
+    [ "capacity", "classmn_1_1container_1_1basic__fixed__vector.html#a2e620fb1722f8f6432035121f69caea5", null ],
+    [ "clear", "classmn_1_1container_1_1basic__fixed__vector.html#aea4878a67df50eb891bd8604cbc6fdac", null ],
+    [ "empty", "classmn_1_1container_1_1basic__fixed__vector.html#ae288c6688c5d6bc272772b76834b9cec", null ],
+    [ "end", "classmn_1_1container_1_1basic__fixed__vector.html#a2b9192cb872665220f6b94c581da781f", null ],
+    [ "get_allocator", "classmn_1_1container_1_1basic__fixed__vector.html#a44ab50c532551027202bb06ac5ab2783", null ],
+    [ "operator=", "classmn_1_1container_1_1basic__fixed__vector.html#a8c25ce14afd9704b95a87385dd59a585", null ],
+    [ "set_allocator", "classmn_1_1container_1_1basic__fixed__vector.html#a471cc8fe2483628360098f70b77e0749", null ],
+    [ "size", "classmn_1_1container_1_1basic__fixed__vector.html#a87524cb060d18f41389b55ed3bcd7206", null ]
 ];

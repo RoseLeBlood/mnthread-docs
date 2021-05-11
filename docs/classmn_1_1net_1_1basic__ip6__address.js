@@ -1,15 +1,16 @@
 var classmn_1_1net_1_1basic__ip6__address =
 [
     [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#a6aad4f1b8ec1efb8ccbeb840fd5f5f6e", null ],
-    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#aa6f403538c84ff85cba6b010a792596b", null ],
-    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#ae5f3927cc80ba315d69a94077cef6543", null ],
-    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#a7689179e1579179c20e9edfd1633f2eb", null ],
-    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#ab638119a71f09066a7d489dc4307f94d", null ],
-    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#a95bb52783484e478b0d9280bcbe1752e", null ],
+    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#a99b1f21729bbed8e83a273769520bab1", null ],
+    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#abb9ed7355e9636b8ac1d1eecc9f5c238", null ],
+    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#a8c267ebb66a6ff48d240662ca7361efb", null ],
+    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#a718004497b31ea1dbe9c6236442a6ad4", null ],
+    [ "basic_ip6_address", "classmn_1_1net_1_1basic__ip6__address.html#a6bbada75e752a54d4feca61c81c26fae", null ],
     [ "from_ip4", "classmn_1_1net_1_1basic__ip6__address.html#af858eac3b4fb60422a0d715f2b8495ca", null ],
     [ "get_array", "classmn_1_1net_1_1basic__ip6__address.html#a71810540f7f8cf0f4ee51c0f768294bb", null ],
     [ "get_bytes", "classmn_1_1net_1_1basic__ip6__address.html#a391ff4e9f6e89e1087607494b400ffd8", null ],
     [ "get_int", "classmn_1_1net_1_1basic__ip6__address.html#a38299e7ef0e7b1d529fe79565a4d6214", null ],
+    [ "get_int", "classmn_1_1net_1_1basic__ip6__address.html#a0e55fd203772a153d7e8ce5ecc871b62", null ],
     [ "is_any", "classmn_1_1net_1_1basic__ip6__address.html#a0230a9a8a20e5001d9336536814e8ef0", null ],
     [ "is_broadcast", "classmn_1_1net_1_1basic__ip6__address.html#abde0248fc3bfd149ec995f6c118b27f2", null ],
     [ "is_equel", "classmn_1_1net_1_1basic__ip6__address.html#aee342bf7f3863baa78675cc0bcdf4889", null ],
@@ -33,6 +34,7 @@ var classmn_1_1net_1_1basic__ip6__address =
     [ "operator~", "classmn_1_1net_1_1basic__ip6__address.html#aae4b8ef7ef23ca17861acc2a9224e1a4", null ],
     [ "set_loopback", "classmn_1_1net_1_1basic__ip6__address.html#af4d4845422209990428c82babdd9e83f", null ],
     [ "set_zero", "classmn_1_1net_1_1basic__ip6__address.html#ae70c89645bef4dd7c4cea4d87c430f3b", null ],
+    [ "swap", "classmn_1_1net_1_1basic__ip6__address.html#a186e1f3165eab70b7fd6e453ec630626", null ],
     [ "to_ip4", "classmn_1_1net_1_1basic__ip6__address.html#a8df3ffc1f017cc7fef81783ae947480d", null ],
     [ "to_string", "classmn_1_1net_1_1basic__ip6__address.html#ad53f7821d098cc5637c83feaadefda89", null ]
 ];

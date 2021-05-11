@@ -141,7 +141,9 @@ $(document).ready(function(){initNavTree('classmn_1_1container_1_1base__rb__tree
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classmn_1_1container_1_1base__rb__tree-members.html">List of all members</a>  </div>
@@ -156,7 +158,8 @@ $(document).ready(function(){initNavTree('classmn_1_1container_1_1base__rb__tree
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1container_1_1base__rb__tree__coll__graph.svg" width="292" height="188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1container_1_1base__rb__tree__coll__graph.svg" width="244" height="188"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -171,9 +174,9 @@ Public Types</h2></td></tr>
 <tr class="separator:a9bf54296f2c1c740855d0c7147d2af70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ef733c5c1c6b91f8e5c9ee2ff8e5f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> = <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></td></tr>
 <tr class="separator:a61ef733c5c1c6b91f8e5c9ee2ff8e5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe43fb5c82ff2fa2332808287741379a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> = <a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc809e3c45ab596ac60d2de2c7d4cfb6">value_type</a>, TAllocator &gt;</td></tr>
-<tr class="separator:afe43fb5c82ff2fa2332808287741379a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74488e3a3979a61866729b7ed145ea17"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a74488e3a3979a61866729b7ed145ea17">TravFunc</a>) (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> left, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> depth)</td></tr>
+<tr class="memitem:ae3928b98e4d83f0621a0a44e97487e82"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> = <a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc809e3c45ab596ac60d2de2c7d4cfb6">value_type</a> &gt;</td></tr>
+<tr class="separator:ae3928b98e4d83f0621a0a44e97487e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74488e3a3979a61866729b7ed145ea17"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a74488e3a3979a61866729b7ed145ea17">TravFunc</a>) (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> left, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> depth)</td></tr>
 <tr class="separator:a74488e3a3979a61866729b7ed145ea17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -182,13 +185,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af58ac67ea823fb0348795e4e09c363ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13cfe8dffe80d6cd4e381f51a4b690f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a13cfe8dffe80d6cd4e381f51a4b690f9">~base_rb_tree</a> ()</td></tr>
 <tr class="separator:a13cfe8dffe80d6cd4e381f51a4b690f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a845b9aff63f19c431e999cfcce4ff92d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a845b9aff63f19c431e999cfcce4ff92d">insert</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc809e3c45ab596ac60d2de2c7d4cfb6">value_type</a> &amp;v)</td></tr>
+<tr class="memitem:a845b9aff63f19c431e999cfcce4ff92d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a845b9aff63f19c431e999cfcce4ff92d">insert</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc809e3c45ab596ac60d2de2c7d4cfb6">value_type</a> &amp;v)</td></tr>
 <tr class="separator:a845b9aff63f19c431e999cfcce4ff92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09f8699ee173d330aea87cd5d152d50b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a09f8699ee173d330aea87cd5d152d50b">find_node</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a3857c5af39171db8270a1ff63e1d8240">key_type</a> &amp;key)</td></tr>
+<tr class="memitem:a09f8699ee173d330aea87cd5d152d50b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a09f8699ee173d330aea87cd5d152d50b">find_node</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a3857c5af39171db8270a1ff63e1d8240">key_type</a> &amp;key)</td></tr>
 <tr class="separator:a09f8699ee173d330aea87cd5d152d50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e8f4d7c7f2160a9a3647187c150b4ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a1e8f4d7c7f2160a9a3647187c150b4ce">erase</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a3857c5af39171db8270a1ff63e1d8240">key_type</a> &amp;key)</td></tr>
 <tr class="separator:a1e8f4d7c7f2160a9a3647187c150b4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab77bb1903b09a8e1331efcfeefd7ee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#aab77bb1903b09a8e1331efcfeefd7ee1">erase</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n)</td></tr>
+<tr class="memitem:aab77bb1903b09a8e1331efcfeefd7ee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#aab77bb1903b09a8e1331efcfeefd7ee1">erase</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n)</td></tr>
 <tr class="separator:aab77bb1903b09a8e1331efcfeefd7ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08921c4d7bdca01990e3dad54a265957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a08921c4d7bdca01990e3dad54a265957">clear</a> ()</td></tr>
 <tr class="separator:a08921c4d7bdca01990e3dad54a265957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,41 +201,53 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afeac0f52603ce2d48bb2cf536ccde178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc127941fa199fe5747a8f4bfb7f18af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc127941fa199fe5747a8f4bfb7f18af">size</a> () const</td></tr>
 <tr class="separator:abc127941fa199fe5747a8f4bfb7f18af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc0c3b2c8aad80b683318b2ee85bb43e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc0c3b2c8aad80b683318b2ee85bb43e">begin</a> ()</td></tr>
+<tr class="memitem:abc0c3b2c8aad80b683318b2ee85bb43e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc0c3b2c8aad80b683318b2ee85bb43e">begin</a> ()</td></tr>
 <tr class="separator:abc0c3b2c8aad80b683318b2ee85bb43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f21fcb56c00ecad18a8bc8eec9cbdf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a49f21fcb56c00ecad18a8bc8eec9cbdf">find_next</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n) const</td></tr>
+<tr class="memitem:a49f21fcb56c00ecad18a8bc8eec9cbdf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a49f21fcb56c00ecad18a8bc8eec9cbdf">find_next</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n) const</td></tr>
 <tr class="separator:a49f21fcb56c00ecad18a8bc8eec9cbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff8d25c860056e74f150f64ca0d6394"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a5ff8d25c860056e74f150f64ca0d6394">size</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n)</td></tr>
+<tr class="memitem:a5ff8d25c860056e74f150f64ca0d6394"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a5ff8d25c860056e74f150f64ca0d6394">size</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n)</td></tr>
 <tr class="separator:a5ff8d25c860056e74f150f64ca0d6394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18527aa93393a333b3063c7a9eb45ff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a18527aa93393a333b3063c7a9eb45ff5">validate</a> ()</td></tr>
 <tr class="separator:a18527aa93393a333b3063c7a9eb45ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4028222a308ac68baaa327554fd2e56b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a4028222a308ac68baaa327554fd2e56b">validate</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n)</td></tr>
+<tr class="memitem:a4028222a308ac68baaa327554fd2e56b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a4028222a308ac68baaa327554fd2e56b">validate</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n)</td></tr>
 <tr class="separator:a4028222a308ac68baaa327554fd2e56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8749b426e4b6a8fe5fe1e83f8049821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#aa8749b426e4b6a8fe5fe1e83f8049821">rotate_left</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n)</td></tr>
+<tr class="memitem:aa8749b426e4b6a8fe5fe1e83f8049821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#aa8749b426e4b6a8fe5fe1e83f8049821">rotate_left</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n)</td></tr>
 <tr class="separator:aa8749b426e4b6a8fe5fe1e83f8049821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f6787507e75080ab38e1529462b973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a15f6787507e75080ab38e1529462b973">rotate_right</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n)</td></tr>
+<tr class="memitem:a15f6787507e75080ab38e1529462b973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a15f6787507e75080ab38e1529462b973">rotate_right</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n)</td></tr>
 <tr class="separator:a15f6787507e75080ab38e1529462b973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d3921e96331622444432d29b18b908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a82d3921e96331622444432d29b18b908">free_node</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n, bool recursive)</td></tr>
+<tr class="memitem:a82d3921e96331622444432d29b18b908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a82d3921e96331622444432d29b18b908">free_node</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n, bool recursive)</td></tr>
 <tr class="separator:a82d3921e96331622444432d29b18b908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc038edc979c279a3a228fa311211c42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#adc038edc979c279a3a228fa311211c42">base_rb_tree</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">base_rb_tree</a> &amp;)=delete</td></tr>
 <tr class="separator:adc038edc979c279a3a228fa311211c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac990b83a3add81f0e352e0335a9a4db9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html">base_rb_tree</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ac990b83a3add81f0e352e0335a9a4db9">operator=</a> (const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">base_rb_tree</a> &amp;)=delete</td></tr>
 <tr class="separator:ac990b83a3add81f0e352e0335a9a4db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b7cb2dff8f998e3d83d9165f0d5ab56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a1b7cb2dff8f998e3d83d9165f0d5ab56">traverse_node</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a74488e3a3979a61866729b7ed145ea17">TravFunc</a> func, int depth)</td></tr>
+<tr class="memitem:a1b7cb2dff8f998e3d83d9165f0d5ab56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a1b7cb2dff8f998e3d83d9165f0d5ab56">traverse_node</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a74488e3a3979a61866729b7ed145ea17">TravFunc</a> func, int depth)</td></tr>
 <tr class="separator:a1b7cb2dff8f998e3d83d9165f0d5ab56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae121c35e6434b00b6ae18d409ac65b97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae121c35e6434b00b6ae18d409ac65b97">traverse</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a74488e3a3979a61866729b7ed145ea17">TravFunc</a> func)</td></tr>
 <tr class="separator:ae121c35e6434b00b6ae18d409ac65b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ac86a3d1c3cbccfaa7a1b729ce8abf499"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ac86a3d1c3cbccfaa7a1b729ce8abf499">NodeSize</a> = sizeof(<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>)</td></tr>
+<tr class="separator:ac86a3d1c3cbccfaa7a1b729ce8abf499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a591e32b66411af6a73959b64d1e387b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a591e32b66411af6a73959b64d1e387b4">rebalance</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *new_node)</td></tr>
+<tr class="memitem:a591e32b66411af6a73959b64d1e387b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a591e32b66411af6a73959b64d1e387b4">rebalance</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *new_node)</td></tr>
 <tr class="separator:a591e32b66411af6a73959b64d1e387b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2392f324da4f19782dc7b003f8d8b0de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a2392f324da4f19782dc7b003f8d8b0de">rebalance_after_erase</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n)</td></tr>
+<tr class="memitem:a2392f324da4f19782dc7b003f8d8b0de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a2392f324da4f19782dc7b003f8d8b0de">rebalance_after_erase</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n)</td></tr>
 <tr class="separator:a2392f324da4f19782dc7b003f8d8b0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a523ade128696e538f8c2670cc314fec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a523ade128696e538f8c2670cc314fec5">construct_node</a> ()</td></tr>
+<tr class="separator:a523ade128696e538f8c2670cc314fec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb94d49a8e6bdfc882ffec5cc7891fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#aeb94d49a8e6bdfc882ffec5cc7891fe2">destruct_node</a> (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n)</td></tr>
+<tr class="separator:aeb94d49a8e6bdfc882ffec5cc7891fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac48993846c7ec712950fdd6b71cfa90e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ac48993846c7ec712950fdd6b71cfa90e">m_root</a></td></tr>
+<tr class="memitem:ac48993846c7ec712950fdd6b71cfa90e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ac48993846c7ec712950fdd6b71cfa90e">m_root</a></td></tr>
 <tr class="separator:ac48993846c7ec712950fdd6b71cfa90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37262bc3c23695e38ff216db390993ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a37262bc3c23695e38ff216db390993ee">m_size</a></td></tr>
 <tr class="separator:a37262bc3c23695e38ff216db390993ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,7 +256,7 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ab4c97f2c6558465e9ee064d491132c8f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ab4c97f2c6558465e9ee064d491132c8f">ms_sentinel</a></td></tr>
+<tr class="memitem:ab4c97f2c6558465e9ee064d491132c8f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ab4c97f2c6558465e9ee064d491132c8f">ms_sentinel</a></td></tr>
 <tr class="separator:ab4c97f2c6558465e9ee064d491132c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -277,8 +292,8 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
 
 </div>
 </div>
-<a id="afe43fb5c82ff2fa2332808287741379a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe43fb5c82ff2fa2332808287741379a">&#9670;&nbsp;</a></span>node_type</h2>
+<a id="ae3928b98e4d83f0621a0a44e97487e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3928b98e4d83f0621a0a44e97487e82">&#9670;&nbsp;</a></span>node_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +301,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
 template&lt;class TTreeTraits , class TAllocator &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> =  <a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt;<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc809e3c45ab596ac60d2de2c7d4cfb6">value_type</a>, TAllocator&gt;</td>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> =  <a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt;<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc809e3c45ab596ac60d2de2c7d4cfb6">value_type</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -334,7 +349,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
 template&lt;class TTreeTraits , class TAllocator &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::TravFunc) (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *n, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> left, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> depth)</td>
+          <td class="memname">typedef void(* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::TravFunc) (<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *n, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> left, <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> depth)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -454,7 +469,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::begin </td>
+          <td class="memname">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -490,6 +505,61 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a523ade128696e538f8c2670cc314fec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a523ade128696e538f8c2670cc314fec5">&#9670;&nbsp;</a></span>construct_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TTreeTraits , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::construct_node </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb94d49a8e6bdfc882ffec5cc7891fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb94d49a8e6bdfc882ffec5cc7891fe2">&#9670;&nbsp;</a></span>destruct_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TTreeTraits , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::destruct_node </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -565,7 +635,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::erase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -591,9 +661,9 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::find_next </td>
+          <td class="memname">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::find_next </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -619,7 +689,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::find_node </td>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::find_node </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a3857c5af39171db8270a1ff63e1d8240">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
@@ -649,7 +719,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::free_node </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -685,7 +755,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::insert </td>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::insert </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#abc809e3c45ab596ac60d2de2c7d4cfb6">value_type</a> &amp;&#160;</td>
           <td class="paramname"><em>v</em></td><td>)</td>
@@ -743,7 +813,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::rebalance </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>new_node</em></td><td>)</td>
           <td></td>
         </tr>
@@ -771,7 +841,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::rebalance_after_erase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -799,7 +869,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::rotate_left </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -827,7 +897,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::rotate_right </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -882,7 +952,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::size </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -966,7 +1036,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::traverse_node </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
@@ -1037,7 +1107,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::validate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> *&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1088,7 +1158,7 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::m_root</td>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>* <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::m_root</td>
         </tr>
       </table>
   </td>
@@ -1136,12 +1206,36 @@ template&lt;class TTreeTraits , class TAllocator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a">node_type</a> <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::ms_sentinel</td>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a> <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::ms_sentinel</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac86a3d1c3cbccfaa7a1b729ce8abf499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86a3d1c3cbccfaa7a1b729ce8abf499">&#9670;&nbsp;</a></span>NodeSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TTreeTraits , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5">size_type</a> <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree</a>&lt; TTreeTraits, TAllocator &gt;::NodeSize = sizeof(<a class="el" href="classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82">node_type</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

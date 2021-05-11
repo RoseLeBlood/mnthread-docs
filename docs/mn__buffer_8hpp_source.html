@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_buffer.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__buffer_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_buffer.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__buffer_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __MINILIB_BASIC_BUFFER_H__</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __MINILIB_BASIC_BUFFER_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator_8hpp.html">mn_allocator.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__typetraits_8hpp.html">mn_typetraits.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TVALUE, <span class="keyword">class</span> TALLOCATOR = memory::default_allocator&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmn_1_1buffer.html">buffer</a> : <a class="code" href="mn__copyable_8hpp.html#a868df2e653196e1bf788a1591de89de7">MN_ONCOPYABLE_CLASS</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#aedff4ccc633e0a6500c159522ed36659">   38</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html">self_type</a> = <a class="code" href="classmn_1_1buffer.html">buffer&lt;TVALUE, TALLOCATOR&gt;</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">   39</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> = TVALUE;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#abbe12704babb2dfe09f329a4227ae976">   40</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#abbe12704babb2dfe09f329a4227ae976">allocator</a> = TALLOCATOR;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">   41</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> = <a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>*;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">   42</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">reference</a> = <a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>&amp;;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">   43</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> = <a class="code" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#aba6129522bd1fb9a4234b109be578920">   45</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#aba6129522bd1fb9a4234b109be578920">const_reference</a> = <span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>&amp;;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">   46</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> = <span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>*;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a463aebe2d6ec8c768104f5509a666c7a">   48</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="structmn_1_1random__access__iterator__tag.html">iterator_category</a> = <a class="code" href="structmn_1_1random__access__iterator__tag.html">random_access_iterator_tag</a> ;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#ae7f76b359a6e812f5d35a0cb4ec24007">   49</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#ae7f76b359a6e812f5d35a0cb4ec24007">difference_type</a> = <a class="code" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">ptrdiff_t</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">   50</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a> = <a class="code" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">   51</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a> = <span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>*;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a3b6e532ae020aa2cb1954341eacfa670">   57</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a3b6e532ae020aa2cb1954341eacfa670">buffer</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&amp; size)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            : <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>(size), <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>(size), <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>(0), <a class="code" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a>(true), <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>()  {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="classmn_1_1buffer.html#a9a60ff85fd5d61c94ded5cee2b33ef8b">init_internal_buffer</a>(size);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a9f3e8c6ad003392ee7eb78871ae43e02">   68</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a9f3e8c6ad003392ee7eb78871ae43e02">buffer</a>(<a class="code" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> <a class="code" href="classmn_1_1buffer.html">buffer</a>, <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> size)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            : <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>(size), <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>(size), <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>(<a class="code" href="classmn_1_1buffer.html">buffer</a>), <a class="code" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a>(false), <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>()  { }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#ad2901b17433f2190d595127d26548deb">   78</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#ad2901b17433f2190d595127d26548deb">buffer</a>(<a class="code" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> <a class="code" href="classmn_1_1buffer.html">buffer</a>, <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> size)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            : <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>(size), <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>(size), <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>(0), <a class="code" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a>(true), <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>()  {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="classmn_1_1buffer.html#a9a60ff85fd5d61c94ded5cee2b33ef8b">init_internal_buffer</a>(<a class="code" href="classmn_1_1buffer.html">buffer</a>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a3d2bbebf6838b104a471718e9c70cb2b">   87</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a3d2bbebf6838b104a471718e9c70cb2b">buffer</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html">self_type</a>&amp; other)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            : <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>(other.<a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>), <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>(other.<a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>), <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>(0), <a class="code" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a>(true), <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>() {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="classmn_1_1buffer.html#a9a60ff85fd5d61c94ded5cee2b33ef8b">init_internal_buffer</a>(other.<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a76138cf5f16804ca861cc4775ef39f2a">   95</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a76138cf5f16804ca861cc4775ef39f2a">~buffer</a>() {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="classmn_1_1buffer.html#a935b728786eb3070196ce159f37601b0">destroy_internal_buffer</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a401e3fb319cded32226a1c7006df8530">  103</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a> <a class="code" href="classmn_1_1buffer.html#a401e3fb319cded32226a1c7006df8530">begin</a>()            { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>; }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#ad6a44053f5598f61bb80a7e3d46e1fd8">  109</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a> <a class="code" href="classmn_1_1buffer.html#ad6a44053f5598f61bb80a7e3d46e1fd8">begin</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>; }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#ae8753b6312ff0edb1334a11da56410b9">  115</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a> <a class="code" href="classmn_1_1buffer.html#ae8753b6312ff0edb1334a11da56410b9">end</a>()              { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>; }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a4f8cb517dbb16e8705a7e86cb35a9345">  121</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a> <a class="code" href="classmn_1_1buffer.html#a4f8cb517dbb16e8705a7e86cb35a9345">end</a>()<span class="keyword"> const  </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>; }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a59a016bc89f4a1a0daf6ff0465b37afe">  128</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1buffer.html#a59a016bc89f4a1a0daf6ff0465b37afe">append</a>(<a class="code" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> pBuffer, <a class="code" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">std::size_t</a> sBufferSize) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">if</span> (sBufferSize == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1buffer.html#a6f200c764c12a80ff9d4f6354ba04ca3">resize</a>(<a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> + sBufferSize, <span class="keyword">true</span>))</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                memcpy(<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a> + <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> - sBufferSize, pBuffer, sBufferSize * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#ad959b1b4d87593fef75b296b743b7129">  138</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1buffer.html#ad959b1b4d87593fef75b296b743b7129">append</a>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> value) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1buffer.html#a6f200c764c12a80ff9d4f6354ba04ca3">resize</a>(<a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> + 1, <span class="keyword">true</span>))</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>[<a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> - 1] = value;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#add477feed44ae6f90e62550cecbf8bd2">  147</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1buffer.html#add477feed44ae6f90e62550cecbf8bd2">append</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html">self_type</a>&amp; refBuffer) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="classmn_1_1buffer.html#a59a016bc89f4a1a0daf6ff0465b37afe">append</a>(refBuffer.<a class="code" href="classmn_1_1buffer.html#a401e3fb319cded32226a1c7006df8530">begin</a>(), refBuffer.used());</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a6f200c764c12a80ff9d4f6354ba04ca3">  158</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1buffer.html#a6f200c764c12a80ff9d4f6354ba04ca3">resize</a>(<a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> newSize, <span class="keywordtype">bool</span> bReserve = <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">if</span>(newSize &gt; <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <a class="code" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> __pNewRawBuffer = <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>.alloc(newSize * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>));</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">if</span>(__pNewRawBuffer == 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keywordflow">if</span>(bReserve) memcpy(__pNewRawBuffer, <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>, <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>));</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>.free(<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a> = __pNewRawBuffer;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a> = newSize;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> = newSize;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a9a74bb98699ed626c361f4ab911d8e80">  182</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1buffer.html#a9a74bb98699ed626c361f4ab911d8e80">change_size</a>(<a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> newSize, <span class="keywordtype">bool</span> bReserve = <span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">if</span> (newSize == <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> __pNewRawBuffer = NULL;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">if</span>(newSize &gt; 0) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                __pNewRawBuffer = <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>.alloc(newSize * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>));</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="keywordflow">if</span>(bReserve)  memcpy(__pNewRawBuffer, <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                     (<a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> &lt; newSize ? <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> : newSize) * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>));</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>.free(<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a> = __pNewRawBuffer;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a> = newSize;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <span class="keywordflow">if</span> (newSize &lt; <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>) <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> = newSize;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a872a001b2ca406a3b84e09bbc4811e08">  205</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1buffer.html#a872a001b2ca406a3b84e09bbc4811e08">assign</a>(<a class="code" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> pBuffer, <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> size) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span> (0 == size) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordflow">if</span> (size &gt; <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>) <a class="code" href="classmn_1_1buffer.html#a6f200c764c12a80ff9d4f6354ba04ca3">resize</a>(size, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            memcpy(<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>, pBuffer, size * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>));</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> = size;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a6cc66f2f8f6ccbffbc888de8e0da2f6e">  216</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1buffer.html#a6cc66f2f8f6ccbffbc888de8e0da2f6e">clear</a>() {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            memset(<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>, 0, <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>));</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a0f79ac1390f58bb803f96318227dc1de">  224</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1buffer.html#a0f79ac1390f58bb803f96318227dc1de">is_equel</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html">buffer</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a> != other.<a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> != other.<a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">return</span> (memcmp(<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>, other.<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>, <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>)) == 0);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#aab96c6e8ee984775b3a7f5a32a5245e2">  235</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1buffer.html#aab96c6e8ee984775b3a7f5a32a5245e2">is_empty</a>()<span class="keyword"> const               </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> == 0; }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#ac0425313d492acfa25cbed8cd1e0aa72">  241</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1buffer.html#ac0425313d492acfa25cbed8cd1e0aa72">is_full</a>()<span class="keyword"> const                </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> == <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>; }</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a3104f7c2dd2fb1a3dfd4feca9f346896">  246</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="code" href="classmn_1_1buffer.html#a3104f7c2dd2fb1a3dfd4feca9f346896">get_size</a>()<span class="keyword"> const          </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>; }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a1bd9de0f80cbde4287333964a6d4172a">  252</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="code" href="classmn_1_1buffer.html#a1bd9de0f80cbde4287333964a6d4172a">get_size_bytes</a>()<span class="keyword"> const    </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a> * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>); }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#af102ca623bca47bb37a03e03622db0a5">  258</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="code" href="classmn_1_1buffer.html#af102ca623bca47bb37a03e03622db0a5">get_used</a>()<span class="keyword"> const          </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>; }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a54efa8ca6b20aa8e03a8f4c26a062230">  264</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="code" href="classmn_1_1buffer.html#a54efa8ca6b20aa8e03a8f4c26a062230">get_used_bytes</a>()<span class="keyword"> const    </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>); }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a769ec1b038c7eb26d00f1658d1e64c49">  269</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1buffer.html#a769ec1b038c7eb26d00f1658d1e64c49">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html">buffer</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#a0f79ac1390f58bb803f96318227dc1de">is_equel</a>(other);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a3e5b742a11a96cb846e8660252a1a244">  275</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1buffer.html#a3e5b742a11a96cb846e8660252a1a244">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html">buffer</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keywordflow">return</span> !(<a class="code" href="classmn_1_1buffer.html#a0f79ac1390f58bb803f96318227dc1de">is_equel</a>(other));</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a3368fcb817c4c88611214b9ff92de836">  279</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">reference</a> <a class="code" href="classmn_1_1buffer.html#a3368fcb817c4c88611214b9ff92de836">operator [] </a>(<a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> index) {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            assert (index &lt; <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>[index];</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a8b5989cd0851add2d7b4cfe572ec401c">  284</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#aba6129522bd1fb9a4234b109be578920">const_reference</a> <a class="code" href="classmn_1_1buffer.html#a3368fcb817c4c88611214b9ff92de836">operator [] </a>(<a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> index)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            assert (index &lt; <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>[index];</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a9a60ff85fd5d61c94ded5cee2b33ef8b">  293</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1buffer.html#a9a60ff85fd5d61c94ded5cee2b33ef8b">init_internal_buffer</a>() {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a> &gt; 0)</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a> = <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>.allocate(<a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>, <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>),</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                                    <a class="code" href="namespacemn.html#ac529c3bee99de8ed32ab60ed9e16bf33">mn::aligned_as&lt;value_type&gt;::res</a> );</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a9428501845326259a32c707e3813c6fd">  303</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1buffer.html#a9428501845326259a32c707e3813c6fd">init_internal_buffer</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> <a class="code" href="classmn_1_1buffer.html">buffer</a>) {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a> &gt; 0) {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a> = <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>.allocate(<a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>, <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>),</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                                    <a class="code" href="namespacemn.html#ac529c3bee99de8ed32ab60ed9e16bf33">mn::aligned_as&lt;value_type&gt;::res</a>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                memcpy(<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>, <a class="code" href="classmn_1_1buffer.html">buffer</a>, <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a> * <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>));</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a935b728786eb3070196ce159f37601b0">  312</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1buffer.html#a935b728786eb3070196ce159f37601b0">destroy_internal_buffer</a>() {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a> &amp;&amp; (<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a> != 0))</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>.deallocate(<a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>, <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>), <a class="code" href="namespacemn.html#ac529c3bee99de8ed32ab60ed9e16bf33">mn::aligned_as&lt;value_type&gt;::res</a>);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00317"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">  317</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="code" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">  318</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="code" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a>;</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">  319</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a>   <a class="code" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">  320</a></span>&#160;        <span class="keywordtype">bool</span>      <a class="code" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">  321</a></span>&#160;        <a class="code" href="classmn_1_1buffer.html#abbe12704babb2dfe09f329a4227ae976">allocator</a> <a class="code" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    };</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_BASIC_BUFFER_H__</span></div>
+<div class="ttc" id="aclassmn_1_1buffer_html"><div class="ttname"><a href="classmn_1_1buffer.html">mn::buffer</a></div><div class="ttdoc">A buffer class that allocates a buffer of a given type and size.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:36</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a0de09ea62fb28a12a0d5b8395c92060c"><div class="ttname"><a href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">mn::buffer::m_sSize</a></div><div class="ttdeci">size_type m_sSize</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:317</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a0f79ac1390f58bb803f96318227dc1de"><div class="ttname"><a href="classmn_1_1buffer.html#a0f79ac1390f58bb803f96318227dc1de">mn::buffer::is_equel</a></div><div class="ttdeci">bool is_equel(const buffer &amp;other) const</div><div class="ttdoc">Is the given buffer equel with this?</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:224</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a1bd9de0f80cbde4287333964a6d4172a"><div class="ttname"><a href="classmn_1_1buffer.html#a1bd9de0f80cbde4287333964a6d4172a">mn::buffer::get_size_bytes</a></div><div class="ttdeci">size_type get_size_bytes() const</div><div class="ttdoc">Get the allocated memory size in bytes.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:252</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a3104f7c2dd2fb1a3dfd4feca9f346896"><div class="ttname"><a href="classmn_1_1buffer.html#a3104f7c2dd2fb1a3dfd4feca9f346896">mn::buffer::get_size</a></div><div class="ttdeci">size_type get_size() const</div><div class="ttdoc">Get the allocated memory size in elements.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:246</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a3368fcb817c4c88611214b9ff92de836"><div class="ttname"><a href="classmn_1_1buffer.html#a3368fcb817c4c88611214b9ff92de836">mn::buffer::operator[]</a></div><div class="ttdeci">reference operator[](size_type index)</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:279</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a3b6e532ae020aa2cb1954341eacfa670"><div class="ttname"><a href="classmn_1_1buffer.html#a3b6e532ae020aa2cb1954341eacfa670">mn::buffer::buffer</a></div><div class="ttdeci">buffer(const size_type &amp;size)</div><div class="ttdoc">Consructs and allocates the Buffer.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:57</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a3d2bbebf6838b104a471718e9c70cb2b"><div class="ttname"><a href="classmn_1_1buffer.html#a3d2bbebf6838b104a471718e9c70cb2b">mn::buffer::buffer</a></div><div class="ttdeci">buffer(const self_type &amp;other)</div><div class="ttdoc">Move constructor.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:87</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a3e5b742a11a96cb846e8660252a1a244"><div class="ttname"><a href="classmn_1_1buffer.html#a3e5b742a11a96cb846e8660252a1a244">mn::buffer::operator!=</a></div><div class="ttdeci">bool operator!=(const buffer &amp;other) const</div><div class="ttdoc">Not compare operator.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:275</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a401e3fb319cded32226a1c7006df8530"><div class="ttname"><a href="classmn_1_1buffer.html#a401e3fb319cded32226a1c7006df8530">mn::buffer::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Get the iterator to the beginning of the buffer.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:103</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a4f8cb517dbb16e8705a7e86cb35a9345"><div class="ttname"><a href="classmn_1_1buffer.html#a4f8cb517dbb16e8705a7e86cb35a9345">mn::buffer::end</a></div><div class="ttdeci">const_iterator end() const</div><div class="ttdoc">Get the iterator to end of the buffer.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:121</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a54efa8ca6b20aa8e03a8f4c26a062230"><div class="ttname"><a href="classmn_1_1buffer.html#a54efa8ca6b20aa8e03a8f4c26a062230">mn::buffer::get_used_bytes</a></div><div class="ttdeci">size_type get_used_bytes() const</div><div class="ttdoc">Get the used size of the buffer in bytes.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:264</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a59a016bc89f4a1a0daf6ff0465b37afe"><div class="ttname"><a href="classmn_1_1buffer.html#a59a016bc89f4a1a0daf6ff0465b37afe">mn::buffer::append</a></div><div class="ttdeci">void append(const_pointer pBuffer, std::size_t sBufferSize)</div><div class="ttdoc">Resizes this buffer and appends the given data.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:128</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a5ae22aec3f236e5466ff4c6a48abc42a"><div class="ttname"><a href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">mn::buffer::size_type</a></div><div class="ttdeci">mn::size_t size_type</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:43</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a66753a18206e56f1fc01a4e79fbaea30"><div class="ttname"><a href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">mn::buffer::const_pointer</a></div><div class="ttdeci">const value_type * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:46</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a6cc66f2f8f6ccbffbc888de8e0da2f6e"><div class="ttname"><a href="classmn_1_1buffer.html#a6cc66f2f8f6ccbffbc888de8e0da2f6e">mn::buffer::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the used content.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:216</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a6f200c764c12a80ff9d4f6354ba04ca3"><div class="ttname"><a href="classmn_1_1buffer.html#a6f200c764c12a80ff9d4f6354ba04ca3">mn::buffer::resize</a></div><div class="ttdeci">bool resize(size_type newSize, bool bReserve=true)</div><div class="ttdoc">Resizes the buffer capacity and size.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:158</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a76138cf5f16804ca861cc4775ef39f2a"><div class="ttname"><a href="classmn_1_1buffer.html#a76138cf5f16804ca861cc4775ef39f2a">mn::buffer::~buffer</a></div><div class="ttdeci">~buffer()</div><div class="ttdoc">Deconstrut the buffer. Is allocated the memory by buffer, then deallocated it.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:95</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a769ec1b038c7eb26d00f1658d1e64c49"><div class="ttname"><a href="classmn_1_1buffer.html#a769ec1b038c7eb26d00f1658d1e64c49">mn::buffer::operator==</a></div><div class="ttdeci">bool operator==(const buffer &amp;other) const</div><div class="ttdoc">Compare operator.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:269</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a804c696f1832bde0884f7995be89625f"><div class="ttname"><a href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">mn::buffer::iterator</a></div><div class="ttdeci">pointer iterator</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:50</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a872a001b2ca406a3b84e09bbc4811e08"><div class="ttname"><a href="classmn_1_1buffer.html#a872a001b2ca406a3b84e09bbc4811e08">mn::buffer::assign</a></div><div class="ttdeci">void assign(const_pointer pBuffer, size_type size)</div><div class="ttdoc">Assigns the argument buffer to this buffer.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:205</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a935b728786eb3070196ce159f37601b0"><div class="ttname"><a href="classmn_1_1buffer.html#a935b728786eb3070196ce159f37601b0">mn::buffer::destroy_internal_buffer</a></div><div class="ttdeci">void destroy_internal_buffer()</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:312</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a9428501845326259a32c707e3813c6fd"><div class="ttname"><a href="classmn_1_1buffer.html#a9428501845326259a32c707e3813c6fd">mn::buffer::init_internal_buffer</a></div><div class="ttdeci">void init_internal_buffer(const pointer buffer)</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:303</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a9a60ff85fd5d61c94ded5cee2b33ef8b"><div class="ttname"><a href="classmn_1_1buffer.html#a9a60ff85fd5d61c94ded5cee2b33ef8b">mn::buffer::init_internal_buffer</a></div><div class="ttdeci">void init_internal_buffer()</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:293</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a9a74bb98699ed626c361f4ab911d8e80"><div class="ttname"><a href="classmn_1_1buffer.html#a9a74bb98699ed626c361f4ab911d8e80">mn::buffer::change_size</a></div><div class="ttdeci">bool change_size(size_type newSize, bool bReserve=true)</div><div class="ttdoc">Change the buffer size.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:182</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a9af0e52ae6a91293afddb9cc39ac8276"><div class="ttname"><a href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">mn::buffer::value_type</a></div><div class="ttdeci">TVALUE value_type</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:39</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_a9f3e8c6ad003392ee7eb78871ae43e02"><div class="ttname"><a href="classmn_1_1buffer.html#a9f3e8c6ad003392ee7eb78871ae43e02">mn::buffer::buffer</a></div><div class="ttdeci">buffer(pointer buffer, size_type size)</div><div class="ttdoc">Consructs the buffer from a given memory pointer.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:68</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_aa162290e7504e180c5eb31d7ec2912f2"><div class="ttname"><a href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">mn::buffer::m_bOwnMem</a></div><div class="ttdeci">bool m_bOwnMem</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:320</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f"><div class="ttname"><a href="classmn_1_1buffer.html#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">mn::buffer::reference</a></div><div class="ttdeci">value_type &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:42</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_aab96c6e8ee984775b3a7f5a32a5245e2"><div class="ttname"><a href="classmn_1_1buffer.html#aab96c6e8ee984775b3a7f5a32a5245e2">mn::buffer::is_empty</a></div><div class="ttdeci">bool is_empty() const</div><div class="ttdoc">is the buffer empty?</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:235</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_ab7982ad6405db656f4bfc0d3801dacf9"><div class="ttname"><a href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">mn::buffer::pointer</a></div><div class="ttdeci">value_type * pointer</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:41</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_aba6129522bd1fb9a4234b109be578920"><div class="ttname"><a href="classmn_1_1buffer.html#aba6129522bd1fb9a4234b109be578920">mn::buffer::const_reference</a></div><div class="ttdeci">const value_type &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:45</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_abb51d213559cb5b6f897ca99aeb14ce8"><div class="ttname"><a href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">mn::buffer::m_pRawBuffer</a></div><div class="ttdeci">pointer m_pRawBuffer</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:319</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_abbe12704babb2dfe09f329a4227ae976"><div class="ttname"><a href="classmn_1_1buffer.html#abbe12704babb2dfe09f329a4227ae976">mn::buffer::allocator</a></div><div class="ttdeci">TALLOCATOR allocator</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:40</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_ac0425313d492acfa25cbed8cd1e0aa72"><div class="ttname"><a href="classmn_1_1buffer.html#ac0425313d492acfa25cbed8cd1e0aa72">mn::buffer::is_full</a></div><div class="ttdeci">bool is_full() const</div><div class="ttdoc">is the buffer full?</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:241</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_ac377780a0a825e7569f36a10fd827d09"><div class="ttname"><a href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">mn::buffer::const_iterator</a></div><div class="ttdeci">const value_type * const_iterator</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:51</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_ad2901b17433f2190d595127d26548deb"><div class="ttname"><a href="classmn_1_1buffer.html#ad2901b17433f2190d595127d26548deb">mn::buffer::buffer</a></div><div class="ttdeci">buffer(const_pointer buffer, size_type size)</div><div class="ttdoc">Consructs and allocates the Buffer. copies the contents of the supplied memory into the buffer.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:78</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_ad6a44053f5598f61bb80a7e3d46e1fd8"><div class="ttname"><a href="classmn_1_1buffer.html#ad6a44053f5598f61bb80a7e3d46e1fd8">mn::buffer::begin</a></div><div class="ttdeci">const_iterator begin() const</div><div class="ttdoc">Get the iterator to the beginning of the buffer.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:109</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_ad959b1b4d87593fef75b296b743b7129"><div class="ttname"><a href="classmn_1_1buffer.html#ad959b1b4d87593fef75b296b743b7129">mn::buffer::append</a></div><div class="ttdeci">void append(value_type value)</div><div class="ttdoc">Resizes this buffer and appends the given data.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:138</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_add477feed44ae6f90e62550cecbf8bd2"><div class="ttname"><a href="classmn_1_1buffer.html#add477feed44ae6f90e62550cecbf8bd2">mn::buffer::append</a></div><div class="ttdeci">void append(const self_type &amp;refBuffer)</div><div class="ttdoc">Resizes this buffer and appends the given data.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:147</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_ae7f76b359a6e812f5d35a0cb4ec24007"><div class="ttname"><a href="classmn_1_1buffer.html#ae7f76b359a6e812f5d35a0cb4ec24007">mn::buffer::difference_type</a></div><div class="ttdeci">ptrdiff_t difference_type</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:49</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_ae8753b6312ff0edb1334a11da56410b9"><div class="ttname"><a href="classmn_1_1buffer.html#ae8753b6312ff0edb1334a11da56410b9">mn::buffer::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Get the iterator to end of the buffer.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:115</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_af102ca623bca47bb37a03e03622db0a5"><div class="ttname"><a href="classmn_1_1buffer.html#af102ca623bca47bb37a03e03622db0a5">mn::buffer::get_used</a></div><div class="ttdeci">size_type get_used() const</div><div class="ttdoc">Get the used size of the buffer in elements.</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:258</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_af2974f2f5982b8976fcbd5dfbf680b8c"><div class="ttname"><a href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">mn::buffer::m_allocator</a></div><div class="ttdeci">allocator m_allocator</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:321</div></div>
+<div class="ttc" id="aclassmn_1_1buffer_html_af395118ff00df873b56a0950861043fb"><div class="ttname"><a href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">mn::buffer::m_sUsed</a></div><div class="ttdeci">size_type m_sUsed</div><div class="ttdef"><b>Definition:</b> mn_buffer.hpp:318</div></div>
+<div class="ttc" id="amn__algorithm_8hpp_html"><div class="ttname"><a href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a></div></div>
+<div class="ttc" id="amn__allocator_8hpp_html"><div class="ttname"><a href="mn__allocator_8hpp.html">mn_allocator.hpp</a></div></div>
+<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="ttc" id="amn__copyable_8hpp_html_a868df2e653196e1bf788a1591de89de7"><div class="ttname"><a href="mn__copyable_8hpp.html#a868df2e653196e1bf788a1591de89de7">MN_ONCOPYABLE_CLASS</a></div><div class="ttdeci">#define MN_ONCOPYABLE_CLASS</div><div class="ttdef"><b>Definition:</b> mn_copyable.hpp:24</div></div>
+<div class="ttc" id="amn__typetraits_8hpp_html"><div class="ttname"><a href="mn__typetraits_8hpp.html">mn_typetraits.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a8d0b944ea3172c4bc932d79d3e2c01c1"><div class="ttname"><a href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a></div><div class="ttdeci">long ptrdiff_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:32</div></div>
+<div class="ttc" id="anamespacemn_html_ac529c3bee99de8ed32ab60ed9e16bf33"><div class="ttname"><a href="namespacemn.html#ac529c3bee99de8ed32ab60ed9e16bf33">mn::aligned_as::res</a></div><div class="ttdeci">typename internal::type_with_alignment&lt; alignment_of&lt; T &gt;::res &gt; res</div><div class="ttdef"><b>Definition:</b> mn_alignment.hpp:138</div></div>
+<div class="ttc" id="anamespacemn_html_af487f8a5d975f2b50b68065096c732ed"><div class="ttname"><a href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></div><div class="ttdeci">MN_THREAD_CONFIG_SIZE_TYPE size_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:31</div></div>
+<div class="ttc" id="astructmn_1_1random__access__iterator__tag_html"><div class="ttname"><a href="structmn_1_1random__access__iterator__tag.html">mn::random_access_iterator_tag</a></div><div class="ttdef"><b>Definition:</b> mn_iterator.hpp:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

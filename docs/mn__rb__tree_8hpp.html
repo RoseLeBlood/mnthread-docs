@@ -163,7 +163,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1container_1_1internal_1_1rb__tree__traits"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container_1_1internal.html#structmn_1_1container_1_1internal_1_1rb__tree__traits">mn::container::internal::rb_tree_traits&lt; TKey &gt;</a></td></tr>
 <tr class="separator:structmn_1_1container_1_1internal_1_1rb__tree__traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1rb__tree__node.html">mn::container::rb_tree_node&lt; TVALUE, TAllocator &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1container_1_1rb__tree__node.html">mn::container::rb_tree_node&lt; TVALUE &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1base__rb__tree.html">mn::container::base_rb_tree&lt; TTreeTraits, TAllocator &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +179,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2643bd93eac5513c9c2d5507995e9e6f"><td class="memTemplParams" colspan="2">template&lt;typename TKey , class TAllocator &gt; </td></tr>
+<tr class="memitem:a2643bd93eac5513c9c2d5507995e9e6f"><td class="memTemplParams" colspan="2">template&lt;typename TKey , class TAllocator  = memory::default_allocator&gt; </td></tr>
 <tr class="memitem:a2643bd93eac5513c9c2d5507995e9e6f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a2643bd93eac5513c9c2d5507995e9e6f">mn::container::rb_tree</a> = base_rb_tree&lt; internal::rb_tree_traits&lt; TKey &gt;, TAllocator &gt;</td></tr>
 <tr class="separator:a2643bd93eac5513c9c2d5507995e9e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -192,11 +192,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab752c151ea2464ab8363aa774323d511"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ab752c151ea2464ab8363aa774323d511">mn::container::MNALLOC_OBJECT_DTWO</a> (rb_tree_node, typename, TVALUE, class, TAllocator)</td></tr>
-<tr class="separator:ab752c151ea2464ab8363aa774323d511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8afbc9df19c1e4f3db69ece04f3324cf"><td class="memTemplParams" colspan="2">template&lt;typename TVALUE , class TAllocator &gt; </td></tr>
-<tr class="memitem:a8afbc9df19c1e4f3db69ece04f3324cf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a8afbc9df19c1e4f3db69ece04f3324cf">mn::container::swap</a> (rb_tree_node&lt; TVALUE, TAllocator &gt; &amp;a, rb_tree_node&lt; TVALUE, TAllocator &gt; &amp;b)</td></tr>
-<tr class="separator:a8afbc9df19c1e4f3db69ece04f3324cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d3a494f96db7a19466f11d8b57ae62"><td class="memTemplParams" colspan="2">template&lt;typename TVALUE &gt; </td></tr>
+<tr class="memitem:a15d3a494f96db7a19466f11d8b57ae62"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a15d3a494f96db7a19466f11d8b57ae62">mn::container::swap</a> (rb_tree_node&lt; TVALUE &gt; &amp;a, rb_tree_node&lt; TVALUE &gt; &amp;b)</td></tr>
+<tr class="separator:a15d3a494f96db7a19466f11d8b57ae62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

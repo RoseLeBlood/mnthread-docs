@@ -12,7 +12,6 @@ var mn__rb__tree_8hpp =
       [ "red", "mn__rb__tree_8hpp.html#a8b43715c2d4ac6dc4d5e5999897feab1abda9643ac6601722a28f238714274da4", null ],
       [ "black", "mn__rb__tree_8hpp.html#a8b43715c2d4ac6dc4d5e5999897feab1a1ffd9e753c8054cc61456ac7fac1ac89", null ]
     ] ],
-    [ "MNALLOC_OBJECT_DTWO", "mn__rb__tree_8hpp.html#ab752c151ea2464ab8363aa774323d511", null ],
-    [ "swap", "mn__rb__tree_8hpp.html#a8afbc9df19c1e4f3db69ece04f3324cf", null ],
+    [ "swap", "mn__rb__tree_8hpp.html#a15d3a494f96db7a19466f11d8b57ae62", null ],
     [ "base_rb_tree", "mn__rb__tree_8hpp.html#ae814c668b0494461a10122d8d45f19b4", null ]
 ];

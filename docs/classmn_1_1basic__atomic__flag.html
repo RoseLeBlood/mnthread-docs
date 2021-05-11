@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::basic_atomic_flag&lt; TAtomicType, TTrue, TFalse &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1basic__atomic__flag.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1basic__atomic__flag-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::basic_atomic_flag&lt; TAtomicType, TTrue, TFalse &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__atomic_8hpp_source.html">mn_atomic.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::basic_atomic_flag&lt; TAtomicType, TTrue, TFalse &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1basic__atomic__flag__coll__graph.svg" width="204" height="247"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8d0c3e92ab16dac1f6a9e01855b72c99"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a> = TAtomicType</td></tr>
+<tr class="separator:a8d0c3e92ab16dac1f6a9e01855b72c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24f9947988c1fafb4e3b354025ec4fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#ae24f9947988c1fafb4e3b354025ec4fe">reference</a> = TAtomicType &amp;</td></tr>
+<tr class="separator:ae24f9947988c1fafb4e3b354025ec4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:acabcd45f9f23196cb892b11670856a4d"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#acabcd45f9f23196cb892b11670856a4d">basic_atomic_flag</a> () noexcept</td></tr>
+<tr class="separator:acabcd45f9f23196cb892b11670856a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fed79c4ecd3690ae2dfe3f757423563"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#a1fed79c4ecd3690ae2dfe3f757423563">basic_atomic_flag</a> (const <a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a> &amp;flag) noexcept</td></tr>
+<tr class="separator:a1fed79c4ecd3690ae2dfe3f757423563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192946a16309525fc9790e70308676fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#a192946a16309525fc9790e70308676fb">basic_atomic_flag</a> (const <a class="el" href="classmn_1_1basic__atomic__flag.html">basic_atomic_flag</a> &amp;) noexcept=delete</td></tr>
+<tr class="separator:a192946a16309525fc9790e70308676fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc228d10fd5d8dc5f2801185e6fd7ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__atomic__flag.html#ae24f9947988c1fafb4e3b354025ec4fe">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#a1bc228d10fd5d8dc5f2801185e6fd7ff">operator=</a> (const <a class="el" href="classmn_1_1basic__atomic__flag.html#ae24f9947988c1fafb4e3b354025ec4fe">reference</a>) noexcept=delete</td></tr>
+<tr class="separator:a1bc228d10fd5d8dc5f2801185e6fd7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0dd2e0330a45248e6229614ec0b785"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__atomic__flag.html#ae24f9947988c1fafb4e3b354025ec4fe">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0dd2e0330a45248e6229614ec0b785">operator=</a> (const <a class="el" href="classmn_1_1basic__atomic__flag.html#ae24f9947988c1fafb4e3b354025ec4fe">reference</a>) volatile noexcept=delete</td></tr>
+<tr class="separator:a8d0dd2e0330a45248e6229614ec0b785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ef05b43505624b2fadae6b56b6444d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#a37ef05b43505624b2fadae6b56b6444d">clear</a> (<a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31">memory_order</a> order=<a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31af080ddea8c6b2948466076975f26a5dc">memory_order::SeqCst</a>) noexcept</td></tr>
+<tr class="separator:a37ef05b43505624b2fadae6b56b6444d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa18a945b7f33a7498af85dd34f907e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#afa18a945b7f33a7498af85dd34f907e7">test_and_set</a> (<a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31">memory_order</a> order=<a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31af080ddea8c6b2948466076975f26a5dc">memory_order::SeqCst</a>) noexcept</td></tr>
+<tr class="separator:afa18a945b7f33a7498af85dd34f907e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddfc5cdbeea31262b9018bf65e4aca4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#a2ddfc5cdbeea31262b9018bf65e4aca4">test</a> (<a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31">memory_order</a> order=<a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31af080ddea8c6b2948466076975f26a5dc">memory_order::SeqCst</a>) const</td></tr>
+<tr class="separator:a2ddfc5cdbeea31262b9018bf65e4aca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a78054c6e407eab99fc6e803d7745e80f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1__atomic.html">_atomic</a>&lt; <a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__atomic__flag.html#a78054c6e407eab99fc6e803d7745e80f">m_bFlag</a></td></tr>
+<tr class="separator:a78054c6e407eab99fc6e803d7745e80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8d0c3e92ab16dac1f6a9e01855b72c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0c3e92ab16dac1f6a9e01855b72c99">&#9670;&nbsp;</a></span>flag_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::<a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a> =  TAtomicType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae24f9947988c1fafb4e3b354025ec4fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24f9947988c1fafb4e3b354025ec4fe">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::<a class="el" href="classmn_1_1basic__atomic__flag.html#ae24f9947988c1fafb4e3b354025ec4fe">reference</a> =  TAtomicType&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acabcd45f9f23196cb892b11670856a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acabcd45f9f23196cb892b11670856a4d">&#9670;&nbsp;</a></span>basic_atomic_flag() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::<a class="el" href="classmn_1_1basic__atomic__flag.html">basic_atomic_flag</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fed79c4ecd3690ae2dfe3f757423563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fed79c4ecd3690ae2dfe3f757423563">&#9670;&nbsp;</a></span>basic_atomic_flag() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::<a class="el" href="classmn_1_1basic__atomic__flag.html">basic_atomic_flag</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a192946a16309525fc9790e70308676fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192946a16309525fc9790e70308676fb">&#9670;&nbsp;</a></span>basic_atomic_flag() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::<a class="el" href="classmn_1_1basic__atomic__flag.html">basic_atomic_flag</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__atomic__flag.html">basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a37ef05b43505624b2fadae6b56b6444d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ef05b43505624b2fadae6b56b6444d">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31">memory_order</a>&#160;</td>
+          <td class="paramname"><em>order</em> = <code><a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31af080ddea8c6b2948466076975f26a5dc">memory_order::SeqCst</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1bc228d10fd5d8dc5f2801185e6fd7ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bc228d10fd5d8dc5f2801185e6fd7ff">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__atomic__flag.html#ae24f9947988c1fafb4e3b354025ec4fe">reference</a> <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const&#160;</td>
+          <td class="paramname"><em>reference</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d0dd2e0330a45248e6229614ec0b785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0dd2e0330a45248e6229614ec0b785">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__atomic__flag.html#ae24f9947988c1fafb4e3b354025ec4fe">reference</a> <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const&#160;</td>
+          <td class="paramname"><em>reference</em></td><td>)</td>
+          <td> volatile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ddfc5cdbeea31262b9018bf65e4aca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ddfc5cdbeea31262b9018bf65e4aca4">&#9670;&nbsp;</a></span>test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a> <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::test </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31">memory_order</a>&#160;</td>
+          <td class="paramname"><em>order</em> = <code><a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31af080ddea8c6b2948466076975f26a5dc">memory_order::SeqCst</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa18a945b7f33a7498af85dd34f907e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa18a945b7f33a7498af85dd34f907e7">&#9670;&nbsp;</a></span>test_and_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a> <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::test_and_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31">memory_order</a>&#160;</td>
+          <td class="paramname"><em>order</em> = <code><a class="el" href="namespacemn.html#a407618ad86d6d5d93d504543f2e97d31af080ddea8c6b2948466076975f26a5dc">memory_order::SeqCst</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a78054c6e407eab99fc6e803d7745e80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78054c6e407eab99fc6e803d7745e80f">&#9670;&nbsp;</a></span>m_bFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAtomicType , TAtomicType TTrue = true, TAtomicType TFalse = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmn_1_1__atomic.html">_atomic</a>&lt;<a class="el" href="classmn_1_1basic__atomic__flag.html#a8d0c3e92ab16dac1f6a9e01855b72c99">flag_type</a>&gt; <a class="el" href="classmn_1_1basic__atomic__flag.html">mn::basic_atomic_flag</a>&lt; TAtomicType, TTrue, TFalse &gt;::m_bFlag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__atomic_8hpp_source.html">mn_atomic.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

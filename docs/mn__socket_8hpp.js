@@ -7,6 +7,7 @@ var mn__socket_8hpp =
     [ "ip4_endpoint", "mn__socket_8hpp.html#a9b94e6e493065000cb055486b53bb8b3", null ],
     [ "ip6_address", "mn__socket_8hpp.html#afe4d771612daf7655673257ab046d551", null ],
     [ "ip6_endpoint", "mn__socket_8hpp.html#aa6e3fb88aa478db390879b51157875ea", null ],
+    [ "multicast_ip4_socket", "mn__socket_8hpp.html#a8d0ad3b216aff9471dfe8dd8485c3183", null ],
     [ "ppp_net_if", "mn__socket_8hpp.html#a662a0ed15f92182b05429e92cc3ae1cb", null ],
     [ "raw_ip4_socket", "mn__socket_8hpp.html#a7abcd4266de5c71ba715f7f1a863c475", null ],
     [ "raw_ip6_socket", "mn__socket_8hpp.html#a73cf4ac1eb4e7cf045572278641347ed", null ],

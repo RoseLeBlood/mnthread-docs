@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_auto_ptr.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__auto__ptr_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_auto_ptr.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__auto__ptr_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MINILIB_a66be7cc_ab50_11eb_b276_b7700b99df9f_H_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINILIB_a66be7cc_ab50_11eb_b276_b7700b99df9f_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__base__ptr_8hpp.html">mn_base_ptr.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;     <span class="keyword">namespace </span>pointer {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html">   35</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a> :  <a class="code" href="structmn_1_1pointer_1_1pointer__ptr.html">pointer_ptr</a>&lt;T&gt; {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8a291b380264aa29f17e2e3faee1d11f">   37</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8a291b380264aa29f17e2e3faee1d11f">value_type</a> = T;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56795e1311815c63022aede9125d7c0a">   38</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56795e1311815c63022aede9125d7c0a">const_value_type</a> = <span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8a291b380264aa29f17e2e3faee1d11f">value_type</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">   39</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> = T*;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#afa95247cae718c58fee27c665c72c2a4">   40</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#afa95247cae718c58fee27c665c72c2a4">reference</a> = T&amp;;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#abaa933f92d6116e1abf75611b16f067d">   41</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a> = <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1e770edaed90d3afa26493f19919f95b">   43</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1e770edaed90d3afa26493f19919f95b">basic_auto_ptr</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                : <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>(nullptr) { }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1c86b26e18e0635b048270e089a24741">   45</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1c86b26e18e0635b048270e089a24741">basic_auto_ptr</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> ptr)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                : <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>(ptr) { }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a79fd6bd6376a4922aed96338bfd5abb6">   47</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a79fd6bd6376a4922aed96338bfd5abb6">basic_auto_ptr</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> ptr, <span class="keywordtype">bool</span> shared)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                : <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>(ptr) { }</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#af6fe12cb1fca4c8e06e3f10d74ba33e6">   49</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#af6fe12cb1fca4c8e06e3f10d74ba33e6">basic_auto_ptr</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; other )</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                : <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>(other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) { }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0ea5a8369fd842137565f3ea98c62829">   51</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0ea5a8369fd842137565f3ea98c62829">basic_auto_ptr</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a>&amp;&amp; other) noexcept</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                : <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>(<a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a>(other.m_ptr)) { other.m_ptr = <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> TO&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1bf852116baa82c8e00e0cf099e04dd2">   55</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1bf852116baa82c8e00e0cf099e04dd2">basic_auto_ptr</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;TO&gt;</a>&amp; other)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                : <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>(const_cast&lt;TO*&gt;(other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56290977a4865436fbf25ef300869b78">get</a>())) { <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;duplicate(); }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ad0faa948198ed5d980abe3e73c033c17">   58</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ad0faa948198ed5d980abe3e73c033c17">~basic_auto_ptr</a>() { <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;release(); }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> TO&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a5d9e7ede6c5cffa92dc6f090594f3eb3">   61</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a5d9e7ede6c5cffa92dc6f090594f3eb3">reset</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;TO&gt;</a>&amp; p)                 { assign&lt;TO&gt;(p); }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ae995bb60e4204bd3699e645f4099e905">   62</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ae995bb60e4204bd3699e645f4099e905">reset</a>()                                            { <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) { <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;release(); <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> = <span class="keyword">nullptr</span>; } }</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0ed9987775d11e3eba2cc95600e3e449">   63</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0ed9987775d11e3eba2cc95600e3e449">reset</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> ptr)                                 { <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">assign</a>(ptr); }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8abbbf67f3e14ac7cfe16ec410ebd37a">   64</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8abbbf67f3e14ac7cfe16ec410ebd37a">reset</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> ptr, <span class="keywordtype">bool</span> shared)                    { <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">assign</a>(ptr, shared); }</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a59b52abaaf9d1ed3a9ef02212ada148f">   65</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a59b52abaaf9d1ed3a9ef02212ada148f">reset</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; ptr)                        { <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">assign</a>(ptr); }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a7eceabb6e581ded07f69e6cf544817ce">   68</a></span>&#160;            <span class="keywordtype">void</span>    <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a7eceabb6e581ded07f69e6cf544817ce">swap</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; ptr)                            { <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>, ptr.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>); }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56290977a4865436fbf25ef300869b78">   69</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56290977a4865436fbf25ef300869b78">get</a>()                                           { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92d3808663da66b39643d5dfefe26bc1">   70</a></span>&#160;            <span class="keywordtype">bool</span>    <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92d3808663da66b39643d5dfefe26bc1">isNull</a>()<span class="keyword"> const                                  </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> == <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a53f165714254afda722aa422945c3bb4">   72</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a53f165714254afda722aa422945c3bb4">duplicate</a>()                                     { <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;duplicate(); <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a6a6a99c91bc9fe4e7a6b7a0b4f2d6e06">   75</a></span>&#160;            <span class="keyword">operator</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a>()                                      { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>; }</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0a70fcdcad3f465ed844234bf722e448">   76</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0a70fcdcad3f465ed844234bf722e448">operator -&gt;</a>()                                   { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a9bb3ecd3278a99a99743f22f8f51f63a">   77</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a9bb3ecd3278a99a99743f22f8f51f63a">operator ! </a>()<span class="keyword"> const                                </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> == <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> TO&gt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab1ff9e5930a588b57cc7f717abff3313">   80</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab1ff9e5930a588b57cc7f717abff3313">operator = </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;TO&gt;</a>&amp; ptr)   { <span class="keywordflow">return</span> assign&lt;TO&gt;(ptr); }</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a73503b3cca0ef96082d490d14685b9c3">   81</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab1ff9e5930a588b57cc7f717abff3313">operator = </a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> ptr)                     { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">assign</a>(ptr); }</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8a8ddae29c9a552b6de23f75f301663d">   82</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab1ff9e5930a588b57cc7f717abff3313">operator = </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; ptr)            { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">assign</a>(ptr); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a5bf519b7d449e49640b439a9cc1f097b">   84</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab1ff9e5930a588b57cc7f717abff3313">operator = </a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp;&amp; other) noexcept {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;release();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> = other.m_ptr;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                other.m_ptr = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a2e7c71772381394a640e8eb338bc6626">   91</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a2e7c71772381394a640e8eb338bc6626">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> == other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa2980e8db73443bb68c160b2e4efa163">   94</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a2e7c71772381394a640e8eb338bc6626">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> == other;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#af8d1bb623e3675908b78010aec48e542">   97</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#af8d1bb623e3675908b78010aec48e542">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> != other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a81a9485403b62be054f1eed6272c4265">  100</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#af8d1bb623e3675908b78010aec48e542">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> != other;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa328996d830ab203878f6ffd223b226f">  103</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa328996d830ab203878f6ffd223b226f">operator &lt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> &lt;= other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a9d87a353e7b341648764402d0f26ecf5">  106</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa328996d830ab203878f6ffd223b226f">operator &lt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> &lt;= other;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#acd51feb10e4bbd49bf18092ad9594ed4">  109</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#acd51feb10e4bbd49bf18092ad9594ed4">operator &gt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> &gt;= other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            }</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a045fb41a37c79d363bb411e428ed0b05">  112</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#acd51feb10e4bbd49bf18092ad9594ed4">operator &gt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> &gt;= other;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a61f582ad8b91d4257bac10cee476bdad">  115</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a61f582ad8b91d4257bac10cee476bdad">operator &lt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> &lt; other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ad8edd626735fe66a85c226dc92687cb9">  118</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a61f582ad8b91d4257bac10cee476bdad">operator &lt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> &lt; other;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a63d67f8f5779c3f710856b8c520bb6d2">  121</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a63d67f8f5779c3f710856b8c520bb6d2">operator &gt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> &gt; other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            }</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa002cb67157fa712e3e94a4e7775dfbf">  124</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a63d67f8f5779c3f710856b8c520bb6d2">operator &gt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> &gt; other;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> TO&gt;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab6eb96e1e62e4d68bb3a6655fc2e3057">  129</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;TO&gt;</a> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab6eb96e1e62e4d68bb3a6655fc2e3057">dycast</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                TO* pOther = <span class="keyword">dynamic_cast&lt;</span>TO*<span class="keyword">&gt;</span>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;TO&gt;</a>(pOther, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> TO&gt;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a38b58d9822971ec4f72ece05aac09614">  136</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;TO&gt;</a> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a38b58d9822971ec4f72ece05aac09614">scast</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                TO* pOther = <span class="keyword">static_cast&lt;</span>TO*<span class="keyword">&gt;</span>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;TO&gt;</a>(pOther, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">  143</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">assign</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> other) {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> != other) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;release();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> = other;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a4d17ba306881036a3ad16bd6b8071cf9">  151</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a4d17ba306881036a3ad16bd6b8071cf9">assign</a>(<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> other, <span class="keywordtype">bool</span> shared) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> != other) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;release();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> = other;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    <span class="keywordflow">if</span> (shared &amp;&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;duplicate();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ad7a49f82d16d834923b221c11a78f757">  161</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#ad7a49f82d16d834923b221c11a78f757">assign</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordflow">if</span> (&amp;other != <span class="keyword">this</span>) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;release();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                    <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> = other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;duplicate();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">class</span> TO&gt;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a2fcf98c4cf7c8b5ec4fd6476c8afbe09">  172</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">self_type</a>&amp; <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a2fcf98c4cf7c8b5ec4fd6476c8afbe09">assign</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr&lt;TO&gt;</a>&amp; other) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">if</span> (other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56290977a4865436fbf25ef300869b78">get</a>() != <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;release();</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a> = <span class="keyword">const_cast&lt;</span>TO*<span class="keyword">&gt;</span>(other.<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56290977a4865436fbf25ef300869b78">get</a>());</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    <span class="keywordflow">if</span> (<a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>) <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>-&gt;duplicate();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">  183</a></span>&#160;            <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">pointer</a> <a class="code" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">m_ptr</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        };</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;     }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// _MINILIB_a66be7cc_ab50_11eb_b276_b7700b99df9f_H_</span></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html">mn::pointer::basic_auto_ptr</a></div><div class="ttdoc">AutoPtr is a &quot;smart&quot; pointer for classes implementing reference counting based garbage collection.</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:35</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a0a70fcdcad3f465ed844234bf722e448"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0a70fcdcad3f465ed844234bf722e448">mn::pointer::basic_auto_ptr::operator-&gt;</a></div><div class="ttdeci">pointer operator-&gt;()</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:76</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a0ea5a8369fd842137565f3ea98c62829"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0ea5a8369fd842137565f3ea98c62829">mn::pointer::basic_auto_ptr::basic_auto_ptr</a></div><div class="ttdeci">basic_auto_ptr(basic_auto_ptr &amp;&amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:51</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a0ed9987775d11e3eba2cc95600e3e449"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a0ed9987775d11e3eba2cc95600e3e449">mn::pointer::basic_auto_ptr::reset</a></div><div class="ttdeci">void reset(pointer ptr)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:63</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a1bf852116baa82c8e00e0cf099e04dd2"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1bf852116baa82c8e00e0cf099e04dd2">mn::pointer::basic_auto_ptr::basic_auto_ptr</a></div><div class="ttdeci">basic_auto_ptr(const basic_auto_ptr&lt; TO &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:55</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a1c86b26e18e0635b048270e089a24741"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1c86b26e18e0635b048270e089a24741">mn::pointer::basic_auto_ptr::basic_auto_ptr</a></div><div class="ttdeci">basic_auto_ptr(pointer ptr)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:45</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a1e770edaed90d3afa26493f19919f95b"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a1e770edaed90d3afa26493f19919f95b">mn::pointer::basic_auto_ptr::basic_auto_ptr</a></div><div class="ttdeci">basic_auto_ptr()</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:43</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a2e7c71772381394a640e8eb338bc6626"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a2e7c71772381394a640e8eb338bc6626">mn::pointer::basic_auto_ptr::operator==</a></div><div class="ttdeci">bool operator==(const self_type &amp;other) const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:91</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a2fcf98c4cf7c8b5ec4fd6476c8afbe09"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a2fcf98c4cf7c8b5ec4fd6476c8afbe09">mn::pointer::basic_auto_ptr::assign</a></div><div class="ttdeci">self_type &amp; assign(const basic_auto_ptr&lt; TO &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:172</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a38b58d9822971ec4f72ece05aac09614"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a38b58d9822971ec4f72ece05aac09614">mn::pointer::basic_auto_ptr::scast</a></div><div class="ttdeci">basic_auto_ptr&lt; TO &gt; scast() const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:136</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a4d17ba306881036a3ad16bd6b8071cf9"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a4d17ba306881036a3ad16bd6b8071cf9">mn::pointer::basic_auto_ptr::assign</a></div><div class="ttdeci">self_type &amp; assign(pointer other, bool shared)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:151</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a53f165714254afda722aa422945c3bb4"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a53f165714254afda722aa422945c3bb4">mn::pointer::basic_auto_ptr::duplicate</a></div><div class="ttdeci">pointer duplicate()</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:72</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a56290977a4865436fbf25ef300869b78"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56290977a4865436fbf25ef300869b78">mn::pointer::basic_auto_ptr::get</a></div><div class="ttdeci">pointer get()</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:69</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a56795e1311815c63022aede9125d7c0a"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a56795e1311815c63022aede9125d7c0a">mn::pointer::basic_auto_ptr::const_value_type</a></div><div class="ttdeci">const value_type const_value_type</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:38</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a59b52abaaf9d1ed3a9ef02212ada148f"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a59b52abaaf9d1ed3a9ef02212ada148f">mn::pointer::basic_auto_ptr::reset</a></div><div class="ttdeci">void reset(const self_type &amp;ptr)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:65</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a5d9e7ede6c5cffa92dc6f090594f3eb3"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a5d9e7ede6c5cffa92dc6f090594f3eb3">mn::pointer::basic_auto_ptr::reset</a></div><div class="ttdeci">void reset(const basic_auto_ptr&lt; TO &gt; &amp;p)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:61</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a61f582ad8b91d4257bac10cee476bdad"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a61f582ad8b91d4257bac10cee476bdad">mn::pointer::basic_auto_ptr::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const self_type &amp;other) const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:115</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a63d67f8f5779c3f710856b8c520bb6d2"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a63d67f8f5779c3f710856b8c520bb6d2">mn::pointer::basic_auto_ptr::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const self_type &amp;other) const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:121</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a79fd6bd6376a4922aed96338bfd5abb6"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a79fd6bd6376a4922aed96338bfd5abb6">mn::pointer::basic_auto_ptr::basic_auto_ptr</a></div><div class="ttdeci">basic_auto_ptr(pointer ptr, bool shared)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:47</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a7eceabb6e581ded07f69e6cf544817ce"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a7eceabb6e581ded07f69e6cf544817ce">mn::pointer::basic_auto_ptr::swap</a></div><div class="ttdeci">void swap(self_type &amp;ptr)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:68</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a8a291b380264aa29f17e2e3faee1d11f"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8a291b380264aa29f17e2e3faee1d11f">mn::pointer::basic_auto_ptr::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:37</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a8abbbf67f3e14ac7cfe16ec410ebd37a"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8abbbf67f3e14ac7cfe16ec410ebd37a">mn::pointer::basic_auto_ptr::reset</a></div><div class="ttdeci">void reset(pointer ptr, bool shared)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:64</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a8e63c82d4a6a195a455d8b1d80c1b14f"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">mn::pointer::basic_auto_ptr::assign</a></div><div class="ttdeci">self_type &amp; assign(pointer other)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:143</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a92953c216591b9a3dc29cdbb0dd26c26"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92953c216591b9a3dc29cdbb0dd26c26">mn::pointer::basic_auto_ptr::m_ptr</a></div><div class="ttdeci">pointer m_ptr</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:183</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a92d3808663da66b39643d5dfefe26bc1"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a92d3808663da66b39643d5dfefe26bc1">mn::pointer::basic_auto_ptr::isNull</a></div><div class="ttdeci">bool isNull() const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:70</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_a9bb3ecd3278a99a99743f22f8f51f63a"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#a9bb3ecd3278a99a99743f22f8f51f63a">mn::pointer::basic_auto_ptr::operator!</a></div><div class="ttdeci">bool operator!() const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:77</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_aa243b9d4eea16a290c700d4ce39d4b71"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71">mn::pointer::basic_auto_ptr::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:39</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_aa328996d830ab203878f6ffd223b226f"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#aa328996d830ab203878f6ffd223b226f">mn::pointer::basic_auto_ptr::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const self_type &amp;other) const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:103</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_ab1ff9e5930a588b57cc7f717abff3313"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab1ff9e5930a588b57cc7f717abff3313">mn::pointer::basic_auto_ptr::operator=</a></div><div class="ttdeci">self_type &amp; operator=(const basic_auto_ptr&lt; TO &gt; &amp;ptr)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:80</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_ab6eb96e1e62e4d68bb3a6655fc2e3057"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#ab6eb96e1e62e4d68bb3a6655fc2e3057">mn::pointer::basic_auto_ptr::dycast</a></div><div class="ttdeci">basic_auto_ptr&lt; TO &gt; dycast() const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:129</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_acd51feb10e4bbd49bf18092ad9594ed4"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#acd51feb10e4bbd49bf18092ad9594ed4">mn::pointer::basic_auto_ptr::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const self_type &amp;other) const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:109</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_ad0faa948198ed5d980abe3e73c033c17"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#ad0faa948198ed5d980abe3e73c033c17">mn::pointer::basic_auto_ptr::~basic_auto_ptr</a></div><div class="ttdeci">~basic_auto_ptr()</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:58</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_ad7a49f82d16d834923b221c11a78f757"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#ad7a49f82d16d834923b221c11a78f757">mn::pointer::basic_auto_ptr::assign</a></div><div class="ttdeci">self_type &amp; assign(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:161</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_ae995bb60e4204bd3699e645f4099e905"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#ae995bb60e4204bd3699e645f4099e905">mn::pointer::basic_auto_ptr::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:62</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_af6fe12cb1fca4c8e06e3f10d74ba33e6"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#af6fe12cb1fca4c8e06e3f10d74ba33e6">mn::pointer::basic_auto_ptr::basic_auto_ptr</a></div><div class="ttdeci">basic_auto_ptr(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:49</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_af8d1bb623e3675908b78010aec48e542"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#af8d1bb623e3675908b78010aec48e542">mn::pointer::basic_auto_ptr::operator!=</a></div><div class="ttdeci">bool operator!=(const self_type &amp;other) const</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:97</div></div>
+<div class="ttc" id="aclassmn_1_1pointer_1_1basic__auto__ptr_html_afa95247cae718c58fee27c665c72c2a4"><div class="ttname"><a href="classmn_1_1pointer_1_1basic__auto__ptr.html#afa95247cae718c58fee27c665c72c2a4">mn::pointer::basic_auto_ptr::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_auto_ptr.hpp:40</div></div>
+<div class="ttc" id="amn__algorithm_8hpp_html"><div class="ttname"><a href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a></div></div>
+<div class="ttc" id="amn__base__ptr_8hpp_html"><div class="ttname"><a href="mn__base__ptr_8hpp.html">mn_base_ptr.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a83841949e9c46378f0f533a3a6605bff"><div class="ttname"><a href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a></div><div class="ttdeci">void swap(TAssignable &amp;a, TAssignable &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:253</div></div>
+<div class="ttc" id="anamespacemn_html_ae37469aa8cfbdec2289a0c3879decbdd"><div class="ttname"><a href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a></div><div class="ttdeci">void move(const T *src, const T *last, T *dest)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:82</div></div>
+<div class="ttc" id="astructmn_1_1pointer_1_1pointer__ptr_html"><div class="ttname"><a href="structmn_1_1pointer_1_1pointer__ptr.html">mn::pointer::pointer_ptr</a></div><div class="ttdef"><b>Definition:</b> mn_base_ptr.hpp:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_basic_multicast_ip_socket.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__basic__multicast__ip__socket_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_basic_multicast_ip_socket.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__basic__multicast__ip__socket_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __MINILIB_BASIC_MULTICAST_IP_SOCKET_H__</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __MINILIB_BASIC_MULTICAST_IP_SOCKET_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__basic__dgram__socket_8hpp.html">mn_basic_dgram_socket.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">namespace </span>net {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html">   30</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html">basic_multicast_ip_socket</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html">basic_dgram_ip_socket</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ad9484607dfa9c54b311e14a7c54fd728">   32</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html">self_typ</a> = <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a969cce0e8aa616ac6194e64e95330b81">basic_multicast_ip_socket</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a34b34860d5fd92c1bbc089a466bdc559">   33</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__ip4__socket.html">base_type</a> = <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#aa4c0b3a715ddfa780a673be74c94158b">basic_dgram_ip_socket</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab2ac67e4de3c38688af013801e2e3f0e">   35</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#aa39c761e7a0eb5cd2f2229a25c0d3ff3">endpoint_type</a> = <span class="keyword">typename</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#aa39c761e7a0eb5cd2f2229a25c0d3ff3">base_type::endpoint_type</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab5612561df1247bec8e0470f1714d605">   36</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a588dd104b86e2c23f13ce61f39b71edf">ipaddress_type</a> = <span class="keyword">typename</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a588dd104b86e2c23f13ce61f39b71edf">base_type::ipaddress_type</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a8af3fb860bc126a05a1cf9b8387a4d63">   37</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a66ac242f782a6362f6ceaf2750fa7701">handle_type</a> = <span class="keyword">typename</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a66ac242f782a6362f6ceaf2750fa7701">base_type::handle_type</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a969cce0e8aa616ac6194e64e95330b81">   42</a></span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a969cce0e8aa616ac6194e64e95330b81">basic_multicast_ip_socket</a>()</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                : <a class="code" href="classmn_1_1net_1_1basic__ip4__socket.html">base_type</a>() { }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a8bff78c730f88a49d16259e5344cc019">join_group</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab5612561df1247bec8e0470f1714d605">ipaddress_type</a>&amp; groupAddress,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                           <span class="keyword">const</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab5612561df1247bec8e0470f1714d605">ipaddress_type</a>&amp; infAddress = <a class="code" href="mn__basic__ip4__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a20380437f4fd51053f0f5e5644c7fc56">leave_group</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a20380437f4fd51053f0f5e5644c7fc56">leave_group</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab5612561df1247bec8e0470f1714d605">ipaddress_type</a>&amp; groupAddress,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            <span class="keyword">const</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab5612561df1247bec8e0470f1714d605">ipaddress_type</a>&amp; infAddress = <a class="code" href="mn__basic__ip4__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">void</span>        <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a37518b78674e08420675f56fb3f469c3">set_loopback</a>(<span class="keywordtype">bool</span> flag);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordtype">void</span>        <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#aa253107a0632c5dccdace9e463c7dd36">set_time_to_live</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordtype">void</span>        <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a42614734eb43db78e2a8cd46b5dbbc13">set_interface</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab5612561df1247bec8e0470f1714d605">ipaddress_type</a>&amp; infAddress);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordtype">bool</span>        <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a06986b7f950874eb8faf4dbcf0d1af0d">get_loopback</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordtype">int</span>         <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#aed32d381be22ce6c9ad8db4f5202133e">get_time_to_live</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab5612561df1247bec8e0470f1714d605">ipaddress_type</a>  <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ae537065e167c917b805cba2e09f83f00">get_interface</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#af95782784c1b90f507b53ba424b42a09">   98</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#af95782784c1b90f507b53ba424b42a09">swap</a>(<a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html">self_typ</a>&amp; rhs) noexcept {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <a class="code" href="classmn_1_1net_1_1basic__ip4__socket.html#a629305908a1292f1833d47ab7605ae78">base_type::swap</a>(rhs);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a5d95e4a71ae68918f2d61b5f0cca8013">m_ipMulticast</a>.swap(rhs.m_ipMulticast);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a409ece2c6520bbcd1ed2b3ffbae3b0b9">  103</a></span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a409ece2c6520bbcd1ed2b3ffbae3b0b9">basic_multicast_ip_socket</a>(<a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a66ac242f782a6362f6ceaf2750fa7701">handle_type</a>&amp; hndl, <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#aa39c761e7a0eb5cd2f2229a25c0d3ff3">endpoint_type</a>* endp = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                : <a class="code" href="classmn_1_1net_1_1basic__ip4__socket.html">base_type</a>(hndl, endp) { }</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#aca045ca492207460df188776bab54778">  105</a></span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#aca045ca492207460df188776bab54778">basic_multicast_ip_socket</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d">protocol_type</a>&amp; protocol)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                : <a class="code" href="classmn_1_1net_1_1basic__ip4__socket.html">base_type</a>(protocol) { }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a5d95e4a71ae68918f2d61b5f0cca8013">  108</a></span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a588dd104b86e2c23f13ce61f39b71edf">ipaddress_type</a> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a5d95e4a71ae68918f2d61b5f0cca8013">m_ipMulticast</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        };</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">    #if MN_THREAD_CONFIG_NET_IPADDRESS6_ENABLE == MN_THREAD_CONFIG_YES</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html">  116</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html">basic_multicast_ip6_socket</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html">basic_dgram_ip6_socket</a> {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#ac4ea6f27c87145162a1cfe0e7a776188">  118</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html">self_typ</a> = <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a2a47e8c305ef058645893b616d6ff00b">basic_multicast_ip6_socket</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a8594bee2a45de8c18e2202d9d84a66c0">  119</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__ip6__socket.html">base_type</a> = <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ad98791f6855b40ce5ded71f523d7b59c">basic_dgram_ip6_socket</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#ab5623a174483e979b14aba56d9570a96">  121</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#a2852ded918e243e84042fc4cff9090b9">endpoint_type</a> = <span class="keyword">typename</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#a2852ded918e243e84042fc4cff9090b9">base_type::endpoint_type</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a875c15ec0bdbdf86f2818ba725555467">  122</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ab74df9ce731d17e4124826d399c79966">ipaddress_type</a> = <span class="keyword">typename</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ab74df9ce731d17e4124826d399c79966">base_type::ipaddress_type</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#ad61255d7214bb1706467ebad2828c472">  123</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#a3b519dcdba98a8a3d971cee2d8e18b48">handle_type</a> = <span class="keyword">typename</span> <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#a3b519dcdba98a8a3d971cee2d8e18b48">base_type::handle_type</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a2a47e8c305ef058645893b616d6ff00b">  128</a></span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a2a47e8c305ef058645893b616d6ff00b">basic_multicast_ip6_socket</a>()</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                : <a class="code" href="classmn_1_1net_1_1basic__ip6__socket.html">base_type</a>() { }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a10ddff7b63b6413ee1e98c1915a37075">join_group</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a875c15ec0bdbdf86f2818ba725555467">ipaddress_type</a>&amp; groupAddress, <span class="keyword">const</span> uint8_t&amp; uiInterface);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a54e176c8f56d97241f6c1afa4b8b9d98">leave_group</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a54e176c8f56d97241f6c1afa4b8b9d98">leave_group</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a875c15ec0bdbdf86f2818ba725555467">ipaddress_type</a>&amp; groupAddress, <span class="keyword">const</span> uint8_t&amp; uiInterface);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordtype">void</span>        <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a043a4ee46621b614fa858e1ce4f7d3bb">set_loopback</a>(<span class="keywordtype">bool</span> flag);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordtype">void</span>        <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a3bacbc68d27bbc61ffd7851cb278996c">set_time_to_live</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordtype">void</span>        <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a54f70a883c786fce0d2bc214f382dafc">set_interface</a>(<span class="keyword">const</span> uint8_t&amp; infAddress);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordtype">bool</span>        <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a0a4f8a1407a16d1f772c5e47c7300683">get_loopback</a>();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordtype">int</span>         <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#ace2a45e53d40564bab3dc2ac9eff6fd6">get_time_to_live</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            uint8_t <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#afdfff5eca36a246048a102d472032743">get_interface</a>();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a45dd9c04d92b3c275b5710c60eefd968">  182</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a45dd9c04d92b3c275b5710c60eefd968">swap</a>(<a class="code" href="classmn_1_1net_1_1basic__dgram__ip__socket.html">self_typ</a>&amp; rhs) noexcept {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <a class="code" href="classmn_1_1net_1_1basic__ip6__socket.html#a18f92733cd87755ffae298cd2c8b119a">base_type::swap</a>(rhs);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a23cf663a5015a84b94daca8e03406b46">m_ipMulticast</a>.swap(rhs.m_ipMulticast);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#af6f1a72cefb721e9bacece9663df3fc1">  187</a></span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#af6f1a72cefb721e9bacece9663df3fc1">basic_multicast_ip6_socket</a>(<a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#a3b519dcdba98a8a3d971cee2d8e18b48">handle_type</a>&amp; hndl, <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#a2852ded918e243e84042fc4cff9090b9">endpoint_type</a>* endp = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                : <a class="code" href="classmn_1_1net_1_1basic__ip6__socket.html">base_type</a>(hndl, endp) { }</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#ac537299f3bf407e45c55825e0560b258">  189</a></span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#ac537299f3bf407e45c55825e0560b258">basic_multicast_ip6_socket</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d">protocol_type</a>&amp; protocol)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                : <a class="code" href="classmn_1_1net_1_1basic__ip6__socket.html">base_type</a>(protocol) { }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a23cf663a5015a84b94daca8e03406b46">  192</a></span>&#160;            <a class="code" href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ab74df9ce731d17e4124826d399c79966">ipaddress_type</a> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a23cf663a5015a84b94daca8e03406b46">m_ipMulticast</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        };</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">    #endif </span><span class="comment">// MN_THREAD_CONFIG_NET_IPADDRESS6_ENABLE</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">    #if LWIP_UDP &amp;&amp; LWIP_UDPLITE</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keyword">class </span>basic_multicast_lite_ip_socket : <span class="keyword">public</span> <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html">basic_multicast_ip_socket</a> {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keyword">using</span> self_typ = basic_multicast_lite_ip_socket;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keyword">using</span> base_type = <a class="code" href="classmn_1_1net_1_1basic__multicast__ip__socket.html">basic_multicast_ip_socket</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keyword">using</span> endpoint_type = <span class="keyword">typename</span> base_type::endpoint_type;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <span class="keyword">using</span> ipaddress_type = <span class="keyword">typename</span> base_type::ipaddress_type;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keyword">using</span> handle_type = <span class="keyword">typename</span> base_type::handle_type;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            basic_dgramlite_ip_socket() : base_type(<a class="code" href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dadec09555f72b789e1942650e52077cd4">protocol_type::udp_lite</a>) { }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">swap</a>(self_typ&amp; rhs) noexcept {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <a class="code" href="namespacemn_1_1container.html#af6b4fa483bb163ee00bb27cfcef3dc9d">base_type::swap</a>(rhs);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        };</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_BASIC_MULTICAST_IP_SOCKET_H__</span></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip6__socket_html"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip6__socket.html">mn::net::basic_dgram_ip6_socket</a></div><div class="ttdoc">Basic dram socket class.</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:121</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip6__socket_html_a2852ded918e243e84042fc4cff9090b9"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#a2852ded918e243e84042fc4cff9090b9">mn::net::basic_dgram_ip6_socket::endpoint_type</a></div><div class="ttdeci">typename base_type::endpoint_type endpoint_type</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:126</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip6__socket_html_a3b519dcdba98a8a3d971cee2d8e18b48"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#a3b519dcdba98a8a3d971cee2d8e18b48">mn::net::basic_dgram_ip6_socket::handle_type</a></div><div class="ttdeci">typename base_type::handle_type handle_type</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:128</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip6__socket_html_ab74df9ce731d17e4124826d399c79966"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ab74df9ce731d17e4124826d399c79966">mn::net::basic_dgram_ip6_socket::ipaddress_type</a></div><div class="ttdeci">typename base_type::ipaddress_type ipaddress_type</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:127</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip6__socket_html_ad98791f6855b40ce5ded71f523d7b59c"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip6__socket.html#ad98791f6855b40ce5ded71f523d7b59c">mn::net::basic_dgram_ip6_socket::basic_dgram_ip6_socket</a></div><div class="ttdeci">basic_dgram_ip6_socket()</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:130</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip__socket_html"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip__socket.html">mn::net::basic_dgram_ip_socket</a></div><div class="ttdoc">Basic dram socket class.</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:32</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip__socket_html_a588dd104b86e2c23f13ce61f39b71edf"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a588dd104b86e2c23f13ce61f39b71edf">mn::net::basic_dgram_ip_socket::ipaddress_type</a></div><div class="ttdeci">typename base_type::ipaddress_type ipaddress_type</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:38</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip__socket_html_a66ac242f782a6362f6ceaf2750fa7701"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip__socket.html#a66ac242f782a6362f6ceaf2750fa7701">mn::net::basic_dgram_ip_socket::handle_type</a></div><div class="ttdeci">typename base_type::handle_type handle_type</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:39</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip__socket_html_aa39c761e7a0eb5cd2f2229a25c0d3ff3"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip__socket.html#aa39c761e7a0eb5cd2f2229a25c0d3ff3">mn::net::basic_dgram_ip_socket::endpoint_type</a></div><div class="ttdeci">typename base_type::endpoint_type endpoint_type</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:37</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__dgram__ip__socket_html_aa4c0b3a715ddfa780a673be74c94158b"><div class="ttname"><a href="classmn_1_1net_1_1basic__dgram__ip__socket.html#aa4c0b3a715ddfa780a673be74c94158b">mn::net::basic_dgram_ip_socket::basic_dgram_ip_socket</a></div><div class="ttdeci">basic_dgram_ip_socket()</div><div class="ttdoc">Construt.</div><div class="ttdef"><b>Definition:</b> mn_basic_dgram_socket.hpp:44</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__ip4__socket_html"><div class="ttname"><a href="classmn_1_1net_1_1basic__ip4__socket.html">mn::net::basic_ip4_socket</a></div><div class="ttdoc">This class represents an internet (IP) version 4 host socket.</div><div class="ttdef"><b>Definition:</b> mn_basic_ip4_socket.hpp:31</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__ip4__socket_html_a629305908a1292f1833d47ab7605ae78"><div class="ttname"><a href="classmn_1_1net_1_1basic__ip4__socket.html#a629305908a1292f1833d47ab7605ae78">mn::net::basic_ip4_socket::swap</a></div><div class="ttdeci">virtual void swap(basic_ip4_socket &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> mn_basic_ip4_socket.hpp:134</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__ip6__socket_html"><div class="ttname"><a href="classmn_1_1net_1_1basic__ip6__socket.html">mn::net::basic_ip6_socket</a></div><div class="ttdoc">This class represents an internet (IP) version 6 host socket.</div><div class="ttdef"><b>Definition:</b> mn_basic_ip6_socket.hpp:33</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__ip6__socket_html_a18f92733cd87755ffae298cd2c8b119a"><div class="ttname"><a href="classmn_1_1net_1_1basic__ip6__socket.html#a18f92733cd87755ffae298cd2c8b119a">mn::net::basic_ip6_socket::swap</a></div><div class="ttdeci">virtual void swap(basic_ip6_socket &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> mn_basic_ip6_socket.hpp:136</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html">mn::net::basic_multicast_ip6_socket</a></div><div class="ttdoc">A basic_multicast_ip6_socket is a special dgram_ip6_socket that can be used to send packets to and re...</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:116</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a043a4ee46621b614fa858e1ce4f7d3bb"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a043a4ee46621b614fa858e1ce4f7d3bb">mn::net::basic_multicast_ip6_socket::set_loopback</a></div><div class="ttdeci">void set_loopback(bool flag)</div><div class="ttdoc">Set the option socket_option_name::loopback.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:169</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a0a4f8a1407a16d1f772c5e47c7300683"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a0a4f8a1407a16d1f772c5e47c7300683">mn::net::basic_multicast_ip6_socket::get_loopback</a></div><div class="ttdeci">bool get_loopback()</div><div class="ttdoc">Get the value from option socket_option_name::multicast_loop.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:191</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a10ddff7b63b6413ee1e98c1915a37075"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a10ddff7b63b6413ee1e98c1915a37075">mn::net::basic_multicast_ip6_socket::join_group</a></div><div class="ttdeci">int join_group(const ipaddress_type &amp;groupAddress, const uint8_t &amp;uiInterface)</div><div class="ttdoc">Joins the specified multicast group.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:124</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a23cf663a5015a84b94daca8e03406b46"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a23cf663a5015a84b94daca8e03406b46">mn::net::basic_multicast_ip6_socket::m_ipMulticast</a></div><div class="ttdeci">ipaddress_type m_ipMulticast</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:192</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a2a47e8c305ef058645893b616d6ff00b"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a2a47e8c305ef058645893b616d6ff00b">mn::net::basic_multicast_ip6_socket::basic_multicast_ip6_socket</a></div><div class="ttdeci">basic_multicast_ip6_socket()</div><div class="ttdoc">Construt an unconnected, unbound multicast socket.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:128</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a3bacbc68d27bbc61ffd7851cb278996c"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a3bacbc68d27bbc61ffd7851cb278996c">mn::net::basic_multicast_ip6_socket::set_time_to_live</a></div><div class="ttdeci">void set_time_to_live(int value)</div><div class="ttdoc">Set the option socket_option_name::ttl.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:177</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a45dd9c04d92b3c275b5710c60eefd968"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a45dd9c04d92b3c275b5710c60eefd968">mn::net::basic_multicast_ip6_socket::swap</a></div><div class="ttdeci">virtual void swap(self_typ &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:182</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a54e176c8f56d97241f6c1afa4b8b9d98"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a54e176c8f56d97241f6c1afa4b8b9d98">mn::net::basic_multicast_ip6_socket::leave_group</a></div><div class="ttdeci">int leave_group()</div><div class="ttdoc">Leaves the specified multicast group.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:143</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a54f70a883c786fce0d2bc214f382dafc"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a54f70a883c786fce0d2bc214f382dafc">mn::net::basic_multicast_ip6_socket::set_interface</a></div><div class="ttdeci">void set_interface(const uint8_t &amp;infAddress)</div><div class="ttdoc">Set the option IP_MULTICAST_IF.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:184</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_a875c15ec0bdbdf86f2818ba725555467"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#a875c15ec0bdbdf86f2818ba725555467">mn::net::basic_multicast_ip6_socket::ipaddress_type</a></div><div class="ttdeci">typename base_type::ipaddress_type ipaddress_type</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:122</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_ac537299f3bf407e45c55825e0560b258"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#ac537299f3bf407e45c55825e0560b258">mn::net::basic_multicast_ip6_socket::basic_multicast_ip6_socket</a></div><div class="ttdeci">basic_multicast_ip6_socket(const protocol_type &amp;protocol)</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:189</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_ace2a45e53d40564bab3dc2ac9eff6fd6"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#ace2a45e53d40564bab3dc2ac9eff6fd6">mn::net::basic_multicast_ip6_socket::get_time_to_live</a></div><div class="ttdeci">int get_time_to_live()</div><div class="ttdoc">Get the option IP_MULTICAST_TTL.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:203</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_af6f1a72cefb721e9bacece9663df3fc1"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#af6f1a72cefb721e9bacece9663df3fc1">mn::net::basic_multicast_ip6_socket::basic_multicast_ip6_socket</a></div><div class="ttdeci">basic_multicast_ip6_socket(handle_type &amp;hndl, endpoint_type *endp=nullptr)</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:187</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip6__socket_html_afdfff5eca36a246048a102d472032743"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip6__socket.html#afdfff5eca36a246048a102d472032743">mn::net::basic_multicast_ip6_socket::get_interface</a></div><div class="ttdeci">uint8_t get_interface()</div><div class="ttdoc">Get the option IP_MULTICAST_IF.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:215</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html">mn::net::basic_multicast_ip_socket</a></div><div class="ttdoc">A multicast_ip_socket is a special dgram_ip_socket that can be used to send packets to and receive pa...</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:30</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_a06986b7f950874eb8faf4dbcf0d1af0d"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a06986b7f950874eb8faf4dbcf0d1af0d">mn::net::basic_multicast_ip_socket::get_loopback</a></div><div class="ttdeci">bool get_loopback()</div><div class="ttdoc">Get the value from option socket_option_name::multicast_loop.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:100</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_a20380437f4fd51053f0f5e5644c7fc56"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a20380437f4fd51053f0f5e5644c7fc56">mn::net::basic_multicast_ip_socket::leave_group</a></div><div class="ttdeci">int leave_group()</div><div class="ttdoc">Leaves the specified multicast group.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:54</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_a37518b78674e08420675f56fb3f469c3"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a37518b78674e08420675f56fb3f469c3">mn::net::basic_multicast_ip_socket::set_loopback</a></div><div class="ttdeci">void set_loopback(bool flag)</div><div class="ttdoc">Set the option socket_option_name::loopback.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:79</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_a409ece2c6520bbcd1ed2b3ffbae3b0b9"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a409ece2c6520bbcd1ed2b3ffbae3b0b9">mn::net::basic_multicast_ip_socket::basic_multicast_ip_socket</a></div><div class="ttdeci">basic_multicast_ip_socket(handle_type &amp;hndl, endpoint_type *endp=nullptr)</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:103</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_a42614734eb43db78e2a8cd46b5dbbc13"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a42614734eb43db78e2a8cd46b5dbbc13">mn::net::basic_multicast_ip_socket::set_interface</a></div><div class="ttdeci">void set_interface(const ipaddress_type &amp;infAddress)</div><div class="ttdoc">Set the option IP_MULTICAST_IF.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:93</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_a5d95e4a71ae68918f2d61b5f0cca8013"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a5d95e4a71ae68918f2d61b5f0cca8013">mn::net::basic_multicast_ip_socket::m_ipMulticast</a></div><div class="ttdeci">ipaddress_type m_ipMulticast</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:108</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_a8bff78c730f88a49d16259e5344cc019"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a8bff78c730f88a49d16259e5344cc019">mn::net::basic_multicast_ip_socket::join_group</a></div><div class="ttdeci">int join_group(const ipaddress_type &amp;groupAddress, const ipaddress_type &amp;infAddress=MNNET_IPV4_ADDRESS_ANY)</div><div class="ttdoc">Joins the specified multicast group.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:34</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_a969cce0e8aa616ac6194e64e95330b81"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#a969cce0e8aa616ac6194e64e95330b81">mn::net::basic_multicast_ip_socket::basic_multicast_ip_socket</a></div><div class="ttdeci">basic_multicast_ip_socket()</div><div class="ttdoc">Construt an unconnected, unbound multicast socket.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:42</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_aa253107a0632c5dccdace9e463c7dd36"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#aa253107a0632c5dccdace9e463c7dd36">mn::net::basic_multicast_ip_socket::set_time_to_live</a></div><div class="ttdeci">void set_time_to_live(int value)</div><div class="ttdoc">Set the option socket_option_name::ttl.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:86</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_ab5612561df1247bec8e0470f1714d605"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ab5612561df1247bec8e0470f1714d605">mn::net::basic_multicast_ip_socket::ipaddress_type</a></div><div class="ttdeci">typename base_type::ipaddress_type ipaddress_type</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:36</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_aca045ca492207460df188776bab54778"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#aca045ca492207460df188776bab54778">mn::net::basic_multicast_ip_socket::basic_multicast_ip_socket</a></div><div class="ttdeci">basic_multicast_ip_socket(const protocol_type &amp;protocol)</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:105</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_ae537065e167c917b805cba2e09f83f00"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#ae537065e167c917b805cba2e09f83f00">mn::net::basic_multicast_ip_socket::get_interface</a></div><div class="ttdeci">ipaddress_type get_interface()</div><div class="ttdoc">Get the option IP_MULTICAST_IF.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:114</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_aed32d381be22ce6c9ad8db4f5202133e"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#aed32d381be22ce6c9ad8db4f5202133e">mn::net::basic_multicast_ip_socket::get_time_to_live</a></div><div class="ttdeci">int get_time_to_live()</div><div class="ttdoc">Get the option IP_MULTICAST_TTL.</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.cpp:107</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__multicast__ip__socket_html_af95782784c1b90f507b53ba424b42a09"><div class="ttname"><a href="classmn_1_1net_1_1basic__multicast__ip__socket.html#af95782784c1b90f507b53ba424b42a09">mn::net::basic_multicast_ip_socket::swap</a></div><div class="ttdeci">virtual void swap(self_typ &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> mn_basic_multicast_ip_socket.hpp:98</div></div>
+<div class="ttc" id="amn__basic__dgram__socket_8hpp_html"><div class="ttname"><a href="mn__basic__dgram__socket_8hpp.html">mn_basic_dgram_socket.hpp</a></div></div>
+<div class="ttc" id="amn__basic__ip4__address_8hpp_html_a06d1435b173c8c0b92a7af98581191ac"><div class="ttname"><a href="mn__basic__ip4__address_8hpp.html#a06d1435b173c8c0b92a7af98581191ac">MNNET_IPV4_ADDRESS_ANY</a></div><div class="ttdeci">#define MNNET_IPV4_ADDRESS_ANY</div><div class="ttdef"><b>Definition:</b> mn_basic_ip4_address.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_af6b4fa483bb163ee00bb27cfcef3dc9d"><div class="ttname"><a href="namespacemn_1_1container.html#af6b4fa483bb163ee00bb27cfcef3dc9d">mn::container::swap</a></div><div class="ttdeci">void swap(basic_binary_queue&lt; T, TITEMSIZE &gt; &amp;a, basic_binary_queue&lt; T, TITEMSIZE &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_biqueue.hpp:190</div></div>
+<div class="ttc" id="anamespacemn_1_1net_html_a05afb60a1fb9ca57f7aee1f73cb0ac7d"><div class="ttname"><a href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7d">mn::net::protocol_type</a></div><div class="ttdeci">protocol_type</div><div class="ttdoc">Defines socket protoco types for creating.</div><div class="ttdef"><b>Definition:</b> mn_net_types.hpp:60</div></div>
+<div class="ttc" id="anamespacemn_1_1net_html_a05afb60a1fb9ca57f7aee1f73cb0ac7dadec09555f72b789e1942650e52077cd4"><div class="ttname"><a href="namespacemn_1_1net.html#a05afb60a1fb9ca57f7aee1f73cb0ac7dadec09555f72b789e1942650e52077cd4">mn::net::protocol_type::udp_lite</a></div><div class="ttdeci">@ udp_lite</div><div class="ttdoc">This is an implementation of the Lightweight User Datagram Protocol (UDP-Lite), as described in RFC 3...</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a83841949e9c46378f0f533a3a6605bff"><div class="ttname"><a href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a></div><div class="ttdeci">void swap(TAssignable &amp;a, TAssignable &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:253</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

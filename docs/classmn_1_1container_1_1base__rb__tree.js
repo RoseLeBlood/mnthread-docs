@@ -2,7 +2,7 @@ var classmn_1_1container_1_1base__rb__tree =
 [
     [ "allocator_type", "classmn_1_1container_1_1base__rb__tree.html#aa607fd7e41a1267a67966c4fa42b0d3c", null ],
     [ "key_type", "classmn_1_1container_1_1base__rb__tree.html#a3857c5af39171db8270a1ff63e1d8240", null ],
-    [ "node_type", "classmn_1_1container_1_1base__rb__tree.html#afe43fb5c82ff2fa2332808287741379a", null ],
+    [ "node_type", "classmn_1_1container_1_1base__rb__tree.html#ae3928b98e4d83f0621a0a44e97487e82", null ],
     [ "self_type", "classmn_1_1container_1_1base__rb__tree.html#a9bf54296f2c1c740855d0c7147d2af70", null ],
     [ "size_type", "classmn_1_1container_1_1base__rb__tree.html#a61ef733c5c1c6b91f8e5c9ee2ff8e5f5", null ],
     [ "TravFunc", "classmn_1_1container_1_1base__rb__tree.html#a74488e3a3979a61866729b7ed145ea17", null ],
@@ -12,6 +12,8 @@ var classmn_1_1container_1_1base__rb__tree =
     [ "base_rb_tree", "classmn_1_1container_1_1base__rb__tree.html#adc038edc979c279a3a228fa311211c42", null ],
     [ "begin", "classmn_1_1container_1_1base__rb__tree.html#abc0c3b2c8aad80b683318b2ee85bb43e", null ],
     [ "clear", "classmn_1_1container_1_1base__rb__tree.html#a08921c4d7bdca01990e3dad54a265957", null ],
+    [ "construct_node", "classmn_1_1container_1_1base__rb__tree.html#a523ade128696e538f8c2670cc314fec5", null ],
+    [ "destruct_node", "classmn_1_1container_1_1base__rb__tree.html#aeb94d49a8e6bdfc882ffec5cc7891fe2", null ],
     [ "empty", "classmn_1_1container_1_1base__rb__tree.html#afeac0f52603ce2d48bb2cf536ccde178", null ],
     [ "erase", "classmn_1_1container_1_1base__rb__tree.html#a1e8f4d7c7f2160a9a3647187c150b4ce", null ],
     [ "erase", "classmn_1_1container_1_1base__rb__tree.html#aab77bb1903b09a8e1331efcfeefd7ee1", null ],
@@ -34,5 +36,6 @@ var classmn_1_1container_1_1base__rb__tree =
     [ "m_allocator", "classmn_1_1container_1_1base__rb__tree.html#a03d99c4dbb4cc38b5bdf750647422263", null ],
     [ "m_root", "classmn_1_1container_1_1base__rb__tree.html#ac48993846c7ec712950fdd6b71cfa90e", null ],
     [ "m_size", "classmn_1_1container_1_1base__rb__tree.html#a37262bc3c23695e38ff216db390993ee", null ],
-    [ "ms_sentinel", "classmn_1_1container_1_1base__rb__tree.html#ab4c97f2c6558465e9ee064d491132c8f", null ]
+    [ "ms_sentinel", "classmn_1_1container_1_1base__rb__tree.html#ab4c97f2c6558465e9ee064d491132c8f", null ],
+    [ "NodeSize", "classmn_1_1container_1_1base__rb__tree.html#ac86a3d1c3cbccfaa7a1b729ce8abf499", null ]
 ];

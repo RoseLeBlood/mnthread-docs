@@ -2,7 +2,7 @@ var mn__vector_8hpp =
 [
     [ "basic_vector_storage", "structmn_1_1container_1_1basic__vector__storage.html", "structmn_1_1container_1_1basic__vector__storage" ],
     [ "basic_vector", "classmn_1_1container_1_1basic__vector.html", "classmn_1_1container_1_1basic__vector" ],
-    [ "vector", "mn__vector_8hpp.html#a082ae5673294cb34c8aa9248df1967c6", null ],
+    [ "vector", "mn__vector_8hpp.html#a3756c0644d25e5c3b905749dc786a08f", null ],
     [ "operator*", "mn__vector_8hpp.html#a69f9397fb2df0e8559bae6d3d3e1aed9", null ],
     [ "operator*", "mn__vector_8hpp.html#ae141e1f955a9b3acbbbab643ee6c957e", null ],
     [ "operator*", "mn__vector_8hpp.html#a2f2e745dc6a39e2b381fd076b50c5423", null ],

@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::buffer&lt; TVALUE, TALLOCATOR &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1buffer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1buffer-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::buffer&lt; TVALUE, TALLOCATOR &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A buffer class that allocates a buffer of a given type and size.  
+ <a href="classmn_1_1buffer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__buffer_8hpp_source.html">mn_buffer.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::buffer&lt; TVALUE, TALLOCATOR &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1buffer__inherit__graph.svg" width="198" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::buffer&lt; TVALUE, TALLOCATOR &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1buffer__coll__graph.svg" width="432" height="260"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aedff4ccc633e0a6500c159522ed36659"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#aedff4ccc633e0a6500c159522ed36659">self_type</a> = <a class="el" href="classmn_1_1buffer.html">buffer</a>&lt; TVALUE, TALLOCATOR &gt;</td></tr>
+<tr class="separator:aedff4ccc633e0a6500c159522ed36659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af0e52ae6a91293afddb9cc39ac8276"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> = TVALUE</td></tr>
+<tr class="separator:a9af0e52ae6a91293afddb9cc39ac8276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe12704babb2dfe09f329a4227ae976"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#abbe12704babb2dfe09f329a4227ae976">allocator</a> = TALLOCATOR</td></tr>
+<tr class="separator:abbe12704babb2dfe09f329a4227ae976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7982ad6405db656f4bfc0d3801dacf9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> = <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> *</td></tr>
+<tr class="separator:ab7982ad6405db656f4bfc0d3801dacf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">reference</a> = <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> &amp;</td></tr>
+<tr class="separator:aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae22aec3f236e5466ff4c6a48abc42a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> = <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></td></tr>
+<tr class="separator:a5ae22aec3f236e5466ff4c6a48abc42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6129522bd1fb9a4234b109be578920"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#aba6129522bd1fb9a4234b109be578920">const_reference</a> = const <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> &amp;</td></tr>
+<tr class="separator:aba6129522bd1fb9a4234b109be578920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66753a18206e56f1fc01a4e79fbaea30"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> = const <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> *</td></tr>
+<tr class="separator:a66753a18206e56f1fc01a4e79fbaea30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463aebe2d6ec8c768104f5509a666c7a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a463aebe2d6ec8c768104f5509a666c7a">iterator_category</a> = <a class="el" href="structmn_1_1random__access__iterator__tag.html">random_access_iterator_tag</a></td></tr>
+<tr class="separator:a463aebe2d6ec8c768104f5509a666c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f76b359a6e812f5d35a0cb4ec24007"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#ae7f76b359a6e812f5d35a0cb4ec24007">difference_type</a> = <a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">ptrdiff_t</a></td></tr>
+<tr class="separator:ae7f76b359a6e812f5d35a0cb4ec24007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804c696f1832bde0884f7995be89625f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a> = <a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a></td></tr>
+<tr class="separator:a804c696f1832bde0884f7995be89625f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac377780a0a825e7569f36a10fd827d09"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a> = const <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> *</td></tr>
+<tr class="separator:ac377780a0a825e7569f36a10fd827d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3b6e532ae020aa2cb1954341eacfa670"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a3b6e532ae020aa2cb1954341eacfa670">buffer</a> (const <a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> &amp;size)</td></tr>
+<tr class="memdesc:a3b6e532ae020aa2cb1954341eacfa670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consructs and allocates the Buffer.  <a href="classmn_1_1buffer.html#a3b6e532ae020aa2cb1954341eacfa670">More...</a><br /></td></tr>
+<tr class="separator:a3b6e532ae020aa2cb1954341eacfa670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3e8c6ad003392ee7eb78871ae43e02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a9f3e8c6ad003392ee7eb78871ae43e02">buffer</a> (<a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> <a class="el" href="classmn_1_1buffer.html">buffer</a>, <a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> size)</td></tr>
+<tr class="memdesc:a9f3e8c6ad003392ee7eb78871ae43e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consructs the buffer from a given memory pointer.  <a href="classmn_1_1buffer.html#a9f3e8c6ad003392ee7eb78871ae43e02">More...</a><br /></td></tr>
+<tr class="separator:a9f3e8c6ad003392ee7eb78871ae43e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2901b17433f2190d595127d26548deb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#ad2901b17433f2190d595127d26548deb">buffer</a> (<a class="el" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> <a class="el" href="classmn_1_1buffer.html">buffer</a>, <a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> size)</td></tr>
+<tr class="memdesc:ad2901b17433f2190d595127d26548deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consructs and allocates the Buffer. copies the contents of the supplied memory into the buffer.  <a href="classmn_1_1buffer.html#ad2901b17433f2190d595127d26548deb">More...</a><br /></td></tr>
+<tr class="separator:ad2901b17433f2190d595127d26548deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2bbebf6838b104a471718e9c70cb2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a3d2bbebf6838b104a471718e9c70cb2b">buffer</a> (const <a class="el" href="classmn_1_1buffer.html#aedff4ccc633e0a6500c159522ed36659">self_type</a> &amp;other)</td></tr>
+<tr class="memdesc:a3d2bbebf6838b104a471718e9c70cb2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="classmn_1_1buffer.html#a3d2bbebf6838b104a471718e9c70cb2b">More...</a><br /></td></tr>
+<tr class="separator:a3d2bbebf6838b104a471718e9c70cb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76138cf5f16804ca861cc4775ef39f2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a76138cf5f16804ca861cc4775ef39f2a">~buffer</a> ()</td></tr>
+<tr class="memdesc:a76138cf5f16804ca861cc4775ef39f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deconstrut the buffer. Is allocated the memory by buffer, then deallocated it.  <a href="classmn_1_1buffer.html#a76138cf5f16804ca861cc4775ef39f2a">More...</a><br /></td></tr>
+<tr class="separator:a76138cf5f16804ca861cc4775ef39f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401e3fb319cded32226a1c7006df8530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a401e3fb319cded32226a1c7006df8530">begin</a> ()</td></tr>
+<tr class="memdesc:a401e3fb319cded32226a1c7006df8530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the iterator to the beginning of the buffer.  <a href="classmn_1_1buffer.html#a401e3fb319cded32226a1c7006df8530">More...</a><br /></td></tr>
+<tr class="separator:a401e3fb319cded32226a1c7006df8530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a44053f5598f61bb80a7e3d46e1fd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#ad6a44053f5598f61bb80a7e3d46e1fd8">begin</a> () const</td></tr>
+<tr class="memdesc:ad6a44053f5598f61bb80a7e3d46e1fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the iterator to the beginning of the buffer.  <a href="classmn_1_1buffer.html#ad6a44053f5598f61bb80a7e3d46e1fd8">More...</a><br /></td></tr>
+<tr class="separator:ad6a44053f5598f61bb80a7e3d46e1fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8753b6312ff0edb1334a11da56410b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#ae8753b6312ff0edb1334a11da56410b9">end</a> ()</td></tr>
+<tr class="memdesc:ae8753b6312ff0edb1334a11da56410b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the iterator to end of the buffer.  <a href="classmn_1_1buffer.html#ae8753b6312ff0edb1334a11da56410b9">More...</a><br /></td></tr>
+<tr class="separator:ae8753b6312ff0edb1334a11da56410b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8cb517dbb16e8705a7e86cb35a9345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a4f8cb517dbb16e8705a7e86cb35a9345">end</a> () const</td></tr>
+<tr class="memdesc:a4f8cb517dbb16e8705a7e86cb35a9345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the iterator to end of the buffer.  <a href="classmn_1_1buffer.html#a4f8cb517dbb16e8705a7e86cb35a9345">More...</a><br /></td></tr>
+<tr class="separator:a4f8cb517dbb16e8705a7e86cb35a9345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a016bc89f4a1a0daf6ff0465b37afe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a59a016bc89f4a1a0daf6ff0465b37afe">append</a> (<a class="el" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> pBuffer, std::size_t sBufferSize)</td></tr>
+<tr class="memdesc:a59a016bc89f4a1a0daf6ff0465b37afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes this buffer and appends the given data.  <a href="classmn_1_1buffer.html#a59a016bc89f4a1a0daf6ff0465b37afe">More...</a><br /></td></tr>
+<tr class="separator:a59a016bc89f4a1a0daf6ff0465b37afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad959b1b4d87593fef75b296b743b7129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#ad959b1b4d87593fef75b296b743b7129">append</a> (<a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> value)</td></tr>
+<tr class="memdesc:ad959b1b4d87593fef75b296b743b7129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes this buffer and appends the given data.  <a href="classmn_1_1buffer.html#ad959b1b4d87593fef75b296b743b7129">More...</a><br /></td></tr>
+<tr class="separator:ad959b1b4d87593fef75b296b743b7129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add477feed44ae6f90e62550cecbf8bd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#add477feed44ae6f90e62550cecbf8bd2">append</a> (const <a class="el" href="classmn_1_1buffer.html#aedff4ccc633e0a6500c159522ed36659">self_type</a> &amp;refBuffer)</td></tr>
+<tr class="memdesc:add477feed44ae6f90e62550cecbf8bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes this buffer and appends the given data.  <a href="classmn_1_1buffer.html#add477feed44ae6f90e62550cecbf8bd2">More...</a><br /></td></tr>
+<tr class="separator:add477feed44ae6f90e62550cecbf8bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f200c764c12a80ff9d4f6354ba04ca3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a6f200c764c12a80ff9d4f6354ba04ca3">resize</a> (<a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> newSize, bool bReserve=true)</td></tr>
+<tr class="memdesc:a6f200c764c12a80ff9d4f6354ba04ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the buffer capacity and size.  <a href="classmn_1_1buffer.html#a6f200c764c12a80ff9d4f6354ba04ca3">More...</a><br /></td></tr>
+<tr class="separator:a6f200c764c12a80ff9d4f6354ba04ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a74bb98699ed626c361f4ab911d8e80"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a9a74bb98699ed626c361f4ab911d8e80">change_size</a> (<a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> newSize, bool bReserve=true)</td></tr>
+<tr class="memdesc:a9a74bb98699ed626c361f4ab911d8e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the buffer size.  <a href="classmn_1_1buffer.html#a9a74bb98699ed626c361f4ab911d8e80">More...</a><br /></td></tr>
+<tr class="separator:a9a74bb98699ed626c361f4ab911d8e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872a001b2ca406a3b84e09bbc4811e08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a872a001b2ca406a3b84e09bbc4811e08">assign</a> (<a class="el" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> pBuffer, <a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> size)</td></tr>
+<tr class="memdesc:a872a001b2ca406a3b84e09bbc4811e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the argument buffer to this buffer.  <a href="classmn_1_1buffer.html#a872a001b2ca406a3b84e09bbc4811e08">More...</a><br /></td></tr>
+<tr class="separator:a872a001b2ca406a3b84e09bbc4811e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc66f2f8f6ccbffbc888de8e0da2f6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a6cc66f2f8f6ccbffbc888de8e0da2f6e">clear</a> ()</td></tr>
+<tr class="memdesc:a6cc66f2f8f6ccbffbc888de8e0da2f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the used content.  <a href="classmn_1_1buffer.html#a6cc66f2f8f6ccbffbc888de8e0da2f6e">More...</a><br /></td></tr>
+<tr class="separator:a6cc66f2f8f6ccbffbc888de8e0da2f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f79ac1390f58bb803f96318227dc1de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a0f79ac1390f58bb803f96318227dc1de">is_equel</a> (const <a class="el" href="classmn_1_1buffer.html">buffer</a> &amp;other) const</td></tr>
+<tr class="memdesc:a0f79ac1390f58bb803f96318227dc1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the given buffer equel with this?  <a href="classmn_1_1buffer.html#a0f79ac1390f58bb803f96318227dc1de">More...</a><br /></td></tr>
+<tr class="separator:a0f79ac1390f58bb803f96318227dc1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab96c6e8ee984775b3a7f5a32a5245e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#aab96c6e8ee984775b3a7f5a32a5245e2">is_empty</a> () const</td></tr>
+<tr class="memdesc:aab96c6e8ee984775b3a7f5a32a5245e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">is the buffer empty?  <a href="classmn_1_1buffer.html#aab96c6e8ee984775b3a7f5a32a5245e2">More...</a><br /></td></tr>
+<tr class="separator:aab96c6e8ee984775b3a7f5a32a5245e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0425313d492acfa25cbed8cd1e0aa72"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#ac0425313d492acfa25cbed8cd1e0aa72">is_full</a> () const</td></tr>
+<tr class="memdesc:ac0425313d492acfa25cbed8cd1e0aa72"><td class="mdescLeft">&#160;</td><td class="mdescRight">is the buffer full?  <a href="classmn_1_1buffer.html#ac0425313d492acfa25cbed8cd1e0aa72">More...</a><br /></td></tr>
+<tr class="separator:ac0425313d492acfa25cbed8cd1e0aa72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3104f7c2dd2fb1a3dfd4feca9f346896"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a3104f7c2dd2fb1a3dfd4feca9f346896">get_size</a> () const</td></tr>
+<tr class="memdesc:a3104f7c2dd2fb1a3dfd4feca9f346896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the allocated memory size in elements.  <a href="classmn_1_1buffer.html#a3104f7c2dd2fb1a3dfd4feca9f346896">More...</a><br /></td></tr>
+<tr class="separator:a3104f7c2dd2fb1a3dfd4feca9f346896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd9de0f80cbde4287333964a6d4172a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a1bd9de0f80cbde4287333964a6d4172a">get_size_bytes</a> () const</td></tr>
+<tr class="memdesc:a1bd9de0f80cbde4287333964a6d4172a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the allocated memory size in bytes.  <a href="classmn_1_1buffer.html#a1bd9de0f80cbde4287333964a6d4172a">More...</a><br /></td></tr>
+<tr class="separator:a1bd9de0f80cbde4287333964a6d4172a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af102ca623bca47bb37a03e03622db0a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#af102ca623bca47bb37a03e03622db0a5">get_used</a> () const</td></tr>
+<tr class="memdesc:af102ca623bca47bb37a03e03622db0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the used size of the buffer in elements.  <a href="classmn_1_1buffer.html#af102ca623bca47bb37a03e03622db0a5">More...</a><br /></td></tr>
+<tr class="separator:af102ca623bca47bb37a03e03622db0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54efa8ca6b20aa8e03a8f4c26a062230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a54efa8ca6b20aa8e03a8f4c26a062230">get_used_bytes</a> () const</td></tr>
+<tr class="memdesc:a54efa8ca6b20aa8e03a8f4c26a062230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the used size of the buffer in bytes.  <a href="classmn_1_1buffer.html#a54efa8ca6b20aa8e03a8f4c26a062230">More...</a><br /></td></tr>
+<tr class="separator:a54efa8ca6b20aa8e03a8f4c26a062230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769ec1b038c7eb26d00f1658d1e64c49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a769ec1b038c7eb26d00f1658d1e64c49">operator==</a> (const <a class="el" href="classmn_1_1buffer.html">buffer</a> &amp;other) const</td></tr>
+<tr class="memdesc:a769ec1b038c7eb26d00f1658d1e64c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare operator.  <a href="classmn_1_1buffer.html#a769ec1b038c7eb26d00f1658d1e64c49">More...</a><br /></td></tr>
+<tr class="separator:a769ec1b038c7eb26d00f1658d1e64c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e5b742a11a96cb846e8660252a1a244"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a3e5b742a11a96cb846e8660252a1a244">operator!=</a> (const <a class="el" href="classmn_1_1buffer.html">buffer</a> &amp;other) const</td></tr>
+<tr class="memdesc:a3e5b742a11a96cb846e8660252a1a244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not compare operator.  <a href="classmn_1_1buffer.html#a3e5b742a11a96cb846e8660252a1a244">More...</a><br /></td></tr>
+<tr class="separator:a3e5b742a11a96cb846e8660252a1a244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3368fcb817c4c88611214b9ff92de836"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a3368fcb817c4c88611214b9ff92de836">operator[]</a> (<a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> index)</td></tr>
+<tr class="separator:a3368fcb817c4c88611214b9ff92de836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5989cd0851add2d7b4cfe572ec401c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#aba6129522bd1fb9a4234b109be578920">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a8b5989cd0851add2d7b4cfe572ec401c">operator[]</a> (<a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> index) const</td></tr>
+<tr class="separator:a8b5989cd0851add2d7b4cfe572ec401c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9a60ff85fd5d61c94ded5cee2b33ef8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a9a60ff85fd5d61c94ded5cee2b33ef8b">init_internal_buffer</a> ()</td></tr>
+<tr class="separator:a9a60ff85fd5d61c94ded5cee2b33ef8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9428501845326259a32c707e3813c6fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a9428501845326259a32c707e3813c6fd">init_internal_buffer</a> (const <a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> <a class="el" href="classmn_1_1buffer.html">buffer</a>)</td></tr>
+<tr class="separator:a9428501845326259a32c707e3813c6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935b728786eb3070196ce159f37601b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a935b728786eb3070196ce159f37601b0">destroy_internal_buffer</a> ()</td></tr>
+<tr class="separator:a935b728786eb3070196ce159f37601b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0de09ea62fb28a12a0d5b8395c92060c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#a0de09ea62fb28a12a0d5b8395c92060c">m_sSize</a></td></tr>
+<tr class="separator:a0de09ea62fb28a12a0d5b8395c92060c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af395118ff00df873b56a0950861043fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#af395118ff00df873b56a0950861043fb">m_sUsed</a></td></tr>
+<tr class="separator:af395118ff00df873b56a0950861043fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb51d213559cb5b6f897ca99aeb14ce8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#abb51d213559cb5b6f897ca99aeb14ce8">m_pRawBuffer</a></td></tr>
+<tr class="separator:abb51d213559cb5b6f897ca99aeb14ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa162290e7504e180c5eb31d7ec2912f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#aa162290e7504e180c5eb31d7ec2912f2">m_bOwnMem</a></td></tr>
+<tr class="separator:aa162290e7504e180c5eb31d7ec2912f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2974f2f5982b8976fcbd5dfbf680b8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1buffer.html#abbe12704babb2dfe09f329a4227ae976">allocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1buffer.html#af2974f2f5982b8976fcbd5dfbf680b8c">m_allocator</a></td></tr>
+<tr class="separator:af2974f2f5982b8976fcbd5dfbf680b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename TVALUE, class TALLOCATOR = memory::default_allocator&gt;<br />
+class mn::buffer&lt; TVALUE, TALLOCATOR &gt;</h3>
+
+<p>A buffer class that allocates a buffer of a given type and size. </p>
+<dl class="section note"><dt>Note</dt><dd>Useful for temporery buffering data. </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="abbe12704babb2dfe09f329a4227ae976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe12704babb2dfe09f329a4227ae976">&#9670;&nbsp;</a></span>allocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#abbe12704babb2dfe09f329a4227ae976">allocator</a> =  TALLOCATOR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac377780a0a825e7569f36a10fd827d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac377780a0a825e7569f36a10fd827d09">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a> =  const <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66753a18206e56f1fc01a4e79fbaea30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66753a18206e56f1fc01a4e79fbaea30">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a> =  const <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba6129522bd1fb9a4234b109be578920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6129522bd1fb9a4234b109be578920">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#aba6129522bd1fb9a4234b109be578920">const_reference</a> =  const <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7f76b359a6e812f5d35a0cb4ec24007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f76b359a6e812f5d35a0cb4ec24007">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#ae7f76b359a6e812f5d35a0cb4ec24007">difference_type</a> =  <a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">ptrdiff_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a804c696f1832bde0884f7995be89625f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804c696f1832bde0884f7995be89625f">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a> =  <a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a463aebe2d6ec8c768104f5509a666c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a463aebe2d6ec8c768104f5509a666c7a">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#a463aebe2d6ec8c768104f5509a666c7a">iterator_category</a> =  <a class="el" href="structmn_1_1random__access__iterator__tag.html">random_access_iterator_tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7982ad6405db656f4bfc0d3801dacf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7982ad6405db656f4bfc0d3801dacf9">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> =  <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">reference</a> =  <a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedff4ccc633e0a6500c159522ed36659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedff4ccc633e0a6500c159522ed36659">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#aedff4ccc633e0a6500c159522ed36659">self_type</a> =  <a class="el" href="classmn_1_1buffer.html">buffer</a>&lt;TVALUE, TALLOCATOR&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ae22aec3f236e5466ff4c6a48abc42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae22aec3f236e5466ff4c6a48abc42a">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> =  <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9af0e52ae6a91293afddb9cc39ac8276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af0e52ae6a91293afddb9cc39ac8276">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a> =  TVALUE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3b6e532ae020aa2cb1954341eacfa670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6e532ae020aa2cb1954341eacfa670">&#9670;&nbsp;</a></span>buffer() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html">buffer</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consructs and allocates the Buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9f3e8c6ad003392ee7eb78871ae43e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3e8c6ad003392ee7eb78871ae43e02">&#9670;&nbsp;</a></span>buffer() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html">buffer</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a>&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consructs the buffer from a given memory pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size of the buffer </td></tr>
+    <tr><td class="paramname">buffer</td><td>The using pointer for this buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This pointer not deallocated, from buffer on deconstruction </dd></dl>
+
+</div>
+</div>
+<a id="ad2901b17433f2190d595127d26548deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2901b17433f2190d595127d26548deb">&#9670;&nbsp;</a></span>buffer() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html">buffer</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a>&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consructs and allocates the Buffer. copies the contents of the supplied memory into the buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size of the buffer </td></tr>
+    <tr><td class="paramname">buffer</td><td>The using pointer for this buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d2bbebf6838b104a471718e9c70cb2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2bbebf6838b104a471718e9c70cb2b">&#9670;&nbsp;</a></span>buffer() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="classmn_1_1buffer.html">buffer</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1buffer.html#aedff4ccc633e0a6500c159522ed36659">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move constructor. </p>
+
+</div>
+</div>
+<a id="a76138cf5f16804ca861cc4775ef39f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76138cf5f16804ca861cc4775ef39f2a">&#9670;&nbsp;</a></span>~buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::~<a class="el" href="classmn_1_1buffer.html">buffer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deconstrut the buffer. Is allocated the memory by buffer, then deallocated it. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="add477feed44ae6f90e62550cecbf8bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add477feed44ae6f90e62550cecbf8bd2">&#9670;&nbsp;</a></span>append() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1buffer.html#aedff4ccc633e0a6500c159522ed36659">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>refBuffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes this buffer and appends the given data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">refBuffer</td><td>The other buffer to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a59a016bc89f4a1a0daf6ff0465b37afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a016bc89f4a1a0daf6ff0465b37afe">&#9670;&nbsp;</a></span>append() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::append </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a>&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>sBufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes this buffer and appends the given data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBuffer</td><td>The array of data to append. </td></tr>
+    <tr><td class="paramname">sBufferSize</td><td>The number elements in the array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad959b1b4d87593fef75b296b743b7129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad959b1b4d87593fef75b296b743b7129">&#9670;&nbsp;</a></span>append() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::append </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a9af0e52ae6a91293afddb9cc39ac8276">value_type</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes this buffer and appends the given data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a872a001b2ca406a3b84e09bbc4811e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872a001b2ca406a3b84e09bbc4811e08">&#9670;&nbsp;</a></span>assign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::assign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a66753a18206e56f1fc01a4e79fbaea30">const_pointer</a>&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns the argument buffer to this buffer. </p>
+<dl class="section note"><dt>Note</dt><dd>If necessary, resizes the buffer. </dd></dl>
+
+</div>
+</div>
+<a id="a401e3fb319cded32226a1c7006df8530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a401e3fb319cded32226a1c7006df8530">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the iterator to the beginning of the buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The iterator to the beginning of the buffer. </dd></dl>
+
+</div>
+</div>
+<a id="ad6a44053f5598f61bb80a7e3d46e1fd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a44053f5598f61bb80a7e3d46e1fd8">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the iterator to the beginning of the buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The iterator to the beginning of the buffer. </dd></dl>
+
+</div>
+</div>
+<a id="a9a74bb98699ed626c361f4ab911d8e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a74bb98699ed626c361f4ab911d8e80">&#9670;&nbsp;</a></span>change_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::change_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td>
+          <td class="paramname"><em>newSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bReserve</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the buffer size. </p>
+<dl class="section note"><dt>Note</dt><dd>Externally memory can not change.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newSize</td><td>The new size for this buffer. </td></tr>
+    <tr><td class="paramname">bReserve</td><td>If true then the content of the old buffer is copied over to the new buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6cc66f2f8f6ccbffbc888de8e0da2f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc66f2f8f6ccbffbc888de8e0da2f6e">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear the used content. </p>
+
+</div>
+</div>
+<a id="a935b728786eb3070196ce159f37601b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935b728786eb3070196ce159f37601b0">&#9670;&nbsp;</a></span>destroy_internal_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::destroy_internal_buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8753b6312ff0edb1334a11da56410b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8753b6312ff0edb1334a11da56410b9">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#a804c696f1832bde0884f7995be89625f">iterator</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the iterator to end of the buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The iterator to end of the buffer. </dd></dl>
+
+</div>
+</div>
+<a id="a4f8cb517dbb16e8705a7e86cb35a9345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8cb517dbb16e8705a7e86cb35a9345">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#ac377780a0a825e7569f36a10fd827d09">const_iterator</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the iterator to end of the buffer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The iterator to end of the buffer. </dd></dl>
+
+</div>
+</div>
+<a id="a3104f7c2dd2fb1a3dfd4feca9f346896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3104f7c2dd2fb1a3dfd4feca9f346896">&#9670;&nbsp;</a></span>get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::get_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the allocated memory size in elements. </p>
+<dl class="section return"><dt>Returns</dt><dd>The allocated memory size in elements. </dd></dl>
+
+</div>
+</div>
+<a id="a1bd9de0f80cbde4287333964a6d4172a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd9de0f80cbde4287333964a6d4172a">&#9670;&nbsp;</a></span>get_size_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::get_size_bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the allocated memory size in bytes. </p>
+<dl class="section return"><dt>Returns</dt><dd>The allocated memory size in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="af102ca623bca47bb37a03e03622db0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af102ca623bca47bb37a03e03622db0a5">&#9670;&nbsp;</a></span>get_used()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::get_used </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the used size of the buffer in elements. </p>
+<dl class="section return"><dt>Returns</dt><dd>The used size of the buffer in elements. </dd></dl>
+
+</div>
+</div>
+<a id="a54efa8ca6b20aa8e03a8f4c26a062230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54efa8ca6b20aa8e03a8f4c26a062230">&#9670;&nbsp;</a></span>get_used_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::get_used_bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the used size of the buffer in bytes. </p>
+<dl class="section return"><dt>Returns</dt><dd>The used size of the buffer in bytes. </dd></dl>
+
+</div>
+</div>
+<a id="a9a60ff85fd5d61c94ded5cee2b33ef8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a60ff85fd5d61c94ded5cee2b33ef8b">&#9670;&nbsp;</a></span>init_internal_buffer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::init_internal_buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9428501845326259a32c707e3813c6fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9428501845326259a32c707e3813c6fd">&#9670;&nbsp;</a></span>init_internal_buffer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::init_internal_buffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a>&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab96c6e8ee984775b3a7f5a32a5245e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab96c6e8ee984775b3a7f5a32a5245e2">&#9670;&nbsp;</a></span>is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::<a class="el" href="structmn_1_1is__empty.html">is_empty</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>is the buffer empty? </p>
+<dl class="section return"><dt>Returns</dt><dd>If true then is the buffer empty and if false then not. </dd></dl>
+
+</div>
+</div>
+<a id="a0f79ac1390f58bb803f96318227dc1de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f79ac1390f58bb803f96318227dc1de">&#9670;&nbsp;</a></span>is_equel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::is_equel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1buffer.html">buffer</a>&lt; TVALUE, TALLOCATOR &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the given buffer equel with this? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Reference to the comparing buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true The given buffer is equel with this, false when not. </dd></dl>
+
+</div>
+</div>
+<a id="ac0425313d492acfa25cbed8cd1e0aa72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0425313d492acfa25cbed8cd1e0aa72">&#9670;&nbsp;</a></span>is_full()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::is_full </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>is the buffer full? </p>
+<dl class="section return"><dt>Returns</dt><dd>If true then is the buffer full and if false then not. </dd></dl>
+
+</div>
+</div>
+<a id="a3e5b742a11a96cb846e8660252a1a244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e5b742a11a96cb846e8660252a1a244">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1buffer.html">buffer</a>&lt; TVALUE, TALLOCATOR &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Not compare operator. </p>
+
+</div>
+</div>
+<a id="a769ec1b038c7eb26d00f1658d1e64c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769ec1b038c7eb26d00f1658d1e64c49">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1buffer.html">buffer</a>&lt; TVALUE, TALLOCATOR &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compare operator. </p>
+
+</div>
+</div>
+<a id="a3368fcb817c4c88611214b9ff92de836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3368fcb817c4c88611214b9ff92de836">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#aa2bf8c2c0e5fa5d8aa6ef1a0f0fb898f">reference</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b5989cd0851add2d7b4cfe572ec401c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5989cd0851add2d7b4cfe572ec401c">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#aba6129522bd1fb9a4234b109be578920">const_reference</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f200c764c12a80ff9d4f6354ba04ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f200c764c12a80ff9d4f6354ba04ca3">&#9670;&nbsp;</a></span>resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a>&#160;</td>
+          <td class="paramname"><em>newSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bReserve</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes the buffer capacity and size. </p>
+<dl class="section note"><dt>Note</dt><dd>Externally memory can not resize.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newSize</td><td>The new size for this buffer. </td></tr>
+    <tr><td class="paramname">bReserve</td><td>If true then the content of the old buffer is copied over to the new buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af2974f2f5982b8976fcbd5dfbf680b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2974f2f5982b8976fcbd5dfbf680b8c">&#9670;&nbsp;</a></span>m_allocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#abbe12704babb2dfe09f329a4227ae976">allocator</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::m_allocator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa162290e7504e180c5eb31d7ec2912f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa162290e7504e180c5eb31d7ec2912f2">&#9670;&nbsp;</a></span>m_bOwnMem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::m_bOwnMem</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb51d213559cb5b6f897ca99aeb14ce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb51d213559cb5b6f897ca99aeb14ce8">&#9670;&nbsp;</a></span>m_pRawBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#ab7982ad6405db656f4bfc0d3801dacf9">pointer</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::m_pRawBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0de09ea62fb28a12a0d5b8395c92060c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de09ea62fb28a12a0d5b8395c92060c">&#9670;&nbsp;</a></span>m_sSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::m_sSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af395118ff00df873b56a0950861043fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af395118ff00df873b56a0950861043fb">&#9670;&nbsp;</a></span>m_sUsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TVALUE , class TALLOCATOR  = memory::default_allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1buffer.html#a5ae22aec3f236e5466ff4c6a48abc42a">size_type</a> <a class="el" href="classmn_1_1buffer.html">mn::buffer</a>&lt; TVALUE, TALLOCATOR &gt;::m_sUsed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__buffer_8hpp_source.html">mn_buffer.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

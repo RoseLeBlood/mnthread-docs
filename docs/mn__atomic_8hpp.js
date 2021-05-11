@@ -1,9 +1,11 @@
 var mn__atomic_8hpp =
 [
+    [ "basic_atomic_flag", "classmn_1_1basic__atomic__flag.html", "classmn_1_1basic__atomic__flag" ],
     [ "atomic_bool", "mn__atomic_8hpp.html#abbb7d48656a84be0ca6afe37726a211c", null ],
     [ "atomic_char", "mn__atomic_8hpp.html#a7c195592e613720efbfc352abb854fe5", null ],
     [ "atomic_char16_t", "mn__atomic_8hpp.html#ae46063d2554174e39186b9277e8129e2", null ],
     [ "atomic_char32_t", "mn__atomic_8hpp.html#a135d662b05282f95d3bdc2b6d2ff4d15", null ],
+    [ "atomic_flag", "mn__atomic_8hpp.html#add0870b26664c1ae886c29f549b0f4a0", null ],
     [ "atomic_int", "mn__atomic_8hpp.html#a7c0f98d5c11af2d482a2f8fe581283ee", null ],
     [ "atomic_int16_t", "mn__atomic_8hpp.html#a8de33812b2f602c5d2cc3779ebe06a68", null ],
     [ "atomic_int32_t", "mn__atomic_8hpp.html#ad8da367f508e6b545776a0cadad1f2a1", null ],

@@ -222,25 +222,25 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4a412d35ae0f3cfbfe0f61b193378bf0"><td class="memTemplParams" colspan="2">template&lt;typename T , int TCapacity&gt; </td></tr>
 <tr class="memitem:a4a412d35ae0f3cfbfe0f61b193378bf0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a4a412d35ae0f3cfbfe0f61b193378bf0">fixed_vector</a> = <a class="el" href="classmn_1_1container_1_1basic__fixed__vector.html">basic_fixed_vector</a>&lt; T, TCapacity, mn::memory::default_allocator_t &gt;</td></tr>
 <tr class="separator:a4a412d35ae0f3cfbfe0f61b193378bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae93902d04e8a3d04f25dcf5fb3397574"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae93902d04e8a3d04f25dcf5fb3397574"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ae93902d04e8a3d04f25dcf5fb3397574">list</a> = <a class="el" href="classmn_1_1container_1_1basic__list.html">basic_list</a>&lt; T, memory::default_allocator_t &gt;</td></tr>
-<tr class="memdesc:ae93902d04e8a3d04f25dcf5fb3397574"><td class="mdescLeft">&#160;</td><td class="mdescRight">List type witch allocated in global heap.  <a href="namespacemn_1_1container.html#ae93902d04e8a3d04f25dcf5fb3397574">More...</a><br /></td></tr>
-<tr class="separator:ae93902d04e8a3d04f25dcf5fb3397574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88365c9a1eeba26688631912e8affcae"><td class="memTemplParams" colspan="2">template&lt;typename T , class TAllocator  = memory::default_allocator&gt; </td></tr>
+<tr class="memitem:a88365c9a1eeba26688631912e8affcae"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a88365c9a1eeba26688631912e8affcae">list</a> = <a class="el" href="classmn_1_1container_1_1basic__list.html">basic_list</a>&lt; T, TAllocator &gt;</td></tr>
+<tr class="memdesc:a88365c9a1eeba26688631912e8affcae"><td class="mdescLeft">&#160;</td><td class="mdescRight">List type witch allocated in global heap.  <a href="namespacemn_1_1container.html#a88365c9a1eeba26688631912e8affcae">More...</a><br /></td></tr>
+<tr class="separator:a88365c9a1eeba26688631912e8affcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a48faa9498cbaddca28917139e17683"><td class="memTemplParams" colspan="2">template&lt;typename T , int TBUFFERSIZE&gt; </td></tr>
-<tr class="memitem:a3a48faa9498cbaddca28917139e17683"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a3a48faa9498cbaddca28917139e17683">stacked_list</a> = <a class="el" href="classmn_1_1container_1_1basic__list.html">basic_list</a>&lt; T, <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html">memory::basic_allocator_stack</a>&lt; TBUFFERSIZE &gt; &gt;</td></tr>
+<tr class="memitem:a3a48faa9498cbaddca28917139e17683"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a3a48faa9498cbaddca28917139e17683">stacked_list</a> = <a class="el" href="classmn_1_1container_1_1basic__list.html">basic_list</a>&lt; T, memory::basic_allocator_stack&lt; TBUFFERSIZE &gt; &gt;</td></tr>
 <tr class="memdesc:a3a48faa9498cbaddca28917139e17683"><td class="mdescLeft">&#160;</td><td class="mdescRight">List type witch allocated on the staked memory buffer.  <a href="namespacemn_1_1container.html#a3a48faa9498cbaddca28917139e17683">More...</a><br /></td></tr>
 <tr class="separator:a3a48faa9498cbaddca28917139e17683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d9e9f71ba6d4abaa8969dc2e778ef71"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a0d9e9f71ba6d4abaa8969dc2e778ef71"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a0d9e9f71ba6d4abaa8969dc2e778ef71">node</a> = <a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T, memory::default_allocator_t &gt;</td></tr>
-<tr class="memdesc:a0d9e9f71ba6d4abaa8969dc2e778ef71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node type witch allocated in global heap.  <a href="namespacemn_1_1container.html#a0d9e9f71ba6d4abaa8969dc2e778ef71">More...</a><br /></td></tr>
-<tr class="separator:a0d9e9f71ba6d4abaa8969dc2e778ef71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a034dcfc987b282b0c62f748168986"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a04a034dcfc987b282b0c62f748168986"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a04a034dcfc987b282b0c62f748168986">node</a> = <a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T &gt;</td></tr>
+<tr class="memdesc:a04a034dcfc987b282b0c62f748168986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node type witch allocated in global heap.  <a href="namespacemn_1_1container.html#a04a034dcfc987b282b0c62f748168986">More...</a><br /></td></tr>
+<tr class="separator:a04a034dcfc987b282b0c62f748168986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a830ed3f9966070c568b3961a36d653cf"><td class="memTemplParams" colspan="2">template&lt;typename TFIRST , typename TSECOND &gt; </td></tr>
 <tr class="memitem:a830ed3f9966070c568b3961a36d653cf"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a830ed3f9966070c568b3961a36d653cf">pair</a> = <a class="el" href="structmn_1_1container_1_1basic__pair.html">basic_pair</a>&lt; TFIRST, TSECOND &gt;</td></tr>
 <tr class="separator:a830ed3f9966070c568b3961a36d653cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affa1908a140b621f51410ad6860faa35"><td class="memTemplParams" colspan="2">template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt; </td></tr>
 <tr class="memitem:affa1908a140b621f51410ad6860faa35"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#affa1908a140b621f51410ad6860faa35">queue</a> = <a class="el" href="classmn_1_1container_1_1basic__queue.html">basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt;</td></tr>
 <tr class="separator:affa1908a140b621f51410ad6860faa35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2643bd93eac5513c9c2d5507995e9e6f"><td class="memTemplParams" colspan="2">template&lt;typename TKey , class TAllocator &gt; </td></tr>
+<tr class="memitem:a2643bd93eac5513c9c2d5507995e9e6f"><td class="memTemplParams" colspan="2">template&lt;typename TKey , class TAllocator  = memory::default_allocator&gt; </td></tr>
 <tr class="memitem:a2643bd93eac5513c9c2d5507995e9e6f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a2643bd93eac5513c9c2d5507995e9e6f">rb_tree</a> = <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">base_rb_tree</a>&lt; <a class="el" href="namespacemn_1_1container_1_1internal.html#structmn_1_1container_1_1internal_1_1rb__tree__traits">internal::rb_tree_traits</a>&lt; TKey &gt;, TAllocator &gt;</td></tr>
 <tr class="separator:a2643bd93eac5513c9c2d5507995e9e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae039d7abf6ef58a4975b5ddc689321cc"><td class="memTemplParams" colspan="2">template&lt;typename TKey , typename TValue , class TCompare  = mn::less&lt;TKey&gt;&gt; </td></tr>
@@ -271,9 +271,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a6a6647e63ccb65bc8e83a2d65af8a147"><td class="memTemplParams" colspan="2">template&lt;typename TFIRST , typename TSECOND , typename TTHIRD &gt; </td></tr>
 <tr class="memitem:a6a6647e63ccb65bc8e83a2d65af8a147"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a6a6647e63ccb65bc8e83a2d65af8a147">triple</a> = <a class="el" href="structmn_1_1container_1_1basic__triple.html">basic_triple</a>&lt; TFIRST, TSECOND, TTHIRD &gt;</td></tr>
 <tr class="separator:a6a6647e63ccb65bc8e83a2d65af8a147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082ae5673294cb34c8aa9248df1967c6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a082ae5673294cb34c8aa9248df1967c6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a082ae5673294cb34c8aa9248df1967c6">vector</a> = <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, mn::memory::default_allocator_t &gt;</td></tr>
-<tr class="separator:a082ae5673294cb34c8aa9248df1967c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3756c0644d25e5c3b905749dc786a08f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3756c0644d25e5c3b905749dc786a08f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a3756c0644d25e5c3b905749dc786a08f">vector</a> = <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, <a class="el" href="namespacemn_1_1memory.html#abb5b67234913c5d181e04a2e43f2014f">mn::memory::default_allocator</a> &gt;</td></tr>
+<tr class="separator:a3756c0644d25e5c3b905749dc786a08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354fed85044522a3860875fff2f6720b"><td class="memTemplParams" colspan="2">template&lt;class T , size_t TCAPACITY = 100, typename TLOCK  = LockType_t&gt; </td></tr>
 <tr class="memitem:a354fed85044522a3860875fff2f6720b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a354fed85044522a3860875fff2f6720b">ringbuffer_t</a> = <a class="el" href="classmn_1_1container_1_1basic__ring__buffer.html">basic_ring_buffer</a>&lt; T, TCAPACITY, TLOCK &gt;</td></tr>
 <tr class="separator:a354fed85044522a3860875fff2f6720b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,65 +293,61 @@ Functions</h2></td></tr>
 <tr class="memitem:a78cd9185ee624ba067a85c0b0bef7ace"><td class="memTemplParams" colspan="2">template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE&gt; </td></tr>
 <tr class="memitem:a78cd9185ee624ba067a85c0b0bef7ace"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a78cd9185ee624ba067a85c0b0bef7ace">swap</a> (<a class="el" href="classmn_1_1container_1_1basic__deque.html">basic_deque</a>&lt; T, TMAXITEMS, TITEMSIZE &gt; &amp;a, <a class="el" href="classmn_1_1container_1_1basic__deque.html">basic_deque</a>&lt; T, TMAXITEMS, TITEMSIZE &gt; &amp;b)</td></tr>
 <tr class="separator:a78cd9185ee624ba067a85c0b0bef7ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae031bc400e97de161443b8d1e93ba043"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ae031bc400e97de161443b8d1e93ba043">MNALLOC_OBJECT_DTWO</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>, typename, T, class, TAllocator)</td></tr>
-<tr class="separator:ae031bc400e97de161443b8d1e93ba043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0f627743da5a1ff9325038840e4ec0e"><td class="memTemplParams" colspan="2">template&lt;typename T , class TALLOCATOR &gt; </td></tr>
-<tr class="memitem:aa0f627743da5a1ff9325038840e4ec0e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#aa0f627743da5a1ff9325038840e4ec0e">swap</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T, TALLOCATOR &gt; &amp;a, <a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T, TALLOCATOR &gt; &amp;b)</td></tr>
-<tr class="separator:aa0f627743da5a1ff9325038840e4ec0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83fa5b529318b78d098241a05efbc9bd"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a83fa5b529318b78d098241a05efbc9bd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a83fa5b529318b78d098241a05efbc9bd">swap</a> (<a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T &gt; &amp;a, <a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="separator:a83fa5b529318b78d098241a05efbc9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a151042e0c41ec5ebd9bd6c9f97558b52"><td class="memTemplParams" colspan="2">template&lt;typename TFIRST , typename TSECOND &gt; </td></tr>
 <tr class="memitem:a151042e0c41ec5ebd9bd6c9f97558b52"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1container.html#a830ed3f9966070c568b3961a36d653cf">pair</a>&lt; TFIRST, TSECOND &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a151042e0c41ec5ebd9bd6c9f97558b52">make_pair</a> (const TFIRST &amp;a, const TSECOND &amp;b)</td></tr>
 <tr class="separator:a151042e0c41ec5ebd9bd6c9f97558b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a1fb23d6abb4cb29bbe2fec6805757a"><td class="memTemplParams" colspan="2">template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE&gt; </td></tr>
 <tr class="memitem:a6a1fb23d6abb4cb29bbe2fec6805757a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a6a1fb23d6abb4cb29bbe2fec6805757a">swap</a> (<a class="el" href="classmn_1_1container_1_1basic__queue.html">basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt; &amp;a, <a class="el" href="classmn_1_1container_1_1basic__queue.html">basic_queue</a>&lt; T, TMAXITEMS, TITEMSIZE &gt; &amp;b)</td></tr>
 <tr class="separator:a6a1fb23d6abb4cb29bbe2fec6805757a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab752c151ea2464ab8363aa774323d511"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ab752c151ea2464ab8363aa774323d511">MNALLOC_OBJECT_DTWO</a> (<a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>, typename, TVALUE, class, TAllocator)</td></tr>
-<tr class="separator:ab752c151ea2464ab8363aa774323d511"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8afbc9df19c1e4f3db69ece04f3324cf"><td class="memTemplParams" colspan="2">template&lt;typename TVALUE , class TAllocator &gt; </td></tr>
-<tr class="memitem:a8afbc9df19c1e4f3db69ece04f3324cf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a8afbc9df19c1e4f3db69ece04f3324cf">swap</a> (<a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; TVALUE, TAllocator &gt; &amp;a, <a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; TVALUE, TAllocator &gt; &amp;b)</td></tr>
-<tr class="separator:a8afbc9df19c1e4f3db69ece04f3324cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d3a494f96db7a19466f11d8b57ae62"><td class="memTemplParams" colspan="2">template&lt;typename TVALUE &gt; </td></tr>
+<tr class="memitem:a15d3a494f96db7a19466f11d8b57ae62"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a15d3a494f96db7a19466f11d8b57ae62">swap</a> (<a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; TVALUE &gt; &amp;a, <a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; TVALUE &gt; &amp;b)</td></tr>
+<tr class="separator:a15d3a494f96db7a19466f11d8b57ae62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2b4ae50fd9a728386af85d3127e65d"><td class="memTemplParams" colspan="2">template&lt;typename TFIRST , typename TSECOND , typename TTHIRD &gt; </td></tr>
 <tr class="memitem:a5b2b4ae50fd9a728386af85d3127e65d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1container.html#a6a6647e63ccb65bc8e83a2d65af8a147">triple</a>&lt; TFIRST, TSECOND, TTHIRD &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a5b2b4ae50fd9a728386af85d3127e65d">make_triple</a> (const TFIRST &amp;a, const TSECOND &amp;b, const TTHIRD &amp;c)</td></tr>
 <tr class="separator:a5b2b4ae50fd9a728386af85d3127e65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b5193cf93e6475684b39c4fee7e99df"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a6b5193cf93e6475684b39c4fee7e99df"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a6b5193cf93e6475684b39c4fee7e99df"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a6b5193cf93e6475684b39c4fee7e99df">operator+</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a, const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:a6b5193cf93e6475684b39c4fee7e99df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8caf5c5571eeeb95cac6fcbf5c87dfe1"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a8caf5c5571eeeb95cac6fcbf5c87dfe1"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a8caf5c5571eeeb95cac6fcbf5c87dfe1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a8caf5c5571eeeb95cac6fcbf5c87dfe1">operator+</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a, const T &amp;b)</td></tr>
 <tr class="separator:a8caf5c5571eeeb95cac6fcbf5c87dfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d429d90af50afdbda592fcea5df57f3"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a0d429d90af50afdbda592fcea5df57f3"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a0d429d90af50afdbda592fcea5df57f3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a0d429d90af50afdbda592fcea5df57f3">operator+</a> (const T &amp;a, const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:a0d429d90af50afdbda592fcea5df57f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e3ff8a599a1b06ca4dcf543c8a7384"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:ad4e3ff8a599a1b06ca4dcf543c8a7384"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:ad4e3ff8a599a1b06ca4dcf543c8a7384"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ad4e3ff8a599a1b06ca4dcf543c8a7384">operator-</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a, const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:ad4e3ff8a599a1b06ca4dcf543c8a7384"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae38bce266e435c3e2ec5a11aa65f83"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a1ae38bce266e435c3e2ec5a11aa65f83"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a1ae38bce266e435c3e2ec5a11aa65f83"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a1ae38bce266e435c3e2ec5a11aa65f83">operator-</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a)</td></tr>
 <tr class="separator:a1ae38bce266e435c3e2ec5a11aa65f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1b0fad257fdf2f2eab678ee1c3a7415"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:ae1b0fad257fdf2f2eab678ee1c3a7415"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:ae1b0fad257fdf2f2eab678ee1c3a7415"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ae1b0fad257fdf2f2eab678ee1c3a7415">operator-</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a, const T &amp;b)</td></tr>
 <tr class="separator:ae1b0fad257fdf2f2eab678ee1c3a7415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b19c329d9e0fb2c68d11fe63229e07d"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a2b19c329d9e0fb2c68d11fe63229e07d"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a2b19c329d9e0fb2c68d11fe63229e07d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a2b19c329d9e0fb2c68d11fe63229e07d">operator-</a> (const T &amp;a, const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:a2b19c329d9e0fb2c68d11fe63229e07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69f9397fb2df0e8559bae6d3d3e1aed9"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a69f9397fb2df0e8559bae6d3d3e1aed9"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a69f9397fb2df0e8559bae6d3d3e1aed9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a69f9397fb2df0e8559bae6d3d3e1aed9">operator*</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a, const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:a69f9397fb2df0e8559bae6d3d3e1aed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae141e1f955a9b3acbbbab643ee6c957e"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:ae141e1f955a9b3acbbbab643ee6c957e"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:ae141e1f955a9b3acbbbab643ee6c957e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ae141e1f955a9b3acbbbab643ee6c957e">operator*</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a, const T &amp;b)</td></tr>
 <tr class="separator:ae141e1f955a9b3acbbbab643ee6c957e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f2e745dc6a39e2b381fd076b50c5423"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a2f2e745dc6a39e2b381fd076b50c5423"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a2f2e745dc6a39e2b381fd076b50c5423"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a2f2e745dc6a39e2b381fd076b50c5423">operator*</a> (const T &amp;a, const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:a2f2e745dc6a39e2b381fd076b50c5423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab14c41530dd92d56fd8edb7722192b3b"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:ab14c41530dd92d56fd8edb7722192b3b"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:ab14c41530dd92d56fd8edb7722192b3b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ab14c41530dd92d56fd8edb7722192b3b">operator/</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a, const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:ab14c41530dd92d56fd8edb7722192b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae84d49b701b34b27cd5353efb5fbaa5b"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:ae84d49b701b34b27cd5353efb5fbaa5b"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:ae84d49b701b34b27cd5353efb5fbaa5b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#ae84d49b701b34b27cd5353efb5fbaa5b">operator/</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;a, const T &amp;b)</td></tr>
 <tr class="separator:ae84d49b701b34b27cd5353efb5fbaa5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0d3c340a61bf1abc4db8f8d6e599d1"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:afa0d3c340a61bf1abc4db8f8d6e599d1"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:afa0d3c340a61bf1abc4db8f8d6e599d1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#afa0d3c340a61bf1abc4db8f8d6e599d1">operator/</a> (const T &amp;a, const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:afa0d3c340a61bf1abc4db8f8d6e599d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a93a6430afa38014b8c153d83e39275"><td class="memTemplParams" colspan="2">template&lt;typename T , class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a1a93a6430afa38014b8c153d83e39275"><td class="memTemplParams" colspan="2">template&lt;typename T , class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a1a93a6430afa38014b8c153d83e39275"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a1a93a6430afa38014b8c153d83e39275">scale</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt; T, TAllocator, TStorage &gt; &amp;v, const T s)</td></tr>
 <tr class="separator:a1a93a6430afa38014b8c153d83e39275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -480,16 +476,16 @@ template&lt;typename T , int TCapacity&gt; </div>
 
 </div>
 </div>
-<a id="ae93902d04e8a3d04f25dcf5fb3397574"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae93902d04e8a3d04f25dcf5fb3397574">&#9670;&nbsp;</a></span>list</h2>
+<a id="a88365c9a1eeba26688631912e8affcae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88365c9a1eeba26688631912e8affcae">&#9670;&nbsp;</a></span>list</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , class TAllocator  = memory::default_allocator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemn_1_1container.html#ae93902d04e8a3d04f25dcf5fb3397574">mn::container::list</a> = typedef <a class="el" href="classmn_1_1container_1_1basic__list.html">basic_list</a>&lt;T, memory::default_allocator_t &gt;</td>
+          <td class="memname">using <a class="el" href="namespacemn_1_1container.html#a88365c9a1eeba26688631912e8affcae">mn::container::list</a> = typedef <a class="el" href="classmn_1_1container_1_1basic__list.html">basic_list</a>&lt;T, TAllocator &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -498,14 +494,15 @@ template&lt;typename T &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The holding type for the value </td></tr>
+    <tr><td class="paramname">TAllocator</td><td>The using allocator </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a0d9e9f71ba6d4abaa8969dc2e778ef71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d9e9f71ba6d4abaa8969dc2e778ef71">&#9670;&nbsp;</a></span>node</h2>
+<a id="a04a034dcfc987b282b0c62f748168986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a034dcfc987b282b0c62f748168986">&#9670;&nbsp;</a></span>node</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,7 +510,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemn_1_1container.html#a0d9e9f71ba6d4abaa8969dc2e778ef71">mn::container::node</a> = typedef <a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt;T, memory::default_allocator_t&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemn_1_1container.html#a04a034dcfc987b282b0c62f748168986">mn::container::node</a> = typedef <a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt;T&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -568,7 +565,7 @@ template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE = sizeof(T)&gt;
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TKey , class TAllocator &gt; </div>
+template&lt;typename TKey , class TAllocator  = memory::default_allocator&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespacemn_1_1container.html#a2643bd93eac5513c9c2d5507995e9e6f">mn::container::rb_tree</a> = typedef <a class="el" href="classmn_1_1container_1_1base__rb__tree.html">base_rb_tree</a>&lt;<a class="el" href="namespacemn_1_1container_1_1internal.html#structmn_1_1container_1_1internal_1_1rb__tree__traits">internal::rb_tree_traits</a>&lt;TKey&gt;, TAllocator&gt;</td>
@@ -633,7 +630,7 @@ template&lt;typename TKey , typename TValue , class TCompare  = mn::less&lt;TKey
 template&lt;typename T , int TBUFFERSIZE&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemn_1_1container.html#a3a48faa9498cbaddca28917139e17683">mn::container::stacked_list</a> = typedef <a class="el" href="classmn_1_1container_1_1basic__list.html">basic_list</a>&lt;T, <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html">memory::basic_allocator_stack</a>&lt;TBUFFERSIZE&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="namespacemn_1_1container.html#a3a48faa9498cbaddca28917139e17683">mn::container::stacked_list</a> = typedef <a class="el" href="classmn_1_1container_1_1basic__list.html">basic_list</a>&lt;T, memory::basic_allocator_stack&lt;TBUFFERSIZE&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -735,8 +732,8 @@ template&lt;typename TFIRST , typename TSECOND , typename TTHIRD &gt; </div>
 
 </div>
 </div>
-<a id="a082ae5673294cb34c8aa9248df1967c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a082ae5673294cb34c8aa9248df1967c6">&#9670;&nbsp;</a></span>vector</h2>
+<a id="a3756c0644d25e5c3b905749dc786a08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3756c0644d25e5c3b905749dc786a08f">&#9670;&nbsp;</a></span>vector</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -744,7 +741,7 @@ template&lt;typename TFIRST , typename TSECOND , typename TTHIRD &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacemn_1_1container.html#a082ae5673294cb34c8aa9248df1967c6">mn::container::vector</a> = typedef <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt;T, mn::memory::default_allocator_t&gt;</td>
+          <td class="memname">using <a class="el" href="namespacemn_1_1container.html#a3756c0644d25e5c3b905749dc786a08f">mn::container::vector</a> = typedef <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&lt;T, <a class="el" href="namespacemn_1_1memory.html#abb5b67234913c5d181e04a2e43f2014f">mn::memory::default_allocator</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -845,105 +842,13 @@ template&lt;typename TFIRST , typename TSECOND , typename TTHIRD &gt; </div>
 
 </div>
 </div>
-<a id="ae031bc400e97de161443b8d1e93ba043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae031bc400e97de161443b8d1e93ba043">&#9670;&nbsp;</a></span>MNALLOC_OBJECT_DTWO() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mn::container::MNALLOC_OBJECT_DTWO </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">class&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TAllocator&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab752c151ea2464ab8363aa774323d511"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab752c151ea2464ab8363aa774323d511">&#9670;&nbsp;</a></span>MNALLOC_OBJECT_DTWO() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mn::container::MNALLOC_OBJECT_DTWO </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TVALUE&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">class&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TAllocator&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a69f9397fb2df0e8559bae6d3d3e1aed9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69f9397fb2df0e8559bae6d3d3e1aed9">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -981,7 +886,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1019,7 +924,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1057,7 +962,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1095,7 +1000,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1133,7 +1038,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1171,7 +1076,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1199,7 +1104,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1237,7 +1142,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1275,7 +1180,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1313,7 +1218,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1351,7 +1256,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1389,7 +1294,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1427,7 +1332,7 @@ template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_a
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , class TAllocator  = mn::memory::default_allocator_t, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
+template&lt;typename T , class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1519,13 +1424,13 @@ template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE&gt; </div>
 
 </div>
 </div>
-<a id="aa0f627743da5a1ff9325038840e4ec0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0f627743da5a1ff9325038840e4ec0e">&#9670;&nbsp;</a></span>swap() <span class="overload">[3/5]</span></h2>
+<a id="a83fa5b529318b78d098241a05efbc9bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83fa5b529318b78d098241a05efbc9bd">&#9670;&nbsp;</a></span>swap() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , class TALLOCATOR &gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1533,13 +1438,13 @@ template&lt;typename T , class TALLOCATOR &gt; </div>
         <tr>
           <td class="memname">void mn::container::swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T, TALLOCATOR &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T, TALLOCATOR &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__node.html">basic_node</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -1587,24 +1492,24 @@ template&lt;class T , mn::size_t TMAXITEMS, mn::size_t TITEMSIZE&gt; </div>
 
 </div>
 </div>
-<a id="a8afbc9df19c1e4f3db69ece04f3324cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8afbc9df19c1e4f3db69ece04f3324cf">&#9670;&nbsp;</a></span>swap() <span class="overload">[5/5]</span></h2>
+<a id="a15d3a494f96db7a19466f11d8b57ae62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d3a494f96db7a19466f11d8b57ae62">&#9670;&nbsp;</a></span>swap() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TVALUE , class TAllocator &gt; </div>
+template&lt;typename TVALUE &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void mn::container::swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; TVALUE, TAllocator &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; TVALUE &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; TVALUE, TAllocator &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structmn_1_1container_1_1rb__tree__node.html">rb_tree_node</a>&lt; TVALUE &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>

@@ -142,13 +142,15 @@ $(document).ready(function(){initNavTree('mn__def_8hpp.html',''); initResizable(
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mn_def.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="mn__copyable_8hpp_source.html">mn_copyable.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__def_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -159,8 +161,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4674b4bc35ec4f376d47b48ae639c1ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4674b4bc35ec4f376d47b48ae639c1ac">mn::max_align_t</a> = int</td></tr>
-<tr class="separator:a4674b4bc35ec4f376d47b48ae639c1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2ce24dd09db69f33c622978c059f88"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a0b2ce24dd09db69f33c622978c059f88">mn::max_align_t</a> = long double</td></tr>
+<tr class="separator:a0b2ce24dd09db69f33c622978c059f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd72f028c96da628475a88ad4702dedd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">mn::nullptr_t</a> = decltype(nullptr)</td></tr>
 <tr class="separator:acd72f028c96da628475a88ad4702dedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af487f8a5d975f2b50b68065096c732ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> = <a class="el" href="mn__config_8hpp.html#a50e5f9c1523e1a8c6ee7f022b672cb55">MN_THREAD_CONFIG_SIZE_TYPE</a></td></tr>
@@ -210,6 +212,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a4d47c38b0f5b40c33932673f16d04a57"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
 <tr class="memitem:a4d47c38b0f5b40c33932673f16d04a57"><td class="memTemplItemLeft" align="right" valign="top">IntegerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4d47c38b0f5b40c33932673f16d04a57">mn::to_integer</a> (byte b)</td></tr>
 <tr class="separator:a4d47c38b0f5b40c33932673f16d04a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a75eeffc19cfdc305e116af71225626b0"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a75eeffc19cfdc305e116af71225626b0">mn::max_alignment</a> = alignof(max_align_t)</td></tr>
+<tr class="separator:a75eeffc19cfdc305e116af71225626b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

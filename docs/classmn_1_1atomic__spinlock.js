@@ -6,6 +6,7 @@ var classmn_1_1atomic__spinlock =
     [ "self_type", "classmn_1_1atomic__spinlock.html#a8734684c6d6448116f451d5c909a2c4c", null ],
     [ "value_type", "classmn_1_1atomic__spinlock.html#a644972aa0c8e9e9538bac0f80a46b93a", null ],
     [ "atomic_spinlock", "classmn_1_1atomic__spinlock.html#abeede400bb5e39108f91994c699c003e", null ],
+    [ "atomic_spinlock", "classmn_1_1atomic__spinlock.html#a35f482ad0f51ce3660be4ce73075aefd", null ],
     [ "atomic_spinlock", "classmn_1_1atomic__spinlock.html#a092db6ff11dfe8cd993e52dd52a34c23", null ],
     [ "is_initialized", "classmn_1_1atomic__spinlock.html#a2c623124b5b2da59183ce45824919229", null ],
     [ "lock", "classmn_1_1atomic__spinlock.html#a5360c17ee161ad2c51b8458c95def403", null ],

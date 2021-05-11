@@ -152,8 +152,8 @@ $(document).ready(function(){initNavTree('functions_func_a.html',''); initResiza
 , <a class="el" href="classmn_1_1esp32_1_1basic__esp32__timer.html#a572323aef859ead0ca5eee724e68ea39">mn::esp32::basic_esp32_timer</a>
 , <a class="el" href="classmn_1_1ITimer.html#a6f13a58bf8999d7d19429a2a2e77f151">mn::ITimer</a>
 </li>
-<li>add_allocatedsize()
-: <a class="el" href="classmn_1_1memory_1_1allocator__interface.html#aec7fcc98b6f399a8e1c9a568c7d2cf08">mn::memory::allocator_interface</a>
+<li>add()
+: <a class="el" href="classmn_1_1auto__release.html#a060277f2050bcae5344b8c62c16a7b62">mn::auto_release&lt; TRELOBJ, TALLOCATOR &gt;</a>
 </li>
 <li>add_child()
 : <a class="el" href="classmn_1_1pointer_1_1node__ptr.html#a4c2cede48d89f8736b07a656d894e75a">mn::pointer::node_ptr&lt; T, TAllocator &gt;</a>
@@ -164,44 +164,42 @@ $(document).ready(function(){initNavTree('functions_func_a.html',''); initResiza
 <li>add_list()
 : <a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#aa220155bbecfe624fee0976c62e74750">mn::ext::basic_condition_variable</a>
 </li>
-<li>add_memory()
-: <a class="el" href="classmn_1_1memory_1_1basic__mempool__vector.html#a41d70ffd3121eb9acbc4d0394664b523">mn::memory::basic_mempool_vector&lt; TType, nElements, TMUTEX, TALLOCATOR &gt;</a>
-</li>
 <li>add_task()
 : <a class="el" href="classmn_1_1basic__task__list.html#af196e85d4273ea4c5a1c42afead88d56">mn::basic_task_list</a>
 </li>
-<li>alloc()
-: <a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a78a2f66c03d90fd103c9123cbfcdee9e">mn::memory::allocator_interface</a>
-, <a class="el" href="classmn_1_1memory_1_1basic__allocator__buffer.html#a20a729592a22fe9b29410d74738ac9f4">mn::memory::basic_allocator_buffer</a>
-, <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack.html#a4114155d44b720220114c3950a7a4ec4">mn::memory::basic_allocator_stack&lt; TBUFFERSIZE &gt;</a>
-, <a class="el" href="classmn_1_1memory_1_1basic__allocator__system.html#a5b09613b006943c1d0df9192ff7a1f2d">mn::memory::basic_allocator_system</a>
-, <a class="el" href="classmn_1_1memory_1_1basic__cap__allocator__esp32.html#a6fbcb8ed69ad3d3ae219be7486943d62">mn::memory::basic_cap_allocator_esp32&lt; TCAPS, TSBITS &gt;</a>
-, <a class="el" href="classmn_1_1memory_1_1basic__multiheap__allocator__esp32.html#a579ea7a458f730d8507574715c1309c1">mn::memory::basic_multiheap_allocator_esp32&lt; TBytes &gt;</a>
-</li>
-<li>alloc_alignment()
-: <a class="el" href="classmn_1_1memory_1_1allocator__interface.html#a630c1ebbf047a5ab7143cf94f2aea34b">mn::memory::allocator_interface</a>
-</li>
 <li>allocate()
-: <a class="el" href="classmn_1_1memory_1_1basic__mempool__vector.html#a2344594ba46e5414b098875fc7ca95fb">mn::memory::basic_mempool_vector&lt; TType, nElements, TMUTEX, TALLOCATOR &gt;</a>
-</li>
-<li>allocator_interface()
-: <a class="el" href="classmn_1_1memory_1_1allocator__interface.html#afa2b01361a32d116db16a3b12fedbbeb">mn::memory::allocator_interface</a>
+: <a class="el" href="classmn_1_1memory_1_1basic__allocator.html#afc8672d760b307f8c155c2fef6efc7a1">mn::memory::basic_allocator&lt; TAllocator, TFilter &gt;</a>
+, <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack__impl.html#ae38c79664b5c2fe296ae4a8a6d7b0367">mn::memory::basic_allocator_stack_impl&lt; TBUFFERSIZE &gt;</a>
+, <a class="el" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a0d16c68b6c6d090d1a243f8977bce61c">mn::memory::basic_malloc_allocator_impl</a>
+, <a class="el" href="classmn_1_1memory_1_1basic__new__allocaor__impl.html#afbc0e664ac9eab4ea7da4922e3592fb6">mn::memory::basic_new_allocaor_impl</a>
 </li>
 <li>and_fetch()
 : <a class="el" href="structmn_1_1basic__atomic__gcc.html#ac7842bbf559b809f8fecf2bc939a6ff1">mn::basic_atomic_gcc&lt; T &gt;</a>
 </li>
+<li>append()
+: <a class="el" href="classmn_1_1buffer.html#add477feed44ae6f90e62550cecbf8bd2">mn::buffer&lt; TVALUE, TALLOCATOR &gt;</a>
+</li>
 <li>assign()
-: <a class="el" href="classmn_1_1container_1_1basic__list.html#a9d01f5732633cb164593de818f774152">mn::container::basic_list&lt; T, TAllocator &gt;</a>
+: <a class="el" href="classmn_1_1basic__timespan.html#ab56fec2469a351f8cfc44d66cad90567">mn::basic_timespan</a>
+, <a class="el" href="classmn_1_1buffer.html#a872a001b2ca406a3b84e09bbc4811e08">mn::buffer&lt; TVALUE, TALLOCATOR &gt;</a>
+, <a class="el" href="classmn_1_1container_1_1basic__list.html#a9d01f5732633cb164593de818f774152">mn::container::basic_list&lt; T, TAllocator &gt;</a>
 , <a class="el" href="classmn_1_1container_1_1basic__vector.html#ab0457fc4b371221f2b0a06d8c1bc67a5">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
+, <a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html#a8e63c82d4a6a195a455d8b1d80c1b14f">mn::pointer::basic_auto_ptr&lt; T &gt;</a>
 </li>
 <li>at()
 : <a class="el" href="classmn_1_1container_1_1basic__vector.html#a70f1125ee48feb31c09c283fbe5d1533">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a>
+</li>
+<li>atomic_counter()
+: <a class="el" href="classmn_1_1atomic__counter.html#a451030f7636e9c0d8a4d551de09a6608">mn::atomic_counter</a>
 </li>
 <li>atomic_flag()
 : <a class="el" href="structmn_1_1internal_1_1atomic__flag.html#adafd004967c6045dc0beb5566159d7b4">mn::internal::atomic_flag&lt; TFlag &gt;</a>
 </li>
 <li>atomic_spinlock()
 : <a class="el" href="classmn_1_1atomic__spinlock.html#abeede400bb5e39108f91994c699c003e">mn::atomic_spinlock&lt; T &gt;</a>
+</li>
+<li>auto_release()
+: <a class="el" href="classmn_1_1auto__release.html#a1ac3b62fb05cb81dab12e6dfc8252e0e">mn::auto_release&lt; TRELOBJ, TALLOCATOR &gt;</a>
 </li>
 <li>available()
 : <a class="el" href="classmn_1_1net_1_1basic__ip__socket.html#a139cd8f4dbbd8c9f79e7f0b57c36fbba">mn::net::basic_ip_socket</a>

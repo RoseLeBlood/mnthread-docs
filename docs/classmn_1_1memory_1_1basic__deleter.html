@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::memory::basic_deleter&lt; Type, TAllocator &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1memory_1_1basic__deleter.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1memory_1_1basic__deleter-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::memory::basic_deleter&lt; Type, TAllocator &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__basic__deleter_8hpp_source.html">mn_basic_deleter.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0b8cde651633dfd12beae918b84094e3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a0b8cde651633dfd12beae918b84094e3">value_type</a> = Type</td></tr>
+<tr class="separator:a0b8cde651633dfd12beae918b84094e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cdfb1b80f9fab9b3fdfb244a3fc4e45"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3cdfb1b80f9fab9b3fdfb244a3fc4e45">allocator</a> = TAllocator</td></tr>
+<tr class="separator:a3cdfb1b80f9fab9b3fdfb244a3fc4e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3064b68f62bc52993a698b9c53e10ea2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3064b68f62bc52993a698b9c53e10ea2">pointer</a> = TAllocator *</td></tr>
+<tr class="separator:a3064b68f62bc52993a698b9c53e10ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a1e3a4284044d665d10f711938f2f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a> = TAllocator &amp;</td></tr>
+<tr class="separator:af5a1e3a4284044d665d10f711938f2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4f22161dbb3556b0b5ad9595fcc07eba"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a4f22161dbb3556b0b5ad9595fcc07eba">basic_deleter</a> ()</td></tr>
+<tr class="separator:a4f22161dbb3556b0b5ad9595fcc07eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d057153bb62cd930fff211da23206e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#ad2d057153bb62cd930fff211da23206e">basic_deleter</a> (<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a> alloc) noexcept</td></tr>
+<tr class="separator:ad2d057153bb62cd930fff211da23206e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32b1f3cb0d41f3186185b8872596d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#ab32b1f3cb0d41f3186185b8872596d0c">get_allocator</a> ()</td></tr>
+<tr class="separator:ab32b1f3cb0d41f3186185b8872596d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816e56da59f174ebc748e2ef33cac53e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a816e56da59f174ebc748e2ef33cac53e">is_valid</a> () const noexcept</td></tr>
+<tr class="separator:a816e56da59f174ebc748e2ef33cac53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfa8687b254b76291edec8b2023efed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#abbfa8687b254b76291edec8b2023efed">operator()</a> (<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a0b8cde651633dfd12beae918b84094e3">value_type</a> *<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3064b68f62bc52993a698b9c53e10ea2">pointer</a>) noexcept</td></tr>
+<tr class="separator:abbfa8687b254b76291edec8b2023efed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af6bf808463ef9f9aa5835f7a1ce63a97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3064b68f62bc52993a698b9c53e10ea2">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af6bf808463ef9f9aa5835f7a1ce63a97">m_refAllocator</a></td></tr>
+<tr class="separator:af6bf808463ef9f9aa5835f7a1ce63a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3cdfb1b80f9fab9b3fdfb244a3fc4e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cdfb1b80f9fab9b3fdfb244a3fc4e45">&#9670;&nbsp;</a></span>allocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3cdfb1b80f9fab9b3fdfb244a3fc4e45">allocator</a> =  TAllocator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3064b68f62bc52993a698b9c53e10ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3064b68f62bc52993a698b9c53e10ea2">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3064b68f62bc52993a698b9c53e10ea2">pointer</a> =  TAllocator*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5a1e3a4284044d665d10f711938f2f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a1e3a4284044d665d10f711938f2f5">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a> =  TAllocator&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b8cde651633dfd12beae918b84094e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b8cde651633dfd12beae918b84094e3">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a0b8cde651633dfd12beae918b84094e3">value_type</a> =  Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4f22161dbb3556b0b5ad9595fcc07eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f22161dbb3556b0b5ad9595fcc07eba">&#9670;&nbsp;</a></span>basic_deleter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::<a class="el" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2d057153bb62cd930fff211da23206e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d057153bb62cd930fff211da23206e">&#9670;&nbsp;</a></span>basic_deleter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::<a class="el" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a>&#160;</td>
+          <td class="paramname"><em>alloc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab32b1f3cb0d41f3186185b8872596d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32b1f3cb0d41f3186185b8872596d0c">&#9670;&nbsp;</a></span>get_allocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a> <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::get_allocator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a816e56da59f174ebc748e2ef33cac53e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816e56da59f174ebc748e2ef33cac53e">&#9670;&nbsp;</a></span>is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::is_valid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbfa8687b254b76291edec8b2023efed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbfa8687b254b76291edec8b2023efed">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a0b8cde651633dfd12beae918b84094e3">value_type</a> *&#160;</td>
+          <td class="paramname"><em>pointer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af6bf808463ef9f9aa5835f7a1ce63a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6bf808463ef9f9aa5835f7a1ce63a97">&#9670;&nbsp;</a></span>m_refAllocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3064b68f62bc52993a698b9c53e10ea2">pointer</a> <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::m_refAllocator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__basic__deleter_8hpp_source.html">mn_basic_deleter.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_basic_malloc_allocator.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__basic__malloc__allocator_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_basic_malloc_allocator.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__basic__malloc__allocator_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __MINILIB_MEM_BASIC_MALLOC_ALLOCATOR_H__</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __MINILIB_MEM_BASIC_MALLOC_ALLOCATOR_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__basic__allocator_8hpp.html">mn_basic_allocator.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator__typetraits_8hpp.html">mn_allocator_typetraits.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">namespace </span>memory {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html">   32</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html">basic_malloc_allocator_impl</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a4ece07beb6b28f31f12000f5ac848ba2">   34</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a4ece07beb6b28f31f12000f5ac848ba2">allocator_category</a> = <a class="code" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1std__allocator__tag">std_allocator_tag</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ad43a7081c20f22dc13d72fcef1fda1a2">   35</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ad43a7081c20f22dc13d72fcef1fda1a2">is_thread_safe</a> = <a class="code" href="namespacemn.html#afb1f94a29d5337f0a8b28a06a4f79570">std::false_type</a> ;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ae5569b1f368a4277c5059f66397709eb">   37</a></span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ae5569b1f368a4277c5059f66397709eb">first</a>() noexcept { }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a0d16c68b6c6d090d1a243f8977bce61c">   39</a></span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span>* <a class="code" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a0d16c68b6c6d090d1a243f8977bce61c">allocate</a>(<span class="keywordtype">size_t</span> size, <span class="keywordtype">size_t</span> alignment) noexcept {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="mn__defines_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">MN_UNUSED_VARIABLE</a>(alignment);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">return</span> malloc(size);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a1d54b97afbee4e7255608802d8c962bd">   44</a></span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a1d54b97afbee4e7255608802d8c962bd">deallocate</a>(<span class="keywordtype">void</span>* ptr, <span class="keywordtype">size_t</span> size, <span class="keywordtype">size_t</span> alignment) noexcept {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="mn__defines_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">MN_UNUSED_VARIABLE</a>(size);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="mn__defines_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">MN_UNUSED_VARIABLE</a>(alignment);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                free(ptr);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ad0943b4107330fc30cf0d6cc5494dc92">   50</a></span>&#160;            <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ad0943b4107330fc30cf0d6cc5494dc92">max_node_size</a>()  {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>(-1);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ac3bb182f57155f9a6694e62e70ae14a6">   54</a></span>&#160;            <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ac3bb182f57155f9a6694e62e70ae14a6">get_max_alocator_size</a>()  {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">return</span> __SIZE_MAX__;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        };</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> TFilter = basic_allocator_filter&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#a104e9905f1df9dad00a31f9972e1cd34">   60</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1memory_1_1basic__allocator.html">malloc_allocator</a> = <a class="code" href="classmn_1_1memory_1_1basic__allocator.html">basic_allocator&lt;basic_malloc_allocator_impl, TFilter&gt;</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_MEM_BASIC_MALLOC_ALLOCATOR_H__</span></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__allocator_html"><div class="ttname"><a href="classmn_1_1memory_1_1basic__allocator.html">mn::memory::basic_allocator</a></div><div class="ttdef"><b>Definition:</b> mn_basic_allocator.hpp:48</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__malloc__allocator__impl_html"><div class="ttname"><a href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html">mn::memory::basic_malloc_allocator_impl</a></div><div class="ttdef"><b>Definition:</b> mn_basic_malloc_allocator.hpp:32</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__malloc__allocator__impl_html_a0d16c68b6c6d090d1a243f8977bce61c"><div class="ttname"><a href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a0d16c68b6c6d090d1a243f8977bce61c">mn::memory::basic_malloc_allocator_impl::allocate</a></div><div class="ttdeci">static void * allocate(size_t size, size_t alignment) noexcept</div><div class="ttdef"><b>Definition:</b> mn_basic_malloc_allocator.hpp:39</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__malloc__allocator__impl_html_a1d54b97afbee4e7255608802d8c962bd"><div class="ttname"><a href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a1d54b97afbee4e7255608802d8c962bd">mn::memory::basic_malloc_allocator_impl::deallocate</a></div><div class="ttdeci">static void deallocate(void *ptr, size_t size, size_t alignment) noexcept</div><div class="ttdef"><b>Definition:</b> mn_basic_malloc_allocator.hpp:44</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__malloc__allocator__impl_html_a4ece07beb6b28f31f12000f5ac848ba2"><div class="ttname"><a href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#a4ece07beb6b28f31f12000f5ac848ba2">mn::memory::basic_malloc_allocator_impl::allocator_category</a></div><div class="ttdeci">std_allocator_tag() allocator_category</div><div class="ttdef"><b>Definition:</b> mn_basic_malloc_allocator.hpp:34</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__malloc__allocator__impl_html_ac3bb182f57155f9a6694e62e70ae14a6"><div class="ttname"><a href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ac3bb182f57155f9a6694e62e70ae14a6">mn::memory::basic_malloc_allocator_impl::get_max_alocator_size</a></div><div class="ttdeci">static size_t get_max_alocator_size()</div><div class="ttdef"><b>Definition:</b> mn_basic_malloc_allocator.hpp:54</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__malloc__allocator__impl_html_ad0943b4107330fc30cf0d6cc5494dc92"><div class="ttname"><a href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ad0943b4107330fc30cf0d6cc5494dc92">mn::memory::basic_malloc_allocator_impl::max_node_size</a></div><div class="ttdeci">static size_t max_node_size()</div><div class="ttdef"><b>Definition:</b> mn_basic_malloc_allocator.hpp:50</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__malloc__allocator__impl_html_ad43a7081c20f22dc13d72fcef1fda1a2"><div class="ttname"><a href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ad43a7081c20f22dc13d72fcef1fda1a2">mn::memory::basic_malloc_allocator_impl::is_thread_safe</a></div><div class="ttdeci">std::false_type is_thread_safe</div><div class="ttdef"><b>Definition:</b> mn_basic_malloc_allocator.hpp:35</div></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__malloc__allocator__impl_html_ae5569b1f368a4277c5059f66397709eb"><div class="ttname"><a href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html#ae5569b1f368a4277c5059f66397709eb">mn::memory::basic_malloc_allocator_impl::first</a></div><div class="ttdeci">static void first() noexcept</div><div class="ttdef"><b>Definition:</b> mn_basic_malloc_allocator.hpp:37</div></div>
+<div class="ttc" id="amn__allocator__typetraits_8hpp_html"><div class="ttname"><a href="mn__allocator__typetraits_8hpp.html">mn_allocator_typetraits.hpp</a></div></div>
+<div class="ttc" id="amn__basic__allocator_8hpp_html"><div class="ttname"><a href="mn__basic__allocator_8hpp.html">mn_basic_allocator.hpp</a></div></div>
+<div class="ttc" id="amn__defines_8hpp_html_a25a40c79f97ffb858c5f5b2424939de2"><div class="ttname"><a href="mn__defines_8hpp.html#a25a40c79f97ffb858c5f5b2424939de2">MN_UNUSED_VARIABLE</a></div><div class="ttdeci">#define MN_UNUSED_VARIABLE(var)</div><div class="ttdef"><b>Definition:</b> mn_defines.hpp:43</div></div>
+<div class="ttc" id="anamespacemn_1_1memory_html_structmn_1_1memory_1_1std__allocator__tag"><div class="ttname"><a href="namespacemn_1_1memory.html#structmn_1_1memory_1_1std__allocator__tag">mn::memory::std_allocator_tag</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:27</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_af487f8a5d975f2b50b68065096c732ed"><div class="ttname"><a href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></div><div class="ttdeci">MN_THREAD_CONFIG_SIZE_TYPE size_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:31</div></div>
+<div class="ttc" id="anamespacemn_html_afb1f94a29d5337f0a8b28a06a4f79570"><div class="ttname"><a href="namespacemn.html#afb1f94a29d5337f0a8b28a06a4f79570">mn::false_type</a></div><div class="ttdeci">integral_constant&lt; bool, false &gt; false_type</div><div class="ttdef"><b>Definition:</b> mn_typetraits.hpp:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

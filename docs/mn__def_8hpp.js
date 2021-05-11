@@ -1,7 +1,7 @@
 var mn__def_8hpp =
 [
     [ "intmax_t", "mn__def_8hpp.html#a04a0b1814f8e08d02b529ddffab9a479", null ],
-    [ "max_align_t", "mn__def_8hpp.html#a4674b4bc35ec4f376d47b48ae639c1ac", null ],
+    [ "max_align_t", "mn__def_8hpp.html#a0b2ce24dd09db69f33c622978c059f88", null ],
     [ "nullptr_t", "mn__def_8hpp.html#acd72f028c96da628475a88ad4702dedd", null ],
     [ "ptrdiff_t", "mn__def_8hpp.html#a8d0b944ea3172c4bc932d79d3e2c01c1", null ],
     [ "size_t", "mn__def_8hpp.html#af487f8a5d975f2b50b68065096c732ed", null ],
@@ -19,5 +19,6 @@ var mn__def_8hpp =
     [ "operator|", "mn__def_8hpp.html#a339089f02fadbd1d6346213cdedf0f9c", null ],
     [ "operator|=", "mn__def_8hpp.html#ab6e5d30c84d6f0f7c07d45a2844782f1", null ],
     [ "operator~", "mn__def_8hpp.html#a2c052e66cd6cb72cfc9901486217ab02", null ],
-    [ "to_integer", "mn__def_8hpp.html#a4d47c38b0f5b40c33932673f16d04a57", null ]
+    [ "to_integer", "mn__def_8hpp.html#a4d47c38b0f5b40c33932673f16d04a57", null ],
+    [ "max_alignment", "mn__def_8hpp.html#a75eeffc19cfdc305e116af71225626b0", null ]
 ];

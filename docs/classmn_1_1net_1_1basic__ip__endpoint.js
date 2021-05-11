@@ -2,8 +2,8 @@ var classmn_1_1net_1_1basic__ip__endpoint =
 [
     [ "ip_type", "classmn_1_1net_1_1basic__ip__endpoint.html#af053abd3e43792057a0aa82cd945ed84", null ],
     [ "self_type", "classmn_1_1net_1_1basic__ip__endpoint.html#ae86c607f12473394c1501b8b9d837238", null ],
-    [ "basic_ip_endpoint", "classmn_1_1net_1_1basic__ip__endpoint.html#a4d8cf7913c6abc3fc2f461f36b931bbb", null ],
-    [ "basic_ip_endpoint", "classmn_1_1net_1_1basic__ip__endpoint.html#a4352a47c521af6bc28b00b91aaa47924", null ],
+    [ "basic_ip_endpoint", "classmn_1_1net_1_1basic__ip__endpoint.html#a4ccd488398d936dd387a283723e1155f", null ],
+    [ "basic_ip_endpoint", "classmn_1_1net_1_1basic__ip__endpoint.html#a225355f94d3f39c4d6b4342b1be8933c", null ],
     [ "get_famile", "classmn_1_1net_1_1basic__ip__endpoint.html#a0ea9b691d2351039ca79bb8ef187ae83", null ],
     [ "get_host", "classmn_1_1net_1_1basic__ip__endpoint.html#aeb63d809837091ec6a5f65142f1510bf", null ],
     [ "get_port", "classmn_1_1net_1_1basic__ip__endpoint.html#a66ece8ce5edfc0c8de96c10ccad9880b", null ],
@@ -15,6 +15,7 @@ var classmn_1_1net_1_1basic__ip__endpoint =
     [ "operator==", "classmn_1_1net_1_1basic__ip__endpoint.html#a5dc3dae61b7e2f27c9a6b6c66e18ef74", null ],
     [ "set_host", "classmn_1_1net_1_1basic__ip__endpoint.html#ac7388cf1e62b5ef0476deeda7e80f594", null ],
     [ "set_port", "classmn_1_1net_1_1basic__ip__endpoint.html#a4574fcd7e5cc4bf8ca28ada68a8ee4f3", null ],
+    [ "swap", "classmn_1_1net_1_1basic__ip__endpoint.html#ac0d261cb9583141ae8eb24bd5302b80c", null ],
     [ "m_ipAdress", "classmn_1_1net_1_1basic__ip__endpoint.html#a3d69fe89dd3bea3cf70792b190de3f3a", null ],
     [ "m_iPort", "classmn_1_1net_1_1basic__ip__endpoint.html#a483c6f4c3b6e60750e6ab4ae24076e2d", null ]
 ];

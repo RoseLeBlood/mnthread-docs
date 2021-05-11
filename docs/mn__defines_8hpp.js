@@ -1,5 +1,6 @@
 var mn__defines_8hpp =
 [
+    [ "MN_DEPRECATED", "mn__defines_8hpp.html#a6c63b5bc9c1a22b258fe9f61aa78454a", null ],
     [ "MN_EXTERNC_BEGINN", "mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb", null ],
     [ "MN_EXTERNC_END", "mn__defines_8hpp.html#ad14ae3fd1c6b48289423a5a08eda08e6", null ],
     [ "MN_SAFE_DELETE", "mn__defines_8hpp.html#a3a321d6244f0367104bb24b59f21e036", null ],
