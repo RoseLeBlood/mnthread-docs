@@ -142,25 +142,29 @@ $(document).ready(function(){initNavTree('mn__deleter_8hpp_source.html',''); ini
 <div class="title">mn_deleter.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mn__deleter_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2020 Amber-Sophia Schroeck</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__basic__deleter_8hpp.html">allocator/mn_basic_deleter.hpp</a>&quot;</span></div>
+<a href="mn__deleter_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef __MINLIB_DEFAULT_DELETER_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define __MINLIB_DEFAULT_DELETER_H__</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__basic__deleter_8hpp.html">allocator/mn_basic_deleter.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__allocator_8hpp.html">mn_allocator.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="mn__deleter_8hpp.html#a87e5836341c06e33504d0c4d1ad56fcb">   27</a></span>&#160;<span class="preprocessor">#define config_haveDefaultDeleter 1</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">namespace </span>memory {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Type, <span class="keyword">class</span> TAllocator = default_allocator&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacemn_1_1memory.html#ae17df2cb05b456e0e129387ee6a4963f">   32</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1memory_1_1basic__deleter.html">default_delete</a> = <a class="code" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter&lt;Type, TAllocator&gt;</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINLIB_DEFAULT_DELETER_H__</span></div>
+<div class="ttc" id="aclassmn_1_1memory_1_1basic__deleter_html"><div class="ttname"><a href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a></div><div class="ttdoc">A Simple template for a deleter.</div><div class="ttdef"><b>Definition:</b> mn_basic_deleter.hpp:37</div></div>
+<div class="ttc" id="amn__allocator_8hpp_html"><div class="ttname"><a href="mn__allocator_8hpp.html">mn_allocator.hpp</a></div><div class="ttdoc">This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</div></div>
 <div class="ttc" id="amn__basic__deleter_8hpp_html"><div class="ttname"><a href="mn__basic__deleter_8hpp.html">mn_basic_deleter.hpp</a></div></div>
+<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

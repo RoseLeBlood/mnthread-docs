@@ -153,16 +153,14 @@ $(document).ready(function(){initNavTree('classmn_1_1ILockObject.html',''); init
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ILockObject__inherit__graph.svg" width="934" height="504"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ILockObject__inherit__graph.svg" width="934" height="504"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::ILockObject:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ILockObject__coll__graph.svg" width="186" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ILockObject__coll__graph.svg" width="186" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -184,6 +182,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae964b770640a57d08c6f87526f2c4398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a538d16e64a1abb33a21bf9f2b190c1df"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ILockObject.html#a538d16e64a1abb33a21bf9f2b190c1df">is_initialized</a> () const =0</td></tr>
 <tr class="separator:a538d16e64a1abb33a21bf9f2b190c1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136d703d07b3518baa41ef49889813b1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ILockObject.html#a136d703d07b3518baa41ef49889813b1">is_locked</a> () const =0</td></tr>
+<tr class="memdesc:a136d703d07b3518baa41ef49889813b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is locked?  <a href="classmn_1_1ILockObject.html#a136d703d07b3518baa41ef49889813b1">More...</a><br /></td></tr>
+<tr class="separator:a136d703d07b3518baa41ef49889813b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for all lock types in this library This is an abstract base class. To use this, you need to subclass it. All of your LockObjetcs should be derived from the <a class="el" href="classmn_1_1ILockObject.html">ILockObject</a> class. Then implement the virtual lock, unlock and is_initialized functions. </p>
@@ -255,6 +256,36 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classmn_1_1ILockObject.html">ILockObject</a> created (initialized) and false when not </dd></dl>
 
 <p>Implemented in <a class="el" href="classmn_1_1basic__null__lock.html#aad4d586d06f18e49432bbf2b0bac9720">mn::basic_null_lock</a>, <a class="el" href="classmn_1_1basic__semaphore.html#a38f8a5b36fedbe591425bd2d9072674b">mn::basic_semaphore</a>, and <a class="el" href="classmn_1_1atomic__spinlock.html#a2c623124b5b2da59183ce45824919229">mn::atomic_spinlock&lt; T &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a136d703d07b3518baa41ef49889813b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136d703d07b3518baa41ef49889813b1">&#9670;&nbsp;</a></span>is_locked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool mn::ILockObject::is_locked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is locked? </p>
+<dl class="section return"><dt>Returns</dt><dd>True if locked and false when not. </dd></dl>
+
+<p>Implemented in <a class="el" href="classmn_1_1basic__semaphore.html#af453d674de3985ceeb6f137be23289ac">mn::basic_semaphore</a>.</p>
 
 </div>
 </div>

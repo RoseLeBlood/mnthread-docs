@@ -146,6 +146,9 @@ $(document).ready(function(){initNavTree('mn__algorithm_8hpp.html',''); initResi
 <div class="title">mn_algorithm.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Basic algorithmens This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ).  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__alignment_8hpp_source.html">utils/mn_alignment.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__inttokey_8hpp_source.html">utils/mn_inttokey.hpp</a>&quot;</code><br />
@@ -153,6 +156,7 @@ $(document).ready(function(){initNavTree('mn__algorithm_8hpp.html',''); initResi
 <code>#include &quot;<a class="el" href="mn__typetraits_8hpp_source.html">mn_typetraits.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__iterator_8hpp_source.html">mn_iterator.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__functional_8hpp_source.html">mn_functional.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__initializer__list_8hpp_source.html">mn_initializer_list.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__algorithm_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -170,8 +174,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4b7b37dbf33846f645f5c2c8900ab593"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4b7b37dbf33846f645f5c2c8900ab593">mn::popcount</a> (uint32_t v)</td></tr>
+<tr class="separator:a4b7b37dbf33846f645f5c2c8900ab593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85f6d206aa4f8ad106c5e25a432ec79e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a85f6d206aa4f8ad106c5e25a432ec79e">mn::copy_construct</a> (T *mem, const T &amp;orig)</td></tr>
 <tr class="separator:a85f6d206aa4f8ad106c5e25a432ec79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4d27a6e72da39d26c9c011d23724da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a0c4d27a6e72da39d26c9c011d23724da">mn::copy_construct</a> (T *mem, const T &amp;&amp;orig)</td></tr>
+<tr class="separator:a0c4d27a6e72da39d26c9c011d23724da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec19ae6fde493399a11219fc09af39b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#adec19ae6fde493399a11219fc09af39b">mn::construct</a> (T *mem)</td></tr>
 <tr class="separator:adec19ae6fde493399a11219fc09af39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a278a91558551bdf53018a63fd83cd384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a278a91558551bdf53018a63fd83cd384">mn::destruct</a> (T *mem)</td></tr>
@@ -187,6 +195,9 @@ Functions</h2></td></tr>
 <tr class="separator:a2f9b44ebed137ae34af4d25143d1ce39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae37469aa8cfbdec2289a0c3879decbdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a> (const T *src, const T *last, T *dest)</td></tr>
 <tr class="separator:ae37469aa8cfbdec2289a0c3879decbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38545c97058e5a97a319df82df974b75"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a38545c97058e5a97a319df82df974b75"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a38545c97058e5a97a319df82df974b75">mn::copy_backward</a> (const T *first, const T *last, T *result) noexcept</td></tr>
+<tr class="separator:a38545c97058e5a97a319df82df974b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a950b10a358645f4852a11b1baf256d7b"><td class="memItemLeft" align="right" valign="top">TFn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a950b10a358645f4852a11b1baf256d7b">mn::foreach</a> (TIter src, TIter last, TFn fn)</td></tr>
 <tr class="separator:a950b10a358645f4852a11b1baf256d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148bb291b4c5a4f90d3e565b99a51eca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a148bb291b4c5a4f90d3e565b99a51eca">mn::construct_n</a> (T *src, size_t n)</td></tr>
@@ -197,10 +208,17 @@ Functions</h2></td></tr>
 <tr class="separator:ac49b752c7fef7e10a71e8732000e8dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c92ffd4a6788ecf38f42746430b4f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a0c92ffd4a6788ecf38f42746430b4f9c">mn::fill_n</a> (T *src, size_t n, const T &amp;val)</td></tr>
 <tr class="separator:a0c92ffd4a6788ecf38f42746430b4f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b54e09d614f8cf10745cdbcc5521122"><td class="memItemLeft" align="right" valign="top">TIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a8b54e09d614f8cf10745cdbcc5521122">mn::lower_bound</a> (TIter src, TIter last, const T &amp;val, const TPred &amp;pred)</td></tr>
-<tr class="separator:a8b54e09d614f8cf10745cdbcc5521122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27f67ee696187387dd9e08eaa109d38"><td class="memItemLeft" align="right" valign="top">TIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ad27f67ee696187387dd9e08eaa109d38">mn::upper_bound</a> (TIter src, TIter last, const T &amp;val, const TPred &amp;pred)</td></tr>
-<tr class="separator:ad27f67ee696187387dd9e08eaa109d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf27772add392af6dd607d36a73d8d26"><td class="memItemLeft" align="right" valign="top">constexpr TIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#adf27772add392af6dd607d36a73d8d26">mn::lower_bound</a> (TIter first, TIter last, const TPred &amp;value)</td></tr>
+<tr class="separator:adf27772add392af6dd607d36a73d8d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6646e700c3df2d5890f08d6a9558b79c"><td class="memItemLeft" align="right" valign="top">constexpr TIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a6646e700c3df2d5890f08d6a9558b79c">mn::lower_bound</a> (TIter src, TIter last, const T &amp;val, const TPred &amp;pred)</td></tr>
+<tr class="separator:a6646e700c3df2d5890f08d6a9558b79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9257453edaf1a0aa5fca75d092f7a4e8"><td class="memItemLeft" align="right" valign="top">constexpr TIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9257453edaf1a0aa5fca75d092f7a4e8">mn::upper_bound</a> (TIter first, TIter last, const TPred &amp;value)</td></tr>
+<tr class="separator:a9257453edaf1a0aa5fca75d092f7a4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac835fc019ed06977e258f12913ce982b"><td class="memItemLeft" align="right" valign="top">constexpr TIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ac835fc019ed06977e258f12913ce982b">mn::upper_bound</a> (TIter src, TIter last, const T &amp;val, const TPred &amp;pred)</td></tr>
+<tr class="separator:ac835fc019ed06977e258f12913ce982b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374f8c4cb6575ddff55b76e018a5f3c3"><td class="memTemplParams" colspan="2">template&lt;typename TIter , typename TComp &gt; </td></tr>
+<tr class="memitem:a374f8c4cb6575ddff55b76e018a5f3c3"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a374f8c4cb6575ddff55b76e018a5f3c3">mn::binary_search</a> (TIter first, TIter last, const TComp &amp;value)</td></tr>
+<tr class="separator:a374f8c4cb6575ddff55b76e018a5f3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bed88510947db6ef83195bfab77e82f"><td class="memItemLeft" align="right" valign="top">TIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4bed88510947db6ef83195bfab77e82f">mn::find</a> (TIter src, TIter last, const T &amp;val)</td></tr>
 <tr class="separator:a4bed88510947db6ef83195bfab77e82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fd93f58e68ce07bc82579398af8b730"><td class="memItemLeft" align="right" valign="top">TIter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a7fd93f58e68ce07bc82579398af8b730">mn::find_if</a> (TIter src, TIter last, const T &amp;val, const TPred &amp;pred)</td></tr>
@@ -241,14 +259,29 @@ Functions</h2></td></tr>
 <tr class="separator:a78f2a440e9540c4b5786dc6985c59130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a020fa787f3dd3a9b5cabb5d257e542da"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a020fa787f3dd3a9b5cabb5d257e542da">mn::hex2char</a> (char ch)</td></tr>
 <tr class="separator:a020fa787f3dd3a9b5cabb5d257e542da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f5ed8fbad0a7668ffcdc95f793620c1"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9f5ed8fbad0a7668ffcdc95f793620c1">mn::max</a> (const T &amp;x, const T &amp;y)</td></tr>
-<tr class="separator:a9f5ed8fbad0a7668ffcdc95f793620c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f254b2c0f95cd48df7f9d3c143dbd6f"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4f254b2c0f95cd48df7f9d3c143dbd6f">mn::min</a> (const T &amp;x, const T &amp;y)</td></tr>
-<tr class="separator:a4f254b2c0f95cd48df7f9d3c143dbd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450d0bada535472f32bba0d2e76d4caf"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a450d0bada535472f32bba0d2e76d4caf">mn::max</a> (const T x, const T y)</td></tr>
+<tr class="separator:a450d0bada535472f32bba0d2e76d4caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bdbf4c632e8fbe904edd38109051f75"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a5bdbf4c632e8fbe904edd38109051f75">mn::min</a> (const T x, const T y)</td></tr>
+<tr class="separator:a5bdbf4c632e8fbe904edd38109051f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83841949e9c46378f0f533a3a6605bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a> (TAssignable &amp;a, TAssignable &amp;b)</td></tr>
 <tr class="separator:a83841949e9c46378f0f533a3a6605bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38126a30bdc987e6b314dcb2c072ac9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a38126a30bdc987e6b314dcb2c072ac9a">mn::swap</a> (TAssignable(&amp;x)[N], TAssignable(&amp;y)[N])</td></tr>
+<tr class="separator:a38126a30bdc987e6b314dcb2c072ac9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262b1c21c385712c73a6233077516679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a262b1c21c385712c73a6233077516679">mn::iter_swap</a> (fIt1 a, fIt2 b)</td></tr>
+<tr class="separator:a262b1c21c385712c73a6233077516679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fa3944161d1c9bf27544710f6edbaf"><td class="memItemLeft" align="right" valign="top">fIt2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a85fa3944161d1c9bf27544710f6edbaf">mn::swap_ranges</a> (fIt1 a, fIt1 b, fIt2 c)</td></tr>
+<tr class="separator:a85fa3944161d1c9bf27544710f6edbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fe881f4d6dea3bb7bf87667700b744"><td class="memTemplParams" colspan="2">template&lt;typename TRandomAccessIterator , typename TRandFunc &gt; </td></tr>
+<tr class="memitem:a89fe881f4d6dea3bb7bf87667700b744"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a89fe881f4d6dea3bb7bf87667700b744">mn::random_shuffle</a> (TRandomAccessIterator first, TRandomAccessIterator last, const TRandFunc &amp;func)</td></tr>
+<tr class="separator:a89fe881f4d6dea3bb7bf87667700b744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Basic algorithmens This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). </p>
+<dl class="section author"><dt>Author</dt><dd>Copyright (c) 2021 Amber-Sophia Schroeck </dd></dl>
+<dl class="section user"><dt>License</dt><dd>The Mini Thread Library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 3, or (at your option) any later version.</dd></dl>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>
 </div>

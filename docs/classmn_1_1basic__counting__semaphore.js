@@ -1,6 +1,8 @@
 var classmn_1_1basic__counting__semaphore =
 [
     [ "basic_counting_semaphore", "classmn_1_1basic__counting__semaphore.html#a09e77fcf3e5849e0b5c3723bedbac4cd", null ],
+    [ "basic_counting_semaphore", "classmn_1_1basic__counting__semaphore.html#aee39fdf5d77cb92d3d99192199812a07", null ],
+    [ "basic_counting_semaphore", "classmn_1_1basic__counting__semaphore.html#a5d03a316c41ed701b6996cf941f023b4", null ],
     [ "~basic_counting_semaphore", "classmn_1_1basic__counting__semaphore.html#a75125806a62d62df185ecda7428ef697", null ],
     [ "get_count", "classmn_1_1basic__counting__semaphore.html#abb0e1b01c3baa099e621332bd41f0002", null ],
     [ "set_initial_count", "classmn_1_1basic__counting__semaphore.html#aa30eb96a8366cde68f79ed3b4d1d20fd", null ],

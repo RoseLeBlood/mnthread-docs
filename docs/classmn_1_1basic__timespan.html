@@ -171,9 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a496aca54b23b7ff4c5166c9b2169aaad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a496aca54b23b7ff4c5166c9b2169aaad">basic_timespan</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> ms)</td></tr>
 <tr class="memdesc:a496aca54b23b7ff4c5166c9b2169aaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span and initializes it with the given value.  <a href="classmn_1_1basic__timespan.html#a496aca54b23b7ff4c5166c9b2169aaad">More...</a><br /></td></tr>
 <tr class="separator:a496aca54b23b7ff4c5166c9b2169aaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ea996eb69382fc11c6eec9b47b7a1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a35ea996eb69382fc11c6eec9b47b7a1a">basic_timespan</a> (struct timeval val)</td></tr>
-<tr class="memdesc:a35ea996eb69382fc11c6eec9b47b7a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span and initializes it with the given timeval.  <a href="classmn_1_1basic__timespan.html#a35ea996eb69382fc11c6eec9b47b7a1a">More...</a><br /></td></tr>
-<tr class="separator:a35ea996eb69382fc11c6eec9b47b7a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959546fea21bb1988cbb09d1b38400d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a959546fea21bb1988cbb09d1b38400d7">basic_timespan</a> (struct timeval &amp;val)</td></tr>
+<tr class="memdesc:a959546fea21bb1988cbb09d1b38400d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span and initializes it with the given timeval.  <a href="classmn_1_1basic__timespan.html#a959546fea21bb1988cbb09d1b38400d7">More...</a><br /></td></tr>
+<tr class="separator:a959546fea21bb1988cbb09d1b38400d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a79a6a9316bfa648a0de64ae5a229e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ad3a79a6a9316bfa648a0de64ae5a229e">basic_timespan</a> (uint16_t days, uint8_t hours, uint8_t minutes, uint8_t seconds, uint16_t microSeconds=0)</td></tr>
 <tr class="memdesc:ad3a79a6a9316bfa648a0de64ae5a229e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new time span and initializes it the given values.  <a href="classmn_1_1basic__timespan.html#ad3a79a6a9316bfa648a0de64ae5a229e">More...</a><br /></td></tr>
 <tr class="separator:ad3a79a6a9316bfa648a0de64ae5a229e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,6 +270,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac3e81849088ae99686bdef5312044970"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ac3e81849088ae99686bdef5312044970">now</a> ()</td></tr>
+<tr class="memdesc:ac3e81849088ae99686bdef5312044970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current time.  <a href="classmn_1_1basic__timespan.html#ac3e81849088ae99686bdef5312044970">More...</a><br /></td></tr>
+<tr class="separator:ac3e81849088ae99686bdef5312044970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ec7813c405fc352201b1e613212bba3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a8ec7813c405fc352201b1e613212bba3">from_ticks</a> (const unsigned int &amp;ticks)</td></tr>
 <tr class="separator:a8ec7813c405fc352201b1e613212bba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -363,8 +366,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a35ea996eb69382fc11c6eec9b47b7a1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ea996eb69382fc11c6eec9b47b7a1a">&#9670;&nbsp;</a></span>basic_timespan() <span class="overload">[3/5]</span></h2>
+<a id="a959546fea21bb1988cbb09d1b38400d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959546fea21bb1988cbb09d1b38400d7">&#9670;&nbsp;</a></span>basic_timespan() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,7 +375,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">mn::basic_timespan::basic_timespan </td>
           <td>(</td>
-          <td class="paramtype">struct timeval&#160;</td>
+          <td class="paramtype">struct timeval &amp;&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
@@ -733,6 +736,34 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the total number of seconds. </p>
+
+</div>
+</div>
+<a id="ac3e81849088ae99686bdef5312044970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e81849088ae99686bdef5312044970">&#9670;&nbsp;</a></span>now()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a> mn::basic_timespan::now </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current time. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current time. </dd></dl>
 
 </div>
 </div>

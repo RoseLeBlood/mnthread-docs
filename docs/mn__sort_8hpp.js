@@ -8,5 +8,10 @@ var mn__sort_8hpp =
     [ "is_sorted", "mn__sort_8hpp.html#a2f71af485911bab3d29a8220be7f89db", null ],
     [ "quick_sort", "mn__sort_8hpp.html#ad53467136e70574e35533bdcfd4df342", null ],
     [ "quick_sort", "mn__sort_8hpp.html#a2fe73ff5b5cdedc6bcfd025e1d1674d3", null ],
-    [ "quick_sort", "mn__sort_8hpp.html#a44669e513b713bdc04a2fda09ed117e5", null ]
+    [ "quick_sort", "mn__sort_8hpp.html#a44669e513b713bdc04a2fda09ed117e5", null ],
+    [ "shell_sort", "mn__sort_8hpp.html#ac1cdc149877b2169ad7659b3251c2d96", null ],
+    [ "shell_sort", "mn__sort_8hpp.html#a71a592f69fc6c0191be01968f98e6bdb", null ],
+    [ "shell_sort", "mn__sort_8hpp.html#af9de388513039fc5bd751a99b577c0f0", null ],
+    [ "sort", "mn__sort_8hpp.html#a16e153c58779d931f2e731d05d76f59e", null ],
+    [ "sort", "mn__sort_8hpp.html#af436f7655c90364efed407ae2f692021", null ]
 ];

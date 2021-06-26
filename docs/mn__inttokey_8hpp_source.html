@@ -146,18 +146,18 @@ $(document).ready(function(){initNavTree('mn__inttokey_8hpp_source.html',''); in
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2021 Amber-Sophia Schroeck</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify  </span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by  </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.  </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MINLIB_INT2KEY_H_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINLIB_INT2KEY_H_</span></div>
@@ -169,10 +169,33 @@ $(document).ready(function(){initNavTree('mn__inttokey_8hpp_source.html',''); in
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structmn_1_1int__to__type.html">   25</a></span>&#160;    <span class="keyword">template</span>&lt;<span class="keywordtype">int</span> TVal&gt; <span class="keyword">struct </span><a class="code" href="structmn_1_1int__to__type.html">int_to_type</a> {</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structmn_1_1int__to__type.html#a8fbc2871766d3d8d8e0f50da0d93cc80ab1d4c4e8ca0b8a793c0b97f873388dc0">   26</a></span>&#160;        <span class="keyword">enum</span> { <a class="code" href="structmn_1_1int__to__type.html#a8fbc2871766d3d8d8e0f50da0d93cc80ab1d4c4e8ca0b8a793c0b97f873388dc0">value</a> = TVal };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacemn.html">   30</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="namespacemn.html#structmn_1_1type__to__type">type_to_type</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespacemn.html#a4c704dc94b9cadc5a9d7f584509d0dbb">   31</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn.html#a4c704dc94b9cadc5a9d7f584509d0dbb">orig_type</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> flag, <span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacemn.html">   35</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="namespacemn.html#structmn_1_1select">select</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacemn.html#aa18e9ce469d39855b21a2369742073a5">   36</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn.html#aa18e9ce469d39855b21a2369742073a5">result</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacemn.html">   40</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="namespacemn.html#structmn_1_1select">select</a>&lt;false, <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>, U&gt; {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacemn.html#ad0b50dd69c3e069aacedf566ff8e927a">   41</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn.html#ad0b50dd69c3e069aacedf566ff8e927a">result</a> = U;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="anamespacemn_1_1memory_1_1detail_html_a3179d74d784513b556ce52d25fc357e7"><div class="ttname"><a href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">mn::memory::detail::T</a></div><div class="ttdeci">struct mn::memory::detail::ptr_difference T</div><div class="ttdef"><b>Definition:</b> mn_atomic_singleton.hpp:38</div></div>
 <div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a4c704dc94b9cadc5a9d7f584509d0dbb"><div class="ttname"><a href="namespacemn.html#a4c704dc94b9cadc5a9d7f584509d0dbb">mn::type_to_type::orig_type</a></div><div class="ttdeci">T orig_type</div><div class="ttdef"><b>Definition:</b> mn_inttokey.hpp:31</div></div>
+<div class="ttc" id="anamespacemn_html_aa18e9ce469d39855b21a2369742073a5"><div class="ttname"><a href="namespacemn.html#aa18e9ce469d39855b21a2369742073a5">mn::select::result</a></div><div class="ttdeci">T result</div><div class="ttdef"><b>Definition:</b> mn_inttokey.hpp:36</div></div>
+<div class="ttc" id="anamespacemn_html_ad0b50dd69c3e069aacedf566ff8e927a"><div class="ttname"><a href="namespacemn.html#ad0b50dd69c3e069aacedf566ff8e927a">mn::select&lt; false, T, U &gt;::result</a></div><div class="ttdeci">U result</div><div class="ttdef"><b>Definition:</b> mn_inttokey.hpp:41</div></div>
+<div class="ttc" id="anamespacemn_html_structmn_1_1select"><div class="ttname"><a href="namespacemn.html#structmn_1_1select">mn::select</a></div><div class="ttdef"><b>Definition:</b> mn_inttokey.hpp:35</div></div>
+<div class="ttc" id="anamespacemn_html_structmn_1_1type__to__type"><div class="ttname"><a href="namespacemn.html#structmn_1_1type__to__type">mn::type_to_type</a></div><div class="ttdef"><b>Definition:</b> mn_inttokey.hpp:30</div></div>
 <div class="ttc" id="astructmn_1_1int__to__type_html"><div class="ttname"><a href="structmn_1_1int__to__type.html">mn::int_to_type</a></div><div class="ttdef"><b>Definition:</b> mn_inttokey.hpp:25</div></div>
 <div class="ttc" id="astructmn_1_1int__to__type_html_a8fbc2871766d3d8d8e0f50da0d93cc80ab1d4c4e8ca0b8a793c0b97f873388dc0"><div class="ttname"><a href="structmn_1_1int__to__type.html#a8fbc2871766d3d8d8e0f50da0d93cc80ab1d4c4e8ca0b8a793c0b97f873388dc0">mn::int_to_type::value</a></div><div class="ttdeci">@ value</div><div class="ttdef"><b>Definition:</b> mn_inttokey.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->

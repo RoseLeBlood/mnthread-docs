@@ -148,7 +148,18 @@ $(document).ready(function(){initNavTree('classmn_1_1memory_1_1basic__deleter.ht
 </div><!--header-->
 <div class="contents">
 
+<p>A Simple template for a deleter.  
+ <a href="classmn_1_1memory_1_1basic__deleter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mn__basic__deleter_8hpp_source.html">mn_basic_deleter.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::memory::basic_deleter&lt; Type, TAllocator &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1memory_1_1basic__deleter__inherit__graph.svg" width="211" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -164,22 +175,46 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f22161dbb3556b0b5ad9595fcc07eba"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a4f22161dbb3556b0b5ad9595fcc07eba">basic_deleter</a> ()</td></tr>
+<tr class="memdesc:a4f22161dbb3556b0b5ad9595fcc07eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a basic deleter.  <a href="classmn_1_1memory_1_1basic__deleter.html#a4f22161dbb3556b0b5ad9595fcc07eba">More...</a><br /></td></tr>
 <tr class="separator:a4f22161dbb3556b0b5ad9595fcc07eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2d057153bb62cd930fff211da23206e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#ad2d057153bb62cd930fff211da23206e">basic_deleter</a> (<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a> alloc) noexcept</td></tr>
-<tr class="separator:ad2d057153bb62cd930fff211da23206e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab32b1f3cb0d41f3186185b8872596d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#ab32b1f3cb0d41f3186185b8872596d0c">get_allocator</a> ()</td></tr>
-<tr class="separator:ab32b1f3cb0d41f3186185b8872596d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed6afc3cf2e2b64101a13a8540df9d2"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a8ed6afc3cf2e2b64101a13a8540df9d2">basic_deleter</a> (<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a> alloc, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>) noexcept</td></tr>
+<tr class="memdesc:a8ed6afc3cf2e2b64101a13a8540df9d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construt a basic deleter.  <a href="classmn_1_1memory_1_1basic__deleter.html#a8ed6afc3cf2e2b64101a13a8540df9d2">More...</a><br /></td></tr>
+<tr class="separator:a8ed6afc3cf2e2b64101a13a8540df9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0309875ebf834b9d661333081a26d80a"><td class="memTemplParams" colspan="2">template&lt;typename U , typename  = typename enable_if&lt;is_convertible&lt;U*,value_type*&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:a0309875ebf834b9d661333081a26d80a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a0309875ebf834b9d661333081a26d80a">basic_deleter</a> (const <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter</a>&lt; U, TAllocator &gt; &amp;other) noexcept</td></tr>
+<tr class="memdesc:a0309875ebf834b9d661333081a26d80a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor. Allows conversion from a deleter for arrays of another type, <code>U</code>, only if <code>U*</code> is convertible to <code>value_type*</code>.  <a href="classmn_1_1memory_1_1basic__deleter.html#a0309875ebf834b9d661333081a26d80a">More...</a><br /></td></tr>
+<tr class="separator:a0309875ebf834b9d661333081a26d80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816e56da59f174ebc748e2ef33cac53e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a816e56da59f174ebc748e2ef33cac53e">is_valid</a> () const noexcept</td></tr>
+<tr class="memdesc:a816e56da59f174ebc748e2ef33cac53e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the deleter valid - have a allocator.  <a href="classmn_1_1memory_1_1basic__deleter.html#a816e56da59f174ebc748e2ef33cac53e">More...</a><br /></td></tr>
 <tr class="separator:a816e56da59f174ebc748e2ef33cac53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbfa8687b254b76291edec8b2023efed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#abbfa8687b254b76291edec8b2023efed">operator()</a> (<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a0b8cde651633dfd12beae918b84094e3">value_type</a> *<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3064b68f62bc52993a698b9c53e10ea2">pointer</a>) noexcept</td></tr>
-<tr class="separator:abbfa8687b254b76291edec8b2023efed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32b1f3cb0d41f3186185b8872596d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#ab32b1f3cb0d41f3186185b8872596d0c">get_allocator</a> ()</td></tr>
+<tr class="memdesc:ab32b1f3cb0d41f3186185b8872596d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference from the using allocator.  <a href="classmn_1_1memory_1_1basic__deleter.html#ab32b1f3cb0d41f3186185b8872596d0c">More...</a><br /></td></tr>
+<tr class="separator:ab32b1f3cb0d41f3186185b8872596d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1ee13660dcc9d70cdb5e6405ee9af9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#abc1ee13660dcc9d70cdb5e6405ee9af9">set_allocator</a> (<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a> alloc) noexcept</td></tr>
+<tr class="memdesc:abc1ee13660dcc9d70cdb5e6405ee9af9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the using allocator for delete.  <a href="classmn_1_1memory_1_1basic__deleter.html#abc1ee13660dcc9d70cdb5e6405ee9af9">More...</a><br /></td></tr>
+<tr class="separator:abc1ee13660dcc9d70cdb5e6405ee9af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf601940de4f38cfe9f1fc116129a74c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#abf601940de4f38cfe9f1fc116129a74c">operator()</a> (<a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a0b8cde651633dfd12beae918b84094e3">value_type</a> *pP) noexcept</td></tr>
+<tr class="memdesc:abf601940de4f38cfe9f1fc116129a74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <code>deallocate</code> <code>pArray</code>.  <a href="classmn_1_1memory_1_1basic__deleter.html#abf601940de4f38cfe9f1fc116129a74c">More...</a><br /></td></tr>
+<tr class="separator:abf601940de4f38cfe9f1fc116129a74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af6bf808463ef9f9aa5835f7a1ce63a97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a3064b68f62bc52993a698b9c53e10ea2">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af6bf808463ef9f9aa5835f7a1ce63a97">m_refAllocator</a></td></tr>
 <tr class="separator:af6bf808463ef9f9aa5835f7a1ce63a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename Type, class TAllocator&gt;<br />
+class mn::memory::basic_deleter&lt; Type, TAllocator &gt;</h3>
+
+<p>A Simple template for a deleter. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Type</td><td>The type of pointer to delete. </td></tr>
+    <tr><td class="paramname">TAllocator</td><td>The using allocator for call deallocate </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3cdfb1b80f9fab9b3fdfb244a3fc4e45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cdfb1b80f9fab9b3fdfb244a3fc4e45">&#9670;&nbsp;</a></span>allocator</h2>
 
@@ -246,7 +281,7 @@ template&lt;typename Type , class TAllocator &gt; </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4f22161dbb3556b0b5ad9595fcc07eba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f22161dbb3556b0b5ad9595fcc07eba">&#9670;&nbsp;</a></span>basic_deleter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f22161dbb3556b0b5ad9595fcc07eba">&#9670;&nbsp;</a></span>basic_deleter() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,10 +305,12 @@ template&lt;typename Type , class TAllocator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a basic deleter. </p>
+
 </div>
 </div>
-<a id="ad2d057153bb62cd930fff211da23206e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2d057153bb62cd930fff211da23206e">&#9670;&nbsp;</a></span>basic_deleter() <span class="overload">[2/2]</span></h2>
+<a id="a8ed6afc3cf2e2b64101a13a8540df9d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed6afc3cf2e2b64101a13a8540df9d2">&#9670;&nbsp;</a></span>basic_deleter() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,8 +324,18 @@ template&lt;typename Type , class TAllocator &gt; </div>
           <td class="memname">constexpr <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::<a class="el" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a>&#160;</td>
-          <td class="paramname"><em>alloc</em></td><td>)</td>
+          <td class="paramname"><em>alloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -297,6 +344,46 @@ template&lt;typename Type , class TAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Construt a basic deleter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alloc</td><td>The using allocator class </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0309875ebf834b9d661333081a26d80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0309875ebf834b9d661333081a26d80a">&#9670;&nbsp;</a></span>basic_deleter() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+<div class="memtemplate">
+template&lt;typename U , typename  = typename enable_if&lt;is_convertible&lt;U*,value_type*&gt;::value&gt;::type&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::<a class="el" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter</a>&lt; U, TAllocator &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converting constructor. Allows conversion from a deleter for arrays of another type, <code>U</code>, only if <code>U*</code> is convertible to <code>value_type*</code>. </p>
 
 </div>
 </div>
@@ -326,6 +413,9 @@ template&lt;typename Type , class TAllocator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Get a reference from the using allocator. </p>
+<dl class="section return"><dt>Returns</dt><dd>The reference from the using allocator. </dd></dl>
+
 </div>
 </div>
 <a id="a816e56da59f174ebc748e2ef33cac53e"></a>
@@ -353,10 +443,13 @@ template&lt;typename Type , class TAllocator &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Is the deleter valid - have a allocator. </p>
+<dl class="section return"><dt>Returns</dt><dd>True when the deleter valid is and false if not. </dd></dl>
+
 </div>
 </div>
-<a id="abbfa8687b254b76291edec8b2023efed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbfa8687b254b76291edec8b2023efed">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="abf601940de4f38cfe9f1fc116129a74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf601940de4f38cfe9f1fc116129a74c">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,7 +463,7 @@ template&lt;typename Type , class TAllocator &gt; </div>
           <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#a0b8cde651633dfd12beae918b84094e3">value_type</a> *&#160;</td>
-          <td class="paramname"><em>pointer</em></td><td>)</td>
+          <td class="paramname"><em>pP</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -380,6 +473,44 @@ template&lt;typename Type , class TAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Calls <code>deallocate</code> <code>pArray</code>. </p>
+
+</div>
+</div>
+<a id="abc1ee13660dcc9d70cdb5e6405ee9af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1ee13660dcc9d70cdb5e6405ee9af9">&#9670;&nbsp;</a></span>set_allocator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type , class TAllocator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">mn::memory::basic_deleter</a>&lt; Type, TAllocator &gt;::set_allocator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html#af5a1e3a4284044d665d10f711938f2f5">reference</a>&#160;</td>
+          <td class="paramname"><em>alloc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the using allocator for delete. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alloc</td><td>The reference of the using allocator. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

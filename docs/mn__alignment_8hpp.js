@@ -7,9 +7,6 @@ var mn__alignment_8hpp =
     [ "type_with_alignment", "namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment", [
       [ "err_invalid_alignment", "namespacemn_1_1internal.html#a0848a203cdbcd63358bb6f6d03362a4f", null ]
     ] ],
-    [ "type_with_alignment< 0 >", "namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_010_01_4", [
-      [ "type", "namespacemn_1_1internal.html#a5822f61b9a3ae820d73ef031bb55ec67", null ]
-    ] ],
     [ "type_with_alignment< 1 >", "namespacemn_1_1internal.html#structmn_1_1internal_1_1type__with__alignment_3_011_01_4", [
       [ "type", "namespacemn_1_1internal.html#a280501d82d06ac046577b36d62124f34", null ]
     ] ],
@@ -40,7 +37,6 @@ var mn__alignment_8hpp =
       [ "ll", "namespacemn_1_1internal.html#a87c217669c7512be5607657c9226eb0d", null ],
       [ "s", "namespacemn_1_1internal.html#a3506ad5e10521d4ee202093f7d961c6b", null ]
     ] ],
-    [ "is_pod< internal::aligned0 >", "structmn_1_1is__pod_3_01internal_1_1aligned0_01_4.html", null ],
     [ "is_pod< internal::aligned1 >", "structmn_1_1is__pod_3_01internal_1_1aligned1_01_4.html", null ],
     [ "is_pod< internal::aligned2 >", "structmn_1_1is__pod_3_01internal_1_1aligned2_01_4.html", null ],
     [ "is_pod< internal::aligned4 >", "structmn_1_1is__pod_3_01internal_1_1aligned4_01_4.html", null ],
@@ -53,14 +49,6 @@ var mn__alignment_8hpp =
     [ "alignment_of< void const >", "structmn_1_1alignment__of_3_01void_01const_01_4.html", null ],
     [ "alignment_of< void const volatile >", "structmn_1_1alignment__of_3_01void_01const_01volatile_01_4.html", null ],
     [ "alignment_of< void volatile >", "structmn_1_1alignment__of_3_01void_01volatile_01_4.html", null ],
-    [ "aligned_storage", "namespacemn.html#structmn_1_1aligned__storage", [
-      [ "type", "namespacemn.html#structmn_1_1aligned__storage_1_1type", [
-        [ "data", "namespacemn.html#a0a2288d2eff4c38ab4bce68a8822216c", null ]
-      ] ]
-    ] ],
-    [ "type", "namespacemn.html#structmn_1_1aligned__storage_1_1type", [
-      [ "data", "namespacemn.html#a0a2288d2eff4c38ab4bce68a8822216c", null ]
-    ] ],
     [ "long_double_alignment", "namespacemn.html#structmn_1_1long__double__alignment", [
       [ "type", "namespacemn.html#a880aa73f1b6f5af053ad7a904d6cdbb6", null ]
     ] ],
@@ -106,7 +94,6 @@ var mn__alignment_8hpp =
     [ "aligned_as", "namespacemn.html#structmn_1_1aligned__as", [
       [ "res", "namespacemn.html#ac529c3bee99de8ed32ab60ed9e16bf33", null ]
     ] ],
-    [ "__attribute__", "mn__alignment_8hpp.html#a9e66406c3e9e7bbe2d29d27139f9f8c1", null ],
     [ "__attribute__", "mn__alignment_8hpp.html#a215f21f1be646c21e53ea193ddd03ecc", null ],
     [ "__attribute__", "mn__alignment_8hpp.html#a2f18691df902accab88bc23855f12d54", null ],
     [ "__attribute__", "mn__alignment_8hpp.html#acd5f79bf34ecf986903266d7fbb34731", null ],

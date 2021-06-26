@@ -1,15 +1,11 @@
 var namespacemn_1_1memory =
 [
-    [ "internal", "namespacemn_1_1memory_1_1internal.html", [
-      [ "allocate", "namespacemn_1_1memory_1_1internal.html#a9c031ae8028ccc3427d4aa008650ff6a", null ],
-      [ "allocate", "namespacemn_1_1memory_1_1internal.html#a3404fcce970a20dc2930e60770c3b546", null ],
-      [ "deallocate", "namespacemn_1_1memory_1_1internal.html#a5b4af80a9789a10710432683a95d1b54", null ],
-      [ "deallocate", "namespacemn_1_1memory_1_1internal.html#ad47cc151a1b5d17bc2c730738f90fab1", null ]
-    ] ],
+    [ "detail", "namespacemn_1_1memory_1_1detail.html", "namespacemn_1_1memory_1_1detail" ],
+    [ "internal", "namespacemn_1_1memory_1_1internal.html", "namespacemn_1_1memory_1_1internal" ],
     [ "std_allocator_tag", "namespacemn_1_1memory.html#structmn_1_1memory_1_1std__allocator__tag", null ],
     [ "nodeleter_allocator_tag", "namespacemn_1_1memory.html#structmn_1_1memory_1_1nodeleter__allocator__tag", null ],
-    [ "allocator_traits", "namespacemn_1_1memory.html#structmn_1_1memory_1_1allocator__traits", "namespacemn_1_1memory_structmn_1_1memory_1_1allocator__traits_dup" ],
     [ "is_thread_safe_allocator", "structmn_1_1memory_1_1is__thread__safe__allocator.html", null ],
+    [ "allocator_traits", "classmn_1_1memory_1_1allocator__traits.html", "classmn_1_1memory_1_1allocator__traits" ],
     [ "basic_allocator_filter", "classmn_1_1memory_1_1basic__allocator__filter.html", "classmn_1_1memory_1_1basic__allocator__filter" ],
     [ "basic_allocator", "classmn_1_1memory_1_1basic__allocator.html", "classmn_1_1memory_1_1basic__allocator" ],
     [ "basic_allocator_maximal_filter", "classmn_1_1memory_1_1basic__allocator__maximal__filter.html", "classmn_1_1memory_1_1basic__allocator__maximal__filter" ],
@@ -18,11 +14,18 @@ var namespacemn_1_1memory =
     [ "basic_deleter< Type[], TAllocator >", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4.html", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4" ],
     [ "basic_malloc_allocator_impl", "classmn_1_1memory_1_1basic__malloc__allocator__impl.html", "classmn_1_1memory_1_1basic__malloc__allocator__impl" ],
     [ "basic_new_allocaor_impl", "classmn_1_1memory_1_1basic__new__allocaor__impl.html", "classmn_1_1memory_1_1basic__new__allocaor__impl" ],
+    [ "basic_threadsafed_allocator", "classmn_1_1memory_1_1basic__threadsafed__allocator.html", "classmn_1_1memory_1_1basic__threadsafed__allocator" ],
+    [ "pointer_traits", "structmn_1_1memory_1_1pointer__traits.html", "structmn_1_1memory_1_1pointer__traits" ],
+    [ "pointer_traits< T * >", "structmn_1_1memory_1_1pointer__traits_3_01T_01_5_01_4.html", "structmn_1_1memory_1_1pointer__traits_3_01T_01_5_01_4" ],
     [ "default_allocator", "namespacemn_1_1memory.html#abb5b67234913c5d181e04a2e43f2014f", null ],
+    [ "default_delete", "namespacemn_1_1memory.html#ae17df2cb05b456e0e129387ee6a4963f", null ],
     [ "malloc_allocator", "namespacemn_1_1memory.html#a104e9905f1df9dad00a31f9972e1cd34", null ],
     [ "new_allocator", "namespacemn_1_1memory.html#abf760adcae04bf1d98493ccf9f558984", null ],
     [ "stack_allocator", "namespacemn_1_1memory.html#a485df205e03e5756de3854f189e62368", null ],
-    [ "allocate", "namespacemn_1_1memory.html#ad3bd075b82752308f1f76ac4806b4d56", null ],
-    [ "deallocate", "namespacemn_1_1memory.html#a5c5e9af7e3cada9e83c5d7baa375e639", null ],
-    [ "max_alocator_size", "namespacemn_1_1memory.html#a373ee4c7c8223f6fb2bfcf20ea9a480d", null ]
+    [ "allocate", "namespacemn_1_1memory.html#a61ff8f2c2b39e4451c2a203fdab6befe", null ],
+    [ "allocate", "namespacemn_1_1memory.html#a2ee4e73d10928823f69252d181372b0c", null ],
+    [ "deallocate", "namespacemn_1_1memory.html#a59c45ffaffac20543eb9036150aa69cb", null ],
+    [ "deallocate", "namespacemn_1_1memory.html#a9fe64985c73f47f5c0971b32fe597e90", null ],
+    [ "to_address", "namespacemn_1_1memory.html#ac52a9373a89d7cc724c43bb0d85c8256", null ],
+    [ "to_address", "namespacemn_1_1memory.html#adbfa8f9d7fbd4e47f2799516c4ac5f3e", null ]
 ];

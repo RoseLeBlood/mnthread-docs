@@ -140,22 +140,25 @@ $(document).ready(function(){initNavTree('mn__clone__ptr_8hpp.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_clone_ptr.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__algorithm_8hpp_source.html">mn_algorithm.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">../mn_config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__algorithm_8hpp_source.html">../mn_algorithm.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__deleter_8hpp_source.html">../mn_deleter.hpp</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="mn__base__ptr_8hpp_source.html">mn_base_ptr.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__clone__ptr_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1clone__ptr__interface.html">mn::pointer::clone_ptr_interface&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1basic__default__clone.html">mn::pointer::basic_default_clone&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">mn::pointer::basic_clone_ptr&lt; T, TInterface &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">mn::pointer::basic_clone_ptr&lt; T, TCloner, TDeleter &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -164,6 +167,25 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemn_1_1pointer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html">mn::pointer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:adf293e324b7a6b2b1b49673b774c4af6"><td class="memTemplParams" colspan="2">template&lt;typename T , class TCloner  = basic_default_clone&lt;T&gt;, class TDeleter  = memory::default_delete&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:adf293e324b7a6b2b1b49673b774c4af6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#adf293e324b7a6b2b1b49673b774c4af6">mn::pointer::clone_ptr</a> = basic_clone_ptr&lt; T, TCloner, TDeleter &gt;</td></tr>
+<tr class="separator:adf293e324b7a6b2b1b49673b774c4af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11da737c6b04be6c1670714d3c47ee4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af11da737c6b04be6c1670714d3c47ee4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#af11da737c6b04be6c1670714d3c47ee4">mn::pointer::default_clone</a> = basic_default_clone&lt; T &gt;</td></tr>
+<tr class="separator:af11da737c6b04be6c1670714d3c47ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abf37449f4dbe3128cc5371deefba6b3e"><td class="memTemplParams" colspan="2">template&lt;typename T , class TCloner  = basic_default_clone&lt;T&gt;, class TDeleter  = memory::default_delete&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:abf37449f4dbe3128cc5371deefba6b3e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#abf37449f4dbe3128cc5371deefba6b3e">mn::pointer::swap</a> (basic_clone_ptr&lt; T, TCloner, TDeleter &gt; &amp;a, basic_clone_ptr&lt; T, TCloner, TDeleter &gt; &amp;b)</td></tr>
+<tr class="separator:abf37449f4dbe3128cc5371deefba6b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40f245f71b04e5e98cbd0124f3641d0"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:aa40f245f71b04e5e98cbd0124f3641d0"><td class="memTemplItemLeft" align="right" valign="top">clone_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#aa40f245f71b04e5e98cbd0124f3641d0">mn::pointer::make_clone</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aa40f245f71b04e5e98cbd0124f3641d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a clone pointer.  <a href="namespacemn_1_1pointer.html#aa40f245f71b04e5e98cbd0124f3641d0">More...</a><br /></td></tr>
+<tr class="separator:aa40f245f71b04e5e98cbd0124f3641d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

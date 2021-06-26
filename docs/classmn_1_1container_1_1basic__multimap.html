@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::container::basic_multimap&lt; TKEY, TVAL, TAllocator, TComp &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1container_1_1basic__multimap.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="classmn_1_1container_1_1basic__multimap-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::container::basic_multimap&lt; TKEY, TVAL, TAllocator, TComp &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A sorted associative container that may container multiple entries for each key.  
+ <a href="classmn_1_1container_1_1basic__multimap.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__multimap_8hpp_source.html">mn_multimap.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::container::basic_multimap&lt; TKEY, TVAL, TAllocator, TComp &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1container_1_1basic__multimap__inherit__graph.svg" width="248" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::container::basic_multimap&lt; TKEY, TVAL, TAllocator, TComp &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1container_1_1basic__multimap__coll__graph.svg" width="248" height="246"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a2fa582903e3928e0ba939cf22407ebbd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a2fa582903e3928e0ba939cf22407ebbd">key_type</a> = TKEY</td></tr>
+<tr class="separator:a2fa582903e3928e0ba939cf22407ebbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0364f057595e24554b3388527c1338e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a> = TVAL</td></tr>
+<tr class="separator:af0364f057595e24554b3388527c1338e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf76a72374f77a9938ab08dcba9c430"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a2bf76a72374f77a9938ab08dcba9c430">key_reference</a> = TKEY &amp;</td></tr>
+<tr class="separator:a2bf76a72374f77a9938ab08dcba9c430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351ca97178733c1ccff03f8dd54a0bb4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> = const TKEY &amp;</td></tr>
+<tr class="separator:a351ca97178733c1ccff03f8dd54a0bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71129f4f955389c60abe0ca0ae86eb2e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a71129f4f955389c60abe0ca0ae86eb2e">value_reference</a> = TVAL &amp;</td></tr>
+<tr class="separator:a71129f4f955389c60abe0ca0ae86eb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c4356358bb62f6bbe0efaeb197adeb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#aa9c4356358bb62f6bbe0efaeb197adeb">value_const_reference</a> = const TVAL &amp;</td></tr>
+<tr class="separator:aa9c4356358bb62f6bbe0efaeb197adeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e7fb34d41d947268b0d70853f0ba6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac6e7fb34d41d947268b0d70853f0ba6d">self_type</a> = <a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;</td></tr>
+<tr class="separator:ac6e7fb34d41d947268b0d70853f0ba6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a0457de6706d85e277ce19724a5f3c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ad4a0457de6706d85e277ce19724a5f3c">iterator_category</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#acb4992fa1746de98d4d3490002d03fc1">base_type::iterator_category</a></td></tr>
+<tr class="separator:ad4a0457de6706d85e277ce19724a5f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8d9de0cd1b7be6c592434998b2c7e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#aea8d9de0cd1b7be6c592434998b2c7e2">value_type</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a145699f830a17ce533b783e4ee416b7e">base_type::value_type</a></td></tr>
+<tr class="separator:aea8d9de0cd1b7be6c592434998b2c7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429e3ac3197bd1d13ce7bc0d8cca6c7e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a429e3ac3197bd1d13ce7bc0d8cca6c7e">pointer</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">base_type::pointer</a></td></tr>
+<tr class="separator:a429e3ac3197bd1d13ce7bc0d8cca6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc34a9355948d83969a39e9c3b46081"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">base_type::reference</a></td></tr>
+<tr class="separator:a9dc34a9355948d83969a39e9c3b46081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1a7da8697d381c324839730448075c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a1c1a7da8697d381c324839730448075c">const_reference</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a20a1695a4764cfabcf121a6d7e390b3b">base_type::const_reference</a></td></tr>
+<tr class="separator:a1c1a7da8697d381c324839730448075c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab44f1aaec5c35d60fa01ed755c9e96"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a8ab44f1aaec5c35d60fa01ed755c9e96">difference_type</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#af299839f48c6bdff9d15e386fcb67636">base_type::difference_type</a></td></tr>
+<tr class="separator:a8ab44f1aaec5c35d60fa01ed755c9e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ac717fd6c50a9b6958f0bb8680cfff"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">base_type::iterator</a></td></tr>
+<tr class="separator:a98ac717fd6c50a9b6958f0bb8680cfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd61b670c80667bd0d107e19e88b286b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a0d1108ea1ba598cbb169ec42742d2434">base_type::const_iterator</a></td></tr>
+<tr class="separator:abd61b670c80667bd0d107e19e88b286b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b8061c564652f8e16613d6a33ab623"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">base_type::allocator_type</a></td></tr>
+<tr class="separator:af0b8061c564652f8e16613d6a33ab623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3b3d58f26d90e7b0f2149a95d51a1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> = typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">base_type::size_type</a></td></tr>
+<tr class="separator:a9a3b3d58f26d90e7b0f2149a95d51a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19b9058d9f3541d58b639f1ed0dc1db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac19b9058d9f3541d58b639f1ed0dc1db">const_range_t</a> = <a class="el" href="namespacemn_1_1container.html#a830ed3f9966070c568b3961a36d653cf">pair</a>&lt; <a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> &gt;</td></tr>
+<tr class="separator:ac19b9058d9f3541d58b639f1ed0dc1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828b4e7a9aef63b62d3eb3ef9613317e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a828b4e7a9aef63b62d3eb3ef9613317e">range_t</a> = <a class="el" href="namespacemn_1_1container.html#a830ed3f9966070c568b3961a36d653cf">pair</a>&lt; <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> &gt;</td></tr>
+<tr class="separator:a828b4e7a9aef63b62d3eb3ef9613317e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ee46a141591912861ffceddb2fc9a2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a35ee46a141591912861ffceddb2fc9a2">key_compare</a> = TComp</td></tr>
+<tr class="separator:a35ee46a141591912861ffceddb2fc9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bce2218730260a0a75a642185f7ba1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a16bce2218730260a0a75a642185f7ba1">initlist_t</a> = <a class="el" href="namespacemn.html#ac959e62c3a9c84b82b8508870b3072f0">mn::initializer_list</a>&lt; <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a> &gt;</td></tr>
+<tr class="separator:a16bce2218730260a0a75a642185f7ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classmn_1_1container_1_1basic__vector"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmn_1_1container_1_1basic__vector')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a></td></tr>
+<tr class="memitem:acb4992fa1746de98d4d3490002d03fc1 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#acb4992fa1746de98d4d3490002d03fc1">iterator_category</a> = <a class="el" href="structmn_1_1random__access__iterator__tag.html">random_access_iterator_tag</a></td></tr>
+<tr class="separator:acb4992fa1746de98d4d3490002d03fc1 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145699f830a17ce533b783e4ee416b7e inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a145699f830a17ce533b783e4ee416b7e">value_type</a> = T</td></tr>
+<tr class="separator:a145699f830a17ce533b783e4ee416b7e inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f4c01b2736ea095594e976a968bcbf inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">pointer</a> = T *</td></tr>
+<tr class="separator:ad0f4c01b2736ea095594e976a968bcbf inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e29661897e106e60cf75040087197a inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a> = T &amp;</td></tr>
+<tr class="separator:ae3e29661897e106e60cf75040087197a inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d92191268e843ccfce8846c9410445 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a85d92191268e843ccfce8846c9410445">lreference</a> = T &amp;&amp;</td></tr>
+<tr class="separator:a85d92191268e843ccfce8846c9410445 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a1695a4764cfabcf121a6d7e390b3b inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a20a1695a4764cfabcf121a6d7e390b3b">const_reference</a> = const T &amp;</td></tr>
+<tr class="separator:a20a1695a4764cfabcf121a6d7e390b3b inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af299839f48c6bdff9d15e386fcb67636 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#af299839f48c6bdff9d15e386fcb67636">difference_type</a> = <a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a></td></tr>
+<tr class="separator:af299839f48c6bdff9d15e386fcb67636 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bbb26c12619830c977f195136533a6 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a> = <a class="el" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">pointer</a></td></tr>
+<tr class="separator:a93bbb26c12619830c977f195136533a6 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1108ea1ba598cbb169ec42742d2434 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a0d1108ea1ba598cbb169ec42742d2434">const_iterator</a> = const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">pointer</a></td></tr>
+<tr class="separator:a0d1108ea1ba598cbb169ec42742d2434 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fab7c40a8b2367e315655bfd29534dc inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a> = TAllocator</td></tr>
+<tr class="separator:a3fab7c40a8b2367e315655bfd29534dc inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb24181ad8f46cd0975fa83ed4356f8 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> = <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></td></tr>
+<tr class="separator:a8fb24181ad8f46cd0975fa83ed4356f8 inherit pub_types_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab7feb5b98f38aa65961fe5eaa69c1f73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ab7feb5b98f38aa65961fe5eaa69c1f73">basic_multimap</a> (const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>())</td></tr>
+<tr class="separator:ab7feb5b98f38aa65961fe5eaa69c1f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319a9597a909d93fa8832a2772be7fcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a319a9597a909d93fa8832a2772be7fcf">basic_multimap</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> initialSize, const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>())</td></tr>
+<tr class="separator:a319a9597a909d93fa8832a2772be7fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03b634d548dd0afb5f47680dfe27d5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ad03b634d548dd0afb5f47680dfe27d5a">basic_multimap</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> first, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> last, const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>())</td></tr>
+<tr class="separator:ad03b634d548dd0afb5f47680dfe27d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a7893f927b47a97cdcbb01a3c16352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a59a7893f927b47a97cdcbb01a3c16352">basic_multimap</a> (const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac6e7fb34d41d947268b0d70853f0ba6d">self_type</a> &amp;rhs, const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>())</td></tr>
+<tr class="separator:a59a7893f927b47a97cdcbb01a3c16352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff15e8647a0f7b056c6b0495909cd26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#aaff15e8647a0f7b056c6b0495909cd26">basic_multimap</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a> &amp;&amp;v)</td></tr>
+<tr class="separator:aaff15e8647a0f7b056c6b0495909cd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59caeea8dfd8c2d80dbb790582a57702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a59caeea8dfd8c2d80dbb790582a57702">assign</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> i1, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> i2)</td></tr>
+<tr class="separator:a59caeea8dfd8c2d80dbb790582a57702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91907ebe58bfc384f6f0f43477337f8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a91907ebe58bfc384f6f0f43477337f8a">erase</a> (const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac6e7fb34d41d947268b0d70853f0ba6d">self_type</a> &amp;k)</td></tr>
+<tr class="separator:a91907ebe58bfc384f6f0f43477337f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbaf2e2b5ad3583cdd083fa006fef536"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abbaf2e2b5ad3583cdd083fa006fef536">lower_bound</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k) const</td></tr>
+<tr class="separator:abbaf2e2b5ad3583cdd083fa006fef536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcc953be483c8e13cd086a6d06388cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#acbcc953be483c8e13cd086a6d06388cd">lower_bound</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k)</td></tr>
+<tr class="separator:acbcc953be483c8e13cd086a6d06388cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe47cd515775dbd83a08521cc95e5eca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#afe47cd515775dbd83a08521cc95e5eca">upper_bound</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k) const</td></tr>
+<tr class="separator:afe47cd515775dbd83a08521cc95e5eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c60d7709cdc5db671751004123a2ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a66c60d7709cdc5db671751004123a2ad">upper_bound</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k)</td></tr>
+<tr class="separator:a66c60d7709cdc5db671751004123a2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa752a83cee520af67ac56ce229f061df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#aa752a83cee520af67ac56ce229f061df">find</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k) const</td></tr>
+<tr class="separator:aa752a83cee520af67ac56ce229f061df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7f0fef992305210b019e00a465e83c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a8a7f0fef992305210b019e00a465e83c">find_value</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#aa9c4356358bb62f6bbe0efaeb197adeb">value_const_reference</a> v, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> first, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> last) const</td></tr>
+<tr class="separator:a8a7f0fef992305210b019e00a465e83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e47082bfe142cb18379e5d2ff40cb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a71129f4f955389c60abe0ca0ae86eb2e">value_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a36e47082bfe142cb18379e5d2ff40cb3">operator[]</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k)</td></tr>
+<tr class="separator:a36e47082bfe142cb18379e5d2ff40cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8818218a1aea60f3f6b3cb9db3a7ccd7"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a8818218a1aea60f3f6b3cb9db3a7ccd7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a8818218a1aea60f3f6b3cb9db3a7ccd7">emplace</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a8818218a1aea60f3f6b3cb9db3a7ccd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6769eb70ec14ad07e2c1ffefce832d0a"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a6769eb70ec14ad07e2c1ffefce832d0a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a6769eb70ec14ad07e2c1ffefce832d0a">emplace_hint</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> h, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a6769eb70ec14ad07e2c1ffefce832d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbccc9f8b247439d7c7094feb0b7e10"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:abcbccc9f8b247439d7c7094feb0b7e10"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abcbccc9f8b247439d7c7094feb0b7e10">emplace_back</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:abcbccc9f8b247439d7c7094feb0b7e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87524cb060d18f41389b55ed3bcd7206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a87524cb060d18f41389b55ed3bcd7206">size</a> () const</td></tr>
+<tr class="separator:a87524cb060d18f41389b55ed3bcd7206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4e2e797c3f6e585cfab2f16e532a22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a1a4e2e797c3f6e585cfab2f16e532a22">begin</a> ()</td></tr>
+<tr class="separator:a1a4e2e797c3f6e585cfab2f16e532a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9192cb872665220f6b94c581da781f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a> ()</td></tr>
+<tr class="separator:a2b9192cb872665220f6b94c581da781f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae288c6688c5d6bc272772b76834b9cec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ae288c6688c5d6bc272772b76834b9cec">empty</a> () const</td></tr>
+<tr class="separator:ae288c6688c5d6bc272772b76834b9cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e620fb1722f8f6432035121f69caea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a2e620fb1722f8f6432035121f69caea5">capacity</a> ()</td></tr>
+<tr class="separator:a2e620fb1722f8f6432035121f69caea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079d4a52593c43b15f8ca529ee481408"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a079d4a52593c43b15f8ca529ee481408">front</a> ()</td></tr>
+<tr class="separator:a079d4a52593c43b15f8ca529ee481408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3141f4ab248c1441a7a51e6ba7d7864c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a3141f4ab248c1441a7a51e6ba7d7864c">cfront</a> ()</td></tr>
+<tr class="separator:a3141f4ab248c1441a7a51e6ba7d7864c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8862c1a2fb706a2bbe94069e0d93aee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac8862c1a2fb706a2bbe94069e0d93aee">back</a> ()</td></tr>
+<tr class="separator:ac8862c1a2fb706a2bbe94069e0d93aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52655edd1dba613c391d45ea6eab0f32"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a52655edd1dba613c391d45ea6eab0f32">cback</a> ()</td></tr>
+<tr class="separator:a52655edd1dba613c391d45ea6eab0f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4878a67df50eb891bd8604cbc6fdac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#aea4878a67df50eb891bd8604cbc6fdac">clear</a> ()</td></tr>
+<tr class="separator:aea4878a67df50eb891bd8604cbc6fdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa81a4142daf20dfa9126c16ef9b6a9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#afa81a4142daf20dfa9126c16ef9b6a9f">erase</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> it)</td></tr>
+<tr class="separator:afa81a4142daf20dfa9126c16ef9b6a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e49fd7c6507e0996a71760b4c23f89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a78e49fd7c6507e0996a71760b4c23f89">erase</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> first, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> last)</td></tr>
+<tr class="separator:a78e49fd7c6507e0996a71760b4c23f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ebb131b1a7408cbd7351c471fd5b36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac0ebb131b1a7408cbd7351c471fd5b36">insert</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> index, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> n, const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> val)</td></tr>
+<tr class="separator:ac0ebb131b1a7408cbd7351c471fd5b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e554481cfaf99ded0ae54c39a8bf02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a79e554481cfaf99ded0ae54c39a8bf02">insert</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> it, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> n, const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> val)</td></tr>
+<tr class="separator:a79e554481cfaf99ded0ae54c39a8bf02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038f6eb2bf6c5cc39cf80c7064e7a916"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a038f6eb2bf6c5cc39cf80c7064e7a916">insert</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> it, <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a1c1a7da8697d381c324839730448075c">const_reference</a> val)</td></tr>
+<tr class="separator:a038f6eb2bf6c5cc39cf80c7064e7a916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3703cd18154154a2cbe9de971b8a9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a7e3703cd18154154a2cbe9de971b8a9b">push_back</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a1c1a7da8697d381c324839730448075c">const_reference</a> v)</td></tr>
+<tr class="separator:a7e3703cd18154154a2cbe9de971b8a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db9d469319f1a9c866e3872b2aa1a6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9db9d469319f1a9c866e3872b2aa1a6b">push_back</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a85d92191268e843ccfce8846c9410445">lreference</a> v)</td></tr>
+<tr class="separator:a9db9d469319f1a9c866e3872b2aa1a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a8357a78a551636498a8296eff1025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#ad6a8357a78a551636498a8296eff1025">push_back</a> ()</td></tr>
+<tr class="separator:ad6a8357a78a551636498a8296eff1025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad55c0fcc8875ffea5402a6f6035d5fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#aad55c0fcc8875ffea5402a6f6035d5fe">operator=</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a> &amp;rhs)</td></tr>
+<tr class="separator:aad55c0fcc8875ffea5402a6f6035d5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f1125ee48feb31c09c283fbe5d1533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a70f1125ee48feb31c09c283fbe5d1533">at</a> (<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> i)</td></tr>
+<tr class="separator:a70f1125ee48feb31c09c283fbe5d1533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmn_1_1container_1_1basic__vector"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmn_1_1container_1_1basic__vector')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a></td></tr>
+<tr class="memitem:acecff5b103974188e1fa41bd40d575cc inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#acecff5b103974188e1fa41bd40d575cc">basic_vector</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a>())</td></tr>
+<tr class="separator:acecff5b103974188e1fa41bd40d575cc inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1d6d46eede71faecab6c29e0c47fed inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a7a1d6d46eede71faecab6c29e0c47fed">basic_vector</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> initialSize, const <a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a>())</td></tr>
+<tr class="separator:a7a1d6d46eede71faecab6c29e0c47fed inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742c99a386d14d55aab20dc6db9807b2 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a742c99a386d14d55aab20dc6db9807b2">basic_vector</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a0d1108ea1ba598cbb169ec42742d2434">const_iterator</a> first, <a class="el" href="classmn_1_1container_1_1basic__vector.html#a0d1108ea1ba598cbb169ec42742d2434">const_iterator</a> last, const <a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a>())</td></tr>
+<tr class="separator:a742c99a386d14d55aab20dc6db9807b2 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2704e81f4f8bdd7f1a47d36e01adbba2 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a2704e81f4f8bdd7f1a47d36e01adbba2">basic_vector</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a> &amp;rhs, const <a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a>())</td></tr>
+<tr class="separator:a2704e81f4f8bdd7f1a47d36e01adbba2 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad200da91472f20176a699b0f6f60d627 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ad200da91472f20176a699b0f6f60d627">~basic_vector</a> ()</td></tr>
+<tr class="separator:ad200da91472f20176a699b0f6f60d627 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ed51f8c8f005b9f87b88fbcfb60477 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ab8ed51f8c8f005b9f87b88fbcfb60477">copy</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a> &amp;rhs)</td></tr>
+<tr class="separator:ab8ed51f8c8f005b9f87b88fbcfb60477 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4e2e797c3f6e585cfab2f16e532a22 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a1a4e2e797c3f6e585cfab2f16e532a22">begin</a> ()</td></tr>
+<tr class="separator:a1a4e2e797c3f6e585cfab2f16e532a22 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9192cb872665220f6b94c581da781f inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a2b9192cb872665220f6b94c581da781f">end</a> ()</td></tr>
+<tr class="separator:a2b9192cb872665220f6b94c581da781f inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87524cb060d18f41389b55ed3bcd7206 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a87524cb060d18f41389b55ed3bcd7206">size</a> () const</td></tr>
+<tr class="separator:a87524cb060d18f41389b55ed3bcd7206 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae288c6688c5d6bc272772b76834b9cec inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ae288c6688c5d6bc272772b76834b9cec">empty</a> () const</td></tr>
+<tr class="separator:ae288c6688c5d6bc272772b76834b9cec inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e620fb1722f8f6432035121f69caea5 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a2e620fb1722f8f6432035121f69caea5">capacity</a> ()</td></tr>
+<tr class="separator:a2e620fb1722f8f6432035121f69caea5 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3226bce715d1f11037b391f724ab035 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ac3226bce715d1f11037b391f724ab035">data</a> ()</td></tr>
+<tr class="separator:ac3226bce715d1f11037b391f724ab035 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079d4a52593c43b15f8ca529ee481408 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a079d4a52593c43b15f8ca529ee481408">front</a> ()</td></tr>
+<tr class="separator:a079d4a52593c43b15f8ca529ee481408 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3141f4ab248c1441a7a51e6ba7d7864c inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a3141f4ab248c1441a7a51e6ba7d7864c">cfront</a> ()</td></tr>
+<tr class="separator:a3141f4ab248c1441a7a51e6ba7d7864c inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8862c1a2fb706a2bbe94069e0d93aee inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ac8862c1a2fb706a2bbe94069e0d93aee">back</a> ()</td></tr>
+<tr class="separator:ac8862c1a2fb706a2bbe94069e0d93aee inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52655edd1dba613c391d45ea6eab0f32 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a52655edd1dba613c391d45ea6eab0f32">cback</a> ()</td></tr>
+<tr class="separator:a52655edd1dba613c391d45ea6eab0f32 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f1125ee48feb31c09c283fbe5d1533 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a70f1125ee48feb31c09c283fbe5d1533">at</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> i)</td></tr>
+<tr class="separator:a70f1125ee48feb31c09c283fbe5d1533 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce1f6992b63e60776b34785c5fa13a4 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a8ce1f6992b63e60776b34785c5fa13a4">const_at</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> i)</td></tr>
+<tr class="separator:a8ce1f6992b63e60776b34785c5fa13a4 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3703cd18154154a2cbe9de971b8a9b inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a7e3703cd18154154a2cbe9de971b8a9b">push_back</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a20a1695a4764cfabcf121a6d7e390b3b">const_reference</a> v)</td></tr>
+<tr class="separator:a7e3703cd18154154a2cbe9de971b8a9b inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db9d469319f1a9c866e3872b2aa1a6b inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a9db9d469319f1a9c866e3872b2aa1a6b">push_back</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a85d92191268e843ccfce8846c9410445">lreference</a> v)</td></tr>
+<tr class="separator:a9db9d469319f1a9c866e3872b2aa1a6b inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a8357a78a551636498a8296eff1025 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ad6a8357a78a551636498a8296eff1025">push_back</a> ()</td></tr>
+<tr class="separator:ad6a8357a78a551636498a8296eff1025 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3a2557d3ce2eed97f6b5c01f6262fa inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ace3a2557d3ce2eed97f6b5c01f6262fa">pop_back</a> ()</td></tr>
+<tr class="separator:ace3a2557d3ce2eed97f6b5c01f6262fa inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0457fc4b371221f2b0a06d8c1bc67a5 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ab0457fc4b371221f2b0a06d8c1bc67a5">assign</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">pointer</a> first, const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">pointer</a> last)</td></tr>
+<tr class="separator:ab0457fc4b371221f2b0a06d8c1bc67a5 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ebb131b1a7408cbd7351c471fd5b36 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ac0ebb131b1a7408cbd7351c471fd5b36">insert</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> index, <a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> n, const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a> val)</td></tr>
+<tr class="separator:ac0ebb131b1a7408cbd7351c471fd5b36 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e554481cfaf99ded0ae54c39a8bf02 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a79e554481cfaf99ded0ae54c39a8bf02">insert</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a> it, <a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> n, const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a> val)</td></tr>
+<tr class="separator:a79e554481cfaf99ded0ae54c39a8bf02 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038f6eb2bf6c5cc39cf80c7064e7a916 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a038f6eb2bf6c5cc39cf80c7064e7a916">insert</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a> it, <a class="el" href="classmn_1_1container_1_1basic__vector.html#a20a1695a4764cfabcf121a6d7e390b3b">const_reference</a> val)</td></tr>
+<tr class="separator:a038f6eb2bf6c5cc39cf80c7064e7a916 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa81a4142daf20dfa9126c16ef9b6a9f inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#afa81a4142daf20dfa9126c16ef9b6a9f">erase</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a> it)</td></tr>
+<tr class="separator:afa81a4142daf20dfa9126c16ef9b6a9f inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e49fd7c6507e0996a71760b4c23f89 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a78e49fd7c6507e0996a71760b4c23f89">erase</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a> first, <a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a> last)</td></tr>
+<tr class="separator:a78e49fd7c6507e0996a71760b4c23f89 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12eb138f87b902069cbad48a86302802 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a12eb138f87b902069cbad48a86302802">resize</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> n)</td></tr>
+<tr class="separator:a12eb138f87b902069cbad48a86302802 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8285d9383ea06aa748f0b77f4554ad4 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#aa8285d9383ea06aa748f0b77f4554ad4">reserve</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> n)</td></tr>
+<tr class="separator:aa8285d9383ea06aa748f0b77f4554ad4 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4878a67df50eb891bd8604cbc6fdac inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#aea4878a67df50eb891bd8604cbc6fdac">clear</a> ()</td></tr>
+<tr class="separator:aea4878a67df50eb891bd8604cbc6fdac inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e72d4ddd256315c73ed2963480c743b inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a0e72d4ddd256315c73ed2963480c743b">reset</a> ()</td></tr>
+<tr class="separator:a0e72d4ddd256315c73ed2963480c743b inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd19ba60a152feb6941f31ea01832602 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#acd19ba60a152feb6941f31ea01832602">set_capacity</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> newCapacity)</td></tr>
+<tr class="separator:acd19ba60a152feb6941f31ea01832602 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab6ad3a194792c7ee3a41287ed358d7 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#abab6ad3a194792c7ee3a41287ed358d7">index_of</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a> item, <a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> index=0) const</td></tr>
+<tr class="separator:abab6ad3a194792c7ee3a41287ed358d7 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c14b983733f450f2fd6b20a59ac26a inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#aa5c14b983733f450f2fd6b20a59ac26a">find</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a> item)</td></tr>
+<tr class="separator:aa5c14b983733f450f2fd6b20a59ac26a inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ab50c532551027202bb06ac5ab2783 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a44ab50c532551027202bb06ac5ab2783">get_allocator</a> () const</td></tr>
+<tr class="separator:a44ab50c532551027202bb06ac5ab2783 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471cc8fe2483628360098f70b77e0749 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a471cc8fe2483628360098f70b77e0749">set_allocator</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">allocator_type</a> &amp;allocator)</td></tr>
+<tr class="separator:a471cc8fe2483628360098f70b77e0749 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3e27cce01835f9fa3876089889ef4c inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#abb3e27cce01835f9fa3876089889ef4c">validate_iterator</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a0d1108ea1ba598cbb169ec42742d2434">const_iterator</a> it) const</td></tr>
+<tr class="separator:abb3e27cce01835f9fa3876089889ef4c inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad55c0fcc8875ffea5402a6f6035d5fe inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#aad55c0fcc8875ffea5402a6f6035d5fe">operator=</a> (const <a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a> &amp;rhs)</td></tr>
+<tr class="separator:aad55c0fcc8875ffea5402a6f6035d5fe inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d36b04aa43178dc54956d71a622e11b inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a6d36b04aa43178dc54956d71a622e11b">operator[]</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> i)</td></tr>
+<tr class="separator:a6d36b04aa43178dc54956d71a622e11b inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d74b6d4a8b4dbb44cf89c21f20064d2 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a0d74b6d4a8b4dbb44cf89c21f20064d2">operator[]</a> (<a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a> i) const</td></tr>
+<tr class="separator:a0d74b6d4a8b4dbb44cf89c21f20064d2 inherit pub_methods_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a280a9e7b576e8771fd5d0aba2e258202"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a280a9e7b576e8771fd5d0aba2e258202">base_type</a> = <a class="el" href="namespacemn_1_1container.html#a4803b2a6ba5074d77b6c4b3a5002fdc6">vector</a>&lt; <a class="el" href="namespacemn_1_1container.html#a830ed3f9966070c568b3961a36d653cf">pair</a>&lt; TKEY, TVAL &gt; &gt;</td></tr>
+<tr class="separator:a280a9e7b576e8771fd5d0aba2e258202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classmn_1_1container_1_1basic__vector"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classmn_1_1container_1_1basic__vector')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector&lt; T, TAllocator, TStorage &gt;</a></td></tr>
+<tr class="memitem:a5af2d6b3123c61ffd66a7ed4db89c2dc inherit pub_static_attribs_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#a5af2d6b3123c61ffd66a7ed4db89c2dc">npos</a> = <a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a>(-1)</td></tr>
+<tr class="separator:a5af2d6b3123c61ffd66a7ed4db89c2dc inherit pub_static_attribs_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76df805af89ba543ca710f3874b3b1d inherit pub_static_attribs_classmn_1_1container_1_1basic__vector"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1container_1_1basic__vector.html#ae76df805af89ba543ca710f3874b3b1d">kInitialCapacity</a> = 16</td></tr>
+<tr class="separator:ae76df805af89ba543ca710f3874b3b1d inherit pub_static_attribs_classmn_1_1container_1_1basic__vector"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename TKEY, typename TVAL, class TAllocator, TComp = mn::less&lt;TKEY&gt;&gt;<br />
+class mn::container::basic_multimap&lt; TKEY, TVAL, TAllocator, TComp &gt;</h3>
+
+<p>A sorted associative container that may container multiple entries for each key. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af0b8061c564652f8e16613d6a33ab623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b8061c564652f8e16613d6a33ab623">&#9670;&nbsp;</a></span>allocator_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">base_type::allocator_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a280a9e7b576e8771fd5d0aba2e258202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280a9e7b576e8771fd5d0aba2e258202">&#9670;&nbsp;</a></span>base_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a280a9e7b576e8771fd5d0aba2e258202">base_type</a> =  <a class="el" href="namespacemn_1_1container.html#a4803b2a6ba5074d77b6c4b3a5002fdc6">vector</a>&lt;<a class="el" href="namespacemn_1_1container.html#a830ed3f9966070c568b3961a36d653cf">pair</a>&lt;TKEY, TVAL&gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd61b670c80667bd0d107e19e88b286b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd61b670c80667bd0d107e19e88b286b">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a0d1108ea1ba598cbb169ec42742d2434">base_type::const_iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac19b9058d9f3541d58b639f1ed0dc1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19b9058d9f3541d58b639f1ed0dc1db">&#9670;&nbsp;</a></span>const_range_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac19b9058d9f3541d58b639f1ed0dc1db">const_range_t</a> =  <a class="el" href="namespacemn_1_1container.html#a830ed3f9966070c568b3961a36d653cf">pair</a>&lt;<a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>,<a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c1a7da8697d381c324839730448075c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1a7da8697d381c324839730448075c">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a1c1a7da8697d381c324839730448075c">const_reference</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a20a1695a4764cfabcf121a6d7e390b3b">base_type::const_reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ab44f1aaec5c35d60fa01ed755c9e96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ab44f1aaec5c35d60fa01ed755c9e96">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a8ab44f1aaec5c35d60fa01ed755c9e96">difference_type</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#af299839f48c6bdff9d15e386fcb67636">base_type::difference_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16bce2218730260a0a75a642185f7ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bce2218730260a0a75a642185f7ba1">&#9670;&nbsp;</a></span>initlist_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a16bce2218730260a0a75a642185f7ba1">initlist_t</a> =  <a class="el" href="namespacemn.html#ac959e62c3a9c84b82b8508870b3072f0">mn::initializer_list</a>&lt;<a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98ac717fd6c50a9b6958f0bb8680cfff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98ac717fd6c50a9b6958f0bb8680cfff">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">base_type::iterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4a0457de6706d85e277ce19724a5f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a0457de6706d85e277ce19724a5f3c">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#ad4a0457de6706d85e277ce19724a5f3c">iterator_category</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#acb4992fa1746de98d4d3490002d03fc1">base_type::iterator_category</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35ee46a141591912861ffceddb2fc9a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ee46a141591912861ffceddb2fc9a2">&#9670;&nbsp;</a></span>key_compare</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a35ee46a141591912861ffceddb2fc9a2">key_compare</a> =  TComp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a351ca97178733c1ccff03f8dd54a0bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351ca97178733c1ccff03f8dd54a0bb4">&#9670;&nbsp;</a></span>key_const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> =  const TKEY&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2bf76a72374f77a9938ab08dcba9c430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf76a72374f77a9938ab08dcba9c430">&#9670;&nbsp;</a></span>key_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a2bf76a72374f77a9938ab08dcba9c430">key_reference</a> =  TKEY&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fa582903e3928e0ba939cf22407ebbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa582903e3928e0ba939cf22407ebbd">&#9670;&nbsp;</a></span>key_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a2fa582903e3928e0ba939cf22407ebbd">key_type</a> =  TKEY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a429e3ac3197bd1d13ce7bc0d8cca6c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429e3ac3197bd1d13ce7bc0d8cca6c7e">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a429e3ac3197bd1d13ce7bc0d8cca6c7e">pointer</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">base_type::pointer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a828b4e7a9aef63b62d3eb3ef9613317e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a828b4e7a9aef63b62d3eb3ef9613317e">&#9670;&nbsp;</a></span>range_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a828b4e7a9aef63b62d3eb3ef9613317e">range_t</a> =  <a class="el" href="namespacemn_1_1container.html#a830ed3f9966070c568b3961a36d653cf">pair</a>&lt;<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>,<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dc34a9355948d83969a39e9c3b46081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc34a9355948d83969a39e9c3b46081">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">base_type::reference</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6e7fb34d41d947268b0d70853f0ba6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e7fb34d41d947268b0d70853f0ba6d">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac6e7fb34d41d947268b0d70853f0ba6d">self_type</a> =  <a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a>&lt;TKEY, TVAL, TAllocator, TComp&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a3b3d58f26d90e7b0f2149a95d51a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a3b3d58f26d90e7b0f2149a95d51a1b">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">base_type::size_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9c4356358bb62f6bbe0efaeb197adeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c4356358bb62f6bbe0efaeb197adeb">&#9670;&nbsp;</a></span>value_const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#aa9c4356358bb62f6bbe0efaeb197adeb">value_const_reference</a> =  const TVAL&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71129f4f955389c60abe0ca0ae86eb2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71129f4f955389c60abe0ca0ae86eb2e">&#9670;&nbsp;</a></span>value_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#a71129f4f955389c60abe0ca0ae86eb2e">value_reference</a> =  TVAL&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0364f057595e24554b3388527c1338e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0364f057595e24554b3388527c1338e">&#9670;&nbsp;</a></span>value_type <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a> =  TVAL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea8d9de0cd1b7be6c592434998b2c7e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8d9de0cd1b7be6c592434998b2c7e2">&#9670;&nbsp;</a></span>value_type <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a> =  typename <a class="el" href="classmn_1_1container_1_1basic__vector.html#a145699f830a17ce533b783e4ee416b7e">base_type::value_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab7feb5b98f38aa65961fe5eaa69c1f73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7feb5b98f38aa65961fe5eaa69c1f73">&#9670;&nbsp;</a></span>basic_multimap() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em> = <code><a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a319a9597a909d93fa8832a2772be7fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319a9597a909d93fa8832a2772be7fcf">&#9670;&nbsp;</a></span>basic_multimap() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a>&#160;</td>
+          <td class="paramname"><em>initialSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em> = <code><a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad03b634d548dd0afb5f47680dfe27d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03b634d548dd0afb5f47680dfe27d5a">&#9670;&nbsp;</a></span>basic_multimap() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em> = <code><a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59a7893f927b47a97cdcbb01a3c16352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a7893f927b47a97cdcbb01a3c16352">&#9670;&nbsp;</a></span>basic_multimap() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac6e7fb34d41d947268b0d70853f0ba6d">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em> = <code><a class="el" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaff15e8647a0f7b056c6b0495909cd26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff15e8647a0f7b056c6b0495909cd26">&#9670;&nbsp;</a></span>basic_multimap() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::<a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59caeea8dfd8c2d80dbb790582a57702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59caeea8dfd8c2d80dbb790582a57702">&#9670;&nbsp;</a></span>assign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::assign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>i1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>i2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70f1125ee48feb31c09c283fbe5d1533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f1125ee48feb31c09c283fbe5d1533">&#9670;&nbsp;</a></span>at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::at</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8862c1a2fb706a2bbe94069e0d93aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8862c1a2fb706a2bbe94069e0d93aee">&#9670;&nbsp;</a></span>back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::back</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a4e2e797c3f6e585cfab2f16e532a22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4e2e797c3f6e585cfab2f16e532a22">&#9670;&nbsp;</a></span>begin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::begin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e620fb1722f8f6432035121f69caea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e620fb1722f8f6432035121f69caea5">&#9670;&nbsp;</a></span>capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::capacity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52655edd1dba613c391d45ea6eab0f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52655edd1dba613c391d45ea6eab0f32">&#9670;&nbsp;</a></span>cback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::cback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3141f4ab248c1441a7a51e6ba7d7864c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3141f4ab248c1441a7a51e6ba7d7864c">&#9670;&nbsp;</a></span>cfront()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::cfront</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea4878a67df50eb891bd8604cbc6fdac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea4878a67df50eb891bd8604cbc6fdac">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::clear</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8818218a1aea60f3f6b3cb9db3a7ccd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8818218a1aea60f3f6b3cb9db3a7ccd7">&#9670;&nbsp;</a></span>emplace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::emplace </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcbccc9f8b247439d7c7094feb0b7e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbccc9f8b247439d7c7094feb0b7e10">&#9670;&nbsp;</a></span>emplace_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::emplace_back </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6769eb70ec14ad07e2c1ffefce832d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6769eb70ec14ad07e2c1ffefce832d0a">&#9670;&nbsp;</a></span>emplace_hint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::emplace_hint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae288c6688c5d6bc272772b76834b9cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae288c6688c5d6bc272772b76834b9cec">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::empty </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b9192cb872665220f6b94c581da781f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b9192cb872665220f6b94c581da781f">&#9670;&nbsp;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::end</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91907ebe58bfc384f6f0f43477337f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91907ebe58bfc384f6f0f43477337f8a">&#9670;&nbsp;</a></span>erase() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1container_1_1basic__multimap.html#ac6e7fb34d41d947268b0d70853f0ba6d">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78e49fd7c6507e0996a71760b4c23f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e49fd7c6507e0996a71760b4c23f89">&#9670;&nbsp;</a></span>erase() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::erase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa81a4142daf20dfa9126c16ef9b6a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa81a4142daf20dfa9126c16ef9b6a9f">&#9670;&nbsp;</a></span>erase() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::erase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa752a83cee520af67ac56ce229f061df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa752a83cee520af67ac56ce229f061df">&#9670;&nbsp;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a>&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a7f0fef992305210b019e00a465e83c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7f0fef992305210b019e00a465e83c">&#9670;&nbsp;</a></span>find_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::find_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#aa9c4356358bb62f6bbe0efaeb197adeb">value_const_reference</a>&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a079d4a52593c43b15f8ca529ee481408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079d4a52593c43b15f8ca529ee481408">&#9670;&nbsp;</a></span>front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::front</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a038f6eb2bf6c5cc39cf80c7064e7a916"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038f6eb2bf6c5cc39cf80c7064e7a916">&#9670;&nbsp;</a></span>insert() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::insert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79e554481cfaf99ded0ae54c39a8bf02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e554481cfaf99ded0ae54c39a8bf02">&#9670;&nbsp;</a></span>insert() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::insert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0ebb131b1a7408cbd7351c471fd5b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ebb131b1a7408cbd7351c471fd5b36">&#9670;&nbsp;</a></span>insert() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::insert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbcc953be483c8e13cd086a6d06388cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbcc953be483c8e13cd086a6d06388cd">&#9670;&nbsp;</a></span>lower_bound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::lower_bound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a>&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbaf2e2b5ad3583cdd083fa006fef536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbaf2e2b5ad3583cdd083fa006fef536">&#9670;&nbsp;</a></span>lower_bound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::lower_bound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a>&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad55c0fcc8875ffea5402a6f6035d5fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad55c0fcc8875ffea5402a6f6035d5fe">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__vector.html">basic_vector</a>&amp; <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::operator=</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36e47082bfe142cb18379e5d2ff40cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e47082bfe142cb18379e5d2ff40cb3">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a71129f4f955389c60abe0ca0ae86eb2e">value_reference</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a>&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6a8357a78a551636498a8296eff1025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a8357a78a551636498a8296eff1025">&#9670;&nbsp;</a></span>push_back() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::push_back</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e3703cd18154154a2cbe9de971b8a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3703cd18154154a2cbe9de971b8a9b">&#9670;&nbsp;</a></span>push_back() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::push_back</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9db9d469319f1a9c866e3872b2aa1a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db9d469319f1a9c866e3872b2aa1a6b">&#9670;&nbsp;</a></span>push_back() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::push_back</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87524cb060d18f41389b55ed3bcd7206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87524cb060d18f41389b55ed3bcd7206">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> <a class="el" href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a>&lt; T, TAllocator, TStorage &gt;::size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66c60d7709cdc5db671751004123a2ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c60d7709cdc5db671751004123a2ad">&#9670;&nbsp;</a></span>upper_bound() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::upper_bound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a>&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe47cd515775dbd83a08521cc95e5eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe47cd515775dbd83a08521cc95e5eca">&#9670;&nbsp;</a></span>upper_bound() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TKEY , typename TVAL , class TAllocator , TComp  = mn::less&lt;TKEY&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> <a class="el" href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a>&lt; TKEY, TVAL, TAllocator, TComp &gt;::upper_bound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a>&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__multimap_8hpp_source.html">mn_multimap.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

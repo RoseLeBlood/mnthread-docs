@@ -140,12 +140,15 @@ $(document).ready(function(){initNavTree('mn__shared__ptr_8hpp.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_shared_ptr.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__base__ptr_8hpp_source.html">mn_base_ptr.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">../mn_config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__def_8hpp_source.html">../mn_def.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__shared__ptr_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -160,6 +163,29 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemn_1_1pointer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html">mn::pointer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7c25d06679685fddd9bac1205ca0ef90"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7c25d06679685fddd9bac1205ca0ef90"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a7c25d06679685fddd9bac1205ca0ef90">mn::pointer::shared_ptr</a> = basic_shared_ptr&lt; T, size_t &gt;</td></tr>
+<tr class="separator:a7c25d06679685fddd9bac1205ca0ef90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b3dcb5810a6053e8ed19cbe30b1ebb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a88b3dcb5810a6053e8ed19cbe30b1ebb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a88b3dcb5810a6053e8ed19cbe30b1ebb">mn::pointer::shared_atomic_ptr</a> = basic_shared_ptr&lt; T, atomic_size_t &gt;</td></tr>
+<tr class="separator:a88b3dcb5810a6053e8ed19cbe30b1ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0abe5ddce55c2283f723b942818f9291"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TRefType &gt; </td></tr>
+<tr class="memitem:a0abe5ddce55c2283f723b942818f9291"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a0abe5ddce55c2283f723b942818f9291">mn::pointer::swap</a> (basic_shared_ptr&lt; T, TRefType &gt; &amp;a, basic_shared_ptr&lt; T, TRefType &gt; &amp;b)</td></tr>
+<tr class="separator:a0abe5ddce55c2283f723b942818f9291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397b986d514315f3b2386e553de29db3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a397b986d514315f3b2386e553de29db3"><td class="memTemplItemLeft" align="right" valign="top">shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a397b986d514315f3b2386e553de29db3">mn::pointer::make_shared</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a397b986d514315f3b2386e553de29db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a shared pointer.  <a href="namespacemn_1_1pointer.html#a397b986d514315f3b2386e553de29db3">More...</a><br /></td></tr>
+<tr class="separator:a397b986d514315f3b2386e553de29db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef1477d1310d21dfca105a4e1da033e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:adef1477d1310d21dfca105a4e1da033e"><td class="memTemplItemLeft" align="right" valign="top">shared_atomic_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#adef1477d1310d21dfca105a4e1da033e">mn::pointer::make_atomic_shared</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:adef1477d1310d21dfca105a4e1da033e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a shared atomic pointer.  <a href="namespacemn_1_1pointer.html#adef1477d1310d21dfca105a4e1da033e">More...</a><br /></td></tr>
+<tr class="separator:adef1477d1310d21dfca105a4e1da033e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

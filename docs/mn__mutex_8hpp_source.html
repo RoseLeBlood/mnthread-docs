@@ -142,62 +142,47 @@ $(document).ready(function(){initNavTree('mn__mutex_8hpp_source.html',''); initR
 <div class="title">mn_mutex.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mn__mutex_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018-2020 Amber-Sophia Schroeck</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef MINLIB_ESP32_MUTEX_</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_MUTEX_</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__def_8hpp.html">mn_def.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__basic__semaphore_8hpp.html">mn_basic_semaphore.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__error_8hpp.html">mn_error.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmn_1_1basic__mutex.html">   36</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classmn_1_1basic__mutex.html">basic_mutex</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1basic__semaphore.html">basic_semaphore</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classmn_1_1basic__mutex.html#a00756a1b8566f4de12142987f3623f84">basic_mutex</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classmn_1_1basic__mutex.html#a752adf3b0de7b88595219718e2d11730">~basic_mutex</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1basic__mutex.html#ab56fead9a48e8874d056327a040a864b">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = <a class="code" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1basic__mutex.html#a92e275601418995dc4de841247297296">unlock</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  };</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<a href="mn__mutex_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef MINLIB_ESP32_MUTEX_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define MINLIB_ESP32_MUTEX_</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__def_8hpp.html">mn_def.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__basic__semaphore_8hpp.html">mn_basic_semaphore.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__error_8hpp.html">mn_error.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmn_1_1basic__mutex.html">   37</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classmn_1_1basic__mutex.html">basic_mutex</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1basic__semaphore.html">basic_semaphore</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classmn_1_1basic__mutex.html#a00756a1b8566f4de12142987f3623f84">basic_mutex</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classmn_1_1basic__mutex.html#a00756a1b8566f4de12142987f3623f84">basic_mutex</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__mutex.html">basic_mutex</a>&amp; other);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classmn_1_1basic__mutex.html#a752adf3b0de7b88595219718e2d11730">~basic_mutex</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1basic__mutex.html#ab56fead9a48e8874d056327a040a864b">lock</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout = <a class="code" href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1basic__mutex.html#a92e275601418995dc4de841247297296">unlock</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  };</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">   74</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__mutex.html">mutex_t</a> = <a class="code" href="classmn_1_1basic__mutex.html">basic_mutex</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassmn_1_1basic__mutex_html"><div class="ttname"><a href="classmn_1_1basic__mutex.html">mn::basic_mutex</a></div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:36</div></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">   76</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__mutex.html">mutex_t</a> = <a class="code" href="classmn_1_1basic__mutex.html">basic_mutex</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1basic__mutex_html"><div class="ttname"><a href="classmn_1_1basic__mutex.html">mn::basic_mutex</a></div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:37</div></div>
 <div class="ttc" id="aclassmn_1_1basic__mutex_html_a00756a1b8566f4de12142987f3623f84"><div class="ttname"><a href="classmn_1_1basic__mutex.html#a00756a1b8566f4de12142987f3623f84">mn::basic_mutex::basic_mutex</a></div><div class="ttdeci">basic_mutex()</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:32</div></div>
-<div class="ttc" id="aclassmn_1_1basic__mutex_html_a752adf3b0de7b88595219718e2d11730"><div class="ttname"><a href="classmn_1_1basic__mutex.html#a752adf3b0de7b88595219718e2d11730">mn::basic_mutex::~basic_mutex</a></div><div class="ttdeci">virtual ~basic_mutex()</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:51</div></div>
-<div class="ttc" id="aclassmn_1_1basic__mutex_html_a92e275601418995dc4de841247297296"><div class="ttname"><a href="classmn_1_1basic__mutex.html#a92e275601418995dc4de841247297296">mn::basic_mutex::unlock</a></div><div class="ttdeci">virtual int unlock()</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:80</div></div>
-<div class="ttc" id="aclassmn_1_1basic__mutex_html_ab56fead9a48e8874d056327a040a864b"><div class="ttname"><a href="classmn_1_1basic__mutex.html#ab56fead9a48e8874d056327a040a864b">mn::basic_mutex::lock</a></div><div class="ttdeci">virtual int lock(unsigned int timeout=MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT)</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:59</div></div>
-<div class="ttc" id="aclassmn_1_1basic__semaphore_html"><div class="ttname"><a href="classmn_1_1basic__semaphore.html">mn::basic_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_basic_semaphore.hpp:43</div></div>
+<div class="ttc" id="aclassmn_1_1basic__mutex_html_a752adf3b0de7b88595219718e2d11730"><div class="ttname"><a href="classmn_1_1basic__mutex.html#a752adf3b0de7b88595219718e2d11730">mn::basic_mutex::~basic_mutex</a></div><div class="ttdeci">virtual ~basic_mutex()</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:54</div></div>
+<div class="ttc" id="aclassmn_1_1basic__mutex_html_a92e275601418995dc4de841247297296"><div class="ttname"><a href="classmn_1_1basic__mutex.html#a92e275601418995dc4de841247297296">mn::basic_mutex::unlock</a></div><div class="ttdeci">virtual int unlock()</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:84</div></div>
+<div class="ttc" id="aclassmn_1_1basic__mutex_html_ab56fead9a48e8874d056327a040a864b"><div class="ttname"><a href="classmn_1_1basic__mutex.html#ab56fead9a48e8874d056327a040a864b">mn::basic_mutex::lock</a></div><div class="ttdeci">virtual int lock(unsigned int timeout=MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT)</div><div class="ttdef"><b>Definition:</b> mn_mutex.cpp:62</div></div>
+<div class="ttc" id="aclassmn_1_1basic__semaphore_html"><div class="ttname"><a href="classmn_1_1basic__semaphore.html">mn::basic_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_basic_semaphore.hpp:41</div></div>
 <div class="ttc" id="amn__basic__semaphore_8hpp_html"><div class="ttname"><a href="mn__basic__semaphore_8hpp.html">mn_basic_semaphore.hpp</a></div></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
-<div class="ttc" id="amn__config_8hpp_html_a20fe1420e9a6d53d806d9d5e3a6cefc4"><div class="ttname"><a href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</div><div class="ttdef"><b>Definition:</b> mn_config.hpp:361</div></div>
+<div class="ttc" id="amn__config_8hpp_html_a20fe1420e9a6d53d806d9d5e3a6cefc4"><div class="ttname"><a href="mn__config_8hpp.html#a20fe1420e9a6d53d806d9d5e3a6cefc4">MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_TIMEOUT_MUTEX_DEFAULT</div><div class="ttdef"><b>Definition:</b> mn_config.hpp:368</div></div>
 <div class="ttc" id="amn__def_8hpp_html"><div class="ttname"><a href="mn__def_8hpp.html">mn_def.hpp</a></div></div>
-<div class="ttc" id="amn__error_8hpp_html"><div class="ttname"><a href="mn__error_8hpp.html">mn_error.hpp</a></div></div>
+<div class="ttc" id="amn__error_8hpp_html"><div class="ttname"><a href="mn__error_8hpp.html">mn_error.hpp</a></div><div class="ttdoc">A list of all error codes in this lib. This file is part of the Mini Thread Library (https://github....</div></div>
 <div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -155,15 +155,14 @@ $(document).ready(function(){initNavTree('classmn_1_1ext_1_1basic__condition__va
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ext_1_1basic__condition__variable__inherit__graph.svg" width="192" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ext_1_1basic__condition__variable__inherit__graph.svg" width="192" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::ext::basic_condition_variable:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ext_1_1basic__condition__variable__coll__graph.svg" width="670" height="683"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1ext_1_1basic__condition__variable__coll__graph.svg" width="880" height="683"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -175,6 +174,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1219832d3497258845edc7ddb0c355e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee74fec9af194d1d34395b9f425fc75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#acee74fec9af194d1d34395b9f425fc75">broadcast</a> ()</td></tr>
 <tr class="separator:acee74fec9af194d1d34395b9f425fc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b7096868b932dfd12572d05f129ed1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#a00b7096868b932dfd12572d05f129ed1">notify_one</a> () noexcept</td></tr>
+<tr class="separator:a00b7096868b932dfd12572d05f129ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8827680f49a868e91908e75b46318704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1ext_1_1basic__condition__variable.html#a8827680f49a868e91908e75b46318704">notify_all</a> () noexcept</td></tr>
+<tr class="separator:a8827680f49a868e91908e75b46318704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -265,6 +268,56 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Signal all threads waiting on this condition_variable. </p>
+
+</div>
+</div>
+<a id="a8827680f49a868e91908e75b46318704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8827680f49a868e91908e75b46318704">&#9670;&nbsp;</a></span>notify_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::ext::basic_condition_variable::notify_all </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00b7096868b932dfd12572d05f129ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b7096868b932dfd12572d05f129ed1">&#9670;&nbsp;</a></span>notify_one()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::ext::basic_condition_variable::notify_one </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -140,6 +140,7 @@ $(document).ready(function(){initNavTree('mn__task_8cpp.html',''); initResizable
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_task.cpp File Reference</div>  </div>
@@ -149,6 +150,7 @@ $(document).ready(function(){initNavTree('mn__task_8cpp.html',''); initResizable
 <code>#include &lt;freertos/FreeRTOS.h&gt;</code><br />
 <code>#include &lt;freertos/task.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;esp_log.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="mn__task__utils_8hpp_source.html">mn_task_utils.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__task_8hpp_source.html">mn_task.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__task__list_8hpp_source.html">mn_task_list.hpp</a>&quot;</code><br />
@@ -161,11 +163,47 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacemn_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html">mn::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aaf709ed39e302409cae8e51e1c6bff03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__task_8cpp.html#aaf709ed39e302409cae8e51e1c6bff03">EVENTGROUP_BIT_JOINABLE</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
+<tr class="separator:aaf709ed39e302409cae8e51e1c6bff03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c41427fccc7eca368a944002502d087"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__task_8cpp.html#a1c41427fccc7eca368a944002502d087">EVENTGROUP_BIT_STARTED</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
+<tr class="separator:a1c41427fccc7eca368a944002502d087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a554274666d085083f536e10c70815767"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a554274666d085083f536e10c70815767">mn::internal::get_new_uniqid</a> ()</td></tr>
 <tr class="separator:a554274666d085083f536e10c70815767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aaf709ed39e302409cae8e51e1c6bff03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf709ed39e302409cae8e51e1c6bff03">&#9670;&nbsp;</a></span>EVENTGROUP_BIT_JOINABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EVENTGROUP_BIT_JOINABLE&#160;&#160;&#160;(1 &lt;&lt; 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c41427fccc7eca368a944002502d087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c41427fccc7eca368a944002502d087">&#9670;&nbsp;</a></span>EVENTGROUP_BIT_STARTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EVENTGROUP_BIT_STARTED&#160;&#160;&#160;(1 &lt;&lt; 2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>

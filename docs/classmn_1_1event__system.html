@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::event_system&lt; TSender, TArgs, TBaseEvent, TContainer &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1event__system.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1event__system-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::event_system&lt; TSender, TArgs, TBaseEvent, TContainer &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__event_8hpp_source.html">mn_event.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::event_system&lt; TSender, TArgs, TBaseEvent, TContainer &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1event__system__coll__graph.svg" width="443" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aff61a031ce106b7eaac61d484ac34bf5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#aff61a031ce106b7eaac61d484ac34bf5">self_type</a> = <a class="el" href="classmn_1_1event__system.html">event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;</td></tr>
+<tr class="separator:aff61a031ce106b7eaac61d484ac34bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc02e7ab72ae966e8c594f0e19458057"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#abc02e7ab72ae966e8c594f0e19458057">sender_type</a> = TSender</td></tr>
+<tr class="separator:abc02e7ab72ae966e8c594f0e19458057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8dccd6c3e36999832925235121b9540"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a> = TArgs</td></tr>
+<tr class="separator:ab8dccd6c3e36999832925235121b9540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d88df727d778f7e2cc8ba4c72083292"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a3d88df727d778f7e2cc8ba4c72083292">container_type</a> = TContainer</td></tr>
+<tr class="separator:a3d88df727d778f7e2cc8ba4c72083292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f2a123a4d5ffff4fc535a8fc3b3d01"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#ad4f2a123a4d5ffff4fc535a8fc3b3d01">value_type</a> = TBaseEvent</td></tr>
+<tr class="separator:ad4f2a123a4d5ffff4fc535a8fc3b3d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954abf4dbfe53c75f6bc5863d48e6ba9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a954abf4dbfe53c75f6bc5863d48e6ba9">reference</a> = TBaseEvent &amp;</td></tr>
+<tr class="separator:a954abf4dbfe53c75f6bc5863d48e6ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0613e80b186f79f291498a3de200f17"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> = const TBaseEvent &amp;</td></tr>
+<tr class="separator:aa0613e80b186f79f291498a3de200f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f698aef8efc885115b946edcb30c4c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#af8f698aef8efc885115b946edcb30c4c">pointer</a> = TBaseEvent *</td></tr>
+<tr class="separator:af8f698aef8efc885115b946edcb30c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a4172bae804ea77229db9d3f7cfd18"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a67a4172bae804ea77229db9d3f7cfd18">const_pointer</a> = const TBaseEvent *</td></tr>
+<tr class="separator:a67a4172bae804ea77229db9d3f7cfd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c448e917e6b823d9d9dbc8676558af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#ab1c448e917e6b823d9d9dbc8676558af">size_type</a> = typename container_type::size_type</td></tr>
+<tr class="separator:ab1c448e917e6b823d9d9dbc8676558af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0958449f0ac4f1efe2f4ab9f2f1ab3e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a> = typename container_type::allocator_type</td></tr>
+<tr class="separator:a0958449f0ac4f1efe2f4ab9f2f1ab3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abeceb5945651a309cec59e5dde58d565"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#abeceb5945651a309cec59e5dde58d565">event_system</a> (<a class="el" href="classmn_1_1event__system.html#ab1c448e917e6b823d9d9dbc8676558af">size_type</a> initialSize=4, const <a class="el" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a> &amp;allocator=<a class="el" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a>())</td></tr>
+<tr class="separator:abeceb5945651a309cec59e5dde58d565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6eba1b07124ec4542ab73769b012a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a0e6eba1b07124ec4542ab73769b012a4">event_system</a> (const <a class="el" href="classmn_1_1event__system.html#aff61a031ce106b7eaac61d484ac34bf5">self_type</a> &amp;other)</td></tr>
+<tr class="separator:a0e6eba1b07124ec4542ab73769b012a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1130185edbac5ac138062000ce86dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a8d1130185edbac5ac138062000ce86dd">emit</a> (const TSender &amp;sender, const <a class="el" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a> args)</td></tr>
+<tr class="separator:a8d1130185edbac5ac138062000ce86dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1cae37d562181ab611b04901e962535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#ad1cae37d562181ab611b04901e962535">bind</a> (<a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> funcHandler)</td></tr>
+<tr class="separator:ad1cae37d562181ab611b04901e962535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c72933062608f8cf27380341af15931"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a6c72933062608f8cf27380341af15931">remove</a> (<a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> funcHandler)</td></tr>
+<tr class="separator:a6c72933062608f8cf27380341af15931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6221e513dcde088b9e72bb282c05533"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#aa6221e513dcde088b9e72bb282c05533">operator+=</a> (<a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> funcHandler)</td></tr>
+<tr class="separator:aa6221e513dcde088b9e72bb282c05533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca65e620bc7f32ee8ef844c5ff49893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a6ca65e620bc7f32ee8ef844c5ff49893">operator-=</a> (<a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> funcHandler)</td></tr>
+<tr class="separator:a6ca65e620bc7f32ee8ef844c5ff49893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6637840e54a4e29f61cb540b895f5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#acb6637840e54a4e29f61cb540b895f5c">operator()</a> (const TSender &amp;sender, const <a class="el" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a> args)</td></tr>
+<tr class="separator:acb6637840e54a4e29f61cb540b895f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae3b7f69ce7598336793249459a80606c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1event__system.html#a3d88df727d778f7e2cc8ba4c72083292">container_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a></td></tr>
+<tr class="separator:ae3b7f69ce7598336793249459a80606c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afa3bc0ce19241165a5e29f48993664"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mutex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">m_mutex</a></td></tr>
+<tr class="separator:a8afa3bc0ce19241165a5e29f48993664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a0958449f0ac4f1efe2f4ab9f2f1ab3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">&#9670;&nbsp;</a></span>allocator_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a> =  typename container_type::allocator_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8dccd6c3e36999832925235121b9540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8dccd6c3e36999832925235121b9540">&#9670;&nbsp;</a></span>args_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a> =  TArgs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67a4172bae804ea77229db9d3f7cfd18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a4172bae804ea77229db9d3f7cfd18">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#a67a4172bae804ea77229db9d3f7cfd18">const_pointer</a> =  const TBaseEvent*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0613e80b186f79f291498a3de200f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0613e80b186f79f291498a3de200f17">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> =  const TBaseEvent&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d88df727d778f7e2cc8ba4c72083292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d88df727d778f7e2cc8ba4c72083292">&#9670;&nbsp;</a></span>container_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#a3d88df727d778f7e2cc8ba4c72083292">container_type</a> =  TContainer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8f698aef8efc885115b946edcb30c4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f698aef8efc885115b946edcb30c4c">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#af8f698aef8efc885115b946edcb30c4c">pointer</a> =  TBaseEvent*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a954abf4dbfe53c75f6bc5863d48e6ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954abf4dbfe53c75f6bc5863d48e6ba9">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#a954abf4dbfe53c75f6bc5863d48e6ba9">reference</a> =  TBaseEvent&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff61a031ce106b7eaac61d484ac34bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff61a031ce106b7eaac61d484ac34bf5">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#aff61a031ce106b7eaac61d484ac34bf5">self_type</a> =  <a class="el" href="classmn_1_1event__system.html">event_system</a>&lt;TSender, TArgs, TBaseEvent, TContainer&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc02e7ab72ae966e8c594f0e19458057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc02e7ab72ae966e8c594f0e19458057">&#9670;&nbsp;</a></span>sender_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#abc02e7ab72ae966e8c594f0e19458057">sender_type</a> =  TSender</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1c448e917e6b823d9d9dbc8676558af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c448e917e6b823d9d9dbc8676558af">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#ab1c448e917e6b823d9d9dbc8676558af">size_type</a> =  typename container_type::size_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4f2a123a4d5ffff4fc535a8fc3b3d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f2a123a4d5ffff4fc535a8fc3b3d01">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html#ad4f2a123a4d5ffff4fc535a8fc3b3d01">value_type</a> =  TBaseEvent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="abeceb5945651a309cec59e5dde58d565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeceb5945651a309cec59e5dde58d565">&#9670;&nbsp;</a></span>event_system() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html">event_system</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1event__system.html#ab1c448e917e6b823d9d9dbc8676558af">size_type</a>&#160;</td>
+          <td class="paramname"><em>initialSize</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em> = <code><a class="el" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e6eba1b07124ec4542ab73769b012a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6eba1b07124ec4542ab73769b012a4">&#9670;&nbsp;</a></span>event_system() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::<a class="el" href="classmn_1_1event__system.html">event_system</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1event__system.html#aff61a031ce106b7eaac61d484ac34bf5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad1cae37d562181ab611b04901e962535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1cae37d562181ab611b04901e962535">&#9670;&nbsp;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::bind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a>&#160;</td>
+          <td class="paramname"><em>funcHandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d1130185edbac5ac138062000ce86dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d1130185edbac5ac138062000ce86dd">&#9670;&nbsp;</a></span>emit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::emit </td>
+          <td>(</td>
+          <td class="paramtype">const TSender &amp;&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a>&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb6637840e54a4e29f61cb540b895f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6637840e54a4e29f61cb540b895f5c">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const TSender &amp;&#160;</td>
+          <td class="paramname"><em>sender</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a>&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6221e513dcde088b9e72bb282c05533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6221e513dcde088b9e72bb282c05533">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a>&#160;</td>
+          <td class="paramname"><em>funcHandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ca65e620bc7f32ee8ef844c5ff49893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca65e620bc7f32ee8ef844c5ff49893">&#9670;&nbsp;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a>&#160;</td>
+          <td class="paramname"><em>funcHandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c72933062608f8cf27380341af15931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c72933062608f8cf27380341af15931">&#9670;&nbsp;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a>&#160;</td>
+          <td class="paramname"><em>funcHandler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8afa3bc0ce19241165a5e29f48993664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8afa3bc0ce19241165a5e29f48993664">&#9670;&nbsp;</a></span>m_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mutex_t</a> <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::m_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3b7f69ce7598336793249459a80606c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3b7f69ce7598336793249459a80606c">&#9670;&nbsp;</a></span>m_observers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TSender , typename TArgs , class TBaseEvent  = base_event&lt;TSender, TArgs&gt;, class TContainer  = mn::container::vector&lt;TBaseEvent&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1event__system.html#a3d88df727d778f7e2cc8ba4c72083292">container_type</a> <a class="el" href="classmn_1_1event__system.html">mn::event_system</a>&lt; TSender, TArgs, TBaseEvent, TContainer &gt;::m_observers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__event_8hpp_source.html">mn_event.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

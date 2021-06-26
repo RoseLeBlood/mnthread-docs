@@ -1,5 +1,6 @@
 var classmn_1_1pointer_1_1basic__save__ptr =
 [
+    [ "element_type", "classmn_1_1pointer_1_1basic__save__ptr.html#aad409090be9eb2d0ee9b71a3250d38d6", null ],
     [ "pointer", "classmn_1_1pointer_1_1basic__save__ptr.html#a8b8049768e524f466a424050f4962cef", null ],
     [ "reference", "classmn_1_1pointer_1_1basic__save__ptr.html#a52c428e26228e7bd6d924e362136bb04", null ],
     [ "self_type", "classmn_1_1pointer_1_1basic__save__ptr.html#a515e8e1924b3f84699bb3434e6657966", null ],
@@ -18,5 +19,5 @@ var classmn_1_1pointer_1_1basic__save__ptr =
     [ "release", "classmn_1_1pointer_1_1basic__save__ptr.html#a5b7cfdef678da07bb4c7c3517296970d", null ],
     [ "reset", "classmn_1_1pointer_1_1basic__save__ptr.html#a9fd2f3e065908555234649298d40faab", null ],
     [ "swap", "classmn_1_1pointer_1_1basic__save__ptr.html#abe09ee3b1c7345c12b0c1c9b96c2629f", null ],
-    [ "m_ptr", "classmn_1_1pointer_1_1basic__save__ptr.html#af254ae15278cf5c0466eec5ad097094b", null ]
+    [ "m_ptr", "classmn_1_1pointer_1_1basic__save__ptr.html#a8e654e0861a7026a3c3c48bd230d45da", null ]
 ];

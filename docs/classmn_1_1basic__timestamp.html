@@ -141,11 +141,16 @@ $(document).ready(function(){initNavTree('classmn_1_1basic__timestamp.html','');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmn_1_1basic__timestamp-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">mn::basic_timestamp Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A Timestamp stores a monotonic* time value with microseconds resolution.  
+ <a href="classmn_1_1basic__timestamp.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mn__basic__timestamp_8hpp_source.html">mn_basic_timestamp.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -157,13 +162,102 @@ Public Types</h2></td></tr>
 <tr class="separator:a4140929c901258fb2277b86a1cdd2f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f766e84b260146bdcaf07a8f263e2f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> = <a class="el" href="classmn_1_1basic__timestamp.html">basic_timestamp</a></td></tr>
 <tr class="separator:a0f766e84b260146bdcaf07a8f263e2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060f907eafde011b376b5ecad3a23245"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> = int64_t</td></tr>
+<tr class="separator:a060f907eafde011b376b5ecad3a23245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f766e84b260146bdcaf07a8f263e2f5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> = <a class="el" href="classmn_1_1basic__timestamp.html">basic_timestamp</a></td></tr>
+<tr class="separator:a0f766e84b260146bdcaf07a8f263e2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a7aac235815a564792b120ed4c5c6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> = <a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a></td></tr>
+<tr class="separator:ae5a7aac235815a564792b120ed4c5c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a949b87ae61871f609dd6178d3d3117d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a949b87ae61871f609dd6178d3d3117d8">basic_timestamp</a> ()</td></tr>
 <tr class="separator:a949b87ae61871f609dd6178d3d3117d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949b87ae61871f609dd6178d3d3117d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a949b87ae61871f609dd6178d3d3117d8">basic_timestamp</a> ()</td></tr>
+<tr class="memdesc:a949b87ae61871f609dd6178d3d3117d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consruct a <a class="el" href="classmn_1_1basic__timestamp.html" title="A Timestamp stores a monotonic* time value with microseconds resolution.">basic_timestamp</a> with the current time.  <a href="classmn_1_1basic__timestamp.html#a949b87ae61871f609dd6178d3d3117d8">More...</a><br /></td></tr>
+<tr class="separator:a949b87ae61871f609dd6178d3d3117d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464121f19460f706d6bc32a85713452b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a464121f19460f706d6bc32a85713452b">basic_timestamp</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> tv)</td></tr>
+<tr class="memdesc:a464121f19460f706d6bc32a85713452b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a timestamp from the given time value.  <a href="classmn_1_1basic__timestamp.html#a464121f19460f706d6bc32a85713452b">More...</a><br /></td></tr>
+<tr class="separator:a464121f19460f706d6bc32a85713452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15c3051db8b24fa7c907fb11063d2fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#ab15c3051db8b24fa7c907fb11063d2fc">basic_timestamp</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;other)</td></tr>
+<tr class="memdesc:ab15c3051db8b24fa7c907fb11063d2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="classmn_1_1basic__timestamp.html#ab15c3051db8b24fa7c907fb11063d2fc">More...</a><br /></td></tr>
+<tr class="separator:ab15c3051db8b24fa7c907fb11063d2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf1c13302998ba80115c03ee60efac3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#aacf1c13302998ba80115c03ee60efac3">~basic_timestamp</a> ()</td></tr>
+<tr class="memdesc:aacf1c13302998ba80115c03ee60efac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the timestamp.  <a href="classmn_1_1basic__timestamp.html#aacf1c13302998ba80115c03ee60efac3">More...</a><br /></td></tr>
+<tr class="separator:aacf1c13302998ba80115c03ee60efac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d98d4378669d8d063e7fa4d7945f8fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a0d98d4378669d8d063e7fa4d7945f8fc">update</a> ()</td></tr>
+<tr class="separator:a0d98d4378669d8d063e7fa4d7945f8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b309f8be286be13ddeeef9a2fa6986c"><td class="memItemLeft" align="right" valign="top">mn::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a2b309f8be286be13ddeeef9a2fa6986c">get_epoch</a> () const</td></tr>
+<tr class="separator:a2b309f8be286be13ddeeef9a2fa6986c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4542841d285327b6210bab90d1dbc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a4e4542841d285327b6210bab90d1dbc4">get_utc</a> () const</td></tr>
+<tr class="memdesc:a4e4542841d285327b6210bab90d1dbc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timestamp expressed in UTC-based time.  <a href="classmn_1_1basic__timestamp.html#a4e4542841d285327b6210bab90d1dbc4">More...</a><br /></td></tr>
+<tr class="separator:a4e4542841d285327b6210bab90d1dbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171a375ed5b5fe5699d9031e49c9784d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a171a375ed5b5fe5699d9031e49c9784d">get_microseconds</a> () const</td></tr>
+<tr class="memdesc:a171a375ed5b5fe5699d9031e49c9784d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timestamp expressed in microseconds.  <a href="classmn_1_1basic__timestamp.html#a171a375ed5b5fe5699d9031e49c9784d">More...</a><br /></td></tr>
+<tr class="separator:a171a375ed5b5fe5699d9031e49c9784d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc1e8ce8e4d2211c35b949aa6767f59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#afdc1e8ce8e4d2211c35b949aa6767f59">get_elapsed</a> () const</td></tr>
+<tr class="memdesc:afdc1e8ce8e4d2211c35b949aa6767f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time elapsed since the time denoted by the timestamp.  <a href="classmn_1_1basic__timestamp.html#afdc1e8ce8e4d2211c35b949aa6767f59">More...</a><br /></td></tr>
+<tr class="separator:afdc1e8ce8e4d2211c35b949aa6767f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9210cbaaeb44aa2f208b2b40a860dc6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#ac9210cbaaeb44aa2f208b2b40a860dc6">is_elapsed</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> interval) const</td></tr>
+<tr class="memdesc:ac9210cbaaeb44aa2f208b2b40a860dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">if the given interval has passed since the time denoted by the timestamp.  <a href="classmn_1_1basic__timestamp.html#ac9210cbaaeb44aa2f208b2b40a860dc6">More...</a><br /></td></tr>
+<tr class="separator:ac9210cbaaeb44aa2f208b2b40a860dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc70c0b008b744bea758da5341e91a7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#acc70c0b008b744bea758da5341e91a7b">swap</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts)</td></tr>
+<tr class="separator:acc70c0b008b744bea758da5341e91a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2d4b6ac3196dcef308fe48ebf91d66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a7e2d4b6ac3196dcef308fe48ebf91d66">operator==</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts) const</td></tr>
+<tr class="memdesc:a7e2d4b6ac3196dcef308fe48ebf91d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a timestamp from a UTC time value (100 nanosecond intervals since midnight, October 15, 1582).  <a href="classmn_1_1basic__timestamp.html#a7e2d4b6ac3196dcef308fe48ebf91d66">More...</a><br /></td></tr>
+<tr class="separator:a7e2d4b6ac3196dcef308fe48ebf91d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20eebe51c267adf3d393f7980115704c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a20eebe51c267adf3d393f7980115704c">operator!=</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a20eebe51c267adf3d393f7980115704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99559d12ce7ee992afcc44f99135d927"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a99559d12ce7ee992afcc44f99135d927">operator&gt;=</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a99559d12ce7ee992afcc44f99135d927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e151b153d109b51174a36734c4ae4f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a8e151b153d109b51174a36734c4ae4f0">operator&lt;=</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a8e151b153d109b51174a36734c4ae4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb5a3671d5faf8dffa5d35e534d83c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a7cb5a3671d5faf8dffa5d35e534d83c6">operator&lt;</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a7cb5a3671d5faf8dffa5d35e534d83c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03c0dda7578aaef8c7c0fbc2756ed73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#ae03c0dda7578aaef8c7c0fbc2756ed73">operator&gt;</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:ae03c0dda7578aaef8c7c0fbc2756ed73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82b82fe32bcc5e7bc1ab1367b4edfe9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a82b82fe32bcc5e7bc1ab1367b4edfe9a">operator-</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:a82b82fe32bcc5e7bc1ab1367b4edfe9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca85ceac6d27ab37067325015fa93b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#aca85ceac6d27ab37067325015fa93b26">operator+</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;ts) const</td></tr>
+<tr class="separator:aca85ceac6d27ab37067325015fa93b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a2eb703b34c3310f01e50a23b2f86b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#ad1a2eb703b34c3310f01e50a23b2f86b">operator+</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> d) const</td></tr>
+<tr class="separator:ad1a2eb703b34c3310f01e50a23b2f86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f6f9d2053e119c3afd49ccc7fecf23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a13f6f9d2053e119c3afd49ccc7fecf23">operator-</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> d) const</td></tr>
+<tr class="separator:a13f6f9d2053e119c3afd49ccc7fecf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cbb6509fb2d410bd6d382b1612779a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a71cbb6509fb2d410bd6d382b1612779a">operator+=</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> d)</td></tr>
+<tr class="separator:a71cbb6509fb2d410bd6d382b1612779a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7496f0037065ff773238ad632793dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#abe7496f0037065ff773238ad632793dd">operator-=</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> d)</td></tr>
+<tr class="separator:abe7496f0037065ff773238ad632793dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bf8b7f8500cf7c9704b42bb31fad93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a32bf8b7f8500cf7c9704b42bb31fad93">operator+</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> &amp;span) const</td></tr>
+<tr class="separator:a32bf8b7f8500cf7c9704b42bb31fad93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea861944009308d177a0b27305a400ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#aea861944009308d177a0b27305a400ae">operator-</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> &amp;span) const</td></tr>
+<tr class="separator:aea861944009308d177a0b27305a400ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa223c619d80f8b4048fc0d3133dbe9f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#aa223c619d80f8b4048fc0d3133dbe9f5">operator+=</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> &amp;span)</td></tr>
+<tr class="separator:aa223c619d80f8b4048fc0d3133dbe9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601f99e9e8c21f70b4fe8f5fffe0eb87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a601f99e9e8c21f70b4fe8f5fffe0eb87">operator-=</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> &amp;span)</td></tr>
+<tr class="separator:a601f99e9e8c21f70b4fe8f5fffe0eb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bba7626278ed12bb3e0ae3f7dcee7fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a5bba7626278ed12bb3e0ae3f7dcee7fa">operator=</a> (const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;other)</td></tr>
+<tr class="separator:a5bba7626278ed12bb3e0ae3f7dcee7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff0ac129967e95f0ba4af2920ab13c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a8ff0ac129967e95f0ba4af2920ab13c1">operator=</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> tv)</td></tr>
+<tr class="separator:a8ff0ac129967e95f0ba4af2920ab13c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:acf27854147817fbeda4a69782f27c788"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#acf27854147817fbeda4a69782f27c788">from_epoch</a> (mn::time_t t)</td></tr>
+<tr class="separator:acf27854147817fbeda4a69782f27c788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e951767fdd0345fb206b31f07dee4f0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#a1e951767fdd0345fb206b31f07dee4f0">from_utc</a> (<a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> val)</td></tr>
+<tr class="memdesc:a1e951767fdd0345fb206b31f07dee4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a timestamp from a mn::time_t.  <a href="classmn_1_1basic__timestamp.html#a1e951767fdd0345fb206b31f07dee4f0">More...</a><br /></td></tr>
+<tr class="separator:a1e951767fdd0345fb206b31f07dee4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abf2b5b1bb0136a1273ba5a664c51e497"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timestamp.html#abf2b5b1bb0136a1273ba5a664c51e497">m_time</a></td></tr>
+<tr class="separator:abf2b5b1bb0136a1273ba5a664c51e497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A Timestamp stores a monotonic* time value with microseconds resolution. </p>
+<dl class="section note"><dt>Note</dt><dd>The internal reference time is the Unix epoch, midnight, January 1, 1970. </dd></dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4140929c901258fb2277b86a1cdd2f0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4140929c901258fb2277b86a1cdd2f0f">&#9670;&nbsp;</a></span>int_type</h2>
 
@@ -179,7 +273,21 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0f766e84b260146bdcaf07a8f263e2f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f766e84b260146bdcaf07a8f263e2f5">&#9670;&nbsp;</a></span>self_type</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f766e84b260146bdcaf07a8f263e2f5">&#9670;&nbsp;</a></span>self_type <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">mn::basic_timestamp::self_type</a> =  <a class="el" href="classmn_1_1basic__timestamp.html">basic_timestamp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f766e84b260146bdcaf07a8f263e2f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f766e84b260146bdcaf07a8f263e2f5">&#9670;&nbsp;</a></span>self_type <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,9 +314,37 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae5a7aac235815a564792b120ed4c5c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5a7aac235815a564792b120ed4c5c6d">&#9670;&nbsp;</a></span>timepan_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">mn::basic_timestamp::timepan_type</a> =  <a class="el" href="classmn_1_1basic__timespan.html">basic_timespan</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a060f907eafde011b376b5ecad3a23245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060f907eafde011b376b5ecad3a23245">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">mn::basic_timestamp::value_type</a> =  int64_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a949b87ae61871f609dd6178d3d3117d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a949b87ae61871f609dd6178d3d3117d8">&#9670;&nbsp;</a></span>basic_timestamp()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a949b87ae61871f609dd6178d3d3117d8">&#9670;&nbsp;</a></span>basic_timestamp() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,8 +360,766 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="a949b87ae61871f609dd6178d3d3117d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949b87ae61871f609dd6178d3d3117d8">&#9670;&nbsp;</a></span>basic_timestamp() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timestamp::basic_timestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Consruct a <a class="el" href="classmn_1_1basic__timestamp.html" title="A Timestamp stores a monotonic* time value with microseconds resolution.">basic_timestamp</a> with the current time. </p>
+
+</div>
+</div>
+<a id="a464121f19460f706d6bc32a85713452b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464121f19460f706d6bc32a85713452b">&#9670;&nbsp;</a></span>basic_timestamp() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timestamp::basic_timestamp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td>
+          <td class="paramname"><em>tv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a timestamp from the given time value. </p>
+
+</div>
+</div>
+<a id="ab15c3051db8b24fa7c907fb11063d2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15c3051db8b24fa7c907fb11063d2fc">&#9670;&nbsp;</a></span>basic_timestamp() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timestamp::basic_timestamp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+
+</div>
+</div>
+<a id="aacf1c13302998ba80115c03ee60efac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf1c13302998ba80115c03ee60efac3">&#9670;&nbsp;</a></span>~basic_timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::basic_timestamp::~basic_timestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys the timestamp. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acf27854147817fbeda4a69782f27c788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf27854147817fbeda4a69782f27c788">&#9670;&nbsp;</a></span>from_epoch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> mn::basic_timestamp::from_epoch </td>
+          <td>(</td>
+          <td class="paramtype">mn::time_t&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e951767fdd0345fb206b31f07dee4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e951767fdd0345fb206b31f07dee4f0">&#9670;&nbsp;</a></span>from_utc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> mn::basic_timestamp::from_utc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a timestamp from a mn::time_t. </p>
+
+</div>
+</div>
+<a id="afdc1e8ce8e4d2211c35b949aa6767f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc1e8ce8e4d2211c35b949aa6767f59">&#9670;&nbsp;</a></span>get_elapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> mn::basic_timestamp::get_elapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the time elapsed since the time denoted by the timestamp. </p>
+<dl class="section note"><dt>Note</dt><dd>Equivalent to Timestamp() - *this. </dd></dl>
+
+</div>
+</div>
+<a id="a2b309f8be286be13ddeeef9a2fa6986c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b309f8be286be13ddeeef9a2fa6986c">&#9670;&nbsp;</a></span>get_epoch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::time_t mn::basic_timestamp::get_epoch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a171a375ed5b5fe5699d9031e49c9784d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a171a375ed5b5fe5699d9031e49c9784d">&#9670;&nbsp;</a></span>get_microseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> mn::basic_timestamp::get_microseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the timestamp expressed in microseconds. </p>
+<dl class="section note"><dt>Note</dt><dd>Unix epoch, midnight, January 1, 1970. </dd></dl>
+
+</div>
+</div>
+<a id="a4e4542841d285327b6210bab90d1dbc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4542841d285327b6210bab90d1dbc4">&#9670;&nbsp;</a></span>get_utc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> mn::basic_timestamp::get_utc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the timestamp expressed in UTC-based time. </p>
+
+</div>
+</div>
+<a id="ac9210cbaaeb44aa2f208b2b40a860dc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9210cbaaeb44aa2f208b2b40a860dc6">&#9670;&nbsp;</a></span>is_elapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timestamp::is_elapsed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>if the given interval has passed since the time denoted by the timestamp. </p>
+
+</div>
+</div>
+<a id="a20eebe51c267adf3d393f7980115704c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20eebe51c267adf3d393f7980115704c">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timestamp::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca85ceac6d27ab37067325015fa93b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca85ceac6d27ab37067325015fa93b26">&#9670;&nbsp;</a></span>operator+() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> mn::basic_timestamp::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32bf8b7f8500cf7c9704b42bb31fad93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32bf8b7f8500cf7c9704b42bb31fad93">&#9670;&nbsp;</a></span>operator+() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> mn::basic_timestamp::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>span</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1a2eb703b34c3310f01e50a23b2f86b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a2eb703b34c3310f01e50a23b2f86b">&#9670;&nbsp;</a></span>operator+() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> mn::basic_timestamp::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa223c619d80f8b4048fc0d3133dbe9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa223c619d80f8b4048fc0d3133dbe9f5">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&amp; mn::basic_timestamp::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>span</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71cbb6509fb2d410bd6d382b1612779a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71cbb6509fb2d410bd6d382b1612779a">&#9670;&nbsp;</a></span>operator+=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&amp; mn::basic_timestamp::operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82b82fe32bcc5e7bc1ab1367b4edfe9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82b82fe32bcc5e7bc1ab1367b4edfe9a">&#9670;&nbsp;</a></span>operator-() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> mn::basic_timestamp::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea861944009308d177a0b27305a400ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea861944009308d177a0b27305a400ae">&#9670;&nbsp;</a></span>operator-() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> mn::basic_timestamp::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>span</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13f6f9d2053e119c3afd49ccc7fecf23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f6f9d2053e119c3afd49ccc7fecf23">&#9670;&nbsp;</a></span>operator-() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> mn::basic_timestamp::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a601f99e9e8c21f70b4fe8f5fffe0eb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601f99e9e8c21f70b4fe8f5fffe0eb87">&#9670;&nbsp;</a></span>operator-=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&amp; mn::basic_timestamp::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">timepan_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>span</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe7496f0037065ff773238ad632793dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe7496f0037065ff773238ad632793dd">&#9670;&nbsp;</a></span>operator-=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&amp; mn::basic_timestamp::operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cb5a3671d5faf8dffa5d35e534d83c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb5a3671d5faf8dffa5d35e534d83c6">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timestamp::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e151b153d109b51174a36734c4ae4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e151b153d109b51174a36734c4ae4f0">&#9670;&nbsp;</a></span>operator&lt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timestamp::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bba7626278ed12bb3e0ae3f7dcee7fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bba7626278ed12bb3e0ae3f7dcee7fa">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&amp; mn::basic_timestamp::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ff0ac129967e95f0ba4af2920ab13c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff0ac129967e95f0ba4af2920ab13c1">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a>&amp; mn::basic_timestamp::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a>&#160;</td>
+          <td class="paramname"><em>tv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e2d4b6ac3196dcef308fe48ebf91d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2d4b6ac3196dcef308fe48ebf91d66">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timestamp::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a timestamp from a UTC time value (100 nanosecond intervals since midnight, October 15, 1582). </p>
+
+</div>
+</div>
+<a id="ae03c0dda7578aaef8c7c0fbc2756ed73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae03c0dda7578aaef8c7c0fbc2756ed73">&#9670;&nbsp;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timestamp::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99559d12ce7ee992afcc44f99135d927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99559d12ce7ee992afcc44f99135d927">&#9670;&nbsp;</a></span>operator&gt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::basic_timestamp::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc70c0b008b744bea758da5341e91a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc70c0b008b744bea758da5341e91a7b">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::basic_timestamp::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__timestamp.html#a0f766e84b260146bdcaf07a8f263e2f5">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d98d4378669d8d063e7fa4d7945f8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d98d4378669d8d063e7fa4d7945f8fc">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::basic_timestamp::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abf2b5b1bb0136a1273ba5a664c51e497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2b5b1bb0136a1273ba5a664c51e497">&#9670;&nbsp;</a></span>m_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timestamp.html#a060f907eafde011b376b5ecad3a23245">value_type</a> mn::basic_timestamp::m_time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="mn__basic__timestamp_8hpp_source.html">mn_basic_timestamp.hpp</a></li>
+<li><a class="el" href="mn__timestamp_8hpp_source.html">mn_timestamp.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,11 +1,10 @@
 var classmn_1_1ext_1_1basic__message__task =
 [
-    [ "task_message", "structmn_1_1ext_1_1basic__message__task_1_1task__message.html", "structmn_1_1ext_1_1basic__message__task_1_1task__message" ],
-    [ "message_id", "classmn_1_1ext_1_1basic__message__task.html#a25672f007a8f4886b30dd993f657f67b", null ],
-    [ "basic_message_task", "classmn_1_1ext_1_1basic__message__task.html#acfb074dc996314e5df1b276ca9c143c0", null ],
+    [ "message_id", "classmn_1_1ext_1_1basic__message__task.html#a8c30fd474c340ca52beb691b1dc08f72", null ],
+    [ "basic_message_task", "classmn_1_1ext_1_1basic__message__task.html#a2f337d8df6315d5b0155069afee43d1f", null ],
     [ "basic_message_task", "classmn_1_1ext_1_1basic__message__task.html#aa34085bc9d2a027f4c06ee544676c9af", null ],
     [ "on_message", "classmn_1_1ext_1_1basic__message__task.html#aa11579eb2f4ac1460519a583115bd0f8", null ],
-    [ "on_task", "classmn_1_1ext_1_1basic__message__task.html#a07056ddc293e477560a975c80a965080", null ],
+    [ "on_task", "classmn_1_1ext_1_1basic__message__task.html#a55ac87249e29179f23082d2f81376b43", null ],
     [ "operator=", "classmn_1_1ext_1_1basic__message__task.html#a6b4787eb5b93a0c6f366e612c3ec4b77", null ],
     [ "post_msg", "classmn_1_1ext_1_1basic__message__task.html#a2c85e733dda4540695143d6003d6de34", null ],
     [ "post_msg", "classmn_1_1ext_1_1basic__message__task.html#a660233527e898336b4638dafd06f1b41", null ],

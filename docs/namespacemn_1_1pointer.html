@@ -140,6 +140,7 @@ $(document).ready(function(){initNavTree('namespacemn_1_1pointer.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn::pointer Namespace Reference</div>  </div>
@@ -153,9 +154,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">AutoPtr is a "smart" pointer for classes implementing reference counting based garbage collection.  <a href="classmn_1_1pointer_1_1basic__auto__ptr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html">pointer_ptr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1clone__ptr__interface.html">clone_ptr_interface</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1basic__default__clone.html">basic_default_clone</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">basic_clone_ptr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,15 +175,95 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1smart__pointer__traits.html">smart_pointer_traits</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple unique_ptr, for a single object.  <a href="classmn_1_1pointer_1_1basic__unique__ptr.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html">basic_unique_ptr&lt; T[], TAllocator, TDeleter &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple unique_ptr, for a array object.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html">basic_weak_ptr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa0fcb1e47840e4dda791a511cd023935"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#aa0fcb1e47840e4dda791a511cd023935">any_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt; void &gt;</td></tr>
+<tr class="separator:aa0fcb1e47840e4dda791a511cd023935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7917bb595afb6fb3c9ace50e0f2f5f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aaa7917bb595afb6fb3c9ace50e0f2f5f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#aaa7917bb595afb6fb3c9ace50e0f2f5f">auto_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a>&lt; T &gt;</td></tr>
+<tr class="separator:aaa7917bb595afb6fb3c9ace50e0f2f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf293e324b7a6b2b1b49673b774c4af6"><td class="memTemplParams" colspan="2">template&lt;typename T , class TCloner  = basic_default_clone&lt;T&gt;, class TDeleter  = memory::default_delete&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:adf293e324b7a6b2b1b49673b774c4af6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#adf293e324b7a6b2b1b49673b774c4af6">clone_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">basic_clone_ptr</a>&lt; T, TCloner, TDeleter &gt;</td></tr>
+<tr class="separator:adf293e324b7a6b2b1b49673b774c4af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11da737c6b04be6c1670714d3c47ee4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af11da737c6b04be6c1670714d3c47ee4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#af11da737c6b04be6c1670714d3c47ee4">default_clone</a> = <a class="el" href="structmn_1_1pointer_1_1basic__default__clone.html">basic_default_clone</a>&lt; T &gt;</td></tr>
+<tr class="separator:af11da737c6b04be6c1670714d3c47ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7524e76291a4b3b40b5a22aca8330f6d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7524e76291a4b3b40b5a22aca8330f6d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a7524e76291a4b3b40b5a22aca8330f6d">linked_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt;</td></tr>
+<tr class="separator:a7524e76291a4b3b40b5a22aca8330f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43873bf7b884aa8c76153b714bb5f493"><td class="memTemplParams" colspan="2">template&lt;typename T , class TLOCK  = LockType_t&gt; </td></tr>
+<tr class="memitem:a43873bf7b884aa8c76153b714bb5f493"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a43873bf7b884aa8c76153b714bb5f493">lock_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html">basic_lock_ptr</a>&lt; T, TLOCK &gt;</td></tr>
+<tr class="separator:a43873bf7b884aa8c76153b714bb5f493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060efbb1ba1952875be2730393d21a94"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a060efbb1ba1952875be2730393d21a94"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a060efbb1ba1952875be2730393d21a94">save_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html">basic_save_ptr</a>&lt; T &gt;</td></tr>
+<tr class="separator:a060efbb1ba1952875be2730393d21a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64575c3724c58fe4fe96aba501008835"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a64575c3724c58fe4fe96aba501008835"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a64575c3724c58fe4fe96aba501008835">scoped_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html">basic_scoped_ptr</a>&lt; T &gt;</td></tr>
+<tr class="separator:a64575c3724c58fe4fe96aba501008835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c25d06679685fddd9bac1205ca0ef90"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7c25d06679685fddd9bac1205ca0ef90"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a7c25d06679685fddd9bac1205ca0ef90">shared_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt; T, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> &gt;</td></tr>
+<tr class="separator:a7c25d06679685fddd9bac1205ca0ef90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b3dcb5810a6053e8ed19cbe30b1ebb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a88b3dcb5810a6053e8ed19cbe30b1ebb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a88b3dcb5810a6053e8ed19cbe30b1ebb">shared_atomic_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt; T, <a class="el" href="namespacemn.html#a1e706c8e65ce1205f348dba23e0c2628">atomic_size_t</a> &gt;</td></tr>
+<tr class="separator:a88b3dcb5810a6053e8ed19cbe30b1ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d15cedb3b71ca3ff86b54456a4d475"><td class="memTemplParams" colspan="2">template&lt;typename T , class TAllocator  = memory::default_allocator, class TDeleter  = memory::default_delete&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a98d15cedb3b71ca3ff86b54456a4d475"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a98d15cedb3b71ca3ff86b54456a4d475">unique_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TAllocator, TDeleter &gt;</td></tr>
+<tr class="separator:a98d15cedb3b71ca3ff86b54456a4d475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8466a1737f0f882385d1a611f3e696"><td class="memTemplParams" colspan="2">template&lt;typename T , class TCloner  = basic_default_clone&lt;T&gt;, class TDeleter  = memory::default_delete&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:afe8466a1737f0f882385d1a611f3e696"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#afe8466a1737f0f882385d1a611f3e696">value_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; T, TCloner, TDeleter &gt;</td></tr>
+<tr class="separator:afe8466a1737f0f882385d1a611f3e696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7318f63cdef76bde4cf854621abe1ea"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae7318f63cdef76bde4cf854621abe1ea"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ae7318f63cdef76bde4cf854621abe1ea">weak_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html">basic_weak_ptr</a>&lt; T, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> &gt;</td></tr>
+<tr class="separator:ae7318f63cdef76bde4cf854621abe1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ab68d962f5934be155f6bb6b910e90"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac8ab68d962f5934be155f6bb6b910e90"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ac8ab68d962f5934be155f6bb6b910e90">weak_atomic_ptr</a> = <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html">basic_weak_ptr</a>&lt; T, <a class="el" href="namespacemn.html#a1e706c8e65ce1205f348dba23e0c2628">atomic_size_t</a> &gt;</td></tr>
+<tr class="separator:ac8ab68d962f5934be155f6bb6b910e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4a8e106b9e6929dc37edd0cf7aade78a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4a8e106b9e6929dc37edd0cf7aade78a"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a4a8e106b9e6929dc37edd0cf7aade78a">get_pointer</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt; &amp;_pPtr)</td></tr>
-<tr class="memdesc:a4a8e106b9e6929dc37edd0cf7aade78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pointer object.  <a href="namespacemn_1_1pointer.html#a4a8e106b9e6929dc37edd0cf7aade78a">More...</a><br /></td></tr>
-<tr class="separator:a4a8e106b9e6929dc37edd0cf7aade78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab015d06d738380485ae1605618a626"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abab015d06d738380485ae1605618a626"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#abab015d06d738380485ae1605618a626">swap</a> (<a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a>&lt; T &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="separator:abab015d06d738380485ae1605618a626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15cc8a64d05afdece45d298d1b9878c6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a15cc8a64d05afdece45d298d1b9878c6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1pointer.html#aaa7917bb595afb6fb3c9ace50e0f2f5f">auto_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a15cc8a64d05afdece45d298d1b9878c6">make_auto</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a15cc8a64d05afdece45d298d1b9878c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a auto pointer.  <a href="namespacemn_1_1pointer.html#a15cc8a64d05afdece45d298d1b9878c6">More...</a><br /></td></tr>
+<tr class="separator:a15cc8a64d05afdece45d298d1b9878c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf37449f4dbe3128cc5371deefba6b3e"><td class="memTemplParams" colspan="2">template&lt;typename T , class TCloner  = basic_default_clone&lt;T&gt;, class TDeleter  = memory::default_delete&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:abf37449f4dbe3128cc5371deefba6b3e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#abf37449f4dbe3128cc5371deefba6b3e">swap</a> (<a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">basic_clone_ptr</a>&lt; T, TCloner, TDeleter &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">basic_clone_ptr</a>&lt; T, TCloner, TDeleter &gt; &amp;b)</td></tr>
+<tr class="separator:abf37449f4dbe3128cc5371deefba6b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40f245f71b04e5e98cbd0124f3641d0"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:aa40f245f71b04e5e98cbd0124f3641d0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1pointer.html#adf293e324b7a6b2b1b49673b774c4af6">clone_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#aa40f245f71b04e5e98cbd0124f3641d0">make_clone</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aa40f245f71b04e5e98cbd0124f3641d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a clone pointer.  <a href="namespacemn_1_1pointer.html#aa40f245f71b04e5e98cbd0124f3641d0">More...</a><br /></td></tr>
+<tr class="separator:aa40f245f71b04e5e98cbd0124f3641d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde2ed0ae15a36965a0f73b239dc7435"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adde2ed0ae15a36965a0f73b239dc7435"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#adde2ed0ae15a36965a0f73b239dc7435">make_link</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt; &amp;value)</td></tr>
+<tr class="memdesc:adde2ed0ae15a36965a0f73b239dc7435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a linked pointer.  <a href="namespacemn_1_1pointer.html#adde2ed0ae15a36965a0f73b239dc7435">More...</a><br /></td></tr>
+<tr class="separator:adde2ed0ae15a36965a0f73b239dc7435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364601f81f141d3add438a686b1c64d9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a364601f81f141d3add438a686b1c64d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a364601f81f141d3add438a686b1c64d9">make_link</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; U &gt; &amp;value)</td></tr>
+<tr class="memdesc:a364601f81f141d3add438a686b1c64d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a linked pointer from a other linked pointer type.  <a href="namespacemn_1_1pointer.html#a364601f81f141d3add438a686b1c64d9">More...</a><br /></td></tr>
+<tr class="separator:a364601f81f141d3add438a686b1c64d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed8e9d66e8644684c05614e9b45e6e6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2ed8e9d66e8644684c05614e9b45e6e6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a2ed8e9d66e8644684c05614e9b45e6e6">make_link</a> (T *value)</td></tr>
+<tr class="memdesc:a2ed8e9d66e8644684c05614e9b45e6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a link pointer.  <a href="namespacemn_1_1pointer.html#a2ed8e9d66e8644684c05614e9b45e6e6">More...</a><br /></td></tr>
+<tr class="separator:a2ed8e9d66e8644684c05614e9b45e6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9e07754355366cf4d73d704cd394f2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3e9e07754355366cf4d73d704cd394f2"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a3e9e07754355366cf4d73d704cd394f2">get</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt; &amp;_pPtr)</td></tr>
+<tr class="memdesc:a3e9e07754355366cf4d73d704cd394f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pointer object.  <a href="namespacemn_1_1pointer.html#a3e9e07754355366cf4d73d704cd394f2">More...</a><br /></td></tr>
+<tr class="separator:a3e9e07754355366cf4d73d704cd394f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5afca51a04749bcdfddb47ab08114b99"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a5afca51a04749bcdfddb47ab08114b99"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a5afca51a04749bcdfddb47ab08114b99">operator==</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt; &amp;a, const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; U &gt; &amp;b)</td></tr>
 <tr class="memdesc:a5afca51a04749bcdfddb47ab08114b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html" title="This class implements a basic_linked_ptr template that it allows sharing of pointers between instance...">basic_linked_ptr</a> objects for equality. Equality is defined as being true when the pointer shared between two <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html" title="This class implements a basic_linked_ptr template that it allows sharing of pointers between instance...">basic_linked_ptr</a> objects is equal.  <a href="namespacemn_1_1pointer.html#a5afca51a04749bcdfddb47ab08114b99">More...</a><br /></td></tr>
@@ -193,10 +272,318 @@ Functions</h2></td></tr>
 <tr class="memitem:a06c9743aba79b9861f3be41743beede3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a06c9743aba79b9861f3be41743beede3">operator!=</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt; &amp;a, const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; U &gt; &amp;b)</td></tr>
 <tr class="memdesc:a06c9743aba79b9861f3be41743beede3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html" title="This class implements a basic_linked_ptr template that it allows sharing of pointers between instance...">basic_linked_ptr</a> objects for inequality.  <a href="namespacemn_1_1pointer.html#a06c9743aba79b9861f3be41743beede3">More...</a><br /></td></tr>
 <tr class="separator:a06c9743aba79b9861f3be41743beede3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0942fa85a2ea8247e128c4bcbd6597e5"><td class="memTemplParams" colspan="2">template&lt;typename T , class TLOCK  = LockType_t&gt; </td></tr>
+<tr class="memitem:a0942fa85a2ea8247e128c4bcbd6597e5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html">basic_lock_ptr</a>&lt; T, TLOCK &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a0942fa85a2ea8247e128c4bcbd6597e5">make_lock_ref</a> (volatile T &amp;v, TLOCK &amp;m)</td></tr>
+<tr class="separator:a0942fa85a2ea8247e128c4bcbd6597e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7174a9de17dc47341de300011b1c9d5e"><td class="memTemplParams" colspan="2">template&lt;typename T , class TLOCK  = LockType_t&gt; </td></tr>
+<tr class="memitem:a7174a9de17dc47341de300011b1c9d5e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html">basic_lock_ptr</a>&lt; T, TLOCK &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a7174a9de17dc47341de300011b1c9d5e">make_lock_ptr</a> (volatile T *v, TLOCK &amp;m)</td></tr>
+<tr class="separator:a7174a9de17dc47341de300011b1c9d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ff227269d0425e9a57f80e6fd07310"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:ad3ff227269d0425e9a57f80e6fd07310"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1pointer.html#a060efbb1ba1952875be2730393d21a94">save_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ad3ff227269d0425e9a57f80e6fd07310">make_save</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ad3ff227269d0425e9a57f80e6fd07310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a save pointer.  <a href="namespacemn_1_1pointer.html#ad3ff227269d0425e9a57f80e6fd07310">More...</a><br /></td></tr>
+<tr class="separator:ad3ff227269d0425e9a57f80e6fd07310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5f02eac812245d077910e933513a7d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ace5f02eac812245d077910e933513a7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ace5f02eac812245d077910e933513a7d">swap</a> (<a class="el" href="namespacemn_1_1pointer.html#a060efbb1ba1952875be2730393d21a94">save_ptr</a>&lt; T &gt; &amp;a, <a class="el" href="namespacemn_1_1pointer.html#a060efbb1ba1952875be2730393d21a94">save_ptr</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:ace5f02eac812245d077910e933513a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">swap a save pointer.  <a href="namespacemn_1_1pointer.html#ace5f02eac812245d077910e933513a7d">More...</a><br /></td></tr>
+<tr class="separator:ace5f02eac812245d077910e933513a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b400776683c434daf511c98cfb06f8e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a5b400776683c434daf511c98cfb06f8e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html">basic_scoped_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a5b400776683c434daf511c98cfb06f8e">make_scoped</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a5b400776683c434daf511c98cfb06f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a scoped pointer.  <a href="namespacemn_1_1pointer.html#a5b400776683c434daf511c98cfb06f8e">More...</a><br /></td></tr>
+<tr class="separator:a5b400776683c434daf511c98cfb06f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abe5ddce55c2283f723b942818f9291"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TRefType &gt; </td></tr>
+<tr class="memitem:a0abe5ddce55c2283f723b942818f9291"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a0abe5ddce55c2283f723b942818f9291">swap</a> (<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt; T, TRefType &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt; T, TRefType &gt; &amp;b)</td></tr>
+<tr class="separator:a0abe5ddce55c2283f723b942818f9291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a397b986d514315f3b2386e553de29db3"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a397b986d514315f3b2386e553de29db3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1pointer.html#a7c25d06679685fddd9bac1205ca0ef90">shared_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a397b986d514315f3b2386e553de29db3">make_shared</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a397b986d514315f3b2386e553de29db3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a shared pointer.  <a href="namespacemn_1_1pointer.html#a397b986d514315f3b2386e553de29db3">More...</a><br /></td></tr>
+<tr class="separator:a397b986d514315f3b2386e553de29db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef1477d1310d21dfca105a4e1da033e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:adef1477d1310d21dfca105a4e1da033e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1pointer.html#a88b3dcb5810a6053e8ed19cbe30b1ebb">shared_atomic_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#adef1477d1310d21dfca105a4e1da033e">make_atomic_shared</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:adef1477d1310d21dfca105a4e1da033e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a shared atomic pointer.  <a href="namespacemn_1_1pointer.html#adef1477d1310d21dfca105a4e1da033e">More...</a><br /></td></tr>
+<tr class="separator:adef1477d1310d21dfca105a4e1da033e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b509b4d1cac2ce83ad4ba78fcdfa6f2"><td class="memTemplParams" colspan="2">template&lt;class TPR &gt; </td></tr>
+<tr class="memitem:a2b509b4d1cac2ce83ad4ba78fcdfa6f2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1pointer_1_1smart__pointer__traits.html">smart_pointer_traits</a>&lt; TPR &gt;::pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a2b509b4d1cac2ce83ad4ba78fcdfa6f2">get_pointer</a> (const TPR &amp;_pPtr)</td></tr>
+<tr class="separator:a2b509b4d1cac2ce83ad4ba78fcdfa6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f9a74c112d4887671126239178a8fb"><td class="memTemplParams" colspan="2">template&lt;class TPR &gt; </td></tr>
+<tr class="memitem:ad1f9a74c112d4887671126239178a8fb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ad1f9a74c112d4887671126239178a8fb">is_null</a> (const TPR &amp;_pPtr)</td></tr>
+<tr class="separator:ad1f9a74c112d4887671126239178a8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf89e7312e5237135c0163b4ef7a12a4"><td class="memTemplParams" colspan="2">template&lt;typename T , class TA , class TD &gt; </td></tr>
+<tr class="memitem:abf89e7312e5237135c0163b4ef7a12a4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#abf89e7312e5237135c0163b4ef7a12a4">swap</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;b)</td></tr>
+<tr class="separator:abf89e7312e5237135c0163b4ef7a12a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc909754018d009191fe6ca062b542d"><td class="memTemplParams" colspan="2">template&lt;typename T , class TA , class TD &gt; </td></tr>
+<tr class="memitem:a5dc909754018d009191fe6ca062b542d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a5dc909754018d009191fe6ca062b542d">operator==</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;b)</td></tr>
+<tr class="separator:a5dc909754018d009191fe6ca062b542d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff7aa67b01b1102cbb2c96015fcf07b"><td class="memTemplParams" colspan="2">template&lt;typename T , class TA , class TD &gt; </td></tr>
+<tr class="memitem:a3ff7aa67b01b1102cbb2c96015fcf07b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a3ff7aa67b01b1102cbb2c96015fcf07b">operator!=</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;b)</td></tr>
+<tr class="separator:a3ff7aa67b01b1102cbb2c96015fcf07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac657d6a4be6fa89c33fc38b6cfe36482"><td class="memTemplParams" colspan="2">template&lt;typename T , class TA , class TD &gt; </td></tr>
+<tr class="memitem:ac657d6a4be6fa89c33fc38b6cfe36482"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ac657d6a4be6fa89c33fc38b6cfe36482">operator&lt;</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;b)</td></tr>
+<tr class="separator:ac657d6a4be6fa89c33fc38b6cfe36482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4cd12e7c60f4df0c34a9e6f68d0bdf6"><td class="memTemplParams" colspan="2">template&lt;typename T , class TA , class TD &gt; </td></tr>
+<tr class="memitem:ae4cd12e7c60f4df0c34a9e6f68d0bdf6"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ae4cd12e7c60f4df0c34a9e6f68d0bdf6">operator&gt;</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;b)</td></tr>
+<tr class="separator:ae4cd12e7c60f4df0c34a9e6f68d0bdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3979a096b82ba2fc509fef9d019a9b"><td class="memTemplParams" colspan="2">template&lt;typename T , class TA , class TD &gt; </td></tr>
+<tr class="memitem:aff3979a096b82ba2fc509fef9d019a9b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#aff3979a096b82ba2fc509fef9d019a9b">operator&lt;=</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;b)</td></tr>
+<tr class="separator:aff3979a096b82ba2fc509fef9d019a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7683d206c8938c7bab0c1b25a36b8ef4"><td class="memTemplParams" colspan="2">template&lt;typename T , class TA , class TD &gt; </td></tr>
+<tr class="memitem:a7683d206c8938c7bab0c1b25a36b8ef4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a7683d206c8938c7bab0c1b25a36b8ef4">operator&gt;=</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;b)</td></tr>
+<tr class="separator:a7683d206c8938c7bab0c1b25a36b8ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab945c1008b58b60c3bd4a5b562ba86bc"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... TArgs&gt; </td></tr>
+<tr class="memitem:ab945c1008b58b60c3bd4a5b562ba86bc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ab945c1008b58b60c3bd4a5b562ba86bc">make_unique</a> (TArgs &amp;&amp;... args)</td></tr>
+<tr class="separator:ab945c1008b58b60c3bd4a5b562ba86bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991c7dc82aaca1a85cdd24d171c00591"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a991c7dc82aaca1a85cdd24d171c00591"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T[]&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a991c7dc82aaca1a85cdd24d171c00591">make_unique</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> siNums)</td></tr>
+<tr class="separator:a991c7dc82aaca1a85cdd24d171c00591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b930feb1704f9cf7b8ae69bd8111115"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... TArgs&gt; </td></tr>
+<tr class="memitem:a3b930feb1704f9cf7b8ae69bd8111115"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T[]&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a3b930feb1704f9cf7b8ae69bd8111115">make_unique</a> (TArgs &amp;&amp;...)=delete</td></tr>
+<tr class="separator:a3b930feb1704f9cf7b8ae69bd8111115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4d208a4fcbe1fb305390daab5ab527f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ad4d208a4fcbe1fb305390daab5ab527f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; typename <a class="el" href="structmn_1_1decay.html">mn::decay</a>&lt; T &gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ad4d208a4fcbe1fb305390daab5ab527f">make_value</a> (T &amp;&amp;v)</td></tr>
+<tr class="separator:ad4d208a4fcbe1fb305390daab5ab527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf8dba24fa5354ccb0543275203dd03a"><td class="memTemplParams" colspan="2">template&lt;class T , class... Args&gt; </td></tr>
+<tr class="memitem:aaf8dba24fa5354ccb0543275203dd03a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#aaf8dba24fa5354ccb0543275203dd03a">make_value</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="separator:aaf8dba24fa5354ccb0543275203dd03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c9d0108510692c7042d15e49daeec6"><td class="memTemplParams" colspan="2">template&lt;class T , class U , class... Args&gt; </td></tr>
+<tr class="memitem:a40c9d0108510692c7042d15e49daeec6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a40c9d0108510692c7042d15e49daeec6">make_value</a> (<a class="el" href="namespacemn.html#ac959e62c3a9c84b82b8508870b3072f0">mn::initializer_list</a>&lt; U &gt; il, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a40c9d0108510692c7042d15e49daeec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae143f707e3c9081f6bcfd1ca755295c4"><td class="memTemplParams" colspan="2">template&lt;class T , class D , class C &gt; </td></tr>
+<tr class="memitem:ae143f707e3c9081f6bcfd1ca755295c4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ae143f707e3c9081f6bcfd1ca755295c4">swap</a> (<a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; T, D, C &gt; &amp;a, <a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; T, D, C &gt; &amp;b) noexcept</td></tr>
+<tr class="separator:ae143f707e3c9081f6bcfd1ca755295c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55990843a5f99d8a9a714342fced9ab7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a55990843a5f99d8a9a714342fced9ab7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1pointer.html#ae7318f63cdef76bde4cf854621abe1ea">weak_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a55990843a5f99d8a9a714342fced9ab7">make_weak</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a55990843a5f99d8a9a714342fced9ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a weak pointer.  <a href="namespacemn_1_1pointer.html#a55990843a5f99d8a9a714342fced9ab7">More...</a><br /></td></tr>
+<tr class="separator:a55990843a5f99d8a9a714342fced9ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b4511ac29436db2083805af3c43dea"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a76b4511ac29436db2083805af3c43dea"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacemn_1_1pointer.html#ac8ab68d962f5934be155f6bb6b910e90">weak_atomic_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a76b4511ac29436db2083805af3c43dea">make_atomic_weak</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a76b4511ac29436db2083805af3c43dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a weak atomic pointer.  <a href="namespacemn_1_1pointer.html#a76b4511ac29436db2083805af3c43dea">More...</a><br /></td></tr>
+<tr class="separator:a76b4511ac29436db2083805af3c43dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aa0fcb1e47840e4dda791a511cd023935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0fcb1e47840e4dda791a511cd023935">&#9670;&nbsp;</a></span>any_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#aa0fcb1e47840e4dda791a511cd023935">mn::pointer::any_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__any__ptr.html">basic_any_ptr</a>&lt;void&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa7917bb595afb6fb3c9ace50e0f2f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7917bb595afb6fb3c9ace50e0f2f5f">&#9670;&nbsp;</a></span>auto_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#aaa7917bb595afb6fb3c9ace50e0f2f5f">mn::pointer::auto_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf293e324b7a6b2b1b49673b774c4af6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf293e324b7a6b2b1b49673b774c4af6">&#9670;&nbsp;</a></span>clone_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TCloner  = basic_default_clone&lt;T&gt;, class TDeleter  = memory::default_delete&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#adf293e324b7a6b2b1b49673b774c4af6">mn::pointer::clone_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">basic_clone_ptr</a>&lt;T, TCloner, TDeleter&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af11da737c6b04be6c1670714d3c47ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af11da737c6b04be6c1670714d3c47ee4">&#9670;&nbsp;</a></span>default_clone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#af11da737c6b04be6c1670714d3c47ee4">mn::pointer::default_clone</a> = typedef <a class="el" href="structmn_1_1pointer_1_1basic__default__clone.html">basic_default_clone</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7524e76291a4b3b40b5a22aca8330f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7524e76291a4b3b40b5a22aca8330f6d">&#9670;&nbsp;</a></span>linked_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#a7524e76291a4b3b40b5a22aca8330f6d">mn::pointer::linked_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43873bf7b884aa8c76153b714bb5f493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43873bf7b884aa8c76153b714bb5f493">&#9670;&nbsp;</a></span>lock_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#a43873bf7b884aa8c76153b714bb5f493">mn::pointer::lock_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html">basic_lock_ptr</a>&lt;T, TLOCK&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a060efbb1ba1952875be2730393d21a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060efbb1ba1952875be2730393d21a94">&#9670;&nbsp;</a></span>save_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#a060efbb1ba1952875be2730393d21a94">mn::pointer::save_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__save__ptr.html">basic_save_ptr</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64575c3724c58fe4fe96aba501008835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64575c3724c58fe4fe96aba501008835">&#9670;&nbsp;</a></span>scoped_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#a64575c3724c58fe4fe96aba501008835">mn::pointer::scoped_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html">basic_scoped_ptr</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88b3dcb5810a6053e8ed19cbe30b1ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b3dcb5810a6053e8ed19cbe30b1ebb">&#9670;&nbsp;</a></span>shared_atomic_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#a88b3dcb5810a6053e8ed19cbe30b1ebb">mn::pointer::shared_atomic_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt;T, <a class="el" href="namespacemn.html#a1e706c8e65ce1205f348dba23e0c2628">atomic_size_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c25d06679685fddd9bac1205ca0ef90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c25d06679685fddd9bac1205ca0ef90">&#9670;&nbsp;</a></span>shared_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#a7c25d06679685fddd9bac1205ca0ef90">mn::pointer::shared_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt;T, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98d15cedb3b71ca3ff86b54456a4d475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d15cedb3b71ca3ff86b54456a4d475">&#9670;&nbsp;</a></span>unique_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator  = memory::default_allocator, class TDeleter  = memory::default_delete&lt;T, TAllocator&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#a98d15cedb3b71ca3ff86b54456a4d475">mn::pointer::unique_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt;T, TAllocator, TDeleter&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe8466a1737f0f882385d1a611f3e696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe8466a1737f0f882385d1a611f3e696">&#9670;&nbsp;</a></span>value_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TCloner  = basic_default_clone&lt;T&gt;, class TDeleter  = memory::default_delete&lt;T&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#afe8466a1737f0f882385d1a611f3e696">mn::pointer::value_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt;T, TCloner, TDeleter&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8ab68d962f5934be155f6bb6b910e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ab68d962f5934be155f6bb6b910e90">&#9670;&nbsp;</a></span>weak_atomic_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#ac8ab68d962f5934be155f6bb6b910e90">mn::pointer::weak_atomic_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html">basic_weak_ptr</a>&lt;T, <a class="el" href="namespacemn.html#a1e706c8e65ce1205f348dba23e0c2628">atomic_size_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7318f63cdef76bde4cf854621abe1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7318f63cdef76bde4cf854621abe1ea">&#9670;&nbsp;</a></span>weak_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1pointer.html#ae7318f63cdef76bde4cf854621abe1ea">mn::pointer::weak_ptr</a> = typedef <a class="el" href="classmn_1_1pointer_1_1basic__weak__ptr.html">basic_weak_ptr</a>&lt;T, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4a8e106b9e6929dc37edd0cf7aade78a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a8e106b9e6929dc37edd0cf7aade78a">&#9670;&nbsp;</a></span>get_pointer()</h2>
+<a id="a3e9e07754355366cf4d73d704cd394f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9e07754355366cf4d73d704cd394f2">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +594,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T* mn::pointer::get_pointer </td>
+          <td class="memname">T* mn::pointer::get </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>_pPtr</em></td><td>)</td>
@@ -230,8 +617,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_pPtr</td><td>The input pointer to get the pointer <br  />
- </td></tr>
+    <tr><td class="paramname">_pPtr</td><td>The input pointer to get the pointer </td></tr>
   </table>
   </dd>
 </dl>
@@ -239,8 +625,763 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a2b509b4d1cac2ce83ad4ba78fcdfa6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b509b4d1cac2ce83ad4ba78fcdfa6f2">&#9670;&nbsp;</a></span>get_pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TPR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmn_1_1pointer_1_1smart__pointer__traits.html">smart_pointer_traits</a>&lt;TPR&gt;::pointer mn::pointer::get_pointer </td>
+          <td>(</td>
+          <td class="paramtype">const TPR &amp;&#160;</td>
+          <td class="paramname"><em>_pPtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1f9a74c112d4887671126239178a8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1f9a74c112d4887671126239178a8fb">&#9670;&nbsp;</a></span>is_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TPR &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::pointer::is_null </td>
+          <td>(</td>
+          <td class="paramtype">const TPR &amp;&#160;</td>
+          <td class="paramname"><em>_pPtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adef1477d1310d21dfca105a4e1da033e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef1477d1310d21dfca105a4e1da033e">&#9670;&nbsp;</a></span>make_atomic_shared()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn_1_1pointer.html#a88b3dcb5810a6053e8ed19cbe30b1ebb">shared_atomic_ptr</a>&lt;T&gt; mn::pointer::make_atomic_shared </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a shared atomic pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a76b4511ac29436db2083805af3c43dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b4511ac29436db2083805af3c43dea">&#9670;&nbsp;</a></span>make_atomic_weak()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn_1_1pointer.html#ac8ab68d962f5934be155f6bb6b910e90">weak_atomic_ptr</a>&lt;T&gt; mn::pointer::make_atomic_weak </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a weak atomic pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15cc8a64d05afdece45d298d1b9878c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15cc8a64d05afdece45d298d1b9878c6">&#9670;&nbsp;</a></span>make_auto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn_1_1pointer.html#aaa7917bb595afb6fb3c9ace50e0f2f5f">auto_ptr</a>&lt;T&gt; mn::pointer::make_auto </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a auto pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa40f245f71b04e5e98cbd0124f3641d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40f245f71b04e5e98cbd0124f3641d0">&#9670;&nbsp;</a></span>make_clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn_1_1pointer.html#adf293e324b7a6b2b1b49673b774c4af6">clone_ptr</a>&lt;T&gt; mn::pointer::make_clone </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a clone pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adde2ed0ae15a36965a0f73b239dc7435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde2ed0ae15a36965a0f73b239dc7435">&#9670;&nbsp;</a></span>make_link() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt;T&gt; mn::pointer::make_link </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a linked pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a364601f81f141d3add438a686b1c64d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364601f81f141d3add438a686b1c64d9">&#9670;&nbsp;</a></span>make_link() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt;T&gt; mn::pointer::make_link </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a linked pointer from a other linked pointer type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">U</td><td>Value of the type of td </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2ed8e9d66e8644684c05614e9b45e6e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed8e9d66e8644684c05614e9b45e6e6">&#9670;&nbsp;</a></span>make_link() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html">basic_linked_ptr</a>&lt;T&gt; mn::pointer::make_link </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a link pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7174a9de17dc47341de300011b1c9d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7174a9de17dc47341de300011b1c9d5e">&#9670;&nbsp;</a></span>make_lock_ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html">basic_lock_ptr</a>&lt;T, TLOCK&gt; mn::pointer::make_lock_ptr </td>
+          <td>(</td>
+          <td class="paramtype">volatile T *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TLOCK &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0942fa85a2ea8247e128c4bcbd6597e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0942fa85a2ea8247e128c4bcbd6597e5">&#9670;&nbsp;</a></span>make_lock_ref()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TLOCK  = LockType_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__lock__ptr.html">basic_lock_ptr</a>&lt;T, TLOCK&gt; mn::pointer::make_lock_ref </td>
+          <td>(</td>
+          <td class="paramtype">volatile T &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TLOCK &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3ff227269d0425e9a57f80e6fd07310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ff227269d0425e9a57f80e6fd07310">&#9670;&nbsp;</a></span>make_save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn_1_1pointer.html#a060efbb1ba1952875be2730393d21a94">save_ptr</a>&lt;T&gt; mn::pointer::make_save </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a save pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5b400776683c434daf511c98cfb06f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b400776683c434daf511c98cfb06f8e">&#9670;&nbsp;</a></span>make_scoped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__scoped__ptr.html">basic_scoped_ptr</a>&lt;T&gt; mn::pointer::make_scoped </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a scoped pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a397b986d514315f3b2386e553de29db3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a397b986d514315f3b2386e553de29db3">&#9670;&nbsp;</a></span>make_shared()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn_1_1pointer.html#a7c25d06679685fddd9bac1205ca0ef90">shared_ptr</a>&lt;T&gt; mn::pointer::make_shared </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a shared pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a991c7dc82aaca1a85cdd24d171c00591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a991c7dc82aaca1a85cdd24d171c00591">&#9670;&nbsp;</a></span>make_unique() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt;T[]&gt; mn::pointer::make_unique </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>siNums</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab945c1008b58b60c3bd4a5b562ba86bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab945c1008b58b60c3bd4a5b562ba86bc">&#9670;&nbsp;</a></span>make_unique() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... TArgs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt;T&gt; mn::pointer::make_unique </td>
+          <td>(</td>
+          <td class="paramtype">TArgs &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b930feb1704f9cf7b8ae69bd8111115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b930feb1704f9cf7b8ae69bd8111115">&#9670;&nbsp;</a></span>make_unique() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... TArgs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt;T[]&gt; mn::pointer::make_unique </td>
+          <td>(</td>
+          <td class="paramtype">TArgs &amp;&amp;&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf8dba24fa5354ccb0543275203dd03a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf8dba24fa5354ccb0543275203dd03a">&#9670;&nbsp;</a></span>make_value() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt;T&gt; mn::pointer::make_value </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40c9d0108510692c7042d15e49daeec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c9d0108510692c7042d15e49daeec6">&#9670;&nbsp;</a></span>make_value() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class U , class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt;T&gt; mn::pointer::make_value </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#ac959e62c3a9c84b82b8508870b3072f0">mn::initializer_list</a>&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>il</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4d208a4fcbe1fb305390daab5ab527f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4d208a4fcbe1fb305390daab5ab527f">&#9670;&nbsp;</a></span>make_value() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; typename <a class="el" href="structmn_1_1decay.html">mn::decay</a>&lt;T&gt;::type &gt; mn::pointer::make_value </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55990843a5f99d8a9a714342fced9ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55990843a5f99d8a9a714342fced9ab7">&#9670;&nbsp;</a></span>make_weak()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn_1_1pointer.html#ae7318f63cdef76bde4cf854621abe1ea">weak_ptr</a>&lt;T&gt; mn::pointer::make_weak </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make a weak pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Value type of the pointer. </td></tr>
+    <tr><td class="paramname">Args</td><td>Argument for the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3ff7aa67b01b1102cbb2c96015fcf07b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff7aa67b01b1102cbb2c96015fcf07b">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TA , class TD &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::pointer::operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a06c9743aba79b9861f3be41743beede3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06c9743aba79b9861f3be41743beede3">&#9670;&nbsp;</a></span>operator!=()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c9743aba79b9861f3be41743beede3">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,8 +1420,122 @@ template&lt;typename T , typename U &gt; </div>
 
 </div>
 </div>
+<a id="ac657d6a4be6fa89c33fc38b6cfe36482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac657d6a4be6fa89c33fc38b6cfe36482">&#9670;&nbsp;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TA , class TD &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::pointer::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff3979a096b82ba2fc509fef9d019a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3979a096b82ba2fc509fef9d019a9b">&#9670;&nbsp;</a></span>operator&lt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TA , class TD &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::pointer::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dc909754018d009191fe6ca062b542d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc909754018d009191fe6ca062b542d">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TA , class TD &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::pointer::operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5afca51a04749bcdfddb47ab08114b99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5afca51a04749bcdfddb47ab08114b99">&#9670;&nbsp;</a></span>operator==()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afca51a04749bcdfddb47ab08114b99">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,6 +1571,296 @@ template&lt;typename T , typename U &gt; </div>
 </div><div class="memdoc">
 
 <p>Compares two <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html" title="This class implements a basic_linked_ptr template that it allows sharing of pointers between instance...">basic_linked_ptr</a> objects for equality. Equality is defined as being true when the pointer shared between two <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html" title="This class implements a basic_linked_ptr template that it allows sharing of pointers between instance...">basic_linked_ptr</a> objects is equal. </p>
+
+</div>
+</div>
+<a id="ae4cd12e7c60f4df0c34a9e6f68d0bdf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4cd12e7c60f4df0c34a9e6f68d0bdf6">&#9670;&nbsp;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TA , class TD &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::pointer::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7683d206c8938c7bab0c1b25a36b8ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7683d206c8938c7bab0c1b25a36b8ef4">&#9670;&nbsp;</a></span>operator&gt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TA , class TD &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::pointer::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abab015d06d738380485ae1605618a626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abab015d06d738380485ae1605618a626">&#9670;&nbsp;</a></span>swap() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::pointer::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__auto__ptr.html">basic_auto_ptr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf37449f4dbe3128cc5371deefba6b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf37449f4dbe3128cc5371deefba6b3e">&#9670;&nbsp;</a></span>swap() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TCloner  = basic_default_clone&lt;T&gt;, class TDeleter  = memory::default_delete&lt;T&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::pointer::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">basic_clone_ptr</a>&lt; T, TCloner, TDeleter &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__clone__ptr.html">basic_clone_ptr</a>&lt; T, TCloner, TDeleter &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0abe5ddce55c2283f723b942818f9291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abe5ddce55c2283f723b942818f9291">&#9670;&nbsp;</a></span>swap() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TRefType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::pointer::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt; T, TRefType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt; T, TRefType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf89e7312e5237135c0163b4ef7a12a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf89e7312e5237135c0163b4ef7a12a4">&#9670;&nbsp;</a></span>swap() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TA , class TD &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::pointer::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; T, TA, TD &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae143f707e3c9081f6bcfd1ca755295c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae143f707e3c9081f6bcfd1ca755295c4">&#9670;&nbsp;</a></span>swap() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class D , class C &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::pointer::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; T, D, C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__value__ptr.html">basic_value_ptr</a>&lt; T, D, C &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace5f02eac812245d077910e933513a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5f02eac812245d077910e933513a7d">&#9670;&nbsp;</a></span>swap() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::pointer::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn_1_1pointer.html#a060efbb1ba1952875be2730393d21a94">save_ptr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn_1_1pointer.html#a060efbb1ba1952875be2730393d21a94">save_ptr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>swap a save pointer. </p>
 
 </div>
 </div>

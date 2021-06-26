@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::basic_initializer_list&lt; T &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1basic__initializer__list.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1basic__initializer__list-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::basic_initializer_list&lt; T &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__initializer__list_8hpp_source.html">mn_initializer_list.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a328696b9d6a568ccf12653b488aa5daf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a328696b9d6a568ccf12653b488aa5daf">value_type</a> = T</td></tr>
+<tr class="separator:a328696b9d6a568ccf12653b488aa5daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee66cb92fb9eac46cb492982ad6133d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#aee66cb92fb9eac46cb492982ad6133d5">reference</a> = T &amp;</td></tr>
+<tr class="separator:aee66cb92fb9eac46cb492982ad6133d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d678bc4643f233dab9afa64de8a9c5e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a2d678bc4643f233dab9afa64de8a9c5e">const_reference</a> = const T &amp;</td></tr>
+<tr class="separator:a2d678bc4643f233dab9afa64de8a9c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6582931e29a4f584fdef04c4ac9df9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#aaa6582931e29a4f584fdef04c4ac9df9">pointer</a> = T *</td></tr>
+<tr class="separator:aaa6582931e29a4f584fdef04c4ac9df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24af733b82c543bf62b032c8fdc24b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#ad24af733b82c543bf62b032c8fdc24b7">const_pointer</a> = const T *</td></tr>
+<tr class="separator:ad24af733b82c543bf62b032c8fdc24b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4a82c3c80a3729fc41e393a03de5da"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a9c4a82c3c80a3729fc41e393a03de5da">size_type</a> = <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></td></tr>
+<tr class="separator:a9c4a82c3c80a3729fc41e393a03de5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dbb2517ead9d14482df966aab8d58d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a3dbb2517ead9d14482df966aab8d58d2">iterator</a> = T *</td></tr>
+<tr class="separator:a3dbb2517ead9d14482df966aab8d58d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834a44274e6a4bb37497108270f2618d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a834a44274e6a4bb37497108270f2618d">const_iterator</a> = const T *</td></tr>
+<tr class="separator:a834a44274e6a4bb37497108270f2618d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a271c4fbb4f092b86fd4f50513fc10b2a"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a271c4fbb4f092b86fd4f50513fc10b2a">basic_initializer_list</a> () noexcept</td></tr>
+<tr class="memdesc:a271c4fbb4f092b86fd4f50513fc10b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default construtor.  <a href="classmn_1_1basic__initializer__list.html#a271c4fbb4f092b86fd4f50513fc10b2a">More...</a><br /></td></tr>
+<tr class="separator:a271c4fbb4f092b86fd4f50513fc10b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadae6efc71aa76615bcbd61e502a2e6b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classmn_1_1basic__initializer__list.html#a9c4a82c3c80a3729fc41e393a03de5da">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#aadae6efc71aa76615bcbd61e502a2e6b">size</a> () const noexcept</td></tr>
+<tr class="memdesc:aadae6efc71aa76615bcbd61e502a2e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of elements in the list.  <a href="classmn_1_1basic__initializer__list.html#aadae6efc71aa76615bcbd61e502a2e6b">More...</a><br /></td></tr>
+<tr class="separator:aadae6efc71aa76615bcbd61e502a2e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a9c20043af7559d45ffdd96ebbdd17"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classmn_1_1basic__initializer__list.html#a834a44274e6a4bb37497108270f2618d">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a55a9c20043af7559d45ffdd96ebbdd17">begin</a> () const noexcept</td></tr>
+<tr class="memdesc:a55a9c20043af7559d45ffdd96ebbdd17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer from the first element of the list.  <a href="classmn_1_1basic__initializer__list.html#a55a9c20043af7559d45ffdd96ebbdd17">More...</a><br /></td></tr>
+<tr class="separator:a55a9c20043af7559d45ffdd96ebbdd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62c3bbd55c2097885ce2b10ab0c0dcc"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classmn_1_1basic__initializer__list.html#a834a44274e6a4bb37497108270f2618d">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#ad62c3bbd55c2097885ce2b10ab0c0dcc">end</a> () const noexcept</td></tr>
+<tr class="memdesc:ad62c3bbd55c2097885ce2b10ab0c0dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer from the last element of the list.  <a href="classmn_1_1basic__initializer__list.html#ad62c3bbd55c2097885ce2b10ab0c0dcc">More...</a><br /></td></tr>
+<tr class="separator:ad62c3bbd55c2097885ce2b10ab0c0dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1e12e84620d64031dedd8cec22ef01"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:aef1e12e84620d64031dedd8cec22ef01"><td class="memTemplItemLeft" align="right" valign="top">constexpr const U *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#aef1e12e84620d64031dedd8cec22ef01">begin</a> (<a class="el" href="classmn_1_1basic__initializer__list.html">basic_initializer_list</a>&lt; U &gt; pOther) noexcept</td></tr>
+<tr class="memdesc:aef1e12e84620d64031dedd8cec22ef01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer from the first element of the list.  <a href="classmn_1_1basic__initializer__list.html#aef1e12e84620d64031dedd8cec22ef01">More...</a><br /></td></tr>
+<tr class="separator:aef1e12e84620d64031dedd8cec22ef01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad923bf78b431579f8d8e1c9d0a02510c"><td class="memTemplParams" colspan="2">template&lt;class U &gt; </td></tr>
+<tr class="memitem:ad923bf78b431579f8d8e1c9d0a02510c"><td class="memTemplItemLeft" align="right" valign="top">constexpr const U *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#ad923bf78b431579f8d8e1c9d0a02510c">end</a> (<a class="el" href="classmn_1_1basic__initializer__list.html">basic_initializer_list</a>&lt; U &gt; pOther) noexcept</td></tr>
+<tr class="memdesc:ad923bf78b431579f8d8e1c9d0a02510c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer from the last element of the list.  <a href="classmn_1_1basic__initializer__list.html#ad923bf78b431579f8d8e1c9d0a02510c">More...</a><br /></td></tr>
+<tr class="separator:ad923bf78b431579f8d8e1c9d0a02510c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a56704195e3ce6c496c6c1caae5b6fcfb"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a56704195e3ce6c496c6c1caae5b6fcfb">basic_initializer_list</a> (<a class="el" href="classmn_1_1basic__initializer__list.html#ad24af733b82c543bf62b032c8fdc24b7">const_pointer</a> a, <a class="el" href="classmn_1_1basic__initializer__list.html#a9c4a82c3c80a3729fc41e393a03de5da">size_type</a> l)</td></tr>
+<tr class="memdesc:a56704195e3ce6c496c6c1caae5b6fcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A private constructor.  <a href="classmn_1_1basic__initializer__list.html#a56704195e3ce6c496c6c1caae5b6fcfb">More...</a><br /></td></tr>
+<tr class="separator:a56704195e3ce6c496c6c1caae5b6fcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a31b85e687994a66310858f1460ffa6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__initializer__list.html#aaa6582931e29a4f584fdef04c4ac9df9">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#a31b85e687994a66310858f1460ffa6b1">m_pArray</a></td></tr>
+<tr class="separator:a31b85e687994a66310858f1460ffa6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6689a004c1e0db627bb3e653a357c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__initializer__list.html#a9c4a82c3c80a3729fc41e393a03de5da">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__initializer__list.html#abe6689a004c1e0db627bb3e653a357c5">m_szSize</a></td></tr>
+<tr class="separator:abe6689a004c1e0db627bb3e653a357c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a834a44274e6a4bb37497108270f2618d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834a44274e6a4bb37497108270f2618d">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html#a834a44274e6a4bb37497108270f2618d">const_iterator</a> =  const T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad24af733b82c543bf62b032c8fdc24b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad24af733b82c543bf62b032c8fdc24b7">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html#ad24af733b82c543bf62b032c8fdc24b7">const_pointer</a> =  const T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d678bc4643f233dab9afa64de8a9c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d678bc4643f233dab9afa64de8a9c5e">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html#a2d678bc4643f233dab9afa64de8a9c5e">const_reference</a> =  const T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dbb2517ead9d14482df966aab8d58d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dbb2517ead9d14482df966aab8d58d2">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html#a3dbb2517ead9d14482df966aab8d58d2">iterator</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa6582931e29a4f584fdef04c4ac9df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa6582931e29a4f584fdef04c4ac9df9">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html#aaa6582931e29a4f584fdef04c4ac9df9">pointer</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee66cb92fb9eac46cb492982ad6133d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee66cb92fb9eac46cb492982ad6133d5">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html#aee66cb92fb9eac46cb492982ad6133d5">reference</a> =  T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c4a82c3c80a3729fc41e393a03de5da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4a82c3c80a3729fc41e393a03de5da">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html#a9c4a82c3c80a3729fc41e393a03de5da">size_type</a> =  <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a328696b9d6a568ccf12653b488aa5daf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328696b9d6a568ccf12653b488aa5daf">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html#a328696b9d6a568ccf12653b488aa5daf">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a271c4fbb4f092b86fd4f50513fc10b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271c4fbb4f092b86fd4f50513fc10b2a">&#9670;&nbsp;</a></span>basic_initializer_list() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html">basic_initializer_list</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The default construtor. </p>
+
+</div>
+</div>
+<a id="a56704195e3ce6c496c6c1caae5b6fcfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56704195e3ce6c496c6c1caae5b6fcfb">&#9670;&nbsp;</a></span>basic_initializer_list() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::<a class="el" href="classmn_1_1basic__initializer__list.html">basic_initializer_list</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__initializer__list.html#ad24af733b82c543bf62b032c8fdc24b7">const_pointer</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__initializer__list.html#a9c4a82c3c80a3729fc41e393a03de5da">size_type</a>&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A private constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>A pointer of the array for the list. </td></tr>
+    <tr><td class="paramname">l</td><td>The number of elements in the array. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a55a9c20043af7559d45ffdd96ebbdd17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a9c20043af7559d45ffdd96ebbdd17">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1basic__initializer__list.html#a834a44274e6a4bb37497108270f2618d">const_iterator</a> <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a pointer from the first element of the list. </p>
+<dl class="section return"><dt>Returns</dt><dd>The pointer from the first element of the list. </dd></dl>
+
+</div>
+</div>
+<a id="aef1e12e84620d64031dedd8cec22ef01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1e12e84620d64031dedd8cec22ef01">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const U* <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__initializer__list.html">basic_initializer_list</a>&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>pOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a pointer from the first element of the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pOther</td><td>Initializer list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer from the first element of the list. </dd></dl>
+
+</div>
+</div>
+<a id="ad62c3bbd55c2097885ce2b10ab0c0dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62c3bbd55c2097885ce2b10ab0c0dcc">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1basic__initializer__list.html#a834a44274e6a4bb37497108270f2618d">const_iterator</a> <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a pointer from the last element of the list. </p>
+<dl class="section return"><dt>Returns</dt><dd>The pointer from the last element of the list. </dd></dl>
+
+</div>
+</div>
+<a id="ad923bf78b431579f8d8e1c9d0a02510c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad923bf78b431579f8d8e1c9d0a02510c">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;class U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const U* <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1basic__initializer__list.html">basic_initializer_list</a>&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>pOther</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a pointer from the last element of the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pOther</td><td>Initializer list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer from the last element of the list. </dd></dl>
+
+</div>
+</div>
+<a id="aadae6efc71aa76615bcbd61e502a2e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadae6efc71aa76615bcbd61e502a2e6b">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1basic__initializer__list.html#a9c4a82c3c80a3729fc41e393a03de5da">size_type</a> <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of elements in the list. </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of elements in the list. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a31b85e687994a66310858f1460ffa6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b85e687994a66310858f1460ffa6b1">&#9670;&nbsp;</a></span>m_pArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__initializer__list.html#aaa6582931e29a4f584fdef04c4ac9df9">pointer</a> <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::m_pArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe6689a004c1e0db627bb3e653a357c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6689a004c1e0db627bb3e653a357c5">&#9670;&nbsp;</a></span>m_szSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__initializer__list.html#a9c4a82c3c80a3729fc41e393a03de5da">size_type</a> <a class="el" href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a>&lt; T &gt;::m_szSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__initializer__list_8hpp_source.html">mn_initializer_list.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

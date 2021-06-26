@@ -139,7 +139,9 @@ $(document).ready(function(){initNavTree('mn__def_8hpp.html',''); initResizable(
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -150,31 +152,56 @@ $(document).ready(function(){initNavTree('mn__def_8hpp.html',''); initResizable(
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="mn__copyable_8hpp_source.html">mn_copyable.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__void_8hpp_source.html">mn_void.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__def_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:classmn_1_1null__type"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#classmn_1_1null__type">mn::null_type</a></td></tr>
+<tr class="separator:classmn_1_1null__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemn_1_1math"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html">mn::math</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a90a60b50653fa6351e01a86cce856a07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__def_8hpp.html#a90a60b50653fa6351e01a86cce856a07">MNTHREAD_STATIC_CAST_BYTE</a>(BYTE)&#160;&#160;&#160;static_cast&lt;unsigned char&gt;(BYTE)</td></tr>
+<tr class="separator:a90a60b50653fa6351e01a86cce856a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276e8a32e0bbf024aadd9420b8f2d3b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__def_8hpp.html#a276e8a32e0bbf024aadd9420b8f2d3b3">offsetof</a>(TYPE,  MEMBER)&#160;&#160;&#160;__builtin_offsetof (TYPE, MEMBER)</td></tr>
+<tr class="separator:a276e8a32e0bbf024aadd9420b8f2d3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba1ede6ce131203d657d4afc0665f6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__def_8hpp.html#a6ba1ede6ce131203d657d4afc0665f6a">BitsInType</a>(t)&#160;&#160;&#160;(sizeof(t) * CHAR_BIT)</td></tr>
+<tr class="memdesc:a6ba1ede6ce131203d657d4afc0665f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bits in the given type.  <a href="mn__def_8hpp.html#a6ba1ede6ce131203d657d4afc0665f6a">More...</a><br /></td></tr>
+<tr class="separator:a6ba1ede6ce131203d657d4afc0665f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb3ae12a9f431a9af9d958417d231571"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__def_8hpp.html#afb3ae12a9f431a9af9d958417d231571">BitMask</a>(t,  n)&#160;&#160;&#160;(t(~t(0)) &gt;&gt; (<a class="el" href="mn__def_8hpp.html#a6ba1ede6ce131203d657d4afc0665f6a">BitsInType</a>(t) - (n)))</td></tr>
+<tr class="memdesc:afb3ae12a9f431a9af9d958417d231571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the mask of type <code>t</code> with the lowest <code>n</code> bits set.  <a href="mn__def_8hpp.html#afb3ae12a9f431a9af9d958417d231571">More...</a><br /></td></tr>
+<tr class="separator:afb3ae12a9f431a9af9d958417d231571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0b2ce24dd09db69f33c622978c059f88"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a0b2ce24dd09db69f33c622978c059f88">mn::max_align_t</a> = long double</td></tr>
-<tr class="separator:a0b2ce24dd09db69f33c622978c059f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d8666143edaeb31067e8df5b65789d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ab7d8666143edaeb31067e8df5b65789d">mn::max_align_t</a> = uintptr_t</td></tr>
+<tr class="separator:ab7d8666143edaeb31067e8df5b65789d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd72f028c96da628475a88ad4702dedd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">mn::nullptr_t</a> = decltype(nullptr)</td></tr>
 <tr class="separator:acd72f028c96da628475a88ad4702dedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd85c03a2c1a57dc5513f6c7c03fbf7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a2cd85c03a2c1a57dc5513f6c7c03fbf7">mn::addrof_null_t</a> = <a class="el" href="mn__functional_8hpp.html#afb2c9350d32e78a0e4c960b9859ccb40">nullptr_t</a></td></tr>
+<tr class="separator:a2cd85c03a2c1a57dc5513f6c7c03fbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af487f8a5d975f2b50b68065096c732ed"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> = <a class="el" href="mn__config_8hpp.html#a50e5f9c1523e1a8c6ee7f022b672cb55">MN_THREAD_CONFIG_SIZE_TYPE</a></td></tr>
 <tr class="separator:af487f8a5d975f2b50b68065096c732ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d0b944ea3172c4bc932d79d3e2c01c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a> = long</td></tr>
 <tr class="separator:a8d0b944ea3172c4bc932d79d3e2c01c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4465a82923b65fe1bbe77478ca290b3e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4465a82923b65fe1bbe77478ca290b3e">mn::uptrdiff_t</a> = unsigned long</td></tr>
 <tr class="separator:a4465a82923b65fe1bbe77478ca290b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04a0b1814f8e08d02b529ddffab9a479"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a04a0b1814f8e08d02b529ddffab9a479">mn::intmax_t</a> = int</td></tr>
-<tr class="separator:a04a0b1814f8e08d02b529ddffab9a479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae297c2528dc20d5c5450c1e2ed80d338"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ae297c2528dc20d5c5450c1e2ed80d338">mn::uintmax_t</a> = unsigned int</td></tr>
-<tr class="separator:ae297c2528dc20d5c5450c1e2ed80d338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac669259f5e44c575c2656bc5cc8819e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ac669259f5e44c575c2656bc5cc8819e2">mn::intmax_t</a> = signed long</td></tr>
+<tr class="separator:ac669259f5e44c575c2656bc5cc8819e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cb16f382965bad80cf5b2974ab9409"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a43cb16f382965bad80cf5b2974ab9409">mn::uintmax_t</a> = unsigned long</td></tr>
+<tr class="separator:a43cb16f382965bad80cf5b2974ab9409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -183,41 +210,189 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b9dffad3df313da9ec7435150a04444"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
-<tr class="memitem:a9b9dffad3df313da9ec7435150a04444"><td class="memTemplItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a9b9dffad3df313da9ec7435150a04444">mn::operator&lt;&lt;=</a> (byte &amp;b, IntegerType shift)</td></tr>
-<tr class="separator:a9b9dffad3df313da9ec7435150a04444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd072423d09b732ef9ab5cf6a9d60b6"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
-<tr class="memitem:adcd072423d09b732ef9ab5cf6a9d60b6"><td class="memTemplItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#adcd072423d09b732ef9ab5cf6a9d60b6">mn::operator&lt;&lt;</a> (byte &amp;b, IntegerType shift)</td></tr>
-<tr class="separator:adcd072423d09b732ef9ab5cf6a9d60b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a3ac12c536722fd3dd49aee329d53ec"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
-<tr class="memitem:a8a3ac12c536722fd3dd49aee329d53ec"><td class="memTemplItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a8a3ac12c536722fd3dd49aee329d53ec">mn::operator&gt;&gt;=</a> (byte &amp;b, IntegerType shift)</td></tr>
-<tr class="separator:a8a3ac12c536722fd3dd49aee329d53ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a940a7a00b637991a8b59042cce03bf3b"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
-<tr class="memitem:a940a7a00b637991a8b59042cce03bf3b"><td class="memTemplItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a940a7a00b637991a8b59042cce03bf3b">mn::operator&gt;&gt;</a> (byte &amp;b, IntegerType shift)</td></tr>
-<tr class="separator:a940a7a00b637991a8b59042cce03bf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e5d30c84d6f0f7c07d45a2844782f1"><td class="memItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ab6e5d30c84d6f0f7c07d45a2844782f1">mn::operator|=</a> (byte &amp;lhr, byte rhr)</td></tr>
-<tr class="separator:ab6e5d30c84d6f0f7c07d45a2844782f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a339089f02fadbd1d6346213cdedf0f9c"><td class="memItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a339089f02fadbd1d6346213cdedf0f9c">mn::operator|</a> (byte &amp;lhr, byte rhr)</td></tr>
-<tr class="separator:a339089f02fadbd1d6346213cdedf0f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8efd6644a00bc652c692935fbf1f0b3"><td class="memItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ab8efd6644a00bc652c692935fbf1f0b3">mn::operator&amp;=</a> (byte &amp;lhr, byte rhr)</td></tr>
-<tr class="separator:ab8efd6644a00bc652c692935fbf1f0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17df5963acd5512e01436cdbf8cc220c"><td class="memItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a17df5963acd5512e01436cdbf8cc220c">mn::operator&amp;</a> (byte &amp;lhr, byte rhr)</td></tr>
-<tr class="separator:a17df5963acd5512e01436cdbf8cc220c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace5f46b3578369a191a219e018de7405"><td class="memItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ace5f46b3578369a191a219e018de7405">mn::operator^=</a> (byte &amp;lhr, byte rhr)</td></tr>
-<tr class="separator:ace5f46b3578369a191a219e018de7405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56f59d02b82e6e8237c720661dce3940"><td class="memItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a56f59d02b82e6e8237c720661dce3940">mn::operator^</a> (byte &amp;lhr, byte rhr)</td></tr>
-<tr class="separator:a56f59d02b82e6e8237c720661dce3940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c052e66cd6cb72cfc9901486217ab02"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a2c052e66cd6cb72cfc9901486217ab02">mn::operator~</a> (byte b)</td></tr>
-<tr class="separator:a2c052e66cd6cb72cfc9901486217ab02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d47c38b0f5b40c33932673f16d04a57"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
-<tr class="memitem:a4d47c38b0f5b40c33932673f16d04a57"><td class="memTemplItemLeft" align="right" valign="top">IntegerType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a4d47c38b0f5b40c33932673f16d04a57">mn::to_integer</a> (byte b)</td></tr>
-<tr class="separator:a4d47c38b0f5b40c33932673f16d04a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca4deb72a94a75a74835b7fb426ab063"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
+<tr class="memitem:aca4deb72a94a75a74835b7fb426ab063"><td class="memTemplItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#aca4deb72a94a75a74835b7fb426ab063">mn::operator&lt;&lt;=</a> (byte &amp;b, IntegerType shift) noexcept</td></tr>
+<tr class="separator:aca4deb72a94a75a74835b7fb426ab063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae414e7b900d7e6a6408fcef1e680054b"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
+<tr class="memitem:ae414e7b900d7e6a6408fcef1e680054b"><td class="memTemplItemLeft" align="right" valign="top">byte &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#ae414e7b900d7e6a6408fcef1e680054b">mn::operator&gt;&gt;=</a> (byte &amp;b, IntegerType shift) noexcept</td></tr>
+<tr class="separator:ae414e7b900d7e6a6408fcef1e680054b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6481fc83a7d9113d0e30cad97bec1382"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
+<tr class="memitem:a6481fc83a7d9113d0e30cad97bec1382"><td class="memTemplItemLeft" align="right" valign="top">constexpr byte&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a6481fc83a7d9113d0e30cad97bec1382">mn::operator&lt;&lt;</a> (byte &amp;b, IntegerType shift) noexcept</td></tr>
+<tr class="separator:a6481fc83a7d9113d0e30cad97bec1382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852985c664e7aef7b126340e5e1ab67b"><td class="memTemplParams" colspan="2">template&lt;typename IntegerType &gt; </td></tr>
+<tr class="memitem:a852985c664e7aef7b126340e5e1ab67b"><td class="memTemplItemLeft" align="right" valign="top">constexpr byte&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a852985c664e7aef7b126340e5e1ab67b">mn::operator&gt;&gt;</a> (byte &amp;b, IntegerType shift) noexcept</td></tr>
+<tr class="separator:a852985c664e7aef7b126340e5e1ab67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a6686b329dfd82363aaabc0de18814"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a09a6686b329dfd82363aaabc0de18814">mn::operator==</a> (const byte l, const byte r) noexcept</td></tr>
+<tr class="separator:a09a6686b329dfd82363aaabc0de18814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c229415514252e87d2d923d8c0b37e"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a64c229415514252e87d2d923d8c0b37e">mn::operator!=</a> (const byte l, const byte r) noexcept</td></tr>
+<tr class="separator:a64c229415514252e87d2d923d8c0b37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eeaf11d4d2e69437aa81431b898530b"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a8eeaf11d4d2e69437aa81431b898530b">mn::operator&lt;</a> (const byte l, const byte r) noexcept</td></tr>
+<tr class="separator:a8eeaf11d4d2e69437aa81431b898530b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8258427951c5a649b32ee3c1433df9e5"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a8258427951c5a649b32ee3c1433df9e5">mn::operator&lt;=</a> (const byte l, const byte r) noexcept</td></tr>
+<tr class="separator:a8258427951c5a649b32ee3c1433df9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72ba6b7952d45715716d2ba92db2a0f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#af72ba6b7952d45715716d2ba92db2a0f">mn::operator&gt;</a> (const byte l, const byte r) noexcept</td></tr>
+<tr class="separator:af72ba6b7952d45715716d2ba92db2a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf42ccfd0c89436e1b28bfb4cd9953e6"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#aaf42ccfd0c89436e1b28bfb4cd9953e6">mn::operator&gt;=</a> (const byte l, const byte r) noexcept</td></tr>
+<tr class="separator:aaf42ccfd0c89436e1b28bfb4cd9953e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a076788a238f558ede10c50c41c3159"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a7a076788a238f558ede10c50c41c3159">mn::operator|=</a> (byte &amp;lhr, const byte rhr) noexcept</td></tr>
+<tr class="separator:a7a076788a238f558ede10c50c41c3159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af276ca2465dd952079ddd844bbab4b3f"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#af276ca2465dd952079ddd844bbab4b3f">mn::operator&amp;=</a> (byte &amp;lhr, const byte rhr) noexcept</td></tr>
+<tr class="separator:af276ca2465dd952079ddd844bbab4b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5379604e0050f1e618951cd9ae228fda"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a5379604e0050f1e618951cd9ae228fda">mn::operator^=</a> (byte &amp;lhr, const byte rhr) noexcept</td></tr>
+<tr class="separator:a5379604e0050f1e618951cd9ae228fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14e25f135b4f896aa2c74a00ed47299"><td class="memItemLeft" align="right" valign="top">constexpr byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ae14e25f135b4f896aa2c74a00ed47299">mn::operator|</a> (const byte &amp;lhr, const byte &amp;rhr) noexcept</td></tr>
+<tr class="separator:ae14e25f135b4f896aa2c74a00ed47299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92b425eacb31de12ad001e96dd079b6"><td class="memItemLeft" align="right" valign="top">constexpr byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#aa92b425eacb31de12ad001e96dd079b6">mn::operator^</a> (const byte &amp;lhr, const byte &amp;rhr) noexcept</td></tr>
+<tr class="separator:aa92b425eacb31de12ad001e96dd079b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa89c1a68b3364f18501e9668b7d2366"><td class="memItemLeft" align="right" valign="top">constexpr byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#afa89c1a68b3364f18501e9668b7d2366">mn::operator&amp;</a> (const byte &amp;lhr, const byte &amp;rhr) noexcept</td></tr>
+<tr class="separator:afa89c1a68b3364f18501e9668b7d2366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de03130d1384d5fcc5a48b4c1084007"><td class="memItemLeft" align="right" valign="top">constexpr byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a1de03130d1384d5fcc5a48b4c1084007">mn::operator~</a> (byte b) noexcept</td></tr>
+<tr class="separator:a1de03130d1384d5fcc5a48b4c1084007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:aed91d81f578ad896deff32eb546b18cf"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#aed91d81f578ad896deff32eb546b18cf">mn::default_alignment</a> = alignof(void*)</td></tr>
+<tr class="separator:aed91d81f578ad896deff32eb546b18cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75eeffc19cfdc305e116af71225626b0"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a75eeffc19cfdc305e116af71225626b0">mn::max_alignment</a> = alignof(max_align_t)</td></tr>
 <tr class="separator:a75eeffc19cfdc305e116af71225626b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc54a7625a54d3c63a30ad7203d534c"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#acbc54a7625a54d3c63a30ad7203d534c">mn::math::pi</a> = 3.14159265358979</td></tr>
+<tr class="separator:acbc54a7625a54d3c63a30ad7203d534c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e21429bc16b6c8d3f062d2543313184"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#a7e21429bc16b6c8d3f062d2543313184">mn::math::pi_reciprocal</a> = 0.31830988618379</td></tr>
+<tr class="separator:a7e21429bc16b6c8d3f062d2543313184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2becdd28c36fd3bff981af0ba5de3800"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#a2becdd28c36fd3bff981af0ba5de3800">mn::math::pi_squared</a> = 9.86960440108936</td></tr>
+<tr class="separator:a2becdd28c36fd3bff981af0ba5de3800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d23f9f128cb92bd99fba904d53b1ce1"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#a3d23f9f128cb92bd99fba904d53b1ce1">mn::math::e</a> = 2.71828182845905</td></tr>
+<tr class="separator:a3d23f9f128cb92bd99fba904d53b1ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f3b1b1e28f0c625e4ace9b1bfb568f"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#ae5f3b1b1e28f0c625e4ace9b1bfb568f">mn::math::e_reciprocal</a> = 0.36787944117144</td></tr>
+<tr class="separator:ae5f3b1b1e28f0c625e4ace9b1bfb568f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2f8653720517e56d203e3ef4cf8e54"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#aac2f8653720517e56d203e3ef4cf8e54">mn::math::e_squared</a> = 7.38905609893065</td></tr>
+<tr class="separator:aac2f8653720517e56d203e3ef4cf8e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f0dcca39ca7dc379e354ec5b110f4e"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#a64f0dcca39ca7dc379e354ec5b110f4e">mn::math::root2</a> = 1.41421356237310</td></tr>
+<tr class="separator:a64f0dcca39ca7dc379e354ec5b110f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2181dedc6c6f441086db27e65646265f"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#a2181dedc6c6f441086db27e65646265f">mn::math::root2_reciprocal</a> = 0.70710678118655</td></tr>
+<tr class="separator:a2181dedc6c6f441086db27e65646265f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5624e1465cba39f9c3064a4ee576a51"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#ac5624e1465cba39f9c3064a4ee576a51">mn::math::euler</a> = 0.57721566490153</td></tr>
+<tr class="separator:ac5624e1465cba39f9c3064a4ee576a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70a890fb8f86727512a2437363dc89a"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1math.html#ad70a890fb8f86727512a2437363dc89a">mn::math::golden_ratio</a> = 1.61803398874989</td></tr>
+<tr class="separator:ad70a890fb8f86727512a2437363dc89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). </p><dl class="section author"><dt>Author</dt><dd>Copyright (c) 2021 Amber-Sophia Schroeck </dd></dl>
+<dl class="section user"><dt>License</dt><dd>The Mini Thread Library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 3, or (at your option) any later version.</dd></dl>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
+</div><hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="classmn_1_1null__type" id="classmn_1_1null__type"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#classmn_1_1null__type">&#9670;&nbsp;</a></span>mn::null_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class mn::null_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div>
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="afb3ae12a9f431a9af9d958417d231571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb3ae12a9f431a9af9d958417d231571">&#9670;&nbsp;</a></span>BitMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BitMask</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(t(~t(0)) &gt;&gt; (<a class="el" href="mn__def_8hpp.html#a6ba1ede6ce131203d657d4afc0665f6a">BitsInType</a>(t) - (n)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the mask of type <code>t</code> with the lowest <code>n</code> bits set. </p>
+
+</div>
+</div>
+<a id="a6ba1ede6ce131203d657d4afc0665f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba1ede6ce131203d657d4afc0665f6a">&#9670;&nbsp;</a></span>BitsInType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BitsInType</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">t</td><td>)</td>
+          <td>&#160;&#160;&#160;(sizeof(t) * CHAR_BIT)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of bits in the given type. </p>
+
+</div>
+</div>
+<a id="a90a60b50653fa6351e01a86cce856a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a60b50653fa6351e01a86cce856a07">&#9670;&nbsp;</a></span>MNTHREAD_STATIC_CAST_BYTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MNTHREAD_STATIC_CAST_BYTE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">BYTE</td><td>)</td>
+          <td>&#160;&#160;&#160;static_cast&lt;unsigned char&gt;(BYTE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a276e8a32e0bbf024aadd9420b8f2d3b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276e8a32e0bbf024aadd9420b8f2d3b3">&#9670;&nbsp;</a></span>offsetof</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define offsetof</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TYPE, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">MEMBER&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;__builtin_offsetof (TYPE, MEMBER)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>

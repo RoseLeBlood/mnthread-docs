@@ -1,5 +1,6 @@
 var classmn_1_1pointer_1_1node__ptr =
 [
+    [ "element_type", "classmn_1_1pointer_1_1node__ptr.html#aaa5aec23c2a66017f7963af34fc53477", null ],
     [ "node_type", "classmn_1_1pointer_1_1node__ptr.html#a842a97d0f204101eb84f707accb00742", null ],
     [ "pointer", "classmn_1_1pointer_1_1node__ptr.html#aea5edc0022ffea17ad0529ba4ba5d558", null ],
     [ "reference", "classmn_1_1pointer_1_1node__ptr.html#a3894967addae6ad6cb098befc78bff35", null ],

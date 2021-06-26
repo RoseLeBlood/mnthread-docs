@@ -1,6 +1,7 @@
 var classmn_1_1pointer_1_1basic__auto__ptr =
 [
     [ "const_value_type", "classmn_1_1pointer_1_1basic__auto__ptr.html#a56795e1311815c63022aede9125d7c0a", null ],
+    [ "element_type", "classmn_1_1pointer_1_1basic__auto__ptr.html#aec7934ecc7334de8b6b0cbdc7c7ef9ad", null ],
     [ "pointer", "classmn_1_1pointer_1_1basic__auto__ptr.html#aa243b9d4eea16a290c700d4ce39d4b71", null ],
     [ "reference", "classmn_1_1pointer_1_1basic__auto__ptr.html#afa95247cae718c58fee27c665c72c2a4", null ],
     [ "self_type", "classmn_1_1pointer_1_1basic__auto__ptr.html#abaa933f92d6116e1abf75611b16f067d", null ],

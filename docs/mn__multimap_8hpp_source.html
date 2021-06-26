@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_multimap.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__multimap_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_multimap.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__multimap_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef __MINILIB_BASIC_MULTIMAP_H__</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define __MINILIB_BASIC_MULTIMAP_H__</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__array_8hpp.html">mn_array.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__vector_8hpp.html">mn_vector.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__pair_8hpp.html">mn_pair.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;../utils/mn_utils.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">namespace </span>container {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TKEY, <span class="keyword">typename</span> TVAL, <span class="keyword">class</span> TAllocator, TComp = mn::less&lt;TKEY&gt; &gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html">   40</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html">vector</a>&lt; pair&lt;TKEY, TVAL&gt;, TAllocator &gt; {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a280a9e7b576e8771fd5d0aba2e258202">   41</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html">base_type</a> = <a class="code" href="classmn_1_1container_1_1basic__vector.html">vector&lt;pair&lt;TKEY, TVAL&gt;</a>&gt;;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a2fa582903e3928e0ba939cf22407ebbd">   43</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2fa582903e3928e0ba939cf22407ebbd">key_type</a> = TKEY;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">   44</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a> = TVAL;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a2bf76a72374f77a9938ab08dcba9c430">   46</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2bf76a72374f77a9938ab08dcba9c430">key_reference</a> = TKEY&amp;;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">   47</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> = <span class="keyword">const</span> TKEY&amp;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a71129f4f955389c60abe0ca0ae86eb2e">   48</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a71129f4f955389c60abe0ca0ae86eb2e">value_reference</a> = TVAL&amp;;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#aa9c4356358bb62f6bbe0efaeb197adeb">   49</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#aa9c4356358bb62f6bbe0efaeb197adeb">value_const_reference</a> = <span class="keyword">const</span> TVAL&amp;;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#ac6e7fb34d41d947268b0d70853f0ba6d">   51</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html">self_type</a> = <a class="code" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap&lt;TKEY, TVAL, TAllocator, TComp&gt;</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#ad4a0457de6706d85e277ce19724a5f3c">   53</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#ad4a0457de6706d85e277ce19724a5f3c">iterator_category</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#acb4992fa1746de98d4d3490002d03fc1">base_type::iterator_category</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#aea8d9de0cd1b7be6c592434998b2c7e2">   54</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#a145699f830a17ce533b783e4ee416b7e">base_type::value_type</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a429e3ac3197bd1d13ce7bc0d8cca6c7e">   55</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a429e3ac3197bd1d13ce7bc0d8cca6c7e">pointer</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">base_type::pointer</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">   56</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">reference</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">base_type::reference</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a1c1a7da8697d381c324839730448075c">   57</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a1c1a7da8697d381c324839730448075c">const_reference</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#a20a1695a4764cfabcf121a6d7e390b3b">base_type::const_reference</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a8ab44f1aaec5c35d60fa01ed755c9e96">   58</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a8ab44f1aaec5c35d60fa01ed755c9e96">difference_type</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#af299839f48c6bdff9d15e386fcb67636">base_type::difference_type</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">   59</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">base_type::iterator</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">   60</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#a0d1108ea1ba598cbb169ec42742d2434">base_type::const_iterator</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">   61</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">base_type::allocator_type</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">   62</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> = <span class="keyword">typename</span>  <a class="code" href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">base_type::size_type</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#ac19b9058d9f3541d58b639f1ed0dc1db">   64</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="structmn_1_1container_1_1basic__pair.html">const_range_t</a> = <a class="code" href="structmn_1_1container_1_1basic__pair.html">pair&lt;const_iterator,const_iterator&gt;</a>   ;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a828b4e7a9aef63b62d3eb3ef9613317e">   65</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="structmn_1_1container_1_1basic__pair.html">range_t</a> = <a class="code" href="structmn_1_1container_1_1basic__pair.html">pair&lt;iterator,iterator&gt;</a> ;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a35ee46a141591912861ffceddb2fc9a2">   66</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a35ee46a141591912861ffceddb2fc9a2">key_compare</a> = TComp;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a16bce2218730260a0a75a642185f7ba1">   68</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__initializer__list.html">initlist_t</a> = <a class="code" href="classmn_1_1basic__initializer__list.html">mn::initializer_list&lt;value_type&gt;</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#ab7feb5b98f38aa65961fe5eaa69c1f73">   70</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#ab7feb5b98f38aa65961fe5eaa69c1f73">basic_multimap</a> (<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>&amp; allocator = <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>())</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__vector.html">base_type</a>(allocator) {}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a319a9597a909d93fa8832a2772be7fcf">   73</a></span>&#160;            <span class="keyword">explicit</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a319a9597a909d93fa8832a2772be7fcf">basic_multimap</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">size_type</a> initialSize, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>&amp; allocator = <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>())</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__vector.html">base_type</a> (initialSize, allocator) {}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#ad03b634d548dd0afb5f47680dfe27d5a">   76</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#ad03b634d548dd0afb5f47680dfe27d5a">basic_multimap</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> first, <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> last,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                            <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>&amp; allocator = <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>())</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__vector.html">base_type</a>(first, last, allocator) { }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a59a7893f927b47a97cdcbb01a3c16352">   80</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a59a7893f927b47a97cdcbb01a3c16352">basic_multimap</a> (<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html">self_type</a>&amp; rhs, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>&amp; allocator = <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">allocator_type</a>())</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__vector.html">base_type</a> (rhs, allocator) {}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#aaff15e8647a0f7b056c6b0495909cd26">   83</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#aaff15e8647a0f7b056c6b0495909cd26">basic_multimap</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap</a>&amp;&amp; v)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__vector.html">base_type</a> (<a class="code" href="namespacemn.html">mn</a>::<a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">move</a>(v)) {}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#a87524cb060d18f41389b55ed3bcd7206">base_type::size</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#a1a4e2e797c3f6e585cfab2f16e532a22">base_type::begin</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#a2b9192cb872665220f6b94c581da781f">base_type::end</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#ae288c6688c5d6bc272772b76834b9cec">base_type::empty</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#a2e620fb1722f8f6432035121f69caea5">base_type::capacity</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#a079d4a52593c43b15f8ca529ee481408">base_type::front</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#a3141f4ab248c1441a7a51e6ba7d7864c">base_type::cfront</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#ac8862c1a2fb706a2bbe94069e0d93aee">base_type::back</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#a52655edd1dba613c391d45ea6eab0f32">base_type::cback</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#aea4878a67df50eb891bd8604cbc6fdac">base_type::clear</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#afa81a4142daf20dfa9126c16ef9b6a9f">base_type::erase</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#ac0ebb131b1a7408cbd7351c471fd5b36">base_type::insert</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#ad6a8357a78a551636498a8296eff1025">base_type::push_back</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keyword">using</span> base_type::operator[];</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">using</span> base_type::operator= ;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keyword">using</span> <a class="code" href="structmn_1_1container_1_1basic__vector__storage.html#ab4eb011a45d624a96d6cad67d5125899">base_type::swap</a> ;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__vector.html#a70f1125ee48feb31c09c283fbe5d1533">base_type::at</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a59caeea8dfd8c2d80dbb790582a57702">  104</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a59caeea8dfd8c2d80dbb790582a57702">assign</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> i1, <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> i2) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__multimap.html#aea4878a67df50eb891bd8604cbc6fdac">clear</a>(); <a class="code" href="classmn_1_1container_1_1basic__multimap.html#ac0ebb131b1a7408cbd7351c471fd5b36">insert</a> (i1, i2);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a91907ebe58bfc384f6f0f43477337f8a">  107</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a91907ebe58bfc384f6f0f43477337f8a">erase</a> (<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html">self_type</a>&amp; k) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__multimap.html#afa81a4142daf20dfa9126c16ef9b6a9f">erase</a> (<span class="keyword">const_cast&lt;</span><a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a><span class="keyword">&gt;</span>(k), <span class="keyword">const_cast&lt;</span><a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a><span class="keyword">&gt;</span>(k));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#abbaf2e2b5ad3583cdd083fa006fef536">  111</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abbaf2e2b5ad3583cdd083fa006fef536">lower_bound</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespacemn.html#adf27772add392af6dd607d36a73d8d26">mn::lower_bound</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a1a4e2e797c3f6e585cfab2f16e532a22">begin</a>(), <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a>(), k, value_key_compare());</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#acbcc953be483c8e13cd086a6d06388cd">  115</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#acbcc953be483c8e13cd086a6d06388cd">lower_bound</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespacemn.html#adf27772add392af6dd607d36a73d8d26">mn::lower_bound</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a1a4e2e797c3f6e585cfab2f16e532a22">begin</a>(), <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a>(), k, value_key_compare());</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#afe47cd515775dbd83a08521cc95e5eca">  119</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#afe47cd515775dbd83a08521cc95e5eca">upper_bound</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k)<span class="keyword"> const    </span>{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespacemn.html#a9257453edaf1a0aa5fca75d092f7a4e8">mn::upper_bound</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a1a4e2e797c3f6e585cfab2f16e532a22">begin</a>(), <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a>(), k, value_key_compare());</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a66c60d7709cdc5db671751004123a2ad">  122</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a66c60d7709cdc5db671751004123a2ad">upper_bound</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespacemn.html#a9257453edaf1a0aa5fca75d092f7a4e8">mn::upper_bound</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a1a4e2e797c3f6e585cfab2f16e532a22">begin</a>(), <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a>(), k, value_key_compare());</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#aa752a83cee520af67ac56ce229f061df">  126</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a>  <a class="code" href="classmn_1_1container_1_1basic__multimap.html#aa752a83cee520af67ac56ce229f061df">find</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                 <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> i = <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abbaf2e2b5ad3583cdd083fa006fef536">lower_bound</a> (k);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                 <span class="keywordflow">return</span> (i &lt; <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a>() &amp;&amp; TComp()(k, i-&gt;first)) ? <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a>() : i;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a8a7f0fef992305210b019e00a465e83c">  130</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a8a7f0fef992305210b019e00a465e83c">find_value</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#aa9c4356358bb62f6bbe0efaeb197adeb">value_const_reference</a> v, <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> first, <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> last)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keywordflow">if</span> (!first) first = <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a1a4e2e797c3f6e585cfab2f16e532a22">begin</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keywordflow">if</span> (!last) last = <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a>();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="keywordflow">for</span> (; first != last &amp;&amp; first-&gt;second != v; ++first) {}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">return</span> first;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            }</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a36e47082bfe142cb18379e5d2ff40cb3">  136</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a71129f4f955389c60abe0ca0ae86eb2e">value_reference</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a36e47082bfe142cb18379e5d2ff40cb3">operator[] </a>(<a class="code" href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">key_const_reference</a> k) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> _ip = <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abbaf2e2b5ad3583cdd083fa006fef536">lower_bound</a> (k);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">if</span> (ip == <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">end</a>() || TComp()(k, _ip-&gt;first) )</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    ip = <a class="code" href="classmn_1_1container_1_1basic__vector.html#ac0ebb131b1a7408cbd7351c471fd5b36">base_type::insert</a> (ip, make_pair&lt;TKEY, TVAL&gt; (k, TVAL()));</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keywordflow">return</span> ip-&gt;second;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a8818218a1aea60f3f6b3cb9db3a7ccd7">  145</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a8818218a1aea60f3f6b3cb9db3a7ccd7">emplace</a> (Args&amp;&amp;... args) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#ac0ebb131b1a7408cbd7351c471fd5b36">insert</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a>(mn::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#a6769eb70ec14ad07e2c1ffefce832d0a">  150</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a6769eb70ec14ad07e2c1ffefce832d0a">emplace_hint</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">const_iterator</a> h, Args&amp;&amp;... args) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#ac0ebb131b1a7408cbd7351c471fd5b36">insert</a> (h, <a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a>(mn::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__multimap.html#abcbccc9f8b247439d7c7094feb0b7e10">  155</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#abcbccc9f8b247439d7c7094feb0b7e10">emplace_back</a> (Args&amp;&amp;... args) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html#ac0ebb131b1a7408cbd7351c471fd5b36">insert</a> (<a class="code" href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">value_type</a>(mn::forward&lt;Args&gt;(args)...));</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        };</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TKEY, <span class="keyword">typename</span> TVAL, <span class="keyword">class</span> TAllocator &gt;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a6791a012b15a46a1b29706bf0f52bbf0">  161</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__multimap.html">multimap</a> = <a class="code" href="classmn_1_1container_1_1basic__multimap.html">basic_multimap&lt;TKEY, TVAL, TAllocator&gt;</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_BASIC_MULTIMAP_H__</span></div>
+<div class="ttc" id="aclassmn_1_1basic__initializer__list_html"><div class="ttname"><a href="classmn_1_1basic__initializer__list.html">mn::basic_initializer_list</a></div><div class="ttdef"><b>Definition:</b> mn_initializer_list.hpp:26</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html">mn::container::basic_multimap</a></div><div class="ttdoc">A sorted associative container that may container multiple entries for each key.</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:40</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a1a4e2e797c3f6e585cfab2f16e532a22"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a1a4e2e797c3f6e585cfab2f16e532a22">mn::container::basic_multimap::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:173</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a1c1a7da8697d381c324839730448075c"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a1c1a7da8697d381c324839730448075c">mn::container::basic_multimap::const_reference</a></div><div class="ttdeci">typename base_type::const_reference const_reference</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:57</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a2b9192cb872665220f6b94c581da781f"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a2b9192cb872665220f6b94c581da781f">mn::container::basic_multimap::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:174</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a2bf76a72374f77a9938ab08dcba9c430"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a2bf76a72374f77a9938ab08dcba9c430">mn::container::basic_multimap::key_reference</a></div><div class="ttdeci">TKEY &amp; key_reference</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:46</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a2fa582903e3928e0ba939cf22407ebbd"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a2fa582903e3928e0ba939cf22407ebbd">mn::container::basic_multimap::key_type</a></div><div class="ttdeci">TKEY key_type</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:43</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a319a9597a909d93fa8832a2772be7fcf"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a319a9597a909d93fa8832a2772be7fcf">mn::container::basic_multimap::basic_multimap</a></div><div class="ttdeci">basic_multimap(size_type initialSize, const allocator_type &amp;allocator=allocator_type())</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:73</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a351ca97178733c1ccff03f8dd54a0bb4"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a351ca97178733c1ccff03f8dd54a0bb4">mn::container::basic_multimap::key_const_reference</a></div><div class="ttdeci">const TKEY &amp; key_const_reference</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:47</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a35ee46a141591912861ffceddb2fc9a2"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a35ee46a141591912861ffceddb2fc9a2">mn::container::basic_multimap::key_compare</a></div><div class="ttdeci">TComp key_compare</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:66</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a36e47082bfe142cb18379e5d2ff40cb3"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a36e47082bfe142cb18379e5d2ff40cb3">mn::container::basic_multimap::operator[]</a></div><div class="ttdeci">value_reference operator[](key_const_reference k)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:136</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a429e3ac3197bd1d13ce7bc0d8cca6c7e"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a429e3ac3197bd1d13ce7bc0d8cca6c7e">mn::container::basic_multimap::pointer</a></div><div class="ttdeci">typename base_type::pointer pointer</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:55</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a59a7893f927b47a97cdcbb01a3c16352"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a59a7893f927b47a97cdcbb01a3c16352">mn::container::basic_multimap::basic_multimap</a></div><div class="ttdeci">basic_multimap(const self_type &amp;rhs, const allocator_type &amp;allocator=allocator_type())</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:80</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a59caeea8dfd8c2d80dbb790582a57702"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a59caeea8dfd8c2d80dbb790582a57702">mn::container::basic_multimap::assign</a></div><div class="ttdeci">void assign(const_iterator i1, const_iterator i2)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:104</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a66c60d7709cdc5db671751004123a2ad"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a66c60d7709cdc5db671751004123a2ad">mn::container::basic_multimap::upper_bound</a></div><div class="ttdeci">iterator upper_bound(key_const_reference k)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:122</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a6769eb70ec14ad07e2c1ffefce832d0a"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a6769eb70ec14ad07e2c1ffefce832d0a">mn::container::basic_multimap::emplace_hint</a></div><div class="ttdeci">iterator emplace_hint(const_iterator h, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:150</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a71129f4f955389c60abe0ca0ae86eb2e"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a71129f4f955389c60abe0ca0ae86eb2e">mn::container::basic_multimap::value_reference</a></div><div class="ttdeci">TVAL &amp; value_reference</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:48</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a8818218a1aea60f3f6b3cb9db3a7ccd7"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a8818218a1aea60f3f6b3cb9db3a7ccd7">mn::container::basic_multimap::emplace</a></div><div class="ttdeci">iterator emplace(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:145</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a8a7f0fef992305210b019e00a465e83c"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a8a7f0fef992305210b019e00a465e83c">mn::container::basic_multimap::find_value</a></div><div class="ttdeci">const_iterator find_value(value_const_reference v, const_iterator first, const_iterator last) const</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:130</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a8ab44f1aaec5c35d60fa01ed755c9e96"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a8ab44f1aaec5c35d60fa01ed755c9e96">mn::container::basic_multimap::difference_type</a></div><div class="ttdeci">typename base_type::difference_type difference_type</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:58</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a91907ebe58bfc384f6f0f43477337f8a"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a91907ebe58bfc384f6f0f43477337f8a">mn::container::basic_multimap::erase</a></div><div class="ttdeci">void erase(const self_type &amp;k)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:107</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a98ac717fd6c50a9b6958f0bb8680cfff"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a98ac717fd6c50a9b6958f0bb8680cfff">mn::container::basic_multimap::iterator</a></div><div class="ttdeci">typename base_type::iterator iterator</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:59</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a9a3b3d58f26d90e7b0f2149a95d51a1b"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a9a3b3d58f26d90e7b0f2149a95d51a1b">mn::container::basic_multimap::size_type</a></div><div class="ttdeci">typename base_type::size_type size_type</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:62</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_a9dc34a9355948d83969a39e9c3b46081"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#a9dc34a9355948d83969a39e9c3b46081">mn::container::basic_multimap::reference</a></div><div class="ttdeci">typename base_type::reference reference</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:56</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_aa752a83cee520af67ac56ce229f061df"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#aa752a83cee520af67ac56ce229f061df">mn::container::basic_multimap::find</a></div><div class="ttdeci">const_iterator find(key_const_reference k) const</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:126</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_aa9c4356358bb62f6bbe0efaeb197adeb"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#aa9c4356358bb62f6bbe0efaeb197adeb">mn::container::basic_multimap::value_const_reference</a></div><div class="ttdeci">const TVAL &amp; value_const_reference</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:49</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_aaff15e8647a0f7b056c6b0495909cd26"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#aaff15e8647a0f7b056c6b0495909cd26">mn::container::basic_multimap::basic_multimap</a></div><div class="ttdeci">basic_multimap(basic_multimap &amp;&amp;v)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:83</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_ab7feb5b98f38aa65961fe5eaa69c1f73"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#ab7feb5b98f38aa65961fe5eaa69c1f73">mn::container::basic_multimap::basic_multimap</a></div><div class="ttdeci">basic_multimap(const allocator_type &amp;allocator=allocator_type())</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:70</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_abbaf2e2b5ad3583cdd083fa006fef536"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#abbaf2e2b5ad3583cdd083fa006fef536">mn::container::basic_multimap::lower_bound</a></div><div class="ttdeci">const_iterator lower_bound(key_const_reference k) const</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:111</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_abcbccc9f8b247439d7c7094feb0b7e10"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#abcbccc9f8b247439d7c7094feb0b7e10">mn::container::basic_multimap::emplace_back</a></div><div class="ttdeci">iterator emplace_back(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:155</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_abd61b670c80667bd0d107e19e88b286b"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#abd61b670c80667bd0d107e19e88b286b">mn::container::basic_multimap::const_iterator</a></div><div class="ttdeci">typename base_type::const_iterator const_iterator</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:60</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_ac0ebb131b1a7408cbd7351c471fd5b36"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#ac0ebb131b1a7408cbd7351c471fd5b36">mn::container::basic_multimap::insert</a></div><div class="ttdeci">void insert(size_type index, size_type n, const reference val)</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:228</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_acbcc953be483c8e13cd086a6d06388cd"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#acbcc953be483c8e13cd086a6d06388cd">mn::container::basic_multimap::lower_bound</a></div><div class="ttdeci">iterator lower_bound(key_const_reference k)</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:115</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_ad03b634d548dd0afb5f47680dfe27d5a"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#ad03b634d548dd0afb5f47680dfe27d5a">mn::container::basic_multimap::basic_multimap</a></div><div class="ttdeci">basic_multimap(const_iterator first, const_iterator last, const allocator_type &amp;allocator=allocator_type())</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:76</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_ad4a0457de6706d85e277ce19724a5f3c"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#ad4a0457de6706d85e277ce19724a5f3c">mn::container::basic_multimap::iterator_category</a></div><div class="ttdeci">typename base_type::iterator_category iterator_category</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:53</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_aea4878a67df50eb891bd8604cbc6fdac"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#aea4878a67df50eb891bd8604cbc6fdac">mn::container::basic_multimap::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:343</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_af0364f057595e24554b3388527c1338e"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#af0364f057595e24554b3388527c1338e">mn::container::basic_multimap::value_type</a></div><div class="ttdeci">TVAL value_type</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:44</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_af0b8061c564652f8e16613d6a33ab623"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#af0b8061c564652f8e16613d6a33ab623">mn::container::basic_multimap::allocator_type</a></div><div class="ttdeci">typename base_type::allocator_type allocator_type</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:61</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_afa81a4142daf20dfa9126c16ef9b6a9f"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#afa81a4142daf20dfa9126c16ef9b6a9f">mn::container::basic_multimap::erase</a></div><div class="ttdeci">iterator erase(iterator it)</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:306</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__multimap_html_afe47cd515775dbd83a08521cc95e5eca"><div class="ttname"><a href="classmn_1_1container_1_1basic__multimap.html#afe47cd515775dbd83a08521cc95e5eca">mn::container::basic_multimap::upper_bound</a></div><div class="ttdeci">const_iterator upper_bound(key_const_reference k) const</div><div class="ttdef"><b>Definition:</b> mn_multimap.hpp:119</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a></div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:117</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a079d4a52593c43b15f8ca529ee481408"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a079d4a52593c43b15f8ca529ee481408">mn::container::basic_vector::front</a></div><div class="ttdeci">reference front()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:183</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a0d1108ea1ba598cbb169ec42742d2434"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a0d1108ea1ba598cbb169ec42742d2434">mn::container::basic_vector::const_iterator</a></div><div class="ttdeci">const pointer const_iterator</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:128</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a145699f830a17ce533b783e4ee416b7e"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a145699f830a17ce533b783e4ee416b7e">mn::container::basic_vector::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:121</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a1a4e2e797c3f6e585cfab2f16e532a22"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a1a4e2e797c3f6e585cfab2f16e532a22">mn::container::basic_vector::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:173</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a20a1695a4764cfabcf121a6d7e390b3b"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a20a1695a4764cfabcf121a6d7e390b3b">mn::container::basic_vector::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:125</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a2b9192cb872665220f6b94c581da781f"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a2b9192cb872665220f6b94c581da781f">mn::container::basic_vector::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:174</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a2e620fb1722f8f6432035121f69caea5"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a2e620fb1722f8f6432035121f69caea5">mn::container::basic_vector::capacity</a></div><div class="ttdeci">size_type capacity()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:179</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a3141f4ab248c1441a7a51e6ba7d7864c"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a3141f4ab248c1441a7a51e6ba7d7864c">mn::container::basic_vector::cfront</a></div><div class="ttdeci">const reference cfront()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:184</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a3fab7c40a8b2367e315655bfd29534dc"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a3fab7c40a8b2367e315655bfd29534dc">mn::container::basic_vector::allocator_type</a></div><div class="ttdeci">TAllocator allocator_type</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:129</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a52655edd1dba613c391d45ea6eab0f32"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a52655edd1dba613c391d45ea6eab0f32">mn::container::basic_vector::cback</a></div><div class="ttdeci">const reference cback()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:186</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a70f1125ee48feb31c09c283fbe5d1533"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a70f1125ee48feb31c09c283fbe5d1533">mn::container::basic_vector::at</a></div><div class="ttdeci">reference at(size_type i)</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:188</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a87524cb060d18f41389b55ed3bcd7206"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a87524cb060d18f41389b55ed3bcd7206">mn::container::basic_vector::size</a></div><div class="ttdeci">size_type size() const</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:176</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a8fb24181ad8f46cd0975fa83ed4356f8"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a8fb24181ad8f46cd0975fa83ed4356f8">mn::container::basic_vector::size_type</a></div><div class="ttdeci">mn::size_t size_type</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:130</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_a93bbb26c12619830c977f195136533a6"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#a93bbb26c12619830c977f195136533a6">mn::container::basic_vector::iterator</a></div><div class="ttdeci">pointer iterator</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:127</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_ac0ebb131b1a7408cbd7351c471fd5b36"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#ac0ebb131b1a7408cbd7351c471fd5b36">mn::container::basic_vector::insert</a></div><div class="ttdeci">void insert(size_type index, size_type n, const reference val)</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:228</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_ac8862c1a2fb706a2bbe94069e0d93aee"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#ac8862c1a2fb706a2bbe94069e0d93aee">mn::container::basic_vector::back</a></div><div class="ttdeci">reference back()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:185</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_acb4992fa1746de98d4d3490002d03fc1"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#acb4992fa1746de98d4d3490002d03fc1">mn::container::basic_vector::iterator_category</a></div><div class="ttdeci">random_access_iterator_tag iterator_category</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:119</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_ad0f4c01b2736ea095594e976a968bcbf"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#ad0f4c01b2736ea095594e976a968bcbf">mn::container::basic_vector::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:122</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_ad6a8357a78a551636498a8296eff1025"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#ad6a8357a78a551636498a8296eff1025">mn::container::basic_vector::push_back</a></div><div class="ttdeci">void push_back()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:202</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_ae288c6688c5d6bc272772b76834b9cec"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#ae288c6688c5d6bc272772b76834b9cec">mn::container::basic_vector::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:177</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_ae3e29661897e106e60cf75040087197a"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#ae3e29661897e106e60cf75040087197a">mn::container::basic_vector::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:123</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_aea4878a67df50eb891bd8604cbc6fdac"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#aea4878a67df50eb891bd8604cbc6fdac">mn::container::basic_vector::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:343</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_af299839f48c6bdff9d15e386fcb67636"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#af299839f48c6bdff9d15e386fcb67636">mn::container::basic_vector::difference_type</a></div><div class="ttdeci">mn::ptrdiff_t difference_type</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:126</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html_afa81a4142daf20dfa9126c16ef9b6a9f"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html#afa81a4142daf20dfa9126c16ef9b6a9f">mn::container::basic_vector::erase</a></div><div class="ttdeci">iterator erase(iterator it)</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:306</div></div>
+<div class="ttc" id="amn__array_8hpp_html"><div class="ttname"><a href="mn__array_8hpp.html">mn_array.hpp</a></div><div class="ttdoc">Class for a dynamic array. This file is part of the Mini Thread Library (https://github....</div></div>
+<div class="ttc" id="amn__pair_8hpp_html"><div class="ttname"><a href="mn__pair_8hpp.html">mn_pair.hpp</a></div></div>
+<div class="ttc" id="amn__vector_8hpp_html"><div class="ttname"><a href="mn__vector_8hpp.html">mn_vector.hpp</a></div><div class="ttdoc">Basic vector container This file is part of the Mini Thread Library (https://github....</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a9257453edaf1a0aa5fca75d092f7a4e8"><div class="ttname"><a href="namespacemn.html#a9257453edaf1a0aa5fca75d092f7a4e8">mn::upper_bound</a></div><div class="ttdeci">constexpr TIter upper_bound(TIter first, TIter last, const TPred &amp;value)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:191</div></div>
+<div class="ttc" id="anamespacemn_html_adf27772add392af6dd607d36a73d8d26"><div class="ttname"><a href="namespacemn.html#adf27772add392af6dd607d36a73d8d26">mn::lower_bound</a></div><div class="ttdeci">constexpr TIter lower_bound(TIter first, TIter last, const TPred &amp;value)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:160</div></div>
+<div class="ttc" id="anamespacemn_html_ae37469aa8cfbdec2289a0c3879decbdd"><div class="ttname"><a href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a></div><div class="ttdeci">void move(const T *src, const T *last, T *dest)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:100</div></div>
+<div class="ttc" id="astructmn_1_1container_1_1basic__pair_html"><div class="ttname"><a href="structmn_1_1container_1_1basic__pair.html">mn::container::basic_pair</a></div><div class="ttdef"><b>Definition:</b> mn_pair.hpp:28</div></div>
+<div class="ttc" id="astructmn_1_1container_1_1basic__vector__storage_html_ab4eb011a45d624a96d6cad67d5125899"><div class="ttname"><a href="structmn_1_1container_1_1basic__vector__storage.html#ab4eb011a45d624a96d6cad67d5125899">mn::container::basic_vector_storage&lt; T, TAllocator &gt;::swap</a></div><div class="ttdeci">void swap(self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:103</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

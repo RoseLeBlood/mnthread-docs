@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_hash.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__hash_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_hash.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__hash_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef __MINILIB_BASIC_HASH_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define __MINILIB_BASIC_HASH_H__</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__def_8hpp.html">mn_def.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">   30</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> = <a class="code" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacemn.html#a9e7063e060572418dd93617ea3c13694">   36</a></span>&#160;    <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="namespacemn.html#a9e7063e060572418dd93617ea3c13694">extract_int_key_value</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; t) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a>)t;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">namespace </span>internal {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacemn_1_1internal.html#aa1e601fa9b6168881021109450f04912">   47</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="namespacemn_1_1internal.html#aa1e601fa9b6168881021109450f04912">rjenkins_hash</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; t) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> _hash = <a class="code" href="namespacemn.html#a9e7063e060572418dd93617ea3c13694">extract_int_key_value</a>(t);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            _hash = (_hash + 0x7ed55d16) + (_hash &lt;&lt; 12);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            _hash = (_hash ^ 0xc761c23c) ^ (_hash &gt;&gt; 19);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            _hash = (_hash + 0x165667b1) + (_hash &lt;&lt; 5);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            _hash = (_hash + 0xd3a2646c) ^ (_hash &lt;&lt; 9);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            _hash = (_hash + 0xfd7046c5) + (_hash &lt;&lt; 3);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            _hash = (_hash ^ 0xb55a4f09) ^ (_hash &gt;&gt; 16);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(_hash);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacemn_1_1internal.html#a4bd9d53268edd3e87ded177f6d961ff7">   59</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="namespacemn_1_1internal.html#a4bd9d53268edd3e87ded177f6d961ff7">rjenkins_hash_string</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* strValue) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> _iRet = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">while</span>(*strValue) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                _iRet += rjenkins_hash&lt;char&gt;(*strValue);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                ++strValue;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(_iRet);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structmn_1_1hash.html">   72</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">   73</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator()</a>(<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; t) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacemn_1_1internal.html#aa1e601fa9b6168881021109450f04912">internal::rjenkins_hash</a>(t);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01T_01_5_01_4.html">   79</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*&gt;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01T_01_5_01_4.html#a7bf9b4aa26b0d8d05a99a7ffe40499d6">   80</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> operator () (<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>* pPtr) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            assert(pPtr);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keyword">auto</span> _value = *pPtr;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacemn_1_1internal.html#aa1e601fa9b6168881021109450f04912">internal::rjenkins_hash</a>(_value);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    };</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01char_01_5_01_4.html">   88</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;char*&gt;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01char_01_5_01_4.html#a7009579376a1dbb4c22864156650a146">   89</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash_3_01char_01_5_01_4.html#a7009579376a1dbb4c22864156650a146">operator()</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* t) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacemn_1_1internal.html#a4bd9d53268edd3e87ded177f6d961ff7">internal::rjenkins_hash_string</a>(t);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    };</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01const_01char_01_5_01_4.html">   95</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;const char*&gt;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01const_01char_01_5_01_4.html#aba3e763b60e8aef0396ba51e104fcff6">   96</a></span>&#160;        <span class="keyword">const</span> <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash_3_01const_01char_01_5_01_4.html#aba3e763b60e8aef0396ba51e104fcff6">operator()</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* t) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacemn_1_1internal.html#a4bd9d53268edd3e87ded177f6d961ff7">internal::rjenkins_hash_string</a>(t);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    };</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01int8__t_01_4.html">  102</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;int8_t&gt;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01int8__t_01_4.html#a81e85f21234ba9b2ce9308ae2d976758">  103</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator () </a>(int8_t n) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(n) * <a class="code" href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01uint8__t_01_4.html">  110</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;uint8_t&gt;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01uint8__t_01_4.html#a575f9ab93edf191626c957a40e093b1a">  111</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator () </a>(uint8_t n) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(n) * <a class="code" href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01int16__t_01_4.html">  118</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;int16_t&gt;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01int16__t_01_4.html#afd1afbf6761c1b782bd2ebc7d3fe8f9b">  119</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator () </a>(int16_t n) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(n) * <a class="code" href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    };</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01uint16__t_01_4.html">  125</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;uint16_t&gt;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01uint16__t_01_4.html#a2b83b6c43caedb5f822ae5c26de7bced">  126</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator () </a>(uint16_t n) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(n) * <a class="code" href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    };</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01int32__t_01_4.html">  132</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;int32_t&gt;{</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01int32__t_01_4.html#afc8c3a0298d4bc87a09327ad7624faac">  133</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator () </a>(int32_t n) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(n) * <a class="code" href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    };</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01uint32__t_01_4.html">  139</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;uint32_t&gt;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01uint32__t_01_4.html#a1de28db7b12c5d0b3038f1cb6147ff39">  140</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator () </a>(uint32_t n) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(n) * <a class="code" href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    };</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01int64__t_01_4.html">  147</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;int64_t&gt;{</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01int64__t_01_4.html#a6569554c14d021585d6cd5468629da1e">  148</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator () </a>(int64_t n) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(n) * <a class="code" href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    };</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01uint64__t_01_4.html">  155</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash.html">hash</a>&lt;uint64_t&gt;{</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="structmn_1_1hash_3_01uint64__t_01_4.html#ae088a33ece95760248ea7124d6ecf05b">  156</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator () </a>(<span class="keyword">const</span> uint64_t n) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a><span class="keyword">&gt;</span>(n) * <a class="code" href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    };</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="structmn_1_1hash__function.html">  162</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash__function.html">hash_function</a> {</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="structmn_1_1hash__function.html#a8ffc79a7d56d3c16665d2da42c60bc21">  163</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> <a class="code" href="structmn_1_1hash__function.html#a8ffc79a7d56d3c16665d2da42c60bc21">operator () </a>(<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> key, <span class="keywordtype">size_t</span> maxValue) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="structmn_1_1hash.html">mn::hash&lt;T&gt;</a>{}(key) % maxValue;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    };</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="structmn_1_1hash__function_3_01const_01char_01_5_01_4.html">  170</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1hash__function.html">hash_function</a>&lt;const char*&gt; {</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="structmn_1_1hash__function_3_01const_01char_01_5_01_4.html#a3301ab941aea36a22ba8496da3920e85">  171</a></span>&#160;        <a class="code" href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">result_type</a> operator () (<span class="keyword">const</span> <span class="keywordtype">char</span>* key, <span class="keywordtype">size_t</span> maxValue) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="structmn_1_1hash_3_01const_01char_01_5_01_4.html">mn::hash&lt;const char*&gt;</a>{}(key) % maxValue;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    };</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_BASIC_HASH_H__</span></div>
+<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="ttc" id="amn__config_8hpp_html_a1c5cc089d38b34a2bb212392bd3f170f"><div class="ttname"><a href="mn__config_8hpp.html#a1c5cc089d38b34a2bb212392bd3f170f">MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</a></div><div class="ttdeci">#define MN_THREAD_CONFIG_BASIC_HASHMUL_VAL</div><div class="ttdoc">Basic value for struct::hash as basic hash calculate.</div><div class="ttdef"><b>Definition:</b> mn_config.hpp:154</div></div>
+<div class="ttc" id="amn__def_8hpp_html"><div class="ttname"><a href="mn__def_8hpp.html">mn_def.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_1_1internal_html_a4bd9d53268edd3e87ded177f6d961ff7"><div class="ttname"><a href="namespacemn_1_1internal.html#a4bd9d53268edd3e87ded177f6d961ff7">mn::internal::rjenkins_hash_string</a></div><div class="ttdeci">result_type rjenkins_hash_string(const char *strValue)</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:59</div></div>
+<div class="ttc" id="anamespacemn_1_1internal_html_aa1e601fa9b6168881021109450f04912"><div class="ttname"><a href="namespacemn_1_1internal.html#aa1e601fa9b6168881021109450f04912">mn::internal::rjenkins_hash</a></div><div class="ttdeci">result_type rjenkins_hash(const T &amp;t)</div><div class="ttdoc">Implementation of hasher. Works for keys that can be converted to 32-bit integer with extract_int_key...</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:47</div></div>
+<div class="ttc" id="anamespacemn_1_1memory_1_1detail_html_a3179d74d784513b556ce52d25fc357e7"><div class="ttname"><a href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">mn::memory::detail::T</a></div><div class="ttdeci">struct mn::memory::detail::ptr_difference T</div><div class="ttdef"><b>Definition:</b> mn_atomic_singleton.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a9e7063e060572418dd93617ea3c13694"><div class="ttname"><a href="namespacemn.html#a9e7063e060572418dd93617ea3c13694">mn::extract_int_key_value</a></div><div class="ttdeci">result_type extract_int_key_value(const T &amp;t)</div><div class="ttdoc">Default implementations, just casts to hash_value.</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:36</div></div>
+<div class="ttc" id="anamespacemn_html_ac24915e67d2f3649db1f5b78db118da2"><div class="ttname"><a href="namespacemn.html#ac24915e67d2f3649db1f5b78db118da2">mn::result_type</a></div><div class="ttdeci">mn::size_t result_type</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:30</div></div>
+<div class="ttc" id="anamespacemn_html_af487f8a5d975f2b50b68065096c732ed"><div class="ttname"><a href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></div><div class="ttdeci">MN_THREAD_CONFIG_SIZE_TYPE size_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:46</div></div>
+<div class="ttc" id="astructmn_1_1hash_3_01char_01_5_01_4_html_a7009579376a1dbb4c22864156650a146"><div class="ttname"><a href="structmn_1_1hash_3_01char_01_5_01_4.html#a7009579376a1dbb4c22864156650a146">mn::hash&lt; char * &gt;::operator()</a></div><div class="ttdeci">const result_type operator()(const char *t) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:89</div></div>
+<div class="ttc" id="astructmn_1_1hash_3_01const_01char_01_5_01_4_html"><div class="ttname"><a href="structmn_1_1hash_3_01const_01char_01_5_01_4.html">mn::hash&lt; const char * &gt;</a></div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:95</div></div>
+<div class="ttc" id="astructmn_1_1hash_3_01const_01char_01_5_01_4_html_aba3e763b60e8aef0396ba51e104fcff6"><div class="ttname"><a href="structmn_1_1hash_3_01const_01char_01_5_01_4.html#aba3e763b60e8aef0396ba51e104fcff6">mn::hash&lt; const char * &gt;::operator()</a></div><div class="ttdeci">const result_type operator()(const char *t) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:96</div></div>
+<div class="ttc" id="astructmn_1_1hash__function_html"><div class="ttname"><a href="structmn_1_1hash__function.html">mn::hash_function</a></div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:162</div></div>
+<div class="ttc" id="astructmn_1_1hash__function_html_a8ffc79a7d56d3c16665d2da42c60bc21"><div class="ttname"><a href="structmn_1_1hash__function.html#a8ffc79a7d56d3c16665d2da42c60bc21">mn::hash_function::operator()</a></div><div class="ttdeci">result_type operator()(T key, size_t maxValue) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:163</div></div>
+<div class="ttc" id="astructmn_1_1hash_html"><div class="ttname"><a href="structmn_1_1hash.html">mn::hash</a></div><div class="ttdoc">Default implementation of hasher.</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:72</div></div>
+<div class="ttc" id="astructmn_1_1hash_html_a3d4cd18b2e1e3365ccce5b0b8f0126a9"><div class="ttname"><a href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">mn::hash::operator()</a></div><div class="ttdeci">const result_type operator()(T &amp;t) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:73</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

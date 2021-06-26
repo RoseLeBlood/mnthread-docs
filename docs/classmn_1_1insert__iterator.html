@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::insert_iterator&lt; TCon &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1insert__iterator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classmn_1_1insert__iterator-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::insert_iterator&lt; TCon &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__iterator_8hpp_source.html">mn_iterator.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af09c5e36e2605a998e2c9de2dd1a2f87"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#af09c5e36e2605a998e2c9de2dd1a2f87">container_type</a> = TCon</td></tr>
+<tr class="separator:af09c5e36e2605a998e2c9de2dd1a2f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c019221b932e5420bb76c6fe12a306"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#aa8c019221b932e5420bb76c6fe12a306">iterator_category</a> = <a class="el" href="namespacemn.html#structmn_1_1output__iterator__tag">output_iterator_tag</a></td></tr>
+<tr class="separator:aa8c019221b932e5420bb76c6fe12a306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a907a27ba86a4cf8ffd1c915d3c917a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#a2a907a27ba86a4cf8ffd1c915d3c917a">value_type</a> = typename container_type::value_type</td></tr>
+<tr class="separator:a2a907a27ba86a4cf8ffd1c915d3c917a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f41ae6dcb7e8b17abd2c6b62a5bdaa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#ab3f41ae6dcb7e8b17abd2c6b62a5bdaa">difference_type</a> = typename container_type::difference_type</td></tr>
+<tr class="separator:ab3f41ae6dcb7e8b17abd2c6b62a5bdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8b23f4581bf7ed19bc53ce4a77e699"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#acc8b23f4581bf7ed19bc53ce4a77e699">pointer</a> = typename container_type::pointer</td></tr>
+<tr class="separator:acc8b23f4581bf7ed19bc53ce4a77e699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb0318b5afdebca761e9413ec07732ca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#aeb0318b5afdebca761e9413ec07732ca">reference</a> = typename container_type::reference</td></tr>
+<tr class="separator:aeb0318b5afdebca761e9413ec07732ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5f7570687bac6db7338c49d8d09b8b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#a7c5f7570687bac6db7338c49d8d09b8b">const_reference</a> = typename container_type::const_reference</td></tr>
+<tr class="separator:a7c5f7570687bac6db7338c49d8d09b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a9b172d71aaf29608e0aa235d091c9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#ad5a9b172d71aaf29608e0aa235d091c9">iterator</a> = typename container_type::iterator</td></tr>
+<tr class="separator:ad5a9b172d71aaf29608e0aa235d091c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a53347a2ebd6739add8c5673b5b42e1e5"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#a53347a2ebd6739add8c5673b5b42e1e5">insert_iterator</a> (<a class="el" href="classmn_1_1insert__iterator.html#af09c5e36e2605a998e2c9de2dd1a2f87">container_type</a> &amp;ctr, <a class="el" href="classmn_1_1insert__iterator.html#ad5a9b172d71aaf29608e0aa235d091c9">iterator</a> itr)</td></tr>
+<tr class="separator:a53347a2ebd6739add8c5673b5b42e1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445c51ae8851dd14198179b56e4d07dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#a445c51ae8851dd14198179b56e4d07dd">operator=</a> (<a class="el" href="classmn_1_1insert__iterator.html#a7c5f7570687bac6db7338c49d8d09b8b">const_reference</a> v)</td></tr>
+<tr class="separator:a445c51ae8851dd14198179b56e4d07dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ca1bb1e7631b3bb78fdeee53326572"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#ac3ca1bb1e7631b3bb78fdeee53326572">operator*</a> (void)</td></tr>
+<tr class="separator:ac3ca1bb1e7631b3bb78fdeee53326572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b68b6edcf944543f21aea861e33781"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#ae1b68b6edcf944543f21aea861e33781">operator++</a> (void)</td></tr>
+<tr class="separator:ae1b68b6edcf944543f21aea861e33781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba92e10264fdc2ca7d7dd280161ec15"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#a1ba92e10264fdc2ca7d7dd280161ec15">operator++</a> (int)</td></tr>
+<tr class="separator:a1ba92e10264fdc2ca7d7dd280161ec15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a055f33b1f4f8282fbca6e89d85b19988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1insert__iterator.html#af09c5e36e2605a998e2c9de2dd1a2f87">container_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#a055f33b1f4f8282fbca6e89d85b19988">m_con</a></td></tr>
+<tr class="separator:a055f33b1f4f8282fbca6e89d85b19988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf6f89a3675b349f5c8377fa3fc940c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1insert__iterator.html#ad5a9b172d71aaf29608e0aa235d091c9">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1insert__iterator.html#abbf6f89a3675b349f5c8377fa3fc940c">m_iter</a></td></tr>
+<tr class="separator:abbf6f89a3675b349f5c8377fa3fc940c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7c5f7570687bac6db7338c49d8d09b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c5f7570687bac6db7338c49d8d09b8b">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html#a7c5f7570687bac6db7338c49d8d09b8b">const_reference</a> =  typename container_type::const_reference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af09c5e36e2605a998e2c9de2dd1a2f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af09c5e36e2605a998e2c9de2dd1a2f87">&#9670;&nbsp;</a></span>container_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html#af09c5e36e2605a998e2c9de2dd1a2f87">container_type</a> =  TCon</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3f41ae6dcb7e8b17abd2c6b62a5bdaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f41ae6dcb7e8b17abd2c6b62a5bdaa">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html#ab3f41ae6dcb7e8b17abd2c6b62a5bdaa">difference_type</a> =  typename container_type::difference_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5a9b172d71aaf29608e0aa235d091c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5a9b172d71aaf29608e0aa235d091c9">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html#ad5a9b172d71aaf29608e0aa235d091c9">iterator</a> =  typename container_type::iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8c019221b932e5420bb76c6fe12a306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8c019221b932e5420bb76c6fe12a306">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html#aa8c019221b932e5420bb76c6fe12a306">iterator_category</a> =  <a class="el" href="namespacemn.html#structmn_1_1output__iterator__tag">output_iterator_tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc8b23f4581bf7ed19bc53ce4a77e699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8b23f4581bf7ed19bc53ce4a77e699">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html#acc8b23f4581bf7ed19bc53ce4a77e699">pointer</a> =  typename container_type::pointer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb0318b5afdebca761e9413ec07732ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0318b5afdebca761e9413ec07732ca">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html#aeb0318b5afdebca761e9413ec07732ca">reference</a> =  typename container_type::reference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a907a27ba86a4cf8ffd1c915d3c917a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a907a27ba86a4cf8ffd1c915d3c917a">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html#a2a907a27ba86a4cf8ffd1c915d3c917a">value_type</a> =  typename container_type::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a53347a2ebd6739add8c5673b5b42e1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53347a2ebd6739add8c5673b5b42e1e5">&#9670;&nbsp;</a></span>insert_iterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::<a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1insert__iterator.html#af09c5e36e2605a998e2c9de2dd1a2f87">container_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1insert__iterator.html#ad5a9b172d71aaf29608e0aa235d091c9">iterator</a>&#160;</td>
+          <td class="paramname"><em>itr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac3ca1bb1e7631b3bb78fdeee53326572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ca1bb1e7631b3bb78fdeee53326572">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a>&amp; <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ba92e10264fdc2ca7d7dd280161ec15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba92e10264fdc2ca7d7dd280161ec15">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a> <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1b68b6edcf944543f21aea861e33781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b68b6edcf944543f21aea861e33781">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a>&amp; <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a445c51ae8851dd14198179b56e4d07dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445c51ae8851dd14198179b56e4d07dd">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1insert__iterator.html">insert_iterator</a>&amp; <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1insert__iterator.html#a7c5f7570687bac6db7338c49d8d09b8b">const_reference</a>&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a055f33b1f4f8282fbca6e89d85b19988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a055f33b1f4f8282fbca6e89d85b19988">&#9670;&nbsp;</a></span>m_con</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1insert__iterator.html#af09c5e36e2605a998e2c9de2dd1a2f87">container_type</a>&amp; <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::m_con</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbf6f89a3675b349f5c8377fa3fc940c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf6f89a3675b349f5c8377fa3fc940c">&#9670;&nbsp;</a></span>m_iter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TCon &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1insert__iterator.html#ad5a9b172d71aaf29608e0aa235d091c9">iterator</a> <a class="el" href="classmn_1_1insert__iterator.html">mn::insert_iterator</a>&lt; TCon &gt;::m_iter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__iterator_8hpp_source.html">mn_iterator.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

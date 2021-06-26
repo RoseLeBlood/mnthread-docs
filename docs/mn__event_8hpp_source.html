@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_event.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__event_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_event.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__event_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef __MINILIB_EVENT_H__</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define __MINILIB_EVENT_H__</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__function_8hpp.html">mn_function.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__autolock_8hpp.html">mn_autolock.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__vector_8hpp.html">container/mn_vector.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__mutex_8hpp.html">mn_mutex.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structmn_1_1base__eventargs.html">   34</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1base__eventargs.html">base_eventargs</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structmn_1_1base__eventargs.html#ad0ba060e2b36c718c5144dcf4c0f8e4b">   35</a></span>&#160;        <a class="code" href="structmn_1_1base__eventargs.html#ad0ba060e2b36c718c5144dcf4c0f8e4b">base_eventargs</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structmn_1_1base__eventargs.html#a0e683b1205a5e537efd185a9c1288c52">   36</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="structmn_1_1base__eventargs.html#a0e683b1205a5e537efd185a9c1288c52">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;base_eventargs&quot;</span>; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmn_1_1exit__eventargs.html">   39</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmn_1_1exit__eventargs.html">exit_eventargs</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmn_1_1exit__eventargs.html#a946073a7ff379311de1de764ad470e82">   41</a></span>&#160;        <a class="code" href="classmn_1_1exit__eventargs.html#a946073a7ff379311de1de764ad470e82">exit_eventargs</a>(<span class="keywordtype">int</span> exitcode) : <a class="code" href="classmn_1_1exit__eventargs.html#a4801fb8d920dcb2f9346dd1457ac8628">m_iExitCode</a>(exitcode) { }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmn_1_1exit__eventargs.html#a33cefba9e1a9ed3930e1ccc04fc4e0b2">   43</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classmn_1_1exit__eventargs.html#a33cefba9e1a9ed3930e1ccc04fc4e0b2">get_exitcode</a>() { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1exit__eventargs.html#a4801fb8d920dcb2f9346dd1457ac8628">m_iExitCode</a>; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmn_1_1exit__eventargs.html#a6376e85552db659b65877d90e8a520f0">   44</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classmn_1_1exit__eventargs.html#a6376e85552db659b65877d90e8a520f0">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;exit_eventargs&quot;</span>; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmn_1_1exit__eventargs.html#a4801fb8d920dcb2f9346dd1457ac8628">   46</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classmn_1_1exit__eventargs.html#a4801fb8d920dcb2f9346dd1457ac8628">m_iExitCode</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmn_1_1handler__eventargs.html">   50</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmn_1_1handler__eventargs.html">handler_eventargs</a> : <span class="keyword">public</span> <a class="code" href="structmn_1_1base__eventargs.html">base_eventargs</a> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmn_1_1handler__eventargs.html#a37071222ad6b9d31d333955f3db2a45f">   52</a></span>&#160;        <a class="code" href="classmn_1_1handler__eventargs.html#a37071222ad6b9d31d333955f3db2a45f">handler_eventargs</a>(<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>* handler) : <a class="code" href="classmn_1_1handler__eventargs.html#aa24fab8e4e2ec0f6a36e5630562b811a">m_pHandler</a>(handler) { }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classmn_1_1handler__eventargs.html#a36d8d1da6765e35087d7306b6d2414cd">   54</a></span>&#160;        <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>* <a class="code" href="classmn_1_1handler__eventargs.html#a36d8d1da6765e35087d7306b6d2414cd">get_handler</a>() { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1handler__eventargs.html#aa24fab8e4e2ec0f6a36e5630562b811a">m_pHandler</a>; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmn_1_1handler__eventargs.html#a9d51841170bb83cf8788c5c97d64dd38">   55</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classmn_1_1handler__eventargs.html#a9d51841170bb83cf8788c5c97d64dd38">get_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;handler_eventargs&quot;</span>; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmn_1_1handler__eventargs.html#aa24fab8e4e2ec0f6a36e5630562b811a">   57</a></span>&#160;        <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>* <a class="code" href="classmn_1_1handler__eventargs.html#aa24fab8e4e2ec0f6a36e5630562b811a">m_pHandler</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TSender, <span class="keyword">typename</span> TArgs = base_eventargs&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html">   61</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmn_1_1base__event.html">base_event</a> {</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a737a5a14817263a1a98e594693b4930b">   62</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="structmn_1_1base__event.html">self_type</a> = <a class="code" href="structmn_1_1base__event.html">base_event&lt;TSender, TArgs&gt;</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#afdc5e062cc6f5536693b6af67cb18821">   63</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="structmn_1_1base__event.html#afdc5e062cc6f5536693b6af67cb18821">args_type</a> = TArgs;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a3c622a3b0143b45f858cadab70e974ba">   64</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="structmn_1_1base__event.html#a3c622a3b0143b45f858cadab70e974ba">sender_type</a> = TSender;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a1ab34d222010bca8bf34a92b922d24bf">   65</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="structmn_1_1base__event.html#a1ab34d222010bca8bf34a92b922d24bf">sender_reference</a> = TSender&amp;;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a436920fb604eb2cdf787a45e55ba41b7">   66</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn.html#classmn_1_1small__task">function_type</a> = <a class="code" href="namespacemn.html#classmn_1_1small__task">mn::function</a>&lt;void(<a class="code" href="structmn_1_1base__event.html#a1ab34d222010bca8bf34a92b922d24bf">sender_reference</a>, <span class="keyword">const</span> <a class="code" href="structmn_1_1base__event.html#afdc5e062cc6f5536693b6af67cb18821">args_type</a>)&gt;;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a35f156e005ef2578918862e2160bd66b">   68</a></span>&#160;        <a class="code" href="structmn_1_1base__event.html#a35f156e005ef2578918862e2160bd66b">base_event</a>(<a class="code" href="namespacemn.html#classmn_1_1small__task">function_type</a> func)       : <a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>(func) { }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#acbfbb5b5c3b7682ddc8f6560a44cd84c">   69</a></span>&#160;        <a class="code" href="structmn_1_1base__event.html#acbfbb5b5c3b7682ddc8f6560a44cd84c">base_event</a>(<span class="keyword">const</span> <a class="code" href="structmn_1_1base__event.html">self_type</a>&amp; other)   : <a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>(other.<a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>) { }</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a894720db6b2104426add28d3f1cf6c26">   70</a></span>&#160;        <a class="code" href="structmn_1_1base__event.html#a894720db6b2104426add28d3f1cf6c26">base_event</a>(<span class="keyword">const</span> <a class="code" href="structmn_1_1base__event.html">self_type</a>&amp;&amp; other)  : <a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>(<a class="code" href="namespacemn.html">mn</a>::<a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">move</a>(other.<a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>)) { }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#acdf67d62ae4335bc97384036686cd1e6">   72</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="structmn_1_1base__event.html#acdf67d62ae4335bc97384036686cd1e6">emit</a>(<span class="keyword">const</span> <a class="code" href="structmn_1_1base__event.html#a3c622a3b0143b45f858cadab70e974ba">sender_type</a>&amp; sender, <span class="keyword">const</span> <a class="code" href="structmn_1_1base__event.html#afdc5e062cc6f5536693b6af67cb18821">args_type</a> args){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="structmn_1_1base__event.html#a7d8b088065315837d3c3bfc9dbdaef7e">get_function</a>()(sender, args);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a6cacfd625c0e97786c2398d1fd0eb857">   76</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structmn_1_1base__event.html#a6cacfd625c0e97786c2398d1fd0eb857">operator == </a>(<span class="keyword">const</span> <a class="code" href="structmn_1_1base__event.html">self_type</a>&amp; pOther){</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> pOther.<a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a> == <a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a0d81843cea8f9adc2db9e3ed76ab3503">   80</a></span>&#160;        <a class="code" href="structmn_1_1base__event.html">self_type</a>&amp; <a class="code" href="structmn_1_1base__event.html#a0d81843cea8f9adc2db9e3ed76ab3503">operator = </a>(<a class="code" href="structmn_1_1base__event.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a> = other.<a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>; <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#a7d8b088065315837d3c3bfc9dbdaef7e">   84</a></span>&#160;        <a class="code" href="namespacemn.html#classmn_1_1small__task">function_type</a> <a class="code" href="structmn_1_1base__event.html#a7d8b088065315837d3c3bfc9dbdaef7e">get_function</a>() { <span class="keywordflow">return</span> <a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>; }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">   86</a></span>&#160;        <a class="code" href="namespacemn.html#classmn_1_1small__task">function_type</a>   <a class="code" href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">m_ptr2Func</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class </span>TSender, <span class="keyword">typename</span> TArgs,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;              <span class="keyword">class </span>TBaseEvent = <a class="code" href="structmn_1_1base__event.html">base_event&lt;TSender, TArgs&gt;</a>,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;              <span class="keyword">class </span>TContainer = <a class="code" href="classmn_1_1container_1_1basic__vector.html">mn::container::vector&lt;TBaseEvent&gt;</a></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            &gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html">   93</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmn_1_1event__system.html">event_system</a> {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#aff61a031ce106b7eaac61d484ac34bf5">   95</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html">self_type</a> = <a class="code" href="classmn_1_1event__system.html">event_system&lt;TSender, TArgs, TBaseEvent, TContainer&gt;</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#abc02e7ab72ae966e8c594f0e19458057">   97</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#abc02e7ab72ae966e8c594f0e19458057">sender_type</a> = TSender;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">   98</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a> = TArgs;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a3d88df727d778f7e2cc8ba4c72083292">   99</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#a3d88df727d778f7e2cc8ba4c72083292">container_type</a> = TContainer;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#ad4f2a123a4d5ffff4fc535a8fc3b3d01">  101</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#ad4f2a123a4d5ffff4fc535a8fc3b3d01">value_type</a> = TBaseEvent;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a954abf4dbfe53c75f6bc5863d48e6ba9">  102</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#a954abf4dbfe53c75f6bc5863d48e6ba9">reference</a> = TBaseEvent&amp;;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">  103</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> = <span class="keyword">const</span> TBaseEvent&amp;;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#af8f698aef8efc885115b946edcb30c4c">  104</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#af8f698aef8efc885115b946edcb30c4c">pointer</a> = TBaseEvent*;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a67a4172bae804ea77229db9d3f7cfd18">  105</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#a67a4172bae804ea77229db9d3f7cfd18">const_pointer</a> = <span class="keyword">const</span> TBaseEvent*;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#ab1c448e917e6b823d9d9dbc8676558af">  107</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#ab1c448e917e6b823d9d9dbc8676558af">size_type</a> = <span class="keyword">typename</span> container_type::size_type;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">  108</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a> = <span class="keyword">typename</span> container_type::allocator_type;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#abeceb5945651a309cec59e5dde58d565">  110</a></span>&#160;        <a class="code" href="classmn_1_1event__system.html#abeceb5945651a309cec59e5dde58d565">event_system</a>(<a class="code" href="classmn_1_1event__system.html#ab1c448e917e6b823d9d9dbc8676558af">size_type</a> initialSize = 4, <span class="keyword">const</span> <a class="code" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a>&amp; allocator = <a class="code" href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">allocator_type</a>())</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            : <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>(initialSize, allocator), <a class="code" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">m_mutex</a>() { }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a0e6eba1b07124ec4542ab73769b012a4">  113</a></span>&#160;        <a class="code" href="classmn_1_1event__system.html#a0e6eba1b07124ec4542ab73769b012a4">event_system</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1event__system.html">self_type</a>&amp; other)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            : <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>(other.<a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>),</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;              <a class="code" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">m_mutex</a>(other.<a class="code" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">m_mutex</a>) { }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a8d1130185edbac5ac138062000ce86dd">  117</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1event__system.html#a8d1130185edbac5ac138062000ce86dd">emit</a>(<span class="keyword">const</span> TSender&amp; sender, <span class="keyword">const</span> <a class="code" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a> args) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="classmn_1_1basic__autolock.html">automutx_t</a> <a class="code" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">lock</a>(<a class="code" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">m_mutex</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span> itr = <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>.begin();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                     itr != <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>.end();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                     itr++) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                (*itr)-&gt;emit(sender, args);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#ad1cae37d562181ab611b04901e962535">  127</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1event__system.html#ad1cae37d562181ab611b04901e962535">bind</a>( <a class="code" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> funcHandler) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <a class="code" href="classmn_1_1basic__autolock.html">automutx_t</a> <a class="code" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">lock</a>(<a class="code" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">m_mutex</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>.push_back(funcHandler);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a6c72933062608f8cf27380341af15931">  132</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1event__system.html#a6c72933062608f8cf27380341af15931">remove</a>( <a class="code" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> funcHandler) {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <a class="code" href="classmn_1_1basic__autolock.html">automutx_t</a> <a class="code" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">lock</a>(<a class="code" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">m_mutex</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keyword">auto</span> it = <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>.find(funcHandler);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">if</span>(it == <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>.end()) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>.erase(it);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#aa6221e513dcde088b9e72bb282c05533">  141</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1event__system.html#aa6221e513dcde088b9e72bb282c05533">operator += </a>( <a class="code" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> funcHandler) {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            add(funcHandler);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a6ca65e620bc7f32ee8ef844c5ff49893">  144</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1event__system.html#a6ca65e620bc7f32ee8ef844c5ff49893">operator -= </a>( <a class="code" href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">const_reference</a> funcHandler) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            rem(funcHandler);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#acb6637840e54a4e29f61cb540b895f5c">  147</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1event__system.html#acb6637840e54a4e29f61cb540b895f5c">operator () </a>( <span class="keyword">const</span> TSender&amp; sender, <span class="keyword">const</span> <a class="code" href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">args_type</a> args) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="classmn_1_1event__system.html#a8d1130185edbac5ac138062000ce86dd">emit</a>(sender, args);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">  151</a></span>&#160;        <a class="code" href="classmn_1_1event__system.html#a3d88df727d778f7e2cc8ba4c72083292">container_type</a> <a class="code" href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">m_observers</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">  152</a></span>&#160;        <a class="code" href="classmn_1_1basic__mutex.html">mutex_t</a> <a class="code" href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">m_mutex</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    };</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_EVENT_H__</span></div>
+<div class="ttc" id="aclassmn_1_1basic__autolock_html"><div class="ttname"><a href="classmn_1_1basic__autolock.html">mn::basic_autolock</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:122</div></div>
+<div class="ttc" id="aclassmn_1_1basic__mutex_html"><div class="ttname"><a href="classmn_1_1basic__mutex.html">mn::basic_mutex</a></div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:37</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a></div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:117</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html"><div class="ttname"><a href="classmn_1_1event__system.html">mn::event_system</a></div><div class="ttdef"><b>Definition:</b> mn_event.hpp:93</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a0958449f0ac4f1efe2f4ab9f2f1ab3e7"><div class="ttname"><a href="classmn_1_1event__system.html#a0958449f0ac4f1efe2f4ab9f2f1ab3e7">mn::event_system::allocator_type</a></div><div class="ttdeci">typename container_type::allocator_type allocator_type</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:108</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a0e6eba1b07124ec4542ab73769b012a4"><div class="ttname"><a href="classmn_1_1event__system.html#a0e6eba1b07124ec4542ab73769b012a4">mn::event_system::event_system</a></div><div class="ttdeci">event_system(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:113</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a3d88df727d778f7e2cc8ba4c72083292"><div class="ttname"><a href="classmn_1_1event__system.html#a3d88df727d778f7e2cc8ba4c72083292">mn::event_system::container_type</a></div><div class="ttdeci">TContainer container_type</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:99</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a67a4172bae804ea77229db9d3f7cfd18"><div class="ttname"><a href="classmn_1_1event__system.html#a67a4172bae804ea77229db9d3f7cfd18">mn::event_system::const_pointer</a></div><div class="ttdeci">const TBaseEvent * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:105</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a6c72933062608f8cf27380341af15931"><div class="ttname"><a href="classmn_1_1event__system.html#a6c72933062608f8cf27380341af15931">mn::event_system::remove</a></div><div class="ttdeci">void remove(const_reference funcHandler)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:132</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a6ca65e620bc7f32ee8ef844c5ff49893"><div class="ttname"><a href="classmn_1_1event__system.html#a6ca65e620bc7f32ee8ef844c5ff49893">mn::event_system::operator-=</a></div><div class="ttdeci">void operator-=(const_reference funcHandler)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:144</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a8afa3bc0ce19241165a5e29f48993664"><div class="ttname"><a href="classmn_1_1event__system.html#a8afa3bc0ce19241165a5e29f48993664">mn::event_system::m_mutex</a></div><div class="ttdeci">mutex_t m_mutex</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:152</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a8d1130185edbac5ac138062000ce86dd"><div class="ttname"><a href="classmn_1_1event__system.html#a8d1130185edbac5ac138062000ce86dd">mn::event_system::emit</a></div><div class="ttdeci">void emit(const TSender &amp;sender, const args_type args)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:117</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_a954abf4dbfe53c75f6bc5863d48e6ba9"><div class="ttname"><a href="classmn_1_1event__system.html#a954abf4dbfe53c75f6bc5863d48e6ba9">mn::event_system::reference</a></div><div class="ttdeci">TBaseEvent &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:102</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_aa0613e80b186f79f291498a3de200f17"><div class="ttname"><a href="classmn_1_1event__system.html#aa0613e80b186f79f291498a3de200f17">mn::event_system::const_reference</a></div><div class="ttdeci">const TBaseEvent &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:103</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_aa6221e513dcde088b9e72bb282c05533"><div class="ttname"><a href="classmn_1_1event__system.html#aa6221e513dcde088b9e72bb282c05533">mn::event_system::operator+=</a></div><div class="ttdeci">void operator+=(const_reference funcHandler)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:141</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_ab1c448e917e6b823d9d9dbc8676558af"><div class="ttname"><a href="classmn_1_1event__system.html#ab1c448e917e6b823d9d9dbc8676558af">mn::event_system::size_type</a></div><div class="ttdeci">typename container_type::size_type size_type</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:107</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_ab8dccd6c3e36999832925235121b9540"><div class="ttname"><a href="classmn_1_1event__system.html#ab8dccd6c3e36999832925235121b9540">mn::event_system::args_type</a></div><div class="ttdeci">TArgs args_type</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:98</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_abc02e7ab72ae966e8c594f0e19458057"><div class="ttname"><a href="classmn_1_1event__system.html#abc02e7ab72ae966e8c594f0e19458057">mn::event_system::sender_type</a></div><div class="ttdeci">TSender sender_type</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:97</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_abeceb5945651a309cec59e5dde58d565"><div class="ttname"><a href="classmn_1_1event__system.html#abeceb5945651a309cec59e5dde58d565">mn::event_system::event_system</a></div><div class="ttdeci">event_system(size_type initialSize=4, const allocator_type &amp;allocator=allocator_type())</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:110</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_acb6637840e54a4e29f61cb540b895f5c"><div class="ttname"><a href="classmn_1_1event__system.html#acb6637840e54a4e29f61cb540b895f5c">mn::event_system::operator()</a></div><div class="ttdeci">void operator()(const TSender &amp;sender, const args_type args)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:147</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_ad1cae37d562181ab611b04901e962535"><div class="ttname"><a href="classmn_1_1event__system.html#ad1cae37d562181ab611b04901e962535">mn::event_system::bind</a></div><div class="ttdeci">void bind(const_reference funcHandler)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:127</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_ad4f2a123a4d5ffff4fc535a8fc3b3d01"><div class="ttname"><a href="classmn_1_1event__system.html#ad4f2a123a4d5ffff4fc535a8fc3b3d01">mn::event_system::value_type</a></div><div class="ttdeci">TBaseEvent value_type</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:101</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_ae3b7f69ce7598336793249459a80606c"><div class="ttname"><a href="classmn_1_1event__system.html#ae3b7f69ce7598336793249459a80606c">mn::event_system::m_observers</a></div><div class="ttdeci">container_type m_observers</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:151</div></div>
+<div class="ttc" id="aclassmn_1_1event__system_html_af8f698aef8efc885115b946edcb30c4c"><div class="ttname"><a href="classmn_1_1event__system.html#af8f698aef8efc885115b946edcb30c4c">mn::event_system::pointer</a></div><div class="ttdeci">TBaseEvent * pointer</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:104</div></div>
+<div class="ttc" id="aclassmn_1_1exit__eventargs_html"><div class="ttname"><a href="classmn_1_1exit__eventargs.html">mn::exit_eventargs</a></div><div class="ttdef"><b>Definition:</b> mn_event.hpp:39</div></div>
+<div class="ttc" id="aclassmn_1_1exit__eventargs_html_a33cefba9e1a9ed3930e1ccc04fc4e0b2"><div class="ttname"><a href="classmn_1_1exit__eventargs.html#a33cefba9e1a9ed3930e1ccc04fc4e0b2">mn::exit_eventargs::get_exitcode</a></div><div class="ttdeci">int get_exitcode()</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:43</div></div>
+<div class="ttc" id="aclassmn_1_1exit__eventargs_html_a4801fb8d920dcb2f9346dd1457ac8628"><div class="ttname"><a href="classmn_1_1exit__eventargs.html#a4801fb8d920dcb2f9346dd1457ac8628">mn::exit_eventargs::m_iExitCode</a></div><div class="ttdeci">int m_iExitCode</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:46</div></div>
+<div class="ttc" id="aclassmn_1_1exit__eventargs_html_a6376e85552db659b65877d90e8a520f0"><div class="ttname"><a href="classmn_1_1exit__eventargs.html#a6376e85552db659b65877d90e8a520f0">mn::exit_eventargs::get_name</a></div><div class="ttdeci">const char * get_name()</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:44</div></div>
+<div class="ttc" id="aclassmn_1_1exit__eventargs_html_a946073a7ff379311de1de764ad470e82"><div class="ttname"><a href="classmn_1_1exit__eventargs.html#a946073a7ff379311de1de764ad470e82">mn::exit_eventargs::exit_eventargs</a></div><div class="ttdeci">exit_eventargs(int exitcode)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:41</div></div>
+<div class="ttc" id="aclassmn_1_1handler__eventargs_html"><div class="ttname"><a href="classmn_1_1handler__eventargs.html">mn::handler_eventargs</a></div><div class="ttdef"><b>Definition:</b> mn_event.hpp:50</div></div>
+<div class="ttc" id="aclassmn_1_1handler__eventargs_html_a36d8d1da6765e35087d7306b6d2414cd"><div class="ttname"><a href="classmn_1_1handler__eventargs.html#a36d8d1da6765e35087d7306b6d2414cd">mn::handler_eventargs::get_handler</a></div><div class="ttdeci">T * get_handler()</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:54</div></div>
+<div class="ttc" id="aclassmn_1_1handler__eventargs_html_a37071222ad6b9d31d333955f3db2a45f"><div class="ttname"><a href="classmn_1_1handler__eventargs.html#a37071222ad6b9d31d333955f3db2a45f">mn::handler_eventargs::handler_eventargs</a></div><div class="ttdeci">handler_eventargs(T *handler)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:52</div></div>
+<div class="ttc" id="aclassmn_1_1handler__eventargs_html_a9d51841170bb83cf8788c5c97d64dd38"><div class="ttname"><a href="classmn_1_1handler__eventargs.html#a9d51841170bb83cf8788c5c97d64dd38">mn::handler_eventargs::get_name</a></div><div class="ttdeci">const char * get_name()</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:55</div></div>
+<div class="ttc" id="aclassmn_1_1handler__eventargs_html_aa24fab8e4e2ec0f6a36e5630562b811a"><div class="ttname"><a href="classmn_1_1handler__eventargs.html#aa24fab8e4e2ec0f6a36e5630562b811a">mn::handler_eventargs::m_pHandler</a></div><div class="ttdeci">T * m_pHandler</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:57</div></div>
+<div class="ttc" id="amn__autolock_8hpp_html"><div class="ttname"><a href="mn__autolock_8hpp.html">mn_autolock.hpp</a></div></div>
+<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="ttc" id="amn__function_8hpp_html"><div class="ttname"><a href="mn__function_8hpp.html">mn_function.hpp</a></div></div>
+<div class="ttc" id="amn__mutex_8hpp_html"><div class="ttname"><a href="mn__mutex_8hpp.html">mn_mutex.hpp</a></div></div>
+<div class="ttc" id="amn__vector_8hpp_html"><div class="ttname"><a href="mn__vector_8hpp.html">mn_vector.hpp</a></div><div class="ttdoc">Basic vector container This file is part of the Mini Thread Library (https://github....</div></div>
+<div class="ttc" id="anamespacemn_1_1memory_1_1detail_html_a3179d74d784513b556ce52d25fc357e7"><div class="ttname"><a href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">mn::memory::detail::T</a></div><div class="ttdeci">struct mn::memory::detail::ptr_difference T</div><div class="ttdef"><b>Definition:</b> mn_atomic_singleton.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a897578ea51b9d1f8bcbef7763677037b"><div class="ttname"><a href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">mn::lock</a></div><div class="ttdeci">int lock(TLOCK &amp;m1, unsigned int timeout)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:70</div></div>
+<div class="ttc" id="anamespacemn_html_ae37469aa8cfbdec2289a0c3879decbdd"><div class="ttname"><a href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a></div><div class="ttdeci">void move(const T *src, const T *last, T *dest)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:100</div></div>
+<div class="ttc" id="anamespacemn_html_classmn_1_1small__task"><div class="ttname"><a href="namespacemn.html#classmn_1_1small__task">mn::small_task</a></div><div class="ttdef"><b>Definition:</b> mn_function.hpp:34</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html"><div class="ttname"><a href="structmn_1_1base__event.html">mn::base_event</a></div><div class="ttdef"><b>Definition:</b> mn_event.hpp:61</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_a0d81843cea8f9adc2db9e3ed76ab3503"><div class="ttname"><a href="structmn_1_1base__event.html#a0d81843cea8f9adc2db9e3ed76ab3503">mn::base_event::operator=</a></div><div class="ttdeci">self_type &amp; operator=(self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:80</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_a1ab34d222010bca8bf34a92b922d24bf"><div class="ttname"><a href="structmn_1_1base__event.html#a1ab34d222010bca8bf34a92b922d24bf">mn::base_event::sender_reference</a></div><div class="ttdeci">TSender &amp; sender_reference</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:65</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_a35f156e005ef2578918862e2160bd66b"><div class="ttname"><a href="structmn_1_1base__event.html#a35f156e005ef2578918862e2160bd66b">mn::base_event::base_event</a></div><div class="ttdeci">base_event(function_type func)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:68</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_a3c622a3b0143b45f858cadab70e974ba"><div class="ttname"><a href="structmn_1_1base__event.html#a3c622a3b0143b45f858cadab70e974ba">mn::base_event::sender_type</a></div><div class="ttdeci">TSender sender_type</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:64</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_a6cacfd625c0e97786c2398d1fd0eb857"><div class="ttname"><a href="structmn_1_1base__event.html#a6cacfd625c0e97786c2398d1fd0eb857">mn::base_event::operator==</a></div><div class="ttdeci">bool operator==(const self_type &amp;pOther)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:76</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_a7d8b088065315837d3c3bfc9dbdaef7e"><div class="ttname"><a href="structmn_1_1base__event.html#a7d8b088065315837d3c3bfc9dbdaef7e">mn::base_event::get_function</a></div><div class="ttdeci">function_type get_function()</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:84</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_a894720db6b2104426add28d3f1cf6c26"><div class="ttname"><a href="structmn_1_1base__event.html#a894720db6b2104426add28d3f1cf6c26">mn::base_event::base_event</a></div><div class="ttdeci">base_event(const self_type &amp;&amp;other)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:70</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_aa37bab46cf519ed4b985cceb062ad5bf"><div class="ttname"><a href="structmn_1_1base__event.html#aa37bab46cf519ed4b985cceb062ad5bf">mn::base_event::m_ptr2Func</a></div><div class="ttdeci">function_type m_ptr2Func</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:86</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_acbfbb5b5c3b7682ddc8f6560a44cd84c"><div class="ttname"><a href="structmn_1_1base__event.html#acbfbb5b5c3b7682ddc8f6560a44cd84c">mn::base_event::base_event</a></div><div class="ttdeci">base_event(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:69</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_acdf67d62ae4335bc97384036686cd1e6"><div class="ttname"><a href="structmn_1_1base__event.html#acdf67d62ae4335bc97384036686cd1e6">mn::base_event::emit</a></div><div class="ttdeci">void emit(const sender_type &amp;sender, const args_type args)</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:72</div></div>
+<div class="ttc" id="astructmn_1_1base__event_html_afdc5e062cc6f5536693b6af67cb18821"><div class="ttname"><a href="structmn_1_1base__event.html#afdc5e062cc6f5536693b6af67cb18821">mn::base_event::args_type</a></div><div class="ttdeci">TArgs args_type</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:63</div></div>
+<div class="ttc" id="astructmn_1_1base__eventargs_html"><div class="ttname"><a href="structmn_1_1base__eventargs.html">mn::base_eventargs</a></div><div class="ttdef"><b>Definition:</b> mn_event.hpp:34</div></div>
+<div class="ttc" id="astructmn_1_1base__eventargs_html_a0e683b1205a5e537efd185a9c1288c52"><div class="ttname"><a href="structmn_1_1base__eventargs.html#a0e683b1205a5e537efd185a9c1288c52">mn::base_eventargs::get_name</a></div><div class="ttdeci">const char * get_name()</div><div class="ttdef"><b>Definition:</b> mn_event.hpp:36</div></div>
+<div class="ttc" id="astructmn_1_1base__eventargs_html_ad0ba060e2b36c718c5144dcf4c0f8e4b"><div class="ttname"><a href="structmn_1_1base__eventargs.html#ad0ba060e2b36c718c5144dcf4c0f8e4b">mn::base_eventargs::base_eventargs</a></div><div class="ttdeci">base_eventargs()=default</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

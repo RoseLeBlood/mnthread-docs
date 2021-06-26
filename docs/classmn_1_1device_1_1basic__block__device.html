@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::device::basic_block_device Class Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1device_1_1basic__block__device.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classmn_1_1device_1_1basic__block__device-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::device::basic_block_device Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="classmn_1_1device_1_1basic__block__device.html" title="basic_block_device class is an interface for a block device.">basic_block_device</a> class is an interface for a block device.  
+ <a href="classmn_1_1device_1_1basic__block__device.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__block__device_8hpp_source.html">mn_block_device.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a77c578645fabd2bd794c552ff616b776"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a77c578645fabd2bd794c552ff616b776">basic_block_device</a> ()=default</td></tr>
+<tr class="separator:a77c578645fabd2bd794c552ff616b776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13faf973b33c28c6ad97c2a3f92bf93d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a13faf973b33c28c6ad97c2a3f92bf93d">~basic_block_device</a> ()=default</td></tr>
+<tr class="memdesc:a13faf973b33c28c6ad97c2a3f92bf93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockDevice's destructor.  <a href="classmn_1_1device_1_1basic__block__device.html#a13faf973b33c28c6ad97c2a3f92bf93d">More...</a><br /></td></tr>
+<tr class="separator:a13faf973b33c28c6ad97c2a3f92bf93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac417fe1c26ad8b96e042fbb203e0f784"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#ac417fe1c26ad8b96e042fbb203e0f784">open</a> ()=0</td></tr>
+<tr class="memdesc:ac417fe1c26ad8b96e042fbb203e0f784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens device.  <a href="classmn_1_1device_1_1basic__block__device.html#ac417fe1c26ad8b96e042fbb203e0f784">More...</a><br /></td></tr>
+<tr class="separator:ac417fe1c26ad8b96e042fbb203e0f784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69beacbbfa821ff0ce3c2c3ab174c4b0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a69beacbbfa821ff0ce3c2c3ab174c4b0">synchronize</a> ()=0</td></tr>
+<tr class="memdesc:a69beacbbfa821ff0ce3c2c3ab174c4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes state of a device, ensuring all cached writes are finished.  <a href="classmn_1_1device_1_1basic__block__device.html#a69beacbbfa821ff0ce3c2c3ab174c4b0">More...</a><br /></td></tr>
+<tr class="separator:a69beacbbfa821ff0ce3c2c3ab174c4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628b9a75e7fc77f478af56411c6f84ed"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a628b9a75e7fc77f478af56411c6f84ed">close</a> ()=0</td></tr>
+<tr class="memdesc:a628b9a75e7fc77f478af56411c6f84ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes device.  <a href="classmn_1_1device_1_1basic__block__device.html#a628b9a75e7fc77f478af56411c6f84ed">More...</a><br /></td></tr>
+<tr class="separator:a628b9a75e7fc77f478af56411c6f84ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e55adace7a42888a9b4583d5765be61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a7e55adace7a42888a9b4583d5765be61">lock</a> ()=0</td></tr>
+<tr class="memdesc:a7e55adace7a42888a9b4583d5765be61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locks the device for exclusive use by current thread.  <a href="classmn_1_1device_1_1basic__block__device.html#a7e55adace7a42888a9b4583d5765be61">More...</a><br /></td></tr>
+<tr class="separator:a7e55adace7a42888a9b4583d5765be61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad52bdce4ca7f6a07a8d37b92c752b8f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#ad52bdce4ca7f6a07a8d37b92c752b8f2">unlock</a> ()=0</td></tr>
+<tr class="memdesc:ad52bdce4ca7f6a07a8d37b92c752b8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the device which was previously locked by current thread.  <a href="classmn_1_1device_1_1basic__block__device.html#ad52bdce4ca7f6a07a8d37b92c752b8f2">More...</a><br /></td></tr>
+<tr class="separator:ad52bdce4ca7f6a07a8d37b92c752b8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d30781e0a0b4818a62213250818de97"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a3d30781e0a0b4818a62213250818de97">read</a> (uint64_t address, void *<a class="el" href="classmn_1_1buffer.html">buffer</a>, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size)=0</td></tr>
+<tr class="memdesc:a3d30781e0a0b4818a62213250818de97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from a device.  <a href="classmn_1_1device_1_1basic__block__device.html#a3d30781e0a0b4818a62213250818de97">More...</a><br /></td></tr>
+<tr class="separator:a3d30781e0a0b4818a62213250818de97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55f4bc602bfe6b228489ad20613d4b2"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#ac55f4bc602bfe6b228489ad20613d4b2">write</a> (uint64_t address, const void *<a class="el" href="classmn_1_1buffer.html">buffer</a>, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size)=0</td></tr>
+<tr class="memdesc:ac55f4bc602bfe6b228489ad20613d4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data to a device.  <a href="classmn_1_1device_1_1basic__block__device.html#ac55f4bc602bfe6b228489ad20613d4b2">More...</a><br /></td></tr>
+<tr class="separator:ac55f4bc602bfe6b228489ad20613d4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f48f174fced2442ffd746e06795e45"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#ab8f48f174fced2442ffd746e06795e45">erase</a> (uint64_t address, uint64_t size)=0</td></tr>
+<tr class="memdesc:ab8f48f174fced2442ffd746e06795e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases blocks on a device.  <a href="classmn_1_1device_1_1basic__block__device.html#ab8f48f174fced2442ffd746e06795e45">More...</a><br /></td></tr>
+<tr class="separator:ab8f48f174fced2442ffd746e06795e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7403361758b8e3eba3f4ebdbac1bd68e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a7403361758b8e3eba3f4ebdbac1bd68e">get_block_size</a> () const =0</td></tr>
+<tr class="separator:a7403361758b8e3eba3f4ebdbac1bd68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308e0ca5a069ca1a20292680b6323a3c"><td class="memItemLeft" align="right" valign="top">virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a308e0ca5a069ca1a20292680b6323a3c">get_size</a> () const =0</td></tr>
+<tr class="separator:a308e0ca5a069ca1a20292680b6323a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8c9181a01164720812878629e0fa58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#a6d8c9181a01164720812878629e0fa58">basic_block_device</a> (const <a class="el" href="classmn_1_1device_1_1basic__block__device.html">basic_block_device</a> &amp;)=delete</td></tr>
+<tr class="separator:a6d8c9181a01164720812878629e0fa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d89d525802bb9ea16962c0776380ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1device_1_1basic__block__device.html">basic_block_device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__block__device.html#ab5d89d525802bb9ea16962c0776380ac">operator=</a> (const <a class="el" href="classmn_1_1device_1_1basic__block__device.html">basic_block_device</a> &amp;)=delete</td></tr>
+<tr class="separator:ab5d89d525802bb9ea16962c0776380ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classmn_1_1device_1_1basic__block__device.html" title="basic_block_device class is an interface for a block device.">basic_block_device</a> class is an interface for a block device. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a77c578645fabd2bd794c552ff616b776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c578645fabd2bd794c552ff616b776">&#9670;&nbsp;</a></span>basic_block_device() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::device::basic_block_device::basic_block_device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13faf973b33c28c6ad97c2a3f92bf93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13faf973b33c28c6ad97c2a3f92bf93d">&#9670;&nbsp;</a></span>~basic_block_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual mn::device::basic_block_device::~basic_block_device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>BlockDevice's destructor. </p>
+
+</div>
+</div>
+<a id="a6d8c9181a01164720812878629e0fa58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8c9181a01164720812878629e0fa58">&#9670;&nbsp;</a></span>basic_block_device() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::device::basic_block_device::basic_block_device </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1device_1_1basic__block__device.html">basic_block_device</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a628b9a75e7fc77f478af56411c6f84ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628b9a75e7fc77f478af56411c6f84ed">&#9670;&nbsp;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int mn::device::basic_block_device::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes device. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Device is opened. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ab8f48f174fced2442ffd746e06795e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f48f174fced2442ffd746e06795e45">&#9670;&nbsp;</a></span>erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int mn::device::basic_block_device::erase </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Erases blocks on a device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>is the address of range that will be erased, must be a multiple of block size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>is the size of erased range, bytes, must be a multiple of block size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a7403361758b8e3eba3f4ebdbac1bd68e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7403361758b8e3eba3f4ebdbac1bd68e">&#9670;&nbsp;</a></span>get_block_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> mn::device::basic_block_device::get_block_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>block size, bytes </dd></dl>
+
+</div>
+</div>
+<a id="a308e0ca5a069ca1a20292680b6323a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308e0ca5a069ca1a20292680b6323a3c">&#9670;&nbsp;</a></span>get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual uint64_t mn::device::basic_block_device::get_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>size of block device, bytes </dd></dl>
+
+</div>
+</div>
+<a id="a7e55adace7a42888a9b4583d5765be61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e55adace7a42888a9b4583d5765be61">&#9670;&nbsp;</a></span>lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::device::basic_block_device::lock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Locks the device for exclusive use by current thread. </p>
+
+</div>
+</div>
+<a id="ac417fe1c26ad8b96e042fbb203e0f784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac417fe1c26ad8b96e042fbb203e0f784">&#9670;&nbsp;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int mn::device::basic_block_device::open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens device. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ab5d89d525802bb9ea16962c0776380ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d89d525802bb9ea16962c0776380ac">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1device_1_1basic__block__device.html">basic_block_device</a>&amp; mn::device::basic_block_device::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1device_1_1basic__block__device.html">basic_block_device</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d30781e0a0b4818a62213250818de97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d30781e0a0b4818a62213250818de97">&#9670;&nbsp;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int mn::device::basic_block_device::read </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads data from a device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>is the address of data that will be read, must be a multiple of block size </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>is the buffer into which the data will be read, must be valid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>is the size of <em>buffer</em>, bytes, must be a multiple of block size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size to readed and 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="a69beacbbfa821ff0ce3c2c3ab174c4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69beacbbfa821ff0ce3c2c3ab174c4b0">&#9670;&nbsp;</a></span>synchronize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int mn::device::basic_block_device::synchronize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Synchronizes state of a device, ensuring all cached writes are finished. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Device is opened.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, error code otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ad52bdce4ca7f6a07a8d37b92c752b8f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad52bdce4ca7f6a07a8d37b92c752b8f2">&#9670;&nbsp;</a></span>unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::device::basic_block_device::unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unlocks the device which was previously locked by current thread. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This function must not be called from interrupt context! </dd></dl>
+
+</div>
+</div>
+<a id="ac55f4bc602bfe6b228489ad20613d4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55f4bc602bfe6b228489ad20613d4b2">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int mn::device::basic_block_device::write </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes data to a device. </p>
+<dl class="section pre"><dt>Precondition</dt><dd><em>address</em> and <em>buffer</em> and <em>size</em> are valid. </dd>
+<dd>
+Selected range is within address space of device.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>is the address of data that will be written, must be a multiple of block size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>is the buffer with data that will be written, must be valid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>is the size of <em>buffer</em>, bytes, must be a multiple of block size</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size to written and 0 on error. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__block__device_8hpp_source.html">mn_block_device.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

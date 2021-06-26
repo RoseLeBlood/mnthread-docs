@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::compressed_pair&lt; T, U, typename &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1compressed__pair.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1compressed__pair-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::compressed_pair&lt; T, U, typename &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__compressed__pair_8hpp_source.html">mn_compressed_pair.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::compressed_pair&lt; T, U, typename &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1compressed__pair__coll__graph.svg" width="408" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a366f949205080fe02d8e2c91990d0185"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a366f949205080fe02d8e2c91990d0185">self_type</a> = <a class="el" href="classmn_1_1compressed__pair.html">compressed_pair</a>&lt; T, U &gt;</td></tr>
+<tr class="separator:a366f949205080fe02d8e2c91990d0185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50166dd799a3648ae386d789f663e947"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a50166dd799a3648ae386d789f663e947">first_value_type</a> = typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt; T &gt;::value_type</td></tr>
+<tr class="separator:a50166dd799a3648ae386d789f663e947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25442a3c69b50251f957353b65e1448a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a25442a3c69b50251f957353b65e1448a">first_reference</a> = typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt; T &gt;::reference</td></tr>
+<tr class="separator:a25442a3c69b50251f957353b65e1448a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9f1e5a9ed33db12bcbccee8c2260c9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a> = typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt; T &gt;::const_reference</td></tr>
+<tr class="separator:a3b9f1e5a9ed33db12bcbccee8c2260c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62acaaf892e137d5b499ec79d6fc265"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#af62acaaf892e137d5b499ec79d6fc265">second_value_type</a> = typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt; U &gt;::value_type</td></tr>
+<tr class="separator:af62acaaf892e137d5b499ec79d6fc265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462a4393b5cdd64623ee7154d91eb7d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a462a4393b5cdd64623ee7154d91eb7d5">second_reference</a> = typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt; U &gt;::reference</td></tr>
+<tr class="separator:a462a4393b5cdd64623ee7154d91eb7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da2cc48508b0238b820aea7c65bd7a9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> = typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt; U &gt;::const_reference</td></tr>
+<tr class="separator:a7da2cc48508b0238b820aea7c65bd7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2bed13f4710a2d4730105e69bf969ba3"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a2bed13f4710a2d4730105e69bf969ba3">compressed_pair</a> ()=default</td></tr>
+<tr class="separator:a2bed13f4710a2d4730105e69bf969ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6293a55496d76cf20311e575fb05c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a6f6293a55496d76cf20311e575fb05c3">compressed_pair</a> (<a class="el" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a> f) noexcept</td></tr>
+<tr class="separator:a6f6293a55496d76cf20311e575fb05c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93d252450d767c9d15c7c3a641687df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#ad93d252450d767c9d15c7c3a641687df">compressed_pair</a> (<a class="el" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> s) noexcept</td></tr>
+<tr class="separator:ad93d252450d767c9d15c7c3a641687df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217534ec72d3502162476d01b6ea504d"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a217534ec72d3502162476d01b6ea504d">compressed_pair</a> (<a class="el" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a> f, <a class="el" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> s) noexcept</td></tr>
+<tr class="separator:a217534ec72d3502162476d01b6ea504d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c489bddd88c7c062ad9ca3fe53e263"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a48c489bddd88c7c062ad9ca3fe53e263">compressed_pair</a> (const <a class="el" href="classmn_1_1compressed__pair.html#a366f949205080fe02d8e2c91990d0185">self_type</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a48c489bddd88c7c062ad9ca3fe53e263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44df9af0b128b3572ed9fa54ec512c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1compressed__pair.html#a25442a3c69b50251f957353b65e1448a">first_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#ab44df9af0b128b3572ed9fa54ec512c1">first</a> () noexcept</td></tr>
+<tr class="separator:ab44df9af0b128b3572ed9fa54ec512c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a520a1e5cb0bb6b71175ec5e8911fb"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a88a520a1e5cb0bb6b71175ec5e8911fb">first</a> () const noexcept</td></tr>
+<tr class="separator:a88a520a1e5cb0bb6b71175ec5e8911fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87966f9dd8330d977da4000121a198ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1compressed__pair.html#a462a4393b5cdd64623ee7154d91eb7d5">second_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a87966f9dd8330d977da4000121a198ce">second</a> () noexcept</td></tr>
+<tr class="separator:a87966f9dd8330d977da4000121a198ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da64f3dd3d9705f3416c474abecede2"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a1da64f3dd3d9705f3416c474abecede2">second</a> () const noexcept</td></tr>
+<tr class="separator:a1da64f3dd3d9705f3416c474abecede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8ffdc99723983e7e0887c2c15036a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#afb8ffdc99723983e7e0887c2c15036a0">swap</a> (<a class="el" href="classmn_1_1compressed__pair.html#a366f949205080fe02d8e2c91990d0185">self_type</a> &amp;o)</td></tr>
+<tr class="separator:afb8ffdc99723983e7e0887c2c15036a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a232abbde10eae37a6a72b5a076b22269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1ebo__storage.html">ebo_storage</a>&lt; T, 0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">m_first</a></td></tr>
+<tr class="separator:a232abbde10eae37a6a72b5a076b22269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c337c4d99a00ff9a9b251fba273afb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1ebo__storage.html">ebo_storage</a>&lt; U, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">m_second</a></td></tr>
+<tr class="separator:ad3c337c4d99a00ff9a9b251fba273afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T, typename U, typename = void&gt;<br />
+class mn::compressed_pair&lt; T, U, typename &gt;</h3>
+
+<p>A simple compressed pair</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>type for first value. </td></tr>
+    <tr><td class="paramname">U</td><td>type for second value. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3b9f1e5a9ed33db12bcbccee8c2260c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9f1e5a9ed33db12bcbccee8c2260c9">&#9670;&nbsp;</a></span>first_const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a> =  typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt;T&gt;::const_reference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25442a3c69b50251f957353b65e1448a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25442a3c69b50251f957353b65e1448a">&#9670;&nbsp;</a></span>first_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html#a25442a3c69b50251f957353b65e1448a">first_reference</a> =  typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt;T&gt;::reference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50166dd799a3648ae386d789f663e947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50166dd799a3648ae386d789f663e947">&#9670;&nbsp;</a></span>first_value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html#a50166dd799a3648ae386d789f663e947">first_value_type</a> =  typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt;T&gt;::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7da2cc48508b0238b820aea7c65bd7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da2cc48508b0238b820aea7c65bd7a9">&#9670;&nbsp;</a></span>second_const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> =  typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt;U&gt;::const_reference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a462a4393b5cdd64623ee7154d91eb7d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462a4393b5cdd64623ee7154d91eb7d5">&#9670;&nbsp;</a></span>second_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html#a462a4393b5cdd64623ee7154d91eb7d5">second_reference</a> =  typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt;U&gt;::reference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af62acaaf892e137d5b499ec79d6fc265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62acaaf892e137d5b499ec79d6fc265">&#9670;&nbsp;</a></span>second_value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html#af62acaaf892e137d5b499ec79d6fc265">second_value_type</a> =  typename <a class="el" href="namespacemn.html#structmn_1_1type__traits">type_traits</a>&lt;U&gt;::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a366f949205080fe02d8e2c91990d0185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366f949205080fe02d8e2c91990d0185">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html#a366f949205080fe02d8e2c91990d0185">self_type</a> =  <a class="el" href="classmn_1_1compressed__pair.html">compressed_pair</a>&lt;T, U&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2bed13f4710a2d4730105e69bf969ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bed13f4710a2d4730105e69bf969ba3">&#9670;&nbsp;</a></span>compressed_pair() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html">compressed_pair</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f6293a55496d76cf20311e575fb05c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6293a55496d76cf20311e575fb05c3">&#9670;&nbsp;</a></span>compressed_pair() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html">compressed_pair</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad93d252450d767c9d15c7c3a641687df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93d252450d767c9d15c7c3a641687df">&#9670;&nbsp;</a></span>compressed_pair() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html">compressed_pair</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a217534ec72d3502162476d01b6ea504d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217534ec72d3502162476d01b6ea504d">&#9670;&nbsp;</a></span>compressed_pair() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html">compressed_pair</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a>&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a>&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48c489bddd88c7c062ad9ca3fe53e263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c489bddd88c7c062ad9ca3fe53e263">&#9670;&nbsp;</a></span>compressed_pair() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::<a class="el" href="classmn_1_1compressed__pair.html">compressed_pair</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1compressed__pair.html#a366f949205080fe02d8e2c91990d0185">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a88a520a1e5cb0bb6b71175ec5e8911fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a520a1e5cb0bb6b71175ec5e8911fb">&#9670;&nbsp;</a></span>first() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a> <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::first </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab44df9af0b128b3572ed9fa54ec512c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44df9af0b128b3572ed9fa54ec512c1">&#9670;&nbsp;</a></span>first() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1compressed__pair.html#a25442a3c69b50251f957353b65e1448a">first_reference</a> <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::first </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1da64f3dd3d9705f3416c474abecede2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da64f3dd3d9705f3416c474abecede2">&#9670;&nbsp;</a></span>second() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::second </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87966f9dd8330d977da4000121a198ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87966f9dd8330d977da4000121a198ce">&#9670;&nbsp;</a></span>second() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1compressed__pair.html#a462a4393b5cdd64623ee7154d91eb7d5">second_reference</a> <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::second </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb8ffdc99723983e7e0887c2c15036a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8ffdc99723983e7e0887c2c15036a0">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1compressed__pair.html#a366f949205080fe02d8e2c91990d0185">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a232abbde10eae37a6a72b5a076b22269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232abbde10eae37a6a72b5a076b22269">&#9670;&nbsp;</a></span>m_first</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1ebo__storage.html">ebo_storage</a>&lt;T, 0&gt; <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::m_first</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3c337c4d99a00ff9a9b251fba273afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c337c4d99a00ff9a9b251fba273afb">&#9670;&nbsp;</a></span>m_second</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1ebo__storage.html">ebo_storage</a>&lt;U, 1&gt; <a class="el" href="classmn_1_1compressed__pair.html">mn::compressed_pair</a>&lt; T, U, typename &gt;::m_second</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__compressed__pair_8hpp_source.html">mn_compressed_pair.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

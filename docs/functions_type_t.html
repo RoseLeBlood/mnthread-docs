@@ -156,6 +156,9 @@ $(document).ready(function(){initNavTree('functions_type_t.html',''); initResiza
 : <a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">mn::basic_timespan</a>
 , <a class="el" href="classmn_1_1basic__timestamp.html#a36dca4de3266cbda26a88eabe5cb2ed6">mn::basic_timestamp</a>
 </li>
+<li>timepan_type
+: <a class="el" href="classmn_1_1basic__timestamp.html#ae5a7aac235815a564792b120ed4c5c6d">mn::basic_timestamp</a>
+</li>
 <li>traits_type
 : <a class="el" href="classmn_1_1basic__iterator__pair.html#a8660a16087bf3d2b5648f322f439aa4f">mn::basic_iterator_pair&lt; TIterator, UIterator, TCategory &gt;</a>
 , <a class="el" href="classmn_1_1basic__iterator__triple.html#a7a71f738818f8fe06c7920bee394f26c">mn::basic_iterator_triple&lt; TIterator, UIterator, VIterator, TCategory &gt;</a>
@@ -164,8 +167,13 @@ $(document).ready(function(){initNavTree('functions_type_t.html',''); initResiza
 : <a class="el" href="classmn_1_1container_1_1base__rb__tree.html#a74488e3a3979a61866729b7ed145ea17">mn::container::base_rb_tree&lt; TTreeTraits, TAllocator &gt;</a>
 </li>
 <li>type
-: <a class="el" href="namespacemn.html#aa912ff4e9a875e06bb3823e6bb4c7477">mn::char_alignment&lt; Target, check &gt;</a>
+: <a class="el" href="namespacemn.html#ad1bce545870e767a556b945bdce03b44">mn::add_cv&lt; T &gt;</a>
+, <a class="el" href="namespacemn.html#abc44a0d1c4741fc5361679ea8cc07a24">mn::add_pointer&lt; T &gt;</a>
+, <a class="el" href="namespacemn.html#a48a18e0d7e8407b590b5a7d3104dc88b">mn::add_reference&lt; T &gt;</a>
+, <a class="el" href="namespacemn.html#aa912ff4e9a875e06bb3823e6bb4c7477">mn::char_alignment&lt; Target, check &gt;</a>
 , <a class="el" href="namespacemn.html#a4efe4e249064b8ae518f29969ee6aaa7">mn::char_alignment&lt; Target, false &gt;</a>
+, <a class="el" href="namespacemn.html#a7973b68089c5c0381abb8d98c0c71664">mn::conditional&lt; B, T, F &gt;</a>
+, <a class="el" href="namespacemn.html#a72e1a21829f7e50d1052048df0811ced">mn::conditional&lt; false, T, F &gt;</a>
 , <a class="el" href="namespacemn.html#a80b5283573942e1ebd033fbf7358e192">mn::double_alignment&lt; Target, check &gt;</a>
 , <a class="el" href="namespacemn.html#aff3065059d6922dd33bdd3424a1f9733">mn::double_alignment&lt; Target, false &gt;</a>
 , <a class="el" href="namespacemn.html#a080f35ec0a430b41a4a5b2bbb78152b7">mn::int_alignment&lt; Target, check &gt;</a>
@@ -176,9 +184,20 @@ $(document).ready(function(){initNavTree('functions_type_t.html',''); initResiza
 , <a class="el" href="namespacemn.html#a94f89aa87fa5bdd84388eee58e9cc2ab">mn::long_double_alignment&lt; Target, false &gt;</a>
 , <a class="el" href="namespacemn.html#a64d22b1fa9a35c40918118f4386c8875">mn::long_long_alignment&lt; Target, check &gt;</a>
 , <a class="el" href="namespacemn.html#a9766cf66e62738ca68234f2b4e0b52e5">mn::long_long_alignment&lt; Target, false &gt;</a>
-, <a class="el" href="namespacemn.html#a089435d3dec9ea535a59b12d5326c4de">mn::make_void&lt; ts &gt;</a>
+, <a class="el" href="namespacemn.html#a0b30ec37f5bcb1d067e7385cd394eacc">mn::make_void&lt; ts &gt;</a>
+, <a class="el" href="namespacemn_1_1memory_1_1detail.html#a900dad92efd5eaa5e32063b5ba1babb0">mn::memory::detail::ptr_difference&lt; class, class &gt;</a>
+, <a class="el" href="namespacemn_1_1memory_1_1detail.html#a03d5f2068b916276d5fb509e9c55cd6d">mn::memory::detail::ptr_element&lt; T, class &gt;</a>
+, <a class="el" href="namespacemn_1_1memory_1_1detail.html#a30bd42afe72551cac5ec32b3b9e331b1">mn::memory::detail::ptr_first&lt; T&lt; U, Args... &gt; &gt;</a>
+, <a class="el" href="namespacemn_1_1memory_1_1detail.html#a17d94919563746656fb3e3a5c4c5a89c">mn::memory::detail::ptr_rebind&lt; T, U, class &gt;</a>
+, <a class="el" href="namespacemn_1_1memory_1_1detail.html#a419047a38fac92891d5228310d76427e">mn::memory::detail::ptr_rebind&lt; T, U, typename ptr_void&lt; typename T::template rebind&lt; U &gt; &gt;::type &gt;</a>
+, <a class="el" href="namespacemn_1_1memory_1_1detail.html#acfba3a58455c17fcb6b20c980dd94d36">mn::memory::detail::ptr_transform&lt; T&lt; U, Args... &gt;, V &gt;</a>
+, <a class="el" href="namespacemn_1_1memory_1_1detail.html#ab31389150cc3f076cfd767da24aba0aa">mn::memory::detail::ptr_value&lt; T &gt;</a>
+, <a class="el" href="namespacemn_1_1memory_1_1detail.html#a96165e9908fe24c055976268dd6b7be3">mn::memory::detail::ptr_void&lt; class &gt;</a>
+, <a class="el" href="structmn_1_1memory_1_1pointer__traits.html#a8cdb821ec612083312a697b60a643198">mn::memory::pointer_traits&lt; TAllocator &gt;::rebind_to&lt; U &gt;</a>
+, <a class="el" href="structmn_1_1memory_1_1pointer__traits_3_01T_01_5_01_4.html#afcb4d586bd467a24177e3660f6bcd711">mn::memory::pointer_traits&lt; T * &gt;::rebind_to&lt; U &gt;</a>
 , <a class="el" href="namespacemn.html#aa79624ca671a3d5c19e49d78c2b8deff">mn::short_alignment&lt; Target, check &gt;</a>
 , <a class="el" href="namespacemn.html#a31c485bb5bad58a0e9fdd7300dff2f14">mn::short_alignment&lt; Target, false &gt;</a>
+, <a class="el" href="structmn_1_1sqrt.html#a4707c103fdde913bcfe20b43abb4db52">mn::sqrt&lt; VAL, X &gt;</a>
 , <a class="el" href="structmn_1_1tag.html#a663ea5282269431efc54a85a390ea3de">mn::tag&lt; T &gt;</a>
 </li>
 </ul>

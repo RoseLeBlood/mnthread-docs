@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_any.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__any_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_any.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__any_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __MINILIB_CONTAINER_ANY_H__</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __MINILIB_CONTAINER_ANY_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"># include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"># include &lt;typeinfo&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;../mn_allocator.hpp&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;../mn_def.hpp&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;../mn_functional.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;../mn_typetraits.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;../utils/mn_utils.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html">   37</a></span>&#160;    <span class="keyword">namespace </span>container {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html">   45</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1container_1_1basic__any.html">basic_any</a> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html">   49</a></span>&#160;            <span class="keyword">class </span><a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html">basic_any_holder</a> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html#a50f54c3bb594446abfca7d2302a284a7">   51</a></span>&#160;                <span class="keyword">virtual</span> std::type_info <span class="keyword">const</span> &amp; <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html#a50f54c3bb594446abfca7d2302a284a7">type</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html#aaa087586681c8ae83e3da61858f04c22">   52</a></span>&#160;                <span class="keyword">virtual</span> iholder * <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html#aaa087586681c8ae83e3da61858f04c22">clone</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            };</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html">   59</a></span>&#160;            <span class="keyword">class </span><a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html">basic_any_holder_impl</a> : <span class="keyword">public</span> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html">basic_any_holder</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a9b0b6af4bb87962aee916eeb4337b5cb">   61</a></span>&#160;                <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a9b0b6af4bb87962aee916eeb4337b5cb">TYPE_SIZE</a>() { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>); }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a6a96f5c1139d64b86fa4509a3ed2f01a">   63</a></span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a6a96f5c1139d64b86fa4509a3ed2f01a">basic_any_holder_impl</a>( <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> <span class="keyword">const</span> &amp; value ) : <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a670bd3734ff6b8ace2c05e846cec7bab">m_typeHold</a>( value ) {}</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ae8f94afdac334175eeba5faf83acd227">   64</a></span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ae8f94afdac334175eeba5faf83acd227">basic_any_holder_impl</a>( <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> &amp;&amp; value ) : <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a670bd3734ff6b8ace2c05e846cec7bab">m_typeHold</a>( <a class="code" href="namespacemn.html">mn</a>::<a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">move</a>( value ) ) {}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ae8e31e834e5f7e9097d70966c9cf2e1c">   71</a></span>&#160;                <span class="keyword">virtual</span> std::type_info <span class="keyword">const</span> &amp; <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ae8e31e834e5f7e9097d70966c9cf2e1c">type</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">typeid</span>( <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ac9f4f4b8b9e166846ba768cf073eff5d">   79</a></span>&#160;                <span class="keyword">virtual</span> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html">basic_any_holder</a>* <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ac9f4f4b8b9e166846ba768cf073eff5d">clone</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a6a96f5c1139d64b86fa4509a3ed2f01a">basic_any_holder_impl</a>( <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a670bd3734ff6b8ace2c05e846cec7bab">m_typeHold</a> );</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a33cb6eb7cef7c9041b9d0152e24ccd88">   87</a></span>&#160;                <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a33cb6eb7cef7c9041b9d0152e24ccd88">get</a>() { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a670bd3734ff6b8ace2c05e846cec7bab">m_typeHold</a>; }</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a99e1057f018bb1753d6b2f09b71c3e94">   92</a></span>&#160;                <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a99e1057f018bb1753d6b2f09b71c3e94">get</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a670bd3734ff6b8ace2c05e846cec7bab">m_typeHold</a>; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a62d96e940fbd6a743fee0c19b6bca77a">   97</a></span>&#160;                <span class="keyword">operator</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>() { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a33cb6eb7cef7c9041b9d0152e24ccd88">get</a>(); }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a670bd3734ff6b8ace2c05e846cec7bab">  102</a></span>&#160;                <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a670bd3734ff6b8ace2c05e846cec7bab">m_typeHold</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            };</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a92393c622fe6e090ff582ba54b3860d3">  106</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a> = <a class="code" href="classmn_1_1container_1_1basic__any.html">basic_any&lt;TAllocator&gt;</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#ae65571b4e082a112d8a383f5419592ec">  107</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html">holder_type</a> = <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html">basic_any_holder</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#abdb9e732d52ebd26aa35c04a0772ea77">  112</a></span>&#160;            constexpr <a class="code" href="classmn_1_1container_1_1basic__any.html#abdb9e732d52ebd26aa35c04a0772ea77">basic_any</a>() noexcept</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>( <span class="keywordtype">nullptr</span> ) {}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keyword">template</span>&lt; <span class="keyword">class</span> T &gt;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#acf078804b0d5577db67dc086f7608427">  119</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any.html#acf078804b0d5577db67dc086f7608427">basic_any</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> &amp; other ) : <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>( nullptr ) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any.html#a0a7a20dfb76562233378794795864219">construct</a>(other);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a33820f2ab6d9db63519ecdfe317fa2d0">  126</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any.html#a33820f2ab6d9db63519ecdfe317fa2d0">basic_any</a>( <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a>&amp; other )</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>(nullptr )  {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">if</span> ((<span class="keyword">this</span> != &amp;other) &amp;&amp; !other.empty()) <a class="code" href="classmn_1_1container_1_1basic__any.html#a0a7a20dfb76562233378794795864219">construct</a>(other);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#af025343ae11e58543dfb165f1f5ae12d">  134</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any.html#af025343ae11e58543dfb165f1f5ae12d">basic_any</a>( <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a> &amp;&amp; other ) noexcept</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                : <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>.content( <a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a>( other.m_asyContent ) ) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    other.m_asyContent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a020bbd6f849b8194fe779b3070bd61f1">  142</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any.html#a020bbd6f849b8194fe779b3070bd61f1">~basic_any</a>() { <a class="code" href="classmn_1_1container_1_1basic__any.html#a5e51ea46977a44ab6b28e4aac33ac3d6">deconstruct</a>(<span class="keyword">true</span>); }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a028c651fea20c351be6dcc356f3b4b4d">  147</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#a028c651fea20c351be6dcc356f3b4b4d">reset</a>() noexcept {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any.html#a5e51ea46977a44ab6b28e4aac33ac3d6">deconstruct</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a12c20b54d4d96e8697d4f1bd02090374">  154</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a>&amp; <a class="code" href="classmn_1_1container_1_1basic__any.html#a12c20b54d4d96e8697d4f1bd02090374">swap</a>( any &amp; other ) noexcept {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;other) <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a>( <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>, other.m_asyContent );</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a13f56e0ff43edd3bf3247844370ddba1">  165</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#a13f56e0ff43edd3bf3247844370ddba1">has_value</a>() const noexcept {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a> != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#ac9315ceac8c0c92ea2d23828ef5c2d25">  173</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#ac9315ceac8c0c92ea2d23828ef5c2d25">is_empty</a>() const noexcept {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a> == <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a9efef088baa53e0125a2822b7f0f3ed3">  181</a></span>&#160;            <span class="keyword">const</span> std::type_info &amp; <a class="code" href="classmn_1_1container_1_1basic__any.html#a9efef088baa53e0125a2822b7f0f3ed3">type</a>() const noexcept {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#a13f56e0ff43edd3bf3247844370ddba1">has_value</a>() ? <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>-&gt;<a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html#a50f54c3bb594446abfca7d2302a284a7">type</a>() : <span class="keyword">typeid</span>( void );</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a9c37226f161ddeabca2749a66fc8d952">  190</a></span>&#160;            <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> * <a class="code" href="classmn_1_1container_1_1basic__any.html#a9c37226f161ddeabca2749a66fc8d952">to_pointer</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                <span class="keyword">auto</span>* _content = <span class="keyword">static_cast&lt;</span><a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html">basic_any_holder_impl&lt;T&gt;</a> *<span class="keyword">&gt;</span>( <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a> );</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keywordflow">return</span> &amp;( _content-&gt;get() );</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keyword">template</span>&lt; <span class="keyword">class</span> T &gt;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a039cd22409643c7739abf17382a1928b">  200</a></span>&#160;            <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> * <a class="code" href="classmn_1_1container_1_1basic__any.html#a039cd22409643c7739abf17382a1928b">to_pointer</a>() {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                <span class="keyword">auto</span>* _content = <span class="keyword">static_cast&lt;</span><a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html">basic_any_holder_impl&lt;T&gt;</a> *<span class="keyword">&gt;</span>( <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a> );</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">return</span> &amp;( _content-&gt;get() );</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#ad6fc3883fdd50d6aecc7c9b43abb3322">  208</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a>&amp; <a class="code" href="classmn_1_1container_1_1basic__any.html#ad6fc3883fdd50d6aecc7c9b43abb3322">operator=</a>( <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a>&amp; other ) noexcept {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any.html#a92393c622fe6e090ff582ba54b3860d3">self_type</a>( other ).swap( *<span class="keyword">this</span> );</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a39bb4b0c643cab80216fabe61352a3a8">  216</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a>&amp; <a class="code" href="classmn_1_1container_1_1basic__any.html#a39bb4b0c643cab80216fabe61352a3a8">operator=</a>( <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a> &amp;&amp; other ) noexcept {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any.html#a92393c622fe6e090ff582ba54b3860d3">self_type</a>( <a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a>( other ) ).swap( *<span class="keyword">this</span> );</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a864dde90e2afc2e40ba1152daf95c468">  225</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a>&amp; <a class="code" href="classmn_1_1container_1_1basic__any.html#a864dde90e2afc2e40ba1152daf95c468">operator=</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; other ) noexcept {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any.html#a0a7a20dfb76562233378794795864219">construct</a>(other);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keyword">template</span>&lt; <span class="keyword">class </span><a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>, <span class="keyword">class</span>... Args &gt;</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#aa98a4bbb880e333c9e063221f883065c">  234</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#aa98a4bbb880e333c9e063221f883065c">emplace</a>( Args &amp;&amp; ... args ) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any.html#a92393c622fe6e090ff582ba54b3860d3">self_type</a>( <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>( mn::forward&lt;Args&gt;(args)... ) ).swap( *<span class="keyword">this</span> );</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a0a7a20dfb76562233378794795864219">  241</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#a0a7a20dfb76562233378794795864219">construct</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__any.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                <span class="keywordflow">if</span>(other.<a class="code" href="classmn_1_1container_1_1basic__any.html#a13f56e0ff43edd3bf3247844370ddba1">has_value</a>())</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a> = other.<a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>-&gt;<a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html#aaa087586681c8ae83e3da61858f04c22">clone</a>() ;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keyword">template</span>&lt; <span class="keyword">class</span> T &gt;</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#af4355079855d7199d6d6c8c3ade44e97">  252</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#af4355079855d7199d6d6c8c3ade44e97">construct</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> &amp; other) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a> = <span class="keyword">new</span>  <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html">basic_any_holder_impl&lt;T&gt;</a>(other) ;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a5e51ea46977a44ab6b28e4aac33ac3d6">  261</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#a5e51ea46977a44ab6b28e4aac33ac3d6">deconstruct</a>(<span class="keywordtype">bool</span> bdelete = <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                mn::destruct&lt;content_type&gt;(<a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <span class="keywordflow">if</span>(bdelete) <span class="keyword">delete</span> <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">  269</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html">holder_type</a> <a class="code" href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">m_asyContent</a>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        };</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a86fdee12ccbf94550c54e89e4d4bf7a3">  272</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemn_1_1container.html#a86fdee12ccbf94550c54e89e4d4bf7a3">swap</a>( <a class="code" href="classmn_1_1container_1_1basic__any.html">basic_any</a>&amp; x, <a class="code" href="classmn_1_1container_1_1basic__any.html">basic_any</a>&amp; y ) noexcept {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            x.swap( y );</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keyword">template</span>&lt; <span class="keyword">class </span><a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>, <span class="keyword">class </span>...Args &gt;</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a9f664b5eab74ad83b67d871bf6f0769f">  282</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="classmn_1_1container_1_1basic__any.html">basic_any</a> <a class="code" href="namespacemn_1_1container.html#a9f664b5eab74ad83b67d871bf6f0769f">make_any</a>( Args&amp;&amp; ...args ) {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__any.html">basic_any</a>( mn::in_place_type&lt;T&gt;, mn::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keyword">template</span>&lt; <span class="keyword">class</span> T &gt;</div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a24908fb4eeb3cabe7fbacc599d899f38">  292</a></span>&#160;        <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>* <a class="code" href="namespacemn_1_1container.html#a24908fb4eeb3cabe7fbacc599d899f38">any_cast</a>( <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__any.html">basic_any</a>* other ) noexcept {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keywordflow">if</span>(other == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keywordflow">return</span> operand-&gt;type() == <span class="keyword">typeid</span>(<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>) ? operand-&gt;to_pointer&lt;<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&gt;() : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T &gt;</div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#af4413edd74cfa09f3df566cf859b3d23">  303</a></span>&#160;        <span class="keyword">inline</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>* <a class="code" href="namespacemn_1_1container.html#a24908fb4eeb3cabe7fbacc599d899f38">any_cast</a>(<a class="code" href="classmn_1_1container_1_1basic__any.html">basic_any</a>* other ) noexcept {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="keywordflow">if</span>(other == <span class="keyword">nullptr</span>) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <span class="keywordflow">return</span> operand-&gt;type() == <span class="keyword">typeid</span>(<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>) ? operand-&gt;to_pointer&lt;<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&gt;() : <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_CONTAINER_ANY_H__</span></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html">mn::container::basic_any::basic_any_holder_impl</a></div><div class="ttdoc">The real impl of the basic_any holder.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:59</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html_a33cb6eb7cef7c9041b9d0152e24ccd88"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a33cb6eb7cef7c9041b9d0152e24ccd88">mn::container::basic_any::basic_any_holder_impl::get</a></div><div class="ttdeci">T get()</div><div class="ttdoc">Get the stored value.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:87</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html_a670bd3734ff6b8ace2c05e846cec7bab"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a670bd3734ff6b8ace2c05e846cec7bab">mn::container::basic_any::basic_any_holder_impl::m_typeHold</a></div><div class="ttdeci">T m_typeHold</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:102</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html_a6a96f5c1139d64b86fa4509a3ed2f01a"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a6a96f5c1139d64b86fa4509a3ed2f01a">mn::container::basic_any::basic_any_holder_impl::basic_any_holder_impl</a></div><div class="ttdeci">basic_any_holder_impl(T const &amp;value)</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:63</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html_a99e1057f018bb1753d6b2f09b71c3e94"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a99e1057f018bb1753d6b2f09b71c3e94">mn::container::basic_any::basic_any_holder_impl::get</a></div><div class="ttdeci">const T get() const</div><div class="ttdoc">Get the stored value.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:92</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html_a9b0b6af4bb87962aee916eeb4337b5cb"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#a9b0b6af4bb87962aee916eeb4337b5cb">mn::container::basic_any::basic_any_holder_impl::TYPE_SIZE</a></div><div class="ttdeci">static const int TYPE_SIZE()</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:61</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html_ac9f4f4b8b9e166846ba768cf073eff5d"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ac9f4f4b8b9e166846ba768cf073eff5d">mn::container::basic_any::basic_any_holder_impl::clone</a></div><div class="ttdeci">virtual basic_any_holder * clone() const override</div><div class="ttdoc">Get a clone from this.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:79</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html_ae8e31e834e5f7e9097d70966c9cf2e1c"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ae8e31e834e5f7e9097d70966c9cf2e1c">mn::container::basic_any::basic_any_holder_impl::type</a></div><div class="ttdeci">virtual std::type_info const  &amp; type() const override</div><div class="ttdoc">Get the type info of the given type.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:71</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder__impl_html_ae8f94afdac334175eeba5faf83acd227"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder__impl.html#ae8f94afdac334175eeba5faf83acd227">mn::container::basic_any::basic_any_holder_impl::basic_any_holder_impl</a></div><div class="ttdeci">basic_any_holder_impl(T &amp;&amp;value)</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:64</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html">mn::container::basic_any::basic_any_holder</a></div><div class="ttdoc">Interface class for the holder.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:49</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder_html_a50f54c3bb594446abfca7d2302a284a7"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html#a50f54c3bb594446abfca7d2302a284a7">mn::container::basic_any::basic_any_holder::type</a></div><div class="ttdeci">virtual std::type_info const  &amp; type() const =0</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_1_1basic__any__holder_html_aaa087586681c8ae83e3da61858f04c22"><div class="ttname"><a href="classmn_1_1container_1_1basic__any_1_1basic__any__holder.html#aaa087586681c8ae83e3da61858f04c22">mn::container::basic_any::basic_any_holder::clone</a></div><div class="ttdeci">virtual iholder * clone() const =0</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html">mn::container::basic_any</a></div><div class="ttdoc">An Any class represents a general type and is capable of storing any type.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:45</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a020bbd6f849b8194fe779b3070bd61f1"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a020bbd6f849b8194fe779b3070bd61f1">mn::container::basic_any::~basic_any</a></div><div class="ttdeci">~basic_any()</div><div class="ttdoc">Deconstructor of this basic_any object.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:142</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a028c651fea20c351be6dcc356f3b4b4d"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a028c651fea20c351be6dcc356f3b4b4d">mn::container::basic_any::reset</a></div><div class="ttdeci">void reset() noexcept</div><div class="ttdoc">Reset the basic_any.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:147</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a039cd22409643c7739abf17382a1928b"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a039cd22409643c7739abf17382a1928b">mn::container::basic_any::to_pointer</a></div><div class="ttdeci">T * to_pointer()</div><div class="ttdoc">Get the content as pointer.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:200</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a0a7a20dfb76562233378794795864219"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a0a7a20dfb76562233378794795864219">mn::container::basic_any::construct</a></div><div class="ttdeci">void construct(const self_type &amp;other)</div><div class="ttdoc">Helper function to construct the basic_any from other basic_any.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:241</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a12c20b54d4d96e8697d4f1bd02090374"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a12c20b54d4d96e8697d4f1bd02090374">mn::container::basic_any::swap</a></div><div class="ttdeci">self_type &amp; swap(any &amp;other) noexcept</div><div class="ttdoc">Swaps the content of the two Anys.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:154</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a13f56e0ff43edd3bf3247844370ddba1"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a13f56e0ff43edd3bf3247844370ddba1">mn::container::basic_any::has_value</a></div><div class="ttdeci">bool has_value() const noexcept</div><div class="ttdoc">Has the basic_any any value?</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:165</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a33820f2ab6d9db63519ecdfe317fa2d0"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a33820f2ab6d9db63519ecdfe317fa2d0">mn::container::basic_any::basic_any</a></div><div class="ttdeci">basic_any(const self_type &amp;other)</div><div class="ttdoc">Copy constructor, works with both empty and initialized Any values.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:126</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a39bb4b0c643cab80216fabe61352a3a8"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a39bb4b0c643cab80216fabe61352a3a8">mn::container::basic_any::operator=</a></div><div class="ttdeci">self_type &amp; operator=(self_type &amp;&amp;other) noexcept</div><div class="ttdoc">Assignment operator for basic_any.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:216</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a5e51ea46977a44ab6b28e4aac33ac3d6"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a5e51ea46977a44ab6b28e4aac33ac3d6">mn::container::basic_any::deconstruct</a></div><div class="ttdeci">void deconstruct(bool bdelete=false)</div><div class="ttdoc">Helper function to deconstruct.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:261</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a864dde90e2afc2e40ba1152daf95c468"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a864dde90e2afc2e40ba1152daf95c468">mn::container::basic_any::operator=</a></div><div class="ttdeci">self_type &amp; operator=(const T &amp;other) noexcept</div><div class="ttdoc">Assignment operator for all types.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:225</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a92393c622fe6e090ff582ba54b3860d3"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a92393c622fe6e090ff582ba54b3860d3">mn::container::basic_any::self_type</a></div><div class="ttdeci">basic_any&lt; TAllocator &gt; self_type</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:106</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a94d06cc967f7e1c9e944995cbb06ad41"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a94d06cc967f7e1c9e944995cbb06ad41">mn::container::basic_any::m_asyContent</a></div><div class="ttdeci">holder_type m_asyContent</div><div class="ttdoc">Holder of the value.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:269</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a9c37226f161ddeabca2749a66fc8d952"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a9c37226f161ddeabca2749a66fc8d952">mn::container::basic_any::to_pointer</a></div><div class="ttdeci">const T * to_pointer() const</div><div class="ttdoc">Get the content as pointer.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:190</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_a9efef088baa53e0125a2822b7f0f3ed3"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#a9efef088baa53e0125a2822b7f0f3ed3">mn::container::basic_any::type</a></div><div class="ttdeci">const std::type_info &amp; type() const noexcept</div><div class="ttdoc">Returns the type information of the stored content.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:181</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_aa98a4bbb880e333c9e063221f883065c"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#aa98a4bbb880e333c9e063221f883065c">mn::container::basic_any::emplace</a></div><div class="ttdeci">void emplace(Args &amp;&amp;... args)</div><div class="ttdoc">emplace</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:234</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_abdb9e732d52ebd26aa35c04a0772ea77"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#abdb9e732d52ebd26aa35c04a0772ea77">mn::container::basic_any::basic_any</a></div><div class="ttdeci">constexpr basic_any() noexcept</div><div class="ttdoc">Construct an empty basic_any type.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:112</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_ac9315ceac8c0c92ea2d23828ef5c2d25"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#ac9315ceac8c0c92ea2d23828ef5c2d25">mn::container::basic_any::is_empty</a></div><div class="ttdeci">bool is_empty() const noexcept</div><div class="ttdoc">if the basic_any empty?</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:173</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_acf078804b0d5577db67dc086f7608427"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#acf078804b0d5577db67dc086f7608427">mn::container::basic_any::basic_any</a></div><div class="ttdeci">basic_any(const T &amp;other)</div><div class="ttdoc">Construct an any which stores the init parameter inside.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:119</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_ad6fc3883fdd50d6aecc7c9b43abb3322"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#ad6fc3883fdd50d6aecc7c9b43abb3322">mn::container::basic_any::operator=</a></div><div class="ttdeci">self_type &amp; operator=(const self_type &amp;other) noexcept</div><div class="ttdoc">Assignment operator for basic_any.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:208</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_af025343ae11e58543dfb165f1f5ae12d"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#af025343ae11e58543dfb165f1f5ae12d">mn::container::basic_any::basic_any</a></div><div class="ttdeci">basic_any(self_type &amp;&amp;other) noexcept</div><div class="ttdoc">Copy constructor, works with both empty and initialized Any values.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:134</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__any_html_af4355079855d7199d6d6c8c3ade44e97"><div class="ttname"><a href="classmn_1_1container_1_1basic__any.html#af4355079855d7199d6d6c8c3ade44e97">mn::container::basic_any::construct</a></div><div class="ttdeci">void construct(const T &amp;other)</div><div class="ttdoc">Helper function to construct the basic_any from value.</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:252</div></div>
+<div class="ttc" id="amn__algorithm_8hpp_html"><div class="ttname"><a href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a></div><div class="ttdoc">Basic algorithmens This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniT...</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_a24908fb4eeb3cabe7fbacc599d899f38"><div class="ttname"><a href="namespacemn_1_1container.html#a24908fb4eeb3cabe7fbacc599d899f38">mn::container::any_cast</a></div><div class="ttdeci">const T * any_cast(const basic_any *other) noexcept</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:292</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_a86fdee12ccbf94550c54e89e4d4bf7a3"><div class="ttname"><a href="namespacemn_1_1container.html#a86fdee12ccbf94550c54e89e4d4bf7a3">mn::container::swap</a></div><div class="ttdeci">void swap(basic_any &amp;x, basic_any &amp;y) noexcept</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:272</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_a9f664b5eab74ad83b67d871bf6f0769f"><div class="ttname"><a href="namespacemn_1_1container.html#a9f664b5eab74ad83b67d871bf6f0769f">mn::container::make_any</a></div><div class="ttdeci">basic_any make_any(Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:282</div></div>
+<div class="ttc" id="anamespacemn_1_1memory_1_1detail_html_a3179d74d784513b556ce52d25fc357e7"><div class="ttname"><a href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">mn::memory::detail::T</a></div><div class="ttdeci">struct mn::memory::detail::ptr_difference T</div><div class="ttdef"><b>Definition:</b> mn_atomic_singleton.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a83841949e9c46378f0f533a3a6605bff"><div class="ttname"><a href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a></div><div class="ttdeci">void swap(TAssignable &amp;a, TAssignable &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:312</div></div>
+<div class="ttc" id="anamespacemn_html_ae37469aa8cfbdec2289a0c3879decbdd"><div class="ttname"><a href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a></div><div class="ttdeci">void move(const T *src, const T *last, T *dest)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:100</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

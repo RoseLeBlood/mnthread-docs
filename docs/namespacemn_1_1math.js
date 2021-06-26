@@ -164,5 +164,15 @@ var namespacemn_1_1math =
     [ "operator-", "namespacemn_1_1math.html#a2578d64aea34a9a241e07d8832def386", null ],
     [ "operator/", "namespacemn_1_1math.html#a0ce8fd47dce977caa869cff467ec4207", null ],
     [ "operator/", "namespacemn_1_1math.html#ab1b1bd6e0e08a67b42e73af0a334b22c", null ],
-    [ "operator==", "namespacemn_1_1math.html#a9d6445f6dc0db024357f77aa87a4bd22", null ]
+    [ "operator==", "namespacemn_1_1math.html#a9d6445f6dc0db024357f77aa87a4bd22", null ],
+    [ "e", "namespacemn_1_1math.html#a3d23f9f128cb92bd99fba904d53b1ce1", null ],
+    [ "e_reciprocal", "namespacemn_1_1math.html#ae5f3b1b1e28f0c625e4ace9b1bfb568f", null ],
+    [ "e_squared", "namespacemn_1_1math.html#aac2f8653720517e56d203e3ef4cf8e54", null ],
+    [ "euler", "namespacemn_1_1math.html#ac5624e1465cba39f9c3064a4ee576a51", null ],
+    [ "golden_ratio", "namespacemn_1_1math.html#ad70a890fb8f86727512a2437363dc89a", null ],
+    [ "pi", "namespacemn_1_1math.html#acbc54a7625a54d3c63a30ad7203d534c", null ],
+    [ "pi_reciprocal", "namespacemn_1_1math.html#a7e21429bc16b6c8d3f062d2543313184", null ],
+    [ "pi_squared", "namespacemn_1_1math.html#a2becdd28c36fd3bff981af0ba5de3800", null ],
+    [ "root2", "namespacemn_1_1math.html#a64f0dcca39ca7dc379e354ec5b110f4e", null ],
+    [ "root2_reciprocal", "namespacemn_1_1math.html#a2181dedc6c6f441086db27e65646265f", null ]
 ];

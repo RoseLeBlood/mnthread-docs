@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::pointer::basic_unique_ptr&lt; T[], TAllocator, TDeleter &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::pointer::basic_unique_ptr&lt; T[], TAllocator, TDeleter &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A simple unique_ptr, for a array object.  
+ <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__unique__ptr_8hpp_source.html">mn_unique_ptr.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::pointer::basic_unique_ptr&lt; T[], TAllocator, TDeleter &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4__inherit__graph.svg" width="219" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::pointer::basic_unique_ptr&lt; T[], TAllocator, TDeleter &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4__coll__graph.svg" width="219" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a263415cbaf079bb3305f66744e746372"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a263415cbaf079bb3305f66744e746372">value_type</a> = T</td></tr>
+<tr class="separator:a263415cbaf079bb3305f66744e746372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360f8e83eab62b4aeb800a4e36b23de7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> = T *</td></tr>
+<tr class="separator:a360f8e83eab62b4aeb800a4e36b23de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a02cfecb711755d338a5d4a5d22889"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#af9a02cfecb711755d338a5d4a5d22889">const_pointer</a> = const T *</td></tr>
+<tr class="separator:af9a02cfecb711755d338a5d4a5d22889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd3441e9c6066968d2601346e436596"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a7cd3441e9c6066968d2601346e436596">reference</a> = T &amp;</td></tr>
+<tr class="separator:a7cd3441e9c6066968d2601346e436596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d45f576f7ce5c42349bb245cec44d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a81d45f576f7ce5c42349bb245cec44d2">const_reference</a> = const T &amp;</td></tr>
+<tr class="separator:a81d45f576f7ce5c42349bb245cec44d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee452b0fcd9d00466161de7c502f83a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> = TDeleter</td></tr>
+<tr class="separator:aee452b0fcd9d00466161de7c502f83a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66e42cc8cbbfd066250c86011feef34"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aa66e42cc8cbbfd066250c86011feef34">allotor_type</a> = TAllocator</td></tr>
+<tr class="separator:aa66e42cc8cbbfd066250c86011feef34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebb3e7cb3b74fc722c91cb18e2c2ff0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> = <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a263415cbaf079bb3305f66744e746372">value_type</a>, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aa66e42cc8cbbfd066250c86011feef34">allotor_type</a>, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &gt;</td></tr>
+<tr class="separator:adebb3e7cb3b74fc722c91cb18e2c2ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classmn_1_1only__move__tag"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmn_1_1only__move__tag')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmn_1_1only__move__tag.html">mn::only_move_tag&lt; void &gt;</a></td></tr>
+<tr class="memitem:a371d4e77f5610a536c7bec7ec2df52b3 inherit pub_types_classmn_1_1only__move__tag"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1only__move__tag.html#a371d4e77f5610a536c7bec7ec2df52b3">this_type</a> = <a class="el" href="classmn_1_1only__move__tag.html">only_move_tag</a></td></tr>
+<tr class="separator:a371d4e77f5610a536c7bec7ec2df52b3 inherit pub_types_classmn_1_1only__move__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae756ceb97ce66d08cc4fc294bbfca3a2"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ae756ceb97ce66d08cc4fc294bbfca3a2">basic_unique_ptr</a> () noexcept</td></tr>
+<tr class="memdesc:ae756ceb97ce66d08cc4fc294bbfca3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor a <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html" title="A simple unique_ptr, for a single object.">basic_unique_ptr</a> that owns nothing.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ae756ceb97ce66d08cc4fc294bbfca3a2">More...</a><br /></td></tr>
+<tr class="separator:ae756ceb97ce66d08cc4fc294bbfca3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6efe4088cb2f2ae8d7cafa3b675bf9f"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ac6efe4088cb2f2ae8d7cafa3b675bf9f">basic_unique_ptr</a> (<a class="el" href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">nullptr_t</a>) noexcept</td></tr>
+<tr class="memdesc:ac6efe4088cb2f2ae8d7cafa3b675bf9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a unique_ptr that owns nothing.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ac6efe4088cb2f2ae8d7cafa3b675bf9f">More...</a><br /></td></tr>
+<tr class="separator:ac6efe4088cb2f2ae8d7cafa3b675bf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c5ce2cff0ab8949967785c31af4fa4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a93c5ce2cff0ab8949967785c31af4fa4">basic_unique_ptr</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> pPointer) noexcept</td></tr>
+<tr class="memdesc:a93c5ce2cff0ab8949967785c31af4fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes ownership of a pointer.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a93c5ce2cff0ab8949967785c31af4fa4">More...</a><br /></td></tr>
+<tr class="separator:a93c5ce2cff0ab8949967785c31af4fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133ee37193dee7795623de7f5bd114db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a133ee37193dee7795623de7f5bd114db">basic_unique_ptr</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> pPointer, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;deleter) noexcept</td></tr>
+<tr class="memdesc:a133ee37193dee7795623de7f5bd114db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes ownership of a pointer.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a133ee37193dee7795623de7f5bd114db">More...</a><br /></td></tr>
+<tr class="separator:a133ee37193dee7795623de7f5bd114db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89091f8a44b302c7f75703be1fd8dc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ae89091f8a44b302c7f75703be1fd8dc2">basic_unique_ptr</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> pPointer, const <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;deleter) noexcept</td></tr>
+<tr class="memdesc:ae89091f8a44b302c7f75703be1fd8dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes ownership of a pointer.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ae89091f8a44b302c7f75703be1fd8dc2">More...</a><br /></td></tr>
+<tr class="separator:ae89091f8a44b302c7f75703be1fd8dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae927a64893115a95f57f1ea0f07488d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aae927a64893115a95f57f1ea0f07488d">basic_unique_ptr</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> pPointer, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&amp;deleter) noexcept</td></tr>
+<tr class="memdesc:aae927a64893115a95f57f1ea0f07488d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes ownership of a pointer.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aae927a64893115a95f57f1ea0f07488d">More...</a><br /></td></tr>
+<tr class="separator:aae927a64893115a95f57f1ea0f07488d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e9405c1fc2b659be59550cad1cb67d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a01e9405c1fc2b659be59550cad1cb67d">basic_unique_ptr</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> &amp;&amp;other)</td></tr>
+<tr class="memdesc:a01e9405c1fc2b659be59550cad1cb67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a01e9405c1fc2b659be59550cad1cb67d">More...</a><br /></td></tr>
+<tr class="separator:a01e9405c1fc2b659be59550cad1cb67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff4168ef8b7bf3c15e0d80a221866af"><td class="memTemplParams" colspan="2">template&lt;typename U , class UAllocator  = memory::default_allocator, class UDeleter  = memory::default_delete&lt;U, UAllocator&gt;&gt; </td></tr>
+<tr class="memitem:aeff4168ef8b7bf3c15e0d80a221866af"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aeff4168ef8b7bf3c15e0d80a221866af">basic_unique_ptr</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; U, UAllocator, UDeleter &gt; &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:aeff4168ef8b7bf3c15e0d80a221866af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting constructor from another type.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aeff4168ef8b7bf3c15e0d80a221866af">More...</a><br /></td></tr>
+<tr class="separator:aeff4168ef8b7bf3c15e0d80a221866af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2852bdf6261dca8edb963869cad26954"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a2852bdf6261dca8edb963869cad26954"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a2852bdf6261dca8edb963869cad26954">basic_unique_ptr</a> (U *p) noexcept=delete</td></tr>
+<tr class="separator:a2852bdf6261dca8edb963869cad26954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198e8839da36e2162e5d325327c8ae1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a198e8839da36e2162e5d325327c8ae1c">~basic_unique_ptr</a> () noexcept</td></tr>
+<tr class="memdesc:a198e8839da36e2162e5d325327c8ae1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor, invokes the deleter if the stored pointer is not null.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a198e8839da36e2162e5d325327c8ae1c">More...</a><br /></td></tr>
+<tr class="separator:a198e8839da36e2162e5d325327c8ae1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0c98a34e763bb09260876cf042fcab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a8d0c98a34e763bb09260876cf042fcab">operator=</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a8d0c98a34e763bb09260876cf042fcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a8d0c98a34e763bb09260876cf042fcab">More...</a><br /></td></tr>
+<tr class="separator:a8d0c98a34e763bb09260876cf042fcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f24a164db93d27b1fa021d33b7a6ca6"><td class="memTemplParams" colspan="2">template&lt;typename U , class UAllocator  = memory::default_allocator, class UDeleter  = memory::default_delete&lt;U, UAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a4f24a164db93d27b1fa021d33b7a6ca6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a4f24a164db93d27b1fa021d33b7a6ca6">operator=</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; U, UAllocator, UDeleter &gt; &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a4f24a164db93d27b1fa021d33b7a6ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a4f24a164db93d27b1fa021d33b7a6ca6">More...</a><br /></td></tr>
+<tr class="separator:a4f24a164db93d27b1fa021d33b7a6ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75bbe2c4a258b4f5e59f775044cea64f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a75bbe2c4a258b4f5e59f775044cea64f">release</a> () noexcept</td></tr>
+<tr class="memdesc:a75bbe2c4a258b4f5e59f775044cea64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release ownership of any stored pointer.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a75bbe2c4a258b4f5e59f775044cea64f">More...</a><br /></td></tr>
+<tr class="separator:a75bbe2c4a258b4f5e59f775044cea64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f3a36931bf60fb95559c6b08f9d586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ae9f3a36931bf60fb95559c6b08f9d586">reset</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> pPtr) noexcept</td></tr>
+<tr class="memdesc:ae9f3a36931bf60fb95559c6b08f9d586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the stored pointer.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ae9f3a36931bf60fb95559c6b08f9d586">More...</a><br /></td></tr>
+<tr class="separator:ae9f3a36931bf60fb95559c6b08f9d586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfeb8f02b71222d4e878195171b4b62b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adfeb8f02b71222d4e878195171b4b62b">swap</a> (<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> &amp;other) noexcept</td></tr>
+<tr class="memdesc:adfeb8f02b71222d4e878195171b4b62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exchange the pointer and deleter with another object.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adfeb8f02b71222d4e878195171b4b62b">More...</a><br /></td></tr>
+<tr class="separator:adfeb8f02b71222d4e878195171b4b62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89da25682cc6e880de35ae7cf78c550"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#af89da25682cc6e880de35ae7cf78c550">get</a> () const noexcept</td></tr>
+<tr class="memdesc:af89da25682cc6e880de35ae7cf78c550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the stored pointer.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#af89da25682cc6e880de35ae7cf78c550">More...</a><br /></td></tr>
+<tr class="separator:af89da25682cc6e880de35ae7cf78c550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66be91ddd26f50a21d3f1d1c31f3e29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ab66be91ddd26f50a21d3f1d1c31f3e29">get_deleter</a> () noexcept</td></tr>
+<tr class="memdesc:ab66be91ddd26f50a21d3f1d1c31f3e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the stored deleter.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#ab66be91ddd26f50a21d3f1d1c31f3e29">More...</a><br /></td></tr>
+<tr class="separator:ab66be91ddd26f50a21d3f1d1c31f3e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dab273cfa56c0d1b2f7b2788db84fe1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a7dab273cfa56c0d1b2f7b2788db84fe1">get_deleter</a> () const noexcept</td></tr>
+<tr class="memdesc:a7dab273cfa56c0d1b2f7b2788db84fe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the stored deleter.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a7dab273cfa56c0d1b2f7b2788db84fe1">More...</a><br /></td></tr>
+<tr class="separator:a7dab273cfa56c0d1b2f7b2788db84fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d9dd7bd7cab5282b46bd555576f8d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a7cd3441e9c6066968d2601346e436596">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a57d9dd7bd7cab5282b46bd555576f8d9">operator*</a> () const</td></tr>
+<tr class="memdesc:a57d9dd7bd7cab5282b46bd555576f8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the stored pointer as reference.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a57d9dd7bd7cab5282b46bd555576f8d9">More...</a><br /></td></tr>
+<tr class="separator:a57d9dd7bd7cab5282b46bd555576f8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efa04b8d3bb3048afa09684c0bfa8e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a5efa04b8d3bb3048afa09684c0bfa8e0">operator-&gt;</a> () const noexcept</td></tr>
+<tr class="memdesc:a5efa04b8d3bb3048afa09684c0bfa8e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the stored pointer.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a5efa04b8d3bb3048afa09684c0bfa8e0">More...</a><br /></td></tr>
+<tr class="separator:a5efa04b8d3bb3048afa09684c0bfa8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf6887664d61bb2d669dd58617f235f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a7cd3441e9c6066968d2601346e436596">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aabf6887664d61bb2d669dd58617f235f">operator[]</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> pos) const</td></tr>
+<tr class="memdesc:aabf6887664d61bb2d669dd58617f235f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access an element of owned array.  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aabf6887664d61bb2d669dd58617f235f">More...</a><br /></td></tr>
+<tr class="separator:aabf6887664d61bb2d669dd58617f235f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5272bcc582a4f367c9d9effbe9b10e9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a5272bcc582a4f367c9d9effbe9b10e9c">operator bool</a> () const noexcept</td></tr>
+<tr class="memdesc:a5272bcc582a4f367c9d9effbe9b10e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the stored pointer not null?  <a href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a5272bcc582a4f367c9d9effbe9b10e9c">More...</a><br /></td></tr>
+<tr class="separator:a5272bcc582a4f367c9d9effbe9b10e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79376101b32a8aa41c5ac97113f0b70"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:af79376101b32a8aa41c5ac97113f0b70"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#af79376101b32a8aa41c5ac97113f0b70">basic_unique_ptr</a> (U *, const <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a>)=delete</td></tr>
+<tr class="separator:af79376101b32a8aa41c5ac97113f0b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc12ac3ebaf87e497afd44bb7365a9a"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a0dc12ac3ebaf87e497afd44bb7365a9a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a0dc12ac3ebaf87e497afd44bb7365a9a">basic_unique_ptr</a> (U *, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a0dc12ac3ebaf87e497afd44bb7365a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmn_1_1only__move__tag"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmn_1_1only__move__tag')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmn_1_1only__move__tag.html">mn::only_move_tag&lt; void &gt;</a></td></tr>
+<tr class="memitem:adce45d016fd7523644c3c20a3f9ac346 inherit pub_methods_classmn_1_1only__move__tag"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1only__move__tag.html#adce45d016fd7523644c3c20a3f9ac346">only_move_tag</a> ()=default</td></tr>
+<tr class="separator:adce45d016fd7523644c3c20a3f9ac346 inherit pub_methods_classmn_1_1only__move__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a876c64f3d59e6e7a2acf779440fab1 inherit pub_methods_classmn_1_1only__move__tag"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1only__move__tag.html#a9a876c64f3d59e6e7a2acf779440fab1">only_move_tag</a> (<a class="el" href="classmn_1_1only__move__tag.html#a371d4e77f5610a536c7bec7ec2df52b3">this_type</a> &amp;&amp;other)=default</td></tr>
+<tr class="separator:a9a876c64f3d59e6e7a2acf779440fab1 inherit pub_methods_classmn_1_1only__move__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ea1373226f53996c5c4c0cfd6014e2 inherit pub_methods_classmn_1_1only__move__tag"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1only__move__tag.html#a55ea1373226f53996c5c4c0cfd6014e2">only_move_tag</a> (const <a class="el" href="classmn_1_1only__move__tag.html#a371d4e77f5610a536c7bec7ec2df52b3">this_type</a> &amp;)=delete</td></tr>
+<tr class="separator:a55ea1373226f53996c5c4c0cfd6014e2 inherit pub_methods_classmn_1_1only__move__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23621594325509fadeb24b6245cf004c inherit pub_methods_classmn_1_1only__move__tag"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1only__move__tag.html#a371d4e77f5610a536c7bec7ec2df52b3">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1only__move__tag.html#a23621594325509fadeb24b6245cf004c">operator=</a> (const <a class="el" href="classmn_1_1only__move__tag.html#a371d4e77f5610a536c7bec7ec2df52b3">this_type</a> &amp;)=delete</td></tr>
+<tr class="separator:a23621594325509fadeb24b6245cf004c inherit pub_methods_classmn_1_1only__move__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54704a088d825b5e6f43f0b3ca7d8c4 inherit pub_methods_classmn_1_1only__move__tag"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1only__move__tag.html#a371d4e77f5610a536c7bec7ec2df52b3">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1only__move__tag.html#ad54704a088d825b5e6f43f0b3ca7d8c4">operator=</a> (<a class="el" href="classmn_1_1only__move__tag.html#a371d4e77f5610a536c7bec7ec2df52b3">this_type</a> &amp;&amp;other)=default</td></tr>
+<tr class="separator:ad54704a088d825b5e6f43f0b3ca7d8c4 inherit pub_methods_classmn_1_1only__move__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3d31d82ff4c19a287654953cfe9e03dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a3d31d82ff4c19a287654953cfe9e03dc">m_ptr</a></td></tr>
+<tr class="separator:a3d31d82ff4c19a287654953cfe9e03dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d38b849fa557c163e41f9995b4d21e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a23d38b849fa557c163e41f9995b4d21e">m_refDeleter</a></td></tr>
+<tr class="separator:a23d38b849fa557c163e41f9995b4d21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T, class TAllocator, class TDeleter&gt;<br />
+class mn::pointer::basic_unique_ptr&lt; T[], TAllocator, TDeleter &gt;</h3>
+
+<p>A simple unique_ptr, for a array object. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of the stored pointer. </td></tr>
+    <tr><td class="paramname">TAllocator</td><td>The type of the using allocator, for the deleter. </td></tr>
+    <tr><td class="paramname">TDeleter</td><td>The type of the using deleter. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa66e42cc8cbbfd066250c86011feef34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66e42cc8cbbfd066250c86011feef34">&#9670;&nbsp;</a></span>allotor_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aa66e42cc8cbbfd066250c86011feef34">allotor_type</a> =  TAllocator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9a02cfecb711755d338a5d4a5d22889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a02cfecb711755d338a5d4a5d22889">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#af9a02cfecb711755d338a5d4a5d22889">const_pointer</a> =  const T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81d45f576f7ce5c42349bb245cec44d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d45f576f7ce5c42349bb245cec44d2">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a81d45f576f7ce5c42349bb245cec44d2">const_reference</a> =  const T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee452b0fcd9d00466161de7c502f83a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee452b0fcd9d00466161de7c502f83a3">&#9670;&nbsp;</a></span>deleter_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> =  TDeleter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a360f8e83eab62b4aeb800a4e36b23de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360f8e83eab62b4aeb800a4e36b23de7">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cd3441e9c6066968d2601346e436596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd3441e9c6066968d2601346e436596">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a7cd3441e9c6066968d2601346e436596">reference</a> =  T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adebb3e7cb3b74fc722c91cb18e2c2ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adebb3e7cb3b74fc722c91cb18e2c2ff0">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> =  <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt;<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a263415cbaf079bb3305f66744e746372">value_type</a>, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aa66e42cc8cbbfd066250c86011feef34">allotor_type</a>, <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a263415cbaf079bb3305f66744e746372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263415cbaf079bb3305f66744e746372">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a263415cbaf079bb3305f66744e746372">value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae756ceb97ce66d08cc4fc294bbfca3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae756ceb97ce66d08cc4fc294bbfca3a2">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[1/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor a <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html" title="A simple unique_ptr, for a single object.">basic_unique_ptr</a> that owns nothing. </p>
+
+</div>
+</div>
+<a id="ac6efe4088cb2f2ae8d7cafa3b675bf9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6efe4088cb2f2ae8d7cafa3b675bf9f">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[2/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#acd72f028c96da628475a88ad4702dedd">nullptr_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a unique_ptr that owns nothing. </p>
+
+</div>
+</div>
+<a id="a93c5ce2cff0ab8949967785c31af4fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c5ce2cff0ab8949967785c31af4fa4">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[3/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td>
+          <td class="paramname"><em>pPointer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes ownership of a pointer. </p>
+
+</div>
+</div>
+<a id="a133ee37193dee7795623de7f5bd114db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133ee37193dee7795623de7f5bd114db">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[4/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td>
+          <td class="paramname"><em>pPointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>deleter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes ownership of a pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pPointer</td><td>A pointer to an object of <code>element_type</code> </td></tr>
+    <tr><td class="paramname">deleter</td><td>A reference to a deleter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae89091f8a44b302c7f75703be1fd8dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89091f8a44b302c7f75703be1fd8dc2">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[5/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td>
+          <td class="paramname"><em>pPointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>deleter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes ownership of a pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pPointer</td><td>A pointer to an object of <code>element_type</code> </td></tr>
+    <tr><td class="paramname">deleter</td><td>A reference to a deleter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae927a64893115a95f57f1ea0f07488d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae927a64893115a95f57f1ea0f07488d">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[6/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td>
+          <td class="paramname"><em>pPointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>deleter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes ownership of a pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pPointer</td><td>A pointer to an object of <code>element_type</code> </td></tr>
+    <tr><td class="paramname">deleter</td><td>An rvalue reference to a deleter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a01e9405c1fc2b659be59550cad1cb67d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e9405c1fc2b659be59550cad1cb67d">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[7/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move constructor. </p>
+
+</div>
+</div>
+<a id="aeff4168ef8b7bf3c15e0d80a221866af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff4168ef8b7bf3c15e0d80a221866af">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[8/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<div class="memtemplate">
+template&lt;typename U , class UAllocator  = memory::default_allocator, class UDeleter  = memory::default_delete&lt;U, UAllocator&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; U, UAllocator, UDeleter &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converting constructor from another type. </p>
+
+</div>
+</div>
+<a id="a2852bdf6261dca8edb963869cad26954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2852bdf6261dca8edb963869cad26954">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[9/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">U *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">delete</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a198e8839da36e2162e5d325327c8ae1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198e8839da36e2162e5d325327c8ae1c">&#9670;&nbsp;</a></span>~basic_unique_ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::~<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor, invokes the deleter if the stored pointer is not null. </p>
+
+</div>
+</div>
+<a id="af79376101b32a8aa41c5ac97113f0b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79376101b32a8aa41c5ac97113f0b70">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[10/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">U *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const&#160;</td>
+          <td class="paramname"><em>deleter_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dc12ac3ebaf87e497afd44bb7365a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc12ac3ebaf87e497afd44bb7365a9a">&#9670;&nbsp;</a></span>basic_unique_ptr() <span class="overload">[11/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a> </td>
+          <td>(</td>
+          <td class="paramtype">U *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a> &amp;&amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af89da25682cc6e880de35ae7cf78c550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89da25682cc6e880de35ae7cf78c550">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the stored pointer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The stored pointer. </dd></dl>
+
+</div>
+</div>
+<a id="a7dab273cfa56c0d1b2f7b2788db84fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dab273cfa56c0d1b2f7b2788db84fe1">&#9670;&nbsp;</a></span>get_deleter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::get_deleter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a reference to the stored deleter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The reference to the stored deleter. </dd></dl>
+
+</div>
+</div>
+<a id="ab66be91ddd26f50a21d3f1d1c31f3e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66be91ddd26f50a21d3f1d1c31f3e29">&#9670;&nbsp;</a></span>get_deleter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::get_deleter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a reference to the stored deleter. </p>
+<dl class="section return"><dt>Returns</dt><dd>The reference to the stored deleter. </dd></dl>
+
+</div>
+</div>
+<a id="a5272bcc582a4f367c9d9effbe9b10e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5272bcc582a4f367c9d9effbe9b10e9c">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is the stored pointer not null? </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the stored pointer is not null. </dd></dl>
+
+</div>
+</div>
+<a id="a57d9dd7bd7cab5282b46bd555576f8d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d9dd7bd7cab5282b46bd555576f8d9">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a7cd3441e9c6066968d2601346e436596">reference</a> <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the stored pointer as reference. </p>
+
+</div>
+</div>
+<a id="a5efa04b8d3bb3048afa09684c0bfa8e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efa04b8d3bb3048afa09684c0bfa8e0">&#9670;&nbsp;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the stored pointer. </p>
+
+</div>
+</div>
+<a id="a4f24a164db93d27b1fa021d33b7a6ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f24a164db93d27b1fa021d33b7a6ca6">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<div class="memtemplate">
+template&lt;typename U , class UAllocator  = memory::default_allocator, class UDeleter  = memory::default_delete&lt;U, UAllocator&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">basic_unique_ptr</a>&lt; U, UAllocator, UDeleter &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The object to transfer ownership from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>this </dd></dl>
+
+</div>
+</div>
+<a id="a8d0c98a34e763bb09260876cf042fcab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0c98a34e763bb09260876cf042fcab">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The object to transfer ownership from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>this </dd></dl>
+
+</div>
+</div>
+<a id="aabf6887664d61bb2d669dd58617f235f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf6887664d61bb2d669dd58617f235f">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a7cd3441e9c6066968d2601346e436596">reference</a> <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Access an element of owned array. </p>
+
+</div>
+</div>
+<a id="a75bbe2c4a258b4f5e59f775044cea64f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bbe2c4a258b4f5e59f775044cea64f">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Release ownership of any stored pointer. </p>
+<dl class="section return"><dt>Returns</dt><dd>The stored pointer, bevor it set to null. </dd></dl>
+
+</div>
+</div>
+<a id="ae9f3a36931bf60fb95559c6b08f9d586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f3a36931bf60fb95559c6b08f9d586">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a>&#160;</td>
+          <td class="paramname"><em>pPtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Replace the stored pointer. </p>
+
+</div>
+</div>
+<a id="adfeb8f02b71222d4e878195171b4b62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfeb8f02b71222d4e878195171b4b62b">&#9670;&nbsp;</a></span>swap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#adebb3e7cb3b74fc722c91cb18e2c2ff0">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exchange the pointer and deleter with another object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3d31d82ff4c19a287654953cfe9e03dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d31d82ff4c19a287654953cfe9e03dc">&#9670;&nbsp;</a></span>m_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#a360f8e83eab62b4aeb800a4e36b23de7">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::m_ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23d38b849fa557c163e41f9995b4d21e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d38b849fa557c163e41f9995b4d21e">&#9670;&nbsp;</a></span>m_refDeleter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , class TAllocator , class TDeleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr_3_01T_0f_0e_00_01TAllocator_00_01TDeleter_01_4.html#aee452b0fcd9d00466161de7c502f83a3">deleter_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__unique__ptr.html">mn::pointer::basic_unique_ptr</a>&lt; T[], TAllocator, TDeleter &gt;::m_refDeleter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__unique__ptr_8hpp_source.html">mn_unique_ptr.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

@@ -141,12 +141,14 @@ $(document).ready(function(){initNavTree('mn__linked__ptr_8hpp.html',''); initRe
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_linked_ptr.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__base__ptr_8hpp_source.html">mn_base_ptr.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">../mn_config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__def_8hpp_source.html">../mn_def.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__linked__ptr_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -166,12 +168,30 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacemn_1_1pointer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html">mn::pointer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7524e76291a4b3b40b5a22aca8330f6d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7524e76291a4b3b40b5a22aca8330f6d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a7524e76291a4b3b40b5a22aca8330f6d">mn::pointer::linked_ptr</a> = basic_linked_ptr&lt; T &gt;</td></tr>
+<tr class="separator:a7524e76291a4b3b40b5a22aca8330f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4a8e106b9e6929dc37edd0cf7aade78a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4a8e106b9e6929dc37edd0cf7aade78a"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a4a8e106b9e6929dc37edd0cf7aade78a">mn::pointer::get_pointer</a> (const basic_linked_ptr&lt; T &gt; &amp;_pPtr)</td></tr>
-<tr class="memdesc:a4a8e106b9e6929dc37edd0cf7aade78a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pointer object.  <a href="namespacemn_1_1pointer.html#a4a8e106b9e6929dc37edd0cf7aade78a">More...</a><br /></td></tr>
-<tr class="separator:a4a8e106b9e6929dc37edd0cf7aade78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde2ed0ae15a36965a0f73b239dc7435"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adde2ed0ae15a36965a0f73b239dc7435"><td class="memTemplItemLeft" align="right" valign="top">basic_linked_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#adde2ed0ae15a36965a0f73b239dc7435">mn::pointer::make_link</a> (const basic_linked_ptr&lt; T &gt; &amp;value)</td></tr>
+<tr class="memdesc:adde2ed0ae15a36965a0f73b239dc7435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a linked pointer.  <a href="namespacemn_1_1pointer.html#adde2ed0ae15a36965a0f73b239dc7435">More...</a><br /></td></tr>
+<tr class="separator:adde2ed0ae15a36965a0f73b239dc7435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364601f81f141d3add438a686b1c64d9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:a364601f81f141d3add438a686b1c64d9"><td class="memTemplItemLeft" align="right" valign="top">basic_linked_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a364601f81f141d3add438a686b1c64d9">mn::pointer::make_link</a> (const basic_linked_ptr&lt; U &gt; &amp;value)</td></tr>
+<tr class="memdesc:a364601f81f141d3add438a686b1c64d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a linked pointer from a other linked pointer type.  <a href="namespacemn_1_1pointer.html#a364601f81f141d3add438a686b1c64d9">More...</a><br /></td></tr>
+<tr class="separator:a364601f81f141d3add438a686b1c64d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed8e9d66e8644684c05614e9b45e6e6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2ed8e9d66e8644684c05614e9b45e6e6"><td class="memTemplItemLeft" align="right" valign="top">basic_linked_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a2ed8e9d66e8644684c05614e9b45e6e6">mn::pointer::make_link</a> (T *value)</td></tr>
+<tr class="memdesc:a2ed8e9d66e8644684c05614e9b45e6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a link pointer.  <a href="namespacemn_1_1pointer.html#a2ed8e9d66e8644684c05614e9b45e6e6">More...</a><br /></td></tr>
+<tr class="separator:a2ed8e9d66e8644684c05614e9b45e6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9e07754355366cf4d73d704cd394f2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3e9e07754355366cf4d73d704cd394f2"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a3e9e07754355366cf4d73d704cd394f2">mn::pointer::get</a> (const basic_linked_ptr&lt; T &gt; &amp;_pPtr)</td></tr>
+<tr class="memdesc:a3e9e07754355366cf4d73d704cd394f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pointer object.  <a href="namespacemn_1_1pointer.html#a3e9e07754355366cf4d73d704cd394f2">More...</a><br /></td></tr>
+<tr class="separator:a3e9e07754355366cf4d73d704cd394f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5afca51a04749bcdfddb47ab08114b99"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
 <tr class="memitem:a5afca51a04749bcdfddb47ab08114b99"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a5afca51a04749bcdfddb47ab08114b99">mn::pointer::operator==</a> (const basic_linked_ptr&lt; T &gt; &amp;a, const basic_linked_ptr&lt; U &gt; &amp;b)</td></tr>
 <tr class="memdesc:a5afca51a04749bcdfddb47ab08114b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html" title="This class implements a basic_linked_ptr template that it allows sharing of pointers between instance...">basic_linked_ptr</a> objects for equality. Equality is defined as being true when the pointer shared between two <a class="el" href="classmn_1_1pointer_1_1basic__linked__ptr.html" title="This class implements a basic_linked_ptr template that it allows sharing of pointers between instance...">basic_linked_ptr</a> objects is equal.  <a href="namespacemn_1_1pointer.html#a5afca51a04749bcdfddb47ab08114b99">More...</a><br /></td></tr>

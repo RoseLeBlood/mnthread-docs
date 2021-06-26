@@ -1,6 +1,7 @@
 var classmn_1_1pointer_1_1basic__scoped__ptr =
 [
     [ "const_value_type", "classmn_1_1pointer_1_1basic__scoped__ptr.html#a0c438ff75bce04b1142a70fe8290231a", null ],
+    [ "element_type", "classmn_1_1pointer_1_1basic__scoped__ptr.html#ae29c29713c3f9030c3eb500fe2a43c1b", null ],
     [ "pointer", "classmn_1_1pointer_1_1basic__scoped__ptr.html#ab4a5bda4b0764a3d5248544ef5bbd8e9", null ],
     [ "self_type", "classmn_1_1pointer_1_1basic__scoped__ptr.html#a7a2bc6811fd36012c73037d92479be46", null ],
     [ "value_type", "classmn_1_1pointer_1_1basic__scoped__ptr.html#a7ac90563fab96f3c7a40ab3d0ad53e1f", null ],

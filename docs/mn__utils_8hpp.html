@@ -141,6 +141,7 @@ $(document).ready(function(){initNavTree('mn__utils_8hpp.html',''); initResizabl
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_utils.hpp File Reference</div>  </div>
@@ -150,16 +151,47 @@ $(document).ready(function(){initNavTree('mn__utils_8hpp.html',''); initResizabl
 <code>#include &quot;<a class="el" href="mn__inttokey_8hpp_source.html">mn_inttokey.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__defines_8hpp_source.html">../mn_defines.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__def_8hpp_source.html">../mn_def.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__random_8hpp_source.html">mn_random.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__random__lfsr_8hpp_source.html">mn_random_lfsr.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__ramdom__xorshift_8hpp_source.html">mn_ramdom_xorshift.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__utils_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:structmn_1_1internal_1_1in__place__type__tag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1in__place__type__tag">mn::internal::in_place_type_tag</a></td></tr>
+<tr class="separator:structmn_1_1internal_1_1in__place__type__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1internal_1_1in__place__index__tag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1in__place__index__tag">mn::internal::in_place_index_tag</a></td></tr>
+<tr class="separator:structmn_1_1internal_1_1in__place__index__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1internal_1_1in__place__type"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#structmn_1_1internal_1_1in__place__type">mn::internal::in_place_type</a></td></tr>
+<tr class="separator:structmn_1_1internal_1_1in__place__type"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1less.html">mn::less</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1greater.html">mn::greater</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1equal__to.html">mn::equal_to</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1not__equal__to.html">mn::not_equal_to</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1greater__equal.html">mn::greater_equal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1less__equal.html">mn::less_equal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1negate.html">mn::negate</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1plus.html">mn::plus</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1minus.html">mn::minus</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1multiplies.html">mn::multiplies</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1divides.html">mn::divides</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1modulus.html">mn::modulus</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1inc.html">mn::inc&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1dec.html">mn::dec&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -168,6 +200,15 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemn_1_1internal"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html">mn::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ab11ce047811816abdb1e20ace343c999"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ab11ce047811816abdb1e20ace343c999">mn::random_xorshift</a> = basic_ramdom_xorshift</td></tr>
+<tr class="separator:ab11ce047811816abdb1e20ace343c999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7362c23d39cbbb7c6e466643b7e5499e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a7362c23d39cbbb7c6e466643b7e5499e">mn::random_lfsr</a> = basic_random_lfsr</td></tr>
+<tr class="separator:a7362c23d39cbbb7c6e466643b7e5499e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70c2b8413b49b9d55e4dd623142b48f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ad70c2b8413b49b9d55e4dd623142b48f">mn::default_random_engine</a> = random_xorshift</td></tr>
+<tr class="separator:ad70c2b8413b49b9d55e4dd623142b48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -215,9 +256,58 @@ Functions</h2></td></tr>
 <tr class="separator:ad00545828cb74e7ad65b9b230501df18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a429140694cbb2e4b88112d23f8054edd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1internal.html#a429140694cbb2e4b88112d23f8054edd">mn::internal::debug_pred</a> (const TPred &amp;pred, const T1 &amp;a, const T2 &amp;b)</td></tr>
 <tr class="separator:a429140694cbb2e4b88112d23f8054edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ddb01de392bf0a8862ddf000e2a7e91"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a3ddb01de392bf0a8862ddf000e2a7e91">mn::nexthigher</a> (T k)</td></tr>
-<tr class="separator:a3ddb01de392bf0a8862ddf000e2a7e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe86ddead6309579c8ef5c410857f343"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#afe86ddead6309579c8ef5c410857f343">mn::nexthigher</a> (T k) noexcept</td></tr>
+<tr class="separator:afe86ddead6309579c8ef5c410857f343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83eeb536ae64938b1f8287d047d9827f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename R &gt; </td></tr>
+<tr class="memitem:a83eeb536ae64938b1f8287d047d9827f"><td class="memTemplItemLeft" align="right" valign="top">R&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a83eeb536ae64938b1f8287d047d9827f">mn::_reinterpret_cast</a> (T *p)</td></tr>
+<tr class="separator:a83eeb536ae64938b1f8287d047d9827f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8578f9067238636a9b80de40febe52"><td class="memTemplParams" colspan="2">template&lt;typename T , typename R &gt; </td></tr>
+<tr class="memitem:a7f8578f9067238636a9b80de40febe52"><td class="memTemplItemLeft" align="right" valign="top">const R&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn.html#a7f8578f9067238636a9b80de40febe52">mn::_const_reinterpret_cast</a> (const T *p)</td></tr>
+<tr class="separator:a7f8578f9067238636a9b80de40febe52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="structmn_1_1internal_1_1in__place__type__tag" id="structmn_1_1internal_1_1in__place__type__tag"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1internal_1_1in__place__type__tag">&#9670;&nbsp;</a></span>mn::internal::in_place_type_tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::in_place_type_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div>
+</div>
+</div>
+<a name="structmn_1_1internal_1_1in__place__index__tag" id="structmn_1_1internal_1_1in__place__index__tag"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1internal_1_1in__place__index__tag">&#9670;&nbsp;</a></span>mn::internal::in_place_index_tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::in_place_index_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div>
+</div>
+</div>
+<a name="structmn_1_1internal_1_1in__place__type" id="structmn_1_1internal_1_1in__place__type"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1internal_1_1in__place__type">&#9670;&nbsp;</a></span>mn::internal::in_place_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::internal::in_place_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div>
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 </div>

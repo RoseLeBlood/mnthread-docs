@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_stl.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__stl_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_stl.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__stl_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef __MINILIB_STL_FUNCTIONS_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define __MINILIB_STL_FUNCTIONS_H__</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html">   23</a></span>&#160;    <span class="keyword">namespace </span>stl {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html">   25</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits">type_traits</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a1c3e8f854622b4bcc4c993560378f911">   26</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a1c3e8f854622b4bcc4c993560378f911">value_type</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a85efe0f90752767f4b770f2e27d63fef">   27</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a85efe0f90752767f4b770f2e27d63fef">const_type</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a2e47e892d1781afb3437e9169d93c5dd">   28</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a2e47e892d1781afb3437e9169d93c5dd">reference</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a75df817a3af22e14113f4572f3dea8ce">   29</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a75df817a3af22e14113f4572f3dea8ce">const_reference</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a8d23fef8ffff3bd9066b32664330305d">   30</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a8d23fef8ffff3bd9066b32664330305d">pointer</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a30fe4aed32fa5db1a725bcb8227f1cbf">   31</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a30fe4aed32fa5db1a725bcb8227f1cbf">const_pointer</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html">   35</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits">type_traits</a>&lt;<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;&gt; {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#af681c9d879f6be5e9d655096e8d6407c">   36</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#af681c9d879f6be5e9d655096e8d6407c">value_type</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a157f2d9a7b817937a36f66953c785e3f">   37</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a157f2d9a7b817937a36f66953c785e3f">const_type</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a14950f26dc5df6b2ccdbe2aeaa207611">   38</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a14950f26dc5df6b2ccdbe2aeaa207611">reference</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a0bc8416a955fbc0019ba0dee4a977746">   39</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a0bc8416a955fbc0019ba0dee4a977746">const_reference</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a612348f98c7e16f98b5bd0e6dcbcc490">   40</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a612348f98c7e16f98b5bd0e6dcbcc490">pointer</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a8c6a8ac6257b4d0625de98e7071c4762">   41</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a8c6a8ac6257b4d0625de98e7071c4762">const_pointer</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html">   45</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits">type_traits</a>&lt;const <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&gt; {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#ac6a960c71b94fb7ab889d225e1e900fb">   46</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#ac6a960c71b94fb7ab889d225e1e900fb">value_type</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#afff0e6d32ad27118c4d6d4e81f02f4b5">   47</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#afff0e6d32ad27118c4d6d4e81f02f4b5">const_type</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a50716ae5277377374ebdfbd60fef44e2">   48</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a50716ae5277377374ebdfbd60fef44e2">reference</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a3741f52e942a56e875e1d0eb7afb632e">   49</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a3741f52e942a56e875e1d0eb7afb632e">const_reference</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a9c52c264876ae6230cf9357a04d44bf2">   50</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a9c52c264876ae6230cf9357a04d44bf2">pointer</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#adc5b6cb597d33a30685f5bb1023328de">   51</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#adc5b6cb597d33a30685f5bb1023328de">const_pointer</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html">   55</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits">type_traits</a>&lt;const <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;&gt; {</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#ab785ce7713a144f726d7cdc1c422ca72">   56</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#ab785ce7713a144f726d7cdc1c422ca72">value_type</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#ad07324e81cced75819f66140d915b377">   57</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#ad07324e81cced75819f66140d915b377">const_type</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#accc8a61d65c2d011a54d397f310d7708">   58</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#accc8a61d65c2d011a54d397f310d7708">reference</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#adff70937ef0a5f31f2592b66bdf297ed">   59</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#adff70937ef0a5f31f2592b66bdf297ed">const_reference</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#af711e955bacd782d9007cd9a1730dd77">   60</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#af711e955bacd782d9007cd9a1730dd77">pointer</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a5d1fd3d42d693cc7a2adae5ffce3fcc2">   61</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a5d1fd3d42d693cc7a2adae5ffce3fcc2">const_pointer</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1integral__constant.html">   66</a></span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">class</span> T, T v&gt; <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1integral__constant.html">integral_constant</a> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1integral__constant.html#a3606b275764868b82f972ae954a2f35daffa706e10237c0cdaa389d8e188a18b0">   67</a></span>&#160;            <span class="keyword">enum</span> { <a class="code" href="structmn_1_1stl_1_1integral__constant.html#a3606b275764868b82f972ae954a2f35daffa706e10237c0cdaa389d8e188a18b0">value</a> = v  };</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        };</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a4c71215b3a35e38466a255aa100e5965">   70</a></span>&#160;        <span class="keyword">using</span>  <a class="code" href="structmn_1_1integral__constant.html">true_type</a> = <a class="code" href="structmn_1_1integral__constant.html">integral_constant&lt;bool, true&gt;</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a36d2623738bb4b69b4e87e2e00992975">   71</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="structmn_1_1integral__constant.html">false_type</a> =  <a class="code" href="structmn_1_1integral__constant.html">integral_constant&lt;bool, false&gt;</a> ;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Arg, <span class="keyword">typename</span> TResult&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html">   74</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1unary__function">unary_function</a> {</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a85da9f27b724dc4fb93bf8778d0a9d12">   76</a></span>&#160;          <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a85da9f27b724dc4fb93bf8778d0a9d12">argument_type</a> = Arg;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a49b9b3237c056eccd33b5209d46367c8">   78</a></span>&#160;          <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a49b9b3237c056eccd33b5209d46367c8">result_type</a> =  TResult;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        };</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Arg1, <span class="keyword">typename</span> Arg2, <span class="keyword">typename</span> TResult&gt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html">   83</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a> {</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a9745afaf57d7487a8d8030573e9cba1d">   85</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a9745afaf57d7487a8d8030573e9cba1d">first_argument_type</a> = Arg;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#ab167434f0164d7df4da31f6c93a1815b">   87</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#ab167434f0164d7df4da31f6c93a1815b">second_argument_type</a> = Arg2;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="namespacemn_1_1stl.html#a50451e7b9689ac197a621a248632c5cb">   89</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacemn_1_1stl.html#a50451e7b9689ac197a621a248632c5cb">result_type</a> =  TResult;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        };</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1negate.html">   93</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1negate.html">negate</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1unary__function">unary_function</a>&lt;T, T&gt; {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1negate.html#a3379a80f9596071ea2e0241f04d25b80">   95</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1negate.html#a3379a80f9596071ea2e0241f04d25b80">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> -a; }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        };</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1plus.html">   99</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1plus.html">plus</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, T&gt; {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1plus.html#a10db7a99a3bab0297d2ed5d3146ced52">  101</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1plus.html#a10db7a99a3bab0297d2ed5d3146ced52">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span>  noexcept { <span class="keywordflow">return</span> a + b; }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1minus.html">  105</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1minus.html">minus</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, T&gt; {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1minus.html#a5f43a88561677a9fd99aeb2eb59662da">  107</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1minus.html#a5f43a88561677a9fd99aeb2eb59662da">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a - b; }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        };</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1multiplies.html">  111</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1multiplies.html">multiplies</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, T&gt; {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1multiplies.html#afbd3f32982aaf328c076502f911b7c36">  113</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1multiplies.html#afbd3f32982aaf328c076502f911b7c36">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a * b; }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1divides.html">  117</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1divides.html">divides</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, T&gt; {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1divides.html#ab9a67e0cd13c3199bb29f9953c517c9c">  119</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1divides.html#ab9a67e0cd13c3199bb29f9953c517c9c">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a / b; }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        };</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1modulus.html">  123</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1modulus.html">modulus</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, T&gt; {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1modulus.html#a0dcdac09b277386a4936da6ec648df1b">  125</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1modulus.html#a0dcdac09b277386a4936da6ec648df1b">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a % b; }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        };</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1equal__to.html">  129</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1equal__to.html">equal_to</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, bool&gt; {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1equal__to.html#ac8e7768de8e96e3b698472e05712aa11">  131</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1equal__to.html#ac8e7768de8e96e3b698472e05712aa11">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a == b; }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        };</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1not__equal__to.html">  135</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1not__equal__to.html">not_equal_to</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, bool&gt; {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1not__equal__to.html#ab46451350cd73552405253e185d7a22d">  137</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1not__equal__to.html#ab46451350cd73552405253e185d7a22d">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a != b; }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        };</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1greater.html">  141</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1greater.html">greater</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, bool&gt; {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1greater.html#a647a212208b68244a00c6c5fdcdec300">  143</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1greater.html#a647a212208b68244a00c6c5fdcdec300">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a &gt; b; }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        };</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1less.html">  147</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1less.html">less</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, bool&gt; {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1less.html#a25f794916bd6292df0eafeec1e8205a9">  149</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1less.html#a25f794916bd6292df0eafeec1e8205a9">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a &lt; b; }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        };</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1greater__equal.html">  153</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1greater__equal.html">greater_equal</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, bool&gt; {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1greater__equal.html#a6036e2a9179d53346d43f92b08b662b2">  155</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1greater__equal.html#a6036e2a9179d53346d43f92b08b662b2">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a &gt;= b; }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        };</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1less__equal.html">  159</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1less__equal.html">less_equal</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, bool&gt; {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1less__equal.html#a1a4cbdef8834f2d65d498995145a6b13">  161</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1less__equal.html#a1a4cbdef8834f2d65d498995145a6b13">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a &lt;= b; }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        };</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1logic__and.html">  165</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1logic__and.html">logic_and</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, bool&gt; {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1logic__and.html#a6c6349a74b63c73afec2369ca79fd6b1">  167</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="structmn_1_1stl_1_1logic__and.html#a6c6349a74b63c73afec2369ca79fd6b1">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a &amp;&amp; b; }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        };</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1logic__or.html">  171</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1logic__or.html">logic_or</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, bool&gt; {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1logic__or.html#a89e034f899b56a141590501c06c3a9ec">  173</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1logic__or.html#a89e034f899b56a141590501c06c3a9ec">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a || b; }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        };</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1logic__not.html">  177</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1logic__not.html">logic_not</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1unary__function">unary_function</a>&lt;T, bool&gt; {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1logic__not.html#a265028df9726bbad9a518cd25d7a95f0">  179</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1logic__not.html#a265028df9726bbad9a518cd25d7a95f0">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> !a; }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        };</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1bit__and.html">  183</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1bit__and.html">bit_and</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, T&gt; {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1bit__and.html#ad1151e0de41689fde5055c45a9ee464f">  185</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1bit__and.html#ad1151e0de41689fde5055c45a9ee464f">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a &amp; b; }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        };</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1bit__or.html">  189</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1bit__or.html">bit_or</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, T&gt; {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1bit__or.html#a953b9960f88a17b29f2cdc3dda814d98">  191</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1bit__or.html#a953b9960f88a17b29f2cdc3dda814d98">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a | b; }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        };</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1bit__xor.html">  195</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1bit__xor.html">bit_xor</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function</a>&lt;T, T, T&gt; {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1bit__xor.html#a6b106d91207719dca85bf4a1159d059f">  197</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1bit__xor.html#a6b106d91207719dca85bf4a1159d059f">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; b) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> a ^ b; }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        };</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1bit__not.html">  201</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1bit__not.html">bit_not</a> : <span class="keyword">public</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1unary__function">unary_function</a>&lt;T, T&gt; {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">binary_function&lt;T, T, T&gt;::result_type</a></div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1bit__not.html#a176fc8ed8dcdcb847ac8514b19306b96">  203</a></span>&#160;            <a class="code" href="structmn_1_1stl_1_1bit__not.html#a176fc8ed8dcdcb847ac8514b19306b96">operator()</a>(<span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp; a) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> ~a; }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        };</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__reference.html">  209</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__reference.html">is_reference</a> : <a class="code" href="structmn_1_1integral__constant.html">false_type</a> { };</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__reference_3_01T_06_4.html">  212</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__reference.html">is_reference</a>&lt;<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>%&gt; : <a class="code" href="structmn_1_1integral__constant.html">true_type</a> { };</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__reference_3_01const_01T_06_4.html">  215</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__reference.html">is_reference</a>&lt;const <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>%&gt; : <a class="code" href="structmn_1_1integral__constant.html">true_type</a> { };</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__const.html">  218</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__const.html">is_const</a> : <a class="code" href="structmn_1_1integral__constant.html">false_type</a> { };</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__const_3_01const_01T_01_4.html">  221</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__const.html">is_const</a>&lt;const <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&gt; : <a class="code" href="structmn_1_1integral__constant.html">true_type</a> { };</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__const_3_01const_01T_01_6_01_4.html">  224</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__const.html">is_const</a>&lt;const <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;&gt; : <a class="code" href="structmn_1_1integral__constant.html">true_type</a> { };</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> n&gt;</div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__const_3_01const_01T_0fn_0e_4.html">  227</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__const.html">is_const</a>&lt;const <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>[n]&gt; : <a class="code" href="structmn_1_1integral__constant.html">true_type</a> { };</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span>&gt;</div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__volatile.html">  230</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__volatile.html">is_volatile</a> : <span class="keyword">public</span> <a class="code" href="structmn_1_1integral__constant.html">false_type</a> { };</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Tp&gt;</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__volatile_3_01__Tp_01volatile_01_4.html">  233</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__volatile.html">is_volatile</a>&lt;_Tp volatile&gt; : <span class="keyword">public</span> <a class="code" href="structmn_1_1integral__constant.html">true_type</a> { };</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__empty.html">  236</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__empty.html">is_empty</a> : <span class="keyword">public</span> <a class="code" href="structmn_1_1stl_1_1integral__constant.html">integral_constant</a>&lt;bool, __is_empty(T)&gt; { };</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__enum.html">  240</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__enum.html">is_enum</a> : <span class="keyword">public</span> <a class="code" href="structmn_1_1stl_1_1integral__constant.html">integral_constant</a>&lt;bool, __is_enum(T)&gt; { };</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__union.html">  243</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__union.html">is_union</a> : <span class="keyword">public</span> <a class="code" href="structmn_1_1stl_1_1integral__constant.html">integral_constant</a>&lt;bool, __is_union(T)&gt; { };</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="structmn_1_1stl_1_1is__class.html">  246</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="structmn_1_1stl_1_1is__class.html">is_class</a> : <span class="keyword">public</span> <a class="code" href="structmn_1_1stl_1_1integral__constant.html">integral_constant</a>&lt;bool, __is_class(T)&gt; { };</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_STL_FUNCTIONS_H__</span></div>
+<div class="ttc" id="anamespacemn_1_1memory_1_1detail_html_a3179d74d784513b556ce52d25fc357e7"><div class="ttname"><a href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">mn::memory::detail::T</a></div><div class="ttdeci">struct mn::memory::detail::ptr_difference T</div><div class="ttdef"><b>Definition:</b> mn_atomic_singleton.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a0bc8416a955fbc0019ba0dee4a977746"><div class="ttname"><a href="namespacemn_1_1stl.html#a0bc8416a955fbc0019ba0dee4a977746">mn::stl::type_traits&lt; T &amp; &gt;::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:39</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a14950f26dc5df6b2ccdbe2aeaa207611"><div class="ttname"><a href="namespacemn_1_1stl.html#a14950f26dc5df6b2ccdbe2aeaa207611">mn::stl::type_traits&lt; T &amp; &gt;::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a157f2d9a7b817937a36f66953c785e3f"><div class="ttname"><a href="namespacemn_1_1stl.html#a157f2d9a7b817937a36f66953c785e3f">mn::stl::type_traits&lt; T &amp; &gt;::const_type</a></div><div class="ttdeci">const T const_type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:37</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a1c3e8f854622b4bcc4c993560378f911"><div class="ttname"><a href="namespacemn_1_1stl.html#a1c3e8f854622b4bcc4c993560378f911">mn::stl::type_traits::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:26</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a2e47e892d1781afb3437e9169d93c5dd"><div class="ttname"><a href="namespacemn_1_1stl.html#a2e47e892d1781afb3437e9169d93c5dd">mn::stl::type_traits::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:28</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a30fe4aed32fa5db1a725bcb8227f1cbf"><div class="ttname"><a href="namespacemn_1_1stl.html#a30fe4aed32fa5db1a725bcb8227f1cbf">mn::stl::type_traits::const_pointer</a></div><div class="ttdeci">const T * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:31</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a3741f52e942a56e875e1d0eb7afb632e"><div class="ttname"><a href="namespacemn_1_1stl.html#a3741f52e942a56e875e1d0eb7afb632e">mn::stl::type_traits&lt; const T &gt;::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:49</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a49b9b3237c056eccd33b5209d46367c8"><div class="ttname"><a href="namespacemn_1_1stl.html#a49b9b3237c056eccd33b5209d46367c8">mn::stl::unary_function::result_type</a></div><div class="ttdeci">TResult result_type</div><div class="ttdoc">result_type is the return type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:78</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a50451e7b9689ac197a621a248632c5cb"><div class="ttname"><a href="namespacemn_1_1stl.html#a50451e7b9689ac197a621a248632c5cb">mn::stl::binary_function::result_type</a></div><div class="ttdeci">TResult result_type</div><div class="ttdoc">result_type is the return type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:89</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a50716ae5277377374ebdfbd60fef44e2"><div class="ttname"><a href="namespacemn_1_1stl.html#a50716ae5277377374ebdfbd60fef44e2">mn::stl::type_traits&lt; const T &gt;::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:48</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a5d1fd3d42d693cc7a2adae5ffce3fcc2"><div class="ttname"><a href="namespacemn_1_1stl.html#a5d1fd3d42d693cc7a2adae5ffce3fcc2">mn::stl::type_traits&lt; const T &amp; &gt;::const_pointer</a></div><div class="ttdeci">const T * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:61</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a612348f98c7e16f98b5bd0e6dcbcc490"><div class="ttname"><a href="namespacemn_1_1stl.html#a612348f98c7e16f98b5bd0e6dcbcc490">mn::stl::type_traits&lt; T &amp; &gt;::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:40</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a75df817a3af22e14113f4572f3dea8ce"><div class="ttname"><a href="namespacemn_1_1stl.html#a75df817a3af22e14113f4572f3dea8ce">mn::stl::type_traits::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:29</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a85da9f27b724dc4fb93bf8778d0a9d12"><div class="ttname"><a href="namespacemn_1_1stl.html#a85da9f27b724dc4fb93bf8778d0a9d12">mn::stl::unary_function::argument_type</a></div><div class="ttdeci">Arg argument_type</div><div class="ttdoc">argument_type is the type of the argument</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:76</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a85efe0f90752767f4b770f2e27d63fef"><div class="ttname"><a href="namespacemn_1_1stl.html#a85efe0f90752767f4b770f2e27d63fef">mn::stl::type_traits::const_type</a></div><div class="ttdeci">const T const_type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:27</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a8c6a8ac6257b4d0625de98e7071c4762"><div class="ttname"><a href="namespacemn_1_1stl.html#a8c6a8ac6257b4d0625de98e7071c4762">mn::stl::type_traits&lt; T &amp; &gt;::const_pointer</a></div><div class="ttdeci">const T * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:41</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a8d23fef8ffff3bd9066b32664330305d"><div class="ttname"><a href="namespacemn_1_1stl.html#a8d23fef8ffff3bd9066b32664330305d">mn::stl::type_traits::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:30</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a9745afaf57d7487a8d8030573e9cba1d"><div class="ttname"><a href="namespacemn_1_1stl.html#a9745afaf57d7487a8d8030573e9cba1d">mn::stl::binary_function::first_argument_type</a></div><div class="ttdeci">Arg first_argument_type</div><div class="ttdoc">first_argument_type is the type of the first argument</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:85</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_a9c52c264876ae6230cf9357a04d44bf2"><div class="ttname"><a href="namespacemn_1_1stl.html#a9c52c264876ae6230cf9357a04d44bf2">mn::stl::type_traits&lt; const T &gt;::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:50</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_ab167434f0164d7df4da31f6c93a1815b"><div class="ttname"><a href="namespacemn_1_1stl.html#ab167434f0164d7df4da31f6c93a1815b">mn::stl::binary_function::second_argument_type</a></div><div class="ttdeci">Arg2 second_argument_type</div><div class="ttdoc">second_argument_type is the type of the second argument</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:87</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_ab785ce7713a144f726d7cdc1c422ca72"><div class="ttname"><a href="namespacemn_1_1stl.html#ab785ce7713a144f726d7cdc1c422ca72">mn::stl::type_traits&lt; const T &amp; &gt;::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:56</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_ac6a960c71b94fb7ab889d225e1e900fb"><div class="ttname"><a href="namespacemn_1_1stl.html#ac6a960c71b94fb7ab889d225e1e900fb">mn::stl::type_traits&lt; const T &gt;::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:46</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_accc8a61d65c2d011a54d397f310d7708"><div class="ttname"><a href="namespacemn_1_1stl.html#accc8a61d65c2d011a54d397f310d7708">mn::stl::type_traits&lt; const T &amp; &gt;::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:58</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_ad07324e81cced75819f66140d915b377"><div class="ttname"><a href="namespacemn_1_1stl.html#ad07324e81cced75819f66140d915b377">mn::stl::type_traits&lt; const T &amp; &gt;::const_type</a></div><div class="ttdeci">const T const_type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:57</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_adc5b6cb597d33a30685f5bb1023328de"><div class="ttname"><a href="namespacemn_1_1stl.html#adc5b6cb597d33a30685f5bb1023328de">mn::stl::type_traits&lt; const T &gt;::const_pointer</a></div><div class="ttdeci">const T * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:51</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_adff70937ef0a5f31f2592b66bdf297ed"><div class="ttname"><a href="namespacemn_1_1stl.html#adff70937ef0a5f31f2592b66bdf297ed">mn::stl::type_traits&lt; const T &amp; &gt;::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:59</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_af681c9d879f6be5e9d655096e8d6407c"><div class="ttname"><a href="namespacemn_1_1stl.html#af681c9d879f6be5e9d655096e8d6407c">mn::stl::type_traits&lt; T &amp; &gt;::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:36</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_af711e955bacd782d9007cd9a1730dd77"><div class="ttname"><a href="namespacemn_1_1stl.html#af711e955bacd782d9007cd9a1730dd77">mn::stl::type_traits&lt; const T &amp; &gt;::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:60</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_afff0e6d32ad27118c4d6d4e81f02f4b5"><div class="ttname"><a href="namespacemn_1_1stl.html#afff0e6d32ad27118c4d6d4e81f02f4b5">mn::stl::type_traits&lt; const T &gt;::const_type</a></div><div class="ttdeci">const T const_type</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:47</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_structmn_1_1stl_1_1binary__function"><div class="ttname"><a href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">mn::stl::binary_function</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:83</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_structmn_1_1stl_1_1type__traits"><div class="ttname"><a href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits">mn::stl::type_traits</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_1_1stl_html_structmn_1_1stl_1_1unary__function"><div class="ttname"><a href="namespacemn_1_1stl.html#structmn_1_1stl_1_1unary__function">mn::stl::unary_function</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:74</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="astructmn_1_1integral__constant_html"><div class="ttname"><a href="structmn_1_1integral__constant.html">mn::integral_constant&lt; bool, true &gt;</a></div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1bit__and_html"><div class="ttname"><a href="structmn_1_1stl_1_1bit__and.html">mn::stl::bit_and</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:183</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1bit__and_html_ad1151e0de41689fde5055c45a9ee464f"><div class="ttname"><a href="structmn_1_1stl_1_1bit__and.html#ad1151e0de41689fde5055c45a9ee464f">mn::stl::bit_and::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:185</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1bit__not_html"><div class="ttname"><a href="structmn_1_1stl_1_1bit__not.html">mn::stl::bit_not</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:201</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1bit__not_html_a176fc8ed8dcdcb847ac8514b19306b96"><div class="ttname"><a href="structmn_1_1stl_1_1bit__not.html#a176fc8ed8dcdcb847ac8514b19306b96">mn::stl::bit_not::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:203</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1bit__or_html"><div class="ttname"><a href="structmn_1_1stl_1_1bit__or.html">mn::stl::bit_or</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:189</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1bit__or_html_a953b9960f88a17b29f2cdc3dda814d98"><div class="ttname"><a href="structmn_1_1stl_1_1bit__or.html#a953b9960f88a17b29f2cdc3dda814d98">mn::stl::bit_or::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:191</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1bit__xor_html"><div class="ttname"><a href="structmn_1_1stl_1_1bit__xor.html">mn::stl::bit_xor</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:195</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1bit__xor_html_a6b106d91207719dca85bf4a1159d059f"><div class="ttname"><a href="structmn_1_1stl_1_1bit__xor.html#a6b106d91207719dca85bf4a1159d059f">mn::stl::bit_xor::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:197</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1divides_html"><div class="ttname"><a href="structmn_1_1stl_1_1divides.html">mn::stl::divides</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:117</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1divides_html_ab9a67e0cd13c3199bb29f9953c517c9c"><div class="ttname"><a href="structmn_1_1stl_1_1divides.html#ab9a67e0cd13c3199bb29f9953c517c9c">mn::stl::divides::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:119</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1equal__to_html"><div class="ttname"><a href="structmn_1_1stl_1_1equal__to.html">mn::stl::equal_to</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:129</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1equal__to_html_ac8e7768de8e96e3b698472e05712aa11"><div class="ttname"><a href="structmn_1_1stl_1_1equal__to.html#ac8e7768de8e96e3b698472e05712aa11">mn::stl::equal_to::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:131</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1greater__equal_html"><div class="ttname"><a href="structmn_1_1stl_1_1greater__equal.html">mn::stl::greater_equal</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:153</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1greater__equal_html_a6036e2a9179d53346d43f92b08b662b2"><div class="ttname"><a href="structmn_1_1stl_1_1greater__equal.html#a6036e2a9179d53346d43f92b08b662b2">mn::stl::greater_equal::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:155</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1greater_html"><div class="ttname"><a href="structmn_1_1stl_1_1greater.html">mn::stl::greater</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:141</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1greater_html_a647a212208b68244a00c6c5fdcdec300"><div class="ttname"><a href="structmn_1_1stl_1_1greater.html#a647a212208b68244a00c6c5fdcdec300">mn::stl::greater::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:143</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1integral__constant_html"><div class="ttname"><a href="structmn_1_1stl_1_1integral__constant.html">mn::stl::integral_constant</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:66</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1integral__constant_html_a3606b275764868b82f972ae954a2f35daffa706e10237c0cdaa389d8e188a18b0"><div class="ttname"><a href="structmn_1_1stl_1_1integral__constant.html#a3606b275764868b82f972ae954a2f35daffa706e10237c0cdaa389d8e188a18b0">mn::stl::integral_constant::value</a></div><div class="ttdeci">@ value</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:67</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1is__class_html"><div class="ttname"><a href="structmn_1_1stl_1_1is__class.html">mn::stl::is_class</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:246</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1is__const_html"><div class="ttname"><a href="structmn_1_1stl_1_1is__const.html">mn::stl::is_const</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:218</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1is__empty_html"><div class="ttname"><a href="structmn_1_1stl_1_1is__empty.html">mn::stl::is_empty</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:236</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1is__enum_html"><div class="ttname"><a href="structmn_1_1stl_1_1is__enum.html">mn::stl::is_enum</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:240</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1is__reference_html"><div class="ttname"><a href="structmn_1_1stl_1_1is__reference.html">mn::stl::is_reference</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:209</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1is__union_html"><div class="ttname"><a href="structmn_1_1stl_1_1is__union.html">mn::stl::is_union</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:243</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1is__volatile_html"><div class="ttname"><a href="structmn_1_1stl_1_1is__volatile.html">mn::stl::is_volatile</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:230</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1less__equal_html"><div class="ttname"><a href="structmn_1_1stl_1_1less__equal.html">mn::stl::less_equal</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:159</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1less__equal_html_a1a4cbdef8834f2d65d498995145a6b13"><div class="ttname"><a href="structmn_1_1stl_1_1less__equal.html#a1a4cbdef8834f2d65d498995145a6b13">mn::stl::less_equal::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:161</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1less_html"><div class="ttname"><a href="structmn_1_1stl_1_1less.html">mn::stl::less</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:147</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1less_html_a25f794916bd6292df0eafeec1e8205a9"><div class="ttname"><a href="structmn_1_1stl_1_1less.html#a25f794916bd6292df0eafeec1e8205a9">mn::stl::less::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:149</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1logic__and_html"><div class="ttname"><a href="structmn_1_1stl_1_1logic__and.html">mn::stl::logic_and</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:165</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1logic__and_html_a6c6349a74b63c73afec2369ca79fd6b1"><div class="ttname"><a href="structmn_1_1stl_1_1logic__and.html#a6c6349a74b63c73afec2369ca79fd6b1">mn::stl::logic_and::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type bool operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:167</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1logic__not_html"><div class="ttname"><a href="structmn_1_1stl_1_1logic__not.html">mn::stl::logic_not</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:177</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1logic__not_html_a265028df9726bbad9a518cd25d7a95f0"><div class="ttname"><a href="structmn_1_1stl_1_1logic__not.html#a265028df9726bbad9a518cd25d7a95f0">mn::stl::logic_not::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:179</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1logic__or_html"><div class="ttname"><a href="structmn_1_1stl_1_1logic__or.html">mn::stl::logic_or</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:171</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1logic__or_html_a89e034f899b56a141590501c06c3a9ec"><div class="ttname"><a href="structmn_1_1stl_1_1logic__or.html#a89e034f899b56a141590501c06c3a9ec">mn::stl::logic_or::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:173</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1minus_html"><div class="ttname"><a href="structmn_1_1stl_1_1minus.html">mn::stl::minus</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:105</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1minus_html_a5f43a88561677a9fd99aeb2eb59662da"><div class="ttname"><a href="structmn_1_1stl_1_1minus.html#a5f43a88561677a9fd99aeb2eb59662da">mn::stl::minus::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:107</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1modulus_html"><div class="ttname"><a href="structmn_1_1stl_1_1modulus.html">mn::stl::modulus</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:123</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1modulus_html_a0dcdac09b277386a4936da6ec648df1b"><div class="ttname"><a href="structmn_1_1stl_1_1modulus.html#a0dcdac09b277386a4936da6ec648df1b">mn::stl::modulus::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:125</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1multiplies_html"><div class="ttname"><a href="structmn_1_1stl_1_1multiplies.html">mn::stl::multiplies</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:111</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1multiplies_html_afbd3f32982aaf328c076502f911b7c36"><div class="ttname"><a href="structmn_1_1stl_1_1multiplies.html#afbd3f32982aaf328c076502f911b7c36">mn::stl::multiplies::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:113</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1negate_html"><div class="ttname"><a href="structmn_1_1stl_1_1negate.html">mn::stl::negate</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:93</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1negate_html_a3379a80f9596071ea2e0241f04d25b80"><div class="ttname"><a href="structmn_1_1stl_1_1negate.html#a3379a80f9596071ea2e0241f04d25b80">mn::stl::negate::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:95</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1not__equal__to_html"><div class="ttname"><a href="structmn_1_1stl_1_1not__equal__to.html">mn::stl::not_equal_to</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:135</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1not__equal__to_html_ab46451350cd73552405253e185d7a22d"><div class="ttname"><a href="structmn_1_1stl_1_1not__equal__to.html#ab46451350cd73552405253e185d7a22d">mn::stl::not_equal_to::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:137</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1plus_html"><div class="ttname"><a href="structmn_1_1stl_1_1plus.html">mn::stl::plus</a></div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:99</div></div>
+<div class="ttc" id="astructmn_1_1stl_1_1plus_html_a10db7a99a3bab0297d2ed5d3146ced52"><div class="ttname"><a href="structmn_1_1stl_1_1plus.html#a10db7a99a3bab0297d2ed5d3146ced52">mn::stl::plus::operator()</a></div><div class="ttdeci">binary_function&lt; T, T, T &gt;::result_type operator()(const T &amp;a, const T &amp;b) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_stl.hpp:101</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

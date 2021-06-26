@@ -146,10 +146,11 @@ $(document).ready(function(){initNavTree('mn__lock_8hpp.html',''); initResizable
 <div class="title">mn_lock.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;ctime&gt;</code><br />
-<code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;freertos/FreeRTOS.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="mn__functional_8hpp_source.html">mn_functional.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__copyable_8hpp_source.html">mn_copyable.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__error_8hpp_source.html">mn_error.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__micros_8hpp_source.html">mn_micros.hpp</a>&quot;</code><br />
@@ -162,6 +163,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__autolock.html">mn::basic_autolock&lt; LOCK &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__autounlock.html">mn::basic_autounlock&lt; LOCK &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -172,8 +175,15 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:aad63ba351ef42ff312a0f260b5638aad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__lock_8hpp.html#aad63ba351ef42ff312a0f260b5638aad">LOCKED_SECTION</a>(LOCK,  OBJECT)&#160;&#160;&#160;if( (<a class="el" href="classmn_1_1basic__autolock.html">mn::basic_autolock</a>&lt;LOCK&gt; lock(OBJECT)) )</td></tr>
 <tr class="separator:aad63ba351ef42ff312a0f260b5638aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b90ec6a7401d98a032b5953a5162620"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__lock_8hpp.html#a3b90ec6a7401d98a032b5953a5162620">UNLOCKED_SECTION</a>(LOCK,  OBJECT)&#160;&#160;&#160;if( (<a class="el" href="classmn_1_1basic__autounlock.html">mn::basic_autounlock</a>&lt;LOCK&gt; lock(OBJECT)) )</td></tr>
+<tr class="separator:a3b90ec6a7401d98a032b5953a5162620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). </p><dl class="section author"><dt>Author</dt><dd>Copyright (c) 2021 Amber-Sophia Schroeck </dd></dl>
+<dl class="section user"><dt>License</dt><dd>The Mini Thread Library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 3, or (at your option) any later version.</dd></dl>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aad63ba351ef42ff312a0f260b5638aad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad63ba351ef42ff312a0f260b5638aad">&#9670;&nbsp;</a></span>LOCKED_SECTION</h2>
 
@@ -196,6 +206,34 @@ Macros</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;if( (<a class="el" href="classmn_1_1basic__autolock.html">mn::basic_autolock</a>&lt;LOCK&gt; lock(OBJECT)) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b90ec6a7401d98a032b5953a5162620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b90ec6a7401d98a032b5953a5162620">&#9670;&nbsp;</a></span>UNLOCKED_SECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNLOCKED_SECTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">LOCK, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">OBJECT&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;if( (<a class="el" href="classmn_1_1basic__autounlock.html">mn::basic_autounlock</a>&lt;LOCK&gt; lock(OBJECT)) )</td>
         </tr>
       </table>
 </div><div class="memdoc">

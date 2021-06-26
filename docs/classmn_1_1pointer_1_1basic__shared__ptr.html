@@ -141,7 +141,6 @@ $(document).ready(function(){initNavTree('classmn_1_1pointer_1_1basic__shared__p
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classmn_1_1pointer_1_1basic__shared__ptr-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -150,189 +149,165 @@ $(document).ready(function(){initNavTree('classmn_1_1pointer_1_1basic__shared__p
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="mn__shared__ptr_8hpp_source.html">mn_shared_ptr.hpp</a>&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::pointer::basic_shared_ptr&lt; T, TRefType &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1pointer_1_1basic__shared__ptr__inherit__graph.svg" width="215" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::pointer::basic_shared_ptr&lt; T, TRefType &gt;:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1pointer_1_1basic__shared__ptr__coll__graph.svg" width="358" height="232"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3ffab1bf9c4cfdecdb312bbf37d5ef45"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3ffab1bf9c4cfdecdb312bbf37d5ef45">value_type</a> = typename <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">base_type::value_type</a></td></tr>
-<tr class="separator:a3ffab1bf9c4cfdecdb312bbf37d5ef45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b1e39367996c2ad5c9b02cfa5639761"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a2b1e39367996c2ad5c9b02cfa5639761">ref_type</a> = typename base_type::ref_type</td></tr>
-<tr class="separator:a2b1e39367996c2ad5c9b02cfa5639761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20e4076a67a6db23d672c1a95f49065d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a20e4076a67a6db23d672c1a95f49065d">const_value_type</a> = typename <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a670f7136804d641237350e6f60a52721">base_type::const_value_type</a></td></tr>
-<tr class="separator:a20e4076a67a6db23d672c1a95f49065d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf0b2520eda70252fb407fb552e35f30"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#acf0b2520eda70252fb407fb552e35f30">pointer</a> = typename <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">base_type::pointer</a></td></tr>
-<tr class="separator:acf0b2520eda70252fb407fb552e35f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ef7a1b8d8ff51ccf56574a5a37048a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4">reference_type</a> = TRefType</td></tr>
-<tr class="separator:a0ef7a1b8d8ff51ccf56574a5a37048a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abefb874bb2cad47de4d712d385fafacc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> = <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt; <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a>, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4">reference_type</a> &gt;</td></tr>
-<tr class="separator:abefb874bb2cad47de4d712d385fafacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3119e5b9ea73127db0920c21963dded2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2">value_type</a> = T</td></tr>
+<tr class="separator:a3119e5b9ea73127db0920c21963dded2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b1a50e4b6943836a5bf6a35d7fbbde"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a02b1a50e4b6943836a5bf6a35d7fbbde">element_type</a> = T</td></tr>
+<tr class="separator:a02b1a50e4b6943836a5bf6a35d7fbbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6688fea37d0afc37b84136f385b68da"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ac6688fea37d0afc37b84136f385b68da">reference</a> = T &amp;</td></tr>
+<tr class="separator:ac6688fea37d0afc37b84136f385b68da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b5d5d566a4df2a3a6dbbc6f4f55473"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a79b5d5d566a4df2a3a6dbbc6f4f55473">const_value_type</a> = const <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2">value_type</a></td></tr>
+<tr class="separator:a79b5d5d566a4df2a3a6dbbc6f4f55473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc80272286bfbdc3b149ad14523470d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a> = <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2">value_type</a> *</td></tr>
+<tr class="separator:afc80272286bfbdc3b149ad14523470d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ee99fac8b83152d129a085c333fca2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2">ref_type</a> = TRefType</td></tr>
+<tr class="separator:a77ee99fac8b83152d129a085c333fca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1e8cc910ba25191ea2ad8f9ce38244"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> = <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt; <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2">value_type</a>, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2">ref_type</a> &gt;</td></tr>
+<tr class="separator:add1e8cc910ba25191ea2ad8f9ce38244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a65159f418e8a17cb78fe3348672d9bec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a65159f418e8a17cb78fe3348672d9bec">basic_shared_ptr</a> (<a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a> ptr)</td></tr>
+<tr class="memitem:a65159f418e8a17cb78fe3348672d9bec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a65159f418e8a17cb78fe3348672d9bec">basic_shared_ptr</a> (<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a> ptr)</td></tr>
 <tr class="separator:a65159f418e8a17cb78fe3348672d9bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff5dd6abebb871a686ba0d99b288512"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a5ff5dd6abebb871a686ba0d99b288512">basic_shared_ptr</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> &amp;sp)</td></tr>
+<tr class="memitem:a5ff5dd6abebb871a686ba0d99b288512"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a5ff5dd6abebb871a686ba0d99b288512">basic_shared_ptr</a> (const <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> &amp;sp)</td></tr>
 <tr class="separator:a5ff5dd6abebb871a686ba0d99b288512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a669581fbbe8b3c04a0ad16a89d8cd4d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a669581fbbe8b3c04a0ad16a89d8cd4d9">~basic_shared_ptr</a> ()</td></tr>
 <tr class="separator:a669581fbbe8b3c04a0ad16a89d8cd4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade54e3e2338dae5ed851459fca530d05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ade54e3e2338dae5ed851459fca530d05">release</a> ()</td></tr>
+<tr class="memitem:ade54e3e2338dae5ed851459fca530d05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ade54e3e2338dae5ed851459fca530d05">release</a> ()</td></tr>
 <tr class="separator:ade54e3e2338dae5ed851459fca530d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14db35e4f4a950c8e45b09d748cac86f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a14db35e4f4a950c8e45b09d748cac86f">reset</a> (<a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a> pValue=0)</td></tr>
+<tr class="memitem:a14db35e4f4a950c8e45b09d748cac86f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a14db35e4f4a950c8e45b09d748cac86f">reset</a> (<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a> pValue=0)</td></tr>
 <tr class="separator:a14db35e4f4a950c8e45b09d748cac86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9deb66842159b3871082e3d22e30144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4">reference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#aa9deb66842159b3871082e3d22e30144">ref</a> ()</td></tr>
-<tr class="separator:aa9deb66842159b3871082e3d22e30144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4285dcc5f1b444cbe1fbef023021c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ad4285dcc5f1b444cbe1fbef023021c50">swap</a> (<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> &amp;b)</td></tr>
+<tr class="memitem:a6a23f26ce2ce673098a53c85f75fcd61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2">ref_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a6a23f26ce2ce673098a53c85f75fcd61">ref</a> ()</td></tr>
+<tr class="separator:a6a23f26ce2ce673098a53c85f75fcd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4285dcc5f1b444cbe1fbef023021c50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ad4285dcc5f1b444cbe1fbef023021c50">swap</a> (<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> &amp;b)</td></tr>
 <tr class="separator:ad4285dcc5f1b444cbe1fbef023021c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abce6281d027366c3b0df38d072617556"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abce6281d027366c3b0df38d072617556">operator=</a> (<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> &amp;sp)</td></tr>
+<tr class="memitem:acc27d2b500b159ea7c1e21a396ab25ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#acc27d2b500b159ea7c1e21a396ab25ea">get</a> () const</td></tr>
+<tr class="separator:acc27d2b500b159ea7c1e21a396ab25ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec05c751a93fbb93e8fc41b9a7f2fc6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#aec05c751a93fbb93e8fc41b9a7f2fc6d">operator-&gt;</a> () const</td></tr>
+<tr class="separator:aec05c751a93fbb93e8fc41b9a7f2fc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85c488c9223a4d6fe8f3e78b634885b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a79b5d5d566a4df2a3a6dbbc6f4f55473">const_value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ae85c488c9223a4d6fe8f3e78b634885b">operator*</a> ()</td></tr>
+<tr class="separator:ae85c488c9223a4d6fe8f3e78b634885b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9f184525605c740642eb711cd10e9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a4c9f184525605c740642eb711cd10e9c">operator bool</a> ()</td></tr>
+<tr class="separator:a4c9f184525605c740642eb711cd10e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce6281d027366c3b0df38d072617556"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abce6281d027366c3b0df38d072617556">operator=</a> (<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> &amp;sp)</td></tr>
 <tr class="separator:abce6281d027366c3b0df38d072617556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:af791b97c65cf95f9aae4c35b6e1bdda6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#af791b97c65cf95f9aae4c35b6e1bdda6">base_type</a> = <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html">pointer_ptr</a>&lt; T &gt;</td></tr>
-<tr class="separator:af791b97c65cf95f9aae4c35b6e1bdda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_structmn_1_1pointer_1_1pointer__ptr"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structmn_1_1pointer_1_1pointer__ptr')"><img src="closed.png" alt="-"/>&#160;Private Types inherited from <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html">mn::pointer::pointer_ptr&lt; T &gt;</a></td></tr>
-<tr class="memitem:a225a1f3dfa5f08fd0b2f2c1c561e1759 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a> = T</td></tr>
-<tr class="separator:a225a1f3dfa5f08fd0b2f2c1c561e1759 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a553042672d2f2b031612b9e114d19e0f inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a553042672d2f2b031612b9e114d19e0f">reference</a> = T &amp;</td></tr>
-<tr class="separator:a553042672d2f2b031612b9e114d19e0f inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a670f7136804d641237350e6f60a52721 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a670f7136804d641237350e6f60a52721">const_value_type</a> = const <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a></td></tr>
-<tr class="separator:a670f7136804d641237350e6f60a52721 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3c715402e0d4ef0d42b06992006285 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a> = <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a> *</td></tr>
-<tr class="separator:acb3c715402e0d4ef0d42b06992006285 inherit pub_types_structmn_1_1pointer_1_1pointer__ptr"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3e251e4aa4dc6df1d39957123ea8da1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4">reference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3e251e4aa4dc6df1d39957123ea8da1c">_m_ref</a></td></tr>
-<tr class="separator:a3e251e4aa4dc6df1d39957123ea8da1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c84e638e968da6b2e80895b21b2bb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2">ref_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ab1c84e638e968da6b2e80895b21b2bb4">m_ref</a></td></tr>
+<tr class="separator:ab1c84e638e968da6b2e80895b21b2bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811f8d317b0b420f685f31386cefb644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a811f8d317b0b420f685f31386cefb644">m_ptr</a></td></tr>
+<tr class="separator:a811f8d317b0b420f685f31386cefb644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="af791b97c65cf95f9aae4c35b6e1bdda6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af791b97c65cf95f9aae4c35b6e1bdda6">&#9670;&nbsp;</a></span>base_type</h2>
+<a id="a79b5d5d566a4df2a3a6dbbc6f4f55473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b5d5d566a4df2a3a6dbbc6f4f55473">&#9670;&nbsp;</a></span>const_value_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename T , typename TRefType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#af791b97c65cf95f9aae4c35b6e1bdda6">base_type</a> =  <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html">pointer_ptr</a>&lt;T&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a20e4076a67a6db23d672c1a95f49065d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20e4076a67a6db23d672c1a95f49065d">&#9670;&nbsp;</a></span>const_value_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a670f7136804d641237350e6f60a52721">const_value_type</a> =  typename <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a670f7136804d641237350e6f60a52721">base_type::const_value_type</a></td>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a79b5d5d566a4df2a3a6dbbc6f4f55473">const_value_type</a> =  const <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2">value_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="acf0b2520eda70252fb407fb552e35f30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf0b2520eda70252fb407fb552e35f30">&#9670;&nbsp;</a></span>pointer</h2>
+<a id="a02b1a50e4b6943836a5bf6a35d7fbbde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b1a50e4b6943836a5bf6a35d7fbbde">&#9670;&nbsp;</a></span>element_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a> =  typename <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">base_type::pointer</a></td>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a02b1a50e4b6943836a5bf6a35d7fbbde">element_type</a> =  T</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2b1e39367996c2ad5c9b02cfa5639761"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b1e39367996c2ad5c9b02cfa5639761">&#9670;&nbsp;</a></span>ref_type</h2>
+<a id="afc80272286bfbdc3b149ad14523470d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc80272286bfbdc3b149ad14523470d7">&#9670;&nbsp;</a></span>pointer</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a2b1e39367996c2ad5c9b02cfa5639761">ref_type</a> =  typename base_type::ref_type</td>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a> =  <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2">value_type</a>*</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0ef7a1b8d8ff51ccf56574a5a37048a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ef7a1b8d8ff51ccf56574a5a37048a4">&#9670;&nbsp;</a></span>reference_type</h2>
+<a id="a77ee99fac8b83152d129a085c333fca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ee99fac8b83152d129a085c333fca2">&#9670;&nbsp;</a></span>ref_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4">reference_type</a> =  TRefType</td>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2">ref_type</a> =  TRefType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="abefb874bb2cad47de4d712d385fafacc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abefb874bb2cad47de4d712d385fafacc">&#9670;&nbsp;</a></span>self_type</h2>
+<a id="ac6688fea37d0afc37b84136f385b68da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6688fea37d0afc37b84136f385b68da">&#9670;&nbsp;</a></span>reference</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> =  <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt;<a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a>, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4">reference_type</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#ac6688fea37d0afc37b84136f385b68da">reference</a> =  T&amp;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a3ffab1bf9c4cfdecdb312bbf37d5ef45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ffab1bf9c4cfdecdb312bbf37d5ef45">&#9670;&nbsp;</a></span>value_type</h2>
+<a id="add1e8cc910ba25191ea2ad8f9ce38244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1e8cc910ba25191ea2ad8f9ce38244">&#9670;&nbsp;</a></span>self_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">value_type</a> =  typename <a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#a225a1f3dfa5f08fd0b2f2c1c561e1759">base_type::value_type</a></td>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> =  <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a>&lt;<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2">value_type</a>, <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2">ref_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3119e5b9ea73127db0920c21963dded2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3119e5b9ea73127db0920c21963dded2">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TRefType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2">value_type</a> =  T</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -346,7 +321,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -354,7 +329,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a>&#160;</td>
           <td class="paramname"><em>ptr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -374,7 +349,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -382,7 +357,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::<a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">basic_shared_ptr</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> &amp;&#160;</td>
           <td class="paramname"><em>sp</em></td><td>)</td>
           <td></td>
         </tr>
@@ -402,7 +377,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -424,21 +399,131 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acc27d2b500b159ea7c1e21a396ab25ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc27d2b500b159ea7c1e21a396ab25ea">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TRefType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c9f184525605c740642eb711cd10e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9f184525605c740642eb711cd10e9c">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TRefType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae85c488c9223a4d6fe8f3e78b634885b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85c488c9223a4d6fe8f3e78b634885b">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TRefType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a79b5d5d566a4df2a3a6dbbc6f4f55473">const_value_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec05c751a93fbb93e8fc41b9a7f2fc6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec05c751a93fbb93e8fc41b9a7f2fc6d">&#9670;&nbsp;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TRefType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abce6281d027366c3b0df38d072617556"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abce6281d027366c3b0df38d072617556">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::operator= </td>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a>&amp; <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> &amp;&#160;</td>
           <td class="paramname"><em>sp</em></td><td>)</td>
           <td></td>
         </tr>
@@ -452,19 +537,19 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 
 </div>
 </div>
-<a id="aa9deb66842159b3871082e3d22e30144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9deb66842159b3871082e3d22e30144">&#9670;&nbsp;</a></span>ref()</h2>
+<a id="a6a23f26ce2ce673098a53c85f75fcd61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a23f26ce2ce673098a53c85f75fcd61">&#9670;&nbsp;</a></span>ref()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4">reference_type</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::ref </td>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2">ref_type</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::ref </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -485,13 +570,13 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::release </td>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::release </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -512,7 +597,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -520,7 +605,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::reset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structmn_1_1pointer_1_1pointer__ptr.html#acb3c715402e0d4ef0d42b06992006285">pointer</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a>&#160;</td>
           <td class="paramname"><em>pValue</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
@@ -540,7 +625,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -548,7 +633,7 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc">self_type</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244">self_type</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em></td><td>)</td>
           <td></td>
         </tr>
@@ -563,19 +648,43 @@ template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3e251e4aa4dc6df1d39957123ea8da1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e251e4aa4dc6df1d39957123ea8da1c">&#9670;&nbsp;</a></span>_m_ref</h2>
+<a id="a811f8d317b0b420f685f31386cefb644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811f8d317b0b420f685f31386cefb644">&#9670;&nbsp;</a></span>m_ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TRefType  = atomic_size_t&gt; </div>
+template&lt;typename T , typename TRefType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4">reference_type</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::_m_ref</td>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7">pointer</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::m_ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1c84e638e968da6b2e80895b21b2bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c84e638e968da6b2e80895b21b2bb4">&#9670;&nbsp;</a></span>m_ref</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename TRefType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2">ref_type</a> <a class="el" href="classmn_1_1pointer_1_1basic__shared__ptr.html">mn::pointer::basic_shared_ptr</a>&lt; T, TRefType &gt;::m_ref</td>
         </tr>
       </table>
   </td>

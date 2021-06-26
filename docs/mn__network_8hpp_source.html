@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_network.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__network_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_network.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__network_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef __MINILIB_NET_NETWORK_H__</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define __MINILIB_NET_NETWORK_H__</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__wifi_8hpp.html">mn_wifi.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__wifi__ap_8hpp.html">mn_wifi_ap.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//#include &quot;mn_wifi_sta.hpp&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//#include &quot;mn_wifi_multi.hpp&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//#include &quot;mn_eth.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//#include &quot;mn_serial_net.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">namespace </span>net {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacemn_1_1net.html#a3a79450b3985b2b85a220b0430ff0824">   35</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__wifi.html">wifi</a> = <a class="code" href="classmn_1_1net_1_1basic__wifi.html">basic_wifi</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacemn_1_1net.html#a8e078ad8efc296136f8a477952caea89">   36</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1net_1_1basic__wifi__ap.html">wifi_ap</a> = <a class="code" href="classmn_1_1net_1_1basic__wifi__ap.html">basic_wifi_ap</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacemn_1_1net.html#a1172a20d6c42d1f3a3e642d0b5ee1751">   37</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn_1_1net.html#a1172a20d6c42d1f3a3e642d0b5ee1751">wifi_sta</a> = void;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacemn_1_1net.html#a1f08315aa87008b91f8d2504d82a57a5">   38</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn_1_1net.html#a1f08315aa87008b91f8d2504d82a57a5">wifi_multi</a> = void;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacemn_1_1net.html#aa4d94478cbccfd8c29ec3234983709cb">   41</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn_1_1net.html#aa4d94478cbccfd8c29ec3234983709cb">eth</a> = void;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacemn_1_1net.html#a81ca7b1241723a0ba33ef1f35e7ac69f">   42</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacemn_1_1net.html#a81ca7b1241723a0ba33ef1f35e7ac69f">serial_net</a> = void;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_NET_NETWORK_H__</span></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__wifi__ap_html"><div class="ttname"><a href="classmn_1_1net_1_1basic__wifi__ap.html">mn::net::basic_wifi_ap</a></div><div class="ttdoc">Wifi AP class for the esp32.</div><div class="ttdef"><b>Definition:</b> mn_wifi_ap.hpp:34</div></div>
+<div class="ttc" id="aclassmn_1_1net_1_1basic__wifi_html"><div class="ttname"><a href="classmn_1_1net_1_1basic__wifi.html">mn::net::basic_wifi</a></div><div class="ttdoc">A basic class for wifi.</div><div class="ttdef"><b>Definition:</b> mn_wifi.hpp:41</div></div>
+<div class="ttc" id="amn__wifi_8hpp_html"><div class="ttname"><a href="mn__wifi_8hpp.html">mn_wifi.hpp</a></div><div class="ttdoc">This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</div></div>
+<div class="ttc" id="amn__wifi__ap_8hpp_html"><div class="ttname"><a href="mn__wifi__ap_8hpp.html">mn_wifi_ap.hpp</a></div><div class="ttdoc">This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</div></div>
+<div class="ttc" id="anamespacemn_1_1net_html_a1172a20d6c42d1f3a3e642d0b5ee1751"><div class="ttname"><a href="namespacemn_1_1net.html#a1172a20d6c42d1f3a3e642d0b5ee1751">mn::net::wifi_sta</a></div><div class="ttdeci">void wifi_sta</div><div class="ttdef"><b>Definition:</b> mn_network.hpp:37</div></div>
+<div class="ttc" id="anamespacemn_1_1net_html_a1f08315aa87008b91f8d2504d82a57a5"><div class="ttname"><a href="namespacemn_1_1net.html#a1f08315aa87008b91f8d2504d82a57a5">mn::net::wifi_multi</a></div><div class="ttdeci">void wifi_multi</div><div class="ttdef"><b>Definition:</b> mn_network.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_1_1net_html_a81ca7b1241723a0ba33ef1f35e7ac69f"><div class="ttname"><a href="namespacemn_1_1net.html#a81ca7b1241723a0ba33ef1f35e7ac69f">mn::net::serial_net</a></div><div class="ttdeci">void serial_net</div><div class="ttdef"><b>Definition:</b> mn_network.hpp:42</div></div>
+<div class="ttc" id="anamespacemn_1_1net_html_aa4d94478cbccfd8c29ec3234983709cb"><div class="ttname"><a href="namespacemn_1_1net.html#aa4d94478cbccfd8c29ec3234983709cb">mn::net::eth</a></div><div class="ttdeci">void eth</div><div class="ttdef"><b>Definition:</b> mn_network.hpp:41</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

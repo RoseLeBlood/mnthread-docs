@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_optional.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__optional_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_optional.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__optional_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef __MINLIB_BASIC_OPTIONAL_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define __MINLIB_BASIC_OPTIONAL_H__</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__functional_8hpp.html">mn_functional.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacemn.html">   29</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a> { };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmn_1_1basic__optional.html">basic_optional</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">   34</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">value_type</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a791cbfba6d29fe9b8f9a31c8564e7516">   35</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html#a791cbfba6d29fe9b8f9a31c8564e7516">const_value_type</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a907f4c08650cc820b94588a34f2e5aec">   36</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html#a907f4c08650cc820b94588a34f2e5aec">reference</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a8bc5d4df64cdf70a840f59acb97af50f">   37</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html#a8bc5d4df64cdf70a840f59acb97af50f">const_reference</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a8fed132aaf83d2cfbc6ccd2bb3f2f427">   38</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html#a8fed132aaf83d2cfbc6ccd2bb3f2f427">move_type</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;&amp;;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a6bcf80b2c52e992eee6d0cac9138cb86">   39</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html#a6bcf80b2c52e992eee6d0cac9138cb86">const_move_type</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;&amp;;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#aac037e8f4e355398eaa2a0b66e0dfc66">   41</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html#aac037e8f4e355398eaa2a0b66e0dfc66">pointer</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a67e4e0b59ef7f189da77661b1ba06d69">   42</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html#a67e4e0b59ef7f189da77661b1ba06d69">const_pointer</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a2a5e5add65eb3580ec55050da036816c">   44</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html">self_type</a> = <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a75bc127b5ea3bfa40ec61cbd83e2768a">   46</a></span>&#160;        constexpr <a class="code" href="classmn_1_1basic__optional.html#a75bc127b5ea3bfa40ec61cbd83e2768a">basic_optional</a>() noexcept</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            : <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>( false), <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>() { }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a39c80fbee4e8d6365aebb6adbfdd8d89">   49</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html#a39c80fbee4e8d6365aebb6adbfdd8d89">basic_optional</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; other)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            : <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>( other.<a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>), <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>(other.<a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>) { }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a96fa275f6deae69f1c83cb001ef7da56">   52</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html#a96fa275f6deae69f1c83cb001ef7da56">basic_optional</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp;&amp; other) noexcept</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            : <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>( <a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a>(other.m_bHasValue)), <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>( <a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a>(other.m_tValue)) { }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">template</span>&lt; <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a01fb8a4acc897f614d1b137b0e60c870">   57</a></span>&#160;        constexpr <span class="keyword">explicit</span> <a class="code" href="classmn_1_1basic__optional.html#a01fb8a4acc897f614d1b137b0e60c870">basic_optional</a>(Args&amp;&amp;... args)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            : <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>( true), <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>( <a class="code" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">value_type</a>( <a class="code" href="namespacemn.html">mn</a>::<a class="code" href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">forward</a>&lt;Args&gt;(args)...))  {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U = value_type &gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a941db51db8de02b971e510f019e9cb6e">   61</a></span>&#160;        constexpr <span class="keyword">explicit</span> <a class="code" href="classmn_1_1basic__optional.html#a941db51db8de02b971e510f019e9cb6e">basic_optional</a>( U &amp;&amp; <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            : <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>( true), <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>( <a class="code" href="namespacemn.html">mn</a>::<a class="code" href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">forward</a>&lt;U&gt;( <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>)) { }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a194efa02e7caf7e02526459d58c8ebec">   64</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html#a194efa02e7caf7e02526459d58c8ebec">~basic_optional</a>() { <a class="code" href="classmn_1_1basic__optional.html#aaf23acad2031762eb58b3ab2cc90b59e">reset</a>(); }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#aaf23acad2031762eb58b3ab2cc90b59e">   69</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1basic__optional.html#aaf23acad2031762eb58b3ab2cc90b59e">reset</a>() noexcept {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="classmn_1_1basic__optional.html#a9c77c9c9e3c9c4d132a73810e05e8f99">has_value</a>() &amp; <a class="code" href="structmn_1_1is__class.html">mn::is_class&lt;T&gt;::value</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>-&gt;~T();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a309411f0a475b4fdfbe6c736175ac9fe">   78</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1basic__optional.html#a309411f0a475b4fdfbe6c736175ac9fe">clear</a>() {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a4152aefefa2129a8443ea14470f0dcc7">   85</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; <a class="code" href="classmn_1_1basic__optional.html#a4152aefefa2129a8443ea14470f0dcc7">assign</a>(<a class="code" href="classmn_1_1basic__optional.html#a791cbfba6d29fe9b8f9a31c8564e7516">const_value_type</a>&amp; <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a> = <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#aa9133454301f379c5cb5f1262f14bd10">   95</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; <a class="code" href="classmn_1_1basic__optional.html#aa9133454301f379c5cb5f1262f14bd10">assign</a>(<a class="code" href="classmn_1_1basic__optional.html#a8fed132aaf83d2cfbc6ccd2bb3f2f427">move_type</a> <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a> = <a class="code" href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a>(<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a8baabd5c32a6c4ba01c2f457603e9a03">  104</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; <a class="code" href="classmn_1_1basic__optional.html#a8baabd5c32a6c4ba01c2f457603e9a03">assign</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="classmn_1_1basic__optional.html">self_type</a> tmp(other);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="classmn_1_1basic__optional.html#a90f040c56c6df727128783160fa635fa">swap</a>(tmp);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a90f040c56c6df727128783160fa635fa">  112</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1basic__optional.html#a90f040c56c6df727128783160fa635fa">swap</a>( <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a>(<a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>, other.<a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a>(<a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>, other.<a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a9c77c9c9e3c9c4d132a73810e05e8f99">  121</a></span>&#160;        constexpr <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1basic__optional.html#a9c77c9c9e3c9c4d132a73810e05e8f99">has_value</a>() const noexcept {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">  127</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html#a907f4c08650cc820b94588a34f2e5aec">reference</a> <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>() {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            assert( <a class="code" href="classmn_1_1basic__optional.html#a9c77c9c9e3c9c4d132a73810e05e8f99">has_value</a>());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a02009e7034ea988cd9f41d1955d16efd">  134</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html#a8bc5d4df64cdf70a840f59acb97af50f">const_reference</a> <a class="code" href="classmn_1_1basic__optional.html#a02009e7034ea988cd9f41d1955d16efd">value</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            assert( <a class="code" href="classmn_1_1basic__optional.html#a9c77c9c9e3c9c4d132a73810e05e8f99">has_value</a>());</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#aa87ac49eecf48b4cbc0266d8bdc1220a">  142</a></span>&#160;        constexpr <a class="code" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">value_type</a> <a class="code" href="classmn_1_1basic__optional.html#aa87ac49eecf48b4cbc0266d8bdc1220a">value_or</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">value_type</a> <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#a9c77c9c9e3c9c4d132a73810e05e8f99">has_value</a>() ? <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a> : <span class="keyword">static_cast&lt;</span><a class="code" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">value_type</a><span class="keyword">&gt;</span>( <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">template</span>&lt; <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#ab902fe95184d6590c1fa1dc54fd3ebab">  150</a></span>&#160;        constexpr <a class="code" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">value_type</a> <a class="code" href="classmn_1_1basic__optional.html#ab902fe95184d6590c1fa1dc54fd3ebab">value_or</a>(<span class="keyword">const</span> U&amp; <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#a9c77c9c9e3c9c4d132a73810e05e8f99">has_value</a>() ? <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a> : <span class="keyword">static_cast&lt;</span><a class="code" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">value_type</a><span class="keyword">&gt;</span>( <a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#aa985fb8abcd325dca1952dfce4b8cf68">  157</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; <a class="code" href="classmn_1_1basic__optional.html#aa985fb8abcd325dca1952dfce4b8cf68">operator = </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; other) noexcept {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#a4152aefefa2129a8443ea14470f0dcc7">assign</a>(<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a6748e4c4a0fa12f93428660106f93a41">  164</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp; <a class="code" href="classmn_1_1basic__optional.html#aa985fb8abcd325dca1952dfce4b8cf68">operator = </a>( <a class="code" href="classmn_1_1basic__optional.html">self_type</a>&amp;&amp; other) noexcept {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#a4152aefefa2129a8443ea14470f0dcc7">assign</a>(<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a9737888ef000f273dd2960104c95101c">  171</a></span>&#160;        constexpr <a class="code" href="classmn_1_1basic__optional.html#a67e4e0b59ef7f189da77661b1ba06d69">const_pointer</a> <a class="code" href="classmn_1_1basic__optional.html#a9737888ef000f273dd2960104c95101c">operator -&gt;</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a5fdcffb46f7987ea9be0ce31816b5065">  178</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html#aac037e8f4e355398eaa2a0b66e0dfc66">pointer</a> <a class="code" href="classmn_1_1basic__optional.html#a9737888ef000f273dd2960104c95101c">operator -&gt;</a>() {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a252adc44dc269a6d77018bdbdb328d4c">  185</a></span>&#160;        constexpr <a class="code" href="classmn_1_1basic__optional.html#a8bc5d4df64cdf70a840f59acb97af50f">const_reference</a> <a class="code" href="classmn_1_1basic__optional.html#a252adc44dc269a6d77018bdbdb328d4c">operator *</a>()<span class="keyword"> const  </span>{</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a9f85623ea6e137beb8593e6a83632605">  192</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html#a907f4c08650cc820b94588a34f2e5aec">reference</a> <a class="code" href="classmn_1_1basic__optional.html#a252adc44dc269a6d77018bdbdb328d4c">operator *</a>() {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#aa758ee353443ec30cf68bb54637b5148">  200</a></span>&#160;        <span class="keyword">explicit</span> <span class="keyword">operator</span> bool() const noexcept {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">  207</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">m_bHasValue</a>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">  211</a></span>&#160;        <a class="code" href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">value_type</a> <a class="code" href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">m_tValue</a>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    };</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="namespacemn.html#ae4dd996884cd556d3acd3f0e16e2dff1">  215</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">swap</a>(<a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; a, <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        a.<a class="code" href="classmn_1_1basic__optional.html#a90f040c56c6df727128783160fa635fa">swap</a>(b);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="namespacemn.html#afc3de337abe6e5ce4bc37b4127d39d91">  221</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a09a6686b329dfd82363aaabc0de18814">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;U&gt;</a>&amp; y) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">return</span> bool(x) != bool(y) ? false : !bool( x) ? true : *x == *y;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="namespacemn.html#ab2502ff59bc6c808fdd708cdbd3ef911">  226</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a64c229415514252e87d2d923d8c0b37e">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;U&gt;</a>&amp; y) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span> !(x.<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>() == y.<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>());</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="namespacemn.html#ad45cecdac35f9b2b7eaeefccf994accb">  231</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8eeaf11d4d2e69437aa81431b898530b">operator &lt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;U&gt;</a>&amp; y) {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> (!y) ? false : (!x) ? <span class="keyword">true</span> : *x &lt; *y;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="namespacemn.html#a3a5b719aa3f92a1cda0c6e6d2d763d93">  236</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#af72ba6b7952d45715716d2ba92db2a0f">operator &gt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;U&gt;</a>&amp; y) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">return</span> (y.<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>() &lt; x.<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>());</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="namespacemn.html#ad1b3f2c891e0c0cf75d9cae4dc7e3b6b">  241</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8258427951c5a649b32ee3c1433df9e5">operator &lt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;U&gt;</a>&amp; y) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> !(y.<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>() &lt; x.<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>());</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="namespacemn.html#a0e62cdcae27670a2d890c820e7c976af">  246</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#aaf42ccfd0c89436e1b28bfb4cd9953e6">operator &gt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;U&gt;</a>&amp; y) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span> !(x.<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>() &lt; y.<a class="code" href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">value</a>());</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">// Comparison with nullopt</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="namespacemn.html#a5b88da0f7215dad4646b9a79aa2daf38">  253</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a09a6686b329dfd82363aaabc0de18814">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>) noexcept {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> (!x);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="namespacemn.html#a438d5028bcd17bece0c11227c811f68a">  258</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a09a6686b329dfd82363aaabc0de18814">operator == </a>(<a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) noexcept {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> (!x);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="namespacemn.html#a602d5aab5c5c6aadaf84ce3dcd2d8097">  263</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a64c229415514252e87d2d923d8c0b37e">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>) noexcept {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">return</span> bool(x);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="namespacemn.html#ad026214098dfaab87fca005194c2ce63">  268</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a64c229415514252e87d2d923d8c0b37e">operator != </a>(<a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) noexcept {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">return</span> bool(x);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="namespacemn.html#ab41bfd0b6d8df356b8d014d2b09e3f95">  273</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8eeaf11d4d2e69437aa81431b898530b">operator &lt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp;, <a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>) noexcept {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="namespacemn.html#a841c3adcdb27f459aebb93283742106a">  278</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8eeaf11d4d2e69437aa81431b898530b">operator &lt; </a>(<a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) noexcept {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">return</span> bool(x);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="namespacemn.html#a0e0fc8579dd7f1debcfb55420bbf5a7a">  283</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8258427951c5a649b32ee3c1433df9e5">operator &lt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>) noexcept {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordflow">return</span> (!x);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="namespacemn.html#a12b4d3e42f7f7b49b1619b740dd9e5a8">  288</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8258427951c5a649b32ee3c1433df9e5">operator &lt;= </a>(<a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp;) noexcept {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="namespacemn.html#a39d7447a9d8d884297e34b3ac75f9ab5">  293</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#af72ba6b7952d45715716d2ba92db2a0f">operator &gt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>) noexcept {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">return</span> bool(x);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="namespacemn.html#a5773c7ebe56865efe60820386db3d596">  298</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#af72ba6b7952d45715716d2ba92db2a0f">operator &gt; </a>(<a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp;) noexcept</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="namespacemn.html#a2832815083bcc0bca40bad62c6acae6b">  304</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#aaf42ccfd0c89436e1b28bfb4cd9953e6">operator &gt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp;, <a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>) noexcept {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00309"></a><span class="lineno"><a class="line" href="namespacemn.html#a98ff195b5aac242cdd55a37009a17b73">  309</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#aaf42ccfd0c89436e1b28bfb4cd9953e6">operator &gt;= </a>(<a class="code" href="namespacemn.html#structmn_1_1nullopt__t">nullopt_t</a>, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) noexcept {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">return</span> (!x);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="namespacemn.html#a5b6dffeb3a24789c3a2421d42ea6717f">  314</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a09a6686b329dfd82363aaabc0de18814">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> U&amp; v) {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <span class="keywordflow">return</span> bool(x) ? *x == v : <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="namespacemn.html#ae68190c2bf0c77a49e13550da89810a7">  319</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a09a6686b329dfd82363aaabc0de18814">operator == </a>(<span class="keyword">const</span> U&amp; v, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">return</span> bool(x) ? v == *x : <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="namespacemn.html#a9ca55dbba7a8f5cfb4753b38f9353d38">  324</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a64c229415514252e87d2d923d8c0b37e">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> U&amp; v) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">return</span> bool(x) ? *x != v : <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="namespacemn.html#a13eb4bc48ad892209b32d9a6416b1965">  329</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a64c229415514252e87d2d923d8c0b37e">operator != </a>(<span class="keyword">const</span> U&amp; v, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">return</span> bool(x) ? v != *x : <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="namespacemn.html#adb0c15184b6404c0ee5d323795c1f0d9">  334</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8eeaf11d4d2e69437aa81431b898530b">operator &lt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> U&amp; v) {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">return</span> bool(x) ? *x &lt; v : <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="namespacemn.html#ac6ac5fa290c2da11f70e58a5face14b3">  339</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8eeaf11d4d2e69437aa81431b898530b">operator &lt; </a>(<span class="keyword">const</span> U&amp; v, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">return</span> bool(x) ? v &lt; *x : <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="namespacemn.html#a856f6751865e64e308f7ace7bf39a3fb">  344</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8258427951c5a649b32ee3c1433df9e5">operator &lt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> U&amp; v) {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keywordflow">return</span> bool(x) ? *x &lt;= v : <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U &gt;</div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="namespacemn.html#ac5d50241a9d00a043be6571514a5e8ca">  349</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a8258427951c5a649b32ee3c1433df9e5">operator&lt;=</a>(<span class="keyword">const</span> U&amp; v, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">return</span> bool(x) ? v &lt;= *x : <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="namespacemn.html#a4147040af31e94246e05b1c8d55a74e6">  354</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#af72ba6b7952d45715716d2ba92db2a0f">operator&gt;</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> U&amp; v) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keywordflow">return</span> bool(x) ? *x &gt; v : <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="namespacemn.html#a52e556285a1c2218f46e0e3510182ed5">  359</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#af72ba6b7952d45715716d2ba92db2a0f">operator&gt;</a>(<span class="keyword">const</span> U&amp; v, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">return</span> bool(x) ? v &gt; *x : <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="namespacemn.html#ae69b9244f49c5934db70250483be9ac7">  364</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#aaf42ccfd0c89436e1b28bfb4cd9953e6">operator&gt;=</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x, <span class="keyword">const</span> U&amp; v) {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">return</span> bool(x) ? *x &gt;= v : <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="namespacemn.html#ad1019f256cad2bc2b2d0c608cd7e5a7e">  369</a></span>&#160;    <span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#aaf42ccfd0c89436e1b28bfb4cd9953e6">operator &gt;= </a>(<span class="keyword">const</span> U&amp; v, <span class="keyword">const</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>&amp; x) {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">return</span> bool(x) ? v &gt;= *x : <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a name="l00374"></a><span class="lineno"><a class="line" href="namespacemn.html#a66e67505eeab441c7db75a491c92f3e7">  374</a></span>&#160;    constexpr <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;typename mn::decay&lt;T&gt;::type</a>&gt; <a class="code" href="namespacemn.html#a66e67505eeab441c7db75a491c92f3e7">make_optional</a>( <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a> &amp;&amp; value ) {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;typename mn::decay&lt;T&gt;::type</a>&gt;( mn::forward&lt;T&gt;( value ) );</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    }</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>, <span class="keyword">typename</span>...Args &gt;</div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="namespacemn.html#aabeb9094ffb480206a3f2c96fdd1e85d">  379</a></span>&#160;    constexpr <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a> <a class="code" href="namespacemn.html#a66e67505eeab441c7db75a491c92f3e7">make_optional</a>( Args&amp;&amp;... args ) {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>(mn::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    }</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">template</span>&lt; <span class="keyword">class</span> T &gt;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keyword">struct </span>hash&lt;basic_optional&lt;<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&gt;&gt; {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <a class="code" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a> <a class="code" href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">operator()</a>( <span class="keyword">const</span> basic_optional&lt;T&gt;&amp; opt ) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="keywordflow">return</span> bool(opt) ? hash&lt;T&gt;()(*opt) : 0;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    };</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// 0</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="namespacemn.html#a4bbfd61ae99166c875753b7538b8046a">  392</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__optional.html">optional</a> = <a class="code" href="classmn_1_1basic__optional.html">basic_optional&lt;T&gt;</a>;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINLIB_BASIC_OPTIONAL_H__</span></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html"><div class="ttname"><a href="classmn_1_1basic__optional.html">mn::basic_optional</a></div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:32</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a01fb8a4acc897f614d1b137b0e60c870"><div class="ttname"><a href="classmn_1_1basic__optional.html#a01fb8a4acc897f614d1b137b0e60c870">mn::basic_optional::basic_optional</a></div><div class="ttdeci">constexpr basic_optional(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:57</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a02009e7034ea988cd9f41d1955d16efd"><div class="ttname"><a href="classmn_1_1basic__optional.html#a02009e7034ea988cd9f41d1955d16efd">mn::basic_optional::value</a></div><div class="ttdeci">const_reference value() const</div><div class="ttdoc">Returns the basic_optional's value.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:134</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a04c90195c29535fcaaf80441ed2c4ed2"><div class="ttname"><a href="classmn_1_1basic__optional.html#a04c90195c29535fcaaf80441ed2c4ed2">mn::basic_optional::m_bHasValue</a></div><div class="ttdeci">bool m_bHasValue</div><div class="ttdoc">Flag whether or not has this basic_optianel a value.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:207</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a194efa02e7caf7e02526459d58c8ebec"><div class="ttname"><a href="classmn_1_1basic__optional.html#a194efa02e7caf7e02526459d58c8ebec">mn::basic_optional::~basic_optional</a></div><div class="ttdeci">~basic_optional()</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:64</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a252adc44dc269a6d77018bdbdb328d4c"><div class="ttname"><a href="classmn_1_1basic__optional.html#a252adc44dc269a6d77018bdbdb328d4c">mn::basic_optional::operator*</a></div><div class="ttdeci">constexpr const_reference operator*() const</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:185</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a309411f0a475b4fdfbe6c736175ac9fe"><div class="ttname"><a href="classmn_1_1basic__optional.html#a309411f0a475b4fdfbe6c736175ac9fe">mn::basic_optional::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clears the basic_optional.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:78</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a39c80fbee4e8d6365aebb6adbfdd8d89"><div class="ttname"><a href="classmn_1_1basic__optional.html#a39c80fbee4e8d6365aebb6adbfdd8d89">mn::basic_optional::basic_optional</a></div><div class="ttdeci">basic_optional(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:49</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a4152aefefa2129a8443ea14470f0dcc7"><div class="ttname"><a href="classmn_1_1basic__optional.html#a4152aefefa2129a8443ea14470f0dcc7">mn::basic_optional::assign</a></div><div class="ttdeci">self_type &amp; assign(const_value_type &amp;value)</div><div class="ttdoc">Assigns a value to the basic_otional.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:85</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a44b6e3be56cb15f01f548ec48e863901"><div class="ttname"><a href="classmn_1_1basic__optional.html#a44b6e3be56cb15f01f548ec48e863901">mn::basic_optional::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:34</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a5ff458429d073a163c7d645b55c1bece"><div class="ttname"><a href="classmn_1_1basic__optional.html#a5ff458429d073a163c7d645b55c1bece">mn::basic_optional::value</a></div><div class="ttdeci">reference value()</div><div class="ttdoc">Returns the basic_optional's value.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:127</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a67e4e0b59ef7f189da77661b1ba06d69"><div class="ttname"><a href="classmn_1_1basic__optional.html#a67e4e0b59ef7f189da77661b1ba06d69">mn::basic_optional::const_pointer</a></div><div class="ttdeci">const T * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:42</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a6bcf80b2c52e992eee6d0cac9138cb86"><div class="ttname"><a href="classmn_1_1basic__optional.html#a6bcf80b2c52e992eee6d0cac9138cb86">mn::basic_optional::const_move_type</a></div><div class="ttdeci">const T &amp;&amp; const_move_type</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:39</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a75bc127b5ea3bfa40ec61cbd83e2768a"><div class="ttname"><a href="classmn_1_1basic__optional.html#a75bc127b5ea3bfa40ec61cbd83e2768a">mn::basic_optional::basic_optional</a></div><div class="ttdeci">constexpr basic_optional() noexcept</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:46</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a791cbfba6d29fe9b8f9a31c8564e7516"><div class="ttname"><a href="classmn_1_1basic__optional.html#a791cbfba6d29fe9b8f9a31c8564e7516">mn::basic_optional::const_value_type</a></div><div class="ttdeci">const T const_value_type</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:35</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a8baabd5c32a6c4ba01c2f457603e9a03"><div class="ttname"><a href="classmn_1_1basic__optional.html#a8baabd5c32a6c4ba01c2f457603e9a03">mn::basic_optional::assign</a></div><div class="ttdeci">self_type &amp; assign(const self_type &amp;other)</div><div class="ttdoc">Assigns another basic_otional.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:104</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a8bc5d4df64cdf70a840f59acb97af50f"><div class="ttname"><a href="classmn_1_1basic__optional.html#a8bc5d4df64cdf70a840f59acb97af50f">mn::basic_optional::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:37</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a8fed132aaf83d2cfbc6ccd2bb3f2f427"><div class="ttname"><a href="classmn_1_1basic__optional.html#a8fed132aaf83d2cfbc6ccd2bb3f2f427">mn::basic_optional::move_type</a></div><div class="ttdeci">T &amp;&amp; move_type</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:38</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a907f4c08650cc820b94588a34f2e5aec"><div class="ttname"><a href="classmn_1_1basic__optional.html#a907f4c08650cc820b94588a34f2e5aec">mn::basic_optional::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:36</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a90f040c56c6df727128783160fa635fa"><div class="ttname"><a href="classmn_1_1basic__optional.html#a90f040c56c6df727128783160fa635fa">mn::basic_optional::swap</a></div><div class="ttdeci">void swap(self_type &amp;other)</div><div class="ttdoc">Swap this basic_optional with a other.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:112</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a941db51db8de02b971e510f019e9cb6e"><div class="ttname"><a href="classmn_1_1basic__optional.html#a941db51db8de02b971e510f019e9cb6e">mn::basic_optional::basic_optional</a></div><div class="ttdeci">constexpr basic_optional(U &amp;&amp;value)</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:61</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a96fa275f6deae69f1c83cb001ef7da56"><div class="ttname"><a href="classmn_1_1basic__optional.html#a96fa275f6deae69f1c83cb001ef7da56">mn::basic_optional::basic_optional</a></div><div class="ttdeci">basic_optional(const self_type &amp;&amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:52</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a9737888ef000f273dd2960104c95101c"><div class="ttname"><a href="classmn_1_1basic__optional.html#a9737888ef000f273dd2960104c95101c">mn::basic_optional::operator-&gt;</a></div><div class="ttdeci">constexpr const_pointer operator-&gt;() const</div><div class="ttdoc">Get the given value as pointer.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:171</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_a9c77c9c9e3c9c4d132a73810e05e8f99"><div class="ttname"><a href="classmn_1_1basic__optional.html#a9c77c9c9e3c9c4d132a73810e05e8f99">mn::basic_optional::has_value</a></div><div class="ttdeci">constexpr bool has_value() const noexcept</div><div class="ttdoc">Have this basic_optional a value?</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:121</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_aa87ac49eecf48b4cbc0266d8bdc1220a"><div class="ttname"><a href="classmn_1_1basic__optional.html#aa87ac49eecf48b4cbc0266d8bdc1220a">mn::basic_optional::value_or</a></div><div class="ttdeci">constexpr value_type value_or(const value_type value) const</div><div class="ttdoc">Returns the basic_optional's value, or the given default value when this basic_optional no value have...</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:142</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_aa9133454301f379c5cb5f1262f14bd10"><div class="ttname"><a href="classmn_1_1basic__optional.html#aa9133454301f379c5cb5f1262f14bd10">mn::basic_optional::assign</a></div><div class="ttdeci">self_type &amp; assign(move_type value)</div><div class="ttdoc">Moves a value into the basic_otional.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:95</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_aa985fb8abcd325dca1952dfce4b8cf68"><div class="ttname"><a href="classmn_1_1basic__optional.html#aa985fb8abcd325dca1952dfce4b8cf68">mn::basic_optional::operator=</a></div><div class="ttdeci">self_type &amp; operator=(const self_type &amp;other) noexcept</div><div class="ttdoc">Assigns another basic_otional.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:157</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_aac037e8f4e355398eaa2a0b66e0dfc66"><div class="ttname"><a href="classmn_1_1basic__optional.html#aac037e8f4e355398eaa2a0b66e0dfc66">mn::basic_optional::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:41</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_aaf23acad2031762eb58b3ab2cc90b59e"><div class="ttname"><a href="classmn_1_1basic__optional.html#aaf23acad2031762eb58b3ab2cc90b59e">mn::basic_optional::reset</a></div><div class="ttdeci">void reset() noexcept</div><div class="ttdoc">Resets the basic_optional.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:69</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_ab902fe95184d6590c1fa1dc54fd3ebab"><div class="ttname"><a href="classmn_1_1basic__optional.html#ab902fe95184d6590c1fa1dc54fd3ebab">mn::basic_optional::value_or</a></div><div class="ttdeci">constexpr value_type value_or(const U &amp;value) const</div><div class="ttdoc">Returns the basic_optional's value, or the given default value when this basic_optional no value have...</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:150</div></div>
+<div class="ttc" id="aclassmn_1_1basic__optional_html_abe068861e81ec23d02f1ae556674be7f"><div class="ttname"><a href="classmn_1_1basic__optional.html#abe068861e81ec23d02f1ae556674be7f">mn::basic_optional::m_tValue</a></div><div class="ttdeci">value_type m_tValue</div><div class="ttdoc">A saved / cached copy of the value.</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:211</div></div>
+<div class="ttc" id="amn__algorithm_8hpp_html"><div class="ttname"><a href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a></div><div class="ttdoc">Basic algorithmens This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniT...</div></div>
+<div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
+<div class="ttc" id="amn__functional_8hpp_html"><div class="ttname"><a href="mn__functional_8hpp.html">mn_functional.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_1_1memory_1_1detail_html_a3179d74d784513b556ce52d25fc357e7"><div class="ttname"><a href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">mn::memory::detail::T</a></div><div class="ttdeci">struct mn::memory::detail::ptr_difference T</div><div class="ttdef"><b>Definition:</b> mn_atomic_singleton.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a09a6686b329dfd82363aaabc0de18814"><div class="ttname"><a href="namespacemn.html#a09a6686b329dfd82363aaabc0de18814">mn::operator==</a></div><div class="ttdeci">constexpr bool operator==(const byte l, const byte r) noexcept</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:108</div></div>
+<div class="ttc" id="anamespacemn_html_a64c229415514252e87d2d923d8c0b37e"><div class="ttname"><a href="namespacemn.html#a64c229415514252e87d2d923d8c0b37e">mn::operator!=</a></div><div class="ttdeci">constexpr bool operator!=(const byte l, const byte r) noexcept</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:112</div></div>
+<div class="ttc" id="anamespacemn_html_a66e67505eeab441c7db75a491c92f3e7"><div class="ttname"><a href="namespacemn.html#a66e67505eeab441c7db75a491c92f3e7">mn::make_optional</a></div><div class="ttdeci">constexpr basic_optional&lt; typename mn::decay&lt; T &gt;::type &gt; make_optional(T &amp;&amp;value)</div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:374</div></div>
+<div class="ttc" id="anamespacemn_html_a8258427951c5a649b32ee3c1433df9e5"><div class="ttname"><a href="namespacemn.html#a8258427951c5a649b32ee3c1433df9e5">mn::operator&lt;=</a></div><div class="ttdeci">constexpr bool operator&lt;=(const byte l, const byte r) noexcept</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:120</div></div>
+<div class="ttc" id="anamespacemn_html_a83841949e9c46378f0f533a3a6605bff"><div class="ttname"><a href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a></div><div class="ttdeci">void swap(TAssignable &amp;a, TAssignable &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:312</div></div>
+<div class="ttc" id="anamespacemn_html_a8eeaf11d4d2e69437aa81431b898530b"><div class="ttname"><a href="namespacemn.html#a8eeaf11d4d2e69437aa81431b898530b">mn::operator&lt;</a></div><div class="ttdeci">constexpr bool operator&lt;(const byte l, const byte r) noexcept</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:116</div></div>
+<div class="ttc" id="anamespacemn_html_aaf42ccfd0c89436e1b28bfb4cd9953e6"><div class="ttname"><a href="namespacemn.html#aaf42ccfd0c89436e1b28bfb4cd9953e6">mn::operator&gt;=</a></div><div class="ttdeci">constexpr bool operator&gt;=(const byte l, const byte r) noexcept</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:128</div></div>
+<div class="ttc" id="anamespacemn_html_ae37469aa8cfbdec2289a0c3879decbdd"><div class="ttname"><a href="namespacemn.html#ae37469aa8cfbdec2289a0c3879decbdd">mn::move</a></div><div class="ttdeci">void move(const T *src, const T *last, T *dest)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:100</div></div>
+<div class="ttc" id="anamespacemn_html_aebd48cb5d4810a57409cabb3c78e9521"><div class="ttname"><a href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">mn::forward</a></div><div class="ttdeci">T &amp;&amp; forward(remove_reference_t&lt; T &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:74</div></div>
+<div class="ttc" id="anamespacemn_html_af487f8a5d975f2b50b68065096c732ed"><div class="ttname"><a href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></div><div class="ttdeci">MN_THREAD_CONFIG_SIZE_TYPE size_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:46</div></div>
+<div class="ttc" id="anamespacemn_html_af72ba6b7952d45715716d2ba92db2a0f"><div class="ttname"><a href="namespacemn.html#af72ba6b7952d45715716d2ba92db2a0f">mn::operator&gt;</a></div><div class="ttdeci">constexpr bool operator&gt;(const byte l, const byte r) noexcept</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:124</div></div>
+<div class="ttc" id="anamespacemn_html_structmn_1_1nullopt__t"><div class="ttname"><a href="namespacemn.html#structmn_1_1nullopt__t">mn::nullopt_t</a></div><div class="ttdef"><b>Definition:</b> mn_optional.hpp:29</div></div>
+<div class="ttc" id="astructmn_1_1hash_html_a3d4cd18b2e1e3365ccce5b0b8f0126a9"><div class="ttname"><a href="structmn_1_1hash.html#a3d4cd18b2e1e3365ccce5b0b8f0126a9">mn::hash::operator()</a></div><div class="ttdeci">const result_type operator()(T &amp;t) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_hash.hpp:73</div></div>
+<div class="ttc" id="astructmn_1_1is__class_html"><div class="ttname"><a href="structmn_1_1is__class.html">mn::is_class</a></div><div class="ttdef"><b>Definition:</b> mn_typetraits.hpp:159</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

@@ -158,9 +158,11 @@ Classes</h2></td></tr>
 <tr class="separator:structmn_1_1memory_1_1std__allocator__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structmn_1_1memory_1_1nodeleter__allocator__tag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1nodeleter__allocator__tag">mn::memory::nodeleter_allocator_tag</a></td></tr>
 <tr class="separator:structmn_1_1memory_1_1nodeleter__allocator__tag"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:structmn_1_1memory_1_1allocator__traits"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1allocator__traits">mn::memory::allocator_traits&lt; TAlloC &gt;</a></td></tr>
-<tr class="separator:structmn_1_1memory_1_1allocator__traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1memory_1_1internal_1_1allocator__traits"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory_1_1internal.html#structmn_1_1memory_1_1internal_1_1allocator__traits">mn::memory::internal::allocator_traits&lt; TAlloC &gt;</a></td></tr>
+<tr class="separator:structmn_1_1memory_1_1internal_1_1allocator__traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1memory_1_1is__thread__safe__allocator.html">mn::memory::is_thread_safe_allocator&lt; TAlloC &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1allocator__traits.html">mn::memory::allocator_traits&lt; TAllocator &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -174,27 +176,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3404fcce970a20dc2930e60770c3b546"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
-<tr class="memitem:a3404fcce970a20dc2930e60770c3b546"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory_1_1internal.html#a3404fcce970a20dc2930e60770c3b546">mn::memory::internal::allocate</a> (const TAlloC &amp;alloc, size_t size, size_t alignment, <a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1std__allocator__tag">mn::memory::std_allocator_tag</a>)</td></tr>
-<tr class="separator:a3404fcce970a20dc2930e60770c3b546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c031ae8028ccc3427d4aa008650ff6a"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
-<tr class="memitem:a9c031ae8028ccc3427d4aa008650ff6a"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory_1_1internal.html#a9c031ae8028ccc3427d4aa008650ff6a">mn::memory::internal::allocate</a> (const TAlloC &amp;alloc, size_t size, size_t alignment, <a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1nodeleter__allocator__tag">mn::memory::nodeleter_allocator_tag</a>)</td></tr>
-<tr class="separator:a9c031ae8028ccc3427d4aa008650ff6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47cc151a1b5d17bc2c730738f90fab1"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
-<tr class="memitem:ad47cc151a1b5d17bc2c730738f90fab1"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory_1_1internal.html#ad47cc151a1b5d17bc2c730738f90fab1">mn::memory::internal::deallocate</a> (const TAlloC &amp;alloc, void *address, size_t size, size_t alignment, <a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1std__allocator__tag">mn::memory::std_allocator_tag</a>)</td></tr>
-<tr class="separator:ad47cc151a1b5d17bc2c730738f90fab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4af80a9789a10710432683a95d1b54"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
-<tr class="memitem:a5b4af80a9789a10710432683a95d1b54"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory_1_1internal.html#a5b4af80a9789a10710432683a95d1b54">mn::memory::internal::deallocate</a> (const TAlloC &amp;alloc, void *address, size_t size, size_t alignment, <a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1nodeleter__allocator__tag">mn::memory::nodeleter_allocator_tag</a>)</td></tr>
-<tr class="separator:a5b4af80a9789a10710432683a95d1b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3bd075b82752308f1f76ac4806b4d56"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
-<tr class="memitem:ad3bd075b82752308f1f76ac4806b4d56"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#ad3bd075b82752308f1f76ac4806b4d56">mn::memory::allocate</a> (const TAlloC &amp;alloc, size_t size, size_t alignment)</td></tr>
-<tr class="separator:ad3bd075b82752308f1f76ac4806b4d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c5e9af7e3cada9e83c5d7baa375e639"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
-<tr class="memitem:a5c5e9af7e3cada9e83c5d7baa375e639"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a5c5e9af7e3cada9e83c5d7baa375e639">mn::memory::deallocate</a> (const TAlloC &amp;alloc, void *address, size_t size, size_t alignment)</td></tr>
-<tr class="separator:a5c5e9af7e3cada9e83c5d7baa375e639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a373ee4c7c8223f6fb2bfcf20ea9a480d"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
-<tr class="memitem:a373ee4c7c8223f6fb2bfcf20ea9a480d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a373ee4c7c8223f6fb2bfcf20ea9a480d">mn::memory::max_alocator_size</a> (const TAlloC &amp;alloc)</td></tr>
-<tr class="separator:a373ee4c7c8223f6fb2bfcf20ea9a480d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee4e73d10928823f69252d181372b0c"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
+<tr class="memitem:a2ee4e73d10928823f69252d181372b0c"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a2ee4e73d10928823f69252d181372b0c">mn::memory::allocate</a> (const TAlloC &amp;alloc, size_t size, size_t alignment, <a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1std__allocator__tag">mn::memory::std_allocator_tag</a>)</td></tr>
+<tr class="separator:a2ee4e73d10928823f69252d181372b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ff8f2c2b39e4451c2a203fdab6befe"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
+<tr class="memitem:a61ff8f2c2b39e4451c2a203fdab6befe"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a61ff8f2c2b39e4451c2a203fdab6befe">mn::memory::allocate</a> (const TAlloC &amp;alloc, size_t size, size_t alignment, <a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1nodeleter__allocator__tag">mn::memory::nodeleter_allocator_tag</a>)</td></tr>
+<tr class="separator:a61ff8f2c2b39e4451c2a203fdab6befe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe64985c73f47f5c0971b32fe597e90"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
+<tr class="memitem:a9fe64985c73f47f5c0971b32fe597e90"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a9fe64985c73f47f5c0971b32fe597e90">mn::memory::deallocate</a> (const TAlloC &amp;alloc, void *address, size_t size, size_t alignment, <a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1std__allocator__tag">mn::memory::std_allocator_tag</a>)</td></tr>
+<tr class="separator:a9fe64985c73f47f5c0971b32fe597e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c45ffaffac20543eb9036150aa69cb"><td class="memTemplParams" colspan="2">template&lt;class TAlloC &gt; </td></tr>
+<tr class="memitem:a59c45ffaffac20543eb9036150aa69cb"><td class="memTemplItemLeft" align="right" valign="top">void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a59c45ffaffac20543eb9036150aa69cb">mn::memory::deallocate</a> (const TAlloC &amp;alloc, void *address, size_t size, size_t alignment, <a class="el" href="namespacemn_1_1memory.html#structmn_1_1memory_1_1nodeleter__allocator__tag">mn::memory::nodeleter_allocator_tag</a>)</td></tr>
+<tr class="separator:a59c45ffaffac20543eb9036150aa69cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
 <a name="structmn_1_1memory_1_1std__allocator__tag" id="structmn_1_1memory_1_1std__allocator__tag"></a>
@@ -225,32 +218,68 @@ Functions</h2></td></tr>
 <div class="textblock"></div>
 </div>
 </div>
-<a name="structmn_1_1memory_1_1allocator__traits" id="structmn_1_1memory_1_1allocator__traits"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1memory_1_1allocator__traits">&#9670;&nbsp;</a></span>mn::memory::allocator_traits</h2>
+<a name="structmn_1_1memory_1_1internal_1_1allocator__traits" id="structmn_1_1memory_1_1internal_1_1allocator__traits"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1memory_1_1internal_1_1allocator__traits">&#9670;&nbsp;</a></span>mn::memory::internal::allocator_traits</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct mn::memory::allocator_traits</td>
+          <td class="memname">struct mn::memory::internal::allocator_traits</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="textblock"><h3>template&lt;typename TAlloC&gt;<br />
-struct mn::memory::allocator_traits&lt; TAlloC &gt;</h3>
+struct mn::memory::internal::allocator_traits&lt; TAlloC &gt;</h3>
 
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
-<a id="ab8b53a29ca6172ed1b5fb158c45aec4d"></a>typedef typename <a class="el" href="namespacemn_1_1memory.html#ab8b53a29ca6172ed1b5fb158c45aec4d">allocator_category</a></td>
+<a id="afa77257dafe1acd5b1bad4511ac7d3dc"></a>typedef typename <a class="el" href="namespacemn_1_1memory_1_1internal.html#afa77257dafe1acd5b1bad4511ac7d3dc">allocator_category</a></td>
 <td class="fieldname">
 allocator_category</td>
 <td class="fielddoc">
 </td></tr>
 <tr><td class="fieldtype">
-<a id="a0e96a832e5dfcbb5d35bcba3f0650af6"></a>typedef typename <a class="el" href="namespacemn_1_1memory.html#a0e96a832e5dfcbb5d35bcba3f0650af6">is_thread_safe</a></td>
+<a id="afc103d6161c9cf55dd8da8f8cda2c632"></a>typedef TAlloC</td>
+<td class="fieldname">
+allocator_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a090723673d73237cf6871e59b7c88184"></a>typedef typename <a class="el" href="namespacemn_1_1memory_1_1internal.html#a090723673d73237cf6871e59b7c88184">const_pointer</a></td>
+<td class="fieldname">
+const_pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="acf19fc5def867c0606aef6c04f4857f2"></a>typedef typename <a class="el" href="namespacemn_1_1memory_1_1internal.html#acf19fc5def867c0606aef6c04f4857f2">difference_type</a></td>
+<td class="fieldname">
+difference_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ad17db1490b280d3a7953c452081badd0"></a>typedef typename <a class="el" href="namespacemn_1_1memory_1_1internal.html#ad17db1490b280d3a7953c452081badd0">is_thread_safe</a></td>
 <td class="fieldname">
 is_thread_safe</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a0e3bc9e61528bc784f9c284ff50f202a"></a>typedef typename <a class="el" href="namespacemn_1_1memory_1_1internal.html#a0e3bc9e61528bc784f9c284ff50f202a">pointer</a></td>
+<td class="fieldname">
+pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3066b272e7ea43ca763a88ba35beb96b"></a>typedef typename <a class="el" href="namespacemn_1_1memory_1_1internal.html#a3066b272e7ea43ca763a88ba35beb96b">size_type</a></td>
+<td class="fieldname">
+size_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a0e83e8b08c361cf2d7f875f55bcba793"></a>typedef typename <a class="el" href="namespacemn_1_1memory_1_1internal.html#a0e83e8b08c361cf2d7f875f55bcba793">value_type</a></td>
+<td class="fieldname">
+value_type</td>
 <td class="fielddoc">
 </td></tr>
 </table>

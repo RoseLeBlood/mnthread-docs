@@ -140,13 +140,15 @@ $(document).ready(function(){initNavTree('mn__weak__ptr_8hpp.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_weak_ptr.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__shared__ptr_8hpp_source.html">mn_shared_ptr.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mn__base__ptr_8hpp_source.html">mn_base_ptr.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">../mn_config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__shared__ptr_8hpp_source.html">mn_shared_ptr.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__weak__ptr_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -161,6 +163,26 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacemn_1_1pointer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html">mn::pointer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae7318f63cdef76bde4cf854621abe1ea"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae7318f63cdef76bde4cf854621abe1ea"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ae7318f63cdef76bde4cf854621abe1ea">mn::pointer::weak_ptr</a> = basic_weak_ptr&lt; T, size_t &gt;</td></tr>
+<tr class="separator:ae7318f63cdef76bde4cf854621abe1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ab68d962f5934be155f6bb6b910e90"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac8ab68d962f5934be155f6bb6b910e90"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#ac8ab68d962f5934be155f6bb6b910e90">mn::pointer::weak_atomic_ptr</a> = basic_weak_ptr&lt; T, atomic_size_t &gt;</td></tr>
+<tr class="separator:ac8ab68d962f5934be155f6bb6b910e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a55990843a5f99d8a9a714342fced9ab7"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a55990843a5f99d8a9a714342fced9ab7"><td class="memTemplItemLeft" align="right" valign="top">weak_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a55990843a5f99d8a9a714342fced9ab7">mn::pointer::make_weak</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a55990843a5f99d8a9a714342fced9ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a weak pointer.  <a href="namespacemn_1_1pointer.html#a55990843a5f99d8a9a714342fced9ab7">More...</a><br /></td></tr>
+<tr class="separator:a55990843a5f99d8a9a714342fced9ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b4511ac29436db2083805af3c43dea"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a76b4511ac29436db2083805af3c43dea"><td class="memTemplItemLeft" align="right" valign="top">weak_atomic_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1pointer.html#a76b4511ac29436db2083805af3c43dea">mn::pointer::make_atomic_weak</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a76b4511ac29436db2083805af3c43dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a weak atomic pointer.  <a href="namespacemn_1_1pointer.html#a76b4511ac29436db2083805af3c43dea">More...</a><br /></td></tr>
+<tr class="separator:a76b4511ac29436db2083805af3c43dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

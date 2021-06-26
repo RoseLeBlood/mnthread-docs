@@ -1,6 +1,7 @@
 var structmn_1_1container_1_1basic__vector__storage =
 [
     [ "allocator_type", "structmn_1_1container_1_1basic__vector__storage.html#ac3b6af7d624777308646819b925e2928", null ],
+    [ "lreference", "structmn_1_1container_1_1basic__vector__storage.html#ab173cba30fe649f23320ecafa252654a", null ],
     [ "pointer", "structmn_1_1container_1_1basic__vector__storage.html#a790cd874fc581b6d1ce56fe01ada4e4c", null ],
     [ "reference", "structmn_1_1container_1_1basic__vector__storage.html#a51ae194ceadbe40bf64d263d0021dae7", null ],
     [ "self_type", "structmn_1_1container_1_1basic__vector__storage.html#a56ab37dbce09aec5a1ddd4f2d745de07", null ],
@@ -12,6 +13,7 @@ var structmn_1_1container_1_1basic__vector__storage =
     [ "reallocate", "structmn_1_1container_1_1basic__vector__storage.html#a45fc225cfdf03fb50be5f81e0433e58b", null ],
     [ "reallocate_discard_old", "structmn_1_1container_1_1basic__vector__storage.html#a35c7426670a6079451ddc4216dbd6fa2", null ],
     [ "reset", "structmn_1_1container_1_1basic__vector__storage.html#ad0e2630cb62f20329be2cb893e8ad4bb", null ],
+    [ "swap", "structmn_1_1container_1_1basic__vector__storage.html#ab4eb011a45d624a96d6cad67d5125899", null ],
     [ "m_allocator", "structmn_1_1container_1_1basic__vector__storage.html#a445ad974a928e852e4c43f75d1542448", null ],
     [ "m_begin", "structmn_1_1container_1_1basic__vector__storage.html#a237c11c57f900cf8f0904fdd28647699", null ],
     [ "m_capacityEnd", "structmn_1_1container_1_1basic__vector__storage.html#a23fc2da9104fe3560102500e15b31825", null ],

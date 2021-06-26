@@ -147,7 +147,12 @@ $(document).ready(function(){initNavTree('mn__vector_8hpp.html',''); initResizab
 <div class="title">mn_vector.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="mn__typetraits_8hpp_source.html">../mn_typetraits.hpp</a>&quot;</code><br />
+
+<p>Basic vector container This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ).  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">../mn_config.hpp</a>&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="mn__typetraits_8hpp_source.html">../mn_typetraits.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__algorithm_8hpp_source.html">../mn_algorithm.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mn__allocator_8hpp_source.html">../mn_allocator.hpp</a>&quot;</code><br />
 </div>
@@ -169,12 +174,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a3756c0644d25e5c3b905749dc786a08f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3756c0644d25e5c3b905749dc786a08f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a3756c0644d25e5c3b905749dc786a08f">mn::container::vector</a> = basic_vector&lt; T, <a class="el" href="namespacemn_1_1memory.html#abb5b67234913c5d181e04a2e43f2014f">mn::memory::default_allocator</a> &gt;</td></tr>
-<tr class="separator:a3756c0644d25e5c3b905749dc786a08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4803b2a6ba5074d77b6c4b3a5002fdc6"><td class="memTemplParams" colspan="2">template&lt;typename T , class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a4803b2a6ba5074d77b6c4b3a5002fdc6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a4803b2a6ba5074d77b6c4b3a5002fdc6">mn::container::vector</a> = basic_vector&lt; T, <a class="el" href="namespacemn_1_1memory.html#abb5b67234913c5d181e04a2e43f2014f">mn::memory::default_allocator</a> &gt;</td></tr>
+<tr class="separator:a4803b2a6ba5074d77b6c4b3a5002fdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3e1d52b7b1b9db917eebd2be0723d082"><td class="memTemplParams" colspan="2">template&lt;typename T , class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
+<tr class="memitem:a3e1d52b7b1b9db917eebd2be0723d082"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a3e1d52b7b1b9db917eebd2be0723d082">mn::container::swap</a> (basic_vector&lt; T, TAllocator, TStorage &gt; &amp;a, basic_vector&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
+<tr class="separator:a3e1d52b7b1b9db917eebd2be0723d082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b5193cf93e6475684b39c4fee7e99df"><td class="memTemplParams" colspan="2">template&lt;typename T , int calc = 0, class TAllocator  = mn::memory::default_allocator, class TStorage  = basic_vector_storage&lt;T, TAllocator&gt;&gt; </td></tr>
 <tr class="memitem:a6b5193cf93e6475684b39c4fee7e99df"><td class="memTemplItemLeft" align="right" valign="top">basic_vector&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a6b5193cf93e6475684b39c4fee7e99df">mn::container::operator+</a> (const basic_vector&lt; T, TAllocator, TStorage &gt; &amp;a, const basic_vector&lt; T, TAllocator, TStorage &gt; &amp;b)</td></tr>
 <tr class="separator:a6b5193cf93e6475684b39c4fee7e99df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,7 +226,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a1a93a6430afa38014b8c153d83e39275"><td class="memTemplItemLeft" align="right" valign="top">basic_vector&lt; T, TAllocator, TStorage &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1container.html#a1a93a6430afa38014b8c153d83e39275">mn::container::scale</a> (const basic_vector&lt; T, TAllocator, TStorage &gt; &amp;v, const T s)</td></tr>
 <tr class="separator:a1a93a6430afa38014b8c153d83e39275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Basic vector container This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). </p>
+<dl class="section author"><dt>Author</dt><dd>Copyright (c) 2021 Amber-Sophia Schroeck </dd></dl>
+<dl class="section user"><dt>License</dt><dd>The Mini Thread Library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 3, or (at your option) any later version.</dd></dl>
+<p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 </div>
 </div>

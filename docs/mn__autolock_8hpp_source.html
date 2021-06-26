@@ -142,77 +142,61 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp_source.html',''); in
 <div class="title">mn_autolock.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mn__autolock_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify  </span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by  </span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but </span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of </span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU </span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.  </span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MINLIB_AUTOLOCK_H_</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MINLIB_AUTOLOCK_H_</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__lock_8hpp.html">mn_lock.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__mutex_8hpp.html">mn_mutex.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__semaphore_8hpp.html">mn_semaphore.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__null__lock_8hpp.html">mn_null_lock.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#if (MN_THREAD_CONFIG_RECURSIVE_MUTEX == MN_THREAD_CONFIG_YES)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">  #include &quot;<a class="code" href="mn__recursive__mutex_8hpp.html">mn_recursive_mutex.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef portMAX_DELAY </span></div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="mn__autolock_8hpp.html#a72723ba1e4a85ca14f25c2b9e066613d">   33</a></span>&#160;<span class="preprocessor">#define portMAX_DELAY 0xffffffffUL</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacemn.html#a17f906c16b4898447f374dc7d851a1f0">   40</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">autocsemp_t</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;counting_semaphore_t&gt;</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacemn.html#ab06f4af63512dc948a09588b410a6986">   45</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">autobinsemp_t</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;binary_semaphore_t&gt;</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacemn.html#a674ff56a4c696b2beb5e4712cf8d76dc">   50</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">automutx_t</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;mutex_t&gt;</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">  #if (MN_THREAD_CONFIG_RECURSIVE_MUTEX == MN_THREAD_CONFIG_YES)</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">//using autoremutx_t = basic_autolock&lt;remutex_t&gt;;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">  #endif</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">  #if MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_MUTEX</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__binary__semaphore.html">LockType_t</a> = <a class="code" href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mutex_t</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">  #elif MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_BINARY_SEMAPHORE</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacemn.html#a6e09b226c42d6d72e5e3f7cd518e89d5">   59</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__binary__semaphore.html">LockType_t</a> = <a class="code" href="namespacemn.html#afc7d0f23f8ca89b9007e8553a99209dc">binary_semaphore_t</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">  #elif MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_COUNTING_SEMAPHORE</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__binary__semaphore.html">LockType_t</a> = <a class="code" href="namespacemn.html#a2a76f74f9f156c6e7e3ded9bc3b5a342">counting_semaphore_t</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">//#elif MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_RECURSIVE_MUTEX</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">//  using LockType_t = remutex_t;</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">  #endif</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">   66</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">autolock_t</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;LockType_t&gt;</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TLOCK = LockType_t&gt; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">   69</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">lock</a>(TLOCK&amp; m1, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout) { <span class="keywordflow">return</span> m1.lock(timeout); }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TLOCK = LockType_t&gt; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="namespacemn.html#a9027964956f48b6728bd4dc49273bb55">   72</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemn.html#a9027964956f48b6728bd4dc49273bb55">unlock</a>(TLOCK&amp; m1) { <span class="keywordflow">return</span> m1.unlock(); }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TLOCK = LockType_t&gt; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespacemn.html#a92968146b371c174743a6ce190205687">   75</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a92968146b371c174743a6ce190205687">try_lock</a>(TLOCK&amp; m1) { <span class="keywordflow">return</span> m1.try_lock(); }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassmn_1_1basic__autolock_html"><div class="ttname"><a href="classmn_1_1basic__autolock.html">mn::basic_autolock</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:114</div></div>
-<div class="ttc" id="aclassmn_1_1basic__binary__semaphore_html"><div class="ttname"><a href="classmn_1_1basic__binary__semaphore.html">mn::basic_binary_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_binary_semaphore.hpp:28</div></div>
+<a href="mn__autolock_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef _MINLIB_AUTOLOCK_H_</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define _MINLIB_AUTOLOCK_H_</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__config_8hpp.html">mn_config.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__lock_8hpp.html">mn_lock.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__mutex_8hpp.html">mn_mutex.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__semaphore_8hpp.html">mn_semaphore.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__null__lock_8hpp.html">mn_null_lock.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#if (MN_THREAD_CONFIG_RECURSIVE_MUTEX == MN_THREAD_CONFIG_YES)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">  #include &quot;<a class="code" href="mn__recursive__mutex_8hpp.html">mn_recursive_mutex.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifndef portMAX_DELAY</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="mn__autolock_8hpp.html#a72723ba1e4a85ca14f25c2b9e066613d">   34</a></span>&#160;<span class="preprocessor">#define portMAX_DELAY 0xffffffffUL</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacemn.html#a17f906c16b4898447f374dc7d851a1f0">   41</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">autocsemp_t</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;counting_semaphore_t&gt;</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="namespacemn.html#ab06f4af63512dc948a09588b410a6986">   46</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">autobinsemp_t</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;binary_semaphore_t&gt;</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="namespacemn.html#a674ff56a4c696b2beb5e4712cf8d76dc">   51</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">automutx_t</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;mutex_t&gt;</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">  #if (MN_THREAD_CONFIG_RECURSIVE_MUTEX == MN_THREAD_CONFIG_YES)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">//using autoremutx_t = basic_autolock&lt;remutex_t&gt;;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">  #if MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_MUTEX</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__binary__semaphore.html">LockType_t</a> = <a class="code" href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mn::mutex_t</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">  #elif MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_BINARY_SEMAPHORE</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespacemn.html#ac36c7984916d02e476dce1eb12409f82">   60</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__binary__semaphore.html">LockType_t</a> = <a class="code" href="namespacemn.html#afc7d0f23f8ca89b9007e8553a99209dc">mn::binary_semaphore_t</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">  #elif MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_COUNTING_SEMAPHORE</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__binary__semaphore.html">LockType_t</a> = <a class="code" href="namespacemn.html#a2a76f74f9f156c6e7e3ded9bc3b5a342">mn::counting_semaphore_t</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">//#elif MN_THREAD_CONFIG_LOCK_TYPE == MN_THREAD_CONFIG_RECURSIVE_MUTEX</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">//  using LockType_t = remutex_t;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">  #endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespacemn.html#ac31cad6a9d99e7654915635c2c4d8a1c">   67</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="classmn_1_1basic__autolock.html">autolock_t</a> = <a class="code" href="classmn_1_1basic__autolock.html">basic_autolock&lt;LockType_t&gt;</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TLOCK = LockType_t&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">   70</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">lock</a>(TLOCK&amp; m1, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timeout) { <span class="keywordflow">return</span> m1.lock(timeout); }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TLOCK = LockType_t&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="namespacemn.html#a9027964956f48b6728bd4dc49273bb55">   73</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacemn.html#a9027964956f48b6728bd4dc49273bb55">unlock</a>(TLOCK&amp; m1) { <span class="keywordflow">return</span> m1.unlock(); }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> TLOCK = LockType_t&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacemn.html#a92968146b371c174743a6ce190205687">   76</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="namespacemn.html#a92968146b371c174743a6ce190205687">try_lock</a>(TLOCK&amp; m1) { <span class="keywordflow">return</span> m1.try_lock(); }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassmn_1_1basic__autolock_html"><div class="ttname"><a href="classmn_1_1basic__autolock.html">mn::basic_autolock</a></div><div class="ttdef"><b>Definition:</b> mn_lock.hpp:122</div></div>
+<div class="ttc" id="aclassmn_1_1basic__binary__semaphore_html"><div class="ttname"><a href="classmn_1_1basic__binary__semaphore.html">mn::basic_binary_semaphore</a></div><div class="ttdef"><b>Definition:</b> mn_binary_semaphore.hpp:29</div></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
 <div class="ttc" id="amn__lock_8hpp_html"><div class="ttname"><a href="mn__lock_8hpp.html">mn_lock.hpp</a></div></div>
 <div class="ttc" id="amn__mutex_8hpp_html"><div class="ttname"><a href="mn__mutex_8hpp.html">mn_mutex.hpp</a></div></div>
@@ -220,12 +204,12 @@ $(document).ready(function(){initNavTree('mn__autolock_8hpp_source.html',''); in
 <div class="ttc" id="amn__recursive__mutex_8hpp_html"><div class="ttname"><a href="mn__recursive__mutex_8hpp.html">mn_recursive_mutex.hpp</a></div></div>
 <div class="ttc" id="amn__semaphore_8hpp_html"><div class="ttname"><a href="mn__semaphore_8hpp.html">mn_semaphore.hpp</a></div></div>
 <div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
-<div class="ttc" id="anamespacemn_html_a1f9940b60c6e47624e749e63e13e4a41"><div class="ttname"><a href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mn::mutex_t</a></div><div class="ttdeci">basic_mutex mutex_t</div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:74</div></div>
-<div class="ttc" id="anamespacemn_html_a2a76f74f9f156c6e7e3ded9bc3b5a342"><div class="ttname"><a href="namespacemn.html#a2a76f74f9f156c6e7e3ded9bc3b5a342">mn::counting_semaphore_t</a></div><div class="ttdeci">basic_counting_semaphore counting_semaphore_t</div><div class="ttdef"><b>Definition:</b> mn_counting_semaphore.hpp:75</div></div>
-<div class="ttc" id="anamespacemn_html_a897578ea51b9d1f8bcbef7763677037b"><div class="ttname"><a href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">mn::lock</a></div><div class="ttdeci">int lock(TLOCK &amp;m1, unsigned int timeout)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:69</div></div>
-<div class="ttc" id="anamespacemn_html_a9027964956f48b6728bd4dc49273bb55"><div class="ttname"><a href="namespacemn.html#a9027964956f48b6728bd4dc49273bb55">mn::unlock</a></div><div class="ttdeci">int unlock(TLOCK &amp;m1)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:72</div></div>
-<div class="ttc" id="anamespacemn_html_a92968146b371c174743a6ce190205687"><div class="ttname"><a href="namespacemn.html#a92968146b371c174743a6ce190205687">mn::try_lock</a></div><div class="ttdeci">bool try_lock(TLOCK &amp;m1)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:75</div></div>
-<div class="ttc" id="anamespacemn_html_afc7d0f23f8ca89b9007e8553a99209dc"><div class="ttname"><a href="namespacemn.html#afc7d0f23f8ca89b9007e8553a99209dc">mn::binary_semaphore_t</a></div><div class="ttdeci">basic_binary_semaphore binary_semaphore_t</div><div class="ttdef"><b>Definition:</b> mn_binary_semaphore.hpp:43</div></div>
+<div class="ttc" id="anamespacemn_html_a1f9940b60c6e47624e749e63e13e4a41"><div class="ttname"><a href="namespacemn.html#a1f9940b60c6e47624e749e63e13e4a41">mn::mutex_t</a></div><div class="ttdeci">basic_mutex mutex_t</div><div class="ttdef"><b>Definition:</b> mn_mutex.hpp:76</div></div>
+<div class="ttc" id="anamespacemn_html_a2a76f74f9f156c6e7e3ded9bc3b5a342"><div class="ttname"><a href="namespacemn.html#a2a76f74f9f156c6e7e3ded9bc3b5a342">mn::counting_semaphore_t</a></div><div class="ttdeci">basic_counting_semaphore counting_semaphore_t</div><div class="ttdef"><b>Definition:</b> mn_counting_semaphore.hpp:82</div></div>
+<div class="ttc" id="anamespacemn_html_a897578ea51b9d1f8bcbef7763677037b"><div class="ttname"><a href="namespacemn.html#a897578ea51b9d1f8bcbef7763677037b">mn::lock</a></div><div class="ttdeci">int lock(TLOCK &amp;m1, unsigned int timeout)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:70</div></div>
+<div class="ttc" id="anamespacemn_html_a9027964956f48b6728bd4dc49273bb55"><div class="ttname"><a href="namespacemn.html#a9027964956f48b6728bd4dc49273bb55">mn::unlock</a></div><div class="ttdeci">int unlock(TLOCK &amp;m1)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:73</div></div>
+<div class="ttc" id="anamespacemn_html_a92968146b371c174743a6ce190205687"><div class="ttname"><a href="namespacemn.html#a92968146b371c174743a6ce190205687">mn::try_lock</a></div><div class="ttdeci">bool try_lock(TLOCK &amp;m1)</div><div class="ttdef"><b>Definition:</b> mn_autolock.hpp:76</div></div>
+<div class="ttc" id="anamespacemn_html_afc7d0f23f8ca89b9007e8553a99209dc"><div class="ttname"><a href="namespacemn.html#afc7d0f23f8ca89b9007e8553a99209dc">mn::binary_semaphore_t</a></div><div class="ttdeci">basic_binary_semaphore binary_semaphore_t</div><div class="ttdef"><b>Definition:</b> mn_binary_semaphore.hpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div>

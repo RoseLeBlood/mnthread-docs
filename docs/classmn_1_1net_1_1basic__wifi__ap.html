@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::net::basic_wifi_ap Class Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1net_1_1basic__wifi__ap.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="classmn_1_1net_1_1basic__wifi__ap-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::net::basic_wifi_ap Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Wifi AP class for the <a class="el" href="namespacemn_1_1esp32.html">esp32</a>.  
+ <a href="classmn_1_1net_1_1basic__wifi__ap.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__wifi__ap_8hpp_source.html">mn_wifi_ap.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::net::basic_wifi_ap:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__wifi__ap__inherit__graph.svg" width="178" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::net::basic_wifi_ap:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1net_1_1basic__wifi__ap__coll__graph.svg" width="382" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa2688403939cf1a2c6153d88d40c3951"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a> = <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html">basic_ip4_address</a></td></tr>
+<tr class="separator:aa2688403939cf1a2c6153d88d40c3951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a739f3d28c9321d2d61e46132f885f2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a3a739f3d28c9321d2d61e46132f885f2">auth_mode_t</a> = typename <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6">base_type::auth_mode</a></td></tr>
+<tr class="separator:a3a739f3d28c9321d2d61e46132f885f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb63ecac908041174ce6d728117012a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a2bb63ecac908041174ce6d728117012a">interface_t</a> = typename <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a2bc375ecf53a9dfdea38e068b23bd50c">base_type::wifi_interface_type</a></td></tr>
+<tr class="separator:a2bb63ecac908041174ce6d728117012a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classmn_1_1net_1_1basic__wifi"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmn_1_1net_1_1basic__wifi')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmn_1_1net_1_1basic__wifi.html">mn::net::basic_wifi</a></td></tr>
+<tr class="memitem:a142737e924843a4b21c9ee07798e9ab6 inherit pub_types_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6">auth_mode</a> : int { <br />
+&#160;&#160;<a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6ac3bf447eabe632720a3aa1a7ce401274">Open</a> = WIFI_AUTH_OPEN
+, <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6a8ed9a3fd014b5967fc51f397c3bb8d46">WEP</a> = WIFI_AUTH_WEP
+, <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6a07481077c458789e0d8496136d66f163">WPA_PSK</a> = WIFI_AUTH_WPA_PSK
+, <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6a0db36a130ccee3331224492d4076deae">WPA2_PSK</a> = WIFI_AUTH_WPA2_PSK
+, <br />
+&#160;&#160;<a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6a687cd68e13ab79ddb548356e37f4c09b">WPA_WPA2_PSK</a> = WIFI_AUTH_WPA_WPA2_PSK
+, <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6ac2940ff56796bd1895634e4eaeb8c90d">WPA2_ENTERPRISE</a> = WIFI_AUTH_WPA2_ENTERPRISE
+<br />
+ }</td></tr>
+<tr class="memdesc:a142737e924843a4b21c9ee07798e9ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate modes.  <a href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6">More...</a><br /></td></tr>
+<tr class="separator:a142737e924843a4b21c9ee07798e9ab6 inherit pub_types_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bc375ecf53a9dfdea38e068b23bd50c inherit pub_types_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a2bc375ecf53a9dfdea38e068b23bd50c">wifi_interface_type</a> { <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a2bc375ecf53a9dfdea38e068b23bd50ca394a844cc3d6d99eb45b4e71afde2c99">Station</a> = 0
+, <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a2bc375ecf53a9dfdea38e068b23bd50ca442a43fd33b6e675a65d353137e48bdf">Acesspoint</a> = 1
+ }</td></tr>
+<tr class="separator:a2bc375ecf53a9dfdea38e068b23bd50c inherit pub_types_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dddd7d2653508afeedff422072c4c1b inherit pub_types_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a3dddd7d2653508afeedff422072c4c1b">auth_mode_t</a> = <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6">basic_wifi::auth_mode</a></td></tr>
+<tr class="separator:a3dddd7d2653508afeedff422072c4c1b inherit pub_types_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8c8a88ba7eab40e05c94c2f6929ae3 inherit pub_types_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a9d8c8a88ba7eab40e05c94c2f6929ae3">interface_t</a> = <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a2bc375ecf53a9dfdea38e068b23bd50c">basic_wifi::wifi_interface_type</a></td></tr>
+<tr class="separator:a9d8c8a88ba7eab40e05c94c2f6929ae3 inherit pub_types_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classmn_1_1net_1_1basic__wifi__net__if"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmn_1_1net_1_1basic__wifi__net__if')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html">mn::net::basic_wifi_net_if</a></td></tr>
+<tr class="memitem:a420307e819d2c86331f82c4e06609d06 inherit pub_types_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06">wifi_protocol</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a> = 0
+, <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06a92eb5ffee6ae2fec3ad71c777531578f">b</a> = WIFI_PROTOCOL_11B
+, <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06ab2f5ff47436671b6e533d8dc3614845d">g</a> = WIFI_PROTOCOL_11G
+, <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06a7b8b965ad4bca0e41ab51de7b31363a1">n</a> = WIFI_PROTOCOL_11N
+, <br />
+&#160;&#160;<a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06a5523c88dd347d1b7cc617f632b7efdb7">bg</a> = WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G
+, <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06acb8e917bea2570025dea6a2b0a7c027e">bgn</a> = WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G | WIFI_PROTOCOL_11N
+, <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06a58791f322c1bfc3de6141788d3b8666f">lr</a> = WIFI_PROTOCOL_LR
+<br />
+ }</td></tr>
+<tr class="memdesc:a420307e819d2c86331f82c4e06609d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of the wifi protocols  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06">More...</a><br /></td></tr>
+<tr class="separator:a420307e819d2c86331f82c4e06609d06 inherit pub_types_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classmn_1_1net_1_1basic__net__if"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classmn_1_1net_1_1basic__net__if')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classmn_1_1net_1_1basic__net__if.html">mn::net::basic_net_if</a></td></tr>
+<tr class="memitem:a62f4d9ebf9197bd323e6adf5de58bce6 inherit pub_types_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a62f4d9ebf9197bd323e6adf5de58bce6">ip_info_t</a> = <a class="el" href="classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info">ip_info</a></td></tr>
+<tr class="separator:a62f4d9ebf9197bd323e6adf5de58bce6 inherit pub_types_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac4b1daf866b9e4a19932c70940c53d95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#ac4b1daf866b9e4a19932c70940c53d95">basic_wifi_ap</a> ()</td></tr>
+<tr class="memdesc:ac4b1daf866b9e4a19932c70940c53d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the wifi ap object.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#ac4b1daf866b9e4a19932c70940c53d95">More...</a><br /></td></tr>
+<tr class="separator:ac4b1daf866b9e4a19932c70940c53d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2d6db1713b046a03536fe4a8bcd7ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a3b2d6db1713b046a03536fe4a8bcd7ba">~basic_wifi_ap</a> ()</td></tr>
+<tr class="memdesc:a3b2d6db1713b046a03536fe4a8bcd7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic destructor, stopped the Wifi.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a3b2d6db1713b046a03536fe4a8bcd7ba">More...</a><br /></td></tr>
+<tr class="separator:a3b2d6db1713b046a03536fe4a8bcd7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034841287edc9fb555a4bdfc54f9a9f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a034841287edc9fb555a4bdfc54f9a9f5">basic_wifi_ap</a> (const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html">basic_wifi_ap</a> &amp;other)=delete</td></tr>
+<tr class="separator:a034841287edc9fb555a4bdfc54f9a9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d2d8f686d55f898a8b4272fb37b530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html">basic_wifi_ap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#ac5d2d8f686d55f898a8b4272fb37b530">operator=</a> (const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html">basic_wifi_ap</a> &amp;other)=delete</td></tr>
+<tr class="separator:ac5d2d8f686d55f898a8b4272fb37b530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add361721fb49d85547bac41244c180d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#add361721fb49d85547bac41244c180d2">start</a> (const char *ssid, <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6">auth_mode_t</a> mode=auth_mode_t::Open, const char *passphrase=&quot;&quot;, bool storeCfgToFlash=false, bool ipv6=false, int channel=13, bool ssid_hidden=false, int max_connection=4)</td></tr>
+<tr class="separator:add361721fb49d85547bac41244c180d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22830d3f4723b0669d1dbf5ba816ee50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a22830d3f4723b0669d1dbf5ba816ee50">set_ipinfo</a> (const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a> &amp;local_ip, const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a> &amp;gateway, const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a> &amp;subnet)</td></tr>
+<tr class="memdesc:a22830d3f4723b0669d1dbf5ba816ee50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set IPv4 infos, local ip, gateway and subnet.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a22830d3f4723b0669d1dbf5ba816ee50">More...</a><br /></td></tr>
+<tr class="separator:a22830d3f4723b0669d1dbf5ba816ee50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0dfb5124a186af7738a28ebbeeb7ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a0f0dfb5124a186af7738a28ebbeeb7ee">stop</a> (bool wifioff=false) override</td></tr>
+<tr class="separator:a0f0dfb5124a186af7738a28ebbeeb7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44910142c32fd800f5d851d54af7d7ea"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a44910142c32fd800f5d851d54af7d7ea">get_ip</a> ()</td></tr>
+<tr class="memdesc:a44910142c32fd800f5d851d54af7d7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Tte IPv4 address of the WiFi AP device.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a44910142c32fd800f5d851d54af7d7ea">More...</a><br /></td></tr>
+<tr class="separator:a44910142c32fd800f5d851d54af7d7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbec43da5d409d7d315f15361f98383"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a0bbec43da5d409d7d315f15361f98383">get_broadcast</a> ()</td></tr>
+<tr class="memdesc:a0bbec43da5d409d7d315f15361f98383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the broadcast IP address,.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a0bbec43da5d409d7d315f15361f98383">More...</a><br /></td></tr>
+<tr class="separator:a0bbec43da5d409d7d315f15361f98383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af141c67d0a175eda1cec8bdbb9705dd2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#af141c67d0a175eda1cec8bdbb9705dd2">get_gateway</a> ()</td></tr>
+<tr class="memdesc:af141c67d0a175eda1cec8bdbb9705dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the gateway IP address,.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#af141c67d0a175eda1cec8bdbb9705dd2">More...</a><br /></td></tr>
+<tr class="separator:af141c67d0a175eda1cec8bdbb9705dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852949efc24b83ef16096ddd81e7f8c6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a852949efc24b83ef16096ddd81e7f8c6">get_netmask</a> ()</td></tr>
+<tr class="memdesc:a852949efc24b83ef16096ddd81e7f8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the netmask IP address,.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a852949efc24b83ef16096ddd81e7f8c6">More...</a><br /></td></tr>
+<tr class="separator:a852949efc24b83ef16096ddd81e7f8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688a1419d5b9eb2b90112e1bb8c45d64"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a688a1419d5b9eb2b90112e1bb8c45d64">get_hostname</a> ()</td></tr>
+<tr class="memdesc:a688a1419d5b9eb2b90112e1bb8c45d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hostname.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a688a1419d5b9eb2b90112e1bb8c45d64">More...</a><br /></td></tr>
+<tr class="separator:a688a1419d5b9eb2b90112e1bb8c45d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803edbb06b1f194ed07d85cb6449e660"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a803edbb06b1f194ed07d85cb6449e660">set_hostname</a> (const char *hostname)</td></tr>
+<tr class="memdesc:a803edbb06b1f194ed07d85cb6449e660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the hostname, only work when wifi are started.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a803edbb06b1f194ed07d85cb6449e660">More...</a><br /></td></tr>
+<tr class="separator:a803edbb06b1f194ed07d85cb6449e660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be5532e4faa680d96ef1c642ab7ce11"><td class="memItemLeft" align="right" valign="top">virtual uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a9be5532e4faa680d96ef1c642ab7ce11">get_mac</a> (uint8_t *mac)</td></tr>
+<tr class="memdesc:a9be5532e4faa680d96ef1c642ab7ce11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MAC of the WiFi AP device.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a9be5532e4faa680d96ef1c642ab7ce11">More...</a><br /></td></tr>
+<tr class="separator:a9be5532e4faa680d96ef1c642ab7ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318884ad67d185ff4c073e4e35a058c6"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a318884ad67d185ff4c073e4e35a058c6">get_mac</a> ()</td></tr>
+<tr class="memdesc:a318884ad67d185ff4c073e4e35a058c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the MAC of the WiFi AP device as string.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a318884ad67d185ff4c073e4e35a058c6">More...</a><br /></td></tr>
+<tr class="separator:a318884ad67d185ff4c073e4e35a058c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9592c2f65013a7299ad2af41950486"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a3f9592c2f65013a7299ad2af41950486">get_connected</a> ()</td></tr>
+<tr class="memdesc:a3f9592c2f65013a7299ad2af41950486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of connected stations.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a3f9592c2f65013a7299ad2af41950486">More...</a><br /></td></tr>
+<tr class="separator:a3f9592c2f65013a7299ad2af41950486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab070e5d7a18ad5bd13f00fc2a2957ab2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#ab070e5d7a18ad5bd13f00fc2a2957ab2">operator uint32_t</a> ()</td></tr>
+<tr class="separator:ab070e5d7a18ad5bd13f00fc2a2957ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fea1fe56b330ba48db5798124887bd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a1fea1fe56b330ba48db5798124887bd8">operator ip4_adress_t</a> ()</td></tr>
+<tr class="separator:a1fea1fe56b330ba48db5798124887bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12993c4ef4b6159017d003de50b33a01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a12993c4ef4b6159017d003de50b33a01">operator const char *</a> ()</td></tr>
+<tr class="separator:a12993c4ef4b6159017d003de50b33a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmn_1_1net_1_1basic__wifi"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmn_1_1net_1_1basic__wifi')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmn_1_1net_1_1basic__wifi.html">mn::net::basic_wifi</a></td></tr>
+<tr class="memitem:a472ada5b54c2a06b275eb2a89f44b7f8 inherit pub_methods_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a472ada5b54c2a06b275eb2a89f44b7f8">basic_wifi</a> (const <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a2bc375ecf53a9dfdea38e068b23bd50c">interface_t</a> &amp;type)</td></tr>
+<tr class="memdesc:a472ada5b54c2a06b275eb2a89f44b7f8 inherit pub_methods_classmn_1_1net_1_1basic__wifi"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct this object.  <a href="classmn_1_1net_1_1basic__wifi.html#a472ada5b54c2a06b275eb2a89f44b7f8">More...</a><br /></td></tr>
+<tr class="separator:a472ada5b54c2a06b275eb2a89f44b7f8 inherit pub_methods_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347cd2ac6dd54d62ab89a9fcc8934f8c inherit pub_methods_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a347cd2ac6dd54d62ab89a9fcc8934f8c">~basic_wifi</a> ()</td></tr>
+<tr class="separator:a347cd2ac6dd54d62ab89a9fcc8934f8c inherit pub_methods_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmn_1_1net_1_1basic__wifi__net__if')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html">mn::net::basic_wifi_net_if</a></td></tr>
+<tr class="memitem:a9c2642ba535b74cd1a9d58a366969fb1 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a9c2642ba535b74cd1a9d58a366969fb1">basic_wifi_net_if</a> (const esp_interface_t &amp;type) noexcept</td></tr>
+<tr class="memdesc:a9c2642ba535b74cd1a9d58a366969fb1 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construt.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#a9c2642ba535b74cd1a9d58a366969fb1">More...</a><br /></td></tr>
+<tr class="separator:a9c2642ba535b74cd1a9d58a366969fb1 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbb1078f1e72d0536aadda1bdb05e92 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#aecbb1078f1e72d0536aadda1bdb05e92">create_default</a> (void)</td></tr>
+<tr class="memdesc:aecbb1078f1e72d0536aadda1bdb05e92 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the hostname.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#aecbb1078f1e72d0536aadda1bdb05e92">More...</a><br /></td></tr>
+<tr class="separator:aecbb1078f1e72d0536aadda1bdb05e92 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4e699b3e15b367899cefea21b2b2c4 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">esp_interface_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a0a4e699b3e15b367899cefea21b2b2c4">get</a> (void)</td></tr>
+<tr class="memdesc:a0a4e699b3e15b367899cefea21b2b2c4 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the type of the interface  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#a0a4e699b3e15b367899cefea21b2b2c4">More...</a><br /></td></tr>
+<tr class="separator:a0a4e699b3e15b367899cefea21b2b2c4 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a26665e96b137350580f5ad5069ff9 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#ad2a26665e96b137350580f5ad5069ff9">get_hostname</a> (void)</td></tr>
+<tr class="memdesc:ad2a26665e96b137350580f5ad5069ff9 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get interface hostname.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#ad2a26665e96b137350580f5ad5069ff9">More...</a><br /></td></tr>
+<tr class="separator:ad2a26665e96b137350580f5ad5069ff9 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8283ceaaaaeb0425f0cd1ed19f7cb7 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">wifi_mode_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a7e8283ceaaaaeb0425f0cd1ed19f7cb7">get_mode</a> (void)</td></tr>
+<tr class="memdesc:a7e8283ceaaaaeb0425f0cd1ed19f7cb7 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current operating mode of WiFi.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#a7e8283ceaaaaeb0425f0cd1ed19f7cb7">More...</a><br /></td></tr>
+<tr class="separator:a7e8283ceaaaaeb0425f0cd1ed19f7cb7 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6906806746380adcd3554f86eab2d6 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#acf6906806746380adcd3554f86eab2d6">get_ssid</a> (char ssid[32])</td></tr>
+<tr class="memdesc:acf6906806746380adcd3554f86eab2d6 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ssid for the wifi.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#acf6906806746380adcd3554f86eab2d6">More...</a><br /></td></tr>
+<tr class="separator:acf6906806746380adcd3554f86eab2d6 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971dc7218fd95a6fbe2f979610e2292b inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06">wifi_protocol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a971dc7218fd95a6fbe2f979610e2292b">get_protocol</a> ()</td></tr>
+<tr class="memdesc:a971dc7218fd95a6fbe2f979610e2292b inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current protocol bitmap.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#a971dc7218fd95a6fbe2f979610e2292b">More...</a><br /></td></tr>
+<tr class="separator:a971dc7218fd95a6fbe2f979610e2292b inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7776ff13d1aa6b98122d60ed320f6aa4 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">wifi_ps_type_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a7776ff13d1aa6b98122d60ed320f6aa4">get_power_save_mode</a> ()</td></tr>
+<tr class="memdesc:a7776ff13d1aa6b98122d60ed320f6aa4 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current WiFi power save type.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#a7776ff13d1aa6b98122d60ed320f6aa4">More...</a><br /></td></tr>
+<tr class="separator:a7776ff13d1aa6b98122d60ed320f6aa4 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e6188a18b988f59dc5ac929f9b6204 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a04e6188a18b988f59dc5ac929f9b6204">set_power_save_mode</a> (const wifi_ps_type_t mode)</td></tr>
+<tr class="memdesc:a04e6188a18b988f59dc5ac929f9b6204 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current WiFi power save type.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#a04e6188a18b988f59dc5ac929f9b6204">More...</a><br /></td></tr>
+<tr class="separator:a04e6188a18b988f59dc5ac929f9b6204 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec4b014f4c3f666a33287679d3d7b54 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a5ec4b014f4c3f666a33287679d3d7b54">set_protocol</a> (const <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06">wifi_protocol</a> &amp;prot=<a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#a420307e819d2c86331f82c4e06609d06acb8e917bea2570025dea6a2b0a7c027e">wifi_protocol::bgn</a>)</td></tr>
+<tr class="memdesc:a5ec4b014f4c3f666a33287679d3d7b54 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set protocol type of specified interface The default protocol is (WIFI_PROTOCOL_11B|WIFI_PROTOCOL_11G|WIFI_PROTOCOL_11N)  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#a5ec4b014f4c3f666a33287679d3d7b54">More...</a><br /></td></tr>
+<tr class="separator:a5ec4b014f4c3f666a33287679d3d7b54 inherit pub_methods_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmn_1_1net_1_1basic__net__if"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmn_1_1net_1_1basic__net__if')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classmn_1_1net_1_1basic__net__if.html">mn::net::basic_net_if</a></td></tr>
+<tr class="memitem:ab57d07f17ac84f7fe81134226fe90562 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#ab57d07f17ac84f7fe81134226fe90562">basic_net_if</a> ()</td></tr>
+<tr class="separator:ab57d07f17ac84f7fe81134226fe90562 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd1507469d7e5178f07c2a4ef6e9237 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a0fd1507469d7e5178f07c2a4ef6e9237">basic_net_if</a> (const <a class="el" href="classmn_1_1net_1_1basic__net__if.html">basic_net_if</a> &amp;other)</td></tr>
+<tr class="separator:a0fd1507469d7e5178f07c2a4ef6e9237 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad881bd9e58b42710d229a590ca933ea0 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1net_1_1basic__net__if.html">basic_net_if</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#ad881bd9e58b42710d229a590ca933ea0">operator=</a> (const <a class="el" href="classmn_1_1net_1_1basic__net__if.html">basic_net_if</a> &amp;other)</td></tr>
+<tr class="separator:ad881bd9e58b42710d229a590ca933ea0 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362829aaf36d23936ce044f94a351bfa inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a362829aaf36d23936ce044f94a351bfa">set_mac</a> (uint8_t mac[6])</td></tr>
+<tr class="memdesc:a362829aaf36d23936ce044f94a351bfa inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mac address for the interface instance.  <a href="classmn_1_1net_1_1basic__net__if.html#a362829aaf36d23936ce044f94a351bfa">More...</a><br /></td></tr>
+<tr class="separator:a362829aaf36d23936ce044f94a351bfa inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313441185f019196fe382bda075eefe7 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a313441185f019196fe382bda075eefe7">get_mac</a> (uint8_t mac[6])</td></tr>
+<tr class="memdesc:a313441185f019196fe382bda075eefe7 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mac address for the interface instance.  <a href="classmn_1_1net_1_1basic__net__if.html#a313441185f019196fe382bda075eefe7">More...</a><br /></td></tr>
+<tr class="separator:a313441185f019196fe382bda075eefe7 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d6c8c5d7d1174e10923ff6e08cc498 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#ad2d6c8c5d7d1174e10923ff6e08cc498">get_hostname</a> ()</td></tr>
+<tr class="memdesc:ad2d6c8c5d7d1174e10923ff6e08cc498 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hostname of an interface.  <a href="classmn_1_1net_1_1basic__net__if.html#ad2d6c8c5d7d1174e10923ff6e08cc498">More...</a><br /></td></tr>
+<tr class="separator:ad2d6c8c5d7d1174e10923ff6e08cc498 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90861b67d706327dd7a0ebff77477c2 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#aa90861b67d706327dd7a0ebff77477c2">set_hostname</a> (const char *hostname)</td></tr>
+<tr class="memdesc:aa90861b67d706327dd7a0ebff77477c2 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the hostname of an interface.  <a href="classmn_1_1net_1_1basic__net__if.html#aa90861b67d706327dd7a0ebff77477c2">More...</a><br /></td></tr>
+<tr class="separator:aa90861b67d706327dd7a0ebff77477c2 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c230d6d7de1742bd9f06c0dd18b2a0 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#ae1c230d6d7de1742bd9f06c0dd18b2a0">is_up</a> ()</td></tr>
+<tr class="memdesc:ae1c230d6d7de1742bd9f06c0dd18b2a0 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if supplied interface is up.  <a href="classmn_1_1net_1_1basic__net__if.html#ae1c230d6d7de1742bd9f06c0dd18b2a0">More...</a><br /></td></tr>
+<tr class="separator:ae1c230d6d7de1742bd9f06c0dd18b2a0 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9763ae86bf1b1ee70c38a3c48b7087b7 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a9763ae86bf1b1ee70c38a3c48b7087b7">get_impl_name</a> (char name[6])</td></tr>
+<tr class="memdesc:a9763ae86bf1b1ee70c38a3c48b7087b7 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get net interface name from network stack implementation.  <a href="classmn_1_1net_1_1basic__net__if.html#a9763ae86bf1b1ee70c38a3c48b7087b7">More...</a><br /></td></tr>
+<tr class="separator:a9763ae86bf1b1ee70c38a3c48b7087b7 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa00a2a38ee023e20b68834f53e1eddae inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#aa00a2a38ee023e20b68834f53e1eddae">get_impl_index</a> ()</td></tr>
+<tr class="memdesc:aa00a2a38ee023e20b68834f53e1eddae inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get net interface index from network stack implementation.  <a href="classmn_1_1net_1_1basic__net__if.html#aa00a2a38ee023e20b68834f53e1eddae">More...</a><br /></td></tr>
+<tr class="separator:aa00a2a38ee023e20b68834f53e1eddae inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b1b5e1615b3c677a8713bcd8ee9096 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">virtual esp_netif_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a34b1b5e1615b3c677a8713bcd8ee9096">get_netif</a> ()</td></tr>
+<tr class="memdesc:a34b1b5e1615b3c677a8713bcd8ee9096 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Handle to esp-netif instance.  <a href="classmn_1_1net_1_1basic__net__if.html#a34b1b5e1615b3c677a8713bcd8ee9096">More...</a><br /></td></tr>
+<tr class="separator:a34b1b5e1615b3c677a8713bcd8ee9096 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cbf4e3e0849c5fb8d7ab904d2d6141c inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">virtual esp_netif_config_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a0cbf4e3e0849c5fb8d7ab904d2d6141c">get_config</a> ()</td></tr>
+<tr class="memdesc:a0cbf4e3e0849c5fb8d7ab904d2d6141c inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the config of the esp-netif instance.  <a href="classmn_1_1net_1_1basic__net__if.html#a0cbf4e3e0849c5fb8d7ab904d2d6141c">More...</a><br /></td></tr>
+<tr class="separator:a0cbf4e3e0849c5fb8d7ab904d2d6141c inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c48b1f7d941474b87ecb0414ebf74b inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a73c48b1f7d941474b87ecb0414ebf74b">get_ip_infos</a> (<a class="el" href="classmn_1_1net_1_1basic__net__if.html#a62f4d9ebf9197bd323e6adf5de58bce6">ip_info_t</a> &amp;<a class="el" href="classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info">ip_info</a>)</td></tr>
+<tr class="memdesc:a73c48b1f7d941474b87ecb0414ebf74b inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get interface's IP address information.  <a href="classmn_1_1net_1_1basic__net__if.html#a73c48b1f7d941474b87ecb0414ebf74b">More...</a><br /></td></tr>
+<tr class="separator:a73c48b1f7d941474b87ecb0414ebf74b inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c919d48f45795bab237956915a7959e inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a7c919d48f45795bab237956915a7959e">set_ip_infos</a> (const <a class="el" href="classmn_1_1net_1_1basic__net__if.html#a62f4d9ebf9197bd323e6adf5de58bce6">ip_info_t</a> &amp;<a class="el" href="classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info">ip_info</a>)</td></tr>
+<tr class="memdesc:a7c919d48f45795bab237956915a7959e inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interface's IP address information.  <a href="classmn_1_1net_1_1basic__net__if.html#a7c919d48f45795bab237956915a7959e">More...</a><br /></td></tr>
+<tr class="separator:a7c919d48f45795bab237956915a7959e inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2da8e96f52c4b2e2e0310abc720c620 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#ab2da8e96f52c4b2e2e0310abc720c620">operator bool</a> ()</td></tr>
+<tr class="separator:ab2da8e96f52c4b2e2e0310abc720c620 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa28c2c92ae08aa0bd1f5a1cd8690c7c inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#afa28c2c92ae08aa0bd1f5a1cd8690c7c">operator esp_netif_t *</a> ()</td></tr>
+<tr class="separator:afa28c2c92ae08aa0bd1f5a1cd8690c7c inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6636d8471ba2a533bd455bc5a7a7cefd inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a6636d8471ba2a533bd455bc5a7a7cefd">operator==</a> (const <a class="el" href="classmn_1_1net_1_1basic__net__if.html">basic_net_if</a> &amp;other)</td></tr>
+<tr class="separator:a6636d8471ba2a533bd455bc5a7a7cefd inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444035955bf351713f28c9feca147d43 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a444035955bf351713f28c9feca147d43">operator!=</a> (const <a class="el" href="classmn_1_1net_1_1basic__net__if.html">basic_net_if</a> &amp;other)</td></tr>
+<tr class="separator:a444035955bf351713f28c9feca147d43 inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9edaef4556660eb35df57ac38a16dccc inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a9edaef4556660eb35df57ac38a16dccc">operator==</a> (const esp_netif_t *other)</td></tr>
+<tr class="separator:a9edaef4556660eb35df57ac38a16dccc inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f213a9fa29b8ba84b643eb5d42e651b inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a3f213a9fa29b8ba84b643eb5d42e651b">operator!=</a> (const esp_netif_t *other)</td></tr>
+<tr class="separator:a3f213a9fa29b8ba84b643eb5d42e651b inherit pub_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa1b83284b1f0b0f27ecbed36849e5c8e"><td class="memItemLeft" align="right" valign="top">tcpip_adapter_ip_info_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa1b83284b1f0b0f27ecbed36849e5c8e">get_ip_infos</a> ()</td></tr>
+<tr class="memdesc:aa1b83284b1f0b0f27ecbed36849e5c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get interface's IP address information.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#aa1b83284b1f0b0f27ecbed36849e5c8e">More...</a><br /></td></tr>
+<tr class="separator:aa1b83284b1f0b0f27ecbed36849e5c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829d1f38f27e2b575361d206fc2198d2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a829d1f38f27e2b575361d206fc2198d2">on_wifi_event</a> (esp_event_base_t event_base, int32_t event_id, void *event_data) override</td></tr>
+<tr class="memdesc:a829d1f38f27e2b575361d206fc2198d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The basic wife event handler.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a829d1f38f27e2b575361d206fc2198d2">More...</a><br /></td></tr>
+<tr class="separator:a829d1f38f27e2b575361d206fc2198d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f932e79ed4eba33114468f8959f6489"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a5f932e79ed4eba33114468f8959f6489">on_start</a> (esp_event_base_t event_base, void *event_data)</td></tr>
+<tr class="memdesc:a5f932e79ed4eba33114468f8959f6489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call on WIFI_EVENT_AP_START event.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a5f932e79ed4eba33114468f8959f6489">More...</a><br /></td></tr>
+<tr class="separator:a5f932e79ed4eba33114468f8959f6489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae85bc4f0e9a79c4efd4a000b761b48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a6ae85bc4f0e9a79c4efd4a000b761b48">on_stop</a> (esp_event_base_t event_base, void *event_data)</td></tr>
+<tr class="memdesc:a6ae85bc4f0e9a79c4efd4a000b761b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call on WIFI_EVENT_AP_STOP event.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a6ae85bc4f0e9a79c4efd4a000b761b48">More...</a><br /></td></tr>
+<tr class="separator:a6ae85bc4f0e9a79c4efd4a000b761b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4e8eebcc427fb97e47e15ab2083775"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aab4e8eebcc427fb97e47e15ab2083775">on_connected</a> (esp_event_base_t event_base, void *event_data)</td></tr>
+<tr class="memdesc:aab4e8eebcc427fb97e47e15ab2083775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call on WIFI_EVENT_AP_STACONNECTED event.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#aab4e8eebcc427fb97e47e15ab2083775">More...</a><br /></td></tr>
+<tr class="separator:aab4e8eebcc427fb97e47e15ab2083775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d867709716a9028fe6a8d9ab0cba39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a66d867709716a9028fe6a8d9ab0cba39">on_disconnected</a> (esp_event_base_t event_base, void *event_data)</td></tr>
+<tr class="memdesc:a66d867709716a9028fe6a8d9ab0cba39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call on WIFI_EVENT_AP_STADISCONNECTED event.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a66d867709716a9028fe6a8d9ab0cba39">More...</a><br /></td></tr>
+<tr class="separator:a66d867709716a9028fe6a8d9ab0cba39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7e5a24ec385a7ad75e5dd42c88bba7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a0a7e5a24ec385a7ad75e5dd42c88bba7">on_probereqrec</a> (esp_event_base_t event_base, void *event_data)</td></tr>
+<tr class="memdesc:a0a7e5a24ec385a7ad75e5dd42c88bba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call on WIFI_EVENT_AP_PROBEREQRECVED event.  <a href="classmn_1_1net_1_1basic__wifi__ap.html#a0a7e5a24ec385a7ad75e5dd42c88bba7">More...</a><br /></td></tr>
+<tr class="separator:a0a7e5a24ec385a7ad75e5dd42c88bba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classmn_1_1net_1_1basic__wifi"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmn_1_1net_1_1basic__wifi')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classmn_1_1net_1_1basic__wifi.html">mn::net::basic_wifi</a></td></tr>
+<tr class="memitem:aa3869a5b3c1157fedbaa255a063716c0 inherit pro_methods_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#aa3869a5b3c1157fedbaa255a063716c0">startup</a> (wifi_init_config_t *cfg, wifi_storage_t storage=WIFI_STORAGE_RAM)</td></tr>
+<tr class="memdesc:aa3869a5b3c1157fedbaa255a063716c0 inherit pro_methods_classmn_1_1net_1_1basic__wifi"><td class="mdescLeft">&#160;</td><td class="mdescRight">start the wifi system and set the config.  <a href="classmn_1_1net_1_1basic__wifi.html#aa3869a5b3c1157fedbaa255a063716c0">More...</a><br /></td></tr>
+<tr class="separator:aa3869a5b3c1157fedbaa255a063716c0 inherit pro_methods_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d70cae2a4644adaeadc5788667da7fc inherit pro_methods_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a6d70cae2a4644adaeadc5788667da7fc">unregist</a> ()</td></tr>
+<tr class="memdesc:a6d70cae2a4644adaeadc5788667da7fc inherit pro_methods_classmn_1_1net_1_1basic__wifi"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deregister the wifi_event and ip_event.  <a href="classmn_1_1net_1_1basic__wifi.html#a6d70cae2a4644adaeadc5788667da7fc">More...</a><br /></td></tr>
+<tr class="separator:a6d70cae2a4644adaeadc5788667da7fc inherit pro_methods_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000e0df0a68b453fcc2627f04da62571 inherit pro_methods_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a000e0df0a68b453fcc2627f04da62571">on_ip_event</a> (esp_event_base_t event_base, int32_t event_id, void *event_data)</td></tr>
+<tr class="separator:a000e0df0a68b453fcc2627f04da62571 inherit pro_methods_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aab488bb0513d3223657904e0c9ae9bb3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aab488bb0513d3223657904e0c9ae9bb3">base_type</a> = <a class="el" href="classmn_1_1net_1_1basic__wifi.html">basic_wifi</a></td></tr>
+<tr class="separator:aab488bb0513d3223657904e0c9ae9bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classmn_1_1net_1_1basic__net__if"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classmn_1_1net_1_1basic__net__if')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classmn_1_1net_1_1basic__net__if.html">mn::net::basic_net_if</a></td></tr>
+<tr class="memitem:ad096945e10bf8d232f165c33a3b65d76 inherit pub_static_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#ad096945e10bf8d232f165c33a3b65d76">start</a> ()</td></tr>
+<tr class="memdesc:ad096945e10bf8d232f165c33a3b65d76 inherit pub_static_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the underlying TCP/IP stack.  <a href="classmn_1_1net_1_1basic__net__if.html#ad096945e10bf8d232f165c33a3b65d76">More...</a><br /></td></tr>
+<tr class="separator:ad096945e10bf8d232f165c33a3b65d76 inherit pub_static_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6212688b91fd9db1c2d197997621e3c inherit pub_static_methods_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#ad6212688b91fd9db1c2d197997621e3c">stop</a> ()</td></tr>
+<tr class="memdesc:ad6212688b91fd9db1c2d197997621e3c inherit pub_static_methods_classmn_1_1net_1_1basic__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the esp-netif component (and the underlying TCP/IP stack)  <a href="classmn_1_1net_1_1basic__net__if.html#ad6212688b91fd9db1c2d197997621e3c">More...</a><br /></td></tr>
+<tr class="separator:ad6212688b91fd9db1c2d197997621e3c inherit pub_static_methods_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmn_1_1net_1_1basic__wifi"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmn_1_1net_1_1basic__wifi')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmn_1_1net_1_1basic__wifi.html">mn::net::basic_wifi</a></td></tr>
+<tr class="memitem:a7058de8189b05e42999e2b1b39903e60 inherit pro_attribs_classmn_1_1net_1_1basic__wifi"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#a7353c9d6d546cf9a83d79b97839e6a04">mn::event_group_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a7058de8189b05e42999e2b1b39903e60">m_eGroup</a></td></tr>
+<tr class="separator:a7058de8189b05e42999e2b1b39903e60 inherit pro_attribs_classmn_1_1net_1_1basic__wifi"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmn_1_1net_1_1basic__wifi__net__if"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmn_1_1net_1_1basic__wifi__net__if')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html">mn::net::basic_wifi_net_if</a></td></tr>
+<tr class="memitem:ad282ec3ba9f75fbd388579cbb06cf968 inherit pro_attribs_classmn_1_1net_1_1basic__wifi__net__if"><td class="memItemLeft" align="right" valign="top">esp_interface_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__wifi__net__if.html#ad282ec3ba9f75fbd388579cbb06cf968">m_ifInterface</a></td></tr>
+<tr class="memdesc:ad282ec3ba9f75fbd388579cbb06cf968 inherit pro_attribs_classmn_1_1net_1_1basic__wifi__net__if"><td class="mdescLeft">&#160;</td><td class="mdescRight">NET_IF intarface of the device.  <a href="classmn_1_1net_1_1basic__wifi__net__if.html#ad282ec3ba9f75fbd388579cbb06cf968">More...</a><br /></td></tr>
+<tr class="separator:ad282ec3ba9f75fbd388579cbb06cf968 inherit pro_attribs_classmn_1_1net_1_1basic__wifi__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmn_1_1net_1_1basic__net__if"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmn_1_1net_1_1basic__net__if')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classmn_1_1net_1_1basic__net__if.html">mn::net::basic_net_if</a></td></tr>
+<tr class="memitem:a550a9db9fa0a4f4a527198c5075a16b5 inherit pro_attribs_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">esp_netif_config_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a550a9db9fa0a4f4a527198c5075a16b5">m_ifConfig</a></td></tr>
+<tr class="separator:a550a9db9fa0a4f4a527198c5075a16b5 inherit pro_attribs_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80dd2be143e5850c3984ca7a72bc61b2 inherit pro_attribs_classmn_1_1net_1_1basic__net__if"><td class="memItemLeft" align="right" valign="top">esp_netif_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1net_1_1basic__net__if.html#a80dd2be143e5850c3984ca7a72bc61b2">m_pNetIf</a></td></tr>
+<tr class="separator:a80dd2be143e5850c3984ca7a72bc61b2 inherit pro_attribs_classmn_1_1net_1_1basic__net__if"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Wifi AP class for the <a class="el" href="namespacemn_1_1esp32.html">esp32</a>. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3a739f3d28c9321d2d61e46132f885f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a739f3d28c9321d2d61e46132f885f2">&#9670;&nbsp;</a></span>auth_mode_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a3a739f3d28c9321d2d61e46132f885f2">mn::net::basic_wifi_ap::auth_mode_t</a> =  typename <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6">base_type::auth_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab488bb0513d3223657904e0c9ae9bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab488bb0513d3223657904e0c9ae9bb3">&#9670;&nbsp;</a></span>base_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aab488bb0513d3223657904e0c9ae9bb3">mn::net::basic_wifi_ap::base_type</a> =  <a class="el" href="classmn_1_1net_1_1basic__wifi.html">basic_wifi</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2bb63ecac908041174ce6d728117012a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb63ecac908041174ce6d728117012a">&#9670;&nbsp;</a></span>interface_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#a2bb63ecac908041174ce6d728117012a">mn::net::basic_wifi_ap::interface_t</a> =  typename <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a2bc375ecf53a9dfdea38e068b23bd50c">base_type::wifi_interface_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2688403939cf1a2c6153d88d40c3951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2688403939cf1a2c6153d88d40c3951">&#9670;&nbsp;</a></span>ip4_adress_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">mn::net::basic_wifi_ap::ip4_adress_t</a> =  <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html">basic_ip4_address</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac4b1daf866b9e4a19932c70940c53d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b1daf866b9e4a19932c70940c53d95">&#9670;&nbsp;</a></span>basic_wifi_ap() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::net::basic_wifi_ap::basic_wifi_ap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct the wifi ap object. </p>
+
+</div>
+</div>
+<a id="a3b2d6db1713b046a03536fe4a8bcd7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2d6db1713b046a03536fe4a8bcd7ba">&#9670;&nbsp;</a></span>~basic_wifi_ap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::net::basic_wifi_ap::~basic_wifi_ap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Basic destructor, stopped the Wifi. </p>
+
+</div>
+</div>
+<a id="a034841287edc9fb555a4bdfc54f9a9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034841287edc9fb555a4bdfc54f9a9f5">&#9670;&nbsp;</a></span>basic_wifi_ap() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::net::basic_wifi_ap::basic_wifi_ap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html">basic_wifi_ap</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0bbec43da5d409d7d315f15361f98383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bbec43da5d409d7d315f15361f98383">&#9670;&nbsp;</a></span>get_broadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">basic_wifi_ap::ip4_adress_t</a> mn::net::basic_wifi_ap::get_broadcast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the broadcast IP address,. </p>
+<dl class="section return"><dt>Returns</dt><dd>The broadcast IP address or MNNET_IPV4_ADDRESS_NONE on error. </dd></dl>
+
+</div>
+</div>
+<a id="a3f9592c2f65013a7299ad2af41950486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9592c2f65013a7299ad2af41950486">&#9670;&nbsp;</a></span>get_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t mn::net::basic_wifi_ap::get_connected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of connected stations. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>start </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of connected stations. </dd></dl>
+
+</div>
+</div>
+<a id="af141c67d0a175eda1cec8bdbb9705dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af141c67d0a175eda1cec8bdbb9705dd2">&#9670;&nbsp;</a></span>get_gateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">basic_wifi_ap::ip4_adress_t</a> mn::net::basic_wifi_ap::get_gateway </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the gateway IP address,. </p>
+<dl class="section return"><dt>Returns</dt><dd>The gateway IP address or MNNET_IPV4_ADDRESS_NONE on error. </dd></dl>
+
+</div>
+</div>
+<a id="a688a1419d5b9eb2b90112e1bb8c45d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688a1419d5b9eb2b90112e1bb8c45d64">&#9670;&nbsp;</a></span>get_hostname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * mn::net::basic_wifi_ap::get_hostname </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the hostname. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>start </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The hostname, on error then return nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a44910142c32fd800f5d851d54af7d7ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44910142c32fd800f5d851d54af7d7ea">&#9670;&nbsp;</a></span>get_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">basic_wifi_ap::ip4_adress_t</a> mn::net::basic_wifi_ap::get_ip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Tte IPv4 address of the WiFi AP device. </p>
+<dl class="section return"><dt>Returns</dt><dd>The IP address or MNNET_IPV4_ADDRESS_NONE on error. </dd></dl>
+
+</div>
+</div>
+<a id="aa1b83284b1f0b0f27ecbed36849e5c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b83284b1f0b0f27ecbed36849e5c8e">&#9670;&nbsp;</a></span>get_ip_infos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tcpip_adapter_ip_info_t mn::net::basic_wifi_ap::get_ip_infos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get interface's IP address information. </p>
+<dl class="section return"><dt>Returns</dt><dd>IP information. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the interface is up, IP information is read directly from the TCP/IP stack and if down then read from a copy kept in the TCP/IP adapter library itself. </dd></dl>
+
+</div>
+</div>
+<a id="a318884ad67d185ff4c073e4e35a058c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a318884ad67d185ff4c073e4e35a058c6">&#9670;&nbsp;</a></span>get_mac() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * mn::net::basic_wifi_ap::get_mac </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the MAC of the WiFi AP device as string. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>start </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The MAC of the WiFi AP device as string, on error return nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a9be5532e4faa680d96ef1c642ab7ce11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be5532e4faa680d96ef1c642ab7ce11">&#9670;&nbsp;</a></span>get_mac() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t * mn::net::basic_wifi_ap::get_mac </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>mac</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the MAC of the WiFi AP device. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>start </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td>The MAC of the WiFi AP device. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the MAC of the WiFi AP device, on error then return nullptr. </dd></dl>
+
+</div>
+</div>
+<a id="a852949efc24b83ef16096ddd81e7f8c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a852949efc24b83ef16096ddd81e7f8c6">&#9670;&nbsp;</a></span>get_netmask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">basic_wifi_ap::ip4_adress_t</a> mn::net::basic_wifi_ap::get_netmask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the netmask IP address,. </p>
+<dl class="section return"><dt>Returns</dt><dd>The netmask IP address or MNNET_IPV4_ADDRESS_NONE on error. </dd></dl>
+
+</div>
+</div>
+<a id="aab4e8eebcc427fb97e47e15ab2083775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4e8eebcc427fb97e47e15ab2083775">&#9670;&nbsp;</a></span>on_connected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::net::basic_wifi_ap::on_connected </td>
+          <td>(</td>
+          <td class="paramtype">esp_event_base_t&#160;</td>
+          <td class="paramname"><em>event_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call on WIFI_EVENT_AP_STACONNECTED event. </p>
+
+</div>
+</div>
+<a id="a66d867709716a9028fe6a8d9ab0cba39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66d867709716a9028fe6a8d9ab0cba39">&#9670;&nbsp;</a></span>on_disconnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::net::basic_wifi_ap::on_disconnected </td>
+          <td>(</td>
+          <td class="paramtype">esp_event_base_t&#160;</td>
+          <td class="paramname"><em>event_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call on WIFI_EVENT_AP_STADISCONNECTED event. </p>
+
+</div>
+</div>
+<a id="a0a7e5a24ec385a7ad75e5dd42c88bba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7e5a24ec385a7ad75e5dd42c88bba7">&#9670;&nbsp;</a></span>on_probereqrec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::net::basic_wifi_ap::on_probereqrec </td>
+          <td>(</td>
+          <td class="paramtype">esp_event_base_t&#160;</td>
+          <td class="paramname"><em>event_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call on WIFI_EVENT_AP_PROBEREQRECVED event. </p>
+
+</div>
+</div>
+<a id="a5f932e79ed4eba33114468f8959f6489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f932e79ed4eba33114468f8959f6489">&#9670;&nbsp;</a></span>on_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::net::basic_wifi_ap::on_start </td>
+          <td>(</td>
+          <td class="paramtype">esp_event_base_t&#160;</td>
+          <td class="paramname"><em>event_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call on WIFI_EVENT_AP_START event. </p>
+
+</div>
+</div>
+<a id="a6ae85bc4f0e9a79c4efd4a000b761b48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae85bc4f0e9a79c4efd4a000b761b48">&#9670;&nbsp;</a></span>on_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mn::net::basic_wifi_ap::on_stop </td>
+          <td>(</td>
+          <td class="paramtype">esp_event_base_t&#160;</td>
+          <td class="paramname"><em>event_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call on WIFI_EVENT_AP_STOP event. </p>
+
+</div>
+</div>
+<a id="a829d1f38f27e2b575361d206fc2198d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a829d1f38f27e2b575361d206fc2198d2">&#9670;&nbsp;</a></span>on_wifi_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mn::net::basic_wifi_ap::on_wifi_event </td>
+          <td>(</td>
+          <td class="paramtype">esp_event_base_t&#160;</td>
+          <td class="paramname"><em>event_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>event_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The basic wife event handler. </p>
+
+<p>Reimplemented from <a class="el" href="classmn_1_1net_1_1basic__wifi.html#afb8c5ffe48d623634e485765b25939a3">mn::net::basic_wifi</a>.</p>
+
+</div>
+</div>
+<a id="a12993c4ef4b6159017d003de50b33a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12993c4ef4b6159017d003de50b33a01">&#9670;&nbsp;</a></span>operator const char *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::net::basic_wifi_ap::operator const char * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The hostname of the WiFi AP device. </dd></dl>
+
+</div>
+</div>
+<a id="a1fea1fe56b330ba48db5798124887bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fea1fe56b330ba48db5798124887bd8">&#9670;&nbsp;</a></span>operator ip4_adress_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::net::basic_wifi_ap::operator <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The IPv4 address of the WiFi AP device. </dd></dl>
+
+</div>
+</div>
+<a id="ab070e5d7a18ad5bd13f00fc2a2957ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab070e5d7a18ad5bd13f00fc2a2957ab2">&#9670;&nbsp;</a></span>operator uint32_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::net::basic_wifi_ap::operator uint32_t </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The number of connected stations. </dd></dl>
+
+</div>
+</div>
+<a id="ac5d2d8f686d55f898a8b4272fb37b530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5d2d8f686d55f898a8b4272fb37b530">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html">basic_wifi_ap</a>&amp; mn::net::basic_wifi_ap::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html">basic_wifi_ap</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a803edbb06b1f194ed07d85cb6449e660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803edbb06b1f194ed07d85cb6449e660">&#9670;&nbsp;</a></span>set_hostname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::net::basic_wifi_ap::set_hostname </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hostname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the hostname, only work when wifi are started. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>start </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>If true then set the hostname and false on error. </dd></dl>
+
+</div>
+</div>
+<a id="a22830d3f4723b0669d1dbf5ba816ee50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22830d3f4723b0669d1dbf5ba816ee50">&#9670;&nbsp;</a></span>set_ipinfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::net::basic_wifi_ap::set_ipinfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>local_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>gateway</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1net_1_1basic__wifi__ap.html#aa2688403939cf1a2c6153d88d40c3951">ip4_adress_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>subnet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set IPv4 infos, local ip, gateway and subnet. </p>
+<dl class="section return"><dt>Returns</dt><dd>If true then set all address anh false if not. </dd></dl>
+
+</div>
+</div>
+<a id="add361721fb49d85547bac41244c180d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add361721fb49d85547bac41244c180d2">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mn::net::basic_wifi_ap::start </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmn_1_1net_1_1basic__wifi.html#a142737e924843a4b21c9ee07798e9ab6">auth_mode_t</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>auth_mode_t::Open</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>passphrase</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>storeCfgToFlash</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ipv6</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em> = <code>13</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ssid_hidden</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_connection</em> = <code>4</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ssid</td><td>The ssid for the wifi (min lenght 8) </td></tr>
+    <tr><td class="paramname">mode</td><td>authenticate mode. </td></tr>
+    <tr><td class="paramname">passphrase</td><td>The password for the wifi, only use when mode not 'auth_mode_t::Open' is. </td></tr>
+    <tr><td class="paramname">storeCfgToFlash</td><td>If true then store the config to memory and nvs. </td></tr>
+    <tr><td class="paramname">ipv6</td><td>When true then enable IPv6 after wifi creating. </td></tr>
+    <tr><td class="paramname">channel</td><td>channel of target AP. </td></tr>
+    <tr><td class="paramname">ssid_hidden</td><td>Broadcast SSID or not, default true, broadcast the SSID. </td></tr>
+    <tr><td class="paramname">max_connection</td><td>Max number of stations allowed to connect in, default 4, max 10. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>ERR_MN_WIFI_SSID: SSID is invalid</li>
+<li>ERR_MN_WIFI_PASSWORD: Password is to short.</li>
+<li>ERR_MN_WIFI_NOT_INIT: WiFi is not initialized.</li>
+<li>ERR_MNTHREAD_INVALID_ARG: invalid argument.</li>
+<li>ERR_MN_WIFI_IF: invalid interface.</li>
+<li>ERR_MN_WIFI_MODE: invalid mode.</li>
+<li>ERR_MN_WIFI_NVS: WiFi internal NVS error.</li>
+<li>ERR_MNTHREAD_OUTOFMEM: out of memory.</li>
+<li>ERR_MN_WIFI_CONN: WiFi internal error, station or soft-AP control block wrong.</li>
+<li>ERR_MN_WIFI_OK: No error. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a0f0dfb5124a186af7738a28ebbeeb7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f0dfb5124a186af7738a28ebbeeb7ee">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::net::basic_wifi_ap::stop </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>wifioff</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Reimplemented from <a class="el" href="classmn_1_1net_1_1basic__wifi.html#a4017a50c0107a0a4b18e6d99f834bfcb">mn::net::basic_wifi</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="mn__wifi__ap_8hpp_source.html">mn_wifi_ap.hpp</a></li>
+<li><a class="el" href="mn__wifi__ap_8cpp.html">mn_wifi_ap.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

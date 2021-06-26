@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_compressed_pair.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__compressed__pair_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_compressed_pair.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__compressed__pair_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __MINILIB_EBCO_COMPRESSED_PAIR_H__</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __MINILIB_EBCO_COMPRESSED_PAIR_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;../mn_algorithm.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__ebo__storage_8hpp.html">mn_ebo_storage.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html">   35</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classmn_1_1compressed__pair.html">compressed_pair</a>  {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a366f949205080fe02d8e2c91990d0185">   37</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1compressed__pair.html">self_type</a> = <a class="code" href="classmn_1_1compressed__pair.html">compressed_pair&lt;T, U&gt;</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a50166dd799a3648ae386d789f663e947">   39</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1compressed__pair.html#a50166dd799a3648ae386d789f663e947">first_value_type</a>       = <span class="keyword">typename</span> <a class="code" href="namespacemn.html#abba49f08d7738ca0fbf74acb7293d1df">type_traits&lt;T&gt;::value_type</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a25442a3c69b50251f957353b65e1448a">   40</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1compressed__pair.html#a25442a3c69b50251f957353b65e1448a">first_reference</a>        = <span class="keyword">typename</span> <a class="code" href="namespacemn.html#adce212b2f04ddfded9b5bba2954fee96">type_traits&lt;T&gt;::reference</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">   41</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a>  = <span class="keyword">typename</span> <a class="code" href="namespacemn.html#a264613021761c85cdbbf3857ac5b3f77">type_traits&lt;T&gt;::const_reference</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#af62acaaf892e137d5b499ec79d6fc265">   42</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1compressed__pair.html#af62acaaf892e137d5b499ec79d6fc265">second_value_type</a>      = <span class="keyword">typename</span> <a class="code" href="namespacemn.html#abba49f08d7738ca0fbf74acb7293d1df">type_traits&lt;U&gt;::value_type</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a462a4393b5cdd64623ee7154d91eb7d5">   43</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1compressed__pair.html#a462a4393b5cdd64623ee7154d91eb7d5">second_reference</a>       = <span class="keyword">typename</span> <a class="code" href="namespacemn.html#adce212b2f04ddfded9b5bba2954fee96">type_traits&lt;U&gt;::reference</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">   44</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> = <span class="keyword">typename</span> <a class="code" href="namespacemn.html#a264613021761c85cdbbf3857ac5b3f77">type_traits&lt;U&gt;::const_reference</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a2bed13f4710a2d4730105e69bf969ba3">   46</a></span>&#160;        constexpr <a class="code" href="classmn_1_1compressed__pair.html#a2bed13f4710a2d4730105e69bf969ba3">compressed_pair</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a6f6293a55496d76cf20311e575fb05c3">   47</a></span>&#160;        <span class="keyword">explicit</span>  <a class="code" href="classmn_1_1compressed__pair.html#a6f6293a55496d76cf20311e575fb05c3">compressed_pair</a>(<a class="code" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a> f) noexcept</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            : <a class="code" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">m_first</a>(f) { }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#ad93d252450d767c9d15c7c3a641687df">   50</a></span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classmn_1_1compressed__pair.html#ad93d252450d767c9d15c7c3a641687df">compressed_pair</a>(<a class="code" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> s) noexcept</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            : <a class="code" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">m_second</a>(s) { }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a217534ec72d3502162476d01b6ea504d">   53</a></span>&#160;        constexpr <a class="code" href="classmn_1_1compressed__pair.html#a217534ec72d3502162476d01b6ea504d">compressed_pair</a>(<a class="code" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a> f, <a class="code" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> s) noexcept</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            : <a class="code" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">m_first</a>(f), <a class="code" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">m_second</a>(s) { }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a48c489bddd88c7c062ad9ca3fe53e263">   56</a></span>&#160;        constexpr <a class="code" href="classmn_1_1compressed__pair.html#a48c489bddd88c7c062ad9ca3fe53e263">compressed_pair</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1compressed__pair.html">self_type</a>&amp; other) noexcept</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                : <a class="code" href="classmn_1_1compressed__pair.html#a2bed13f4710a2d4730105e69bf969ba3">compressed_pair</a>(other.first(), other.second() ) { }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#ab44df9af0b128b3572ed9fa54ec512c1">   60</a></span>&#160;                  <a class="code" href="classmn_1_1compressed__pair.html#a25442a3c69b50251f957353b65e1448a">first_reference</a>        <a class="code" href="classmn_1_1compressed__pair.html#ab44df9af0b128b3572ed9fa54ec512c1">first</a>()  noexcept       { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">m_first</a>.<a class="code" href="classmn_1_1ebo__storage.html#a82e0721271e41b19329125bc9f52eeb7">get</a>(); }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a88a520a1e5cb0bb6b71175ec5e8911fb">   61</a></span>&#160;        constexpr <a class="code" href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">first_const_reference</a>  <a class="code" href="classmn_1_1compressed__pair.html#a88a520a1e5cb0bb6b71175ec5e8911fb">first</a>()  const noexcept { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">m_first</a>.<a class="code" href="classmn_1_1ebo__storage.html#a82e0721271e41b19329125bc9f52eeb7">get</a>(); }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a87966f9dd8330d977da4000121a198ce">   63</a></span>&#160;                  <a class="code" href="classmn_1_1compressed__pair.html#a462a4393b5cdd64623ee7154d91eb7d5">second_reference</a>       <a class="code" href="classmn_1_1compressed__pair.html#a87966f9dd8330d977da4000121a198ce">second</a>() noexcept       { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">m_second</a>.<a class="code" href="classmn_1_1ebo__storage.html#a82e0721271e41b19329125bc9f52eeb7">get</a>(); }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a1da64f3dd3d9705f3416c474abecede2">   64</a></span>&#160;        constexpr <a class="code" href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">second_const_reference</a> <a class="code" href="classmn_1_1compressed__pair.html#a1da64f3dd3d9705f3416c474abecede2">second</a>() const noexcept { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">m_second</a>.<a class="code" href="classmn_1_1ebo__storage.html#a82e0721271e41b19329125bc9f52eeb7">get</a>(); }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#afb8ffdc99723983e7e0887c2c15036a0">   66</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classmn_1_1compressed__pair.html#afb8ffdc99723983e7e0887c2c15036a0">swap</a>(<a class="code" href="classmn_1_1compressed__pair.html">self_type</a>&amp; o) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a>(<a class="code" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">m_first</a>,  o.<a class="code" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">m_first</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a>(<a class="code" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">m_second</a>, o.<a class="code" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">m_second</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">   71</a></span>&#160;        <a class="code" href="classmn_1_1ebo__storage.html">ebo_storage&lt;T, 0&gt;</a>  <a class="code" href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">m_first</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">   72</a></span>&#160;        <a class="code" href="classmn_1_1ebo__storage.html">ebo_storage&lt;U, 1&gt;</a>  <a class="code" href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">m_second</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    };</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_EBCO_COMPRESSED_PAIR_H__</span></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html"><div class="ttname"><a href="classmn_1_1compressed__pair.html">mn::compressed_pair</a></div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:35</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a1da64f3dd3d9705f3416c474abecede2"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a1da64f3dd3d9705f3416c474abecede2">mn::compressed_pair::second</a></div><div class="ttdeci">constexpr second_const_reference second() const noexcept</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:64</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a217534ec72d3502162476d01b6ea504d"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a217534ec72d3502162476d01b6ea504d">mn::compressed_pair::compressed_pair</a></div><div class="ttdeci">constexpr compressed_pair(first_const_reference f, second_const_reference s) noexcept</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:53</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a232abbde10eae37a6a72b5a076b22269"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a232abbde10eae37a6a72b5a076b22269">mn::compressed_pair::m_first</a></div><div class="ttdeci">ebo_storage&lt; T, 0 &gt; m_first</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:71</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a25442a3c69b50251f957353b65e1448a"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a25442a3c69b50251f957353b65e1448a">mn::compressed_pair::first_reference</a></div><div class="ttdeci">typename type_traits&lt; T &gt;::reference first_reference</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:40</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a2bed13f4710a2d4730105e69bf969ba3"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a2bed13f4710a2d4730105e69bf969ba3">mn::compressed_pair::compressed_pair</a></div><div class="ttdeci">constexpr compressed_pair()=default</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a3b9f1e5a9ed33db12bcbccee8c2260c9"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a3b9f1e5a9ed33db12bcbccee8c2260c9">mn::compressed_pair::first_const_reference</a></div><div class="ttdeci">typename type_traits&lt; T &gt;::const_reference first_const_reference</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:41</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a462a4393b5cdd64623ee7154d91eb7d5"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a462a4393b5cdd64623ee7154d91eb7d5">mn::compressed_pair::second_reference</a></div><div class="ttdeci">typename type_traits&lt; U &gt;::reference second_reference</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:43</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a48c489bddd88c7c062ad9ca3fe53e263"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a48c489bddd88c7c062ad9ca3fe53e263">mn::compressed_pair::compressed_pair</a></div><div class="ttdeci">constexpr compressed_pair(const self_type &amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:56</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a50166dd799a3648ae386d789f663e947"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a50166dd799a3648ae386d789f663e947">mn::compressed_pair::first_value_type</a></div><div class="ttdeci">typename type_traits&lt; T &gt;::value_type first_value_type</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:39</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a6f6293a55496d76cf20311e575fb05c3"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a6f6293a55496d76cf20311e575fb05c3">mn::compressed_pair::compressed_pair</a></div><div class="ttdeci">compressed_pair(first_const_reference f) noexcept</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:47</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a7da2cc48508b0238b820aea7c65bd7a9"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a7da2cc48508b0238b820aea7c65bd7a9">mn::compressed_pair::second_const_reference</a></div><div class="ttdeci">typename type_traits&lt; U &gt;::const_reference second_const_reference</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:44</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a87966f9dd8330d977da4000121a198ce"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a87966f9dd8330d977da4000121a198ce">mn::compressed_pair::second</a></div><div class="ttdeci">second_reference second() noexcept</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:63</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_a88a520a1e5cb0bb6b71175ec5e8911fb"><div class="ttname"><a href="classmn_1_1compressed__pair.html#a88a520a1e5cb0bb6b71175ec5e8911fb">mn::compressed_pair::first</a></div><div class="ttdeci">constexpr first_const_reference first() const noexcept</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:61</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_ab44df9af0b128b3572ed9fa54ec512c1"><div class="ttname"><a href="classmn_1_1compressed__pair.html#ab44df9af0b128b3572ed9fa54ec512c1">mn::compressed_pair::first</a></div><div class="ttdeci">first_reference first() noexcept</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:60</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_ad3c337c4d99a00ff9a9b251fba273afb"><div class="ttname"><a href="classmn_1_1compressed__pair.html#ad3c337c4d99a00ff9a9b251fba273afb">mn::compressed_pair::m_second</a></div><div class="ttdeci">ebo_storage&lt; U, 1 &gt; m_second</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:72</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_ad93d252450d767c9d15c7c3a641687df"><div class="ttname"><a href="classmn_1_1compressed__pair.html#ad93d252450d767c9d15c7c3a641687df">mn::compressed_pair::compressed_pair</a></div><div class="ttdeci">compressed_pair(second_const_reference s) noexcept</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:50</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_af62acaaf892e137d5b499ec79d6fc265"><div class="ttname"><a href="classmn_1_1compressed__pair.html#af62acaaf892e137d5b499ec79d6fc265">mn::compressed_pair::second_value_type</a></div><div class="ttdeci">typename type_traits&lt; U &gt;::value_type second_value_type</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:42</div></div>
+<div class="ttc" id="aclassmn_1_1compressed__pair_html_afb8ffdc99723983e7e0887c2c15036a0"><div class="ttname"><a href="classmn_1_1compressed__pair.html#afb8ffdc99723983e7e0887c2c15036a0">mn::compressed_pair::swap</a></div><div class="ttdeci">void swap(self_type &amp;o)</div><div class="ttdef"><b>Definition:</b> mn_compressed_pair.hpp:66</div></div>
+<div class="ttc" id="aclassmn_1_1ebo__storage_html"><div class="ttname"><a href="classmn_1_1ebo__storage.html">mn::ebo_storage&lt; T, 0 &gt;</a></div></div>
+<div class="ttc" id="aclassmn_1_1ebo__storage_html_a82e0721271e41b19329125bc9f52eeb7"><div class="ttname"><a href="classmn_1_1ebo__storage.html#a82e0721271e41b19329125bc9f52eeb7">mn::ebo_storage::get</a></div><div class="ttdeci">reference get() noexcept</div><div class="ttdef"><b>Definition:</b> mn_ebo_storage.hpp:40</div></div>
+<div class="ttc" id="amn__ebo__storage_8hpp_html"><div class="ttname"><a href="mn__ebo__storage_8hpp.html">mn_ebo_storage.hpp</a></div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a264613021761c85cdbbf3857ac5b3f77"><div class="ttname"><a href="namespacemn.html#a264613021761c85cdbbf3857ac5b3f77">mn::type_traits::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_typetraits.hpp:34</div></div>
+<div class="ttc" id="anamespacemn_html_a83841949e9c46378f0f533a3a6605bff"><div class="ttname"><a href="namespacemn.html#a83841949e9c46378f0f533a3a6605bff">mn::swap</a></div><div class="ttdeci">void swap(TAssignable &amp;a, TAssignable &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:312</div></div>
+<div class="ttc" id="anamespacemn_html_abba49f08d7738ca0fbf74acb7293d1df"><div class="ttname"><a href="namespacemn.html#abba49f08d7738ca0fbf74acb7293d1df">mn::type_traits::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_typetraits.hpp:31</div></div>
+<div class="ttc" id="anamespacemn_html_adce212b2f04ddfded9b5bba2954fee96"><div class="ttname"><a href="namespacemn.html#adce212b2f04ddfded9b5bba2954fee96">mn::type_traits::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_typetraits.hpp:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

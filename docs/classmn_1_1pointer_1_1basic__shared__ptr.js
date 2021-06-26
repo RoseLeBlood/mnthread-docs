@@ -1,19 +1,24 @@
 var classmn_1_1pointer_1_1basic__shared__ptr =
 [
-    [ "base_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#af791b97c65cf95f9aae4c35b6e1bdda6", null ],
-    [ "const_value_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#a20e4076a67a6db23d672c1a95f49065d", null ],
-    [ "pointer", "classmn_1_1pointer_1_1basic__shared__ptr.html#acf0b2520eda70252fb407fb552e35f30", null ],
-    [ "ref_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#a2b1e39367996c2ad5c9b02cfa5639761", null ],
-    [ "reference_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#a0ef7a1b8d8ff51ccf56574a5a37048a4", null ],
-    [ "self_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#abefb874bb2cad47de4d712d385fafacc", null ],
-    [ "value_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#a3ffab1bf9c4cfdecdb312bbf37d5ef45", null ],
+    [ "const_value_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#a79b5d5d566a4df2a3a6dbbc6f4f55473", null ],
+    [ "element_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#a02b1a50e4b6943836a5bf6a35d7fbbde", null ],
+    [ "pointer", "classmn_1_1pointer_1_1basic__shared__ptr.html#afc80272286bfbdc3b149ad14523470d7", null ],
+    [ "ref_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#a77ee99fac8b83152d129a085c333fca2", null ],
+    [ "reference", "classmn_1_1pointer_1_1basic__shared__ptr.html#ac6688fea37d0afc37b84136f385b68da", null ],
+    [ "self_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#add1e8cc910ba25191ea2ad8f9ce38244", null ],
+    [ "value_type", "classmn_1_1pointer_1_1basic__shared__ptr.html#a3119e5b9ea73127db0920c21963dded2", null ],
     [ "basic_shared_ptr", "classmn_1_1pointer_1_1basic__shared__ptr.html#a65159f418e8a17cb78fe3348672d9bec", null ],
     [ "basic_shared_ptr", "classmn_1_1pointer_1_1basic__shared__ptr.html#a5ff5dd6abebb871a686ba0d99b288512", null ],
     [ "~basic_shared_ptr", "classmn_1_1pointer_1_1basic__shared__ptr.html#a669581fbbe8b3c04a0ad16a89d8cd4d9", null ],
+    [ "get", "classmn_1_1pointer_1_1basic__shared__ptr.html#acc27d2b500b159ea7c1e21a396ab25ea", null ],
+    [ "operator bool", "classmn_1_1pointer_1_1basic__shared__ptr.html#a4c9f184525605c740642eb711cd10e9c", null ],
+    [ "operator*", "classmn_1_1pointer_1_1basic__shared__ptr.html#ae85c488c9223a4d6fe8f3e78b634885b", null ],
+    [ "operator->", "classmn_1_1pointer_1_1basic__shared__ptr.html#aec05c751a93fbb93e8fc41b9a7f2fc6d", null ],
     [ "operator=", "classmn_1_1pointer_1_1basic__shared__ptr.html#abce6281d027366c3b0df38d072617556", null ],
-    [ "ref", "classmn_1_1pointer_1_1basic__shared__ptr.html#aa9deb66842159b3871082e3d22e30144", null ],
+    [ "ref", "classmn_1_1pointer_1_1basic__shared__ptr.html#a6a23f26ce2ce673098a53c85f75fcd61", null ],
     [ "release", "classmn_1_1pointer_1_1basic__shared__ptr.html#ade54e3e2338dae5ed851459fca530d05", null ],
     [ "reset", "classmn_1_1pointer_1_1basic__shared__ptr.html#a14db35e4f4a950c8e45b09d748cac86f", null ],
     [ "swap", "classmn_1_1pointer_1_1basic__shared__ptr.html#ad4285dcc5f1b444cbe1fbef023021c50", null ],
-    [ "_m_ref", "classmn_1_1pointer_1_1basic__shared__ptr.html#a3e251e4aa4dc6df1d39957123ea8da1c", null ]
+    [ "m_ptr", "classmn_1_1pointer_1_1basic__shared__ptr.html#a811f8d317b0b420f685f31386cefb644", null ],
+    [ "m_ref", "classmn_1_1pointer_1_1basic__shared__ptr.html#ab1c84e638e968da6b2e80895b21b2bb4", null ]
 ];

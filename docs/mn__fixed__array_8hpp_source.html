@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_fixed_array.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__fixed__array_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_fixed_array.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__fixed__array_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef __MINILIB_CONTAINER_FIXED_ARRAY_H__</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define __MINILIB_CONTAINER_FIXED_ARRAY_H__</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"># include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"># include &lt;typeinfo&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;../mn_allocator.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;../mn_def.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;../mn_functional.hpp&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;../mn_typetraits.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;../utils/mn_utils.hpp&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">namespace </span>container {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html">   51</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array</a> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#aae659a0d4c69ab803c9cdfd8b5ea8cf1">   53</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">self_type</a> = <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a4c69f77a5e6a2e082033202cce657e49">   55</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a4c69f77a5e6a2e082033202cce657e49">value_type</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#ab477d97bcbd5a53d26cb9d28d1bd4d07">   56</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#ab477d97bcbd5a53d26cb9d28d1bd4d07">pointer</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a5666d68fa80eae3f0f47bdc1384d48dd">   57</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a5666d68fa80eae3f0f47bdc1384d48dd">const_pointer</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a62a14bf42ef3755c6824a8e14249aff6">   58</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a62a14bf42ef3755c6824a8e14249aff6">reference</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#af05871934685268b414b81f977650c14">   59</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#af05871934685268b414b81f977650c14">const_reference</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>&amp;;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a8c51a458cef38c21a09a7f2b25c5359b">   60</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a8c51a458cef38c21a09a7f2b25c5359b">iterator</a> = <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#acc27de627e302d5ac29be86201e6eafa">   61</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#acc27de627e302d5ac29be86201e6eafa">const_iterator</a> = <span class="keyword">const</span> <a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>*;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a01f45f412f273d02af4dccec1dd00ae2">   63</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a01f45f412f273d02af4dccec1dd00ae2">size_type</a> = <a class="code" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#aba7cd79d93f0ad5d8b5083e715dcdd5a">   64</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#aba7cd79d93f0ad5d8b5083e715dcdd5a">difference_type</a> = <a class="code" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a3ed53a047e0f6ed4f250ad45355b57dc">   66</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a3ed53a047e0f6ed4f250ad45355b57dc">basic_fixed_array</a>() { <span class="keywordflow">if</span>(<a class="code" href="structmn_1_1is__pointer.html">is_pointer&lt;T&gt;::value</a>) <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a69ba428a38833668b1e7f70d3847d07f">fill</a>(<span class="keyword">nullptr</span>); <span class="keywordflow">else</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a69ba428a38833668b1e7f70d3847d07f">fill</a>(<a class="code" href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">T</a>()); }</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a6f89fc3934658f4cfd75950b7df6adcd">   67</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6f89fc3934658f4cfd75950b7df6adcd">basic_fixed_array</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a4c69f77a5e6a2e082033202cce657e49">value_type</a>&amp; val)    { <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a69ba428a38833668b1e7f70d3847d07f">fill</a>(val); }</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a449958af484b4201817977d7ea506ecc">   68</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a449958af484b4201817977d7ea506ecc">basic_fixed_array</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                memcpy(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>, other.<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>, <span class="keyword">sizeof</span>(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a30d8113090456e6cdb372744fe615a70">   73</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a8c51a458cef38c21a09a7f2b25c5359b">iterator</a>        <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a30d8113090456e6cdb372744fe615a70">begin</a>() noexcept            { <span class="keywordflow">return</span> &amp;<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[0]; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#acee679825f91f096f78192292531d26f">   74</a></span>&#160;            constexpr <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#acc27de627e302d5ac29be86201e6eafa">const_iterator</a>    <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#acee679825f91f096f78192292531d26f">begin</a>() const noexcept</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                { <span class="keywordflow">return</span> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[0]); }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a606e0ad9293df32a60b3158932a0c906">   77</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a8c51a458cef38c21a09a7f2b25c5359b">iterator</a>        <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a606e0ad9293df32a60b3158932a0c906">end</a>() noexcept              { <span class="keywordflow">return</span> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[N-1]); }</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#ad1f986a4cfb94ce585027b304ba89053">   78</a></span>&#160;            constexpr <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#acc27de627e302d5ac29be86201e6eafa">const_iterator</a>    <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#ad1f986a4cfb94ce585027b304ba89053">end</a>() const noexcept</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                { <span class="keywordflow">return</span> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[N-1]); }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#aaa4977572cdd73adcc96b080c2de7385">   81</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a62a14bf42ef3755c6824a8e14249aff6">reference</a>       <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#aaa4977572cdd73adcc96b080c2de7385">front</a>() noexcept            { <span class="keywordflow">return</span> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[0]); }</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a3bfec577abdc969b8db33d953c84f143">   82</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#af05871934685268b414b81f977650c14">const_reference</a> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a3bfec577abdc969b8db33d953c84f143">front</a>() const noexcept      { <span class="keywordflow">return</span> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[0]); }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a977828a4b7f40fa84ff7219a9104620c">   84</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a62a14bf42ef3755c6824a8e14249aff6">reference</a>       <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a977828a4b7f40fa84ff7219a9104620c">back</a>() noexcept             { <span class="keywordflow">return</span> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[N-1]); }</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a41a102f525afb609f90e19079183d0aa">   85</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#af05871934685268b414b81f977650c14">const_reference</a> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a41a102f525afb609f90e19079183d0aa">back</a>() const noexcept       { <span class="keywordflow">return</span> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[N-1]); }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a8748ad1bb323349ca41cce66271e40d4">   87</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a01f45f412f273d02af4dccec1dd00ae2">size_type</a>       <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a8748ad1bb323349ca41cce66271e40d4">size</a>() const noexcept       { <span class="keywordflow">return</span> N; }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a675424c4aa1aefe5d4b210e33d10f4d9">   89</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a62a14bf42ef3755c6824a8e14249aff6">reference</a>       <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a675424c4aa1aefe5d4b210e33d10f4d9">at</a>(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a01f45f412f273d02af4dccec1dd00ae2">size_type</a> pos)           { <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[pos]; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a42e823187ea4dd0c2ad1c78cfd637f86">   90</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#af05871934685268b414b81f977650c14">const_reference</a> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a42e823187ea4dd0c2ad1c78cfd637f86">at</a>(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a01f45f412f273d02af4dccec1dd00ae2">size_type</a> pos)<span class="keyword"> const     </span>{ <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[pos]; }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a69ba428a38833668b1e7f70d3847d07f">   92</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a69ba428a38833668b1e7f70d3847d07f">fill</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a4c69f77a5e6a2e082033202cce657e49">value_type</a>&amp; val) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                mn::fill_n&lt;value_type&gt;(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a30d8113090456e6cdb372744fe615a70">begin</a>(), N, val);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a9cebf4a3475a32bf632faf8b66bbfe45">   96</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a9cebf4a3475a32bf632faf8b66bbfe45">swap</a>(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">self_type</a>&amp; other) noexcept  {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <a class="code" href="namespacemn.html#a85fa3944161d1c9bf27544710f6edbaf">swap_ranges</a>(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a30d8113090456e6cdb372744fe615a70">begin</a>(), <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a606e0ad9293df32a60b3158932a0c906">end</a>(), other.begin());</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a74eb397ccb27412794646af60e5d4688">  100</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a62a14bf42ef3755c6824a8e14249aff6">reference</a> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a74eb397ccb27412794646af60e5d4688">operator[]</a>(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a01f45f412f273d02af4dccec1dd00ae2">size_type</a> pos) noexcept {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[pos]; }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a747f716d1f3004e5c47e50df9dc5e412">  103</a></span>&#160;            constexpr <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#af05871934685268b414b81f977650c14">const_reference</a> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a747f716d1f3004e5c47e50df9dc5e412">operator[]</a>(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a01f45f412f273d02af4dccec1dd00ae2">size_type</a> pos) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[pos];</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#afb96b6f2f5db8a4bf38ff2ac3c048a64">  107</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#afb96b6f2f5db8a4bf38ff2ac3c048a64">is_equele</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">self_type</a>&amp; other) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i&lt;N; i++)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[i] != other.<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">  114</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a4c69f77a5e6a2e082033202cce657e49">value_type</a> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">m_nData</a>[N];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        };</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">// Array comparisons.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a6d864ecb9a96e937ce5c4711ba2fa048">  119</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span>  <a class="code" href="namespacemn_1_1container.html#af7922d26526a6cd3ea4e74b0225ac0f9">operator == </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordflow">return</span> a.<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#afb96b6f2f5db8a4bf38ff2ac3c048a64">is_equele</a>(b);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#ac97341bed49c130e8eb2a36165ec987a">  124</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span>  <a class="code" href="namespacemn_1_1container.html#aa5106b69c9698d6f5c1323cb8404254a">operator != </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordflow">return</span> !(a.<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#afb96b6f2f5db8a4bf38ff2ac3c048a64">is_equele</a>(b));</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#ac709127aeb9a92f230a36a141bc5fac0">  130</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span>  <a class="code" href="namespacemn_1_1container.html#a82fbe5d465ef306da9fea991f128968f">operator &lt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i&lt;N; i++)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <span class="keywordflow">if</span>(a[i] &gt;= b[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a010a39dcc8d3adb730ba3a581b665b5b">  137</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span>  <a class="code" href="namespacemn_1_1container.html#a54120f5cadd9a27baffc1d68281a6f13">operator &lt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i&lt;N; i++)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">if</span>(a[i] &gt; b[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a57bb87ed53c0522162dd34c5314ec256">  144</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span>  <a class="code" href="namespacemn_1_1container.html#ada088082e4470a10af63133a7af8f69b">operator &gt; </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i&lt;N; i++)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordflow">if</span>(a[i] &lt;= b[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a0e0e61f74c21cf293c40bc6fccc639a8">  151</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span>  <a class="code" href="namespacemn_1_1container.html#aae2bff01afc5a79ae97f953d9e8517fe">operator &gt;= </a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i&lt;N; i++)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keywordflow">if</span>(a[i] &lt; b[i]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#aebf9f694fca2dc761af6e8a6e72cb2ce">  158</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemn_1_1container.html#a86fdee12ccbf94550c54e89e4d4bf7a3">swap</a> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a, <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            a.<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a9cebf4a3475a32bf632faf8b66bbfe45">swap</a>(b);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a654756bab35a63f2637961e6ef608874">  163</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemn_1_1container.html#a127bd7f89825bbcc728c55aae4474996">fill</a> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a, <span class="keyword">const</span> <span class="keywordtype">int</span> val) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            a.<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a69ba428a38833668b1e7f70d3847d07f">fill</a>(val);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#a8a3d6eaf7af75ccb07bcd19a957fad7e">  168</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacemn_1_1container.html#ada0e60767ee295a65625bfff73e7ee18">zero</a> (<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>&amp; a) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            a.<a class="code" href="classmn_1_1container_1_1basic__fixed__array.html#a69ba428a38833668b1e7f70d3847d07f">fill</a>(0);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#acb1f06944912dc5ea34ad9d2f0978c48">  173</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">fixed_array</a> = <a class="code" href="classmn_1_1container_1_1basic__fixed__array.html">basic_fixed_array&lt;T, N&gt;</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_CONTAINER_ARRAY_H__</span></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html">mn::container::basic_fixed_array</a></div><div class="ttdoc">A standard container for storing a fixed size sequence of elements.</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:51</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a01f45f412f273d02af4dccec1dd00ae2"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a01f45f412f273d02af4dccec1dd00ae2">mn::container::basic_fixed_array::size_type</a></div><div class="ttdeci">mn::size_t size_type</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:63</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a30d8113090456e6cdb372744fe615a70"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a30d8113090456e6cdb372744fe615a70">mn::container::basic_fixed_array::begin</a></div><div class="ttdeci">iterator begin() noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:73</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a3bfec577abdc969b8db33d953c84f143"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a3bfec577abdc969b8db33d953c84f143">mn::container::basic_fixed_array::front</a></div><div class="ttdeci">const_reference front() const noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:82</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a3ed53a047e0f6ed4f250ad45355b57dc"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a3ed53a047e0f6ed4f250ad45355b57dc">mn::container::basic_fixed_array::basic_fixed_array</a></div><div class="ttdeci">basic_fixed_array()</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:66</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a41a102f525afb609f90e19079183d0aa"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a41a102f525afb609f90e19079183d0aa">mn::container::basic_fixed_array::back</a></div><div class="ttdeci">const_reference back() const noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:85</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a42e823187ea4dd0c2ad1c78cfd637f86"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a42e823187ea4dd0c2ad1c78cfd637f86">mn::container::basic_fixed_array::at</a></div><div class="ttdeci">const_reference at(size_type pos) const</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:90</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a449958af484b4201817977d7ea506ecc"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a449958af484b4201817977d7ea506ecc">mn::container::basic_fixed_array::basic_fixed_array</a></div><div class="ttdeci">basic_fixed_array(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:68</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a4c69f77a5e6a2e082033202cce657e49"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a4c69f77a5e6a2e082033202cce657e49">mn::container::basic_fixed_array::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:55</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a5666d68fa80eae3f0f47bdc1384d48dd"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a5666d68fa80eae3f0f47bdc1384d48dd">mn::container::basic_fixed_array::const_pointer</a></div><div class="ttdeci">const T * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:57</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a606e0ad9293df32a60b3158932a0c906"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a606e0ad9293df32a60b3158932a0c906">mn::container::basic_fixed_array::end</a></div><div class="ttdeci">iterator end() noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:77</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a62a14bf42ef3755c6824a8e14249aff6"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a62a14bf42ef3755c6824a8e14249aff6">mn::container::basic_fixed_array::reference</a></div><div class="ttdeci">T &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:58</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a675424c4aa1aefe5d4b210e33d10f4d9"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a675424c4aa1aefe5d4b210e33d10f4d9">mn::container::basic_fixed_array::at</a></div><div class="ttdeci">reference at(size_type pos)</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:89</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a69ba428a38833668b1e7f70d3847d07f"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a69ba428a38833668b1e7f70d3847d07f">mn::container::basic_fixed_array::fill</a></div><div class="ttdeci">void fill(const value_type &amp;val)</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:92</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a6ea0439e1e71afd1085a50a351dfb164"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a6ea0439e1e71afd1085a50a351dfb164">mn::container::basic_fixed_array::m_nData</a></div><div class="ttdeci">value_type m_nData[N]</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:114</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a6f89fc3934658f4cfd75950b7df6adcd"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a6f89fc3934658f4cfd75950b7df6adcd">mn::container::basic_fixed_array::basic_fixed_array</a></div><div class="ttdeci">basic_fixed_array(const value_type &amp;val)</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:67</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a747f716d1f3004e5c47e50df9dc5e412"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a747f716d1f3004e5c47e50df9dc5e412">mn::container::basic_fixed_array::operator[]</a></div><div class="ttdeci">constexpr const_reference operator[](size_type pos) const noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:103</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a74eb397ccb27412794646af60e5d4688"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a74eb397ccb27412794646af60e5d4688">mn::container::basic_fixed_array::operator[]</a></div><div class="ttdeci">reference operator[](size_type pos) noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:100</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a8748ad1bb323349ca41cce66271e40d4"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a8748ad1bb323349ca41cce66271e40d4">mn::container::basic_fixed_array::size</a></div><div class="ttdeci">size_type size() const noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:87</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a8c51a458cef38c21a09a7f2b25c5359b"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a8c51a458cef38c21a09a7f2b25c5359b">mn::container::basic_fixed_array::iterator</a></div><div class="ttdeci">T * iterator</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:60</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a977828a4b7f40fa84ff7219a9104620c"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a977828a4b7f40fa84ff7219a9104620c">mn::container::basic_fixed_array::back</a></div><div class="ttdeci">reference back() noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:84</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_a9cebf4a3475a32bf632faf8b66bbfe45"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#a9cebf4a3475a32bf632faf8b66bbfe45">mn::container::basic_fixed_array::swap</a></div><div class="ttdeci">void swap(self_type &amp;other) noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:96</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_aaa4977572cdd73adcc96b080c2de7385"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#aaa4977572cdd73adcc96b080c2de7385">mn::container::basic_fixed_array::front</a></div><div class="ttdeci">reference front() noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:81</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_ab477d97bcbd5a53d26cb9d28d1bd4d07"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#ab477d97bcbd5a53d26cb9d28d1bd4d07">mn::container::basic_fixed_array::pointer</a></div><div class="ttdeci">T * pointer</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:56</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_aba7cd79d93f0ad5d8b5083e715dcdd5a"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#aba7cd79d93f0ad5d8b5083e715dcdd5a">mn::container::basic_fixed_array::difference_type</a></div><div class="ttdeci">mn::ptrdiff_t difference_type</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:64</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_acc27de627e302d5ac29be86201e6eafa"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#acc27de627e302d5ac29be86201e6eafa">mn::container::basic_fixed_array::const_iterator</a></div><div class="ttdeci">const T * const_iterator</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:61</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_acee679825f91f096f78192292531d26f"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#acee679825f91f096f78192292531d26f">mn::container::basic_fixed_array::begin</a></div><div class="ttdeci">constexpr const_iterator begin() const noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:74</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_ad1f986a4cfb94ce585027b304ba89053"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#ad1f986a4cfb94ce585027b304ba89053">mn::container::basic_fixed_array::end</a></div><div class="ttdeci">constexpr const_iterator end() const noexcept</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:78</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_af05871934685268b414b81f977650c14"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#af05871934685268b414b81f977650c14">mn::container::basic_fixed_array::const_reference</a></div><div class="ttdeci">const T &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:59</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__fixed__array_html_afb96b6f2f5db8a4bf38ff2ac3c048a64"><div class="ttname"><a href="classmn_1_1container_1_1basic__fixed__array.html#afb96b6f2f5db8a4bf38ff2ac3c048a64">mn::container::basic_fixed_array::is_equele</a></div><div class="ttdeci">bool is_equele(const self_type &amp;other)</div><div class="ttdef"><b>Definition:</b> mn_fixed_array.hpp:107</div></div>
+<div class="ttc" id="amn__algorithm_8hpp_html"><div class="ttname"><a href="mn__algorithm_8hpp.html">mn_algorithm.hpp</a></div><div class="ttdoc">Basic algorithmens This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniT...</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_a127bd7f89825bbcc728c55aae4474996"><div class="ttname"><a href="namespacemn_1_1container.html#a127bd7f89825bbcc728c55aae4474996">mn::container::fill</a></div><div class="ttdeci">void fill(basic_array&lt; T, TAllocator, TDeleter &gt; &amp;a, const int val)</div><div class="ttdef"><b>Definition:</b> mn_array.hpp:330</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_a54120f5cadd9a27baffc1d68281a6f13"><div class="ttname"><a href="namespacemn_1_1container.html#a54120f5cadd9a27baffc1d68281a6f13">mn::container::operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;a, const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_array.hpp:300</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_a82fbe5d465ef306da9fea991f128968f"><div class="ttname"><a href="namespacemn_1_1container.html#a82fbe5d465ef306da9fea991f128968f">mn::container::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;a, const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_array.hpp:292</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_a86fdee12ccbf94550c54e89e4d4bf7a3"><div class="ttname"><a href="namespacemn_1_1container.html#a86fdee12ccbf94550c54e89e4d4bf7a3">mn::container::swap</a></div><div class="ttdeci">void swap(basic_any &amp;x, basic_any &amp;y) noexcept</div><div class="ttdef"><b>Definition:</b> mn_any.hpp:272</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_aa5106b69c9698d6f5c1323cb8404254a"><div class="ttname"><a href="namespacemn_1_1container.html#aa5106b69c9698d6f5c1323cb8404254a">mn::container::operator!=</a></div><div class="ttdeci">bool operator!=(const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;a, const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_array.hpp:285</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_aae2bff01afc5a79ae97f953d9e8517fe"><div class="ttname"><a href="namespacemn_1_1container.html#aae2bff01afc5a79ae97f953d9e8517fe">mn::container::operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;a, const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_array.hpp:316</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_ada088082e4470a10af63133a7af8f69b"><div class="ttname"><a href="namespacemn_1_1container.html#ada088082e4470a10af63133a7af8f69b">mn::container::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;a, const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_array.hpp:308</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_ada0e60767ee295a65625bfff73e7ee18"><div class="ttname"><a href="namespacemn_1_1container.html#ada0e60767ee295a65625bfff73e7ee18">mn::container::zero</a></div><div class="ttdeci">void zero(basic_array&lt; T, TAllocator, TDeleter &gt; &amp;a)</div><div class="ttdef"><b>Definition:</b> mn_array.hpp:335</div></div>
+<div class="ttc" id="anamespacemn_1_1container_html_af7922d26526a6cd3ea4e74b0225ac0f9"><div class="ttname"><a href="namespacemn_1_1container.html#af7922d26526a6cd3ea4e74b0225ac0f9">mn::container::operator==</a></div><div class="ttdeci">bool operator==(const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;a, const basic_array&lt; T, TAllocator, TDeleter &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> mn_array.hpp:279</div></div>
+<div class="ttc" id="anamespacemn_1_1memory_1_1detail_html_a3179d74d784513b556ce52d25fc357e7"><div class="ttname"><a href="namespacemn_1_1memory_1_1detail.html#a3179d74d784513b556ce52d25fc357e7">mn::memory::detail::T</a></div><div class="ttdeci">struct mn::memory::detail::ptr_difference T</div><div class="ttdef"><b>Definition:</b> mn_atomic_singleton.hpp:38</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a85fa3944161d1c9bf27544710f6edbaf"><div class="ttname"><a href="namespacemn.html#a85fa3944161d1c9bf27544710f6edbaf">mn::swap_ranges</a></div><div class="ttdeci">fIt2 swap_ranges(fIt1 a, fIt1 b, fIt2 c)</div><div class="ttdef"><b>Definition:</b> mn_algorithm.hpp:331</div></div>
+<div class="ttc" id="anamespacemn_html_a8d0b944ea3172c4bc932d79d3e2c01c1"><div class="ttname"><a href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a></div><div class="ttdeci">long ptrdiff_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:47</div></div>
+<div class="ttc" id="anamespacemn_html_af487f8a5d975f2b50b68065096c732ed"><div class="ttname"><a href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></div><div class="ttdeci">MN_THREAD_CONFIG_SIZE_TYPE size_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:46</div></div>
+<div class="ttc" id="astructmn_1_1is__pointer_html"><div class="ttname"><a href="structmn_1_1is__pointer.html">mn::is_pointer</a></div><div class="ttdef"><b>Definition:</b> mn_typetraits.hpp:349</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::memory::basic_threadsafed_allocator&lt; TMutex, TAllocator, TFilter &gt; Class Template Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1memory_1_1basic__threadsafed__allocator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classmn_1_1memory_1_1basic__threadsafed__allocator-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::memory::basic_threadsafed_allocator&lt; TMutex, TAllocator, TFilter &gt; Class Template Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mn__lock__storage_8hpp_source.html">mn_lock_storage.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::memory::basic_threadsafed_allocator&lt; TMutex, TAllocator, TFilter &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1memory_1_1basic__threadsafed__allocator__coll__graph.svg" width="243" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af0c8fb124dc4dae362eec8f4a3f99ace"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#af0c8fb124dc4dae362eec8f4a3f99ace">allocator_category</a> = typename allocator::allocator_category</td></tr>
+<tr class="separator:af0c8fb124dc4dae362eec8f4a3f99ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1390df64b899b6b941f7121a56d95409"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a1390df64b899b6b941f7121a56d95409">value_type</a> = void</td></tr>
+<tr class="separator:a1390df64b899b6b941f7121a56d95409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52c0f2e66c94a9c9019a567036513e0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a> = void *</td></tr>
+<tr class="separator:ac52c0f2e66c94a9c9019a567036513e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0e86dbcf1922773c1a8f6b852668bc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#aed0e86dbcf1922773c1a8f6b852668bc">const_pointer</a> = const void *</td></tr>
+<tr class="separator:aed0e86dbcf1922773c1a8f6b852668bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3708d5d8f8439254d16008067b9fb572"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a3708d5d8f8439254d16008067b9fb572">difference_type</a> = <a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a></td></tr>
+<tr class="separator:a3708d5d8f8439254d16008067b9fb572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106085ea07e8e6e82ae86a0d66c5a060"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a106085ea07e8e6e82ae86a0d66c5a060">size_type</a> = <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a></td></tr>
+<tr class="separator:a106085ea07e8e6e82ae86a0d66c5a060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4092c43522678cf7930d89fc26a94504"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a4092c43522678cf7930d89fc26a94504">is_thread_safe</a> = <a class="el" href="namespacemn.html#a7153baf13d7f8bec585ed6ea2625fe06">mn::true_type</a></td></tr>
+<tr class="separator:a4092c43522678cf7930d89fc26a94504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646cf32cd670a602a054c35e93ecc8d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a> = TMutex</td></tr>
+<tr class="separator:a646cf32cd670a602a054c35e93ecc8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996b437fe4bf9ecab674d53bc45b8f50"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a996b437fe4bf9ecab674d53bc45b8f50">allocator_impl</a> = TAllocator</td></tr>
+<tr class="separator:a996b437fe4bf9ecab674d53bc45b8f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f65ece6439f935c99f97fb08c5ff6f4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a0f65ece6439f935c99f97fb08c5ff6f4">filter_type</a> = TFilter</td></tr>
+<tr class="separator:a0f65ece6439f935c99f97fb08c5ff6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd73ddbace6905868a2ddcd6dce2351"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a3dd73ddbace6905868a2ddcd6dce2351">self_type</a> = <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;</td></tr>
+<tr class="separator:a3dd73ddbace6905868a2ddcd6dce2351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c485cfa6728cdeb37c852ec7201ddd6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a1c485cfa6728cdeb37c852ec7201ddd6">lock_guard</a> = <a class="el" href="classmn_1_1basic__autolock.html">mn::basic_autolock</a>&lt; <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a> &gt;</td></tr>
+<tr class="separator:a1c485cfa6728cdeb37c852ec7201ddd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4624218fca1467b841a28cc4800c5205"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a4624218fca1467b841a28cc4800c5205">basic_threadsafed_allocator</a> () noexcept</td></tr>
+<tr class="separator:a4624218fca1467b841a28cc4800c5205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a46f5e5b58b8025167a7f9d305beb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ad8a46f5e5b58b8025167a7f9d305beb6">basic_threadsafed_allocator</a> (const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a> &amp;lckObject) noexcept</td></tr>
+<tr class="separator:ad8a46f5e5b58b8025167a7f9d305beb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef380c754f1df2a0e79b7837990e23a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#afef380c754f1df2a0e79b7837990e23a">basic_threadsafed_allocator</a> (const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a> &amp;lckObject, const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a0f65ece6439f935c99f97fb08c5ff6f4">filter_type</a> &amp;_fFilter) noexcept</td></tr>
+<tr class="separator:afef380c754f1df2a0e79b7837990e23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aca2e47bddd22f74645359d09a4336b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a1aca2e47bddd22f74645359d09a4336b">allocate</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> alignment)</td></tr>
+<tr class="memdesc:a1aca2e47bddd22f74645359d09a4336b"><td class="mdescLeft">&#160;</td><td class="mdescRight">malloc() a buffer in a given TAllocator and cheak with the given TFilter is this okay to alloc  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a1aca2e47bddd22f74645359d09a4336b">More...</a><br /></td></tr>
+<tr class="separator:a1aca2e47bddd22f74645359d09a4336b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209183d4c75d6a856ae5126ac276dd70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a209183d4c75d6a856ae5126ac276dd70">allocate</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size)</td></tr>
+<tr class="memdesc:a209183d4c75d6a856ae5126ac276dd70"><td class="mdescLeft">&#160;</td><td class="mdescRight">malloc() a buffer in a given TAllocator and cheak with the given TFilter is this okay to alloc  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a209183d4c75d6a856ae5126ac276dd70">More...</a><br /></td></tr>
+<tr class="separator:a209183d4c75d6a856ae5126ac276dd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9ae854e21e7ef5d387b3a5a4781271"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a9a9ae854e21e7ef5d387b3a5a4781271">allocate</a> (<a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> count, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> alignment=0)</td></tr>
+<tr class="memdesc:a9a9ae854e21e7ef5d387b3a5a4781271"><td class="mdescLeft">&#160;</td><td class="mdescRight">malloc() a buffer in a given TAllocator and cheak with the given TFilter is this okay to alloc  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a9a9ae854e21e7ef5d387b3a5a4781271">More...</a><br /></td></tr>
+<tr class="separator:a9a9ae854e21e7ef5d387b3a5a4781271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f18835e6c519db323d98cd9ead0ca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a63f18835e6c519db323d98cd9ead0ca2">deallocate</a> (<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a> address, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> alignment) noexcept</td></tr>
+<tr class="memdesc:a63f18835e6c519db323d98cd9ead0ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">free() a buffer in a given heap.  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a63f18835e6c519db323d98cd9ead0ca2">More...</a><br /></td></tr>
+<tr class="separator:a63f18835e6c519db323d98cd9ead0ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa783968da7d923eb03ce7793f8c59bdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#aa783968da7d923eb03ce7793f8c59bdd">deallocate</a> (<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a> address, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size) noexcept</td></tr>
+<tr class="memdesc:aa783968da7d923eb03ce7793f8c59bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">free() a buffer in a given heap.  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#aa783968da7d923eb03ce7793f8c59bdd">More...</a><br /></td></tr>
+<tr class="separator:aa783968da7d923eb03ce7793f8c59bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876d65a2e6c5d6d9f8618e99ebad7844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a876d65a2e6c5d6d9f8618e99ebad7844">deallocate</a> (<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a> address, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> count, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> size, <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> alignment) noexcept</td></tr>
+<tr class="memdesc:a876d65a2e6c5d6d9f8618e99ebad7844"><td class="mdescLeft">&#160;</td><td class="mdescRight">free() a buffer in a given heap.  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a876d65a2e6c5d6d9f8618e99ebad7844">More...</a><br /></td></tr>
+<tr class="separator:a876d65a2e6c5d6d9f8618e99ebad7844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b82d9ba0b55e7be2a8836fce10507c"><td class="memTemplParams" colspan="2">template&lt;class Type , typename... Args&gt; </td></tr>
+<tr class="memitem:ac1b82d9ba0b55e7be2a8836fce10507c"><td class="memTemplItemLeft" align="right" valign="top">Type *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac1b82d9ba0b55e7be2a8836fce10507c">construct</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ac1b82d9ba0b55e7be2a8836fce10507c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a object from allocated impl.  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac1b82d9ba0b55e7be2a8836fce10507c">More...</a><br /></td></tr>
+<tr class="separator:ac1b82d9ba0b55e7be2a8836fce10507c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e1c97dca426d87f87bcb388065a7d46"><td class="memTemplParams" colspan="2">template&lt;class Type &gt; </td></tr>
+<tr class="memitem:a0e1c97dca426d87f87bcb388065a7d46"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a0e1c97dca426d87f87bcb388065a7d46">destroy</a> (Type *address) noexcept</td></tr>
+<tr class="memdesc:a0e1c97dca426d87f87bcb388065a7d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deconstruct a object (call deconstructor) and free the memory.  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a0e1c97dca426d87f87bcb388065a7d46">More...</a><br /></td></tr>
+<tr class="separator:a0e1c97dca426d87f87bcb388065a7d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b29b451661bf7228fa5f0e32b57f1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac0b29b451661bf7228fa5f0e32b57f1e">get_max_alocator_size</a> () const noexcept</td></tr>
+<tr class="memdesc:ac0b29b451661bf7228fa5f0e32b57f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximal size to allocate.  <a href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac0b29b451661bf7228fa5f0e32b57f1e">More...</a><br /></td></tr>
+<tr class="separator:ac0b29b451661bf7228fa5f0e32b57f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e33cbcf22e6eae7b84589a791ef46c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a44e33cbcf22e6eae7b84589a791ef46c">lock</a> (unsigned long xTicksToWait=0) const</td></tr>
+<tr class="separator:a44e33cbcf22e6eae7b84589a791ef46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b85e53e3cd98810763c8c4890c4e0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#aa8b85e53e3cd98810763c8c4890c4e0e">unlock</a> () const noexcept</td></tr>
+<tr class="separator:aa8b85e53e3cd98810763c8c4890c4e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0b5ac5d3a868e02bf7d2f731487548"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a2f0b5ac5d3a868e02bf7d2f731487548">set_ticksToWait</a> (unsigned long xTicksToWait)</td></tr>
+<tr class="separator:a2f0b5ac5d3a868e02bf7d2f731487548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ee693d8cd1bdfca5ccc6218ddb6cda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a93ee693d8cd1bdfca5ccc6218ddb6cda">is_locked</a> ()</td></tr>
+<tr class="separator:a93ee693d8cd1bdfca5ccc6218ddb6cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113c441924ef1228194b072e0f2d87f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a113c441924ef1228194b072e0f2d87f4">basic_threadsafed_allocator</a> (const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a3dd73ddbace6905868a2ddcd6dce2351">self_type</a> &amp;other) noexcept=delete</td></tr>
+<tr class="separator:a113c441924ef1228194b072e0f2d87f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80857794591d264bffb1571c8f32dd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a3dd73ddbace6905868a2ddcd6dce2351">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ad80857794591d264bffb1571c8f32dd5">operator=</a> (const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">basic_threadsafed_allocator</a> &amp;other) noexcept=delete</td></tr>
+<tr class="separator:ad80857794591d264bffb1571c8f32dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a80215c20a824061cc5f7c6303be99a04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a80215c20a824061cc5f7c6303be99a04">m_lockObjct</a></td></tr>
+<tr class="separator:a80215c20a824061cc5f7c6303be99a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f54fa3ec9a6f31093253cbe168bf5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a0f65ece6439f935c99f97fb08c5ff6f4">filter_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#aa5f54fa3ec9a6f31093253cbe168bf5f">m_fFilter</a></td></tr>
+<tr class="separator:aa5f54fa3ec9a6f31093253cbe168bf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d1d6dc587fd7fb60bb992a8f4644af"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a97d1d6dc587fd7fb60bb992a8f4644af">m_xTicksToWait</a></td></tr>
+<tr class="separator:a97d1d6dc587fd7fb60bb992a8f4644af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class TMutex, class TAllocator, class TFilter = basic_allocator_filter&gt;<br />
+class mn::memory::basic_threadsafed_allocator&lt; TMutex, TAllocator, TFilter &gt;</h3>
+
+<p>The basic allocater for all allocator impl in this library, with thread-safed version. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af0c8fb124dc4dae362eec8f4a3f99ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c8fb124dc4dae362eec8f4a3f99ace">&#9670;&nbsp;</a></span>allocator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#af0c8fb124dc4dae362eec8f4a3f99ace">allocator_category</a> =  typename allocator::allocator_category</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a996b437fe4bf9ecab674d53bc45b8f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996b437fe4bf9ecab674d53bc45b8f50">&#9670;&nbsp;</a></span>allocator_impl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a996b437fe4bf9ecab674d53bc45b8f50">allocator_impl</a> =  TAllocator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed0e86dbcf1922773c1a8f6b852668bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0e86dbcf1922773c1a8f6b852668bc">&#9670;&nbsp;</a></span>const_pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#aed0e86dbcf1922773c1a8f6b852668bc">const_pointer</a> =  const void*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3708d5d8f8439254d16008067b9fb572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3708d5d8f8439254d16008067b9fb572">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a3708d5d8f8439254d16008067b9fb572">difference_type</a> =  <a class="el" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f65ece6439f935c99f97fb08c5ff6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f65ece6439f935c99f97fb08c5ff6f4">&#9670;&nbsp;</a></span>filter_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a0f65ece6439f935c99f97fb08c5ff6f4">filter_type</a> =  TFilter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4092c43522678cf7930d89fc26a94504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4092c43522678cf7930d89fc26a94504">&#9670;&nbsp;</a></span>is_thread_safe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a4092c43522678cf7930d89fc26a94504">is_thread_safe</a> =  <a class="el" href="namespacemn.html#a7153baf13d7f8bec585ed6ea2625fe06">mn::true_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c485cfa6728cdeb37c852ec7201ddd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c485cfa6728cdeb37c852ec7201ddd6">&#9670;&nbsp;</a></span>lock_guard</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a1c485cfa6728cdeb37c852ec7201ddd6">lock_guard</a> =  <a class="el" href="classmn_1_1basic__autolock.html">mn::basic_autolock</a>&lt;<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a646cf32cd670a602a054c35e93ecc8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646cf32cd670a602a054c35e93ecc8d5">&#9670;&nbsp;</a></span>lock_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a> =  TMutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac52c0f2e66c94a9c9019a567036513e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52c0f2e66c94a9c9019a567036513e0">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a> =  void*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3dd73ddbace6905868a2ddcd6dce2351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dd73ddbace6905868a2ddcd6dce2351">&#9670;&nbsp;</a></span>self_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a3dd73ddbace6905868a2ddcd6dce2351">self_type</a> =  <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">basic_threadsafed_allocator</a>&lt;TMutex, TAllocator, TFilter&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a106085ea07e8e6e82ae86a0d66c5a060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a106085ea07e8e6e82ae86a0d66c5a060">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a106085ea07e8e6e82ae86a0d66c5a060">size_type</a> =  <a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1390df64b899b6b941f7121a56d95409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1390df64b899b6b941f7121a56d95409">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a1390df64b899b6b941f7121a56d95409">value_type</a> =  void</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4624218fca1467b841a28cc4800c5205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4624218fca1467b841a28cc4800c5205">&#9670;&nbsp;</a></span>basic_threadsafed_allocator() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">basic_threadsafed_allocator</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8a46f5e5b58b8025167a7f9d305beb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a46f5e5b58b8025167a7f9d305beb6">&#9670;&nbsp;</a></span>basic_threadsafed_allocator() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">basic_threadsafed_allocator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>lckObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afef380c754f1df2a0e79b7837990e23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef380c754f1df2a0e79b7837990e23a">&#9670;&nbsp;</a></span>basic_threadsafed_allocator() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">basic_threadsafed_allocator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>lckObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a0f65ece6439f935c99f97fb08c5ff6f4">filter_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>_fFilter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a113c441924ef1228194b072e0f2d87f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113c441924ef1228194b072e0f2d87f4">&#9670;&nbsp;</a></span>basic_threadsafed_allocator() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::<a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">basic_threadsafed_allocator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a3dd73ddbace6905868a2ddcd6dce2351">self_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9a9ae854e21e7ef5d387b3a5a4781271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9ae854e21e7ef5d387b3a5a4781271">&#9670;&nbsp;</a></span>allocate() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a> <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>alignment</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>malloc() a buffer in a given TAllocator and cheak with the given TFilter is this okay to alloc </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size of the Type </td></tr>
+    <tr><td class="paramname">count</td><td>The count of the array </td></tr>
+    <tr><td class="paramname">alignment</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to new memory, or NULL if allocation fails. </dd></dl>
+
+</div>
+</div>
+<a id="a209183d4c75d6a856ae5126ac276dd70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209183d4c75d6a856ae5126ac276dd70">&#9670;&nbsp;</a></span>allocate() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a> <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>malloc() a buffer in a given TAllocator and cheak with the given TFilter is this okay to alloc </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Size of desired buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to new memory, or NULL if allocation fails. </dd></dl>
+
+</div>
+</div>
+<a id="a1aca2e47bddd22f74645359d09a4336b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aca2e47bddd22f74645359d09a4336b">&#9670;&nbsp;</a></span>allocate() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a> <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>malloc() a buffer in a given TAllocator and cheak with the given TFilter is this okay to alloc </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Size of desired buffer. </td></tr>
+    <tr><td class="paramname">alignment</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to new memory, or NULL if allocation fails. </dd></dl>
+
+</div>
+</div>
+<a id="ac1b82d9ba0b55e7be2a8836fce10507c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b82d9ba0b55e7be2a8836fce10507c">&#9670;&nbsp;</a></span>construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<div class="memtemplate">
+template&lt;class Type , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Type* <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::construct </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a object from allocated impl. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Type</td><td>The type of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Args</td><td>The arguments for the constructer of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a876d65a2e6c5d6d9f8618e99ebad7844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876d65a2e6c5d6d9f8618e99ebad7844">&#9670;&nbsp;</a></span>deallocate() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::deallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>free() a buffer in a given heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>The address to free </td></tr>
+    <tr><td class="paramname">count</td><td>The count of the array </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the Type </td></tr>
+    <tr><td class="paramname">alignment</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa783968da7d923eb03ce7793f8c59bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa783968da7d923eb03ce7793f8c59bdd">&#9670;&nbsp;</a></span>deallocate() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::deallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>free() a buffer in a given heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>The address to free. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the Type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a63f18835e6c519db323d98cd9ead0ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f18835e6c519db323d98cd9ead0ca2">&#9670;&nbsp;</a></span>deallocate() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::deallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#ac52c0f2e66c94a9c9019a567036513e0">pointer</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a>&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>free() a buffer in a given heap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>The address to free. </td></tr>
+    <tr><td class="paramname">alignment</td><td></td></tr>
+    <tr><td class="paramname">size</td><td>The size of the Type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e1c97dca426d87f87bcb388065a7d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1c97dca426d87f87bcb388065a7d46">&#9670;&nbsp;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::destroy </td>
+          <td>(</td>
+          <td class="paramtype">Type *&#160;</td>
+          <td class="paramname"><em>address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deconstruct a object (call deconstructor) and free the memory. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Type</td><td>The type of the object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">address</td><td>The pointer of the object to be deconstruct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac0b29b451661bf7228fa5f0e32b57f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b29b451661bf7228fa5f0e32b57f1e">&#9670;&nbsp;</a></span>get_max_alocator_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">size_t</a> <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::get_max_alocator_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the maximal size to allocate. </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximal size to allocate. </dd></dl>
+
+</div>
+</div>
+<a id="a93ee693d8cd1bdfca5ccc6218ddb6cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ee693d8cd1bdfca5ccc6218ddb6cda">&#9670;&nbsp;</a></span>is_locked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::is_locked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44e33cbcf22e6eae7b84589a791ef46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e33cbcf22e6eae7b84589a791ef46c">&#9670;&nbsp;</a></span>lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::lock </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>xTicksToWait</em> = <code>0</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad80857794591d264bffb1571c8f32dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80857794591d264bffb1571c8f32dd5">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a3dd73ddbace6905868a2ddcd6dce2351">self_type</a>&amp; <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f0b5ac5d3a868e02bf7d2f731487548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0b5ac5d3a868e02bf7d2f731487548">&#9670;&nbsp;</a></span>set_ticksToWait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::set_ticksToWait </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>xTicksToWait</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8b85e53e3cd98810763c8c4890c4e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b85e53e3cd98810763c8c4890c4e0e">&#9670;&nbsp;</a></span>unlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::unlock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa5f54fa3ec9a6f31093253cbe168bf5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f54fa3ec9a6f31093253cbe168bf5f">&#9670;&nbsp;</a></span>m_fFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a0f65ece6439f935c99f97fb08c5ff6f4">filter_type</a> <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::m_fFilter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80215c20a824061cc5f7c6303be99a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80215c20a824061cc5f7c6303be99a04">&#9670;&nbsp;</a></span>m_lockObjct</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html#a646cf32cd670a602a054c35e93ecc8d5">lock_type</a> <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::m_lockObjct</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97d1d6dc587fd7fb60bb992a8f4644af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d1d6dc587fd7fb60bb992a8f4644af">&#9670;&nbsp;</a></span>m_xTicksToWait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMutex , class TAllocator , class TFilter  = basic_allocator_filter&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long <a class="el" href="classmn_1_1memory_1_1basic__threadsafed__allocator.html">mn::memory::basic_threadsafed_allocator</a>&lt; TMutex, TAllocator, TFilter &gt;::m_xTicksToWait</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="mn__lock__storage_8hpp_source.html">mn_lock_storage.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

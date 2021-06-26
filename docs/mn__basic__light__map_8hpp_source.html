@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_basic_light_map.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__basic__light__map_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_basic_light_map.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__basic__light__map_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*This file is part of the Mini Thread Library (https://github.com/RoseLeBlood/MiniThread ).</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*Copyright (c) 2018 Amber-Sophia Schroeck</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*The Mini Thread Library is free software; you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*it under the terms of the GNU Lesser General Public License as published by</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*the Free Software Foundation, version 3, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*The Mini Thread Library is distributed in the hope that it will be useful, but</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*General Public License for more details.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*License along with the Mini Thread  Library; if not, see</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*&lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef __MINILIB_BASIC_LIGHT_MAP_H__</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __MINILIB_BASIC_LIGHT_MAP_H__</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;../mn_algorithm.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;../mn_iterator.hpp&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;../mn_typetraits.hpp&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__pair_8hpp.html">mn_pair.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__vector_8hpp.html">mn_vector.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">namespace </span>container {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class </span>TKey, <span class="keyword">class </span>TValue,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                  <span class="keyword">class </span>TALLOCATOR = <a class="code" href="namespacemn_1_1memory.html#abb5b67234913c5d181e04a2e43f2014f">memory::default_allocator</a>,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                  <span class="keyword">class </span>TPairType = <a class="code" href="structmn_1_1container_1_1basic__pair.html">mn::container::pair&lt;TKey, TValue&gt;</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  <span class="keyword">class </span>TContainer = <a class="code" href="classmn_1_1container_1_1basic__vector.html">mn::container::vector&lt;TPairType, TALLOCATOR&gt;</a> &gt;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html">   46</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1container_1_1basic__light__map.html">basic_light_map</a> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a8be5a5efd961860b6e65f9bc25bbfde7">   48</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8be5a5efd961860b6e65f9bc25bbfde7">mapped_type</a> = TValue;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">   49</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a> = TKey;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">   51</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a> = TPairType;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#aac6c51a1716235dd2da55b54ae4b2cce">   52</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aac6c51a1716235dd2da55b54ae4b2cce">reference</a> = TPairType&amp;;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#adc6c46818c429e340d494ea0d8335a7a">   53</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#adc6c46818c429e340d494ea0d8335a7a">pointer</a> = TPairType*;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#aabdbad24b8b7f4ef23bf1bb51eb7f655">   54</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aabdbad24b8b7f4ef23bf1bb51eb7f655">const_reference</a> = <span class="keyword">const</span> TPairType&amp;;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#aa679490da48c7805cc854e3ac36ac5a2">   55</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aa679490da48c7805cc854e3ac36ac5a2">const_pointer</a> = <span class="keyword">const</span> TPairType*;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#ad9f38be0fbc09aa82036845e30137fcb">   57</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ad9f38be0fbc09aa82036845e30137fcb">difference_type</a> = <a class="code" href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#aadcf89b0b7f20abac22ad10a6b15dc7d">   58</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aadcf89b0b7f20abac22ad10a6b15dc7d">size_type</a> = <a class="code" href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a11db45d92ab0378d3e494d05dac5629b">   60</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a11db45d92ab0378d3e494d05dac5629b">iterator</a> = TValue*;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#ae5cd2d82f55ee3179566ff0ef5e19516">   61</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ae5cd2d82f55ee3179566ff0ef5e19516">const_iterator</a> = <span class="keyword">const</span> TValue*;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a136cec14ad265166fe5d947399fab404">   63</a></span>&#160;            <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html">self_type</a> = <a class="code" href="classmn_1_1container_1_1basic__light__map.html">basic_light_map &lt; TKey, TValue, TALLOCATOR, TPairType, TContainer&gt;</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#ab18a8338038feb00104dba058d1adbac">   65</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ab18a8338038feb00104dba058d1adbac">basic_light_map</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aadcf89b0b7f20abac22ad10a6b15dc7d">size_type</a> start_size = 32) noexcept</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                :  <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>(start_size) { }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a7fce8ec4e24b87d497fb52f115e0c529">   68</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7fce8ec4e24b87d497fb52f115e0c529">~basic_light_map</a>() {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.clear();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a641a60bb47894f4dba2a6feee93402c7">   73</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a641a60bb47894f4dba2a6feee93402c7">clear</a>() {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.clear();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">template</span>&lt; <span class="keyword">class</span>... Args &gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a10d5dcb137a81d4b9f7ae76cd08aa049">   78</a></span>&#160;            <a class="code" href="structmn_1_1container_1_1basic__pair.html">mn::container::pair&lt;iterator, bool&gt;</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a10d5dcb137a81d4b9f7ae76cd08aa049">assign</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; key, Args &amp;&amp; ... args) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a> _value(key, mn::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a10d5dcb137a81d4b9f7ae76cd08aa049">assign</a>(_value);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#aac0a66d058652ccb4d83ceba6adc2c55">   84</a></span>&#160;            <a class="code" href="structmn_1_1container_1_1basic__pair.html">mn::container::pair&lt;iterator, bool&gt;</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aac0a66d058652ccb4d83ceba6adc2c55">assign</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a>&amp; vValue) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <a class="code" href="structmn_1_1container_1_1basic__pair.html">mn::container::pair&lt;iterator, bool&gt;</a> _ret(vValue.seconde, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">typename</span> TContainer::iterator it = <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.begin();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                            it != <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.end(); it++) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a> _pair = *it;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordflow">if</span>(_pair.first == vValue.first) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.erase(it);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.insert(vValue);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        _ret-&gt;<a class="code" href="structmn_1_1container_1_1basic__pair.html#a0073e397da417819095e6b746d66e4ac">second</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">return</span> _ret;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">template</span>&lt; <span class="keyword">class</span>... Args &gt;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a3fa79241e87d3670af3802ad9bde2e1f">  110</a></span>&#160;            <a class="code" href="structmn_1_1container_1_1basic__pair.html">mn::container::pair&lt;iterator, bool&gt;</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3fa79241e87d3670af3802ad9bde2e1f">emplace</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; key, Args &amp;&amp; ... args) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a> _value = <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a>(key, mn::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a18b122e464b156e64cb085d9409464ac">insert</a>(_value);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a18b122e464b156e64cb085d9409464ac">  122</a></span>&#160;            <a class="code" href="structmn_1_1container_1_1basic__pair.html">mn::container::pair&lt;iterator, bool&gt;</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a18b122e464b156e64cb085d9409464ac">insert</a>( <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a>&amp; value ) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <a class="code" href="structmn_1_1container_1_1basic__pair.html">mn::container::pair&lt;iterator, bool&gt;</a> result(&amp;value, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">find</a>(value.first) == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.push_back(value);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    result.<a class="code" href="structmn_1_1container_1_1basic__pair.html#a0073e397da417819095e6b746d66e4ac">second</a> = <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">find</a>(value.first) != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keyword">template</span>&lt; <span class="keyword">class</span>... Args &gt;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a6cc2f65094aaad8910203020a5724d89">  134</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a6cc2f65094aaad8910203020a5724d89">insert_or_assign</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; key, Args &amp;&amp; ... args) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a> _value(key, mn::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keyword">auto</span> iter = <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">find</a>(key);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <span class="keywordflow">if</span>(iter == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a18b122e464b156e64cb085d9409464ac">insert</a>(_value);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a10d5dcb137a81d4b9f7ae76cd08aa049">assign</a>(_value);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a8daba1fbc3800e2b432d91b8e60310bf">  151</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8daba1fbc3800e2b432d91b8e60310bf">insert</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; key, <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8be5a5efd961860b6e65f9bc25bbfde7">mapped_type</a>&amp; value) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a18b122e464b156e64cb085d9409464ac">insert</a>(<a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a>(key, value)).second;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#ab903fc048e924f7359e7fb600620e470">  161</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ab903fc048e924f7359e7fb600620e470">insert</a>(<a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp;&amp; key, <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8be5a5efd961860b6e65f9bc25bbfde7">mapped_type</a>&amp;&amp; value) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a18b122e464b156e64cb085d9409464ac">insert</a>(<a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a>( <a class="code" href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">mn::forward</a>(key), <a class="code" href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">mn::forward</a>(value)) ).second;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#aebe863c631ce2758e4f59027df89f835">  173</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a11db45d92ab0378d3e494d05dac5629b">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aebe863c631ce2758e4f59027df89f835">erase</a>( <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ae5cd2d82f55ee3179566ff0ef5e19516">const_iterator</a> pos ) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.erase(pos);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#aff92c5ad7b4271b1fad17c66bc0803c9">  183</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a11db45d92ab0378d3e494d05dac5629b">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aff92c5ad7b4271b1fad17c66bc0803c9">erase</a>( <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ae5cd2d82f55ee3179566ff0ef5e19516">const_iterator</a> first, <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ae5cd2d82f55ee3179566ff0ef5e19516">const_iterator</a> last ) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.erase(first, last);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#ae0d556dc4c50036948c8089aeb57765c">  191</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aadcf89b0b7f20abac22ad10a6b15dc7d">size_type</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ae0d556dc4c50036948c8089aeb57765c">erase</a>( <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; tKey ) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1container_1_1basic__light__map.html#aecb09f45dd19712742337c4087a963ae">empty</a>()) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aadcf89b0b7f20abac22ad10a6b15dc7d">size_type</a> _ret  = 0;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">typename</span> TContainer::iterator it = <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.begin();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                            it != <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.end(); it++) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a> _pair = *it;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    <span class="keywordflow">if</span>(_pair.first == tKey) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                        <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.erase(it); _ret =  1;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">return</span> _ret;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            }</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">  212</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a11db45d92ab0378d3e494d05dac5629b">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">find</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; tKey) noexcept {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1container_1_1basic__light__map.html#aecb09f45dd19712742337c4087a963ae">empty</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">typename</span> TContainer::iterator it = <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.begin();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                            it != <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.end(); it++) {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a> _pair = *it;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                    <span class="keywordflow">if</span>(_pair.first == tKey) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                        <span class="keywordflow">return</span> &amp;(_pair.second);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                    }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            }</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#acca86b09247306d2f2c9ad8a62579fd6">  232</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ae5cd2d82f55ee3179566ff0ef5e19516">const_iterator</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#acca86b09247306d2f2c9ad8a62579fd6">find</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; tKey) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classmn_1_1container_1_1basic__light__map.html#aecb09f45dd19712742337c4087a963ae">empty</a>()) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">typename</span> TContainer::iterator it = <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.begin();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                            it != <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.end(); it++) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                    <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">value_type</a> _pair = *it;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                    <span class="keywordflow">if</span>(_pair.first == tKey) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        <span class="keywordflow">return</span> &amp;(_pair.second);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#aecb09f45dd19712742337c4087a963ae">  251</a></span>&#160;            constexpr <span class="keywordtype">bool</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aecb09f45dd19712742337c4087a963ae">empty</a>() const noexcept {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.is_empty();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a1266d38d9620078012b05e2ff4541c8f">  259</a></span>&#160;            constexpr <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aadcf89b0b7f20abac22ad10a6b15dc7d">size_type</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a1266d38d9620078012b05e2ff4541c8f">size</a>() const noexcept {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>.get_used();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a3ce68e6cd64490f6b29881924ac9f9f9">  268</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#aadcf89b0b7f20abac22ad10a6b15dc7d">size_type</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3ce68e6cd64490f6b29881924ac9f9f9">count</a>( <span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; key )<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <span class="keywordflow">return</span> (<a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">find</a>(key) != <span class="keyword">nullptr</span>) ? 1 : 0;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a055a83e9389199702a6ebee8347fddba">  277</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a055a83e9389199702a6ebee8347fddba">swap</a>( <a class="code" href="classmn_1_1container_1_1basic__light__map.html">self_type</a>&amp; other ) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a055a83e9389199702a6ebee8347fddba">swap</a>(<a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>, other.<a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a7075406d579d0a80a2fa18e9d400fc96">  287</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a11db45d92ab0378d3e494d05dac5629b">iterator</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7075406d579d0a80a2fa18e9d400fc96">operator[]</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; tKey) noexcept {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">find</a>(tKey);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            }</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#a9fd9a9fc3a18620474ddd2e73a93f6fd">  296</a></span>&#160;            <a class="code" href="classmn_1_1container_1_1basic__light__map.html#ae5cd2d82f55ee3179566ff0ef5e19516">const_iterator</a> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a9fd9a9fc3a18620474ddd2e73a93f6fd">operator[]</a>(<span class="keyword">const</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">key_type</a>&amp; tKey) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">find</a>(tKey);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">  300</a></span>&#160;            TContainer <a class="code" href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">m_ayKeyValue</a>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        };</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">class</span> TKey, <span class="keyword">class</span> TValue&gt;</div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="namespacemn_1_1container.html#ad24d1a0fb2881170227c9e05afeffde3">  312</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="classmn_1_1container_1_1basic__light__map.html">map</a> = <a class="code" href="classmn_1_1container_1_1basic__light__map.html">basic_light_map&lt; TKey, TValue &gt;</a>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;}</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_BASIC_LIGHT_MAP_H__</span></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html">mn::container::basic_light_map</a></div><div class="ttdoc">Lightweight c++11 dictionary map implementation.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:46</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a055a83e9389199702a6ebee8347fddba"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a055a83e9389199702a6ebee8347fddba">mn::container::basic_light_map::swap</a></div><div class="ttdeci">void swap(self_type &amp;other)</div><div class="ttdoc">Exchanges the contents of the container with those of other.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:277</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a10d5dcb137a81d4b9f7ae76cd08aa049"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a10d5dcb137a81d4b9f7ae76cd08aa049">mn::container::basic_light_map::assign</a></div><div class="ttdeci">mn::container::pair&lt; iterator, bool &gt; assign(const key_type &amp;key, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:78</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a11db45d92ab0378d3e494d05dac5629b"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a11db45d92ab0378d3e494d05dac5629b">mn::container::basic_light_map::iterator</a></div><div class="ttdeci">TValue * iterator</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:60</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a1266d38d9620078012b05e2ff4541c8f"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a1266d38d9620078012b05e2ff4541c8f">mn::container::basic_light_map::size</a></div><div class="ttdeci">constexpr size_type size() const noexcept</div><div class="ttdoc">Get the number of map-members.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:259</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a18b122e464b156e64cb085d9409464ac"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a18b122e464b156e64cb085d9409464ac">mn::container::basic_light_map::insert</a></div><div class="ttdeci">mn::container::pair&lt; iterator, bool &gt; insert(const value_type &amp;value)</div><div class="ttdoc">Inserts value.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:122</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a3ce68e6cd64490f6b29881924ac9f9f9"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a3ce68e6cd64490f6b29881924ac9f9f9">mn::container::basic_light_map::count</a></div><div class="ttdeci">size_type count(const key_type &amp;key) const</div><div class="ttdoc">Returns the number of elements with key key.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:268</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a3f475f71b79557b3382d376c84470cdc"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a3f475f71b79557b3382d376c84470cdc">mn::container::basic_light_map::key_type</a></div><div class="ttdeci">TKey key_type</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:49</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a3fa79241e87d3670af3802ad9bde2e1f"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a3fa79241e87d3670af3802ad9bde2e1f">mn::container::basic_light_map::emplace</a></div><div class="ttdeci">mn::container::pair&lt; iterator, bool &gt; emplace(const key_type &amp;key, Args &amp;&amp;... args)</div><div class="ttdoc">Inserts a new element into the container constructed in-place with the given args if there is no elem...</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:110</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a641a60bb47894f4dba2a6feee93402c7"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a641a60bb47894f4dba2a6feee93402c7">mn::container::basic_light_map::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:73</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a6cc2f65094aaad8910203020a5724d89"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a6cc2f65094aaad8910203020a5724d89">mn::container::basic_light_map::insert_or_assign</a></div><div class="ttdeci">void insert_or_assign(const key_type &amp;key, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:134</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a7075406d579d0a80a2fa18e9d400fc96"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a7075406d579d0a80a2fa18e9d400fc96">mn::container::basic_light_map::operator[]</a></div><div class="ttdeci">iterator operator[](const key_type &amp;tKey) noexcept</div><div class="ttdoc">Read value of map for given key.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:287</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a7c5ba95e7d865331e214a852c6d13d68"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a7c5ba95e7d865331e214a852c6d13d68">mn::container::basic_light_map::find</a></div><div class="ttdeci">iterator find(const key_type &amp;tKey) noexcept</div><div class="ttdoc">Finds an element with key equivalent to key.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:212</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a7fce8ec4e24b87d497fb52f115e0c529"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a7fce8ec4e24b87d497fb52f115e0c529">mn::container::basic_light_map::~basic_light_map</a></div><div class="ttdeci">~basic_light_map()</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:68</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a8be5a5efd961860b6e65f9bc25bbfde7"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a8be5a5efd961860b6e65f9bc25bbfde7">mn::container::basic_light_map::mapped_type</a></div><div class="ttdeci">TValue mapped_type</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:48</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a8d29a674737916925bd74f93a9607aab"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a8d29a674737916925bd74f93a9607aab">mn::container::basic_light_map::value_type</a></div><div class="ttdeci">TPairType value_type</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:51</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a8daba1fbc3800e2b432d91b8e60310bf"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a8daba1fbc3800e2b432d91b8e60310bf">mn::container::basic_light_map::insert</a></div><div class="ttdeci">bool insert(const key_type &amp;key, const mapped_type &amp;value)</div><div class="ttdoc">insert key_type key with mapped_type value.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:151</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_a9fd9a9fc3a18620474ddd2e73a93f6fd"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#a9fd9a9fc3a18620474ddd2e73a93f6fd">mn::container::basic_light_map::operator[]</a></div><div class="ttdeci">const_iterator operator[](const key_type &amp;tKey) const noexcept</div><div class="ttdoc">Read value of map for given key.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:296</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_aa679490da48c7805cc854e3ac36ac5a2"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#aa679490da48c7805cc854e3ac36ac5a2">mn::container::basic_light_map::const_pointer</a></div><div class="ttdeci">const TPairType * const_pointer</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:55</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_aabdbad24b8b7f4ef23bf1bb51eb7f655"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#aabdbad24b8b7f4ef23bf1bb51eb7f655">mn::container::basic_light_map::const_reference</a></div><div class="ttdeci">const TPairType &amp; const_reference</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:54</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_aac0a66d058652ccb4d83ceba6adc2c55"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#aac0a66d058652ccb4d83ceba6adc2c55">mn::container::basic_light_map::assign</a></div><div class="ttdeci">mn::container::pair&lt; iterator, bool &gt; assign(const value_type &amp;vValue)</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:84</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_aac6c51a1716235dd2da55b54ae4b2cce"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#aac6c51a1716235dd2da55b54ae4b2cce">mn::container::basic_light_map::reference</a></div><div class="ttdeci">TPairType &amp; reference</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:52</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_aadcf89b0b7f20abac22ad10a6b15dc7d"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#aadcf89b0b7f20abac22ad10a6b15dc7d">mn::container::basic_light_map::size_type</a></div><div class="ttdeci">mn::size_t size_type</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:58</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_ab18a8338038feb00104dba058d1adbac"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#ab18a8338038feb00104dba058d1adbac">mn::container::basic_light_map::basic_light_map</a></div><div class="ttdeci">basic_light_map(const size_type start_size=32) noexcept</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:65</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_ab903fc048e924f7359e7fb600620e470"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#ab903fc048e924f7359e7fb600620e470">mn::container::basic_light_map::insert</a></div><div class="ttdeci">bool insert(key_type &amp;&amp;key, mapped_type &amp;&amp;value)</div><div class="ttdoc">insert key_type key with mapped_type value.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:161</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_acca86b09247306d2f2c9ad8a62579fd6"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#acca86b09247306d2f2c9ad8a62579fd6">mn::container::basic_light_map::find</a></div><div class="ttdeci">const_iterator find(const key_type &amp;tKey) const noexcept</div><div class="ttdoc">Finds an element with key equivalent to key.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:232</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_ad9f38be0fbc09aa82036845e30137fcb"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#ad9f38be0fbc09aa82036845e30137fcb">mn::container::basic_light_map::difference_type</a></div><div class="ttdeci">mn::ptrdiff_t difference_type</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:57</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_adc6c46818c429e340d494ea0d8335a7a"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#adc6c46818c429e340d494ea0d8335a7a">mn::container::basic_light_map::pointer</a></div><div class="ttdeci">TPairType * pointer</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:53</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_add38ef0e2a5d4148f93598faf93eb140"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#add38ef0e2a5d4148f93598faf93eb140">mn::container::basic_light_map::m_ayKeyValue</a></div><div class="ttdeci">TContainer m_ayKeyValue</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:300</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_ae0d556dc4c50036948c8089aeb57765c"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#ae0d556dc4c50036948c8089aeb57765c">mn::container::basic_light_map::erase</a></div><div class="ttdeci">size_type erase(const key_type &amp;tKey)</div><div class="ttdoc">Removes the element with the key equivalent to tKey.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:191</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_ae5cd2d82f55ee3179566ff0ef5e19516"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#ae5cd2d82f55ee3179566ff0ef5e19516">mn::container::basic_light_map::const_iterator</a></div><div class="ttdeci">const TValue * const_iterator</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:61</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_aebe863c631ce2758e4f59027df89f835"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#aebe863c631ce2758e4f59027df89f835">mn::container::basic_light_map::erase</a></div><div class="ttdeci">iterator erase(const_iterator pos)</div><div class="ttdoc">Removes specified elements from the container.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:173</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_aecb09f45dd19712742337c4087a963ae"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#aecb09f45dd19712742337c4087a963ae">mn::container::basic_light_map::empty</a></div><div class="ttdeci">constexpr bool empty() const noexcept</div><div class="ttdoc">Is the map empty.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:251</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__light__map_html_aff92c5ad7b4271b1fad17c66bc0803c9"><div class="ttname"><a href="classmn_1_1container_1_1basic__light__map.html#aff92c5ad7b4271b1fad17c66bc0803c9">mn::container::basic_light_map::erase</a></div><div class="ttdeci">iterator erase(const_iterator first, const_iterator last)</div><div class="ttdoc">Removes specified elements from the container.</div><div class="ttdef"><b>Definition:</b> mn_basic_light_map.hpp:183</div></div>
+<div class="ttc" id="aclassmn_1_1container_1_1basic__vector_html"><div class="ttname"><a href="classmn_1_1container_1_1basic__vector.html">mn::container::basic_vector</a></div><div class="ttdef"><b>Definition:</b> mn_vector.hpp:117</div></div>
+<div class="ttc" id="amn__pair_8hpp_html"><div class="ttname"><a href="mn__pair_8hpp.html">mn_pair.hpp</a></div></div>
+<div class="ttc" id="amn__vector_8hpp_html"><div class="ttname"><a href="mn__vector_8hpp.html">mn_vector.hpp</a></div><div class="ttdoc">Basic vector container This file is part of the Mini Thread Library (https://github....</div></div>
+<div class="ttc" id="anamespacemn_1_1memory_html_abb5b67234913c5d181e04a2e43f2014f"><div class="ttname"><a href="namespacemn_1_1memory.html#abb5b67234913c5d181e04a2e43f2014f">mn::memory::default_allocator</a></div><div class="ttdeci">malloc_allocator&lt; basic_allocator_filter &gt; default_allocator</div><div class="ttdef"><b>Definition:</b> mn_default_allocator.hpp:30</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+<div class="ttc" id="anamespacemn_html_a8d0b944ea3172c4bc932d79d3e2c01c1"><div class="ttname"><a href="namespacemn.html#a8d0b944ea3172c4bc932d79d3e2c01c1">mn::ptrdiff_t</a></div><div class="ttdeci">long ptrdiff_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:47</div></div>
+<div class="ttc" id="anamespacemn_html_aebd48cb5d4810a57409cabb3c78e9521"><div class="ttname"><a href="namespacemn.html#aebd48cb5d4810a57409cabb3c78e9521">mn::forward</a></div><div class="ttdeci">T &amp;&amp; forward(remove_reference_t&lt; T &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> mn_functional.hpp:74</div></div>
+<div class="ttc" id="anamespacemn_html_af487f8a5d975f2b50b68065096c732ed"><div class="ttname"><a href="namespacemn.html#af487f8a5d975f2b50b68065096c732ed">mn::size_t</a></div><div class="ttdeci">MN_THREAD_CONFIG_SIZE_TYPE size_t</div><div class="ttdef"><b>Definition:</b> mn_def.hpp:46</div></div>
+<div class="ttc" id="astructmn_1_1container_1_1basic__pair_html"><div class="ttname"><a href="structmn_1_1container_1_1basic__pair.html">mn::container::basic_pair</a></div><div class="ttdef"><b>Definition:</b> mn_pair.hpp:28</div></div>
+<div class="ttc" id="astructmn_1_1container_1_1basic__pair_html_a0073e397da417819095e6b746d66e4ac"><div class="ttname"><a href="structmn_1_1container_1_1basic__pair.html#a0073e397da417819095e6b746d66e4ac">mn::container::basic_pair::second</a></div><div class="ttdeci">second_type second</div><div class="ttdef"><b>Definition:</b> mn_pair.hpp:73</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

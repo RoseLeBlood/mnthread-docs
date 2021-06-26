@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_stl.hpp File Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__stl_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
+  <div class="headertitle">
+<div class="title">mn_stl.hpp File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="mn__stl_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:structmn_1_1stl_1_1type__traits"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits">mn::stl::type_traits&lt; T &gt;</a></td></tr>
+<tr class="separator:structmn_1_1stl_1_1type__traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1stl_1_1type__traits_3_01T_01_6_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits_3_01T_01_6_01_4">mn::stl::type_traits&lt; T &amp; &gt;</a></td></tr>
+<tr class="separator:structmn_1_1stl_1_1type__traits_3_01T_01_6_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1stl_1_1type__traits_3_01const_01T_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits_3_01const_01T_01_4">mn::stl::type_traits&lt; const T &gt;</a></td></tr>
+<tr class="separator:structmn_1_1stl_1_1type__traits_3_01const_01T_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1stl_1_1type__traits_3_01const_01T_01_6_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1type__traits_3_01const_01T_01_6_01_4">mn::stl::type_traits&lt; const T &amp; &gt;</a></td></tr>
+<tr class="separator:structmn_1_1stl_1_1type__traits_3_01const_01T_01_6_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1integral__constant.html">mn::stl::integral_constant&lt; T, v &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1stl_1_1unary__function"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1unary__function">mn::stl::unary_function&lt; Arg, TResult &gt;</a></td></tr>
+<tr class="separator:structmn_1_1stl_1_1unary__function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structmn_1_1stl_1_1binary__function"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html#structmn_1_1stl_1_1binary__function">mn::stl::binary_function&lt; Arg1, Arg2, TResult &gt;</a></td></tr>
+<tr class="separator:structmn_1_1stl_1_1binary__function"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1negate.html">mn::stl::negate&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1plus.html">mn::stl::plus&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1minus.html">mn::stl::minus&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1multiplies.html">mn::stl::multiplies&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1divides.html">mn::stl::divides&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1modulus.html">mn::stl::modulus&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1equal__to.html">mn::stl::equal_to&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1not__equal__to.html">mn::stl::not_equal_to&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1greater.html">mn::stl::greater&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1less.html">mn::stl::less&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1greater__equal.html">mn::stl::greater_equal&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1less__equal.html">mn::stl::less_equal&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1logic__and.html">mn::stl::logic_and&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1logic__or.html">mn::stl::logic_or&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1logic__not.html">mn::stl::logic_not&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1bit__and.html">mn::stl::bit_and&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1bit__or.html">mn::stl::bit_or&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1bit__xor.html">mn::stl::bit_xor&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1bit__not.html">mn::stl::bit_not&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__reference.html">mn::stl::is_reference&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__reference_3_01T_06_4.html">mn::stl::is_reference&lt; T%&gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__reference_3_01const_01T_06_4.html">mn::stl::is_reference&lt; const T%&gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__const.html">mn::stl::is_const&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__const_3_01const_01T_01_4.html">mn::stl::is_const&lt; const T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__const_3_01const_01T_01_6_01_4.html">mn::stl::is_const&lt; const T &amp; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__const_3_01const_01T_0fn_0e_4.html">mn::stl::is_const&lt; const T[n]&gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__volatile.html">mn::stl::is_volatile&lt; typename &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__volatile_3_01__Tp_01volatile_01_4.html">mn::stl::is_volatile&lt; _Tp volatile &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__empty.html">mn::stl::is_empty&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__enum.html">mn::stl::is_enum&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__union.html">mn::stl::is_union&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmn_1_1stl_1_1is__class.html">mn::stl::is_class&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacemn"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html">mn</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacemn_1_1stl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html">mn::stl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a4c71215b3a35e38466a255aa100e5965"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html#a4c71215b3a35e38466a255aa100e5965">mn::stl::true_type</a> = integral_constant&lt; bool, true &gt;</td></tr>
+<tr class="separator:a4c71215b3a35e38466a255aa100e5965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d2623738bb4b69b4e87e2e00992975"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1stl.html#a36d2623738bb4b69b4e87e2e00992975">mn::stl::false_type</a> = integral_constant&lt; bool, false &gt;</td></tr>
+<tr class="separator:a36d2623738bb4b69b4e87e2e00992975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="structmn_1_1stl_1_1type__traits" id="structmn_1_1stl_1_1type__traits"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1stl_1_1type__traits">&#9670;&nbsp;</a></span>mn::stl::type_traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::stl::type_traits</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct mn::stl::type_traits&lt; T &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a30fe4aed32fa5db1a725bcb8227f1cbf"></a>typedef const T *</td>
+<td class="fieldname">
+const_pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a75df817a3af22e14113f4572f3dea8ce"></a>typedef const T &amp;</td>
+<td class="fieldname">
+const_reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a85efe0f90752767f4b770f2e27d63fef"></a>typedef const T</td>
+<td class="fieldname">
+const_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a8d23fef8ffff3bd9066b32664330305d"></a>typedef T *</td>
+<td class="fieldname">
+pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a2e47e892d1781afb3437e9169d93c5dd"></a>typedef T &amp;</td>
+<td class="fieldname">
+reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a1c3e8f854622b4bcc4c993560378f911"></a>typedef T</td>
+<td class="fieldname">
+value_type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1stl_1_1type__traits_3_01T_01_6_01_4" id="structmn_1_1stl_1_1type__traits_3_01T_01_6_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1stl_1_1type__traits_3_01T_01_6_01_4">&#9670;&nbsp;</a></span>mn::stl::type_traits&lt; T &amp; &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::stl::type_traits&lt; T &amp; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct mn::stl::type_traits&lt; T &amp; &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a8c6a8ac6257b4d0625de98e7071c4762"></a>typedef const T *</td>
+<td class="fieldname">
+const_pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a0bc8416a955fbc0019ba0dee4a977746"></a>typedef const T &amp;</td>
+<td class="fieldname">
+const_reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a157f2d9a7b817937a36f66953c785e3f"></a>typedef const T</td>
+<td class="fieldname">
+const_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a612348f98c7e16f98b5bd0e6dcbcc490"></a>typedef T *</td>
+<td class="fieldname">
+pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a14950f26dc5df6b2ccdbe2aeaa207611"></a>typedef T &amp;</td>
+<td class="fieldname">
+reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af681c9d879f6be5e9d655096e8d6407c"></a>typedef T</td>
+<td class="fieldname">
+value_type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1stl_1_1type__traits_3_01const_01T_01_4" id="structmn_1_1stl_1_1type__traits_3_01const_01T_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1stl_1_1type__traits_3_01const_01T_01_4">&#9670;&nbsp;</a></span>mn::stl::type_traits&lt; const T &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::stl::type_traits&lt; const T &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct mn::stl::type_traits&lt; const T &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="adc5b6cb597d33a30685f5bb1023328de"></a>typedef const T *</td>
+<td class="fieldname">
+const_pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a3741f52e942a56e875e1d0eb7afb632e"></a>typedef const T &amp;</td>
+<td class="fieldname">
+const_reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="afff0e6d32ad27118c4d6d4e81f02f4b5"></a>typedef const T</td>
+<td class="fieldname">
+const_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a9c52c264876ae6230cf9357a04d44bf2"></a>typedef T *</td>
+<td class="fieldname">
+pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a50716ae5277377374ebdfbd60fef44e2"></a>typedef T &amp;</td>
+<td class="fieldname">
+reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ac6a960c71b94fb7ab889d225e1e900fb"></a>typedef T</td>
+<td class="fieldname">
+value_type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1stl_1_1type__traits_3_01const_01T_01_6_01_4" id="structmn_1_1stl_1_1type__traits_3_01const_01T_01_6_01_4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1stl_1_1type__traits_3_01const_01T_01_6_01_4">&#9670;&nbsp;</a></span>mn::stl::type_traits&lt; const T &amp; &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::stl::type_traits&lt; const T &amp; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct mn::stl::type_traits&lt; const T &amp; &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a5d1fd3d42d693cc7a2adae5ffce3fcc2"></a>typedef const T *</td>
+<td class="fieldname">
+const_pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="adff70937ef0a5f31f2592b66bdf297ed"></a>typedef const T &amp;</td>
+<td class="fieldname">
+const_reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ad07324e81cced75819f66140d915b377"></a>typedef const T</td>
+<td class="fieldname">
+const_type</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="af711e955bacd782d9007cd9a1730dd77"></a>typedef T *</td>
+<td class="fieldname">
+pointer</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="accc8a61d65c2d011a54d397f310d7708"></a>typedef T &amp;</td>
+<td class="fieldname">
+reference</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ab785ce7713a144f726d7cdc1c422ca72"></a>typedef T</td>
+<td class="fieldname">
+value_type</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1stl_1_1unary__function" id="structmn_1_1stl_1_1unary__function"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1stl_1_1unary__function">&#9670;&nbsp;</a></span>mn::stl::unary_function</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::stl::unary_function</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename Arg, typename TResult&gt;<br />
+struct mn::stl::unary_function&lt; Arg, TResult &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a85da9f27b724dc4fb93bf8778d0a9d12"></a>typedef Arg</td>
+<td class="fieldname">
+argument_type</td>
+<td class="fielddoc">
+<code>argument_type</code> is the type of the argument </td></tr>
+<tr><td class="fieldtype">
+<a id="a49b9b3237c056eccd33b5209d46367c8"></a>typedef TResult</td>
+<td class="fieldname">
+result_type</td>
+<td class="fielddoc">
+<code>result_type</code> is the return type </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structmn_1_1stl_1_1binary__function" id="structmn_1_1stl_1_1binary__function"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1stl_1_1binary__function">&#9670;&nbsp;</a></span>mn::stl::binary_function</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::stl::binary_function</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename Arg1, typename Arg2, typename TResult&gt;<br />
+struct mn::stl::binary_function&lt; Arg1, Arg2, TResult &gt;</h3>
+
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a9745afaf57d7487a8d8030573e9cba1d"></a>typedef Arg</td>
+<td class="fieldname">
+first_argument_type</td>
+<td class="fielddoc">
+<code>first_argument_type</code> is the type of the first argument </td></tr>
+<tr><td class="fieldtype">
+<a id="a50451e7b9689ac197a621a248632c5cb"></a>typedef TResult</td>
+<td class="fieldname">
+result_type</td>
+<td class="fielddoc">
+<code>result_type</code> is the return type </td></tr>
+<tr><td class="fieldtype">
+<a id="ab167434f0164d7df4da31f6c93a1815b"></a>typedef Arg2</td>
+<td class="fieldname">
+second_argument_type</td>
+<td class="fielddoc">
+<code>second_argument_type</code> is the type of the second argument </td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>
