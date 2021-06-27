@@ -141,7 +141,9 @@ $(document).ready(function(){initNavTree('mn__timestamp_8hpp.html',''); initResi
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn_timestamp.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -150,7 +152,8 @@ $(document).ready(function(){initNavTree('mn__timestamp_8hpp.html',''); initResi
 <p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ).  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mn__config_8hpp_source.html">mn_config.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mn__basic__timespan_8hpp_source.html">mn_basic_timespan.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__limits_8hpp_source.html">mn_limits.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mn__timespan_8hpp_source.html">mn_timespan.hpp</a>&quot;</code><br />
 </div>
 <p><a href="mn__timestamp_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -169,6 +172,22 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a2fff17cf523e69ef187908cc3de343b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__timestamp_8hpp.html#a2fff17cf523e69ef187908cc3de343b6">MINILIB_TIMESTAMP_RESELUTION</a>&#160;&#160;&#160;1000000</td></tr>
 <tr class="separator:a2fff17cf523e69ef187908cc3de343b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f6dd8040f4c7f76c73f0f9a428c5a88"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__timestamp_8hpp.html#a5f6dd8040f4c7f76c73f0f9a428c5a88">MINILIB_TIMESTAMP_TIME_TYPE</a>&#160;&#160;&#160;typename basic_timespan::time_type</td></tr>
+<tr class="separator:a5f6dd8040f4c7f76c73f0f9a428c5a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b11e8f4c7fc1336feb11cb5070a9fba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__timestamp_8hpp.html#a5b11e8f4c7fc1336feb11cb5070a9fba">MINILIB_TIMESTAMP_MIN</a>&#160;&#160;&#160;<a class="el" href="classmn_1_1numeric__limits.html">mn::numeric_limits</a>&lt;<a class="el" href="mn__timestamp_8hpp.html#a5f6dd8040f4c7f76c73f0f9a428c5a88">MINILIB_TIMESTAMP_TIME_TYPE</a>&gt;::min()</td></tr>
+<tr class="separator:a5b11e8f4c7fc1336feb11cb5070a9fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df942b3598f3cfb1635a8f688b12f2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mn__timestamp_8hpp.html#a3df942b3598f3cfb1635a8f688b12f2d">MINILIB_TIMESTAMP_MAX</a>&#160;&#160;&#160;<a class="el" href="classmn_1_1numeric__limits.html">mn::numeric_limits</a>&lt;<a class="el" href="mn__timestamp_8hpp.html#a5f6dd8040f4c7f76c73f0f9a428c5a88">MINILIB_TIMESTAMP_TIME_TYPE</a>&gt;::max()</td></tr>
+<tr class="separator:a3df942b3598f3cfb1635a8f688b12f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ae2cbf72e1b93c26a06de617b3075a17e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#ae2cbf72e1b93c26a06de617b3075a17e">mn::timestamp_t</a> = basic_timestamp</td></tr>
+<tr class="separator:ae2cbf72e1b93c26a06de617b3075a17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1e85c31bda582264db15d8f761081c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn.html#a1e85c31bda582264db15d8f761081c7e">mn::swap</a> (basic_timestamp a, basic_timestamp b)</td></tr>
+<tr class="separator:a1e85c31bda582264db15d8f761081c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file is part of the Mini Thread Library (<a href="https://github.com/RoseLeBlood/MiniThread">https://github.com/RoseLeBlood/MiniThread</a> ). </p>
@@ -177,6 +196,34 @@ Macros</h2></td></tr>
 <p>The Mini Thread Library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
 <p>You should have received a copy of the GNU Lesser General Public License along with the Mini Thread Library; if not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3df942b3598f3cfb1635a8f688b12f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df942b3598f3cfb1635a8f688b12f2d">&#9670;&nbsp;</a></span>MINILIB_TIMESTAMP_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MINILIB_TIMESTAMP_MAX&#160;&#160;&#160;<a class="el" href="classmn_1_1numeric__limits.html">mn::numeric_limits</a>&lt;<a class="el" href="mn__timestamp_8hpp.html#a5f6dd8040f4c7f76c73f0f9a428c5a88">MINILIB_TIMESTAMP_TIME_TYPE</a>&gt;::max()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b11e8f4c7fc1336feb11cb5070a9fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b11e8f4c7fc1336feb11cb5070a9fba">&#9670;&nbsp;</a></span>MINILIB_TIMESTAMP_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MINILIB_TIMESTAMP_MIN&#160;&#160;&#160;<a class="el" href="classmn_1_1numeric__limits.html">mn::numeric_limits</a>&lt;<a class="el" href="mn__timestamp_8hpp.html#a5f6dd8040f4c7f76c73f0f9a428c5a88">MINILIB_TIMESTAMP_TIME_TYPE</a>&gt;::min()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2fff17cf523e69ef187908cc3de343b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fff17cf523e69ef187908cc3de343b6">&#9670;&nbsp;</a></span>MINILIB_TIMESTAMP_RESELUTION</h2>
 
@@ -185,6 +232,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define MINILIB_TIMESTAMP_RESELUTION&#160;&#160;&#160;1000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f6dd8040f4c7f76c73f0f9a428c5a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f6dd8040f4c7f76c73f0f9a428c5a88">&#9670;&nbsp;</a></span>MINILIB_TIMESTAMP_TIME_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MINILIB_TIMESTAMP_TIME_TYPE&#160;&#160;&#160;typename basic_timespan::time_type</td>
         </tr>
       </table>
 </div><div class="memdoc">

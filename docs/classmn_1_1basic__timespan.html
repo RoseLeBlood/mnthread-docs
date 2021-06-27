@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('classmn_1_1basic__timespan.html',''); 
 <p>This class represents a time span (using microseconds)  
  <a href="classmn_1_1basic__timespan.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mn__basic__timespan_8hpp_source.html">mn_basic_timespan.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mn__timespan_8hpp_source.html">mn_timespan.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -207,9 +207,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a13b56ebc686a2243ee11c0c3013291fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">int_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a13b56ebc686a2243ee11c0c3013291fc">get_total_seconds</a> () const</td></tr>
 <tr class="memdesc:a13b56ebc686a2243ee11c0c3013291fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of seconds.  <a href="classmn_1_1basic__timespan.html#a13b56ebc686a2243ee11c0c3013291fc">More...</a><br /></td></tr>
 <tr class="separator:a13b56ebc686a2243ee11c0c3013291fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1fd8802beffef048af1cb0d96cbe84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#acc1fd8802beffef048af1cb0d96cbe84">get_total_milliseconds</a> () const</td></tr>
-<tr class="memdesc:acc1fd8802beffef048af1cb0d96cbe84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of milliseconds.  <a href="classmn_1_1basic__timespan.html#acc1fd8802beffef048af1cb0d96cbe84">More...</a><br /></td></tr>
-<tr class="separator:acc1fd8802beffef048af1cb0d96cbe84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee46b801007c2c2431c373095daf56a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">int_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a6ee46b801007c2c2431c373095daf56a">get_total_milliseconds</a> () const</td></tr>
+<tr class="memdesc:a6ee46b801007c2c2431c373095daf56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of milliseconds.  <a href="classmn_1_1basic__timespan.html#a6ee46b801007c2c2431c373095daf56a">More...</a><br /></td></tr>
+<tr class="separator:a6ee46b801007c2c2431c373095daf56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1f6d6916f8973eb1e5a387e7139562d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">int_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#ab1f6d6916f8973eb1e5a387e7139562d">get_total_microseconds</a> () const</td></tr>
+<tr class="memdesc:ab1f6d6916f8973eb1e5a387e7139562d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of microseconds.  <a href="classmn_1_1basic__timespan.html#ab1f6d6916f8973eb1e5a387e7139562d">More...</a><br /></td></tr>
+<tr class="separator:ab1f6d6916f8973eb1e5a387e7139562d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4021534d902bdf7cb32157ff802c8e26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a4021534d902bdf7cb32157ff802c8e26">operator=</a> (const <a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;timespan)</td></tr>
 <tr class="separator:a4021534d902bdf7cb32157ff802c8e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b988bbacd310575ce3bcf9dd64a190"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1basic__timespan.html#a04a252886ba7eed5a0577a29fa079dd1">self_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1basic__timespan.html#a08b988bbacd310575ce3bcf9dd64a190">operator=</a> (<a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">time_type</a> microseconds)</td></tr>
@@ -682,14 +685,33 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acc1fd8802beffef048af1cb0d96cbe84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc1fd8802beffef048af1cb0d96cbe84">&#9670;&nbsp;</a></span>get_total_milliseconds()</h2>
+<a id="ab1f6d6916f8973eb1e5a387e7139562d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1f6d6916f8973eb1e5a387e7139562d">&#9670;&nbsp;</a></span>get_total_microseconds()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#aeb4ee89d8c462a6bd8366c8ae029f3b4">basic_timespan::time_type</a> mn::basic_timespan::get_total_milliseconds </td>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">basic_timespan::int_type</a> mn::basic_timespan::get_total_microseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the total number of microseconds. </p>
+
+</div>
+</div>
+<a id="a6ee46b801007c2c2431c373095daf56a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ee46b801007c2c2431c373095daf56a">&#9670;&nbsp;</a></span>get_total_milliseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1basic__timespan.html#a8c1cd7a763ece4208863ece607860057">basic_timespan::int_type</a> mn::basic_timespan::get_total_milliseconds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1410,8 +1432,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="mn__basic__timespan_8hpp_source.html">mn_basic_timespan.hpp</a></li>
-<li><a class="el" href="mn__basic__timespan_8cpp.html">mn_basic_timespan.cpp</a></li>
+<li><a class="el" href="mn__timespan_8hpp_source.html">mn_timespan.hpp</a></li>
+<li><a class="el" href="mn__timespan_8cpp.html">mn_timespan.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

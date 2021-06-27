@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn_system.hpp Source File</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('mn__system_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">mn_system.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mn__system_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef __MINILIB_SYSTEMINFOS_H__</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define __MINILIB_SYSTEMINFOS_H__</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;../mn_config.hpp&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;../mn_timespan.hpp&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacemn.html">mn</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">namespace </span>device {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1system__stream.html">   32</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1device_1_1system__stream.html">system_stream</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1system__stream.html#abcfa7b116c6b7bff01f0d27db7afc83e">   34</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1device_1_1system__stream.html#abcfa7b116c6b7bff01f0d27db7afc83e">erase</a>(uint32_t sector) = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1system__stream.html#aaffe7cbbaf633abed4540b331a3cde59">   35</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1device_1_1system__stream.html#aaffe7cbbaf633abed4540b331a3cde59">erase</a>(uint32_t offset, <span class="keywordtype">size_t</span> size) = 0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1system__stream.html#adfcd55d7d3a93118b557bb8ad4c9dc0b">   36</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1device_1_1system__stream.html#adfcd55d7d3a93118b557bb8ad4c9dc0b">write</a>(uint32_t offset, uint32_t *data, <span class="keywordtype">size_t</span> size) = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1system__stream.html#ae0e23cf35950f9b58f10a41424210485">   37</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classmn_1_1device_1_1system__stream.html#ae0e23cf35950f9b58f10a41424210485">read</a>(uint32_t offset, uint32_t *data, <span class="keywordtype">size_t</span> size) = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html">   44</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classmn_1_1device_1_1basic__system.html">basic_system</a> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#a2e19007bf08233114c179dad8043bf01">   45</a></span>&#160;        <span class="keyword">public</span> <span class="comment">/* types */</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">public</span> <span class="comment">/*section power */</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keyword">enum class</span> power_state_code : int {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                normal,     </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#ad5bff909f2336a6bae25564bca9c1725">   50</a></span>&#160;                <a class="code" href="classmn_1_1device_1_1basic__system.html#ad5bff909f2336a6bae25564bca9c1725">error</a>,      </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1device_1_1basic__system.html#ace073df43ec68484dc2ab75d225096b5">shutdown</a>(power_state_code code, <a class="code" href="classmn_1_1basic__timespan.html">mn::timespan_t</a> span = <a class="code" href="classmn_1_1basic__timespan.html">mn::timespan_t</a>(0));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1device_1_1basic__system.html#a56c8f862546228896c28496ef6d2a953">restart</a>(power_state_code code, <a class="code" href="classmn_1_1basic__timespan.html">mn::timespan_t</a> span = <a class="code" href="classmn_1_1basic__timespan.html">mn::timespan_t</a>(0));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1device_1_1basic__system.html#a2e59954f8b59a1549d4d537b055ae437">deepsleep</a>(power_state_code code, uint64_t time_us, <a class="code" href="classmn_1_1basic__timespan.html">mn::timespan_t</a> span = <a class="code" href="classmn_1_1basic__timespan.html">mn::timespan_t</a>(0));</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#a9fd55c6b5d62a816319c1aa20d6322bf">   75</a></span>&#160;        <span class="keyword">public</span> <span class="comment">/* section RAM */</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">union </span>randomAccessMemory {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    uint32_t size;              </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#a020c96deb480817983f2c67f031f8848">   83</a></span>&#160;                    uint32_t <a class="code" href="classmn_1_1device_1_1basic__system.html#a020c96deb480817983f2c67f031f8848">free</a>;              </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#a6a83da6984b5c9c00e39477d55d88d27">   84</a></span>&#160;                    uint32_t <a class="code" href="classmn_1_1device_1_1basic__system.html#a6a83da6984b5c9c00e39477d55d88d27">min_freeSinceBoot</a>; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#a6830cf2db2229d27e95afe445c8eef42">   85</a></span>&#160;                    uint32_t <a class="code" href="classmn_1_1device_1_1basic__system.html#a6830cf2db2229d27e95afe445c8eef42">maxAlloc</a>;  </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                };</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#aaacfb41f0323cb7d8f4419b27ed820f2">   87</a></span>&#160;                uint32_t <a class="code" href="classmn_1_1device_1_1basic__system.html#aaacfb41f0323cb7d8f4419b27ed820f2">data</a>[3];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keyword">static</span> randomAccessMemory <a class="code" href="classmn_1_1device_1_1basic__system.html#a84c66f86e003290af58b06b999754648">get_internal</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">static</span> randomAccessMemory <a class="code" href="classmn_1_1device_1_1basic__system.html#a4fbe6de9f38bc695cd78b48260337890">get_external</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#a15c38b1d6a8e6ebc6e5cd2ecb4d0c37a">  101</a></span>&#160;        <span class="keyword">public</span> <span class="comment">/* cpu/SoC Infos */</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keyword">static</span> uint8_t get_num_cores();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keyword">static</span> uint8_t <a class="code" href="classmn_1_1device_1_1basic__system.html#a82c2e870114f421c810b2a12f54a3f54">get_core_speed</a>(<span class="keyword">const</span> uint8_t core);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keyword">static</span> uint8_t <a class="code" href="classmn_1_1device_1_1basic__system.html#a29983deb333b9a42045abb53039b2d19">get_speed</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1device_1_1basic__system.html#a3de9a6e072c71c96594fa7b86e989bb0">set_core_speed</a>(<span class="keyword">const</span> uint8_t core, <span class="keyword">const</span> uint8_t speed);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classmn_1_1device_1_1basic__system.html#a907a47f0da40131975b87b8bfc21325e">set_speed</a>(<span class="keyword">const</span> uint8_t speed);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classmn_1_1device_1_1basic__system.html#ab81565fe5b7005e69c848def427466ec">get_sdk_version</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classmn_1_1device_1_1basic__system.html#ab5ae5d8ac132b83f011ec2a8f494c1f9">get_name</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classmn_1_1device_1_1basic__system.html#ad5590d012132deb63babae653032dc5f">  145</a></span>&#160;        <span class="keyword">public</span> <span class="comment">/*misc */</span>:</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keyword">static</span> <a class="code" href="classmn_1_1device_1_1system__stream.html">system_stream</a>*   get_flash();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keyword">static</span> <a class="code" href="classmn_1_1device_1_1system__stream.html">system_stream</a>*   <a class="code" href="classmn_1_1device_1_1basic__system.html#a8b4ae5bbe8b6123b1297ede711fa069e">get_partition_stream</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        };</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __MINILIB_SYSTEMINFOS_H__</span></div>
+<div class="ttc" id="aclassmn_1_1basic__timespan_html"><div class="ttname"><a href="classmn_1_1basic__timespan.html">mn::basic_timespan</a></div><div class="ttdoc">This class represents a time span (using microseconds)</div><div class="ttdef"><b>Definition:</b> mn_timespan.hpp:35</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html">mn::device::basic_system</a></div><div class="ttdoc">Get system infos and useful system functins of the using platform.</div><div class="ttdef"><b>Definition:</b> mn_system.hpp:44</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a020c96deb480817983f2c67f031f8848"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a020c96deb480817983f2c67f031f8848">mn::device::basic_system::free</a></div><div class="ttdeci">uint32_t free</div><div class="ttdef"><b>Definition:</b> mn_system.hpp:83</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a29983deb333b9a42045abb53039b2d19"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a29983deb333b9a42045abb53039b2d19">mn::device::basic_system::get_speed</a></div><div class="ttdeci">static uint8_t get_speed()</div><div class="ttdoc">Get the mega hertz of the cpu.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:180</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a2e59954f8b59a1549d4d537b055ae437"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a2e59954f8b59a1549d4d537b055ae437">mn::device::basic_system::deepsleep</a></div><div class="ttdeci">static void deepsleep(power_state_code code, uint64_t time_us, mn::timespan_t span=mn::timespan_t(0))</div><div class="ttdoc">Enter deep sleep with wakeup by timer.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:127</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a3de9a6e072c71c96594fa7b86e989bb0"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a3de9a6e072c71c96594fa7b86e989bb0">mn::device::basic_system::set_core_speed</a></div><div class="ttdeci">static void set_core_speed(const uint8_t core, const uint8_t speed)</div><div class="ttdoc">Set the speed of a given core.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:186</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a4fbe6de9f38bc695cd78b48260337890"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a4fbe6de9f38bc695cd78b48260337890">mn::device::basic_system::get_external</a></div><div class="ttdeci">static randomAccessMemory get_external()</div><div class="ttdoc">Return the infos from the external RAM.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:156</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a56c8f862546228896c28496ef6d2a953"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a56c8f862546228896c28496ef6d2a953">mn::device::basic_system::restart</a></div><div class="ttdeci">static void restart(power_state_code code, mn::timespan_t span=mn::timespan_t(0))</div><div class="ttdoc">Restart the CPU.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:116</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a6830cf2db2229d27e95afe445c8eef42"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a6830cf2db2229d27e95afe445c8eef42">mn::device::basic_system::maxAlloc</a></div><div class="ttdeci">uint32_t maxAlloc</div><div class="ttdef"><b>Definition:</b> mn_system.hpp:85</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a6a83da6984b5c9c00e39477d55d88d27"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a6a83da6984b5c9c00e39477d55d88d27">mn::device::basic_system::min_freeSinceBoot</a></div><div class="ttdeci">uint32_t min_freeSinceBoot</div><div class="ttdef"><b>Definition:</b> mn_system.hpp:84</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a82c2e870114f421c810b2a12f54a3f54"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a82c2e870114f421c810b2a12f54a3f54">mn::device::basic_system::get_core_speed</a></div><div class="ttdeci">static uint8_t get_core_speed(const uint8_t core)</div><div class="ttdoc">Get the speed of a core in Mhz.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:176</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a84c66f86e003290af58b06b999754648"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a84c66f86e003290af58b06b999754648">mn::device::basic_system::get_internal</a></div><div class="ttdeci">static randomAccessMemory get_internal()</div><div class="ttdoc">Return the infos from the internal RAM.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:141</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a8b4ae5bbe8b6123b1297ede711fa069e"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a8b4ae5bbe8b6123b1297ede711fa069e">mn::device::basic_system::get_partition_stream</a></div><div class="ttdeci">static system_stream * get_partition_stream(const char *name)</div><div class="ttdoc">Get a system stream to write/read to a partition.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:92</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_a907a47f0da40131975b87b8bfc21325e"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#a907a47f0da40131975b87b8bfc21325e">mn::device::basic_system::set_speed</a></div><div class="ttdeci">static void set_speed(const uint8_t speed)</div><div class="ttdoc">Set the speed in Mhz of the cpu.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:190</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_aaacfb41f0323cb7d8f4419b27ed820f2"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#aaacfb41f0323cb7d8f4419b27ed820f2">mn::device::basic_system::data</a></div><div class="ttdeci">uint32_t data[3]</div><div class="ttdef"><b>Definition:</b> mn_system.hpp:86</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_ab5ae5d8ac132b83f011ec2a8f494c1f9"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#ab5ae5d8ac132b83f011ec2a8f494c1f9">mn::device::basic_system::get_name</a></div><div class="ttdeci">static const char * get_name()</div><div class="ttdoc">Get the name of the using Platform.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:197</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_ab81565fe5b7005e69c848def427466ec"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#ab81565fe5b7005e69c848def427466ec">mn::device::basic_system::get_sdk_version</a></div><div class="ttdeci">static const char * get_sdk_version()</div><div class="ttdoc">Get the version of the using platform SDKs.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:194</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_ace073df43ec68484dc2ab75d225096b5"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#ace073df43ec68484dc2ab75d225096b5">mn::device::basic_system::shutdown</a></div><div class="ttdeci">public static void shutdown(power_state_code code, mn::timespan_t span=mn::timespan_t(0))</div><div class="ttdoc">Halt the CPU.</div><div class="ttdef"><b>Definition:</b> mn_system_esp32.cpp:101</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1basic__system_html_ad5bff909f2336a6bae25564bca9c1725"><div class="ttname"><a href="classmn_1_1device_1_1basic__system.html#ad5bff909f2336a6bae25564bca9c1725">mn::device::basic_system::error</a></div><div class="ttdeci">public error</div><div class="ttdef"><b>Definition:</b> mn_system.hpp:50</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1system__stream_html"><div class="ttname"><a href="classmn_1_1device_1_1system__stream.html">mn::device::system_stream</a></div><div class="ttdoc">A simple abstractes class for easy handle any flash drivers.</div><div class="ttdef"><b>Definition:</b> mn_system.hpp:32</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1system__stream_html_aaffe7cbbaf633abed4540b331a3cde59"><div class="ttname"><a href="classmn_1_1device_1_1system__stream.html#aaffe7cbbaf633abed4540b331a3cde59">mn::device::system_stream::erase</a></div><div class="ttdeci">virtual int erase(uint32_t offset, size_t size)=0</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1system__stream_html_abcfa7b116c6b7bff01f0d27db7afc83e"><div class="ttname"><a href="classmn_1_1device_1_1system__stream.html#abcfa7b116c6b7bff01f0d27db7afc83e">mn::device::system_stream::erase</a></div><div class="ttdeci">virtual int erase(uint32_t sector)=0</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1system__stream_html_adfcd55d7d3a93118b557bb8ad4c9dc0b"><div class="ttname"><a href="classmn_1_1device_1_1system__stream.html#adfcd55d7d3a93118b557bb8ad4c9dc0b">mn::device::system_stream::write</a></div><div class="ttdeci">virtual int write(uint32_t offset, uint32_t *data, size_t size)=0</div></div>
+<div class="ttc" id="aclassmn_1_1device_1_1system__stream_html_ae0e23cf35950f9b58f10a41424210485"><div class="ttname"><a href="classmn_1_1device_1_1system__stream.html#ae0e23cf35950f9b58f10a41424210485">mn::device::system_stream::read</a></div><div class="ttdeci">virtual int read(uint32_t offset, uint32_t *data, size_t size)=0</div></div>
+<div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

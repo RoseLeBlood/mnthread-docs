@@ -142,6 +142,7 @@ $(document).ready(function(){initNavTree('namespacemn_1_1memory.html',''); initR
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mn::memory Namespace Reference</div>  </div>
@@ -174,6 +175,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__allocator__stack__impl.html">basic_allocator_stack_impl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack based allocator.  <a href="classmn_1_1memory_1_1basic__allocator__stack__impl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__caps__allocator.html">basic_caps_allocator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Simple template for a deleter.  <a href="classmn_1_1memory_1_1basic__deleter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +184,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Simple template for a deleter.  <a href="classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html">basic_malloc_allocator_impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__multiheap__allocator__impl.html">basic_multiheap_allocator_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1memory_1_1basic__new__allocaor__impl.html">basic_new_allocaor_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,9 +201,15 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a485df205e03e5756de3854f189e62368"><td class="memTemplParams" colspan="2">template&lt;int TBUFFERSIZE, class TFilter  = basic_allocator_filter&gt; </td></tr>
 <tr class="memitem:a485df205e03e5756de3854f189e62368"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a485df205e03e5756de3854f189e62368">stack_allocator</a> = <a class="el" href="classmn_1_1memory_1_1basic__allocator.html">basic_allocator</a>&lt; <a class="el" href="classmn_1_1memory_1_1basic__allocator__stack__impl.html">basic_allocator_stack_impl</a>&lt; TBUFFERSIZE &gt;, TFilter &gt;</td></tr>
 <tr class="separator:a485df205e03e5756de3854f189e62368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b8f22b085732edf745beae01c33aee8"><td class="memTemplParams" colspan="2">template&lt;cap_allocator_map TCAPS, cap_allocator_size TSBITS, class TFilter  = basic_allocator_filter&gt; </td></tr>
+<tr class="memitem:a1b8f22b085732edf745beae01c33aee8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a1b8f22b085732edf745beae01c33aee8">caps_allocator</a> = <a class="el" href="classmn_1_1memory_1_1basic__allocator.html">basic_allocator</a>&lt; <a class="el" href="classmn_1_1memory_1_1basic__caps__allocator.html">basic_caps_allocator</a>&lt; TCAPS, TSBITS &gt;, TFilter &gt;</td></tr>
+<tr class="separator:a1b8f22b085732edf745beae01c33aee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a104e9905f1df9dad00a31f9972e1cd34"><td class="memTemplParams" colspan="2">template&lt;class TFilter  = basic_allocator_filter&gt; </td></tr>
 <tr class="memitem:a104e9905f1df9dad00a31f9972e1cd34"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a104e9905f1df9dad00a31f9972e1cd34">malloc_allocator</a> = <a class="el" href="classmn_1_1memory_1_1basic__allocator.html">basic_allocator</a>&lt; <a class="el" href="classmn_1_1memory_1_1basic__malloc__allocator__impl.html">basic_malloc_allocator_impl</a>, TFilter &gt;</td></tr>
 <tr class="separator:a104e9905f1df9dad00a31f9972e1cd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a15cca35336da4423168b1e65a04e8f"><td class="memTemplParams" colspan="2">template&lt;size_t TBytes, class TFilter  = basic_allocator_filter&gt; </td></tr>
+<tr class="memitem:a0a15cca35336da4423168b1e65a04e8f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a0a15cca35336da4423168b1e65a04e8f">multiheap_allocator</a> = <a class="el" href="classmn_1_1memory_1_1basic__allocator.html">basic_allocator</a>&lt; <a class="el" href="classmn_1_1memory_1_1basic__multiheap__allocator__impl.html">basic_multiheap_allocator_impl</a>&lt; TBytes &gt;, TFilter &gt;</td></tr>
+<tr class="separator:a0a15cca35336da4423168b1e65a04e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf760adcae04bf1d98493ccf9f558984"><td class="memTemplParams" colspan="2">template&lt;class TFilter  = basic_allocator_filter&gt; </td></tr>
 <tr class="memitem:abf760adcae04bf1d98493ccf9f558984"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#abf760adcae04bf1d98493ccf9f558984">new_allocator</a> = <a class="el" href="classmn_1_1memory_1_1basic__allocator.html">basic_allocator</a>&lt; <a class="el" href="classmn_1_1memory_1_1basic__new__allocaor__impl.html">basic_new_allocaor_impl</a>, TFilter &gt;</td></tr>
 <tr class="separator:abf760adcae04bf1d98493ccf9f558984"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +218,30 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae17df2cb05b456e0e129387ee6a4963f"><td class="memTemplParams" colspan="2">template&lt;typename Type , class TAllocator  = default_allocator&gt; </td></tr>
 <tr class="memitem:ae17df2cb05b456e0e129387ee6a4963f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#ae17df2cb05b456e0e129387ee6a4963f">default_delete</a> = <a class="el" href="classmn_1_1memory_1_1basic__deleter.html">basic_deleter</a>&lt; Type, TAllocator &gt;</td></tr>
 <tr class="separator:ae17df2cb05b456e0e129387ee6a4963f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a9bf9e5b00e65fe2c53add142096c1a97"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97">cap_allocator_map</a> { <br />
+&#160;&#160;<a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97a2541424fe0c3fca0ce7ea6aebb57c795">NotUse2</a> = MALLOC_CAP_PID2
+, <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97aecdf660b4f1d8cc10a1c8f892da7e5a9">NotUse3</a> = MALLOC_CAP_PID3
+, <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97a9b98da2635fa967f000cd3bc59b18760">NotUse4</a> = MALLOC_CAP_PID4
+, <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97a2bc00123a67e6e622f32d796b7b0c083">NotUse5</a> = MALLOC_CAP_PID5
+, <br />
+&#160;&#160;<a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97a02e5b60b4902906b7bc81f397eb90d8e">NotUse6</a> = MALLOC_CAP_PID6
+, <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97adf188e84795eb4d13b492aa8d1c1408a">NotUse7</a> = MALLOC_CAP_PID7
+, <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97ac72290692b6ace1e039bfe6b27e17cf0">SpiRam</a> = MALLOC_CAP_SPIRAM
+, <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97aafbf0897a5a83fdd873dfb032ec695d3">Internal</a> = MALLOC_CAP_INTERNAL
+, <br />
+&#160;&#160;<a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97a7a1920d61156abc05a60135aefe8bc67">Default</a> = MALLOC_CAP_DEFAULT
+, <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97a33fd5f6391f2f0cb4c91179d7f521949">DMA</a> = MALLOC_CAP_EXEC
+, <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97a953feeff1e20f40677fb7f77c073b3be">Exec</a> = MALLOC_CAP_DMA
+<br />
+ }</td></tr>
+<tr class="separator:a9bf9e5b00e65fe2c53add142096c1a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3334289f87bf59ac9c94911b8463e5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemn_1_1memory.html#a0c3334289f87bf59ac9c94911b8463e5">cap_allocator_size</a> { <a class="el" href="namespacemn_1_1memory.html#a0c3334289f87bf59ac9c94911b8463e5abf342be9116fc16e5120c8ee0a1a56cf">Size8Bit</a> = MALLOC_CAP_8BIT
+, <a class="el" href="namespacemn_1_1memory.html#a0c3334289f87bf59ac9c94911b8463e5ae8f5063ce25b3ccaed7f3b4c01bb208e">Size32Bit</a> = MALLOC_CAP_32BIT
+ }</td></tr>
+<tr class="separator:a0c3334289f87bf59ac9c94911b8463e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -259,6 +294,22 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a1b8f22b085732edf745beae01c33aee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8f22b085732edf745beae01c33aee8">&#9670;&nbsp;</a></span>caps_allocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;cap_allocator_map TCAPS, cap_allocator_size TSBITS, class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1memory.html#a1b8f22b085732edf745beae01c33aee8">mn::memory::caps_allocator</a> = typedef <a class="el" href="classmn_1_1memory_1_1basic__allocator.html">basic_allocator</a>&lt;<a class="el" href="classmn_1_1memory_1_1basic__caps__allocator.html">basic_caps_allocator</a>&lt;TCAPS, TSBITS&gt;, TFilter&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abb5b67234913c5d181e04a2e43f2014f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb5b67234913c5d181e04a2e43f2014f">&#9670;&nbsp;</a></span>default_allocator</h2>
 
@@ -305,6 +356,22 @@ template&lt;class TFilter  = basic_allocator_filter&gt; </div>
 
 </div>
 </div>
+<a id="a0a15cca35336da4423168b1e65a04e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a15cca35336da4423168b1e65a04e8f">&#9670;&nbsp;</a></span>multiheap_allocator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t TBytes, class TFilter  = basic_allocator_filter&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacemn_1_1memory.html#a0a15cca35336da4423168b1e65a04e8f">mn::memory::multiheap_allocator</a> = typedef <a class="el" href="classmn_1_1memory_1_1basic__allocator.html">basic_allocator</a>&lt;<a class="el" href="classmn_1_1memory_1_1basic__multiheap__allocator__impl.html">basic_multiheap_allocator_impl</a>&lt;TBytes&gt;, TFilter&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abf760adcae04bf1d98493ccf9f558984"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf760adcae04bf1d98493ccf9f558984">&#9670;&nbsp;</a></span>new_allocator</h2>
 
@@ -334,6 +401,79 @@ template&lt;int TBUFFERSIZE, class TFilter  = basic_allocator_filter&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a9bf9e5b00e65fe2c53add142096c1a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf9e5b00e65fe2c53add142096c1a97">&#9670;&nbsp;</a></span>cap_allocator_map</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacemn_1_1memory.html#a9bf9e5b00e65fe2c53add142096c1a97">mn::memory::cap_allocator_map</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97a2541424fe0c3fca0ce7ea6aebb57c795"></a>NotUse2&#160;</td><td class="fielddoc"><p>Memory must be mapped to PID2 memory space (PIDs are not currently used) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97aecdf660b4f1d8cc10a1c8f892da7e5a9"></a>NotUse3&#160;</td><td class="fielddoc"><p>Memory must be mapped to PID3 memory space (PIDs are not currently used) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97a9b98da2635fa967f000cd3bc59b18760"></a>NotUse4&#160;</td><td class="fielddoc"><p>Memory must be mapped to PID4 memory space (PIDs are not currently used) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97a2bc00123a67e6e622f32d796b7b0c083"></a>NotUse5&#160;</td><td class="fielddoc"><p>Memory must be mapped to PID5 memory space (PIDs are not currently used) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97a02e5b60b4902906b7bc81f397eb90d8e"></a>NotUse6&#160;</td><td class="fielddoc"><p>Memory must be mapped to PID6 memory space (PIDs are not currently used) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97adf188e84795eb4d13b492aa8d1c1408a"></a>NotUse7&#160;</td><td class="fielddoc"><p>Memory must be mapped to PID7 memory space (PIDs are not currently used) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97ac72290692b6ace1e039bfe6b27e17cf0"></a>SpiRam&#160;</td><td class="fielddoc"><p>Memory must be in SPI RAM. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97aafbf0897a5a83fdd873dfb032ec695d3"></a>Internal&#160;</td><td class="fielddoc"><p>Memory must be internal; specifically it should not disappear when flash/spiram cache is switched off. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97a7a1920d61156abc05a60135aefe8bc67"></a>Default&#160;</td><td class="fielddoc"><p>Memory can be returned in a non-capability-specific memory allocation (e.g. malloc(), calloc()) call. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97a33fd5f6391f2f0cb4c91179d7f521949"></a>DMA&#160;</td><td class="fielddoc"><p>Memory must be able to run executable code. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9bf9e5b00e65fe2c53add142096c1a97a953feeff1e20f40677fb7f77c073b3be"></a>Exec&#160;</td><td class="fielddoc"><p>Memory must be able to accessed by DMA. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0c3334289f87bf59ac9c94911b8463e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c3334289f87bf59ac9c94911b8463e5">&#9670;&nbsp;</a></span>cap_allocator_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacemn_1_1memory.html#a0c3334289f87bf59ac9c94911b8463e5">mn::memory::cap_allocator_size</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0c3334289f87bf59ac9c94911b8463e5abf342be9116fc16e5120c8ee0a1a56cf"></a>Size8Bit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c3334289f87bf59ac9c94911b8463e5ae8f5063ce25b3ccaed7f3b4c01bb208e"></a>Size32Bit&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

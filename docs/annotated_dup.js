@@ -43,9 +43,20 @@ var annotated_dup =
         [ "basic_ring_buffer", "classmn_1_1container_1_1basic__ring__buffer.html", "classmn_1_1container_1_1basic__ring__buffer" ]
       ] ],
       [ "device", "namespacemn_1_1device.html", [
+        [ "basic_device", "classmn_1_1device_1_1basic__device.html", "classmn_1_1device_1_1basic__device" ],
+        [ "basic_streamed_device", "classmn_1_1device_1_1basic__streamed__device.html", "classmn_1_1device_1_1basic__streamed__device" ],
+        [ "basic_net_if", "classmn_1_1device_1_1basic__net__if.html", "classmn_1_1device_1_1basic__net__if" ],
+        [ "basic_wifi_net_if", "classmn_1_1device_1_1basic__wifi__net__if.html", "classmn_1_1device_1_1basic__wifi__net__if" ],
         [ "basic_block_device", "classmn_1_1device_1_1basic__block__device.html", "classmn_1_1device_1_1basic__block__device" ],
         [ "basic_input_pin", "classmn_1_1device_1_1basic__input__pin.html", "classmn_1_1device_1_1basic__input__pin" ],
-        [ "basic_output_pin", "classmn_1_1device_1_1basic__output__pin.html", "classmn_1_1device_1_1basic__output__pin" ]
+        [ "basic_network_device", "classmn_1_1device_1_1basic__network__device.html", "classmn_1_1device_1_1basic__network__device" ],
+        [ "basic_output_pin", "classmn_1_1device_1_1basic__output__pin.html", "classmn_1_1device_1_1basic__output__pin" ],
+        [ "system_stream", "classmn_1_1device_1_1system__stream.html", "classmn_1_1device_1_1system__stream" ],
+        [ "basic_system", "classmn_1_1device_1_1basic__system.html", "classmn_1_1device_1_1basic__system" ],
+        [ "basic_wifi", "classmn_1_1device_1_1basic__wifi.html", "classmn_1_1device_1_1basic__wifi" ],
+        [ "basic_wifi_ap", "classmn_1_1device_1_1basic__wifi__ap.html", "classmn_1_1device_1_1basic__wifi__ap" ],
+        [ "flash_stream", "classmn_1_1device_1_1flash__stream.html", "classmn_1_1device_1_1flash__stream" ],
+        [ "partition_stream", "classmn_1_1device_1_1partition__stream.html", "classmn_1_1device_1_1partition__stream" ]
       ] ],
       [ "esp32", "namespacemn_1_1esp32.html", [
         [ "basic_esp32_timer", "classmn_1_1esp32_1_1basic__esp32__timer.html", "classmn_1_1esp32_1_1basic__esp32__timer" ]
@@ -111,9 +122,11 @@ var annotated_dup =
         [ "basic_allocator", "classmn_1_1memory_1_1basic__allocator.html", "classmn_1_1memory_1_1basic__allocator" ],
         [ "basic_allocator_maximal_filter", "classmn_1_1memory_1_1basic__allocator__maximal__filter.html", "classmn_1_1memory_1_1basic__allocator__maximal__filter" ],
         [ "basic_allocator_stack_impl", "classmn_1_1memory_1_1basic__allocator__stack__impl.html", "classmn_1_1memory_1_1basic__allocator__stack__impl" ],
+        [ "basic_caps_allocator", "classmn_1_1memory_1_1basic__caps__allocator.html", "classmn_1_1memory_1_1basic__caps__allocator" ],
         [ "basic_deleter", "classmn_1_1memory_1_1basic__deleter.html", "classmn_1_1memory_1_1basic__deleter" ],
         [ "basic_deleter< Type[], TAllocator >", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4.html", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4" ],
         [ "basic_malloc_allocator_impl", "classmn_1_1memory_1_1basic__malloc__allocator__impl.html", "classmn_1_1memory_1_1basic__malloc__allocator__impl" ],
+        [ "basic_multiheap_allocator_impl", "classmn_1_1memory_1_1basic__multiheap__allocator__impl.html", "classmn_1_1memory_1_1basic__multiheap__allocator__impl" ],
         [ "basic_new_allocaor_impl", "classmn_1_1memory_1_1basic__new__allocaor__impl.html", "classmn_1_1memory_1_1basic__new__allocaor__impl" ],
         [ "basic_threadsafed_allocator", "classmn_1_1memory_1_1basic__threadsafed__allocator.html", "classmn_1_1memory_1_1basic__threadsafed__allocator" ],
         [ "pointer_traits", "structmn_1_1memory_1_1pointer__traits.html", "structmn_1_1memory_1_1pointer__traits" ],
@@ -133,16 +146,11 @@ var annotated_dup =
         [ "basic_ip_address", "classmn_1_1net_1_1basic__ip__address.html", "classmn_1_1net_1_1basic__ip__address" ],
         [ "basic_multicast_ip_socket", "classmn_1_1net_1_1basic__multicast__ip__socket.html", "classmn_1_1net_1_1basic__multicast__ip__socket" ],
         [ "basic_multicast_ip6_socket", "classmn_1_1net_1_1basic__multicast__ip6__socket.html", "classmn_1_1net_1_1basic__multicast__ip6__socket" ],
-        [ "basic_net_if", "classmn_1_1net_1_1basic__net__if.html", "classmn_1_1net_1_1basic__net__if" ],
         [ "basic_raw_ip4_socket", "classmn_1_1net_1_1basic__raw__ip4__socket.html", "classmn_1_1net_1_1basic__raw__ip4__socket" ],
         [ "basic_raw_ip6_socket", "classmn_1_1net_1_1basic__raw__ip6__socket.html", "classmn_1_1net_1_1basic__raw__ip6__socket" ],
         [ "basic_ip_socket", "classmn_1_1net_1_1basic__ip__socket.html", "classmn_1_1net_1_1basic__ip__socket" ],
         [ "basic_stream_ip_socket", "classmn_1_1net_1_1basic__stream__ip__socket.html", "classmn_1_1net_1_1basic__stream__ip__socket" ],
-        [ "basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html", "classmn_1_1net_1_1basic__stream__ip6__socket" ],
-        [ "basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", "classmn_1_1net_1_1basic__wifi__net__if" ],
-        [ "basic_wifi_sta_net_if", "classmn_1_1net_1_1basic__wifi__sta__net__if.html", "classmn_1_1net_1_1basic__wifi__sta__net__if" ],
-        [ "basic_wifi", "classmn_1_1net_1_1basic__wifi.html", "classmn_1_1net_1_1basic__wifi" ],
-        [ "basic_wifi_ap", "classmn_1_1net_1_1basic__wifi__ap.html", "classmn_1_1net_1_1basic__wifi__ap" ]
+        [ "basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html", "classmn_1_1net_1_1basic__stream__ip6__socket" ]
       ] ],
       [ "pointer", "namespacemn_1_1pointer.html", [
         [ "basic_any_ptr", "classmn_1_1pointer_1_1basic__any__ptr.html", "classmn_1_1pointer_1_1basic__any__ptr" ],
@@ -249,8 +257,6 @@ var annotated_dup =
       [ "auto_release_object", "classmn_1_1auto__release__object.html", "classmn_1_1auto__release__object" ],
       [ "auto_release", "classmn_1_1auto__release.html", "classmn_1_1auto__release" ],
       [ "basic_semaphore", "classmn_1_1basic__semaphore.html", "classmn_1_1basic__semaphore" ],
-      [ "basic_timespan", "classmn_1_1basic__timespan.html", "classmn_1_1basic__timespan" ],
-      [ "basic_timestamp", "classmn_1_1basic__timestamp.html", "classmn_1_1basic__timestamp" ],
       [ "basic_binary_semaphore", "classmn_1_1basic__binary__semaphore.html", "classmn_1_1basic__binary__semaphore" ],
       [ "buffer", "classmn_1_1buffer.html", "classmn_1_1buffer" ],
       [ "basic_clock", "classmn_1_1basic__clock.html", "classmn_1_1basic__clock" ],
@@ -385,6 +391,8 @@ var annotated_dup =
       [ "base_tickhook_entry", "classmn_1_1base__tickhook__entry.html", "classmn_1_1base__tickhook__entry" ],
       [ "basic_timed_lock", "classmn_1_1basic__timed__lock.html", "classmn_1_1basic__timed__lock" ],
       [ "basic_timer", "classmn_1_1basic__timer.html", "classmn_1_1basic__timer" ],
+      [ "basic_timespan", "classmn_1_1basic__timespan.html", "classmn_1_1basic__timespan" ],
+      [ "basic_timestamp", "classmn_1_1basic__timestamp.html", "classmn_1_1basic__timestamp" ],
       [ "type_traits", "namespacemn.html#structmn_1_1type__traits", "namespacemn_structmn_1_1type__traits_dup" ],
       [ "type_traits< T & >", "namespacemn.html#structmn_1_1type__traits_3_01T_01_6_01_4", "namespacemn_structmn_1_1type__traits_3_01T_01_6_01_4_dup" ],
       [ "type_traits< const T >", "namespacemn.html#structmn_1_1type__traits_3_01const_01T_01_4", "namespacemn_structmn_1_1type__traits_3_01const_01T_01_4_dup" ],

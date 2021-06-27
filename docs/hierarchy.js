@@ -68,7 +68,7 @@ var hierarchy =
     [ "mn::pointer::basic_auto_ptr< T >", "classmn_1_1pointer_1_1basic__auto__ptr.html", null ],
     [ "mn::container::basic_binary_queue< T, TITEMSIZE >", "classmn_1_1container_1_1basic__binary__queue.html", null ],
     [ "mn::container::basic_binary_queue_iterator< T >", "classmn_1_1container_1_1basic__binary__queue__iterator.html", null ],
-    [ "mn::device::basic_block_device", "classmn_1_1device_1_1basic__block__device.html", null ],
+    [ "mn::memory::basic_caps_allocator< TCAPS, TSBITS >", "classmn_1_1memory_1_1basic__caps__allocator.html", null ],
     [ "mn::math::basic_color< T >", "classmn_1_1math_1_1basic__color.html", null ],
     [ "mn::math::basic_color.__unnamed3__", "namespacemn_1_1math.html#unionmn_1_1math_1_1basic__color_8____unnamed3____", null ],
     [ "mn::math::basic_color.__unnamed3__.__unnamed5__", "namespacemn_1_1math.html#structmn_1_1math_1_1basic__color_8____unnamed3_____8____unnamed5____", null ],
@@ -83,6 +83,13 @@ var hierarchy =
     [ "mn::memory::basic_deleter< Type[], TAllocator >", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4.html", null ],
     [ "mn::container::basic_deque< T, TMAXITEMS, TITEMSIZE >", "classmn_1_1container_1_1basic__deque.html", null ],
     [ "mn::container::basic_deque_iterator< T, TQUEUE >", "classmn_1_1container_1_1basic__deque__iterator.html", null ],
+    [ "mn::device::basic_device", "classmn_1_1device_1_1basic__device.html", [
+      [ "mn::device::basic_block_device", "classmn_1_1device_1_1basic__block__device.html", null ],
+      [ "mn::device::basic_network_device", "classmn_1_1device_1_1basic__network__device.html", [
+        [ "mn::device::basic_wifi_ap", "classmn_1_1device_1_1basic__wifi__ap.html", null ]
+      ] ],
+      [ "mn::device::basic_streamed_device", "classmn_1_1device_1_1basic__streamed__device.html", null ]
+    ] ],
     [ "mn::net::basic_endpoint", "classmn_1_1net_1_1basic__endpoint.html", [
       [ "mn::net::basic_ip_endpoint< basic_ip4_address, address_family::inet_v4 >", "classmn_1_1net_1_1basic__ip__endpoint.html", [
         [ "mn::net::basic_ip4_endpoint", "classmn_1_1net_1_1basic__ip4__endpoint.html", null ]
@@ -132,12 +139,12 @@ var hierarchy =
     [ "mn::container::basic_list< auto_release_object, memory::default_allocator_t >", "classmn_1_1container_1_1basic__list.html", null ],
     [ "mn::pointer::basic_lock_ptr< T, TLOCK >", "classmn_1_1pointer_1_1basic__lock__ptr.html", null ],
     [ "mn::memory::basic_malloc_allocator_impl", "classmn_1_1memory_1_1basic__malloc__allocator__impl.html", null ],
-    [ "mn::net::basic_net_if", "classmn_1_1net_1_1basic__net__if.html", [
-      [ "mn::net::basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", [
-        [ "mn::net::basic_wifi", "classmn_1_1net_1_1basic__wifi.html", [
-          [ "mn::net::basic_wifi_ap", "classmn_1_1net_1_1basic__wifi__ap.html", null ]
-        ] ],
-        [ "mn::net::basic_wifi_sta_net_if", "classmn_1_1net_1_1basic__wifi__sta__net__if.html", null ]
+    [ "mn::memory::basic_multiheap_allocator_impl< TBytes >", "classmn_1_1memory_1_1basic__multiheap__allocator__impl.html", null ],
+    [ "mn::device::basic_net_if", "classmn_1_1device_1_1basic__net__if.html", [
+      [ "mn::device::basic_wifi_net_if", "classmn_1_1device_1_1basic__wifi__net__if.html", [
+        [ "mn::device::basic_wifi", "classmn_1_1device_1_1basic__wifi.html", [
+          [ "mn::device::basic_wifi_ap", "classmn_1_1device_1_1basic__wifi__ap.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "mn::memory::basic_new_allocaor_impl", "classmn_1_1memory_1_1basic__new__allocaor__impl.html", null ],
@@ -164,6 +171,7 @@ var hierarchy =
     [ "mn::pointer::basic_shared_ptr< T, TRefType >", "classmn_1_1pointer_1_1basic__shared__ptr.html", null ],
     [ "mn::basic_singleton< T, TLOCK >", "classmn_1_1basic__singleton.html", null ],
     [ "mn::container::basic_stack< TType >", "classmn_1_1container_1_1basic__stack.html", null ],
+    [ "mn::device::basic_system", "classmn_1_1device_1_1basic__system.html", null ],
     [ "mn::basic_tasklet", "classmn_1_1basic__tasklet.html", null ],
     [ "mn::memory::basic_threadsafed_allocator< TMutex, TAllocator, TFilter >", "classmn_1_1memory_1_1basic__threadsafed__allocator.html", null ],
     [ "mn::basic_timed_lock< TLOCK >", "classmn_1_1basic__timed__lock.html", null ],
@@ -483,7 +491,7 @@ var hierarchy =
     [ "mn::integral_constant< int, 0 >", "structmn_1_1integral__constant.html", [
       [ "mn::is_placeholder< T >", "structmn_1_1is__placeholder.html", null ]
     ] ],
-    [ "mn::net::basic_net_if::ip_info", "classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info", null ],
+    [ "mn::device::basic_net_if::ip_info", "classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info", null ],
     [ "mn::IPseudoRandomUtil< TSEEDTYPE >", "classmn_1_1IPseudoRandomUtil.html", null ],
     [ "mn::IPseudoRandomUtil< unsigned int >", "classmn_1_1IPseudoRandomUtil.html", [
       [ "mn::basic_ramdom_xorshift", "classmn_1_1basic__ramdom__xorshift.html", null ],
@@ -622,6 +630,10 @@ var hierarchy =
     [ "mn::sqrt< VAL, X >", "structmn_1_1sqrt.html", null ],
     [ "mn::memory::std_allocator_tag", "namespacemn_1_1memory.html#structmn_1_1memory_1_1std__allocator__tag", null ],
     [ "mn::system_endian", "structmn_1_1system__endian.html", null ],
+    [ "mn::device::system_stream", "classmn_1_1device_1_1system__stream.html", [
+      [ "mn::device::flash_stream", "classmn_1_1device_1_1flash__stream.html", null ],
+      [ "mn::device::partition_stream", "classmn_1_1device_1_1partition__stream.html", null ]
+    ] ],
     [ "T", null, [
       [ "mn::ebo_storage< T, TAG, mn::enable_if_t< mn::is_class< T >::value > >", "classmn_1_1ebo__storage_3_01T_00_01TAG_00_01mn_1_1enable__if__t_3_01mn_1_1is__class_3_01T_01_4_1_1value_01_4_01_4.html", null ]
     ] ],

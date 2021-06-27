@@ -1,0 +1,35 @@
+var classmn_1_1device_1_1basic__net__if =
+[
+    [ "ip_info", "classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info", [
+      [ "gw", "classmn_1_1device_1_1basic__net__if.html#a0522cbb05f1888776f184b63b68f23a7", null ],
+      [ "ip", "classmn_1_1device_1_1basic__net__if.html#a03dc07ac056810dbe9ec61b2036e27d6", null ],
+      [ "netmask", "classmn_1_1device_1_1basic__net__if.html#ae614a942ecc2767745988d674f3d89d9", null ]
+    ] ],
+    [ "ip4_address_t", "classmn_1_1device_1_1basic__net__if.html#afaaa6c229f1f625352fe2e91971885fe", null ],
+    [ "ip_info_t", "classmn_1_1device_1_1basic__net__if.html#a0063864c358f550ee4a268ace0dda8ad", null ],
+    [ "basic_net_if", "classmn_1_1device_1_1basic__net__if.html#a733052e6fe583137cb05b5283888f860", null ],
+    [ "basic_net_if", "classmn_1_1device_1_1basic__net__if.html#ae7187f7c694a341031baff238eeef554", null ],
+    [ "create_default", "classmn_1_1device_1_1basic__net__if.html#a22873393b9046efee144eb1f56b845c3", null ],
+    [ "get_config", "classmn_1_1device_1_1basic__net__if.html#a8e526f6b27defeac5676ea6fb8a9f642", null ],
+    [ "get_hostname", "classmn_1_1device_1_1basic__net__if.html#aa157bb0db52be8ba11b2b8333bb16f2a", null ],
+    [ "get_impl_index", "classmn_1_1device_1_1basic__net__if.html#a6fa26a4f94a9089ff1b4ec0b9c793bd7", null ],
+    [ "get_impl_name", "classmn_1_1device_1_1basic__net__if.html#a5fdbacda82113c809d078cbb69878f62", null ],
+    [ "get_ip_infos", "classmn_1_1device_1_1basic__net__if.html#acbd558e7fae0ab10adb6acfed4233d86", null ],
+    [ "get_mac", "classmn_1_1device_1_1basic__net__if.html#a3df824aef611115b78f7c1a238bd854f", null ],
+    [ "get_netif", "classmn_1_1device_1_1basic__net__if.html#a9f30e2422358269c8ee76ab6a2b5e0c6", null ],
+    [ "is_up", "classmn_1_1device_1_1basic__net__if.html#a7b243a798bf1d164ce5ed50bb142c529", null ],
+    [ "operator bool", "classmn_1_1device_1_1basic__net__if.html#acc989ea4c747f0c38afb8ff02d92de4f", null ],
+    [ "operator esp_netif_t *", "classmn_1_1device_1_1basic__net__if.html#aabfd9a7458e33f5c3c8327f065454dab", null ],
+    [ "operator!=", "classmn_1_1device_1_1basic__net__if.html#aba212a0b1c8da9d5dde37b3f50a3e43f", null ],
+    [ "operator!=", "classmn_1_1device_1_1basic__net__if.html#aa79a199fb7f5c0590551c84f13789e45", null ],
+    [ "operator=", "classmn_1_1device_1_1basic__net__if.html#ab688acc4df557a629191cf405903c94f", null ],
+    [ "operator==", "classmn_1_1device_1_1basic__net__if.html#a572d75d68f1facacd24adf791c537774", null ],
+    [ "operator==", "classmn_1_1device_1_1basic__net__if.html#a9e88f40b436e674d983dc07d548c06f5", null ],
+    [ "set_hostname", "classmn_1_1device_1_1basic__net__if.html#a6a6197ec6b7d07f5cd4f0df35828111e", null ],
+    [ "set_ip_infos", "classmn_1_1device_1_1basic__net__if.html#a97f43ae351556f9a4644d15121dff6d4", null ],
+    [ "set_mac", "classmn_1_1device_1_1basic__net__if.html#af343041b1298313cc2c529071c37d6c7", null ],
+    [ "start", "classmn_1_1device_1_1basic__net__if.html#a2f2596591419415a0993da46f8fde398", null ],
+    [ "stop", "classmn_1_1device_1_1basic__net__if.html#afec047a92609b2f51aca6073291985e1", null ],
+    [ "m_ifConfig", "classmn_1_1device_1_1basic__net__if.html#a670278257639852c02e5948b41c60177", null ],
+    [ "m_pNetIf", "classmn_1_1device_1_1basic__net__if.html#a1fe426c23a6f90bee5e0c6cca904dbf6", null ]
+];

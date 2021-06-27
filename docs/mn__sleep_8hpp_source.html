@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('mn__sleep_8hpp_source.html',''); initR
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;freertos/FreeRTOS.h&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;freertos/task.h&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__basic__timespan_8hpp.html">mn_basic_timespan.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mn__timespan_8hpp.html">mn_timespan.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a></div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="mn__sleep_8hpp.html#afe06ce59bb9c5c6c501784357b2bc08c">   39</a></span>&#160;<span class="preprocessor">#define MN_DELAY_SEC(sec)       mn::delay(timespan_t(0,0,0,sec,0))</span></div>
@@ -174,13 +174,13 @@ $(document).ready(function(){initNavTree('mn__sleep_8hpp_source.html',''); initR
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<a class="code" href="mn__defines_8hpp.html#ad14ae3fd1c6b48289423a5a08eda08e6">MN_EXTERNC_END</a></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="amn__basic__timespan_8hpp_html"><div class="ttname"><a href="mn__basic__timespan_8hpp.html">mn_basic_timespan.hpp</a></div></div>
 <div class="ttc" id="amn__config_8hpp_html"><div class="ttname"><a href="mn__config_8hpp.html">mn_config.hpp</a></div></div>
 <div class="ttc" id="amn__defines_8hpp_html_ab8ff08b2662f02faf08956d89435fcbb"><div class="ttname"><a href="mn__defines_8hpp.html#ab8ff08b2662f02faf08956d89435fcbb">MN_EXTERNC_BEGINN</a></div><div class="ttdeci">#define MN_EXTERNC_BEGINN</div><div class="ttdef"><b>Definition:</b> mn_defines.hpp:49</div></div>
 <div class="ttc" id="amn__defines_8hpp_html_ad14ae3fd1c6b48289423a5a08eda08e6"><div class="ttname"><a href="mn__defines_8hpp.html#ad14ae3fd1c6b48289423a5a08eda08e6">MN_EXTERNC_END</a></div><div class="ttdeci">#define MN_EXTERNC_END</div><div class="ttdef"><b>Definition:</b> mn_defines.hpp:50</div></div>
+<div class="ttc" id="amn__timespan_8hpp_html"><div class="ttname"><a href="mn__timespan_8hpp.html">mn_timespan.hpp</a></div></div>
 <div class="ttc" id="anamespacemn_html"><div class="ttname"><a href="namespacemn.html">mn</a></div><div class="ttdef"><b>Definition:</b> mn_allocator_typetraits.hpp:25</div></div>
 <div class="ttc" id="anamespacemn_html_a1b269577a6ebb0ec61969466a2396d87"><div class="ttname"><a href="namespacemn.html#a1b269577a6ebb0ec61969466a2396d87">mn::ndelay</a></div><div class="ttdeci">void ndelay(const timespan_t &amp;req, timespan_t *rem)</div><div class="ttdef"><b>Definition:</b> mn_sleep.cpp:112</div></div>
-<div class="ttc" id="anamespacemn_html_a2ee104c7530f46fd94e9b08412228b04"><div class="ttname"><a href="namespacemn.html#a2ee104c7530f46fd94e9b08412228b04">mn::timespan_t</a></div><div class="ttdeci">basic_timespan timespan_t</div><div class="ttdef"><b>Definition:</b> mn_basic_timespan.hpp:220</div></div>
+<div class="ttc" id="anamespacemn_html_a2ee104c7530f46fd94e9b08412228b04"><div class="ttname"><a href="namespacemn.html#a2ee104c7530f46fd94e9b08412228b04">mn::timespan_t</a></div><div class="ttdeci">basic_timespan timespan_t</div><div class="ttdef"><b>Definition:</b> mn_timespan.hpp:225</div></div>
 <div class="ttc" id="anamespacemn_html_a3d4a9ca9fb65da6c894f8dda8921e7a1"><div class="ttname"><a href="namespacemn.html#a3d4a9ca9fb65da6c894f8dda8921e7a1">mn::delay_until</a></div><div class="ttdeci">unsigned int delay_until(timespan_t &amp;tsPreviousWakeTime, const unsigned int &amp;uiTimeIncrement)</div><div class="ttdoc">Delay a task until a specified time.</div><div class="ttdef"><b>Definition:</b> mn_sleep.cpp:134</div></div>
 <div class="ttc" id="anamespacemn_html_ac51873844ea0a59f372a25e1aff5e1e1"><div class="ttname"><a href="namespacemn.html#ac51873844ea0a59f372a25e1aff5e1e1">mn::delay</a></div><div class="ttdeci">void delay(const timespan_t &amp;ts)</div><div class="ttdef"><b>Definition:</b> mn_sleep.cpp:147</div></div>
 </div><!-- fragment --></div><!-- contents -->

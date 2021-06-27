@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.9.1 - BootStrap Style"/>
+        <title>Mini Thread: mn::device::basic_net_if Class Reference</title>
+        <!-- javascript -->
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/navtreedata.js"></script>
+        <script type="text/javascript" src="js/navtree.js"></script>
+        <script type="text/javascript" src="js/searchdata.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script type="text/javascript" src="js/dynsections.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap-doxy.css" rel="stylesheet" type="text/css"/>
+        <link href="css/robotslab.css"" rel='stylesheet' type='text/css'> 
+        <link href="css/search.css" rel="stylesheet" type="text/css"/>
+        <link href="css/tabs.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>    
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">Mini Thread 2.28.x</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Menu</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                          <span data-feather="plus-circle"></span>
+                        </a>
+                      </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="home"></span>
+                                Start
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="classes.html">
+                                <span data-feather="list"></span>
+                                Class List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="inherits.html">
+                                <span data-feather="list"></span>
+                                Class Hierarchy
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="globals.html">
+                                <span data-feather="users"></span>
+                                Members
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="namespaces.html">
+                                <span data-feather="namespace"></span>
+                                Namespace List
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="files.html">
+                                <span data-feather="file-text"></span>
+                                Files
+                            </a>
+                        </li>
+						<li class="nav-item ">
+                            <a class="nav-link" href="pages.html">
+                                <span data-feather="file-text"></span>
+                                Pages
+                            </a>
+                        </li>
+                    </ul>
+                  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Links</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                      <span data-feather="at-sign"></span>
+                    </a>
+                  </h6>
+                  <ul class="nav flex-column mb-2">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://github.com/RoseLeBlood/MiniThread">
+                            <span data-feather="github"></span>
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://platformio.org/lib/show/11136/mini%20Thread">
+                            <span data-feather="package"></span>
+                            Platformio
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <main role="main" class="col-md-9 ml-sm-auto col-lg-10">
+                <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Search');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classmn_1_1device_1_1basic__net__if.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classmn_1_1device_1_1basic__net__if-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">mn::device::basic_net_if Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Wrapper class around esp-idf implementation of a esp-netif device.  
+ <a href="classmn_1_1device_1_1basic__net__if.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mn__basic__netif_8hpp_source.html">mn_basic_netif.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for mn::device::basic_net_if:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmn_1_1device_1_1basic__net__if__inherit__graph.svg" width="200" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:structmn_1_1device_1_1basic__net__if_1_1ip__info"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info">ip_info</a></td></tr>
+<tr class="separator:structmn_1_1device_1_1basic__net__if_1_1ip__info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afaaa6c229f1f625352fe2e91971885fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#afaaa6c229f1f625352fe2e91971885fe">ip4_address_t</a> = <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html">net::basic_ip4_address</a></td></tr>
+<tr class="separator:afaaa6c229f1f625352fe2e91971885fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0063864c358f550ee4a268ace0dda8ad"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a0063864c358f550ee4a268ace0dda8ad">ip_info_t</a> = <a class="el" href="classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info">ip_info</a></td></tr>
+<tr class="separator:a0063864c358f550ee4a268ace0dda8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a733052e6fe583137cb05b5283888f860"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a733052e6fe583137cb05b5283888f860">basic_net_if</a> ()</td></tr>
+<tr class="separator:a733052e6fe583137cb05b5283888f860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7187f7c694a341031baff238eeef554"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#ae7187f7c694a341031baff238eeef554">basic_net_if</a> (const <a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;other)</td></tr>
+<tr class="separator:ae7187f7c694a341031baff238eeef554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab688acc4df557a629191cf405903c94f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#ab688acc4df557a629191cf405903c94f">operator=</a> (const <a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;other)</td></tr>
+<tr class="separator:ab688acc4df557a629191cf405903c94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22873393b9046efee144eb1f56b845c3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a22873393b9046efee144eb1f56b845c3">create_default</a> ()=0</td></tr>
+<tr class="memdesc:a22873393b9046efee144eb1f56b845c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of new esp-netif object.  <a href="classmn_1_1device_1_1basic__net__if.html#a22873393b9046efee144eb1f56b845c3">More...</a><br /></td></tr>
+<tr class="separator:a22873393b9046efee144eb1f56b845c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af343041b1298313cc2c529071c37d6c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#af343041b1298313cc2c529071c37d6c7">set_mac</a> (uint8_t mac[6])</td></tr>
+<tr class="memdesc:af343041b1298313cc2c529071c37d6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mac address for the interface instance.  <a href="classmn_1_1device_1_1basic__net__if.html#af343041b1298313cc2c529071c37d6c7">More...</a><br /></td></tr>
+<tr class="separator:af343041b1298313cc2c529071c37d6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df824aef611115b78f7c1a238bd854f"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a3df824aef611115b78f7c1a238bd854f">get_mac</a> (uint8_t mac[6])</td></tr>
+<tr class="memdesc:a3df824aef611115b78f7c1a238bd854f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mac address for the interface instance.  <a href="classmn_1_1device_1_1basic__net__if.html#a3df824aef611115b78f7c1a238bd854f">More...</a><br /></td></tr>
+<tr class="separator:a3df824aef611115b78f7c1a238bd854f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa157bb0db52be8ba11b2b8333bb16f2a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#aa157bb0db52be8ba11b2b8333bb16f2a">get_hostname</a> ()</td></tr>
+<tr class="memdesc:aa157bb0db52be8ba11b2b8333bb16f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hostname of an interface.  <a href="classmn_1_1device_1_1basic__net__if.html#aa157bb0db52be8ba11b2b8333bb16f2a">More...</a><br /></td></tr>
+<tr class="separator:aa157bb0db52be8ba11b2b8333bb16f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6197ec6b7d07f5cd4f0df35828111e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a6a6197ec6b7d07f5cd4f0df35828111e">set_hostname</a> (const char *hostname)</td></tr>
+<tr class="memdesc:a6a6197ec6b7d07f5cd4f0df35828111e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the hostname of an interface.  <a href="classmn_1_1device_1_1basic__net__if.html#a6a6197ec6b7d07f5cd4f0df35828111e">More...</a><br /></td></tr>
+<tr class="separator:a6a6197ec6b7d07f5cd4f0df35828111e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b243a798bf1d164ce5ed50bb142c529"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a7b243a798bf1d164ce5ed50bb142c529">is_up</a> ()</td></tr>
+<tr class="memdesc:a7b243a798bf1d164ce5ed50bb142c529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if supplied interface is up.  <a href="classmn_1_1device_1_1basic__net__if.html#a7b243a798bf1d164ce5ed50bb142c529">More...</a><br /></td></tr>
+<tr class="separator:a7b243a798bf1d164ce5ed50bb142c529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fdbacda82113c809d078cbb69878f62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a5fdbacda82113c809d078cbb69878f62">get_impl_name</a> (char name[6])</td></tr>
+<tr class="memdesc:a5fdbacda82113c809d078cbb69878f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get net interface name from network stack implementation.  <a href="classmn_1_1device_1_1basic__net__if.html#a5fdbacda82113c809d078cbb69878f62">More...</a><br /></td></tr>
+<tr class="separator:a5fdbacda82113c809d078cbb69878f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa26a4f94a9089ff1b4ec0b9c793bd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a6fa26a4f94a9089ff1b4ec0b9c793bd7">get_impl_index</a> ()</td></tr>
+<tr class="memdesc:a6fa26a4f94a9089ff1b4ec0b9c793bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get net interface index from network stack implementation.  <a href="classmn_1_1device_1_1basic__net__if.html#a6fa26a4f94a9089ff1b4ec0b9c793bd7">More...</a><br /></td></tr>
+<tr class="separator:a6fa26a4f94a9089ff1b4ec0b9c793bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f30e2422358269c8ee76ab6a2b5e0c6"><td class="memItemLeft" align="right" valign="top">virtual esp_netif_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a9f30e2422358269c8ee76ab6a2b5e0c6">get_netif</a> ()</td></tr>
+<tr class="memdesc:a9f30e2422358269c8ee76ab6a2b5e0c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Handle to esp-netif instance.  <a href="classmn_1_1device_1_1basic__net__if.html#a9f30e2422358269c8ee76ab6a2b5e0c6">More...</a><br /></td></tr>
+<tr class="separator:a9f30e2422358269c8ee76ab6a2b5e0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e526f6b27defeac5676ea6fb8a9f642"><td class="memItemLeft" align="right" valign="top">virtual esp_netif_config_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a8e526f6b27defeac5676ea6fb8a9f642">get_config</a> ()</td></tr>
+<tr class="memdesc:a8e526f6b27defeac5676ea6fb8a9f642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the config of the esp-netif instance.  <a href="classmn_1_1device_1_1basic__net__if.html#a8e526f6b27defeac5676ea6fb8a9f642">More...</a><br /></td></tr>
+<tr class="separator:a8e526f6b27defeac5676ea6fb8a9f642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd558e7fae0ab10adb6acfed4233d86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#acbd558e7fae0ab10adb6acfed4233d86">get_ip_infos</a> (<a class="el" href="classmn_1_1device_1_1basic__net__if.html#a0063864c358f550ee4a268ace0dda8ad">ip_info_t</a> &amp;<a class="el" href="classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info">ip_info</a>)</td></tr>
+<tr class="memdesc:acbd558e7fae0ab10adb6acfed4233d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get interface's IP address information.  <a href="classmn_1_1device_1_1basic__net__if.html#acbd558e7fae0ab10adb6acfed4233d86">More...</a><br /></td></tr>
+<tr class="separator:acbd558e7fae0ab10adb6acfed4233d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f43ae351556f9a4644d15121dff6d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a97f43ae351556f9a4644d15121dff6d4">set_ip_infos</a> (const <a class="el" href="classmn_1_1device_1_1basic__net__if.html#a0063864c358f550ee4a268ace0dda8ad">ip_info_t</a> &amp;<a class="el" href="classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info">ip_info</a>)</td></tr>
+<tr class="memdesc:a97f43ae351556f9a4644d15121dff6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interface's IP address information.  <a href="classmn_1_1device_1_1basic__net__if.html#a97f43ae351556f9a4644d15121dff6d4">More...</a><br /></td></tr>
+<tr class="separator:a97f43ae351556f9a4644d15121dff6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc989ea4c747f0c38afb8ff02d92de4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#acc989ea4c747f0c38afb8ff02d92de4f">operator bool</a> ()</td></tr>
+<tr class="separator:acc989ea4c747f0c38afb8ff02d92de4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfd9a7458e33f5c3c8327f065454dab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#aabfd9a7458e33f5c3c8327f065454dab">operator esp_netif_t *</a> ()</td></tr>
+<tr class="separator:aabfd9a7458e33f5c3c8327f065454dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572d75d68f1facacd24adf791c537774"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a572d75d68f1facacd24adf791c537774">operator==</a> (const <a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;other)</td></tr>
+<tr class="separator:a572d75d68f1facacd24adf791c537774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba212a0b1c8da9d5dde37b3f50a3e43f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#aba212a0b1c8da9d5dde37b3f50a3e43f">operator!=</a> (const <a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;other)</td></tr>
+<tr class="separator:aba212a0b1c8da9d5dde37b3f50a3e43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e88f40b436e674d983dc07d548c06f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a9e88f40b436e674d983dc07d548c06f5">operator==</a> (const esp_netif_t *other)</td></tr>
+<tr class="separator:a9e88f40b436e674d983dc07d548c06f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79a199fb7f5c0590551c84f13789e45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#aa79a199fb7f5c0590551c84f13789e45">operator!=</a> (const esp_netif_t *other)</td></tr>
+<tr class="separator:aa79a199fb7f5c0590551c84f13789e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2f2596591419415a0993da46f8fde398"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a2f2596591419415a0993da46f8fde398">start</a> ()</td></tr>
+<tr class="memdesc:a2f2596591419415a0993da46f8fde398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the underlying TCP/IP stack.  <a href="classmn_1_1device_1_1basic__net__if.html#a2f2596591419415a0993da46f8fde398">More...</a><br /></td></tr>
+<tr class="separator:a2f2596591419415a0993da46f8fde398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec047a92609b2f51aca6073291985e1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#afec047a92609b2f51aca6073291985e1">stop</a> ()</td></tr>
+<tr class="memdesc:afec047a92609b2f51aca6073291985e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the esp-netif component (and the underlying TCP/IP stack)  <a href="classmn_1_1device_1_1basic__net__if.html#afec047a92609b2f51aca6073291985e1">More...</a><br /></td></tr>
+<tr class="separator:afec047a92609b2f51aca6073291985e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a670278257639852c02e5948b41c60177"><td class="memItemLeft" align="right" valign="top">esp_netif_config_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a670278257639852c02e5948b41c60177">m_ifConfig</a></td></tr>
+<tr class="separator:a670278257639852c02e5948b41c60177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe426c23a6f90bee5e0c6cca904dbf6"><td class="memItemLeft" align="right" valign="top">esp_netif_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a1fe426c23a6f90bee5e0c6cca904dbf6">m_pNetIf</a></td></tr>
+<tr class="separator:a1fe426c23a6f90bee5e0c6cca904dbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Wrapper class around esp-idf implementation of a esp-netif device. </p>
+<dl class="section note"><dt>Note</dt><dd>To use this, you need to subclass it. All of your task should be derived from the <a class="el" href="classmn_1_1device_1_1basic__net__if.html" title="Wrapper class around esp-idf implementation of a esp-netif device.">basic_net_if</a> class. Then implement the virtual create_default function. </dd></dl>
+</div><hr/><h2 class="groupheader">Class Documentation</h2>
+<a name="structmn_1_1device_1_1basic__net__if_1_1ip__info" id="structmn_1_1device_1_1basic__net__if_1_1ip__info"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structmn_1_1device_1_1basic__net__if_1_1ip__info">&#9670;&nbsp;</a></span>mn::device::basic_net_if::ip_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct mn::device::basic_net_if::ip_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for mn::device::basic_net_if::ip_info:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structmn_1_1device_1_1basic__net__if_1_1ip__info__coll__graph.svg" width="202" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a id="a0522cbb05f1888776f184b63b68f23a7"></a><a class="el" href="classmn_1_1device_1_1basic__net__if.html#afaaa6c229f1f625352fe2e91971885fe">ip4_address_t</a></td>
+<td class="fieldname">
+gw</td>
+<td class="fielddoc">
+<p>Interface IPV4 gateway address </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="a03dc07ac056810dbe9ec61b2036e27d6"></a><a class="el" href="classmn_1_1device_1_1basic__net__if.html#afaaa6c229f1f625352fe2e91971885fe">ip4_address_t</a></td>
+<td class="fieldname">
+ip</td>
+<td class="fielddoc">
+<p>Interface IPV4 address </p>
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ae614a942ecc2767745988d674f3d89d9"></a><a class="el" href="classmn_1_1device_1_1basic__net__if.html#afaaa6c229f1f625352fe2e91971885fe">ip4_address_t</a></td>
+<td class="fieldname">
+netmask</td>
+<td class="fielddoc">
+<p>Interface IPV4 netmask </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="afaaa6c229f1f625352fe2e91971885fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaaa6c229f1f625352fe2e91971885fe">&#9670;&nbsp;</a></span>ip4_address_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1device_1_1basic__net__if.html#afaaa6c229f1f625352fe2e91971885fe">mn::device::basic_net_if::ip4_address_t</a> =  <a class="el" href="classmn_1_1net_1_1basic__ip4__address.html">net::basic_ip4_address</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0063864c358f550ee4a268ace0dda8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0063864c358f550ee4a268ace0dda8ad">&#9670;&nbsp;</a></span>ip_info_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classmn_1_1device_1_1basic__net__if.html#a0063864c358f550ee4a268ace0dda8ad">mn::device::basic_net_if::ip_info_t</a> =  <a class="el" href="classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info">ip_info</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a733052e6fe583137cb05b5283888f860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733052e6fe583137cb05b5283888f860">&#9670;&nbsp;</a></span>basic_net_if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::device::basic_net_if::basic_net_if </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>constructor </p>
+
+</div>
+</div>
+<a id="ae7187f7c694a341031baff238eeef554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7187f7c694a341031baff238eeef554">&#9670;&nbsp;</a></span>basic_net_if() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::device::basic_net_if::basic_net_if </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>copy constructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a22873393b9046efee144eb1f56b845c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22873393b9046efee144eb1f56b845c3">&#9670;&nbsp;</a></span>create_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool mn::device::basic_net_if::create_default </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an instance of new esp-netif object. </p>
+<dl class="section note"><dt>Note</dt><dd>Must be overwrite, with the driver spcezific version and set m_pNetIf</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>true: on success</li>
+<li>false: if initializing failed </li>
+</ul>
+</dd></dl>
+
+<p>Implemented in <a class="el" href="classmn_1_1device_1_1basic__wifi__net__if.html#a03964f57c2b7e35ae786e07e225562f6">mn::device::basic_wifi_net_if</a>.</p>
+
+</div>
+</div>
+<a id="a8e526f6b27defeac5676ea6fb8a9f642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e526f6b27defeac5676ea6fb8a9f642">&#9670;&nbsp;</a></span>get_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual esp_netif_config_t* mn::device::basic_net_if::get_config </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the config of the esp-netif instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>The config of the esp-netif instance. </dd></dl>
+
+</div>
+</div>
+<a id="aa157bb0db52be8ba11b2b8333bb16f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa157bb0db52be8ba11b2b8333bb16f2a">&#9670;&nbsp;</a></span>get_hostname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * mn::device::basic_net_if::get_hostname </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the hostname of an interface. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the hostname of an interface </dd></dl>
+
+</div>
+</div>
+<a id="a6fa26a4f94a9089ff1b4ec0b9c793bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa26a4f94a9089ff1b4ec0b9c793bd7">&#9670;&nbsp;</a></span>get_impl_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mn::device::basic_net_if::get_impl_index </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get net interface index from network stack implementation. </p>
+<dl class="section note"><dt>Note</dt><dd>This index could be used in <code>setsockopt()</code> to bind socket with multicast interface</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>implementation specific index of interface represented with supplied esp_netif </dd></dl>
+
+</div>
+</div>
+<a id="a5fdbacda82113c809d078cbb69878f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fdbacda82113c809d078cbb69878f62">&#9670;&nbsp;</a></span>get_impl_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mn::device::basic_net_if::get_impl_name </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>name</em>[6]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get net interface name from network stack implementation. </p>
+<dl class="section note"><dt>Note</dt><dd>This name could be used in <code>setsockopt()</code> to bind socket with appropriate interface</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>Interface name as specified in underlying TCP/IP stack. Note that the actual name will be copied to the specified buffer, which must be allocated to hold maximum interface name size (6 characters for lwIP)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NO_ERROR: succeed</li>
+<li>ERR_MNTHREAD_INVALID_ARG: The given arcuments are wrong </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="acbd558e7fae0ab10adb6acfed4233d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd558e7fae0ab10adb6acfed4233d86">&#9670;&nbsp;</a></span>get_ip_infos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mn::device::basic_net_if::get_ip_infos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#a0063864c358f550ee4a268ace0dda8ad">ip_info_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>ip_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get interface's IP address information. </p>
+<p>If the interface is up, IP information is read directly from the TCP/IP stack. If the interface is down, IP information is read from a copy kept in the ESP-NETIF instance</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info">ip_info</a></td><td>If successful, IP information will be returned in this argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NO_ERROR: succeed</li>
+<li>ERR_MNTHREAD_INVALID_ARG: The given arcuments are wrong</li>
+<li>ERR_MNTHREAD_UNKN: Unbekannter fehler </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a3df824aef611115b78f7c1a238bd854f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df824aef611115b78f7c1a238bd854f">&#9670;&nbsp;</a></span>get_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mn::device::basic_net_if::get_mac </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>mac</em>[6]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the mac address for the interface instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">mac</td><td>Resultant mac address for the related network interface </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NO_ERROR: succeed</li>
+<li>ERR_MNTHREAD_NETIF_NOT_INIT - interface status error</li>
+<li>ERR_MNTHREAD_NOT_SUPPORTED - mac not supported on this interface </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a9f30e2422358269c8ee76ab6a2b5e0c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f30e2422358269c8ee76ab6a2b5e0c6">&#9670;&nbsp;</a></span>get_netif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual esp_netif_t* mn::device::basic_net_if::get_netif </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Handle to esp-netif instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>The Handle to esp-netif instance. </dd></dl>
+
+</div>
+</div>
+<a id="a7b243a798bf1d164ce5ed50bb142c529"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b243a798bf1d164ce5ed50bb142c529">&#9670;&nbsp;</a></span>is_up()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::device::basic_net_if::is_up </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test if supplied interface is up. </p>
+<dl class="section return"><dt>Returns</dt><dd>- true - Interface is up<ul>
+<li>false - Interface is down </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="acc989ea4c747f0c38afb8ff02d92de4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc989ea4c747f0c38afb8ff02d92de4f">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::device::basic_net_if::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabfd9a7458e33f5c3c8327f065454dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabfd9a7458e33f5c3c8327f065454dab">&#9670;&nbsp;</a></span>operator esp_netif_t *()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mn::device::basic_net_if::operator esp_netif_t * </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba212a0b1c8da9d5dde37b3f50a3e43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba212a0b1c8da9d5dde37b3f50a3e43f">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::device::basic_net_if::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa79a199fb7f5c0590551c84f13789e45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa79a199fb7f5c0590551c84f13789e45">&#9670;&nbsp;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::device::basic_net_if::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const esp_netif_t *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab688acc4df557a629191cf405903c94f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab688acc4df557a629191cf405903c94f">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp; mn::device::basic_net_if::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a572d75d68f1facacd24adf791c537774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a572d75d68f1facacd24adf791c537774">&#9670;&nbsp;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::device::basic_net_if::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1device_1_1basic__net__if.html">basic_net_if</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e88f40b436e674d983dc07d548c06f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e88f40b436e674d983dc07d548c06f5">&#9670;&nbsp;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::device::basic_net_if::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const esp_netif_t *&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a6197ec6b7d07f5cd4f0df35828111e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6197ec6b7d07f5cd4f0df35828111e">&#9670;&nbsp;</a></span>set_hostname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::device::basic_net_if::set_hostname </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hostname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the hostname of an interface. </p>
+<p>The configured hostname overrides the default configuration value CONFIG_LWIP_LOCAL_HOSTNAME. Please note that when the hostname is altered after interface started/connected the changes would only be reflected once the interface restarts/reconnects</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostname</td><td>New hostname for the interface. Maximum length 32 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>true The hostname was changed<ul>
+<li>false The hostname was not changed </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a97f43ae351556f9a4644d15121dff6d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97f43ae351556f9a4644d15121dff6d4">&#9670;&nbsp;</a></span>set_ip_infos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mn::device::basic_net_if::set_ip_infos </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmn_1_1device_1_1basic__net__if.html#a0063864c358f550ee4a268ace0dda8ad">ip_info_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>ip_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set interface's IP address information. </p>
+<p>This function is mainly used to set a static IP on an interface.</p>
+<p>If the interface is up, the new IP information is set directly in the TCP/IP stack.</p>
+<p>The copy of IP information kept in the ESP-NETIF instance is also updated (this copy is returned if the IP is queried while the interface is still down.)</p>
+<dl class="section note"><dt>Note</dt><dd>DHCP client/server must be stopped (if enabled for this interface) before setting new IP information. </dd>
+<dd>
+Calling this interface for may generate a SYSTEM_EVENT_STA_GOT_IP or SYSTEM_EVENT_ETH_GOT_IP event.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">esp_netif</td><td>Handle to esp-netif instance </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname"><a class="el" href="classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info">ip_info</a></td><td>IP information to set on the specified interface</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NO_ERROR: succeed</li>
+</ul>
+</dd></dl>
+<ul>
+<li>ERR_MNTHREAD_INVALID_ARG: The given arcuments are wrong</li>
+<li>ERR_MNTHREAD_UNKN: If DHCP server or client is still running </li>
+</ul>
+
+</div>
+</div>
+<a id="af343041b1298313cc2c529071c37d6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af343041b1298313cc2c529071c37d6c7">&#9670;&nbsp;</a></span>set_mac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mn::device::basic_net_if::set_mac </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>mac</em>[6]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the mac address for the interface instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac</td><td>Desired mac address for the related network interface </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>NO_ERROR: succeed</li>
+<li>ERR_MNTHREAD_NETIF_NOT_INIT - interface status error</li>
+<li>ERR_MNTHREAD_NOT_SUPPORTED - mac not supported on this interface </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a2f2596591419415a0993da46f8fde398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2596591419415a0993da46f8fde398">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::device::basic_net_if::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initialize the underlying TCP/IP stack. </p>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>true: on success</li>
+<li>false: if initializing failed</li>
+</ul>
+</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function should be called exactly once from application code, when the application starts up. </dd></dl>
+
+</div>
+</div>
+<a id="afec047a92609b2f51aca6073291985e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec047a92609b2f51aca6073291985e1">&#9670;&nbsp;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mn::device::basic_net_if::stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deinitialize the esp-netif component (and the underlying TCP/IP stack) </p>
+<dl class="section note"><dt>Note</dt><dd>Deinitialization is not supported yet</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>true: on success</li>
+<li>false: if initializing failed </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a670278257639852c02e5948b41c60177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670278257639852c02e5948b41c60177">&#9670;&nbsp;</a></span>m_ifConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">esp_netif_config_t* mn::device::basic_net_if::m_ifConfig</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A saved / cached copy of esp-netif config </p>
+
+</div>
+</div>
+<a id="a1fe426c23a6f90bee5e0c6cca904dbf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe426c23a6f90bee5e0c6cca904dbf6">&#9670;&nbsp;</a></span>m_pNetIf</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">esp_netif_t* mn::device::basic_net_if::m_pNetIf</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reference to the underlying esp-netif handle. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="mn__basic__netif_8hpp_source.html">mn_basic_netif.hpp</a></li>
+<li><a class="el" href="mn__basic__netif_8cpp.html">mn_basic_netif.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-copyright text-center py-3">
+            © 2021 RoseLeBlood - Generated with doxigen 1.9.1 and Bootstrap v4.0.0 (https://getbootstrap.com)
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script> feather.replace() </script>
+</body>
+</html>

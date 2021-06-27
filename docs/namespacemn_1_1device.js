@@ -1,6 +1,27 @@
 var namespacemn_1_1device =
 [
+    [ "basic_device", "classmn_1_1device_1_1basic__device.html", "classmn_1_1device_1_1basic__device" ],
+    [ "basic_streamed_device", "classmn_1_1device_1_1basic__streamed__device.html", "classmn_1_1device_1_1basic__streamed__device" ],
+    [ "basic_net_if", "classmn_1_1device_1_1basic__net__if.html", "classmn_1_1device_1_1basic__net__if" ],
+    [ "basic_wifi_net_if", "classmn_1_1device_1_1basic__wifi__net__if.html", "classmn_1_1device_1_1basic__wifi__net__if" ],
     [ "basic_block_device", "classmn_1_1device_1_1basic__block__device.html", "classmn_1_1device_1_1basic__block__device" ],
     [ "basic_input_pin", "classmn_1_1device_1_1basic__input__pin.html", "classmn_1_1device_1_1basic__input__pin" ],
-    [ "basic_output_pin", "classmn_1_1device_1_1basic__output__pin.html", "classmn_1_1device_1_1basic__output__pin" ]
+    [ "basic_network_device", "classmn_1_1device_1_1basic__network__device.html", "classmn_1_1device_1_1basic__network__device" ],
+    [ "basic_output_pin", "classmn_1_1device_1_1basic__output__pin.html", "classmn_1_1device_1_1basic__output__pin" ],
+    [ "system_stream", "classmn_1_1device_1_1system__stream.html", "classmn_1_1device_1_1system__stream" ],
+    [ "basic_system", "classmn_1_1device_1_1basic__system.html", "classmn_1_1device_1_1basic__system" ],
+    [ "basic_wifi", "classmn_1_1device_1_1basic__wifi.html", "classmn_1_1device_1_1basic__wifi" ],
+    [ "basic_wifi_ap", "classmn_1_1device_1_1basic__wifi__ap.html", "classmn_1_1device_1_1basic__wifi__ap" ],
+    [ "flash_stream", "classmn_1_1device_1_1flash__stream.html", "classmn_1_1device_1_1flash__stream" ],
+    [ "partition_stream", "classmn_1_1device_1_1partition__stream.html", "classmn_1_1device_1_1partition__stream" ],
+    [ "eth", "namespacemn_1_1device.html#ac23feca60ca5f8a4f802a2eb808a19f4", null ],
+    [ "ethernet_nef_if", "namespacemn_1_1device.html#a4b97a8ffabdd31d39dbce29fbd9cab21", null ],
+    [ "ppp_net_if", "namespacemn_1_1device.html#ab8967ea8d87f92e1df996978d2639daa", null ],
+    [ "serial_net", "namespacemn_1_1device.html#a7b4f819f5faf5a538baeb3056d811e3f", null ],
+    [ "wifi", "namespacemn_1_1device.html#ae337aa2a48e9cfd2e5ccd4be612bc7a1", null ],
+    [ "wifi_ap", "namespacemn_1_1device.html#a5cb9811a138185b1a10811d82ff32d8d", null ],
+    [ "wifi_multi", "namespacemn_1_1device.html#a4be73af4c90f818630c63f9cea7abd92", null ],
+    [ "wifi_net_if", "namespacemn_1_1device.html#aec342a3d39855131a4e1a59797b4f929", null ],
+    [ "wifi_sta", "namespacemn_1_1device.html#a980f38539e6f9fa0f3a1cf23c9748bc9", null ],
+    [ "__esp32error_to_mnerror", "namespacemn_1_1device.html#af3b88488ea5a58f80da9f2e702471ed7", null ]
 ];

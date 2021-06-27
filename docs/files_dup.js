@@ -63,10 +63,14 @@ var files_dup =
       [ "basic_allocator_maximal_filter", "classmn_1_1memory_1_1basic__allocator__maximal__filter.html", "classmn_1_1memory_1_1basic__allocator__maximal__filter" ]
     ] ],
     [ "mn_basic_allocator_stack.hpp", "mn__basic__allocator__stack_8hpp.html", "mn__basic__allocator__stack_8hpp" ],
-    [ "mn_basic_caps_allocator.hpp", "mn__basic__caps__allocator_8hpp.html", null ],
+    [ "mn_basic_caps_allocator.hpp", "mn__basic__caps__allocator_8hpp.html", "mn__basic__caps__allocator_8hpp" ],
     [ "mn_basic_deleter.hpp", "mn__basic__deleter_8hpp.html", [
       [ "basic_deleter", "classmn_1_1memory_1_1basic__deleter.html", "classmn_1_1memory_1_1basic__deleter" ],
       [ "basic_deleter< Type[], TAllocator >", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4.html", "classmn_1_1memory_1_1basic__deleter_3_01Type_0f_0e_00_01TAllocator_01_4" ]
+    ] ],
+    [ "mn_basic_device.hpp", "mn__basic__device_8hpp.html", [
+      [ "basic_device", "classmn_1_1device_1_1basic__device.html", "classmn_1_1device_1_1basic__device" ],
+      [ "basic_streamed_device", "classmn_1_1device_1_1basic__streamed__device.html", "classmn_1_1device_1_1basic__streamed__device" ]
     ] ],
     [ "mn_basic_dgram_socket.cpp", "mn__basic__dgram__socket_8cpp.html", null ],
     [ "mn_basic_dgram_socket.hpp", "mn__basic__dgram__socket_8hpp.html", [
@@ -106,14 +110,14 @@ var files_dup =
       [ "basic_multicast_ip_socket", "classmn_1_1net_1_1basic__multicast__ip__socket.html", "classmn_1_1net_1_1basic__multicast__ip__socket" ],
       [ "basic_multicast_ip6_socket", "classmn_1_1net_1_1basic__multicast__ip6__socket.html", "classmn_1_1net_1_1basic__multicast__ip6__socket" ]
     ] ],
-    [ "mn_basic_multiheap_allocator.hpp", "mn__basic__multiheap__allocator_8hpp.html", null ],
+    [ "mn_basic_multiheap_allocator.hpp", "mn__basic__multiheap__allocator_8hpp.html", "mn__basic__multiheap__allocator_8hpp" ],
     [ "mn_basic_netif.cpp", "mn__basic__netif_8cpp.html", null ],
     [ "mn_basic_netif.hpp", "mn__basic__netif_8hpp.html", [
-      [ "basic_net_if", "classmn_1_1net_1_1basic__net__if.html", "classmn_1_1net_1_1basic__net__if" ],
-      [ "ip_info", "classmn_1_1net_1_1basic__net__if.html#structmn_1_1net_1_1basic__net__if_1_1ip__info", [
-        [ "gw", "classmn_1_1net_1_1basic__net__if.html#a38a33d2823c06f6779a2fb484240b13a", null ],
-        [ "ip", "classmn_1_1net_1_1basic__net__if.html#a7fbd204866b65baa9a740480febf6a87", null ],
-        [ "netmask", "classmn_1_1net_1_1basic__net__if.html#ab368d2c60cd74d034e2e6b5ff51e00ad", null ]
+      [ "basic_net_if", "classmn_1_1device_1_1basic__net__if.html", "classmn_1_1device_1_1basic__net__if" ],
+      [ "ip_info", "classmn_1_1device_1_1basic__net__if.html#structmn_1_1device_1_1basic__net__if_1_1ip__info", [
+        [ "gw", "classmn_1_1device_1_1basic__net__if.html#a0522cbb05f1888776f184b63b68f23a7", null ],
+        [ "ip", "classmn_1_1device_1_1basic__net__if.html#a03dc07ac056810dbe9ec61b2036e27d6", null ],
+        [ "netmask", "classmn_1_1device_1_1basic__net__if.html#ae614a942ecc2767745988d674f3d89d9", null ]
       ] ]
     ] ],
     [ "mn_basic_new_allocaor.hpp", "mn__basic__new__allocaor_8hpp.html", "mn__basic__new__allocaor_8hpp" ],
@@ -135,17 +139,9 @@ var files_dup =
       [ "basic_stream_ip_socket", "classmn_1_1net_1_1basic__stream__ip__socket.html", "classmn_1_1net_1_1basic__stream__ip__socket" ],
       [ "basic_stream_ip6_socket", "classmn_1_1net_1_1basic__stream__ip6__socket.html", "classmn_1_1net_1_1basic__stream__ip6__socket" ]
     ] ],
-    [ "mn_basic_timespan.cpp", "mn__basic__timespan_8cpp.html", "mn__basic__timespan_8cpp" ],
-    [ "mn_basic_timespan.hpp", "mn__basic__timespan_8hpp.html", "mn__basic__timespan_8hpp" ],
-    [ "mn_basic_timestamp.cpp", "mn__basic__timestamp_8cpp.html", null ],
-    [ "mn_basic_timestamp.hpp", "mn__basic__timestamp_8hpp.html", "mn__basic__timestamp_8hpp" ],
     [ "mn_basic_wifi_net_if.cpp", "mn__basic__wifi__net__if_8cpp.html", null ],
     [ "mn_basic_wifi_net_if.hpp", "mn__basic__wifi__net__if_8hpp.html", [
-      [ "basic_wifi_net_if", "classmn_1_1net_1_1basic__wifi__net__if.html", "classmn_1_1net_1_1basic__wifi__net__if" ]
-    ] ],
-    [ "mn_basic_wifi_sta_net_if.cpp", "mn__basic__wifi__sta__net__if_8cpp.html", null ],
-    [ "mn_basic_wifi_sta_net_if.hpp", "mn__basic__wifi__sta__net__if_8hpp.html", [
-      [ "basic_wifi_sta_net_if", "classmn_1_1net_1_1basic__wifi__sta__net__if.html", "classmn_1_1net_1_1basic__wifi__sta__net__if" ]
+      [ "basic_wifi_net_if", "classmn_1_1device_1_1basic__wifi__net__if.html", "classmn_1_1device_1_1basic__wifi__net__if" ]
     ] ],
     [ "mn_binary_semaphore.cpp", "mn__binary__semaphore_8cpp.html", null ],
     [ "mn_binary_semaphore.hpp", "mn__binary__semaphore_8hpp.html", "mn__binary__semaphore_8hpp" ],
@@ -277,6 +273,10 @@ var files_dup =
     [ "mn_mutex.hpp", "mn__mutex_8hpp.html", "mn__mutex_8hpp" ],
     [ "mn_net_types.hpp", "mn__net__types_8hpp.html", "mn__net__types_8hpp" ],
     [ "mn_network.hpp", "mn__network_8hpp.html", "mn__network_8hpp" ],
+    [ "mn_network_device.cpp", "mn__network__device_8cpp.html", null ],
+    [ "mn_network_device.hpp", "mn__network__device_8hpp.html", [
+      [ "basic_network_device", "classmn_1_1device_1_1basic__network__device.html", "classmn_1_1device_1_1basic__network__device" ]
+    ] ],
     [ "mn_nlz.hpp", "mn__nlz_8hpp.html", "mn__nlz_8hpp" ],
     [ "mn_node.hpp", "mn__node_8hpp.html", "mn__node_8hpp" ],
     [ "mn_node_ptr.hpp", "mn__node__ptr_8hpp.html", [
@@ -339,6 +339,11 @@ var files_dup =
     [ "mn_sorted_vector.hpp", "mn__sorted__vector_8hpp.html", "mn__sorted__vector_8hpp" ],
     [ "mn_stack.hpp", "mn__stack_8hpp.html", "mn__stack_8hpp" ],
     [ "mn_stl.hpp", "mn__stl_8hpp.html", "mn__stl_8hpp" ],
+    [ "mn_system.hpp", "mn__system_8hpp.html", [
+      [ "system_stream", "classmn_1_1device_1_1system__stream.html", "classmn_1_1device_1_1system__stream" ],
+      [ "basic_system", "classmn_1_1device_1_1basic__system.html", "classmn_1_1device_1_1basic__system" ]
+    ] ],
+    [ "mn_system_esp32.cpp", "mn__system__esp32_8cpp.html", "mn__system__esp32_8cpp" ],
     [ "mn_system_lock.hpp", "mn__system__lock_8hpp.html", [
       [ "ISystemLockObject", "classmn_1_1system_1_1ISystemLockObject.html", "classmn_1_1system_1_1ISystemLockObject" ]
     ] ],
@@ -365,6 +370,8 @@ var files_dup =
     [ "mn_timer.hpp", "mn__timer_8hpp.html", "mn__timer_8hpp" ],
     [ "mn_timer_esp32.cpp", "mn__timer__esp32_8cpp.html", null ],
     [ "mn_timer_esp32.hpp", "mn__timer__esp32_8hpp.html", "mn__timer__esp32_8hpp" ],
+    [ "mn_timespan.cpp", "mn__timespan_8cpp.html", "mn__timespan_8cpp" ],
+    [ "mn_timespan.hpp", "mn__timespan_8hpp.html", "mn__timespan_8hpp" ],
     [ "mn_timestamp.cpp", "mn__timestamp_8cpp.html", null ],
     [ "mn_timestamp.hpp", "mn__timestamp_8hpp.html", "mn__timestamp_8hpp" ],
     [ "mn_triple.hpp", "mn__triple_8hpp.html", "mn__triple_8hpp" ],
@@ -382,11 +389,11 @@ var files_dup =
     [ "mn_weak_ptr.hpp", "mn__weak__ptr_8hpp.html", "mn__weak__ptr_8hpp" ],
     [ "mn_wifi.cpp", "mn__wifi_8cpp.html", null ],
     [ "mn_wifi.hpp", "mn__wifi_8hpp.html", [
-      [ "basic_wifi", "classmn_1_1net_1_1basic__wifi.html", "classmn_1_1net_1_1basic__wifi" ]
+      [ "basic_wifi", "classmn_1_1device_1_1basic__wifi.html", "classmn_1_1device_1_1basic__wifi" ]
     ] ],
     [ "mn_wifi_ap.cpp", "mn__wifi__ap_8cpp.html", "mn__wifi__ap_8cpp" ],
     [ "mn_wifi_ap.hpp", "mn__wifi__ap_8hpp.html", [
-      [ "basic_wifi_ap", "classmn_1_1net_1_1basic__wifi__ap.html", "classmn_1_1net_1_1basic__wifi__ap" ]
+      [ "basic_wifi_ap", "classmn_1_1device_1_1basic__wifi__ap.html", "classmn_1_1device_1_1basic__wifi__ap" ]
     ] ],
     [ "mn_workqueue.cpp", "mn__workqueue_8cpp.html", null ],
     [ "mn_workqueue.hpp", "mn__workqueue_8hpp.html", [
